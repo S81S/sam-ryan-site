@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+# Staging pages carry noindex in HTML and HTTP headers. Crawling is allowed so bots can read it.
