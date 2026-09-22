@@ -1,0 +1,70 @@
+name: Refresh inventory & window stickers
+
+# Replaces the "runs every 4 hours in the local Codex app / requires the
+# computer to stay on" step from README.txt. GitHub's own runners do the
+# crawl + sticker-check on a schedule, and any changed data files get
+# committed straight back into this repo — Cloudflare Pages then redeploys
+# automatically on that commit, so nothing has to stay powered on locally.
+
+on:
+  schedule:
+    # Every 4 hours, matching the previous cadence. Cron is UTC.
+    - cron: '7 */4 * * *'
+  workflow_dispatch: {} # lets you trigger a manual run from the Actions tab
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/refresh/**'
+      - 'inventory-engine.mjs'
+      - 'equipment-search.mjs'
+      - '.github/workflows/refresh-inventory.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-inventory
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
+
+      - name: Run refresh (inventory + window stickers)
+        run: node scripts/refresh/refresh.mjs
+        env:
+          NODE_OPTIONS: '--max-old-space-size=3072'
+
+      - name: Commit updated data files
+        run: |
+          git config user.name "sam-ryan-inventory-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/used-inventory.json data/used-inventory.js \
+                  data/equipment-index.json data/equipment-index.js
+          if git diff --cached --quiet; then
+            echo "No inventory changes this run."
+          else
+            git commit -m "Automated inventory + window-sticker refresh"
+            git push
+          fi
+
+      - name: Upload rejected-records log (if any)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: refresh-rejects
+          path: scripts/refresh/last-run-rejects.json
+          if-no-files-found: ignore
+          retention-days: 14
