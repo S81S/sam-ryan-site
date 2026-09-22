@@ -1,0 +1,2 @@
+HELLO_PASTE_TEST
+line2
