@@ -1,0 +1,5 @@
+node_modules/
+raw-inventory-capture.json
+sticker-capture.json
+scripts/refresh/last-run-rejects.json
+.DS_Store
