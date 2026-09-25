@@ -1,3 +1,6 @@
+/data/*
+  Cache-Control: no-cache, must-revalidate
+
 /*
   X-Robots-Tag: noindex
   X-Content-Type-Options: nosniff
