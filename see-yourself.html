@@ -1,9 +1,586 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>See Yourself in This Car | Sam + Ryan</title><meta name="description" content="Picture your next drive. Browse vehicle photos, compare your favorites and arrange a test drive at Covert CDJR Austin."><meta name="theme-color" content="#080b0f"><script>document.documentElement.classList.add("js");</script><link rel="stylesheet" href="styles.css"><link rel="canonical" href="https://sam-ryan-v13-staging.pages.dev/see-yourself"><meta name="robots" content="noindex, follow"><meta property="og:type" content="website"><meta property="og:site_name" content="Sam + Ryan"><meta property="og:title" content="See Yourself in This Car | Sam + Ryan"><meta property="og:description" content="Picture your next drive. Browse vehicle photos, compare your favorites and arrange a test drive at Covert CDJR Austin."><meta property="og:url" content="https://sam-ryan-v13-staging.pages.dev/see-yourself"><meta property="og:image" content="https://sam-ryan-v13-staging.pages.dev/assets/social-card.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Sam + Ryan — Cars &amp; Straight Answers in Austin"><meta name="twitter:card" content="summary_large_image"><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://sam-ryan-v13-staging.pages.dev/#website", "url": "https://sam-ryan-v13-staging.pages.dev/", "name": "Sam + Ryan | Cars & Straight Answers", "inLanguage": "en-US", "about": [{"@id": "https://sam-ryan-v13-staging.pages.dev/#sam"}, {"@id": "https://sam-ryan-v13-staging.pages.dev/#ryan"}]}, {"@type": "Organization", "@id": "https://sam-ryan-v13-staging.pages.dev/#dealership", "name": "Covert Chrysler Dodge Jeep Ram of Austin", "url": "https://www.covertchryslerdodgejeepram.com/"}, {"@type": "Person", "@id": "https://sam-ryan-v13-staging.pages.dev/#sam", "name": "Samuel Sweitzer", "alternateName": "Sam Sweitzer", "url": "https://sam-ryan-v13-staging.pages.dev/sam", "image": "https://sam-ryan-v13-staging.pages.dev/assets/sam.webp", "jobTitle": "Sales Consultant", "worksFor": {"@id": "https://sam-ryan-v13-staging.pages.dev/#dealership"}}, {"@type": "Person", "@id": "https://sam-ryan-v13-staging.pages.dev/#ryan", "name": "Ryan Sugrue", "url": "https://sam-ryan-v13-staging.pages.dev/ryan", "image": "https://sam-ryan-v13-staging.pages.dev/assets/ryan.webp", "jobTitle": "Sales Consultant", "worksFor": {"@id": "https://sam-ryan-v13-staging.pages.dev/#dealership"}}, {"@type": "WebPage", "@id": "https://sam-ryan-v13-staging.pages.dev/see-yourself#page", "url": "https://sam-ryan-v13-staging.pages.dev/see-yourself", "name": "See Yourself in This Car | Sam + Ryan", "description": "Picture your next drive. Browse vehicle photos, compare your favorites and arrange a test drive at Covert CDJR Austin.", "isPartOf": {"@id": "https://sam-ryan-v13-staging.pages.dev/#website"}, "inLanguage": "en-US"}]}</script></head><body><a class="skip-link" href="#main-content">Skip to content</a><header class="site-header"><div class="wrap nav-wrap">
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>See Yourself in This Car | Sam + Ryan</title><meta name="description" content="Upload a selfie and place yourself behind the wheel of any vehicle in our inventory — a free, in-browser preview tool from Sam + Ryan at Covert CDJR Austin."><meta name="theme-color" content="#080b0f"><script>document.documentElement.classList.add("js");</script><link rel="stylesheet" href="styles.css"><link rel="canonical" href="https://sam-ryan-v13-staging.pages.dev/see-yourself"><meta name="robots" content="noindex, follow"><meta property="og:type" content="website"><meta property="og:site_name" content="Sam + Ryan"><meta property="og:title" content="See Yourself in This Car | Sam + Ryan"><meta property="og:description" content="Upload a selfie and place yourself behind the wheel of any vehicle in our inventory."><meta property="og:url" content="https://sam-ryan-v13-staging.pages.dev/see-yourself"><meta property="og:image" content="https://sam-ryan-v13-staging.pages.dev/assets/social-card.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Sam + Ryan — Cars &amp; Straight Answers in Austin"><meta name="twitter:card" content="summary_large_image"><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://sam-ryan-v13-staging.pages.dev/#website", "url": "https://sam-ryan-v13-staging.pages.dev/", "name": "Sam + Ryan | Cars & Straight Answers", "inLanguage": "en-US", "about": [{"@id": "https://sam-ryan-v13-staging.pages.dev/#sam"}, {"@id": "https://sam-ryan-v13-staging.pages.dev/#ryan"}]}, {"@type": "Organization", "@id": "https://sam-ryan-v13-staging.pages.dev/#dealership", "name": "Covert Chrysler Dodge Jeep Ram of Austin", "url": "https://www.covertchryslerdodgejeepram.com/"}, {"@type": "WebPage", "@id": "https://sam-ryan-v13-staging.pages.dev/see-yourself#page", "url": "https://sam-ryan-v13-staging.pages.dev/see-yourself", "name": "See Yourself in This Car | Sam + Ryan", "description": "Upload a selfie and place yourself behind the wheel of any vehicle in our inventory.", "isPartOf": {"@id": "https://sam-ryan-v13-staging.pages.dev/#website"}, "inLanguage": "en-US"}]}</script>
+<style>
+/* --- See Yourself tool (scoped) --- */
+.sy-wrap{max-width:920px;margin:0 auto}
+.sy-steps{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 26px}
+.sy-step-pill{flex:1;min-width:120px;text-align:center;padding:10px 8px;border-radius:999px;background:#111923;border:1px solid #2c3945;color:#7c8a98;font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:.6px}
+.sy-step-pill.is-active{background:var(--red);border-color:var(--red);color:#fff}
+.sy-step-pill.is-done{background:#16321f;border-color:#2c5b3a;color:#7fe0a0}
+.sy-panel{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:24px;margin-bottom:20px}
+.sy-panel h2{margin:0 0 6px;font-size:26px;letter-spacing:-1px}
+.sy-panel p.sy-sub{color:var(--muted);margin:0 0 20px;font-size:14px}
+.sy-car-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;margin-bottom:14px}
+.sy-car-opt{border:2px solid #2c3945;border-radius:14px;overflow:hidden;background:#0d131a;cursor:pointer;text-align:left;padding:0;color:inherit}
+.sy-car-opt img{width:100%;height:100px;object-fit:cover;display:block;background:#1a2430}
+.sy-car-opt span{display:block;padding:8px 10px;font-size:11px;font-weight:800;color:#c7d0d8}
+.sy-car-opt.is-selected{border-color:var(--red);box-shadow:0 0 0 3px rgba(226,29,45,.22)}
+.sy-upload-row{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.sy-filebtn{display:inline-flex;align-items:center;gap:8px;background:#161f29;border:1px solid #34404c;border-radius:10px;padding:12px 16px;cursor:pointer;font-weight:800;font-size:13px}
+.sy-filebtn:hover{border-color:#5b6b79}
+.sy-filebtn input{display:none}
+.sy-hint{color:#8b99a6;font-size:12px;margin-top:10px}
+.sy-canvas-shell{position:relative;background:#05070a;border-radius:14px;overflow:hidden;border:1px solid #26313d;touch-action:none;max-width:100%}
+.sy-canvas-shell canvas{display:block;width:100%;height:auto;touch-action:none}
+.sy-controls{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+.sy-controls label{display:block;font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:.6px;color:#8b99a6;margin-bottom:6px}
+.sy-controls input[type=range]{width:100%}
+.sy-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+.sy-note{margin-top:16px;padding:12px 14px;background:#1a1410;border:1px solid #4a3720;color:#f2c68f;border-radius:10px;font-size:12px}
+.sy-result img{width:100%;border-radius:14px;border:1px solid var(--line)}
+.sy-fineprint{color:#7c8a98;font-size:11px;margin-top:14px;line-height:1.6}
+@media(max-width:640px){.sy-controls{grid-template-columns:1fr}}
+</style>
+</head><body><a class="skip-link" href="#main-content">Skip to content</a><header class="site-header"><div class="wrap nav-wrap">
     <a href="index.html" class="brand"><span class="brand-main">Sam <b>+</b> Ryan</span><small>Cars & Straight Answers • Covert CDJR Austin</small></a>
     <nav id="primary-nav" class="nav-links" aria-label="Primary navigation"><a class="" href="inventory.html">Inventory</a><a class="" href="find-my-car.html">Find My Car</a><a class="" href="compare.html">Compare</a><a class="active" href="see-yourself.html">See Yourself</a><a class="" href="reviews.html">Reviews</a><a class="" href="guides.html">Guides</a><a class="" href="sam.html">Sam</a><a class="" href="ryan.html">Ryan</a></nav>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button><a class="header-cta" href="contact.html">LET'S TALK</a>
-    </div></header><div class="affiliation-bar"><div class="wrap affiliation-inner"><span><strong>Visit us at:</strong> Covert Chrysler Dodge Jeep Ram of Austin • 8107 Research Blvd, Austin, TX 78758</span><span><a href="https://www.covertchryslerdodgejeepram.com/" target="_blank" rel="noopener">Official Covert site ↗</a> &nbsp; • &nbsp; Sales: <a href="tel:+15125999892">(512) 599-9892</a></span></div></div><main id="main-content" tabindex="-1"><section class="page-hero"><div class="wrap page-grid"><div><div class="eyebrow">Your next drive</div><h1>See Yourself<br><span>in This Car.</span></h1><p class="lead">Picture the daily commute, the weekend trip and the people coming along. Start with a vehicle you like, explore its photos and ask us to help you get behind the wheel. Personalized photo previews are not available yet.</p><div class="hero-actions"><a class="btn" href="#flow">PLAN YOUR NEXT DRIVE →</a><a class="btn ghost" href="inventory.html">BROWSE VEHICLES</a></div></div><div class="driver-preview"><span class="concept-label">SAMPLE ILLUSTRATION</span><div class="seat"></div><img class="ryan-driver" src="assets/ryan.webp" alt="Illustration featuring Ryan Sugrue" width="900" height="730" decoding="async"><div class="wheel"></div><div class="dash"></div><div class="preview-badge"><b>Picture your next drive</b><span>Illustration featuring Ryan Sugrue</span></div></div></div></section><section id="flow" class="section"><div class="wrap"><div class="section-head"><div><div class="eyebrow">From browsing to the driver’s seat</div><h2>Find one you can picture yourself driving.</h2></div><p>Use the vehicle photos to build a shortlist, then see how your favorites feel in person.</p></div><div class="grid-4"><article class="tool-card"><span class="icon">1</span><h3>Choose vehicle</h3><p>Browse new and used vehicles from our 8107 Research Blvd store.</p></article><article class="tool-card"><span class="icon">2</span><h3>Explore the photos</h3><p>Open the official listing for more views of the interior and exterior.</p></article><article class="tool-card"><span class="icon">3</span><h3>Compare your favorites</h3><p>Check listed prices, mileage and window sticker sources side by side.</p></article><article class="tool-card"><span class="icon">4</span><h3>Take the next step</h3><p>Ask about availability and arrange a test drive with Sam or Ryan.</p></article></div></div></section><section class="section light"><div class="wrap"><div class="section-head"><div><div class="eyebrow">What to expect</div><h2>Make sure it fits your life.</h2></div></div><div class="grid-3"><article class="model-card"><div class="copy"><h3>Bring your must-haves</h3><p>Child seats, cargo space, towing needs or a comfortable commute: tell us what your next vehicle needs to do.</p></div></article><article class="model-card"><div class="copy"><h3>Try the real thing</h3><p>A photo can start your search. A test drive helps you check comfort, visibility and the features you’ll use every day.</p></div></article><article class="model-card"><div class="copy"><h3>Talk to us when you’re ready</h3><p>Browsing this preview does not sign you up for messages. Contact Sam or Ryan to ask about a vehicle.</p></div></article></div></div></section><section class="section"><div class="wrap"><div class="hero-actions"><a class="btn" href="inventory.html">FIND YOUR VEHICLE →</a><a class="btn ghost" href="contact.html">ASK ABOUT A TEST DRIVE</a></div><p class="stock-small">The illustration above features Ryan. Customer photo uploads and AI-generated previews are not active.</p></div></section></main><footer class="footer"><div class="wrap footer-inner">
+    </div></header><div class="affiliation-bar"><div class="wrap affiliation-inner"><span><strong>Visit us at:</strong> Covert Chrysler Dodge Jeep Ram of Austin • 8107 Research Blvd, Austin, TX 78758</span><span><a href="https://www.covertchryslerdodgejeepram.com/" target="_blank" rel="noopener">Official Covert site ↗</a> &nbsp; • &nbsp; Sales: <a href="tel:+15125999892">(512) 599-9892</a></span></div></div>
+
+<main id="main-content" tabindex="-1">
+<section class="page-hero"><div class="wrap"><div class="eyebrow">Your next drive</div><h1>See Yourself<br><span>in This Car.</span></h1><p class="lead">Upload a selfie, pick a vehicle, and place yourself behind the wheel — right in your browser. Nothing is uploaded to a server; the whole thing runs on your device.</p></div></section>
+
+<section class="section"><div class="wrap sy-wrap">
+  <div class="sy-steps">
+    <div class="sy-step-pill" data-step-pill="1">1. Pick a vehicle</div>
+    <div class="sy-step-pill" data-step-pill="2">2. Upload a selfie</div>
+    <div class="sy-step-pill" data-step-pill="3">3. Crop your face</div>
+    <div class="sy-step-pill" data-step-pill="4">4. Place yourself</div>
+  </div>
+
+  <!-- STEP 1: pick vehicle -->
+  <div class="sy-panel" data-step="1">
+    <h2>Pick a vehicle</h2>
+    <p class="sy-sub">Choose one of our vehicle photos, or upload your own.</p>
+    <div class="sy-car-grid" id="syCarGrid"></div>
+    <div class="sy-upload-row">
+      <label class="sy-filebtn">📷 Upload a car photo instead<input type="file" accept="image/*" id="syCarUpload"></label>
+    </div>
+    <p class="sy-hint" id="syCarHint">Loading current inventory photos…</p>
+  </div>
+
+  <!-- STEP 2: selfie upload -->
+  <div class="sy-panel" data-step="2" hidden>
+    <h2>Upload a selfie</h2>
+    <p class="sy-sub">A clear, front-facing photo works best.</p>
+    <div class="sy-upload-row">
+      <label class="sy-filebtn">🤳 Choose a selfie<input type="file" accept="image/*" capture="user" id="sySelfieUpload"></label>
+      <button class="btn ghost" type="button" data-back="1">← Back</button>
+    </div>
+  </div>
+
+  <!-- STEP 3: crop face -->
+  <div class="sy-panel" data-step="3" hidden>
+    <h2>Crop your face</h2>
+    <p class="sy-sub">Drag the oval to cover your face, drag the corner handle to resize it.</p>
+    <div class="sy-canvas-shell"><canvas id="syCropCanvas"></canvas></div>
+    <div class="sy-actions">
+      <button class="btn ghost" type="button" data-back="2">← Back</button>
+      <button class="btn" type="button" id="syCropNext">Looks good →</button>
+    </div>
+  </div>
+
+  <!-- STEP 4: place yourself -->
+  <div class="sy-panel" data-step="4" hidden>
+    <h2>Place yourself in the car</h2>
+    <p class="sy-sub">Drag your face onto the driver's seat, then fine-tune with the sliders below.</p>
+    <div class="sy-canvas-shell"><canvas id="sySceneCanvas"></canvas></div>
+    <div class="sy-controls">
+      <div><label for="sySize">Size</label><input type="range" id="sySize" min="40" max="220" value="100"></div>
+      <div><label for="syRotate">Tilt</label><input type="range" id="syRotate" min="-45" max="45" value="0"></div>
+      <div><label for="syBrightness">Brightness match</label><input type="range" id="syBrightness" min="60" max="140" value="100"></div>
+      <div><label for="syBlend">Blend into shadow</label><input type="range" id="syBlend" min="0" max="80" value="20"></div>
+    </div>
+    <div class="sy-actions">
+      <button class="btn ghost" type="button" data-back="3">← Back</button>
+      <button class="btn" type="button" id="syFinish">Get my photo →</button>
+      <button class="btn ghost" type="button" id="syAiButton">✨ Try AI-enhanced photo</button>
+    </div>
+    <p class="sy-hint" id="syAiStatus"></p>
+    <div class="sy-note" id="syTaintWarning" hidden>Heads up: this vehicle photo is hosted somewhere that doesn't allow saving the final image directly (a browser security rule). Pick one of our sample photos above, or upload your own car photo, to be able to download the result or try the AI-enhanced version.</div>
+  </div>
+
+  <!-- RESULT -->
+  <div class="sy-panel sy-result" data-step="5" hidden>
+    <h2>Here's you, behind the wheel.</h2>
+    <p class="sy-sub">Download it, share it, or start over with a different vehicle.</p>
+    <p class="sy-hint" id="syResultBadge"></p>
+    <img id="syResultImg" alt="Preview of you in the selected vehicle">
+    <div class="sy-actions">
+      <button class="btn" type="button" id="syDownload">Download photo</button>
+      <button class="btn ghost" type="button" id="syShare" hidden>Share</button>
+      <button class="btn ghost" type="button" data-back="4">← Adjust again</button>
+      <button class="btn ghost" type="button" id="syRestart">Start over</button>
+    </div>
+    <a class="btn" style="margin-top:16px;display:inline-block" href="contact.html">Ask about this vehicle →</a>
+  </div>
+
+  <p class="sy-fineprint">This is a quick, just-for-fun preview built entirely in your browser — no photo is uploaded to any server, and nothing is saved unless you tap Download. It's a rough placement tool, not a professional photo edit, and isn't meant to represent exact vehicle color, trim or lighting. Please confirm real vehicle details with Sam or Ryan before you decide.</p>
+</div></section>
+</main>
+
+<footer class="footer"><div class="wrap footer-inner">
       <div><strong>Sam + Ryan</strong><br>Cars & Straight Answers • Austin, Texas</div>
       <div class="footer-links"><a href="used-inventory.html">Store used inventory</a><a href="inventory.html">Inventory</a><a href="find-my-car.html">Find My Car</a><a href="compare.html">Compare</a><a href="car-watch.html">Shopping wishlist</a><a href="reviews.html">Reviews</a><a href="sources.html">About our listings</a></div>
-      <div class="footer-note">An independent shopping site from Samuel “Sam” Sweitzer and Ryan Sugrue, sales consultants at Covert CDJR Austin. Please confirm current pricing, availability and equipment before visiting. This is not the official dealership website.</div>
-    </div></footer><div class="sticky-mobile"><a href="find-my-car.html">Find My Car</a><a href="contact.html">Ask Us</a></div><script src="app.js"></script></body></html>
+      <div class="footer-note">An independent shopping site from Samuel "Sam" Sweitzer and Ryan Sugrue, sales consultants at Covert CDJR Austin. Please confirm current pricing, availability and equipment before visiting. This is not the official dealership website.</div>
+    </div></footer><div class="sticky-mobile"><a href="find-my-car.html">Find My Car</a><a href="contact.html">Ask Us</a></div>
+<script src="app.js"></script>
+<script>
+(function(){
+  'use strict';
+
+  // ---------- state ----------
+  var state = {
+    carImg: null,        // HTMLImageElement, currently selected vehicle photo
+    carTainted: false,   // true if carImg came from a cross-origin source without CORS
+    selfieImg: null,      // HTMLImageElement, raw selfie
+    faceCutout: null,     // HTMLCanvasElement, feathered oval face cutout
+    face: { x: 0.5, y: 0.55, scale: 1, rotate: 0 }, // normalized position on scene canvas (0-1) + controls
+    aiResultDataUrl: null  // set when the AI-enhanced version succeeds; takes priority for download/share
+  };
+
+  // Renders any loaded, same-origin (non-tainted) HTMLImageElement to a data URL.
+  // Throws if the image is cross-origin without CORS headers (canvas is "tainted").
+  function imageToDataUrl(img, mime, quality){
+    var c = document.createElement('canvas');
+    c.width = img.naturalWidth; c.height = img.naturalHeight;
+    c.getContext('2d').drawImage(img, 0, 0);
+    return c.toDataURL(mime || 'image/jpeg', quality || 0.9);
+  }
+
+  function $(sel){ return document.querySelector(sel); }
+  function $all(sel){ return Array.prototype.slice.call(document.querySelectorAll(sel)); }
+
+  function showStep(n){
+    $all('[data-step]').forEach(function(p){ p.hidden = (p.getAttribute('data-step') !== String(n)); });
+    $all('[data-step-pill]').forEach(function(p){
+      var s = Number(p.getAttribute('data-step-pill'));
+      p.classList.toggle('is-active', s === n);
+      p.classList.toggle('is-done', s < n);
+    });
+    if(n === 3) requestAnimationFrame(initCropCanvas);
+    if(n === 4) requestAnimationFrame(initSceneCanvas);
+  }
+  $all('[data-back]').forEach(function(btn){
+    btn.addEventListener('click', function(){ showStep(Number(btn.getAttribute('data-back'))); });
+  });
+
+  // ---------- Step 1: vehicle photo ----------
+  var carGrid = $('#syCarGrid'), carHint = $('#syCarHint');
+  var sampleCars = [
+    { title: 'Jeep Grand Cherokee (sample)', url: 'assets/grandcherokee.webp' },
+    { title: 'Ram 1500 (sample)', url: 'assets/ram1500.webp' }
+  ];
+
+  function loadImage(url, crossOrigin){
+    return new Promise(function(resolve, reject){
+      var img = new Image();
+      if(crossOrigin) img.crossOrigin = 'anonymous';
+      img.onload = function(){ resolve(img); };
+      img.onerror = function(){ reject(new Error('image failed to load: ' + url)); };
+      img.src = url;
+    });
+  }
+
+  function selectCar(img, tainted, cardEl){
+    state.carImg = img;
+    state.carTainted = !!tainted;
+    $all('.sy-car-opt').forEach(function(el){ el.classList.remove('is-selected'); });
+    if(cardEl) cardEl.classList.add('is-selected');
+    showStep(2);
+  }
+
+  function addCarOption(title, url, tainted){
+    var btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'sy-car-opt';
+    btn.innerHTML = '<img src="' + url + '" alt="" loading="lazy"><span></span>';
+    btn.querySelector('span').textContent = title;
+    btn.addEventListener('click', function(){
+      loadImage(url, tainted).then(function(img){ selectCar(img, tainted, btn); })
+        .catch(function(){ carHint.textContent = 'Could not load that photo — try another.'; });
+    });
+    carGrid.appendChild(btn);
+  }
+
+  // always offer the two bundled sample photos (same-origin, always downloadable)
+  sampleCars.forEach(function(c){ addCarOption(c.title, c.url, false); });
+
+  // try to pull a few real inventory photos too, if the refresh pipeline has populated data
+  try {
+    var vehicles = (window.usedInventoryData && window.usedInventoryData.vehicles) || [];
+    var withPhotos = vehicles.filter(function(v){ return v.photoUrl; }).slice(0, 6);
+    if(withPhotos.length){
+      withPhotos.forEach(function(v){ addCarOption(v.title, v.photoUrl, true); });
+      carHint.textContent = 'Real inventory photos may take a moment to save — external photos may not be downloadable (see note in step 4).';
+    } else {
+      carHint.textContent = 'Live inventory photos aren\'t available right now — use a sample above, or upload your own.';
+    }
+  } catch(e){
+    carHint.textContent = 'Use a sample photo above, or upload your own.';
+  }
+
+  $('#syCarUpload').addEventListener('change', function(e){
+    var file = e.target.files && e.target.files[0];
+    if(!file) return;
+    var url = URL.createObjectURL(file);
+    loadImage(url, false).then(function(img){ selectCar(img, false, null); });
+  });
+
+  // ---------- Step 2: selfie upload ----------
+  $('#sySelfieUpload').addEventListener('change', function(e){
+    var file = e.target.files && e.target.files[0];
+    if(!file) return;
+    var url = URL.createObjectURL(file);
+    loadImage(url, false).then(function(img){
+      state.selfieImg = img;
+      showStep(3);
+    });
+  });
+
+  // ---------- Step 3: crop face (oval selection on selfie) ----------
+  var cropCanvas = $('#syCropCanvas'), cropCtx = cropCanvas.getContext('2d');
+  var crop = { cx: 0, cy: 0, rx: 0, ry: 0 }; // in canvas pixel space
+  var cropDrag = null; // 'move' | 'resize' | null
+
+  function initCropCanvas(){
+    if(!state.selfieImg) return;
+    var img = state.selfieImg;
+    var maxW = cropCanvas.parentElement.clientWidth || 600;
+    var scale = Math.min(1, maxW / img.naturalWidth);
+    cropCanvas.width = Math.round(img.naturalWidth * scale);
+    cropCanvas.height = Math.round(img.naturalHeight * scale);
+    crop.cx = cropCanvas.width / 2;
+    crop.cy = cropCanvas.height * 0.42;
+    crop.rx = cropCanvas.width * 0.22;
+    crop.ry = cropCanvas.height * 0.16;
+    drawCrop();
+  }
+
+  function drawCrop(){
+    var img = state.selfieImg;
+    cropCtx.clearRect(0, 0, cropCanvas.width, cropCanvas.height);
+    cropCtx.drawImage(img, 0, 0, cropCanvas.width, cropCanvas.height);
+    // dim outside the oval
+    cropCtx.save();
+    cropCtx.fillStyle = 'rgba(3,5,8,.55)';
+    cropCtx.beginPath();
+    cropCtx.rect(0, 0, cropCanvas.width, cropCanvas.height);
+    cropCtx.ellipse(crop.cx, crop.cy, crop.rx, crop.ry, 0, 0, Math.PI * 2, true);
+    cropCtx.fill('evenodd');
+    cropCtx.restore();
+    // oval outline
+    cropCtx.strokeStyle = '#e21d2d';
+    cropCtx.lineWidth = 2;
+    cropCtx.beginPath();
+    cropCtx.ellipse(crop.cx, crop.cy, crop.rx, crop.ry, 0, 0, Math.PI * 2);
+    cropCtx.stroke();
+    // resize handle (bottom-right of bounding box)
+    var hx = crop.cx + crop.rx * Math.SQRT1_2, hy = crop.cy + crop.ry * Math.SQRT1_2;
+    cropCtx.fillStyle = '#e21d2d';
+    cropCtx.beginPath();
+    cropCtx.arc(hx, hy, 9, 0, Math.PI * 2);
+    cropCtx.fill();
+    cropCtx.strokeStyle = '#fff';
+    cropCtx.lineWidth = 2;
+    cropCtx.stroke();
+  }
+
+  function canvasPoint(canvas, evt){
+    var rect = canvas.getBoundingClientRect();
+    var sx = canvas.width / rect.width, sy = canvas.height / rect.height;
+    var cx = (evt.touches ? evt.touches[0].clientX : evt.clientX) - rect.left;
+    var cy = (evt.touches ? evt.touches[0].clientY : evt.clientY) - rect.top;
+    return { x: cx * sx, y: cy * sy };
+  }
+
+  cropCanvas.addEventListener('pointerdown', function(e){
+    var p = canvasPoint(cropCanvas, e);
+    var hx = crop.cx + crop.rx * Math.SQRT1_2, hy = crop.cy + crop.ry * Math.SQRT1_2;
+    if(Math.hypot(p.x - hx, p.y - hy) < 18){
+      cropDrag = { mode: 'resize' };
+    } else {
+      cropDrag = { mode: 'move', dx: p.x - crop.cx, dy: p.y - crop.cy };
+    }
+    cropCanvas.setPointerCapture(e.pointerId);
+  });
+  cropCanvas.addEventListener('pointermove', function(e){
+    if(!cropDrag) return;
+    var p = canvasPoint(cropCanvas, e);
+    if(cropDrag.mode === 'move'){
+      crop.cx = Math.max(0, Math.min(cropCanvas.width, p.x - cropDrag.dx));
+      crop.cy = Math.max(0, Math.min(cropCanvas.height, p.y - cropDrag.dy));
+    } else {
+      crop.rx = Math.max(20, Math.abs(p.x - crop.cx));
+      crop.ry = Math.max(20, Math.abs(p.y - crop.cy));
+    }
+    drawCrop();
+  });
+  ['pointerup', 'pointercancel', 'pointerleave'].forEach(function(evtName){
+    cropCanvas.addEventListener(evtName, function(){ cropDrag = null; });
+  });
+
+  $('#syCropNext').addEventListener('click', function(){
+    extractFaceCutout();
+    showStep(4);
+  });
+
+  function extractFaceCutout(){
+    var img = state.selfieImg;
+    var scaleX = img.naturalWidth / cropCanvas.width, scaleY = img.naturalHeight / cropCanvas.height;
+    var srcCx = crop.cx * scaleX, srcCy = crop.cy * scaleY;
+    var srcRx = crop.rx * scaleX, srcRy = crop.ry * scaleY;
+    var w = Math.round(srcRx * 2), h = Math.round(srcRy * 2);
+
+    var raw = document.createElement('canvas'); raw.width = w; raw.height = h;
+    var rawCtx = raw.getContext('2d');
+    rawCtx.drawImage(img, srcCx - srcRx, srcCy - srcRy, w, h, 0, 0, w, h);
+
+    // feathered oval alpha mask
+    var mask = document.createElement('canvas'); mask.width = w; mask.height = h;
+    var maskCtx = mask.getContext('2d');
+    var grad = maskCtx.createRadialGradient(w/2, h/2, Math.min(w,h)*0.32, w/2, h/2, Math.min(w,h)*0.5);
+    grad.addColorStop(0, 'rgba(255,255,255,1)');
+    grad.addColorStop(1, 'rgba(255,255,255,0)');
+    maskCtx.save();
+    maskCtx.beginPath();
+    maskCtx.ellipse(w/2, h/2, w/2, h/2, 0, 0, Math.PI*2);
+    maskCtx.clip();
+    maskCtx.fillStyle = grad;
+    maskCtx.fillRect(0, 0, w, h);
+    maskCtx.restore();
+
+    rawCtx.globalCompositeOperation = 'destination-in';
+    rawCtx.drawImage(mask, 0, 0);
+
+    state.faceCutout = raw;
+  }
+
+  // ---------- Step 4: place face on vehicle scene ----------
+  var sceneCanvas = $('#sySceneCanvas'), sceneCtx = sceneCanvas.getContext('2d');
+  var sceneDrag = null;
+  var sizeInput = $('#sySize'), rotateInput = $('#syRotate'), brightnessInput = $('#syBrightness'), blendInput = $('#syBlend');
+  var taintWarning = $('#syTaintWarning');
+
+  function initSceneCanvas(){
+    if(!state.carImg) return;
+    var img = state.carImg;
+    var maxW = sceneCanvas.parentElement.clientWidth || 700;
+    var ratio = img.naturalHeight / img.naturalWidth;
+    sceneCanvas.width = maxW;
+    sceneCanvas.height = Math.round(maxW * ratio);
+    taintWarning.hidden = !state.carTainted;
+    drawScene();
+  }
+
+  function baseFaceSize(){
+    // base (unscaled) face box, relative to canvas size
+    var w = sceneCanvas.width * 0.20;
+    var cutout = state.faceCutout;
+    var ar = cutout ? cutout.width / cutout.height : 0.85;
+    return { w: w, h: w / ar };
+  }
+
+  function drawScene(){
+    if(!state.carImg) return;
+    sceneCtx.clearRect(0, 0, sceneCanvas.width, sceneCanvas.height);
+    sceneCtx.drawImage(state.carImg, 0, 0, sceneCanvas.width, sceneCanvas.height);
+
+    if(!state.faceCutout) return;
+    var base = baseFaceSize();
+    var scale = (Number(sizeInput.value) || 100) / 100;
+    var w = base.w * scale, h = base.h * scale;
+    var cx = state.face.x * sceneCanvas.width;
+    var cy = state.face.y * sceneCanvas.height;
+    var rot = (Number(rotateInput.value) || 0) * Math.PI / 180;
+    var brightness = (Number(brightnessInput.value) || 100) / 100;
+    var blend = (Number(blendInput.value) || 0) / 100;
+
+    sceneCtx.save();
+    sceneCtx.translate(cx, cy);
+    sceneCtx.rotate(rot);
+    sceneCtx.filter = 'brightness(' + brightness + ')';
+    sceneCtx.drawImage(state.faceCutout, -w/2, -h/2, w, h);
+    if(blend > 0){
+      sceneCtx.filter = 'none';
+      sceneCtx.globalAlpha = blend;
+      sceneCtx.fillStyle = '#0a0e13';
+      sceneCtx.beginPath();
+      sceneCtx.ellipse(0, 0, w/2, h/2, 0, 0, Math.PI*2);
+      sceneCtx.fill();
+    }
+    sceneCtx.restore();
+
+    // subtle handle so it's clear it's draggable
+    sceneCtx.save();
+    sceneCtx.strokeStyle = 'rgba(255,255,255,.55)';
+    sceneCtx.lineWidth = 1.5;
+    sceneCtx.setLineDash([5,4]);
+    sceneCtx.translate(cx, cy);
+    sceneCtx.rotate(rot);
+    sceneCtx.strokeRect(-w/2, -h/2, w, h);
+    sceneCtx.restore();
+  }
+
+  [sizeInput, rotateInput, brightnessInput, blendInput].forEach(function(input){
+    input.addEventListener('input', drawScene);
+  });
+
+  function inFaceBox(px, py){
+    var base = baseFaceSize();
+    var scale = (Number(sizeInput.value) || 100) / 100;
+    var w = base.w * scale, h = base.h * scale;
+    var cx = state.face.x * sceneCanvas.width, cy = state.face.y * sceneCanvas.height;
+    var rot = -(Number(rotateInput.value) || 0) * Math.PI / 180;
+    var dx = px - cx, dy = py - cy;
+    var lx = dx * Math.cos(rot) - dy * Math.sin(rot);
+    var ly = dx * Math.sin(rot) + dy * Math.cos(rot);
+    return Math.abs(lx) <= w/2 && Math.abs(ly) <= h/2;
+  }
+
+  sceneCanvas.addEventListener('pointerdown', function(e){
+    var p = canvasPoint(sceneCanvas, e);
+    if(inFaceBox(p.x, p.y)){
+      sceneDrag = {
+        offX: p.x - state.face.x * sceneCanvas.width,
+        offY: p.y - state.face.y * sceneCanvas.height
+      };
+      sceneCanvas.setPointerCapture(e.pointerId);
+    }
+  });
+  sceneCanvas.addEventListener('pointermove', function(e){
+    if(!sceneDrag) return;
+    var p = canvasPoint(sceneCanvas, e);
+    state.face.x = Math.max(0, Math.min(1, (p.x - sceneDrag.offX) / sceneCanvas.width));
+    state.face.y = Math.max(0, Math.min(1, (p.y - sceneDrag.offY) / sceneCanvas.height));
+    drawScene();
+  });
+  ['pointerup','pointercancel','pointerleave'].forEach(function(evtName){
+    sceneCanvas.addEventListener(evtName, function(){ sceneDrag = null; });
+  });
+
+  // ---------- finish / export ----------
+  var resultBadge = $('#syResultBadge');
+
+  $('#syFinish').addEventListener('click', function(){
+    state.aiResultDataUrl = null;
+    var resultImg = $('#syResultImg');
+    try {
+      var dataUrl = sceneCanvas.toDataURL('image/png');
+      resultImg.src = dataUrl;
+      $('#syDownload').disabled = false;
+      $('#syDownload').textContent = 'Download photo';
+      resultBadge.textContent = 'Free instant preview';
+    } catch(err){
+      // canvas is "tainted" by a cross-origin image without CORS headers
+      resultImg.removeAttribute('src');
+      resultImg.alt = 'Preview unavailable for download — see note below.';
+      $('#syDownload').disabled = true;
+      $('#syDownload').textContent = 'Download unavailable for this photo';
+      resultBadge.textContent = '';
+    }
+    if(navigator.share && !state.carTainted){
+      $('#syShare').hidden = false;
+    } else {
+      $('#syShare').hidden = true;
+    }
+    showStep(5);
+  });
+
+  $('#syDownload').addEventListener('click', function(){
+    var link = document.createElement('a');
+    link.download = 'see-yourself.png';
+    link.href = state.aiResultDataUrl || sceneCanvas.toDataURL('image/png');
+    link.click();
+  });
+
+  $('#syShare').addEventListener('click', function(){
+    if(state.aiResultDataUrl){
+      fetch(state.aiResultDataUrl).then(function(r){ return r.blob(); }).then(shareBlob);
+      return;
+    }
+    sceneCanvas.toBlob(function(blob){ shareBlob(blob); }, 'image/png');
+  });
+
+  function shareBlob(blob){
+    if(!blob) return;
+    var file = new File([blob], 'see-yourself.png', { type: 'image/png' });
+    if(navigator.canShare && navigator.canShare({ files: [file] })){
+      navigator.share({ files: [file], title: 'See myself in this car' }).catch(function(){});
+    }
+  }
+
+  // ---------- AI-enhanced version (paid, budget-capped server side) ----------
+  var aiButton = $('#syAiButton'), aiStatus = $('#syAiStatus');
+
+  aiButton.addEventListener('click', function(){
+    if(state.carTainted){
+      aiStatus.textContent = 'Pick a sample photo or upload your own car photo to use the AI-enhanced version.';
+      return;
+    }
+    var selfieDataUrl, carDataUrl;
+    try {
+      selfieDataUrl = imageToDataUrl(state.selfieImg, 'image/jpeg', 0.9);
+      carDataUrl = imageToDataUrl(state.carImg, 'image/jpeg', 0.9);
+    } catch(err){
+      aiStatus.textContent = "Couldn't prepare these photos for the AI-enhanced version — try the free version instead.";
+      return;
+    }
+
+    aiButton.disabled = true;
+    aiStatus.textContent = 'Generating your photo… this can take 10–20 seconds.';
+
+    fetch('/api/see-yourself', {
+      method: 'POST',
+      headers: { 'content-type': 'application/json' },
+      body: JSON.stringify({ selfie: selfieDataUrl, carPhoto: carDataUrl, vehicleTitle: (document.querySelector('.sy-car-opt.is-selected span') || {}).textContent })
+    }).then(function(res){
+      return res.json().then(function(body){ return { ok: res.ok, body: body }; });
+    }).then(function(result){
+      aiButton.disabled = false;
+      if(!result.ok){
+        if(result.body && result.body.error === 'budget_exceeded'){
+          aiStatus.textContent = "We've hit this month's limit for AI-enhanced previews — here's the free instant version instead.";
+        } else if(result.body && result.body.error === 'not_configured'){
+          aiStatus.textContent = 'The AI-enhanced version isn\'t turned on for this site yet — here\'s the free instant version.';
+        } else {
+          aiStatus.textContent = "That didn't work — here's the free instant version instead.";
+        }
+        $('#syFinish').click();
+        return;
+      }
+      state.aiResultDataUrl = result.body.image;
+      var resultImg = $('#syResultImg');
+      resultImg.src = result.body.image;
+      resultImg.alt = 'AI-enhanced preview of you in the selected vehicle';
+      $('#syDownload').disabled = false;
+      $('#syDownload').textContent = 'Download photo';
+      resultBadge.textContent = '✨ AI-enhanced preview';
+      $('#syShare').hidden = !navigator.share;
+      aiStatus.textContent = '';
+      showStep(5);
+    }).catch(function(){
+      aiButton.disabled = false;
+      aiStatus.textContent = "Couldn't reach the AI-enhanced version — here's the free instant version instead.";
+      $('#syFinish').click();
+    });
+  });
+
+  $('#syRestart').addEventListener('click', function(){
+    state.selfieImg = null;
+    state.faceCutout = null;
+    state.aiResultDataUrl = null;
+    state.face = { x: 0.5, y: 0.55, scale: 1, rotate: 0 };
+    sizeInput.value = 100; rotateInput.value = 0; brightnessInput.value = 100; blendInput.value = 20;
+    aiStatus.textContent = '';
+    showStep(1);
+  });
+
+  window.addEventListener('resize', function(){
+    if(!$('[data-step="3"]').hidden) initCropCanvas();
+    if(!$('[data-step="4"]').hidden) initSceneCanvas();
+  });
+
+  showStep(1);
+})();
+</script>
+</body></html>
