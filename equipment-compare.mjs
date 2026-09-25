@@ -53,11 +53,6 @@ function render(){
 }
 
 document.addEventListener('compare:changed',render);
-// Start with two readable stickers pre-populated when the shopper hasn't brought a selected vehicle.
-const available=vehicles.filter(v=>index.records[v.vin]?.status==='verified');
-if(!new URLSearchParams(location.search).has('vehicle')&&available.length>1){
- const c1=$('choose-1'),c2=$('choose-2');
- if(c1&&!c1.value){c1.value=available[0].vin;c1.dispatchEvent(new Event('change'))}
- if(c2&&(!c2.value||c2.value===c1.value)){const alt=available.find(v=>v.vin!==c1.value)||available[1];if(alt){c2.value=alt.vin;c2.dispatchEvent(new Event('change'))}}
-}
+// Nothing is pre-populated here — sticker-compare.mjs only fills a slot from an explicit
+// ?vehicle=/?vehicles= link or a shopper's own dropdown/stock-VIN lookup.
 render();
