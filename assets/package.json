@@ -1,0 +1,17 @@
+{
+  "name": "sam-ryan-inventory-refresh",
+  "private": true,
+  "type": "module",
+  "description": "Unattended inventory + window-sticker refresh pipeline for the Sam + Ryan site (Covert CDJR Austin, store 18393). Runs on a GitHub Actions schedule instead of requiring a local computer/app session to stay on.",
+  "scripts": {
+    "refresh": "node scripts/refresh/refresh.mjs",
+    "refresh:fetch-inventory": "node scripts/refresh/fetchInventory.mjs",
+    "refresh:fetch-stickers": "node scripts/refresh/fetchStickers.mjs"
+  },
+  "dependencies": {
+    "unpdf": "^0.12.1"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
