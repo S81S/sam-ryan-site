@@ -1,9 +1,64 @@
 const vehicles=window.usedInventoryData.vehicles.filter(v=>v.locationId==='18393');
+const SIDES=['1','2','3','4','5'];
 const $=id=>document.getElementById(id), urls={};
 const cash=n=>n===null?'Not listed':new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(n);
 function vehicle(side){return vehicles.find(v=>v.vin===$('choose-'+side).value)}
-function reset(side){const v=vehicle(side);const photo=$('vehicle-photo-'+side);photo.hidden=!v.photoUrl;photo.alt=v.title+' — stock '+v.stock;photo.onerror=()=>{photo.hidden=true};if(v.photoUrl)photo.src=v.photoUrl;else photo.removeAttribute('src');if(urls[side]){URL.revokeObjectURL(urls[side]);delete urls[side]}$('pdf-'+side).removeAttribute('src');$('pdf-'+side).hidden=true;$('file-'+side).value='';$('text-'+side).value='';$('file-status-'+side).textContent='No local PDF selected.';$('summary-'+side).textContent=`${v.title} · ${cash(v.price)} observed · ${v.miles===null?'Mileage unknown':v.miles.toLocaleString()+' miles'} · Stock ${v.stock} · VIN ${v.vin}`;$('listing-'+side).href=v.sourceUrl;$('sticker-'+side).hidden=!v.carfaxUrl&&!v.stickerUrl;$('sticker-'+side).href=v.stickerUrl||v.carfaxUrl||v.sourceUrl;$('sticker-'+side).textContent=v.stickerUrl?'Open original window sticker ↗':'Open CARFAX → Original Window Sticker ↗';$('lookup-note-'+side).textContent=v.stickerUrl?'Direct sticker link found in the Covert-linked CARFAX report. Confirm the VIN on the document. If the link expires, open the official listing and CARFAX again.':v.carfaxUrl?'Open the Covert-provided CARFAX report, then choose Original Window Sticker. A direct sticker link has not yet been checked for this vehicle.':'No CARFAX/sticker link captured for this vehicle. Open its official listing to check, or load your PDF.';$('pdf-link-'+side).hidden=true;$('pdf-link-'+side).removeAttribute('href');$('diff').replaceChildren();}
-for(const side of ['a','b']){for(const v of vehicles){const o=document.createElement('option');o.value=v.vin;o.textContent=`${v.title} — ${v.stock}`;$('choose-'+side).append(o)}$('choose-'+side).selectedIndex=side==='a'?0:Math.min(1,vehicles.length-1);$('choose-'+side).addEventListener('change',()=>reset(side));$('file-'+side).addEventListener('change',async e=>{const f=e.target.files[0];if(!f)return;const selectedVIN=vehicle(side).vin;try{if(f.size>20*1024*1024)throw new Error('Choose a PDF smaller than 20 MB');const signature=new TextDecoder().decode(await f.slice(0,5).arrayBuffer());if(vehicle(side).vin!==selectedVIN||e.target.files[0]!==f)return;if(vehicle(side).vin!==selectedVIN||e.target.files[0]!==f)return;if(signature!=='%PDF-')throw new Error('This is not a PDF file');if(urls[side])URL.revokeObjectURL(urls[side]);urls[side]=URL.createObjectURL(f);$('pdf-'+side).src=urls[side];$('pdf-'+side).hidden=false;$('pdf-link-'+side).href=urls[side];$('pdf-link-'+side).hidden=false;$('file-status-'+side).textContent=`${f.name} opened locally. Confirm it shows VIN ${vehicle(side).vin}. The file is not uploaded and its VIN has not been automatically verified.`}catch(err){$('file-status-'+side).textContent=err.message}});reset(side)}
-const params=new URLSearchParams(location.search);if(vehicles.some(v=>v.vin===params.get('vehicle'))){$('choose-a').value=params.get('vehicle');reset('a')}
-$('compare-stickers').addEventListener('click',()=>{const a=vehicle('a'),b=vehicle('b');const out=$('diff');out.replaceChildren();const paragraph=t=>{const p=document.createElement('p');p.textContent=t;out.append(p)};if(a.vin===b.vin){paragraph('Choose two different vehicles.');return}paragraph(`Observed sale prices: A ${cash(a.price)} · B ${cash(b.price)}${a.price!==null&&b.price!==null?' · Difference '+cash(Math.abs(a.price-b.price)):''}. Confirm current prices and fees.`);const ta=$('text-a').value,tb=$('text-b').value;if(!ta.trim()||!tb.trim()){paragraph('Open both stickers above. For a text comparison, paste text from each sticker, including its VIN. Missing equipment remains unconfirmed.');return}if(!ta.toUpperCase().replace(/[^A-Z0-9]/g,'').includes(a.vin)||!tb.toUpperCase().replace(/[^A-Z0-9]/g,'').includes(b.vin)){paragraph('VIN mismatch or missing VIN in pasted text. Paste each sticker’s text including the selected vehicle’s VIN before comparing.');return}const lines=t=>[...new Set(t.split(/\r?\n/).map(x=>x.trim()).filter(x=>x.length>2))];const aa=lines(ta),bb=lines(tb),norm=t=>t.toLowerCase().replace(/\s+/g,' ');const na=new Set(aa.map(norm)),nb=new Set(bb.map(norm));for(const [title,items]of [['Text present in both',aa.filter(x=>nb.has(norm(x)))],['Text only in A',aa.filter(x=>!nb.has(norm(x)))],['Text only in B',bb.filter(x=>!na.has(norm(x)))]]){const h=document.createElement('h3');h.textContent=title;out.append(h);const ul=document.createElement('ul');for(const text of items.slice(0,300)){const li=document.createElement('li');li.textContent=text;ul.append(li)}out.append(ul)}paragraph('This compares pasted text, not verified installed equipment. Different wording or missing lines do not prove a feature is absent. Original MSRP is not the current used-vehicle selling price.');});
+function reset(side){
+ const v=vehicle(side);
+ const photo=$('vehicle-photo-'+side);
+ if(!v){photo.hidden=true;photo.removeAttribute('src');$('summary-'+side).textContent='';$('listing-'+side).hidden=true;$('listing-'+side).removeAttribute('href');$('sticker-'+side).hidden=true;$('sticker-'+side).removeAttribute('href');$('lookup-note-'+side).textContent='';if(urls[side]){URL.revokeObjectURL(urls[side]);delete urls[side]}$('pdf-'+side).removeAttribute('src');$('pdf-'+side).hidden=true;$('file-'+side).value='';$('file-status-'+side).textContent='No local PDF selected.';$('pdf-link-'+side).hidden=true;$('pdf-link-'+side).removeAttribute('href');document.dispatchEvent(new CustomEvent('compare:changed'));return}
+ photo.hidden=!v.photoUrl;photo.alt=v.title+' — stock '+v.stock;photo.onerror=()=>{photo.hidden=true};if(v.photoUrl)photo.src=v.photoUrl;else photo.removeAttribute('src');
+ if(urls[side]){URL.revokeObjectURL(urls[side]);delete urls[side]}
+ $('pdf-'+side).removeAttribute('src');$('pdf-'+side).hidden=true;$('file-'+side).value='';$('file-status-'+side).textContent='No local PDF selected.';
+ $('summary-'+side).textContent=`${v.title} · ${cash(v.price)} observed · ${v.miles===null?'Mileage unknown':v.miles.toLocaleString()+' miles'} · Stock ${v.stock} · VIN ${v.vin}`;
+ $('listing-'+side).hidden=false;$('listing-'+side).href=v.sourceUrl;
+ $('sticker-'+side).hidden=!v.carfaxUrl&&!v.stickerUrl;$('sticker-'+side).href=v.stickerUrl||v.carfaxUrl||v.sourceUrl;$('sticker-'+side).textContent=v.stickerUrl?'Open original window sticker ↗':'Open CARFAX → Original Window Sticker ↗';
+ $('lookup-note-'+side).textContent=v.stickerUrl?'Direct sticker link found in the Covert-linked CARFAX report. Confirm the VIN on the document. If the link expires, open the official listing and CARFAX again.':v.carfaxUrl?'Open the Covert-provided CARFAX report, then choose Original Window Sticker. A direct sticker link has not yet been checked for this vehicle.':'No CARFAX/sticker link captured for this vehicle. Open its official listing to check, or load your PDF.';
+ $('pdf-link-'+side).hidden=true;$('pdf-link-'+side).removeAttribute('href');
+ document.dispatchEvent(new CustomEvent('compare:changed'));
+}
+for(const side of SIDES){
+ const opts=document.createDocumentFragment();
+ for(const v of vehicles){const o=document.createElement('option');o.value=v.vin;o.textContent=`${v.title} — ${v.stock}`;opts.append(o)}
+ $('choose-'+side).append(opts);
+ $('choose-'+side).value='';
+ $('choose-'+side).addEventListener('change',()=>reset(side));
+ $('file-'+side).addEventListener('change',async e=>{
+  const f=e.target.files[0];if(!f)return;
+  const v=vehicle(side);if(!v)return;
+  const selectedVIN=v.vin;
+  try{
+   if(f.size>20*1024*1024)throw new Error('Choose a PDF smaller than 20 MB');
+   const signature=new TextDecoder().decode(await f.slice(0,5).arrayBuffer());
+   if(vehicle(side)?.vin!==selectedVIN||e.target.files[0]!==f)return;
+   if(signature!=='%PDF-')throw new Error('This is not a PDF file');
+   if(urls[side])URL.revokeObjectURL(urls[side]);
+   urls[side]=URL.createObjectURL(f);
+   $('pdf-'+side).src=urls[side];$('pdf-'+side).hidden=false;
+   $('pdf-link-'+side).href=urls[side];$('pdf-link-'+side).hidden=false;
+   $('file-status-'+side).textContent=`${f.name} opened locally. Confirm it shows VIN ${selectedVIN}. The file is not uploaded and its VIN has not been automatically verified.`;
+  }catch(err){$('file-status-'+side).textContent=err.message}
+ });
+ reset(side);
+}
+// Preselect vehicle 1 from a ?vehicle=VIN link (e.g. from the inventory page).
+const params=new URLSearchParams(location.search);
+if(vehicles.some(v=>v.vin===params.get('vehicle'))){$('choose-1').value=params.get('vehicle');reset('1')}
+// Default vehicle 2 to a different vehicle than vehicle 1 so the page isn't blank on first load.
+if(!$('choose-2').value&&vehicles.length>1){const first=$('choose-1').value;const alt=vehicles.find(v=>v.vin!==first);if(alt){$('choose-2').value=alt.vin;reset('2')}}
+
+function findByStockOrVin(q){const norm=q.trim().toUpperCase().replace(/\s+/g,'');if(!norm)return null;return vehicles.find(v=>(v.stock||'').toUpperCase()===norm)||vehicles.find(v=>(v.vin||'').toUpperCase()===norm)}
+for(const side of SIDES){
+ const input=$('lookup-'+side),status=$('lookup-status-'+side),go=()=>{
+  const q=input.value;status.className='lookup-status';
+  if(!q.trim()){status.textContent='Enter a stock number or VIN.';status.classList.add('is-error');return}
+  const match=findByStockOrVin(q);
+  if(!match){status.textContent=`No vehicle found at 8107 Research Blvd with stock # or VIN "${q.trim()}". Double-check the number, or use the dropdown above.`;status.classList.add('is-error');return}
+  $('choose-'+side).value=match.vin;$('choose-'+side).dispatchEvent(new Event('change'));
+  status.textContent=`Matched: ${match.title} — Stock ${match.stock} — VIN ${match.vin}.`;status.classList.add('is-ok');
+ };
+ $('lookup-go-'+side).addEventListener('click',go);
+ input.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();go()}});
+}
 window.addEventListener('beforeunload',()=>Object.values(urls).forEach(URL.revokeObjectURL));
+export {SIDES,vehicle};
