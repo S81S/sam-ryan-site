@@ -1,1 +1,1 @@
-window.usedInventoryData={"version":2,"scope":"store-18393-new-and-used","capturedAt":"2026-09-25T18:02:43.715Z","advertisedTotal":0,"capturedCount":0,"complete":false,"staleHours":24,"vehicles":[],"changes":[],"newCount":0,"usedCount":0};
+window.usedInventoryData={"version":2,"scope":"store-18393-new-and-used","capturedAt":"2026-09-25T20:00:21.017Z","advertisedTotal":0,"capturedCount":0,"complete":false,"staleHours":24,"vehicles":[],"changes":[],"newCount":0,"usedCount":0};
