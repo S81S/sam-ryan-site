@@ -4,6 +4,35 @@ const el=(tag,text,cls)=>{const e=document.createElement(tag);if(text!==undefine
 const cash=n=>n===null?'Call for price':new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(n);
 const link=(label,url)=>{const a=el('a',label,'mini-btn');a.href=url;return a;};
 $('sticker-coverage').textContent=`${index.verified} of ${index.total} vehicles have a readable, VIN-matched window sticker in this search. Equipment on the other ${index.unavailable} is unverified. Scanned ${new Date(index.checkedAt).toLocaleDateString()}.`;
+
+// --- Compare selection: nothing is preloaded. Shoppers opt in per vehicle with a checkbox,
+// then go to Compare with only the vehicles they picked (or they can enter a stock #/VIN there directly).
+let compareVins=[];
+try{compareVins=JSON.parse(sessionStorage.getItem('samRyanCompareVins')||'[]')}catch{}
+const compareBar=el('div');
+compareBar.style.cssText='display:none;align-items:center;gap:12px;flex-wrap:wrap;margin:16px 0;padding:12px 16px;border:1px solid rgba(255,255,255,.2);border-radius:10px;background:rgba(255,255,255,.04)';
+const compareText=el('span');
+const compareGo=link('Compare selected →','#');
+const compareClear=el('button','Clear','mini-btn');compareClear.type='button';
+compareBar.append(compareText,compareGo,compareClear);
+$('matchResults').parentNode.insertBefore(compareBar,$('matchResults'));
+
+function saveCompare(){try{sessionStorage.setItem('samRyanCompareVins',JSON.stringify(compareVins))}catch{}}
+function updateCompareBar(){
+ compareBar.style.display=compareVins.length?'flex':'none';
+ compareText.textContent=compareVins.length+(compareVins.length===1?' vehicle selected to compare.':' vehicles selected to compare.');
+ compareGo.href='compare.html?vehicles='+compareVins.map(encodeURIComponent).join(',');
+}
+function toggleCompare(vin,checked){
+ if(checked){
+  if(compareVins.length>=5){alert('You can compare up to 5 vehicles at a time. Remove one before adding another.');const cb=document.querySelector(`input[data-compare-vin="${CSS.escape(vin)}"]`);if(cb)cb.checked=false;return;}
+  if(!compareVins.includes(vin))compareVins.push(vin);
+ } else compareVins=compareVins.filter(x=>x!==vin);
+ saveCompare();updateCompareBar();
+}
+compareClear.addEventListener('click',()=>{compareVins=[];saveCompare();updateCompareBar();document.querySelectorAll('input[data-compare-vin]').forEach(cb=>cb.checked=false)});
+updateCompareBar();
+
 let lastQuery=null,visible=12;
 function render(){
  const out=$('matchResults');out.replaceChildren();const q=lastQuery;if(!q)return;
@@ -27,7 +56,13 @@ function render(){
   if(v.condition==='New')card.append(el('p','Advertised price may include conditional incentives. Ask us to confirm your price.','stock-small'));
   for(const check of result.checks)card.append(el('p',`${check.state==='match'?'✓':'?'} ${check.wanted?'':'Without '}${check.label}: ${check.state==='unknown'?'not confirmed by the sticker':check.evidence.join(' / ')}`,'equipment-check'));
   if(sticker?.status==='verified')card.append(link('Read original window sticker ↗',sticker.sourceUrl));
-  const actions=el('div',undefined,'stock-actions');actions.append(link('Check availability',`contact.html?vehicle=${v.vin}`),link('Compare equipment',`compare.html?vehicle=${v.vin}`),link('Request a test drive',`contact.html?vehicle=${v.vin}&purpose=test-drive`));card.append(actions);out.append(card);
+  const actions=el('div',undefined,'stock-actions');
+  const compareLabel=el('label');compareLabel.style.cssText='display:inline-flex;align-items:center;gap:6px;margin:0 8px';
+  const compareInput=document.createElement('input');compareInput.type='checkbox';compareInput.dataset.compareVin=v.vin;compareInput.checked=compareVins.includes(v.vin);
+  compareInput.addEventListener('change',e=>toggleCompare(v.vin,e.target.checked));
+  compareLabel.append(compareInput,document.createTextNode(' Add to compare'));
+  actions.append(link('Check availability',`contact.html?vehicle=${v.vin}`),compareLabel,link('Request a test drive',`contact.html?vehicle=${v.vin}&purpose=test-drive`));
+  card.append(actions);out.append(card);
  }
  $('more-matches').hidden=rows.length<=visible;
  if(!rows.length){out.append(link('Ask us to help with this search','contact.html?request='+encodeURIComponent(q.original)));}
