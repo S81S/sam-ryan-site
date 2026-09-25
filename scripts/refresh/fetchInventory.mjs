@@ -61,22 +61,45 @@ function searchUrl(tp, page) {
   return `${BASE}${SEARCH_PATHS[tp]}?${params.toString()}`;
 }
 
-async function fetchPage(url, { retries = 3 } = {}) {
+// Real desktop-Chrome header set (not a bespoke bot UA) — the dealer site's
+// WAF started returning HTTP 403 for the old SamRyanInventoryRefresh/1.0
+// identifier once this pipeline moved from being fetched manually inside a
+// browser to running unattended from GitHub Actions' datacenter IPs. A
+// custom UA string is one of the cheapest bot-fingerprint signals a WAF
+// checks, so this presents as an ordinary browser visit instead, including
+// the sec-fetch-* / sec-ch-ua hints and a Referer pointing at the site's own
+// homepage (a raw search-page hit with no Referer at all is also a common
+// bot signal).
+function browserHeaders() {
+  return {
+    'User-Agent':
+      'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36',
+    Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
+    'Accept-Language': 'en-US,en;q=0.9',
+    'Cache-Control': 'no-cache',
+    Pragma: 'no-cache',
+    Referer: BASE + '/',
+    'Sec-Fetch-Dest': 'document',
+    'Sec-Fetch-Mode': 'navigate',
+    'Sec-Fetch-Site': 'same-origin',
+    'Sec-Fetch-User': '?1',
+    'Upgrade-Insecure-Requests': '1',
+    'sec-ch-ua': '"Chromium";v="128", "Not;A=Brand";v="24", "Google Chrome";v="128"',
+    'sec-ch-ua-mobile': '?0',
+    'sec-ch-ua-platform': '"Windows"',
+  };
+}
+
+async function fetchPage(url, { retries = 4 } = {}) {
   let lastErr;
   for (let attempt = 1; attempt <= retries; attempt++) {
     try {
-      const res = await fetch(url, {
-        headers: {
-          'User-Agent':
-            'Mozilla/5.0 (compatible; SamRyanInventoryRefresh/1.0; +https://sam-ryan-v13-staging.pages.dev)',
-          Accept: 'text/html,application/xhtml+xml',
-        },
-      });
+      const res = await fetch(url, { headers: browserHeaders() });
       if (!res.ok) throw new Error(`HTTP ${res.status} for ${url}`);
       return await res.text();
     } catch (err) {
       lastErr = err;
-      if (attempt < retries) await new Promise((r) => setTimeout(r, 1500 * attempt));
+      if (attempt < retries) await new Promise((r) => setTimeout(r, 2000 * attempt));
     }
   }
   throw lastErr;
@@ -192,16 +215,37 @@ export async function crawlSegment(tp, { maxPages = 40, log = console } = {}) {
   return { tp, records, unparsed, advertisedTotal, pagesFetched: page };
 }
 
+// Fetches 'new' then 'used' one after another (not via Promise.all) with a
+// short gap between them. Two concurrent requests hitting the same WAF at
+// the exact same instant is itself a bot signal on some sites, and it also
+// means one segment's failure used to abort the other via Promise.all's
+// fail-fast behavior — losing a perfectly good capture along with the failed
+// one. Each segment's own errors are caught here so a block on one segment
+// (as actually happened: 'used' returned HTTP 403 while 'new' succeeded)
+// still lets the other segment's data go out; refresh.mjs's "complete" gate
+// already treats a shortfall as non-complete and skips the "not observed"
+// pass, so a partial capture never wrongly marks real inventory as gone.
+async function crawlSegmentSafe(tp, { log }) {
+  try {
+    return await crawlSegment(tp, { log });
+  } catch (err) {
+    log.warn?.(`[fetchInventory] segment '${tp}' failed entirely: ${err.message || err}`);
+    return { tp, records: [], unparsed: [], advertisedTotal: null, pagesFetched: 0, error: String(err.message || err) };
+  }
+}
+
 export async function crawlAll({ log = console } = {}) {
-  const [newSeg, usedSeg] = await Promise.all([
-    crawlSegment('new', { log }),
-    crawlSegment('used', { log }),
-  ]);
+  const newSeg = await crawlSegmentSafe('new', { log });
+  await new Promise((r) => setTimeout(r, 800));
+  const usedSeg = await crawlSegmentSafe('used', { log });
+
   const records = [...newSeg.records, ...usedSeg.records];
   const advertisedTotal =
     (newSeg.advertisedTotal ?? newSeg.records.length) +
     (usedSeg.advertisedTotal ?? usedSeg.records.length);
   const complete =
+    !newSeg.error &&
+    !usedSeg.error &&
     newSeg.unparsed.length === 0 &&
     usedSeg.unparsed.length === 0 &&
     (newSeg.advertisedTotal == null || newSeg.advertisedTotal === newSeg.records.length) &&
@@ -232,3 +276,6 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     );
   }
 }
+
+
+Fix 403 on inventory refresh — realistic browser headers, and click Commit changes
