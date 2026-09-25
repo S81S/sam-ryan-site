@@ -8,7 +8,7 @@ let lastQuery=null,visible=12;
 function render(){
  const out=$('matchResults');out.replaceChildren();const q=lastQuery;if(!q)return;
  const summary=el('div',undefined,'search-summary');
- const items=[...q.terms,...(q.condition?[q.condition]:[]),...(q.budget!==null?['Price up to '+cash(q.budget)]:[]),...(q.mileage!==null?['Mileage up to '+q.mileage.toLocaleString()]:[]),...q.requirements.map(r=>(r.wanted?'With ':'Without ')+labels[r.id])];
+ const items=[...q.terms,...(q.condition?[q.condition+' only']:[]),...(q.budget!==null?['Price up to '+cash(q.budget)]:[]),...(q.mileage!==null?['Mileage up to '+q.mileage.toLocaleString()]:[]),...q.requirements.map(r=>(r.wanted?'With ':'Without ')+labels[r.id])];
  summary.append(el('h3','Your search'),el('p',items.join(' · ')||'All vehicles at 8107 Research Blvd'));
  for(const warning of q.warnings)summary.append(el('p',warning,'stock-small'));out.append(summary);
  if(q.ambiguity||q.warnings.some(w=>/Conflicting|not both|More than one/.test(w))){out.append(el('p',q.ambiguity||'Please resolve the conflicting choices above, then search again.'));$('more-matches').hidden=true;return;}
@@ -32,7 +32,8 @@ function render(){
  $('more-matches').hidden=rows.length<=visible;
  if(!rows.length){out.append(link('Ask us to help with this search','contact.html?request='+encodeURIComponent(q.original)));}
 }
-$('matchBtn').addEventListener('click',()=>{const value=$('request').value.trim();if(!value){lastQuery=null;$('more-matches').hidden=true;$('matchResults').textContent='Tell us a model, budget or equipment you want.';return;}lastQuery=parseQuery(value);try{sessionStorage.setItem('samRyanLastSearch',value);}catch{}visible=12;render();});
+$('matchBtn').addEventListener('click',()=>{const value=$('request').value.trim();if(!value){lastQuery=null;$('more-matches').hidden=true;$('matchResults').textContent='Tell us a model, budget or equipment you want.';return;}lastQuery=parseQuery(value);const forcedCondition=$('search-condition').value;if(forcedCondition)lastQuery.condition=forcedCondition;try{sessionStorage.setItem('samRyanLastSearch',value);}catch{}visible=12;render();});
+$('search-condition').addEventListener('change',()=>{if(!lastQuery)return;const c=$('search-condition').value;lastQuery.condition=c||null;visible=12;render();});
 $('search-sort').addEventListener('change',()=>{visible=12;render();});
 $('show-unverified').addEventListener('change',()=>{visible=12;render();});
 $('more-matches').addEventListener('click',()=>{visible+=12;render();});
