@@ -41,11 +41,16 @@ for(const side of SIDES){
  });
  reset(side);
 }
-// Preselect vehicle 1 from a ?vehicle=VIN link (e.g. from the inventory page).
+// Preselect vehicles only from an explicit link — a single ?vehicle=VIN (e.g. from the inventory page)
+// or several via ?vehicles=VIN1,VIN2,... (e.g. "Add to compare" on Find My Car). Nothing is preloaded
+// otherwise; shoppers pick from the dropdowns or enter a stock number/VIN below.
 const params=new URLSearchParams(location.search);
-if(vehicles.some(v=>v.vin===params.get('vehicle'))){$('choose-1').value=params.get('vehicle');reset('1')}
-// Default vehicle 2 to a different vehicle than vehicle 1 so the page isn't blank on first load.
-if(!$('choose-2').value&&vehicles.length>1){const first=$('choose-1').value;const alt=vehicles.find(v=>v.vin!==first);if(alt){$('choose-2').value=alt.vin;reset('2')}}
+const multi=(params.get('vehicles')||'').split(',').map(s=>s.trim()).filter(Boolean);
+const requested=multi.length?multi:(params.get('vehicle')?[params.get('vehicle')]:[]);
+requested.forEach((vin,i)=>{
+ const side=SIDES[i];if(!side)return;
+ if(vehicles.some(v=>v.vin===vin)){$('choose-'+side).value=vin;reset(side)}
+});
 
 function findByStockOrVin(q){const norm=q.trim().toUpperCase().replace(/\s+/g,'');if(!norm)return null;return vehicles.find(v=>(v.stock||'').toUpperCase()===norm)||vehicles.find(v=>(v.vin||'').toUpperCase()===norm)}
 for(const side of SIDES){
