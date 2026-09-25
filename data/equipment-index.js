@@ -1,1 +1,1 @@
-window.equipmentIndex={"version":1,"method":"VIN-matched original window stickers only","checkedAt":"2026-09-25T15:13:38.459Z","total":0,"verified":0,"unavailable":0,"records":{}};
+window.equipmentIndex={"version":1,"method":"VIN-matched original window stickers only","checkedAt":"2026-09-25T18:02:43.716Z","total":0,"verified":0,"unavailable":0,"records":{}};
