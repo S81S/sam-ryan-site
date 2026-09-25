@@ -276,6 +276,3 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     );
   }
 }
-
-
-Fix 403 on inventory refresh — realistic browser headers, and click Commit changes
