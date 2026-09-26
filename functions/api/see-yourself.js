@@ -62,6 +62,12 @@ function parseDataUrl(dataUrl, fallbackMime) {
 }
 
 export async function onRequestPost(context) {
+  // Paid image generation is not enabled for this free preview feature.
+  return json({error:'not_configured',message:'Use the free instant preview.'},501);
+}
+
+// Retained for review only; not exported or reachable by a Pages route.
+async function paidPreviewDisabled(context) {
   const { request, env } = context;
 
   if (!env.GEMINI_API_KEY || !env.SY_BUDGET) {
