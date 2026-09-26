@@ -22,6 +22,7 @@ import { fileURLToPath } from 'node:url';
 import { normalize } from '../../inventory-engine.mjs';
 import { crawlAll } from './fetchInventory.mjs';
 import { fetchStickersForVins } from './fetchStickers.mjs';
+import { validateCapture, mergeSticker } from './guards.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '../..');
@@ -70,6 +71,7 @@ async function refreshInventory(previous, { log = console } = {}) {
     }
   }
 
+  validateCapture(capture, [...seen.values()], rejects);
   const old = new Map((previous?.vehicles || []).map((v) => [v.vin, v]));
   const changes = [];
   for (const [vin, v] of seen) {
@@ -141,6 +143,7 @@ function vinsNeedingSticker(vehicles, equipmentIndex) {
     .filter((vin) => {
       const r = records[vin];
       if (!r) return true;
+      if (r.lastAttemptStatus && r.lastAttemptStatus !== 'verified' && daysSince(r.lastAttemptAt) < STICKER_RECHECK_UNAVAILABLE_DAYS) return false;
       if (r.status === 'verified') return daysSince(r.checkedAt) > STICKER_STALE_DAYS;
       return daysSince(r.checkedAt) > STICKER_RECHECK_UNAVAILABLE_DAYS;
     });
@@ -153,7 +156,7 @@ async function refreshStickers(vehicles, previousIndex, { log = console, limit }
   const fresh = vins.length ? await fetchStickersForVins(vins, { log }) : new Map();
 
   const records = { ...(previousIndex?.records || {}) };
-  for (const [vin, rec] of fresh) records[vin] = rec;
+  for (const [vin, rec] of fresh) records[vin] = mergeSticker(records[vin], rec);
 
   // Drop records for VINs no longer in inventory to keep the file bounded.
   const currentVins = new Set(vehicles.map((v) => v.vin));

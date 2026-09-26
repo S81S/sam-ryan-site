@@ -64,6 +64,7 @@ export async function fetchOneSticker(vin, { retries = 2 } = {}) {
       }
       const analysis = analyzeSticker(text, vin);
       return {
+        ...analysis,
         vin,
         status: 'verified',
         checkedAt: now,

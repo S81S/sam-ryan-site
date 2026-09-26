@@ -1,0 +1,14 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import {validateCapture,mergeSticker} from './guards.mjs';
+const vehicles=[{locationId:'18393'},{locationId:'18393'}];
+const good=()=>({complete:true,advertisedTotal:2,segments:Object.fromEntries(['new','used'].map(t=>[t,{advertisedTotal:1,records:[{}],unparsed:[]}]))});
+test('complete store capture passes',()=>assert.doesNotThrow(()=>validateCapture(good(),vehicles,[])));
+test('failed capture cannot overwrite working inventory',()=>assert.throws(()=>validateCapture({...good(),complete:false},vehicles,[])));
+test('empty capture fails',()=>assert.throws(()=>validateCapture(good(),[],[])));
+test('rejected records fail',()=>assert.throws(()=>validateCapture(good(),vehicles,[{}])));
+test('other store fails',()=>assert.throws(()=>validateCapture(good(),[{locationId:'999'},vehicles[1]],[])));
+test('missing advertised total fails',()=>{const c=good();c.segments.new.advertisedTotal=null;assert.throws(()=>validateCapture(c,vehicles,[]));});
+test('partial segment fails',()=>{const c=good();c.segments.used.advertisedTotal=2;assert.throws(()=>validateCapture(c,vehicles,[]));});
+test('unavailable retry preserves verified equipment',()=>{const prior={status:'verified',checkedAt:'original',features:{sunroof:true}};const next=mergeSticker(prior,{status:'unavailable',checkedAt:'retry'});assert.equal(next.checkedAt,'original');assert.deepEqual(next.features,prior.features);assert.equal(next.lastAttemptAt,'retry');});
+test('verified retry replaces old sticker',()=>{const next={status:'verified',checkedAt:'new'};assert.equal(mergeSticker({status:'verified'},next),next)});
