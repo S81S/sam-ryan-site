@@ -10,7 +10,7 @@ $('sticker-coverage').textContent=`${index.verified} of ${index.total} vehicles 
 let compareVins=[];
 try{compareVins=JSON.parse(sessionStorage.getItem('samRyanCompareVins')||'[]')}catch{}
 const compareBar=el('div');
-compareBar.style.cssText='display:none;align-items:center;gap:12px;flex-wrap:wrap;margin:16px 0;padding:12px 16px;border:1px solid rgba(255,255,255,.2);border-radius:10px;background:rgba(255,255,255,.04)';
+compareBar.style.cssText='display:none;position:fixed;left:0;right:0;bottom:58px;z-index:1000;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;padding:12px 16px;border-top:1px solid rgba(255,255,255,.25);background:#0d1117;box-shadow:0 -6px 20px rgba(0,0,0,.45)';
 const compareText=el('span');
 const compareGo=link('Compare selected →','#');
 const compareClear=el('button','Clear','mini-btn');compareClear.type='button';
