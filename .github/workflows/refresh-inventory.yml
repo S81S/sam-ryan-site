@@ -8,16 +8,9 @@ name: Refresh inventory & window stickers
 
 on:
   schedule:
-    # Every 4 hours, matching the previous cadence. Cron is UTC.
-    - cron: '7 */4 * * *'
+    # Once after closing: midnight CDT / 11 p.m. CST. Cron is UTC.
+    - cron: '7 5 * * *'
   workflow_dispatch: {} # lets you trigger a manual run from the Actions tab
-  push:
-    branches: [main]
-    paths:
-      - 'scripts/refresh/**'
-      - 'inventory-engine.mjs'
-      - 'equipment-search.mjs'
-      - '.github/workflows/refresh-inventory.yml'
 
 permissions:
   contents: write
