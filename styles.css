@@ -86,3 +86,11 @@ html{scroll-padding-top:100px}a,button,input,select,textarea{touch-action:manipu
 .btn.sam-phone{gap:4px;flex-wrap:wrap;justify-content:center}
 .btn.sam-phone .sam-phone-logo{width:120px}
 @media(max-width:600px){.sam-phone-logo{width:82px}.btn.sam-phone .sam-phone-logo{width:100px}}
+
+/* Metallic gold phone lettering complements Sam's original 1320 artwork. */
+.sam-phone{background:#080808;border-radius:8px;padding:5px 10px;text-decoration:none!important;max-width:100%;box-sizing:border-box}
+.sam-phone-prefix{display:inline-block;font-family:Arial,Helvetica,sans-serif;font-size:clamp(19px,2.5vw,25px);font-weight:950;font-style:italic;letter-spacing:-.7px;line-height:1.2;color:#ffdb49;background:linear-gradient(180deg,#fff495 0%,#ffdc39 43%,#b48b23 50%,#ffe16a 90%);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent;-webkit-text-stroke:.45px #fff3b9;filter:drop-shadow(1px 2px 0 #000)}
+.sam-phone:focus-visible{outline:3px solid #e8b830;outline-offset:4px}
+.btn.sam-phone{flex-wrap:nowrap}
+.ryan-phone{padding:12px 14px}
+@media(forced-colors:active){.sam-phone-prefix{-webkit-text-fill-color:LinkText;background:none;filter:none;-webkit-text-stroke:0}}
