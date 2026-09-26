@@ -94,3 +94,13 @@ html{scroll-padding-top:100px}a,button,input,select,textarea{touch-action:manipu
 .btn.sam-phone{flex-wrap:nowrap}
 .ryan-phone{padding:12px 14px}
 @media(forced-colors:active){.sam-phone-prefix{-webkit-text-fill-color:LinkText;background:none;filter:none;-webkit-text-stroke:0}}
+
+/* On-site vehicle inquiry preview */
+.vehicle-preview{background:#141a22;color:#f5f6f8;border:1px solid #697383;border-radius:16px;width:min(720px,calc(100% - 28px));max-height:90vh;overflow:auto;padding:24px}.vehicle-preview::backdrop{background:rgba(0,0,0,.78)}.vehicle-preview-close{float:right}.vehicle-preview h2{clear:both;padding-top:16px;font-size:26px}.vehicle-preview-photo{display:block;width:100%;max-height:340px;object-fit:contain;border-radius:10px;background:#080b10}.vehicle-preview .hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0}.vehicle-preview select{margin:8px;padding:10px;background:#fff;color:#111;border-radius:8px}.vehicle-preview .btn{font-size:14px}.vehicle-preview a:focus-visible,.vehicle-preview button:focus-visible{outline:3px solid #f0c96c;outline-offset:3px}
+
+/* Align the prefix with the numeral baseline inside the supplied bee artwork. */
+.sam-phone,.btn.sam-phone{align-items:flex-end;flex-wrap:nowrap;gap:0}
+.sam-phone-prefix{flex:0 0 auto;font-size:23px;line-height:1;margin-bottom:9px}
+.sam-phone-logo{flex:0 0 auto;margin-left:1px}
+
+.sam-phone,.btn.sam-phone{background:transparent!important;box-shadow:none!important;border:0;border-radius:0}.sam-phone-logo{background:transparent;border-radius:0}
