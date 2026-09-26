@@ -1,23 +1,26 @@
 import {parseQuery,matchVehicle,definitions} from './equipment-search.mjs?v=23-tow26';
-const $=id=>document.getElementById(id),inventory=window.usedInventoryData,index=window.equipmentIndex;
-const el=(tag,text)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;return n;};
+const $=id=>document.getElementById(id),el=(tag,text)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;return n};
 function compareGroup(){
  const out=$('group-results');out.replaceChildren();const text=$('group-query').value.trim();if(!text){out.append(el('p','Enter a model and any must-have features.'));return;}
  const q=parseQuery(text);if(q.ambiguity||q.warnings.some(w=>/Conflicting|not both|More than one/.test(w))){out.append(el('p',q.ambiguity||q.warnings.join(' ')));return;}
  const selected=$('group-condition').value;if(q.condition&&selected!=='Both'&&q.condition!==selected){out.append(el('p',`Choose ${q.condition} above to match your request.`));return;}q.condition=selected==='Both'?null:selected;
- const base={...q,requirements:[]};const rows=inventory.vehicles.filter(v=>matchVehicle(v,index.records[v.vin],base).kind==='match').map(v=>({v,s:index.records[v.vin],result:matchVehicle(v,index.records[v.vin],q)}));
+ const base={...q,requirements:[]}, index=window.equipmentIndex;
+ const rows=window.usedInventoryData.vehicles.filter(v=>v.locationId==='18393'&&matchVehicle(v,index.records[v.vin],base).kind==='match').map(v=>({v,s:index.records[v.vin],result:matchVehicle(v,index.records[v.vin],q)}));
  rows.sort((a,b)=>(a.result.kind==='match'?0:1)-(b.result.kind==='match'?0:1)||(a.v.price??Infinity)-(b.v.price??Infinity));
  const confirmed=rows.filter(r=>r.result.kind==='match').length;
- out.append(el('h3',q.requirements.length?`${confirmed} of ${rows.length} vehicles confirm every requested feature`:`${rows.length} vehicles to compare`),el('p','Saved inventory at 8107 Research Blvd. Confirm current availability. “Not confirmed” is not a claim that equipment is absent. Scroll sideways to compare every vehicle.'));
+ out.append(el('h3',q.requirements.length?`${confirmed} of ${rows.length} confirm your requested features`:`${rows.length} vehicles to explore`));
  if(!rows.length){out.append(el('p','No vehicles match that model, condition and budget in the saved inventory.'));return;}
- if(q.requirements.length&&!confirmed)out.append(el('p','No exact match is confirmed. The table below shows which requested features are listed for each vehicle.'));
- if(q.requirements.length&&confirmed){const shortlist=el('div');shortlist.className='search-summary';shortlist.append(el('h3','Start with these vehicles'));for(const {v} of rows.filter(r=>r.result.kind==='match')){const a=el('a',`${v.stock||v.vin} — ${v.title}`);a.href='contact.html?vehicle='+v.vin+'&request='+encodeURIComponent(text);shortlist.append(a,el('br'));}out.append(shortlist);}
- const details=el('details');details.append(el('summary','Compare equipment across these vehicles'));out.append(details);
- const label=el('label'),toggle=el('input');toggle.type='checkbox';toggle.checked=true;label.append(toggle,document.createTextNode(q.requirements.length?' Show only my requested features':' Show differences only'));details.append(label);
- const wrap=el('div');wrap.className='equipment-table-wrap';const table=el('table');table.className='equipment-table';const head=el('thead'),hr=el('tr');hr.append(el('th','Equipment'));
- for(const {v,s,result} of rows){const th=el('th');th.scope='col';th.style.minWidth='230px';th.append(el('strong',v.stock||v.vin),el('p',v.title),el('p',v.price==null?'Call for price':new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(v.price)));if(q.requirements.length)th.append(el('p',result.kind==='match'?'✓ All requested features confirmed':result.kind==='excluded'?'Requested feature conflict':'Needs equipment confirmation'));if(s?.status==='verified'){const a=el('a','Original sticker ↗');a.href=s.sourceUrl;th.append(a);}hr.append(th);}head.append(hr);table.append(head);
- const body=el('tbody'),requested=new Set(q.requirements.map(r=>r.id));const defs=[...definitions].sort((a,b)=>Number(requested.has(b[0]))-Number(requested.has(a[0])));
- for(const [id,name] of defs){const facts=rows.map(r=>r.s?.status==='verified'?r.s.features[id]:null);const differing=new Set(facts.map(f=>f?.value===true?'yes':f?.value===false?'no':'unknown')).size>1;const tr=el('tr');tr.dataset.keep=String(requested.size?requested.has(id):differing);tr.hidden=tr.dataset.keep==='false';const th=el('th',(requested.has(id)?'★ ':'')+name);th.scope='row';tr.append(th);for(const f of facts){const td=el('td');td.append(el('strong',f?.value===true?'✓ Listed':f?.value===false?'Explicitly excluded':'Not confirmed'));if(f)td.append(el('p',f.evidence.join(' / ')));if(f?.sourceUrl){const a=el('a','Factory instructions ↗');a.href=f.sourceUrl;td.append(a);}tr.append(td);}body.append(tr);}
- table.append(body);wrap.append(table);details.append(wrap);toggle.addEventListener('change',()=>{for(const row of body.children)row.hidden=toggle.checked&&row.dataset.keep==='false';});out.scrollIntoView({behavior:'instant',block:'start'});
+ out.append(el('p','Choose two to five vehicles for a closer comparison. Unconfirmed equipment needs checking; it is not automatically absent.'));
+ const chosen=new Set(),compare=el('button','Choose at least 2 vehicles');compare.type='button';compare.className='btn';compare.disabled=true;out.append(compare);
+ compare.addEventListener('click',()=>{location.href='compare.html?vehicles='+encodeURIComponent([...chosen].join(','))});
+ const grid=el('div');grid.className='group-card-grid';out.append(grid);
+ let limit=12;const more=el('button','Show 12 more');more.type='button';more.className='btn ghost';out.append(more);
+ function draw(){grid.replaceChildren();for(const {v,s,result} of rows.slice(0,limit)){
+  const card=el('article');card.className='group-vehicle-card';if(v.photoUrl){const img=el('img');img.src=v.photoUrl;img.alt=v.title;img.loading='lazy';card.append(img)}
+  card.append(el('h4',v.title),el('p',`Stock ${v.stock} · ${v.condition} · ${v.price==null?'Ask for price':new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(v.price)}`));
+  if(q.requirements.length){card.append(el('strong',result.kind==='match'?'✓ Matches your requested features':result.kind==='excluded'?'Does not match every requested feature':'Equipment needs checking'));const ul=el('ul');for(const r of q.requirements){const f=s?.status==='verified'?s.features[r.id]:null;ul.append(el('li',`${definitions.find(d=>d[0]===r.id)?.[1]||r.id}: ${f?(f.value?'Listed on sticker':'Explicitly excluded'):'Not confirmed'}`))}card.append(ul)}
+  const label=el('label'),input=el('input');input.type='checkbox';input.checked=chosen.has(v.vin);input.addEventListener('change',()=>{if(input.checked&&chosen.size>=5){input.checked=false;compare.textContent='Five selected — compare or remove one';return;}input.checked?chosen.add(v.vin):chosen.delete(v.vin);compare.disabled=chosen.size<2;compare.textContent=chosen.size<2?'Choose at least 2 vehicles':`Compare ${chosen.size} selected vehicles →`});label.append(input,document.createTextNode(' Add to comparison'));card.append(label);grid.append(card);
+ }more.hidden=limit>=rows.length;}
+ more.addEventListener('click',()=>{limit+=12;draw()});draw();
 }
-$('group-compare').addEventListener('click',compareGroup);$('group-query').addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();compareGroup();}});
+$('group-compare').addEventListener('click',compareGroup);$('group-query').addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();compareGroup()}});

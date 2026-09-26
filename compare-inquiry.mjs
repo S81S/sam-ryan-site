@@ -1,4 +1,4 @@
-const inventory = window.usedInventoryData.vehicles.filter(v => v.locationId === '18393');
+const inventory = window.usedInventoryData.vehicles;
 const section = document.createElement('section');
 section.className = 'search-summary';
 section.hidden = true;
