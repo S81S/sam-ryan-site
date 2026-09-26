@@ -1,2 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"></urlset>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://carswithsam.com/</loc></url>
+  <url><loc>https://carswithsam.com/compare</loc></url>
+  <url><loc>https://carswithsam.com/contact</loc></url>
+  <url><loc>https://carswithsam.com/find-my-car</loc></url>
+  <url><loc>https://carswithsam.com/guides</loc></url>
+  <url><loc>https://carswithsam.com/inventory</loc></url>
+  <url><loc>https://carswithsam.com/reviews</loc></url>
+  <url><loc>https://carswithsam.com/ryan</loc></url>
+  <url><loc>https://carswithsam.com/sam</loc></url>
+  <url><loc>https://carswithsam.com/see-yourself</loc></url>
+  <url><loc>https://carswithsam.com/sources</loc></url>
+  <url><loc>https://carswithsam.com/used-inventory</loc></url>
+</urlset>

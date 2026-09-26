@@ -1,4 +1,4 @@
-import {issues,draft,ingest} from './inventory-engine.mjs';
+import {issues,draft,ingest} from './inventory-engine.mjs?v=23-search2';
 const base=window.usedInventoryData;
 let data=base;let visibleLimit=24;
 const panel=document.body.dataset.inventoryPanel==='true';

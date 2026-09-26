@@ -23,6 +23,7 @@ for(const side of SIDES){
  $('choose-'+side).append(opts);
  $('choose-'+side).value='';
  $('choose-'+side).addEventListener('change',()=>reset(side));
+ $('clear-'+side)?.addEventListener('click',()=>{$('choose-'+side).value='';$('lookup-'+side).value='';$('lookup-status-'+side).textContent='';reset(side)});
  $('file-'+side).addEventListener('change',async e=>{
   const f=e.target.files[0];if(!f)return;
   const v=vehicle(side);if(!v)return;

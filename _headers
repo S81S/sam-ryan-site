@@ -1,7 +1,24 @@
-/data/*
-  Cache-Control: no-cache, must-revalidate
-
 /*
-  X-Robots-Tag: noindex
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
+https://:project.pages.dev/*
+  X-Robots-Tag: noindex
+https://:version.:project.pages.dev/*
+  X-Robots-Tag: noindex
+/data/*
+  X-Robots-Tag: noindex
+  Cache-Control: public, max-age=0, must-revalidate
+/*.mjs
+  Cache-Control: public, max-age=0, must-revalidate
+/inventory-desk
+  X-Robots-Tag: noindex
+/inventory-desk.html
+  X-Robots-Tag: noindex
+/car-watch
+  X-Robots-Tag: noindex
+/car-watch.html
+  X-Robots-Tag: noindex
+/404
+  X-Robots-Tag: noindex
+/404.html
+  X-Robots-Tag: noindex
