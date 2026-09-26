@@ -1,3 +1,4 @@
+import {openVehiclePreview} from './vehicle-preview.mjs?v=conversion1';
 const vehicles=window.usedInventoryData.vehicles.filter(v=>v.locationId==='18393');
 const SIDES=['1','2','3','4','5'];
 const $=id=>document.getElementById(id), urls={};
@@ -11,7 +12,7 @@ function reset(side){
  if(urls[side]){URL.revokeObjectURL(urls[side]);delete urls[side]}
  $('pdf-'+side).removeAttribute('src');$('pdf-'+side).hidden=true;$('file-'+side).value='';$('file-status-'+side).textContent='No local PDF selected.';
  $('summary-'+side).textContent=`${v.title} · ${cash(v.price)} observed · ${v.miles===null?'Mileage unknown':v.miles.toLocaleString()+' miles'} · Stock ${v.stock} · VIN ${v.vin}`;
- $('listing-'+side).hidden=false;$('listing-'+side).href=v.sourceUrl;
+ $('listing-'+side).hidden=false;$('listing-'+side).href='contact.html?vehicle='+encodeURIComponent(v.vin);$('listing-'+side).textContent='View photos & vehicle details';$('listing-'+side).removeAttribute('target');$('listing-'+side).onclick=e=>{e.preventDefault();openVehiclePreview(v)};
  $('sticker-'+side).hidden=!v.carfaxUrl&&!v.stickerUrl;$('sticker-'+side).href=v.stickerUrl||v.carfaxUrl||v.sourceUrl;$('sticker-'+side).textContent=v.stickerUrl?'Open original window sticker ↗':'Open CARFAX → Original Window Sticker ↗';
  $('lookup-note-'+side).textContent=v.stickerUrl?'Direct sticker link found in the Covert-linked CARFAX report. Confirm the VIN on the document. If the link expires, open the official listing and CARFAX again.':v.carfaxUrl?'Open the Covert-provided CARFAX report, then choose Original Window Sticker. A direct sticker link has not yet been checked for this vehicle.':'No CARFAX/sticker link captured for this vehicle. Open its official listing to check, or load your PDF.';
  $('pdf-link-'+side).hidden=true;$('pdf-link-'+side).removeAttribute('href');

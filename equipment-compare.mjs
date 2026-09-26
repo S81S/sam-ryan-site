@@ -1,4 +1,5 @@
-import {definitions} from './equipment-search.mjs';
+import {comparisonRows} from './comparison-rows.mjs?v=conversion1';
+import {definitions,parseQuery} from './equipment-search.mjs';
 const $=id=>document.getElementById(id),index=window.equipmentIndex;
 const vehicles=window.usedInventoryData.vehicles.filter(v=>v.locationId==='18393');
 const SIDES=['1','2','3','4','5'];
@@ -26,8 +27,18 @@ function render(){
  for(const {v} of recs){const th=el('th',`${v.title} — ${v.stock}`);th.scope='col';headRow.append(th)}
  head.append(headRow);table.append(head);
  const body=el('tbody');
- for(const [id,label] of definitions){
-  const tr=el('tr');const th=el('th',label);th.scope='row';tr.append(th);
+ const requested=parseQuery($('group-query')?.value||'').requirements.map(r=>r.id);
+ const rows=comparisonRows(definitions,recs.map(r=>r.s),requested);
+ const notes={difference:'Confirmed difference',wording:'Different sticker wording — compare details',check:'Needs confirmation on one or more vehicles',same:'Matching evidence',unknown:'Not confirmed on any selected vehicle'};
+ const summary=el('p',`${rows.filter(r=>r.group==='difference').length} confirmed equipment differences · ${rows.filter(r=>r.group==='wording').length} wording differences · ${rows.filter(r=>r.group==='check').length} features need checking`);summary.className='comparison-summary';out.append(summary);
+ const controls=el('div');controls.className='comparison-tools';controls.setAttribute('aria-label','Equipment comparison view');
+ const status=el('p');status.setAttribute('role','status');
+ let view='focus';const buttons=[];
+ const update=()=>{let shown=0;for(const tr of body.children){tr.hidden=view==='focus'&&!['difference','wording','check'].includes(tr.dataset.group)&&tr.dataset.requested!=='true';if(!tr.hidden)shown++;}for(const [button,value] of buttons)button.setAttribute('aria-pressed',String(view===value));status.textContent=shown?`${shown} equipment rows shown. Missing evidence is not missing equipment.`:'No confirmed differences or unmatched evidence in the indexed features. Read the full stickers to check packages and details.';};
+ for(const [value,label] of [['focus','Differences & checks'],['all','All equipment']]){const button=el('button',label);button.type='button';button.className='mini-btn';button.addEventListener('click',()=>{view=value;update()});buttons.push([button,value]);controls.append(button)}
+ out.append(controls,status);
+ for(const {id,label,group,requested:mustHave} of rows){
+  const tr=el('tr');tr.dataset.group=group;tr.dataset.requested=String(mustHave);const th=el('th',(mustHave?'Your feature: ':'')+label);th.scope='row';th.append(el('small',notes[group]));tr.append(th);
   for(const {s} of recs){
    const fact=s?.status==='verified'?s.features[id]:null;
    const td=el('td');
@@ -37,7 +48,7 @@ function render(){
   }
   body.append(tr);
  }
- table.append(body);wrap.append(table);out.append(wrap);
+ table.append(body);wrap.append(table);out.append(wrap);update();
 
  const norm=l=>l.toLowerCase().replace(/\$[\d,.]+/g,'').replace(/\s+/g,' ').trim();
  for(const {side,v,s} of recs){

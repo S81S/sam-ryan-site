@@ -61,7 +61,7 @@
     byId('send-inquiry').href = `mailto:${recipient}?subject=${encodeURIComponent(`${values.purpose}${vehicle ? ' — stock '+vehicle.stock : ''} | Cars With Sam`)}&body=${encodeURIComponent(body)}`;
     byId('request-preview').hidden = false;
     byId('contactMessage').textContent = 'Your request is ready below. Nothing has been sent yet. Open your email app, review and press Send there, or copy your request.';
-    byId('send-inquiry').focus();
+    if (!form.dataset.directDelivery) byId('send-inquiry').focus();
   });
   byId('copy-inquiry').addEventListener('click', async () => {
     try { await navigator.clipboard.writeText(byId('request-text').textContent); byId('copy-inquiry-status').textContent = 'Copied. Paste it into your email to your advisor. Nothing has been sent automatically.'; }
