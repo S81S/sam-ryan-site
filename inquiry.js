@@ -4,7 +4,7 @@
   const byId = id => document.getElementById(id);
   const params = new URLSearchParams(location.search);
   const vehicle = (window.usedInventoryData?.vehicles || []).find(v => v.vin === params.get('vehicle') && v.locationId === '18393');
-  const advisor=document.getElementById('contactAdvisor'); if(['Sam','Ryan'].includes(params.get('advisor')))advisor.value=params.get('advisor');
+  const advisor=document.getElementById('contactAdvisor'); const requestedAdvisor=String(params.get('advisor')||'').trim().toLowerCase(); if(['sam','ryan'].includes(requestedAdvisor))advisor.value=requestedAdvisor==='ryan'?'Ryan':'Sam';
   const contactActions = document.createElement('p');
   contactActions.className = 'hero-actions';
   const callAdvisor = document.createElement('a');
