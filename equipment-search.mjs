@@ -1,3 +1,4 @@
+import {applyFactoryEquipment} from './factory-equipment.mjs?v=factory1';
 import {flatTowEvidence} from './flat-tow-rules.mjs?v=23-tow26';
 import {interiorColors} from './interior-colors.mjs?v=23-audit22';
 import {translateSearchTerms} from './search-dictionary.mjs?v=23-audit22';
@@ -235,7 +236,7 @@ export function parseQuery(input){
  q=q.replace(/\bgr[ae]y\b/g,(m,offset)=>{const wanted=!/(?:\bno|\bwithout|\bnot)\s+$/.test(q.slice(0,offset));result.requirements.push({id:'exteriorGray',wanted});return ' ';});
  // Explicit model shorthand is safe; the five-digit 15000 ambiguity is never silently corrected.
  q=q.replace(/\b(?:i am looking for|i'm looking for|i want|i need|looking for|show me|find me|can you find|do you have|i would like|i'd like)\b/g,' ');
- const stop=new Set('interior upholstery cabin a an the with without no not any and or but please seats seat car vehicle truck suv cars trucks suvs that has have me my of for want dont don\'t do does doesn\'t doesn’t must to at in either equipped comes come something need looking looking at least than less more only must should be would like can you it its that has have has got gimme get give us me a just preferably ideally about approx approximately around price priced budget cost costs spending spend tops all total out door'.split(' '));
+ const stop=new Set('under interior upholstery cabin a an the with without no not any and or but please seats seat car vehicle truck suv cars trucks suvs that has have me my of for want dont don\'t do does doesn\'t doesn’t must to at in either equipped comes come something need looking looking at least than less more only must should be would like can you it its that has have has got gimme get give us me a just preferably ideally about approx approximately around price priced budget cost costs spending spend tops all total out door'.split(' '));
  result.terms=q.split(/[^a-z0-9'-]+/).filter(w=>w&&!stop.has(w));
  if(result.requirements.some(x=>x.id==='flatTow'))result.warnings.push('Flat towing means pulling this vehicle behind an RV with all four wheels on the ground. Matches require a verified model-year and drivetrain rule; unreviewed configurations remain unconfirmed. Follow the linked factory procedure and confirm towing equipment, weight limits and vehicle condition; a trailer-tow package alone does not qualify.');
  if(result.requirements.some(x=>x.id==='ventilated'))result.warnings.push('“Air-conditioned seats” is treated as ventilated/cooled seats. The exact factory wording is shown.');
@@ -243,6 +244,7 @@ export function parseQuery(input){
 }
 export function matchVehicle(vehicle,sticker,query){
  if(vehicle.locationId!=='18393')return {kind:'excluded',reason:'store'};
+ sticker=applyFactoryEquipment(vehicle,sticker);
  if(query.condition&&vehicle.condition!==query.condition)return {kind:'excluded',reason:'condition'};
  if(query.budget!==null&&(vehicle.price===null||vehicle.price>query.budget))return {kind:'excluded',reason:'price'};
  if(query.mileage!==null&&(vehicle.miles===null||vehicle.miles>query.mileage))return {kind:'excluded',reason:'mileage'};
@@ -261,7 +263,7 @@ export function matchVehicle(vehicle,sticker,query){
  const lines=sticker?.status==='verified'?sticker.lines||[]:[];
  const text=normalizeText(lines.join(' ')).toLowerCase();
  if(unmatched.length&&!unmatched.every(t=>text.split(/[^a-z0-9'-]+/).includes(t)))return {kind:'excluded',reason:'terms'};
- const checks=query.requirements.map(req=>{let fact=sticker?.status==='verified'?sticker.features?.[req.id]:null;if(req.id==='exteriorGray'&&sticker?.status==='verified'){const paint=lines.filter(l=>/^exterior(?: color)?:/i.test(l));if(paint.length)fact={value:paint.some(l=>/\bgr[ae]y\b/i.test(l.split(/interior(?: color)?:/i)[0])),evidence:paint};}const roofNotListed=req.id==='sunroof'&&!req.wanted&&!fact&&sticker?.status==='verified'&&sticker.equipmentSectionComplete===true&&!sticker.features?.panoramic?.value&&!/sun.?roof|moon.?roof|panoramic|dual.?pane/i.test(text);return {...req,label:labels[req.id],sourceUrl:fact?.sourceUrl,method:fact?.method,state:roofNotListed?'not-listed':fact?fact.value===req.wanted?'match':'conflict':'unknown',evidence:roofNotListed?['No sunroof or moonroof listed in the readable standard/optional equipment sections. Confirm on the vehicle.']:fact?.evidence||[]};});
+ const checks=query.requirements.map(req=>{let fact=sticker?.status==='verified'?sticker.features?.[req.id]:null;if(req.id==='exteriorGray'&&sticker?.status==='verified'){const paint=lines.filter(l=>/^exterior(?: color)?:/i.test(l));if(paint.length)fact={value:paint.some(l=>/\bgr[ae]y\b/i.test(l.split(/interior(?: color)?:/i)[0])),evidence:paint};}return {...req,label:labels[req.id],sourceUrl:fact?.sourceUrl,method:fact?.method,state:fact?fact.value===req.wanted?'match':'conflict':'unknown',evidence:fact?.evidence||[]};});
  if(checks.some(c=>c.state==='conflict'))return {kind:'excluded',reason:'equipment',checks};
  if(checks.some(c=>c.state==='unknown'))return {kind:'unknown',checks};
  return {kind:'match',checks};

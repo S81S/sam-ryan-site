@@ -1,5 +1,5 @@
 import {openVehiclePreview} from './vehicle-preview.mjs?v=conversion1';
-import {parseQuery,matchVehicle,labels} from './equipment-search.mjs?v=23-tow26';
+import {parseQuery,matchVehicle,labels} from './equipment-search.mjs?v=factory1';
 const $=id=>document.getElementById(id),data=window.usedInventoryData,index=window.equipmentIndex;
 const el=(tag,text,cls)=>{const e=document.createElement(tag);if(text!==undefined)e.textContent=text;if(cls)e.className=cls;return e;};
 const cash=n=>n===null?'Call for price':new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(n);
@@ -46,7 +46,7 @@ function render(){
  if(q.ambiguity||q.warnings.some(w=>/Conflicting|not both|More than one/.test(w))){out.append(el('p',q.ambiguity||'Please resolve the conflicting choices above, then search again.'));$('more-matches').hidden=true;return;}
  const matches=[],unknown=[];
  for(const vehicle of data.vehicles){const result=matchVehicle(vehicle,index.records[vehicle.vin],q);if(result.kind==='match')matches.push({vehicle,result});else if(result.kind==='unknown')unknown.push({vehicle,result});}
- out.append(el('p',`${matches.length} ${q.requirements.length?(q.requirements.some(r=>r.id==='flatTow')?'matches supported by stickers and towing manuals':'sticker-backed matches'):'matches'}${q.requirements.length&&unknown.length?' · '+unknown.length+' need equipment confirmation':''}`,'result-count'));
+ out.append(el('p',`${matches.length} ${q.requirements.length?(q.requirements.some(r=>r.id==='flatTow')?'matches supported by stickers and towing manuals':'equipment-confirmed matches'):'matches'}${q.requirements.length&&unknown.length?' · '+unknown.length+' need equipment confirmation':''}`,'result-count'));
  const order=$('search-sort').value;
  const sort=(a,b)=>order==='mileage'?(a.vehicle.miles??Infinity)-(b.vehicle.miles??Infinity):order==='year'?b.vehicle.year-a.vehicle.year:(a.vehicle.price??Infinity)-(b.vehicle.price??Infinity);
  matches.sort(sort);unknown.sort(sort);
@@ -55,10 +55,10 @@ function render(){
  for(const {vehicle:v,result} of rows.slice(0,visible)){
   const sticker=index.records[v.vin],card=el('article',undefined,'match');
   const photo=link('',`contact.html?vehicle=${encodeURIComponent(v.vin)}`);photo.className='stock-photo';photo.setAttribute('aria-label','View vehicle details: '+v.title);photo.addEventListener('click',e=>{e.preventDefault();openVehiclePreview(v,q.original);});const img=el('img');img.src=v.photoUrl;img.alt=v.title;img.width=400;img.height=300;img.loading='lazy';img.addEventListener('error',()=>photo.replaceChildren(el('span','View vehicle details')),{once:true});photo.append(img);card.append(photo);
-  card.append(el('span',result.kind==='unknown'?'Equipment needs confirmation':result.checks.some(c=>c.state==='not-listed')?'Sunroof not listed on sticker':q.requirements.some(r=>r.id==='flatTow')?'Sticker + towing manual checked':q.requirements.length?'Requested equipment confirmed on sticker':sticker?.status==='verified'?'Window sticker available':'Equipment unverified','stock-badge'),el('h3',v.title),el('p',cash(v.price),'vehicle-price'),el('p',`${v.condition||''} · ${v.miles==null?'Mileage unknown':v.miles.toLocaleString()+' miles'}${v.stock?' · Stock '+v.stock:''}`,'vehicle-meta'));
+  card.append(el('span',result.kind==='unknown'?'Equipment needs confirmation':result.checks.some(c=>c.state==='not-listed')?'Sunroof not listed on sticker':q.requirements.some(r=>r.id==='flatTow')?'Sticker + towing manual checked':q.requirements.length?(result.checks.some(c=>c.method?.startsWith('factory-'))?'Sticker + factory guide checked':'Requested equipment confirmed on sticker'):sticker?.status==='verified'?'Window sticker available':'Equipment unverified','stock-badge'),el('h3',v.title),el('p',cash(v.price),'vehicle-price'),el('p',`${v.condition||''} · ${v.miles==null?'Mileage unknown':v.miles.toLocaleString()+' miles'}${v.stock?' · Stock '+v.stock:''}`,'vehicle-meta'));
   if(v.condition==='New')card.append(el('p','Advertised price may include conditional incentives. Ask us to confirm your price.','stock-small'));
   for(const check of result.checks)card.append(el('p',`${check.state==='match'?'✓':check.state==='not-listed'?'—':'?'} ${check.wanted?'':'Without '}${check.label}: ${check.state==='unknown'?'not confirmed by the sticker':check.evidence.join(' / ')}`,'equipment-check'));
-  for(const check of result.checks)if(check.sourceUrl)card.append(link('Read factory flat-towing instructions ↗',check.sourceUrl));
+  for(const check of result.checks)if(check.sourceUrl)card.append(link(check.id==='flatTow'?'Read factory flat-towing instructions ↗':'Read factory equipment reference ↗',check.sourceUrl));
   if(sticker?.status==='verified')card.append(link('Read original window sticker ↗',sticker.sourceUrl));
   const actions=el('div',undefined,'stock-actions');actions.append(link('Check availability',`contact.html?vehicle=${v.vin}&request=${encodeURIComponent(q.original)}`),link('Compare equipment',`compare.html?vehicle=${v.vin}`),link('Request a test drive',`contact.html?vehicle=${v.vin}&purpose=test-drive&request=${encodeURIComponent(q.original)}`));const compareLabel=el('label','Add to compare');const cb=document.createElement('input');cb.type='checkbox';cb.dataset.compareVin=v.vin;cb.checked=compareVins.includes(v.vin);cb.addEventListener('change',()=>toggleCompare(v.vin,cb.checked));compareLabel.prepend(cb);actions.append(compareLabel);card.append(actions);out.append(card);
  }
