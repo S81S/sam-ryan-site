@@ -69,7 +69,7 @@ export function openVehiclePreview(vehicle, request = '') {
   };
   advisor.addEventListener('change', sync); sync();
   actions.append(text, ask, walkaround, drive, compare, driveway);
-  dialog.append(actions);
+  actions.append(action('Full vehicle details',`/vehicle-${vehicle.vin}?${new URLSearchParams({q:request,condition:shoppingContext().condition||'New'})}`));dialog.append(actions);
   const photos = action('More photos on dealer site ↗', vehicle.sourceUrl);
   photos.className = 'mini-btn'; photos.target = '_blank'; photos.rel = 'noopener';
   dialog.append(photos);

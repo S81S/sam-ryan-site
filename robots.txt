@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://carswithsam.com/sitemap.xml
+Sitemap: https://carswithsam.com/sitemap-vehicles.xml
