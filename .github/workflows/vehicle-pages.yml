@@ -6,6 +6,8 @@ on:
       - 'data/used-inventory.json'
       - 'data/equipment-index.json'
       - 'build-vehicle-pages.cjs'
+      - 'notify-indexnow.cjs'
+      - 'indexnow-key.txt'
       - '.github/workflows/vehicle-pages.yml'
   workflow_dispatch:
 permissions:
@@ -24,12 +26,16 @@ jobs:
         with:
           node-version: '22'
       - run: node build-vehicle-pages.cjs
+      - run: node notify-indexnow.cjs --prepare
       - name: Publish generated pages
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add vehicle-*.html vehicles*.html sitemap-vehicles.xml
+          git add vehicle-*.html vehicles*.html sitemap-vehicles.xml vehicle-pages-version.json
           if ! git diff --cached --quiet; then
             git commit -m "Update searchable vehicle pages from verified inventory snapshot"
             git push origin HEAD:main
           fi
+
+      - name: Notify search engines after deployment
+        run: node notify-indexnow.cjs
