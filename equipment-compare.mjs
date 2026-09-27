@@ -1,6 +1,6 @@
-import {applyFactoryEquipment,equipmentStatus} from './factory-equipment.mjs?v=factory1';
+import {applyFactoryEquipment,equipmentStatus} from './factory-equipment.mjs?v=factory2';
 import {comparisonRows} from './comparison-rows.mjs?v=conversion1';
-import {definitions,parseQuery} from './equipment-search.mjs?v=factory1';
+import {definitions,parseQuery} from './equipment-search.mjs?v=factory2';
 const $=id=>document.getElementById(id), el=(tag,text)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;return n};
 function render(){
  const vehicles=window.usedInventoryData.vehicles;
@@ -38,3 +38,4 @@ function render(){
  out.append(el('p','A factory sticker describes original equipment. For a used vehicle, ask us to confirm its current condition, modifications and working features.'));
 }
 document.addEventListener('compare:changed',render);render();
+

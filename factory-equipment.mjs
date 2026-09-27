@@ -1,4 +1,5 @@
 import {stickerAudits} from './factory-sticker-audits.mjs?v=factory1';
+import {additionalFactoryRules} from './factory-catalog-2026.mjs?v=factory2';
 const ramSource='https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf';
 const pacificaSource='https://www.chrysler.com/news/2027-chrysler-pacifica-debut.html';
 const norm=s=>String(s||'').normalize('NFKC').replace(/[®™]/g,'').replace(/[\u2010-\u2015]/g,'-').replace(/\s+/g,' ').trim().toLowerCase();
@@ -39,14 +40,21 @@ add('Pacifica',2027,['Select','Limited','Pinnacle'],'package',['familyCamera','n
 add('Pacifica',2027,['LX','Select','Limited','Pinnacle'],'standard',['powerLiftgate']);
 add('Pacifica',2027,['Select','Limited'],'package',['surroundCamera'],['Safety Sphere']);
 add('Pacifica',2027,['Pinnacle'],'standard',['surroundCamera']);
+factoryRules.push(...additionalFactoryRules);
 
 const presencePatterns={sunroof:/sun.?roof|moon.?roof|panoramic|dual.?pane/i,panoramic:/sun.?roof|moon.?roof|panoramic|dual.?pane/i,surroundCamera:/surround|360.*camera/i,hud:/head.?up|\bhud\b/i,airSuspension:/air.suspension|active.level/i,bedliner:/bed.?liner|spray.in/i};
 function identity(sticker){
  const lines=sticker.identityLines||[],year=Number(lines.join(' ').match(/\b(20\d\d)\b/)?.[1]);
- const name=norm(lines.filter(l=>!/^20\d\d model year$/i.test(l)).join(' ')).replace(/^20\d\d\s+/,'');
+ const name=norm(lines.filter(l=>!/^20\d\d model year\b/i.test(l)).join(' ')).replace(/^20\d\d\s+/,'');
  const ram=name.match(/^ram 1500 (tradesman|black express|express|warlock|big horn|lone star|laramie|rebel|limited longhorn|longhorn|limited|tungsten) (crew|quad) cab\b/);
- if(ram)return {year,model:'Ram 1500',trim:ram[1]==='black express'?'Express':ram[1]==='limited longhorn'?'Longhorn':ram[1],cab:ram[2]};
- const pacifica=name.match(/^(?:chrysler )?pacifica (lx|select|limited|pinnacle)(?:\b|$)/);
+ if(ram)return {year,model:'Ram 1500',trim:ram[1]==='black express'?'express':ram[1]==='limited longhorn'?'longhorn':ram[1],cab:ram[2]};
+ const compass=name.match(/^(?:jeep )?compass (latitude altitude|limited altitude|latitude|limited|trailhawk) (?:4x4|4x2|fwd)$/);
+ if(compass)return {year,model:'Compass',trim:compass[1]};
+ const grand=name.match(/^(?:jeep )?grand cherokee (laredo altitude|limited reserve|limited|summit) (?:4x4|4x2)$/);
+ // The refreshed 2026 guide covers Hurricane 4 models, not carryover V6 or L/4xe.
+ if(grand&&/2\.0[ -]?l.*(?:hurricane|i4)|hurricane.*(?:2\.0|4 turbo)/i.test(sticker.engine||''))return {year,model:'Grand Cherokee',trim:grand[1]};
+ if(/phev|hybrid|plug.in/i.test(name+' '+(sticker.engine||'')))return null;
+ const pacifica=name.match(/^(?:chrysler )?pacifica (lx|select|limited|pinnacle)(?: (?:awd|fwd))?$/);
  return pacifica?{year,model:'Pacifica',trim:pacifica[1]}:null;
 }
 function packageOn(lines,name){const n=norm(name);return lines.find(l=>{const value=norm(l).replace(/\s+\$[\d,.]+$/,'');return value===n||value===n+' package';});}
@@ -65,7 +73,7 @@ export function applyFactoryEquipment(vehicle,sticker){
   if(rule.year!==id.year||rule.model!==id.model||!rule.trims.some(t=>norm(t)===id.trim))continue;
   const f=rule.feature;
   const trimLabel=rule.trims.find(t=>norm(t)===id.trim);
-  if(rule.kind==='optional'&&['sunroof','panoramic','airSuspension'].includes(f)&&id.cab!=='crew')continue;
+  if(id.model==='Ram 1500'&&rule.kind==='optional'&&['sunroof','panoramic','airSuspension'].includes(f)&&id.cab!=='crew')continue;
   // Some Monroney labels abbreviate this deletion without repeating 'bedliner'.
   if(f==='bedliner'&&lines.some(l=>/spray.in(?: bedliner)? delete/i.test(l))){features[f]={value:false,method:'sticker-deletion',evidence:lines.filter(l=>/spray.in(?: bedliner)? delete/i.test(l))};continue;}
   if(features[f])continue;

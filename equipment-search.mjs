@@ -1,4 +1,4 @@
-import {applyFactoryEquipment} from './factory-equipment.mjs?v=factory1';
+import {applyFactoryEquipment} from './factory-equipment.mjs?v=factory2';
 import {flatTowEvidence} from './flat-tow-rules.mjs?v=23-tow26';
 import {interiorColors} from './interior-colors.mjs?v=23-audit22';
 import {translateSearchTerms} from './search-dictionary.mjs?v=23-audit22';
@@ -268,3 +268,4 @@ export function matchVehicle(vehicle,sticker,query){
  if(checks.some(c=>c.state==='unknown'))return {kind:'unknown',checks};
  return {kind:'match',checks};
 }
+
