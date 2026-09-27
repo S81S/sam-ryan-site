@@ -1,7 +1,7 @@
-import {installVehiclePickers} from './compare-picker.mjs?v=picker2';
+import {installVehiclePickers} from './compare-picker.mjs?v=next3';
 const readSticker=async(...args)=>(await import('./sticker-reader.mjs?v=coverage4')).readSticker(...args);
 import {shoppingContext} from './shopping-context.mjs?v=shopping1';
-import {openVehiclePreview} from './vehicle-preview.mjs?v=shopping1';
+import {openVehiclePreview} from './vehicle-preview.mjs?v=next3';
 const vehicles=window.usedInventoryData.vehicles;
 const index=window.equipmentIndex;
 const validVIN=s=>/^[A-HJ-NPR-Z0-9]{17}$/.test(s);
@@ -76,10 +76,10 @@ function findByStockOrVin(q){const norm=q.trim().toUpperCase().replace(/\s+/g,''
 for(const side of SIDES){
  const input=$('lookup-'+side),status=$('lookup-status-'+side),go=()=>{
   const q=input.value;status.className='lookup-status';
-  if(!q.trim()){status.textContent='Enter a stock number or VIN.';status.classList.add('is-error');return}
+  if(!q.trim()){status.textContent='Type a model, trim, stock number or VIN.';status.classList.add('is-error');return}
   const match=findByStockOrVin(q);
   if(!match&&validVIN(q.trim().toUpperCase())){addExternal(q.trim().toUpperCase(),side);return;}
-  if(!match){status.textContent=`No vehicle found at 8107 Research Blvd with stock # or VIN "${q.trim()}". Double-check the stock number or enter a complete 17-character VIN.`;status.classList.add('is-error');return}
+  if(!match){status.textContent='Choose a matching vehicle below, or narrow your search. To add your own vehicle, enter its complete 17-character VIN.';return}
   $('choose-'+side).value=match.vin;$('choose-'+side).dispatchEvent(new Event('change'));
   if(vehicle(side)?.vin!==match.vin)return;
   status.textContent=`Matched: ${match.title} — Stock ${match.stock} — VIN ${match.vin}.`;status.classList.add('is-ok');

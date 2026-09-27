@@ -1,6 +1,6 @@
 import {stickerAudits} from './factory-sticker-audits.mjs?v=shopping1';
 import {repairSeatEvidence} from './seat-evidence.mjs?v=coverage4';
-import {repairTowEvidence} from './tow-evidence.mjs?v=complete1';
+import {repairTowEvidence,repairTrailerBrakeEvidence} from './tow-evidence.mjs?v=next3';
 import {additionalFactoryRules} from './factory-catalog-2026.mjs?v=complete1';
 const ramSource='https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf';
 const pacificaSource='https://www.chrysler.com/news/2027-chrysler-pacifica-debut.html';
@@ -72,6 +72,8 @@ export function applyFactoryEquipment(vehicle,sticker){
  sticker=repairTowEvidence(repairSeatEvidence(sticker));
  const audit=stickerAudits[vehicle.vin];
  if(!audit||!sticker.sha256||audit.sha256!==sticker.sha256||audit.market!=='US')return sticker;
+ // Add newly recognized printed wording only after matching the audited original.
+ if(sticker.vin===vehicle.vin)sticker=repairTrailerBrakeEvidence(sticker);
  // Saved parser split the display year into individual digits on these originals.
  // Recovered identity is independently checked against that exact cached PDF;
  // never use listing identity, a different fingerprint, or overwrite a valid identity.

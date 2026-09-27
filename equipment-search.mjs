@@ -1,6 +1,6 @@
 import {validSeatEvidence} from './seat-evidence.mjs?v=coverage4';
-import {towEquipmentPattern} from './tow-evidence.mjs?v=complete1';
-import {applyFactoryEquipment} from './factory-equipment.mjs?v=complete1';
+import {towEquipmentPattern,brakeControllerPattern} from './tow-evidence.mjs?v=next3';
+import {applyFactoryEquipment} from './factory-equipment.mjs?v=next3';
 import {flatTowEvidence} from './flat-tow-rules.mjs?v=23-tow26';
 import {interiorColors} from './interior-colors.mjs?v=23-audit22';
 import {translateSearchTerms} from './search-dictionary.mjs?v=23-audit22';
@@ -47,7 +47,7 @@ export const definitions = [
  ["subwoofer","Subwoofer",new RegExp("subwoofer","i")],
  ["satelliteRadio","Satellite radio",new RegExp("siriusxm|satellite.radio","i")],
  ["outlet","AC power outlet",new RegExp("115.volt|115v|120.volt|120v|ac.outlet","i")],
- ["brakeController","Trailer brake controller",new RegExp("trailer.brake controller","i")],
+ ["brakeController","Trailer brake controller",brakeControllerPattern],
  ["towMirrors","Trailer tow mirrors",new RegExp("trailer.tow.*mirror|tow.mirror","i")],
  ["airSuspension","Air suspension",new RegExp("air.suspension","i")],
  ["rearLocker","Locking rear differential",new RegExp("locking rear.axle|rear.*locking differential|electronic.*rear.*locker","i")],
