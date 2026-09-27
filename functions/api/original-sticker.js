@@ -12,7 +12,7 @@ export async function onRequest(context){
  try{const saved=cache&&await cache.match(key);if(saved?.ok&&/application\/pdf/i.test(saved.headers.get('Content-Type')||''))return saved;}catch{}
  const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),25000);
  try{
-  const upstream=await fetch('https://windowsticker.org/api/sticker/'+vin,{signal:controller.signal,redirect:'error',headers:{Accept:'application/pdf','X-Contact':'carswithsam.com'}});
+  const upstream=await fetch('https://windowsticker.org/api/sticker/'+vin,{signal:controller.signal,redirect:'manual',headers:{Accept:'application/pdf','X-Contact':'carswithsam.com'}});
   if(!upstream.ok){await upstream.body?.cancel();return fail(upstream.status===429?'Sticker service is busy. Please try again shortly.':'No readable original sticker is available from this service. You can upload your original PDF.',upstream.status===429?429:404);}
   const limit=5*1024*1024;
   if(!/application\/pdf/i.test(upstream.headers.get('Content-Type')||'')||Number(upstream.headers.get('Content-Length'))>limit){await upstream.body?.cancel();return fail('The service did not return a supported original PDF.',422);}
