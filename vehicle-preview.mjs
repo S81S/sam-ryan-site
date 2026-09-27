@@ -48,7 +48,8 @@ export function openVehiclePreview(vehicle, request = '') {
   label.append(advisor); dialog.append(label);
   const actions = element('div', null, 'hero-actions');
   const text = action('Text Sam about this vehicle', '#');
-  const ask = action('Ask about this vehicle', '#');
+  const ask = action('Check availability', '#');
+  const walkaround = action('Request a walkaround', '#');
   const drive = action('Request a test drive', '#');
   const sync = () => {
     const who = advisor.value;
@@ -56,10 +57,11 @@ export function openVehiclePreview(vehicle, request = '') {
     text.textContent = `Text ${who} about this vehicle`;
     text.href = `sms:${who === 'Ryan' ? '+14014104727' : '+17372091320'}?body=${encodeURIComponent(`Hi ${who}, I'm interested in ${vehicle.title}, stock ${vehicle.stock || vehicle.vin}. Is it available?${request ? '\nMy search: ' + request : ''}`)}`;
     ask.href = 'contact.html?' + query;
+    query.set('purpose','walkaround'); walkaround.href='contact.html?'+query;
     query.set('purpose', 'test-drive'); drive.href = 'contact.html?' + query;
   };
   advisor.addEventListener('change', sync); sync();
-  actions.append(text, ask, drive, action('Compare window stickers', 'compare.html?vehicle=' + encodeURIComponent(vehicle.vin)));
+  actions.append(text, ask, walkaround, drive, action('Compare window stickers', 'compare.html?vehicle=' + encodeURIComponent(vehicle.vin)));
   dialog.append(actions);
   const photos = action('More photos on dealer site ↗', vehicle.sourceUrl);
   photos.className = 'mini-btn'; photos.target = '_blank'; photos.rel = 'noopener';

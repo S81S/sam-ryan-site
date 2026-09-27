@@ -1,4 +1,5 @@
-import {openVehiclePreview} from './vehicle-preview.mjs?v=conversion1';
+import {recoveryOptions} from './search-recovery.mjs?v=funnel1';
+import {openVehiclePreview} from './vehicle-preview.mjs?v=funnel1';
 import {parseQuery,matchVehicle,labels} from './equipment-search.mjs?v=factory2';
 const $=id=>document.getElementById(id),data=window.usedInventoryData,index=window.equipmentIndex;
 const el=(tag,text,cls)=>{const e=document.createElement(tag);if(text!==undefined)e.textContent=text;if(cls)e.className=cls;return e;};
@@ -35,7 +36,7 @@ compareClear.addEventListener('click',()=>{compareVins=[];saveCompare();updateCo
 updateCompareBar();
 
 
-let lastQuery=null,visible=pageSize(),restoringSearch=true;
+let searchCounts={},lastQuery=null,visible=pageSize(),restoringSearch=true;
 function revealResults(){if(!restoringSearch){$('search-results').scrollIntoView({behavior:'instant',block:'start'});$('search-results').focus({preventScroll:true});}}
 function render(){
  const out=$('matchResults');out.replaceChildren();$('visible-count').textContent='';const q=lastQuery;if(!q)return;
@@ -47,6 +48,7 @@ function render(){
  const matches=[],unknown=[];
  for(const vehicle of data.vehicles){const result=matchVehicle(vehicle,index.records[vehicle.vin],q);if(result.kind==='match')matches.push({vehicle,result});else if(result.kind==='unknown')unknown.push({vehicle,result});}
  out.append(el('p',`${matches.length} ${q.requirements.length?(q.requirements.some(r=>r.id==='flatTow')?'matches supported by stickers and towing manuals':'equipment-confirmed matches'):'matches'}${q.requirements.length&&unknown.length?' · '+unknown.length+' need equipment confirmation':''}`,'result-count'));
+ searchCounts={condition:q.condition||'Both',result_count:matches.length,unknown_count:unknown.length,feature_count:q.requirements.length};
  const order=$('search-sort').value;
  const sort=(a,b)=>order==='mileage'?(a.vehicle.miles??Infinity)-(b.vehicle.miles??Infinity):order==='year'?b.vehicle.year-a.vehicle.year:(a.vehicle.price??Infinity)-(b.vehicle.price??Infinity);
  matches.sort(sort);unknown.sort(sort);
@@ -60,14 +62,27 @@ function render(){
   for(const check of result.checks)card.append(el('p',`${check.state==='match'?'✓':check.state==='not-listed'?'—':'?'} ${check.wanted?'':'Without '}${check.label}: ${check.state==='unknown'?'not confirmed by the sticker':check.evidence.join(' / ')}`,'equipment-check'));
   for(const check of result.checks)if(check.sourceUrl)card.append(link(check.id==='flatTow'?'Read factory flat-towing instructions ↗':'Read factory equipment reference ↗',check.sourceUrl));
   if(sticker?.status==='verified')card.append(link('Read original window sticker ↗',sticker.sourceUrl));
-  const actions=el('div',undefined,'stock-actions');actions.append(link('Check availability',`contact.html?vehicle=${v.vin}&request=${encodeURIComponent(q.original)}`),link('Compare equipment',`compare.html?vehicle=${v.vin}`),link('Request a test drive',`contact.html?vehicle=${v.vin}&purpose=test-drive&request=${encodeURIComponent(q.original)}`));const compareLabel=el('label','Add to compare');const cb=document.createElement('input');cb.type='checkbox';cb.dataset.compareVin=v.vin;cb.checked=compareVins.includes(v.vin);cb.addEventListener('change',()=>toggleCompare(v.vin,cb.checked));compareLabel.prepend(cb);actions.append(compareLabel);card.append(actions);out.append(card);
+  const actions=el('div',undefined,'stock-actions');actions.append(link('Check availability',`contact.html?vehicle=${v.vin}&request=${encodeURIComponent(q.original)}`),link('Request a walkaround',`contact.html?vehicle=${v.vin}&purpose=walkaround&request=${encodeURIComponent(q.original)}`),link('Compare equipment',`compare.html?vehicle=${v.vin}`),link('Request a test drive',`contact.html?vehicle=${v.vin}&purpose=test-drive&request=${encodeURIComponent(q.original)}`));const compareLabel=el('label','Add to compare');const cb=document.createElement('input');cb.type='checkbox';cb.dataset.compareVin=v.vin;cb.checked=compareVins.includes(v.vin);cb.addEventListener('change',()=>toggleCompare(v.vin,cb.checked));compareLabel.prepend(cb);actions.append(compareLabel);card.append(actions);out.append(card);
  }
  $('more-matches').hidden=rows.length<=visible;
  $('more-matches').textContent=`Show ${Math.min(pageSize(),Math.max(0,rows.length-visible))} more vehicles`;
  $('visible-count').textContent=rows.length?`Showing ${Math.min(visible,rows.length)} of ${rows.length} vehicles`:'';
- if(!rows.length){out.append(link('Ask us to help with this search','contact.html?request='+encodeURIComponent(q.original)));}
+ if(!matches.length){
+  const help=el('section',undefined,'search-summary');help.append(el('h3','Let’s find your next vehicle'),el('p','Keep your must-haves and send us your search. We can check availability and help confirm the details.'));
+  const request=`${q.condition||'New or used'} vehicles. My search: ${q.original}`;
+  help.append(link('Help me find this vehicle','contact.html?purpose=find&request='+encodeURIComponent(request)));
+  if(unknown.length&&!$('show-unverified').checked){const show=el('button',`Show ${unknown.length} vehicles needing confirmation`,'mini-btn');show.type='button';show.addEventListener('click',()=>{$('show-unverified').checked=true;render();});help.append(show);}
+  const alternatives=recoveryOptions(data.vehicles,index.records,q);
+  if(alternatives.length){help.append(el('h3','Options if you’re flexible'),el('p','These are not exact matches. Each group sets aside one requirement; your original search stays unchanged.'));
+   for(const option of alternatives){const group=el('div',undefined,'recovery-option');group.append(el('h4',option.label.replace('Search without my','Set aside my').replace('See prices above my budget','Above your budget').replace('Include higher mileage','Higher mileage')),el('p',`${option.count} match your remaining requirements.`));
+    for(const v of option.vehicles){const button=el('button',`${v.title} · ${cash(v.price)} · Stock ${v.stock}`,'mini-btn');button.type='button';button.addEventListener('click',()=>openVehiclePreview(v,request+'\nI’m considering this alternative: '+option.label));group.append(button);}
+    help.append(group);
+   }
+  } else if(!unknown.length)help.append(el('p','We couldn’t find an alternative by changing just one equipment, price or mileage requirement. Check the model spelling or let us help.'));
+  out.append(help);
+ }
 }
-$('matchBtn').addEventListener('click',()=>{const value=$('request').value.trim();if(!value){lastQuery=null;$('more-matches').hidden=true;$('matchResults').textContent='Tell us a model, budget or equipment you want.';return;}lastQuery=parseQuery(value);const selectedCondition=$('search-condition').value;if(lastQuery.condition&&selectedCondition!=='Both'&&lastQuery.condition!==selectedCondition){lastQuery.ambiguity=`Your request says ${lastQuery.condition.toLowerCase()}. Choose ${lastQuery.condition} above, or edit your request.`;}lastQuery.condition=selectedCondition==='Both'?null:selectedCondition;const searchUrl=new URL(location.href);searchUrl.searchParams.set('q',value);searchUrl.searchParams.set('condition',selectedCondition);history.replaceState(null,'',searchUrl);try{sessionStorage.setItem('samRyanLastSearch',value);}catch{}visible=pageSize();render();revealResults();});
+$('matchBtn').addEventListener('click',()=>{const value=$('request').value.trim();if(!value){lastQuery=null;$('more-matches').hidden=true;$('matchResults').textContent='Tell us a model, budget or equipment you want.';return;}lastQuery=parseQuery(value);const selectedCondition=$('search-condition').value;if(lastQuery.condition&&selectedCondition!=='Both'&&lastQuery.condition!==selectedCondition){lastQuery.ambiguity=`Your request says ${lastQuery.condition.toLowerCase()}. Choose ${lastQuery.condition} above, or edit your request.`;}lastQuery.condition=selectedCondition==='Both'?null:selectedCondition;const searchUrl=new URL(location.href);searchUrl.searchParams.set('q',value);searchUrl.searchParams.set('condition',selectedCondition);history.replaceState(null,'',searchUrl);try{sessionStorage.setItem('samRyanLastSearch',value);}catch{}visible=pageSize();searchCounts={};render();if(!restoringSearch&&Object.keys(searchCounts).length)window.cwsTrack?.('search_results',searchCounts);revealResults();});
 $('results-per-page').addEventListener('change',()=>{visible=pageSize();render();});
 $('search-sort').addEventListener('change',()=>{visible=pageSize();render();});
 $('show-unverified').addEventListener('change',()=>{visible=pageSize();render();});

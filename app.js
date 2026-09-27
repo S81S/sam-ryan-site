@@ -1,3 +1,29 @@
+(() => {
+  if(window.cwsTrack)return;
+  const recent=new Map();
+  const purposes=new Set(['Check availability','Request a test drive','Request a walkaround video','Ask for an out-the-door price','Discuss my trade-in','Get help finding a vehicle']);
+  window.cwsTrack=(event,details={})=>{
+    if(!['carswithsam.com','www.carswithsam.com'].includes(location.hostname)||navigator.doNotTrack==='1'||navigator.globalPrivacyControl)return;
+    const data={event,page:location.pathname.replace(/\.html$/,'').replace(/\/$/,'')||'/'};
+    for(const key of ['result_count','unknown_count','feature_count'])if(Number.isInteger(details[key]))data[key]=details[key];
+    if(['Sam','Ryan'].includes(details.advisor))data.advisor=details.advisor;
+    if(purposes.has(details.purpose))data.purpose=details.purpose;
+    if(['New','Used','Both'].includes(details.condition))data.condition=details.condition;
+    if(['text','call','email'].includes(details.channel))data.channel=details.channel;
+    const body=JSON.stringify(data),now=Date.now();if(now-(recent.get(body)||0)<1500)return;recent.set(body,now);
+    fetch('/api/funnel-event',{method:'POST',headers:{'Content-Type':'application/json'},body,keepalive:true,credentials:'omit',referrerPolicy:'no-referrer'}).catch(()=>{});
+  };
+  document.addEventListener('click',e=>{
+    const a=e.target.closest?.('a[href]');if(!a)return;
+    const href=a.getAttribute('href');const channel=href.startsWith('sms:')?'text':href.startsWith('tel:')?'call':href.startsWith('mailto:')?'email':null;
+    if(!channel)return;
+    const recipient=href.split('?')[0].toLowerCase();
+    const advisor=/4014104727|ryansugrue/.test(recipient)?'Ryan':/7372091320|samuelsweitzer/.test(recipient)?'Sam':null;
+    if(advisor)window.cwsTrack('contact_click',{channel,advisor});
+  });
+  if(document.getElementById('contactForm'))window.cwsTrack('inquiry_open');
+})();
+
 document.documentElement.classList.add('js');
 const inventory=(window.usedInventoryData?.vehicles||[]).filter(v=>v.locationId==='18393').map(v=>({...v,id:v.vin,name:v.title.replace(/^(?:Used|New) [0-9]{4} /i,''),newUsed:v.condition||'Used',type:'Unverified',drivetrain:'Unverified',engine:'Verify on sticker',features:[],scoreBoost:[]}));
 const SNAPSHOT_DATE=window.usedInventoryData?.capturedAt||'Unknown';

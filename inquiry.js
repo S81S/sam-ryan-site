@@ -17,10 +17,11 @@
     const who = ryan ? 'Ryan' : 'Sam';
     const cell = ryan ? '+14014104727' : '+17372091320';
     callAdvisor.href = 'tel:' + cell; callAdvisor.textContent = 'Call ' + who;
-    textAdvisor.href = 'sms:' + cell; textAdvisor.textContent = 'Text ' + who;
+    textAdvisor.href = 'sms:' + cell + '?body=' + encodeURIComponent(`Hi ${who}, ${byId('inquiry-purpose').value}.` + (vehicle ? `\n${vehicle.title} — Stock ${vehicle.stock} — VIN ${vehicle.vin}` : '') + (byId('field-message').value.trim() ? '\n'+byId('field-message').value.trim() : '') + (byId('inquiry-purpose').value==='Request a test drive' && byId('visit-time').value.trim() ? '\nPreferred visit: '+byId('visit-time').value.trim()+' (please confirm)' : '')); textAdvisor.textContent = 'Text ' + who;
   };
   advisor.addEventListener('change', syncAdvisor); syncAdvisor();
   const purpose = byId('inquiry-purpose');
+  if (params.get('purpose') === 'walkaround') purpose.value = 'Request a walkaround video';
   if (params.get('purpose') === 'test-drive') purpose.value = 'Request a test drive';
   const syncPurpose = () => { byId('visit-field').hidden = purpose.value !== 'Request a test drive'; };
   purpose.addEventListener('change', syncPurpose);
@@ -43,6 +44,9 @@
     const detail = document.createElement('p'); detail.textContent = `Stock ${vehicle.stock} · VIN ${vehicle.vin}`;
     card.append(title, detail); card.hidden = false;
   }
+  syncAdvisor();
+  form.addEventListener('input', syncAdvisor);
+  form.addEventListener('change', syncAdvisor);
   form.addEventListener('input', () => { byId('request-preview').hidden = true; byId('copy-inquiry-status').textContent = ''; });
   form.addEventListener('submit', event => {
     event.preventDefault();
@@ -60,6 +64,7 @@
     byId('request-text').textContent = body;
     byId('send-inquiry').href = `mailto:${recipient}?subject=${encodeURIComponent(`${values.purpose}${vehicle ? ' — stock '+vehicle.stock : ''} | Cars With Sam`)}&body=${encodeURIComponent(body)}`;
     byId('request-preview').hidden = false;
+    window.cwsTrack?.('inquiry_review',{advisor:values.advisor==='Ryan'?'Ryan':'Sam',purpose:values.purpose});
     byId('contactMessage').textContent = 'Your request is ready below. Nothing has been sent yet. Open your email app, review and press Send there, or copy your request.';
     if (!form.dataset.directDelivery) byId('send-inquiry').focus();
   });

@@ -50,6 +50,7 @@
       status.textContent='Your inquiry was accepted for sending to your advisor. Please wait for their reply to confirm availability or an appointment.';
       document.getElementById('contactMessage').textContent='Your inquiry was accepted for sending. You can also reach your advisor directly if you need a quicker answer.';
     } catch {
+      window.cwsTrack?.('inquiry_failed',{advisor:values.advisor==='Ryan'?'Ryan':'Sam',purpose:values.purpose});
       status.textContent='We could not confirm your inquiry was sent. Your details are still here. Please use text or email below.';
     } finally {
       sending=false; locked.forEach(e=>e.disabled=false); token=''; button.disabled=true;
