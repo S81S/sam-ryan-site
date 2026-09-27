@@ -1,5 +1,5 @@
-import {validSeatEvidence} from './seat-evidence.mjs?v=coverage3';
-import {applyFactoryEquipment} from './factory-equipment.mjs?v=coverage3';
+import {validSeatEvidence} from './seat-evidence.mjs?v=coverage4';
+import {applyFactoryEquipment} from './factory-equipment.mjs?v=coverage4';
 import {flatTowEvidence} from './flat-tow-rules.mjs?v=23-tow26';
 import {interiorColors} from './interior-colors.mjs?v=23-audit22';
 import {translateSearchTerms} from './search-dictionary.mjs?v=23-audit22';
@@ -258,6 +258,11 @@ export function matchVehicle(vehicle,sticker,query){
  }
  // Requested trim names must identify the vehicle, not appear inside unrelated package text.
  const identity=title+' '+(sticker?.status==='verified'?(sticker.identityLines||[]).join(' ').toLowerCase():'');
+ // Cherokee is a separate model; it must not silently include Grand Cherokee.
+ if(query.terms.includes('cherokee')){
+  const grand=/\bgrand cherokee\b/.test(identity);
+  if(!/\bcherokee\b/.test(identity)||grand!==query.terms.includes('grand'))return {kind:'excluded',reason:'model'};
+ }
  for(const trim of ['rho','trx','rebel'])if(query.terms.includes(trim)&&!identity.split(/[^a-z0-9'-]+/).includes(trim))return {kind:'excluded',reason:'trim'};
  const unmatched=query.terms.filter(t=>!title.split(/[^a-z0-9'-]+/).includes(t));
  // Remaining words must be found in the VIN-verified equipment text; listing descriptions are never searched.

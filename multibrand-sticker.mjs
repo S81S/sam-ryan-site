@@ -1,5 +1,5 @@
-import {validSeatEvidence} from './seat-evidence.mjs?v=coverage3';
-import {definitions,normalizeText} from './equipment-search.mjs?v=coverage3';
+import {validSeatEvidence} from './seat-evidence.mjs?v=coverage4';
+import {definitions,normalizeText} from './equipment-search.mjs?v=coverage4';
 // Only validated document families activate interpretation. No generic VIN decoding.
 export function analyzeOtherOriginal(text,vin){
  const raw=String(text).split(/\r?\n/).map(normalizeText).filter(Boolean);

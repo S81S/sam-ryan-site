@@ -1,6 +1,6 @@
-import {applyFactoryEquipment,equipmentStatus} from './factory-equipment.mjs?v=coverage3';
+import {applyFactoryEquipment,equipmentStatus} from './factory-equipment.mjs?v=coverage4';
 import {comparisonRows} from './comparison-rows.mjs?v=conversion1';
-import {definitions,parseQuery} from './equipment-search.mjs?v=coverage3';
+import {definitions,parseQuery} from './equipment-search.mjs?v=coverage4';
 const $=id=>document.getElementById(id), el=(tag,text)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;return n};
 function render(){
  const vehicles=window.usedInventoryData.vehicles;

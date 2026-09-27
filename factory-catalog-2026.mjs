@@ -63,3 +63,15 @@ add('Cherokee',['Overland'],'package',['ventilated','rearHeated','surroundCamera
 add('Cherokee',['Limited','Overland'],'package',['tow'],['Trailer Tow Group'],5);
 add('Cherokee',['Limited'],'optional',['sunroof','panoramic'],['Power Dual-Pane Panoramic Sunroof'],3);
 add('Cherokee',['Overland'],'optional',['surroundCamera'],['Advanced Pro Tech Group','Advanced ProTech Group'],4);
+
+// 2026 US Gladiator guide pages 5–6. X/anniversary and other editions stay unreviewed.
+const gladiator=['Sport','Sport S','Willys','Mojave','Rubicon'];
+add('Gladiator',gladiator,'standard',['carplay','androidAuto','keylessEntry'],[],5);
+add('Gladiator',['Sport S','Willys','Mojave','Rubicon'],'standard',['adaptiveCruise','forwardWarning'],[],5);
+add('Gladiator',gladiator,'package',['heatedSeats','heatedWheel','garageOpener','passiveEntry'],['Convenience Group'],5);
+add('Gladiator',gladiator,'package',['autoHighBeam','parkingSensors','blindSpot','rearCross'],['Safety Group'],6);
+add('Gladiator',['Sport S','Willys','Mojave','Rubicon'],'package',['outlet','alpine','premiumAudio','navigation','wifi'],['Technology Group'],6);
+add('Gladiator',['Sport S'],'package',['leather','powerDriver','powerPassenger','lumbar','hardTop'],['Premium Package'],6);
+add('Gladiator',['Sport S','Willys','Mojave','Rubicon'],'package',['hardTop','softTop'],['Dual Top Group'],5);
+add('Gladiator',['Sport S','Willys','Mojave','Rubicon'],'package',['outlet'],['Cargo Group with Trail Rail System'],6);
+add('Gladiator',['Sport S'],'package',['ledLights','fogLights'],['LED Headlamp and Fog Lamp Group'],5);

@@ -1,5 +1,5 @@
 import {installVehiclePickers} from './compare-picker.mjs?v=picker2';
-const readSticker=async(...args)=>(await import('./sticker-reader.mjs?v=coverage3')).readSticker(...args);
+const readSticker=async(...args)=>(await import('./sticker-reader.mjs?v=coverage4')).readSticker(...args);
 import {openVehiclePreview} from './vehicle-preview.mjs?v=conversion1';
 const vehicles=window.usedInventoryData.vehicles;
 const index=window.equipmentIndex;

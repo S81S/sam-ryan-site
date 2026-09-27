@@ -1,6 +1,6 @@
 import {stickerAudits} from './factory-sticker-audits.mjs?v=factory1';
-import {repairSeatEvidence} from './seat-evidence.mjs?v=coverage3';
-import {additionalFactoryRules} from './factory-catalog-2026.mjs?v=coverage3';
+import {repairSeatEvidence} from './seat-evidence.mjs?v=coverage4';
+import {additionalFactoryRules} from './factory-catalog-2026.mjs?v=coverage4';
 const ramSource='https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf';
 const pacificaSource='https://www.chrysler.com/news/2027-chrysler-pacifica-debut.html';
 const norm=s=>String(s||'').normalize('NFKC').replace(/[®™]/g,'').replace(/[\u2010-\u2015]/g,'-').replace(/\s+/g,' ').trim().toLowerCase();
@@ -51,6 +51,8 @@ function identity(sticker){
  if(ram)return {year,model:'Ram 1500',trim:ram[1]==='black express'?'express':ram[1]==='limited longhorn'?'longhorn':ram[1],cab:ram[2]};
  const compass=name.match(/^(?:jeep )?compass (latitude altitude|limited altitude|latitude|limited|trailhawk) (?:4x4|4x2|fwd)$/);
  if(compass)return {year,model:'Compass',trim:compass[1]};
+ const gladiator=name.match(/^(?:jeep )?gladiator (sport s|sport|willys|mojave|rubicon) 4x4$/);
+ if(gladiator)return {year,model:'Gladiator',trim:gladiator[1]};
  const cherokee=name.match(/^(?:jeep )?cherokee (base|laredo|limited|overland) 4x4$/);
  if(cherokee&&/1\.6[ -]?l.*(?:hybrid|hev)/i.test(sticker.engine||''))return {year,model:'Cherokee',trim:cherokee[1]};
  const grand=name.match(/^(?:jeep )?grand cherokee (laredo altitude|limited reserve|limited|summit) (?:4x4|4x2)$/);
