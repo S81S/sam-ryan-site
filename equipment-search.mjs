@@ -1,5 +1,5 @@
 import {validSeatEvidence} from './seat-evidence.mjs?v=coverage4';
-import {applyFactoryEquipment} from './factory-equipment.mjs?v=coverage4';
+import {applyFactoryEquipment} from './factory-equipment.mjs?v=shopping1';
 import {flatTowEvidence} from './flat-tow-rules.mjs?v=23-tow26';
 import {interiorColors} from './interior-colors.mjs?v=23-audit22';
 import {translateSearchTerms} from './search-dictionary.mjs?v=23-audit22';

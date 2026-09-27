@@ -1,6 +1,7 @@
 import {installVehiclePickers} from './compare-picker.mjs?v=picker2';
 const readSticker=async(...args)=>(await import('./sticker-reader.mjs?v=coverage4')).readSticker(...args);
-import {openVehiclePreview} from './vehicle-preview.mjs?v=conversion1';
+import {shoppingContext} from './shopping-context.mjs?v=shopping1';
+import {openVehiclePreview} from './vehicle-preview.mjs?v=shopping1';
 const vehicles=window.usedInventoryData.vehicles;
 const index=window.equipmentIndex;
 const validVIN=s=>/^[A-HJ-NPR-Z0-9]{17}$/.test(s);
@@ -20,7 +21,7 @@ function reset(side){
  if(urls[side]){URL.revokeObjectURL(urls[side]);delete urls[side]}
  $('pdf-'+side).removeAttribute('src');$('pdf-'+side).hidden=true;$('file-'+side).value='';$('file-status-'+side).textContent='No local PDF selected.';
  $('summary-'+side).textContent=`${v.title} · ${cash(v.price)} observed · ${v.miles===null?'Mileage unknown':v.miles.toLocaleString()+' miles'} · Stock ${v.stock} · VIN ${v.vin}`;
- $('listing-'+side).hidden=!!v.external;$('listing-'+side).href='contact.html?vehicle='+encodeURIComponent(v.vin);$('listing-'+side).textContent='View photos & vehicle details';$('listing-'+side).removeAttribute('target');$('listing-'+side).onclick=e=>{e.preventDefault();openVehiclePreview(v)};
+ $('listing-'+side).hidden=!!v.external;$('listing-'+side).href='contact.html?vehicle='+encodeURIComponent(v.vin);$('listing-'+side).textContent='View photos & vehicle details';$('listing-'+side).removeAttribute('target');$('listing-'+side).onclick=e=>{e.preventDefault();openVehiclePreview(v,shoppingContext().q)};
  $('sticker-'+side).hidden=!v.carfaxUrl&&!v.stickerUrl;$('sticker-'+side).href=v.stickerUrl||v.carfaxUrl||v.sourceUrl;$('sticker-'+side).textContent=v.stickerUrl?'Open original window sticker ↗':'Open CARFAX → Original Window Sticker ↗';
  $('lookup-note-'+side).textContent=v.stickerUrl?'Open the original document to check its VIN and equipment.':v.carfaxUrl?'Open the Covert-provided CARFAX report, then choose Original Window Sticker. A direct sticker link has not yet been checked for this vehicle.':'No CARFAX/sticker link captured for this vehicle. Open its official listing to check, or load your PDF.';
  $('pdf-link-'+side).hidden=true;$('pdf-link-'+side).removeAttribute('href');

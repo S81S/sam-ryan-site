@@ -1,6 +1,6 @@
-import {applyFactoryEquipment} from './factory-equipment.mjs?v=coverage4';
+import {applyFactoryEquipment} from './factory-equipment.mjs?v=shopping1';
 import {comparisonRows} from './comparison-rows.mjs?v=matrix1';
-import {definitions,parseQuery} from './equipment-search.mjs?v=coverage4';
+import {definitions,parseQuery} from './equipment-search.mjs?v=shopping1';
 const $=id=>document.getElementById(id),el=(tag,text)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;return n};
 const money=n=>Number.isFinite(n)?new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(n):'Ask for price';
 const short=v=>v.stock?`Stock ${v.stock}`:`VIN …${v.vin.slice(-6)}`;

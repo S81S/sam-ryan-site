@@ -2,10 +2,16 @@
 const base='https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/';
 export const additionalFactoryRules=[];
 function add(model,trims,kind,features,packages,page){
- const file=model==='Pacifica'?'shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Pacifica.pdf':`brochures-literature/2026/2026-JEEP-${(model==='Cherokee'?'CHEROKEE-HYBRID':model.toUpperCase().replaceAll(' ','-'))}.pdf`;
+ const file=['Pacifica','Durango'].includes(model)?`shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_${model}.pdf`:`brochures-literature/2026/2026-JEEP-${(model==='Cherokee'?'CHEROKEE-HYBRID':model.toUpperCase().replaceAll(' ','-'))}.pdf`;
  for(const feature of features)additionalFactoryRules.push({id:[model,2026,trims.join('-'),kind,feature,packages.join('-')].join(':'),model,year:2026,trims,kind,feature,packages,sourceUrl:base+file+'#page='+page,reviewedAt:'2026-09-26'});
 }
 const compass=['Latitude','Latitude Altitude','Limited','Limited Altitude','Trailhawk'];
+// Official guide pages 3–4, GT column (2TD), reviewed visually in both saved editions.
+// Avoid the conflicting seat-memory descriptions and all option-absence inference.
+add('Durango',['GT'],'standard',['dualClimate','powerDriver','heatedSeats','heatedWheel','navigation'],[],3);
+add('Durango',['GT'],'standard',['blindSpot','rearCross'],[],3);
+add('Durango',['GT'],'standard',['passiveEntry','pushStart','keylessEntry','backupCamera'],[],4);
+add('Durango',['GT'],'package',['tow','brakeController'],['Trailer-Tow Group IV','Trailer Tow Group IV'],4);
 add('Compass',compass,'standard',['heatedSeats','heatedWheel','carplay','androidAuto'],[],4);
 add('Compass',compass,'standard',['laneAssist','forwardWarning','blindSpot','rearCross','emergencyBrake','driverAlert','backupCamera','remoteStart','passiveEntry','pushStart','keylessEntry'],[],5);
 add('Compass',['Limited','Limited Altitude','Trailhawk'],'standard',['powerDriver','adaptiveCruise'],[],4);

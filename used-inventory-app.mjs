@@ -1,4 +1,4 @@
-import {openVehiclePreview} from './vehicle-preview.mjs?v=conversion1';
+import {openVehiclePreview} from './vehicle-preview.mjs?v=shopping1';
 import {issues,draft,ingest} from './inventory-engine.mjs?v=23-search2';
 const base=window.usedInventoryData;
 let data=base;let visibleLimit=24;

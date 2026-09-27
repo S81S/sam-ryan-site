@@ -1,3 +1,4 @@
+import {shoppingContext,comparisonLink,comparisonRequest} from './shopping-context.mjs?v=shopping1';
 const inventory = window.usedInventoryData.vehicles;
 const section = document.createElement('section');
 section.className = 'search-summary';
@@ -21,11 +22,15 @@ function update() {
   const selected = vins.map(vin => inventory.find(v => v.vin === vin)).filter(Boolean);
   section.hidden = selected.length === 0;
   description.textContent = `${selected.length} selected vehicle${selected.length === 1 ? '' : 's'}. Your message includes the stock numbers so we can pick up where you left off.`;
-  const request = 'Please help me compare these vehicles:\n' + selected.map(v => `${v.title} — Stock ${v.stock || 'not listed'} — VIN ${v.vin}`).join('\n');
-  const comparison = 'https://carswithsam.com/compare?vehicles=' + selected.map(v => v.vin).join(',');
+  const context=shoppingContext();
+  const request=comparisonRequest(selected,context);
+  const comparison=new URL(comparisonLink(selected.map(v=>v.vin),context),'https://carswithsam.com/').href;
   sam.href = 'sms:+17372091320?body=' + encodeURIComponent('Hi Sam, ' + request + '\n' + comparison);
-  ryan.href = 'sms:+14014104727?body=' + encodeURIComponent('Hi Ryan, ' + request + '\n' + comparison);
-  inquiry.href = 'contact.html?' + new URLSearchParams({request:request + '\n' + comparison});
+  const ryanComparison=new URL(comparison); ryanComparison.searchParams.set('advisor','Ryan');
+  ryan.href = 'sms:+14014104727?body=' + encodeURIComponent('Hi Ryan, ' + request + '\n' + ryanComparison.href);
+  inquiry.href = 'contact.html?' + new URLSearchParams({advisor:context.advisor,request:request + '\n' + comparison});
 }
 document.addEventListener('compare:changed', update);
 update();
+
+for(const id of ['group-query','group-condition'])document.getElementById(id)?.addEventListener('input',update);

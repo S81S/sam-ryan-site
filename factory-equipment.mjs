@@ -1,6 +1,6 @@
-import {stickerAudits} from './factory-sticker-audits.mjs?v=factory1';
+import {stickerAudits} from './factory-sticker-audits.mjs?v=shopping1';
 import {repairSeatEvidence} from './seat-evidence.mjs?v=coverage4';
-import {additionalFactoryRules} from './factory-catalog-2026.mjs?v=coverage4';
+import {additionalFactoryRules} from './factory-catalog-2026.mjs?v=shopping1';
 const ramSource='https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf';
 const pacificaSource='https://www.chrysler.com/news/2027-chrysler-pacifica-debut.html';
 const norm=s=>String(s||'').normalize('NFKC').replace(/[®™]/g,'').replace(/[\u2010-\u2015]/g,'-').replace(/\s+/g,' ').trim().toLowerCase();
@@ -53,6 +53,9 @@ function identity(sticker){
  if(compass)return {year,model:'Compass',trim:compass[1]};
  const gladiator=name.match(/^(?:jeep )?gladiator (sport s|sport|willys|mojave|rubicon) 4x4$/);
  if(gladiator)return {year,model:'Gladiator',trim:gladiator[1]};
+ // Only the reviewed V6 GT column; HEMI, SRT and other years stay outside it.
+ const durango=name.match(/^(?:dodge )?durango gt (?:rwd|awd)$/);
+ if(durango&&/3\.6[ -]?l.*v6/i.test(sticker.engine||''))return {year,model:'Durango',trim:'gt'};
  const cherokee=name.match(/^(?:jeep )?cherokee (base|laredo|limited|overland) 4x4$/);
  if(cherokee&&/1\.6[ -]?l.*(?:hybrid|hev)/i.test(sticker.engine||''))return {year,model:'Cherokee',trim:cherokee[1]};
  const grand=name.match(/^(?:jeep )?grand cherokee (laredo altitude|limited reserve|limited|summit) (?:4x4|4x2)$/);
@@ -68,6 +71,12 @@ export function applyFactoryEquipment(vehicle,sticker){
  sticker=repairSeatEvidence(sticker);
  const audit=stickerAudits[vehicle.vin];
  if(!audit||!sticker.sha256||audit.sha256!==sticker.sha256||audit.market!=='US')return sticker;
+ // Saved parser split the display year into individual digits on these originals.
+ // Recovered identity is independently checked against that exact cached PDF;
+ // never use listing identity, a different fingerprint, or overwrite a valid identity.
+ if(sticker.vin===vehicle.vin&&sticker.identityLines?.length===2&&sticker.identityLines[0]==='2'&&sticker.identityLines[1]==='0'&&audit.identityLines){
+  sticker={...sticker,identityLines:[...audit.identityLines]};
+ }
  const id=identity(sticker);if(!id)return sticker;
  const lines=sticker.lines||[],text=lines.join('\n');
  const complete=audit.optionSectionVerifiedComplete&&sticker.equipmentSectionComplete===true;

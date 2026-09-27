@@ -1,6 +1,7 @@
-import {recoveryOptions} from './search-recovery.mjs?v=coverage4';
-import {openVehiclePreview} from './vehicle-preview.mjs?v=funnel1';
-import {parseQuery,matchVehicle,labels} from './equipment-search.mjs?v=coverage4';
+import {shoppingContext,comparisonLink} from './shopping-context.mjs?v=shopping1';
+import {recoveryOptions} from './search-recovery.mjs?v=shopping1';
+import {openVehiclePreview} from './vehicle-preview.mjs?v=shopping1';
+import {parseQuery,matchVehicle,labels} from './equipment-search.mjs?v=shopping1';
 const $=id=>document.getElementById(id),data=window.usedInventoryData,index=window.equipmentIndex;
 const el=(tag,text,cls)=>{const e=document.createElement(tag);if(text!==undefined)e.textContent=text;if(cls)e.className=cls;return e;};
 const cash=n=>n===null?'Call for price':new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(n);
@@ -23,7 +24,7 @@ function saveCompare(){try{sessionStorage.setItem('samRyanCompareVins',JSON.stri
 function updateCompareBar(){
  compareBar.style.display=compareVins.length?'flex':'none';
  compareText.textContent=compareVins.length+(compareVins.length===1?' vehicle selected to compare.':' vehicles selected to compare.');
- compareGo.href='compare.html?vehicles='+compareVins.map(encodeURIComponent).join(',');
+ compareGo.href=comparisonLink(compareVins,shoppingContext());
 }
 function toggleCompare(vin,checked){
  if(checked){
@@ -62,7 +63,7 @@ function render(){
   for(const check of result.checks)card.append(el('p',`${check.state==='match'?'✓':check.state==='not-listed'?'—':'?'} ${check.wanted?'':'Without '}${check.label}: ${check.state==='unknown'?'not confirmed by the sticker':check.evidence.join(' / ')}`,'equipment-check'));
   for(const check of result.checks)if(check.sourceUrl)card.append(link(check.id==='flatTow'?'Read factory flat-towing instructions ↗':'Read factory equipment reference ↗',check.sourceUrl));
   if(sticker?.status==='verified')card.append(link('Read original window sticker ↗',sticker.sourceUrl));
-  const actions=el('div',undefined,'stock-actions');actions.append(link('Check availability',`contact.html?vehicle=${v.vin}&request=${encodeURIComponent(q.original)}`),link('Request a walkaround',`contact.html?vehicle=${v.vin}&purpose=walkaround&request=${encodeURIComponent(q.original)}`),link('Compare equipment',`compare.html?vehicle=${v.vin}`),link('Request a test drive',`contact.html?vehicle=${v.vin}&purpose=test-drive&request=${encodeURIComponent(q.original)}`));const compareLabel=el('label','Add to compare');const cb=document.createElement('input');cb.type='checkbox';cb.dataset.compareVin=v.vin;cb.checked=compareVins.includes(v.vin);cb.addEventListener('change',()=>toggleCompare(v.vin,cb.checked));compareLabel.prepend(cb);actions.append(compareLabel);card.append(actions);out.append(card);
+  const actions=el('div',undefined,'stock-actions');actions.append(link('Check availability',`contact.html?vehicle=${v.vin}&request=${encodeURIComponent(q.original)}`),link('Request a walkaround',`contact.html?vehicle=${v.vin}&purpose=walkaround&request=${encodeURIComponent(q.original)}`),link('Compare equipment',comparisonLink([v.vin],shoppingContext())),link('Request a test drive',`contact.html?vehicle=${v.vin}&purpose=test-drive&request=${encodeURIComponent(q.original)}`));const compareLabel=el('label','Add to compare');const cb=document.createElement('input');cb.type='checkbox';cb.dataset.compareVin=v.vin;cb.checked=compareVins.includes(v.vin);cb.addEventListener('change',()=>toggleCompare(v.vin,cb.checked));compareLabel.prepend(cb);actions.append(compareLabel);card.append(actions);out.append(card);
  }
  $('more-matches').hidden=rows.length<=visible;
  $('more-matches').textContent=`Show ${Math.min(pageSize(),Math.max(0,rows.length-visible))} more vehicles`;
@@ -82,7 +83,7 @@ function render(){
   out.append(help);
  }
 }
-$('matchBtn').addEventListener('click',()=>{const value=$('request').value.trim();if(!value){lastQuery=null;$('more-matches').hidden=true;$('matchResults').textContent='Tell us a model, budget or equipment you want.';return;}lastQuery=parseQuery(value);const selectedCondition=$('search-condition').value;if(lastQuery.condition&&selectedCondition!=='Both'&&lastQuery.condition!==selectedCondition){lastQuery.ambiguity=`Your request says ${lastQuery.condition.toLowerCase()}. Choose ${lastQuery.condition} above, or edit your request.`;}lastQuery.condition=selectedCondition==='Both'?null:selectedCondition;const searchUrl=new URL(location.href);searchUrl.searchParams.set('q',value);searchUrl.searchParams.set('condition',selectedCondition);history.replaceState(null,'',searchUrl);try{sessionStorage.setItem('samRyanLastSearch',value);}catch{}visible=pageSize();searchCounts={};render();if(!restoringSearch&&Object.keys(searchCounts).length)window.cwsTrack?.('search_results',searchCounts);revealResults();});
+$('matchBtn').addEventListener('click',()=>{const value=$('request').value.trim();if(!value){lastQuery=null;$('more-matches').hidden=true;$('matchResults').textContent='Tell us a model, budget or equipment you want.';return;}lastQuery=parseQuery(value);const selectedCondition=$('search-condition').value;if(lastQuery.condition&&selectedCondition!=='Both'&&lastQuery.condition!==selectedCondition){lastQuery.ambiguity=`Your request says ${lastQuery.condition.toLowerCase()}. Choose ${lastQuery.condition} above, or edit your request.`;}lastQuery.condition=selectedCondition==='Both'?null:selectedCondition;const searchUrl=new URL(location.href);searchUrl.searchParams.set('q',value);searchUrl.searchParams.set('condition',selectedCondition);history.replaceState(null,'',searchUrl);try{sessionStorage.setItem('samRyanLastSearch',value);}catch{}visible=pageSize();searchCounts={};render();updateCompareBar();if(!restoringSearch&&Object.keys(searchCounts).length)window.cwsTrack?.('search_results',searchCounts);revealResults();});
 $('results-per-page').addEventListener('change',()=>{visible=pageSize();render();});
 $('search-sort').addEventListener('change',()=>{visible=pageSize();render();});
 $('show-unverified').addEventListener('change',()=>{visible=pageSize();render();});

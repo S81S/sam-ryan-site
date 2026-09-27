@@ -1,3 +1,4 @@
+import {shoppingContext,comparisonLink} from './shopping-context.mjs?v=shopping1';
 // Keep the shopper's vehicle context on Cars With Sam.
 let dialog;
 const element = (tag, text, className) => {
@@ -45,23 +46,27 @@ export function openVehiclePreview(vehicle, request = '') {
   const advisor = element('select');
   advisor.setAttribute('aria-label', 'Choose your advisor');
   for (const name of ['Sam', 'Ryan']) { const option = element('option', name); option.value = name; advisor.append(option); }
+  advisor.value=shoppingContext().advisor;
   label.append(advisor); dialog.append(label);
   const actions = element('div', null, 'hero-actions');
   const text = action('Text Sam about this vehicle', '#');
   const ask = action('Check availability', '#');
   const walkaround = action('Request a walkaround', '#');
   const drive = action('Request a test drive', '#');
+  const compare=action('Compare window stickers','#');
   const sync = () => {
     const who = advisor.value;
-    const query = new URLSearchParams({vehicle:vehicle.vin, advisor:who, request});
+    const context={...shoppingContext(),q:request || shoppingContext().q,advisor:who};
+    compare.href=comparisonLink([vehicle.vin],context);
+    const query = new URLSearchParams({vehicle:vehicle.vin, advisor:who, request:request ? request+'\nCondition: '+context.condition : ''});
     text.textContent = `Text ${who} about this vehicle`;
-    text.href = `sms:${who === 'Ryan' ? '+14014104727' : '+17372091320'}?body=${encodeURIComponent(`Hi ${who}, I'm interested in ${vehicle.title}, stock ${vehicle.stock || vehicle.vin}. Is it available?${request ? '\nMy search: ' + request : ''}`)}`;
+    text.href = `sms:${who === 'Ryan' ? '+14014104727' : '+17372091320'}?body=${encodeURIComponent(`Hi ${who}, I'm interested in ${vehicle.title}, stock ${vehicle.stock || 'not listed'}, VIN ${vehicle.vin}. Is it available?${request ? '\nMy search: ' + request : ''}`)}`;
     ask.href = 'contact.html?' + query;
     query.set('purpose','walkaround'); walkaround.href='contact.html?'+query;
     query.set('purpose', 'test-drive'); drive.href = 'contact.html?' + query;
   };
   advisor.addEventListener('change', sync); sync();
-  actions.append(text, ask, walkaround, drive, action('Compare window stickers', 'compare.html?vehicle=' + encodeURIComponent(vehicle.vin)));
+  actions.append(text, ask, walkaround, drive, compare);
   dialog.append(actions);
   const photos = action('More photos on dealer site ↗', vehicle.sourceUrl);
   photos.className = 'mini-btn'; photos.target = '_blank'; photos.rel = 'noopener';
