@@ -7,6 +7,7 @@ const el=(tag,text,cls)=>{const e=document.createElement(tag);if(text!==undefine
 const cash=n=>n===null?'Call for price':new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(n);
 const link=(label,url)=>{const a=el('a',label,'mini-btn');a.href=url;return a;};
 $('sticker-coverage').textContent=`${index.verified} of ${index.total} vehicles have a readable, VIN-matched window sticker in this search. Equipment on the other ${index.unavailable} is unverified. Scanned ${new Date(index.checkedAt).toLocaleDateString()}.`;
+const browseInventory=document.body.dataset.browseInventory==='true';
 const pageSize=()=>Number($('results-per-page').value);
 // --- Compare selection: nothing is preloaded. Shoppers opt in per vehicle with a checkbox,
 // then go to Compare with only the vehicles they picked (or they can enter a stock #/VIN there directly).
@@ -64,7 +65,7 @@ function render(){
   for(const check of result.checks)card.append(el('p',`${check.state==='match'?'✓':check.state==='not-listed'?'—':'?'} ${check.wanted?'':'Without '}${check.label}: ${check.state==='unknown'?'not confirmed by the sticker':check.evidence.join(' / ')}`,'equipment-check'));
   for(const check of result.checks)if(check.sourceUrl)card.append(link(check.id==='flatTow'?'Read factory flat-towing instructions ↗':'Read factory equipment reference ↗',check.sourceUrl));
   if(sticker?.status==='verified')card.append(link('Read original window sticker ↗',sticker.sourceUrl));
-  const actions=el('div',undefined,'stock-actions');actions.append(link('Check availability',`contact.html?vehicle=${v.vin}&request=${encodeURIComponent(q.original)}`),link('Request a walkaround',`contact.html?vehicle=${v.vin}&purpose=walkaround&request=${encodeURIComponent(q.original)}`),link('Compare equipment',comparisonLink([v.vin],shoppingContext())),link('Request a test drive',`contact.html?vehicle=${v.vin}&purpose=test-drive&request=${encodeURIComponent(q.original)}`));const compareLabel=el('label','Add to compare');const cb=document.createElement('input');cb.type='checkbox';cb.dataset.compareVin=v.vin;cb.checked=compareVins.includes(v.vin);cb.addEventListener('change',()=>toggleCompare(v.vin,cb.checked));compareLabel.prepend(cb);actions.append(compareLabel);card.append(actions);out.append(card);
+  const actions=el('div',undefined,'stock-actions');if(browseInventory){const details=el('button','View photos & details','mini-btn');details.type='button';details.addEventListener('click',()=>openVehiclePreview(v,q.original));actions.append(details);}actions.append(link('Check availability',`contact.html?vehicle=${v.vin}&request=${encodeURIComponent(q.original)}`),link('Request a walkaround',`contact.html?vehicle=${v.vin}&purpose=walkaround&request=${encodeURIComponent(q.original)}`),link('Compare equipment',comparisonLink([v.vin],shoppingContext())),link('Request a test drive',`contact.html?vehicle=${v.vin}&purpose=test-drive&request=${encodeURIComponent(q.original)}`));const compareLabel=el('label','Add to compare');const cb=document.createElement('input');cb.type='checkbox';cb.dataset.compareVin=v.vin;cb.checked=compareVins.includes(v.vin);cb.addEventListener('change',()=>toggleCompare(v.vin,cb.checked));compareLabel.prepend(cb);actions.append(compareLabel);card.append(actions);out.append(card);
  }
  $('more-matches').hidden=rows.length<=visible;
  $('more-matches').textContent=`Show ${Math.min(pageSize(),Math.max(0,rows.length-visible))} more vehicles`;
@@ -84,16 +85,17 @@ function render(){
   out.append(help);
  }
 }
-$('matchBtn').addEventListener('click',()=>{const value=$('request').value.trim();if(!value){lastQuery=null;$('more-matches').hidden=true;$('matchResults').textContent='Tell us a model, budget or equipment you want.';return;}lastQuery=parseQuery(value);const selectedCondition=$('search-condition').value;if(lastQuery.condition&&selectedCondition!=='Both'&&lastQuery.condition!==selectedCondition){lastQuery.ambiguity=`Your request says ${lastQuery.condition.toLowerCase()}. Choose ${lastQuery.condition} above, or edit your request.`;}lastQuery.condition=selectedCondition==='Both'?null:selectedCondition;const searchUrl=new URL(location.href);searchUrl.searchParams.set('q',value);searchUrl.searchParams.set('condition',selectedCondition);history.replaceState(null,'',searchUrl);try{sessionStorage.setItem('samRyanLastSearch',value);}catch{}visible=pageSize();searchCounts={};render();updateCompareBar();if(!restoringSearch&&Object.keys(searchCounts).length)window.cwsTrack?.('search_results',searchCounts);revealResults();});
+$('matchBtn').addEventListener('click',()=>{const value=$('request').value.trim();if(!value&&!browseInventory){lastQuery=null;$('more-matches').hidden=true;$('matchResults').textContent='Tell us a model, budget or equipment you want.';return;}lastQuery=parseQuery(value);const selectedCondition=$('search-condition').value;if(lastQuery.condition&&selectedCondition!=='Both'&&lastQuery.condition!==selectedCondition){lastQuery.ambiguity=`Your request says ${lastQuery.condition.toLowerCase()}. Choose ${lastQuery.condition} above, or edit your request.`;}lastQuery.condition=selectedCondition==='Both'?null:selectedCondition;const searchUrl=new URL(location.href);searchUrl.searchParams.set('q',value);searchUrl.searchParams.set('condition',selectedCondition);history.replaceState(null,'',searchUrl);try{sessionStorage.setItem('samRyanLastSearch',value);}catch{}visible=pageSize();searchCounts={};render();updateCompareBar();if(!restoringSearch&&Object.keys(searchCounts).length)window.cwsTrack?.('search_results',searchCounts);revealResults();});
 $('results-per-page').addEventListener('change',()=>{visible=pageSize();render();});
 $('search-sort').addEventListener('change',()=>{visible=pageSize();render();});
 $('show-unverified').addEventListener('change',()=>{visible=pageSize();render();});
 $('more-matches').addEventListener('click',()=>{visible+=pageSize();render();});
 $('request').addEventListener('keydown',e=>{if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();$('matchBtn').click();}});
 const savedCondition=new URLSearchParams(location.search).get('condition');if(['New','Used','Both'].includes(savedCondition))$('search-condition').value=savedCondition;
-$('search-condition').addEventListener('change',()=>{if($('request').value.trim())$('matchBtn').click();});
-let initial=new URLSearchParams(location.search).get('q');try{initial??=sessionStorage.getItem('samRyanLastSearch');}catch{}
-if(initial){$('request').value=initial.slice(0,1000);$('matchBtn').click();}
+$('search-condition').addEventListener('change',()=>{if(browseInventory||$('request').value.trim())$('matchBtn').click();});
+let initial=new URLSearchParams(location.search).get('q');try{if(!browseInventory)initial??=sessionStorage.getItem('samRyanLastSearch');}catch{}
+if(initial){$('request').value=initial.slice(0,1000);$('matchBtn').click();}else if(browseInventory){$('matchBtn').click();}
+$('clear-inventory-search')?.addEventListener('click',()=>{$('request').value='';$('show-unverified').checked=false;$('matchBtn').click();});
 
 restoringSearch=false;
 document.querySelectorAll('[data-feature]').forEach(b=>b.addEventListener('click',()=>{
