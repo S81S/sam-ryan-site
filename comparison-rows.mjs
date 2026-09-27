@@ -6,7 +6,11 @@ export function comparisonRows(definitions,records,requested=[]){
   const known=states.filter(s=>s!=='unknown');
   let group=known.length===0?'unknown':known.length<states.length?'check':'same';
   if(new Set(known).size>1)group='difference';
-  else if(group==='same'&&new Set(facts.map(f=>normalize(f.evidence))).size>1)group='wording';
+  else if(group==='same'){
+   // Generated trim/package explanations differ by vehicle, not by equipment specification.
+   const direct=facts.filter(f=>!f.method?.startsWith('factory-'));
+   if(direct.length>1&&new Set(direct.map(f=>normalize(f.evidence))).size>1)group='wording';
+  }
   return {id,label,facts,group,requested:requested.includes(id)};
  }).sort((a,b)=>Number(b.requested)-Number(a.requested)||(['difference','wording','check','same','unknown'].indexOf(a.group)-['difference','wording','check','same','unknown'].indexOf(b.group)));
 }
