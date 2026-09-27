@@ -1,3 +1,4 @@
+import {installVehiclePickers} from './compare-picker.mjs?v=picker1';
 const readSticker=async(...args)=>(await import('./sticker-reader.mjs?v=sticker2')).readSticker(...args);
 import {openVehiclePreview} from './vehicle-preview.mjs?v=conversion1';
 const vehicles=window.usedInventoryData.vehicles;
@@ -128,3 +129,5 @@ function addExternal(vin,side){
   }catch(e){if(vehicle(side)?.vin===vin){b.disabled=false;b.textContent='Try sticker lookup again';disclosure.textContent=e.message;}}
  });
 }
+
+installVehiclePickers(vehicles);
