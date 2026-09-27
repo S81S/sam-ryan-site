@@ -1,8 +1,11 @@
+export function advisorName(value) {
+  return String(value||'').trim().toLowerCase()==='ryan'?'Ryan':'Sam';
+}
 export function shoppingContext(root=document, search=location.search) {
   const params=new URLSearchParams(search);
   const query=root.getElementById('group-query') ?? root.getElementById('request');
   const condition=root.getElementById('group-condition') ?? root.getElementById('search-condition');
-  return {q:(query ? query.value : params.get('q') || '').trim(), condition:condition?.value || params.get('condition') || 'New', advisor:params.get('advisor')==='Ryan'?'Ryan':'Sam'};
+  return {q:(query ? query.value : params.get('q') || '').trim(), condition:condition?.value || params.get('condition') || 'New', advisor:advisorName(params.get('advisor'))};
 }
 export function comparisonLink(vins, context) {
   const params=new URLSearchParams({vehicles:[...new Set(vins)].join(','),condition:context.condition,advisor:context.advisor});

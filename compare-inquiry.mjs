@@ -1,4 +1,4 @@
-import {shoppingContext,comparisonLink,comparisonRequest} from './shopping-context.mjs?v=shopping1';
+import {shoppingContext,comparisonLink,comparisonRequest} from './shopping-context.mjs?v=contact2';
 const inventory = window.usedInventoryData.vehicles;
 const section = document.createElement('section');
 section.className = 'search-summary';
@@ -25,7 +25,8 @@ function update() {
   const context=shoppingContext();
   const request=comparisonRequest(selected,context);
   const comparison=new URL(comparisonLink(selected.map(v=>v.vin),context),'https://carswithsam.com/').href;
-  sam.href = 'sms:+17372091320?body=' + encodeURIComponent('Hi Sam, ' + request + '\n' + comparison);
+  const samComparison=new URL(comparison); samComparison.searchParams.set('advisor','Sam');
+  sam.href = 'sms:+17372091320?body=' + encodeURIComponent('Hi Sam, ' + request + '\n' + samComparison.href);
   const ryanComparison=new URL(comparison); ryanComparison.searchParams.set('advisor','Ryan');
   ryan.href = 'sms:+14014104727?body=' + encodeURIComponent('Hi Ryan, ' + request + '\n' + ryanComparison.href);
   inquiry.href = 'contact.html?' + new URLSearchParams({advisor:context.advisor,request:request + '\n' + comparison});
