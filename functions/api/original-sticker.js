@@ -8,7 +8,8 @@ export async function onRequest(context){
  if(request.headers.get('Sec-Fetch-Site')==='cross-site')return fail('Open the comparison on Cars With Sam.',403);
  const cache=globalThis.caches?.default;
  const key=new Request(url.origin+'/api/original-sticker?vin='+vin);
- const saved=cache&&await cache.match(key);if(saved)return saved;
+ // A platform/cache error must not bypass our readable fallback response.
+ try{const saved=cache&&await cache.match(key);if(saved?.ok&&/application\/pdf/i.test(saved.headers.get('Content-Type')||''))return saved;}catch{}
  const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),25000);
  try{
   const upstream=await fetch('https://windowsticker.org/api/sticker/'+vin,{signal:controller.signal,redirect:'error',headers:{Accept:'application/pdf','X-Contact':'carswithsam.com'}});
