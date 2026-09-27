@@ -1,5 +1,9 @@
 // Shopping color families; exact factory wording remains the evidence. Two-tone colors may match either family.
 export const interiorColors = [
+  {id:'interiorPurple',label:'Purple interior',terms:['purple','violet','lavender','lilac','plum'],pattern:'\\b(?:purple|violet|lavender|lilac|plum)\\b',exact:false},
+  {id:'interiorPink',label:'Pink interior',terms:['pink','fuchsia'],pattern:'\\b(?:pink|fuchsia)\\b',exact:false},
+  {id:'interiorOrange',label:'Orange interior',terms:['orange'],pattern:'\\borange\\b',exact:false},
+  {id:'interiorYellow',label:'Yellow interior',terms:['yellow'],pattern:'\\byellow\\b',exact:false},
   {
     "id": "interiorLightMountainBrown",
     "label": "Light Mountain Brown interior",

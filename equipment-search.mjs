@@ -2,7 +2,7 @@ import {validSeatEvidence} from './seat-evidence.mjs?v=coverage4';
 import {towEquipmentPattern,brakeControllerPattern} from './tow-evidence.mjs?v=next3';
 import {applyFactoryEquipment} from './factory-equipment.mjs?v=next3';
 import {flatTowEvidence} from './flat-tow-rules.mjs?v=23-tow26';
-import {interiorColors} from './interior-colors.mjs?v=23-audit22';
+import {interiorColors} from './interior-colors.mjs?v=option1';
 import {translateSearchTerms} from './search-dictionary.mjs?v=23-audit22';
 export const definitions = [
  ["exteriorGray","Gray / grey exterior paint",/\bgr[ae]y\b/i],
@@ -124,7 +124,7 @@ export function analyzeSticker(text,vin){
 const aliases=[
  ["flatTow",/\b(?:flat[ -]tow(?:able|ing)?(?: capable)?|dinghy tow(?:ing)?|four[ -]down tow(?:ing)?|tow(?:able)? behind (?:an? )?(?:rv|motorhome|motor home))\b/g],
  ["tintedWindows",/\b(?:tinted windows|window tint|privacy glass|privacy windows|deep[ -]tint(?:ed)?(?: windows| glass)?)\b/g],
- ...interiorColors.map(c=>[c.id,new RegExp('\\b(?:'+c.terms.join('|')+')\\b'+(c.exact?'':'(?=\\s+(?:(?:nappa|premium|quilted|vegan)\\s+)?(?:leather|cloth|interior|seats?|upholstery|cabin))'),'g')]),
+ ...interiorColors.map(c=>[c.id,new RegExp('\\b(?:'+c.terms.join('|')+')\\b'+(c.exact?'':'(?=\\s+(?:(?:nappa|premium|quilted|vegan)\\s+)?(?:leatherette|leather|cloth|featuretokencloth|interior|seats?|upholstery|cabin))'),'g')]),
  ["rearHeated",/\bfeaturetokenrearheated\b/g],
  ["rearVented",/\bfeaturetokenrearvented\b/g],
  ["memorySeats",/\bfeaturetokenmemoryseats\b/g],
@@ -192,7 +192,7 @@ const aliases=[
  ['sunroof',/\b(?:sun\s*roof|sunrrof|moon\s*roof)s?\b/g],
  ['ventilated',/\b(?:(?:air[ -]?condition(?:ed|ing)?|a\/?c|ac|cooled|cooling|ventilated|vented)(?:\s+front)?\s+seats?)\b/g],
  ['heatedSeats',/\bheated(?:\s+front)?\s+seats?\b/g],['heatedWheel',/\bheated steering wheel\b/g],
- ['hemi',/\bhemi\b/g],['v8',/\bv[ -]?8\b/g],['leather',/\bleather(?:[ -]trimmed)?(?:\s+seats?)?\b/g],
+ ['hemi',/\bhemi\b/g],['v8',/\bv[ -]?8\b/g],['leather',/\bleather(?:ette)?(?:[ -]trimmed)?(?:\s+seats?)?\b/g],
  ['adaptiveCruise',/\badaptive cruise(?: control)?\b/g],['blindSpot',/\bblind[ -]spot(?: monitoring)?\b/g],
  ['surroundCamera',/\b(?:360(?:[ -]degree)?|surround[ -]view)\s*cameras?\b/g],
  ['backupCamera',/\b(?:back[ -]?up|rear[ -]view) camera\b/g],['remoteStart',/\bremote start\b/g],
@@ -211,7 +211,7 @@ export function parseQuery(input){
  q=q.replace(/\b(\d+(?:\.\d+)?)\s*(?:bands?|racks?|grand|stacks?|thousand)\b/g,(_,n)=>'$'+(Number(n)*1000));
  q=q.replace(/\b(\d[\d,]*(?:\.\d+)?)\s*(?:bucks|dollars)\b/g,(_,n)=>'$'+n);
  q=q.replace(/\b(\d+(?:\.\d+)?)\s*k\b(?!\s*(?:miles|mi)\b)/g,(_,n)=>'$'+(Number(n)*1000));
- q=q.replace(/\b(leather|cloth|interior|seats|upholstery)\s+(?:in\s+)?(tan|beige|brown|black|gray|grey|white|cream|ivory|red|blue|green)\b/g,'$2 $1');
+ q=q.replace(/\b(leatherette|leather|cloth|interior|seats|upholstery)\s+(?:in\s+)?(tan|beige|brown|black|gray|grey|white|cream|ivory|red|blue|green|purple|violet|lavender|lilac|plum|pink|fuchsia|orange|yellow)\b/g,'$2 $1');
  q=q.replace(/\bclack(?=\s+(?:leather|cloth|interior|seats?))/g,'black');
  q=q.replace(/\b(vented|ventilated|cooled|heated|massaging)\s+and\s+(?=(?:vented|ventilated|cooled|heated|massaging)\s+seats)/g,'$1 seats and ');
  q=translateSearchTerms(q);
@@ -270,7 +270,7 @@ export function matchVehicle(vehicle,sticker,query){
  const lines=sticker?.status==='verified'?sticker.lines||[]:[];
  const text=normalizeText(lines.join(' ')).toLowerCase();
  if(unmatched.length&&!unmatched.every(t=>text.split(/[^a-z0-9'-]+/).includes(t)))return {kind:'excluded',reason:'terms'};
- const checks=query.requirements.map(req=>{let fact=sticker?.status==='verified'?sticker.features?.[req.id]:null;if(req.id==='exteriorGray'&&sticker?.status==='verified'){const paint=lines.filter(l=>/^exterior(?: color)?:/i.test(l));if(paint.length)fact={value:paint.some(l=>/\bgr[ae]y\b/i.test(l.split(/interior(?: color)?:/i)[0])),evidence:paint};}return {...req,label:labels[req.id],sourceUrl:fact?.sourceUrl,method:fact?.method,state:fact?fact.value===req.wanted?'match':'conflict':'unknown',evidence:fact?.evidence||[]};});
+ const checks=query.requirements.map(req=>{let fact=sticker?.status==='verified'?sticker.features?.[req.id]:null;if(req.id.startsWith('interior')&&sticker?.status==='verified'){const color=interiorColors.find(c=>c.id===req.id);const interior=lines.filter(l=>/^interior(?: color)?:/i.test(l)).map(l=>l.split(/exterior(?: color)?:/i)[0]);if(color&&interior.length)fact={value:interior.some(l=>new RegExp(color.pattern,'i').test(l)),evidence:interior};}if(req.id==='exteriorGray'&&sticker?.status==='verified'){const paint=lines.filter(l=>/^exterior(?: color)?:/i.test(l));if(paint.length)fact={value:paint.some(l=>/\bgr[ae]y\b/i.test(l.split(/interior(?: color)?:/i)[0])),evidence:paint};}return {...req,label:labels[req.id],sourceUrl:fact?.sourceUrl,method:fact?.method,state:fact?fact.value===req.wanted?'match':'conflict':'unknown',evidence:fact?.evidence||[]};});
  if(checks.some(c=>c.state==='conflict'))return {kind:'excluded',reason:'equipment',checks};
  if(checks.some(c=>c.state==='unknown'))return {kind:'unknown',checks};
  return {kind:'match',checks};

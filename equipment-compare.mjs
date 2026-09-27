@@ -1,7 +1,7 @@
 import {preferredLayout,appendEquipmentFact,appendFeatureCards} from './comparison-layout.mjs?v=next3';
 import {applyFactoryEquipment} from './factory-equipment.mjs?v=next3';
 import {comparisonRows,visibleComparisonRows} from './comparison-rows.mjs?v=complete1';
-import {definitions,parseQuery} from './equipment-search.mjs?v=next3';
+import {definitions,parseQuery} from './equipment-search.mjs?v=option1';
 const $=id=>document.getElementById(id),el=(tag,text)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;return n};
 const money=n=>Number.isFinite(n)?new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(n):'Ask for price';
 const short=v=>v.stock?`Stock ${v.stock}`:`VIN …${v.vin.slice(-6)}`;

@@ -1,4 +1,4 @@
-import {matchVehicle, labels} from './equipment-search.mjs?v=shopping1';
+import {matchVehicle, labels} from './equipment-search.mjs?v=option1';
 
 // Offer one explicit change at a time. Never silently relax a shopper's query.
 export function recoveryOptions(vehicles, records, query) {
