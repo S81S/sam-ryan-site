@@ -15,12 +15,14 @@ function compareGroup(){
  const chosen=new Set(),compare=el('button','Choose at least 2 vehicles');compare.type='button';compare.className='btn';compare.disabled=true;out.append(compare);
  compare.addEventListener('click',()=>{location.href='compare.html?vehicles='+encodeURIComponent([...chosen].join(','))});
  const grid=el('div');grid.className='group-card-grid';out.append(grid);
+ const compareBottom=compare.cloneNode(true);compareBottom.addEventListener('click',()=>compare.click());out.append(compareBottom);
+ const syncButtons=()=>{compareBottom.disabled=compare.disabled;compareBottom.textContent=compare.textContent;};
  let limit=12;const more=el('button','Show 12 more');more.type='button';more.className='btn ghost';out.append(more);
  function draw(){grid.replaceChildren();for(const {v,s,result} of rows.slice(0,limit)){
   const card=el('article');card.className='group-vehicle-card';if(v.photoUrl){const img=el('img');img.src=v.photoUrl;img.alt=v.title;img.loading='lazy';card.append(img)}
   card.append(el('h4',v.title),el('p',`Stock ${v.stock} · ${v.condition} · ${v.price==null?'Ask for price':new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(v.price)}`));
   if(q.requirements.length){card.append(el('strong',result.kind==='match'?'✓ Matches your requested features':result.kind==='excluded'?'Does not match every requested feature':'Equipment needs checking'));const ul=el('ul');for(const r of q.requirements){const f=s?.status==='verified'?s.features[r.id]:null;ul.append(el('li',`${definitions.find(d=>d[0]===r.id)?.[1]||r.id}: ${equipmentStatus(f)}`))}card.append(ul)}
-  const label=el('label'),input=el('input');input.type='checkbox';input.checked=chosen.has(v.vin);input.addEventListener('change',()=>{if(input.checked&&chosen.size>=5){input.checked=false;compare.textContent='Five selected — compare or remove one';return;}input.checked?chosen.add(v.vin):chosen.delete(v.vin);compare.disabled=chosen.size<2;compare.textContent=chosen.size<2?'Choose at least 2 vehicles':`Compare ${chosen.size} selected vehicles →`});label.append(input,document.createTextNode(' Add to comparison'));card.append(label);grid.append(card);
+  const label=el('label'),input=el('input');input.type='checkbox';input.checked=chosen.has(v.vin);input.addEventListener('change',()=>{if(input.checked&&chosen.size>=5){input.checked=false;compare.textContent='Five selected — compare or remove one';syncButtons();return;}input.checked?chosen.add(v.vin):chosen.delete(v.vin);compare.disabled=chosen.size<2;compare.textContent=chosen.size<2?'Choose at least 2 vehicles':`Compare ${chosen.size} selected vehicles →`;syncButtons();});label.append(input,document.createTextNode(' Add to comparison'));card.append(label);grid.append(card);
  }more.hidden=limit>=rows.length;}
  more.addEventListener('click',()=>{limit+=12;draw()});draw();
 }

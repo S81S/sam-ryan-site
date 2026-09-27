@@ -1,4 +1,4 @@
-import {installVehiclePickers} from './compare-picker.mjs?v=picker1';
+import {installVehiclePickers} from './compare-picker.mjs?v=picker2';
 const readSticker=async(...args)=>(await import('./sticker-reader.mjs?v=sticker2')).readSticker(...args);
 import {openVehiclePreview} from './vehicle-preview.mjs?v=conversion1';
 const vehicles=window.usedInventoryData.vehicles;
@@ -8,7 +8,11 @@ const SIDES=['1','2','3','4','5'];
 const $=id=>document.getElementById(id), urls={};
 const cash=n=>n===null?'Not listed':new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(n);
 function vehicle(side){return vehicles.find(v=>v.vin===$('choose-'+side).value)}
+const previousSelection={};
 function reset(side){
+ const chosen=$('choose-'+side).value;
+ if(chosen&&SIDES.some(id=>id!==side&&$('choose-'+id).value===chosen)){$('choose-'+side).value=previousSelection[side]||'';$('lookup-status-'+side).textContent='That vehicle is already selected. Choose a different vehicle to compare.';document.dispatchEvent(new CustomEvent('compare:changed'));return false;}
+ previousSelection[side]=chosen;
  const v=vehicle(side);
  const photo=$('vehicle-photo-'+side);$('clear-'+side).hidden=!v;
  if(!v){photo.hidden=true;photo.removeAttribute('src');$('summary-'+side).textContent='';$('listing-'+side).hidden=true;$('listing-'+side).removeAttribute('href');$('sticker-'+side).hidden=true;$('sticker-'+side).removeAttribute('href');$('lookup-note-'+side).textContent='';if(urls[side]){URL.revokeObjectURL(urls[side]);delete urls[side]}$('pdf-'+side).removeAttribute('src');$('pdf-'+side).hidden=true;$('file-'+side).value='';$('file-status-'+side).textContent='No local PDF selected.';$('pdf-link-'+side).hidden=true;$('pdf-link-'+side).removeAttribute('href');document.dispatchEvent(new CustomEvent('compare:changed'));return}
@@ -76,6 +80,7 @@ for(const side of SIDES){
   if(!match&&validVIN(q.trim().toUpperCase())){addExternal(q.trim().toUpperCase(),side);return;}
   if(!match){status.textContent=`No vehicle found at 8107 Research Blvd with stock # or VIN "${q.trim()}". Double-check the stock number or enter a complete 17-character VIN.`;status.classList.add('is-error');return}
   $('choose-'+side).value=match.vin;$('choose-'+side).dispatchEvent(new Event('change'));
+  if(vehicle(side)?.vin!==match.vin)return;
   status.textContent=`Matched: ${match.title} — Stock ${match.stock} — VIN ${match.vin}.`;status.classList.add('is-ok');
   if(index.records[match.vin]?.status!=='verified')addExternal(match.vin,side);
  };
@@ -93,6 +98,7 @@ panels.forEach((p,i)=>{p.hidden=i>1&&!vehicle(SIDES[i])});
 addSlot.addEventListener('click',()=>{const next=panels.find(p=>p.hidden);if(next)next.hidden=false;addSlot.hidden=!panels.some(p=>p.hidden)});
 
 function addExternal(vin,side){
+ if(SIDES.some(id=>id!==side&&$('choose-'+id).value===vin)){$('lookup-status-'+side).textContent='That VIN is already selected. Choose another vehicle.';return;}
  let v=vehicles.find(v=>v.vin===vin);
  if(!v){v={vin,title:'Your vehicle',stock:'',price:null,miles:null,external:true,condition:'Used'};vehicles.push(v);for(const id of SIDES){const o=document.createElement('option');o.value=vin;o.textContent='Your vehicle — '+vin;$('choose-'+id).append(o)}}
  $('choose-'+side).value=vin;reset(side);$('lookup-status-'+side).textContent='Vehicle added. Open a sticker PDF below, or check the original-sticker service.';
