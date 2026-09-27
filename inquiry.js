@@ -62,6 +62,12 @@
     if (values.purpose === 'Request a test drive' && values.visit.trim()) lines.push('', `Preferred visit: ${values.visit.trim()} (please confirm)`);
     if (values.message.trim()) lines.push('', values.message.trim());
     lines.push('', 'Store: Covert CDJR Austin, 8107 Research Blvd, Austin, TX 78758', 'Source: Cars With Sam website');
+    // Only recognized campaign labels are copied; no arbitrary URL text or referrer data.
+    const campaignSources = new Map([['facebook','Facebook'],['instagram','Instagram'],['youtube','YouTube'],['tiktok','TikTok']]);
+    const campaignNames = new Map([['first-week-sam','Sam launch post'],['first-week-ryan','Ryan launch post']]);
+    const campaignSource = campaignSources.get((params.get('utm_source') || '').toLowerCase());
+    const campaignName = campaignNames.get(params.get('utm_campaign'));
+    if (campaignSource) lines.push(`Campaign link: ${campaignSource}${campaignName ? ' / ' + campaignName : ''}`);
     const body = lines.join('\n');
     byId('request-text').textContent = body;
     byId('send-inquiry').href = `mailto:${recipient}?subject=${encodeURIComponent(`${values.purpose}${vehicle ? ' — stock '+vehicle.stock : ''} | Cars With Sam`)}&body=${encodeURIComponent(body)}`;
