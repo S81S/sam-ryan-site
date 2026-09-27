@@ -1,6 +1,6 @@
-import {applyFactoryEquipment,equipmentStatus} from './factory-equipment.mjs?v=factory2';
+import {applyFactoryEquipment,equipmentStatus} from './factory-equipment.mjs?v=coverage3';
 import {comparisonRows} from './comparison-rows.mjs?v=conversion1';
-import {definitions,parseQuery} from './equipment-search.mjs?v=factory2';
+import {definitions,parseQuery} from './equipment-search.mjs?v=coverage3';
 const $=id=>document.getElementById(id), el=(tag,text)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;return n};
 function render(){
  const vehicles=window.usedInventoryData.vehicles;
@@ -12,7 +12,7 @@ function render(){
  const key=el('div');key.className='compare-key';
  for(const {side,v,s} of recs){const item=el('div');item.append(el('strong',`Vehicle ${side} · ${v.stock||'Your vehicle'}`),el('span',v.title));if(s?.sourceType==='customer-upload')item.append(el('span','Evidence: your supplied PDF, VIN matched'));key.append(item);if(s?.status==='verified'&&s.sourceUrl){$('sticker-'+side).href=s.sourceUrl;$('sticker-'+side).hidden=false;$('lookup-note-'+side).textContent='Original sticker matched to this VIN.';}}
  out.append(key);
- const requested=parseQuery($('group-query')?.value||'').requirements.map(r=>r.id);
+ const requested=parseQuery($('group-query')?.value||new URLSearchParams(location.search).get('q')||'').requirements.map(r=>r.id);
  const rows=comparisonRows(definitions,recs.map(r=>r.s),requested);
  const categories=[['difference','Confirmed differences'],['wording','Different details'],['check','Needs checking'],['same','Shared equipment'],['unknown','Not confirmed']];
  let current=categories.find(([id])=>rows.some(r=>r.group===id))?.[0]||'unknown';

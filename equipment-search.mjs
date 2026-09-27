@@ -1,4 +1,5 @@
-import {applyFactoryEquipment} from './factory-equipment.mjs?v=factory2';
+import {validSeatEvidence} from './seat-evidence.mjs?v=coverage3';
+import {applyFactoryEquipment} from './factory-equipment.mjs?v=coverage3';
 import {flatTowEvidence} from './flat-tow-rules.mjs?v=23-tow26';
 import {interiorColors} from './interior-colors.mjs?v=23-audit22';
 import {translateSearchTerms} from './search-dictionary.mjs?v=23-audit22';
@@ -106,7 +107,7 @@ export function analyzeSticker(text,vin){
  const features={};
  for(const [id,,pattern] of definitions){
   const pool=id==='exteriorGray'?raw.filter(l=>/^exterior(?: color)?:/i.test(l)):id.startsWith('interior')?raw.filter(l=>/^interior(?: color)?:/i.test(l)).map(l=>l.split(/exterior(?: color)?:/i)[0]):['hemi','v8','diesel','electric','hybrid'].includes(id)?(engine?[engine]:[]):lines;
-  const evidence=pool.filter(l=>pattern.test(l));
+  const evidence=pool.filter(l=>pattern.test(l)&&validSeatEvidence(id,l));
   const negative=evidence.filter(l=>/\b(?:delete|deleted|deletion|without|not equipped|not included|no sunroof|no moonroof)\b/i.test(l));
   const positive=evidence.filter(l=>!negative.includes(l)&&!/^optional equipment|if equipped|available separately/i.test(l)&&(!/N\/A.*manual transmission/i.test(l)||lines.some(x=>/^transmission:.*automatic/i.test(x))));
   // A factory deletion overrides a standard-equipment mention.

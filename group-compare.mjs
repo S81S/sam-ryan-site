@@ -1,5 +1,5 @@
-import {applyFactoryEquipment,equipmentStatus} from './factory-equipment.mjs?v=factory2';
-import {parseQuery,matchVehicle,definitions} from './equipment-search.mjs?v=factory2';
+import {applyFactoryEquipment,equipmentStatus} from './factory-equipment.mjs?v=coverage3';
+import {parseQuery,matchVehicle,definitions} from './equipment-search.mjs?v=coverage3';
 const $=id=>document.getElementById(id),el=(tag,text)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;return n};
 function compareGroup(){
  const out=$('group-results');out.replaceChildren();const text=$('group-query').value.trim();if(!text){out.append(el('p','Enter a model and any must-have features.'));return;}
@@ -13,7 +13,7 @@ function compareGroup(){
  if(!rows.length){out.append(el('p','No vehicles match that model, condition and budget in the saved inventory.'));return;}
  out.append(el('p','Choose two to five vehicles for a closer comparison. Unconfirmed equipment needs checking; it is not automatically absent.'));
  const chosen=new Set(),compare=el('button','Choose at least 2 vehicles');compare.type='button';compare.className='btn';compare.disabled=true;out.append(compare);
- compare.addEventListener('click',()=>{location.href='compare.html?vehicles='+encodeURIComponent([...chosen].join(','))});
+ compare.addEventListener('click',()=>{location.href='compare.html?vehicles='+encodeURIComponent([...chosen].join(','))+'&q='+encodeURIComponent(text)+'&condition='+encodeURIComponent(selected)});
  const grid=el('div');grid.className='group-card-grid';out.append(grid);
  const compareBottom=compare.cloneNode(true);compareBottom.addEventListener('click',()=>compare.click());out.append(compareBottom);
  const syncButtons=()=>{compareBottom.disabled=compare.disabled;compareBottom.textContent=compare.textContent;};
@@ -28,3 +28,7 @@ function compareGroup(){
 }
 $('group-compare').addEventListener('click',compareGroup);$('group-query').addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();compareGroup()}});
 
+
+const savedGroup=new URLSearchParams(location.search);
+if(savedGroup.has('q'))$('group-query').value=savedGroup.get('q');
+if(['New','Used','Both'].includes(savedGroup.get('condition')))$('group-condition').value=savedGroup.get('condition');

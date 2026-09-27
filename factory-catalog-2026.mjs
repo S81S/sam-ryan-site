@@ -2,7 +2,7 @@
 const base='https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/';
 export const additionalFactoryRules=[];
 function add(model,trims,kind,features,packages,page){
- const file=model==='Pacifica'?'shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Pacifica.pdf':`brochures-literature/2026/2026-JEEP-${model.toUpperCase().replaceAll(' ','-')}.pdf`;
+ const file=model==='Pacifica'?'shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Pacifica.pdf':`brochures-literature/2026/2026-JEEP-${(model==='Cherokee'?'CHEROKEE-HYBRID':model.toUpperCase().replaceAll(' ','-'))}.pdf`;
  for(const feature of features)additionalFactoryRules.push({id:[model,2026,trims.join('-'),kind,feature,packages.join('-')].join(':'),model,year:2026,trims,kind,feature,packages,sourceUrl:base+file+'#page='+page,reviewedAt:'2026-09-26'});
 }
 const compass=['Latitude','Latitude Altitude','Limited','Limited Altitude','Trailhawk'];
@@ -47,3 +47,19 @@ add('Pacifica',['Limited'],'standard',['alpine','premiumAudio'],[],4);
 add('Pacifica',['Select','Limited'],'package',['surroundCamera','parkingSensors'],['Safety Sphere Group'],5);
 add('Pacifica',['Select','Limited'],'package',['familyCamera','outlet','powerPassenger'],['Uconnect Theater Family Group','Uconnect Theater Family Group II'],5);
 add('Pacifica',['Select','Limited'],'optional',['surroundCamera'],['Safety Sphere Group'],4);
+
+// 2026 Cherokee Hybrid: exact US factory columns, pages 3–5. No carryover Cherokee rules.
+const cherokee=['Base','Laredo','Limited','Overland'];
+add('Cherokee',cherokee,'standard',['rainWipers','dualClimate','wireless'],[],3);
+add('Cherokee',cherokee,'standard',['wifi','carplay','androidAuto','bluetooth','adaptiveCruise','laneAssist','emergencyBrake','forwardWarning','blindSpot','rearCross','driverAlert','backupCamera'],[],4);
+add('Cherokee',['Laredo','Limited','Overland'],'standard',['powerDriver','heatedSeats'],[],3);
+add('Cherokee',['Laredo','Limited','Overland'],'standard',['remoteStart','parkingSensors'],[],4);
+add('Cherokee',['Limited','Overland'],'standard',['powerPassenger','powerLiftgate','foldMirrors'],[],3);
+add('Cherokee',['Limited','Overland'],'standard',['heatedWheel','passiveEntry'],[],4);
+add('Cherokee',['Overland'],'standard',['sunroof','panoramic','memorySeats'],[],3);
+add('Cherokee',['Overland'],'standard',['navigation','alpine','premiumAudio','trafficSigns'],[],4);
+add('Cherokee',['Limited'],'package',['navigation','alpine','premiumAudio','powerLiftgate','trafficSigns'],['Tech Group'],5);
+add('Cherokee',['Overland'],'package',['ventilated','rearHeated','surroundCamera','parkingSensors'],['Advanced Pro Tech Group','Advanced ProTech Group'],5);
+add('Cherokee',['Limited','Overland'],'package',['tow'],['Trailer Tow Group'],5);
+add('Cherokee',['Limited'],'optional',['sunroof','panoramic'],['Power Dual-Pane Panoramic Sunroof'],3);
+add('Cherokee',['Overland'],'optional',['surroundCamera'],['Advanced Pro Tech Group','Advanced ProTech Group'],4);

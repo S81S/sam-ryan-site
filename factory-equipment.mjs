@@ -1,5 +1,6 @@
 import {stickerAudits} from './factory-sticker-audits.mjs?v=factory1';
-import {additionalFactoryRules} from './factory-catalog-2026.mjs?v=factory2';
+import {repairSeatEvidence} from './seat-evidence.mjs?v=coverage3';
+import {additionalFactoryRules} from './factory-catalog-2026.mjs?v=coverage3';
 const ramSource='https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf';
 const pacificaSource='https://www.chrysler.com/news/2027-chrysler-pacifica-debut.html';
 const norm=s=>String(s||'').normalize('NFKC').replace(/[®™]/g,'').replace(/[\u2010-\u2015]/g,'-').replace(/\s+/g,' ').trim().toLowerCase();
@@ -50,6 +51,8 @@ function identity(sticker){
  if(ram)return {year,model:'Ram 1500',trim:ram[1]==='black express'?'express':ram[1]==='limited longhorn'?'longhorn':ram[1],cab:ram[2]};
  const compass=name.match(/^(?:jeep )?compass (latitude altitude|limited altitude|latitude|limited|trailhawk) (?:4x4|4x2|fwd)$/);
  if(compass)return {year,model:'Compass',trim:compass[1]};
+ const cherokee=name.match(/^(?:jeep )?cherokee (base|laredo|limited|overland) 4x4$/);
+ if(cherokee&&/1\.6[ -]?l.*(?:hybrid|hev)/i.test(sticker.engine||''))return {year,model:'Cherokee',trim:cherokee[1]};
  const grand=name.match(/^(?:jeep )?grand cherokee (laredo altitude|limited reserve|limited|summit) (?:4x4|4x2)$/);
  // The refreshed 2026 guide covers Hurricane 4 models, not carryover V6 or L/4xe.
  if(grand&&/2\.0[ -]?l.*(?:hurricane|i4)|hurricane.*(?:2\.0|4 turbo)/i.test(sticker.engine||''))return {year,model:'Grand Cherokee',trim:grand[1]};
@@ -60,6 +63,7 @@ function identity(sticker){
 function packageOn(lines,name){const n=norm(name);return lines.find(l=>{const value=norm(l).replace(/\s+\$[\d,.]+$/,'');return value===n||value===n+' package';});}
 export function applyFactoryEquipment(vehicle,sticker){
  if(sticker?.status!=='verified'||!vehicle?.vin||sticker.vin&&sticker.vin!==vehicle.vin)return sticker;
+ sticker=repairSeatEvidence(sticker);
  const audit=stickerAudits[vehicle.vin];
  if(!audit||!sticker.sha256||audit.sha256!==sticker.sha256||audit.market!=='US')return sticker;
  const id=identity(sticker);if(!id)return sticker;

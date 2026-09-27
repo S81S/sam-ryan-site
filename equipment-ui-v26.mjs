@@ -1,6 +1,6 @@
-import {recoveryOptions} from './search-recovery.mjs?v=funnel1';
+import {recoveryOptions} from './search-recovery.mjs?v=coverage3';
 import {openVehiclePreview} from './vehicle-preview.mjs?v=funnel1';
-import {parseQuery,matchVehicle,labels} from './equipment-search.mjs?v=factory2';
+import {parseQuery,matchVehicle,labels} from './equipment-search.mjs?v=coverage3';
 const $=id=>document.getElementById(id),data=window.usedInventoryData,index=window.equipmentIndex;
 const el=(tag,text,cls)=>{const e=document.createElement(tag);if(text!==undefined)e.textContent=text;if(cls)e.className=cls;return e;};
 const cash=n=>n===null?'Call for price':new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(n);

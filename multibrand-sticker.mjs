@@ -1,4 +1,5 @@
-import {definitions,normalizeText} from './equipment-search.mjs?v=factory2';
+import {validSeatEvidence} from './seat-evidence.mjs?v=coverage3';
+import {definitions,normalizeText} from './equipment-search.mjs?v=coverage3';
 // Only validated document families activate interpretation. No generic VIN decoding.
 export function analyzeOtherOriginal(text,vin){
  const raw=String(text).split(/\r?\n/).map(normalizeText).filter(Boolean);
@@ -29,7 +30,7 @@ export function analyzeOtherOriginal(text,vin){
   // Cross-brand paint/upholstery abbreviations and powertrain implications need
   // their own validated readers. Only direct feature wording is used here.
   if(id.startsWith('interior')||['cloth','exteriorGray','flatTow','v8','v6','hemi','electric','hybrid','diesel','fourWheel','awd'].includes(id))continue;
-  const evidence=lines.filter(l=>(pattern.test(l)||additional[id]?.test(l))&&!/\b(?:available|if equipped|sold separately|warranty)\b/i.test(l));
+  const evidence=lines.filter(l=>(pattern.test(l)||additional[id]?.test(l))&&validSeatEvidence(id,l)&&!/\b(?:available|if equipped|sold separately|warranty)\b/i.test(l));
   const negative=evidence.filter(l=>/\b(?:delete|deleted|deletion|without|not included|not equipped)\b/i.test(l));
   const positive=evidence.filter(l=>!negative.includes(l)&&!(id==='leather'&&!/leather.*(?:seats?|seating|bucket)|seats?.*leather/i.test(l)));
   if(negative.length)features[id]={value:false,evidence:negative.slice(0,2)};
