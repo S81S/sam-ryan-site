@@ -1,5 +1,6 @@
 import {validSeatEvidence} from './seat-evidence.mjs?v=coverage4';
-import {applyFactoryEquipment} from './factory-equipment.mjs?v=shopping1';
+import {towEquipmentPattern} from './tow-evidence.mjs?v=complete1';
+import {applyFactoryEquipment} from './factory-equipment.mjs?v=complete1';
 import {flatTowEvidence} from './flat-tow-rules.mjs?v=23-tow26';
 import {interiorColors} from './interior-colors.mjs?v=23-audit22';
 import {translateSearchTerms} from './search-dictionary.mjs?v=23-audit22';
@@ -84,7 +85,7 @@ export const definitions = [
  ['backupCamera','Rear-view camera',/rear.back.up camera|rear.view camera|back.up camera/i],
  ['remoteStart','Remote start',/remote.start/i],
  ['thirdRow','Third-row seats',/(?:third|3rd).row.*seat/i],
- ['tow','Trailer hitch / tow equipment',/receiver.hitch|trailer.tow|tow.package/i],
+ ['tow','Trailer hitch / tow equipment',towEquipmentPattern],
  ['fourWheel','Four-wheel drive',/\b4x4\b|\b4wd\b|four.wheel.drive|4.wheel.drive/i],
  ['awd','All-wheel drive',/all.wheel.drive|\bawd\b/i],
  ['carplay','Apple CarPlay',/apple carplay/i], ['androidAuto','Android Auto',/android auto/i],

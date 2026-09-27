@@ -8,7 +8,7 @@ function add(model,trims,kind,features,packages,page){
 const compass=['Latitude','Latitude Altitude','Limited','Limited Altitude','Trailhawk'];
 // Official guide pages 3–4, GT column (2TD), reviewed visually in both saved editions.
 // Avoid the conflicting seat-memory descriptions and all option-absence inference.
-add('Durango',['GT'],'standard',['dualClimate','powerDriver','heatedSeats','heatedWheel','navigation'],[],3);
+add('Durango',['GT'],'standard',['triClimate','powerDriver','heatedSeats','heatedWheel','navigation'],[],3);
 add('Durango',['GT'],'standard',['blindSpot','rearCross'],[],3);
 add('Durango',['GT'],'standard',['passiveEntry','pushStart','keylessEntry','backupCamera'],[],4);
 add('Durango',['GT'],'package',['tow','brakeController'],['Trailer-Tow Group IV','Trailer Tow Group IV'],4);

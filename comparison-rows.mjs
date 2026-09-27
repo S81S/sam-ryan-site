@@ -14,3 +14,12 @@ export function comparisonRows(definitions,records,requested=[]){
   return {id,label,facts,group,requested:requested.includes(id)};
  }).sort((a,b)=>Number(b.requested)-Number(a.requested)||(['difference','wording','check','same','unknown'].indexOf(a.group)-['difference','wording','check','same','unknown'].indexOf(b.group)));
 }
+
+export function visibleComparisonRows(rows, mode='important', search='') {
+ const term=search.trim().toLowerCase();
+ return rows.filter(row=>{
+  if(term)return (row.label+' '+row.facts.flatMap(f=>f?.evidence||[]).join(' ')).toLowerCase().includes(term);
+  if(mode==='requested')return row.requested;
+  return mode==='all'||row.requested||['difference','wording','check'].includes(row.group);
+ });
+}
