@@ -1,0 +1,4 @@
+# One canonical shopping destination; incoming query strings are preserved.
+/find-my-car /inventory 301
+/find-my-car.html /inventory 301
+/find-my-car/ /inventory 301
