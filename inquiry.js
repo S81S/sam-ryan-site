@@ -3,6 +3,7 @@
   if (!form) return;
   const byId = id => document.getElementById(id);
   const params = new URLSearchParams(location.search);
+  const requestedVin = (params.get('vehicle') || '').slice(0,100);
   const vehicle = (window.usedInventoryData?.vehicles || []).find(v => v.vin === params.get('vehicle') && v.locationId === '18393');
   const advisor=document.getElementById('contactAdvisor'); const requestedAdvisor=String(params.get('advisor')||'').trim().toLowerCase(); if(['sam','ryan'].includes(requestedAdvisor))advisor.value=requestedAdvisor==='ryan'?'Ryan':'Sam';
   const contactActions = document.createElement('p');
@@ -17,7 +18,7 @@
     const who = ryan ? 'Ryan' : 'Sam';
     const cell = ryan ? '+14014104727' : '+17372091320';
     callAdvisor.href = 'tel:' + cell; callAdvisor.textContent = 'Call ' + who;
-    textAdvisor.href = 'sms:' + cell + '?body=' + encodeURIComponent(`Hi ${who}, ${byId('inquiry-purpose').value}.` + (vehicle ? `\n${vehicle.title} — Stock ${vehicle.stock} — VIN ${vehicle.vin}` : '') + (byId('field-message').value.trim() ? '\n'+byId('field-message').value.trim() : '') + (byId('inquiry-purpose').value==='Request a test drive' && byId('visit-time').value.trim() ? '\nPreferred visit: '+byId('visit-time').value.trim()+' (please confirm)' : '')); textAdvisor.textContent = 'Text ' + who;
+    textAdvisor.href = 'sms:' + cell + '?body=' + encodeURIComponent(`Hi ${who}, ${byId('inquiry-purpose').value}.` + (vehicle ? `\n${vehicle.title} — Stock ${vehicle.stock} — VIN ${vehicle.vin}` : requestedVin ? `\nRequested VIN: ${requestedVin}` : '') + (byId('field-message').value.trim() ? '\n'+byId('field-message').value.trim() : '') + (byId('inquiry-purpose').value==='Request a test drive' && byId('visit-time').value.trim() ? '\nPreferred visit: '+byId('visit-time').value.trim()+' (please confirm)' : '')); textAdvisor.textContent = 'Text ' + who;
   };
   advisor.addEventListener('change', syncAdvisor); syncAdvisor();
   const purpose = byId('inquiry-purpose');
@@ -29,7 +30,7 @@
   const sharedRequest=params.get('request');
   let wishlistRequest=null;try{wishlistRequest=sessionStorage.getItem('samRyanWishlistInquiry');sessionStorage.removeItem('samRyanWishlistInquiry');}catch{}
   if(!vehicle&&(sharedRequest||wishlistRequest)){byId('field-message').value=(sharedRequest||wishlistRequest).slice(0,2500);purpose.value='Get help finding a vehicle';syncPurpose();}
-  if(params.has('vehicle')&&!vehicle){byId('contactMessage').textContent='That vehicle is no longer in this saved inventory. Tell us what you were looking for and we’ll help you check availability.';}
+  if(params.has('vehicle')&&!vehicle){byId('contactMessage').textContent='We could not confirm that vehicle from the saved inventory. Your requested VIN will stay in your inquiry so we can check it for you.';}
   if(vehicle&&sharedRequest)byId('field-message').value=('I’m looking for: '+sharedRequest).slice(0,2500);
   if (vehicle) {
     const card = byId('inquiry-vehicle');
@@ -56,6 +57,7 @@
     if (!name || !reply) { byId('contactMessage').textContent = 'Please enter your name and a phone number or email so we can reply.'; return; }
     const recipient=values.advisor==='Ryan'?'ryansugrue@covertauto.com':'samuelsweitzer@covertauto.com';
     const lines = [`Hi ${values.advisor==='Ryan'?'Ryan':'Sam'},`, '', `I'd like to: ${values.purpose}.`, '', `Name: ${name}`, `Reply to: ${reply}`, `Preferred advisor: ${values.advisor}`];
+    if (!vehicle && requestedVin) lines.push('', `Requested VIN: ${requestedVin} (please confirm availability)`);
     if (vehicle) lines.push('', `Vehicle: ${vehicle.title}`, `Stock: ${vehicle.stock}`, `VIN: ${vehicle.vin}`, `Listing: ${vehicle.sourceUrl}`);
     if (values.purpose === 'Request a test drive' && values.visit.trim()) lines.push('', `Preferred visit: ${values.visit.trim()} (please confirm)`);
     if (values.message.trim()) lines.push('', values.message.trim());
