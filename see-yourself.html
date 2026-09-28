@@ -43,10 +43,10 @@
 <details id="driveway-outline-panel" hidden><summary>Optional: hide the photo background</summary><p>Tap points around the vehicle’s outside edge, then apply the outline. Add more points for a closer fit. You can also focus the image, move the cursor with arrow keys and press Enter to add each point.</p><div class="sy-canvas-shell"><canvas id="driveway-outline" tabindex="0" role="img" aria-label="Vehicle outline editor. Use arrow keys to move and Enter to add an outline point."></canvas></div><p id="driveway-outline-status" role="status"></p><div class="hero-actions"><button id="driveway-undo" type="button" class="btn ghost">Undo last point</button><button id="driveway-cutout" type="button" class="btn" disabled>Apply outline</button><button id="driveway-whole-photo" type="button" class="btn ghost">Use whole photo</button></div></details><p id="driveway-status" role="status">Choose JPG, PNG or WebP photos, up to 20 MB each. Your photos stay on this device.</p>
 <div class="sy-canvas-shell"><canvas id="driveway-canvas" hidden role="img" aria-label="Manual driveway photo preview. Use the controls below to position the vehicle."></canvas></div>
 <fieldset id="driveway-controls" disabled style="border:0;padding:0;margin:18px 0"><legend>Adjust the vehicle</legend><div class="sy-controls">
-<label>Left / right<input id="driveway-x" type="range" min="0" max="100" value="50"></label>
-<label>Up / down<input id="driveway-y" type="range" min="0" max="100" value="65"></label>
-<label>Size<input id="driveway-size" type="range" min="10" max="100" value="45"></label>
-<label>Rotate<input id="driveway-rotate" type="range" min="-30" max="30" value="0"></label>
+<label>↔ Left / right<input id="driveway-x" type="range" min="0" max="100" value="50"></label>
+<label>↕ Up / down<input id="driveway-y" type="range" min="0" max="100" value="65"></label>
+<label>📏 Size<input id="driveway-size" type="range" min="10" max="100" value="45"></label>
+<label>🔄 Rotate<input id="driveway-rotate" type="range" min="-30" max="30" value="0"></label>
 </div><button class="btn ghost" id="driveway-reset" type="button">Reset placement</button></fieldset>
 <button id="driveway-save" class="btn" type="button" disabled>Download driveway preview</button>
 <p class="sy-fineprint">A rough visual preview only. Confirm actual dimensions, color, trim and condition with Sam or Ryan.</p>
@@ -98,10 +98,10 @@
     <p class="sy-sub">Drag your face onto the driver's seat, then fine-tune with the sliders below.</p>
     <div class="sy-canvas-shell"><canvas id="sySceneCanvas"></canvas></div>
     <div class="sy-controls">
-      <div><label for="sySize">Size</label><input type="range" id="sySize" min="40" max="220" value="100"></div>
-      <div><label for="syRotate">Tilt</label><input type="range" id="syRotate" min="-45" max="45" value="0"></div>
-      <div><label for="syBrightness">Brightness match</label><input type="range" id="syBrightness" min="60" max="140" value="100"></div>
-      <div><label for="syBlend">Blend into shadow</label><input type="range" id="syBlend" min="0" max="80" value="20"></div>
+      <div><label for="sySize">📏 Size</label><input type="range" id="sySize" min="40" max="220" value="100"></div>
+      <div><label for="syRotate">🔄 Tilt</label><input type="range" id="syRotate" min="-45" max="45" value="0"></div>
+      <div><label for="syBrightness">☀️ Brightness match</label><input type="range" id="syBrightness" min="60" max="140" value="100"></div>
+      <div><label for="syBlend">🌓 Blend into shadow</label><input type="range" id="syBlend" min="0" max="80" value="20"></div>
     </div>
     <div class="sy-actions">
       <button class="btn ghost" type="button" data-back="3">← Back</button>
