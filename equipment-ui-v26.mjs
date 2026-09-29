@@ -1,3 +1,4 @@
+import {sameModelOptions,modelName} from './same-model-options.mjs?v=compact1';
 import {optionGuidance,noMatchGuidance} from './option-guidance.mjs?v=option1';
 import {shoppingContext,comparisonLink} from './shopping-context.mjs?v=shopping1';
 import {recoveryOptions} from './search-recovery.mjs?v=clean-shopping1';
@@ -54,6 +55,7 @@ function render(){
  for(const vehicle of data.vehicles){const result=matchVehicle(vehicle,index.records[vehicle.vin],q);if(result.kind==='match')matches.push({vehicle,result});else if(result.kind==='unknown')unknown.push({vehicle,result});}
  out.append(el('p',`${matches.length} ${q.requirements.length?(q.requirements.some(r=>r.id==='flatTow')?'matches supported by stickers and towing manuals':'equipment-confirmed matches'):'matches'}${q.requirements.length&&unknown.length?' · '+unknown.length+' need equipment confirmation':''}`,'result-count'));
  searchCounts={condition:q.condition||'Both',result_count:matches.length,unknown_count:unknown.length,feature_count:q.requirements.length};
+ if(matches.length&&(q.terms.length||q.requirements.length)){const heading=el('h3','Exact matches');heading.style.gridColumn='1/-1';out.append(heading);}
  const order=$('search-sort').value;
  const sort=(a,b)=>order==='mileage'?(a.vehicle.miles??Infinity)-(b.vehicle.miles??Infinity):order==='year'?b.vehicle.year-a.vehicle.year:(a.vehicle.price??Infinity)-(b.vehicle.price??Infinity);
  matches.sort(sort);unknown.sort(sort);
@@ -69,10 +71,31 @@ function render(){
   if(sticker?.status==='verified')card.append(link('Read original window sticker ↗',sticker.sourceUrl));
   const actions=el('div',undefined,'stock-actions');actions.append(link('Full vehicle details',`/vehicle-${v.vin}?${new URLSearchParams({q:q.original,condition:q.condition||'New'})}`));if(browseInventory){const details=el('button','View photos & details','mini-btn');details.type='button';details.addEventListener('click',()=>openVehiclePreview(v,q.original));actions.append(details);}actions.append(link('Check availability',`contact.html?vehicle=${v.vin}&request=${encodeURIComponent(q.original)}`),link('Request a walkaround',`contact.html?vehicle=${v.vin}&purpose=walkaround&request=${encodeURIComponent(q.original)}`),link('Compare equipment',comparisonLink([v.vin],shoppingContext())),link('Request a test drive',`contact.html?vehicle=${v.vin}&purpose=test-drive&request=${encodeURIComponent(q.original)}`));const compareLabel=el('label','Add to compare');const cb=document.createElement('input');cb.type='checkbox';cb.dataset.compareVin=v.vin;cb.checked=compareVins.includes(v.vin);cb.addEventListener('change',()=>toggleCompare(v.vin,cb.checked));compareLabel.prepend(cb);actions.append(compareLabel);card.append(actions);out.append(card);
  }
+ const otherOptions=sameModelOptions(data.vehicles,index.records,q,matches.map(x=>x.vehicle.vin));
+ otherOptions.sort(sort);
+ if(otherOptions.length){
+  const section=el('section',undefined,'same-model-options');
+  section.style.cssText='grid-column:1/-1;margin:18px 0;padding:16px;border:1px solid #526173;border-radius:12px';
+  const base=modelName(q.terms.join(' '));const name=(/^\d+$/.test(base)?'Ram '+base:base.replace(/\b\w/g,c=>c.toUpperCase()));
+  section.append(el('h3','Other '+name+' options'),el('p','Different trims that meet your other search requirements.','stock-small'));
+  const list=el('div');section.append(list);let shown=0;
+  const more=el('button','Show more options','mini-btn');more.type='button';
+  const addRows=()=>{for(const {vehicle:v,reason} of otherOptions.slice(shown,shown+5)){
+   const row=el('div');row.style.cssText='display:flex;flex-wrap:wrap;align-items:center;gap:10px;padding:12px 0;border-top:1px solid #526173';
+   const info=el('div');info.style.cssText='flex:1 1 240px;min-width:0';
+   const title=link(v.title,`/vehicle-${v.vin}`);title.className='';title.style.cssText='font-weight:700;text-decoration:underline';
+   info.append(title,el('div',`${cash(v.price)} · ${v.miles==null?'Mileage not listed':v.miles.toLocaleString()+' miles'} · Stock ${v.stock}`,'stock-small'),el('div','Different trim','stock-small'));
+   const details=el('button','View details','mini-btn');details.type='button';details.addEventListener('click',()=>openVehiclePreview(v,q.original));
+   const label=el('label','Compare');label.style.cssText='display:flex;gap:6px;align-items:center;font-size:14px';
+   const cb=el('input');cb.type='checkbox';cb.dataset.compareVin=v.vin;cb.checked=compareVins.includes(v.vin);cb.addEventListener('change',()=>toggleCompare(v.vin,cb.checked));label.prepend(cb);
+   row.append(info,details,label);list.append(row);
+  }shown+=5;more.hidden=shown>=otherOptions.length;};
+  more.addEventListener('click',addRows);section.append(more);addRows();out.append(section);
+ }
  $('more-matches').hidden=rows.length<=visible;
  $('more-matches').textContent=`Show ${Math.min(pageSize(),Math.max(0,rows.length-visible))} more vehicles`;
  $('visible-count').textContent=rows.length?`Showing ${Math.min(visible,rows.length)} of ${rows.length} vehicles`:'';
- if(!matches.length){
+ if(!matches.length&&!otherOptions.length){
   const help=el('section',undefined,'search-summary');help.append(el('h3','Let’s find your next vehicle'),el('p','Keep your must-haves and send us your search. We can check availability and help confirm the details.'));
   const request=`${q.condition||'New or used'} vehicles. My search: ${q.original}`;
   help.append(link('Help me find this vehicle','contact.html?purpose=find&request='+encodeURIComponent(request)));
