@@ -1,13 +1,13 @@
 import {optionGuidance,noMatchGuidance} from './option-guidance.mjs?v=option1';
 import {shoppingContext,comparisonLink} from './shopping-context.mjs?v=shopping1';
-import {recoveryOptions} from './search-recovery.mjs?v=option1';
+import {recoveryOptions} from './search-recovery.mjs?v=clean-shopping1';
 import {openVehiclePreview} from './vehicle-preview.mjs?v=shopping1';
-import {parseQuery,matchVehicle,labels} from './equipment-search.mjs?v=option1';
+import {parseQuery,matchVehicle,labels} from './equipment-search.mjs?v=clean-shopping1';
 const $=id=>document.getElementById(id),data=window.usedInventoryData,index=window.equipmentIndex;
 const el=(tag,text,cls)=>{const e=document.createElement(tag);if(text!==undefined)e.textContent=text;if(cls)e.className=cls;return e;};
 const cash=n=>n===null?'Call for price':new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(n);
 const link=(label,url)=>{const a=el('a',label,'mini-btn');a.href=url;return a;};
-$('sticker-coverage').textContent=`${index.verified} of ${index.total} vehicles have a readable, VIN-matched window sticker in this search. Equipment on the other ${index.unavailable} is unverified. Scanned ${new Date(index.checkedAt).toLocaleDateString()}.`;
+$('sticker-coverage').textContent='Explore equipment using original window stickers and reviewed factory specifications.';
 const browseInventory=document.body.dataset.browseInventory==='true';
 const pageSize=()=>Number($('results-per-page').value);
 // --- Compare selection: nothing is preloaded. Shoppers opt in per vehicle with a checkbox,

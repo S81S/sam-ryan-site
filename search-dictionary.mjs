@@ -1,5 +1,7 @@
 // Customer-language dictionary. These translate requests, never manufacture equipment evidence.
 export const searchDictionary = [
+{"canonical":"featuretokendualrearwheels","label":"Dual rear wheels","phrases":["dually","duallies","dualie","dualies","drw","dual rear wheel","dual rear wheels","dual-rear-wheel","dual-rear-wheels","dual rear wheel truck","dual rear wheels truck"]},
+{"canonical":"featuretokensecondrowbench","label":"Second-row bench seat","phrases":["second row bench seat","second-row bench seat","2nd row bench seat","2nd-row bench seat","second row bench seats","2nd row bench seats","second row bench","2nd row bench","second-row bench","2nd-row bench","bench in the second row","bench in the 2nd row","middle row bench","middle-row bench","middle bench seat","2nd row bench seating","second row bench seating"]},
  {canonical:"featuretokenfamilycamera",phrases:["famcam","fam cam","family cam","family camera","rear seat camera","rear-seat camera","back seat camera","back-seat camera","backseat camera","rear passenger camera","rear passenger monitoring camera","interior rear facing camera","interior rear-facing camera"]},
   {
     "canonical": "panoramic sunroof",

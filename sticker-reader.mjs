@@ -1,5 +1,5 @@
 import {getDocument,GlobalWorkerOptions} from './pdf.mjs';
-import {analyzeSticker} from './equipment-search.mjs?v=shopping1';
+import {analyzeSticker} from './equipment-search.mjs?v=clean-shopping1';
 import {analyzeOtherOriginal} from './multibrand-sticker.mjs?v=coverage4';
 GlobalWorkerOptions.workerSrc=new URL('./pdf.worker.mjs',import.meta.url).href;
 export async function readSticker(bytes,vin){

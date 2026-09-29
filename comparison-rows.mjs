@@ -20,6 +20,7 @@ export function visibleComparisonRows(rows, mode='important', search='') {
  return rows.filter(row=>{
   if(term)return (row.label+' '+row.facts.flatMap(f=>f?.evidence||[]).join(' ')).toLowerCase().includes(term);
   if(mode==='requested')return row.requested;
-  return mode==='all'||row.requested||['difference','wording','check'].includes(row.group);
+  if(mode==='all')return true;
+  return row.id!=='airConditioning'&&['difference','wording'].includes(row.group);
  });
 }

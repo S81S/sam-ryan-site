@@ -1,10 +1,13 @@
+import {dualRearWheelPattern,secondRowBenchPattern,wheelSeatFeatures} from './wheel-seat-evidence.mjs?v=clean-shopping1';
 import {validSeatEvidence} from './seat-evidence.mjs?v=coverage4';
 import {towEquipmentPattern,brakeControllerPattern} from './tow-evidence.mjs?v=next3';
-import {applyFactoryEquipment} from './factory-equipment.mjs?v=next3';
+import {applyFactoryEquipment} from './factory-equipment.mjs?v=clean-shopping1';
 import {flatTowEvidence} from './flat-tow-rules.mjs?v=23-tow26';
 import {interiorColors} from './interior-colors.mjs?v=option1';
-import {translateSearchTerms} from './search-dictionary.mjs?v=23-audit22';
+import {translateSearchTerms} from './search-dictionary.mjs?v=clean-shopping1';
 export const definitions = [
+ ["dualRearWheels","Dual rear wheels / dually",dualRearWheelPattern],
+ ["secondRowBench","Second-row bench seat",secondRowBenchPattern],
  ["exteriorGray","Gray / grey exterior paint",/\bgr[ae]y\b/i],
  ["flatTow","Flat-tow capability",/flat[ -]tow(?:able|ing)?|four[ -]wheels[ -]down tow/i],
  ["tintedWindows","Factory tinted / privacy windows",/deep[ -]tint(?:ed)?|privacy glass|tinted (?:windows|side glass|rear glass)/i],
@@ -116,12 +119,15 @@ export function analyzeSticker(text,vin){
   else if(positive.length)features[id]={value:true,evidence:positive.slice(0,2)};
   else if(id==='v8'&&engine&&/\b(?:i[346]|v[46]|[346].cylinder)\b/i.test(engine))features[id]={value:false,evidence:[engine]};
  }
+ Object.assign(features,wheelSeatFeatures(lines));
  const towing=flatTowEvidence(raw);if(towing)features.flatTow=towing;
  const equipmentSectionComplete=raw.some(l=>/^standard equipment/i.test(l))&&raw.some(l=>/^optional equipment/i.test(l))&&raw.some(l=>/^total price/i.test(l))&&lines.length>=20;
  const identityStart=Math.max(0,raw.findIndex(l=>/^20\d{2} MODEL YEAR/i.test(l)));
  return {identityLines:raw.slice(identityStart,identityStart+2),features,lines,engine:engine||null,equipmentSectionComplete};
 }
 const aliases=[
+ ["dualRearWheels",/\bfeaturetokendualrearwheels\b/g],
+ ["secondRowBench",/\bfeaturetokensecondrowbench\b/g],
  ["flatTow",/\b(?:flat[ -]tow(?:able|ing)?(?: capable)?|dinghy tow(?:ing)?|four[ -]down tow(?:ing)?|tow(?:able)? behind (?:an? )?(?:rv|motorhome|motor home))\b/g],
  ["tintedWindows",/\b(?:tinted windows|window tint|privacy glass|privacy windows|deep[ -]tint(?:ed)?(?: windows| glass)?)\b/g],
  ...interiorColors.map(c=>[c.id,new RegExp('\\b(?:'+c.terms.join('|')+')\\b'+(c.exact?'':'(?=\\s+(?:(?:nappa|premium|quilted|vegan)\\s+)?(?:leatherette|leather|cloth|featuretokencloth|interior|seats?|upholstery|cabin))'),'g')]),

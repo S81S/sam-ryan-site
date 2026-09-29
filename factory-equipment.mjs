@@ -1,3 +1,4 @@
+import {repairWheelSeatEvidence} from './wheel-seat-evidence.mjs?v=clean-shopping1';
 import {stickerAudits} from './factory-sticker-audits.mjs?v=shopping1';
 import {repairSeatEvidence} from './seat-evidence.mjs?v=coverage4';
 import {repairTowEvidence,repairTrailerBrakeEvidence} from './tow-evidence.mjs?v=next3';
@@ -69,7 +70,7 @@ function identity(sticker){
 function packageOn(lines,name){const n=norm(name);return lines.find(l=>{const value=norm(l).replace(/\s+\$[\d,.]+$/,'');return value===n||value===n+' package';});}
 export function applyFactoryEquipment(vehicle,sticker){
  if(sticker?.status!=='verified'||!vehicle?.vin||sticker.vin&&sticker.vin!==vehicle.vin)return sticker;
- sticker=repairTowEvidence(repairSeatEvidence(sticker));
+ sticker=repairWheelSeatEvidence(repairTowEvidence(repairSeatEvidence(sticker)));
  const audit=stickerAudits[vehicle.vin];
  if(!audit||!sticker.sha256||audit.sha256!==sticker.sha256||audit.market!=='US')return sticker;
  // Add newly recognized printed wording only after matching the audited original.
