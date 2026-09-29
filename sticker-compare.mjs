@@ -9,12 +9,21 @@ const SIDES=['1','2','3','4','5'];
 const $=id=>document.getElementById(id), urls={};
 const cash=n=>n===null?'Not listed':new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(n);
 function vehicle(side){return vehicles.find(v=>v.vin===$('choose-'+side).value)}
+function updateStickerCredit(side, source) {
+ let credit=$('sticker-credit-'+side);
+ if(!credit){credit=document.createElement('small');credit.id='sticker-credit-'+side;credit.style.cssText='display:block;font-size:12px;line-height:1.5;margin-top:6px;color:#cbd5e1';$('sticker-'+side).insertAdjacentElement('afterend',credit)}
+ let credited=false;
+ try{const url=new URL(source);credited=url.protocol==='https:'&&(url.hostname==='windowsticker.org'||url.hostname==='www.windowsticker.org')}catch{}
+ credit.replaceChildren();credit.hidden=!credited;credit.style.display=credited?'block':'none';
+ if(credited){credit.append('Window stickers from ');const link=document.createElement('a');link.href='https://windowsticker.org/';link.textContent='windowsticker.org';link.target='_blank';link.rel='noopener noreferrer';credit.append(link)}
+}
 const previousSelection={};
 function reset(side){
  const chosen=$('choose-'+side).value;
  if(chosen&&SIDES.some(id=>id!==side&&$('choose-'+id).value===chosen)){$('choose-'+side).value=previousSelection[side]||'';$('lookup-status-'+side).textContent='That vehicle is already selected. Choose a different vehicle to compare.';document.dispatchEvent(new CustomEvent('compare:changed'));return false;}
  previousSelection[side]=chosen;
  const v=vehicle(side);
+ updateStickerCredit(side,v?.stickerUrl);
  const photo=$('vehicle-photo-'+side);$('clear-'+side).hidden=!v;
  if(!v){photo.hidden=true;photo.removeAttribute('src');$('summary-'+side).textContent='';$('listing-'+side).hidden=true;$('listing-'+side).removeAttribute('href');$('sticker-'+side).hidden=true;$('sticker-'+side).removeAttribute('href');$('lookup-note-'+side).textContent='';if(urls[side]){URL.revokeObjectURL(urls[side]);delete urls[side]}$('pdf-'+side).removeAttribute('src');$('pdf-'+side).hidden=true;$('file-'+side).value='';$('file-status-'+side).textContent='No local PDF selected.';$('pdf-link-'+side).hidden=true;$('pdf-link-'+side).removeAttribute('href');document.dispatchEvent(new CustomEvent('compare:changed'));return}
  photo.hidden=!v.photoUrl;photo.alt=v.title+' — stock '+v.stock;photo.onerror=()=>{photo.hidden=true};if(v.photoUrl)photo.src=v.photoUrl;else photo.removeAttribute('src');
@@ -36,7 +45,8 @@ for(const side of SIDES){
  $('clear-'+side)?.addEventListener('click',()=>{$('choose-'+side).value='';$('lookup-'+side).value='';$('lookup-status-'+side).textContent='';reset(side)});
  $('file-'+side).addEventListener('change',async e=>{
   const f=e.target.files[0];if(!f)return;
-  const v=vehicle(side);if(!v)return;
+  const v=vehicle(side);
+ updateStickerCredit(side,v?.stickerUrl);if(!v)return;
   const selectedVIN=v.vin;$('file-status-'+side).textContent='Reading your PDF on this device…';
   try{
    if(f.size>20*1024*1024)throw new Error('Choose a PDF smaller than 20 MB');
