@@ -16,7 +16,7 @@ const sam = makeLink('Text Sam your shortlist');
 const ryan = makeLink('Text Ryan your shortlist');
 const inquiry = makeLink('Ask about these vehicles');
 section.append(title, description, actions);
-document.getElementById('automatic-equipment').before(section);
+document.getElementById('automatic-equipment').after(section);
 function update() {
   const vins = [...new Set(['1','2','3','4','5'].map(id => document.getElementById('choose-' + id)?.value).filter(Boolean))];
   const selected = vins.map(vin => inventory.find(v => v.vin === vin)).filter(Boolean);

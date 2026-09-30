@@ -52,3 +52,5 @@ const menuToggle=document.querySelector('.menu-toggle'), primaryNav=document.get
 menuToggle?.addEventListener('click',()=>{const open=menuToggle.getAttribute('aria-expanded')!=='true';menuToggle.setAttribute('aria-expanded',String(open));primaryNav?.classList.toggle('is-open',open)});
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&menuToggle?.getAttribute('aria-expanded')==='true'){menuToggle.setAttribute('aria-expanded','false');primaryNav?.classList.remove('is-open');menuToggle.focus()}});
 
+
+import('/sticker-credit.mjs?v=clear1').then(m=>m.installStickerCredits()).catch(()=>{});

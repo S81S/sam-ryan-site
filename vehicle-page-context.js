@@ -23,3 +23,5 @@
   }
 })();
 
+
+import('/sticker-credit.mjs?v=clear1').then(m=>m.installStickerCredits()).catch(()=>{});

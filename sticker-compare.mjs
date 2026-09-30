@@ -1,3 +1,4 @@
+import {appendStickerCredit} from './sticker-credit.mjs?v=clear1';
 import {installVehiclePickers} from './compare-picker.mjs?v=next3';
 const readSticker=async(...args)=>(await import('./sticker-reader.mjs?v=clean-shopping1')).readSticker(...args);
 import {shoppingContext} from './shopping-context.mjs?v=shopping1';
@@ -11,11 +12,8 @@ const cash=n=>n===null?'Not listed':new Intl.NumberFormat('en-US',{style:'curren
 function vehicle(side){return vehicles.find(v=>v.vin===$('choose-'+side).value)}
 function updateStickerCredit(side, source) {
  let credit=$('sticker-credit-'+side);
- if(!credit){credit=document.createElement('small');credit.id='sticker-credit-'+side;credit.style.cssText='display:block;font-size:12px;line-height:1.5;margin-top:6px;color:#cbd5e1';$('sticker-'+side).insertAdjacentElement('afterend',credit)}
- let credited=false;
- try{const url=new URL(source);credited=url.protocol==='https:'&&(url.hostname==='windowsticker.org'||url.hostname==='www.windowsticker.org')}catch{}
- credit.replaceChildren();credit.hidden=!credited;credit.style.display=credited?'block':'none';
- if(credited){credit.append('Window stickers from ');const link=document.createElement('a');link.href='https://windowsticker.org/';link.textContent='windowsticker.org';link.target='_blank';link.rel='noopener noreferrer';credit.append(link)}
+ if(!credit){credit=document.createElement('span');credit.id='sticker-credit-'+side;$('sticker-'+side).insertAdjacentElement('afterend',credit)}
+ credit.replaceChildren();appendStickerCredit(credit,source,index.records[vehicle(side)?.vin]?.sourceUrl);
 }
 const previousSelection={};
 function reset(side){
@@ -29,9 +27,9 @@ function reset(side){
  photo.hidden=!v.photoUrl;photo.alt=v.title+' — stock '+v.stock;photo.onerror=()=>{photo.hidden=true};if(v.photoUrl)photo.src=v.photoUrl;else photo.removeAttribute('src');
  if(urls[side]){URL.revokeObjectURL(urls[side]);delete urls[side]}
  $('pdf-'+side).removeAttribute('src');$('pdf-'+side).hidden=true;$('file-'+side).value='';$('file-status-'+side).textContent='No local PDF selected.';
- $('summary-'+side).textContent=`${v.title} · ${cash(v.price)} · ${v.miles===null?'Mileage unknown':v.miles.toLocaleString()+' miles'} · Stock ${v.stock} · VIN ${v.vin}`;
+ $('summary-'+side).textContent=`${v.title} · ${cash(v.price)} · ${v.miles===null?'':v.miles.toLocaleString()+' miles · '}Stock ${v.stock}`;
  $('listing-'+side).hidden=!!v.external;$('listing-'+side).href='contact.html?vehicle='+encodeURIComponent(v.vin);$('listing-'+side).textContent='View photos & vehicle details';$('listing-'+side).removeAttribute('target');$('listing-'+side).onclick=e=>{e.preventDefault();openVehiclePreview(v,shoppingContext().q)};
- $('sticker-'+side).hidden=!v.carfaxUrl&&!v.stickerUrl;$('sticker-'+side).href=v.stickerUrl||v.carfaxUrl||v.sourceUrl;$('sticker-'+side).textContent=v.stickerUrl?'Open original window sticker ↗':'Open CARFAX → Original Window Sticker ↗';
+ const originalSource=v.stickerUrl||index.records[v.vin]?.sourceUrl;$('sticker-'+side).hidden=!v.carfaxUrl&&!originalSource;$('sticker-'+side).href=originalSource||v.carfaxUrl||v.sourceUrl;$('sticker-'+side).textContent=originalSource?'Open original window sticker ↗':'Open CARFAX → Original Window Sticker ↗';
  $('lookup-note-'+side).textContent=v.stickerUrl?'Open the original document to check its VIN and equipment.':v.carfaxUrl?'Open the Covert-provided CARFAX report, then choose Original Window Sticker. A direct sticker link has not yet been checked for this vehicle.':'No CARFAX/sticker link captured for this vehicle. Open its official listing to check,.';
  $('pdf-link-'+side).hidden=true;$('pdf-link-'+side).removeAttribute('href');
  document.dispatchEvent(new CustomEvent('compare:changed'));
@@ -148,3 +146,5 @@ function addExternal(vin,side){
 }
 
 installVehiclePickers(vehicles);
+
+for(const side of SIDES){const button=$('clear-'+side);button.textContent='Change vehicle';button.closest('.sticker-side').append(button);}
