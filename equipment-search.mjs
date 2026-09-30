@@ -1,3 +1,4 @@
+import {engineDefinitions,engineAliases,engineTerms,engineFact} from './engine-search.mjs?v=engines1';
 import {dualRearWheelPattern,secondRowBenchPattern,wheelSeatFeatures} from './wheel-seat-evidence.mjs?v=clean-shopping1';
 import {validSeatEvidence} from './seat-evidence.mjs?v=coverage4';
 import {towEquipmentPattern,brakeControllerPattern} from './tow-evidence.mjs?v=next3';
@@ -6,6 +7,7 @@ import {flatTowEvidence} from './flat-tow-rules.mjs?v=23-tow26';
 import {interiorColors} from './interior-colors.mjs?v=option1';
 import {translateSearchTerms} from './search-dictionary.mjs?v=clean-shopping1';
 export const definitions = [
+ ...engineDefinitions,
  ['engine20','2.0-liter engine',/\bengine:.*\b2\.0\s*(?:l\b|lit(?:er|re))/i],
  ['engine36','3.6-liter engine',/\bengine:.*\b3\.6\s*(?:l\b|lit(?:er|re))/i],
  ["dualRearWheels","Dual rear wheels / dually",dualRearWheelPattern],
@@ -128,6 +130,7 @@ export function analyzeSticker(text,vin){
  return {identityLines:raw.slice(identityStart,identityStart+2),features,lines,engine:engine||null,equipmentSectionComplete};
 }
 const aliases=[
+ ...engineAliases,
  ['engine20',/\b2\.0(?:\s*-?\s*(?:liters?|litres?|l))?\b(?:\s+engine)?/g],
  ['engine36',/\b3\.6(?:\s*-?\s*(?:liters?|litres?|l))?\b(?:\s+engine)?/g],
  ["dualRearWheels",/\bfeaturetokendualrearwheels\b/g],
@@ -224,7 +227,7 @@ export function parseQuery(input){
  q=q.replace(/\b(leatherette|leather|cloth|interior|seats|upholstery)\s+(?:in\s+)?(tan|beige|brown|black|gray|grey|white|cream|ivory|red|blue|green|purple|violet|lavender|lilac|plum|pink|fuchsia|orange|yellow)\b/g,'$2 $1');
  q=q.replace(/\bclack(?=\s+(?:leather|cloth|interior|seats?))/g,'black');
  q=q.replace(/\b(vented|ventilated|cooled|heated|massaging)\s+and\s+(?=(?:vented|ventilated|cooled|heated|massaging)\s+seats)/g,'$1 seats and ');
- q=translateSearchTerms(q);
+ q=translateSearchTerms(engineTerms(q));
  q=q.replace(/\bflat[ -]towed\b/g,'flat tow');
  const wantsTruck=/\b(?:trucks?|pick[ -]?ups?)\b/.test(q),wantsSuv=/\b(?:suvs?|sport utility vehicles?)\b/.test(q);
  q=q.replace(/\b(?:trucks?|pick[ -]?ups?|suvs?|sport utility vehicles?)\b/g,' ');
@@ -297,7 +300,7 @@ export function matchVehicle(vehicle,sticker,query){
   }
  }
  if(unmatched.length&&!unmatched.every(t=>text.split(/[^a-z0-9'-]+/).includes(t)))return {kind:'excluded',reason:'terms'};
- const checks=query.requirements.map(req=>{let fact=sticker?.status==='verified'?sticker.features?.[req.id]:null;if(req.id.startsWith('interior')&&sticker?.status==='verified'){const color=interiorColors.find(c=>c.id===req.id);const interior=lines.filter(l=>/^interior(?: color)?:/i.test(l)).map(l=>l.split(/exterior(?: color)?:/i)[0]);if(color&&interior.length)fact={value:interior.some(l=>new RegExp(color.pattern,'i').test(l)),evidence:interior};}if(req.id==='exteriorGray'&&sticker?.status==='verified'){const paint=lines.filter(l=>/^exterior(?: color)?:/i.test(l));if(paint.length)fact={value:paint.some(l=>/\bgr[ae]y\b/i.test(l.split(/interior(?: color)?:/i)[0])),evidence:paint};}return {...req,label:labels[req.id],sourceUrl:fact?.sourceUrl,method:fact?.method,state:fact?fact.value===req.wanted?'match':'conflict':'unknown',evidence:fact?.evidence||[]};});
+ const checks=query.requirements.map(req=>{let fact=engineFact(req.id,sticker)||(sticker?.status==='verified'?sticker.features?.[req.id]:null);if(req.id.startsWith('interior')&&sticker?.status==='verified'){const color=interiorColors.find(c=>c.id===req.id);const interior=lines.filter(l=>/^interior(?: color)?:/i.test(l)).map(l=>l.split(/exterior(?: color)?:/i)[0]);if(color&&interior.length)fact={value:interior.some(l=>new RegExp(color.pattern,'i').test(l)),evidence:interior};}if(req.id==='exteriorGray'&&sticker?.status==='verified'){const paint=lines.filter(l=>/^exterior(?: color)?:/i.test(l));if(paint.length)fact={value:paint.some(l=>/\bgr[ae]y\b/i.test(l.split(/interior(?: color)?:/i)[0])),evidence:paint};}return {...req,label:labels[req.id],sourceUrl:fact?.sourceUrl,method:fact?.method,state:fact?fact.value===req.wanted?'match':'conflict':'unknown',evidence:fact?.evidence||[]};});
  if(checks.some(c=>c.state==='conflict'))return {kind:'excluded',reason:'equipment',checks};
  if(checks.some(c=>c.state==='unknown'))return {kind:'unknown',checks};
  return {kind:'match',checks};
