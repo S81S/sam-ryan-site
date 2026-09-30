@@ -6,6 +6,8 @@ import {flatTowEvidence} from './flat-tow-rules.mjs?v=23-tow26';
 import {interiorColors} from './interior-colors.mjs?v=option1';
 import {translateSearchTerms} from './search-dictionary.mjs?v=clean-shopping1';
 export const definitions = [
+ ['engine20','2.0-liter engine',/\bengine:.*\b2\.0\s*(?:l\b|lit(?:er|re))/i],
+ ['engine36','3.6-liter engine',/\bengine:.*\b3\.6\s*(?:l\b|lit(?:er|re))/i],
  ["dualRearWheels","Dual rear wheels / dually",dualRearWheelPattern],
  ["secondRowBench","Second-row bench seat",secondRowBenchPattern],
  ["exteriorGray","Gray / grey exterior paint",/\bgr[ae]y\b/i],
@@ -126,6 +128,8 @@ export function analyzeSticker(text,vin){
  return {identityLines:raw.slice(identityStart,identityStart+2),features,lines,engine:engine||null,equipmentSectionComplete};
 }
 const aliases=[
+ ['engine20',/\b2\.0(?:\s*-?\s*(?:liters?|litres?|l))?\b(?:\s+engine)?/g],
+ ['engine36',/\b3\.6(?:\s*-?\s*(?:liters?|litres?|l))?\b(?:\s+engine)?/g],
  ["dualRearWheels",/\bfeaturetokendualrearwheels\b/g],
  ["secondRowBench",/\bfeaturetokensecondrowbench\b/g],
  ["flatTow",/\b(?:flat[ -]tow(?:able|ing)?(?: capable)?|dinghy tow(?:ing)?|four[ -]down tow(?:ing)?|tow(?:able)? behind (?:an? )?(?:rv|motorhome|motor home))\b/g],
@@ -265,16 +269,33 @@ export function matchVehicle(vehicle,sticker,query){
  }
  // Requested trim names must identify the vehicle, not appear inside unrelated package text.
  const identity=title+' '+(sticker?.status==='verified'?(sticker.identityLines||[]).join(' ').toLowerCase():'');
+ // Multiword trims are phrases, never independent matches against wheel sizes or package descriptions.
+ const specialTrim=['rubicon','mojave'].find(t=>query.terms.includes(t)&&query.terms.includes('x'));
+ if(specialTrim){
+  const phrase=new RegExp('\\b'+specialTrim+'[ -]+x\\b','i');
+  const packageLine=new RegExp('^'+specialTrim+'[ -]+x\\s+(?:package|group)\\b','i');
+  const verifiedLines=sticker?.status==='verified'?sticker.lines||[]:[];
+  if(!phrase.test(identity)&&!verifiedLines.some(l=>packageLine.test(normalizeText(l))))return {kind:'excluded',reason:'trim'};
+ }
  // Cherokee is a separate model; it must not silently include Grand Cherokee.
  if(query.terms.includes('cherokee')){
   const grand=/\bgrand cherokee\b/.test(identity);
   if(!/\bcherokee\b/.test(identity)||grand!==query.terms.includes('grand'))return {kind:'excluded',reason:'model'};
  }
- for(const trim of ['rho','trx','rebel'])if(query.terms.includes(trim)&&!identity.split(/[^a-z0-9'-]+/).includes(trim))return {kind:'excluded',reason:'trim'};
+ for(const trim of ['rho','trx','rebel','rubicon','mojave'])if(query.terms.includes(trim)&&!identity.split(/[^a-z0-9'-]+/).includes(trim))return {kind:'excluded',reason:'trim'};
  const unmatched=query.terms.filter(t=>!title.split(/[^a-z0-9'-]+/).includes(t));
  // Remaining words must be found in the VIN-verified equipment text; listing descriptions are never searched.
  const lines=sticker?.status==='verified'?sticker.lines||[]:[];
  const text=normalizeText(lines.join(' ')).toLowerCase();
+ // Read displacement from the original engine line even for previously scanned stickers.
+ if(sticker?.status==='verified'){
+  const engineLines=[sticker.engine,...lines.filter(l=>/^engine:/i.test(l))].filter(Boolean);
+  if(engineLines.length){
+   const features={...sticker.features};
+   for(const [id,,pattern] of definitions.filter(d=>/^engine(?:20|36)$/.test(d[0])))features[id]={value:engineLines.some(l=>pattern.test(normalizeText(l))),evidence:engineLines};
+   sticker={...sticker,features};
+  }
+ }
  if(unmatched.length&&!unmatched.every(t=>text.split(/[^a-z0-9'-]+/).includes(t)))return {kind:'excluded',reason:'terms'};
  const checks=query.requirements.map(req=>{let fact=sticker?.status==='verified'?sticker.features?.[req.id]:null;if(req.id.startsWith('interior')&&sticker?.status==='verified'){const color=interiorColors.find(c=>c.id===req.id);const interior=lines.filter(l=>/^interior(?: color)?:/i.test(l)).map(l=>l.split(/exterior(?: color)?:/i)[0]);if(color&&interior.length)fact={value:interior.some(l=>new RegExp(color.pattern,'i').test(l)),evidence:interior};}if(req.id==='exteriorGray'&&sticker?.status==='verified'){const paint=lines.filter(l=>/^exterior(?: color)?:/i.test(l));if(paint.length)fact={value:paint.some(l=>/\bgr[ae]y\b/i.test(l.split(/interior(?: color)?:/i)[0])),evidence:paint};}return {...req,label:labels[req.id],sourceUrl:fact?.sourceUrl,method:fact?.method,state:fact?fact.value===req.wanted?'match':'conflict':'unknown',evidence:fact?.evidence||[]};});
  if(checks.some(c=>c.state==='conflict'))return {kind:'excluded',reason:'equipment',checks};
