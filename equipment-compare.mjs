@@ -1,8 +1,8 @@
 import {appendStickerCredit} from './sticker-credit.mjs?v=source2';
 import {appendEquipmentFact} from './comparison-layout.mjs?v=specs1';
 import {applyFactoryEquipment} from './factory-equipment.mjs?v=wheel1';
-import {comparisonRows,visibleComparisonRows} from './comparison-rows.mjs?v=specs1';
-import {withComparisonSpecifications,specificationDefinitions} from './comparison-specs.mjs?v=specs1';
+import {comparisonRows,visibleComparisonRows} from './comparison-rows.mjs?v=specs2';
+import {withComparisonSpecifications,specificationDefinitions} from './comparison-specs.mjs?v=specs2';
 import {definitions,parseQuery} from './equipment-search.mjs?v=wheel1';
 const $=id=>document.getElementById(id),el=(tag,text)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;return n};
 const short=v=>v.stock?`Stock ${v.stock}`:`VIN …${v.vin.slice(-6)}`;
@@ -24,7 +24,7 @@ function render(){
  function draw(){
   wrap.replaceChildren();for(const [id,b] of buttonRefs)b.setAttribute('aria-pressed',String(id===mode));
   const visible=visibleComparisonRows(rows,mode,search.value);viewState.mode=mode;viewState.search=search.value;
-  status.textContent=search.value?'Matching features':mode==='important'?(visible.some(r=>r.group==='check')?'Confirmed differences and details to verify':'Confirmed differences'):mode==='requested'?'Your requested features':'Shared equipment';
+  status.textContent=search.value?'Matching features':mode==='important'?(visible.some(r=>r.facts.some(f=>!f))?'Confirmed differences and details to verify':'Confirmed differences'):mode==='requested'?'Your requested features':'Shared equipment';
   legend.hidden=!visible.some(r=>r.facts.some(f=>!f));
   if(!visible.length&&mode!=='important'){wrap.append(el('p',search.value?'No features match that wording.':'No confirmed equipment differences to show. See Shared equipment or ask us about a specific feature.'));return;}
   const table=el('table');table.className='equipment-matrix';const caption=el('caption','Equipment at a glance');caption.className='matrix-caption';table.append(caption);

@@ -16,6 +16,6 @@ export function visibleComparisonRows(rows, mode='important', search='') {
   if(mode==='requested')return row.requested;
   if(mode==='all')return row.group==='same'&&row.facts.every(Boolean)&&row.facts.some(f=>f.value);
   if(mode==='check')return row.group==='check';
-  return row.id!=='airConditioning'&&((row.group==='difference'&&row.facts.every(Boolean))||(row.specification&&row.group==='check'));
+  return row.id!=='airConditioning'&&(row.group==='difference'||(row.group==='check'&&row.facts.some(f=>f?.value)));
  });
 }
