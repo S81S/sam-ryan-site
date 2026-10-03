@@ -3,13 +3,17 @@ import {optionGuidance,noMatchGuidance} from './option-guidance.mjs?v=option1';
 import {shoppingContext,comparisonLink} from './shopping-context.mjs?v=shopping1';
 import {recoveryOptions} from './search-recovery.mjs?v=clean-shopping1';
 import {openVehiclePreview} from './vehicle-preview.mjs?v=shopping1';
-import {parseQuery,matchVehicle,labels} from './equipment-search.mjs?v=clean-shopping1';
+import {parseQuery,matchVehicle,labels} from './equipment-search.mjs?v=camera-tires1';
 const $=id=>document.getElementById(id),data=window.usedInventoryData,index=window.equipmentIndex;
 const el=(tag,text,cls)=>{const e=document.createElement(tag);if(text!==undefined)e.textContent=text;if(cls)e.className=cls;return e;};
 const cash=n=>n===null?'Call for price':new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(n);
 const link=(label,url)=>{const a=el('a',label,'mini-btn');a.href=url;return a;};
 $('sticker-coverage').textContent='Explore equipment using original window stickers and reviewed factory specifications.';
 const browseInventory=document.body.dataset.browseInventory==='true';
+const conditionRadios=[...document.querySelectorAll('input[name="vehicle-condition"]')];
+let keepSearchPosition=false;
+function syncConditionChoices(){for(const radio of conditionRadios)radio.checked=radio.value===$('search-condition').value;}
+for(const radio of conditionRadios)radio.addEventListener('change',()=>{if(radio.checked){$('search-condition').value=radio.value;keepSearchPosition=true;try{if(browseInventory||$('request').value.trim())$('matchBtn').click();}finally{keepSearchPosition=false;}}});
 const pageSize=()=>Number($('results-per-page').value);
 // --- Compare selection: nothing is preloaded. Shoppers opt in per vehicle with a checkbox,
 // then go to Compare with only the vehicles they picked (or they can enter a stock #/VIN there directly).
@@ -42,8 +46,9 @@ updateCompareBar();
 
 
 let searchCounts={},lastQuery=null,visible=pageSize(),restoringSearch=true;
-function revealResults(){if(!restoringSearch){$('search-results').scrollIntoView({behavior:'instant',block:'start'});$('search-results').focus({preventScroll:true});}}
+function revealResults(){if(!restoringSearch&&!keepSearchPosition){$('search-results').scrollIntoView({behavior:'instant',block:'start'});$('search-results').focus({preventScroll:true});}}
 function render(){
+ syncConditionChoices();
  const out=$('matchResults');out.replaceChildren();$('visible-count').textContent='';const q=lastQuery;if(!q)return;
  const summary=el('div',undefined,'search-summary');
  const items=[...(q.bodyType?[q.bodyType==='truck'?'Pickup trucks':q.bodyType==='suv'?'SUVs':'Pickup trucks or SUVs']:[]),...q.terms,...(q.condition?[q.condition]:[]),...(q.budget!==null?['Price up to '+cash(q.budget)]:[]),...(q.mileage!==null?['Mileage up to '+q.mileage.toLocaleString()]:[]),...q.requirements.map(r=>(r.wanted?'With ':'Without ')+labels[r.id])];
@@ -61,6 +66,11 @@ function render(){
  matches.sort(sort);unknown.sort(sort);
  const rows=[...matches,...($('show-unverified').checked?unknown:[])];
  if(!rows.length)out.append(el('p',noMatchGuidance(q)||(unknown.length?'No exact equipment matches are confirmed. Select “Show vehicles needing equipment confirmation” or adjust your must-haves.':'No matches found. Try a broader model or budget, or ask us to help with your shortlist.')));
+ if(!matches.length&&q.condition&&!parseQuery(q.original).condition){
+  const otherCondition=q.condition==='Used'?'New':'Used';
+  const otherCount=data.vehicles.filter(v=>matchVehicle(v,index.records[v.vin],{...q,condition:otherCondition}).kind==='match').length;
+  if(otherCount){const hint=el('div',undefined,'search-summary');hint.append(el('p',`You are searching ${q.condition.toLowerCase()} vehicles. ${otherCount} ${otherCondition.toLowerCase()} vehicles match this same search.`));const change=el('button',`Show ${otherCount} matching ${otherCondition.toLowerCase()} vehicles`,'mini-btn');change.type='button';change.addEventListener('click',()=>{$('search-condition').value=otherCondition;$('matchBtn').click();});hint.append(change);out.append(hint);}
+ }
  for(const {vehicle:v,result} of rows.slice(0,visible)){
   const sticker=index.records[v.vin],card=el('article',undefined,'match');
   const photo=link('',`contact.html?vehicle=${encodeURIComponent(v.vin)}`);photo.className='stock-photo';photo.setAttribute('aria-label','View vehicle details: '+v.title);photo.addEventListener('click',e=>{e.preventDefault();openVehiclePreview(v,q.original);});const img=el('img');img.src=v.photoUrl;img.alt=v.title;img.width=400;img.height=300;img.loading='lazy';img.addEventListener('error',()=>photo.replaceChildren(el('span','View vehicle details')),{once:true});photo.append(img);card.append(photo);
@@ -69,7 +79,7 @@ function render(){
   for(const check of result.checks)card.append(el('p',`${check.state==='match'?'✓':check.state==='not-listed'?'—':'?'} ${check.wanted?'':'Without '}${check.label}: ${check.state==='unknown'?'not confirmed by the sticker':check.evidence.join(' / ')}`,'equipment-check'));
   for(const check of result.checks)if(check.sourceUrl)card.append(link(check.id==='flatTow'?'Read factory flat-towing instructions ↗':'Read factory equipment reference ↗',check.sourceUrl));
   if(sticker?.status==='verified')card.append(link('Read original window sticker ↗',sticker.sourceUrl));
-  const actions=el('div',undefined,'stock-actions');actions.append(link('Full vehicle details',`/vehicle-${v.vin}?${new URLSearchParams({q:q.original,condition:q.condition||'New'})}`));if(browseInventory){const details=el('button','View photos & details','mini-btn');details.type='button';details.addEventListener('click',()=>openVehiclePreview(v,q.original));actions.append(details);}actions.append(link('Check availability',`contact.html?vehicle=${v.vin}&request=${encodeURIComponent(q.original)}`),link('Request a walkaround',`contact.html?vehicle=${v.vin}&purpose=walkaround&request=${encodeURIComponent(q.original)}`),link('Compare equipment',comparisonLink([v.vin],shoppingContext())),link('Request a test drive',`contact.html?vehicle=${v.vin}&purpose=test-drive&request=${encodeURIComponent(q.original)}`));const compareLabel=el('label','Add to compare');const cb=document.createElement('input');cb.type='checkbox';cb.dataset.compareVin=v.vin;cb.checked=compareVins.includes(v.vin);cb.addEventListener('change',()=>toggleCompare(v.vin,cb.checked));compareLabel.prepend(cb);actions.append(compareLabel);card.append(actions);out.append(card);
+  const actions=el('div',undefined,'stock-actions');actions.append(link('Full vehicle details',`/vehicle-${v.vin}?${new URLSearchParams({q:q.original,condition:q.condition||'Both'})}`));if(browseInventory){const details=el('button','View photos & details','mini-btn');details.type='button';details.addEventListener('click',()=>openVehiclePreview(v,q.original));actions.append(details);}actions.append(link('Check availability',`contact.html?vehicle=${v.vin}&request=${encodeURIComponent(q.original)}`),link('Request a walkaround',`contact.html?vehicle=${v.vin}&purpose=walkaround&request=${encodeURIComponent(q.original)}`),link('Compare equipment',comparisonLink([v.vin],shoppingContext())),link('Request a test drive',`contact.html?vehicle=${v.vin}&purpose=test-drive&request=${encodeURIComponent(q.original)}`));const compareLabel=el('label','Add to compare');const cb=document.createElement('input');cb.type='checkbox';cb.dataset.compareVin=v.vin;cb.checked=compareVins.includes(v.vin);cb.addEventListener('change',()=>toggleCompare(v.vin,cb.checked));compareLabel.prepend(cb);actions.append(compareLabel);card.append(actions);out.append(card);
  }
  const otherOptions=sameModelOptions(data.vehicles,index.records,q,matches.map(x=>x.vehicle.vin));
  otherOptions.sort(sort);
@@ -110,7 +120,7 @@ function render(){
   out.append(help);
  }
 }
-$('matchBtn').addEventListener('click',()=>{const value=$('request').value.trim();if(!value&&!browseInventory){lastQuery=null;$('more-matches').hidden=true;$('matchResults').textContent='Tell us a model, budget or equipment you want.';return;}lastQuery=parseQuery(value);const selectedCondition=$('search-condition').value;if(lastQuery.condition&&selectedCondition!=='Both'&&lastQuery.condition!==selectedCondition){lastQuery.ambiguity=`Your request says ${lastQuery.condition.toLowerCase()}. Choose ${lastQuery.condition} above, or edit your request.`;}lastQuery.condition=selectedCondition==='Both'?null:selectedCondition;const searchUrl=new URL(location.href);searchUrl.searchParams.set('q',value);searchUrl.searchParams.set('condition',selectedCondition);history.replaceState(null,'',searchUrl);try{sessionStorage.setItem('samRyanLastSearch',value);}catch{}visible=pageSize();searchCounts={};render();updateCompareBar();if(!restoringSearch&&Object.keys(searchCounts).length)window.cwsTrack?.('search_results',searchCounts);revealResults();});
+$('matchBtn').addEventListener('click',()=>{const value=$('request').value.trim();if(!value&&!browseInventory){lastQuery=null;$('more-matches').hidden=true;$('matchResults').textContent='Tell us a model, budget or equipment you want.';return;}lastQuery=parseQuery(value);const selectedCondition=$('search-condition').value;if(lastQuery.condition&&selectedCondition!=='Both'&&lastQuery.condition!==selectedCondition){lastQuery.ambiguity=`Your request says ${lastQuery.condition.toLowerCase()}. Choose ${lastQuery.condition} above, or edit your request.`;}lastQuery.condition=selectedCondition==='Both'?lastQuery.condition:selectedCondition;const searchUrl=new URL(location.href);searchUrl.searchParams.set('q',value);searchUrl.searchParams.set('condition',selectedCondition);history.replaceState(null,'',searchUrl);try{sessionStorage.setItem('samRyanLastSearch',value);}catch{}visible=pageSize();searchCounts={};render();updateCompareBar();if(!restoringSearch&&Object.keys(searchCounts).length)window.cwsTrack?.('search_results',searchCounts);revealResults();});
 $('results-per-page').addEventListener('change',()=>{visible=pageSize();render();});
 $('search-sort').addEventListener('change',()=>{visible=pageSize();render();});
 $('show-unverified').addEventListener('change',()=>{visible=pageSize();render();});

@@ -2,13 +2,15 @@ import {engineDefinitions,engineAliases,engineTerms,engineFact} from './engine-s
 import {dualRearWheelPattern,secondRowBenchPattern,wheelSeatFeatures} from './wheel-seat-evidence.mjs?v=clean-shopping1';
 import {validSeatEvidence} from './seat-evidence.mjs?v=coverage4';
 import {towEquipmentPattern,brakeControllerPattern} from './tow-evidence.mjs?v=next3';
-import {applyFactoryEquipment} from './factory-equipment.mjs?v=clean-shopping1';
+import {applyFactoryEquipment} from './factory-equipment.mjs?v=camera-tires1';
 import {flatTowEvidence} from './flat-tow-rules.mjs?v=23-tow26';
 import {interiorColors} from './interior-colors.mjs?v=option1';
 import {exteriorColors,exteriorPaintLines,exteriorColorFact,extractExteriorColors} from './exterior-colors.mjs?v=paint1';
 import {translateSearchTerms} from './search-dictionary.mjs?v=clean-shopping1';
+import {surroundCameraPattern,cameraSearchTerms,tireDefinitions,tireAliases,tireSearchTerms,cameraTireFeatures} from './camera-tire-evidence.mjs?v=equipment1';
 export const definitions = [
  ...engineDefinitions,
+ ...tireDefinitions,
  ['engine20','2.0-liter engine',/\bengine:.*\b2\.0\s*(?:l\b|lit(?:er|re))/i],
  ['engine36','3.6-liter engine',/\bengine:.*\b3\.6\s*(?:l\b|lit(?:er|re))/i],
  ["dualRearWheels","Dual rear wheels / dually",dualRearWheelPattern],
@@ -89,7 +91,7 @@ export const definitions = [
  ['leather','Leather-trimmed seats',/\bleather(?:ette)?\b.*(?:seats|trimmed bucket)|(?:seats).*\bleather(?:ette)?\b/i],
  ['adaptiveCruise','Adaptive cruise control',/adaptive cruise/i],
  ['blindSpot','Blind-spot monitoring',/blind.spot/i],
- ['surroundCamera','Surround-view camera',/surround.view camera|360.*camera/i],
+ ['surroundCamera','Surround-view camera',surroundCameraPattern],
  ['backupCamera','Rear-view camera',/rear.back.up camera|rear.view camera|back.up camera/i],
  ['remoteStart','Remote start',/remote.start/i],
  ['thirdRow','Third-row seats',/(?:third|3rd).row.*seat/i],
@@ -125,6 +127,7 @@ export function analyzeSticker(text,vin){
   else if(id==='v8'&&engine&&/\b(?:i[346]|v[46]|[346].cylinder)\b/i.test(engine))features[id]={value:false,evidence:[engine]};
  }
  Object.assign(features,wheelSeatFeatures(lines));
+ delete features.surroundCamera;Object.assign(features,cameraTireFeatures(lines));
  for(const color of exteriorColors){delete features[color.id];const fact=exteriorColorFact(color.id,{status:'verified',lines:raw});if(fact)features[color.id]=fact;}
  const towing=flatTowEvidence(raw);if(towing)features.flatTow=towing;
  const equipmentSectionComplete=raw.some(l=>/^standard equipment/i.test(l))&&raw.some(l=>/^optional equipment/i.test(l))&&raw.some(l=>/^total price/i.test(l))&&lines.length>=20;
@@ -133,6 +136,8 @@ export function analyzeSticker(text,vin){
 }
 const aliases=[
  ...engineAliases,
+ ...tireAliases,
+ ['surroundCamera',/\bfeaturetokensurroundcamera\b/g],
  ['engine20',/\b2\.0(?:\s*-?\s*(?:liters?|litres?|l))?\b(?:\s+engine)?/g],
  ['engine36',/\b3\.6(?:\s*-?\s*(?:liters?|litres?|l))?\b(?:\s+engine)?/g],
  ["dualRearWheels",/\bfeaturetokendualrearwheels\b/g],
@@ -230,7 +235,7 @@ export function parseQuery(input){
  q=q.replace(/\b(leatherette|leather|cloth|interior|seats|upholstery)\s+(?:in\s+)?(tan|beige|brown|black|gray|grey|white|cream|ivory|red|blue|green|purple|violet|lavender|lilac|plum|pink|fuchsia|orange|yellow)\b/g,'$2 $1');
  q=q.replace(/\bclack(?=\s+(?:leather|cloth|interior|seats?))/g,'black');
  q=q.replace(/\b(vented|ventilated|cooled|heated|massaging)\s+and\s+(?=(?:vented|ventilated|cooled|heated|massaging)\s+seats)/g,'$1 seats and ');
- q=translateSearchTerms(engineTerms(q));
+ q=translateSearchTerms(engineTerms(cameraSearchTerms(tireSearchTerms(q))));
  q=q.replace(/\bflat[ -]towed\b/g,'flat tow');
  const wantsTruck=/\b(?:trucks?|pick[ -]?ups?)\b/.test(q),wantsSuv=/\b(?:suvs?|sport utility vehicles?)\b/.test(q);
  q=q.replace(/\b(?:trucks?|pick[ -]?ups?|suvs?|sport utility vehicles?)\b/g,' ');
@@ -259,6 +264,7 @@ export function parseQuery(input){
  result.terms=q.split(/[^a-z0-9'-]+/).filter(w=>w&&!stop.has(w));
  if(result.requirements.some(x=>x.id==='flatTow'))result.warnings.push('Flat towing means pulling this vehicle behind an RV with all four wheels on the ground. Matches require a verified model-year and drivetrain rule; unreviewed configurations remain unconfirmed. Follow the linked factory procedure and confirm towing equipment, weight limits and vehicle condition; a trailer-tow package alone does not qualify.');
  if(result.requirements.some(x=>x.id==='ventilated'))result.warnings.push('“Air-conditioned seats” is treated as ventilated/cooled seats. The exact factory wording is shown.');
+ if(result.requirements.some(x=>x.id.startsWith('tireDiameter')))result.warnings.push('Tire sizes refer to factory specifications on the window sticker. Confirm the currently fitted tires on a used vehicle.');
  return result;
 }
 export function matchVehicle(vehicle,sticker,query){
@@ -304,7 +310,7 @@ export function matchVehicle(vehicle,sticker,query){
   }
  }
  if(unmatched.length&&!unmatched.every(t=>text.split(/[^a-z0-9'-]+/).includes(t)))return {kind:'excluded',reason:'terms'};
- const checks=query.requirements.map(req=>{let fact=engineFact(req.id,sticker)||(sticker?.status==='verified'?sticker.features?.[req.id]:null);if(req.id.startsWith('interior')&&sticker?.status==='verified'){const color=interiorColors.find(c=>c.id===req.id);const interior=lines.filter(l=>/^interior(?: color)?:/i.test(l)).map(l=>l.split(/exterior(?: color)?:/i)[0]);if(color&&interior.length)fact={value:interior.some(l=>new RegExp(color.pattern,'i').test(l)),evidence:interior};}if(req.id.startsWith('exterior'))fact=sticker?.vin===vehicle.vin?exteriorColorFact(req.id,sticker):null;return {...req,label:labels[req.id],sourceUrl:fact?.sourceUrl,method:fact?.method,state:fact?fact.value===req.wanted?'match':'conflict':'unknown',evidence:fact?.evidence||[]};});
+ const checks=query.requirements.map(req=>{let fact=engineFact(req.id,sticker)||(sticker?.status==='verified'?sticker.features?.[req.id]:null);if(req.id.startsWith('interior')&&sticker?.status==='verified'){const color=interiorColors.find(c=>c.id===req.id);const interior=lines.filter(l=>/^interior(?: color)?:/i.test(l)).map(l=>l.split(/exterior(?: color)?:/i)[0]);if(color&&interior.length)fact={value:interior.some(l=>new RegExp(color.pattern,'i').test(l)),evidence:interior};}if((req.id==='surroundCamera'||req.id.startsWith('tireDiameter'))&&sticker?.vin!==vehicle.vin)fact=null;if(req.id.startsWith('exterior'))fact=sticker?.vin===vehicle.vin?exteriorColorFact(req.id,sticker):null;return {...req,label:labels[req.id],sourceUrl:fact?.sourceUrl,method:fact?.method,state:fact?fact.value===req.wanted?'match':'conflict':'unknown',evidence:fact?.evidence||[]};});
  if(checks.some(c=>c.state==='conflict'))return {kind:'excluded',reason:'equipment',checks};
  if(checks.some(c=>c.state==='unknown'))return {kind:'unknown',checks};
  return {kind:'match',checks};

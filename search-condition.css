@@ -1,0 +1,10 @@
+.vehicle-search-page .condition-choice{border:0;margin:0 0 22px;padding:0;min-width:0}
+.vehicle-search-page .condition-choice legend{font-size:16px;font-weight:800;color:#14202b;margin:0 0 10px;padding:0;letter-spacing:0;text-transform:none}
+.vehicle-search-page .condition-options{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.vehicle-search-page .condition-options label{display:block;position:relative;margin:0;cursor:pointer;text-transform:none;letter-spacing:0;font-size:16px}
+.vehicle-search-page .condition-options input{position:absolute;width:1px;height:1px;opacity:0}
+.vehicle-search-page .condition-options span{display:flex;justify-content:center;align-items:center;min-height:48px;padding:10px 12px;border:2px solid #bcc6d0;border-radius:9px;background:#f5f7fa;color:#14202b;font-weight:800;box-sizing:border-box}
+.vehicle-search-page .condition-options input:checked+span{background:#ac2430;color:#fff;border-color:#ac2430;box-shadow:0 2px 8px #ac243033}
+.vehicle-search-page .condition-options input:checked+span::before{content:'✓';margin-right:7px}
+.vehicle-search-page .condition-options input:focus-visible+span{outline:3px solid #14202b;outline-offset:3px}
+.vehicle-search-page #search-condition[hidden]{display:none!important}
