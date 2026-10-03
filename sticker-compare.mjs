@@ -1,3 +1,4 @@
+import {decodeVIN,normalizeVIN} from './vin-decoder.mjs?v=external1';
 import {appendStickerCredit} from './sticker-credit.mjs?v=clear1';
 import {installVehiclePickers} from './compare-picker.mjs?v=next3';
 const readSticker=async(...args)=>(await import('./sticker-reader.mjs?v=clean-shopping1')).readSticker(...args);
@@ -28,6 +29,8 @@ function reset(side){
  if(urls[side]){URL.revokeObjectURL(urls[side]);delete urls[side]}
  $('pdf-'+side).removeAttribute('src');$('pdf-'+side).hidden=true;$('file-'+side).value='';$('file-status-'+side).textContent='No local PDF selected.';
  $('summary-'+side).textContent=`${v.title} · ${cash(v.price)} · ${v.miles===null?'':v.miles.toLocaleString()+' miles · '}Stock ${v.stock}`;
+ if(v.external){$('summary-'+side).textContent=`${v.title} · VIN ${v.vin} · ${v.decodedAt?'External decoded specs only (NHTSA)':'External VIN — identity Unknown'} · Price, mileage, availability, options/packages: Verify.`;if(v.decodedSpecs){const specs=document.createElement('p');specs.textContent=Object.entries(v.decodedSpecs).map(([key,value])=>key+': '+value).join(' · ');const source=document.createElement('a');source.href=v.decodedSourceUrl;source.target='_blank';source.rel='noopener';source.textContent='NHTSA decoder source ↗';$('summary-'+side).append(specs,source);}}
+ else {const evidence=document.createElement('small');evidence.textContent='Covert dealer listing snapshot • '+(v.observedAt||window.usedInventoryData.capturedAt)+' • Confirm current price and availability.';$('summary-'+side).append(document.createElement('br'),evidence);}
  $('listing-'+side).hidden=!!v.external;$('listing-'+side).href='contact.html?vehicle='+encodeURIComponent(v.vin);$('listing-'+side).textContent='View photos & vehicle details';$('listing-'+side).removeAttribute('target');$('listing-'+side).onclick=e=>{e.preventDefault();openVehiclePreview(v,shoppingContext().q)};
  const originalSource=v.stickerUrl||index.records[v.vin]?.sourceUrl;$('sticker-'+side).hidden=!v.carfaxUrl&&!originalSource;$('sticker-'+side).href=originalSource||v.carfaxUrl||v.sourceUrl;$('sticker-'+side).textContent=originalSource?'Open original window sticker ↗':'Open CARFAX → Original Window Sticker ↗';
  $('lookup-note-'+side).textContent=v.stickerUrl?'Open the original document to check its VIN and equipment.':v.carfaxUrl?'Open the Covert-provided CARFAX report, then choose Original Window Sticker. A direct sticker link has not yet been checked for this vehicle.':'No CARFAX/sticker link captured for this vehicle. Open its official listing to check,.';
@@ -86,8 +89,8 @@ for(const side of SIDES){
   const q=input.value;status.className='lookup-status';
   if(!q.trim()){status.textContent='Type a model, trim, stock number or VIN.';status.classList.add('is-error');return}
   const match=findByStockOrVin(q);
-  if(!match&&validVIN(q.trim().toUpperCase())){addExternal(q.trim().toUpperCase(),side);return;}
-  if(!match){status.textContent='Choose a matching vehicle below, or narrow your search. To add your own vehicle, enter its complete 17-character VIN.';return}
+ if(!match&&validVIN(normalizeVIN(q))){addExternal(normalizeVIN(q),side);return;}
+  if(!match){status.textContent='No inventory match. Enter a complete 17-character VIN (no I, O or Q) to check the public decoder, or choose a matching vehicle below.';return}
   $('choose-'+side).value=match.vin;$('choose-'+side).dispatchEvent(new Event('change'));
   if(vehicle(side)?.vin!==match.vin)return;
   status.textContent=`Matched: ${match.title} — Stock ${match.stock} — VIN ${match.vin}.`;status.classList.add('is-ok');
@@ -109,11 +112,25 @@ addSlot.addEventListener('click',()=>{const next=panels.find(p=>p.hidden);if(nex
 function addExternal(vin,side){
  if(SIDES.some(id=>id!==side&&$('choose-'+id).value===vin)){$('lookup-status-'+side).textContent='That VIN is already selected. Choose another vehicle.';return;}
  let v=vehicles.find(v=>v.vin===vin);
- if(!v){v={vin,title:'Your vehicle',stock:'',price:null,miles:null,external:true,condition:'Used'};vehicles.push(v);window.usedInventoryData.vehicles.push(v);for(const id of SIDES){const o=document.createElement('option');o.value=vin;o.textContent='Your vehicle — '+vin;$('choose-'+id).append(o)}}
+ if(!v){v={vin,title:'Outside vehicle — '+vin,stock:'',price:null,miles:null,external:true,condition:'Unknown'};vehicles.push(v);window.usedInventoryData.vehicles.push(v);for(const id of SIDES){const o=document.createElement('option');o.value=vin;o.textContent='Outside vehicle — '+vin;$('choose-'+id).append(o)}}
  $('choose-'+side).value=vin;reset(side);$('lookup-status-'+side).textContent='Vehicle added. Open a sticker PDF below, or check the original-sticker service.';
  const b=document.createElement('button');b.type='button';b.className='btn ghost';b.textContent='Look for original sticker';
  const disclosure=document.createElement('p');disclosure.textContent='This lookup sends the VIN to WindowSticker.org. Availability varies by manufacturer and model year. Your PDF uploads stay on your device.';
  $('lookup-status-'+side).append(disclosure,b);
+ if(v.external){
+  $('file-'+side).closest('details').hidden=false;
+  const note=document.createElement('p');note.id='decode-status-'+side;
+  note.textContent='Not in Covert inventory. Checking the public NHTSA VIN decoder…';
+  $('lookup-status-'+side).prepend(note);
+  decodeVIN(vin).then(decoded=>{
+   Object.assign(v,decoded);
+   for(const id of SIDES){for(const option of $('choose-'+id).options){if(option.value===vin)option.textContent=v.title+' — '+vin;}}
+   if(vehicle(side)?.vin!==vin||!note.isConnected)return;
+   reset(side);note.textContent='External decoded specs only • NHTSA. Dealer listing, price, mileage, options and packages: Verify.';
+   const link=document.createElement('a');link.href=decoded.decodedSourceUrl;link.target='_blank';link.rel='noopener';link.textContent='View decoder source ↗';note.append(document.createElement('br'),link);
+   const specs=document.createElement('p');specs.textContent=Object.entries(decoded.decodedSpecs).map(([key,value])=>key+': '+value).join(' · ');note.append(specs);
+  }).catch(error=>{if(vehicle(side)?.vin===vin&&note.isConnected)note.textContent='VIN added with unverified identity. '+error.message+' Options/packages: Unknown.';});
+ }
  b.addEventListener('click',async()=>{
   b.disabled=true;b.textContent='Checking…';
   try{const response=await fetch('https://windowsticker.org/api/v1/vin/'+vin,{signal:AbortSignal.timeout(25000)});if(!response.ok)throw Error('Sticker service is unavailable. Try your original PDF instead.');const info=await response.json();

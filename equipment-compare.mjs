@@ -19,7 +19,7 @@ function render(){
  const status=el('p');status.setAttribute('role','status');
  const wrap=el('div');wrap.className='comparison-table-wrap';wrap.tabIndex=0;wrap.setAttribute('role','region');wrap.setAttribute('aria-label','Vehicle equipment comparison; scroll sideways for more vehicles');
  let mode=viewState.mode==='requested'&&!requested.length?'important':viewState.mode;const buttonRefs=[];
- const legend=el('p','Ask about this feature means we need the vehicle-specific detail before giving you a yes or no.');legend.className='comparison-legend';
+ const legend=el('p','Verify / Unknown means vehicle-specific evidence is incomplete. Externally decoded specs do not verify dealer listings, options or packages.');legend.className='comparison-legend';
  function draw(){
   wrap.replaceChildren();for(const [id,b] of buttonRefs)b.setAttribute('aria-pressed',String(id===mode));
   const visible=visibleComparisonRows(rows,mode,search.value);viewState.mode=mode;viewState.search=search.value;
@@ -30,6 +30,10 @@ function render(){
   const head=el('thead'),tr=el('tr'),corner=el('th','Feature');corner.scope='col';tr.append(corner);
   for(const {v} of recs){const th=el('th');th.scope='col';th.append(el('strong',v.title),el('small',short(v)));tr.append(th)}head.append(tr);table.append(head);
   const body=el('tbody');
+  if(recs.some(({v})=>v.external)){
+   const fields=[['Data source',v=>v.external?(v.decodedAt?'External decoded/spec-only; dealer listing unverified':'External VIN; identity and dealer listing unverified'):'Covert dealer listing snapshot'],['VIN',v=>v.vin],['Advertised price',v=>Number.isFinite(v.price)?new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(v.price):'Unknown — Verify'],['Mileage',v=>Number.isFinite(v.miles)?v.miles.toLocaleString():'Unknown — Verify'],['Decoded body',v=>v.decodedSpecs?.body||'Unknown'],['Decoded engine',v=>v.decodedSpecs?.engine||'Unknown'],['Decoded fuel',v=>v.decodedSpecs?.fuel||'Unknown']];
+   for(const [label,value] of fields){const row=el('tr'),th=el('th',label);th.scope='row';row.append(th);for(const {v} of recs)row.append(el('td',value(v)));body.append(row);}
+  }
   if(mode==='important'&&!search.value){
    for(const [label,pattern] of [['Engine',/^Engine:/i],['Transmission',/^Transmission:/i],['Exterior color',/^Exterior Color:/i],['Interior color',/^Interior Color:/i],['Seat upholstery',/^Interior:(?! Color)/i]]){
     const values=recs.map(({s})=>s?.status==='verified'?(s.lines||[]).find(l=>pattern.test(l))?.replace(/^[^:]+:\s*/,'')||null:null);
