@@ -5,6 +5,7 @@ import {towEquipmentPattern,brakeControllerPattern} from './tow-evidence.mjs?v=n
 import {applyFactoryEquipment} from './factory-equipment.mjs?v=clean-shopping1';
 import {flatTowEvidence} from './flat-tow-rules.mjs?v=23-tow26';
 import {interiorColors} from './interior-colors.mjs?v=option1';
+import {exteriorColors,exteriorPaintLines,exteriorColorFact,extractExteriorColors} from './exterior-colors.mjs?v=paint1';
 import {translateSearchTerms} from './search-dictionary.mjs?v=clean-shopping1';
 export const definitions = [
  ...engineDefinitions,
@@ -12,7 +13,7 @@ export const definitions = [
  ['engine36','3.6-liter engine',/\bengine:.*\b3\.6\s*(?:l\b|lit(?:er|re))/i],
  ["dualRearWheels","Dual rear wheels / dually",dualRearWheelPattern],
  ["secondRowBench","Second-row bench seat",secondRowBenchPattern],
- ["exteriorGray","Gray / grey exterior paint",/\bgr[ae]y\b/i],
+ ...exteriorColors.map(c=>[c.id,c.label,c.pattern]),
  ["flatTow","Flat-tow capability",/flat[ -]tow(?:able|ing)?|four[ -]wheels[ -]down tow/i],
  ["tintedWindows","Factory tinted / privacy windows",/deep[ -]tint(?:ed)?|privacy glass|tinted (?:windows|side glass|rear glass)/i],
  ...interiorColors.map(c=>[c.id,c.label,new RegExp(c.pattern,"i")]),
@@ -114,7 +115,7 @@ export function analyzeSticker(text,vin){
  const engine=lines.find(l=>/^engine:/i.test(l));
  const features={};
  for(const [id,,pattern] of definitions){
-  const pool=id==='exteriorGray'?raw.filter(l=>/^exterior(?: color)?:/i.test(l)):id.startsWith('interior')?raw.filter(l=>/^interior(?: color)?:/i.test(l)).map(l=>l.split(/exterior(?: color)?:/i)[0]):['hemi','v8','diesel','electric','hybrid'].includes(id)?(engine?[engine]:[]):lines;
+  const pool=id.startsWith('exterior')?exteriorPaintLines(raw):id.startsWith('interior')?raw.filter(l=>/^interior(?: color)?:/i.test(l)).map(l=>l.split(/exterior(?: color)?:/i)[0]):['hemi','v8','diesel','electric','hybrid'].includes(id)?(engine?[engine]:[]):lines;
   const evidence=pool.filter(l=>pattern.test(l)&&validSeatEvidence(id,l));
   const negative=evidence.filter(l=>/\b(?:delete|deleted|deletion|without|not equipped|not included|no sunroof|no moonroof)\b/i.test(l));
   const positive=evidence.filter(l=>!negative.includes(l)&&!/^optional equipment|if equipped|available separately/i.test(l)&&(!/N\/A.*manual transmission/i.test(l)||lines.some(x=>/^transmission:.*automatic/i.test(x))));
@@ -124,6 +125,7 @@ export function analyzeSticker(text,vin){
   else if(id==='v8'&&engine&&/\b(?:i[346]|v[46]|[346].cylinder)\b/i.test(engine))features[id]={value:false,evidence:[engine]};
  }
  Object.assign(features,wheelSeatFeatures(lines));
+ for(const color of exteriorColors){delete features[color.id];const fact=exteriorColorFact(color.id,{status:'verified',lines:raw});if(fact)features[color.id]=fact;}
  const towing=flatTowEvidence(raw);if(towing)features.flatTow=towing;
  const equipmentSectionComplete=raw.some(l=>/^standard equipment/i.test(l))&&raw.some(l=>/^optional equipment/i.test(l))&&raw.some(l=>/^total price/i.test(l))&&lines.length>=20;
  const identityStart=Math.max(0,raw.findIndex(l=>/^20\d{2} MODEL YEAR/i.test(l)));
@@ -218,6 +220,7 @@ const aliases=[
 const numeric=s=>Number(s.replace(/[$, ]/g,''));
 export function parseQuery(input){
  const original=String(input||'').trim();let q=normalizeText(original).toLowerCase();
+ q=q.replace(/\b(?:whit|whtie)\b/g,'white').replace(/\bbalck\b/g,'black');
  q=q.replace(/\b(?:i am looking for|i'm looking for|looking for|shopping for|searching for)\b/g,' ');
  const words={one:1,two:2,three:3,four:4,five:5,six:6,seven:7,eight:8,nine:9,ten:10,fifteen:15,twenty:20,thirty:30,forty:40,fifty:50,sixty:60,seventy:70,eighty:80,ninety:90};
  q=q.replace(/\b(one|two|three|four|five|six|seven|eight|nine|ten|fifteen|twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety)\s+(bands?|racks?|grand|stacks?|thousand|k)\b/g,(_,n,u)=>words[n]+' '+u);
@@ -248,10 +251,11 @@ export function parseQuery(input){
    return ' ';
   });
  }
- q=q.replace(/\bgr[ae]y\b/g,(m,offset)=>{const wanted=!/(?:\bno|\bwithout|\bnot)\s+$/.test(q.slice(0,offset));result.requirements.push({id:'exteriorGray',wanted});return ' ';});
+ q=extractExteriorColors(q,result);
+ q=q.replace(/\b(?:that|which)\s+(?:is|are)\b/g,' ');
  // Explicit model shorthand is safe; the five-digit 15000 ambiguity is never silently corrected.
  q=q.replace(/\b(?:i am looking for|i'm looking for|i want|i need|looking for|show me|find me|can you find|do you have|i would like|i'd like)\b/g,' ');
- const stop=new Set('under interior upholstery cabin a an the with without no not any and or but please seats seat car vehicle truck suv cars trucks suvs that has have me my of for want dont don\'t do does doesn\'t doesn’t must to at in either equipped comes come something need looking looking at least than less more only must should be would like can you it its that has have has got gimme get give us me a just preferably ideally about approx approximately around price priced budget cost costs spending spend tops all total out door'.split(' '));
+ const stop=new Set('color colour colored coloured paint exterior body under interior upholstery cabin a an the with without no not any and or but please seats seat car vehicle truck suv cars trucks suvs that has have me my of for want dont don\'t do does doesn\'t doesn’t must to at in either equipped comes come something need looking looking at least than less more only must should be would like can you it its that has have has got gimme get give us me a just preferably ideally about approx approximately around price priced budget cost costs spending spend tops all total out door'.split(' '));
  result.terms=q.split(/[^a-z0-9'-]+/).filter(w=>w&&!stop.has(w));
  if(result.requirements.some(x=>x.id==='flatTow'))result.warnings.push('Flat towing means pulling this vehicle behind an RV with all four wheels on the ground. Matches require a verified model-year and drivetrain rule; unreviewed configurations remain unconfirmed. Follow the linked factory procedure and confirm towing equipment, weight limits and vehicle condition; a trailer-tow package alone does not qualify.');
  if(result.requirements.some(x=>x.id==='ventilated'))result.warnings.push('“Air-conditioned seats” is treated as ventilated/cooled seats. The exact factory wording is shown.');
@@ -300,7 +304,7 @@ export function matchVehicle(vehicle,sticker,query){
   }
  }
  if(unmatched.length&&!unmatched.every(t=>text.split(/[^a-z0-9'-]+/).includes(t)))return {kind:'excluded',reason:'terms'};
- const checks=query.requirements.map(req=>{let fact=engineFact(req.id,sticker)||(sticker?.status==='verified'?sticker.features?.[req.id]:null);if(req.id.startsWith('interior')&&sticker?.status==='verified'){const color=interiorColors.find(c=>c.id===req.id);const interior=lines.filter(l=>/^interior(?: color)?:/i.test(l)).map(l=>l.split(/exterior(?: color)?:/i)[0]);if(color&&interior.length)fact={value:interior.some(l=>new RegExp(color.pattern,'i').test(l)),evidence:interior};}if(req.id==='exteriorGray'&&sticker?.status==='verified'){const paint=lines.filter(l=>/^exterior(?: color)?:/i.test(l));if(paint.length)fact={value:paint.some(l=>/\bgr[ae]y\b/i.test(l.split(/interior(?: color)?:/i)[0])),evidence:paint};}return {...req,label:labels[req.id],sourceUrl:fact?.sourceUrl,method:fact?.method,state:fact?fact.value===req.wanted?'match':'conflict':'unknown',evidence:fact?.evidence||[]};});
+ const checks=query.requirements.map(req=>{let fact=engineFact(req.id,sticker)||(sticker?.status==='verified'?sticker.features?.[req.id]:null);if(req.id.startsWith('interior')&&sticker?.status==='verified'){const color=interiorColors.find(c=>c.id===req.id);const interior=lines.filter(l=>/^interior(?: color)?:/i.test(l)).map(l=>l.split(/exterior(?: color)?:/i)[0]);if(color&&interior.length)fact={value:interior.some(l=>new RegExp(color.pattern,'i').test(l)),evidence:interior};}if(req.id.startsWith('exterior'))fact=sticker?.vin===vehicle.vin?exteriorColorFact(req.id,sticker):null;return {...req,label:labels[req.id],sourceUrl:fact?.sourceUrl,method:fact?.method,state:fact?fact.value===req.wanted?'match':'conflict':'unknown',evidence:fact?.evidence||[]};});
  if(checks.some(c=>c.state==='conflict'))return {kind:'excluded',reason:'equipment',checks};
  if(checks.some(c=>c.state==='unknown'))return {kind:'unknown',checks};
  return {kind:'match',checks};
