@@ -3,7 +3,8 @@ import {optionGuidance,noMatchGuidance} from './option-guidance.mjs?v=option1';
 import {shoppingContext,comparisonLink} from './shopping-context.mjs?v=shopping1';
 import {recoveryOptions} from './search-recovery.mjs?v=wheel1';
 import {openVehiclePreview} from './vehicle-preview.mjs?v=shopping1';
-import {parseQuery,matchVehicle,labels} from './equipment-search.mjs?v=wheel1';
+import {parseQuery,matchVehicle,labels} from './equipment-search.mjs?v=categories1';
+import {categoryLabels} from './vehicle-categories.mjs?v=categories1';
 const $=id=>document.getElementById(id),data=window.usedInventoryData,index=window.equipmentIndex;
 const el=(tag,text,cls)=>{const e=document.createElement(tag);if(text!==undefined)e.textContent=text;if(cls)e.className=cls;return e;};
 const cash=n=>n===null?'Call for price':new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(n);
@@ -53,6 +54,7 @@ function render(){
  const summary=el('div',undefined,'search-summary');
  const items=[...(q.bodyType?[q.bodyType==='truck'?'Pickup trucks':q.bodyType==='suv'?'SUVs':'Pickup trucks or SUVs']:[]),...q.terms,...(q.condition?[q.condition]:[]),...(q.budget!==null?['Price up to '+cash(q.budget)]:[]),...(q.mileage!==null?['Mileage up to '+q.mileage.toLocaleString()]:[]),...q.requirements.map(r=>(r.wanted?'With ':'Without ')+labels[r.id])];
  summary.append(el('h3','Your search'),el('p',items.join(' · ')||'All vehicles at 8107 Research Blvd'));
+ if(q.categories?.length){const describe=c=>categoryLabels[c.id]+(c.bodyType==='truck'?' (pickups)':c.bodyType==='suv'?' (SUVs)':c.bodyType==='truckOrSuv'?' (pickups or SUVs)':'');const positive=q.categories.filter(c=>c.wanted).map(describe).join(q.categoryMode==='any'?' or ':' · '),negative=q.categories.filter(c=>!c.wanted).map(c=>'Exclude '+describe(c)).join(' · ');summary.lastChild.textContent=[positive,negative,...items].filter(Boolean).join(' · ');summary.append(el('p','Categories use listed models, trims or a verified off-road package. Specific options are checked separately against the window sticker.','stock-small'));if(q.categories.some(c=>c.id==='desert'&&c.wanted))summary.append(el('p','Baja / desert describes the vehicle category; it does not confirm a drive mode named Baja.','stock-small'));}
  for(const warning of q.warnings)summary.append(el('p',warning,'stock-small'));out.append(summary);
  if(q.ambiguity||q.warnings.some(w=>/Conflicting|not both|More than one/.test(w))){out.append(el('p',q.ambiguity||'Please resolve the conflicting choices above, then search again.'));$('more-matches').hidden=true;return;}
  for(const notice of optionGuidance(q)){const message=el('p',notice.message,'stock-small');message.append(document.createTextNode(' '),link('View factory options',notice.sourceUrl));out.append(message);}
@@ -76,6 +78,7 @@ function render(){
   const photo=link('',`contact.html?vehicle=${encodeURIComponent(v.vin)}`);photo.className='stock-photo';photo.setAttribute('aria-label','View vehicle details: '+v.title);photo.addEventListener('click',e=>{e.preventDefault();openVehiclePreview(v,q.original);});const img=el('img');img.src=v.photoUrl;img.alt=v.title;img.width=400;img.height=300;img.loading='lazy';img.addEventListener('error',()=>photo.replaceChildren(el('span','View vehicle details')),{once:true});photo.append(img);card.append(photo);
   card.append(el('span',result.kind==='unknown'?'Equipment needs confirmation':result.checks.some(c=>c.state==='not-listed')?'Sunroof not listed on sticker':q.requirements.some(r=>r.id==='flatTow')?'Sticker + towing manual checked':q.requirements.length?(result.checks.some(c=>c.method?.startsWith('factory-'))?'Sticker + factory guide checked':'Requested equipment confirmed on sticker'):sticker?.status==='verified'?'Window sticker available':'Equipment unverified','stock-badge'),el('h3',v.title),el('p',cash(v.price),'vehicle-price'),el('p',`${v.condition||''} · ${v.miles==null?'Mileage unknown':v.miles.toLocaleString()+' miles'}${v.stock?' · Stock '+v.stock:''}`,'vehicle-meta'));
   if(v.condition==='New')card.append(el('p','Advertised price may include conditional incentives. Ask us to confirm your price.','stock-small'));
+  for(const category of result.categoryChecks||[])card.append(el('p',`${category.label} · ${category.evidence}`,'stock-small'));
   for(const check of result.checks)card.append(el('p',`${check.state==='match'?'✓':check.state==='not-listed'?'—':'?'} ${check.wanted?'':'Without '}${check.label}: ${check.state==='unknown'?'not confirmed by the sticker':check.evidence.join(' / ')}`,'equipment-check'));
   for(const check of result.checks)if(check.sourceUrl)card.append(link(check.id==='flatTow'?'Read factory flat-towing instructions ↗':'Read factory equipment reference ↗',check.sourceUrl));
   if(sticker?.status==='verified')card.append(link('Read original window sticker ↗',sticker.sourceUrl));

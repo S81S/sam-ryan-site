@@ -9,6 +9,7 @@ import {exteriorColors,exteriorPaintLines,exteriorColorFact,extractExteriorColor
 import {translateSearchTerms} from './search-dictionary.mjs?v=clean-shopping1';
 import {surroundCameraPattern,cameraSearchTerms,tireDefinitions,tireAliases,tireSearchTerms,cameraTireFeatures} from './camera-tire-evidence.mjs?v=equipment1';
 import {wheelFinishDefinitions,wheelFinishAliases,wheelFinishSearchTerms,wheelFinishFeatures} from './wheel-finish-evidence.mjs?v=wheel1';
+import {extractVehicleCategories,matchVehicleCategories,vehicleBodyTypes} from './vehicle-categories.mjs?v=categories1';
 export const definitions = [
  ...wheelFinishDefinitions,
  ...engineDefinitions,
@@ -231,6 +232,7 @@ export function parseQuery(input){
  const original=String(input||'').trim();let q=normalizeText(original).toLowerCase();
  q=q.replace(/\b(?:whit|whtie)\b/g,'white').replace(/\bbalck\b/g,'black');
  q=q.replace(/\b(?:i am looking for|i'm looking for|looking for|shopping for|searching for)\b/g,' ');
+ const categorySearch=extractVehicleCategories(q);q=categorySearch.text;
  const words={one:1,two:2,three:3,four:4,five:5,six:6,seven:7,eight:8,nine:9,ten:10,fifteen:15,twenty:20,thirty:30,forty:40,fifty:50,sixty:60,seventy:70,eighty:80,ninety:90};
  q=q.replace(/\b(one|two|three|four|five|six|seven|eight|nine|ten|fifteen|twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety)\s+(bands?|racks?|grand|stacks?|thousand|k)\b/g,(_,n,u)=>words[n]+' '+u);
  q=q.replace(/\b(\d+(?:\.\d+)?)\s*(?:bands?|racks?|grand|stacks?|thousand)\b/g,(_,n)=>'$'+(Number(n)*1000));
@@ -243,7 +245,7 @@ export function parseQuery(input){
  q=q.replace(/\bflat[ -]towed\b/g,'flat tow');
  const wantsTruck=/\b(?:trucks?|pick[ -]?ups?)\b/.test(q),wantsSuv=/\b(?:suvs?|sport utility vehicles?)\b/.test(q);
  q=q.replace(/\b(?:trucks?|pick[ -]?ups?|suvs?|sport utility vehicles?)\b/g,' ');
- const result={bodyType:wantsTruck&&wantsSuv?'truckOrSuv':wantsTruck?'truck':wantsSuv?'suv':null,original,budget:null,mileage:null,condition:null,requirements:[],terms:[],warnings:[],ambiguity:null};
+ const result={bodyType:wantsTruck&&wantsSuv?'truckOrSuv':wantsTruck?'truck':wantsSuv?'suv':categorySearch.bodyType,original,budget:null,mileage:null,condition:null,requirements:[],terms:[],warnings:[...categorySearch.warnings],ambiguity:null,categories:categorySearch.categories,categoryMode:categorySearch.categoryMode};
  if(/\b15000\b/.test(q)&&!/\$\s*15[,]?000|(?:under|budget|price|below|max)\s*15[,]?000|15[,]?000\s*(?:dollars|miles)/.test(q))result.ambiguity='Did you mean a Ram 1500, or a $15,000 budget? Please edit that part of your search.';
  q=q.replace(/\b(?:under|below|less than|up to|max(?:imum)?(?: of)?)?\s*(\d[\d,]*(?:\.\d+)?)\s*(k)?\s*(?:miles|mi)\b/g,(all,n,k)=>{result.mileage=numeric(n)*(k?1000:1);return ' ';});
  q=q.replace(/(?:\b(?:under|below|less than|up to|max(?:imum)?|budget(?: of)?|for|around|about|at|price(?:d)?(?: at)?|spend(?:ing)?)\s*)?\$\s*(\d[\d,]*(?:\.\d+)?)\s*(k)?\b|\b(?:under|below|less than|up to|max(?:imum)?|budget(?: of)?|for|around|about|at|price(?:d)?(?: at)?|spend(?:ing)?)\s+(\d[\d,]*(?:\.\d+)?)\s*(k)?\b/g,(all,a,ak,b,bk)=>{const amount=numeric(a||b)*((ak||bk)?1000:1);if(result.budget!==null&&result.budget!==amount)result.warnings.push('More than one price limit was entered; use one budget.');result.budget=amount;return ' ';});
@@ -278,11 +280,11 @@ export function matchVehicle(vehicle,sticker,query){
  if(query.condition&&vehicle.condition!==query.condition)return {kind:'excluded',reason:'condition'};
  if(query.budget!==null&&(vehicle.price===null||vehicle.price>query.budget))return {kind:'excluded',reason:'price'};
  if(query.mileage!==null&&(vehicle.miles===null||vehicle.miles>query.mileage))return {kind:'excluded',reason:'mileage'};
+ const categoryMatch=matchVehicleCategories(vehicle,sticker,query);
+ if(!categoryMatch.matches)return {kind:'excluded',reason:'vehicle category'};
  const title=normalizeText(vehicle.title+' '+vehicle.stock+' '+vehicle.vin).toLowerCase();
  if(query.bodyType){
-  const bodyEvidence=title+' '+(sticker?.status==='verified'?(sticker.identityLines||[]).join(' ').toLowerCase():'');
-  const truck=/\b(?:ram (?:1500|2500|3500|4500|5500)|gladiator|silverado|sierra|tundra|tacoma|frontier|titan|ridgeline|colorado|canyon|ranger|maverick|f[ -]?(?:150|250|350|450|550)|pickup|pick-up)\b/.test(bodyEvidence);
-  const suv=/\b(?:suv|sport utility|wrangler|cherokee|wagoneer|compass|renegade|durango|hornet|4runner|sequoia|highlander|rav4|tahoe|suburban|yukon|escalade|expedition|explorer|bronco|traverse|acadia|enclave|pathfinder|armada|telluride|palisade|pilot|passport)\b/.test(bodyEvidence);
+  const {truck,suv}=vehicleBodyTypes(vehicle,sticker);
   if(!(query.bodyType==='truck'?truck:query.bodyType==='suv'?suv:truck||suv))return {kind:'excluded',reason:'body type'};
  }
  // Requested trim names must identify the vehicle, not appear inside unrelated package text.
@@ -317,7 +319,7 @@ export function matchVehicle(vehicle,sticker,query){
  if(unmatched.length&&!unmatched.every(t=>text.split(/[^a-z0-9'-]+/).includes(t)))return {kind:'excluded',reason:'terms'};
  const checks=query.requirements.map(req=>{let fact=engineFact(req.id,sticker)||(sticker?.status==='verified'?sticker.features?.[req.id]:null);if(req.id.startsWith('interior')&&sticker?.status==='verified'){const color=interiorColors.find(c=>c.id===req.id);const interior=lines.filter(l=>/^interior(?: color)?:/i.test(l)).map(l=>l.split(/exterior(?: color)?:/i)[0]);if(color&&interior.length)fact={value:interior.some(l=>new RegExp(color.pattern,'i').test(l)),evidence:interior};}if((req.id.startsWith('wheel')||req.id==='surroundCamera'||req.id.startsWith('tireDiameter'))&&sticker?.vin!==vehicle.vin)fact=null;if(req.id.startsWith('exterior'))fact=sticker?.vin===vehicle.vin?exteriorColorFact(req.id,sticker):null;return {...req,label:labels[req.id],sourceUrl:fact?.sourceUrl,method:fact?.method,state:fact?fact.value===req.wanted?'match':'conflict':'unknown',evidence:fact?.evidence||[]};});
  if(checks.some(c=>c.state==='conflict'))return {kind:'excluded',reason:'equipment',checks};
- if(checks.some(c=>c.state==='unknown'))return {kind:'unknown',checks};
- return {kind:'match',checks};
+ if(checks.some(c=>c.state==='unknown'))return {kind:'unknown',checks,categoryChecks:categoryMatch.checks};
+ return {kind:'match',checks,categoryChecks:categoryMatch.checks};
 }
 
