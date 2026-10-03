@@ -1,8 +1,8 @@
 import {appendStickerCredit} from './sticker-credit.mjs?v=clear1';
 import {appendEquipmentFact} from './comparison-layout.mjs?v=clear1';
-import {applyFactoryEquipment} from './factory-equipment.mjs?v=clean-shopping1';
+import {applyFactoryEquipment} from './factory-equipment.mjs?v=wheel1';
 import {comparisonRows,visibleComparisonRows} from './comparison-rows.mjs?v=clear1';
-import {definitions,parseQuery} from './equipment-search.mjs?v=clean-shopping1';
+import {definitions,parseQuery} from './equipment-search.mjs?v=wheel1';
 const $=id=>document.getElementById(id),el=(tag,text)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;return n};
 const short=v=>v.stock?`Stock ${v.stock}`:`VIN …${v.vin.slice(-6)}`;
 const viewState={mode:'important',search:''};

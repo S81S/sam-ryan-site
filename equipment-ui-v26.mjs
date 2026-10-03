@@ -1,9 +1,9 @@
-import {sameModelOptions,modelName} from './same-model-options.mjs?v=compact1';
+import {sameModelOptions,modelName} from './same-model-options.mjs?v=wheel1';
 import {optionGuidance,noMatchGuidance} from './option-guidance.mjs?v=option1';
 import {shoppingContext,comparisonLink} from './shopping-context.mjs?v=shopping1';
-import {recoveryOptions} from './search-recovery.mjs?v=clean-shopping1';
+import {recoveryOptions} from './search-recovery.mjs?v=wheel1';
 import {openVehiclePreview} from './vehicle-preview.mjs?v=shopping1';
-import {parseQuery,matchVehicle,labels} from './equipment-search.mjs?v=camera-tires1';
+import {parseQuery,matchVehicle,labels} from './equipment-search.mjs?v=wheel1';
 const $=id=>document.getElementById(id),data=window.usedInventoryData,index=window.equipmentIndex;
 const el=(tag,text,cls)=>{const e=document.createElement(tag);if(text!==undefined)e.textContent=text;if(cls)e.className=cls;return e;};
 const cash=n=>n===null?'Call for price':new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(n);

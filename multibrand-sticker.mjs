@@ -1,5 +1,6 @@
 import {validSeatEvidence} from './seat-evidence.mjs?v=coverage4';
-import {definitions,normalizeText} from './equipment-search.mjs?v=shopping1';
+import {wheelFinishDefinitions,wheelFinishFeatures} from './wheel-finish-evidence.mjs?v=wheel1';
+import {definitions,normalizeText} from './equipment-search.mjs?v=wheel1';
 // Only validated document families activate interpretation. No generic VIN decoding.
 export function analyzeOtherOriginal(text,vin){
  const raw=String(text).split(/\r?\n/).map(normalizeText).filter(Boolean);
@@ -36,5 +37,6 @@ export function analyzeOtherOriginal(text,vin){
   if(negative.length)features[id]={value:false,evidence:negative.slice(0,2)};
   else if(positive.length)features[id]={value:true,evidence:positive.slice(0,2)};
  }
+ for(const [id]of wheelFinishDefinitions)delete features[id];Object.assign(features,wheelFinishFeatures(lines));
  return {identityLines:raw.filter(l=>/^20\d{2}\b/.test(l)).slice(0,1),features,lines,engine:null,equipmentSectionComplete:false,documentFamily:family};
 }

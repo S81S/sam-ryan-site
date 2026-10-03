@@ -1,4 +1,4 @@
-import {matchVehicle} from './equipment-search.mjs?v=clean-shopping1';
+import {matchVehicle} from './equipment-search.mjs?v=wheel1';
 
 // Longest names first: a Grand Cherokee L is not a Cherokee, nor a Ram 2500 a 1500.
 const models=['grand wagoneer l','grand wagoneer','grand cherokee l','grand cherokee','wagoneer l','wagoneer','cherokee','wrangler','gladiator','compass','renegade','durango','hornet','charger','challenger','pacifica','voyager','promaster','1500','2500','3500'];

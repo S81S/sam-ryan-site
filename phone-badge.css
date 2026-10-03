@@ -1,0 +1,6 @@
+/* Approved stacked phone artwork; anchor retains its accessible call/text name. */
+.sam-phone:not(.ryan-phone),.btn.sam-phone:not(.ryan-phone){align-items:center;justify-content:center;padding:0;gap:8px;white-space:normal}
+.sam-phone-stacked{display:block;flex:0 1 auto;width:180px;height:auto;max-width:100%;object-fit:contain}
+.btn.sam-phone .sam-phone-stacked{width:210px}
+.affiliation-inner>span:last-child{flex-shrink:0}
+@media(max-width:600px){.sam-phone-stacked{width:180px}.btn.sam-phone .sam-phone-stacked{width:190px}}

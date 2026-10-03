@@ -4,6 +4,7 @@ import {repairSeatEvidence} from './seat-evidence.mjs?v=coverage4';
 import {repairTowEvidence,repairTrailerBrakeEvidence} from './tow-evidence.mjs?v=next3';
 import {additionalFactoryRules} from './factory-catalog-2026.mjs?v=complete1';
 import {repairCameraTireEvidence} from './camera-tire-evidence.mjs?v=equipment1';
+import {repairWheelFinishEvidence} from './wheel-finish-evidence.mjs?v=wheel1';
 const ramSource='https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf';
 const pacificaSource='https://www.chrysler.com/news/2027-chrysler-pacifica-debut.html';
 const norm=s=>String(s||'').normalize('NFKC').replace(/[®™]/g,'').replace(/[\u2010-\u2015]/g,'-').replace(/\s+/g,' ').trim().toLowerCase();
@@ -72,7 +73,7 @@ function packageOn(lines,name){const n=norm(name);return lines.find(l=>{const va
 export function applyFactoryEquipment(vehicle,sticker){
  if(sticker?.status!=='verified'||!vehicle?.vin||sticker.vin&&sticker.vin!==vehicle.vin)return sticker;
  sticker=repairWheelSeatEvidence(repairTowEvidence(repairSeatEvidence(sticker)));
- if(sticker.vin===vehicle.vin)sticker=repairCameraTireEvidence(sticker);
+ if(sticker.vin===vehicle.vin){sticker=repairCameraTireEvidence(sticker);sticker=repairWheelFinishEvidence(sticker);}
  const audit=stickerAudits[vehicle.vin];
  if(!audit||!sticker.sha256||audit.sha256!==sticker.sha256||audit.market!=='US')return sticker;
  // Add newly recognized printed wording only after matching the audited original.
