@@ -1,17 +1,18 @@
-import {appendStickerCredit} from './sticker-credit.mjs?v=clear1';
-import {appendEquipmentFact} from './comparison-layout.mjs?v=clear1';
+import {appendStickerCredit} from './sticker-credit.mjs?v=source2';
+import {appendEquipmentFact} from './comparison-layout.mjs?v=specs1';
 import {applyFactoryEquipment} from './factory-equipment.mjs?v=wheel1';
-import {comparisonRows,visibleComparisonRows} from './comparison-rows.mjs?v=clear1';
+import {comparisonRows,visibleComparisonRows} from './comparison-rows.mjs?v=specs1';
+import {withComparisonSpecifications,specificationDefinitions} from './comparison-specs.mjs?v=specs1';
 import {definitions,parseQuery} from './equipment-search.mjs?v=wheel1';
 const $=id=>document.getElementById(id),el=(tag,text)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;return n};
 const short=v=>v.stock?`Stock ${v.stock}`:`VIN …${v.vin.slice(-6)}`;
 const viewState={mode:'important',search:''};
 function render(){
  const out=$('automatic-equipment');out.replaceChildren();
- const recs=['1','2','3','4','5'].map(side=>({side,v:window.usedInventoryData.vehicles.find(v=>v.vin===$('choose-'+side)?.value)})).filter(r=>r.v).map(r=>({...r,s:applyFactoryEquipment(r.v,window.equipmentIndex.records[r.v.vin])}));
+ const recs=['1','2','3','4','5'].map(side=>({side,v:window.usedInventoryData.vehicles.find(v=>v.vin===$('choose-'+side)?.value)})).filter(r=>r.v).map(r=>({...r,s:withComparisonSpecifications(r.v,applyFactoryEquipment(r.v,window.equipmentIndex.records[r.v.vin]))}));
  if(recs.length<2){out.append(el('p','Choose two vehicles above to compare.'));return;}
  const requested=parseQuery($('group-query')?.value||new URLSearchParams(location.search).get('q')||'').requirements.map(r=>r.id);
- const rows=comparisonRows(definitions.filter(([id])=>!/^engine(?:Size|Cyl|Inline)|^engine20$|^engine36$/.test(id)),recs.map(r=>r.s),requested);
+ const rows=comparisonRows([...specificationDefinitions,...definitions.filter(([id])=>!/^engine(?:Size|Cyl|Inline)|^engine20$|^engine36$/.test(id))],recs.map(r=>r.s),requested);
  out.append(el('h2','Compare side by side'));
  const controls=el('div');controls.className='comparison-controls';
  const label=el('label','Find a feature');label.htmlFor='comparison-feature-filter';const search=el('input');search.id='comparison-feature-filter';search.type='search';search.placeholder='Seats, cameras, roof, towing…';search.value=viewState.search;
@@ -23,7 +24,7 @@ function render(){
  function draw(){
   wrap.replaceChildren();for(const [id,b] of buttonRefs)b.setAttribute('aria-pressed',String(id===mode));
   const visible=visibleComparisonRows(rows,mode,search.value);viewState.mode=mode;viewState.search=search.value;
-  status.textContent=search.value?'Matching features':mode==='important'?'Differences only':mode==='requested'?'Your requested features':'Shared equipment';
+  status.textContent=search.value?'Matching features':mode==='important'?(visible.some(r=>r.group==='check')?'Confirmed differences and details to verify':'Confirmed differences'):mode==='requested'?'Your requested features':'Shared equipment';
   legend.hidden=!visible.some(r=>r.facts.some(f=>!f));
   if(!visible.length&&mode!=='important'){wrap.append(el('p',search.value?'No features match that wording.':'No confirmed equipment differences to show. See Shared equipment or ask us about a specific feature.'));return;}
   const table=el('table');table.className='equipment-matrix';const caption=el('caption','Equipment at a glance');caption.className='matrix-caption';table.append(caption);
@@ -42,7 +43,7 @@ function render(){
   }
   for(const row of visible){const tr=el('tr'),name=el('th');name.scope='row';name.append(el('strong',(row.requested?'★ ':'')+row.label));tr.append(name);
    row.facts.forEach(f=>{const td=el('td');appendEquipmentFact(td,f);tr.append(td)});body.append(tr);
-  }if(!body.children.length){wrap.append(el('p','No confirmed equipment differences between these selections. See Shared equipment for what they have in common.'));return;}table.append(body);wrap.append(table);
+  }if(!body.children.length){wrap.append(el('p','No differences found in the equipment we could verify. This does not confirm the vehicles are identical. Check More equipment details or the original stickers for features that still need verification.'));return;}table.append(body);wrap.append(table);
  }
  for(const [id,text] of [['important','Differences'],...(requested.length?[['requested','Your must-haves']]:[]),['all','Shared equipment']]){const b=el('button',text);b.type='button';b.addEventListener('click',()=>{mode=id;draw()});buttons.append(b);buttonRefs.push([id,b])}
  search.addEventListener('input',draw);out.append(controls,status,wrap,legend);draw();

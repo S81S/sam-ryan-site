@@ -1,5 +1,5 @@
 import {decodeVIN,normalizeVIN} from './vin-decoder.mjs?v=external1';
-import {appendStickerCredit} from './sticker-credit.mjs?v=clear1';
+import {appendStickerCredit,usesWindowStickerOrg} from './sticker-credit.mjs?v=source2';
 import {installVehiclePickers} from './compare-picker.mjs?v=next3';
 const readSticker=async(...args)=>(await import('./sticker-reader.mjs?v=clean-shopping1')).readSticker(...args);
 import {shoppingContext} from './shopping-context.mjs?v=shopping1';
@@ -32,7 +32,7 @@ function reset(side){
  if(v.external){$('summary-'+side).textContent=`${v.title} · VIN ${v.vin} · ${v.decodedAt?'External decoded specs only (NHTSA)':'External VIN — identity Unknown'} · Price, mileage, availability, options/packages: Verify.`;if(v.decodedSpecs){const specs=document.createElement('p');specs.textContent=Object.entries(v.decodedSpecs).map(([key,value])=>key+': '+value).join(' · ');const source=document.createElement('a');source.href=v.decodedSourceUrl;source.target='_blank';source.rel='noopener';source.textContent='NHTSA decoder source ↗';$('summary-'+side).append(specs,source);}}
  else {const evidence=document.createElement('small');evidence.textContent='Covert dealer listing snapshot • '+(v.observedAt||window.usedInventoryData.capturedAt)+' • Confirm current price and availability.';$('summary-'+side).append(document.createElement('br'),evidence);}
  $('listing-'+side).hidden=!!v.external;$('listing-'+side).href='contact.html?vehicle='+encodeURIComponent(v.vin);$('listing-'+side).textContent='View photos & vehicle details';$('listing-'+side).removeAttribute('target');$('listing-'+side).onclick=e=>{e.preventDefault();openVehiclePreview(v,shoppingContext().q)};
- const originalSource=v.stickerUrl||index.records[v.vin]?.sourceUrl;$('sticker-'+side).hidden=!v.carfaxUrl&&!originalSource;$('sticker-'+side).href=originalSource||v.carfaxUrl||v.sourceUrl;$('sticker-'+side).textContent=originalSource?'Open original window sticker ↗':'Open CARFAX → Original Window Sticker ↗';
+ const originalSource=v.stickerUrl||index.records[v.vin]?.sourceUrl;$('sticker-'+side).hidden=!v.carfaxUrl&&!originalSource;$('sticker-'+side).href=originalSource||v.carfaxUrl||v.sourceUrl;$('sticker-'+side).textContent=originalSource?(usesWindowStickerOrg(originalSource)?'Open window sticker via WindowSticker.org ↗':'Open original window sticker ↗'):'Open CARFAX → Original Window Sticker ↗';
  $('lookup-note-'+side).textContent=v.stickerUrl?'Open the original document to check its VIN and equipment.':v.carfaxUrl?'Open the Covert-provided CARFAX report, then choose Original Window Sticker. A direct sticker link has not yet been checked for this vehicle.':'No CARFAX/sticker link captured for this vehicle. Open its official listing to check,.';
  $('pdf-link-'+side).hidden=true;$('pdf-link-'+side).removeAttribute('href');
  document.dispatchEvent(new CustomEvent('compare:changed'));

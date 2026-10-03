@@ -6,7 +6,7 @@ export function preferredLayout(selectedLayout, narrowScreen, vehicleCount) {
 
 // Both layouts use exactly the same answer and evidence renderer.
 export function appendEquipmentFact(container,fact,document=globalThis.document) {
- const badge=el(document,'strong',!fact?'Verify / Unknown':fact.value?'✓ Included':'— Not equipped');
+ const badge=el(document,'strong',!fact?'Verify / Unknown':fact.displayValue??(fact.value?'✓ Included':'— Not equipped'));
  badge.className='equipment-answer '+(!fact?'unknown':fact.value?'yes':'no');
  if(!fact)badge.setAttribute('aria-label','Equipment evidence incomplete');
  container.append(badge);if(!fact)return;
