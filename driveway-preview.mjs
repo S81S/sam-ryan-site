@@ -1,174 +1,74 @@
 export function imageFileError(file) {
   if (!file || !/^image\/(jpeg|png|webp)$/i.test(file.type)) return 'Choose a JPG, PNG or WebP photo. Export HEIC photos as JPG first.';
-  if (file.size > 20 * 1024 * 1024) return 'Choose a photo smaller than 20 MB.';
-  return '';
+  return file.size > 20 * 1024 * 1024 ? 'Choose a photo smaller than 20 MB.' : '';
 }
-
-export function previewSize(width, height) {
-  const scale = Math.min(1, 1600 / Math.max(width, height));
-  return {width: Math.max(1, Math.round(width * scale)), height: Math.max(1, Math.round(height * scale))};
+export function previewSize(width, height) { const scale=Math.min(1,1600/Math.max(width,height));return {width:Math.max(1,Math.round(width*scale)),height:Math.max(1,Math.round(height*scale))}; }
+export function inventoryChoices(vehicles,condition='New',query='') {const terms=query.toLowerCase().trim().split(/\s+/).filter(Boolean);return (vehicles||[]).filter(v=>v.locationId==='18393'&&!v.external&&v.status!=='not-observed'&&(condition==='Both'||v.condition===condition)&&terms.every(t=>(v.title+' '+v.stock+' '+v.vin).toLowerCase().includes(t)));}
+export function outlinePoint(x,y,width,height){return {x:Math.max(0,Math.min(1,x/width)),y:Math.max(0,Math.min(1,y/height))};}
+export function approvedPhoto(value){try{const u=new URL(value);return u.protocol==='https:'&&u.hostname==='cloudflareimages.dealereprocess.com'&&u.pathname.startsWith('/resrc/images/');}catch{return false;}}
+export function vehicleBox(canvas,image,placement){const width=canvas.width*Number(placement.size)/100,height=width*(image.naturalHeight||image.height)/(image.naturalWidth||image.width);return {width,height,x:canvas.width*Number(placement.x)/100-width/2,y:canvas.height*Number(placement.y)/100-height};}
+export function parkingPlacement(points,canvas,image){
+  if(points.length!==2)throw Error('Mark both sides of one parking space.');
+  const [a,b]=[...points].sort((p,q)=>p.x-q.x),dx=(b.x-a.x)*canvas.width,dy=(b.y-a.y)*canvas.height;
+  if(dx<canvas.width*.08)throw Error('Mark the left and right sides of the space farther apart.');
+  const angle=Math.atan2(dy,dx)*180/Math.PI;
+  if(Math.abs(angle)>20)throw Error('Mark the left and right edges where the tires will sit, rather than the front and back of the space.');
+  const y=(a.y+b.y)/2;
+  if(y<.15)throw Error('Mark the space lower in the photo so there is room above the tires for the vehicle.');
+  const subject=image||{width:1,height:1},radians=angle*Math.PI/180;
+  const width=Math.min(dx*.9,(canvas.height*y-2)/(subject.height/subject.width*Math.cos(radians)+.5*Math.abs(Math.sin(radians))));
+  return constrainParkingPlacement({x:(a.x+b.x)*50,y:y*100,size:width/canvas.width*100,rotate:angle},points,canvas,subject);
 }
-
-export function vehicleBox(canvas, image, placement) {
-  const width = canvas.width * Number(placement.size) / 100;
-  const height = width * image.naturalHeight / image.naturalWidth;
-  return {width, height, x: canvas.width * Number(placement.x) / 100 - width / 2, y: canvas.height * Number(placement.y) / 100 - height / 2};
+export function constrainParkingPlacement(placement,points,canvas,image){
+ const ratio=image.height/image.width,angle=placement.rotate*Math.PI/180,co=Math.cos(angle),si=Math.sin(angle),left=Math.min(...points.map(p=>p.x))*canvas.width,right=Math.max(...points.map(p=>p.x))*canvas.width;
+ const maxWidth=Math.min((right-left)*.98/(co+ratio*Math.abs(si)),canvas.height*.9/(ratio*co+Math.abs(si)));
+ const width=Math.min(maxWidth,Math.max(1,placement.size/100*canvas.width)),height=width*ratio;
+ const minX=-width/2*co+Math.min(0,height*si),maxX=width/2*co+Math.max(0,height*si);
+ const minY=-height*co-width/2*Math.abs(si),maxY=width/2*Math.abs(si);
+ const x=Math.max(left-minX,Math.min(right-maxX,placement.x/100*canvas.width)),y=Math.max(-minY+2,Math.min(canvas.height-maxY-2,placement.y/100*canvas.height));
+ return {x:x/canvas.width*100,y:y/canvas.height*100,size:width/canvas.width*100,rotate:placement.rotate,maxSize:maxWidth/canvas.width*100};
 }
-
-export function inventoryChoices(vehicles,condition='New',query='') {
-  const terms=query.toLowerCase().trim().split(/\s+/).filter(Boolean);
-  return (vehicles||[]).filter(v=>v.locationId==='18393'&&!v.external&&v.status!=='not-observed'&&(condition==='Both'||v.condition===condition)&&terms.every(t=>(v.title+' '+v.stock+' '+v.vin).toLowerCase().includes(t)));
+function loadImage(url,cors=false){return new Promise((resolve,reject)=>{const image=new Image();if(cors)image.crossOrigin='anonymous';image.onload=()=>resolve(image);image.onerror=()=>reject(Error('This photo could not be opened for editing. Choose another view or upload a saved vehicle photo.'));image.src=url;});}
+function canvasFromImage(image){const c=document.createElement('canvas');Object.assign(c,previewSize(image.naturalWidth||image.width,image.naturalHeight||image.height));c.getContext('2d').drawImage(image,0,0,c.width,c.height);return c;}
+function trimCanvas(source){const c=source.getContext('2d'),data=c.getImageData(0,0,source.width,source.height).data;let left=source.width,top=source.height,right=-1,bottom=-1;for(let y=0;y<source.height;y++)for(let x=0;x<source.width;x++)if(data[(y*source.width+x)*4+3]>20){left=Math.min(left,x);right=Math.max(right,x);top=Math.min(top,y);bottom=Math.max(bottom,y);}if(right<left||bottom<top)throw Error('No vehicle is inside that outline. Try again.');const out=document.createElement('canvas');out.width=right-left+1;out.height=bottom-top+1;out.getContext('2d').drawImage(source,left,top,out.width,out.height,0,0,out.width,out.height);return out;}
+export function installDrivewayPreview(document){
+ const $=id=>document.getElementById(id),canvas=$('driveway-canvas');if(!canvas)return;
+ const controls=Object.fromEntries(['x','y','size','rotate'].map(k=>[k,$('driveway-'+k)])),save=$('driveway-save'),status=$('driveway-status'),editor=$('driveway-outline'),panel=$('driveway-outline-panel'),picker=$('driveway-inventory'),photoPicker=$('driveway-photo');
+ const vehicles=document.defaultView?.usedInventoryData?.vehicles||[];
+ let scene=null,original=null,cutout=null,selectedVehicle=null,photos=[],shown=8,outline=[],outlineCursor=null,parking=[],marking=false,parkingCursor=null,drag=null,sceneVersion=0,vehicleVersion=0,cutoutJob=null;
+ function say(message,error=false){status.textContent=message;status.dataset.error=String(error);}
+ function syncInquiry(){for(const who of ['Sam','Ryan']){const a=$('driveway-ask-'+who.toLowerCase());if(!a)continue;const p=new URLSearchParams({advisor:who,request:'I tried the driveway preview. Please help me check vehicle dimensions, features and availability.'});if(selectedVehicle)p.set('vehicle',selectedVehicle.vin);a.href='contact.html?'+p;}}
+ function paintOutline(){panel.hidden=!original;if(!original)return;Object.assign(editor,previewSize(original.naturalWidth||original.width,original.naturalHeight||original.height));const c=editor.getContext('2d');c.drawImage(original,0,0,editor.width,editor.height);c.strokeStyle='#ffd05a';c.fillStyle='#ffd05a';c.lineWidth=Math.max(2,editor.width/350);if(outline.length){c.beginPath();outline.forEach((p,i)=>i?c.lineTo(p.x*editor.width,p.y*editor.height):c.moveTo(p.x*editor.width,p.y*editor.height));if(outline.length>2)c.closePath();c.stroke();for(const p of outline){c.beginPath();c.arc(p.x*editor.width,p.y*editor.height,Math.max(4,editor.width/150),0,Math.PI*2);c.fill();}}if(outlineCursor){const x=outlineCursor.x*editor.width,y=outlineCursor.y*editor.height;c.strokeStyle='white';c.beginPath();c.moveTo(x-12,y);c.lineTo(x+12,y);c.moveTo(x,y-12);c.lineTo(x,y+12);c.stroke();}$('driveway-cutout').disabled=outline.length<3;$('driveway-outline-status').textContent=outline.length+' outline points. Follow the outside edge of the vehicle.';}
+ function previewCutout(){const box=$('driveway-cutout-preview');box.hidden=!cutout;if(!cutout)return;const out=$('driveway-cutout-result');out.width=cutout.width;out.height=cutout.height;out.getContext('2d').drawImage(cutout,0,0);}
+ function paint(target,showGuides=true){const ctx=target.getContext('2d');if(!scene)return;Object.assign(target,previewSize(scene.naturalWidth,scene.naturalHeight));ctx.drawImage(scene,0,0,target.width,target.height);
+  if(cutout&&parking.length===2&&!marking){const placement=Object.fromEntries(Object.entries(controls).map(([k,v])=>[k,Number(v.value)])),box=vehicleBox(target,cutout,placement);ctx.save();ctx.translate(box.x+box.width/2,box.y+box.height);ctx.rotate(placement.rotate*Math.PI/180);ctx.fillStyle='rgba(0,0,0,.2)';ctx.beginPath();ctx.ellipse(0,0,box.width*.43,Math.max(2,box.width*.035),0,0,Math.PI*2);ctx.fill();ctx.drawImage(cutout,-box.width/2,-box.height,box.width,box.height);ctx.restore();}
+  if(showGuides&&marking){ctx.lineWidth=Math.max(2,target.width/350);ctx.strokeStyle='#ffc447';ctx.fillStyle='#ffc447';if(parking.length){ctx.beginPath();parking.forEach((p,i)=>i?ctx.lineTo(p.x*target.width,p.y*target.height):ctx.moveTo(p.x*target.width,p.y*target.height));ctx.stroke();}for(const p of [...parking,...(parkingCursor?[parkingCursor]:[])]){ctx.beginPath();ctx.arc(p.x*target.width,p.y*target.height,Math.max(6,target.width/100),0,2*Math.PI);ctx.stroke();}}
+ }
+ function draw(){canvas.hidden=!scene;const ready=!!(scene&&cutout&&parking.length===2&&!marking);save.disabled=!ready;$('driveway-controls').disabled=!ready;$('driveway-mark').disabled=!scene;if(ready){const p=constrainParkingPlacement(Object.fromEntries(Object.entries(controls).map(([k,v])=>[k,Number(v.value)])),parking,canvas,cutout);controls.size.max=p.maxSize;for(const k of Object.keys(controls))controls[k].value=p[k];}if(scene)paint(canvas);previewCutout();}
+ function fit(){if(!scene||!cutout||parking.length!==2)return;try{const p=parkingPlacement(parking,canvas,cutout);controls.size.max=p.maxSize;controls.size.min=Math.min(5,p.size);for(const k of Object.keys(controls))controls[k].value=p[k];marking=false;parkingCursor=null;$('driveway-parking-status').textContent='Placed in your marked space. Pick a different photo to change the vehicle’s viewing angle.';draw();}catch(e){parking=[];marking=true;$('driveway-parking-status').textContent=e.message;draw();}}
+ function beginMark(){if(!scene)return;parking=[];parkingCursor=null;marking=true;$('driveway-parking-status').textContent='Tap the left edge of one parking space, near where the tires will sit.';draw();}
+ function markPoint(p){parking.push(p);if(parking.length===1)$('driveway-parking-status').textContent='Now tap the right edge of that same parking space.';if(parking.length===2){try{parkingPlacement(parking,canvas,cutout);marking=false;if(cutout)fit();else $('driveway-parking-status').textContent='Space marked. Choose an exterior vehicle view to place here.';}catch(e){parking=[];$('driveway-parking-status').textContent=e.message;}}draw();}
+ async function processVehicle(version){if(!original)return;cutoutJob?.abort();const job=cutoutJob=new AbortController();cutout=null;draw();say('Removing the vehicle photo’s background…');try{const {removeVehicleBackground}=await import('./driveway-cutout.mjs?v=parking1');const result=await removeVehicleBackground(original,{signal:job.signal,timeoutMs:90000,onProgress:({message})=>{if(version===vehicleVersion)say(message);}});if(version!==vehicleVersion||job.signal.aborted)return;cutout=result.canvas;panel.open=false;if(scene&&parking.length===2)fit();else draw();say(scene?'Background removed. Mark one parking space below, or adjust your placement.':'Background removed. Choose your driveway photo next.');}catch(e){if(version!==vehicleVersion||e.name==='AbortError')return;say(e.message+' You can also use Touch up the cutout below.',true);panel.open=true;}finally{if(cutoutJob===job)cutoutJob=null;}}
+ function clearVehicle(){cutoutJob?.abort();++vehicleVersion;original=null;cutout=null;outline=[];outlineCursor=null;paintOutline();draw();return vehicleVersion;}
+ async function receiveVehicle(image,version){if(version!==vehicleVersion)return;original=image;paintOutline();await processVehicle(version);}
+ for(const kind of ['scene','vehicle'])$('driveway-'+kind).addEventListener('change',async event=>{const file=event.target.files?.[0];if(!file)return;const error=imageFileError(file);if(error){say(error,true);return;}let version;if(kind==='scene'){version=++sceneVersion;scene=null;parking=[];draw();}else{version=clearVehicle();selectedVehicle=null;picker.value='';photoPicker.replaceChildren();photoPicker.disabled=true;photos=[];renderPhotos();syncInquiry();}const url=URL.createObjectURL(file);say('Opening your photo…');try{const img=await loadImage(url);if(kind==='scene'){if(version!==sceneVersion)return;scene=img;draw();beginMark();say(cutout?'Mark one parking space below.':'Driveway ready. Pick an exterior vehicle photo and mark one parking space.');}else await receiveVehicle(img,version);}catch(e){if(version===(kind==='scene'?sceneVersion:vehicleVersion))say(e.message,true);}finally{URL.revokeObjectURL(url);}});
+ editor.addEventListener('click',e=>{if(!original)return;const r=editor.getBoundingClientRect();outline.push(outlinePoint(e.clientX-r.left,e.clientY-r.top,r.width,r.height));paintOutline();});
+ editor.addEventListener('keydown',e=>{if(!original||!['ArrowLeft','ArrowRight','ArrowUp','ArrowDown','Enter',' '].includes(e.key))return;e.preventDefault();outlineCursor??={x:.5,y:.5};const step=e.shiftKey?.05:.01,d={ArrowLeft:[-step,0],ArrowRight:[step,0],ArrowUp:[0,-step],ArrowDown:[0,step]}[e.key];if(d)outlineCursor=outlinePoint(outlineCursor.x+d[0],outlineCursor.y+d[1],1,1);else outline.push({...outlineCursor});paintOutline();});
+ $('driveway-undo').onclick=()=>{outline.pop();paintOutline();};
+ $('driveway-cutout').onclick=()=>{if(!original||outline.length<3)return;cutoutJob?.abort();++vehicleVersion;try{const c=canvasFromImage(original),ctx=c.getContext('2d');ctx.globalCompositeOperation='destination-in';ctx.beginPath();outline.forEach((p,i)=>i?ctx.lineTo(p.x*c.width,p.y*c.height):ctx.moveTo(p.x*c.width,p.y*c.height));ctx.closePath();ctx.fill();cutout=trimCanvas(c);panel.open=false;if(parking.length===2)fit();else draw();say('Your cutout is applied. Mark a space or adjust the placement below.');}catch(e){say(e.message,true);}};
+ $('driveway-retry').onclick=()=>{if(original)processVehicle(vehicleVersion);};
+ function renderPhotos(){const grid=$('driveway-photos'),focused=grid.contains(document.activeElement);grid.replaceChildren();photos.slice(0,shown).forEach((url,i)=>{const b=document.createElement('button');b.type='button';b.setAttribute('aria-label','Use vehicle photo '+(i+1));b.setAttribute('aria-pressed',String(photoPicker.value===url));const img=document.createElement('img');img.src=url;img.alt='Vehicle view '+(i+1);img.loading='lazy';const text=document.createElement('span');text.textContent='View '+(i+1);b.append(img,text);b.onclick=()=>{photoPicker.value=url;loadInventoryPhoto();};grid.append(b);if(focused&&photoPicker.value===url)b.focus();});$('driveway-more-photos').hidden=photos.length<=shown;}
+ async function loadInventoryPhoto(){const version=clearVehicle(),url=photoPicker.value;renderPhotos();if(!approvedPhoto(url))return;say('Opening the selected vehicle view…');try{await receiveVehicle(await loadImage(url,true),version);}catch(e){if(version===vehicleVersion)say(e.message,true);}}
+ picker.addEventListener('change',()=>{clearVehicle();selectedVehicle=vehicles.find(v=>v.vin===picker.value)||null;syncInquiry();photos=[...new Set([...(selectedVehicle?.photoUrls||[]),selectedVehicle?.photoUrl].filter(approvedPhoto))];shown=8;photoPicker.replaceChildren();const empty=document.createElement('option');empty.value='';empty.textContent='Choose the view that matches your driveway';photoPicker.append(empty);photos.forEach((url,i)=>{const o=document.createElement('option');o.value=url;o.textContent='View '+(i+1);photoPicker.append(o);});photoPicker.disabled=!photos.length;renderPhotos();say(photos.length?'Choose an exterior view that faces the same way as your parking space.':'Choose another vehicle or upload your own vehicle photo.');});
+ photoPicker.addEventListener('change',loadInventoryPhoto);$('driveway-more-photos').onclick=()=>{shown+=12;renderPhotos();};
+ function updateInventory(){const chosen=picker.value;picker.replaceChildren();const empty=document.createElement('option');empty.value='';empty.textContent='Choose a vehicle';picker.append(empty);const matches=inventoryChoices(vehicles,$('driveway-condition').value,$('driveway-search').value);for(const v of matches){const o=document.createElement('option');o.value=v.vin;o.textContent=v.title+' · Stock '+v.stock;picker.append(o);}if(matches.some(v=>v.vin===chosen))picker.value=chosen;else if(chosen){clearVehicle();selectedVehicle=null;photos=[];photoPicker.replaceChildren();photoPicker.disabled=true;renderPhotos();syncInquiry();}$('driveway-inventory-count').textContent=matches.length+' vehicles in the saved Austin inventory. Confirm availability with us.';}
+ for(const id of ['driveway-condition','driveway-search'])$(id).addEventListener('input',updateInventory);updateInventory();
+ const requested=new URLSearchParams(document.defaultView?.location?.search||'').get('vehicle'),selected=vehicles.find(v=>v.vin===requested&&v.locationId==='18393'&&v.status!=='not-observed'&&!v.external);if(selected){$('driveway-condition').value=selected.condition;updateInventory();picker.value=selected.vin;picker.dispatchEvent(new Event('change'));}
+ $('driveway-mark').onclick=beginMark;$('driveway-reset').onclick=fit;for(const input of Object.values(controls))input.addEventListener('input',draw);
+ canvas.addEventListener('pointerdown',e=>{if(!scene)return;const r=canvas.getBoundingClientRect();if(marking){markPoint(outlinePoint(e.clientX-r.left,e.clientY-r.top,r.width,r.height));return;}if(!cutout||parking.length!==2)return;drag={x:e.clientX,y:e.clientY,startX:Number(controls.x.value),startY:Number(controls.y.value),width:r.width,height:r.height};canvas.setPointerCapture(e.pointerId);});
+ canvas.addEventListener('pointermove',e=>{if(!drag)return;controls.x.value=Math.max(0,Math.min(100,drag.startX+(e.clientX-drag.x)/drag.width*100));controls.y.value=Math.max(0,Math.min(100,drag.startY+(e.clientY-drag.y)/drag.height*100));draw();});for(const event of ['pointerup','pointercancel','lostpointercapture'])canvas.addEventListener(event,()=>{drag=null;});
+ canvas.addEventListener('keydown',e=>{if(!scene||!['ArrowLeft','ArrowRight','ArrowUp','ArrowDown','Enter',' '].includes(e.key))return;e.preventDefault();const step=e.shiftKey?.05:.01,d={ArrowLeft:[-step,0],ArrowRight:[step,0],ArrowUp:[0,-step],ArrowDown:[0,step]}[e.key];if(marking){parkingCursor??={x:parking.length?.65:.35,y:.75};if(d){parkingCursor=outlinePoint(parkingCursor.x+d[0],parkingCursor.y+d[1],1,1);$('driveway-parking-status').textContent=(parking.length?'Right':'Left')+' marker: '+Math.round(parkingCursor.x*100)+'% across, '+Math.round(parkingCursor.y*100)+'% down. Press Enter to place it.';}else{markPoint({...parkingCursor});parkingCursor=null;}}else if(d&&cutout){controls.x.value=Number(controls.x.value)+d[0]*100;controls.y.value=Number(controls.y.value)+d[1]*100;}draw();});
+ save.onclick=()=>{if(save.disabled)return;try{const output=document.createElement('canvas');paint(output,false);output.toBlob(blob=>{if(!blob){say('The preview could not be saved. Try another photo.',true);return;}const url=URL.createObjectURL(blob),link=document.createElement('a');link.download='my-driveway-preview.png';link.href=url;link.click();setTimeout(()=>URL.revokeObjectURL(url),60000);say('Your preview is ready to save. Your photos stay on this device.');},'image/png');}catch{say('This photo does not allow downloads. Upload a saved vehicle photo and try again.',true);}};
+ draw();
 }
-export function outlinePoint(x,y,width,height) {
-  return {x:Math.max(0,Math.min(1,x/width)),y:Math.max(0,Math.min(1,y/height))};
-}
-export function approvedPhoto(value) {
-  try {const u=new URL(value);return u.protocol==='https:'&&u.hostname==='cloudflareimages.dealereprocess.com'&&u.pathname.startsWith('/resrc/images/');}catch{return false;}
-}
-
-export function installDrivewayPreview(document) {
-  const $ = id => document.getElementById(id);
-  const canvas = $('driveway-canvas');
-  if (!canvas) return;
-  const ctx = canvas.getContext('2d'), status = $('driveway-status'), save = $('driveway-save');
-  const fields = ['x', 'y', 'size', 'rotate'];
-  const controls = Object.fromEntries(fields.map(key => [key, $('driveway-' + key)]));
-  const images = {}, versions = {scene: 0, vehicle: 0};
-  let outline=[],appliedOutline=[],selectedVehicle=null;
-  let dragging = null;
-  const editor=$('driveway-outline'),editorPanel=$('driveway-outline-panel');
-  let keyboardPoint=null;
-  function paintOutline() {
-    if(!editor)return;
-    editorPanel.hidden=!images.vehicle;
-    if(!images.vehicle)return;
-    Object.assign(editor,previewSize(images.vehicle.naturalWidth,images.vehicle.naturalHeight));
-    const c=editor.getContext('2d');c.drawImage(images.vehicle,0,0,editor.width,editor.height);
-    c.strokeStyle='#ffcf49';c.fillStyle='#ffcf49';c.lineWidth=Math.max(2,editor.width/350);
-    if(outline.length){c.beginPath();outline.forEach((p,i)=>i?c.lineTo(p.x*editor.width,p.y*editor.height):c.moveTo(p.x*editor.width,p.y*editor.height));if(outline.length>2)c.closePath();c.stroke();for(const p of outline){c.beginPath();c.arc(p.x*editor.width,p.y*editor.height,Math.max(4,editor.width/150),0,2*Math.PI);c.fill();}}
-    if(keyboardPoint){const x=keyboardPoint.x*editor.width,y=keyboardPoint.y*editor.height;c.strokeStyle='#fff';c.beginPath();c.moveTo(x-12,y);c.lineTo(x+12,y);c.moveTo(x,y-12);c.lineTo(x,y+12);c.stroke();}
-    $('driveway-cutout').disabled=outline.length<3;
-    $('driveway-outline-status').textContent=outline.length+' outline points. '+(outline.length<3?'Add at least three points around the vehicle.':'Keep adding points around the edges, then apply your outline.');
-  }
-  function syncInquiry(){
-    for(const who of ['Sam','Ryan']){
-      const a=$('driveway-ask-'+who.toLowerCase());if(!a)continue;
-      const params=new URLSearchParams({advisor:who,request:'I tried the driveway preview. Please help me check vehicle dimensions, features and availability.'});
-      if(selectedVehicle)params.set('vehicle',selectedVehicle.vin);
-      a.href='contact.html?'+params;
-    }
-  }
-  function draw() {
-    save.disabled = !images.scene || !images.vehicle;
-    $('driveway-controls').disabled = save.disabled;
-    canvas.hidden = !images.scene;
-    if (!images.scene) return;
-    Object.assign(canvas, previewSize(images.scene.naturalWidth, images.scene.naturalHeight));
-    ctx.drawImage(images.scene, 0, 0, canvas.width, canvas.height);
-    if (!images.vehicle) return;
-    const placement = Object.fromEntries(fields.map(key => [key, controls[key].value]));
-    const box = vehicleBox(canvas, images.vehicle, placement);
-    ctx.save();
-    ctx.translate(box.x + box.width / 2, box.y + box.height / 2);
-    ctx.rotate(Number(placement.rotate) * Math.PI / 180);
-    if(appliedOutline.length>=3){ctx.beginPath();appliedOutline.forEach((p,i)=>{const x=(p.x-.5)*box.width,y=(p.y-.5)*box.height;i?ctx.lineTo(x,y):ctx.moveTo(x,y)});ctx.closePath();ctx.clip();}
-    ctx.drawImage(images.vehicle, -box.width / 2, -box.height / 2, box.width, box.height);
-    ctx.restore();
-  }
-  for (const kind of ['scene', 'vehicle']) {
-    $('driveway-' + kind).addEventListener('change', async event => {
-      const file = event.target.files?.[0];
-      if (!file) return;
-      const version = ++versions[kind];
-      if(kind==='vehicle'){outline=[];appliedOutline=[];selectedVehicle=null;if($('driveway-inventory'))$('driveway-inventory').value='';if($('driveway-photo')){$('driveway-photo').replaceChildren();$('driveway-photo').disabled=true;}syncInquiry();}
-      delete images[kind]; draw();
-      paintOutline();
-      const error = imageFileError(file);
-      if (error) { status.textContent = error; return; }
-      status.textContent = 'Opening your photo…';
-      const url = URL.createObjectURL(file);
-      try {
-        const img = await new Promise((resolve, reject) => {
-          const image = new Image();
-          image.onload = () => resolve(image);
-          image.onerror = () => reject(new Error('This photo could not be opened. Try a JPG, PNG or WebP image.'));
-          image.src = url;
-        });
-        if (version !== versions[kind]) return;
-        images[kind] = img; draw();paintOutline();
-        status.textContent = images.scene && images.vehicle ? 'Preview ready. Drag the vehicle or use the position and size controls below.' : images.scene ? 'Driveway photo opened. Now choose a vehicle photo.' : 'Vehicle photo opened. Now choose your driveway photo.';
-      } catch (error) {
-        if (version === versions[kind]) status.textContent = error.message;
-      } finally { URL.revokeObjectURL(url); }
-    });
-  }
-  editor?.addEventListener('click',event=>{if(!images.vehicle)return;const r=editor.getBoundingClientRect();outline.push(outlinePoint(event.clientX-r.left,event.clientY-r.top,r.width,r.height));paintOutline();});
-  editor?.addEventListener('keydown',event=>{if(!images.vehicle||!['ArrowLeft','ArrowRight','ArrowUp','ArrowDown','Enter',' '].includes(event.key))return;event.preventDefault();keyboardPoint??={x:.5,y:.5};const step=event.shiftKey?.05:.01;const delta={ArrowLeft:[-step,0],ArrowRight:[step,0],ArrowUp:[0,-step],ArrowDown:[0,step]}[event.key];if(delta)keyboardPoint=outlinePoint(keyboardPoint.x+delta[0],keyboardPoint.y+delta[1],1,1);else outline.push({...keyboardPoint});paintOutline();});
-  $('driveway-undo')?.addEventListener('click',()=>{outline.pop();paintOutline();});
-  $('driveway-cutout')?.addEventListener('click',()=>{if(outline.length<3)return;appliedOutline=outline.map(p=>({...p}));draw();editorPanel.open=false;status.textContent='Your outline is applied. Adjust the vehicle in your driveway below.';if(images.scene)canvas.scrollIntoView?.({block:'center',behavior:'smooth'});});
-  $('driveway-whole-photo')?.addEventListener('click',()=>{outline=[];appliedOutline=[];paintOutline();draw();});
-  const picker=$('driveway-inventory'),photoPicker=$('driveway-photo');
-  const vehicles=document.defaultView?.usedInventoryData?.vehicles||[];
-  function updateInventory(){
-    if(!picker)return;
-    const chosen=picker.value;picker.replaceChildren();
-    const placeholder=document.createElement('option');placeholder.value='';placeholder.textContent='Choose a vehicle';picker.append(placeholder);
-    const matches=inventoryChoices(vehicles,$('driveway-condition').value,$('driveway-search').value);
-    for(const v of matches){const o=document.createElement('option');o.value=v.vin;o.textContent=v.title+' · Stock '+v.stock;picker.append(o);}
-    if(matches.some(v=>v.vin===chosen))picker.value=chosen;
-    else if(chosen){++versions.vehicle;delete images.vehicle;selectedVehicle=null;outline=[];appliedOutline=[];photoPicker.replaceChildren();photoPicker.disabled=true;draw();paintOutline();syncInquiry();}
-    $('driveway-inventory-count').textContent=matches.length+' vehicles in the saved Austin inventory. Confirm availability with us.';
-  }
-  async function loadInventoryPhoto(){
-    const version=++versions.vehicle;delete images.vehicle;outline=[];appliedOutline=[];draw();paintOutline();
-    const url=photoPicker.value;if(!approvedPhoto(url))return;
-    status.textContent='Opening inventory photo…';
-    try{
-      const img=await new Promise((resolve,reject)=>{const image=new Image();image.crossOrigin='anonymous';image.onload=()=>resolve(image);image.onerror=()=>reject(new Error('This inventory photo cannot be used in a downloadable preview. Upload a saved vehicle photo instead.'));image.src=url;});
-      if(version!==versions.vehicle)return;
-      images.vehicle=img;draw();paintOutline();status.textContent=images.scene?'Vehicle photo ready. You can outline the vehicle to hide its background.':'Vehicle photo ready. Choose your driveway photo next.';
-    }catch(e){if(version===versions.vehicle)status.textContent=e.message;}
-  }
-  picker?.addEventListener('change',()=>{
-    selectedVehicle=vehicles.find(v=>v.vin===picker.value)||null;syncInquiry();
-    photoPicker.replaceChildren();const photos=[...new Set([...(selectedVehicle?.photoUrls||[]),selectedVehicle?.photoUrl].filter(approvedPhoto))];
-    photos.forEach((url,i)=>{const o=document.createElement('option');o.value=url;o.textContent='Photo '+(i+1);photoPicker.append(o);});photoPicker.disabled=!photos.length;
-    if(photos.length)loadInventoryPhoto();else{++versions.vehicle;delete images.vehicle;draw();paintOutline();status.textContent='Choose another vehicle or upload a vehicle photo.';}
-  });
-  photoPicker?.addEventListener('change',loadInventoryPhoto);
-  for(const id of ['driveway-condition','driveway-search'])$(id)?.addEventListener('input',updateInventory);
-  updateInventory();
-  if(picker){
-    const requested=new URLSearchParams(document.defaultView?.location?.search||'').get('vehicle');
-    const selected=vehicles.find(v=>v.vin===requested&&v.locationId==='18393'&&v.status!=='not-observed'&&!v.external);
-    if(selected){$('driveway-condition').value=selected.condition;updateInventory();picker.value=selected.vin;picker.dispatchEvent(new Event('change'));}
-  }
-  for (const input of Object.values(controls)) input.addEventListener('input', draw);
-  $('driveway-reset').addEventListener('click', () => {
-    for (const [key, value] of Object.entries({x: 50, y: 65, size: 45, rotate: 0})) controls[key].value = value;
-    draw();
-  });
-  canvas.addEventListener('pointerdown', event => {
-    if (!images.vehicle) return;
-    const rect = canvas.getBoundingClientRect();
-    dragging = {x: event.clientX, y: event.clientY, startX: Number(controls.x.value), startY: Number(controls.y.value), width: rect.width, height: rect.height};
-    canvas.setPointerCapture(event.pointerId);
-  });
-  canvas.addEventListener('pointermove', event => {
-    if (!dragging) return;
-    controls.x.value = Math.max(0, Math.min(100, dragging.startX + (event.clientX - dragging.x) / dragging.width * 100));
-    controls.y.value = Math.max(0, Math.min(100, dragging.startY + (event.clientY - dragging.y) / dragging.height * 100));
-    draw();
-  });
-  for (const event of ['pointerup', 'pointercancel', 'lostpointercapture']) canvas.addEventListener(event, () => { dragging = null; });
-  save.addEventListener('click', () => {
-    if (save.disabled) return;
-    const link = document.createElement('a');
-    link.download = 'my-driveway-preview.png';
-    try {link.href = canvas.toDataURL('image/png');link.click();status.textContent = 'Your preview is ready to save. Photos stay on this device.';}
-    catch {status.textContent='This photo does not allow downloads. Upload a saved vehicle photo and try again.';}
-  });
-  draw();
-}
-
-if (typeof document !== 'undefined') installDrivewayPreview(document);
+if(typeof document!=='undefined'&&document.getElementById('driveway-canvas'))installDrivewayPreview(document);
