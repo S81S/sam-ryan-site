@@ -1,3 +1,13 @@
 Cars With Sam: on-device vehicle background removal
 
-U2-Net: Apache License 2.0. ONNX Runtime and rembg: MIT licenses. Full notices are supplied with the model and runtime files in this directory.
+U2-Net model and project: https://github.com/xuebinqin/U-2-Net
+Apache License 2.0; see LICENSE-U2Net.txt. Model distributed through rembg's u2netp release.
+
+ONNX Runtime Web 1.22.0: https://github.com/microsoft/onnxruntime
+MIT License; see LICENSE-ONNX-Runtime.txt.
+
+Normalization and mask processing based on rembg: https://github.com/danielgatis/rembg
+MIT License; see LICENSE-rembg.txt.
+
+Local integration: https://github.com/S81S/sam-ryan-site
+Photos are processed on the visitor's device. The model's output is a visual cutout, not a vehicle dimension or equipment verification.
