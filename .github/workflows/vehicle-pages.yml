@@ -6,6 +6,7 @@ on:
       - 'data/used-inventory.json'
       - 'data/equipment-index.json'
       - 'build-vehicle-pages.cjs'
+      - 'site-shell.cjs'
       - 'notify-indexnow.cjs'
       - 'indexnow-key.txt'
       - '.github/workflows/vehicle-pages.yml'
