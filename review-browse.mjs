@@ -18,7 +18,11 @@ document.querySelectorAll('[data-review-browse]').forEach(root=>{
   controls.append(previous,status,next);
   const grid=root.querySelector('.review-grid');
   grid.after(controls);
-  const matching=()=>cards.filter(card=>filter==='all'||card.dataset.person===filter||card.dataset.person==='both');
+  const separateGroups=root.dataset.reviewGroups==='separate';
+  const matchesFilter=(card,choice)=>choice==='all'||card.dataset.person===choice||(!separateGroups&&card.dataset.person==='both'&&(choice==='sam'||choice==='ryan'));
+  // Derive filter counts from their actual cards so labels and pagination agree.
+  filters.forEach(button=>{if(button.dataset.reviewLabel)button.textContent=`${button.dataset.reviewLabel} (${cards.filter(card=>matchesFilter(card,button.dataset.browseFilter)).length})`;});
+  const matching=()=>cards.filter(card=>matchesFilter(card,filter));
   function render(focus=false){
     const list=matching();
     page=Math.max(0,Math.min(page,Math.ceil(list.length/pageSize)-1));
