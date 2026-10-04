@@ -43,3 +43,12 @@ https://:version.:project.pages.dev/*
 
 /site-shell.css
   Cache-Control: public, max-age=0, must-revalidate
+
+/trim-guide.css
+  Cache-Control: public, max-age=0, must-revalidate
+
+/trim-guide-base.css
+  Cache-Control: public, max-age=0, must-revalidate
+
+/trim-standard-data.json
+  Cache-Control: public, max-age=0, must-revalidate
