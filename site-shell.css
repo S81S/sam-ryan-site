@@ -81,3 +81,24 @@
  .site-layout:has(textarea:focus,input:not([type="button"]):not([type="submit"]):not([type="checkbox"]):not([type="radio"]):not([type="range"]):focus,[contenteditable="true"]:focus) .sticky-mobile{display:none}
 }
 @media print{.site-layout .sticky-mobile{display:none!important}body.site-layout{padding-bottom:0}}
+
+/* Keep the phone number separate from the mascot, with one accessible call link. */
+.site-layout .site-header .header-phone{flex:0 0 194px;width:194px;gap:6px;min-height:58px}
+.site-layout .site-header .header-phone::before{content:"737-209-\A 1320";white-space:pre;display:block;flex:0 0 auto;font-family:Arial,Helvetica,sans-serif;font-size:26px;font-style:italic;font-weight:900;line-height:1.02;letter-spacing:.2px;text-align:center;color:#ffda43;text-shadow:1px 1px 0 #000}
+.site-layout .site-header .header-phone .sam-phone-stacked{content:url('/sam-superbee-header-v1.png');width:72px;max-width:72px;height:58px;object-fit:contain;flex:0 0 72px}
+.site-layout .site-header .header-phone:focus-visible{outline:3px solid #ffda43;outline-offset:3px;border-radius:4px}
+@media(min-width:1051px) and (max-width:1200px){
+ .site-layout .site-header .nav-wrap{display:grid;grid-template-columns:minmax(0,1fr) 194px auto;gap:2px 12px;padding:6px 0}
+ .site-layout .site-header .brand{grid-column:1;grid-row:1}
+ .site-layout .header-phone{grid-column:2;grid-row:1}
+ .site-layout .header-cta{grid-column:3;grid-row:1}
+ .site-layout #primary-nav{grid-column:1/-1;grid-row:2;flex-wrap:wrap}
+ .site-layout #primary-nav a{padding:10px 14px;min-height:44px}
+}
+@media(max-width:1050px){.site-layout .site-header .nav-wrap{grid-template-columns:minmax(0,1fr) 194px auto}}
+@media(max-width:560px){
+ .site-layout .site-header .nav-wrap{grid-template-columns:minmax(0,1fr) auto;column-gap:10px}
+ .site-layout .header-cta{grid-column:2;grid-row:1}
+ .site-layout .site-header .header-phone{grid-column:1/-1;grid-row:2;justify-self:center}
+ .site-layout #primary-nav{grid-row:3}
+}
