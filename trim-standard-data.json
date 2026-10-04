@@ -1041,6 +1041,30 @@
               "status": "optional",
               "sourceUrl": "https://www.jlwranglerforums.com/forum/attachments/2026-4-door-wrangler-pdf.1009497/",
               "benefit": "The transmission and engine must be compared as a complete factory configuration."
+            },
+            {
+              "key": "audio",
+              "label": "Audio system",
+              "value": "8 speakers",
+              "status": "standard",
+              "sourceUrl": "https://www.jeep.com/wrangler/specs.sahara.html",
+              "note": "Factory specification for the standard 2026 four-door Sahara; optional upgrades may differ."
+            },
+            {
+              "key": "headlamps",
+              "label": "Headlamps",
+              "value": "LED low/high beams",
+              "status": "standard",
+              "sourceUrl": "https://www.jeep.com/wrangler/specs.sahara.html",
+              "note": "Factory specification for the standard 2026 four-door Sahara; optional upgrades may differ."
+            },
+            {
+              "key": "mirrors",
+              "label": "Exterior mirrors",
+              "value": "Power-adjustable, heated driver and passenger mirrors",
+              "status": "standard",
+              "sourceUrl": "https://www.jeep.com/wrangler/specs.sahara.html",
+              "note": "Factory specification for the standard 2026 four-door Sahara; optional upgrades may differ."
             }
           ],
           "comparisonNote": "U.S. four-door 2026 configurations. Standard rows describe the stated base configuration; option rows name the required factory group. Rubicon X tire and transfer-case equipment changes with transmission. The July 2025 factory guide is used for package details; current Jeep trim highlights are used where later equipment is explicitly shown.",
