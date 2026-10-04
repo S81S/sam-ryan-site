@@ -40,3 +40,6 @@ https://:version.:project.pages.dev/*
 
 /search-layout-preview.html
   X-Robots-Tag: noindex
+
+/site-shell.css
+  Cache-Control: public, max-age=0, must-revalidate
