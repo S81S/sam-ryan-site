@@ -9,6 +9,7 @@ const $=id=>document.getElementById(id),data=window.usedInventoryData,index=wind
 const el=(tag,text,cls)=>{const e=document.createElement(tag);if(text!==undefined)e.textContent=text;if(cls)e.className=cls;return e;};
 const cash=n=>n===null?'Call for price':new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(n);
 const link=(label,url)=>{const a=el('a',label,'mini-btn');a.href=url;return a;};
+const drivewayLink=vehicle=>link('See in Your Driveway','/see-yourself?'+new URLSearchParams({vehicle:vehicle.vin,advisor:shoppingContext().advisor})+'#driveway-heading');
 $('sticker-coverage').textContent='Explore equipment using original window stickers and reviewed factory specifications.';
 const browseInventory=document.body.dataset.browseInventory==='true';
 const conditionRadios=[...document.querySelectorAll('input[name="vehicle-condition"]')];
@@ -82,7 +83,7 @@ function render(){
   for(const check of result.checks)card.append(el('p',`${check.state==='match'?'✓':check.state==='not-listed'?'—':'?'} ${check.wanted?'':'Without '}${check.label}: ${check.state==='unknown'?'not confirmed by the sticker':check.evidence.join(' / ')}`,'equipment-check'));
   for(const check of result.checks)if(check.sourceUrl)card.append(link(check.id==='flatTow'?'Read factory flat-towing instructions ↗':'Read factory equipment reference ↗',check.sourceUrl));
   if(sticker?.status==='verified')card.append(link('Read original window sticker ↗',sticker.sourceUrl));
-  const actions=el('div',undefined,'stock-actions');actions.append(link('Full vehicle details',`/vehicle-${v.vin}?${new URLSearchParams({q:q.original,condition:q.condition||'Both'})}`));if(browseInventory){const details=el('button','View photos & details','mini-btn');details.type='button';details.addEventListener('click',()=>openVehiclePreview(v,q.original));actions.append(details);}actions.append(link('Check availability',`contact.html?vehicle=${v.vin}&request=${encodeURIComponent(q.original)}`),link('Request a walkaround',`contact.html?vehicle=${v.vin}&purpose=walkaround&request=${encodeURIComponent(q.original)}`),link('Compare equipment',comparisonLink([v.vin],shoppingContext())),link('Request a test drive',`contact.html?vehicle=${v.vin}&purpose=test-drive&request=${encodeURIComponent(q.original)}`));const compareLabel=el('label','Add to compare');const cb=document.createElement('input');cb.type='checkbox';cb.dataset.compareVin=v.vin;cb.checked=compareVins.includes(v.vin);cb.addEventListener('change',()=>toggleCompare(v.vin,cb.checked));compareLabel.prepend(cb);actions.append(compareLabel);card.append(actions);out.append(card);
+  const actions=el('div',undefined,'stock-actions');actions.append(link('Full vehicle details',`/vehicle-${v.vin}?${new URLSearchParams({q:q.original,condition:q.condition||'Both'})}`));if(browseInventory){const details=el('button','View photos & details','mini-btn');details.type='button';details.addEventListener('click',()=>openVehiclePreview(v,q.original));actions.append(details);}actions.append(link('Check availability',`contact.html?vehicle=${v.vin}&request=${encodeURIComponent(q.original)}`),link('Request a walkaround',`contact.html?vehicle=${v.vin}&purpose=walkaround&request=${encodeURIComponent(q.original)}`),link('Compare equipment',comparisonLink([v.vin],shoppingContext())),link('Request a test drive',`contact.html?vehicle=${v.vin}&purpose=test-drive&request=${encodeURIComponent(q.original)}`));const compareLabel=el('label','Add to compare');const cb=document.createElement('input');cb.type='checkbox';cb.dataset.compareVin=v.vin;cb.checked=compareVins.includes(v.vin);cb.addEventListener('change',()=>toggleCompare(v.vin,cb.checked));compareLabel.prepend(cb);actions.append(compareLabel,drivewayLink(v));card.append(actions);out.append(card);
  }
  const otherOptions=sameModelOptions(data.vehicles,index.records,q,matches.map(x=>x.vehicle.vin));
  otherOptions.sort(sort);
@@ -101,7 +102,7 @@ function render(){
    const details=el('button','View details','mini-btn');details.type='button';details.addEventListener('click',()=>openVehiclePreview(v,q.original));
    const label=el('label','Compare');label.style.cssText='display:flex;gap:6px;align-items:center;font-size:14px';
    const cb=el('input');cb.type='checkbox';cb.dataset.compareVin=v.vin;cb.checked=compareVins.includes(v.vin);cb.addEventListener('change',()=>toggleCompare(v.vin,cb.checked));label.prepend(cb);
-   row.append(info,details,label);list.append(row);
+   row.append(info,details,label,drivewayLink(v));list.append(row);
   }shown+=5;more.hidden=shown>=otherOptions.length;};
   more.addEventListener('click',addRows);section.append(more);addRows();out.append(section);
  }
