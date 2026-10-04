@@ -1,6 +1,6 @@
 const fs=require('node:fs'),crypto=require('node:crypto'),{execFileSync}=require('node:child_process');
 const root=__dirname,origin='https://carswithsam.com';
-const sha=()=>{const h=crypto.createHash('sha256');for(const f of ['data/used-inventory.json','data/equipment-index.json','build-vehicle-pages.cjs'])h.update(fs.readFileSync(root+'/'+f));return h.digest('hex')};
+const sha=()=>{const h=crypto.createHash('sha256');for(const f of ['data/used-inventory.json','data/equipment-index.json','build-vehicle-pages.cjs','site-shell.cjs'])h.update(fs.readFileSync(root+'/'+f));return h.digest('hex')};
 const read=f=>fs.readFileSync(root+'/'+f,'utf8');
 async function main(){
  if(process.argv.includes('--prepare')){fs.writeFileSync(root+'/vehicle-pages-version.json',JSON.stringify({version:sha()}));return;}
