@@ -67,3 +67,17 @@
 }
 @media(max-width:380px){.site-layout .site-header .nav-wrap{grid-template-columns:minmax(0,1fr) 88px auto;column-gap:7px}.site-layout .header-phone .sam-phone-stacked{width:88px}.site-layout .site-header .brand-main{font-size:17px}.site-layout .header-cta{font-size:10px;padding:10px 8px}.site-layout .visit-link{font-size:11px}}
 @media(max-width:360px){.site-layout .site-header .nav-wrap{grid-template-columns:minmax(0,1fr) 80px auto;column-gap:6px}.site-layout .header-phone .sam-phone-stacked{width:80px}.site-layout .site-header .brand-main{font-size:16px;white-space:nowrap}}
+
+/* Keep the same two actions available on narrow phones and unfolded touch screens. */
+@media(max-width:1050px),(hover:none) and (pointer:coarse){
+ html{scroll-padding-bottom:calc(68px + env(safe-area-inset-bottom,0px))}
+ body.site-layout{padding-bottom:calc(57px + env(safe-area-inset-bottom,0px))}
+ .site-layout .sticky-mobile{display:grid;position:fixed;z-index:60;inset:auto 0 0;grid-template-columns:minmax(0,1fr) minmax(0,1fr);background:#0a0e12;border-top:1px solid #29333e;padding:0 env(safe-area-inset-right,0px) env(safe-area-inset-bottom,0px) env(safe-area-inset-left,0px)}
+ .site-layout .sticky-mobile a{display:flex;align-items:center;justify-content:center;min-height:56px;margin:0;padding:12px;color:#fff;font-size:13px;line-height:1.35;font-weight:900;text-align:center;text-decoration:none}
+ .site-layout .sticky-mobile a:first-child{background:#bd1424}
+ .site-layout .sticky-mobile a:focus-visible{outline:3px solid #ffc447;outline-offset:-4px}
+ .site-layout.home-page .cartoon-content>.hero-actions{display:none}
+ /* Clear the keyboard area while someone is entering search/contact details. */
+ .site-layout:has(textarea:focus,input:not([type="button"]):not([type="submit"]):not([type="checkbox"]):not([type="radio"]):not([type="range"]):focus,[contenteditable="true"]:focus) .sticky-mobile{display:none}
+}
+@media print{.site-layout .sticky-mobile{display:none!important}body.site-layout{padding-bottom:0}}
