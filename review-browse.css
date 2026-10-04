@@ -1,0 +1,22 @@
+[data-review-browse] .review-card[hidden],.review-pagination[hidden]{display:none!important}
+[data-review-browse] .review-grid{align-items:start;scroll-margin-top:100px}
+[data-review-browse] .review-card{padding:16px}
+[data-review-browse] .review-card .source{font-size:12px;min-height:36px;display:inline-flex;align-items:center;margin-top:4px}
+[data-review-browse] .review-card footer{font-size:12px}
+.review-pagination{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:16px;margin:24px 0 0}
+.review-pagination button{min-height:44px;padding:10px 16px;border:1px solid #526070;border-radius:10px;background:#18232f;color:#fff;font:inherit;font-weight:700;cursor:pointer}
+.review-pagination button:disabled{opacity:.4;cursor:default}
+.review-pagination span{color:#c1ccd6;font-size:14px;text-align:center}
+.review-page .page-hero{padding:0}
+.review-page .page-hero .wrap{padding:28px 0 22px}
+.review-page .page-hero .page-grid{grid-template-columns:1fr 230px;gap:24px}
+.review-page .page-hero h1{font-size:clamp(32px,4vw,48px);margin:8px 0 12px;letter-spacing:-1.5px}
+.review-page .page-hero .lead{font-size:16px;margin:0}
+.review-page .page-visual-card{padding:12px}
+.review-page .page-visual-card .caption{display:none}
+.review-page .section{padding:24px 0 32px}
+.review-page .affiliation-inner{display:grid;grid-template-columns:1fr auto;align-items:center;gap:12px;padding:10px 0}
+.review-page .affiliation-inner .sam-phone-stacked{width:128px}
+.profile-reviews.section{padding:32px 0}
+.profile-reviews h2{margin-top:0}
+@media(max-width:600px){.review-page .page-hero .page-grid{grid-template-columns:1fr}.review-page .page-visual-card{display:none}.review-page .page-hero .wrap{padding:22px 0 18px}.review-pagination{gap:10px}.review-pagination span{font-size:12px}.review-pagination button{padding:10px 12px}.profile-reviews.section{padding:26px 0}}
