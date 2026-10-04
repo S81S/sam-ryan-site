@@ -1,6 +1,6 @@
 import {decodeVIN,normalizeVIN} from './vin-decoder.mjs?v=external1';
 import {appendStickerCredit,usesWindowStickerOrg} from './sticker-credit.mjs?v=source2';
-import {installVehiclePickers} from './compare-picker.mjs?v=next3';
+import {installVehiclePickers} from './compare-picker.mjs?v=enter1';
 const readSticker=async(...args)=>(await import('./sticker-reader.mjs?v=clean-shopping1')).readSticker(...args);
 import {shoppingContext} from './shopping-context.mjs?v=shopping1';
 import {openVehiclePreview} from './vehicle-preview.mjs?v=next3';
@@ -96,8 +96,8 @@ for(const side of SIDES){
   status.textContent=`Matched: ${match.title} — Stock ${match.stock} — VIN ${match.vin}.`;status.classList.add('is-ok');
   if(index.records[match.vin]?.status!=='verified')addExternal(match.vin,side);
  };
- $('lookup-go-'+side).addEventListener('click',go);
- input.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();go()}});
+
+ input.addEventListener('keydown',e=>{if(e.key==='Enter'&&!e.isComposing){e.preventDefault();go()}});
 }
 window.addEventListener('beforeunload',()=>Object.values(urls).forEach(URL.revokeObjectURL));
 export {SIDES,vehicle};

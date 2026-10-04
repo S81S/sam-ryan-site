@@ -22,3 +22,21 @@ https://:version.:project.pages.dev/*
   X-Robots-Tag: noindex
 /404.html
   X-Robots-Tag: noindex
+
+/compare-mobile-check
+  X-Robots-Tag: noindex
+
+/compare-mobile-check.html
+  X-Robots-Tag: noindex
+
+/phone-mobile-check
+  X-Robots-Tag: noindex
+
+/phone-mobile-check.html
+  X-Robots-Tag: noindex
+
+/search-layout-preview
+  X-Robots-Tag: noindex
+
+/search-layout-preview.html
+  X-Robots-Tag: noindex
