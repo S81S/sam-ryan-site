@@ -16098,6 +16098,14 @@
               "status": "standard",
               "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=23",
               "note": "Base seating configuration; separately documented heating, ventilation or recline upgrades are shown below."
+            },
+            {
+              "key": "rear-differential",
+              "label": "Rear traction differential",
+              "value": "Available antispin rear differential",
+              "status": "optional",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=20",
+              "note": "Factory option or eligible package. Electronic locking is a separate 4x4 option requiring the 3.92 axle and an eligible engine/configuration; check the specific VIN for the installed differential."
             }
           ]
         },
@@ -16376,6 +16384,14 @@
               "status": "standard",
               "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=23",
               "note": "Base seating configuration; separately documented heating, ventilation or recline upgrades are shown below."
+            },
+            {
+              "key": "rear-differential",
+              "label": "Rear traction differential",
+              "value": "Available antispin rear differential",
+              "status": "optional",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=20",
+              "note": "Factory option or eligible package. Electronic locking is a separate 4x4 option requiring the 3.92 axle and an eligible engine/configuration; check the specific VIN for the installed differential."
             }
           ]
         },
@@ -16967,6 +16983,14 @@
               "status": "standard",
               "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=23",
               "note": "Base seating configuration; separately documented heating, ventilation or recline upgrades are shown below."
+            },
+            {
+              "key": "rear-differential",
+              "label": "Rear traction differential",
+              "value": "Available antispin rear differential",
+              "status": "optional",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=20",
+              "note": "Factory option or eligible package. Electronic locking is a separate 4x4 option requiring the 3.92 axle and an eligible engine/configuration; check the specific VIN for the installed differential."
             }
           ]
         },
@@ -17291,6 +17315,14 @@
               "status": "standard",
               "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=21",
               "note": "Standard finish; appearance packages can change the bumper finish."
+            },
+            {
+              "key": "rear-differential",
+              "label": "Rear traction differential",
+              "value": "Available antispin rear differential",
+              "status": "optional",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=20",
+              "note": "Factory option or eligible package. Electronic locking is a separate 4x4 option requiring the 3.92 axle and an eligible engine/configuration; check the specific VIN for the installed differential."
             }
           ]
         },
@@ -17947,6 +17979,22 @@
               "status": "standard",
               "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C6SRFUP2TN411570",
               "note": "Listed under factory STANDARD EQUIPMENT for the 2026 RHO Crew Cab 4x4, 3.0L HO / 8-speed automatic. Optional equipment is listed separately."
+            },
+            {
+              "key": "bumpers",
+              "label": "Bumpers",
+              "value": "Black front and rear",
+              "status": "standard",
+              "sourceUrl": "https://www.ramtrucks.com/ram-1500/specs.rho.html",
+              "note": "U.S. 2026 RHO Crew Cab 4x4 base configuration. Separately available upgrades are listed where confirmed."
+            },
+            {
+              "key": "rear-seat-comfort",
+              "label": "Rear seat comfort",
+              "value": "60/40 split-folding bench",
+              "status": "standard",
+              "sourceUrl": "https://www.ramtrucks.com/ram-1500/specs.rho.html",
+              "note": "U.S. 2026 RHO Crew Cab 4x4 base configuration. Separately available upgrades are listed where confirmed."
             }
           ]
         },
