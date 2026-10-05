@@ -1,18 +1,34 @@
 // Compare the same equipment on both trims; missing evidence never means absent.
 export function equipmentRows(trims) {
-  const detailed = trims.every(t => t.comparison?.length);
-  const facts = trims.map(t => detailed ? t.comparison :
-    t.standard.map(f => ({...f, key:f.category, status:'standard'})));
+  // A sparse or announced trim must not discard the other trims' detailed facts.
+  const facts = trims.map(t => Array.isArray(t.comparison) ? t.comparison :
+    (t.standard||[]).map(f => ({...f, key:f.key||f.label, status:'standard'})));
   const keys = [...new Set(facts.flatMap(list => list.map(f => f.key)))];
   const normal = s => String(s).trim().toLowerCase().replace(/\s+/g,' ');
   return keys.map(key => {
     const cells = facts.map(list => list.find(f => f.key === key));
     const complete = cells.every(Boolean);
-    const same = complete && cells.every(f => f.status === cells[0].status && normal(f.value) === normal(cells[0].value));
-    const kind = !complete ? 'verify' : same ? 'shared' :
+    const known=cells.filter(f=>f&&f.status!=='verify');
+    const knownDifference=new Set(known.map(f=>f.status+'|'+normal(f.value))).size>1;
+    const same = complete && known.length===cells.length && cells.every(f => f.status === cells[0].status && normal(f.value) === normal(cells[0].value));
+    const kind = !complete||known.length!==cells.length ? 'verify' : same ? 'shared' :
       cells.some(f => f.status === 'standard') ? 'different' : 'options';
-    return {key, label:cells.find(Boolean).label, cells, kind};
+    return {key, label:cells.find(Boolean).label, cells, kind,knownDifference};
   });
+}
+
+export function selectedTrimIds(model,raw){
+  if(raw===null||raw===undefined)return model.trims.map(t=>t.id);
+  if(raw==='')return [];
+  const ids=new Set(String(raw).split(','));
+  const selected=model.trims.filter(t=>ids.has(t.id)).map(t=>t.id);
+  return selected.length?selected:model.trims.map(t=>t.id);
+}
+
+export function featureMatches(row,query){
+  const normal=s=>String(s||'').normalize('NFKC').toLowerCase().replace(/[-_]/g,' ').replace(/\s+/g,' ');
+  const text=normal([row.key,row.label,...row.cells.flatMap(c=>c?[c.value,c.note,c.benefit]:[])].join(' '));
+  return normal(query).trim().split(' ').filter(Boolean).every(term=>text.includes(term));
 }
 
 // Explain the buying choice without adding equipment or performance claims.

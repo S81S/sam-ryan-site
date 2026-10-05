@@ -7,7 +7,7 @@
       "name": "Jeep Wrangler 4-Door",
       "brand": "Jeep",
       "year": 2026,
-      "scope": "U.S. 2026 Wrangler. Four-door trim highlights; optional packages are excluded. Two-door availability and powertrain combinations vary.",
+      "scope": "U.S. 2026 Wrangler 4-Door. Standard rows describe each trim’s stated base configuration; optional rows identify separately available equipment and packages. See configuration details for powertrain-dependent equipment.",
       "coverageNote": "All 11 trims in Jeep’s current 2026 retail trim selector have cards. Whitecap, Rockslide and America250 are separate special packages/editions, not equipment attributed to a base trim. The commercial right-hand-drive Sport and 2027 releases are outside this 2026 retail comparison.",
       "sources": [
         {
@@ -14767,6 +14767,14 @@
               "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf"
             },
             {
+              "key": "engine-output",
+              "label": "Base-engine horsepower / torque",
+              "value": "305 hp / 271 lb-ft",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "note": "Factory rating for the base engine stated above. Optional engines have different ratings."
+            },
+            {
               "key": "transmission",
               "label": "Transmission",
               "value": "8-speed automatic",
@@ -14976,6 +14984,14 @@
               "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf"
             },
             {
+              "key": "engine-output",
+              "label": "Base-engine horsepower / torque",
+              "value": "305 hp / 271 lb-ft",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "note": "Factory rating for the base engine stated above. Optional engines have different ratings."
+            },
+            {
               "key": "transmission",
               "label": "Transmission",
               "value": "8-speed automatic",
@@ -15176,6 +15192,14 @@
               "value": "3.6L eTorque V6",
               "status": "standard",
               "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf"
+            },
+            {
+              "key": "engine-output",
+              "label": "Base-engine horsepower / torque",
+              "value": "305 hp / 271 lb-ft",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "note": "Factory rating for the base engine stated above. Optional engines have different ratings."
             },
             {
               "key": "transmission",
@@ -15379,6 +15403,14 @@
               "value": "3.6L eTorque V6",
               "status": "standard",
               "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf"
+            },
+            {
+              "key": "engine-output",
+              "label": "Base-engine horsepower / torque",
+              "value": "305 hp / 271 lb-ft",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "note": "Factory rating for the base engine stated above. Optional engines have different ratings."
             },
             {
               "key": "transmission",
@@ -15601,6 +15633,14 @@
               "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf"
             },
             {
+              "key": "engine-output",
+              "label": "Base-engine horsepower / torque",
+              "value": "420 hp / 469 lb-ft",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "note": "Factory rating for the base engine stated above. Optional engines have different ratings."
+            },
+            {
               "key": "transmission",
               "label": "Transmission",
               "value": "8-speed automatic",
@@ -15757,7 +15797,7 @@
             {
               "key": "front-seat-heat",
               "label": "Front seat heating",
-              "value": "Heated outboard front seats",
+              "value": "Heated front seats",
               "status": "standard",
               "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf"
             },
@@ -15836,6 +15876,14 @@
               "value": "3.0L Hurricane SO inline-six",
               "status": "standard",
               "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf"
+            },
+            {
+              "key": "engine-output",
+              "label": "Base-engine horsepower / torque",
+              "value": "420 hp / 469 lb-ft",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "note": "Factory rating for the base engine stated above. Optional engines have different ratings."
             },
             {
               "key": "transmission",
@@ -16064,9 +16112,17 @@
             {
               "key": "engine",
               "label": "Base engine",
-              "value": "3.0L Hurricane HO inline-six; 540 hp",
+              "value": "3.0L Hurricane HO inline-six",
               "status": "standard",
               "sourceUrl": "https://www.ramtrucks.com/towing/engine-performance/2026/rho.html"
+            },
+            {
+              "key": "engine-output",
+              "label": "Base-engine horsepower / torque",
+              "value": "540 hp / 521 lb-ft",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "note": "Factory rating for the base engine stated above. Optional engines have different ratings."
             },
             {
               "key": "driver-display",
@@ -16099,7 +16155,7 @@
             {
               "key": "front-seat-heat",
               "label": "Front seat heating",
-              "value": "Heated",
+              "value": "Heated front seats",
               "status": "standard",
               "sourceUrl": "https://www.ramtrucks.com/rho.html"
             },
@@ -16255,6 +16311,14 @@
               "value": "3.0L Hurricane HO inline-six",
               "status": "standard",
               "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf"
+            },
+            {
+              "key": "engine-output",
+              "label": "Base-engine horsepower / torque",
+              "value": "540 hp / 521 lb-ft",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "note": "Factory rating for the base engine stated above. Optional engines have different ratings."
             },
             {
               "key": "transmission",
@@ -16413,7 +16477,7 @@
             {
               "key": "front-seat-heat",
               "label": "Front seat heating",
-              "value": "Heated outboard front seats",
+              "value": "Heated front seats",
               "status": "standard",
               "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf"
             },
@@ -16492,6 +16556,14 @@
               "value": "3.0L Hurricane HO inline-six",
               "status": "standard",
               "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf"
+            },
+            {
+              "key": "engine-output",
+              "label": "Base-engine horsepower / torque",
+              "value": "540 hp / 521 lb-ft",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "note": "Factory rating for the base engine stated above. Optional engines have different ratings."
             },
             {
               "key": "transmission",
@@ -16650,7 +16722,7 @@
             {
               "key": "front-seat-heat",
               "label": "Front seat heating",
-              "value": "Heated outboard front seats",
+              "value": "Heated front seats",
               "status": "standard",
               "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf"
             },
@@ -16729,6 +16801,14 @@
               "value": "3.0L Hurricane HO inline-six",
               "status": "standard",
               "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf"
+            },
+            {
+              "key": "engine-output",
+              "label": "Base-engine horsepower / torque",
+              "value": "540 hp / 521 lb-ft",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "note": "Factory rating for the base engine stated above. Optional engines have different ratings."
             },
             {
               "key": "transmission",
@@ -16887,7 +16967,7 @@
             {
               "key": "front-seat-heat",
               "label": "Front seat heating",
-              "value": "Heated outboard front seats",
+              "value": "Heated front seats",
               "status": "standard",
               "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf"
             },
