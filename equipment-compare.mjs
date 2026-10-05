@@ -1,3 +1,4 @@
+import {featureInventoryLink} from './feature-inventory-link.mjs?v=1';
 import {appendStickerCredit} from './sticker-credit.mjs?v=source2';
 import {appendEquipmentFact} from './comparison-layout.mjs?v=specs1';
 import {applyFactoryEquipment} from './factory-equipment.mjs?v=wheel1';
@@ -13,7 +14,7 @@ function render(){
  if(recs.length<2){out.append(el('p','Choose two vehicles above to compare.'));return;}
  const requested=parseQuery($('group-query')?.value||new URLSearchParams(location.search).get('q')||'').requirements.map(r=>r.id);
  const rows=comparisonRows([...specificationDefinitions,...definitions.filter(([id])=>!/^engine(?:Size|Cyl|Inline)|^engine20$|^engine36$/.test(id))],recs.map(r=>r.s),requested);
- out.append(el('h2','Compare side by side'));
+ out.append(el('h2','Compare side by side'));out.append(el('p','Like a feature? Click an Included checkmark to find inventory with that equipment.'));
  const controls=el('div');controls.className='comparison-controls';
  const label=el('label','Find a feature');label.htmlFor='comparison-feature-filter';const search=el('input');search.id='comparison-feature-filter';search.type='search';search.placeholder='Seats, cameras, roof, towing…';search.value=viewState.search;
  controls.append(label,search);const buttons=el('div');buttons.className='comparison-view-buttons';controls.append(buttons);
@@ -42,7 +43,14 @@ function render(){
    }
   }
   for(const row of visible){const tr=el('tr'),name=el('th');name.scope='row';name.append(el('strong',(row.requested?'★ ':'')+row.label));tr.append(name);
-   row.facts.forEach(f=>{const td=el('td');appendEquipmentFact(td,f);tr.append(td)});body.append(tr);
+   row.facts.forEach((f,i)=>{const td=el('td');appendEquipmentFact(td,f);
+    if(f?.value===true&&!row.specification&&definitions.some(([id])=>id===row.id)){
+     const badge=td.querySelector('.equipment-answer');const a=el('a',badge.textContent);
+     const context=parseQuery($('group-query')?.value||new URLSearchParams(location.search).get('q')||'');
+     a.href=featureInventoryLink(row.id,{condition:recs[i].v.condition,advisor:new URLSearchParams(location.search).get('advisor'),modelTerms:context.terms});
+     a.className=badge.className+' equipment-feature-link';a.style.cssText='display:inline-block;min-height:44px;padding:10px 12px;text-decoration:underline;text-underline-offset:3px;border:1px solid currentColor;border-radius:6px';
+     a.title='Find vehicles with '+row.label;a.setAttribute('aria-label','Find vehicles with '+row.label);badge.replaceWith(a);
+    }tr.append(td)});body.append(tr);
   }if(!body.children.length){wrap.append(el('p','No differences found in the equipment we could verify. This does not confirm the vehicles are identical. Check More equipment details or the original stickers for features that still need verification.'));return;}table.append(body);wrap.append(table);
  }
  for(const [id,text] of [['important','Differences'],...(requested.length?[['requested','Your must-haves']]:[]),['all','Shared equipment']]){const b=el('button',text);b.type='button';b.addEventListener('click',()=>{mode=id;draw()});buttons.append(b);buttonRefs.push([id,b])}

@@ -1,15 +1,18 @@
+import {applyFeatureFilter} from './feature-inventory-link.mjs?v=1';
 import {sameModelOptions,modelName} from './same-model-options.mjs?v=wheel1';
 import {optionGuidance,noMatchGuidance} from './option-guidance.mjs?v=option1';
 import {shoppingContext,comparisonLink} from './shopping-context.mjs?v=shopping1';
 import {recoveryOptions} from './search-recovery.mjs?v=wheel1';
 import {openVehiclePreview} from './vehicle-preview.mjs?v=shopping1';
-import {parseQuery,matchVehicle,labels} from './equipment-search.mjs?v=categories1';
+import {parseQuery,matchVehicle,labels,definitions} from './equipment-search.mjs?v=categories1';
 import {categoryLabels} from './vehicle-categories.mjs?v=categories1';
 const $=id=>document.getElementById(id),data=window.usedInventoryData,index=window.equipmentIndex;
 const el=(tag,text,cls)=>{const e=document.createElement(tag);if(text!==undefined)e.textContent=text;if(cls)e.className=cls;return e;};
 const cash=n=>n===null?'Call for price':new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(n);
 const link=(label,url)=>{const a=el('a',label,'mini-btn');a.href=url;return a;};
 const drivewayLink=vehicle=>link('See in Your Driveway','/see-yourself?'+new URLSearchParams({vehicle:vehicle.vin,advisor:shoppingContext().advisor})+'#driveway-heading');
+const featureParam=new URLSearchParams(location.search).get('feature');
+if(featureParam&&definitions.some(([id])=>id===featureParam)){const featureNotice=el('p','Feature filter: '+labels[featureParam]);featureNotice.id='active-feature-filter';featureNotice.setAttribute('role','status');const remove=el('button','Remove feature filter','mini-btn');remove.type='button';remove.addEventListener('click',()=>{const u=new URL(location.href);u.searchParams.delete('feature');history.replaceState(null,'',u);featureNotice.remove();$('matchBtn').click();});featureNotice.append(document.createTextNode(' '),remove);$('request').parentNode.append(featureNotice);}
 $('sticker-coverage').textContent='Explore equipment using original window stickers and reviewed factory specifications.';
 const browseInventory=document.body.dataset.browseInventory==='true';
 const conditionRadios=[...document.querySelectorAll('input[name="vehicle-condition"]')];
@@ -124,7 +127,7 @@ function render(){
   out.append(help);
  }
 }
-$('matchBtn').addEventListener('click',()=>{const value=$('request').value.trim();if(!value&&!browseInventory){lastQuery=null;$('more-matches').hidden=true;$('matchResults').textContent='Tell us a model, budget or equipment you want.';return;}lastQuery=parseQuery(value);const selectedCondition=$('search-condition').value;if(lastQuery.condition&&selectedCondition!=='Both'&&lastQuery.condition!==selectedCondition){lastQuery.ambiguity=`Your request says ${lastQuery.condition.toLowerCase()}. Choose ${lastQuery.condition} above, or edit your request.`;}lastQuery.condition=selectedCondition==='Both'?lastQuery.condition:selectedCondition;const searchUrl=new URL(location.href);searchUrl.searchParams.set('q',value);searchUrl.searchParams.set('condition',selectedCondition);history.replaceState(null,'',searchUrl);try{sessionStorage.setItem('samRyanLastSearch',value);}catch{}visible=pageSize();searchCounts={};render();updateCompareBar();if(!restoringSearch&&Object.keys(searchCounts).length)window.cwsTrack?.('search_results',searchCounts);revealResults();});
+$('matchBtn').addEventListener('click',()=>{const value=$('request').value.trim();if(!value&&!browseInventory){lastQuery=null;$('more-matches').hidden=true;$('matchResults').textContent='Tell us a model, budget or equipment you want.';return;}lastQuery=applyFeatureFilter(parseQuery(value),new URLSearchParams(location.search).get("feature"),definitions);const selectedCondition=$('search-condition').value;if(lastQuery.condition&&selectedCondition!=='Both'&&lastQuery.condition!==selectedCondition){lastQuery.ambiguity=`Your request says ${lastQuery.condition.toLowerCase()}. Choose ${lastQuery.condition} above, or edit your request.`;}lastQuery.condition=selectedCondition==='Both'?lastQuery.condition:selectedCondition;const searchUrl=new URL(location.href);searchUrl.searchParams.set('q',value);searchUrl.searchParams.set('condition',selectedCondition);history.replaceState(null,'',searchUrl);try{sessionStorage.setItem('samRyanLastSearch',value);}catch{}visible=pageSize();searchCounts={};render();updateCompareBar();if(!restoringSearch&&Object.keys(searchCounts).length)window.cwsTrack?.('search_results',searchCounts);revealResults();});
 $('results-per-page').addEventListener('change',()=>{visible=pageSize();render();});
 $('search-sort').addEventListener('change',()=>{visible=pageSize();render();});
 $('show-unverified').addEventListener('change',()=>{visible=pageSize();render();});
@@ -134,7 +137,7 @@ const savedCondition=new URLSearchParams(location.search).get('condition');if(['
 $('search-condition').addEventListener('change',()=>{if(browseInventory||$('request').value.trim())$('matchBtn').click();});
 let initial=new URLSearchParams(location.search).get('q');try{if(!browseInventory)initial??=sessionStorage.getItem('samRyanLastSearch');}catch{}
 if(initial){$('request').value=initial.slice(0,1000);$('matchBtn').click();}else if(browseInventory){$('matchBtn').click();}
-$('clear-inventory-search')?.addEventListener('click',()=>{$('request').value='';$('show-unverified').checked=false;$('matchBtn').click();});
+$('clear-inventory-search')?.addEventListener('click',()=>{const clearUrl=new URL(location.href);clearUrl.searchParams.delete('feature');history.replaceState(null,'',clearUrl);$('active-feature-filter')?.remove();$('request').value='';$('show-unverified').checked=false;$('matchBtn').click();});
 
 restoringSearch=false;
 document.querySelectorAll('[data-feature]').forEach(b=>b.addEventListener('click',()=>{
