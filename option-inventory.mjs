@@ -18,9 +18,20 @@ export function installedOptionFact(vehicle,sticker,option){
  const key=option.key.replace(/_/g,'-'),text=option.label+' '+option.value;
  if(/audio/.test(key)||/\baudio\b/i.test(option.label)){
   const wanted=audioInventoryFeature({displayValue:text}),installed=installedAudioFact(vehicle,sticker);
-  if(wanted)return installed?{...installed,value:audioInventoryFeature(installed)===wanted}:null;
+  if(wanted){
+   const brand=installed&&audioInventoryFeature(installed);
+   if(brand)return {...installed,value:brand===wanted};
+   const confirmed=sticker.features?.[wanted];
+   return confirmed?{...confirmed,sourceUrl:confirmed.sourceUrl||sticker.sourceUrl}:null;
+  }
  }
  let features=ids[key];
+ const name=normalize(option.label);
+ if(/front seat heat|heated front seat/.test(name))features=['heatedSeats'];
+ if(/front seat ventil|ventilated front seat/.test(name))features=['ventilated'];
+ if(/front seat massage/.test(name))features=['massage'];
+ if(/heated rear seat|rear seat heat/.test(name))features=['rearHeated'];
+ if(/panoramic sunroof/.test(name))features=['panoramic'];
  // A 35-inch package must not match a different tire size or unrelated wheel option.
  if(/tire|larger-tires/.test(key)){const size=text.match(/\b(3[3-7])[ -]?inch/i);if(size)features=['tireDiameter'+size[1]];}
  if(features){
