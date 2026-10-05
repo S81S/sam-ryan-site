@@ -1,11 +1,11 @@
-import {optionFromParams} from './option-inventory.mjs?v=options3';
+import {optionFromParams} from './option-inventory.mjs?v=options4';
 import {applyFeatureFilter} from './feature-inventory-link.mjs?v=1';
 import {sameModelOptions,modelName} from './same-model-options.mjs?v=wheel1';
 import {optionGuidance,noMatchGuidance} from './option-guidance.mjs?v=option1';
 import {shoppingContext,comparisonLink} from './shopping-context.mjs?v=audit2';
 import {recoveryOptions} from './search-recovery.mjs?v=wheel1';
 import {openVehiclePreview} from './vehicle-preview.mjs?v=shopping1';
-import {parseQuery,matchVehicle,labels,definitions} from './equipment-search.mjs?v=options3';
+import {parseQuery,matchVehicle,labels,definitions} from './equipment-search.mjs?v=options4';
 import {categoryLabels} from './vehicle-categories.mjs?v=categories1';
 const $=id=>document.getElementById(id),data=window.usedInventoryData,index=window.equipmentIndex;
 const el=(tag,text,cls)=>{const e=document.createElement(tag);if(text!==undefined)e.textContent=text;if(cls)e.className=cls;return e;};

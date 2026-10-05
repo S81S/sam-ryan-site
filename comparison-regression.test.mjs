@@ -95,7 +95,7 @@ test('selected equipment survives comparison links and advisor requests',async()
  const option={key:'touchscreen-upgrade',label:'Larger touchscreen option',value:'12-inch Uconnect 5 NAV'};
  assert.equal(installedOptionFact(vehicle,s,option).value,true);
  assert.equal(installedOptionFact(vehicle,s,{...option,value:'14.5-inch Uconnect'}).value,false);
- assert.equal(installedOptionFact(vehicle,{...s,lines:['Uconnect 5 NAV with 14.4-Inch Display']},{...option,value:'14.5-inch Uconnect'}).value,false);
+ assert.equal(installedOptionFact(vehicle,{...s,lines:['Uconnect 5 NAV with 14.4-Inch Display']},{...option,value:'14.5-inch Uconnect'}),null);
  });
  test('a power tailgate release cannot match powered opening and closing',()=>{
  const option={key:'power-tailgate',label:'Power tailgate',value:'Power opening/closing available'};
@@ -135,4 +135,24 @@ test('selected equipment survives comparison links and advisor requests',async()
  assert.equal(installedOptionFact(vehicle,s,option).value,true);
  assert.equal(installedOptionFact(vehicle,s,{...option,value:'12-way power'}).value,false);
  assert.equal(installedOptionFact(vehicle,s,{...option,value:'8-way manual'}).value,false);
+ const withLumbar={...option,value:'8-way power; 4-way power lumbar'};
+ assert.equal(installedOptionFact(vehicle,s,withLumbar),null);
+ assert.equal(installedOptionFact(vehicle,{...s,lines:[...s.lines,'4-Way Power Driver Lumbar Adjust']},withLumbar).value,true);
+ });
+
+ test('optional powertrain matches its engine and transmission rather than guide phrasing',()=>{
+ const s={vin:vehicle.vin,status:'verified',features:{},lines:['Engine: 6.7L I6 Cummins HO Turbo Diesel Engine','Transmission: 8-Speed Automatic']};
+ const option={key:'diesel-upgrade',label:'Diesel option',value:'6.7L Cummins HO'};
+ assert.equal(installedOptionFact(vehicle,s,option).value,true);
+ assert.equal(installedOptionFact(vehicle,{...s,lines:['Engine: 6.7L I6 Cummins Turbo Diesel Engine']},option).value,false);
+ const automatic={key:'automatic-powertrain-options',label:'Other factory powertrain configurations',value:'2.0L turbo I4 or 3.6L V6 / 8-speed automatic'};
+ assert.equal(installedOptionFact(vehicle,{...s,lines:['Engine: 3.6L V6 Engine','Transmission: 8-Speed Automatic']},automatic).value,true);
+ assert.equal(installedOptionFact(vehicle,{...s,lines:['Engine: 3.6L V6 Engine','Transmission: 6-Speed Manual']},automatic).value,false);
+ });
+
+ test('specification links use installed normalized values and source overrides',()=>{
+ const s={vin:vehicle.vin,status:'verified',features:{},lines:['Uconnect 5 NAV with 8.4-Inch Display','OPTIONAL EQUIPMENT','Uconnect 5 NAV with 12-Inch Display']};
+ const option={key:'comparison-infotainmentScreen',label:'Infotainment screen size',value:'12 inches'};
+ assert.equal(installedOptionFact(vehicle,s,option).value,true);
+ assert.equal(installedOptionFact(vehicle,s,{...option,value:'8.4 inches'}).value,false);
  });

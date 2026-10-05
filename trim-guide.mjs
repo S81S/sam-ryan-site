@@ -1,4 +1,4 @@
-import {optionInventoryLink} from './option-inventory.mjs?v=options3';
+import {optionInventoryLink} from './option-inventory.mjs?v=options4';
 import {parseQuery} from './equipment-search.mjs';
 import {featureInventoryLink} from './feature-inventory-link.mjs';
 import {equipmentRows,equipmentExplanation,selectedTrimIds,featureMatches} from './trim-comparison.mjs?v=errors1-20261004-alltrims';

@@ -1,4 +1,4 @@
-import {optionInventoryLink} from './option-inventory.mjs?v=options3';
+import {optionInventoryLink} from './option-inventory.mjs?v=options4';
 import {audioInventoryFeature} from './audio-evidence.mjs?v=errors1';
 import {equipmentReviewReason} from './equipment-review.mjs?v=errors1';
 import {featureInventoryLink} from './feature-inventory-link.mjs?v=1';
@@ -7,7 +7,7 @@ import {appendEquipmentFact} from './comparison-layout.mjs?v=errors1';
 import {applyFactoryEquipment} from './factory-equipment.mjs?v=errors1';
 import {comparisonRows,visibleComparisonRows} from './comparison-rows.mjs?v=errors1';
 import {withComparisonSpecifications,specificationDefinitions} from './comparison-specs.mjs?v=audit3';
-import {definitions,parseQuery} from './equipment-search.mjs?v=options3';
+import {definitions,parseQuery} from './equipment-search.mjs?v=options4';
 const $=id=>document.getElementById(id),el=(tag,text)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;return n};
 const short=v=>v.stock?`Stock ${v.stock}`:`VIN …${v.vin.slice(-6)}`;
 const indexEngine=v=>{const s=window.equipmentIndex.records[v.vin];return s?.status==='verified'?s.engine?.replace(/^Engine:\s*/i,''):null;};
@@ -16,11 +16,12 @@ function render(){
  const out=$('automatic-equipment');out.replaceChildren();
  const recs=['1','2','3','4','5'].map(side=>({side,v:window.usedInventoryData.vehicles.find(v=>v.vin===$('choose-'+side)?.value)})).filter(r=>r.v).map(r=>({...r,s:withComparisonSpecifications(r.v,applyFactoryEquipment(r.v,window.equipmentIndex.records[r.v.vin]))}));
  if(recs.length<2){out.append(el('p','Choose two vehicles above to compare.'));return;}
+ const pendingEquipment=recs.some(({s,side,v})=>s?.status!=='verified'&&(v.decodePending||$('lookup-status-'+side)?.getAttribute('aria-busy')==='true'));
  const contextParams=new URLSearchParams(location.search);
  const requested=[...new Set(parseQuery([$('group-query')?.value||contextParams.get('q')||'',contextParams.get('requestedEquipment')||''].join(' ')).requirements.map(r=>r.id))];
  const rows=comparisonRows([...specificationDefinitions,...definitions.filter(([id])=>!/^engine(?:Size|Cyl|Inline)|^engine20$|^engine36$/.test(id))],recs.map(r=>r.s),requested);
  const counts={difference:rows.filter(r=>r.group==='difference').length,same:rows.filter(r=>r.group==='same').length,check:rows.filter(r=>r.group==='check'||(r.requested&&r.group==='unknown')).length};
- out.append(el('h2','Compare side by side'));out.append(el('p',`${counts.same} shared details · ${counts.difference} confirmed differences · ${counts.check} items need source details`));out.append(el('p','Like a feature? Click an Included checkmark to find inventory with that equipment.'));
+ out.append(el('h2','Compare side by side'));if(pendingEquipment)out.append(el('p','Checking original equipment. The comparison updates as each vehicle’s source is read.'));out.append(el('p',`${counts.same} shared details · ${counts.difference} confirmed differences · ${counts.check} items need source details`));out.append(el('p','Like a feature? Click an Included checkmark to find inventory with that equipment.'));
  const controls=el('div');controls.className='comparison-controls';
  const label=el('label','Find a feature');label.htmlFor='comparison-feature-filter';const search=el('input');search.id='comparison-feature-filter';search.type='search';search.placeholder='Seats, cameras, roof, towing…';search.value=viewState.search;
  controls.append(label,search);const buttons=el('div');buttons.className='comparison-view-buttons';controls.append(buttons);
@@ -33,7 +34,7 @@ function render(){
   const visible=visibleComparisonRows(rows,mode,search.value);viewState.mode=mode;viewState.search=search.value;
   status.textContent=search.value?'Matching '+(mode==='important'?'differences':mode==='all'?'shared equipment':mode==='check'?'items to check':'equipment'):mode==='complete'?'All confirmed equipment — shared details and differences':mode==='important'?'Confirmed differences':mode==='check'?'Why these items need checking':mode==='requested'?'Your requested features':'Shared equipment';
   legend.hidden=!visible.some(r=>r.facts.some(f=>!f));
-  if(!visible.length){wrap.append(el('p',search.value?'No features match that wording.':mode==='check'?'No evidence gaps in these recorded features.':mode==='all'?'No fully confirmed shared equipment in these recorded features.':'No confirmed differences in these recorded features. Check All equipment or Items to check.'));return;}
+  if(!visible.length){wrap.append(el('p',search.value?'No features match that wording.':pendingEquipment?'Checking original equipment. Shared details and differences will appear as the sources are read.':mode==='complete'?'No fully confirmed shared details or differences yet. Open Items to check for the source-specific reasons.':mode==='check'?'No evidence gaps in these recorded features.':mode==='all'?'No fully confirmed shared equipment in these recorded features.':'No confirmed differences in these recorded features. Check All equipment or Items to check.'));return;}
   const table=el('table');table.className='equipment-matrix';const caption=el('caption','Equipment at a glance');caption.className='matrix-caption';table.append(caption);
   const head=el('thead'),tr=el('tr'),corner=el('th','Feature');corner.scope='col';tr.append(corner);
   for(const {v} of recs){const th=el('th');th.scope='col';th.append(el('strong',v.title),el('small',short(v)));tr.append(th)}head.append(tr);table.append(head);
@@ -46,7 +47,7 @@ function render(){
    row.facts.forEach((f,i)=>{const td=el('td');appendEquipmentFact(td,f,document,equipmentReviewReason(window.equipmentIndex.records[recs[i].v.vin],recs[i].v.vin));
     const audioFeature=['audioSystem','premiumAudio'].includes(row.id)?audioInventoryFeature(recs[i].s?.features?.audioSystem):null;
     const inventoryFeature=audioFeature||(!row.specification&&definitions.some(([id])=>id===row.id)?row.id:null);
-    const optionKey={infotainmentScreen:'touchscreen',instrumentScreen:'driver-display',driverAdjustment:'driver-seat',passengerAdjustment:'passenger-seat',audioSystem:'audio'}[row.id];
+    const optionKey=row.specification?'comparison-'+row.id:null;
     if(f?.value===true&&(inventoryFeature||optionKey)){
      const badge=td.querySelector('.equipment-answer');const a=el('a',badge.textContent);
      const context=parseQuery($('group-query')?.value||new URLSearchParams(location.search).get('q')||'');
