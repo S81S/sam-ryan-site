@@ -15,7 +15,7 @@ export function visibleComparisonRows(rows, mode='important', search='') {
   if(term)return (row.label+' '+row.facts.flatMap(f=>[f?.displayValue||'',...(f?.evidence||[])]).join(' ')).toLowerCase().includes(term);
   if(mode==='requested')return row.requested;
   if(mode==='all')return row.group==='same'&&row.facts.every(Boolean)&&row.facts.some(f=>f.value);
-  if(mode==='check')return row.group==='check';
-  return row.id!=='airConditioning'&&(row.group==='difference'||(row.group==='check'&&row.facts.some(f=>f?.value)));
+  if(mode==='check')return row.group==='check'||(row.requested&&row.group==='unknown');
+  return row.id!=='airConditioning'&&row.group==='difference';
  });
 }

@@ -1,8 +1,9 @@
+import {equipmentReviewReason} from './equipment-review.mjs?v=expert1';
 import {featureInventoryLink} from './feature-inventory-link.mjs?v=1';
 import {appendStickerCredit} from './sticker-credit.mjs?v=source2';
-import {appendEquipmentFact} from './comparison-layout.mjs?v=specs1';
-import {applyFactoryEquipment} from './factory-equipment.mjs?v=wheel1';
-import {comparisonRows,visibleComparisonRows} from './comparison-rows.mjs?v=specs2';
+import {appendEquipmentFact} from './comparison-layout.mjs?v=expert1';
+import {applyFactoryEquipment} from './factory-equipment.mjs?v=expert1';
+import {comparisonRows,visibleComparisonRows} from './comparison-rows.mjs?v=expert1';
 import {withComparisonSpecifications,specificationDefinitions} from './comparison-specs.mjs?v=specs2';
 import {definitions,parseQuery} from './equipment-search.mjs?v=wheel1';
 const $=id=>document.getElementById(id),el=(tag,text)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;return n};
@@ -22,11 +23,11 @@ function render(){
  const status=el('p');status.setAttribute('role','status');
  const wrap=el('div');wrap.className='comparison-table-wrap';wrap.tabIndex=0;wrap.setAttribute('role','region');wrap.setAttribute('aria-label','Vehicle equipment comparison; scroll sideways for more vehicles');
  let mode=viewState.mode==='requested'&&!requested.length?'important':viewState.mode;const buttonRefs=[];
- const legend=el('p','Verify / Unknown means vehicle-specific evidence is incomplete. Externally decoded specs do not verify dealer listings, options or packages.');legend.className='comparison-legend';
+ const legend=el('p','Items to check explain where sticker or factory-reference evidence is missing. A missing entry does not establish that a feature is absent.');legend.className='comparison-legend';
  function draw(){
   wrap.replaceChildren();for(const [id,b] of buttonRefs)b.setAttribute('aria-pressed',String(id===mode));
   const visible=visibleComparisonRows(rows,mode,search.value);viewState.mode=mode;viewState.search=search.value;
-  status.textContent=search.value?'Matching features':mode==='important'?(visible.some(r=>r.facts.some(f=>!f))?'Confirmed differences and details to verify':'Confirmed differences'):mode==='requested'?'Your requested features':'Shared equipment';
+  status.textContent=search.value?'Matching features':mode==='important'?'Confirmed differences':mode==='check'?'Why these items need checking':mode==='requested'?'Your requested features':'Shared equipment';
   legend.hidden=!visible.some(r=>r.facts.some(f=>!f));
   if(!visible.length&&mode!=='important'){wrap.append(el('p',search.value?'No features match that wording.':'No confirmed equipment differences to show. See Shared equipment or ask us about a specific feature.'));return;}
   const table=el('table');table.className='equipment-matrix';const caption=el('caption','Equipment at a glance');caption.className='matrix-caption';table.append(caption);
@@ -34,7 +35,7 @@ function render(){
   for(const {v} of recs){const th=el('th');th.scope='col';th.append(el('strong',v.title),el('small',short(v)));tr.append(th)}head.append(tr);table.append(head);
   const body=el('tbody');
   if(recs.some(({v})=>v.external)){
-   const fields=[['Data source',v=>v.external?(v.decodedAt?'External VIN identity confirmed; dealer listing unverified':'External VIN; identity and dealer listing unverified'):'Covert dealer listing snapshot'],['VIN',v=>v.vin],['Advertised price',v=>Number.isFinite(v.price)?new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(v.price):'Unknown — Verify'],['Mileage',v=>Number.isFinite(v.miles)?v.miles.toLocaleString():'Unknown — Verify'],['Body / cab',v=>v.decodedSpecs?.body||(/CREW CAB/i.test(v.title)?'Crew cab (listing)':v.decodePending?'Checking VIN…':'Not confirmed')],['Engine',v=>indexEngine(v)||v.decodedSpecs?.engine||(v.decodePending?'Checking VIN…':'Not confirmed')],['Fuel',v=>v.decodedSpecs?.fuel||(v.decodePending?'Checking VIN…':'Not confirmed')]];
+   const fields=[['Data source',v=>v.external?(v.decodedAt?'External VIN identity confirmed; dealer listing unverified':'External VIN; identity and dealer listing unverified'):'Covert dealer listing snapshot'],['VIN',v=>v.vin],['Advertised price',v=>Number.isFinite(v.price)?new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(v.price):'Not supplied for this outside vehicle'],['Mileage',v=>Number.isFinite(v.miles)?v.miles.toLocaleString():'Not supplied for this outside vehicle'],['Body / cab',v=>v.decodedSpecs?.body||(/CREW CAB/i.test(v.title)?'Crew cab (listing)':v.decodePending?'Checking VIN…':'VIN decoder did not provide this field')],['Engine',v=>indexEngine(v)||v.decodedSpecs?.engine||(v.decodePending?'Checking VIN…':'VIN decoder did not provide this field')],['Fuel',v=>v.decodedSpecs?.fuel||(v.decodePending?'Checking VIN…':'VIN decoder did not provide this field')]];
    for(const [label,value] of fields){const row=el('tr'),th=el('th',label);th.scope='row';row.append(th);for(const {v} of recs)row.append(el('td',value(v)));body.append(row);}
   }
   if(mode==='important'&&!search.value){
@@ -44,7 +45,7 @@ function render(){
    }
   }
   for(const row of visible){const tr=el('tr'),name=el('th');name.scope='row';name.append(el('strong',(row.requested?'★ ':'')+row.label));tr.append(name);
-   row.facts.forEach((f,i)=>{const td=el('td');appendEquipmentFact(td,f);
+   row.facts.forEach((f,i)=>{const td=el('td');appendEquipmentFact(td,f,document,equipmentReviewReason(window.equipmentIndex.records[recs[i].v.vin],recs[i].v.vin));
     if(f?.value===true&&!row.specification&&definitions.some(([id])=>id===row.id)){
      const badge=td.querySelector('.equipment-answer');const a=el('a',badge.textContent);
      const context=parseQuery($('group-query')?.value||new URLSearchParams(location.search).get('q')||'');
@@ -52,9 +53,9 @@ function render(){
      a.className=badge.className+' equipment-feature-link';a.style.cssText='display:inline-block;min-height:44px;padding:10px 12px;text-decoration:underline;text-underline-offset:3px;border:1px solid currentColor;border-radius:6px';
      a.title='Find vehicles with '+row.label;a.setAttribute('aria-label','Find vehicles with '+row.label);badge.replaceWith(a);
     }tr.append(td)});body.append(tr);
-  }if(!body.children.length){wrap.append(el('p','No differences found in the equipment we could verify. This does not confirm the vehicles are identical. Check More equipment details or the original stickers for features that still need verification.'));return;}table.append(body);wrap.append(table);
+  }if(!body.children.length){wrap.append(el('p','No confirmed differences in the recorded equipment. Open Items to check for the evidence gaps and what needs checking.'));return;}table.append(body);wrap.append(table);
  }
- for(const [id,text] of [['important','Differences'],...(requested.length?[['requested','Your must-haves']]:[]),['all','Shared equipment']]){const b=el('button',text);b.type='button';b.addEventListener('click',()=>{mode=id;draw()});buttons.append(b);buttonRefs.push([id,b])}
+ for(const [id,text] of [['important','Differences'],...(requested.length?[['requested','Your must-haves']]:[]),['all','Shared equipment'],['check','Items to check ('+rows.filter(r=>r.group==='check'||(r.requested&&r.group==='unknown')).length+')']]){const b=el('button',text);b.type='button';b.addEventListener('click',()=>{mode=id;draw()});buttons.append(b);buttonRefs.push([id,b])}
  search.addEventListener('input',draw);out.append(controls,status,wrap,legend);draw();
  const unresolved=rows.filter(r=>r.group==='check'&&r.facts.some(f=>f?.value));
  if(unresolved.length){const panel=el('details');panel.className='comparison-unresolved';panel.append(el('summary','More equipment details'));

@@ -1,5 +1,5 @@
 import {repairWheelSeatEvidence} from './wheel-seat-evidence.mjs?v=clean-shopping1';
-import {stickerAudits} from './factory-sticker-audits.mjs?v=shopping1';
+import {stickerAudits} from './factory-sticker-audits.mjs?v=expert1';
 import {repairSeatEvidence} from './seat-evidence.mjs?v=coverage4';
 import {repairTowEvidence,repairTrailerBrakeEvidence} from './tow-evidence.mjs?v=next3';
 import {additionalFactoryRules} from './factory-catalog-2026.mjs?v=complete1';

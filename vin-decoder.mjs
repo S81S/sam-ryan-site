@@ -10,7 +10,7 @@ export async function decodeVIN(vin, fetcher = fetch) {
   throw Error('The decoder could not confirm this VIN. Check the VIN or supply its original sticker.');
  // Only identity and basic specifications; never map decoder trim/options to factory equipment.
  return {title: [data.ModelYear, data.Make, data.Model].join(' '), year: Number(data.ModelYear),
-  decodedSpecs: {body: data.BodyClass || 'Unknown', engine: Number(data.DisplacementL)>0 ? Number(data.DisplacementL).toFixed(1) + ' L' : 'Unknown',
-   cylinders: data.EngineCylinders || 'Unknown', fuel: data.FuelTypePrimary || 'Unknown', drive: data.DriveType || 'Unknown'},
+  decodedSpecs: {body: data.BodyClass || 'Not provided by the VIN decoder', engine: Number(data.DisplacementL)>0 ? Number(data.DisplacementL).toFixed(1) + ' L' : 'Not provided by the VIN decoder',
+   cylinders: data.EngineCylinders || 'Not provided by the VIN decoder', fuel: data.FuelTypePrimary || 'Not provided by the VIN decoder', drive: data.DriveType || 'Not provided by the VIN decoder'},
   decodedSourceUrl: sourceUrl, decodedAt: new Date().toISOString()};
 }

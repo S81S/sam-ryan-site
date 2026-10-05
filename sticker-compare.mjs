@@ -1,7 +1,7 @@
-import {decodeVIN,normalizeVIN} from './vin-decoder.mjs?v=external1';
+import {decodeVIN,normalizeVIN} from './vin-decoder.mjs?v=expert1';
 import {appendStickerCredit,usesWindowStickerOrg} from './sticker-credit.mjs?v=source2';
 import {installVehiclePickers} from './compare-picker.mjs?v=vin-confirmation2';
-const readSticker=async(...args)=>(await import('./sticker-reader.mjs?v=clean-shopping1')).readSticker(...args);
+const readSticker=async(...args)=>(await import('./sticker-reader.mjs?v=expert1')).readSticker(...args);
 import {shoppingContext} from './shopping-context.mjs?v=shopping1';
 import {openVehiclePreview} from './vehicle-preview.mjs?v=next3';
 const vehicles=window.usedInventoryData.vehicles.filter(v=>v.locationId==='18393');
@@ -37,7 +37,7 @@ function reset(side){
  if(urls[side]){URL.revokeObjectURL(urls[side]);delete urls[side]}
  $('pdf-'+side).removeAttribute('src');$('pdf-'+side).hidden=true;$('file-'+side).value='';$('file-status-'+side).textContent='No local PDF selected.';
  $('summary-'+side).textContent=`${v.title} · ${cash(v.price)} · ${v.miles===null?'':v.miles.toLocaleString()+' miles · '}Stock ${v.stock}`;
- if(v.external){$('summary-'+side).textContent=`${v.title} · VIN ${v.vin} · ${v.decodedAt?'External decoded specs only (NHTSA)':'External VIN — identity Unknown'} · Price, mileage, availability, options/packages: Verify.`;if(v.decodedSpecs){const specs=document.createElement('p');specs.textContent=Object.entries(v.decodedSpecs).map(([key,value])=>key+': '+value).join(' · ');const source=document.createElement('a');source.href=v.decodedSourceUrl;source.target='_blank';source.rel='noopener';source.textContent='NHTSA decoder source ↗';$('summary-'+side).append(specs,source);}}
+ if(v.external){$('summary-'+side).textContent=`${v.title} · VIN ${v.vin} · ${v.decodedAt?'External decoded specs only (NHTSA)':'VIN identity lookup in progress'} · Price, mileage, availability, options/packages: Verify.`;if(v.decodedSpecs){const specs=document.createElement('p');specs.textContent=Object.entries(v.decodedSpecs).map(([key,value])=>key+': '+value).join(' · ');const source=document.createElement('a');source.href=v.decodedSourceUrl;source.target='_blank';source.rel='noopener';source.textContent='NHTSA decoder source ↗';$('summary-'+side).append(specs,source);}}
  else {const evidence=document.createElement('small');evidence.textContent='Covert dealer listing snapshot • '+(v.observedAt||window.usedInventoryData.capturedAt)+' • Confirm current price and availability.';$('summary-'+side).append(document.createElement('br'),evidence);}
  $('listing-'+side).hidden=!!v.external;$('listing-'+side).href='contact.html?vehicle='+encodeURIComponent(v.vin);$('listing-'+side).textContent='View photos & vehicle details';$('listing-'+side).removeAttribute('target');$('listing-'+side).onclick=e=>{e.preventDefault();openVehiclePreview(v,shoppingContext().q)};
  const originalSource=v.stickerUrl||index.records[v.vin]?.sourceUrl;$('sticker-'+side).hidden=!v.carfaxUrl&&!originalSource;$('sticker-'+side).href=originalSource||v.carfaxUrl||v.sourceUrl;$('sticker-'+side).textContent=originalSource?(usesWindowStickerOrg(originalSource)?'Open window sticker via WindowSticker.org ↗':'Open original window sticker ↗'):'Open CARFAX → Original Window Sticker ↗';
@@ -138,7 +138,7 @@ function addExternal(vin,side){
    if(index.records[vin]?.status!=='verified')reset(side);note.textContent='VIN found: '+v.title+' • NHTSA identity confirmed. Original-sticker lookup is separate from VIN decoding.';
    const link=document.createElement('a');link.href=decoded.decodedSourceUrl;link.target='_blank';link.rel='noopener';link.textContent='View decoder source ↗';note.append(document.createElement('br'),link);
    const specs=document.createElement('p');specs.textContent=Object.entries(decoded.decodedSpecs).map(([key,value])=>key+': '+value).join(' · ');note.append(specs);
-  }).catch(error=>{if(vehicle(side)?.vin===vin&&note.isConnected)note.textContent='VIN added with unverified identity. '+error.message+' Options/packages: Unknown.';});
+  }).catch(error=>{if(vehicle(side)?.vin===vin&&note.isConnected)note.textContent='VIN added with unverified identity. '+error.message+' Factory options require a readable original sticker.';});
  }
  b.addEventListener('click',async()=>{
   b.disabled=true;b.textContent='Checking…';

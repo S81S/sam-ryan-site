@@ -5,11 +5,14 @@ export function preferredLayout(selectedLayout, narrowScreen, vehicleCount) {
 }
 
 // Both layouts use exactly the same answer and evidence renderer.
-export function appendEquipmentFact(container,fact,document=globalThis.document) {
- const badge=el(document,'strong',!fact?'Verify / Unknown':fact.displayValue??(fact.value?'✓ Included':'— Not equipped'));
+export function appendEquipmentFact(container,fact,document=globalThis.document,missingReason) {
+ const badge=el(document,'strong',!fact?(missingReason?.title||'Sticker evidence needed'):fact.displayValue??(fact.value?'✓ Included':'— Not equipped'));
  badge.className='equipment-answer '+(!fact?'unknown':fact.value?'yes':'no');
- if(!fact)badge.setAttribute('aria-label','Equipment evidence incomplete');
- container.append(badge);if(!fact)return;
+ if(!fact)badge.setAttribute('aria-label',missingReason?.title||'Sticker evidence needed');
+ container.append(badge);if(!fact){
+ const reason=el(document,'p',missingReason?.detail||'This feature has no supporting sticker evidence yet. Check the original sticker and factory equipment guide before confirming it.');reason.className='equipment-review-reason';container.append(reason);
+ if(missingReason?.sourceUrl){const link=el(document,'a','Check original sticker ↗');link.href=missingReason.sourceUrl;link.target='_blank';link.rel='noopener';container.append(link);}return;
+ }
  const details=el(document,'details');details.className='equipment-proof';details.append(el(document,'summary','View source'));
  const method=fact.method==='factory-standard'?'Standard on this trim':fact.method==='factory-package'?'Included in the listed package':fact.method==='factory-option-omission'?'Not ordered on the complete original sticker':'Original sticker evidence';
  details.append(el(document,'small',method));
