@@ -230,6 +230,28 @@
               "status": "optional",
               "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=3",
               "note": "Black three-piece hardtop."
+            },
+            {
+              "key": "climate",
+              "label": "Climate control",
+              "value": "Manual air conditioning",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=3"
+            },
+            {
+              "key": "axle-ratio",
+              "label": "Axle ratio",
+              "value": "3.45",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=3",
+              "note": "Base 3.6L V6 / 6-speed manual; other engine or package configurations require their own specification."
+            },
+            {
+              "key": "tow-hooks",
+              "label": "Tow hooks",
+              "value": "Two front and one rear, black",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=3"
             }
           ],
           "comparisonNote": "U.S. four-door 2026 configurations. Standard rows describe the stated base configuration; option rows name the required factory group. Rubicon X tire and transfer-case equipment changes with transmission. The July 2025 factory guide is used for package details; current Jeep trim highlights are used where later equipment is explicitly shown.",
@@ -520,6 +542,31 @@
               "status": "optional",
               "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=4",
               "note": "Four-door only."
+            },
+            {
+              "key": "axle-ratio",
+              "label": "Axle ratio",
+              "value": "3.45",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=3",
+              "note": "Base 3.6L V6 / 6-speed manual; other engine or package configurations require their own specification."
+            },
+            {
+              "key": "tow-hooks",
+              "label": "Tow hooks",
+              "value": "Two front and one rear, black",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=3"
+            },
+            {
+              "key": "audio-upgrade",
+              "label": "Audio upgrade",
+              "value": "Alpine premium audio",
+              "status": "optional",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=4",
+              "note": "Factory-listed upgrade; the standard audio row stays unchanged.",
+              "upgradeOf": "audio",
+              "baseLabel": "Audio system"
             }
           ],
           "comparisonNote": "U.S. four-door 2026 configurations. Standard rows describe the stated base configuration; option rows name the required factory group. Rubicon X tire and transfer-case equipment changes with transmission. The July 2025 factory guide is used for package details; current Jeep trim highlights are used where later equipment is explicitly shown.",
@@ -855,6 +902,23 @@
               "status": "optional",
               "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=5",
               "note": "WARN 8,000-lb winch and steel front/rear bumpers."
+            },
+            {
+              "key": "tow-hooks",
+              "label": "Tow hooks",
+              "value": "Two front and one rear, black",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=5"
+            },
+            {
+              "key": "audio-upgrade",
+              "label": "Audio upgrade",
+              "value": "Alpine premium audio",
+              "status": "optional",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=5",
+              "note": "Factory-listed upgrade; the standard audio row stays unchanged.",
+              "upgradeOf": "audio",
+              "baseLabel": "Audio system"
             }
           ],
           "comparisonNote": "U.S. four-door 2026 configurations. Standard rows describe the stated base configuration; option rows name the required factory group. Rubicon X tire and transfer-case equipment changes with transmission. The July 2025 factory guide is used for package details; current Jeep trim highlights are used where later equipment is explicitly shown.",
@@ -1491,6 +1555,23 @@
               "value": "115 volts",
               "status": "standard",
               "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=6"
+            },
+            {
+              "key": "bumpers",
+              "label": "Bumpers",
+              "value": "Front and rear with silver bezels",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=6"
+            },
+            {
+              "key": "audio-upgrade",
+              "label": "Audio upgrade",
+              "value": "Alpine premium audio",
+              "status": "optional",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=6",
+              "note": "Factory-listed upgrade; the standard audio row stays unchanged.",
+              "upgradeOf": "audio",
+              "baseLabel": "Audio system"
             }
           ],
           "comparisonNote": "U.S. four-door 2026 configurations. Standard rows describe the stated base configuration; option rows name the required factory group. Rubicon X tire and transfer-case equipment changes with transmission. The July 2025 factory guide is used for package details; current Jeep trim highlights are used where later equipment is explicitly shown.",
@@ -1933,6 +2014,48 @@
               "value": "8,000-pound Warn option",
               "status": "optional",
               "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=7"
+            },
+            {
+              "key": "bumpers",
+              "label": "Bumpers",
+              "value": "Front and rear with gray bezels",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=7",
+              "note": "Steel front/rear bumpers are a separate option."
+            },
+            {
+              "key": "bumper-upgrade",
+              "label": "Steel bumper upgrade",
+              "value": "Steel front and rear — Steel Bumper Group",
+              "status": "optional",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=7",
+              "upgradeOf": "bumpers",
+              "baseLabel": "Bumpers"
+            },
+            {
+              "key": "tow-hooks",
+              "label": "Tow hooks",
+              "value": "Two front and one rear, red",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=7"
+            },
+            {
+              "key": "console-power",
+              "label": "Cabin AC power outlet",
+              "value": "115 volts",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=7",
+              "note": "Retained Sahara interior equipment from buyer’s guide page6."
+            },
+            {
+              "key": "audio-upgrade",
+              "label": "Audio upgrade",
+              "value": "Alpine premium audio",
+              "status": "optional",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=7",
+              "note": "Factory-listed upgrade; the standard audio row stays unchanged.",
+              "upgradeOf": "audio",
+              "baseLabel": "Audio system"
             }
           ],
           "comparisonNote": "U.S. four-door 2026 configurations. Standard rows describe the stated base configuration; option rows name the required factory group. Rubicon X tire and transfer-case equipment changes with transmission. The July 2025 factory guide is used for package details; current Jeep trim highlights are used where later equipment is explicitly shown.",
@@ -2242,6 +2365,22 @@
               "status": "optional",
               "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=7",
               "note": "Convenience Group is included in X Package, but remote start requires the optional automatic transmission. Base manual equipment does not include remote start."
+            },
+            {
+              "key": "tow-hooks",
+              "label": "Tow hooks",
+              "value": "Two front and one rear, red",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=7",
+              "note": "Retained Rubicon equipment; X Package bumper changes are listed separately."
+            },
+            {
+              "key": "console-power",
+              "label": "Cabin AC power outlet",
+              "value": "115 volts",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=7",
+              "note": "Retained Sahara interior equipment from buyer’s guide page6."
             }
           ],
           "comparisonNote": "U.S. four-door 2026 Rubicon X. Standard powertrain, transfer-case and tire rows describe the 3.6L V6 with six-speed manual. The optional automatic configuration changes the tires and transfer case as stated in its option row. Factory package details use the July 2025 order guide; later Jeep retail highlights are used where explicitly shown.",
@@ -2653,6 +2792,77 @@
               "value": "Moab badges and shifter medallion",
               "status": "standard",
               "sourceUrl": "https://www.jeep.com/twelve4twelve/wrangler-moab-392.html"
+            },
+            {
+              "key": "headlamps",
+              "label": "Headlamps",
+              "value": "LED",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=8",
+              "note": "Retained Rubicon / Sahara equipment; page8 explicitly lists Moab as adding to Rubicon. Moab-specific powertrain and options remain separate."
+            },
+            {
+              "key": "instrument-display",
+              "label": "Driver information display",
+              "value": "7 inches",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=8",
+              "note": "Retained Rubicon / Sahara equipment; page8 explicitly lists Moab as adding to Rubicon. Moab-specific powertrain and options remain separate."
+            },
+            {
+              "key": "climate",
+              "label": "Climate control",
+              "value": "Dual-zone automatic",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=8",
+              "note": "Retained Rubicon / Sahara equipment; page8 explicitly lists Moab as adding to Rubicon. Moab-specific powertrain and options remain separate."
+            },
+            {
+              "key": "collision-warning",
+              "label": "Forward collision warning",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=8",
+              "note": "Retained Rubicon / Sahara equipment; page8 explicitly lists Moab as adding to Rubicon. Moab-specific powertrain and options remain separate."
+            },
+            {
+              "key": "mirrors",
+              "label": "Exterior mirrors",
+              "value": "Power-adjustable, heated",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=8",
+              "note": "Retained Rubicon / Sahara equipment; page8 explicitly lists Moab as adding to Rubicon. Moab-specific powertrain and options remain separate."
+            },
+            {
+              "key": "windshield",
+              "label": "Windshield",
+              "value": "Gorilla Glass",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=8",
+              "note": "Retained Rubicon / Sahara equipment; page8 explicitly lists Moab as adding to Rubicon. Moab-specific powertrain and options remain separate."
+            },
+            {
+              "key": "terrain-mode",
+              "label": "Off-Road Plus mode",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=8",
+              "note": "Retained Rubicon / Sahara equipment; page8 explicitly lists Moab as adding to Rubicon. Moab-specific powertrain and options remain separate."
+            },
+            {
+              "key": "console-power",
+              "label": "Cabin AC power outlet",
+              "value": "115 volts",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=8",
+              "note": "Retained Rubicon / Sahara equipment; page8 explicitly lists Moab as adding to Rubicon. Moab-specific powertrain and options remain separate."
+            },
+            {
+              "key": "tow-hooks",
+              "label": "Tow hooks",
+              "value": "Two front and one rear, black",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=8"
             }
           ],
           "comparisonNote": "U.S. 2026 four-door special edition. Rows are the equipment explicitly identified by Jeep for this edition; unlisted package compatibility is not inferred from another trim.",
@@ -4365,6 +4575,82 @@
               "value": "Conventional open",
               "status": "standard",
               "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf"
+            },
+            {
+              "key": "mirrors",
+              "label": "Exterior mirrors",
+              "value": "Manual foldaway",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=46"
+            },
+            {
+              "key": "headlamps",
+              "label": "Headlamps",
+              "value": "Halogen",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=46"
+            },
+            {
+              "key": "instrument-display",
+              "label": "Driver information display",
+              "value": "3.5-inch monochrome",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=47",
+              "note": "The Convenience Group upgrades the display to 7 inches."
+            },
+            {
+              "key": "entry",
+              "label": "Passive entry",
+              "value": "Convenience Group",
+              "status": "optional",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=48",
+              "note": "Front-door passive entry and locks; different from ordinary remote keyless entry."
+            },
+            {
+              "key": "remote-start",
+              "label": "Remote start",
+              "value": "Convenience Group",
+              "status": "optional",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=48",
+              "note": "Requires the stated automatic-transmission configuration; separately available on Mojave and Rubicon."
+            },
+            {
+              "key": "trailer-brakes",
+              "label": "Integrated trailer brake controller",
+              "value": "Factory option",
+              "status": "optional",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=47",
+              "note": "Factory table marks late availability and configuration restrictions. Confirm current orderability."
+            },
+            {
+              "key": "shocks",
+              "label": "Shock absorbers",
+              "value": "Heavy-duty front and rear",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=45"
+            },
+            {
+              "key": "trailer-hitch",
+              "label": "Trailer hitch",
+              "value": "Class IV — Trailer Tow and Auxiliary Switch Group",
+              "status": "optional",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=48",
+              "note": "Also included with the eligible Max Tow Package. Hitch equipment alone does not establish a towing rating."
+            },
+            {
+              "key": "aux-switches",
+              "label": "Auxiliary switches",
+              "value": "Trailer Tow and Auxiliary Switch Group",
+              "status": "optional",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=48"
+            },
+            {
+              "key": "bumpers",
+              "label": "Bumpers",
+              "value": "Molded front / black-painted rear",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=46",
+              "note": "Base bumper specification; separate packages can replace it."
             }
           ],
           "comparisonNote": "2026 U.S. Gladiator factory matrix, with current Jeep modelizer highlights for X equipment. Sport S and Willys content follows the explicitly identified factory packages. Special-edition equipment is not assumed from a shared name."
@@ -4573,6 +4859,110 @@
               "value": "Power heated mirrors",
               "status": "standard",
               "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Gladiator.pdf"
+            },
+            {
+              "key": "headlamps",
+              "label": "Headlamps",
+              "value": "Halogen",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=46"
+            },
+            {
+              "key": "instrument-display",
+              "label": "Driver information display",
+              "value": "3.5-inch monochrome",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=47",
+              "note": "The Convenience Group upgrades the display to 7 inches."
+            },
+            {
+              "key": "entry",
+              "label": "Passive entry",
+              "value": "Convenience Group",
+              "status": "optional",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=48",
+              "note": "Front-door passive entry and locks; different from ordinary remote keyless entry."
+            },
+            {
+              "key": "remote-start",
+              "label": "Remote start",
+              "value": "Convenience Group",
+              "status": "optional",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=48",
+              "note": "Requires the stated automatic-transmission configuration; separately available on Mojave and Rubicon."
+            },
+            {
+              "key": "bed-power",
+              "label": "Bed AC power outlet",
+              "value": "115-volt outlet — Cargo Group with Trail Rail System",
+              "status": "optional",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=49",
+              "note": "Requires Technology Group on eligible Sport S/Willys configurations. Confirm configuration eligibility before ordering."
+            },
+            {
+              "key": "trailer-brakes",
+              "label": "Integrated trailer brake controller",
+              "value": "Factory option",
+              "status": "optional",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=47",
+              "note": "Factory table marks late availability and configuration restrictions. Confirm current orderability."
+            },
+            {
+              "key": "windshield",
+              "label": "Windshield",
+              "value": "Gorilla Glass — Convenience Group",
+              "status": "optional",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=46"
+            },
+            {
+              "key": "shocks",
+              "label": "Shock absorbers",
+              "value": "Heavy-duty front and rear",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=45"
+            },
+            {
+              "key": "trailer-hitch",
+              "label": "Trailer hitch",
+              "value": "Class IV — Trailer Tow and Auxiliary Switch Group",
+              "status": "optional",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=48",
+              "note": "Also included with the eligible Max Tow Package. Hitch equipment alone does not establish a towing rating."
+            },
+            {
+              "key": "aux-switches",
+              "label": "Auxiliary switches",
+              "value": "Trailer Tow and Auxiliary Switch Group",
+              "status": "optional",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=48"
+            },
+            {
+              "key": "headlamp-upgrade",
+              "label": "LED headlamp upgrade",
+              "value": "LED headlamps and front fog lamps",
+              "status": "optional",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=48",
+              "note": "Sport S only; LED Headlamp and Fog Lamp Group.",
+              "upgradeOf": "headlamps",
+              "baseLabel": "Headlamps"
+            },
+            {
+              "key": "bumpers",
+              "label": "Bumpers",
+              "value": "Molded front / black-painted rear",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=46",
+              "note": "Base bumper specification; separate packages can replace it."
+            },
+            {
+              "key": "audio-upgrade",
+              "label": "Audio upgrade",
+              "value": "Alpine premium audio",
+              "status": "optional",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=48",
+              "note": "Requires remote keyless entry; availability explicitly includes Sport S and Willys.",
+              "upgradeOf": "audio",
+              "baseLabel": "Audio system"
             }
           ],
           "comparisonNote": "2026 U.S. Gladiator factory matrix, with current Jeep modelizer highlights for X equipment. Sport S and Willys content follows the explicitly identified factory packages. Special-edition equipment is not assumed from a shared name."
@@ -4781,6 +5171,106 @@
               "value": "Auxiliary switches",
               "status": "standard",
               "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Gladiator.pdf"
+            },
+            {
+              "key": "mirrors",
+              "label": "Exterior mirrors",
+              "value": "Power-adjustable, heated",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=49"
+            },
+            {
+              "key": "headlamps",
+              "label": "Headlamps",
+              "value": "LED",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=49"
+            },
+            {
+              "key": "instrument-display",
+              "label": "Driver information display",
+              "value": "7-inch color",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=49"
+            },
+            {
+              "key": "entry",
+              "label": "Passive entry",
+              "value": "Convenience Group",
+              "status": "optional",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=48",
+              "note": "Front-door passive entry and locks; different from ordinary remote keyless entry."
+            },
+            {
+              "key": "remote-start",
+              "label": "Remote start",
+              "value": "Convenience Group",
+              "status": "optional",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=48",
+              "note": "Requires the stated automatic-transmission configuration; separately available on Mojave and Rubicon."
+            },
+            {
+              "key": "bed-power",
+              "label": "Bed AC power outlet",
+              "value": "115-volt outlet — Cargo Group with Trail Rail System",
+              "status": "optional",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=49",
+              "note": "Requires Technology Group on eligible Sport S/Willys configurations. Confirm configuration eligibility before ordering."
+            },
+            {
+              "key": "trailer-brakes",
+              "label": "Integrated trailer brake controller",
+              "value": "Factory option",
+              "status": "optional",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=47",
+              "note": "Factory table marks late availability and configuration restrictions. Confirm current orderability."
+            },
+            {
+              "key": "windshield",
+              "label": "Windshield",
+              "value": "Gorilla Glass",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=49"
+            },
+            {
+              "key": "collision-warning",
+              "label": "Forward collision warning",
+              "value": "Full-Speed Forward Collision Warning Plus",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=49"
+            },
+            {
+              "key": "shocks",
+              "label": "Shock absorbers",
+              "value": "Red heavy-duty front and rear",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=49"
+            },
+            {
+              "key": "trailer-hitch",
+              "label": "Trailer hitch",
+              "value": "Class IV receiver",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=49",
+              "note": "Included with the named Willys package; towing limits remain vehicle/configuration specific."
+            },
+            {
+              "key": "bumpers",
+              "label": "Bumpers",
+              "value": "Gloss-black front bumper",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=49",
+              "note": "Named Willys package specification; rear finish is not established by this entry."
+            },
+            {
+              "key": "audio-upgrade",
+              "label": "Audio upgrade",
+              "value": "Alpine premium audio",
+              "status": "optional",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=48",
+              "note": "Requires remote keyless entry; availability explicitly includes Sport S and Willys.",
+              "upgradeOf": "audio",
+              "baseLabel": "Audio system"
             }
           ],
           "comparisonNote": "2026 U.S. Gladiator factory matrix, with current Jeep modelizer highlights for X equipment. Sport S and Willys content follows the explicitly identified factory packages. Special-edition equipment is not assumed from a shared name."
@@ -5004,6 +5494,97 @@
               "status": "standard",
               "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C6RJTBG1TL190384",
               "note": "Listed under factory STANDARD EQUIPMENT for the 2026 Rubicon, four-door 4x4 configuration; corroborated by multiple original manufacturer stickers. Optional equipment is listed separately."
+            },
+            {
+              "key": "mirrors",
+              "label": "Exterior mirrors",
+              "value": "Power-adjustable, heated",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=46"
+            },
+            {
+              "key": "headlamps",
+              "label": "Headlamps",
+              "value": "LED",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=46"
+            },
+            {
+              "key": "instrument-display",
+              "label": "Driver information display",
+              "value": "7-inch color",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=47"
+            },
+            {
+              "key": "entry",
+              "label": "Passive entry",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=48"
+            },
+            {
+              "key": "remote-start",
+              "label": "Remote start",
+              "value": "Convenience Group",
+              "status": "optional",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=48",
+              "note": "Requires the stated automatic-transmission configuration; separately available on Mojave and Rubicon."
+            },
+            {
+              "key": "terrain-mode",
+              "label": "Off-Road Plus mode",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=45"
+            },
+            {
+              "key": "bed-power",
+              "label": "Bed AC power outlet",
+              "value": "115-volt outlet — Cargo Group with Trail Rail System",
+              "status": "optional",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=49",
+              "note": "Cargo Group with Trail Rail System required."
+            },
+            {
+              "key": "trailer-brakes",
+              "label": "Integrated trailer brake controller",
+              "value": "Factory option",
+              "status": "optional",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=47",
+              "note": "Factory table marks late availability and configuration restrictions. Confirm current orderability."
+            },
+            {
+              "key": "windshield",
+              "label": "Windshield",
+              "value": "Gorilla Glass",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=46"
+            },
+            {
+              "key": "rock-rails",
+              "label": "Rock rails",
+              "value": "Cab and bed steel rock rails",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=47"
+            },
+            {
+              "key": "bumpers",
+              "label": "Bumpers",
+              "value": "Molded front / steel rear",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=46",
+              "note": "Base bumper specification; separate packages can replace it."
+            },
+            {
+              "key": "audio-upgrade",
+              "label": "Audio upgrade",
+              "value": "Alpine premium audio — Technology Group",
+              "status": "optional",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=49",
+              "note": "Technology Group also includes navigation and a removable wireless speaker.",
+              "upgradeOf": "audio",
+              "baseLabel": "Audio system"
             }
           ],
           "comparisonNote": "2026 U.S. Gladiator factory matrix, with current Jeep modelizer highlights for X equipment. Sport S and Willys content follows the explicitly identified factory packages. Special-edition equipment is not assumed from a shared name."
@@ -5226,6 +5807,104 @@
               "value": "Reinforced frame",
               "status": "standard",
               "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Gladiator.pdf"
+            },
+            {
+              "key": "mirrors",
+              "label": "Exterior mirrors",
+              "value": "Power-adjustable, heated",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=46"
+            },
+            {
+              "key": "headlamps",
+              "label": "Headlamps",
+              "value": "LED",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=46"
+            },
+            {
+              "key": "instrument-display",
+              "label": "Driver information display",
+              "value": "7-inch color",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=47"
+            },
+            {
+              "key": "entry",
+              "label": "Passive entry",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=48"
+            },
+            {
+              "key": "remote-start",
+              "label": "Remote start",
+              "value": "Convenience Group",
+              "status": "optional",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=48",
+              "note": "Requires the stated automatic-transmission configuration; separately available on Mojave and Rubicon."
+            },
+            {
+              "key": "collision-warning",
+              "label": "Forward collision warning",
+              "value": "Full-Speed Forward Collision Warning Plus",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=48"
+            },
+            {
+              "key": "terrain-mode",
+              "label": "Off-Road Plus mode",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=45"
+            },
+            {
+              "key": "bed-power",
+              "label": "Bed AC power outlet",
+              "value": "115-volt outlet — Cargo Group with Trail Rail System",
+              "status": "optional",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=49",
+              "note": "Cargo Group with Trail Rail System required."
+            },
+            {
+              "key": "trailer-brakes",
+              "label": "Integrated trailer brake controller",
+              "value": "Factory option",
+              "status": "optional",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=47",
+              "note": "Factory table marks late availability and configuration restrictions. Confirm current orderability."
+            },
+            {
+              "key": "windshield",
+              "label": "Windshield",
+              "value": "Gorilla Glass",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=46"
+            },
+            {
+              "key": "rock-rails",
+              "label": "Rock rails",
+              "value": "Cab rock rails",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=47"
+            },
+            {
+              "key": "bumpers",
+              "label": "Bumpers",
+              "value": "Molded front / black-painted rear",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=46",
+              "note": "Base bumper specification; separate packages can replace it."
+            },
+            {
+              "key": "audio-upgrade",
+              "label": "Audio upgrade",
+              "value": "Alpine premium audio — Technology Group",
+              "status": "optional",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=49",
+              "note": "Technology Group also includes navigation and a removable wireless speaker.",
+              "upgradeOf": "audio",
+              "baseLabel": "Audio system"
             }
           ],
           "comparisonNote": "2026 U.S. Gladiator factory matrix, with current Jeep modelizer highlights for X equipment. Sport S and Willys content follows the explicitly identified factory packages. Special-edition equipment is not assumed from a shared name."
@@ -5449,6 +6128,78 @@
               "value": "12-way power",
               "status": "standard",
               "sourceUrl": "https://www.jeep.com/gladiator.html"
+            },
+            {
+              "key": "mirrors",
+              "label": "Exterior mirrors",
+              "value": "Power-adjustable, heated",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=46"
+            },
+            {
+              "key": "headlamps",
+              "label": "Headlamps",
+              "value": "LED",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=46"
+            },
+            {
+              "key": "instrument-display",
+              "label": "Driver information display",
+              "value": "7-inch color",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=47"
+            },
+            {
+              "key": "entry",
+              "label": "Passive entry",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=48"
+            },
+            {
+              "key": "collision-warning",
+              "label": "Forward collision warning",
+              "value": "Full-Speed Forward Collision Warning Plus",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=48"
+            },
+            {
+              "key": "terrain-mode",
+              "label": "Off-Road Plus mode",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=45"
+            },
+            {
+              "key": "bed-power",
+              "label": "Bed AC power outlet",
+              "value": "115-volt outlet — Cargo Group with Trail Rail System",
+              "status": "optional",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=49",
+              "note": "Cargo Group with Trail Rail System required."
+            },
+            {
+              "key": "trailer-brakes",
+              "label": "Integrated trailer brake controller",
+              "value": "Factory option",
+              "status": "optional",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=47",
+              "note": "Factory table marks late availability and configuration restrictions. Confirm current orderability."
+            },
+            {
+              "key": "windshield",
+              "label": "Windshield",
+              "value": "Gorilla Glass",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=46"
+            },
+            {
+              "key": "rock-rails",
+              "label": "Rock rails",
+              "value": "Cab and bed steel rock rails",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=47"
             }
           ],
           "comparisonNote": "2026 U.S. Gladiator factory matrix, with current Jeep modelizer highlights for X equipment. Sport S and Willys content follows the explicitly identified factory packages. Special-edition equipment is not assumed from a shared name."
@@ -5672,6 +6423,78 @@
               "value": "12-way power",
               "status": "standard",
               "sourceUrl": "https://www.jeep.com/gladiator.html"
+            },
+            {
+              "key": "mirrors",
+              "label": "Exterior mirrors",
+              "value": "Power-adjustable, heated",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=46"
+            },
+            {
+              "key": "headlamps",
+              "label": "Headlamps",
+              "value": "LED",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=46"
+            },
+            {
+              "key": "instrument-display",
+              "label": "Driver information display",
+              "value": "7-inch color",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=47"
+            },
+            {
+              "key": "entry",
+              "label": "Passive entry",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=48"
+            },
+            {
+              "key": "collision-warning",
+              "label": "Forward collision warning",
+              "value": "Full-Speed Forward Collision Warning Plus",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=48"
+            },
+            {
+              "key": "terrain-mode",
+              "label": "Off-Road Plus mode",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=45"
+            },
+            {
+              "key": "bed-power",
+              "label": "Bed AC power outlet",
+              "value": "115-volt outlet — Cargo Group with Trail Rail System",
+              "status": "optional",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=49",
+              "note": "Cargo Group with Trail Rail System required."
+            },
+            {
+              "key": "trailer-brakes",
+              "label": "Integrated trailer brake controller",
+              "value": "Factory option",
+              "status": "optional",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=47",
+              "note": "Factory table marks late availability and configuration restrictions. Confirm current orderability."
+            },
+            {
+              "key": "windshield",
+              "label": "Windshield",
+              "value": "Gorilla Glass",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=46"
+            },
+            {
+              "key": "rock-rails",
+              "label": "Rock rails",
+              "value": "Cab rock rails",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=47"
             }
           ],
           "comparisonNote": "2026 U.S. Gladiator factory matrix, with current Jeep modelizer highlights for X equipment. Sport S and Willys content follows the explicitly identified factory packages. Special-edition equipment is not assumed from a shared name."
@@ -5761,6 +6584,51 @@
               "value": "Included",
               "status": "standard",
               "sourceUrl": "https://www.prnewswire.com/news-releases/jeep-brand-adds-sahara-trim-to-gladiator-lineup-for-the-first-time-combining-rugged-capability-with-premium-everyday-comfort-at-exceptional-value-302647155.html"
+            },
+            {
+              "key": "headlamps",
+              "label": "Headlamps",
+              "value": "LED",
+              "status": "standard",
+              "sourceUrl": "https://www.prnewswire.com/news-releases/jeep-brand-adds-sahara-trim-to-gladiator-lineup-for-the-first-time-combining-rugged-capability-with-premium-everyday-comfort-at-exceptional-value-302647155.html"
+            },
+            {
+              "key": "remote-start",
+              "label": "Remote start",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.prnewswire.com/news-releases/jeep-brand-adds-sahara-trim-to-gladiator-lineup-for-the-first-time-combining-rugged-capability-with-premium-everyday-comfort-at-exceptional-value-302647155.html"
+            },
+            {
+              "key": "instrument-display",
+              "label": "Driver information display",
+              "value": "7-inch color",
+              "status": "standard",
+              "sourceUrl": "https://www.prnewswire.com/news-releases/jeep-brand-adds-sahara-trim-to-gladiator-lineup-for-the-first-time-combining-rugged-capability-with-premium-everyday-comfort-at-exceptional-value-302647155.html"
+            },
+            {
+              "key": "transfer-case",
+              "label": "Transfer case",
+              "value": "Command-Trac part-time",
+              "status": "standard",
+              "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C6PJTAG2TL168340",
+              "note": "Factory standard-equipment section for this named U.S. 2026 edition; separate package overrides were checked."
+            },
+            {
+              "key": "rear-camera",
+              "label": "Rear camera",
+              "value": "ParkView backup camera",
+              "status": "standard",
+              "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C6PJTAG2TL168340",
+              "note": "Factory standard-equipment section for this named U.S. 2026 edition; separate package overrides were checked."
+            },
+            {
+              "key": "screen",
+              "label": "Center touchscreen",
+              "value": "12.3-inch Uconnect 5",
+              "status": "standard",
+              "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C6PJTAG2TL168340",
+              "note": "Factory standard-equipment section for this named U.S. 2026 edition; separate package overrides were checked."
             }
           ],
           "comparisonNote": "Partial comparison: these are the edition-specific standard details explicitly published by Jeep. A complete factory option matrix was not available in the reviewed sources; missing rows remain unverified."
@@ -6164,6 +7032,30 @@
               "value": "Commemorative Berber mats",
               "status": "standard",
               "sourceUrl": "https://www.jeep.com/buzz-models/85-anniversary-lineup.html"
+            },
+            {
+              "key": "transfer-case",
+              "label": "Transfer case",
+              "value": "Command-Trac part-time",
+              "status": "standard",
+              "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C6PJTAG6TL184928",
+              "note": "Factory standard-equipment section for this named U.S. 2026 edition; separate package overrides were checked."
+            },
+            {
+              "key": "rear-camera",
+              "label": "Rear camera",
+              "value": "ParkView backup camera",
+              "status": "standard",
+              "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C6PJTAG6TL184928",
+              "note": "Factory standard-equipment section for this named U.S. 2026 edition; separate package overrides were checked."
+            },
+            {
+              "key": "screen",
+              "label": "Center touchscreen",
+              "value": "12.3-inch Uconnect 5",
+              "status": "standard",
+              "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C6PJTAG6TL184928",
+              "note": "Factory standard-equipment section for this named U.S. 2026 edition; separate package overrides were checked."
             }
           ],
           "comparisonNote": "Partial comparison: these are the edition-specific standard details explicitly published by Jeep. A complete factory option matrix was not available in the reviewed sources; missing rows remain unverified."
@@ -6262,6 +7154,30 @@
               "value": "Included",
               "status": "standard",
               "sourceUrl": "https://www.jeep.com/gladiator.html"
+            },
+            {
+              "key": "transfer-case",
+              "label": "Transfer case",
+              "value": "Command-Trac part-time",
+              "status": "standard",
+              "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C6PJTAG4TL190386",
+              "note": "Factory standard-equipment section for this named U.S. 2026 edition; separate package overrides were checked."
+            },
+            {
+              "key": "rear-camera",
+              "label": "Rear camera",
+              "value": "ParkView backup camera",
+              "status": "standard",
+              "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C6PJTAG4TL190386",
+              "note": "Factory standard-equipment section for this named U.S. 2026 edition; separate package overrides were checked."
+            },
+            {
+              "key": "screen",
+              "label": "Center touchscreen",
+              "value": "12.3-inch Uconnect 5",
+              "status": "standard",
+              "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C6PJTAG4TL190386",
+              "note": "Factory standard-equipment section for this named U.S. 2026 edition; separate package overrides were checked."
             }
           ],
           "comparisonNote": "Partial comparison: these are the edition-specific standard details explicitly published by Jeep. A complete factory option matrix was not available in the reviewed sources; missing rows remain unverified."
