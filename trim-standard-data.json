@@ -16066,6 +16066,38 @@
               "value": "Key-fob remote start",
               "status": "standard",
               "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=25"
+            },
+            {
+              "key": "transfer-case",
+              "label": "4WD transfer case",
+              "value": "Electronic part-time",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=20",
+              "note": "For the stated 4x4 configuration."
+            },
+            {
+              "key": "tow-hooks",
+              "label": "Front tow hooks",
+              "value": "Protection Group or Off-Road Group",
+              "status": "optional",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=22",
+              "note": "Requires an eligible package for the selected 4x4 configuration."
+            },
+            {
+              "key": "bumpers",
+              "label": "Bumpers",
+              "value": "Black front and rear",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=21",
+              "note": "Standard finish; appearance packages can change the bumper finish."
+            },
+            {
+              "key": "rear-seat-comfort",
+              "label": "Rear seat comfort",
+              "value": "Full-length stadium-folding bench",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=23",
+              "note": "Base seating configuration; separately documented heating, ventilation or recline upgrades are shown below."
             }
           ]
         },
@@ -16320,6 +16352,30 @@
               "value": "Key-fob remote start",
               "status": "standard",
               "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=25"
+            },
+            {
+              "key": "transfer-case",
+              "label": "4WD transfer case",
+              "value": "Electronic part-time",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=20",
+              "note": "For the stated 4x4 configuration."
+            },
+            {
+              "key": "tow-hooks",
+              "label": "Front tow hooks",
+              "value": "Protection Group or Off-Road Group",
+              "status": "optional",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=22",
+              "note": "Requires an eligible package for the selected 4x4 configuration."
+            },
+            {
+              "key": "rear-seat-comfort",
+              "label": "Rear seat comfort",
+              "value": "60/40 split-folding bench",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=23",
+              "note": "Base seating configuration; separately documented heating, ventilation or recline upgrades are shown below."
             }
           ]
         },
@@ -16559,6 +16615,37 @@
               "value": "Key-fob remote start",
               "status": "standard",
               "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=25"
+            },
+            {
+              "key": "transfer-case",
+              "label": "4WD transfer case",
+              "value": "Electronic part-time",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=20",
+              "note": "For the stated 4x4 configuration."
+            },
+            {
+              "key": "tow-hooks",
+              "label": "Front tow hooks",
+              "value": "Black front tow hooks",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=22"
+            },
+            {
+              "key": "bumpers",
+              "label": "Bumpers",
+              "value": "Chrome front and rear",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=21",
+              "note": "Standard finish; appearance packages can change the bumper finish."
+            },
+            {
+              "key": "rear-seat-comfort",
+              "label": "Rear seat comfort",
+              "value": "60/40 split-folding bench",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=23",
+              "note": "Base seating configuration; separately documented heating, ventilation or recline upgrades are shown below."
             }
           ]
         },
@@ -16848,6 +16935,38 @@
               "status": "optional",
               "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=24",
               "note": "Bucket-seat configuration required."
+            },
+            {
+              "key": "transfer-case",
+              "label": "4WD transfer case",
+              "value": "Electronic on-demand",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=20",
+              "note": "For the stated 4x4 configuration."
+            },
+            {
+              "key": "tow-hooks",
+              "label": "Front tow hooks",
+              "value": "Protection Group or Off-Road Group",
+              "status": "optional",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=22",
+              "note": "Requires an eligible package for the selected 4x4 configuration."
+            },
+            {
+              "key": "bumpers",
+              "label": "Bumpers",
+              "value": "Chrome front and rear",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=21",
+              "note": "Standard finish; appearance packages can change the bumper finish."
+            },
+            {
+              "key": "rear-seat-comfort",
+              "label": "Rear seat comfort",
+              "value": "Full-length stadium-folding bench",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=23",
+              "note": "Base seating configuration; separately documented heating, ventilation or recline upgrades are shown below."
             }
           ]
         },
@@ -17148,6 +17267,30 @@
               "status": "optional",
               "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=24",
               "note": "Single pad with P1; dual pads with P2."
+            },
+            {
+              "key": "transfer-case",
+              "label": "4WD transfer case",
+              "value": "Electronic on-demand",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=20",
+              "note": "For the stated 4x4 configuration."
+            },
+            {
+              "key": "tow-hooks",
+              "label": "Front tow hooks",
+              "value": "Protection Group or Off-Road Group",
+              "status": "optional",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=22",
+              "note": "Requires an eligible package for the selected 4x4 configuration."
+            },
+            {
+              "key": "bumpers",
+              "label": "Bumpers",
+              "value": "Chrome front and rear",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=21",
+              "note": "Standard finish; appearance packages can change the bumper finish."
             }
           ]
         },
@@ -17447,6 +17590,37 @@
               "status": "optional",
               "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=24",
               "note": "Single pad with X1; dual pads with X2."
+            },
+            {
+              "key": "transfer-case",
+              "label": "4WD transfer case",
+              "value": "Electronic on-demand",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=20",
+              "note": "For the stated 4x4 configuration."
+            },
+            {
+              "key": "tow-hooks",
+              "label": "Front tow hooks",
+              "value": "Black front tow hooks",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=22"
+            },
+            {
+              "key": "bumpers",
+              "label": "Bumpers",
+              "value": "Black powder-coated",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=21",
+              "note": "Standard finish; appearance packages can change the bumper finish."
+            },
+            {
+              "key": "rear-seat-comfort",
+              "label": "Rear seat comfort",
+              "value": "60/40 split-folding bench",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=23",
+              "note": "Base seating configuration; separately documented heating, ventilation or recline upgrades are shown below."
             }
           ]
         },
@@ -18063,6 +18237,29 @@
               "value": "Dual charging pads",
               "status": "standard",
               "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=24"
+            },
+            {
+              "key": "transfer-case",
+              "label": "4WD transfer case",
+              "value": "Electronic on-demand",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=20",
+              "note": "For the stated 4x4 configuration."
+            },
+            {
+              "key": "tow-hooks",
+              "label": "Front tow hooks",
+              "value": "Black front tow hooks",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=22"
+            },
+            {
+              "key": "bumpers",
+              "label": "Bumpers",
+              "value": "Chrome front and rear",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=21",
+              "note": "Standard finish; appearance packages can change the bumper finish."
             }
           ]
         },
@@ -18353,6 +18550,29 @@
               "value": "Dual charging pads",
               "status": "standard",
               "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=24"
+            },
+            {
+              "key": "transfer-case",
+              "label": "4WD transfer case",
+              "value": "Electronic on-demand",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=20",
+              "note": "For the stated 4x4 configuration."
+            },
+            {
+              "key": "tow-hooks",
+              "label": "Front tow hooks",
+              "value": "Black front tow hooks",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=22"
+            },
+            {
+              "key": "bumpers",
+              "label": "Bumpers",
+              "value": "Chrome front and rear",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=21",
+              "note": "Standard finish; appearance packages can change the bumper finish."
             }
           ]
         },
@@ -18640,6 +18860,29 @@
               "value": "Dual charging pads",
               "status": "standard",
               "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=24"
+            },
+            {
+              "key": "transfer-case",
+              "label": "4WD transfer case",
+              "value": "Electronic on-demand",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=20",
+              "note": "For the stated 4x4 configuration."
+            },
+            {
+              "key": "tow-hooks",
+              "label": "Front tow hooks",
+              "value": "Black front tow hooks",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=22"
+            },
+            {
+              "key": "bumpers",
+              "label": "Bumpers",
+              "value": "Body-color front fascia and rear bumper",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=21",
+              "note": "Standard finish; appearance packages can change the bumper finish."
             }
           ]
         }
