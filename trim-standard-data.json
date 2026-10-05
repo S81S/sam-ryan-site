@@ -9916,6 +9916,106 @@
               "value": "Intersection collision assist",
               "status": "standard",
               "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/news-and-events/fca-news/2026_Jeep%C2%AE_Grand_Cherokee_Brings_the_Hurricane_4_Turbo__All-New_Propulsion_Drives_America_s_Most_Awarded_SUV.pdf"
+            },
+            {
+              "key": "instrument-display",
+              "label": "Driver information display",
+              "value": "10.25-inch color display",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=61"
+            },
+            {
+              "key": "mirrors",
+              "label": "Exterior mirrors",
+              "value": "Power-adjustable, heated, manual-folding",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=61",
+              "note": "Includes turn signals."
+            },
+            {
+              "key": "steering-column",
+              "label": "Steering-column adjustment",
+              "value": "Manual tilt/telescoping",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=60"
+            },
+            {
+              "key": "remote-start",
+              "label": "Remote start",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=62"
+            },
+            {
+              "key": "entry",
+              "label": "Passive entry",
+              "value": "Front doors; liftgate",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=62"
+            },
+            {
+              "key": "adaptive-cruise",
+              "label": "Adaptive cruise control",
+              "value": "With Stop and Go",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=62"
+            },
+            {
+              "key": "lane-driving-assist",
+              "label": "Active driving assistance",
+              "value": "Active Driving Assist",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=62",
+              "note": "The separate hands-free system is not included by this entry. Driver attention remains required."
+            },
+            {
+              "key": "lane-assistance",
+              "label": "Lane assistance",
+              "value": "Active Lane Management",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=62"
+            },
+            {
+              "key": "blind-spot",
+              "label": "Blind-spot assistance",
+              "value": "Blind Spot Monitoring and Rear Cross-Path Detection",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=62"
+            },
+            {
+              "key": "collision-warning",
+              "label": "Forward collision warning",
+              "value": "Full-Speed Forward Collision Warning with Active Braking",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=62"
+            },
+            {
+              "key": "pedestrian-braking",
+              "label": "Pedestrian / cyclist braking",
+              "value": "Pedestrian/Cyclist Emergency Braking",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=62"
+            },
+            {
+              "key": "rain-wipers",
+              "label": "Rain-sensitive windshield wipers",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=61"
+            },
+            {
+              "key": "roof-color",
+              "label": "Roof finish",
+              "value": "Body-color",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=61"
+            },
+            {
+              "key": "lower-fascias",
+              "label": "Lower front and rear fascia finish",
+              "value": "Molded-in-color",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=60"
             }
           ],
           "comparisonNote": "These factory matrix rows cover 2026 Hurricane 4 configurations of Grand Cherokee (two rows) and Grand Cherokee L (three rows). Climate-control differences are stated by body. 4WD equipment applies only to 4x4 models. Laredo, Laredo X and anniversary-edition differences are not inferred from these four matrix columns."
@@ -10119,6 +10219,225 @@
               "value": "Included",
               "status": "standard",
               "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf"
+            },
+            {
+              "key": "instrument-display",
+              "label": "Driver information display",
+              "value": "10.25-inch color display",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=61"
+            },
+            {
+              "key": "mirrors",
+              "label": "Exterior mirrors",
+              "value": "Power-adjustable, heated, manual-folding; memory",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=61",
+              "note": "Includes turn signals."
+            },
+            {
+              "key": "steering-column",
+              "label": "Steering-column adjustment",
+              "value": "Manual tilt/telescoping",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=60"
+            },
+            {
+              "key": "remote-start",
+              "label": "Remote start",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=62"
+            },
+            {
+              "key": "entry",
+              "label": "Passive entry",
+              "value": "Front doors; liftgate",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=62"
+            },
+            {
+              "key": "adaptive-cruise",
+              "label": "Adaptive cruise control",
+              "value": "With Stop and Go",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=62"
+            },
+            {
+              "key": "lane-driving-assist",
+              "label": "Active driving assistance",
+              "value": "Active Driving Assist",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=62",
+              "note": "The separate hands-free system is not included by this entry. Driver attention remains required."
+            },
+            {
+              "key": "lane-assistance",
+              "label": "Lane assistance",
+              "value": "Active Lane Management",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=62"
+            },
+            {
+              "key": "blind-spot",
+              "label": "Blind-spot assistance",
+              "value": "Blind Spot Monitoring and Rear Cross-Path Detection",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=62"
+            },
+            {
+              "key": "collision-warning",
+              "label": "Forward collision warning",
+              "value": "Full-Speed Forward Collision Warning with Active Braking",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=62"
+            },
+            {
+              "key": "pedestrian-braking",
+              "label": "Pedestrian / cyclist braking",
+              "value": "Pedestrian/Cyclist Emergency Braking",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=62"
+            },
+            {
+              "key": "intersection-assist",
+              "label": "Intersection collision assistance",
+              "value": "Intersection collision assist",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=62"
+            },
+            {
+              "key": "rain-wipers",
+              "label": "Rain-sensitive windshield wipers",
+              "value": "Luxury Tech Group II",
+              "status": "optional",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=61",
+              "note": "Luxury Tech Group II requires the dual-pane panoramic sunroof."
+            },
+            {
+              "key": "roof-color",
+              "label": "Roof finish",
+              "value": "Body-color",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=61"
+            },
+            {
+              "key": "lower-fascias",
+              "label": "Lower front and rear fascia finish",
+              "value": "Molded-in-color",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=60"
+            },
+            {
+              "key": "fog-lamps",
+              "label": "Front fog lamps",
+              "value": "LED",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=60"
+            },
+            {
+              "key": "auto-high-beams",
+              "label": "Automatic high-beam control",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=60"
+            },
+            {
+              "key": "seat-memory",
+              "label": "Seat memory",
+              "value": "Driver",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=62"
+            },
+            {
+              "key": "ambient-lighting",
+              "label": "Ambient interior lighting",
+              "value": "LED",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=61"
+            },
+            {
+              "key": "digital-mirror",
+              "label": "Digital rearview mirror",
+              "value": "Luxury Tech Group II",
+              "status": "optional",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=61",
+              "note": "Luxury Tech Group II requires the dual-pane panoramic sunroof."
+            },
+            {
+              "key": "off-road-camera",
+              "label": "Integrated off-road camera",
+              "value": "Luxury Tech Group II",
+              "status": "optional",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=62",
+              "note": "Luxury Tech Group II requires the dual-pane panoramic sunroof."
+            },
+            {
+              "key": "garage-opener",
+              "label": "Universal garage-door opener",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=63"
+            },
+            {
+              "key": "steering-column-upgrade",
+              "label": "Power steering-column upgrade",
+              "value": "Power tilt/telescoping with memory",
+              "status": "optional",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=63",
+              "note": "Luxury Tech Group II requires the dual-pane panoramic sunroof.",
+              "upgradeOf": "steering-column",
+              "baseLabel": "Steering-column adjustment"
+            },
+            {
+              "key": "entry-upgrade",
+              "label": "Passive-entry upgrade",
+              "value": "Passive entry for front and rear doors and liftgate",
+              "status": "optional",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=63",
+              "note": "Luxury Tech Group II requires the dual-pane panoramic sunroof.",
+              "upgradeOf": "entry",
+              "baseLabel": "Passive entry"
+            },
+            {
+              "key": "parking-assistance-upgrade",
+              "label": "Parking assistance upgrade",
+              "value": "Front/rear ParkSense with Stop",
+              "status": "optional",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=63",
+              "note": "Luxury Tech Group II requires the dual-pane panoramic sunroof.",
+              "upgradeOf": "parking-assistance",
+              "baseLabel": "Parking assistance"
+            },
+            {
+              "key": "mirror-upgrade",
+              "label": "Exterior-mirror upgrade",
+              "value": "Driver-side auto-dimming mirror",
+              "status": "optional",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=63",
+              "note": "Luxury Tech Group II requires the dual-pane panoramic sunroof.",
+              "upgradeOf": "mirrors",
+              "baseLabel": "Exterior mirrors"
+            },
+            {
+              "key": "upholstery-upgrade",
+              "label": "Seat upholstery upgrade",
+              "value": "Capri leatherette with Axis II perforated inserts",
+              "status": "optional",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=63",
+              "note": "Luxury Tech Group II requires the dual-pane panoramic sunroof.",
+              "upgradeOf": "upholstery",
+              "baseLabel": "Seat upholstery"
+            },
+            {
+              "key": "wheels-upgrade",
+              "label": "Wheel upgrade",
+              "value": "20-inch machined-face aluminum / Technical Gray pockets",
+              "status": "optional",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=61",
+              "note": "Includes the corresponding 265/50R20 all-season tires. A separate Limited Altitude Package offers black 20-inch wheels.",
+              "upgradeOf": "wheels",
+              "baseLabel": "Wheels"
             }
           ],
           "comparisonNote": "These factory matrix rows cover 2026 Hurricane 4 configurations of Grand Cherokee (two rows) and Grand Cherokee L (three rows). Climate-control differences are stated by body. 4WD equipment applies only to 4x4 models. Laredo, Laredo X and anniversary-edition differences are not inferred from these four matrix columns."
@@ -10336,6 +10655,170 @@
               "value": "Premium Pack",
               "status": "optional",
               "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf"
+            },
+            {
+              "key": "instrument-display",
+              "label": "Driver information display",
+              "value": "10.25-inch color display",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=61"
+            },
+            {
+              "key": "mirrors",
+              "label": "Exterior mirrors",
+              "value": "Power-adjustable, heated, manual-folding; memory and driver auto-dimming",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=61",
+              "note": "Includes turn signals."
+            },
+            {
+              "key": "steering-column",
+              "label": "Steering-column adjustment",
+              "value": "Power tilt/telescoping",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=60"
+            },
+            {
+              "key": "remote-start",
+              "label": "Remote start",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=62"
+            },
+            {
+              "key": "entry",
+              "label": "Passive entry",
+              "value": "Front and rear doors; liftgate",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=62"
+            },
+            {
+              "key": "adaptive-cruise",
+              "label": "Adaptive cruise control",
+              "value": "With Stop and Go",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=62"
+            },
+            {
+              "key": "lane-driving-assist",
+              "label": "Active driving assistance",
+              "value": "Active Driving Assist",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=62",
+              "note": "The separate hands-free system is not included by this entry. Driver attention remains required."
+            },
+            {
+              "key": "lane-assistance",
+              "label": "Lane assistance",
+              "value": "Active Lane Management",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=62"
+            },
+            {
+              "key": "blind-spot",
+              "label": "Blind-spot assistance",
+              "value": "Blind Spot Monitoring and Rear Cross-Path Detection",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=62"
+            },
+            {
+              "key": "collision-warning",
+              "label": "Forward collision warning",
+              "value": "Full-Speed Forward Collision Warning with Active Braking",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=62"
+            },
+            {
+              "key": "pedestrian-braking",
+              "label": "Pedestrian / cyclist braking",
+              "value": "Pedestrian/Cyclist Emergency Braking",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=62"
+            },
+            {
+              "key": "intersection-assist",
+              "label": "Intersection collision assistance",
+              "value": "Intersection collision assist",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=62"
+            },
+            {
+              "key": "rain-wipers",
+              "label": "Rain-sensitive windshield wipers",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=61"
+            },
+            {
+              "key": "roof-color",
+              "label": "Roof finish",
+              "value": "Body-color",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=61"
+            },
+            {
+              "key": "lower-fascias",
+              "label": "Lower front and rear fascia finish",
+              "value": "Painted",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=60"
+            },
+            {
+              "key": "fog-lamps",
+              "label": "Front fog lamps",
+              "value": "LED",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=60"
+            },
+            {
+              "key": "auto-high-beams",
+              "label": "Automatic high-beam control",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=60"
+            },
+            {
+              "key": "seat-memory",
+              "label": "Seat memory",
+              "value": "Driver",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=62"
+            },
+            {
+              "key": "ambient-lighting",
+              "label": "Ambient interior lighting",
+              "value": "LED",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=61"
+            },
+            {
+              "key": "digital-mirror",
+              "label": "Digital rearview mirror",
+              "value": "Auto-dimming digital display",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=61"
+            },
+            {
+              "key": "off-road-camera",
+              "label": "Integrated off-road camera",
+              "value": "Included with surround-view camera",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=62"
+            },
+            {
+              "key": "garage-opener",
+              "label": "Universal garage-door opener",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=63"
+            },
+            {
+              "key": "night-vision",
+              "label": "Night vision",
+              "value": "Pedestrian/animal detection - Premium Pack",
+              "status": "optional",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=63",
+              "note": "Extra package required; not included solely because the trim has a surround-view camera."
             }
           ],
           "comparisonNote": "These factory matrix rows cover 2026 Hurricane 4 configurations of Grand Cherokee (two rows) and Grand Cherokee L (three rows). Climate-control differences are stated by body. 4WD equipment applies only to 4x4 models. Laredo, Laredo X and anniversary-edition differences are not inferred from these four matrix columns."
@@ -10567,6 +11050,206 @@
               "value": "Driver and front passenger",
               "status": "standard",
               "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf"
+            },
+            {
+              "key": "instrument-display",
+              "label": "Driver information display",
+              "value": "10.25-inch color display",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=61"
+            },
+            {
+              "key": "mirrors",
+              "label": "Exterior mirrors",
+              "value": "Power-adjustable, heated, automatic power-folding",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=61",
+              "note": "Includes turn signals, memory, driver-side auto-dimming, reverse tilt and approach lamps."
+            },
+            {
+              "key": "steering-column",
+              "label": "Steering-column adjustment",
+              "value": "Power tilt/telescoping",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=60"
+            },
+            {
+              "key": "remote-start",
+              "label": "Remote start",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=62"
+            },
+            {
+              "key": "entry",
+              "label": "Passive entry",
+              "value": "Front and rear doors; liftgate",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=62"
+            },
+            {
+              "key": "adaptive-cruise",
+              "label": "Adaptive cruise control",
+              "value": "With Stop and Go",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=62"
+            },
+            {
+              "key": "lane-driving-assist",
+              "label": "Active driving assistance",
+              "value": "Active Driving Assist",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=62",
+              "note": "The separate hands-free system is not included by this entry. Driver attention remains required."
+            },
+            {
+              "key": "lane-assistance",
+              "label": "Lane assistance",
+              "value": "Active Lane Management",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=62"
+            },
+            {
+              "key": "blind-spot",
+              "label": "Blind-spot assistance",
+              "value": "Blind Spot Monitoring and Rear Cross-Path Detection",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=62"
+            },
+            {
+              "key": "collision-warning",
+              "label": "Forward collision warning",
+              "value": "Full-Speed Forward Collision Warning with Active Braking",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=62"
+            },
+            {
+              "key": "pedestrian-braking",
+              "label": "Pedestrian / cyclist braking",
+              "value": "Pedestrian/Cyclist Emergency Braking",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=62"
+            },
+            {
+              "key": "intersection-assist",
+              "label": "Intersection collision assistance",
+              "value": "Intersection collision assist",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=62"
+            },
+            {
+              "key": "rain-wipers",
+              "label": "Rain-sensitive windshield wipers",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=61"
+            },
+            {
+              "key": "roof-color",
+              "label": "Roof finish",
+              "value": "Black-painted",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=61"
+            },
+            {
+              "key": "lower-fascias",
+              "label": "Lower front and rear fascia finish",
+              "value": "Painted",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=60"
+            },
+            {
+              "key": "fog-lamps",
+              "label": "Front fog lamps",
+              "value": "Cornering LED",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=60"
+            },
+            {
+              "key": "auto-high-beams",
+              "label": "Automatic high-beam control",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=60"
+            },
+            {
+              "key": "seat-memory",
+              "label": "Seat memory",
+              "value": "Driver and front passenger",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=62"
+            },
+            {
+              "key": "ambient-lighting",
+              "label": "Ambient interior lighting",
+              "value": "Multicolor LED",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=61"
+            },
+            {
+              "key": "digital-mirror",
+              "label": "Digital rearview mirror",
+              "value": "Auto-dimming digital display",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=61"
+            },
+            {
+              "key": "off-road-camera",
+              "label": "Integrated off-road camera",
+              "value": "Included with surround-view camera",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=62"
+            },
+            {
+              "key": "garage-opener",
+              "label": "Universal garage-door opener",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=63"
+            },
+            {
+              "key": "wheels-upgrade",
+              "label": "Wheel finish upgrade",
+              "value": "21-inch fully painted High-Gloss Black Noise aluminum",
+              "status": "optional",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=63",
+              "note": "Obsidian Package also changes exterior accents and door cladding.",
+              "upgradeOf": "wheels",
+              "baseLabel": "Wheels"
+            },
+            {
+              "key": "night-vision",
+              "label": "Night vision",
+              "value": "Pedestrian/animal detection - Advanced Protech Group IV",
+              "status": "optional",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=63",
+              "note": "Extra package required; not included solely because the trim has a surround-view camera."
+            },
+            {
+              "key": "passenger-display",
+              "label": "Front-passenger display",
+              "value": "10.25-inch interactive touchscreen",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=61",
+              "note": "Separate from the center touchscreen and driver display."
+            },
+            {
+              "key": "ventilated-rear-seats",
+              "label": "Ventilated second-row seats",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=62",
+              "note": "; do not confuse ventilation with seat heating."
+            },
+            {
+              "key": "lane-driving-upgrade",
+              "label": "Advanced driving assistance upgrade",
+              "value": "Hands-Free Active Driving Assist",
+              "status": "optional",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=62",
+              "note": "Requires Advanced Protech Group IV and the Trailer Tow Package configuration. Driver attention remains required.",
+              "upgradeOf": "lane-driving-assist",
+              "baseLabel": "Active driving assistance"
             }
           ],
           "comparisonNote": "These factory matrix rows cover 2026 Hurricane 4 configurations of Grand Cherokee (two rows) and Grand Cherokee L (three rows). Climate-control differences are stated by body. 4WD equipment applies only to 4x4 models. Laredo, Laredo X and anniversary-edition differences are not inferred from these four matrix columns."
