@@ -1,3 +1,4 @@
+import {optionInventoryLink} from './option-inventory.mjs?v=options3';
 import {audioInventoryFeature} from './audio-evidence.mjs?v=errors1';
 import {equipmentReviewReason} from './equipment-review.mjs?v=errors1';
 import {featureInventoryLink} from './feature-inventory-link.mjs?v=1';
@@ -5,8 +6,8 @@ import {appendStickerCredit} from './sticker-credit.mjs?v=source2';
 import {appendEquipmentFact} from './comparison-layout.mjs?v=errors1';
 import {applyFactoryEquipment} from './factory-equipment.mjs?v=errors1';
 import {comparisonRows,visibleComparisonRows} from './comparison-rows.mjs?v=errors1';
-import {withComparisonSpecifications,specificationDefinitions} from './comparison-specs.mjs?v=audit2';
-import {definitions,parseQuery} from './equipment-search.mjs?v=errors1';
+import {withComparisonSpecifications,specificationDefinitions} from './comparison-specs.mjs?v=audit3';
+import {definitions,parseQuery} from './equipment-search.mjs?v=options3';
 const $=id=>document.getElementById(id),el=(tag,text)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;return n};
 const short=v=>v.stock?`Stock ${v.stock}`:`VIN …${v.vin.slice(-6)}`;
 const indexEngine=v=>{const s=window.equipmentIndex.records[v.vin];return s?.status==='verified'?s.engine?.replace(/^Engine:\s*/i,''):null;};
@@ -45,10 +46,12 @@ function render(){
    row.facts.forEach((f,i)=>{const td=el('td');appendEquipmentFact(td,f,document,equipmentReviewReason(window.equipmentIndex.records[recs[i].v.vin],recs[i].v.vin));
     const audioFeature=['audioSystem','premiumAudio'].includes(row.id)?audioInventoryFeature(recs[i].s?.features?.audioSystem):null;
     const inventoryFeature=audioFeature||(!row.specification&&definitions.some(([id])=>id===row.id)?row.id:null);
-    if(f?.value===true&&inventoryFeature){
+    const optionKey={infotainmentScreen:'touchscreen',instrumentScreen:'driver-display',driverAdjustment:'driver-seat',passengerAdjustment:'passenger-seat',audioSystem:'audio'}[row.id];
+    if(f?.value===true&&(inventoryFeature||optionKey)){
      const badge=td.querySelector('.equipment-answer');const a=el('a',badge.textContent);
      const context=parseQuery($('group-query')?.value||new URLSearchParams(location.search).get('q')||'');
-     a.href=featureInventoryLink(inventoryFeature,{condition:recs[i].v.condition,advisor:new URLSearchParams(location.search).get('advisor'),modelTerms:context.terms});
+     const linkContext={condition:recs[i].v.condition,advisor:new URLSearchParams(location.search).get('advisor'),modelTerms:context.terms};
+     a.href=optionKey?optionInventoryLink({key:optionKey,label:row.label,value:f.displayValue||''},linkContext):featureInventoryLink(inventoryFeature,linkContext);
      a.className=badge.className+' equipment-feature-link';a.style.cssText='display:inline-block;min-height:44px;padding:10px 12px;text-decoration:underline;text-underline-offset:3px;border:1px solid currentColor;border-radius:6px';
      const targetLabel=definitions.find(([id])=>id===inventoryFeature)?.[1]||row.label;a.title='Find vehicles with '+targetLabel;a.setAttribute('aria-label','Find vehicles with '+targetLabel);badge.replaceWith(a);
     }tr.append(td)});body.append(tr);

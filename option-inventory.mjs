@@ -1,4 +1,4 @@
-import {withComparisonSpecifications} from './comparison-specs.mjs?v=audit2';
+import {withComparisonSpecifications} from './comparison-specs.mjs?v=audit3';
 import {featureInventoryLink} from './feature-inventory-link.mjs?v=1';
 import {audioInventoryFeature,installedAudioFact} from './audio-evidence.mjs?v=errors1';
 const normalize=s=>String(s||'').normalize('NFKC').toLowerCase().replace(/[®™]/g,'').replace(/[\u2010-\u2015]/g,'-').replace(/[^a-z0-9.]+/g,' ').replace(/\s+/g,' ').trim();
@@ -22,21 +22,45 @@ export function installedOptionFact(vehicle,sticker,option){
   const wanted=audioInventoryFeature({displayValue:text}),installed=installedAudioFact(vehicle,sticker);
   if(wanted){
    const brand=installed&&audioInventoryFeature(installed);
-   if(brand)return {...installed,value:brand===wanted};
+   if(brand){const count=text.match(/\b(\d+)[ -]+(?:amplified[ -]+)?speakers?\b/i),actual=installed.displayValue.match(/\b(\d+)[ -]+(?:amplified[ -]+)?speakers?\b/i);return count&&!actual?null:{...installed,value:brand===wanted&&(!count||count[1]===actual[1])};}
    const confirmed=sticker.features?.[wanted];
+   if(/\b\d+[ -]+speakers?\b/i.test(text)&&confirmed&&!installed)return null;
    return confirmed?{...confirmed,sourceUrl:confirmed.sourceUrl||sticker.sourceUrl}:null;
   }
+  const count=text.match(/\b(\d+)[ -]+(?:amplified[ -]+)?speakers?\b/i),actual=installed?.displayValue.match(/\b(\d+)[ -]+(?:amplified[ -]+)?speakers?\b/i);
+  if(count)return actual?{...installed,value:count[1]===actual[1]}:null;
  }
- const specification=key==='touchscreen-upgrade'?'infotainmentScreen':key==='power-tailgate'?'tailgateOperation':null;
+ const specification=['touchscreen-upgrade','touchscreen'].includes(key)?'infotainmentScreen':['driver-display','instrument-screen'].includes(key)?'instrumentScreen':key==='driver-seat'?'driverAdjustment':key==='passenger-seat'?'passengerAdjustment':key==='power-tailgate'?'tailgateOperation':null;
  if(specification){
   const fact=withComparisonSpecifications(vehicle,sticker)?.features?.[specification];
   if(!fact)return null;
-  if(specification==='infotainmentScreen'){
+  if(['infotainmentScreen','instrumentScreen'].includes(specification)){
    const size=text.match(/\b(\d{1,2}(?:\.\d+)?)[ -]?inch/i);
-   return size?{...fact,value:fact.displayValue===Number(size[1])+' inches'}:null;
+   if(!size)return null;
+   const generation=text.match(/uconnect\s+(\d)/i),printed=fact.evidence.join(' ');
+   const navigation=/\bnav(?:igation)?\b/i.test(text);
+   return {...fact,value:fact.displayValue===Number(size[1])+' inches'&&(!generation||new RegExp('uconnect\\s+'+generation[1]+'\\b','i').test(printed))&&(!navigation||/\bnav(?:igation)?\b/i.test(printed))};
+  }
+  if(['driverAdjustment','passengerAdjustment'].includes(specification)){
+   const adjustment=text.match(/\b(\d+)[ -]+way[ -]+(power|manual)\b/i);
+   return adjustment?{...fact,value:fact.displayValue===adjustment[1]+'-way '+adjustment[2].toLowerCase()}:null;
   }
   // A power release cannot prove a powered opening/closing tailgate.
   return {...fact,value:fact.displayValue==='Power tailgate'};
+ }
+ const printedRules={
+  'aux-switches':/\b(?:programmable |mounted )?auxiliary switches\b/i,
+  'night-vision':/\bnight vision\b.*\bpedestrian\b.*\banimal\b/i,
+  'lane-driving-upgrade':/\bhands[ -]?free active driving assist\b/i,
+  'winch':/\b(?:warn (?:electric front )?winch|(?:front )?electric[ -]winch)\b/i
+ };
+ if(printedRules[key]){
+  const lines=(sticker.lines||[]).filter(l=>!(/\bdelete[ds]?|deletion|without|not equipped|not included|if equipped|available separately|winch.capable\b/i.test(l)));
+  const evidence=lines.filter(l=>printedRules[key].test(l));
+  const capacity=text.match(/\b(\d[\d,]*)[ -]?(?:pound|lb)/i);
+  // An installed winch alone cannot prove an advertised capacity.
+  if(capacity&&!evidence.some(l=>l.replace(/,/g,'').includes(capacity[1].replace(/,/g,''))))return null;
+  return evidence.length?{value:true,evidence,sourceUrl:sticker.sourceUrl}:null;
  }
  let features=ids[key];
  const name=normalize(option.label);

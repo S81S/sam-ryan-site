@@ -1,11 +1,11 @@
-import {optionFromParams} from './option-inventory.mjs?v=options2';
+import {optionFromParams} from './option-inventory.mjs?v=options3';
 import {applyFeatureFilter} from './feature-inventory-link.mjs?v=1';
 import {sameModelOptions,modelName} from './same-model-options.mjs?v=wheel1';
 import {optionGuidance,noMatchGuidance} from './option-guidance.mjs?v=option1';
 import {shoppingContext,comparisonLink} from './shopping-context.mjs?v=audit2';
 import {recoveryOptions} from './search-recovery.mjs?v=wheel1';
 import {openVehiclePreview} from './vehicle-preview.mjs?v=shopping1';
-import {parseQuery,matchVehicle,labels,definitions} from './equipment-search.mjs?v=options1';
+import {parseQuery,matchVehicle,labels,definitions} from './equipment-search.mjs?v=options3';
 import {categoryLabels} from './vehicle-categories.mjs?v=categories1';
 const $=id=>document.getElementById(id),data=window.usedInventoryData,index=window.equipmentIndex;
 const el=(tag,text,cls)=>{const e=document.createElement(tag);if(text!==undefined)e.textContent=text;if(cls)e.className=cls;return e;};
@@ -67,9 +67,18 @@ function render(){
  for(const warning of q.warnings)summary.append(el('p',warning,'stock-small'));out.append(summary);
  if(q.ambiguity||q.warnings.some(w=>/Conflicting|not both|More than one/.test(w))){out.append(el('p',q.ambiguity||'Please resolve the conflicting choices above, then search again.'));$('more-matches').hidden=true;return;}
  for(const notice of optionGuidance(q)){const message=el('p',notice.message,'stock-small');message.append(document.createTextNode(' '),link('View factory options',notice.sourceUrl));out.append(message);}
- const matches=[],unknown=[];
- for(const vehicle of data.vehicles){const result=matchVehicle(vehicle,index.records[vehicle.vin],q);if(result.kind==='match')matches.push({vehicle,result});else if(result.kind==='unknown')unknown.push({vehicle,result});}
+ const matches=[],unknown=[],equipmentConflicts=[];
+ for(const vehicle of data.vehicles){const result=matchVehicle(vehicle,index.records[vehicle.vin],q);if(result.kind==='match')matches.push({vehicle,result});else if(result.kind==='unknown')unknown.push({vehicle,result});else if(result.reason==='equipment')equipmentConflicts.push({vehicle,result});}
  out.append(el('p',`${matches.length} ${(q.requirements.length||q.equipmentOption)?(q.requirements.some(r=>r.id==='flatTow')?'matches supported by stickers and towing manuals':'equipment-confirmed matches'):'matches'}${(q.requirements.length||q.equipmentOption)&&unknown.length?' · '+unknown.length+' need equipment confirmation':''}`,'result-count'));
+ if(q.equipmentOption&&!matches.length){
+  const reasons=new Map();for(const {result} of unknown){const reason=result.checks.find(c=>c.id==='selectedOption'&&c.state==='unknown')?.reason;if(reason)reasons.set(reason,(reasons.get(reason)||0)+1);}
+  const explanation=el('div',undefined,'search-summary');explanation.append(el('h3','Why no confirmed matches are shown'));
+  if(equipmentConflicts.length)explanation.append(el('p',equipmentConflicts.length+' vehicles do not satisfy the selected equipment requirements based on their sticker evidence.'));
+  for(const [reason,count] of reasons)explanation.append(el('p',count+' vehicles: '+reason));
+  if(!equipmentConflicts.length&&!unknown.length)explanation.append(el('p','No current vehicles satisfy the model, condition and other search filters.'));
+  explanation.append(el('p','Only vehicles with evidence for your selected configuration appear as matches.'));
+  out.append(explanation);
+ }
  searchCounts={condition:q.condition||'Both',result_count:matches.length,unknown_count:unknown.length,feature_count:q.requirements.length};
  if(matches.length&&(q.terms.length||q.requirements.length||q.equipmentOption)){const heading=el('h3','Exact matches');heading.style.gridColumn='1/-1';out.append(heading);}
  const order=$('search-sort').value;
@@ -85,7 +94,7 @@ function render(){
  for(const {vehicle:v,result} of rows.slice(0,visible)){
   const sticker=index.records[v.vin],card=el('article',undefined,'match');
   const photo=link('',`contact.html?vehicle=${encodeURIComponent(v.vin)}`);photo.className='stock-photo';photo.setAttribute('aria-label','View vehicle details: '+v.title);photo.addEventListener('click',e=>{e.preventDefault();openVehiclePreview(v,customerRequest);});const img=el('img');img.src=v.photoUrl;img.alt=v.title;img.width=400;img.height=300;img.loading='lazy';img.addEventListener('error',()=>photo.replaceChildren(el('span','View vehicle details')),{once:true});photo.append(img);card.append(photo);
-  card.append(el('span',result.kind==='unknown'?'Equipment needs confirmation':result.checks.some(c=>c.state==='not-listed')?'Sunroof not listed on sticker':q.requirements.some(r=>r.id==='flatTow')?'Sticker + towing manual checked':(q.requirements.length||q.equipmentOption)?(result.checks.some(c=>c.method?.startsWith('factory-'))?'Sticker + factory guide checked':'Requested equipment confirmed on sticker'):sticker?.status==='verified'?'Window sticker available':'Equipment unverified','stock-badge'),el('h3',v.title),el('p',cash(v.price),'vehicle-price'),el('p',`${v.condition||''} · ${v.miles==null?'Mileage unknown':v.miles.toLocaleString()+' miles'}${v.stock?' · Stock '+v.stock:''}`,'vehicle-meta'));
+  card.append(el('span',result.kind==='unknown'?'Equipment needs confirmation':result.checks.some(c=>c.state==='not-listed')?'Sunroof not listed on sticker':q.requirements.some(r=>r.id==='flatTow')?'Sticker + towing manual checked':(q.requirements.length||q.equipmentOption)?(result.checks.some(c=>c.method?.startsWith('factory-'))?'Sticker + factory guide checked':'Requested equipment confirmed on sticker'):sticker?.status==='verified'?'Window sticker available':'Equipment unverified','stock-badge'),el('h3',v.title),el('p',cash(v.price),'vehicle-price'),el('p',`${v.condition||''} · ${v.miles==null?'Ask for current mileage':v.miles.toLocaleString()+' miles'}${v.stock?' · Stock '+v.stock:''}`,'vehicle-meta'));
   if(v.condition==='New')card.append(el('p','Advertised price may include conditional incentives. Ask us to confirm your price.','stock-small'));
   for(const category of result.categoryChecks||[])card.append(el('p',`${category.label} · ${category.evidence}`,'stock-small'));
   for(const check of result.checks)card.append(el('p',`${check.state==='match'?'✓':check.state==='not-listed'?'—':'?'} ${check.wanted?'':'Without '}${check.label}: ${check.state==='unknown'?'not confirmed by the sticker':check.evidence.join(' / ')}`,'equipment-check'));

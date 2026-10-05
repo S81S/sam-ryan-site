@@ -102,4 +102,37 @@ test('selected equipment survives comparison links and advisor requests',async()
  const s={vin:vehicle.vin,status:'verified',features:{},lines:['Power Tailgate Release']};
  assert.equal(installedOptionFact(vehicle,s,option).value,false);
  assert.equal(installedOptionFact(vehicle,{...s,lines:['Power Tailgate']},option).value,true);
+ assert.equal(installedOptionFact(vehicle,{...s,lines:['Power Tailgate Lock']},option),null);
+ assert.equal(withComparisonSpecifications(vehicle,{...s,lines:['Power Tailgate Lock']}).features.tailgateOperation,undefined);
+ });
+
+ test('winch-capable bumpers cannot prove an installed winch or its capacity',()=>{
+ const option={key:'winch',label:'Winch',value:'Capability Group'};
+ const s={vin:vehicle.vin,status:'verified',features:{},lines:['Winch-Capable Steel Front Bumper']};
+ assert.equal(installedOptionFact(vehicle,s,option),null);
+ assert.equal(installedOptionFact(vehicle,{...s,lines:['Warn Electric Front Winch']},option).value,true);
+ assert.equal(installedOptionFact(vehicle,{...s,lines:['Warn Electric Front Winch']},{...option,value:'8,000-pound Warn option'}),null);
+ });
+ test('unconfirmed selected equipment includes its actual source limitation',()=>{
+ const q=parseQuery('');q.equipmentOption={key:'touchscreen-upgrade',label:'Larger touchscreen',value:'12-inch Uconnect'};
+ const v={...vehicle,locationId:'18393'};
+ const s={vin:v.vin,status:'verified',features:{},lines:[]};
+ assert.match(matchVehicle(v,s,q).checks[0].reason,/does not establish this exact configuration/);
+ assert.match(matchVehicle(v,{...s,status:'unavailable'},q).checks[0].reason,/not available for review/);
+ assert.match(matchVehicle(v,{...s,vin:'other'},q).checks[0].reason,/does not match this VIN/);
+ });
+
+ test('audio specifications preserve speaker count and optional replacement',()=>{
+ const s={vin:vehicle.vin,status:'verified',features:{},lines:['6 Speakers','OPTIONAL EQUIPMENT','19-Speaker Harman Kardon Premium Sound']};
+ const option={key:'audio',label:'Audio',value:'6 speakers'};
+ assert.equal(installedOptionFact(vehicle,s,option).value,false);
+ assert.equal(installedOptionFact(vehicle,s,{...option,value:'Harman Kardon 19 speakers'}).value,true);
+ assert.equal(installedOptionFact(vehicle,s,{...option,value:'Harman Kardon 23 speakers'}).value,false);
+ });
+ test('seat adjustment links distinguish exact number of ways and operation',()=>{
+ const s={vin:vehicle.vin,status:'verified',features:{},lines:['8-Way Power Driver Seat']};
+ const option={key:'driver-seat',label:'Driver seat adjustment',value:'8-way power'};
+ assert.equal(installedOptionFact(vehicle,s,option).value,true);
+ assert.equal(installedOptionFact(vehicle,s,{...option,value:'12-way power'}).value,false);
+ assert.equal(installedOptionFact(vehicle,s,{...option,value:'8-way manual'}).value,false);
  });

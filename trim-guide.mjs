@@ -1,4 +1,4 @@
-import {optionInventoryLink} from './option-inventory.mjs?v=options2';
+import {optionInventoryLink} from './option-inventory.mjs?v=options3';
 import {parseQuery} from './equipment-search.mjs';
 import {featureInventoryLink} from './feature-inventory-link.mjs';
 import {equipmentRows,equipmentExplanation,selectedTrimIds,featureMatches} from './trim-comparison.mjs?v=errors1-20261004-alltrims';
@@ -24,7 +24,8 @@ function cell(f){
  const equipment=parseQuery((f?.label||'')+' '+(f?.value||'')).requirements.filter(r=>r.wanted);
  const feature=equipment.length===1?equipment[0].id:null;
  const context={condition:'New',advisor:params.get('advisor'),modelTerms:[model.name.split(' / ')[0].replace(/\s*\([^)]*\)/g,'').replace(/\b[24]-(?:Door|Row)\b/gi,'').trim()]};
- const href=key==='optional'?optionInventoryLink(f,context):key==='standard'&&feature?featureInventoryLink(feature,context):null;
+ const exactSpecification=['audio','touchscreen','driver-display','driver-seat','passenger-seat'].includes(f?.key);
+ const href=key==='optional'||key==='standard'&&exactSpecification?optionInventoryLink(f,context):key==='standard'&&feature?featureInventoryLink(feature,context):null;
  const bubble=href&&key!=='optional'?`<a class="bubble ${key}" href="${esc(href)}" aria-label="${esc('Find '+model.name+' vehicles with '+f.label)}" title="Find vehicles with this ${key==='optional'?'option':'feature'}">${s[0]}</a>`:`<i class="bubble ${key}" aria-hidden="true">${s[0]}</i>`;
  const primary=`<div class="status-line">${bubble}<span class="status-word">${s[1]}</span></div><span class="cell-value">${esc(f?.value||'The published factory guide does not document this feature for this trim.')}</span>${f?.note?`<small class="cell-qualification">${esc(f.note)}</small>`:''}`;
  const linked=key==='optional'?`<a class="option-equipment-link" href="${esc(href)}" aria-label="${esc('Find '+model.name+' vehicles with '+f.label)}" style="display:block;color:inherit;text-decoration:none;min-height:44px;padding:6px;border:1px solid currentColor;border-radius:6px">${primary}<small style="display:block;text-decoration:underline;margin-top:6px">Find vehicles with this option ↗</small></a>`:primary;

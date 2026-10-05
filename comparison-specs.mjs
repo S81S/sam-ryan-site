@@ -40,7 +40,7 @@ export function withComparisonSpecifications(vehicle,sticker){
   audioSystem:installedAudioFact(vehicle,sticker),
   bedPower:installedFact(sticker,l=>/\bbed\b/i.test(l)&&/\b(?:outlet|power[ -]point|power[ -]supply)\b/i.test(l),l=>{const m=l.match(/\b(\d{2,3})[ -]?(?:volt|v)\b/i);return m?m[1]+'-volt bed outlet':'Bed power outlet; voltage not printed on sticker';}),
   powerInverter:installedFact(sticker,l=>/\binverter\b/i.test(l),l=>{const m=l.match(/\b(\d+(?:\.\d+)?)[ -]*(k?w)(?:att)?\b/i);return m?Number(m[1])+' '+m[2].toUpperCase()+' inverter':null;}),
-  tailgateOperation:installedFact(sticker,l=>/\b(?:power|multifunction|multi-function)[ -]+tailgate\b/i.test(l),l=>/release/i.test(l)?'Power tailgate release':/multi/i.test(l)?'Multifunction tailgate':'Power tailgate'),
+  tailgateOperation:installedFact(sticker,l=>/\b(?:power|multifunction|multi-function)[ -]+tailgate\b/i.test(l)&&!/\b(?:lock|locking|latch)\b/i.test(l),l=>/release/i.test(l)?'Power tailgate release':/multi/i.test(l)?'Multifunction tailgate':'Power tailgate'),
   passengerDisplay:installedFact(sticker,l=>/\b(?:front )?passenger\b.*\b(?:display|screen)\b/i.test(l),l=>{const size=screen(l);return size?'Passenger display, '+size:'Passenger interactive display';}),
   digitalMirror:installedFact(sticker,l=>/\bdigital[ -]+rear[ -]?view[ -]+mirror\b/i.test(l),()=> 'Digital rear-view mirror'),
   handsFreeDriving:installedFact(sticker,l=>/\bhands[ -]?free\b.*\bdriving\b/i.test(l),()=> 'Hands-free driving assistance'),
