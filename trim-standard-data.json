@@ -41,6 +41,10 @@
         {
           "label": "Moab 392 factory announcement",
           "url": "https://www.prnewswire.com/news-releases/jeep-brand-airdrops-first-of-12-monthly-wrangler-special-editions-in-yearlong-celebration-to-mark-85-years-of-off-road-domination-302612154.html"
+        },
+        {
+          "label": "Jeep 2026 Wrangler buyer’s guide (manufacturer brochure, public copy)",
+          "url": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf"
         }
       ],
       "trims": [
@@ -178,6 +182,52 @@
               "status": "optional",
               "sourceUrl": "https://www.jlwranglerforums.com/forum/attachments/2026-4-door-wrangler-pdf.1009497/",
               "benefit": "The transmission and engine must be compared as a complete factory configuration."
+            },
+            {
+              "key": "audio",
+              "label": "Audio system",
+              "value": "8 speakers",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=3",
+              "note": "Standard equipment listed on buyer’s guide page 3."
+            },
+            {
+              "key": "headlamps",
+              "label": "Headlamps",
+              "value": "Halogen",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=3"
+            },
+            {
+              "key": "instrument-display",
+              "label": "Driver information display",
+              "value": "3.5 inches",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=3"
+            },
+            {
+              "key": "trailer-hitch",
+              "label": "Trailer hitch",
+              "value": "Trailer Tow and Auxiliary Switch Group",
+              "status": "optional",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=3",
+              "note": "Class II hitch receiver with 4- and 7-pin wiring."
+            },
+            {
+              "key": "aux-switches",
+              "label": "Auxiliary switches",
+              "value": "Trailer Tow and Auxiliary Switch Group",
+              "status": "optional",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=3",
+              "note": "Four pre-wired auxiliary switches."
+            },
+            {
+              "key": "hardtop",
+              "label": "Hardtop",
+              "value": "Factory hardtop option",
+              "status": "optional",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=3",
+              "note": "Black three-piece hardtop."
             }
           ],
           "comparisonNote": "U.S. four-door 2026 configurations. Standard rows describe the stated base configuration; option rows name the required factory group. Rubicon X tire and transfer-case equipment changes with transmission. The July 2025 factory guide is used for package details; current Jeep trim highlights are used where later equipment is explicitly shown.",
@@ -340,6 +390,132 @@
               "status": "optional",
               "sourceUrl": "https://www.jlwranglerforums.com/forum/attachments/2026-4-door-wrangler-pdf.1009497/",
               "benefit": "The transmission and engine must be compared as a complete factory configuration."
+            },
+            {
+              "key": "audio",
+              "label": "Audio system",
+              "value": "8 speakers",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=4",
+              "note": "Base 8-speaker system from Sport (page 3). Alpine premium audio is separately available on this trim."
+            },
+            {
+              "key": "headlamps",
+              "label": "Headlamps",
+              "value": "Halogen",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=4",
+              "note": "Halogen base lighting; LED headlamps and front fog lamps are optional with the LED Headlamp and Fog Lamp Group."
+            },
+            {
+              "key": "instrument-display",
+              "label": "Driver information display",
+              "value": "3.5 inches",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=3",
+              "note": "Base display from Sport; the optional Convenience Group upgrades it to a 7-inch color display."
+            },
+            {
+              "key": "adaptive-cruise",
+              "label": "Adaptive cruise control",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=4",
+              "note": "Enhanced Adaptive Cruise Control. Driver supervision is required."
+            },
+            {
+              "key": "collision-warning",
+              "label": "Forward collision warning",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=4",
+              "note": "Full-Speed Forward Collision Warning Plus. "
+            },
+            {
+              "key": "mirrors",
+              "label": "Exterior mirrors",
+              "value": "Power-adjustable, heated",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=4"
+            },
+            {
+              "key": "windshield",
+              "label": "Windshield",
+              "value": "Gorilla Glass",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=4"
+            },
+            {
+              "key": "trailer-hitch",
+              "label": "Trailer hitch",
+              "value": "Trailer Tow and Auxiliary Switch Group",
+              "status": "optional",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=4",
+              "note": "Class II hitch receiver with 4- and 7-pin wiring."
+            },
+            {
+              "key": "aux-switches",
+              "label": "Auxiliary switches",
+              "value": "Trailer Tow and Auxiliary Switch Group",
+              "status": "optional",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=4",
+              "note": "Four pre-wired auxiliary switches."
+            },
+            {
+              "key": "hardtop",
+              "label": "Hardtop",
+              "value": "Factory hardtop option",
+              "status": "optional",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=4",
+              "note": "Black three-piece hardtop."
+            },
+            {
+              "key": "remote-start",
+              "label": "Remote start",
+              "value": "Convenience Group with automatic transmission",
+              "status": "optional",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=4",
+              "note": "Requires an automatic transmission; not included on the base manual configuration."
+            },
+            {
+              "key": "entry",
+              "label": "Passive entry",
+              "value": "Convenience Group",
+              "status": "optional",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=4",
+              "note": "Passive entry at the front doors."
+            },
+            {
+              "key": "climate",
+              "label": "Climate control",
+              "value": "Automatic temperature control — Convenience Group",
+              "status": "optional",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=4",
+              "note": "The base trim includes air conditioning; automatic temperature control requires this group."
+            },
+            {
+              "key": "blind-spot",
+              "label": "Blind-spot monitoring",
+              "value": "Safety Group",
+              "status": "optional",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=4",
+              "note": "Includes rear cross-path detection."
+            },
+            {
+              "key": "rear-parking",
+              "label": "Rear parking sensors",
+              "value": "Safety Group",
+              "status": "optional",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=4",
+              "note": "ParkSense Rear Park Assist."
+            },
+            {
+              "key": "power-roof",
+              "label": "Power roof",
+              "value": "Sky One-Touch option",
+              "status": "optional",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=4",
+              "note": "Four-door only."
             }
           ],
           "comparisonNote": "U.S. four-door 2026 configurations. Standard rows describe the stated base configuration; option rows name the required factory group. Rubicon X tire and transfer-case equipment changes with transmission. The July 2025 factory guide is used for package details; current Jeep trim highlights are used where later equipment is explicitly shown.",
@@ -510,6 +686,167 @@
               "status": "optional",
               "sourceUrl": "https://www.jlwranglerforums.com/forum/attachments/2026-4-door-wrangler-pdf.1009497/",
               "benefit": "The transmission and engine must be compared as a complete factory configuration."
+            },
+            {
+              "key": "audio",
+              "label": "Audio system",
+              "value": "8 speakers",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=5",
+              "note": "Base 8-speaker system from Sport (page 3). Alpine premium audio is separately available on this trim."
+            },
+            {
+              "key": "headlamps",
+              "label": "Headlamps",
+              "value": "LED",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=5"
+            },
+            {
+              "key": "instrument-display",
+              "label": "Driver information display",
+              "value": "3.5 inches",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=3",
+              "note": "Base display from Sport; the optional Convenience Group upgrades it to a 7-inch color display."
+            },
+            {
+              "key": "adaptive-cruise",
+              "label": "Adaptive cruise control",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=5",
+              "note": "Enhanced Adaptive Cruise Control. Driver supervision is required."
+            },
+            {
+              "key": "collision-warning",
+              "label": "Forward collision warning",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.jlwranglerforums.com/forum/attachments/2026-4-door-wrangler-pdf.1009497/",
+              "note": "Full-Speed Forward Collision Warning Plus. "
+            },
+            {
+              "key": "mirrors",
+              "label": "Exterior mirrors",
+              "value": "Power-adjustable, heated",
+              "status": "standard",
+              "sourceUrl": "https://www.jlwranglerforums.com/forum/attachments/2026-4-door-wrangler-pdf.1009497/"
+            },
+            {
+              "key": "windshield",
+              "label": "Windshield",
+              "value": "Gorilla Glass",
+              "status": "standard",
+              "sourceUrl": "https://www.jlwranglerforums.com/forum/attachments/2026-4-door-wrangler-pdf.1009497/"
+            },
+            {
+              "key": "remote-start",
+              "label": "Remote start",
+              "value": "Convenience Group with automatic transmission",
+              "status": "optional",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=5",
+              "note": "Requires an automatic transmission; not included on the base manual configuration."
+            },
+            {
+              "key": "entry",
+              "label": "Passive entry",
+              "value": "Convenience Group",
+              "status": "optional",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=5",
+              "note": "Passive entry at the front doors."
+            },
+            {
+              "key": "climate",
+              "label": "Climate control",
+              "value": "Automatic temperature control — Convenience Group",
+              "status": "optional",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=5",
+              "note": "The base trim includes air conditioning; automatic temperature control requires this group."
+            },
+            {
+              "key": "blind-spot",
+              "label": "Blind-spot monitoring",
+              "value": "Safety Group",
+              "status": "optional",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=5",
+              "note": "Includes rear cross-path detection."
+            },
+            {
+              "key": "rear-parking",
+              "label": "Rear parking sensors",
+              "value": "Safety Group",
+              "status": "optional",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=5",
+              "note": "ParkSense Rear Park Assist."
+            },
+            {
+              "key": "power-roof",
+              "label": "Power roof",
+              "value": "Sky One-Touch option",
+              "status": "optional",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=5",
+              "note": "Four-door only."
+            },
+            {
+              "key": "rock-rails",
+              "label": "Rock rails",
+              "value": "Rock rails",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=5"
+            },
+            {
+              "key": "trailer-hitch",
+              "label": "Trailer hitch",
+              "value": "Class II hitch with 4- and 7-pin wiring",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=5"
+            },
+            {
+              "key": "aux-switches",
+              "label": "Auxiliary switches",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=5"
+            },
+            {
+              "key": "terrain-mode",
+              "label": "Off-Road Plus mode",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=5"
+            },
+            {
+              "key": "axle-ratio",
+              "label": "Axle ratio",
+              "value": "4.10",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=5",
+              "note": "Base configuration; optional tire packages may change the axle ratio."
+            },
+            {
+              "key": "hardtop",
+              "label": "Hardtop",
+              "value": "Factory hardtop option",
+              "status": "optional",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=5",
+              "note": "Black three-piece hardtop."
+            },
+            {
+              "key": "tire-upgrade",
+              "label": "35-inch tire package",
+              "value": "Xtreme 35-inch Tire Package",
+              "status": "optional",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=5",
+              "note": "Optional package; 35-inch tires are not standard on the base Willys."
+            },
+            {
+              "key": "winch",
+              "label": "Winch",
+              "value": "Capability Group",
+              "status": "optional",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=5",
+              "note": "WARN 8,000-lb winch and steel front/rear bumpers."
             }
           ],
           "comparisonNote": "U.S. four-door 2026 configurations. Standard rows describe the stated base configuration; option rows name the required factory group. Rubicon X tire and transfer-case equipment changes with transmission. The July 2025 factory guide is used for package details; current Jeep trim highlights are used where later equipment is explicitly shown.",
@@ -1003,29 +1340,33 @@
               "label": "Front off-road camera",
               "value": "Technology Group",
               "status": "optional",
-              "sourceUrl": "https://www.jlwranglerforums.com/forum/attachments/2026-4-door-wrangler-pdf.1009497/",
-              "benefit": "Helps show obstacles close to the front of the vehicle."
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=6",
+              "benefit": "Helps show obstacles close to the front of the vehicle.",
+              "note": "Also included in the optional Popular Equipment Group; not standard on the base Sahara."
             },
             {
               "key": "navigation",
               "label": "Built-in navigation",
               "value": "Technology Group",
               "status": "optional",
-              "sourceUrl": "https://www.jlwranglerforums.com/forum/attachments/2026-4-door-wrangler-pdf.1009497/"
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=6",
+              "note": "Also included in the optional Popular Equipment Group; not standard on the base Sahara."
             },
             {
               "key": "blind-spot",
               "label": "Blind-spot / rear cross-path alerts",
               "value": "Safety Group",
               "status": "optional",
-              "sourceUrl": "https://www.jlwranglerforums.com/forum/attachments/2026-4-door-wrangler-pdf.1009497/"
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=6",
+              "note": "Also included in the optional Popular Equipment Group; not standard on the base Sahara."
             },
             {
               "key": "rear-parking",
               "label": "Rear parking sensors",
               "value": "Safety Group",
               "status": "optional",
-              "sourceUrl": "https://www.jlwranglerforums.com/forum/attachments/2026-4-door-wrangler-pdf.1009497/"
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=6",
+              "note": "Also included in the optional Popular Equipment Group; not standard on the base Sahara."
             },
             {
               "key": "roof",
@@ -1047,24 +1388,76 @@
               "label": "Audio system",
               "value": "8 speakers",
               "status": "standard",
-              "sourceUrl": "https://www.jeep.com/wrangler/specs.sahara.html",
-              "note": "Factory specification for the standard 2026 four-door Sahara; optional upgrades may differ."
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=6",
+              "note": "Base 8-speaker system from Sport (page 3). Alpine premium audio is separately available on this trim."
             },
             {
               "key": "headlamps",
               "label": "Headlamps",
-              "value": "LED low/high beams",
+              "value": "LED",
               "status": "standard",
-              "sourceUrl": "https://www.jeep.com/wrangler/specs.sahara.html",
-              "note": "Factory specification for the standard 2026 four-door Sahara; optional upgrades may differ."
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=6"
             },
             {
               "key": "mirrors",
               "label": "Exterior mirrors",
-              "value": "Power-adjustable, heated driver and passenger mirrors",
+              "value": "Power-adjustable, heated",
               "status": "standard",
-              "sourceUrl": "https://www.jeep.com/wrangler/specs.sahara.html",
-              "note": "Factory specification for the standard 2026 four-door Sahara; optional upgrades may differ."
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=6",
+              "note": "Retained Sport S equipment (buyer’s guide page 4)."
+            },
+            {
+              "key": "adaptive-cruise",
+              "label": "Adaptive cruise control",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=6",
+              "note": "Enhanced Adaptive Cruise Control. Driver supervision is required."
+            },
+            {
+              "key": "collision-warning",
+              "label": "Forward collision warning",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=6",
+              "note": "Full-Speed Forward Collision Warning Plus. Retained Sport S equipment (buyer’s guide page 4)."
+            },
+            {
+              "key": "windshield",
+              "label": "Windshield",
+              "value": "Gorilla Glass",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=6",
+              "note": "Retained Sport S / Rubicon equipment."
+            },
+            {
+              "key": "instrument-display",
+              "label": "Driver information display",
+              "value": "7 inches",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=6"
+            },
+            {
+              "key": "entry",
+              "label": "Passive entry",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=6"
+            },
+            {
+              "key": "remote-start",
+              "label": "Remote start",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=6",
+              "note": "Sahara’s stated base configuration has an 8-speed automatic transmission."
+            },
+            {
+              "key": "console-power",
+              "label": "Cabin AC power outlet",
+              "value": "115 volts",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=6"
             }
           ],
           "comparisonNote": "U.S. four-door 2026 configurations. Standard rows describe the stated base configuration; option rows name the required factory group. Rubicon X tire and transfer-case equipment changes with transmission. The July 2025 factory guide is used for package details; current Jeep trim highlights are used where later equipment is explicitly shown.",
@@ -1403,6 +1796,106 @@
               "status": "optional",
               "sourceUrl": "https://www.jlwranglerforums.com/forum/attachments/2026-4-door-wrangler-pdf.1009497/",
               "benefit": "The transmission and engine must be compared as a complete factory configuration."
+            },
+            {
+              "key": "audio",
+              "label": "Audio system",
+              "value": "8 speakers",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=7",
+              "note": "Base 8-speaker system from Sport (page 3). Alpine premium audio is separately available on this trim."
+            },
+            {
+              "key": "headlamps",
+              "label": "Headlamps",
+              "value": "LED",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=7",
+              "note": "Retained Sahara LED headlamps (buyer’s guide page 6)."
+            },
+            {
+              "key": "adaptive-cruise",
+              "label": "Adaptive cruise control",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=7",
+              "note": "Enhanced Adaptive Cruise Control. Driver supervision is required."
+            },
+            {
+              "key": "collision-warning",
+              "label": "Forward collision warning",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=7",
+              "note": "Full-Speed Forward Collision Warning Plus. Retained Sport S equipment (buyer’s guide page 4)."
+            },
+            {
+              "key": "mirrors",
+              "label": "Exterior mirrors",
+              "value": "Power-adjustable, heated",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=7",
+              "note": "Retained Sport S equipment (buyer’s guide page 4)."
+            },
+            {
+              "key": "windshield",
+              "label": "Windshield",
+              "value": "Gorilla Glass",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=7"
+            },
+            {
+              "key": "instrument-display",
+              "label": "Driver information display",
+              "value": "7 inches",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=7",
+              "note": "Retained Sahara display specification (buyer’s guide page 6)."
+            },
+            {
+              "key": "rock-rails",
+              "label": "Rock rails",
+              "value": "Rock rails",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=7"
+            },
+            {
+              "key": "terrain-mode",
+              "label": "Off-Road Plus mode",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=7"
+            },
+            {
+              "key": "axle-ratio",
+              "label": "Axle ratio",
+              "value": "4.10",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=7",
+              "note": "Base manual configuration; automatic/tire packages may change the axle ratio."
+            },
+            {
+              "key": "remote-start",
+              "label": "Remote start",
+              "value": "Convenience Group with automatic transmission",
+              "status": "optional",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=7",
+              "note": "Requires an automatic transmission; not included on the base manual configuration."
+            },
+            {
+              "key": "tire-upgrade",
+              "label": "35-inch tire package",
+              "value": "Xtreme 35-inch Tire Package",
+              "status": "optional",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=7",
+              "note": "Optional package; the base Rubicon has 33-inch tires."
+            },
+            {
+              "key": "winch",
+              "label": "Winch",
+              "value": "8,000-pound Warn option",
+              "status": "optional",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=7"
             }
           ],
           "comparisonNote": "U.S. four-door 2026 configurations. Standard rows describe the stated base configuration; option rows name the required factory group. Rubicon X tire and transfer-case equipment changes with transmission. The July 2025 factory guide is used for package details; current Jeep trim highlights are used where later equipment is explicitly shown.",
@@ -1624,6 +2117,92 @@
               "value": "Body-color hardtop",
               "status": "standard",
               "sourceUrl": "https://www.jlwranglerforums.com/forum/attachments/2026-4-door-wrangler-pdf.1009497/"
+            },
+            {
+              "key": "adaptive-cruise",
+              "label": "Adaptive cruise control",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=7",
+              "note": "Enhanced Adaptive Cruise Control. Driver supervision is required."
+            },
+            {
+              "key": "collision-warning",
+              "label": "Forward collision warning",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=7",
+              "note": "Full-Speed Forward Collision Warning Plus. Retained Sport S equipment (buyer’s guide page 4)."
+            },
+            {
+              "key": "mirrors",
+              "label": "Exterior mirrors",
+              "value": "Power-adjustable, heated",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=7",
+              "note": "Retained Sport S equipment (buyer’s guide page 4)."
+            },
+            {
+              "key": "windshield",
+              "label": "Windshield",
+              "value": "Gorilla Glass",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=7",
+              "note": "Retained Sport S / Rubicon equipment."
+            },
+            {
+              "key": "instrument-display",
+              "label": "Driver information display",
+              "value": "7 inches",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=7",
+              "note": "Retained Sahara display specification (buyer’s guide page 6)."
+            },
+            {
+              "key": "headlamps",
+              "label": "Headlamps",
+              "value": "LED",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=7",
+              "note": "Retained Sahara LED headlamps (buyer’s guide page 6)."
+            },
+            {
+              "key": "rock-rails",
+              "label": "Rock rails",
+              "value": "Rock rails",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=7"
+            },
+            {
+              "key": "terrain-mode",
+              "label": "Off-Road Plus mode",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=7"
+            },
+            {
+              "key": "axle-ratio",
+              "label": "Axle ratio",
+              "value": "4.10",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=7",
+              "note": "Base manual configuration; automatic/tire packages may change the axle ratio."
+            },
+            {
+              "key": "bumpers",
+              "label": "Bumpers",
+              "value": "Steel front and rear",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=7",
+              "note": "Included in the X Package."
+            },
+            {
+              "key": "remote-start",
+              "label": "Remote start",
+              "value": "Automatic-transmission configuration",
+              "status": "optional",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=7",
+              "note": "Convenience Group is included in X Package, but remote start requires the optional automatic transmission. Base manual equipment does not include remote start."
             }
           ],
           "comparisonNote": "U.S. four-door 2026 Rubicon X. Standard powertrain, transfer-case and tire rows describe the 3.6L V6 with six-speed manual. The optional automatic configuration changes the tires and transfer case as stated in its option row. Factory package details use the July 2025 order guide; later Jeep retail highlights are used where explicitly shown.",
@@ -1974,6 +2553,60 @@
               "value": "8,000-pound Warn option",
               "status": "optional",
               "sourceUrl": "https://www.prnewswire.com/news-releases/jeep-brand-airdrops-first-of-12-monthly-wrangler-special-editions-in-yearlong-celebration-to-mark-85-years-of-off-road-domination-302612154.html"
+            },
+            {
+              "key": "gearbox",
+              "label": "Transmission",
+              "value": "8-speed automatic",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=8"
+            },
+            {
+              "key": "heated-wheel",
+              "label": "Heated steering wheel",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=8",
+              "note": "Premium-wrapped heated wheel with paddle shifters."
+            },
+            {
+              "key": "remote-start",
+              "label": "Remote start",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=8"
+            },
+            {
+              "key": "adaptive-cruise",
+              "label": "Adaptive cruise control",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=8",
+              "note": "Adaptive Cruise Control with Stop. Driver supervision is required."
+            },
+            {
+              "key": "rear-parking",
+              "label": "Rear parking sensors",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=8",
+              "note": "ParkSense Rear Park Assist."
+            },
+            {
+              "key": "blind-spot",
+              "label": "Blind-spot monitoring",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=8",
+              "note": "Includes rear cross-path detection."
+            },
+            {
+              "key": "front-camera",
+              "label": "Front off-road camera",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=8",
+              "note": "Integrated Off-Road Camera."
             }
           ],
           "comparisonNote": "U.S. 2026 four-door special edition. Rows are the equipment explicitly identified by Jeep for this edition; unlisted package compatibility is not inferred from another trim.",
