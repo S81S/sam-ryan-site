@@ -16593,6 +16593,30 @@
               "value": "468 lb-ft",
               "status": "standard",
               "sourceUrl": "https://www.prnewswire.com/news-releases/jeep-brand-introduces-two-new-special-edition-wagoneer-models-302503278.html"
+            },
+            {
+              "key": "four_wheel_drive",
+              "label": "4x4 system",
+              "value": "Quadra-Trac I on 4x4 models",
+              "status": "optional",
+              "sourceUrl": "https://cdn.dealereprocess.org/cdn/brochures/jeep/2025-grandwagoneer.pdf#page=3",
+              "benefit": "Four-wheel drive is a configuration choice on these trims. The standard 4x4 system is Quadra-Trac I; the Heavy-Duty Trailer-Tow Package changes the system to Quadra-Drive II."
+            },
+            {
+              "key": "tires",
+              "label": "Tires",
+              "value": "275/55R20 all-season",
+              "status": "standard",
+              "sourceUrl": "https://cdn.dealereprocess.org/cdn/brochures/jeep/2025-grandwagoneer.pdf#page=3",
+              "benefit": "Base 20-inch-wheel configuration. The Series II and Series III pages explicitly retain base equipment unless replaced. Wheel, trail and towing packages can change the tires."
+            },
+            {
+              "key": "fender_flares",
+              "label": "Fender flares",
+              "value": "Diamond Black",
+              "status": "standard",
+              "sourceUrl": "https://cdn.dealereprocess.org/cdn/brochures/jeep/2025-grandwagoneer.pdf#page=3",
+              "benefit": "Factory base finish retained by Series II and Series III; appearance packages and special editions are checked separately."
             }
           ]
         },
@@ -16780,6 +16804,46 @@
               "value": "468 lb-ft",
               "status": "standard",
               "sourceUrl": "https://www.prnewswire.com/news-releases/jeep-brand-introduces-two-new-special-edition-wagoneer-models-302503278.html"
+            },
+            {
+              "key": "four_wheel_drive",
+              "label": "4x4 system",
+              "value": "Quadra-Trac I on 4x4 models",
+              "status": "optional",
+              "sourceUrl": "https://cdn.dealereprocess.org/cdn/brochures/jeep/2025-grandwagoneer.pdf#page=3",
+              "benefit": "Four-wheel drive is a configuration choice on these trims. The standard 4x4 system is Quadra-Trac I; the Heavy-Duty Trailer-Tow Package changes the system to Quadra-Drive II."
+            },
+            {
+              "key": "tires",
+              "label": "Tires",
+              "value": "275/55R20 all-season",
+              "status": "standard",
+              "sourceUrl": "https://cdn.dealereprocess.org/cdn/brochures/jeep/2025-grandwagoneer.pdf#page=3",
+              "benefit": "Base 20-inch-wheel configuration. The Series II and Series III pages explicitly retain base equipment unless replaced. Wheel, trail and towing packages can change the tires."
+            },
+            {
+              "key": "fender_flares",
+              "label": "Fender flares",
+              "value": "Diamond Black",
+              "status": "standard",
+              "sourceUrl": "https://cdn.dealereprocess.org/cdn/brochures/jeep/2025-grandwagoneer.pdf#page=3",
+              "benefit": "Factory base finish retained by Series II and Series III; appearance packages and special editions are checked separately."
+            },
+            {
+              "key": "surround_camera",
+              "label": "Surround-view camera",
+              "value": "360-degree camera in Convenience Group",
+              "status": "optional",
+              "sourceUrl": "https://cdn.dealereprocess.org/cdn/brochures/jeep/2025-grandwagoneer.pdf#page=4",
+              "benefit": "Requires the optional Convenience Group; not included in the base Series II."
+            },
+            {
+              "key": "underbody_protection",
+              "label": "Steel skid plates",
+              "value": "Three skid plates in Advanced All-Terrain Group",
+              "status": "optional",
+              "sourceUrl": "https://cdn.dealereprocess.org/cdn/brochures/jeep/2025-grandwagoneer.pdf#page=4",
+              "benefit": "Standard-wheelbase 4x4 configuration only. Package protects the front axle, fuel tank and transfer case."
             }
           ]
         },
@@ -17170,6 +17234,22 @@
               "value": "Quadra-Trac I",
               "status": "standard",
               "sourceUrl": "https://cdn.dealereprocess.org/cdn/brochures/jeep/2025-grandwagoneer.pdf"
+            },
+            {
+              "key": "tires",
+              "label": "Tires",
+              "value": "275/55R20 all-season",
+              "status": "standard",
+              "sourceUrl": "https://cdn.dealereprocess.org/cdn/brochures/jeep/2025-grandwagoneer.pdf#page=3",
+              "benefit": "Base 20-inch-wheel configuration. The Series II and Series III pages explicitly retain base equipment unless replaced. Wheel, trail and towing packages can change the tires."
+            },
+            {
+              "key": "fender_flares",
+              "label": "Fender flares",
+              "value": "Diamond Black",
+              "status": "standard",
+              "sourceUrl": "https://cdn.dealereprocess.org/cdn/brochures/jeep/2025-grandwagoneer.pdf#page=3",
+              "benefit": "Factory base finish retained by Series II and Series III; appearance packages and special editions are checked separately."
             }
           ]
         },
