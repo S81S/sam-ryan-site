@@ -1,3 +1,4 @@
+import {withComparisonSpecifications} from './comparison-specs.mjs?v=audit2';
 import {featureInventoryLink} from './feature-inventory-link.mjs?v=1';
 import {audioInventoryFeature,installedAudioFact} from './audio-evidence.mjs?v=errors1';
 const normalize=s=>String(s||'').normalize('NFKC').toLowerCase().replace(/[®™]/g,'').replace(/[\u2010-\u2015]/g,'-').replace(/[^a-z0-9.]+/g,' ').replace(/\s+/g,' ').trim();
@@ -11,6 +12,7 @@ export function optionFromParams(params){
  return {key:params.get('option').slice(0,100),label:(params.get('optionLabel')||'Selected factory option').slice(0,200),value:(params.get('optionValue')||'').slice(0,500)};
 }
 const ids={
+ 'rear-seat-heat':['rearHeated'],'rain-sensing-wipers':['rainWipers'],'fog-lamps':['fogLights'],'head-up-display':['hud'],'third-row':['thirdRow'],'climate-upgrade':['dualClimate'],
  'tow-hooks':['towHooks'],'rear-locker-upgrade':['rearLocker'],'wireless-charging':['wireless'],'seat-massage':['massage'],'trailer-hitch':['tow'],'hitch':['tow'],'hardtop':['hardTop'],'heated-front-seats':['heatedSeats'],'front-seat-heat':['heatedSeats'],'front-heat':['heatedSeats'],'heated-wheel':['heatedWheel'],'heated-steering':['heatedWheel'],'remote-start':['remoteStart'],'entry':['passiveEntry'],'blind-spot':['blindSpot'],'rear-parking':['parkingSensors'],'power-roof':['skyRoof'],'navigation':['navigation'],'bedliner':['bedliner'],'bed-cover':['tonneau'],'trailer-brakes':['brakeController'],'adaptive-cruise':['adaptiveCruise'],'rain-wipers':['rainWipers'],'sunroof':['sunroof'],'surround-camera':['surroundCamera'],'ventilated-front-seats':['ventilated'],'front-ventilation':['ventilated'],'heated-rear-seats':['rearHeated'],'second-heat':['rearHeated'],'seat-memory':['memorySeats'],'memory':['memorySeats'],'awd':['awd'],'cabin-camera':['familyCamera'],'glass-roof':['panoramic'],'seat-comfort-upgrade':['ventilated','memorySeats','massage']
 };
 export function installedOptionFact(vehicle,sticker,option){
@@ -25,12 +27,24 @@ export function installedOptionFact(vehicle,sticker,option){
    return confirmed?{...confirmed,sourceUrl:confirmed.sourceUrl||sticker.sourceUrl}:null;
   }
  }
+ const specification=key==='touchscreen-upgrade'?'infotainmentScreen':key==='power-tailgate'?'tailgateOperation':null;
+ if(specification){
+  const fact=withComparisonSpecifications(vehicle,sticker)?.features?.[specification];
+  if(!fact)return null;
+  if(specification==='infotainmentScreen'){
+   const size=text.match(/\b(\d{1,2}(?:\.\d+)?)[ -]?inch/i);
+   return size?{...fact,value:fact.displayValue===Number(size[1])+' inches'}:null;
+  }
+  // A power release cannot prove a powered opening/closing tailgate.
+  return {...fact,value:fact.displayValue==='Power tailgate'};
+ }
  let features=ids[key];
  const name=normalize(option.label);
  if(/front seat heat|heated front seat/.test(name))features=['heatedSeats'];
  if(/front seat ventil|ventilated front seat/.test(name))features=['ventilated'];
  if(/front seat massage/.test(name))features=['massage'];
- if(/heated rear seat|rear seat heat/.test(name))features=['rearHeated'];
+ if(/heated rear seat|heated second row seat|rear seat heat/.test(name))features=['rearHeated'];
+ if(key==='rear-seat-upgrade'&&/rear heating/i.test(text))features=['rearHeated'];
  if(/panoramic sunroof/.test(name))features=['panoramic'];
  if(key==='rear-differential'&&/antispin|anti.spin|limited.slip/i.test(text))features=['limitedSlip'];
  // A 35-inch package must not match a different tire size or unrelated wheel option.

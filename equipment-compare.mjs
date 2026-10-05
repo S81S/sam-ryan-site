@@ -15,7 +15,8 @@ function render(){
  const out=$('automatic-equipment');out.replaceChildren();
  const recs=['1','2','3','4','5'].map(side=>({side,v:window.usedInventoryData.vehicles.find(v=>v.vin===$('choose-'+side)?.value)})).filter(r=>r.v).map(r=>({...r,s:withComparisonSpecifications(r.v,applyFactoryEquipment(r.v,window.equipmentIndex.records[r.v.vin]))}));
  if(recs.length<2){out.append(el('p','Choose two vehicles above to compare.'));return;}
- const requested=parseQuery($('group-query')?.value||new URLSearchParams(location.search).get('q')||'').requirements.map(r=>r.id);
+ const contextParams=new URLSearchParams(location.search);
+ const requested=[...new Set(parseQuery([$('group-query')?.value||contextParams.get('q')||'',contextParams.get('requestedEquipment')||''].join(' ')).requirements.map(r=>r.id))];
  const rows=comparisonRows([...specificationDefinitions,...definitions.filter(([id])=>!/^engine(?:Size|Cyl|Inline)|^engine20$|^engine36$/.test(id))],recs.map(r=>r.s),requested);
  const counts={difference:rows.filter(r=>r.group==='difference').length,same:rows.filter(r=>r.group==='same').length,check:rows.filter(r=>r.group==='check'||(r.requested&&r.group==='unknown')).length};
  out.append(el('h2','Compare side by side'));out.append(el('p',`${counts.same} shared details · ${counts.difference} confirmed differences · ${counts.check} items need source details`));out.append(el('p','Like a feature? Click an Included checkmark to find inventory with that equipment.'));

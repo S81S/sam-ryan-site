@@ -89,3 +89,17 @@ test('selected equipment survives comparison links and advisor requests',async()
  assert.equal(restored.requestedEquipment,context.requestedEquipment);
  assert.match(comparisonRequest([{title:'Truck',stock:'R1',vin:'VIN-1'}],restored),/Requested equipment: Audio upgrade: Harman Kardon 19 speakers/);
 });
+
+ test('screen upgrade matching uses installed size and does not equate different sizes',()=>{
+ const s={vin:vehicle.vin,status:'verified',features:{},lines:['Uconnect 5 NAV with 8.4-Inch Display','OPTIONAL EQUIPMENT','Uconnect 5 NAV with 12.0-Inch Display']};
+ const option={key:'touchscreen-upgrade',label:'Larger touchscreen option',value:'12-inch Uconnect 5 NAV'};
+ assert.equal(installedOptionFact(vehicle,s,option).value,true);
+ assert.equal(installedOptionFact(vehicle,s,{...option,value:'14.5-inch Uconnect'}).value,false);
+ assert.equal(installedOptionFact(vehicle,{...s,lines:['Uconnect 5 NAV with 14.4-Inch Display']},{...option,value:'14.5-inch Uconnect'}).value,false);
+ });
+ test('a power tailgate release cannot match powered opening and closing',()=>{
+ const option={key:'power-tailgate',label:'Power tailgate',value:'Power opening/closing available'};
+ const s={vin:vehicle.vin,status:'verified',features:{},lines:['Power Tailgate Release']};
+ assert.equal(installedOptionFact(vehicle,s,option).value,false);
+ assert.equal(installedOptionFact(vehicle,{...s,lines:['Power Tailgate']},option).value,true);
+ });

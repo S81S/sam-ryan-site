@@ -1,4 +1,4 @@
-import {optionFromParams} from './option-inventory.mjs?v=options1';
+import {optionFromParams} from './option-inventory.mjs?v=options2';
 import {applyFeatureFilter} from './feature-inventory-link.mjs?v=1';
 import {sameModelOptions,modelName} from './same-model-options.mjs?v=wheel1';
 import {optionGuidance,noMatchGuidance} from './option-guidance.mjs?v=option1';

@@ -1,4 +1,4 @@
-import {installedOptionFact} from './option-inventory.mjs?v=options1';
+import {installedOptionFact} from './option-inventory.mjs?v=options2';
 import {engineDefinitions,engineAliases,engineTerms,engineFact} from './engine-search.mjs?v=engines1';
 import {dualRearWheelPattern,secondRowBenchPattern,wheelSeatFeatures} from './wheel-seat-evidence.mjs?v=clean-shopping1';
 import {validSeatEvidence} from './seat-evidence.mjs?v=coverage4';
