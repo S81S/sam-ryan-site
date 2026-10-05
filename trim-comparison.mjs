@@ -1,19 +1,35 @@
+// Explicit upgrade links keep options beside the corresponding base equipment.
+// No missing value is inferred from another trim, model year or configuration.
+export function equipmentFacts(trim) {
+  const original=trim.comparison?.length?trim.comparison:
+    (trim.standard||[]).map(f=>({...f,key:f.key||f.label,status:'standard'}));
+  const facts=original.filter(f=>!f.upgradeOf).map(f=>({...f}));
+  for(const option of original.filter(f=>f.upgradeOf)){
+    let base=facts.find(f=>f.key===option.upgradeOf);
+    if(!base){base={key:option.upgradeOf,label:option.baseLabel||option.label,status:'verify',value:'Standard specification not confirmed'};facts.push(base)}
+    base.options=[...(base.options||[]),option];
+  }
+  return facts;
+}
+
 // Compare the same equipment on both trims; missing evidence never means absent.
 export function equipmentRows(trims) {
   // A sparse or announced trim must not discard the other trims' detailed facts.
-  const facts = trims.map(t => Array.isArray(t.comparison) ? t.comparison :
-    (t.standard||[]).map(f => ({...f, key:f.key||f.label, status:'standard'})));
+  const facts = trims.map(equipmentFacts);
   const keys = [...new Set(facts.flatMap(list => list.map(f => f.key)))];
   const normal = s => String(s).trim().toLowerCase().replace(/\s+/g,' ');
   return keys.map(key => {
     const cells = facts.map(list => list.find(f => f.key === key));
     const complete = cells.every(Boolean);
     const known=cells.filter(f=>f&&f.status!=='verify');
-    const knownDifference=new Set(known.map(f=>f.status+'|'+normal(f.value))).size>1;
-    const same = complete && known.length===cells.length && cells.every(f => f.status === cells[0].status && normal(f.value) === normal(cells[0].value));
+    const optionSets=cells.filter(f=>f?.options?.length).map(f=>f.options.map(o=>o.status+'|'+normal(o.value)).sort().join(';'));
+    const optionDifference=optionSets.length>1&&new Set(optionSets).size>1;
+    const knownDifference=new Set(known.map(f=>f.status+'|'+normal(f.value))).size>1||optionDifference;
+    const same = !optionDifference && complete && known.length===cells.length && cells.every(f => f.status === cells[0].status && normal(f.value) === normal(cells[0].value));
     const kind = !complete||known.length!==cells.length ? 'verify' : same ? 'shared' :
       cells.some(f => f.status === 'standard') ? 'different' : 'options';
-    return {key, label:cells.find(Boolean).label, cells, kind,knownDifference};
+    const optionalOnly=!complete&&known.length>0&&cells.filter(Boolean).every(f=>f.status==='optional');
+    return {key, label:cells.find(Boolean).label, cells, kind,knownDifference,optionalOnly};
   });
 }
 
@@ -27,7 +43,7 @@ export function selectedTrimIds(model,raw){
 
 export function featureMatches(row,query){
   const normal=s=>String(s||'').normalize('NFKC').toLowerCase().replace(/[-_]/g,' ').replace(/\s+/g,' ');
-  const text=normal([row.key,row.label,...row.cells.flatMap(c=>c?[c.value,c.note,c.benefit]:[])].join(' '));
+  const text=normal([row.key,row.label,...row.cells.flatMap(c=>c?[c.value,c.note,c.benefit,...(c.options||[]).flatMap(o=>[o.key,o.label,o.value,o.note,o.benefit])]:[])].join(' '));
   return normal(query).trim().split(' ').filter(Boolean).every(term=>text.includes(term));
 }
 

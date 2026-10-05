@@ -181,7 +181,9 @@
               "value": "2.0L turbo I4 or 3.6L V6 / 8-speed automatic",
               "status": "optional",
               "sourceUrl": "https://www.jlwranglerforums.com/forum/attachments/2026-4-door-wrangler-pdf.1009497/",
-              "benefit": "The transmission and engine must be compared as a complete factory configuration."
+              "benefit": "The transmission and engine must be compared as a complete factory configuration.",
+              "upgradeOf": "engine",
+              "baseLabel": "Engine"
             },
             {
               "key": "audio",
@@ -389,7 +391,9 @@
               "value": "2.0L turbo I4 or 3.6L V6 / 8-speed automatic",
               "status": "optional",
               "sourceUrl": "https://www.jlwranglerforums.com/forum/attachments/2026-4-door-wrangler-pdf.1009497/",
-              "benefit": "The transmission and engine must be compared as a complete factory configuration."
+              "benefit": "The transmission and engine must be compared as a complete factory configuration.",
+              "upgradeOf": "engine",
+              "baseLabel": "Engine"
             },
             {
               "key": "audio",
@@ -685,7 +689,9 @@
               "value": "2.0L turbo I4 or 3.6L V6 / 8-speed automatic",
               "status": "optional",
               "sourceUrl": "https://www.jlwranglerforums.com/forum/attachments/2026-4-door-wrangler-pdf.1009497/",
-              "benefit": "The transmission and engine must be compared as a complete factory configuration."
+              "benefit": "The transmission and engine must be compared as a complete factory configuration.",
+              "upgradeOf": "engine",
+              "baseLabel": "Engine"
             },
             {
               "key": "audio",
@@ -838,7 +844,9 @@
               "value": "Xtreme 35-inch Tire Package",
               "status": "optional",
               "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=5",
-              "note": "Optional package; 35-inch tires are not standard on the base Willys."
+              "note": "Optional package; 35-inch tires are not standard on the base Willys.",
+              "upgradeOf": "tires",
+              "baseLabel": "Tires"
             },
             {
               "key": "winch",
@@ -1005,7 +1013,30 @@
               "label": "All-terrain tire upgrade",
               "value": "Factory option",
               "status": "optional",
-              "sourceUrl": "https://www.prnewswire.com/news-releases/plaid-with-purpose-jeep-wrangler-85th-anniversary-edition-brings-heritage-style-to-legendary-capability-302658745.html"
+              "sourceUrl": "https://www.prnewswire.com/news-releases/plaid-with-purpose-jeep-wrangler-85th-anniversary-edition-brings-heritage-style-to-legendary-capability-302658745.html",
+              "upgradeOf": "tires",
+              "baseLabel": "Tires"
+            },
+            {
+              "key": "upholstery",
+              "label": "Seat upholstery",
+              "value": "Plaid inserts",
+              "status": "standard",
+              "sourceUrl": "https://www.jeep.com/twelve4twelve/wrangler-85th-anniversary-edition.html"
+            },
+            {
+              "key": "tow-hooks",
+              "label": "Tow hooks",
+              "value": "Bronze",
+              "status": "standard",
+              "sourceUrl": "https://www.jeep.com/twelve4twelve/wrangler-85th-anniversary-edition.html"
+            },
+            {
+              "key": "edition-details",
+              "label": "Edition details",
+              "value": "Blue Agave decals and badges",
+              "status": "standard",
+              "sourceUrl": "https://www.jeep.com/twelve4twelve/wrangler-85th-anniversary-edition.html"
             }
           ],
           "comparisonNote": "U.S. 2026 four-door special edition. Rows are the equipment explicitly identified by Jeep for this edition; unlisted package compatibility is not inferred from another trim.",
@@ -1381,7 +1412,9 @@
               "value": "3.6L V6 / 8-speed automatic",
               "status": "optional",
               "sourceUrl": "https://www.jlwranglerforums.com/forum/attachments/2026-4-door-wrangler-pdf.1009497/",
-              "benefit": "The transmission and engine must be compared as a complete factory configuration."
+              "benefit": "The transmission and engine must be compared as a complete factory configuration.",
+              "upgradeOf": "engine",
+              "baseLabel": "Engine"
             },
             {
               "key": "audio",
@@ -1795,7 +1828,9 @@
               "value": "2.0L turbo I4 or 3.6L V6 / 8-speed automatic",
               "status": "optional",
               "sourceUrl": "https://www.jlwranglerforums.com/forum/attachments/2026-4-door-wrangler-pdf.1009497/",
-              "benefit": "The transmission and engine must be compared as a complete factory configuration."
+              "benefit": "The transmission and engine must be compared as a complete factory configuration.",
+              "upgradeOf": "engine",
+              "baseLabel": "Engine"
             },
             {
               "key": "audio",
@@ -1888,7 +1923,9 @@
               "value": "Xtreme 35-inch Tire Package",
               "status": "optional",
               "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=7",
-              "note": "Optional package; the base Rubicon has 33-inch tires."
+              "note": "Optional package; the base Rubicon has 33-inch tires.",
+              "upgradeOf": "tires",
+              "baseLabel": "Tires"
             },
             {
               "key": "winch",
@@ -2109,7 +2146,9 @@
               "value": "2.0L turbo I4 or 3.6L V6 / 8-speed automatic",
               "status": "optional",
               "sourceUrl": "https://www.jlwranglerforums.com/forum/attachments/2026-4-door-wrangler-pdf.1009497/",
-              "benefit": "The automatic configuration includes 35-inch tires and full-time Rock-Trac 4:1. Compare the engine, transmission and off-road equipment as one factory configuration."
+              "benefit": "The automatic configuration includes 35-inch tires and full-time Rock-Trac 4:1. Compare the engine, transmission and off-road equipment as one factory configuration.",
+              "upgradeOf": "engine",
+              "baseLabel": "Engine"
             },
             {
               "key": "roof",
@@ -2607,6 +2646,13 @@
               "status": "standard",
               "sourceUrl": "https://xr793.us/wp-content/uploads/2026/01/2026-Jeep-Wrangler-v2.pdf#page=8",
               "note": "Integrated Off-Road Camera."
+            },
+            {
+              "key": "edition-details",
+              "label": "Edition details",
+              "value": "Moab badges and shifter medallion",
+              "status": "standard",
+              "sourceUrl": "https://www.jeep.com/twelve4twelve/wrangler-moab-392.html"
             }
           ],
           "comparisonNote": "U.S. 2026 four-door special edition. Rows are the equipment explicitly identified by Jeep for this edition; unlisted package compatibility is not inferred from another trim.",
@@ -2687,7 +2733,9 @@
               "label": "Optional powertrain",
               "value": "2.0L turbo / 8-speed automatic",
               "status": "optional",
-              "sourceUrl": "https://www.jlwranglerforums.com/forum/attachments/2026-jeep-wrangler-2-door-pdf.1018901/"
+              "sourceUrl": "https://www.jlwranglerforums.com/forum/attachments/2026-jeep-wrangler-2-door-pdf.1018901/",
+              "upgradeOf": "engine",
+              "baseLabel": "Standard engine"
             },
             {
               "key": "transfer-case",
@@ -2980,7 +3028,9 @@
               "label": "Optional powertrain",
               "value": "2.0L turbo / 8-speed automatic",
               "status": "optional",
-              "sourceUrl": "https://www.jlwranglerforums.com/forum/attachments/2026-jeep-wrangler-2-door-pdf.1018901/"
+              "sourceUrl": "https://www.jlwranglerforums.com/forum/attachments/2026-jeep-wrangler-2-door-pdf.1018901/",
+              "upgradeOf": "engine",
+              "baseLabel": "Standard engine"
             },
             {
               "key": "transfer-case",
@@ -3269,7 +3319,9 @@
               "label": "Optional powertrain",
               "value": "2.0L turbo / 8-speed automatic",
               "status": "optional",
-              "sourceUrl": "https://www.jlwranglerforums.com/forum/attachments/2026-jeep-wrangler-2-door-pdf.1018901/"
+              "sourceUrl": "https://www.jlwranglerforums.com/forum/attachments/2026-jeep-wrangler-2-door-pdf.1018901/",
+              "upgradeOf": "engine",
+              "baseLabel": "Standard engine"
             },
             {
               "key": "transfer-case",
@@ -3557,7 +3609,9 @@
               "label": "Optional powertrain",
               "value": "2.0L turbo / 8-speed automatic",
               "status": "optional",
-              "sourceUrl": "https://www.jlwranglerforums.com/forum/attachments/2026-jeep-wrangler-2-door-pdf.1018901/"
+              "sourceUrl": "https://www.jlwranglerforums.com/forum/attachments/2026-jeep-wrangler-2-door-pdf.1018901/",
+              "upgradeOf": "engine",
+              "baseLabel": "Standard engine"
             },
             {
               "key": "transfer-case",
@@ -3849,7 +3903,9 @@
               "label": "Optional powertrain",
               "value": "2.0L turbo / 8-speed automatic; includes 35-inch tires on Rubicon X",
               "status": "optional",
-              "sourceUrl": "https://www.jlwranglerforums.com/forum/attachments/2026-jeep-wrangler-2-door-pdf.1018901/"
+              "sourceUrl": "https://www.jlwranglerforums.com/forum/attachments/2026-jeep-wrangler-2-door-pdf.1018901/",
+              "upgradeOf": "engine",
+              "baseLabel": "Standard engine"
             },
             {
               "key": "transfer-case",
@@ -4503,6 +4559,20 @@
               "value": "Included",
               "status": "standard",
               "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf"
+            },
+            {
+              "key": "collision-warning",
+              "label": "Forward collision warning",
+              "value": "Forward collision warning",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Gladiator.pdf"
+            },
+            {
+              "key": "mirrors",
+              "label": "Exterior mirrors",
+              "value": "Power heated mirrors",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Gladiator.pdf"
             }
           ],
           "comparisonNote": "2026 U.S. Gladiator factory matrix, with current Jeep modelizer highlights for X equipment. Sport S and Willys content follows the explicitly identified factory packages. Special-edition equipment is not assumed from a shared name."
@@ -4690,6 +4760,27 @@
               "value": "Included",
               "status": "standard",
               "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf"
+            },
+            {
+              "key": "rock-rails",
+              "label": "Rock rails",
+              "value": "Protection sill rails",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Gladiator.pdf"
+            },
+            {
+              "key": "terrain-mode",
+              "label": "Off-Road Plus mode",
+              "value": "Off-Road Plus",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Gladiator.pdf"
+            },
+            {
+              "key": "aux-switches",
+              "label": "Auxiliary switches",
+              "value": "Auxiliary switches",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Gladiator.pdf"
             }
           ],
           "comparisonNote": "2026 U.S. Gladiator factory matrix, with current Jeep modelizer highlights for X equipment. Sport S and Willys content follows the explicitly identified factory packages. Special-edition equipment is not assumed from a shared name."
@@ -4905,6 +4996,14 @@
               "value": "Included",
               "status": "standard",
               "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf"
+            },
+            {
+              "key": "collision-warning",
+              "label": "Forward collision warning",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C6RJTBG1TL190384",
+              "note": "Listed under factory STANDARD EQUIPMENT for the 2026 Rubicon, four-door 4x4 configuration; corroborated by multiple original manufacturer stickers. Optional equipment is listed separately."
             }
           ],
           "comparisonNote": "2026 U.S. Gladiator factory matrix, with current Jeep modelizer highlights for X equipment. Sport S and Willys content follows the explicitly identified factory packages. Special-edition equipment is not assumed from a shared name."
@@ -5120,6 +5219,13 @@
               "value": "Included",
               "status": "standard",
               "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf"
+            },
+            {
+              "key": "frame",
+              "label": "Frame",
+              "value": "Reinforced frame",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Gladiator.pdf"
             }
           ],
           "comparisonNote": "2026 U.S. Gladiator factory matrix, with current Jeep modelizer highlights for X equipment. Sport S and Willys content follows the explicitly identified factory packages. Special-edition equipment is not assumed from a shared name."
@@ -5969,6 +6075,20 @@
               "value": "Included",
               "status": "standard",
               "sourceUrl": "https://www.jeep.com/news/2026-wrangler-rewind-special-edition.html"
+            },
+            {
+              "key": "roof",
+              "label": "Standard roof",
+              "value": "Body-color hardtop",
+              "status": "standard",
+              "sourceUrl": "https://www.jeep.com/buzz-models/gladiator.html"
+            },
+            {
+              "key": "interior-details",
+              "label": "Interior accents",
+              "value": "Iced Blue and Plum details",
+              "status": "standard",
+              "sourceUrl": "https://www.jeep.com/buzz-models/gladiator.html"
             }
           ]
         },
@@ -6675,7 +6795,9 @@
               "label": "Premium audio",
               "value": "Alpine sound system; sunroof package",
               "status": "optional",
-              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf"
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf",
+              "upgradeOf": "audio",
+              "baseLabel": "Audio system"
             },
             {
               "key": "liftgate",
@@ -6876,7 +6998,9 @@
               "label": "Premium audio",
               "value": "Alpine sound system; sunroof package",
               "status": "optional",
-              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf"
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf",
+              "upgradeOf": "audio",
+              "baseLabel": "Audio system"
             },
             {
               "key": "liftgate",
@@ -7084,7 +7208,9 @@
               "label": "Premium audio",
               "value": "Alpine sound system; sunroof package",
               "status": "optional",
-              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf"
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf",
+              "upgradeOf": "audio",
+              "baseLabel": "Audio system"
             },
             {
               "key": "liftgate",
@@ -7292,7 +7418,9 @@
               "label": "Premium audio",
               "value": "Alpine sound system; sunroof package",
               "status": "optional",
-              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf"
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf",
+              "upgradeOf": "audio",
+              "baseLabel": "Audio system"
             },
             {
               "key": "liftgate",
@@ -8865,6 +8993,13 @@
               "value": "Rear ParkSense with Stop",
               "status": "standard",
               "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf"
+            },
+            {
+              "key": "intersection-assist",
+              "label": "Intersection collision assistance",
+              "value": "Intersection collision assist",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/news-and-events/fca-news/2026_Jeep%C2%AE_Grand_Cherokee_Brings_the_Hurricane_4_Turbo__All-New_Propulsion_Drives_America_s_Most_Awarded_SUV.pdf"
             }
           ],
           "comparisonNote": "These factory matrix rows cover 2026 Hurricane 4 configurations of Grand Cherokee (two rows) and Grand Cherokee L (three rows). Climate-control differences are stated by body. 4WD equipment applies only to 4x4 models. Laredo, Laredo X and anniversary-edition differences are not inferred from these four matrix columns."
@@ -9892,6 +10027,78 @@
               "value": "Power folding",
               "status": "standard",
               "sourceUrl": "https://www.jeep.com/grand-wagoneer.html"
+            },
+            {
+              "key": "heated-front-seats",
+              "label": "Heated front seats",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4SJVBP7TS153447",
+              "note": "Listed under factory STANDARD EQUIPMENT for the 2026 Limited Altitude, standard-length 4x4 configuration; corroborated by multiple original manufacturer stickers. Optional equipment is listed separately."
+            },
+            {
+              "key": "heated-wheel",
+              "label": "Heated steering wheel",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4SJVBP7TS153447",
+              "note": "Listed under factory STANDARD EQUIPMENT for the 2026 Limited Altitude, standard-length 4x4 configuration; corroborated by multiple original manufacturer stickers. Optional equipment is listed separately."
+            },
+            {
+              "key": "rear-camera",
+              "label": "Rear camera",
+              "value": "ParkView backup camera",
+              "status": "standard",
+              "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4SJVBP7TS153447",
+              "note": "Listed under factory STANDARD EQUIPMENT for the 2026 Limited Altitude, standard-length 4x4 configuration; corroborated by multiple original manufacturer stickers. Optional equipment is listed separately."
+            },
+            {
+              "key": "remote-start",
+              "label": "Remote start",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4SJVBP7TS153447",
+              "note": "Listed under factory STANDARD EQUIPMENT for the 2026 Limited Altitude, standard-length 4x4 configuration; corroborated by multiple original manufacturer stickers. Optional equipment is listed separately."
+            },
+            {
+              "key": "navigation",
+              "label": "Built-in navigation",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4SJVBP7TS153447",
+              "note": "Listed under factory STANDARD EQUIPMENT for the 2026 Limited Altitude, standard-length 4x4 configuration; corroborated by multiple original manufacturer stickers. Optional equipment is listed separately."
+            },
+            {
+              "key": "screen",
+              "label": "Center touchscreen",
+              "value": "12-inch Uconnect 5 NAV",
+              "status": "standard",
+              "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4SJVBP7TS153447",
+              "note": "Listed under factory STANDARD EQUIPMENT for the 2026 Limited Altitude, standard-length 4x4 configuration; corroborated by multiple original manufacturer stickers. Optional equipment is listed separately."
+            },
+            {
+              "key": "blind-spot",
+              "label": "Blind-spot monitoring",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4SJVBP7TS153447",
+              "note": "Listed under factory STANDARD EQUIPMENT for the 2026 Limited Altitude, standard-length 4x4 configuration; corroborated by multiple original manufacturer stickers. Optional equipment is listed separately."
+            },
+            {
+              "key": "collision-warning",
+              "label": "Forward collision warning",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4SJVBP7TS153447",
+              "note": "Listed under factory STANDARD EQUIPMENT for the 2026 Limited Altitude, standard-length 4x4 configuration; corroborated by multiple original manufacturer stickers. Optional equipment is listed separately."
+            },
+            {
+              "key": "ventilated-front-seats",
+              "label": "Ventilated front seats",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4SJVBP7TS153447",
+              "note": "Listed under factory STANDARD EQUIPMENT for the 2026 Limited Altitude, standard-length 4x4 configuration; corroborated by multiple original manufacturer stickers. Optional equipment is listed separately."
             }
           ],
           "comparisonNote": "2026 U.S. gasoline Grand Wagoneer. Partial equipment comparison from the factory launch announcement and selected trim highlights. Future range-extended powertrain specifications are excluded. Missing option rows remain unverified."
@@ -9969,6 +10176,70 @@
               "value": "Tri-pane panoramic",
               "status": "standard",
               "sourceUrl": "https://www.jeep.com/grand-wagoneer.html"
+            },
+            {
+              "key": "heated-front-seats",
+              "label": "Heated front seats",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4SJVAP9TS174690",
+              "note": "Listed under factory STANDARD EQUIPMENT for the 2026 Upland, standard-length 4x4 configuration; corroborated by multiple original manufacturer stickers. Optional equipment is listed separately."
+            },
+            {
+              "key": "heated-wheel",
+              "label": "Heated steering wheel",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4SJVAP9TS174690",
+              "note": "Listed under factory STANDARD EQUIPMENT for the 2026 Upland, standard-length 4x4 configuration; corroborated by multiple original manufacturer stickers. Optional equipment is listed separately."
+            },
+            {
+              "key": "rear-camera",
+              "label": "Rear camera",
+              "value": "ParkView backup camera",
+              "status": "standard",
+              "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4SJVAP9TS174690",
+              "note": "Listed under factory STANDARD EQUIPMENT for the 2026 Upland, standard-length 4x4 configuration; corroborated by multiple original manufacturer stickers. Optional equipment is listed separately."
+            },
+            {
+              "key": "remote-start",
+              "label": "Remote start",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4SJVAP9TS174690",
+              "note": "Listed under factory STANDARD EQUIPMENT for the 2026 Upland, standard-length 4x4 configuration; corroborated by multiple original manufacturer stickers. Optional equipment is listed separately."
+            },
+            {
+              "key": "navigation",
+              "label": "Built-in navigation",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4SJVAP9TS174690",
+              "note": "Listed under factory STANDARD EQUIPMENT for the 2026 Upland, standard-length 4x4 configuration; corroborated by multiple original manufacturer stickers. Optional equipment is listed separately."
+            },
+            {
+              "key": "screen",
+              "label": "Center touchscreen",
+              "value": "12-inch Uconnect 5 NAV",
+              "status": "standard",
+              "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4SJVAP9TS174690",
+              "note": "Listed under factory STANDARD EQUIPMENT for the 2026 Upland, standard-length 4x4 configuration; corroborated by multiple original manufacturer stickers. Optional equipment is listed separately."
+            },
+            {
+              "key": "blind-spot",
+              "label": "Blind-spot monitoring",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4SJVAP9TS174690",
+              "note": "Listed under factory STANDARD EQUIPMENT for the 2026 Upland, standard-length 4x4 configuration; corroborated by multiple original manufacturer stickers. Optional equipment is listed separately."
+            },
+            {
+              "key": "ventilated-front-seats",
+              "label": "Ventilated front seats",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4SJVAP9TS174690",
+              "note": "Listed under factory STANDARD EQUIPMENT for the 2026 Upland, standard-length 4x4 configuration; corroborated by multiple original manufacturer stickers. Optional equipment is listed separately."
             }
           ],
           "comparisonNote": "2026 U.S. gasoline Grand Wagoneer. Partial equipment comparison from the factory launch announcement and selected trim highlights. Future range-extended powertrain specifications are excluded. Missing option rows remain unverified."
@@ -10137,6 +10408,86 @@
               "value": "Included",
               "status": "standard",
               "sourceUrl": "https://www.prnewswire.com/news-releases/a-grand-entrance-new-2026-jeep-grand-wagoneer-delivers-full-size-sophistication-new-style-and-capability-family--and-wallet-friendly-starting-under-65-000--302582958.html"
+            },
+            {
+              "key": "heated-front-seats",
+              "label": "Heated front seats",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4SJVBP8TS162416",
+              "note": "Listed under factory STANDARD EQUIPMENT for the 2026 Limited Reserve, standard-length 4x4 configuration; corroborated by multiple original manufacturer stickers. Optional equipment is listed separately."
+            },
+            {
+              "key": "heated-wheel",
+              "label": "Heated steering wheel",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4SJVBP8TS162416",
+              "note": "Listed under factory STANDARD EQUIPMENT for the 2026 Limited Reserve, standard-length 4x4 configuration; corroborated by multiple original manufacturer stickers. Optional equipment is listed separately."
+            },
+            {
+              "key": "rear-camera",
+              "label": "Rear camera",
+              "value": "ParkView backup camera",
+              "status": "standard",
+              "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4SJVBP8TS162416",
+              "note": "Listed under factory STANDARD EQUIPMENT for the 2026 Limited Reserve, standard-length 4x4 configuration; corroborated by multiple original manufacturer stickers. Optional equipment is listed separately."
+            },
+            {
+              "key": "remote-start",
+              "label": "Remote start",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4SJVBP8TS162416",
+              "note": "Listed under factory STANDARD EQUIPMENT for the 2026 Limited Reserve, standard-length 4x4 configuration; corroborated by multiple original manufacturer stickers. Optional equipment is listed separately."
+            },
+            {
+              "key": "navigation",
+              "label": "Built-in navigation",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4SJVBP8TS162416",
+              "note": "Listed under factory STANDARD EQUIPMENT for the 2026 Limited Reserve, standard-length 4x4 configuration; corroborated by multiple original manufacturer stickers. Optional equipment is listed separately."
+            },
+            {
+              "key": "screen",
+              "label": "Center touchscreen",
+              "value": "12-inch Uconnect 5 NAV",
+              "status": "standard",
+              "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4SJVBP8TS162416",
+              "note": "Listed under factory STANDARD EQUIPMENT for the 2026 Limited Reserve, standard-length 4x4 configuration; corroborated by multiple original manufacturer stickers. Optional equipment is listed separately."
+            },
+            {
+              "key": "blind-spot",
+              "label": "Blind-spot monitoring",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4SJVBP8TS162416",
+              "note": "Listed under factory STANDARD EQUIPMENT for the 2026 Limited Reserve, standard-length 4x4 configuration; corroborated by multiple original manufacturer stickers. Optional equipment is listed separately."
+            },
+            {
+              "key": "collision-warning",
+              "label": "Forward collision warning",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4SJVBP8TS162416",
+              "note": "Listed under factory STANDARD EQUIPMENT for the 2026 Limited Reserve, standard-length 4x4 configuration; corroborated by multiple original manufacturer stickers. Optional equipment is listed separately."
+            },
+            {
+              "key": "heated-rear-seats",
+              "label": "Heated second-row seats",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4SJVBP8TS162416",
+              "note": "Listed under factory STANDARD EQUIPMENT for the 2026 Limited Reserve, standard-length 4x4 configuration; corroborated by multiple original manufacturer stickers. Optional equipment is listed separately."
+            },
+            {
+              "key": "ventilated-front-seats",
+              "label": "Ventilated front seats",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4SJVBP8TS162416",
+              "note": "Listed under factory STANDARD EQUIPMENT for the 2026 Limited Reserve, standard-length 4x4 configuration; corroborated by multiple original manufacturer stickers. Optional equipment is listed separately."
             }
           ],
           "comparisonNote": "2026 U.S. gasoline Grand Wagoneer. Partial equipment comparison from the factory launch announcement and selected trim highlights. Future range-extended powertrain specifications are excluded. Missing option rows remain unverified."
@@ -10316,6 +10667,62 @@
               "value": "Automated parking",
               "status": "standard",
               "sourceUrl": "https://www.jeep.com/grand-wagoneer.html"
+            },
+            {
+              "key": "heated-front-seats",
+              "label": "Heated front seats",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4SJVEP1TS174693",
+              "note": "Listed under factory STANDARD EQUIPMENT for the 2026 Summit Obsidian, standard-length 4x4 configuration; corroborated by multiple original manufacturer stickers. Optional equipment is listed separately."
+            },
+            {
+              "key": "heated-wheel",
+              "label": "Heated steering wheel",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4SJVEP1TS174693",
+              "note": "Listed under factory STANDARD EQUIPMENT for the 2026 Summit Obsidian, standard-length 4x4 configuration; corroborated by multiple original manufacturer stickers. Optional equipment is listed separately."
+            },
+            {
+              "key": "navigation",
+              "label": "Built-in navigation",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4SJVEP1TS174693",
+              "note": "Listed under factory STANDARD EQUIPMENT for the 2026 Summit Obsidian, standard-length 4x4 configuration; corroborated by multiple original manufacturer stickers. Optional equipment is listed separately."
+            },
+            {
+              "key": "screen",
+              "label": "Center touchscreen",
+              "value": "12-inch Uconnect 5 NAV",
+              "status": "standard",
+              "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4SJVEP1TS174693",
+              "note": "Listed under factory STANDARD EQUIPMENT for the 2026 Summit Obsidian, standard-length 4x4 configuration; corroborated by multiple original manufacturer stickers. Optional equipment is listed separately."
+            },
+            {
+              "key": "blind-spot",
+              "label": "Blind-spot monitoring",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4SJVEP1TS174693",
+              "note": "Listed under factory STANDARD EQUIPMENT for the 2026 Summit Obsidian, standard-length 4x4 configuration; corroborated by multiple original manufacturer stickers. Optional equipment is listed separately."
+            },
+            {
+              "key": "heated-rear-seats",
+              "label": "Heated second-row seats",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4SJVEP1TS174693",
+              "note": "Listed under factory STANDARD EQUIPMENT for the 2026 Summit Obsidian, standard-length 4x4 configuration; corroborated by multiple original manufacturer stickers. Optional equipment is listed separately."
+            },
+            {
+              "key": "ventilated-front-seats",
+              "label": "Ventilated front seats",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4SJVEP1TS174693",
+              "note": "Listed under factory STANDARD EQUIPMENT for the 2026 Summit Obsidian, standard-length 4x4 configuration; corroborated by multiple original manufacturer stickers. Optional equipment is listed separately."
             }
           ],
           "comparisonNote": "2026 U.S. gasoline Grand Wagoneer. Partial equipment comparison from the factory launch announcement and selected trim highlights. Future range-extended powertrain specifications are excluded. Missing option rows remain unverified."
@@ -10406,6 +10813,62 @@
               "value": "Included",
               "status": "standard",
               "sourceUrl": "https://www.prnewswire.com/news-releases/a-grand-entrance-new-2026-jeep-grand-wagoneer-delivers-full-size-sophistication-new-style-and-capability-family--and-wallet-friendly-starting-under-65-000--302582958.html"
+            },
+            {
+              "key": "heated-front-seats",
+              "label": "Heated front seats",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4SJVEP1TS181935",
+              "note": "Listed under factory STANDARD EQUIPMENT for the 2026 Summit Reserve, standard-length 4x4 configuration; corroborated by multiple original manufacturer stickers. Optional equipment is listed separately."
+            },
+            {
+              "key": "heated-wheel",
+              "label": "Heated steering wheel",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4SJVEP1TS181935",
+              "note": "Listed under factory STANDARD EQUIPMENT for the 2026 Summit Reserve, standard-length 4x4 configuration; corroborated by multiple original manufacturer stickers. Optional equipment is listed separately."
+            },
+            {
+              "key": "navigation",
+              "label": "Built-in navigation",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4SJVEP1TS181935",
+              "note": "Listed under factory STANDARD EQUIPMENT for the 2026 Summit Reserve, standard-length 4x4 configuration; corroborated by multiple original manufacturer stickers. Optional equipment is listed separately."
+            },
+            {
+              "key": "screen",
+              "label": "Center touchscreen",
+              "value": "12-inch Uconnect 5 NAV",
+              "status": "standard",
+              "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4SJVEP1TS181935",
+              "note": "Listed under factory STANDARD EQUIPMENT for the 2026 Summit Reserve, standard-length 4x4 configuration; corroborated by multiple original manufacturer stickers. Optional equipment is listed separately."
+            },
+            {
+              "key": "blind-spot",
+              "label": "Blind-spot monitoring",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4SJVEP1TS181935",
+              "note": "Listed under factory STANDARD EQUIPMENT for the 2026 Summit Reserve, standard-length 4x4 configuration; corroborated by multiple original manufacturer stickers. Optional equipment is listed separately."
+            },
+            {
+              "key": "heated-rear-seats",
+              "label": "Heated second-row seats",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4SJVEP1TS181935",
+              "note": "Listed under factory STANDARD EQUIPMENT for the 2026 Summit Reserve, standard-length 4x4 configuration; corroborated by multiple original manufacturer stickers. Optional equipment is listed separately."
+            },
+            {
+              "key": "ventilated-front-seats",
+              "label": "Ventilated front seats",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4SJVEP1TS181935",
+              "note": "Listed under factory STANDARD EQUIPMENT for the 2026 Summit Reserve, standard-length 4x4 configuration; corroborated by multiple original manufacturer stickers. Optional equipment is listed separately."
             }
           ],
           "comparisonNote": "2026 U.S. gasoline Grand Wagoneer. Partial equipment comparison from the factory launch announcement and selected trim highlights. Future range-extended powertrain specifications are excluded. Missing option rows remain unverified."
@@ -10839,6 +11302,13 @@
               "value": "Included",
               "status": "standard",
               "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_WagoneerS.pdf"
+            },
+            {
+              "key": "wheels",
+              "label": "Wheels",
+              "value": "20-inch painted aluminum",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_WagoneerS.pdf"
             }
           ],
           "comparisonNote": "2025 model year, as printed in the factory equipment table. Limited and Launch Edition have different standard motor output and comfort equipment; package labels are retained for optional equipment."
@@ -11052,6 +11522,13 @@
               "label": "Wireless phone charging",
               "value": "Factory option",
               "status": "optional",
+              "sourceUrl": "https://www.jeepmediadrive.com/assets/documents/recon/2026-Jeep-Recon-Overview-Press-Release-EE.pdf"
+            },
+            {
+              "key": "wheels",
+              "label": "Wheels",
+              "value": "18-inch wheels",
+              "status": "standard",
               "sourceUrl": "https://www.jeepmediadrive.com/assets/documents/recon/2026-Jeep-Recon-Overview-Press-Release-EE.pdf"
             }
           ],
@@ -12410,7 +12887,9 @@
               "label": "Optional roof choices",
               "value": "Body-color hardtop or tan soft top; tan top announced for later availability",
               "status": "optional",
-              "sourceUrl": "https://www.prnewswire.com/news-releases/jeep-brand-honors-its-heritage-with-2025-wrangler-4xe-willys-41-special-edition-302309316.html"
+              "sourceUrl": "https://www.prnewswire.com/news-releases/jeep-brand-honors-its-heritage-with-2025-wrangler-4xe-willys-41-special-edition-302309316.html",
+              "upgradeOf": "roof",
+              "baseLabel": "Standard roof"
             },
             {
               "key": "power-roof",
@@ -15324,8 +15803,8 @@
       "name": "Ram 1500",
       "brand": "Ram",
       "year": 2026,
-      "scope": "U.S. 2026; Crew Cab 4x4, 5-foot-7 box. Base engine for each trim is shown. Optional engines and equipment groups are excluded.",
-      "coverageNote": "Ten named trims, with Big Horn/Lone Star combined as regional names. Black Express, BackCountry, Rebel X and America 250th Anniversary are separate package/edition comparisons still to prepare; their features are not attributed to base trims. RHO touchscreen omitted pending a definitive standard-equipment source. 4x4 is the comparison configuration, not a claim that every trim makes 4x4 standard.",
+      "scope": "U.S. 2026; Crew Cab 4x4, 5-foot-7 box. Base engine for each trim is shown. Named optional upgrades appear with the equipment they change. Standard rows use the stated base configuration.",
+      "coverageNote": "Ten named trims, with Big Horn/Lone Star combined as regional names. Black Express, BackCountry, Rebel X and America 250th Anniversary are separate package/edition comparisons still to prepare; their features are not attributed to base trims. 4x4 is the comparison configuration, not a claim that every trim makes 4x4 standard.",
       "sources": [
         {
           "label": "2026 Ram 1500 factory equipment matrix",
@@ -15346,6 +15825,10 @@
         {
           "label": "2026 RHO engine and suspension",
           "url": "https://www.ramtrucks.com/towing/engine-performance/2026/rho.html"
+        },
+        {
+          "label": "2026 RHO factory specifications (select RHO)",
+          "url": "https://www.ramtrucks.com/ram-1500/specs.rho.html"
         }
       ],
       "trims": [
@@ -15524,7 +16007,9 @@
               "label": "Electronic rear-locker option",
               "value": "Electronic locker available; requires 3.92 axle and 4x4",
               "status": "optional",
-              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf"
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "upgradeOf": "rear-differential",
+              "baseLabel": "Rear traction differential"
             },
             {
               "key": "tailgate",
@@ -15553,6 +16038,34 @@
               "value": "Rear camera with dynamic guidelines",
               "status": "standard",
               "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf"
+            },
+            {
+              "key": "blind-spot",
+              "label": "Blind-spot monitoring",
+              "value": "Blind-spot, rear cross-path and trailer detection",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=25"
+            },
+            {
+              "key": "collision-warning",
+              "label": "Forward collision warning",
+              "value": "Full-Speed Forward Collision Warning Plus",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=25"
+            },
+            {
+              "key": "lane-assist",
+              "label": "Lane assistance",
+              "value": "Active Lane Management",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=25"
+            },
+            {
+              "key": "remote-start",
+              "label": "Remote start",
+              "value": "Key-fob remote start",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=25"
             }
           ]
         },
@@ -15741,7 +16254,9 @@
               "label": "Electronic rear-locker option",
               "value": "Electronic locker available; requires 3.92 axle and 4x4",
               "status": "optional",
-              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf"
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "upgradeOf": "rear-differential",
+              "baseLabel": "Rear traction differential"
             },
             {
               "key": "tailgate",
@@ -15770,6 +16285,41 @@
               "value": "Rear camera with dynamic guidelines",
               "status": "standard",
               "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf"
+            },
+            {
+              "key": "bumpers",
+              "label": "Bumpers",
+              "value": "Body-color bumpers",
+              "status": "standard",
+              "sourceUrl": "https://www.ramtrucks.com/ram-1500.html"
+            },
+            {
+              "key": "blind-spot",
+              "label": "Blind-spot monitoring",
+              "value": "Blind-spot, rear cross-path and trailer detection",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=25"
+            },
+            {
+              "key": "collision-warning",
+              "label": "Forward collision warning",
+              "value": "Full-Speed Forward Collision Warning Plus",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=25"
+            },
+            {
+              "key": "lane-assist",
+              "label": "Lane assistance",
+              "value": "Active Lane Management",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=25"
+            },
+            {
+              "key": "remote-start",
+              "label": "Remote start",
+              "value": "Key-fob remote start",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=25"
             }
           ]
         },
@@ -15981,6 +16531,34 @@
               "value": "Rear camera with dynamic guidelines",
               "status": "standard",
               "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf"
+            },
+            {
+              "key": "blind-spot",
+              "label": "Blind-spot monitoring",
+              "value": "Blind-spot, rear cross-path and trailer detection",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=25"
+            },
+            {
+              "key": "collision-warning",
+              "label": "Forward collision warning",
+              "value": "Full-Speed Forward Collision Warning Plus",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=25"
+            },
+            {
+              "key": "lane-assist",
+              "label": "Lane assistance",
+              "value": "Active Lane Management",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=25"
+            },
+            {
+              "key": "remote-start",
+              "label": "Remote start",
+              "value": "Key-fob remote start",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=25"
             }
           ]
         },
@@ -16162,7 +16740,9 @@
               "label": "Electronic rear-locker option",
               "value": "Electronic locker available; requires 3.92 axle and 4x4",
               "status": "optional",
-              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf"
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "upgradeOf": "rear-differential",
+              "baseLabel": "Rear traction differential"
             },
             {
               "key": "tailgate",
@@ -16212,6 +16792,62 @@
               "value": "H1 or H2 equipment group",
               "status": "optional",
               "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf"
+            },
+            {
+              "key": "blind-spot",
+              "label": "Blind-spot monitoring",
+              "value": "Blind-spot, rear cross-path and trailer detection",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=25"
+            },
+            {
+              "key": "collision-warning",
+              "label": "Forward collision warning",
+              "value": "Full-Speed Forward Collision Warning Plus",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=25"
+            },
+            {
+              "key": "lane-assist",
+              "label": "Lane assistance",
+              "value": "Active Lane Management",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=25"
+            },
+            {
+              "key": "remote-start",
+              "label": "Remote start",
+              "value": "Key-fob remote start",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=25"
+            },
+            {
+              "key": "touchscreen-upgrade",
+              "label": "Larger touchscreen option",
+              "value": "12-inch Uconnect 5 NAV",
+              "status": "optional",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=25",
+              "note": "H2 equipment group.",
+              "upgradeOf": "touchscreen",
+              "baseLabel": "Standard touchscreen"
+            },
+            {
+              "key": "audio-upgrade",
+              "label": "Audio upgrade",
+              "value": "Alpine 10 speakers",
+              "status": "optional",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=25",
+              "note": "Available with H1; included in H2 equipment group.",
+              "upgradeOf": "audio",
+              "baseLabel": "Standard audio"
+            },
+            {
+              "key": "wireless-charging",
+              "label": "Wireless phone charging",
+              "value": "Single pad with H2 equipment group",
+              "status": "optional",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=24",
+              "note": "Bucket-seat configuration required."
             }
           ]
         },
@@ -16390,7 +17026,9 @@
               "label": "Electronic rear-locker option",
               "value": "Electronic locker available; requires 3.92 axle and 4x4",
               "status": "optional",
-              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf"
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "upgradeOf": "rear-differential",
+              "baseLabel": "Rear traction differential"
             },
             {
               "key": "tailgate",
@@ -16454,6 +17092,62 @@
               "value": "Heated",
               "status": "standard",
               "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf"
+            },
+            {
+              "key": "blind-spot",
+              "label": "Blind-spot monitoring",
+              "value": "Blind-spot, rear cross-path and trailer detection",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=25"
+            },
+            {
+              "key": "collision-warning",
+              "label": "Forward collision warning",
+              "value": "Full-Speed Forward Collision Warning Plus",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=25"
+            },
+            {
+              "key": "lane-assist",
+              "label": "Lane assistance",
+              "value": "Active Lane Management",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=25"
+            },
+            {
+              "key": "remote-start",
+              "label": "Remote start",
+              "value": "Key-fob remote start",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=25"
+            },
+            {
+              "key": "touchscreen-upgrade",
+              "label": "Larger touchscreen option",
+              "value": "14.5-inch Uconnect 5 NAV",
+              "status": "optional",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=25",
+              "note": "P2 equipment group.",
+              "upgradeOf": "touchscreen",
+              "baseLabel": "Standard touchscreen"
+            },
+            {
+              "key": "audio-upgrade",
+              "label": "Audio upgrade",
+              "value": "Harman Kardon 19 speakers",
+              "status": "optional",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=25",
+              "note": "P2 equipment group.",
+              "upgradeOf": "audio",
+              "baseLabel": "Standard audio"
+            },
+            {
+              "key": "wireless-charging",
+              "label": "Wireless phone charging",
+              "value": "Single or dual charging pads with equipment group",
+              "status": "optional",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=24",
+              "note": "Single pad with P1; dual pads with P2."
             }
           ]
         },
@@ -16678,14 +17372,18 @@
               "label": "G/T seat upgrade",
               "value": "Heated/ventilated leather-trimmed buckets",
               "status": "optional",
-              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf"
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "upgradeOf": "front-seats",
+              "baseLabel": "Front seat material / layout"
             },
             {
               "key": "rear-seat-upgrade",
               "label": "Rear seat comfort upgrade",
               "value": "Rear heating with X2 equipment group",
               "status": "optional",
-              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf"
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "upgradeOf": "rear-seat-comfort",
+              "baseLabel": "Rear seat comfort"
             },
             {
               "key": "heated-steering",
@@ -16693,6 +17391,62 @@
               "value": "Heated",
               "status": "standard",
               "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf"
+            },
+            {
+              "key": "blind-spot",
+              "label": "Blind-spot monitoring",
+              "value": "Blind-spot, rear cross-path and trailer detection",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=25"
+            },
+            {
+              "key": "collision-warning",
+              "label": "Forward collision warning",
+              "value": "Full-Speed Forward Collision Warning Plus",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=25"
+            },
+            {
+              "key": "lane-assist",
+              "label": "Lane assistance",
+              "value": "Active Lane Management",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=25"
+            },
+            {
+              "key": "remote-start",
+              "label": "Remote start",
+              "value": "Key-fob remote start",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=25"
+            },
+            {
+              "key": "touchscreen-upgrade",
+              "label": "Larger touchscreen option",
+              "value": "14.5-inch Uconnect 5 NAV",
+              "status": "optional",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=25",
+              "note": "X2 equipment group.",
+              "upgradeOf": "touchscreen",
+              "baseLabel": "Standard touchscreen"
+            },
+            {
+              "key": "audio-upgrade",
+              "label": "Audio upgrade",
+              "value": "Harman Kardon 19 speakers",
+              "status": "optional",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=25",
+              "note": "X2 equipment group.",
+              "upgradeOf": "audio",
+              "baseLabel": "Standard audio"
+            },
+            {
+              "key": "wireless-charging",
+              "label": "Wireless phone charging",
+              "value": "Single or dual charging pads with equipment group",
+              "status": "optional",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=24",
+              "note": "Single pad with X1; dual pads with X2."
             }
           ]
         },
@@ -16811,21 +17565,27 @@
               "label": "Rear seat comfort upgrade",
               "value": "Recline, heating and ventilation available",
               "status": "optional",
-              "sourceUrl": "https://www.ramtrucks.com/rho.html"
+              "sourceUrl": "https://www.ramtrucks.com/rho.html",
+              "upgradeOf": "rear-seat-comfort",
+              "baseLabel": "Rear seat comfort"
             },
             {
               "key": "touchscreen-upgrade",
               "label": "Larger touchscreen option",
               "value": "14.5-inch Uconnect",
               "status": "optional",
-              "sourceUrl": "https://www.ramtrucks.com/rho.html"
+              "sourceUrl": "https://www.ramtrucks.com/rho.html",
+              "upgradeOf": "touchscreen",
+              "baseLabel": "Standard touchscreen"
             },
             {
               "key": "wheel-upgrade",
               "label": "Wheel upgrade",
               "value": "18-inch beadlock-capable wheels",
               "status": "optional",
-              "sourceUrl": "https://www.ramtrucks.com/rho.html"
+              "sourceUrl": "https://www.ramtrucks.com/rho.html",
+              "upgradeOf": "wheels",
+              "baseLabel": "Standard wheels"
             },
             {
               "key": "tires",
@@ -16867,14 +17627,18 @@
               "label": "Audio upgrade",
               "value": "Harman Kardon 19 speakers",
               "status": "optional",
-              "sourceUrl": "https://www.ramtrucks.com/rho.html"
+              "sourceUrl": "https://www.ramtrucks.com/rho.html",
+              "upgradeOf": "audio",
+              "baseLabel": "Standard audio"
             },
             {
               "key": "power-tailgate",
               "label": "Power tailgate",
               "value": "Power opening/closing available",
               "status": "optional",
-              "sourceUrl": "https://www.ramtrucks.com/rho.html"
+              "sourceUrl": "https://www.ramtrucks.com/rho.html",
+              "upgradeOf": "tailgate",
+              "baseLabel": "Standard tailgate"
             },
             {
               "key": "wireless-charging",
@@ -16889,6 +17653,126 @@
               "value": "Two front and two rear",
               "status": "standard",
               "sourceUrl": "https://www.ramtrucks.com/rho.html"
+            },
+            {
+              "key": "transmission",
+              "label": "Transmission",
+              "value": "8-speed automatic",
+              "status": "standard",
+              "sourceUrl": "https://www.ramtrucks.com/ram-1500/specs.rho.html",
+              "note": "U.S. 2026 RHO base equipment; separately available upgrades are listed where confirmed."
+            },
+            {
+              "key": "climate",
+              "label": "Climate control",
+              "value": "Dual-zone automatic",
+              "status": "standard",
+              "sourceUrl": "https://www.ramtrucks.com/ram-1500/specs.rho.html",
+              "note": "U.S. 2026 RHO base equipment; separately available upgrades are listed where confirmed."
+            },
+            {
+              "key": "wheels",
+              "label": "Standard wheels",
+              "value": "18-inch black aluminum",
+              "status": "standard",
+              "sourceUrl": "https://www.ramtrucks.com/ram-1500/specs.rho.html",
+              "note": "U.S. 2026 RHO base equipment; separately available upgrades are listed where confirmed."
+            },
+            {
+              "key": "audio",
+              "label": "Standard audio",
+              "value": "10 speakers",
+              "status": "standard",
+              "sourceUrl": "https://www.ramtrucks.com/ram-1500/specs.rho.html",
+              "note": "U.S. 2026 RHO base equipment; separately available upgrades are listed where confirmed."
+            },
+            {
+              "key": "exterior-mirrors",
+              "label": "Exterior mirrors",
+              "value": "Power-adjustable, heated; driver-side auto-dimming",
+              "status": "standard",
+              "sourceUrl": "https://www.ramtrucks.com/ram-1500/specs.rho.html",
+              "note": "U.S. 2026 RHO base equipment; separately available upgrades are listed where confirmed."
+            },
+            {
+              "key": "parking-assist",
+              "label": "Parking sensors",
+              "value": "Front/rear ParkSense",
+              "status": "standard",
+              "sourceUrl": "https://www.ramtrucks.com/ram-1500/specs.rho.html",
+              "note": "U.S. 2026 RHO base equipment; separately available upgrades are listed where confirmed."
+            },
+            {
+              "key": "adaptive-cruise",
+              "label": "Adaptive cruise control",
+              "value": "Stop-and-go function",
+              "status": "standard",
+              "sourceUrl": "https://www.ramtrucks.com/ram-1500/specs.rho.html",
+              "note": "U.S. 2026 RHO base equipment; separately available upgrades are listed where confirmed."
+            },
+            {
+              "key": "remote-start",
+              "label": "Remote start",
+              "value": "Key-fob remote start",
+              "status": "standard",
+              "sourceUrl": "https://www.ramtrucks.com/ram-1500/specs.rho.html",
+              "note": "U.S. 2026 RHO base equipment; separately available upgrades are listed where confirmed."
+            },
+            {
+              "key": "blind-spot",
+              "label": "Blind-spot monitoring",
+              "value": "Blind-spot detection",
+              "status": "standard",
+              "sourceUrl": "https://www.ramtrucks.com/ram-1500/specs.rho.html",
+              "note": "U.S. 2026 RHO base equipment; separately available upgrades are listed where confirmed."
+            },
+            {
+              "key": "touchscreen",
+              "label": "Standard touchscreen",
+              "value": "12-inch Uconnect 5 NAV",
+              "status": "standard",
+              "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C6SRFUP2TN411570",
+              "note": "Listed under factory STANDARD EQUIPMENT for the 2026 RHO Crew Cab 4x4, 3.0L HO / 8-speed automatic. Optional equipment is listed separately."
+            },
+            {
+              "key": "heated-steering",
+              "label": "Heated steering wheel",
+              "value": "Heated",
+              "status": "standard",
+              "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C6SRFUP2TN411570",
+              "note": "Listed under factory STANDARD EQUIPMENT for the 2026 RHO Crew Cab 4x4, 3.0L HO / 8-speed automatic. Optional equipment is listed separately."
+            },
+            {
+              "key": "camera",
+              "label": "Standard camera",
+              "value": "ParkView backup camera",
+              "status": "standard",
+              "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C6SRFUP2TN411570",
+              "note": "Listed under factory STANDARD EQUIPMENT for the 2026 RHO Crew Cab 4x4, 3.0L HO / 8-speed automatic. Optional equipment is listed separately."
+            },
+            {
+              "key": "hitch",
+              "label": "Trailer connection",
+              "value": "Class IV receiver",
+              "status": "standard",
+              "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C6SRFUP2TN411570",
+              "note": "Listed under factory STANDARD EQUIPMENT for the 2026 RHO Crew Cab 4x4, 3.0L HO / 8-speed automatic. Optional equipment is listed separately."
+            },
+            {
+              "key": "collision-warning",
+              "label": "Forward collision warning",
+              "value": "Full-Speed Forward Collision Warning Plus",
+              "status": "standard",
+              "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C6SRFUP2TN411570",
+              "note": "Listed under factory STANDARD EQUIPMENT for the 2026 RHO Crew Cab 4x4, 3.0L HO / 8-speed automatic. Optional equipment is listed separately."
+            },
+            {
+              "key": "lane-assist",
+              "label": "Lane assistance",
+              "value": "Active Lane Management",
+              "status": "standard",
+              "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C6SRFUP2TN411570",
+              "note": "Listed under factory STANDARD EQUIPMENT for the 2026 RHO Crew Cab 4x4, 3.0L HO / 8-speed automatic. Optional equipment is listed separately."
             }
           ]
         },
@@ -17134,6 +18018,51 @@
               "value": "Heated",
               "status": "standard",
               "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf"
+            },
+            {
+              "key": "blind-spot",
+              "label": "Blind-spot monitoring",
+              "value": "Blind-spot, rear cross-path and trailer detection",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=25"
+            },
+            {
+              "key": "collision-warning",
+              "label": "Forward collision warning",
+              "value": "Full-Speed Forward Collision Warning Plus",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=25"
+            },
+            {
+              "key": "lane-assist",
+              "label": "Lane assistance",
+              "value": "Active Lane Management",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=25"
+            },
+            {
+              "key": "remote-start",
+              "label": "Remote start",
+              "value": "Key-fob remote start",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=25"
+            },
+            {
+              "key": "touchscreen-upgrade",
+              "label": "Larger touchscreen option",
+              "value": "14.5-inch Uconnect 5 NAV",
+              "status": "optional",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=25",
+              "note": "M1 equipment group.",
+              "upgradeOf": "touchscreen",
+              "baseLabel": "Standard touchscreen"
+            },
+            {
+              "key": "wireless-charging",
+              "label": "Wireless phone charging",
+              "value": "Dual charging pads",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=24"
             }
           ]
         },
@@ -17379,6 +18308,51 @@
               "value": "Heated",
               "status": "standard",
               "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf"
+            },
+            {
+              "key": "blind-spot",
+              "label": "Blind-spot monitoring",
+              "value": "Blind-spot, rear cross-path and trailer detection",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=25"
+            },
+            {
+              "key": "collision-warning",
+              "label": "Forward collision warning",
+              "value": "Full-Speed Forward Collision Warning Plus",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=25"
+            },
+            {
+              "key": "lane-assist",
+              "label": "Lane assistance",
+              "value": "Active Lane Management",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=25"
+            },
+            {
+              "key": "remote-start",
+              "label": "Remote start",
+              "value": "Key-fob remote start",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=25"
+            },
+            {
+              "key": "touchscreen-upgrade",
+              "label": "Larger touchscreen option",
+              "value": "14.5-inch Uconnect 5 NAV",
+              "status": "optional",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=25",
+              "note": "M1 equipment group.",
+              "upgradeOf": "touchscreen",
+              "baseLabel": "Standard touchscreen"
+            },
+            {
+              "key": "wireless-charging",
+              "label": "Wireless phone charging",
+              "value": "Dual charging pads",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=24"
             }
           ]
         },
@@ -17624,6 +18598,48 @@
               "value": "Heated",
               "status": "standard",
               "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf"
+            },
+            {
+              "key": "blind-spot",
+              "label": "Blind-spot monitoring",
+              "value": "Blind-spot, rear cross-path and trailer detection",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=25"
+            },
+            {
+              "key": "collision-warning",
+              "label": "Forward collision warning",
+              "value": "Full-Speed Forward Collision Warning Plus",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=25"
+            },
+            {
+              "key": "lane-assist",
+              "label": "Lane assistance",
+              "value": "Active Lane Management",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=25"
+            },
+            {
+              "key": "remote-start",
+              "label": "Remote start",
+              "value": "Key-fob remote start",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=25"
+            },
+            {
+              "key": "seat-massage",
+              "label": "Front seat massage",
+              "value": "Driver and front passenger",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=24"
+            },
+            {
+              "key": "wireless-charging",
+              "label": "Wireless phone charging",
+              "value": "Dual charging pads",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=24"
             }
           ]
         }
@@ -17635,7 +18651,7 @@
       "name": "Ram 2500",
       "brand": "Ram",
       "year": 2026,
-      "scope": "U.S. 2026; Crew Cab 4x4, 6-foot-4 box, standard 6.4L HEMI V8. Diesel, Mega Cab and optional groups excluded.",
+      "scope": "U.S. 2026; Crew Cab 4x4, 6-foot-4 box, standard 6.4L HEMI V8. Diesel and Mega Cab are separate configurations. Named optional upgrades appear with the equipment they change.",
       "coverageNote": "Nine columns in the factory guide, including Black Express and Warlock (marketed as Tradesman-based packages). Big Horn/Lone Star are regional names. Lunar editions are not separately detailed. The guide lists the Power Wagon winch as package-dependent; do not claim it is universally standard. Later diesel Power Wagon equipment is outside this gas comparison. 4x4 is the chosen comparison configuration.",
       "sources": [
         {
@@ -18085,6 +19101,13 @@
               "value": "2.4-kW system; requires dual alternators",
               "status": "optional",
               "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_RamHD.pdf"
+            },
+            {
+              "key": "bumpers",
+              "label": "Bumpers",
+              "value": "Body-color bumpers",
+              "status": "standard",
+              "sourceUrl": "https://blog.stellantisnorthamerica.com/2025/06/30/ram-builds-on-sport-truck-offerings-with-new-2026-ram-2500-heavy-duty-black-express-and-warlock-models/"
             }
           ]
         },
@@ -21076,7 +22099,9 @@
               "label": "Larger touchscreen option",
               "value": "12-inch navigation; L2 group",
               "status": "optional",
-              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_RamCC.pdf"
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_RamCC.pdf",
+              "upgradeOf": "touchscreen",
+              "baseLabel": "Standard touchscreen"
             },
             {
               "key": "driver-display",
@@ -21118,7 +22143,9 @@
               "label": "Automatic climate option",
               "value": "Dual-zone automatic; L2 group",
               "status": "optional",
-              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_RamCC.pdf"
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_RamCC.pdf",
+              "upgradeOf": "climate",
+              "baseLabel": "Climate control"
             },
             {
               "key": "wheels",
@@ -21264,7 +22291,9 @@
               "label": "Larger touchscreen option",
               "value": "12-inch navigation; H1 / H2 / H3 group",
               "status": "optional",
-              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_RamCC.pdf"
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_RamCC.pdf",
+              "upgradeOf": "touchscreen",
+              "baseLabel": "Standard touchscreen"
             },
             {
               "key": "driver-display",
@@ -21306,7 +22335,9 @@
               "label": "Automatic climate option",
               "value": "Dual-zone automatic; H1 / H2 / H3 group",
               "status": "optional",
-              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_RamCC.pdf"
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_RamCC.pdf",
+              "upgradeOf": "climate",
+              "baseLabel": "Climate control"
             },
             {
               "key": "wheels",
@@ -24274,7 +25305,9 @@
               "label": "Harman Kardon premium audio",
               "value": "Premium Group",
               "status": "optional",
-              "sourceUrl": "https://www.26-dodge-durango-buyersguide.com/_files/ugd/10da43_78984aae5f084162a92d3a0d9960ee60.pdf"
+              "sourceUrl": "https://www.26-dodge-durango-buyersguide.com/_files/ugd/10da43_78984aae5f084162a92d3a0d9960ee60.pdf",
+              "upgradeOf": "audio",
+              "baseLabel": "Standard audio"
             }
           ]
         },
@@ -25087,13 +26120,22 @@
               "label": "18-speaker Alpine audio",
               "value": "Available",
               "status": "optional",
-              "sourceUrl": "https://www.dodge.com/news/2026-charger-rt-sixpack.html"
+              "sourceUrl": "https://www.dodge.com/news/2026-charger-rt-sixpack.html",
+              "upgradeOf": "audio",
+              "baseLabel": "Standard audio"
             },
             {
               "key": "glass_roof",
               "label": "Fixed panoramic glass roof",
               "value": "Available",
               "status": "optional",
+              "sourceUrl": "https://www.dodge.com/news/2026-charger-rt-sixpack.html"
+            },
+            {
+              "key": "drive-modes",
+              "label": "Drive modes",
+              "value": "Sport, Auto, Eco, Wet/Snow",
+              "status": "standard",
               "sourceUrl": "https://www.dodge.com/news/2026-charger-rt-sixpack.html"
             }
           ]
@@ -25229,7 +26271,9 @@
               "label": "18-speaker Alpine audio",
               "value": "Available",
               "status": "optional",
-              "sourceUrl": "https://www.dodge.com/news/2026-charger-rt-sixpack.html"
+              "sourceUrl": "https://www.dodge.com/news/2026-charger-rt-sixpack.html",
+              "upgradeOf": "audio",
+              "baseLabel": "Standard audio"
             },
             {
               "key": "glass_roof",
@@ -25392,7 +26436,9 @@
               "label": "18-speaker Alpine audio",
               "value": "Available",
               "status": "optional",
-              "sourceUrl": "https://www.dodge.com/news/2026-charger-rt-sixpack.html"
+              "sourceUrl": "https://www.dodge.com/news/2026-charger-rt-sixpack.html",
+              "upgradeOf": "audio",
+              "baseLabel": "Standard audio"
             },
             {
               "key": "glass_roof",
@@ -25611,7 +26657,9 @@
               "label": "18-speaker Alpine audio",
               "value": "Available",
               "status": "optional",
-              "sourceUrl": "https://www.dodge.com/news/2026-charger-rt-sixpack.html"
+              "sourceUrl": "https://www.dodge.com/news/2026-charger-rt-sixpack.html",
+              "upgradeOf": "audio",
+              "baseLabel": "Standard audio"
             },
             {
               "key": "glass_roof",
@@ -26013,6 +27061,13 @@
               "value": "Four-way manual",
               "status": "standard",
               "sourceUrl": "https://cdn.dealereprocess.org/cdn/brochures/dodge/2026-charger.pdf"
+            },
+            {
+              "key": "charging-cord",
+              "label": "Charging cord",
+              "value": "120V/240V combination cord",
+              "status": "standard",
+              "sourceUrl": "https://blog.stellantisnorthamerica.com/2025/05/21/dodge-debuts-all-new-2026-dodge-charger-daytona-sedan-worlds-only-four-door-muscle-car/"
             }
           ]
         },
@@ -28950,6 +30005,13 @@
               "value": "Driver Convenience Group",
               "status": "optional",
               "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_CH_300_FA5d24ldu82q24jgdr3knf7t7no.pdf"
+            },
+            {
+              "key": "steering-column",
+              "label": "Steering-column adjustment",
+              "value": "Manual tilt/telescope steering",
+              "status": "standard",
+              "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_CH_300_FA5d24ldu82q24jgdr3knf7t7no.pdf"
             }
           ]
         },
@@ -29147,6 +30209,13 @@
               "key": "remote_start",
               "label": "Remote start",
               "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_CH_300_FA5d24ldu82q24jgdr3knf7t7no.pdf"
+            },
+            {
+              "key": "blind_spot",
+              "label": "Blind-spot monitoring",
+              "value": "Blind-spot monitoring",
               "status": "standard",
               "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_CH_300_FA5d24ldu82q24jgdr3knf7t7no.pdf"
             }
@@ -34972,7 +36041,9 @@
               "label": "Larger tires",
               "value": "35-inch BFGoodrich KO2",
               "status": "optional",
-              "sourceUrl": "https://www.jeep.com/news/2027-wrangler-smoky-mountain-debut.html"
+              "sourceUrl": "https://www.jeep.com/news/2027-wrangler-smoky-mountain-debut.html",
+              "upgradeOf": "tires",
+              "baseLabel": "Tires"
             },
             {
               "key": "power-roof",
@@ -35975,7 +37046,9 @@
               "label": "Larger wheels",
               "value": "22-inch satin",
               "status": "optional",
-              "sourceUrl": "https://www.jeep.com/2027/grand-wagoneer/design.html"
+              "sourceUrl": "https://www.jeep.com/2027/grand-wagoneer/design.html",
+              "upgradeOf": "wheels",
+              "baseLabel": "Wheels"
             }
           ],
           "difference": "The listed wheels and equipment are verified; further trim-specific cabin details remain pending.",
@@ -37489,14 +38562,18 @@
               "label": "Wheel upgrade",
               "value": "18-inch beadlock-capable",
               "status": "optional",
-              "sourceUrl": "https://www.ramtrucks.com/2027/rho/design.html"
+              "sourceUrl": "https://www.ramtrucks.com/2027/rho/design.html",
+              "upgradeOf": "wheels",
+              "baseLabel": "Wheels"
             },
             {
               "key": "seat-comfort-upgrade",
               "label": "Seat comfort upgrade",
               "value": "Ventilation, memory, massage",
               "status": "optional",
-              "sourceUrl": "https://www.ramtrucks.com/2027/rho/design.html"
+              "sourceUrl": "https://www.ramtrucks.com/2027/rho/design.html",
+              "upgradeOf": "front-seat-comfort",
+              "baseLabel": "Front comfort"
             }
           ],
           "difference": "Long-travel adaptive dampers and 35-inch tires suit high-speed off-road use; massaging seats remain optional.",
