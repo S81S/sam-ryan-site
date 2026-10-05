@@ -72,3 +72,10 @@ test('optional/package links preserve the selected equipment and reject incompat
  assert.equal(installedOptionFact(vehicle,packageSticker,{key:'night-edition',label:'Appearance option',value:'Night Edition'}).value,true);
  assert.equal(installedOptionFact({vin:'wrong-vin'},packageSticker,fact),null);
 });
+
+test('optional tow hooks and wireless charging use installed feature evidence, not package prose',()=>{
+ const original={vin:vehicle.vin,status:'verified',features:{towHooks:{value:true,evidence:['Front Tow Hooks']},wireless:{value:true,evidence:['Wireless Charging Pad']}},lines:['Front Tow Hooks','Wireless Charging Pad']};
+ assert.equal(installedOptionFact(vehicle,original,{key:'tow-hooks',label:'Front tow hooks',value:'Protection Group or Off-Road Group'}).value,true);
+ assert.equal(installedOptionFact(vehicle,original,{key:'wireless-charging',label:'Wireless phone charging',value:'Single or dual charging pads with equipment group'}).value,true);
+ assert.equal(installedOptionFact(vehicle,{...original,features:{}},{key:'wireless-charging',label:'Wireless phone charging',value:'Single or dual charging pads with equipment group'}),null);
+});

@@ -11,7 +11,7 @@ export function optionFromParams(params){
  return {key:params.get('option').slice(0,100),label:(params.get('optionLabel')||'Selected factory option').slice(0,200),value:(params.get('optionValue')||'').slice(0,500)};
 }
 const ids={
- 'trailer-hitch':['tow'],'hitch':['tow'],'hardtop':['hardTop'],'heated-front-seats':['heatedSeats'],'front-seat-heat':['heatedSeats'],'front-heat':['heatedSeats'],'heated-wheel':['heatedWheel'],'heated-steering':['heatedWheel'],'remote-start':['remoteStart'],'entry':['passiveEntry'],'blind-spot':['blindSpot'],'rear-parking':['parkingSensors'],'power-roof':['skyRoof'],'navigation':['navigation'],'bedliner':['bedliner'],'bed-cover':['tonneau'],'trailer-brakes':['brakeController'],'adaptive-cruise':['adaptiveCruise'],'rain-wipers':['rainWipers'],'sunroof':['sunroof'],'surround-camera':['surroundCamera'],'ventilated-front-seats':['ventilated'],'front-ventilation':['ventilated'],'heated-rear-seats':['rearHeated'],'second-heat':['rearHeated'],'seat-memory':['memorySeats'],'memory':['memorySeats'],'awd':['awd'],'cabin-camera':['familyCamera'],'glass-roof':['panoramic'],'seat-comfort-upgrade':['ventilated','memorySeats','massage']
+ 'tow-hooks':['towHooks'],'rear-locker-upgrade':['rearLocker'],'wireless-charging':['wireless'],'seat-massage':['massage'],'trailer-hitch':['tow'],'hitch':['tow'],'hardtop':['hardTop'],'heated-front-seats':['heatedSeats'],'front-seat-heat':['heatedSeats'],'front-heat':['heatedSeats'],'heated-wheel':['heatedWheel'],'heated-steering':['heatedWheel'],'remote-start':['remoteStart'],'entry':['passiveEntry'],'blind-spot':['blindSpot'],'rear-parking':['parkingSensors'],'power-roof':['skyRoof'],'navigation':['navigation'],'bedliner':['bedliner'],'bed-cover':['tonneau'],'trailer-brakes':['brakeController'],'adaptive-cruise':['adaptiveCruise'],'rain-wipers':['rainWipers'],'sunroof':['sunroof'],'surround-camera':['surroundCamera'],'ventilated-front-seats':['ventilated'],'front-ventilation':['ventilated'],'heated-rear-seats':['rearHeated'],'second-heat':['rearHeated'],'seat-memory':['memorySeats'],'memory':['memorySeats'],'awd':['awd'],'cabin-camera':['familyCamera'],'glass-roof':['panoramic'],'seat-comfort-upgrade':['ventilated','memorySeats','massage']
 };
 export function installedOptionFact(vehicle,sticker,option){
  if(sticker?.status!=='verified'||sticker.vin!==vehicle.vin)return null;
@@ -32,6 +32,7 @@ export function installedOptionFact(vehicle,sticker,option){
  if(/front seat massage/.test(name))features=['massage'];
  if(/heated rear seat|rear seat heat/.test(name))features=['rearHeated'];
  if(/panoramic sunroof/.test(name))features=['panoramic'];
+ if(key==='rear-differential'&&/antispin|anti.spin|limited.slip/i.test(text))features=['limitedSlip'];
  // A 35-inch package must not match a different tire size or unrelated wheel option.
  if(/tire|larger-tires/.test(key)){const size=text.match(/\b(3[3-7])[ -]?inch/i);if(size)features=['tireDiameter'+size[1]];}
  if(features){
