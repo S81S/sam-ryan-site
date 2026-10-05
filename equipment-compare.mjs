@@ -7,6 +7,7 @@ import {withComparisonSpecifications,specificationDefinitions} from './compariso
 import {definitions,parseQuery} from './equipment-search.mjs?v=wheel1';
 const $=id=>document.getElementById(id),el=(tag,text)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;return n};
 const short=v=>v.stock?`Stock ${v.stock}`:`VIN …${v.vin.slice(-6)}`;
+const indexEngine=v=>{const s=window.equipmentIndex.records[v.vin];return s?.status==='verified'?s.engine?.replace(/^Engine:\s*/i,''):null;};
 const viewState={mode:'important',search:''};
 function render(){
  const out=$('automatic-equipment');out.replaceChildren();
@@ -33,7 +34,7 @@ function render(){
   for(const {v} of recs){const th=el('th');th.scope='col';th.append(el('strong',v.title),el('small',short(v)));tr.append(th)}head.append(tr);table.append(head);
   const body=el('tbody');
   if(recs.some(({v})=>v.external)){
-   const fields=[['Data source',v=>v.external?(v.decodedAt?'External decoded/spec-only; dealer listing unverified':'External VIN; identity and dealer listing unverified'):'Covert dealer listing snapshot'],['VIN',v=>v.vin],['Advertised price',v=>Number.isFinite(v.price)?new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(v.price):'Unknown — Verify'],['Mileage',v=>Number.isFinite(v.miles)?v.miles.toLocaleString():'Unknown — Verify'],['Decoded body',v=>v.decodedSpecs?.body||'Unknown'],['Decoded engine',v=>v.decodedSpecs?.engine||'Unknown'],['Decoded fuel',v=>v.decodedSpecs?.fuel||'Unknown']];
+   const fields=[['Data source',v=>v.external?(v.decodedAt?'External VIN identity confirmed; dealer listing unverified':'External VIN; identity and dealer listing unverified'):'Covert dealer listing snapshot'],['VIN',v=>v.vin],['Advertised price',v=>Number.isFinite(v.price)?new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(v.price):'Unknown — Verify'],['Mileage',v=>Number.isFinite(v.miles)?v.miles.toLocaleString():'Unknown — Verify'],['Body / cab',v=>v.decodedSpecs?.body||(/CREW CAB/i.test(v.title)?'Crew cab (listing)':v.decodePending?'Checking VIN…':'Not confirmed')],['Engine',v=>indexEngine(v)||v.decodedSpecs?.engine||(v.decodePending?'Checking VIN…':'Not confirmed')],['Fuel',v=>v.decodedSpecs?.fuel||(v.decodePending?'Checking VIN…':'Not confirmed')]];
    for(const [label,value] of fields){const row=el('tr'),th=el('th',label);th.scope='row';row.append(th);for(const {v} of recs)row.append(el('td',value(v)));body.append(row);}
   }
   if(mode==='important'&&!search.value){

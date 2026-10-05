@@ -42,8 +42,8 @@ export function installVehiclePickers(vehicles,document=globalThis.document) {
   let choosing=false,previous=selection.value;
   function render(){
    results.replaceChildren();
-   const query=input.value.trim(),{matches,total}=searchVehicles(vehicles,query,condition.value);
-   count.textContent=query.length<2?'Type to see matches. For a stock number or VIN, press Enter or your keyboard’s Search key.':total?`Showing ${matches.length} of ${total} matches.${total>6?' Add a model, trim or stock number to narrow your search.':''}`:'No inventory matches. Try another term or condition. For your own vehicle, enter its complete VIN and press Enter or your keyboard’s Search key.';
+   const query=input.value.trim(),selected=vehicles.find(v=>v.vin===selection.value),{matches,total}=searchVehicles(vehicles,query,condition.value);
+   count.textContent=selected&&!query?`✓ Selected: ${selected.title} · ${selected.stock?'Stock '+selected.stock:'VIN '+selected.vin}`:query.length<2?'Type to see matches. For a stock number or VIN, press Enter or your keyboard’s Search key.':total?`Showing ${matches.length} of ${total} matches.${total>6?' Add a model, trim or stock number to narrow your search.':''}`:'No inventory matches. Try another term or condition. For your own vehicle, enter its complete VIN and press Enter or your keyboard’s Search key.';
    for(const v of matches){
     const chosen=sides.some(id=>$('choose-'+id).value===v.vin),row=el('li'),details=el('div');
     details.append(el('strong',v.title),el('small',`${v.condition} · ${money(v.price)} · ${v.stock?'Stock '+v.stock:'VIN …'+v.vin.slice(-6)}`));

@@ -1,6 +1,6 @@
 import {decodeVIN,normalizeVIN} from './vin-decoder.mjs?v=external1';
 import {appendStickerCredit,usesWindowStickerOrg} from './sticker-credit.mjs?v=source2';
-import {installVehiclePickers} from './compare-picker.mjs?v=enter1';
+import {installVehiclePickers} from './compare-picker.mjs?v=vin-confirmation2';
 const readSticker=async(...args)=>(await import('./sticker-reader.mjs?v=clean-shopping1')).readSticker(...args);
 import {shoppingContext} from './shopping-context.mjs?v=shopping1';
 import {openVehiclePreview} from './vehicle-preview.mjs?v=next3';
@@ -16,12 +16,20 @@ function updateStickerCredit(side, source) {
  if(!credit){credit=document.createElement('span');credit.id='sticker-credit-'+side;$('sticker-'+side).insertAdjacentElement('afterend',credit)}
  credit.replaceChildren();appendStickerCredit(credit,source,index.records[vehicle(side)?.vin]?.sourceUrl);
 }
-const previousSelection={};
+const previousSelection={},inventoryDecodes=new Map();
+function hydrateInventorySpecs(v){
+ if(!v||v.external||v.decodedSpecs||inventoryDecodes.has(v.vin))return;
+ v.decodePending=true;
+ const task=decodeVIN(v.vin).then(({decodedSpecs,decodedSourceUrl,decodedAt})=>{Object.assign(v,{decodedSpecs,decodedSourceUrl,decodedAt});}).catch(()=>{v.decodeUnavailable=true;}).finally(()=>{v.decodePending=false;document.dispatchEvent(new CustomEvent('compare:changed'));});
+ inventoryDecodes.set(v.vin,task);
+}
+
 function reset(side){
  const chosen=$('choose-'+side).value;
  if(chosen&&SIDES.some(id=>id!==side&&$('choose-'+id).value===chosen)){$('choose-'+side).value=previousSelection[side]||'';$('lookup-status-'+side).textContent='That vehicle is already selected. Choose a different vehicle to compare.';document.dispatchEvent(new CustomEvent('compare:changed'));return false;}
  previousSelection[side]=chosen;
  const v=vehicle(side);
+ hydrateInventorySpecs(v);
  updateStickerCredit(side,v?.stickerUrl);
  const photo=$('vehicle-photo-'+side);$('clear-'+side).hidden=!v;
  if(!v){photo.hidden=true;photo.removeAttribute('src');$('summary-'+side).textContent='';$('listing-'+side).hidden=true;$('listing-'+side).removeAttribute('href');$('sticker-'+side).hidden=true;$('sticker-'+side).removeAttribute('href');$('lookup-note-'+side).textContent='';if(urls[side]){URL.revokeObjectURL(urls[side]);delete urls[side]}$('pdf-'+side).removeAttribute('src');$('pdf-'+side).hidden=true;$('file-'+side).value='';$('file-status-'+side).textContent='No local PDF selected.';$('pdf-link-'+side).hidden=true;$('pdf-link-'+side).removeAttribute('href');document.dispatchEvent(new CustomEvent('compare:changed'));return}
@@ -113,7 +121,7 @@ function addExternal(vin,side){
  if(SIDES.some(id=>id!==side&&$('choose-'+id).value===vin)){$('lookup-status-'+side).textContent='That VIN is already selected. Choose another vehicle.';return;}
  let v=vehicles.find(v=>v.vin===vin);
  if(!v){v={vin,title:'Outside vehicle — '+vin,stock:'',price:null,miles:null,external:true,condition:'Unknown'};vehicles.push(v);window.usedInventoryData.vehicles.push(v);for(const id of SIDES){const o=document.createElement('option');o.value=vin;o.textContent='Outside vehicle — '+vin;$('choose-'+id).append(o)}}
- $('choose-'+side).value=vin;reset(side);$('lookup-status-'+side).textContent='Vehicle added. Open a sticker PDF below, or check the original-sticker service.';
+ $('choose-'+side).value=vin;reset(side);$('lookup-status-'+side).textContent=`VIN accepted: ${vin}. Looking for its original window sticker…`;$('lookup-status-'+side).classList.add('is-ok');
  const b=document.createElement('button');b.type='button';b.className='btn ghost';b.textContent='Look for original sticker';
  const disclosure=document.createElement('p');disclosure.textContent='This lookup sends the VIN to WindowSticker.org. Availability varies by manufacturer and model year. Your PDF uploads stay on your device.';
  $('lookup-status-'+side).append(disclosure,b);
@@ -123,26 +131,22 @@ function addExternal(vin,side){
   note.textContent='Not in Covert inventory. Checking the public NHTSA VIN decoder…';
   $('lookup-status-'+side).prepend(note);
   decodeVIN(vin).then(decoded=>{
-   Object.assign(v,decoded);
+   const stickerTitle=v.title;Object.assign(v,decoded);if(index.records[vin]?.status==='verified')v.title=stickerTitle;
+   document.dispatchEvent(new CustomEvent('compare:changed'));
    for(const id of SIDES){for(const option of $('choose-'+id).options){if(option.value===vin)option.textContent=v.title+' — '+vin;}}
    if(vehicle(side)?.vin!==vin||!note.isConnected)return;
-   reset(side);note.textContent='External decoded specs only • NHTSA. Dealer listing, price, mileage, options and packages: Verify.';
+   if(index.records[vin]?.status!=='verified')reset(side);note.textContent='VIN found: '+v.title+' • NHTSA identity confirmed. Original-sticker lookup is separate from VIN decoding.';
    const link=document.createElement('a');link.href=decoded.decodedSourceUrl;link.target='_blank';link.rel='noopener';link.textContent='View decoder source ↗';note.append(document.createElement('br'),link);
    const specs=document.createElement('p');specs.textContent=Object.entries(decoded.decodedSpecs).map(([key,value])=>key+': '+value).join(' · ');note.append(specs);
   }).catch(error=>{if(vehicle(side)?.vin===vin&&note.isConnected)note.textContent='VIN added with unverified identity. '+error.message+' Options/packages: Unknown.';});
  }
  b.addEventListener('click',async()=>{
   b.disabled=true;b.textContent='Checking…';
-  try{const response=await fetch('https://windowsticker.org/api/v1/vin/'+vin,{signal:AbortSignal.timeout(25000)});if(!response.ok)throw Error('Sticker service is unavailable. Try your original PDF instead.');const info=await response.json();
-   if(vehicle(side)?.vin!==vin)return;
-   if(info.vin!==vin||!info.ok)throw Error('The service did not confirm this VIN.');
-   if(info.windowSticker?.available!==true)throw Error('No original sticker returned for this VIN. You can still open your own PDF below.');
+  try{
+   $('lookup-status-'+side).setAttribute('aria-busy','true');
+   const pdfResponse=await fetch('/api/original-sticker?vin='+vin,{signal:AbortSignal.timeout(30000)});
+   if(!pdfResponse.ok){let message='Original sticker lookup is unavailable. Try again or upload its original PDF.';try{message=(await pdfResponse.json()).error||message;}catch{}throw Error(message);}
    const url='https://windowsticker.org/api/sticker/'+vin;
-   v.title=[info.vehicle?.year,info.vehicle?.make,info.vehicle?.model,info.vehicle?.trim].filter(Boolean).join(' ')||'Your vehicle';v.stickerUrl=url;reset(side);
-   $('lookup-status-'+side).textContent='Original sticker found. Checking its VIN and reading equipment…';
-   try{
-    const pdfResponse=await fetch('/api/original-sticker?vin='+vin,{signal:AbortSignal.timeout(30000)});
-    if(!pdfResponse.ok)throw Error('The PDF could not be read automatically.');
     const pdfBytes=new Uint8Array(await pdfResponse.arrayBuffer());
     const parsed=await readSticker(pdfBytes.slice(),vin);
     if(vehicle(side)?.vin!==vin)return;
@@ -150,16 +154,18 @@ function addExternal(vin,side){
     urls[side]=URL.createObjectURL(new Blob([pdfBytes],{type:'application/pdf'}));
     $('pdf-'+side).src=urls[side];$('pdf-'+side).hidden=false;
     $('pdf-link-'+side).href=urls[side];$('pdf-link-'+side).hidden=false;
+    v.stickerUrl=url;
+    if(v.external&&parsed.analysis?.identityLines?.length){const title=parsed.analysis.identityLines.find(l=>/^(?:RAM|JEEP|DODGE|CHRYSLER)\s/i.test(l));if(title)v.title=[v.year,title].filter(Boolean).join(' ');}
+    $('sticker-'+side).href=url;$('sticker-'+side).hidden=false;$('sticker-'+side).textContent='Open original window sticker ↗';updateStickerCredit(side,url);
     if(parsed.analysis&&index.records[vin]?.status!=='verified'){
      index.records[vin]={...parsed.analysis,status:'verified',sourceType:'original-service',sourceUrl:url,checkedAt:new Date().toISOString()};
      document.dispatchEvent(new CustomEvent('compare:changed'));
     }
+    $('summary-'+side).textContent=`✓ VIN found: ${v.title} · VIN ${vin} · Original sticker found${parsed.analysis?' and equipment read':''}.`;$('lookup-status-'+side).classList.add('is-ok');$('lookup-status-'+side).removeAttribute('aria-busy');
     $('lookup-status-'+side).textContent=parsed.analysis?'Original sticker VIN matched. Its readable equipment is now included in your comparison.':'Original sticker VIN matched and opened below. This layout still needs review before automatic feature comparison.';
-   }catch{
-    if(vehicle(side)?.vin===vin)$('lookup-status-'+side).textContent='Original sticker found, but automatic reading was unavailable. Open the original link below, save it and select the PDF here. Existing equipment evidence has been kept.';
-   }
-  }catch(e){if(vehicle(side)?.vin===vin){b.disabled=false;b.textContent='Try sticker lookup again';disclosure.textContent=e.message;}}
+  }catch(e){if(vehicle(side)?.vin===vin){$('lookup-status-'+side).removeAttribute('aria-busy');b.disabled=false;b.textContent='Try sticker lookup again';disclosure.textContent=e.message;}}
  });
+ b.click();
 }
 
 installVehiclePickers(vehicles);
