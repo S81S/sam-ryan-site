@@ -73,7 +73,7 @@ for(const side of SIDES){
     const name=parsed.analysis.identityLines.join(' ').split(/EXTERIOR:/i)[0].trim();
     if(name){v.title=name;$('summary-'+side).textContent=name+' · VIN '+selectedVIN;}
    }
-   if(parsed.analysis&&index.records[selectedVIN]?.status!=='verified'){index.records[selectedVIN]={...parsed.analysis,status:'verified',sourceType:'customer-upload',checkedAt:new Date().toISOString()};document.dispatchEvent(new CustomEvent('compare:changed'));}
+   if(parsed.analysis&&index.records[selectedVIN]?.status!=='verified'){index.records[selectedVIN]={...parsed.analysis,vin:selectedVIN,status:'verified',sourceType:'customer-upload',checkedAt:new Date().toISOString()};document.dispatchEvent(new CustomEvent('compare:changed'));}
 
   }catch(err){if(vehicle(side)?.vin===selectedVIN&&e.target.files[0]===f)$('file-status-'+side).textContent=err.message}
  });
@@ -158,7 +158,7 @@ function addExternal(vin,side){
     if(v.external&&parsed.analysis?.identityLines?.length){const title=parsed.analysis.identityLines.find(l=>/^(?:RAM|JEEP|DODGE|CHRYSLER)\s/i.test(l));if(title)v.title=[v.year,title].filter(Boolean).join(' ');}
     $('sticker-'+side).href=url;$('sticker-'+side).hidden=false;$('sticker-'+side).textContent='Open original window sticker ↗';updateStickerCredit(side,url);
     if(parsed.analysis&&index.records[vin]?.status!=='verified'){
-     index.records[vin]={...parsed.analysis,status:'verified',sourceType:'original-service',sourceUrl:url,checkedAt:new Date().toISOString()};
+     index.records[vin]={...parsed.analysis,vin,status:'verified',sourceType:'original-service',sourceUrl:url,checkedAt:new Date().toISOString()};
      document.dispatchEvent(new CustomEvent('compare:changed'));
     }
     $('summary-'+side).textContent=`✓ VIN found: ${v.title} · VIN ${vin} · Original sticker found${parsed.analysis?' and equipment read':''}.`;$('lookup-status-'+side).classList.add('is-ok');$('lookup-status-'+side).removeAttribute('aria-busy');
