@@ -50,7 +50,7 @@ factoryRules.push(...additionalFactoryRules);
 const presencePatterns={sunroof:/sun.?roof|moon.?roof|panoramic|dual.?pane/i,panoramic:/sun.?roof|moon.?roof|panoramic|dual.?pane/i,surroundCamera:/surround|360.*camera/i,hud:/head.?up|\bhud\b/i,airSuspension:/air.suspension|active.level/i,bedliner:/bed.?liner|spray.in/i};
 function identity(sticker){
  const lines=sticker.identityLines||[],year=Number(lines.join(' ').match(/\b(20\d\d)\b/)?.[1]);
- const name=norm(lines.filter(l=>!/^20\d\d model year\b/i.test(l)).join(' ')).replace(/^20\d\d\s+/,'');
+ const name=norm(lines.filter(l=>!/^(?:[a-z]\s+)?20\d\d model year\b/i.test(l)).join(' ')).replace(/^20\d\d\s+/,'');
  const ram=name.match(/^ram 1500 (tradesman|black express|express|warlock|big horn|lone star|laramie|rebel|limited longhorn|longhorn|limited|tungsten) (crew|quad) cab\b/);
  if(ram)return {year,model:'Ram 1500',trim:ram[1]==='black express'?'express':ram[1]==='limited longhorn'?'longhorn':ram[1],cab:ram[2]};
  const compass=name.match(/^(?:jeep )?compass (latitude altitude|limited altitude|latitude|limited|trailhawk) (?:4x4|4x2|fwd)$/);
