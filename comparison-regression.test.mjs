@@ -1,3 +1,5 @@
+import {installedOptionFact,optionInventoryLink,optionFromParams} from './option-inventory.mjs';
+import {equipmentRows} from './trim-comparison.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
@@ -28,7 +30,8 @@ test('all confirmed equipment includes shared absences, while evidence gaps stay
  assert.equal(visibleComparisonRows(rows,'complete').length,3);
  assert.equal(visibleComparisonRows(rows,'all').length,2);
  assert.equal(visibleComparisonRows(rows,'important').length,1);
- assert.equal(visibleComparisonRows(rows,'check').length,2);
+ assert.equal(visibleComparisonRows(rows,'check').length,1);
+ assert.equal(visibleComparisonRows(rows,'check','Missing').length,1);
  assert.equal(visibleComparisonRows(rows,'all','Different').length,0);
 });
 test('five-vehicle comparison preserves confirmed differences with a separate missing cell',()=>{
@@ -48,4 +51,24 @@ test('current Harman matches all have independent VIN-matched installed-brand ev
  assert.match(s.features.audioSystem.displayValue,/19-Speaker Harman/);
  assert.equal(s.features.infotainmentScreen.displayValue,'14.4 inches');
  assert.ok(s.features.engineSpecification);assert.ok(s.features.transmissionSpecification);
+});
+
+test('trim differences include an optional upgrade offered on only one trim',()=>{
+ const base={key:'audio',label:'Audio',status:'standard',value:'9 speakers'};
+ const upgrade={key:'upgrade',upgradeOf:'audio',label:'Audio upgrade',status:'optional',value:'Harman Kardon 19 speakers'};
+ const rows=equipmentRows([{comparison:[base,upgrade]},{comparison:[base]}]);
+ assert.equal(rows[0].knownDifference,true);assert.equal(rows[0].kind,'different');
+ const same=equipmentRows([{comparison:[base,upgrade]},{comparison:[base,upgrade]}]);
+ assert.equal(same[0].knownDifference,false);assert.equal(same[0].kind,'shared');
+});
+
+test('optional/package links preserve the selected equipment and reject incompatible audio',()=>{
+ const fact={key:'audio-upgrade',label:'Audio upgrade',value:'Harman Kardon 19 speakers'};
+ const link=optionInventoryLink(fact,{modelTerms:['Ram 1500'],condition:'New',advisor:'Sam'});
+ const params=new URL(link,'https://carswithsam.com').searchParams;
+ assert.equal(params.get('q'),'Ram 1500');assert.deepEqual(optionFromParams(params),fact);
+ assert.equal(installedOptionFact(vehicle,sticker,fact).value,false);
+ const packageSticker={...sticker,features:{},lines:['OPTIONAL EQUIPMENT','Night Edition $2,995']};
+ assert.equal(installedOptionFact(vehicle,packageSticker,{key:'night-edition',label:'Appearance option',value:'Night Edition'}).value,true);
+ assert.equal(installedOptionFact({vin:'wrong-vin'},packageSticker,fact),null);
 });

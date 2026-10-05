@@ -14,8 +14,8 @@ export function visibleComparisonRows(rows, mode='important', search='') {
  return rows.filter(row=>{
   if(term&&!(row.label+' '+row.facts.map(f=>f?.displayValue||'').join(' ')).toLowerCase().includes(term))return false;
   if(mode==='requested')return row.requested;
-  if(mode==='all')return row.group==='same'&&row.facts.every(Boolean)&&true;
-  if(mode==='check')return row.group==='check'||row.group==='unknown';
+  if(mode==='all')return row.group==='same'&&row.facts.every(Boolean);
+  if(mode==='check')return row.group==='check'||(row.group==='unknown'&&(row.requested||Boolean(term)));
   if(mode==='complete')return row.group==='same'||row.group==='difference';
   return row.group==='difference';
  });

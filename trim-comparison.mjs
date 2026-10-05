@@ -22,7 +22,7 @@ export function equipmentRows(trims) {
     const cells = facts.map(list => list.find(f => f.key === key));
     const complete = cells.every(Boolean);
     const known=cells.filter(f=>f&&f.status!=='verify');
-    const optionSets=cells.filter(f=>f?.options?.length).map(f=>f.options.map(o=>o.status+'|'+normal(o.value)).sort().join(';'));
+    const optionSets=cells.map(f=>(f?.options||[]).map(o=>o.status+'|'+normal(o.value)).sort().join(';'));
     const optionDifference=optionSets.length>1&&new Set(optionSets).size>1;
     const knownDifference=new Set(known.map(f=>f.status+'|'+normal(f.value))).size>1||optionDifference;
     const same = !optionDifference && complete && known.length===cells.length && cells.every(f => f.status === cells[0].status && normal(f.value) === normal(cells[0].value));
