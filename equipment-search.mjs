@@ -2,7 +2,7 @@ import {engineDefinitions,engineAliases,engineTerms,engineFact} from './engine-s
 import {dualRearWheelPattern,secondRowBenchPattern,wheelSeatFeatures} from './wheel-seat-evidence.mjs?v=clean-shopping1';
 import {validSeatEvidence} from './seat-evidence.mjs?v=coverage4';
 import {towEquipmentPattern,brakeControllerPattern} from './tow-evidence.mjs?v=next3';
-import {applyFactoryEquipment} from './factory-equipment.mjs?v=wheel1';
+import {applyFactoryEquipment} from './factory-equipment.mjs?v=errors1';
 import {flatTowEvidence} from './flat-tow-rules.mjs?v=23-tow26';
 import {interiorColors} from './interior-colors.mjs?v=option1';
 import {exteriorColors,exteriorPaintLines,exteriorColorFact,extractExteriorColors} from './exterior-colors.mjs?v=paint1';
@@ -317,7 +317,7 @@ export function matchVehicle(vehicle,sticker,query){
   }
  }
  if(unmatched.length&&!unmatched.every(t=>text.split(/[^a-z0-9'-]+/).includes(t)))return {kind:'excluded',reason:'terms'};
- const checks=query.requirements.map(req=>{let fact=engineFact(req.id,sticker)||(sticker?.status==='verified'?sticker.features?.[req.id]:null);if(req.id.startsWith('interior')&&sticker?.status==='verified'){const color=interiorColors.find(c=>c.id===req.id);const interior=lines.filter(l=>/^interior(?: color)?:/i.test(l)).map(l=>l.split(/exterior(?: color)?:/i)[0]);if(color&&interior.length)fact={value:interior.some(l=>new RegExp(color.pattern,'i').test(l)),evidence:interior};}if((req.id.startsWith('wheel')||req.id==='surroundCamera'||req.id.startsWith('tireDiameter'))&&sticker?.vin!==vehicle.vin)fact=null;if(req.id.startsWith('exterior'))fact=sticker?.vin===vehicle.vin?exteriorColorFact(req.id,sticker):null;return {...req,label:labels[req.id],sourceUrl:fact?.sourceUrl,method:fact?.method,state:fact?fact.value===req.wanted?'match':'conflict':'unknown',evidence:fact?.evidence||[]};});
+ const checks=query.requirements.map(req=>{let fact=engineFact(req.id,sticker)||(sticker?.status==='verified'?sticker.features?.[req.id]:null);if(req.id.startsWith('interior')&&sticker?.status==='verified'){const color=interiorColors.find(c=>c.id===req.id);const interior=lines.filter(l=>/^interior(?: color)?:/i.test(l)).map(l=>l.split(/exterior(?: color)?:/i)[0]);if(color&&interior.length)fact={value:interior.some(l=>new RegExp(color.pattern,'i').test(l)),evidence:interior};}if(sticker?.vin!==vehicle.vin)fact=null;if(req.id.startsWith('exterior'))fact=sticker?.vin===vehicle.vin?exteriorColorFact(req.id,sticker):null;return {...req,label:labels[req.id],sourceUrl:fact?.sourceUrl,method:fact?.method,state:fact?fact.value===req.wanted?'match':'conflict':'unknown',evidence:fact?.evidence||[]};});
  if(checks.some(c=>c.state==='conflict'))return {kind:'excluded',reason:'equipment',checks};
  if(checks.some(c=>c.state==='unknown'))return {kind:'unknown',checks,categoryChecks:categoryMatch.checks};
  return {kind:'match',checks,categoryChecks:categoryMatch.checks};

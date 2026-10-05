@@ -1,3 +1,4 @@
+import {installedAudioFact} from './audio-evidence.mjs?v=errors1';
 // Compare installed specifications, not just yes/no feature flags. Only read
 // explicit wording from a verified sticker belonging to the selected VIN.
 const norm=s=>String(s||'').normalize('NFKC').replace(/[\u2010-\u2015]/g,'-').replace(/′′|[“”″]/g,'"').replace(/\s+/g,' ').trim();
@@ -5,7 +6,7 @@ const blocked=/\b(?:if equipped|available separately|available with|optional acc
 const inch=/\b(\d{1,2}(?:\.\d+)?)(?:\s*-?\s*(?:inch(?:es)?|in\b)|\s*")/i;
 const infotainment=line=>/\b(?:uconnect|infotainment|touch[ -]?screen|center(?: stack)? display|centre(?: stack)? display)\b/i.test(line)&&!(/\b(?:cluster|instrument|passenger|rear[ -]seat|head[ -]?up)\b/i.test(line));
 const cluster=line=>/\b(?:cluster|instrument (?:panel|display))\b/i.test(line)&&/display|screen/i.test(line);
-export const specificationDefinitions=[['infotainmentScreen','Infotainment screen size'],['instrumentScreen','Instrument cluster screen size'],['equipmentGroup','Equipment group'],['listedPackages','Listed factory packages'],['driverAdjustment','Driver seat adjustment'],['passengerAdjustment','Front passenger seat adjustment'],['audioSystem','Audio system / speakers'],['bedPower','Truck-bed power outlet'],['powerInverter','Power inverter capacity'],['tailgateOperation','Tailgate operation'],['passengerDisplay','Front passenger display'],['digitalMirror','Digital rear-view mirror'],['handsFreeDriving','Hands-free driving assistance'],['wheelSize','Road wheel diameter'],['fuelTankCapacity','Fuel tank capacity']];
+export const specificationDefinitions=[['engineSpecification','Engine'],['transmissionSpecification','Transmission'],['exteriorPaint','Exterior color'],['interiorColor','Interior color'],['seatUpholstery','Seat upholstery'],['infotainmentScreen','Infotainment screen size'],['instrumentScreen','Instrument cluster screen size'],['equipmentGroup','Equipment group'],['listedPackages','Listed factory packages'],['driverAdjustment','Driver seat adjustment'],['passengerAdjustment','Front passenger seat adjustment'],['audioSystem','Audio system / speakers'],['bedPower','Truck-bed power outlet'],['powerInverter','Power inverter capacity'],['tailgateOperation','Tailgate operation'],['passengerDisplay','Front passenger display'],['digitalMirror','Digital rear-view mirror'],['handsFreeDriving','Hands-free driving assistance'],['wheelSize','Road wheel diameter'],['fuelTankCapacity','Fuel tank capacity']];
 
 function installedFact(sticker,selector,extract){
  const lines=sticker.lines.map(norm),optionIndex=lines.findIndex(l=>/^(?:optional equipment|options & pricing|optional features)\b/i.test(l));
@@ -23,14 +24,20 @@ export function withComparisonSpecifications(vehicle,sticker){
  const features={...sticker.features};
  for(const [id] of specificationDefinitions)delete features[id];
  const screen=line=>{const match=line.match(inch);return match&&Number(match[1])>=4&&Number(match[1])<=40?Number(match[1])+' inches':null;};
+ const field=prefix=>installedFact(sticker,l=>prefix.test(l),l=>l.replace(/^[^:]+:\s*/,''));
  const specs={
+  engineSpecification:field(/^Engine:/i),
+  transmissionSpecification:field(/^Transmission:/i),
+  exteriorPaint:field(/^Exterior Color:/i),
+  interiorColor:field(/^Interior Color:/i),
+  seatUpholstery:field(/^Interior:(?! Color)/i),
   infotainmentScreen:installedFact(sticker,infotainment,screen),
   instrumentScreen:installedFact(sticker,cluster,screen),
   fuelTankCapacity:installedFact(sticker,l=>/\bfuel[ -]tank\b/i.test(l)&&!/skid|plate|shield|cover|strap/i.test(l),l=>{const m=l.match(/\b(\d+(?:\.\d+)?)[ -]+gallon\b/i);return m?Number(m[1])+' gallons':null;}),
   equipmentGroup:installedFact(sticker,l=>/\blevel\s+[\dA-Z]+\s+(?:equipment\s+)?group\b/i.test(l),l=>l.replace(/\s+\$[\d,.]+\s*$/,'').replace(/[®™]/g,'')),
   driverAdjustment:installedFact(sticker,l=>/\b\d+[ -]+way\b.*\b(?:power|manual)\b.*\bdriver seat\b/i.test(l)&&!/lumbar/i.test(l),l=>{const m=l.match(/\b(\d+)[ -]+way\b.*\b(power|manual)\b/i);return m?m[1]+'-way '+m[2].toLowerCase():null;}),
   passengerAdjustment:installedFact(sticker,l=>/\b\d+[ -]+way\b.*\b(?:power|manual)\b.*\b(?:front )?passenger seat\b/i.test(l)&&!/lumbar/i.test(l),l=>{const m=l.match(/\b(\d+)[ -]+way\b.*\b(power|manual)\b/i);return m?m[1]+'-way '+m[2].toLowerCase():null;}),
-  audioSystem:installedFact(sticker,l=>/\b\d+[ -]+(?:amplified[ -]+)?speakers?\b/i.test(l),l=>l.replace(/\s+\$[\d,.]+\s*$/,'').replace(/[®™]/g,'')),
+  audioSystem:installedAudioFact(vehicle,sticker),
   bedPower:installedFact(sticker,l=>/\bbed\b/i.test(l)&&/\b(?:outlet|power[ -]point|power[ -]supply)\b/i.test(l),l=>{const m=l.match(/\b(\d{2,3})[ -]?(?:volt|v)\b/i);return m?m[1]+'-volt bed outlet':'Bed power outlet (rating: Verify)';}),
   powerInverter:installedFact(sticker,l=>/\binverter\b/i.test(l),l=>{const m=l.match(/\b(\d+(?:\.\d+)?)[ -]*(k?w)(?:att)?\b/i);return m?Number(m[1])+' '+m[2].toUpperCase()+' inverter':null;}),
   tailgateOperation:installedFact(sticker,l=>/\b(?:power|multifunction|multi-function)[ -]+tailgate\b/i.test(l),l=>/release/i.test(l)?'Power tailgate release':/multi/i.test(l)?'Multifunction tailgate':'Power tailgate'),

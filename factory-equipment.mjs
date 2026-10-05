@@ -1,3 +1,4 @@
+import {repairInstalledAudioEvidence} from './audio-evidence.mjs?v=errors1';
 import {repairWheelSeatEvidence} from './wheel-seat-evidence.mjs?v=clean-shopping1';
 import {stickerAudits} from './factory-sticker-audits.mjs?v=expert1';
 import {repairSeatEvidence} from './seat-evidence.mjs?v=coverage4';
@@ -72,6 +73,7 @@ function identity(sticker){
 function packageOn(lines,name){const n=norm(name);return lines.find(l=>{const value=norm(l).replace(/\s+\$[\d,.]+$/,'');return value===n||value===n+' package';});}
 export function applyFactoryEquipment(vehicle,sticker){
  if(sticker?.status!=='verified'||!vehicle?.vin||sticker.vin&&sticker.vin!==vehicle.vin)return sticker;
+ sticker=repairInstalledAudioEvidence(vehicle,sticker);
  sticker=repairWheelSeatEvidence(repairTowEvidence(repairSeatEvidence(sticker)));
  if(sticker.vin===vehicle.vin){sticker=repairCameraTireEvidence(sticker);sticker=repairWheelFinishEvidence(sticker);}
  const audit=stickerAudits[vehicle.vin];

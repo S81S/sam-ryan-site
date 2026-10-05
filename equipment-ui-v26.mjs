@@ -4,15 +4,15 @@ import {optionGuidance,noMatchGuidance} from './option-guidance.mjs?v=option1';
 import {shoppingContext,comparisonLink} from './shopping-context.mjs?v=shopping1';
 import {recoveryOptions} from './search-recovery.mjs?v=wheel1';
 import {openVehiclePreview} from './vehicle-preview.mjs?v=shopping1';
-import {parseQuery,matchVehicle,labels,definitions} from './equipment-search.mjs?v=categories1';
+import {parseQuery,matchVehicle,labels,definitions} from './equipment-search.mjs?v=errors1';
 import {categoryLabels} from './vehicle-categories.mjs?v=categories1';
 const $=id=>document.getElementById(id),data=window.usedInventoryData,index=window.equipmentIndex;
 const el=(tag,text,cls)=>{const e=document.createElement(tag);if(text!==undefined)e.textContent=text;if(cls)e.className=cls;return e;};
 const cash=n=>n===null?'Call for price':new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(n);
 const link=(label,url)=>{const a=el('a',label,'mini-btn');a.href=url;return a;};
 const drivewayLink=vehicle=>link('See in Your Driveway','/see-yourself?'+new URLSearchParams({vehicle:vehicle.vin,advisor:shoppingContext().advisor})+'#driveway-heading');
-const featureParam=new URLSearchParams(location.search).get('feature');
-if(featureParam&&definitions.some(([id])=>id===featureParam)){const featureNotice=el('p','Feature filter: '+labels[featureParam]);featureNotice.id='active-feature-filter';featureNotice.setAttribute('role','status');const remove=el('button','Remove feature filter','mini-btn');remove.type='button';remove.addEventListener('click',()=>{const u=new URL(location.href);u.searchParams.delete('feature');history.replaceState(null,'',u);featureNotice.remove();$('matchBtn').click();});featureNotice.append(document.createTextNode(' '),remove);$('request').parentNode.append(featureNotice);}
+let featureParam=new URLSearchParams(location.search).get('feature');
+if(featureParam&&definitions.some(([id])=>id===featureParam)){const featureNotice=el('p','Showing only confirmed '+labels[featureParam]+' matches');featureNotice.id='active-feature-filter';featureNotice.setAttribute('role','status');const remove=el('button','Remove feature filter','mini-btn');remove.type='button';remove.addEventListener('click',()=>{const u=new URL(location.href);u.searchParams.delete('feature');featureParam=null;history.replaceState(null,'',u);featureNotice.remove();$('matchBtn').click();});featureNotice.append(document.createTextNode(' '),remove);$('request').parentNode.append(featureNotice);}
 $('sticker-coverage').textContent='Explore equipment using original window stickers and reviewed factory specifications.';
 const browseInventory=document.body.dataset.browseInventory==='true';
 const conditionRadios=[...document.querySelectorAll('input[name="vehicle-condition"]')];
@@ -59,6 +59,7 @@ function render(){
  const items=[...(q.bodyType?[q.bodyType==='truck'?'Pickup trucks':q.bodyType==='suv'?'SUVs':'Pickup trucks or SUVs']:[]),...q.terms,...(q.condition?[q.condition]:[]),...(q.budget!==null?['Price up to '+cash(q.budget)]:[]),...(q.mileage!==null?['Mileage up to '+q.mileage.toLocaleString()]:[]),...q.requirements.map(r=>(r.wanted?'With ':'Without ')+labels[r.id])];
  summary.append(el('h3','Your search'),el('p',items.join(' · ')||'All vehicles at 8107 Research Blvd'));
  if(q.categories?.length){const describe=c=>categoryLabels[c.id]+(c.bodyType==='truck'?' (pickups)':c.bodyType==='suv'?' (SUVs)':c.bodyType==='truckOrSuv'?' (pickups or SUVs)':'');const positive=q.categories.filter(c=>c.wanted).map(describe).join(q.categoryMode==='any'?' or ':' · '),negative=q.categories.filter(c=>!c.wanted).map(c=>'Exclude '+describe(c)).join(' · ');summary.lastChild.textContent=[positive,negative,...items].filter(Boolean).join(' · ');summary.append(el('p','Categories use listed models, trims or a verified off-road package. Specific options are checked separately against the window sticker.','stock-small'));if(q.categories.some(c=>c.id==='desert'&&c.wanted))summary.append(el('p','Baja / desert describes the vehicle category; it does not confirm a drive mode named Baja.','stock-small'));}
+ if(featureParam){$('show-unverified').checked=false;$('show-unverified').disabled=true;}else $('show-unverified').disabled=false;
  for(const warning of q.warnings)summary.append(el('p',warning,'stock-small'));out.append(summary);
  if(q.ambiguity||q.warnings.some(w=>/Conflicting|not both|More than one/.test(w))){out.append(el('p',q.ambiguity||'Please resolve the conflicting choices above, then search again.'));$('more-matches').hidden=true;return;}
  for(const notice of optionGuidance(q)){const message=el('p',notice.message,'stock-small');message.append(document.createTextNode(' '),link('View factory options',notice.sourceUrl));out.append(message);}
@@ -70,8 +71,8 @@ function render(){
  const order=$('search-sort').value;
  const sort=(a,b)=>order==='mileage'?(a.vehicle.miles??Infinity)-(b.vehicle.miles??Infinity):order==='year'?b.vehicle.year-a.vehicle.year:(a.vehicle.price??Infinity)-(b.vehicle.price??Infinity);
  matches.sort(sort);unknown.sort(sort);
- const rows=[...matches,...($('show-unverified').checked?unknown:[])];
- if(!rows.length)out.append(el('p',noMatchGuidance(q)||(unknown.length?'No exact equipment matches are confirmed. Select “Show vehicles needing equipment confirmation” or adjust your must-haves.':'No matches found. Try a broader model or budget, or ask us to help with your shortlist.')));
+ const rows=[...matches,...(!featureParam&&$('show-unverified').checked?unknown:[])];
+ if(!rows.length)out.append(el('p',noMatchGuidance(q)||(unknown.length?'No exact equipment matches are confirmed. Adjust your search or ask us to confirm the equipment.':'No matches found. Try a broader model or budget, or ask us to help with your shortlist.')));
  if(!matches.length&&q.condition&&!parseQuery(q.original).condition){
   const otherCondition=q.condition==='Used'?'New':'Used';
   const otherCount=data.vehicles.filter(v=>matchVehicle(v,index.records[v.vin],{...q,condition:otherCondition}).kind==='match').length;
@@ -116,8 +117,8 @@ function render(){
   const help=el('section',undefined,'search-summary');help.append(el('h3','Let’s find your next vehicle'),el('p','Keep your must-haves and send us your search. We can check availability and help confirm the details.'));
   const request=`${q.condition||'New or used'} vehicles. My search: ${q.original}`;
   help.append(link('Help me find this vehicle','contact.html?purpose=find&request='+encodeURIComponent(request)));
-  if(unknown.length&&!$('show-unverified').checked){const show=el('button',`Show ${unknown.length} vehicles needing confirmation`,'mini-btn');show.type='button';show.addEventListener('click',()=>{$('show-unverified').checked=true;render();});help.append(show);}
-  const alternatives=recoveryOptions(data.vehicles,index.records,q);
+  if(!featureParam&&unknown.length&&!$('show-unverified').checked){const show=el('button',`Show ${unknown.length} vehicles needing confirmation`,'mini-btn');show.type='button';show.addEventListener('click',()=>{$('show-unverified').checked=true;render();});help.append(show);}
+  const alternatives=recoveryOptions(data.vehicles,index.records,q).filter(option=>!featureParam||option.key!==featureParam);
   if(alternatives.length){help.append(el('h3','Options if you’re flexible'),el('p','These are not exact matches. Each group sets aside one requirement; your original search stays unchanged.'));
    for(const option of alternatives){const group=el('div',undefined,'recovery-option');group.append(el('h4',option.label.replace('Search without my','Set aside my').replace('See prices above my budget','Above your budget').replace('Include higher mileage','Higher mileage')),el('p',`${option.count} match your remaining requirements.`));
     for(const v of option.vehicles){const button=el('button',`${v.title} · ${cash(v.price)} · Stock ${v.stock}`,'mini-btn');button.type='button';button.addEventListener('click',()=>openVehiclePreview(v,request+'\nI’m considering this alternative: '+option.label));group.append(button);}
@@ -137,7 +138,7 @@ const savedCondition=new URLSearchParams(location.search).get('condition');if(['
 $('search-condition').addEventListener('change',()=>{if(browseInventory||$('request').value.trim())$('matchBtn').click();});
 let initial=new URLSearchParams(location.search).get('q');try{if(!browseInventory)initial??=sessionStorage.getItem('samRyanLastSearch');}catch{}
 if(initial){$('request').value=initial.slice(0,1000);$('matchBtn').click();}else if(browseInventory){$('matchBtn').click();}
-$('clear-inventory-search')?.addEventListener('click',()=>{const clearUrl=new URL(location.href);clearUrl.searchParams.delete('feature');history.replaceState(null,'',clearUrl);$('active-feature-filter')?.remove();$('request').value='';$('show-unverified').checked=false;$('matchBtn').click();});
+$('clear-inventory-search')?.addEventListener('click',()=>{const clearUrl=new URL(location.href);clearUrl.searchParams.delete('feature');featureParam=null;history.replaceState(null,'',clearUrl);$('active-feature-filter')?.remove();$('request').value='';$('show-unverified').checked=false;$('matchBtn').click();});
 
 restoringSearch=false;
 document.querySelectorAll('[data-feature]').forEach(b=>b.addEventListener('click',()=>{
