@@ -11440,6 +11440,62 @@
               "value": "Active Driving Assist",
               "status": "standard",
               "sourceUrl": "https://www.stellantisfleet.com/jeep/grand-wagoneer.html"
+            },
+            {
+              "key": "gearbox",
+              "label": "Transmission",
+              "value": "8-speed automatic",
+              "status": "standard",
+              "sourceUrl": "https://www.jeep.com/grand-wagoneer/specs.html",
+              "benefit": "Factory specification checked for the 2026 standard-length 4x4 configuration."
+            },
+            {
+              "key": "heated-front-seats",
+              "label": "Heated front seats",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.jeep.com/grand-wagoneer/specs.html",
+              "benefit": "Factory specification checked for the 2026 standard-length 4x4 configuration."
+            },
+            {
+              "key": "ventilated-front-seats",
+              "label": "Ventilated front seats",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.jeep.com/grand-wagoneer/specs.html",
+              "benefit": "Factory specification checked for the 2026 standard-length 4x4 configuration."
+            },
+            {
+              "key": "remote-start",
+              "label": "Remote start",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.jeep.com/grand-wagoneer/specs.html",
+              "benefit": "Factory specification checked for the 2026 standard-length 4x4 configuration."
+            },
+            {
+              "key": "navigation",
+              "label": "Built-in navigation",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.jeep.com/grand-wagoneer/specs.html",
+              "benefit": "Factory specification checked for the 2026 standard-length 4x4 configuration."
+            },
+            {
+              "key": "blind-spot",
+              "label": "Blind-spot monitoring",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.jeep.com/grand-wagoneer/specs.html",
+              "benefit": "Factory specification checked for the 2026 standard-length 4x4 configuration."
+            },
+            {
+              "key": "collision-warning",
+              "label": "Forward collision warning",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.jeep.com/grand-wagoneer/specs.html",
+              "benefit": "Factory specification checked for the 2026 standard-length 4x4 configuration."
             }
           ],
           "comparisonNote": "2026 U.S. gasoline Grand Wagoneer. Partial equipment comparison from the factory launch announcement and selected trim highlights. Future range-extended powertrain specifications are excluded. Missing option rows remain unverified."
@@ -11523,6 +11579,70 @@
               "value": "Factory option",
               "status": "optional",
               "sourceUrl": "https://www.prnewswire.com/news-releases/a-grand-entrance-new-2026-jeep-grand-wagoneer-delivers-full-size-sophistication-new-style-and-capability-family--and-wallet-friendly-starting-under-65-000--302582958.html"
+            },
+            {
+              "key": "gearbox",
+              "label": "Transmission",
+              "value": "8-speed automatic",
+              "status": "standard",
+              "sourceUrl": "https://www.jeep.com/grand-wagoneer/specs.html",
+              "benefit": "Factory specification checked for the 2026 standard-length 4x4 configuration."
+            },
+            {
+              "key": "heated-front-seats",
+              "label": "Heated front seats",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.jeep.com/grand-wagoneer/specs.html",
+              "benefit": "Factory specification checked for the 2026 standard-length 4x4 configuration."
+            },
+            {
+              "key": "ventilated-front-seats",
+              "label": "Ventilated front seats",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.jeep.com/grand-wagoneer/specs.html",
+              "benefit": "Factory specification checked for the 2026 standard-length 4x4 configuration."
+            },
+            {
+              "key": "remote-start",
+              "label": "Remote start",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.jeep.com/grand-wagoneer/specs.html",
+              "benefit": "Factory specification checked for the 2026 standard-length 4x4 configuration."
+            },
+            {
+              "key": "navigation",
+              "label": "Built-in navigation",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.jeep.com/grand-wagoneer/specs.html",
+              "benefit": "Factory specification checked for the 2026 standard-length 4x4 configuration."
+            },
+            {
+              "key": "blind-spot",
+              "label": "Blind-spot monitoring",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.jeep.com/grand-wagoneer/specs.html",
+              "benefit": "Factory specification checked for the 2026 standard-length 4x4 configuration."
+            },
+            {
+              "key": "collision-warning",
+              "label": "Forward collision warning",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.jeep.com/grand-wagoneer/specs.html",
+              "benefit": "Factory specification checked for the 2026 standard-length 4x4 configuration."
+            },
+            {
+              "key": "heated-rear-seats",
+              "label": "Heated second-row seats",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.jeep.com/grand-wagoneer/specs.html",
+              "benefit": "Factory specification checked for the 2026 standard-length 4x4 configuration."
             }
           ],
           "comparisonNote": "2026 U.S. gasoline Grand Wagoneer. Partial equipment comparison from the factory launch announcement and selected trim highlights. Future range-extended powertrain specifications are excluded. Missing option rows remain unverified."
@@ -11839,6 +11959,22 @@
               "status": "standard",
               "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4SJVAP9TS174690",
               "note": "Listed under factory STANDARD EQUIPMENT for the 2026 Upland, standard-length 4x4 configuration; corroborated by multiple original manufacturer stickers. Optional equipment is listed separately."
+            },
+            {
+              "key": "gearbox",
+              "label": "Transmission",
+              "value": "8-speed automatic",
+              "status": "standard",
+              "sourceUrl": "https://www.jeep.com/grand-wagoneer/specs.html",
+              "benefit": "Factory specification checked for the 2026 standard-length 4x4 configuration."
+            },
+            {
+              "key": "collision-warning",
+              "label": "Forward collision warning",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.jeep.com/grand-wagoneer/specs.html",
+              "benefit": "Factory specification checked for the 2026 standard-length 4x4 configuration."
             }
           ],
           "comparisonNote": "2026 U.S. gasoline Grand Wagoneer. Partial equipment comparison from the factory launch announcement and selected trim highlights. Future range-extended powertrain specifications are excluded. Missing option rows remain unverified."
@@ -11924,6 +12060,62 @@
               "value": "Commemorative Berber mats",
               "status": "standard",
               "sourceUrl": "https://www.jeep.com/buzz-models/85-anniversary-lineup.html"
+            },
+            {
+              "key": "gearbox",
+              "label": "Transmission",
+              "value": "8-speed automatic",
+              "status": "standard",
+              "sourceUrl": "https://www.jeep.com/grand-wagoneer/specs.html",
+              "benefit": "Factory specification checked for the 2026 standard-length 4x4 configuration."
+            },
+            {
+              "key": "heated-front-seats",
+              "label": "Heated front seats",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.jeep.com/grand-wagoneer/specs.html",
+              "benefit": "Factory specification checked for the 2026 standard-length 4x4 configuration."
+            },
+            {
+              "key": "ventilated-front-seats",
+              "label": "Ventilated front seats",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.jeep.com/grand-wagoneer/specs.html",
+              "benefit": "Factory specification checked for the 2026 standard-length 4x4 configuration."
+            },
+            {
+              "key": "remote-start",
+              "label": "Remote start",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.jeep.com/grand-wagoneer/specs.html",
+              "benefit": "Factory specification checked for the 2026 standard-length 4x4 configuration."
+            },
+            {
+              "key": "navigation",
+              "label": "Built-in navigation",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.jeep.com/grand-wagoneer/specs.html",
+              "benefit": "Factory specification checked for the 2026 standard-length 4x4 configuration."
+            },
+            {
+              "key": "blind-spot",
+              "label": "Blind-spot monitoring",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.jeep.com/grand-wagoneer/specs.html",
+              "benefit": "Factory specification checked for the 2026 standard-length 4x4 configuration."
+            },
+            {
+              "key": "collision-warning",
+              "label": "Forward collision warning",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.jeep.com/grand-wagoneer/specs.html",
+              "benefit": "Factory specification checked for the 2026 standard-length 4x4 configuration."
             }
           ],
           "comparisonNote": "2026 U.S. gasoline Grand Wagoneer. Partial equipment comparison from the factory launch announcement and selected trim highlights. Future range-extended powertrain specifications are excluded. Missing option rows remain unverified."
@@ -12087,6 +12279,14 @@
               "status": "standard",
               "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4SJVBP8TS162416",
               "note": "Listed under factory STANDARD EQUIPMENT for the 2026 Limited Reserve, standard-length 4x4 configuration; corroborated by multiple original manufacturer stickers. Optional equipment is listed separately."
+            },
+            {
+              "key": "gearbox",
+              "label": "Transmission",
+              "value": "8-speed automatic",
+              "status": "standard",
+              "sourceUrl": "https://www.jeep.com/grand-wagoneer/specs.html",
+              "benefit": "Factory specification checked for the 2026 standard-length 4x4 configuration."
             }
           ],
           "comparisonNote": "2026 U.S. gasoline Grand Wagoneer. Partial equipment comparison from the factory launch announcement and selected trim highlights. Future range-extended powertrain specifications are excluded. Missing option rows remain unverified."
@@ -12156,6 +12356,70 @@
               "value": "Included",
               "status": "standard",
               "sourceUrl": "https://www.prnewswire.com/news-releases/a-grand-entrance-new-2026-jeep-grand-wagoneer-delivers-full-size-sophistication-new-style-and-capability-family--and-wallet-friendly-starting-under-65-000--302582958.html"
+            },
+            {
+              "key": "gearbox",
+              "label": "Transmission",
+              "value": "8-speed automatic",
+              "status": "standard",
+              "sourceUrl": "https://www.jeep.com/grand-wagoneer/specs.html",
+              "benefit": "Factory specification checked for the 2026 standard-length 4x4 configuration."
+            },
+            {
+              "key": "heated-front-seats",
+              "label": "Heated front seats",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.jeep.com/grand-wagoneer/specs.html",
+              "benefit": "Factory specification checked for the 2026 standard-length 4x4 configuration."
+            },
+            {
+              "key": "ventilated-front-seats",
+              "label": "Ventilated front seats",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.jeep.com/grand-wagoneer/specs.html",
+              "benefit": "Factory specification checked for the 2026 standard-length 4x4 configuration."
+            },
+            {
+              "key": "remote-start",
+              "label": "Remote start",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.jeep.com/grand-wagoneer/specs.html",
+              "benefit": "Factory specification checked for the 2026 standard-length 4x4 configuration."
+            },
+            {
+              "key": "navigation",
+              "label": "Built-in navigation",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.jeep.com/grand-wagoneer/specs.html",
+              "benefit": "Factory specification checked for the 2026 standard-length 4x4 configuration."
+            },
+            {
+              "key": "blind-spot",
+              "label": "Blind-spot monitoring",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.jeep.com/grand-wagoneer/specs.html",
+              "benefit": "Factory specification checked for the 2026 standard-length 4x4 configuration."
+            },
+            {
+              "key": "collision-warning",
+              "label": "Forward collision warning",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.jeep.com/grand-wagoneer/specs.html",
+              "benefit": "Factory specification checked for the 2026 standard-length 4x4 configuration."
+            },
+            {
+              "key": "heated-rear-seats",
+              "label": "Heated second-row seats",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.jeep.com/grand-wagoneer/specs.html",
+              "benefit": "Factory specification checked for the 2026 standard-length 4x4 configuration."
             }
           ],
           "comparisonNote": "2026 U.S. gasoline Grand Wagoneer. Partial equipment comparison from the factory launch announcement and selected trim highlights. Future range-extended powertrain specifications are excluded. Missing option rows remain unverified."
@@ -12322,6 +12586,22 @@
               "status": "standard",
               "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4SJVEP1TS174693",
               "note": "Listed under factory STANDARD EQUIPMENT for the 2026 Summit Obsidian, standard-length 4x4 configuration; corroborated by multiple original manufacturer stickers. Optional equipment is listed separately."
+            },
+            {
+              "key": "remote-start",
+              "label": "Remote start",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.jeep.com/grand-wagoneer/specs.html",
+              "benefit": "Factory specification checked for the 2026 standard-length 4x4 configuration."
+            },
+            {
+              "key": "collision-warning",
+              "label": "Forward collision warning",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.jeep.com/grand-wagoneer/specs.html",
+              "benefit": "Factory specification checked for the 2026 standard-length 4x4 configuration."
             }
           ],
           "comparisonNote": "2026 U.S. gasoline Grand Wagoneer. Partial equipment comparison from the factory launch announcement and selected trim highlights. Future range-extended powertrain specifications are excluded. Missing option rows remain unverified."
@@ -12468,6 +12748,30 @@
               "status": "standard",
               "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4SJVEP1TS181935",
               "note": "Listed under factory STANDARD EQUIPMENT for the 2026 Summit Reserve, standard-length 4x4 configuration; corroborated by multiple original manufacturer stickers. Optional equipment is listed separately."
+            },
+            {
+              "key": "gearbox",
+              "label": "Transmission",
+              "value": "8-speed automatic",
+              "status": "standard",
+              "sourceUrl": "https://www.jeep.com/grand-wagoneer/specs.html",
+              "benefit": "Factory specification checked for the 2026 standard-length 4x4 configuration."
+            },
+            {
+              "key": "remote-start",
+              "label": "Remote start",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.jeep.com/grand-wagoneer/specs.html",
+              "benefit": "Factory specification checked for the 2026 standard-length 4x4 configuration."
+            },
+            {
+              "key": "collision-warning",
+              "label": "Forward collision warning",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.jeep.com/grand-wagoneer/specs.html",
+              "benefit": "Factory specification checked for the 2026 standard-length 4x4 configuration."
             }
           ],
           "comparisonNote": "2026 U.S. gasoline Grand Wagoneer. Partial equipment comparison from the factory launch announcement and selected trim highlights. Future range-extended powertrain specifications are excluded. Missing option rows remain unverified."
@@ -12686,6 +12990,13 @@
               "value": "Class III hitch / wiring / trailer blind-spot detection",
               "status": "optional",
               "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_WagoneerS.pdf"
+            },
+            {
+              "key": "wheels",
+              "label": "Wheels",
+              "value": "20-inch machined aluminum",
+              "status": "standard",
+              "sourceUrl": "https://blog.stellantisnorthamerica.com/2025/02/06/all-new-all-electric-2025-jeep-wagoneer-s-limited-well-equipped-competitively-priced-and-now-open-for-orders/"
             }
           ],
           "comparisonNote": "2025 model year, as printed in the factory equipment table. Limited and Launch Edition have different standard motor output and comfort equipment; package labels are retained for optional equipment."
@@ -15144,6 +15455,13 @@
               "value": "Manual",
               "status": "standard",
               "sourceUrl": "https://cdn.dealereprocess.org/cdn/brochures/jeep/2025-grandcherokee.pdf"
+            },
+            {
+              "key": "wheels",
+              "label": "Wheels",
+              "value": "18-inch machined face with Black Noise pockets",
+              "status": "standard",
+              "sourceUrl": "https://cdn.dealereprocess.org/cdn/brochures/jeep/2025-grandcherokee.pdf#page=7"
             }
           ]
         },
@@ -15477,6 +15795,13 @@
               "value": "Included",
               "status": "standard",
               "sourceUrl": "https://cdn.dealereprocess.org/cdn/brochures/jeep/2025-grandcherokee.pdf"
+            },
+            {
+              "key": "wheels",
+              "label": "Wheels",
+              "value": "18-inch Granite Crystal painted aluminum",
+              "status": "standard",
+              "sourceUrl": "https://cdn.dealereprocess.org/cdn/brochures/jeep/2025-grandcherokee.pdf#page=8"
             }
           ]
         },
@@ -15650,6 +15975,13 @@
               "value": "Factory option",
               "status": "optional",
               "sourceUrl": "https://cdn.dealereprocess.org/cdn/brochures/jeep/2025-grandcherokee.pdf"
+            },
+            {
+              "key": "wheels",
+              "label": "Wheels",
+              "value": "20-inch machined face with Black Noise pockets",
+              "status": "standard",
+              "sourceUrl": "https://cdn.dealereprocess.org/cdn/brochures/jeep/2025-grandcherokee.pdf#page=9"
             }
           ]
         },
@@ -15830,6 +16162,13 @@
               "value": "Factory option",
               "status": "optional",
               "sourceUrl": "https://cdn.dealereprocess.org/cdn/brochures/jeep/2025-grandcherokee.pdf"
+            },
+            {
+              "key": "wheels",
+              "label": "Wheels",
+              "value": "20-inch Silver Lithos painted aluminum",
+              "status": "standard",
+              "sourceUrl": "https://cdn.dealereprocess.org/cdn/brochures/jeep/2025-grandcherokee.pdf#page=10"
             }
           ]
         },
@@ -16011,6 +16350,13 @@
               "value": "Included",
               "status": "standard",
               "sourceUrl": "https://cdn.dealereprocess.org/cdn/brochures/jeep/2025-grandcherokee.pdf"
+            },
+            {
+              "key": "wheels",
+              "label": "Wheels",
+              "value": "21-inch machined face / Gloss Black aluminum",
+              "status": "standard",
+              "sourceUrl": "https://cdn.dealereprocess.org/cdn/brochures/jeep/2025-grandcherokee.pdf#page=10"
             }
           ]
         }
@@ -16027,6 +16373,22 @@
         {
           "label": "Jeep-authored U.S. 2025 Grand Cherokee retail brochure (dealer-hosted copy)",
           "url": "https://cdn.dealereprocess.org/cdn/brochures/jeep/2025-grandcherokee.pdf"
+        },
+        {
+          "label": "Factory equipment source",
+          "url": "https://cdn.dealereprocess.org/cdn/brochures/jeep/2025-grandcherokee.pdf#page=7"
+        },
+        {
+          "label": "Factory equipment source",
+          "url": "https://cdn.dealereprocess.org/cdn/brochures/jeep/2025-grandcherokee.pdf#page=8"
+        },
+        {
+          "label": "Factory equipment source",
+          "url": "https://cdn.dealereprocess.org/cdn/brochures/jeep/2025-grandcherokee.pdf#page=9"
+        },
+        {
+          "label": "Factory equipment source",
+          "url": "https://cdn.dealereprocess.org/cdn/brochures/jeep/2025-grandcherokee.pdf#page=10"
         }
       ],
       "comparisonScope": "U.S. 2025 two-row Grand Cherokee 4xe; Anniversary and Summit Reserve are the named factory package configurations.",
@@ -20559,6 +20921,10 @@
         {
           "label": "2026 Ram 2500 interiors",
           "url": "https://www.ramtrucks.com/ram-2500/design.html"
+        },
+        {
+          "label": "Factory equipment source",
+          "url": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=30"
         }
       ],
       "trims": [
@@ -20775,6 +21141,13 @@
               "value": "2.4-kW system; requires dual alternators",
               "status": "optional",
               "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_RamHD.pdf"
+            },
+            {
+              "key": "bumpers",
+              "label": "Bumpers",
+              "value": "Black-painted front and rear",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=30"
             }
           ]
         },
@@ -21214,6 +21587,13 @@
               "value": "2.4-kW system; requires dual alternators",
               "status": "optional",
               "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_RamHD.pdf"
+            },
+            {
+              "key": "bumpers",
+              "label": "Bumpers",
+              "value": "Black-painted front and rear",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=30"
             }
           ]
         },
@@ -21448,6 +21828,13 @@
               "value": "2.4-kW system; requires dual alternators",
               "status": "optional",
               "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_RamHD.pdf"
+            },
+            {
+              "key": "bumpers",
+              "label": "Bumpers",
+              "value": "Chrome front and rear",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=30"
             }
           ]
         },
@@ -21699,6 +22086,13 @@
               "value": "12,000-lb WARN winch; available",
               "status": "optional",
               "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_RamHD.pdf"
+            },
+            {
+              "key": "bumpers",
+              "label": "Bumpers",
+              "value": "Black powder-coated front and rear",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=30"
             }
           ]
         },
@@ -21961,6 +22355,13 @@
               "value": "Electronic locking front axle",
               "status": "standard",
               "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_RamHD.pdf"
+            },
+            {
+              "key": "bumpers",
+              "label": "Bumpers",
+              "value": "Black powder-coated front and rear",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=30"
             }
           ]
         },
@@ -22198,6 +22599,13 @@
               "value": "2.4-kW system; requires dual alternators",
               "status": "optional",
               "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_RamHD.pdf"
+            },
+            {
+              "key": "bumpers",
+              "label": "Bumpers",
+              "value": "Body-color front and rear",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=30"
             }
           ]
         },
@@ -22446,6 +22854,13 @@
               "value": "2.4-kW system; requires dual alternators",
               "status": "optional",
               "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_RamHD.pdf"
+            },
+            {
+              "key": "bumpers",
+              "label": "Bumpers",
+              "value": "Body-color front and rear",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=30"
             }
           ]
         },
@@ -22697,6 +23112,13 @@
               "value": "2.4-kW system; requires dual alternators",
               "status": "optional",
               "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_RamHD.pdf"
+            },
+            {
+              "key": "bumpers",
+              "label": "Bumpers",
+              "value": "Body-color front and rear",
+              "status": "standard",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=30"
             }
           ]
         }
@@ -24988,6 +25410,14 @@
               "value": "Remote start",
               "status": "standard",
               "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_ProMaster.pdf"
+            },
+            {
+              "key": "driver-seat",
+              "label": "Driver seat adjustment",
+              "value": "4-way manual",
+              "status": "standard",
+              "sourceUrl": "https://www.ramtrucks.com/ram-promaster/design.html",
+              "benefit": "SLT+ retains SLT equipment; the six-way seat upgrade identified in the retail trim description is for the passenger. Other factory seat packages are separate."
             }
           ]
         }
@@ -25009,6 +25439,10 @@
         {
           "label": "2026 ProMaster EV cargo trim lineup",
           "url": "https://www.stellantisfleet.com/ramtrucks/promaster-ev.html"
+        },
+        {
+          "label": "Factory equipment source",
+          "url": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=95"
         }
       ],
       "trims": [
@@ -25397,6 +25831,13 @@
               "value": "Remote-start function",
               "status": "standard",
               "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_ProMasterEV.pdf"
+            },
+            {
+              "key": "digital-mirror",
+              "label": "Digital rearview mirror",
+              "value": "Safety Group",
+              "status": "optional",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/262886_26DOMFLT_FBG_V2_S06_interactive.pdf#page=95"
             }
           ]
         },
@@ -25650,6 +26091,26 @@
         {
           "label": "Dodge brochure landing page links the buyer-guide website",
           "url": "https://www.dodge.com/gab.html"
+        },
+        {
+          "label": "Factory equipment source",
+          "url": "https://www.26-dodge-durango-buyersguide.com/_files/ugd/10da43_78984aae5f084162a92d3a0d9960ee60.pdf#page=10"
+        },
+        {
+          "label": "Factory equipment source",
+          "url": "https://www.26-dodge-durango-buyersguide.com/_files/ugd/10da43_78984aae5f084162a92d3a0d9960ee60.pdf#page=4"
+        },
+        {
+          "label": "Factory equipment source",
+          "url": "https://www.26-dodge-durango-buyersguide.com/_files/ugd/10da43_78984aae5f084162a92d3a0d9960ee60.pdf#page=12"
+        },
+        {
+          "label": "Factory equipment source",
+          "url": "https://www.26-dodge-durango-buyersguide.com/_files/ugd/10da43_78984aae5f084162a92d3a0d9960ee60.pdf#page=6"
+        },
+        {
+          "label": "Factory equipment source",
+          "url": "https://www.26-dodge-durango-buyersguide.com/_files/ugd/10da43_78984aae5f084162a92d3a0d9960ee60.pdf#page=8"
         }
       ],
       "trims": [
@@ -25786,6 +26247,36 @@
               "value": "Rear with stop",
               "status": "standard",
               "sourceUrl": "https://www.26-dodge-durango-buyersguide.com/_files/ugd/10da43_78984aae5f084162a92d3a0d9960ee60.pdf"
+            },
+            {
+              "key": "front_ventilation",
+              "label": "Ventilated front seats",
+              "value": "Blacktop Redline Package",
+              "status": "optional",
+              "sourceUrl": "https://www.26-dodge-durango-buyersguide.com/_files/ugd/10da43_78984aae5f084162a92d3a0d9960ee60.pdf#page=12",
+              "benefit": "AWD configuration only. Package includes ventilated front seats."
+            },
+            {
+              "key": "second_heat",
+              "label": "Heated second-row seats",
+              "value": "Blacktop Redline Package",
+              "status": "optional",
+              "sourceUrl": "https://www.26-dodge-durango-buyersguide.com/_files/ugd/10da43_78984aae5f084162a92d3a0d9960ee60.pdf#page=12",
+              "benefit": "AWD configuration only. Package includes heated second-row seats."
+            },
+            {
+              "key": "trailer_hitch",
+              "label": "Factory towing hardware",
+              "value": "Trailer Tow Group IV: Class IV hitch and wiring",
+              "status": "optional",
+              "sourceUrl": "https://www.26-dodge-durango-buyersguide.com/_files/ugd/10da43_78984aae5f084162a92d3a0d9960ee60.pdf#page=12"
+            },
+            {
+              "key": "horsepower",
+              "label": "Horsepower",
+              "value": "295 hp",
+              "status": "standard",
+              "sourceUrl": "https://www.dodge.com/news/durango-rt-392-hemi-returns.html"
             }
           ]
         },
@@ -25978,6 +26469,28 @@
               "value": "Included",
               "status": "standard",
               "sourceUrl": "https://www.26-dodge-durango-buyersguide.com/_files/ugd/10da43_78984aae5f084162a92d3a0d9960ee60.pdf"
+            },
+            {
+              "key": "trailer_hitch",
+              "label": "Factory towing hardware",
+              "value": "Trailer Tow Group included",
+              "status": "standard",
+              "sourceUrl": "https://www.26-dodge-durango-buyersguide.com/_files/ugd/10da43_78984aae5f084162a92d3a0d9960ee60.pdf#page=6"
+            },
+            {
+              "key": "seat_memory",
+              "label": "Driver memory",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.26-dodge-durango-buyersguide.com/_files/ugd/10da43_78984aae5f084162a92d3a0d9960ee60.pdf#page=6",
+              "benefit": "Factory Plus equipment; Premium retains the Plus memory settings."
+            },
+            {
+              "key": "horsepower",
+              "label": "Horsepower",
+              "value": "295 hp",
+              "status": "standard",
+              "sourceUrl": "https://www.dodge.com/news/durango-rt-392-hemi-returns.html"
             }
           ]
         },
@@ -26142,6 +26655,50 @@
               "value": "Tow n Go Package",
               "status": "optional",
               "sourceUrl": "https://www.26-dodge-durango-buyersguide.com/_files/ugd/10da43_78984aae5f084162a92d3a0d9960ee60.pdf"
+            },
+            {
+              "key": "front_ventilation",
+              "label": "Ventilated front seats",
+              "value": "Blacktop Redline Package",
+              "status": "optional",
+              "sourceUrl": "https://www.26-dodge-durango-buyersguide.com/_files/ugd/10da43_78984aae5f084162a92d3a0d9960ee60.pdf#page=12",
+              "benefit": "Package includes ventilated front seats."
+            },
+            {
+              "key": "second_heat",
+              "label": "Heated second-row seats",
+              "value": "Blacktop Redline Package",
+              "status": "optional",
+              "sourceUrl": "https://www.26-dodge-durango-buyersguide.com/_files/ugd/10da43_78984aae5f084162a92d3a0d9960ee60.pdf#page=12",
+              "benefit": "Package includes heated second-row seats."
+            },
+            {
+              "key": "trailer_hitch",
+              "label": "Factory towing hardware",
+              "value": "Trailer Tow Group IV: Class IV hitch and wiring",
+              "status": "optional",
+              "sourceUrl": "https://www.26-dodge-durango-buyersguide.com/_files/ugd/10da43_78984aae5f084162a92d3a0d9960ee60.pdf#page=12"
+            },
+            {
+              "key": "brakes",
+              "label": "Performance brakes",
+              "value": "Brembo brakes in Tow n Go Package",
+              "status": "optional",
+              "sourceUrl": "https://www.26-dodge-durango-buyersguide.com/_files/ugd/10da43_78984aae5f084162a92d3a0d9960ee60.pdf#page=12"
+            },
+            {
+              "key": "differential",
+              "label": "Rear differential",
+              "value": "Electronic limited-slip in Tow n Go Package",
+              "status": "optional",
+              "sourceUrl": "https://www.26-dodge-durango-buyersguide.com/_files/ugd/10da43_78984aae5f084162a92d3a0d9960ee60.pdf#page=12"
+            },
+            {
+              "key": "horsepower",
+              "label": "Horsepower",
+              "value": "360 hp",
+              "status": "standard",
+              "sourceUrl": "https://www.dodge.com/news/durango-rt-392-hemi-returns.html"
             }
           ]
         },
@@ -26348,6 +26905,42 @@
               "value": "Tow n Go Package",
               "status": "optional",
               "sourceUrl": "https://www.26-dodge-durango-buyersguide.com/_files/ugd/10da43_78984aae5f084162a92d3a0d9960ee60.pdf"
+            },
+            {
+              "key": "brakes",
+              "label": "Performance brakes",
+              "value": "Brembo brakes in Tow n Go Package",
+              "status": "optional",
+              "sourceUrl": "https://www.26-dodge-durango-buyersguide.com/_files/ugd/10da43_78984aae5f084162a92d3a0d9960ee60.pdf#page=12"
+            },
+            {
+              "key": "differential",
+              "label": "Rear differential",
+              "value": "Electronic limited-slip in Tow n Go Package",
+              "status": "optional",
+              "sourceUrl": "https://www.26-dodge-durango-buyersguide.com/_files/ugd/10da43_78984aae5f084162a92d3a0d9960ee60.pdf#page=12"
+            },
+            {
+              "key": "trailer_hitch",
+              "label": "Factory towing hardware",
+              "value": "Class IV hitch in Tow n Go Package",
+              "status": "optional",
+              "sourceUrl": "https://www.26-dodge-durango-buyersguide.com/_files/ugd/10da43_78984aae5f084162a92d3a0d9960ee60.pdf#page=12"
+            },
+            {
+              "key": "seat_memory",
+              "label": "Driver memory",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.26-dodge-durango-buyersguide.com/_files/ugd/10da43_78984aae5f084162a92d3a0d9960ee60.pdf#page=8",
+              "benefit": "Factory Plus equipment; Premium retains the Plus memory settings."
+            },
+            {
+              "key": "horsepower",
+              "label": "Horsepower",
+              "value": "360 hp",
+              "status": "standard",
+              "sourceUrl": "https://www.dodge.com/news/durango-rt-392-hemi-returns.html"
             }
           ]
         },
@@ -26561,6 +27154,42 @@
               "value": "Leather-wrapped instrument panel; suede headliner; carbon-fiber accents",
               "status": "standard",
               "sourceUrl": "https://www.26-dodge-durango-buyersguide.com/_files/ugd/10da43_78984aae5f084162a92d3a0d9960ee60.pdf"
+            },
+            {
+              "key": "brakes",
+              "label": "Performance brakes",
+              "value": "Brembo brakes in Tow n Go Package",
+              "status": "optional",
+              "sourceUrl": "https://www.26-dodge-durango-buyersguide.com/_files/ugd/10da43_78984aae5f084162a92d3a0d9960ee60.pdf#page=12"
+            },
+            {
+              "key": "differential",
+              "label": "Rear differential",
+              "value": "Electronic limited-slip in Tow n Go Package",
+              "status": "optional",
+              "sourceUrl": "https://www.26-dodge-durango-buyersguide.com/_files/ugd/10da43_78984aae5f084162a92d3a0d9960ee60.pdf#page=12"
+            },
+            {
+              "key": "trailer_hitch",
+              "label": "Factory towing hardware",
+              "value": "Class IV hitch in Tow n Go Package",
+              "status": "optional",
+              "sourceUrl": "https://www.26-dodge-durango-buyersguide.com/_files/ugd/10da43_78984aae5f084162a92d3a0d9960ee60.pdf#page=12"
+            },
+            {
+              "key": "seat_memory",
+              "label": "Driver memory",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.26-dodge-durango-buyersguide.com/_files/ugd/10da43_78984aae5f084162a92d3a0d9960ee60.pdf#page=8",
+              "benefit": "Factory Plus equipment; Premium retains the Plus memory settings."
+            },
+            {
+              "key": "horsepower",
+              "label": "Horsepower",
+              "value": "360 hp",
+              "status": "standard",
+              "sourceUrl": "https://www.dodge.com/news/durango-rt-392-hemi-returns.html"
             }
           ]
         },
@@ -27046,6 +27675,63 @@
               "value": "Apex Hydro",
               "status": "standard",
               "sourceUrl": "https://www.26-dodge-durango-buyersguide.com/_files/ugd/10da43_78984aae5f084162a92d3a0d9960ee60.pdf"
+            },
+            {
+              "key": "wheels",
+              "label": "Standard wheels",
+              "value": "20x10-inch machined face with dark pockets",
+              "status": "standard",
+              "sourceUrl": "https://www.26-dodge-durango-buyersguide.com/_files/ugd/10da43_78984aae5f084162a92d3a0d9960ee60.pdf#page=10"
+            },
+            {
+              "key": "screen",
+              "label": "Center touchscreen",
+              "value": "10.1-inch Uconnect 5",
+              "status": "standard",
+              "sourceUrl": "https://www.26-dodge-durango-buyersguide.com/_files/ugd/10da43_78984aae5f084162a92d3a0d9960ee60.pdf#page=4",
+              "benefit": "The brochure identifies the 10.1-inch Uconnect 5 display as standard. Navigation is tracked separately."
+            },
+            {
+              "key": "adaptive_cruise",
+              "label": "Adaptive cruise control",
+              "value": "Premium Group; includes stop",
+              "status": "optional",
+              "sourceUrl": "https://www.26-dodge-durango-buyersguide.com/_files/ugd/10da43_78984aae5f084162a92d3a0d9960ee60.pdf#page=12"
+            },
+            {
+              "key": "collision_warning",
+              "label": "Forward collision warning",
+              "value": "Full-Speed Warning Plus in Premium Group",
+              "status": "optional",
+              "sourceUrl": "https://www.26-dodge-durango-buyersguide.com/_files/ugd/10da43_78984aae5f084162a92d3a0d9960ee60.pdf#page=12"
+            },
+            {
+              "key": "premium_cabin",
+              "label": "Premium cabin trim",
+              "value": "Premium Group: premium door panels and instrument panel",
+              "status": "optional",
+              "sourceUrl": "https://www.26-dodge-durango-buyersguide.com/_files/ugd/10da43_78984aae5f084162a92d3a0d9960ee60.pdf#page=12"
+            },
+            {
+              "key": "premium_audio",
+              "label": "Harman Kardon premium audio",
+              "value": "19-speaker Harman Kardon in Premium Group",
+              "status": "optional",
+              "sourceUrl": "https://www.26-dodge-durango-buyersguide.com/_files/ugd/10da43_78984aae5f084162a92d3a0d9960ee60.pdf#page=12"
+            },
+            {
+              "key": "trailer_hitch",
+              "label": "Factory towing hardware",
+              "value": "Trailer Tow Group IV: Class IV hitch and wiring",
+              "status": "optional",
+              "sourceUrl": "https://www.26-dodge-durango-buyersguide.com/_files/ugd/10da43_78984aae5f084162a92d3a0d9960ee60.pdf#page=12"
+            },
+            {
+              "key": "horsepower",
+              "label": "Horsepower",
+              "value": "710 hp",
+              "status": "standard",
+              "sourceUrl": "https://www.dodge.com/news/durango-rt-392-hemi-returns.html"
             }
           ]
         },
@@ -27198,6 +27884,56 @@
               "sourceUrl": "https://www.26-dodge-durango-buyersguide.com/_files/ugd/10da43_78984aae5f084162a92d3a0d9960ee60.pdf",
               "upgradeOf": "audio",
               "baseLabel": "Standard audio"
+            },
+            {
+              "key": "wheels",
+              "label": "Standard wheels",
+              "value": "20x10-inch machined face with dark pockets",
+              "status": "standard",
+              "sourceUrl": "https://www.26-dodge-durango-buyersguide.com/_files/ugd/10da43_78984aae5f084162a92d3a0d9960ee60.pdf#page=10"
+            },
+            {
+              "key": "screen",
+              "label": "Center touchscreen",
+              "value": "10.1-inch Uconnect 5",
+              "status": "standard",
+              "sourceUrl": "https://www.26-dodge-durango-buyersguide.com/_files/ugd/10da43_78984aae5f084162a92d3a0d9960ee60.pdf#page=4",
+              "benefit": "The brochure identifies the 10.1-inch Uconnect 5 display as standard. Navigation is tracked separately."
+            },
+            {
+              "key": "adaptive_cruise",
+              "label": "Adaptive cruise control",
+              "value": "Premium Group; includes stop",
+              "status": "optional",
+              "sourceUrl": "https://www.26-dodge-durango-buyersguide.com/_files/ugd/10da43_78984aae5f084162a92d3a0d9960ee60.pdf#page=12"
+            },
+            {
+              "key": "collision_warning",
+              "label": "Forward collision warning",
+              "value": "Full-Speed Warning Plus in Premium Group",
+              "status": "optional",
+              "sourceUrl": "https://www.26-dodge-durango-buyersguide.com/_files/ugd/10da43_78984aae5f084162a92d3a0d9960ee60.pdf#page=12"
+            },
+            {
+              "key": "premium_cabin",
+              "label": "Premium cabin trim",
+              "value": "Premium Group: premium door panels and instrument panel",
+              "status": "optional",
+              "sourceUrl": "https://www.26-dodge-durango-buyersguide.com/_files/ugd/10da43_78984aae5f084162a92d3a0d9960ee60.pdf#page=12"
+            },
+            {
+              "key": "trailer_hitch",
+              "label": "Factory towing hardware",
+              "value": "Trailer Tow Group IV: Class IV hitch and wiring",
+              "status": "optional",
+              "sourceUrl": "https://www.26-dodge-durango-buyersguide.com/_files/ugd/10da43_78984aae5f084162a92d3a0d9960ee60.pdf#page=12"
+            },
+            {
+              "key": "horsepower",
+              "label": "Horsepower",
+              "value": "710 hp",
+              "status": "standard",
+              "sourceUrl": "https://www.dodge.com/news/durango-rt-392-hemi-returns.html"
             }
           ]
         },
@@ -27404,6 +28140,28 @@
               "value": "America250 fender decals and badging",
               "status": "standard",
               "sourceUrl": "https://www.dodge.com/news/2026-dodge-durango-gt-america250-edition.html"
+            },
+            {
+              "key": "trailer_hitch",
+              "label": "Factory towing hardware",
+              "value": "Trailer Tow Group included",
+              "status": "standard",
+              "sourceUrl": "https://www.26-dodge-durango-buyersguide.com/_files/ugd/10da43_78984aae5f084162a92d3a0d9960ee60.pdf#page=6"
+            },
+            {
+              "key": "seat_memory",
+              "label": "Driver memory",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.26-dodge-durango-buyersguide.com/_files/ugd/10da43_78984aae5f084162a92d3a0d9960ee60.pdf#page=6",
+              "benefit": "Factory Plus equipment; Premium retains the Plus memory settings."
+            },
+            {
+              "key": "horsepower",
+              "label": "Horsepower",
+              "value": "295 hp",
+              "status": "standard",
+              "sourceUrl": "https://www.dodge.com/news/durango-rt-392-hemi-returns.html"
             }
           ]
         },
@@ -27624,6 +28382,42 @@
               "value": "America250 fender decals and badging",
               "status": "standard",
               "sourceUrl": "https://www.dodge.com/news/2026-dodge-durango-gt-america250-edition.html"
+            },
+            {
+              "key": "brakes",
+              "label": "Performance brakes",
+              "value": "Brembo brakes in Tow n Go Package",
+              "status": "optional",
+              "sourceUrl": "https://www.26-dodge-durango-buyersguide.com/_files/ugd/10da43_78984aae5f084162a92d3a0d9960ee60.pdf#page=12"
+            },
+            {
+              "key": "differential",
+              "label": "Rear differential",
+              "value": "Electronic limited-slip in Tow n Go Package",
+              "status": "optional",
+              "sourceUrl": "https://www.26-dodge-durango-buyersguide.com/_files/ugd/10da43_78984aae5f084162a92d3a0d9960ee60.pdf#page=12"
+            },
+            {
+              "key": "trailer_hitch",
+              "label": "Factory towing hardware",
+              "value": "Class IV hitch in Tow n Go Package",
+              "status": "optional",
+              "sourceUrl": "https://www.26-dodge-durango-buyersguide.com/_files/ugd/10da43_78984aae5f084162a92d3a0d9960ee60.pdf#page=12"
+            },
+            {
+              "key": "seat_memory",
+              "label": "Driver memory",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.26-dodge-durango-buyersguide.com/_files/ugd/10da43_78984aae5f084162a92d3a0d9960ee60.pdf#page=8",
+              "benefit": "Factory Plus equipment; Premium retains the Plus memory settings."
+            },
+            {
+              "key": "horsepower",
+              "label": "Horsepower",
+              "value": "360 hp",
+              "status": "standard",
+              "sourceUrl": "https://www.dodge.com/news/durango-rt-392-hemi-returns.html"
             }
           ]
         },
@@ -27851,6 +28645,42 @@
               "value": "America250 fender decals and badging",
               "status": "standard",
               "sourceUrl": "https://www.dodge.com/news/2026-dodge-durango-gt-america250-edition.html"
+            },
+            {
+              "key": "brakes",
+              "label": "Performance brakes",
+              "value": "Brembo brakes in Tow n Go Package",
+              "status": "optional",
+              "sourceUrl": "https://www.26-dodge-durango-buyersguide.com/_files/ugd/10da43_78984aae5f084162a92d3a0d9960ee60.pdf#page=12"
+            },
+            {
+              "key": "differential",
+              "label": "Rear differential",
+              "value": "Electronic limited-slip in Tow n Go Package",
+              "status": "optional",
+              "sourceUrl": "https://www.26-dodge-durango-buyersguide.com/_files/ugd/10da43_78984aae5f084162a92d3a0d9960ee60.pdf#page=12"
+            },
+            {
+              "key": "trailer_hitch",
+              "label": "Factory towing hardware",
+              "value": "Class IV hitch in Tow n Go Package",
+              "status": "optional",
+              "sourceUrl": "https://www.26-dodge-durango-buyersguide.com/_files/ugd/10da43_78984aae5f084162a92d3a0d9960ee60.pdf#page=12"
+            },
+            {
+              "key": "seat_memory",
+              "label": "Driver memory",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://www.26-dodge-durango-buyersguide.com/_files/ugd/10da43_78984aae5f084162a92d3a0d9960ee60.pdf#page=8",
+              "benefit": "Factory Plus equipment; Premium retains the Plus memory settings."
+            },
+            {
+              "key": "horsepower",
+              "label": "Horsepower",
+              "value": "360 hp",
+              "status": "standard",
+              "sourceUrl": "https://www.dodge.com/news/durango-rt-392-hemi-returns.html"
             }
           ]
         }
@@ -27876,6 +28706,10 @@
         {
           "label": "Dodge 2026 U.S. Charger retail brochure (manufacturer-authored, dealer CDN copy)",
           "url": "https://cdn.dealereprocess.org/cdn/brochures/dodge/2026-charger.pdf"
+        },
+        {
+          "label": "Factory equipment source",
+          "url": "https://cdn.dealereprocess.org/cdn/brochures/dodge/2026-charger.pdf#page=8"
         }
       ],
       "trims": [
@@ -28413,6 +29247,13 @@
               "value": "Four-way manual",
               "status": "standard",
               "sourceUrl": "https://cdn.dealereprocess.org/cdn/brochures/dodge/2026-charger.pdf"
+            },
+            {
+              "key": "headlights",
+              "label": "Headlights",
+              "value": "LED reflector",
+              "status": "standard",
+              "sourceUrl": "https://cdn.dealereprocess.org/cdn/brochures/dodge/2026-charger.pdf#page=8"
             }
           ]
         },
@@ -28725,6 +29566,10 @@
         {
           "label": "Dodge 2026 U.S. Charger retail brochure (manufacturer-authored, dealer CDN copy)",
           "url": "https://cdn.dealereprocess.org/cdn/brochures/dodge/2026-charger.pdf"
+        },
+        {
+          "label": "Factory equipment source",
+          "url": "https://cdn.dealereprocess.org/cdn/brochures/dodge/2026-charger.pdf#page=13"
         }
       ],
       "trims": [
@@ -28958,6 +29803,14 @@
               "value": "120V/240V combination cord",
               "status": "standard",
               "sourceUrl": "https://blog.stellantisnorthamerica.com/2025/05/21/dodge-debuts-all-new-2026-dodge-charger-daytona-sedan-worlds-only-four-door-muscle-car/"
+            },
+            {
+              "key": "seat_memory",
+              "label": "Driver memory",
+              "value": "Driver memory with Track Pack",
+              "status": "optional",
+              "sourceUrl": "https://cdn.dealereprocess.org/cdn/brochures/dodge/2026-charger.pdf#page=13",
+              "benefit": "The Track Pack includes driver memory with its upgraded heated and ventilated high-back seats."
             }
           ]
         },
@@ -29258,6 +30111,10 @@
         {
           "label": "Dodge Hornet production-status and 2025 FAQ",
           "url": "https://www.dodge.com/hornet.html"
+        },
+        {
+          "label": "Factory equipment source",
+          "url": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2025_DG_Hornet_RT_FA9jp9njht222q0kn7rakmffkku1.pdf#page=6"
         }
       ],
       "trims": [
@@ -29953,6 +30810,14 @@
               "value": "Brembo four-piston calipers",
               "status": "standard",
               "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2025_DG_Hornet_RT_FA9jp9njht222q0kn7rakmffkku1.pdf"
+            },
+            {
+              "key": "front_ventilation",
+              "label": "Ventilated front seats",
+              "value": "Not offered",
+              "status": "unavailable",
+              "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2025_DG_Hornet_RT_FA9jp9njht222q0kn7rakmffkku1.pdf#page=6",
+              "benefit": "The manufacturer feature-availability table explicitly marks R/T front-seat ventilation NA."
             }
           ]
         },
@@ -30180,6 +31045,14 @@
               "value": "Brembo four-piston calipers",
               "status": "standard",
               "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2025_DG_Hornet_RT_FA9jp9njht222q0kn7rakmffkku1.pdf"
+            },
+            {
+              "key": "front_ventilation",
+              "label": "Ventilated front seats",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2025_DG_Hornet_RT_FA9jp9njht222q0kn7rakmffkku1.pdf#page=6",
+              "benefit": "Applies to the standard perforated black-leather seats, explicitly listed as ventilated. The optional Track Pack uses different Alcantara seats; do not assume the same ventilation with that package."
             }
           ]
         }
@@ -31696,6 +32569,18 @@
         {
           "label": "Chrysler 300 discontinued-model reference",
           "url": "https://www.chrysler.com/300.html"
+        },
+        {
+          "label": "Factory equipment source",
+          "url": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_CH_300_FA5d24ldu82q24jgdr3knf7t7no.pdf#page=6"
+        },
+        {
+          "label": "Factory equipment source",
+          "url": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_CH_300_FA5d24ldu82q24jgdr3knf7t7no.pdf#page=7"
+        },
+        {
+          "label": "Factory equipment source",
+          "url": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_CH_300_FA5d24ldu82q24jgdr3knf7t7no.pdf#page=8"
         }
       ],
       "trims": [
@@ -31902,6 +32787,13 @@
               "value": "Manual tilt/telescope steering",
               "status": "standard",
               "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_CH_300_FA5d24ldu82q24jgdr3knf7t7no.pdf"
+            },
+            {
+              "key": "audio",
+              "label": "Standard audio",
+              "value": "6 speakers",
+              "status": "standard",
+              "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_CH_300_FA5d24ldu82q24jgdr3knf7t7no.pdf#page=7"
             }
           ]
         },
@@ -32108,6 +33000,21 @@
               "value": "Blind-spot monitoring",
               "status": "standard",
               "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_CH_300_FA5d24ldu82q24jgdr3knf7t7no.pdf"
+            },
+            {
+              "key": "steering-column",
+              "label": "Steering-column adjustment",
+              "value": "Manual tilt/telescope steering",
+              "status": "standard",
+              "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_CH_300_FA5d24ldu82q24jgdr3knf7t7no.pdf#page=6",
+              "benefit": "Power adjustment with memory is an optional Comfort Group upgrade."
+            },
+            {
+              "key": "audio",
+              "label": "Standard audio",
+              "value": "6 speakers",
+              "status": "standard",
+              "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_CH_300_FA5d24ldu82q24jgdr3knf7t7no.pdf#page=7"
             }
           ]
         },
@@ -32307,6 +33214,21 @@
               "value": "Included",
               "status": "standard",
               "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_CH_300_FA5d24ldu82q24jgdr3knf7t7no.pdf"
+            },
+            {
+              "key": "steering-column",
+              "label": "Steering-column adjustment",
+              "value": "Manual tilt/telescope steering",
+              "status": "standard",
+              "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_CH_300_FA5d24ldu82q24jgdr3knf7t7no.pdf#page=6",
+              "benefit": "Power adjustment with memory is an optional Comfort Group upgrade."
+            },
+            {
+              "key": "blind_spot",
+              "label": "Blind-spot monitoring",
+              "value": "Blind-spot monitoring",
+              "status": "standard",
+              "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_CH_300_FA5d24ldu82q24jgdr3knf7t7no.pdf#page=8"
             }
           ]
         },
@@ -32498,6 +33420,26 @@
         {
           "label": "Final 2023 U.S. order-opening trim roster and Jailbreak designation",
           "url": "https://blog.stellantisnorthamerica.com/2022/10/27/dodge-dials-up-last-call-horsepower-locator-opens-orders-and-announces-pricing-for-2023-dodge-challenger-and-dodge-charger/"
+        },
+        {
+          "label": "Factory equipment source",
+          "url": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_DG_Challenger_ChallengerSRT_FAq2lr4brr5j4lkm9sv2mol3743l.pdf#page=3"
+        },
+        {
+          "label": "Factory equipment source",
+          "url": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_DG_Challenger_ChallengerSRT_FAq2lr4brr5j4lkm9sv2mol3743l.pdf#page=5"
+        },
+        {
+          "label": "Factory equipment source",
+          "url": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_DG_Challenger_ChallengerSRT_FAq2lr4brr5j4lkm9sv2mol3743l.pdf#page=11"
+        },
+        {
+          "label": "Factory equipment source",
+          "url": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_DG_Challenger_ChallengerSRT_FAq2lr4brr5j4lkm9sv2mol3743l.pdf#page=6"
+        },
+        {
+          "label": "Factory equipment source",
+          "url": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_DG_Challenger_ChallengerSRT_FAq2lr4brr5j4lkm9sv2mol3743l.pdf#page=7"
         }
       ],
       "trims": [
@@ -32704,6 +33646,51 @@
               "value": "Included",
               "status": "standard",
               "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_DG_Challenger_ChallengerSRT_FAq2lr4brr5j4lkm9sv2mol3743l.pdf"
+            },
+            {
+              "key": "power_chiller",
+              "label": "SRT Power Chiller",
+              "value": "Not offered",
+              "status": "unavailable",
+              "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_DG_Challenger_ChallengerSRT_FAq2lr4brr5j4lkm9sv2mol3743l.pdf#page=3",
+              "benefit": "Exact factory S/NA entry for the listed base powertrain; special editions are checked separately."
+            },
+            {
+              "key": "race_cooldown",
+              "label": "Race Cooldown",
+              "value": "Not offered",
+              "status": "unavailable",
+              "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_DG_Challenger_ChallengerSRT_FAq2lr4brr5j4lkm9sv2mol3743l.pdf#page=3"
+            },
+            {
+              "key": "transbrake",
+              "label": "TransBrake",
+              "value": "Not offered",
+              "status": "unavailable",
+              "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_DG_Challenger_ChallengerSRT_FAq2lr4brr5j4lkm9sv2mol3743l.pdf#page=5",
+              "benefit": "The factory feature-availability table explicitly marks this NA."
+            },
+            {
+              "key": "seat_memory",
+              "label": "Driver memory",
+              "value": "Plus Group",
+              "status": "optional",
+              "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_DG_Challenger_ChallengerSRT_FAq2lr4brr5j4lkm9sv2mol3743l.pdf#page=11"
+            },
+            {
+              "key": "interior_accents",
+              "label": "Interior accents",
+              "value": "Dark Dub Plate",
+              "status": "standard",
+              "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_DG_Challenger_ChallengerSRT_FAq2lr4brr5j4lkm9sv2mol3743l.pdf#page=11",
+              "benefit": "Optional appearance and interior packages can replace the standard trim."
+            },
+            {
+              "key": "hood",
+              "label": "Hood / intake",
+              "value": "Power-bulge hood",
+              "status": "standard",
+              "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_DG_Challenger_ChallengerSRT_FAq2lr4brr5j4lkm9sv2mol3743l.pdf#page=6"
             }
           ]
         },
@@ -32910,6 +33897,51 @@
               "value": "Included",
               "status": "standard",
               "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_DG_Challenger_ChallengerSRT_FAq2lr4brr5j4lkm9sv2mol3743l.pdf"
+            },
+            {
+              "key": "power_chiller",
+              "label": "SRT Power Chiller",
+              "value": "Not offered",
+              "status": "unavailable",
+              "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_DG_Challenger_ChallengerSRT_FAq2lr4brr5j4lkm9sv2mol3743l.pdf#page=3",
+              "benefit": "Exact factory S/NA entry for the listed base powertrain; special editions are checked separately."
+            },
+            {
+              "key": "race_cooldown",
+              "label": "Race Cooldown",
+              "value": "Not offered",
+              "status": "unavailable",
+              "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_DG_Challenger_ChallengerSRT_FAq2lr4brr5j4lkm9sv2mol3743l.pdf#page=3"
+            },
+            {
+              "key": "transbrake",
+              "label": "TransBrake",
+              "value": "Not offered",
+              "status": "unavailable",
+              "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_DG_Challenger_ChallengerSRT_FAq2lr4brr5j4lkm9sv2mol3743l.pdf#page=5",
+              "benefit": "The factory feature-availability table explicitly marks this NA."
+            },
+            {
+              "key": "seat_memory",
+              "label": "Driver memory",
+              "value": "Plus Group",
+              "status": "optional",
+              "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_DG_Challenger_ChallengerSRT_FAq2lr4brr5j4lkm9sv2mol3743l.pdf#page=11"
+            },
+            {
+              "key": "interior_accents",
+              "label": "Interior accents",
+              "value": "Dark Dub Plate",
+              "status": "standard",
+              "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_DG_Challenger_ChallengerSRT_FAq2lr4brr5j4lkm9sv2mol3743l.pdf#page=11",
+              "benefit": "Optional appearance and interior packages can replace the standard trim."
+            },
+            {
+              "key": "hood",
+              "label": "Hood / intake",
+              "value": "Power-bulge hood",
+              "status": "standard",
+              "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_DG_Challenger_ChallengerSRT_FAq2lr4brr5j4lkm9sv2mol3743l.pdf#page=6"
             }
           ]
         },
@@ -33116,6 +34148,51 @@
               "value": "Included",
               "status": "standard",
               "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_DG_Challenger_ChallengerSRT_FAq2lr4brr5j4lkm9sv2mol3743l.pdf"
+            },
+            {
+              "key": "power_chiller",
+              "label": "SRT Power Chiller",
+              "value": "Not offered",
+              "status": "unavailable",
+              "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_DG_Challenger_ChallengerSRT_FAq2lr4brr5j4lkm9sv2mol3743l.pdf#page=3",
+              "benefit": "Exact factory S/NA entry for the listed base powertrain; special editions are checked separately."
+            },
+            {
+              "key": "race_cooldown",
+              "label": "Race Cooldown",
+              "value": "Not offered",
+              "status": "unavailable",
+              "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_DG_Challenger_ChallengerSRT_FAq2lr4brr5j4lkm9sv2mol3743l.pdf#page=3"
+            },
+            {
+              "key": "transbrake",
+              "label": "TransBrake",
+              "value": "Not offered",
+              "status": "unavailable",
+              "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_DG_Challenger_ChallengerSRT_FAq2lr4brr5j4lkm9sv2mol3743l.pdf#page=5",
+              "benefit": "The factory feature-availability table explicitly marks this NA."
+            },
+            {
+              "key": "seat_memory",
+              "label": "Driver memory",
+              "value": "Plus Group",
+              "status": "optional",
+              "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_DG_Challenger_ChallengerSRT_FAq2lr4brr5j4lkm9sv2mol3743l.pdf#page=11"
+            },
+            {
+              "key": "interior_accents",
+              "label": "Interior accents",
+              "value": "Dark Dub Plate",
+              "status": "standard",
+              "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_DG_Challenger_ChallengerSRT_FAq2lr4brr5j4lkm9sv2mol3743l.pdf#page=11",
+              "benefit": "Optional appearance and interior packages can replace the standard trim."
+            },
+            {
+              "key": "hood",
+              "label": "Hood / intake",
+              "value": "Functional performance hood scoop",
+              "status": "standard",
+              "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_DG_Challenger_ChallengerSRT_FAq2lr4brr5j4lkm9sv2mol3743l.pdf#page=6"
             }
           ]
         },
@@ -33322,6 +34399,51 @@
               "value": "Included",
               "status": "standard",
               "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_DG_Challenger_ChallengerSRT_FAq2lr4brr5j4lkm9sv2mol3743l.pdf"
+            },
+            {
+              "key": "power_chiller",
+              "label": "SRT Power Chiller",
+              "value": "Not offered",
+              "status": "unavailable",
+              "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_DG_Challenger_ChallengerSRT_FAq2lr4brr5j4lkm9sv2mol3743l.pdf#page=3",
+              "benefit": "Exact factory S/NA entry for the listed base powertrain; special editions are checked separately."
+            },
+            {
+              "key": "race_cooldown",
+              "label": "Race Cooldown",
+              "value": "Not offered",
+              "status": "unavailable",
+              "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_DG_Challenger_ChallengerSRT_FAq2lr4brr5j4lkm9sv2mol3743l.pdf#page=3"
+            },
+            {
+              "key": "transbrake",
+              "label": "TransBrake",
+              "value": "Not offered",
+              "status": "unavailable",
+              "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_DG_Challenger_ChallengerSRT_FAq2lr4brr5j4lkm9sv2mol3743l.pdf#page=5",
+              "benefit": "The factory feature-availability table explicitly marks this NA."
+            },
+            {
+              "key": "seat_memory",
+              "label": "Driver memory",
+              "value": "Plus Group",
+              "status": "optional",
+              "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_DG_Challenger_ChallengerSRT_FAq2lr4brr5j4lkm9sv2mol3743l.pdf#page=11"
+            },
+            {
+              "key": "interior_accents",
+              "label": "Interior accents",
+              "value": "Dark Dub Plate",
+              "status": "standard",
+              "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_DG_Challenger_ChallengerSRT_FAq2lr4brr5j4lkm9sv2mol3743l.pdf#page=11",
+              "benefit": "Optional appearance and interior packages can replace the standard trim."
+            },
+            {
+              "key": "hood",
+              "label": "Hood / intake",
+              "value": "Functional performance hood scoop",
+              "status": "standard",
+              "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_DG_Challenger_ChallengerSRT_FAq2lr4brr5j4lkm9sv2mol3743l.pdf#page=6"
             }
           ]
         },
@@ -33528,6 +34650,51 @@
               "value": "Included",
               "status": "standard",
               "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_DG_Challenger_ChallengerSRT_FAq2lr4brr5j4lkm9sv2mol3743l.pdf"
+            },
+            {
+              "key": "power_chiller",
+              "label": "SRT Power Chiller",
+              "value": "Not offered",
+              "status": "unavailable",
+              "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_DG_Challenger_ChallengerSRT_FAq2lr4brr5j4lkm9sv2mol3743l.pdf#page=3",
+              "benefit": "Exact factory S/NA entry for the listed base powertrain; special editions are checked separately."
+            },
+            {
+              "key": "race_cooldown",
+              "label": "Race Cooldown",
+              "value": "Not offered",
+              "status": "unavailable",
+              "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_DG_Challenger_ChallengerSRT_FAq2lr4brr5j4lkm9sv2mol3743l.pdf#page=3"
+            },
+            {
+              "key": "transbrake",
+              "label": "TransBrake",
+              "value": "Not offered",
+              "status": "unavailable",
+              "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_DG_Challenger_ChallengerSRT_FAq2lr4brr5j4lkm9sv2mol3743l.pdf#page=5",
+              "benefit": "The factory feature-availability table explicitly marks this NA."
+            },
+            {
+              "key": "seat_memory",
+              "label": "Driver memory",
+              "value": "Plus Group",
+              "status": "optional",
+              "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_DG_Challenger_ChallengerSRT_FAq2lr4brr5j4lkm9sv2mol3743l.pdf#page=11"
+            },
+            {
+              "key": "interior_accents",
+              "label": "Interior accents",
+              "value": "Dark Dub Plate",
+              "status": "standard",
+              "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_DG_Challenger_ChallengerSRT_FAq2lr4brr5j4lkm9sv2mol3743l.pdf#page=11",
+              "benefit": "Optional appearance and interior packages can replace the standard trim."
+            },
+            {
+              "key": "hood",
+              "label": "Hood / intake",
+              "value": "Functional performance hood scoop",
+              "status": "standard",
+              "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_DG_Challenger_ChallengerSRT_FAq2lr4brr5j4lkm9sv2mol3743l.pdf#page=6"
             }
           ]
         },
@@ -33734,6 +34901,51 @@
               "value": "Included",
               "status": "standard",
               "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_DG_Challenger_ChallengerSRT_FAq2lr4brr5j4lkm9sv2mol3743l.pdf"
+            },
+            {
+              "key": "power_chiller",
+              "label": "SRT Power Chiller",
+              "value": "Not offered",
+              "status": "unavailable",
+              "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_DG_Challenger_ChallengerSRT_FAq2lr4brr5j4lkm9sv2mol3743l.pdf#page=3",
+              "benefit": "Exact factory S/NA entry for the listed base powertrain; special editions are checked separately."
+            },
+            {
+              "key": "race_cooldown",
+              "label": "Race Cooldown",
+              "value": "Not offered",
+              "status": "unavailable",
+              "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_DG_Challenger_ChallengerSRT_FAq2lr4brr5j4lkm9sv2mol3743l.pdf#page=3"
+            },
+            {
+              "key": "transbrake",
+              "label": "TransBrake",
+              "value": "1320 Package",
+              "status": "optional",
+              "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_DG_Challenger_ChallengerSRT_FAq2lr4brr5j4lkm9sv2mol3743l.pdf#page=5",
+              "benefit": "Requires the automatic-transmission 1320 configuration; not a standard feature."
+            },
+            {
+              "key": "seat_memory",
+              "label": "Driver memory",
+              "value": "Plus Group",
+              "status": "optional",
+              "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_DG_Challenger_ChallengerSRT_FAq2lr4brr5j4lkm9sv2mol3743l.pdf#page=11"
+            },
+            {
+              "key": "interior_accents",
+              "label": "Interior accents",
+              "value": "Dark Dub Plate",
+              "status": "standard",
+              "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_DG_Challenger_ChallengerSRT_FAq2lr4brr5j4lkm9sv2mol3743l.pdf#page=11",
+              "benefit": "Optional appearance and interior packages can replace the standard trim."
+            },
+            {
+              "key": "hood",
+              "label": "Hood / intake",
+              "value": "Functional scoop and heat extractors",
+              "status": "standard",
+              "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_DG_Challenger_ChallengerSRT_FAq2lr4brr5j4lkm9sv2mol3743l.pdf#page=7"
             }
           ]
         },
@@ -33940,6 +35152,51 @@
               "value": "Included",
               "status": "standard",
               "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_DG_Challenger_ChallengerSRT_FAq2lr4brr5j4lkm9sv2mol3743l.pdf"
+            },
+            {
+              "key": "power_chiller",
+              "label": "SRT Power Chiller",
+              "value": "Not offered",
+              "status": "unavailable",
+              "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_DG_Challenger_ChallengerSRT_FAq2lr4brr5j4lkm9sv2mol3743l.pdf#page=3",
+              "benefit": "Exact factory S/NA entry for the listed base powertrain; special editions are checked separately."
+            },
+            {
+              "key": "race_cooldown",
+              "label": "Race Cooldown",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_DG_Challenger_ChallengerSRT_FAq2lr4brr5j4lkm9sv2mol3743l.pdf#page=3"
+            },
+            {
+              "key": "transbrake",
+              "label": "TransBrake",
+              "value": "Not offered",
+              "status": "unavailable",
+              "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_DG_Challenger_ChallengerSRT_FAq2lr4brr5j4lkm9sv2mol3743l.pdf#page=5",
+              "benefit": "The factory feature-availability table explicitly marks this NA."
+            },
+            {
+              "key": "seat_memory",
+              "label": "Driver memory",
+              "value": "Plus Group",
+              "status": "optional",
+              "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_DG_Challenger_ChallengerSRT_FAq2lr4brr5j4lkm9sv2mol3743l.pdf#page=11"
+            },
+            {
+              "key": "interior_accents",
+              "label": "Interior accents",
+              "value": "Dark Dub Plate",
+              "status": "standard",
+              "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_DG_Challenger_ChallengerSRT_FAq2lr4brr5j4lkm9sv2mol3743l.pdf#page=11",
+              "benefit": "Optional appearance and interior packages can replace the standard trim."
+            },
+            {
+              "key": "hood",
+              "label": "Hood / intake",
+              "value": "Dual-snorkel hood",
+              "status": "standard",
+              "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_DG_Challenger_ChallengerSRT_FAq2lr4brr5j4lkm9sv2mol3743l.pdf#page=7"
             }
           ]
         },
@@ -34146,6 +35403,51 @@
               "value": "Included",
               "status": "standard",
               "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_DG_Challenger_ChallengerSRT_FAq2lr4brr5j4lkm9sv2mol3743l.pdf"
+            },
+            {
+              "key": "power_chiller",
+              "label": "SRT Power Chiller",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_DG_Challenger_ChallengerSRT_FAq2lr4brr5j4lkm9sv2mol3743l.pdf#page=3",
+              "benefit": "Exact factory S/NA entry for the listed base powertrain; special editions are checked separately."
+            },
+            {
+              "key": "race_cooldown",
+              "label": "Race Cooldown",
+              "value": "Included",
+              "status": "standard",
+              "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_DG_Challenger_ChallengerSRT_FAq2lr4brr5j4lkm9sv2mol3743l.pdf#page=3"
+            },
+            {
+              "key": "transbrake",
+              "label": "TransBrake",
+              "value": "Not offered",
+              "status": "unavailable",
+              "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_DG_Challenger_ChallengerSRT_FAq2lr4brr5j4lkm9sv2mol3743l.pdf#page=5",
+              "benefit": "The factory feature-availability table explicitly marks this NA."
+            },
+            {
+              "key": "seat_memory",
+              "label": "Driver memory",
+              "value": "Plus Group",
+              "status": "optional",
+              "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_DG_Challenger_ChallengerSRT_FAq2lr4brr5j4lkm9sv2mol3743l.pdf#page=11"
+            },
+            {
+              "key": "interior_accents",
+              "label": "Interior accents",
+              "value": "Dark Dub Plate",
+              "status": "standard",
+              "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_DG_Challenger_ChallengerSRT_FAq2lr4brr5j4lkm9sv2mol3743l.pdf#page=11",
+              "benefit": "Optional appearance and interior packages can replace the standard trim."
+            },
+            {
+              "key": "hood",
+              "label": "Hood / intake",
+              "value": "Dual-snorkel hood",
+              "status": "standard",
+              "sourceUrl": "https://s3.amazonaws.com/chryslermedia.iconicweb.com/mediasite/specs/2023_DG_Challenger_ChallengerSRT_FAq2lr4brr5j4lkm9sv2mol3743l.pdf#page=7"
             }
           ]
         },
@@ -40464,6 +41766,14 @@
               "sourceUrl": "https://www.ramtrucks.com/2027/rho/design.html",
               "upgradeOf": "front-seat-comfort",
               "baseLabel": "Front comfort"
+            },
+            {
+              "key": "surround-camera",
+              "label": "Surround camera",
+              "value": "360-degree",
+              "status": "standard",
+              "sourceUrl": "https://www.ramtrucks.com/2027/rho.html",
+              "benefit": "The 2027 RHO page explicitly identifies this camera as newly standard; this does not change the 2026 RHO package requirement."
             }
           ],
           "difference": "Long-travel adaptive dampers and 35-inch tires suit high-speed off-road use; massaging seats remain optional.",
