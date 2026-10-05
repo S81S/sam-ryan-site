@@ -79,3 +79,13 @@ test('optional tow hooks and wireless charging use installed feature evidence, n
  assert.equal(installedOptionFact(vehicle,original,{key:'wireless-charging',label:'Wireless phone charging',value:'Single or dual charging pads with equipment group'}).value,true);
  assert.equal(installedOptionFact(vehicle,{...original,features:{}},{key:'wireless-charging',label:'Wireless phone charging',value:'Single or dual charging pads with equipment group'}),null);
 });
+
+test('selected equipment survives comparison links and advisor requests',async()=>{
+ const {shoppingContext,comparisonLink,comparisonRequest}=await import('./shopping-context.mjs');
+ const context=shoppingContext({getElementById:()=>null},'?q=Ram+1500&condition=New&option=audio-upgrade&optionLabel=Audio+upgrade&optionValue=Harman+Kardon+19+speakers');
+ assert.match(context.requestedEquipment,/Harman Kardon/);
+ const link=comparisonLink(['VIN-1'],context);
+ const restored=shoppingContext({getElementById:()=>null},'?'+link.split('?')[1]);
+ assert.equal(restored.requestedEquipment,context.requestedEquipment);
+ assert.match(comparisonRequest([{title:'Truck',stock:'R1',vin:'VIN-1'}],restored),/Requested equipment: Audio upgrade: Harman Kardon 19 speakers/);
+});

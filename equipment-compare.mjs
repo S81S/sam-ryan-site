@@ -5,7 +5,7 @@ import {appendStickerCredit} from './sticker-credit.mjs?v=source2';
 import {appendEquipmentFact} from './comparison-layout.mjs?v=errors1';
 import {applyFactoryEquipment} from './factory-equipment.mjs?v=errors1';
 import {comparisonRows,visibleComparisonRows} from './comparison-rows.mjs?v=errors1';
-import {withComparisonSpecifications,specificationDefinitions} from './comparison-specs.mjs?v=errors1';
+import {withComparisonSpecifications,specificationDefinitions} from './comparison-specs.mjs?v=audit2';
 import {definitions,parseQuery} from './equipment-search.mjs?v=errors1';
 const $=id=>document.getElementById(id),el=(tag,text)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;return n};
 const short=v=>v.stock?`Stock ${v.stock}`:`VIN …${v.vin.slice(-6)}`;

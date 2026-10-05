@@ -2,7 +2,7 @@ import {optionFromParams} from './option-inventory.mjs?v=options1';
 import {applyFeatureFilter} from './feature-inventory-link.mjs?v=1';
 import {sameModelOptions,modelName} from './same-model-options.mjs?v=wheel1';
 import {optionGuidance,noMatchGuidance} from './option-guidance.mjs?v=option1';
-import {shoppingContext,comparisonLink} from './shopping-context.mjs?v=shopping1';
+import {shoppingContext,comparisonLink} from './shopping-context.mjs?v=audit2';
 import {recoveryOptions} from './search-recovery.mjs?v=wheel1';
 import {openVehiclePreview} from './vehicle-preview.mjs?v=shopping1';
 import {parseQuery,matchVehicle,labels,definitions} from './equipment-search.mjs?v=options1';
@@ -58,6 +58,7 @@ function revealResults(){if(!restoringSearch&&!keepSearchPosition){$('search-res
 function render(){
  syncConditionChoices();
  const out=$('matchResults');out.replaceChildren();$('visible-count').textContent='';const q=lastQuery;if(!q)return;
+ const customerRequest=[q.original,q.equipmentOption?[q.equipmentOption.label,q.equipmentOption.value].filter(Boolean).join(': '):featureParam?labels[featureParam]:''].filter(Boolean).join(' — ');
  const summary=el('div',undefined,'search-summary');
  const items=[...(q.bodyType?[q.bodyType==='truck'?'Pickup trucks':q.bodyType==='suv'?'SUVs':'Pickup trucks or SUVs']:[]),...q.terms,...(q.condition?[q.condition]:[]),...(q.budget!==null?['Price up to '+cash(q.budget)]:[]),...(q.mileage!==null?['Mileage up to '+q.mileage.toLocaleString()]:[]),...(q.equipmentOption?['With '+q.equipmentOption.label+(q.equipmentOption.value?' — '+q.equipmentOption.value:'')]:[]),...q.requirements.map(r=>(r.wanted?'With ':'Without ')+labels[r.id])];
  summary.append(el('h3','Your search'),el('p',items.join(' · ')||'All vehicles at 8107 Research Blvd'));
@@ -83,14 +84,14 @@ function render(){
  }
  for(const {vehicle:v,result} of rows.slice(0,visible)){
   const sticker=index.records[v.vin],card=el('article',undefined,'match');
-  const photo=link('',`contact.html?vehicle=${encodeURIComponent(v.vin)}`);photo.className='stock-photo';photo.setAttribute('aria-label','View vehicle details: '+v.title);photo.addEventListener('click',e=>{e.preventDefault();openVehiclePreview(v,q.original);});const img=el('img');img.src=v.photoUrl;img.alt=v.title;img.width=400;img.height=300;img.loading='lazy';img.addEventListener('error',()=>photo.replaceChildren(el('span','View vehicle details')),{once:true});photo.append(img);card.append(photo);
+  const photo=link('',`contact.html?vehicle=${encodeURIComponent(v.vin)}`);photo.className='stock-photo';photo.setAttribute('aria-label','View vehicle details: '+v.title);photo.addEventListener('click',e=>{e.preventDefault();openVehiclePreview(v,customerRequest);});const img=el('img');img.src=v.photoUrl;img.alt=v.title;img.width=400;img.height=300;img.loading='lazy';img.addEventListener('error',()=>photo.replaceChildren(el('span','View vehicle details')),{once:true});photo.append(img);card.append(photo);
   card.append(el('span',result.kind==='unknown'?'Equipment needs confirmation':result.checks.some(c=>c.state==='not-listed')?'Sunroof not listed on sticker':q.requirements.some(r=>r.id==='flatTow')?'Sticker + towing manual checked':(q.requirements.length||q.equipmentOption)?(result.checks.some(c=>c.method?.startsWith('factory-'))?'Sticker + factory guide checked':'Requested equipment confirmed on sticker'):sticker?.status==='verified'?'Window sticker available':'Equipment unverified','stock-badge'),el('h3',v.title),el('p',cash(v.price),'vehicle-price'),el('p',`${v.condition||''} · ${v.miles==null?'Mileage unknown':v.miles.toLocaleString()+' miles'}${v.stock?' · Stock '+v.stock:''}`,'vehicle-meta'));
   if(v.condition==='New')card.append(el('p','Advertised price may include conditional incentives. Ask us to confirm your price.','stock-small'));
   for(const category of result.categoryChecks||[])card.append(el('p',`${category.label} · ${category.evidence}`,'stock-small'));
   for(const check of result.checks)card.append(el('p',`${check.state==='match'?'✓':check.state==='not-listed'?'—':'?'} ${check.wanted?'':'Without '}${check.label}: ${check.state==='unknown'?'not confirmed by the sticker':check.evidence.join(' / ')}`,'equipment-check'));
   for(const check of result.checks)if(check.sourceUrl)card.append(link(check.id==='flatTow'?'Read factory flat-towing instructions ↗':'Read factory equipment reference ↗',check.sourceUrl));
   if(sticker?.status==='verified')card.append(link('Read original window sticker ↗',sticker.sourceUrl));
-  const actions=el('div',undefined,'stock-actions');actions.append(link('Full vehicle details',`/vehicle-${v.vin}?${new URLSearchParams({q:q.original,condition:q.condition||'Both'})}`));if(browseInventory){const details=el('button','View photos & details','mini-btn');details.type='button';details.addEventListener('click',()=>openVehiclePreview(v,q.original));actions.append(details);}actions.append(link('Check availability',`contact.html?vehicle=${v.vin}&request=${encodeURIComponent(q.original)}`),link('Request a walkaround',`contact.html?vehicle=${v.vin}&purpose=walkaround&request=${encodeURIComponent(q.original)}`),link('Compare equipment',comparisonLink([v.vin],shoppingContext())),link('Request a test drive',`contact.html?vehicle=${v.vin}&purpose=test-drive&request=${encodeURIComponent(q.original)}`));const compareLabel=el('label','Add to compare');const cb=document.createElement('input');cb.type='checkbox';cb.dataset.compareVin=v.vin;cb.checked=compareVins.includes(v.vin);cb.addEventListener('change',()=>toggleCompare(v.vin,cb.checked));compareLabel.prepend(cb);actions.append(compareLabel,drivewayLink(v));card.append(actions);out.append(card);
+  const actions=el('div',undefined,'stock-actions');actions.append(link('Full vehicle details',`/vehicle-${v.vin}?${new URLSearchParams({q:customerRequest,condition:q.condition||'Both'})}`));if(browseInventory){const details=el('button','View photos & details','mini-btn');details.type='button';details.addEventListener('click',()=>openVehiclePreview(v,customerRequest));actions.append(details);}actions.append(link('Check availability',`contact.html?vehicle=${v.vin}&request=${encodeURIComponent(customerRequest)}`),link('Request a walkaround',`contact.html?vehicle=${v.vin}&purpose=walkaround&request=${encodeURIComponent(customerRequest)}`),link('Compare equipment',comparisonLink([v.vin],shoppingContext())),link('Request a test drive',`contact.html?vehicle=${v.vin}&purpose=test-drive&request=${encodeURIComponent(customerRequest)}`));const compareLabel=el('label','Add to compare');const cb=document.createElement('input');cb.type='checkbox';cb.dataset.compareVin=v.vin;cb.checked=compareVins.includes(v.vin);cb.addEventListener('change',()=>toggleCompare(v.vin,cb.checked));compareLabel.prepend(cb);actions.append(compareLabel,drivewayLink(v));card.append(actions);out.append(card);
  }
  const otherOptions=sameModelOptions(data.vehicles,index.records,q,matches.map(x=>x.vehicle.vin));
  otherOptions.sort(sort);
@@ -106,7 +107,7 @@ function render(){
    const info=el('div');info.style.cssText='flex:1 1 240px;min-width:0';
    const title=link(v.title,`/vehicle-${v.vin}`);title.className='';title.style.cssText='font-weight:700;text-decoration:underline';
    info.append(title,el('div',`${cash(v.price)} · ${v.miles==null?'Mileage not listed':v.miles.toLocaleString()+' miles'} · Stock ${v.stock}`,'stock-small'),el('div','Different trim','stock-small'));
-   const details=el('button','View details','mini-btn');details.type='button';details.addEventListener('click',()=>openVehiclePreview(v,q.original));
+   const details=el('button','View details','mini-btn');details.type='button';details.addEventListener('click',()=>openVehiclePreview(v,customerRequest));
    const label=el('label','Compare');label.style.cssText='display:flex;gap:6px;align-items:center;font-size:14px';
    const cb=el('input');cb.type='checkbox';cb.dataset.compareVin=v.vin;cb.checked=compareVins.includes(v.vin);cb.addEventListener('change',()=>toggleCompare(v.vin,cb.checked));label.prepend(cb);
    row.append(info,details,label,drivewayLink(v));list.append(row);
@@ -118,7 +119,7 @@ function render(){
  $('visible-count').textContent=rows.length?`Showing ${Math.min(visible,rows.length)} of ${rows.length} vehicles`:'';
  if(!matches.length&&!otherOptions.length){
   const help=el('section',undefined,'search-summary');help.append(el('h3','Let’s find your next vehicle'),el('p','Keep your must-haves and send us your search. We can check availability and help confirm the details.'));
-  const request=`${q.condition||'New or used'} vehicles. My search: ${q.original}`;
+  const request=`${q.condition||'New or used'} vehicles. My search: ${customerRequest}`;
   help.append(link('Help me find this vehicle','contact.html?purpose=find&request='+encodeURIComponent(request)));
   if(!featureParam&&!selectedOption&&unknown.length&&!$('show-unverified').checked){const show=el('button',`Show ${unknown.length} vehicles needing confirmation`,'mini-btn');show.type='button';show.addEventListener('click',()=>{$('show-unverified').checked=true;render();});help.append(show);}
   const alternatives=selectedOption?[]:recoveryOptions(data.vehicles,index.records,q).filter(option=>!featureParam||option.key!==featureParam);

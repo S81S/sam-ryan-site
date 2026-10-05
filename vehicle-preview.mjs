@@ -1,4 +1,4 @@
-import {shoppingContext,comparisonLink} from './shopping-context.mjs?v=shopping1';
+import {shoppingContext,comparisonLink} from './shopping-context.mjs?v=audit2';
 // Keep the shopper's vehicle context on Cars With Sam.
 let dialog;
 const element = (tag, text, className) => {

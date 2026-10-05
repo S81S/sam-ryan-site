@@ -1,4 +1,4 @@
-import {shoppingContext,comparisonLink,comparisonRequest} from './shopping-context.mjs?v=contact2';
+import {shoppingContext,comparisonLink,comparisonRequest} from './shopping-context.mjs?v=audit2';
 const inventory = window.usedInventoryData.vehicles;
 const section = document.createElement('section');
 section.className = 'search-summary';

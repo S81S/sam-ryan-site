@@ -38,7 +38,7 @@ export function withComparisonSpecifications(vehicle,sticker){
   driverAdjustment:installedFact(sticker,l=>/\b\d+[ -]+way\b.*\b(?:power|manual)\b.*\bdriver seat\b/i.test(l)&&!/lumbar/i.test(l),l=>{const m=l.match(/\b(\d+)[ -]+way\b.*\b(power|manual)\b/i);return m?m[1]+'-way '+m[2].toLowerCase():null;}),
   passengerAdjustment:installedFact(sticker,l=>/\b\d+[ -]+way\b.*\b(?:power|manual)\b.*\b(?:front )?passenger seat\b/i.test(l)&&!/lumbar/i.test(l),l=>{const m=l.match(/\b(\d+)[ -]+way\b.*\b(power|manual)\b/i);return m?m[1]+'-way '+m[2].toLowerCase():null;}),
   audioSystem:installedAudioFact(vehicle,sticker),
-  bedPower:installedFact(sticker,l=>/\bbed\b/i.test(l)&&/\b(?:outlet|power[ -]point|power[ -]supply)\b/i.test(l),l=>{const m=l.match(/\b(\d{2,3})[ -]?(?:volt|v)\b/i);return m?m[1]+'-volt bed outlet':'Bed power outlet (rating: Verify)';}),
+  bedPower:installedFact(sticker,l=>/\bbed\b/i.test(l)&&/\b(?:outlet|power[ -]point|power[ -]supply)\b/i.test(l),l=>{const m=l.match(/\b(\d{2,3})[ -]?(?:volt|v)\b/i);return m?m[1]+'-volt bed outlet':'Bed power outlet; voltage not printed on sticker';}),
   powerInverter:installedFact(sticker,l=>/\binverter\b/i.test(l),l=>{const m=l.match(/\b(\d+(?:\.\d+)?)[ -]*(k?w)(?:att)?\b/i);return m?Number(m[1])+' '+m[2].toUpperCase()+' inverter':null;}),
   tailgateOperation:installedFact(sticker,l=>/\b(?:power|multifunction|multi-function)[ -]+tailgate\b/i.test(l),l=>/release/i.test(l)?'Power tailgate release':/multi/i.test(l)?'Multifunction tailgate':'Power tailgate'),
   passengerDisplay:installedFact(sticker,l=>/\b(?:front )?passenger\b.*\b(?:display|screen)\b/i.test(l),l=>{const size=screen(l);return size?'Passenger display, '+size:'Passenger interactive display';}),
