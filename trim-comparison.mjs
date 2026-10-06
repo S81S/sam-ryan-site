@@ -33,12 +33,12 @@ export function equipmentRows(trims) {
   });
 }
 
+// Nothing is pre-selected: the shopper picks the trims to compare. "all" is an explicit choice.
 export function selectedTrimIds(model,raw){
-  if(raw===null||raw===undefined)return model.trims.map(t=>t.id);
-  if(raw==='')return [];
+  if(raw===null||raw===undefined||raw==='')return [];
+  if(raw==='all')return model.trims.map(t=>t.id);
   const ids=new Set(String(raw).split(','));
-  const selected=model.trims.filter(t=>ids.has(t.id)).map(t=>t.id);
-  return selected.length?selected:model.trims.map(t=>t.id);
+  return model.trims.filter(t=>ids.has(t.id)).map(t=>t.id);
 }
 
 export function featureMatches(row,query){
