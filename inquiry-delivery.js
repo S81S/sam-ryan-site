@@ -11,6 +11,19 @@
   form.dataset.directDelivery = 'available';
   form.querySelector('button[type=submit]').textContent = 'REVIEW MY INQUIRY →';
   {const note=document.getElementById('contactMessage'),vehicleNotice=/could not confirm that vehicle/i.test(note.textContent)?note.textContent+' ':'';note.textContent = vehicleNotice+'Review your request, then send it directly to Sam or Ryan. You can also call, text or use your email app. Your details are shared only when you choose to send.';}
+  // The sending service accepts only a bare phone number or email address. Pick that out of whatever
+  // the shopper typed ("512-555-0134 after 5") and stop at the review step, with a plain reason, if there is none.
+  const replyField = form.elements.reply;
+  const usableReply = raw => {
+    const text = raw.replace(/[‐-―−]/g, '-').replace(/ /g, ' ').trim();
+    const email = text.match(/[^\s@<>(),;:]+@[^\s@<>(),;:]+\.[^\s@<>(),;:]+/);
+    if (email) return email[0].replace(/\.+$/, '');
+    return (text.match(/[+(]?\d[\d ().-]{5,27}\d/g) || []).find(part => part.replace(/\D/g, '').length >= 7) || '';
+  };
+  const checkReply = () => replyField.setCustomValidity(!replyField.value.trim() || usableReply(replyField.value) ? '' : 'Enter a phone number or an email address so we can reply, like 512-555-0134 or name@example.com.');
+  replyField.addEventListener('input', checkReply); checkReply();
+  // Some in-app browsers do not show the built-in field warning, so repeat it in the page.
+  form.addEventListener('invalid', event => { document.getElementById('contactMessage').textContent = event.target === replyField && replyField.value.trim() ? replyField.validationMessage : 'Please enter your name and a phone number or email so we can reply.'; }, true);
   const preview = document.getElementById('request-preview');
   const box = document.createElement('div');
   const explanation = document.createElement('p');
@@ -40,18 +53,19 @@
   button.addEventListener('click', async () => {
     if (sending || accepted || !token || !form.reportValidity()) return;
     const values = Object.fromEntries(new FormData(form));
+    let reason = '';
     sending=true; button.disabled=true; const locked=[...form.querySelectorAll('input,select,textarea,button')].filter(e=>!e.disabled); locked.forEach(e=>e.disabled=true); status.textContent='Sending your inquiry…';
     try {
       const response = await fetch('/api/inquiry', {method:'POST', headers:{'Content-Type':'application/json'}, signal:AbortSignal.timeout(25000),
-        body:JSON.stringify({name:values.name.trim(),reply:values.reply.trim(),advisor:values.advisor==='Ryan'?'Ryan':'Sam',purpose:values.purpose,message:document.getElementById('request-text').textContent,token})});
+        body:JSON.stringify({name:values.name.trim(),reply:usableReply(values.reply),advisor:values.advisor==='Ryan'?'Ryan':'Sam',purpose:values.purpose,message:document.getElementById('request-text').textContent,token})});
       const result = await response.json();
-      if (!response.ok || result.accepted !== true) throw new Error('not-confirmed');
+      if (!response.ok || result.accepted !== true) { if ((response.status === 400 || response.status === 429) && typeof result.error === 'string') reason = result.error; throw new Error('not-confirmed'); }
       accepted=true;
       status.textContent='Your inquiry was accepted for sending to your advisor. Please wait for their reply to confirm availability or an appointment.';
       document.getElementById('contactMessage').textContent='Your inquiry was accepted for sending. You can also reach your advisor directly if you need a quicker answer.';
     } catch {
       window.cwsTrack?.('inquiry_failed',{advisor:values.advisor==='Ryan'?'Ryan':'Sam',purpose:values.purpose});
-      status.textContent='We could not confirm your inquiry was sent. Your details are still here. Please use text or email below.';
+      status.textContent = reason ? reason + ' Nothing was sent. Your details are still here.' : 'We could not confirm your inquiry was sent. Your details are still here. Please use text or email below.';
     } finally {
       sending=false; locked.forEach(e=>e.disabled=false); token=''; button.disabled=true;
       if (widget !== undefined && !accepted) window.turnstile.reset(widget);
