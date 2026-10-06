@@ -64,9 +64,11 @@
     lines.push('', 'Store: Covert CDJR Austin, 8107 Research Blvd, Austin, TX 78758', 'Source: Cars With Sam website');
     // Only recognized campaign labels are copied; no arbitrary URL text or referrer data.
     const campaignSources = new Map([['facebook','Facebook'],['instagram','Instagram'],['youtube','YouTube'],['tiktok','TikTok']]);
-    const campaignNames = new Map([['first-week-sam','Sam launch post'],['first-week-ryan','Ryan launch post']]);
-    const campaignSource = campaignSources.get((params.get('utm_source') || '').toLowerCase());
-    const campaignName = campaignNames.get(params.get('utm_campaign'));
+    const campaignNames = new Map([['profile','profile link'],['first-week-sam','Sam launch post'],['first-week-ryan','Ryan launch post']]);
+    // A visitor who arrived from a social link on another page had the platform remembered for this session.
+    let arrived = {}; try { arrived = JSON.parse(sessionStorage.getItem('cwsCampaign') || '{}') || {}; } catch { /* storage unavailable */ }
+    const campaignSource = campaignSources.get((params.get('utm_source') || arrived.source || '').toLowerCase());
+    const campaignName = campaignNames.get(params.get('utm_campaign') || arrived.campaign);
     if (campaignSource) lines.push(`Campaign link: ${campaignSource}${campaignName ? ' / ' + campaignName : ''}`);
     const body = lines.join('\n');
     byId('request-text').textContent = body;

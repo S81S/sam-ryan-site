@@ -12,7 +12,7 @@ if (form) {
     }
   }
   try {
-    await import('./inquiry.js?v=campaign1');
+    await import('./inquiry.js?v=campaign2');
     form.removeEventListener('submit', holdSubmit);
     await import('./inquiry-delivery.js?v=funnel4');
   } catch {

@@ -1,4 +1,7 @@
 (() => {
+  // Remember which of our social links brought this visitor, for this browser session only, so an inquiry
+  // started on a later page can say so. Only a fixed platform name and a known campaign label are kept.
+  try{const p=new URLSearchParams(location.search),s=(p.get('utm_source')||'').toLowerCase(),c=p.get('utm_campaign')||'';if(['facebook','instagram','youtube','tiktok'].includes(s))sessionStorage.setItem('cwsCampaign',JSON.stringify({source:s,campaign:['profile','first-week-sam','first-week-ryan'].includes(c)?c:''}));}catch{}
   const params = new URLSearchParams(location.search);
   const request = (params.get('q') || '').slice(0, 1000);
   const condition = ['New', 'Used', 'Both'].includes(params.get('condition')) ? params.get('condition') : '';
