@@ -1,0 +1,21 @@
+{
+  "note": "Example searches the home page search bar types, in order. scripts/home-examples.mjs checks each one against the current inventory and writes the ones that still find vehicles into index.html. Keep each example to 24 characters or fewer so it fits the bar on a narrow phone.",
+  "minimumMatches": 3,
+  "examples": [
+    "Ram 1500 Night Edition",
+    "third row under $40k",
+    "Sky One-Touch roof",
+    "massage seats",
+    "leather and sunroof",
+    "Ram with RamBox",
+    "heated seats under $30k",
+    "red interior",
+    "SUV with 360 camera",
+    "dually diesel",
+    "used under 30,000 miles",
+    "white Ram 1500",
+    "adaptive cruise control",
+    "35-inch tires",
+    "McIntosh audio"
+  ]
+}

@@ -416,8 +416,15 @@ export const searchDictionary = [
     "phrases": [
       "captains chairs",
       "captain chairs",
+      "captain chair",
       "captain seats",
-      "second row captains chairs"
+      "captains seats",
+      "second row captains chairs",
+      "second row captain chairs",
+      "second row captains seats",
+      "2nd row captains chairs",
+      "2nd row captain chairs",
+      "middle row captains chairs"
     ]
   },
   {
@@ -962,4 +969,5 @@ const escape=s=>s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
 const entries=searchDictionary.flatMap(g=>g.phrases.map(phrase=>[phrase,g.canonical])).sort((a,b)=>b[0].length-a[0].length);
 const lookup=new Map(entries);
 const pattern=new RegExp('\\b(?:'+entries.map(([p])=>escape(p)).join('|')+')\\b','g');
-export function translateSearchTerms(text){return text.replace(pattern,phrase=>lookup.get(phrase));}
+// Shoppers type "captain's chairs" and "driver's seat"; the phrases above are stored without the apostrophe.
+export function translateSearchTerms(text){return text.replace(/([a-z])'s\b/g,'$1s').replace(pattern,phrase=>lookup.get(phrase));}

@@ -9,6 +9,8 @@ on:
       - 'site-shell.cjs'
       - 'notify-indexnow.cjs'
       - 'indexnow-key.txt'
+      - 'home-search-examples.json'
+      - 'scripts/home-examples.mjs'
       - '.github/workflows/vehicle-pages.yml'
   workflow_dispatch:
 permissions:
@@ -28,11 +30,13 @@ jobs:
           node-version: '22'
       - run: node build-vehicle-pages.cjs
       - run: node notify-indexnow.cjs --prepare
+      - name: Keep the home page example searches valid
+        run: node scripts/home-examples.mjs || echo "::warning::Home page example check failed; index.html left unchanged"
       - name: Publish generated pages
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add vehicle-*.html vehicles*.html sitemap-vehicles.xml vehicle-pages-version.json
+          git add vehicle-*.html vehicles*.html sitemap-vehicles.xml vehicle-pages-version.json index.html
           if ! git diff --cached --quiet; then
             git commit -m "Update searchable vehicle pages from verified inventory snapshot"
             git push origin HEAD:main
