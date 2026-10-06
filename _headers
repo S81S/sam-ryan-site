@@ -52,3 +52,9 @@ https://:version.:project.pages.dev/*
 
 /trim-standard-data.json
   Cache-Control: public, max-age=0, must-revalidate
+
+/vehicles-featured
+  X-Robots-Tag: noindex
+
+/vehicles-featured.html
+  X-Robots-Tag: noindex
