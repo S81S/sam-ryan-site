@@ -25,3 +25,32 @@
 
 
 import('/sticker-credit.mjs?v=clear1').then(m=>m.installStickerCredits()).catch(()=>{});
+
+// Photo gallery: thumbnails and arrows swap the main photo in place.
+(() => {
+  const main = document.querySelector('.vehicle-photo');
+  const links = [...document.querySelectorAll('.photo-strip a')];
+  if (!main || links.length < 2) return;
+  const count = document.querySelector('.photo-count');
+  let current = 0;
+  const show = (n, scrollThumb = true) => {
+    current = (n + links.length) % links.length;
+    main.src = links[current].href;
+    links.forEach((a, k) => a.setAttribute('aria-current', k === current ? 'true' : 'false'));
+    if (count) count.textContent = (current + 1) + ' / ' + links.length;
+    if (scrollThumb) {
+      const strip = links[current].parentNode;
+      strip.scrollTo({ left: links[current].offsetLeft - strip.clientWidth / 2 + links[current].clientWidth / 2, behavior: 'smooth' });
+    }
+  };
+  links.forEach((a, k) => a.addEventListener('click', e => { e.preventDefault(); show(k); }));
+  document.querySelector('.photo-prev')?.addEventListener('click', () => show(current - 1));
+  document.querySelector('.photo-next')?.addEventListener('click', () => show(current + 1));
+  let startX = null;
+  main.addEventListener('touchstart', e => { startX = e.touches[0].clientX; }, { passive: true });
+  main.addEventListener('touchend', e => {
+    if (startX === null) return;
+    const dx = e.changedTouches[0].clientX - startX; startX = null;
+    if (Math.abs(dx) > 40) show(current + (dx < 0 ? 1 : -1));
+  }, { passive: true });
+})();

@@ -104,3 +104,16 @@ html{scroll-padding-top:100px}a,button,input,select,textarea{touch-action:manipu
 .sam-phone-logo{flex:0 0 auto;margin-left:1px}
 
 .sam-phone,.btn.sam-phone{background:transparent!important;box-shadow:none!important;border:0;border-radius:0}.sam-phone-logo{background:transparent;border-radius:0}
+
+/* Vehicle cards: two clear actions first; everything else stays one tap away. */
+.match .stock-actions{align-items:center}
+.match .stock-actions>.mini-btn{flex:1 1 140px;justify-content:center;text-align:center;font-size:13px;margin:0}
+.match .stock-actions>.mini-btn.secondary-action{background:#fff;color:#17232e;border:1px solid #9aa7b4}
+.match .compare-pick{flex:1 1 100%;display:inline-flex;align-items:center;gap:8px;min-height:44px;font-size:13px;font-weight:700;color:#26313d;cursor:pointer}
+.match .compare-pick input{width:20px;height:20px}
+.vehicle-search-page .match .more-actions{flex:1 1 100%;border:0;border-radius:0;padding:0;margin:0;background:none;color:inherit}
+.vehicle-search-page .match .more-actions summary{display:inline-flex;align-items:center;min-height:44px;padding:0;border:0;background:none;font-size:13px;font-weight:700;color:#26313d;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+.match .more-actions-list{display:flex;flex-wrap:wrap;gap:8px;padding:4px 0}
+.match .stock-actions .more-actions-list .mini-btn,.match .stock-actions .more-actions-list .mini-btn:first-child{margin:0;background:#eef2f6;color:#17232e;border-color:transparent}
+.vehicle-search-page .match-list>p.listing-checked{grid-column:1/-1;margin:-10px 0 0;padding:0;border:0;background:none;box-shadow:none;font-size:13px;color:#4e5b66}
+.vehicle-search-page .match-list>p.listing-checked.is-stale{margin-top:0;padding:10px 12px;border-left:4px solid #e5a11a;background:#fff8e8;color:#4a3b12;border-radius:6px}

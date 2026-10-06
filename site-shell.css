@@ -84,8 +84,8 @@
 
 /* Keep the phone number separate from the mascot, with one accessible call link. */
 .site-layout .site-header .header-phone{flex:0 0 272px;width:272px;gap:6px;min-height:58px}
-.site-layout .site-header .header-phone::before{content:"";display:block;flex:0 0 194px;width:194px;height:58px;background:url('/sam-phone-number-gold-v1.png') center / 194px auto no-repeat}
-.site-layout .site-header .header-phone .sam-phone-stacked{content:url('/sam-superbee-header-v1.png');width:72px;max-width:72px;height:58px;object-fit:contain;flex:0 0 72px}
+.site-layout .site-header .header-phone::before{content:"";display:block;flex:0 0 194px;width:194px;height:58px;background:url('/sam-phone-number-gold-v1.webp') center / 194px auto no-repeat}
+.site-layout .site-header .header-phone .sam-phone-stacked{content:url('/sam-superbee-header-v1.webp');width:72px;max-width:72px;height:58px;object-fit:contain;flex:0 0 72px}
 .site-layout .site-header .header-phone:focus-visible{outline:3px solid #ffda43;outline-offset:3px;border-radius:4px}
 .site-layout.home-page .compare-mini img{height:auto;aspect-ratio:4/3;object-fit:contain}
 @media(min-width:1051px) and (max-width:1300px){
@@ -102,4 +102,31 @@
  .site-layout .header-cta{grid-column:2;grid-row:1}
  .site-layout .site-header .header-phone{grid-column:1/-1;grid-row:2;justify-self:center}
  .site-layout #primary-nav{grid-row:3}
+}
+
+/* Compact phone header: brand, tap-to-call number and a Menu button on one row. */
+.site-layout .nav-toggle{display:none}
+@media(max-width:700px){
+ .site-layout .site-header .nav-wrap{display:grid;grid-template-columns:minmax(0,1fr) auto auto;align-items:center;gap:6px 10px;padding:8px 0;min-height:0}
+ .site-layout .site-header .brand{grid-column:1;grid-row:1}
+ .site-layout .site-header .brand small{display:none}
+ .site-layout .site-header .brand-main{font-size:18px;white-space:nowrap}
+ .site-layout .site-header .header-phone{grid-column:2;grid-row:1;justify-self:end;flex:0 0 auto;width:auto;min-height:44px;gap:0}
+ .site-layout .site-header .header-phone::before{flex:0 0 124px;width:124px;height:44px;background-size:124px auto}
+ .site-layout .site-header .header-phone .sam-phone-stacked{display:none}
+ .site-layout .header-cta{display:none}
+ .site-layout .nav-toggle{grid-column:3;grid-row:1;display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:0 12px;border:1px solid #46515f;border-radius:10px;background:#131b24;color:#fff;font:inherit;font-size:13px;font-weight:800;cursor:pointer}
+ .site-layout .nav-toggle[aria-expanded="true"]{background:#bd1424;border-color:#bd1424}
+ .site-layout .nav-toggle:focus-visible{outline:3px solid #ffc447;outline-offset:2px}
+ .site-layout #primary-nav{grid-column:1/-1;grid-row:2;display:flex;flex-wrap:wrap;gap:6px;padding:4px 0 8px}
+ html.js .site-layout #primary-nav{display:none}
+ html.js .site-layout #primary-nav.is-open{display:flex}
+ .site-layout #primary-nav a{flex:1 1 calc(50% - 6px);justify-content:flex-start;min-height:46px;padding:10px 14px;font-size:15px;border:1px solid #29333e;border-radius:10px;background:#0f161e}
+ .site-layout #primary-nav a.active{border-color:var(--red)}
+ .site-layout .visit-link{font-size:11.5px;padding:5px 0}
+}
+@media(max-width:360px){
+ .site-layout .site-header .header-phone::before{flex-basis:104px;width:104px;background-size:104px auto}
+ .site-layout .site-header .brand-main{font-size:16px}
+ .site-layout .nav-toggle{padding:0 9px}
 }
