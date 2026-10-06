@@ -10,7 +10,7 @@
   if (!config.enabled || !config.siteKey) return;
   form.dataset.directDelivery = 'available';
   form.querySelector('button[type=submit]').textContent = 'REVIEW MY INQUIRY →';
-  document.getElementById('contactMessage').textContent = 'Review your request, then send it directly to Sam or Ryan. You can also call, text or use your email app. Your details are shared only when you choose to send.';
+  {const note=document.getElementById('contactMessage'),vehicleNotice=/could not confirm that vehicle/i.test(note.textContent)?note.textContent+' ':'';note.textContent = vehicleNotice+'Review your request, then send it directly to Sam or Ryan. You can also call, text or use your email app. Your details are shared only when you choose to send.';}
   const preview = document.getElementById('request-preview');
   const box = document.createElement('div');
   const explanation = document.createElement('p');

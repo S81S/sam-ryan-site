@@ -12,7 +12,11 @@
   for (const link of document.querySelectorAll('a[href^="/contact?"], a[href^="/compare?"], a[href^="sms:"]')) {
     const url = new URL(link.href);
     if (url.protocol === 'sms:') {
-      url.searchParams.set('body', (url.searchParams.get('body') || '') + '\n' + description);
+      // Text-message links must percent-encode spaces: URLSearchParams would write "+",
+      // and messaging apps show those plus signs literally.
+      const body = (url.searchParams.get('body') || '') + '\n' + description;
+      link.href = link.getAttribute('href').split('?')[0] + '?body=' + encodeURIComponent(body);
+      continue;
     } else if (url.pathname === '/contact') {
       url.searchParams.set('request', description);
     } else if (url.pathname === '/compare') {
