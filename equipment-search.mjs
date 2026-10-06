@@ -229,6 +229,10 @@ const aliases=[
  ['bedliner',/\b(?:spray[ -]in )?bedliner\b/g],['hud',/\b(?:head[ -]up display|hud)\b/g],['wireless',/\bwireless charging\b/g],['powerLiftgate',/\bpower liftgate\b/g]
 ];
 const numeric=s=>Number(s.replace(/[$, ]/g,''));
+// Shoppers type "33 gallon tank" or "12 inch screen"; window stickers print "33-GALLON" and "12-INCH".
+// Join a number to its unit the same way on both sides so the words line up; the exact size is still required.
+const unitNames={gal:'gallon',gallons:'gallon',inches:'inch',speeds:'speed',volts:'volt',amps:'amp',speakers:'speaker',watts:'watt',passengers:'passenger'};
+const joinUnits=s=>s.replace(/\b(\d+(?:\.\d+)?)[\s-]+(gallons?|gal|inch(?:es)?|speeds?|volts?|amps?|way|speakers?|watts?|passengers?)\b/g,(_,n,u)=>n+'-'+(unitNames[u]||u));
 export function parseQuery(input){
  const original=String(input||'').trim();let q=normalizeText(original).toLowerCase();
  q=q.replace(/\b(?:whit|whtie)\b/g,'white').replace(/\bbalck\b/g,'black');
@@ -268,7 +272,7 @@ export function parseQuery(input){
  // Explicit model shorthand is safe; the five-digit 15000 ambiguity is never silently corrected.
  q=q.replace(/\b(?:i am looking for|i'm looking for|i want|i need|looking for|show me|find me|can you find|do you have|i would like|i'd like)\b/g,' ');
  const stop=new Set('color colour colored coloured paint exterior body under interior upholstery cabin a an the with without no not any and or but please seats seat car vehicle truck suv cars trucks suvs that has have me my of for want dont don\'t do does doesn\'t doesn’t must to at in either equipped comes come something need looking looking at least than less more only must should be would like can you it its that has have has got gimme get give us me a just preferably ideally about approx approximately around price priced budget cost costs spending spend tops all total out door'.split(' '));
- result.terms=q.split(/[^a-z0-9'-]+/).filter(w=>w&&!stop.has(w));
+ result.terms=joinUnits(q).split(/[^a-z0-9'-]+/).filter(w=>w&&!stop.has(w));
  if(result.requirements.some(x=>x.id==='flatTow'))result.warnings.push('Flat towing means pulling this vehicle behind an RV with all four wheels on the ground. Matches require a verified model-year and drivetrain rule; unreviewed configurations remain unconfirmed. Follow the linked factory procedure and confirm towing equipment, weight limits and vehicle condition; a trailer-tow package alone does not qualify.');
  if(result.requirements.some(x=>x.id==='ventilated'))result.warnings.push('“Air-conditioned seats” is treated as ventilated/cooled seats. The exact factory wording is shown.');
  if(result.requirements.some(x=>x.id.startsWith('tireDiameter')))result.warnings.push('Tire sizes refer to factory specifications on the window sticker. Confirm the currently fitted tires on a used vehicle.');
@@ -283,7 +287,7 @@ export function matchVehicle(vehicle,sticker,query){
  if(query.mileage!==null&&(vehicle.miles===null||vehicle.miles>query.mileage))return {kind:'excluded',reason:'mileage'};
  const categoryMatch=matchVehicleCategories(vehicle,sticker,query);
  if(!categoryMatch.matches)return {kind:'excluded',reason:'vehicle category'};
- const title=normalizeText(vehicle.title+' '+vehicle.stock+' '+vehicle.vin).toLowerCase();
+ const title=joinUnits(normalizeText(vehicle.title+' '+vehicle.stock+' '+vehicle.vin).toLowerCase());
  if(query.bodyType){
   const {truck,suv}=vehicleBodyTypes(vehicle,sticker);
   if(!(query.bodyType==='truck'?truck:query.bodyType==='suv'?suv:truck||suv))return {kind:'excluded',reason:'body type'};
@@ -307,7 +311,7 @@ export function matchVehicle(vehicle,sticker,query){
  const unmatched=query.terms.filter(t=>!title.split(/[^a-z0-9'-]+/).includes(t));
  // Remaining words must be found in the VIN-verified equipment text; listing descriptions are never searched.
  const lines=sticker?.status==='verified'?sticker.lines||[]:[];
- const text=normalizeText(lines.join(' ')).toLowerCase();
+ const text=joinUnits(normalizeText(lines.join(' ')).toLowerCase());
  // Read displacement from the original engine line even for previously scanned stickers.
  if(sticker?.status==='verified'){
   const engineLines=[sticker.engine,...lines.filter(l=>/^engine:/i.test(l))].filter(Boolean);
