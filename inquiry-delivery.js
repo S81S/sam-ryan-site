@@ -54,10 +54,16 @@
     if (sending || accepted || !token || !form.reportValidity()) return;
     const values = Object.fromEntries(new FormData(form));
     let reason = '';
+    // The advisor's email subject is built from the purpose field. Lead with who is asking and what about;
+    // otherwise every inquiry arrives with the same subject and the mailbox stacks them into one conversation.
+    const requestText = document.getElementById('request-text').textContent, reply = usableReply(values.reply);
+    const line = label => (requestText.match(new RegExp('^' + label + ': (.+)$', 'm')) || [])[1] || '';
+    const about = line('Vehicle') ? line('Vehicle') + (line('Stock') ? ' (' + line('Stock') + ')' : '') : line('Requested VIN') ? 'VIN ' + line('Requested VIN').split(' ')[0] : '';
+    const subject = [values.name.trim() + ', ' + reply, values.purpose, about].filter(Boolean).join(' - ').replace(/\s+/g, ' ').slice(0, 160);
     sending=true; button.disabled=true; const locked=[...form.querySelectorAll('input,select,textarea,button')].filter(e=>!e.disabled); locked.forEach(e=>e.disabled=true); status.textContent='Sending your inquiry…';
     try {
       const response = await fetch('/api/inquiry', {method:'POST', headers:{'Content-Type':'application/json'}, signal:AbortSignal.timeout(25000),
-        body:JSON.stringify({name:values.name.trim(),reply:usableReply(values.reply),advisor:values.advisor==='Ryan'?'Ryan':'Sam',purpose:values.purpose,message:document.getElementById('request-text').textContent,token})});
+        body:JSON.stringify({name:values.name.trim(),reply,advisor:values.advisor==='Ryan'?'Ryan':'Sam',purpose:subject,message:requestText,token})});
       const result = await response.json();
       if (!response.ok || result.accepted !== true) { if ((response.status === 400 || response.status === 429) && typeof result.error === 'string') reason = result.error; throw new Error('not-confirmed'); }
       accepted=true;

@@ -14,7 +14,7 @@ if (form) {
   try {
     await import('./inquiry.js?v=campaign1');
     form.removeEventListener('submit', holdSubmit);
-    await import('./inquiry-delivery.js?v=funnel3');
+    await import('./inquiry-delivery.js?v=funnel4');
   } catch {
     const status = document.getElementById('contactMessage');
     status.textContent = 'The inquiry form could not finish loading. Please use the call, text or email links on this page to reach Sam or Ryan.';
