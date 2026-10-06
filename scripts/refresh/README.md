@@ -1,5 +1,8 @@
 # Unattended inventory refresh
 
+> **Not in use.** The dealer site refuses requests from GitHub's servers, so this pipeline cannot run there.
+> Listings are refreshed through Sam's browser instead: see `scripts/browser-refresh/RUNBOOK.md`.
+
 This replaces the dependency described in the top-level `README.txt`:
 
 > The refresh task is scheduled every four hours in the local Codex app. It
