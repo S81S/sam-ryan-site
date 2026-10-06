@@ -6,7 +6,7 @@ if (form) {
   const requestedVin = new URLSearchParams(location.search).get('vehicle');
   if (requestedVin) {
     try {
-      await import('./data/used-inventory.js?v=23-search2');
+      await import('./data/used-inventory.js?v=20261005-1908');
     } catch {
       // The inquiry preserves the requested VIN even when inventory is unavailable.
     }
