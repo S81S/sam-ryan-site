@@ -13,7 +13,7 @@ function stickerSource(source){
   const u=new URL(source,origin),proxy=u.origin===origin&&u.pathname==='/api/original-sticker';
   if(u.protocol!=='https:'||u.username||u.password||(!/^https:\/\//i.test(source)&&!proxy))return null;
   const credited=proxy||u.hostname==='windowsticker.org'||u.hostname.endsWith('.windowsticker.org');
-  const manufacturer=['www.chrysler.com','www.windowsticker.forddirect.com'].includes(u.hostname);
+  const manufacturer=['www.chrysler.com','www.windowsticker.forddirect.com','cws.gm.com','www.hyundaiusa.com'].includes(u.hostname);
   return {url:u.href,credited,manufacturer,host:u.hostname};
  }catch{return null}
 }

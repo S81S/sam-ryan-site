@@ -14,8 +14,8 @@ Follow the steps in order. A full run is about 15 page reads plus a sticker scan
 - Never loosen a check in `refresh.mjs` to get a run through.
 - Change only the five data files in step 6. Nothing else in the repo is part of a refresh.
 - If either site shows a human-verification check or a block page, stop and report. Do not try to get past it.
-- Read only the store's own search pages (`lc=18393`) and the manufacturer's window-sticker files. No sign-in is needed
-  for either.
+- Read only the store's own search pages (`lc=18393`) and the window-sticker addresses listed in
+  `sticker-sources.mjs`. No sign-in is needed for any of them.
 
 ## Before you start
 
@@ -79,14 +79,42 @@ It must print `Capture is valid.` followed by the counts and a list of VINs due 
 
 ## 4. Window stickers (skip when the due list is empty)
 
-1. Open a tab on `https://www.chrysler.com/robots.txt` and run the full text of `sticker-setup.js`.
-2. Run `window.__scanBg([...])` with the VIN list that `build` printed.
-3. Run `sticker-poll.js` repeatedly until it reports `done: true`. Each lookup takes one to two seconds.
-4. Run `sticker-dump.js`. With more than 25 results, run it once per slice of 25 (`slice(0, 25)`, `slice(25, 50)`, ...).
-5. `node scripts/browser-refresh/refresh.mjs ingest` and confirm the sticker result count matches.
+`build` prints the VINs due for a sticker lookup in groups, one group for each site the stickers are read from, with
+the address to open for that group. The sites are listed in `sticker-sources.mjs`: Chrysler for Jeep, Ram, Dodge and
+Chrysler; GM for Chevrolet, GMC, Buick and Cadillac; Hyundai; Ford for Ford and Lincoln; and this site's own
+`/api/original-sticker` for Kia, Subaru, Toyota, Lexus, Nissan and Infiniti. Makes with no public sticker source are
+never listed.
 
-A scan that stops early because the sticker site refused a request is fine. Carry on with what was read; the rest
-are picked up on a later run.
+For each group, in any order:
+
+1. Open a tab on the address printed for the group (it ends in `/robots.txt`) and run the full text of
+   `sticker-setup.js`. A "Service Unavailable" or "not found" page at that address is fine: the tab only has to be on
+   that site. The script refuses to run on any other site.
+2. Run `window.__scanBg([...])` with that group's VIN list.
+3. Run `sticker-poll.js` repeatedly until it reports `done: true`. Most lookups take one to two seconds; a lookup
+   through this site's own address that finds nothing takes about ten.
+4. Run `sticker-dump.js`. With more than 25 results, run it once per slice of 25 (`slice(0, 25)`, `slice(25, 50)`, ...).
+
+When every group is done: `node scripts/browser-refresh/refresh.mjs ingest` and confirm the sticker result count
+matches the number of VINs that were due.
+
+A scan that stops early because a sticker site refused a request is fine. Carry on with what was read; the rest are
+picked up on a later run. Ford answers most VINs with a "not yet released" page, and older GM and Toyota VINs have no
+sticker on file; `apply` records those as having no sticker and they are asked again in two weeks.
+
+If `apply` lists stickers "found in a layout this site does not read yet", include that list in the report. Do not
+try to read them another way.
+
+### Stickers only
+
+To look up stickers without re-reading the dealer's listings (for example after a new source is added):
+
+```
+node scripts/browser-refresh/refresh.mjs stickers          # add --cap 100 to allow more than 60 lookups
+```
+
+It starts from the published inventory, prints the same groups, and is followed by the scan above, `ingest`, `apply`
+and steps 6 to 8. Listings, prices and photos are left exactly as published.
 
 ## 5. Write the data files
 

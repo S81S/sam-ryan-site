@@ -2,6 +2,7 @@
 //   node refresh.mjs ingest [--results <dir>]   collect captured pages and sticker texts from saved tool results
 //   node refresh.mjs build                      validate the capture and build a candidate; lists the VINs to sticker-check
 //   node refresh.mjs apply                      merge sticker results and write data/*.json and data/*.js in the repo
+//   node refresh.mjs stickers [--cap N]         window stickers only: no new capture; lists the VINs due, then ingest + apply
 // Nothing is written to the site's data files until `apply` passes every check.
 import fs from 'node:fs';
 import os from 'node:os';
@@ -9,6 +10,8 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { normalize } from '../../inventory-engine.mjs';
 import { analyzeSticker } from '../../equipment-search.mjs';
+import { analyzeOtherOriginal } from '../../multibrand-sticker.mjs';
+import { stickerSource, stickerUrl, sourceHosts } from './sticker-sources.mjs';
 import { browserInventoryScript, vehiclePhotosJson } from '../browser-data.mjs';
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
@@ -16,7 +19,6 @@ const REPO = path.resolve(HERE, '../..');
 const WORK = process.env.REFRESH_WORK || path.join(os.tmpdir(), 'cws-browser-refresh');
 const PFX = 'https://cloudflareimages.dealereprocess.com/resrc/images/c_limit,fl_lossy,w_auto/v1/dvp/5427/';
 const PER_PAGE = 48, STORE = '18393', HOST = 'www.covertchryslerdodgejeepram.com';
-const STICKER_URL = 'https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=';
 const STALE_HOURS = 30;          // the site warns shoppers once the snapshot is older than this
 const MAX_CAPTURE_AGE = 60 * 60e3; // a capture must be built within an hour of being read
 const STICKER_CAP = 60;          // most sticker lookups in one run
@@ -87,7 +89,8 @@ function ingest(extraDirs) {
     }
   }
   const got = Object.values(stickers);
-  console.log(`\nSticker results: ${got.length} (${got.filter(r => r.text).length} with text, ${got.filter(r => r.small).length} no sticker published, ${got.filter(r => !r.text && !r.small).length} other)`);
+  const none = r => r.small || r.notPdf || r.http === 404;
+  console.log(`\nSticker results: ${got.length} (${got.filter(r => r.text).length} with text, ${got.filter(r => !r.text && none(r)).length} no sticker published, ${got.filter(r => !r.text && !none(r)).length} other)`);
 }
 
 // ---------- validate + build ----------
@@ -155,17 +158,32 @@ export function build(pages, previous, previousEquipment, now = Date.now()) {
   const report = { capturedAt, count, new: inventory.newCount, used: inventory.usedCount, added: changes.filter(c => c.field === 'first-observed').length, removed: removed.length, priceChanges: changes.filter(c => c.field === 'price').length, mileageChanges: changes.filter(c => c.field === 'miles').length, verified, unverified: count - verified };
   return { inventory, equipment, report };
 }
-// Which unverified vehicles are worth a sticker lookup this run: Stellantis brands only (the sticker site covers no
-// others), never-checked first, then new vehicles not checked for 2 days and used ones not checked for 14.
-export function stickerCandidates(inventory, equipment, now = Date.now()) {
+// Which unverified vehicles are worth a sticker lookup this run: every make with a public sticker source
+// (sticker-sources.mjs), never-checked first, then new vehicles not checked for 2 days and used ones not checked for 14.
+export function stickerCandidates(inventory, equipment, now = Date.now(), cap = STICKER_CAP) {
   const due = [];
   for (const v of inventory.vehicles) {
     const r = equipment.records[v.vin];
-    if (r.status === 'verified' || !/\b(Jeep|Ram|Dodge|Chrysler|Fiat|Wagoneer|Alfa Romeo)\b/i.test(v.title)) continue;
+    if (r.status === 'verified' || !stickerSource(v)) continue;
     const age = r.checkedAt ? now - Date.parse(r.checkedAt) : Infinity;
     if (age >= (v.condition === 'New' ? 2 : 14) * 86400e3) due.push([age, v.vin]);
   }
-  return due.sort((a, b) => b[0] - a[0]).slice(0, STICKER_CAP).map(d => d[1]);
+  return due.sort((a, b) => b[0] - a[0]).slice(0, cap).map(d => d[1]);
+}
+// The due VINs grouped by the site each group has to be read from, in the order to work through them.
+export function stickerPlan(vins, inventory) {
+  const byVin = new Map(inventory.vehicles.map(v => [v.vin, v])), groups = new Map();
+  for (const vin of vins) {
+    const source = stickerSource(byVin.get(vin));
+    if (!groups.has(source.id)) groups.set(source.id, { source: source.id, open: source.origin + '/robots.txt', vins: [] });
+    groups.get(source.id).vins.push(vin);
+  }
+  return [...groups.values()];
+}
+function printPlan(plan) {
+  const total = plan.reduce((n, g) => n + g.vins.length, 0);
+  console.log(`\nSticker lookups due: ${total}` + (total ? '' : ' (skip the sticker step)'));
+  for (const g of plan) console.log(`\n  ${g.source}: ${g.vins.length} VIN(s). Open ${g.open} and scan:\n  ${JSON.stringify(g.vins)}`);
 }
 
 // ---------- apply ----------
@@ -175,17 +193,28 @@ function apply() {
   const prevEq = read(path.join(REPO, 'data/equipment-index.json'));
   const wanted = new Set(fs.existsSync(work('sticker-vins.json')) ? read(work('sticker-vins.json')) : []);
   let newly = 0, none = 0;
+  const unread = [];
   for (const v of inv.vehicles) {
-    const t = texts[v.vin];
-    if (!t || !wanted.has(v.vin) || eq.records[v.vin].status === 'verified') continue;
+    const t = texts[v.vin], source = stickerSource(v);
+    if (!t || !source || !wanted.has(v.vin) || eq.records[v.vin].status === 'verified') continue;
     const unavailable = reason => { eq.records[v.vin] = { vin: v.vin, status: 'unavailable', checkedAt: t.at, sourceUrl: null, features: {}, lines: [], reason }; none++; };
-    if (!t.text) { unavailable(t.small ? 'Manufacturer returned no window sticker for this VIN.' : t.error || (t.notPdf ? 'Sticker address did not return a PDF.' : 'HTTP ' + t.http)); continue; }
+    // A result is only used for the source its make is read from. Results saved before sources were recorded came from Chrysler.
+    if ((t.source || 'www.chrysler.com') !== new URL(source.origin).hostname) continue;
+    const noSticker = 'Manufacturer returned no window sticker for this VIN.';
+    if (!t.text) { unavailable(t.small || t.notPdf || t.http === 404 ? noSticker : t.error || 'HTTP ' + t.http); continue; }
+    // Ford answers "not yet released" with a real PDF. A document that does not carry this VIN is not this vehicle's sticker.
+    if (!t.text.toUpperCase().replace(/[^A-Z0-9]/g, '').includes(v.vin)) { unavailable(noSticker); continue; }
     let a;
-    // The browser's PDF reader puts a stray "A" before the header on some stickers; the analyzer expects the header first.
-    try { a = analyzeSticker(t.text.replace(/^A\s+(?=20\d{2} MODEL YEAR)/, ''), v.vin); } catch (e) { unavailable(String(e.message || e)); continue; }
+    try {
+      // The browser's PDF reader puts a stray "A" before the header on some stickers; the analyzer expects the header first.
+      a = source.id === 'stellantis' ? analyzeSticker(t.text.replace(/^A\s+(?=20\d{2} MODEL YEAR)/, ''), v.vin) : analyzeOtherOriginal(t.text, v.vin);
+    } catch (e) { unavailable(String(e.message || e)); continue; }
+    // Only layouts checked against real documents are read. A sticker in any other layout is reported, not guessed at.
+    if (source.id !== 'stellantis' && (!a || a.documentFamily !== source.family)) { unavailable('An original window sticker was found, but its layout is not read automatically yet.'); unread.push(v.vin + ' ' + v.title); continue; }
     if (!a.lines?.length) { unavailable('Sticker had no readable equipment lines.'); continue; }
-    eq.records[v.vin] = { vin: v.vin, status: 'verified', checkedAt: t.at, sourceUrl: STICKER_URL + v.vin, features: a.features, lines: a.lines, identityLines: a.identityLines, engine: a.engine, equipmentSectionComplete: a.equipmentSectionComplete, sha256: t.sha256 };
-    v.stickerUrl = STICKER_URL + v.vin; v.stickerCheckedAt = t.at; v.featuresVerified = true; v.features = v.features || [];
+    const url = stickerUrl(source, v.vin);
+    eq.records[v.vin] = { vin: v.vin, status: 'verified', checkedAt: t.at, sourceUrl: url, features: a.features, lines: a.lines, identityLines: a.identityLines, engine: a.engine, equipmentSectionComplete: a.equipmentSectionComplete, sha256: t.sha256, ...(a.documentFamily ? { documentFamily: a.documentFamily } : {}) };
+    v.stickerUrl = url; v.stickerCheckedAt = t.at; v.featuresVerified = true; v.features = v.features || [];
     newly++;
   }
   const recs = Object.values(eq.records);
@@ -196,8 +225,8 @@ function apply() {
     if ((r.status === 'verified') !== !!v.featuresVerified) throw Error('Verified flag mismatch ' + v.vin);
     if (r.status === 'verified') {
       const u = new URL(r.sourceUrl);
-      if (!['www.chrysler.com', 'www.carfax.com'].includes(u.hostname)) throw Error('Unexpected sticker host ' + u.hostname);
-      if (u.hostname === 'www.chrysler.com' && u.searchParams.get('vin') !== v.vin) throw Error('Sticker address is for another VIN ' + v.vin);
+      if (u.protocol !== 'https:' || ![...sourceHosts(), 'www.carfax.com'].includes(u.hostname)) throw Error('Unexpected sticker host ' + u.hostname);
+      if (u.hostname !== 'www.carfax.com' && u.searchParams.get('vin') !== v.vin) throw Error('Sticker address is for another VIN ' + v.vin);
       if (!r.lines.length) throw Error('Verified record with no lines ' + v.vin);
     }
     const p = prevEq.records[v.vin];
@@ -206,9 +235,10 @@ function apply() {
   const a = JSON.stringify(inv), b = JSON.stringify(eq);
   write(path.join(REPO, 'data/used-inventory.json'), a); write(path.join(REPO, 'data/used-inventory.js'), browserInventoryScript(inv)); write(path.join(REPO, 'data/vehicle-photos.json'), vehiclePhotosJson(inv));
   write(path.join(REPO, 'data/equipment-index.json'), b); write(path.join(REPO, 'data/equipment-index.js'), 'window.equipmentIndex=' + b + ';');
-  const report = { ...read(work('report.json')), newlyVerified: newly, checkedNoSticker: none, verified: eq.verified, unverified: eq.unavailable };
+  const report = { ...read(work('report.json')), newlyVerified: newly, checkedNoSticker: none, stickersNotReadable: unread, verified: eq.verified, unverified: eq.unavailable };
   write(work('report.json'), JSON.stringify(report, null, 2));
   console.log('Data files written.', report);
+  if (unread.length) console.log('\nStickers found in a layout this site does not read yet (report these so a reader can be added):\n  ' + unread.join('\n  '));
   console.log(`\nSuggested commit message:\nRefresh inventory: ${report.count} vehicles (${report.new} new, ${report.used} used), ${report.added} added, ${report.removed} removed, ${report.priceChanges} price changes, ${report.verified} sticker-verified`);
 }
 
@@ -224,7 +254,17 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
     write(work('candidate-inventory.json'), result.inventory); write(work('candidate-equipment.json'), result.equipment); write(work('report.json'), JSON.stringify(result.report, null, 2));
     const vins = stickerCandidates(result.inventory, result.equipment); write(work('sticker-vins.json'), vins);
     console.log('Capture is valid.', result.report);
-    console.log(`\nSticker lookups due: ${vins.length}` + (vins.length ? '\n' + JSON.stringify(vins) : ' (skip the sticker step)'));
+    printPlan(stickerPlan(vins, result.inventory));
+  } else if (command === 'stickers') {
+    // Stickers only: start from the published data instead of a new capture, so listings, prices and photos are untouched.
+    const inventory = read(path.join(REPO, 'data/used-inventory.json')), equipment = read(path.join(REPO, 'data/equipment-index.json'));
+    const cap = rest.includes('--cap') ? Number(rest[rest.indexOf('--cap') + 1]) : STICKER_CAP;
+    if (!Number.isInteger(cap) || cap < 1) throw Error('--cap needs a whole number');
+    const vins = stickerCandidates(inventory, equipment, Date.now(), cap);
+    write(work('candidate-inventory.json'), inventory); write(work('candidate-equipment.json'), equipment); write(work('sticker-vins.json'), vins);
+    write(work('report.json'), JSON.stringify({ capturedAt: inventory.capturedAt, count: inventory.vehicles.length, new: inventory.newCount, used: inventory.usedCount, added: 0, removed: 0, priceChanges: 0, mileageChanges: 0, stickersOnly: true }, null, 2));
+    console.log('Sticker-only run from the published inventory of ' + inventory.vehicles.length + ' vehicles.');
+    printPlan(stickerPlan(vins, inventory));
   } else if (command === 'apply') apply();
-  else { console.log('Usage: node refresh.mjs ingest|build|apply   (work folder: ' + WORK + ')'); process.exit(1); }
+  else { console.log('Usage: node refresh.mjs ingest|build|apply|stickers   (work folder: ' + WORK + ')'); process.exit(1); }
 }
