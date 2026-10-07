@@ -20,6 +20,14 @@ export const wording={
  rearLocker:/locking rear[ -]axle|rear.*locking differential|electronic.*rear.*locker|\btru[ -]?lok (?:rear|front and rear)\b/i,
  // Trac-Lok / anti-spin is a limited-slip rear differential.
  limitedSlip:/\banti[ -]spin\b|\btrac[ -]?lok\b|\blimited[ -]slip\b/i,
+ // Trailer-tow mirrors. On Ram heavy-duty stickers "TT Mirrors" is Trailer Tow, and the telescoping (extending)
+ // mirrors are the tow mirrors: the factory guide lists trailer-tow mirrors as standard on every 2500/3500 trim,
+ // manual on Tradesman and power-adjustable, heated, manual fold and extension from Big Horn up — the sticker's wording.
+ towMirrors:/trailer[ -]tow.*mirror|tow[ -]mirror|\bTT mirrors?\b|\btelescop\w*\b[^,;]*\bmirrors?\b|\bmirrors?\b[^,;]*\btelescop/i,
+ // GM prints its automatic high beams as "IntelliBeam - Auto High Beam".
+ autoHighBeam:/automatic high.?beam|\bintellibeam\b|\bauto high.?beam|\bhigh beam assist\b/i,
+ // Spray-in and spray-on are the same thing: a bedliner.
+ bedliner:/spray.(?:in|on) bed.?liner|bed.?liner, spray.on/i,
  foldMirrors:/\b(?:power|pwr)[ -]fold(?:ing|[ -]away)?\b.*\bmirrors?\b|\bmirrors?\b.*\b(?:power|pwr)[ -]fold|\bpower heat\/fold\b/i,
  // Automatic emergency braking. Brake-hold and post-crash "multi-collision" braking are different things.
  emergencyBrake:/\bemergency[ -]brak|\bcollision\b[^,;]*\b(?:active[ -])?brak|\bcrash mitigation\b|\bpedestrian\b[^,;]*\bbrak/i,
@@ -49,7 +57,7 @@ function read(lines,id){
 // any other saved answer (another make's reader, a reviewed record) is left alone.
 const retired={leather:/\bleatherette\b|\b(?:steering wheel|door trim|shift knob)\b/i,emergencyBrake:/\bbrake[ -]hold\b|\bmulti[ -]collision\b/i};
 // Added when the wording is there; a saved answer is never taken away.
-const added=['leatherette','captains','thirdRow','memorySeats','rearLocker','limitedSlip','foldMirrors','pedestrianBrake','passiveEntry','keylessEntry','pushStart','premiumAudio','outlet','dualClimate','triClimate','quadClimate'];
+const added=['towMirrors','autoHighBeam','bedliner','leatherette','captains','thirdRow','memorySeats','rearLocker','limitedSlip','foldMirrors','pedestrianBrake','passiveEntry','keylessEntry','pushStart','premiumAudio','outlet','dualClimate','triClimate','quadClimate'];
 
 // Four-wheel drive, all-wheel drive and two-wheel drive are different things. Go by what the sticker's model line
 // calls this vehicle (the listing title when that line does not say).

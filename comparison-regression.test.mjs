@@ -316,7 +316,14 @@ test('sticker wording follows the sales-floor rulings',()=>{
  assert.equal(kind(sky,'wrangler soft top'),'excluded');assert.equal(kind(sky,'wrangler sky one touch'),'match');
  // Trucks: Tru-Lok rear is a locker, Trac-Lok is limited slip, "TT" and telescoping mirrors are not tow mirrors.
  const truck=car('New 2026 RAM 2500 POWER WAGON',['Tru-Lok Front and Rear Axles','Pwr Adj Heated TT Mirrors w/ Manual Fold/Telescope','400W Inverter']);
- assert.equal(kind(truck,'ram locking rear differential'),'match');assert.equal(kind(truck,'ram tow mirrors'),'unknown');assert.equal(kind(truck,'ram power folding mirrors'),'unknown');
+ // "TT" is Trailer Tow, and telescoping mirrors are the tow mirrors (factory guide: standard on every 2500/3500).
+ assert.equal(kind(truck,'ram locking rear differential'),'match');assert.equal(kind(truck,'ram tow mirrors'),'match');assert.equal(kind(truck,'ram power folding mirrors'),'unknown');
+ for(const line of ['Manual-Folding Telescoping Black Mirrors','Power Heat/Fold/Telescoping Memory Mirrors','Power Black Trailer-Tow Mirrors w/ Power Fold-Away'])assert.equal(kind(car('New 2026 RAM 2500 TRADESMAN',[line]),'ram tow mirrors'),'match',line);
+ for(const line of ['Power-Heated Mirrors with Power Fold-Away','Tilt/Telescoping Steering Column','Exterior Mirrors with Supplemental Signals'])assert.equal(kind(car('New 2026 RAM 1500 LARAMIE',[line]),'ram tow mirrors'),'unknown',line);
+ // The older 2.0 turbo is not a Hurricane; GM's IntelliBeam is automatic high beams; spray-on is a bedliner.
+ assert.equal(kind(car('New 2026 JEEP WRANGLER 4-DOOR SAHARA',['Engine: 2.0L I4 DOHC DI Turbo Engine with Stop/Start']),'wrangler hurricane'),'excluded');
+ const chevy=car('Used 2024 Chevrolet Colorado ZR2',['• INTELLIBEAM-AUTO HIGH BEAM','• BED LINER, SPRAY ON','• RED RECOVERY HOOKS']);
+ assert.equal(kind(chevy,'colorado automatic high beams'),'match');assert.equal(kind(chevy,'colorado bedliner'),'match');assert.equal(kind(chevy,'colorado tow hooks'),'unknown');
  assert.equal(kind(car('New 2026 RAM 1500 REBEL',['Tru-Lok Front Axle']),'ram locking rear differential'),'unknown');
  assert.equal(kind(car('New 2026 JEEP WRANGLER SPORT',['Trac-Lok Anti-Spin Rear Differential']),'wrangler limited slip'),'match');
  assert.equal(kind(car('New 2026 RAM 1500 LIMITED',['Power-Heated Mirrors with Power Fold-Away']),'ram power folding mirrors'),'match');

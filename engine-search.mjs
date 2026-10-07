@@ -32,8 +32,8 @@ export function engineProfile(text){
  const hemi=/\bhemi\b/i.test(t)||(v8&&[57,62,64].includes(tenths));
  const diesel=/\bdiesel\b/i.test(t);
  return {layout,count,size:tenths,hemi,v8,v6:layout==='v'&&count==='6',pentastar:/\bpentastar\b/i.test(t)||(layout==='v'&&count==='6'&&tenths===36&&!diesel),
-  // The older 2.0 turbo four is never called Hurricane on its sticker; that one is left unanswered rather than guessed.
-  hurricane:named?true:(tenths===20&&/turbo/i.test(t)?null:false),dieselCummins:/\bcummins\b/i.test(t),diesel,turbo:/\bturbo/i.test(t)||sixpack,
+  // Only an engine the sticker names Hurricane (or Sixpack) is one; the older 2.0 turbo four is not.
+  hurricane:named,dieselCummins:/\bcummins\b/i.test(t),diesel,turbo:/\bturbo/i.test(t)||sixpack,
   supercharged:/\bsupercharg/i.test(t)||(hemi&&tenths===62),hybrid:/\bhybrid\b|\bphev\b|\b4xe\b/i.test(t),electric:false};
 }
 const engineKinds=['hemi','v8','v6','pentastar','hurricane','dieselCummins','diesel','turbo','supercharged','hybrid','electric'];
