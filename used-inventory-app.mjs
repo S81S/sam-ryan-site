@@ -1,5 +1,5 @@
-import {openVehiclePreview} from './vehicle-preview.mjs?v=shopping1';
-import {issues,draft,ingest} from './inventory-engine.mjs?v=23-search2';
+import {openVehiclePreview} from './vehicle-preview.mjs';
+import {issues,draft,ingest} from './inventory-engine.mjs';
 const base=window.usedInventoryData;
 let data=base;let visibleLimit=24;
 const panel=document.body.dataset.inventoryPanel==='true';

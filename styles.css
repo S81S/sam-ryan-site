@@ -117,3 +117,9 @@ html{scroll-padding-top:100px}a,button,input,select,textarea{touch-action:manipu
 .match .stock-actions .more-actions-list .mini-btn,.match .stock-actions .more-actions-list .mini-btn:first-child{margin:0;background:#eef2f6;color:#17232e;border-color:transparent}
 .vehicle-search-page .match-list>p.listing-checked{grid-column:1/-1;margin:-10px 0 0;padding:0;border:0;background:none;box-shadow:none;font-size:13px;color:#4e5b66}
 .vehicle-search-page .match-list>p.listing-checked.is-stale{margin-top:0;padding:10px 12px;border-left:4px solid #e5a11a;background:#fff8e8;color:#4a3b12;border-radius:6px}
+
+/* Footer text large enough to read, and footer and review links tall enough to tap on a phone. */
+.footer-inner{font-size:13px;line-height:1.55}
+.footer-links{gap:2px 16px}
+.footer-links a{display:inline-flex;align-items:center;min-height:36px}
+.review-card .source{font-size:12px;min-height:36px;display:inline-flex;align-items:center}

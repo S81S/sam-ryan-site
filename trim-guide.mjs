@@ -1,7 +1,7 @@
-import {optionInventoryLink} from './option-inventory.mjs?v=options4';
+import {optionInventoryLink} from './option-inventory.mjs';
 import {parseQuery} from './equipment-search.mjs';
 import {featureInventoryLink} from './feature-inventory-link.mjs';
-import {equipmentRows,equipmentExplanation,selectedTrimIds,featureMatches} from './trim-comparison.mjs?v=errors1-20261004-alltrims';
+import {equipmentRows,equipmentExplanation,selectedTrimIds,featureMatches} from './trim-comparison.mjs';
 const $=s=>document.querySelector(s), esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const designs=[
  {id:1,title:'The complete table',short:'Everything side by side',description:'One familiar table. Features run down the left; every trim runs across the top. Scroll sideways to see more trims.',recommendation:'Best for shoppers who want all researched details in one place. Can feel wide on a phone.'},

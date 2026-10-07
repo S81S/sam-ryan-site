@@ -28,7 +28,7 @@
 })();
 
 
-import('/sticker-credit.mjs?v=clear1').then(m=>m.installStickerCredits()).catch(()=>{});
+import('/sticker-credit.mjs').then(m=>m.installStickerCredits()).catch(()=>{});
 
 // Photo gallery: thumbnails and arrows swap the main photo in place.
 (() => {

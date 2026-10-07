@@ -1,16 +1,16 @@
-import {installedOptionFact,optionEvidenceReason} from './option-inventory.mjs?v=options4';
-import {engineDefinitions,engineAliases,engineTerms,engineFact} from './engine-search.mjs?v=engines1';
-import {dualRearWheelPattern,secondRowBenchPattern,wheelSeatFeatures} from './wheel-seat-evidence.mjs?v=clean-shopping1';
-import {validSeatEvidence} from './seat-evidence.mjs?v=coverage4';
-import {towEquipmentPattern,brakeControllerPattern} from './tow-evidence.mjs?v=next3';
-import {applyFactoryEquipment} from './factory-equipment.mjs?v=errors1';
-import {flatTowEvidence} from './flat-tow-rules.mjs?v=23-tow26';
-import {interiorColors} from './interior-colors.mjs?v=option1';
-import {exteriorColors,exteriorPaintLines,exteriorColorFact,extractExteriorColors} from './exterior-colors.mjs?v=paint1';
-import {translateSearchTerms} from './search-dictionary.mjs?v=clean-shopping1';
-import {surroundCameraPattern,cameraSearchTerms,tireDefinitions,tireAliases,tireSearchTerms,cameraTireFeatures} from './camera-tire-evidence.mjs?v=equipment1';
-import {wheelFinishDefinitions,wheelFinishAliases,wheelFinishSearchTerms,wheelFinishFeatures} from './wheel-finish-evidence.mjs?v=wheel1';
-import {extractVehicleCategories,matchVehicleCategories,vehicleBodyTypes} from './vehicle-categories.mjs?v=categories1';
+import {installedOptionFact,optionEvidenceReason} from './option-inventory.mjs';
+import {engineDefinitions,engineAliases,engineTerms,engineFact} from './engine-search.mjs';
+import {dualRearWheelPattern,secondRowBenchPattern,wheelSeatFeatures} from './wheel-seat-evidence.mjs';
+import {validSeatEvidence} from './seat-evidence.mjs';
+import {towEquipmentPattern,brakeControllerPattern} from './tow-evidence.mjs';
+import {applyFactoryEquipment} from './factory-equipment.mjs';
+import {flatTowEvidence} from './flat-tow-rules.mjs';
+import {interiorColors} from './interior-colors.mjs';
+import {exteriorColors,exteriorPaintLines,exteriorColorFact,extractExteriorColors} from './exterior-colors.mjs';
+import {translateSearchTerms} from './search-dictionary.mjs';
+import {surroundCameraPattern,cameraSearchTerms,tireDefinitions,tireAliases,tireSearchTerms,cameraTireFeatures} from './camera-tire-evidence.mjs';
+import {wheelFinishDefinitions,wheelFinishAliases,wheelFinishSearchTerms,wheelFinishFeatures} from './wheel-finish-evidence.mjs';
+import {extractVehicleCategories,matchVehicleCategories,vehicleBodyTypes} from './vehicle-categories.mjs';
 export const definitions = [
  ...wheelFinishDefinitions,
  ...engineDefinitions,

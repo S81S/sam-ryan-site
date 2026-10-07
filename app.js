@@ -53,4 +53,4 @@ menuToggle?.addEventListener('click',()=>{const open=menuToggle.getAttribute('ar
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&menuToggle?.getAttribute('aria-expanded')==='true'){menuToggle.setAttribute('aria-expanded','false');primaryNav?.classList.remove('is-open');menuToggle.focus()}});
 
 
-import('/sticker-credit.mjs?v=clear1').then(m=>m.installStickerCredits()).catch(()=>{});
+import('/sticker-credit.mjs').then(m=>m.installStickerCredits()).catch(()=>{});

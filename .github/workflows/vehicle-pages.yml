@@ -40,7 +40,9 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add vehicle-*.html vehicles*.html sitemap-vehicles.xml vehicle-pages-version.json index.html inventory.html data/used-inventory.js data/vehicle-photos.json data/equipment-index.js
+          # -A with quoted patterns also records pages the build removed (vehicles that left the inventory).
+          git add -A -- 'vehicle-*.html' 'vehicles*.html'
+          git add sitemap-vehicles.xml vehicle-pages-version.json index.html inventory.html data/used-inventory.js data/vehicle-photos.json data/equipment-index.js
           if ! git diff --cached --quiet; then
             git commit -m "Update searchable vehicle pages from verified inventory snapshot"
             git push origin HEAD:main

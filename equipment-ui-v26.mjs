@@ -1,12 +1,12 @@
-import {optionFromParams} from './option-inventory.mjs?v=options4';
-import {applyFeatureFilter} from './feature-inventory-link.mjs?v=1';
-import {sameModelOptions,modelName} from './same-model-options.mjs?v=wheel1';
-import {optionGuidance,noMatchGuidance} from './option-guidance.mjs?v=option1';
-import {shoppingContext,comparisonLink} from './shopping-context.mjs?v=audit2';
-import {recoveryOptions} from './search-recovery.mjs?v=wheel1';
-import {openVehiclePreview} from './vehicle-preview.mjs?v=shopping1';
-import {parseQuery,matchVehicle,labels,definitions} from './equipment-search.mjs?v=options4';
-import {categoryLabels} from './vehicle-categories.mjs?v=categories1';
+import {optionFromParams} from './option-inventory.mjs';
+import {applyFeatureFilter} from './feature-inventory-link.mjs';
+import {sameModelOptions,modelName} from './same-model-options.mjs';
+import {optionGuidance,noMatchGuidance} from './option-guidance.mjs';
+import {shoppingContext,comparisonLink} from './shopping-context.mjs';
+import {recoveryOptions} from './search-recovery.mjs';
+import {openVehiclePreview} from './vehicle-preview.mjs';
+import {parseQuery,matchVehicle,labels,definitions} from './equipment-search.mjs';
+import {categoryLabels} from './vehicle-categories.mjs';
 // Display-only cleanup of ALL-CAPS new-vehicle titles from the dealer feed (data keeps the original).
 const KEEP_UPPER=new Set(['SRT','TRX','RHO','AWD','RWD','FWD','GT','R/T','HEMI','WB','CA','II','III','L','S','X','SXT','SLT','HD','EV']),SPECIAL_CASE={PROMASTER:'ProMaster','4X4':'4x4','4X2':'4x2','4XE':'4xe','85TH':'85th'};
 const displayTitle=title=>{const t=String(title||''),m=t.match(/^(New|Used) (\d{4}) (.+)$/);if(!m||m[3]!==m[3].toUpperCase())return t;return m[1]+' '+m[2]+' '+m[3].split(' ').map(w=>SPECIAL_CASE[w]??(KEEP_UPPER.has(w)?w:/^[A-Z]+$/.test(w)?w[0]+w.slice(1).toLowerCase():/^\d+-[A-Z]+$/.test(w)?w.replace(/[A-Z]+$/,x=>x[0]+x.slice(1).toLowerCase()):w)).join(' ');};

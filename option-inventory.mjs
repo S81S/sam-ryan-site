@@ -1,6 +1,6 @@
-import {withComparisonSpecifications,specificationDefinitions} from './comparison-specs.mjs?v=audit3';
-import {featureInventoryLink} from './feature-inventory-link.mjs?v=1';
-import {audioInventoryFeature,installedAudioFact} from './audio-evidence.mjs?v=errors1';
+import {withComparisonSpecifications,specificationDefinitions} from './comparison-specs.mjs';
+import {featureInventoryLink} from './feature-inventory-link.mjs';
+import {audioInventoryFeature,installedAudioFact} from './audio-evidence.mjs';
 const normalize=s=>String(s||'').normalize('NFKC').toLowerCase().replace(/[®™]/g,'').replace(/[\u2010-\u2015]/g,'-').replace(/[^a-z0-9.]+/g,' ').replace(/\s+/g,' ').trim();
 export function optionInventoryLink(fact,context={}){
  const url=new URL(featureInventoryLink('',context),'https://carswithsam.com');url.searchParams.delete('feature');

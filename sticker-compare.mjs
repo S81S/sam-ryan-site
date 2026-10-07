@@ -1,9 +1,9 @@
-import {decodeVIN,normalizeVIN} from './vin-decoder.mjs?v=expert1';
-import {appendStickerCredit,usesWindowStickerOrg} from './sticker-credit.mjs?v=source2';
-import {installVehiclePickers} from './compare-picker.mjs?v=vin-confirmation2';
-const readSticker=async(...args)=>(await import('./sticker-reader.mjs?v=expert1')).readSticker(...args);
-import {shoppingContext} from './shopping-context.mjs?v=shopping1';
-import {openVehiclePreview} from './vehicle-preview.mjs?v=next3';
+import {decodeVIN,normalizeVIN} from './vin-decoder.mjs';
+import {appendStickerCredit,usesWindowStickerOrg} from './sticker-credit.mjs';
+import {installVehiclePickers} from './compare-picker.mjs';
+const readSticker=async(...args)=>(await import('./sticker-reader.mjs')).readSticker(...args);
+import {shoppingContext} from './shopping-context.mjs';
+import {openVehiclePreview} from './vehicle-preview.mjs';
 const vehicles=window.usedInventoryData.vehicles.filter(v=>v.locationId==='18393');
 const index=window.equipmentIndex;
 const validVIN=s=>/^[A-HJ-NPR-Z0-9]{17}$/.test(s);

@@ -1,6 +1,6 @@
-import {validSeatEvidence} from './seat-evidence.mjs?v=coverage4';
-import {wheelFinishDefinitions,wheelFinishFeatures} from './wheel-finish-evidence.mjs?v=wheel1';
-import {definitions,normalizeText} from './equipment-search.mjs?v=wheel1';
+import {validSeatEvidence} from './seat-evidence.mjs';
+import {wheelFinishDefinitions,wheelFinishFeatures} from './wheel-finish-evidence.mjs';
+import {definitions,normalizeText} from './equipment-search.mjs';
 // Only validated document families activate interpretation. No generic VIN decoding.
 export function analyzeOtherOriginal(text,vin){
  const raw=String(text).split(/\r?\n/).map(normalizeText).filter(Boolean);

@@ -1,6 +1,6 @@
 import {getDocument,GlobalWorkerOptions} from './pdf.mjs';
-import {analyzeSticker} from './equipment-search.mjs?v=wheel1';
-import {analyzeOtherOriginal} from './multibrand-sticker.mjs?v=coverage4';
+import {analyzeSticker} from './equipment-search.mjs';
+import {analyzeOtherOriginal} from './multibrand-sticker.mjs';
 GlobalWorkerOptions.workerSrc=new URL('./pdf.worker.mjs',import.meta.url).href;
 export async function readSticker(bytes,vin){
  if(new TextDecoder().decode(bytes.slice(0,5))!=='%PDF-')throw Error('The source did not return a PDF. Equipment has not been changed.');

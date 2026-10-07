@@ -1,5 +1,5 @@
-import {applyFactoryEquipment,equipmentStatus} from './factory-equipment.mjs?v=wheel1';
-import {parseQuery,matchVehicle,definitions} from './equipment-search.mjs?v=wheel1';
+import {applyFactoryEquipment,equipmentStatus} from './factory-equipment.mjs';
+import {parseQuery,matchVehicle,definitions} from './equipment-search.mjs';
 const $=id=>document.getElementById(id),el=(tag,text)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;return n};
 function compareGroup(){
  const out=$('group-results');out.replaceChildren();const text=$('group-query').value.trim();if(!text){out.append(el('p','Enter a model and any must-have features.'));return;}

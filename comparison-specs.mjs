@@ -1,4 +1,4 @@
-import {installedAudioFact} from './audio-evidence.mjs?v=errors1';
+import {installedAudioFact} from './audio-evidence.mjs';
 // Compare installed specifications, not just yes/no feature flags. Only read
 // explicit wording from a verified sticker belonging to the selected VIN.
 const norm=s=>String(s||'').normalize('NFKC').replace(/[\u2010-\u2015]/g,'-').replace(/′′|[“”″]/g,'"').replace(/\s+/g,' ').trim();
