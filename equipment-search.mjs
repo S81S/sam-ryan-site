@@ -280,6 +280,27 @@ export function parseQuery(input){
  if(result.requirements.some(x=>x.id.startsWith('wheel')))result.warnings.push('Wheel finishes are matched to the factory wheel specification. Chrome, polished and black finishes are checked separately. Confirm the currently fitted wheels on a used vehicle.');
  return result;
 }
+// Four-wheel drive, all-wheel drive and two-wheel drive are three different things. Go by what the sticker's model
+// line calls this vehicle (the listing title when the sticker's line does not say): a 4x4 is not AWD, an AWD is not
+// 4x4, and a 4x2, RWD or FWD is neither.
+function drivetrainFact(id,vehicle,sticker){
+ if(id!=='fourWheel'&&id!=='awd')return null;
+ if(sticker?.status!=='verified'||sticker.vin!==vehicle.vin)return null;
+ const kindOf=text=>/\b(?:4X4|4WD)\b/i.test(text)?'fourWheel':/\bAWD\b/i.test(text)?'awd':/\b(?:4X2|2WD|RWD|FWD)\b/i.test(text)?'two':null;
+ const model=(sticker.identityLines||[]).find(kindOf),said=model||(kindOf(vehicle.title)?vehicle.title:null);
+ return said?{value:kindOf(said)===id,evidence:[said]}:null;
+}
+// The sticker's "Interior:" line names what the seats are made of. When it says cloth, vinyl or fabric and no
+// leather, that is a plain "not leather", not something left to confirm; a leather line likewise means "not cloth".
+function seatMaterialFact(id,lines){
+ if(id!=='leather'&&id!=='cloth')return null;
+ const seat=lines.find(l=>/^interior:/i.test(l));
+ if(!seat)return null;
+ const leather=/\bleather(?:ette)?\b|\bmckinley[ -]trimmed\b/i.test(seat),cloth=/\b(?:cloth|fabric)\b/i.test(seat),vinyl=/\bvinyl\b/i.test(seat);
+ if(id==='leather'&&(cloth||vinyl)&&!leather)return {value:false,evidence:[seat]};
+ if(id==='cloth'&&(leather||vinyl)&&!cloth)return {value:false,evidence:[seat]};
+ return null;
+}
 export function matchVehicle(vehicle,sticker,query){
  if(vehicle.locationId!=='18393')return {kind:'excluded',reason:'store'};
  sticker=applyFactoryEquipment(vehicle,sticker);
@@ -334,7 +355,7 @@ export function matchVehicle(vehicle,sticker,query){
   }
  }
  if(unmatched.length&&!unmatched.every(t=>text.split(/[^a-z0-9'-]+/).includes(t)))return {kind:'excluded',reason:'terms'};
- const checks=query.requirements.map(req=>{let fact=engineFact(req.id,sticker)||(sticker?.status==='verified'?sticker.features?.[req.id]:null);if(req.id.startsWith('interior')&&sticker?.status==='verified'){const color=interiorColors.find(c=>c.id===req.id);const interior=lines.filter(l=>/^interior(?: color)?:/i.test(l)).map(l=>l.split(/exterior(?: color)?:/i)[0]);if(color&&interior.length)fact={value:interior.some(l=>new RegExp(color.pattern,'i').test(l)),evidence:interior};}if(sticker?.vin!==vehicle.vin)fact=null;if(req.id.startsWith('exterior'))fact=sticker?.vin===vehicle.vin?exteriorColorFact(req.id,sticker):null;return {...req,label:labels[req.id],sourceUrl:fact?.sourceUrl,method:fact?.method,state:fact?fact.value===req.wanted?'match':'conflict':'unknown',evidence:fact?.evidence||[]};});
+ const checks=query.requirements.map(req=>{let fact=engineFact(req.id,sticker)||drivetrainFact(req.id,vehicle,sticker)||(sticker?.status==='verified'?sticker.features?.[req.id]:null);if(req.id.startsWith('interior')&&sticker?.status==='verified'){const color=interiorColors.find(c=>c.id===req.id);const interior=lines.filter(l=>/^interior(?: color)?:/i.test(l)).map(l=>l.split(/exterior(?: color)?:/i)[0]);if(color&&interior.length)fact={value:interior.some(l=>new RegExp(color.pattern,'i').test(l)),evidence:interior};}if(!fact&&sticker?.status==='verified')fact=seatMaterialFact(req.id,lines);if(sticker?.vin!==vehicle.vin)fact=null;if(req.id.startsWith('exterior'))fact=sticker?.vin===vehicle.vin?exteriorColorFact(req.id,sticker):null;return {...req,label:labels[req.id],sourceUrl:fact?.sourceUrl,method:fact?.method,state:fact?fact.value===req.wanted?'match':'conflict':'unknown',evidence:fact?.evidence||[]};});
  if(query.equipmentOption){const fact=installedOptionFact(vehicle,sticker,query.equipmentOption);checks.push({id:'selectedOption',label:query.equipmentOption.label,wanted:true,state:fact?fact.value?'match':'conflict':'unknown',evidence:fact?.evidence||[],sourceUrl:fact?.sourceUrl,reason:fact?null:optionEvidenceReason(vehicle,sticker,query.equipmentOption)});}
  if(checks.some(c=>c.state==='conflict'))return {kind:'excluded',reason:'equipment',checks};
  if(checks.some(c=>c.state==='unknown'))return {kind:'unknown',checks,categoryChecks:categoryMatch.checks};

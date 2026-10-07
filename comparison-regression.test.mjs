@@ -178,3 +178,28 @@ test('McKinley-trimmed seats count as leather-trimmed, as Jeep describes them',(
  const sticker={vin:v.vin,status:'verified',lines,features:{leather:{value:true,evidence:[lines[0]]}}};
  assert.equal(matchVehicle(v,sticker,parseQuery('new Wrangler sahara with leather seats')).kind,'match');
 });
+test('what the sticker states is an answer, not something left to confirm',()=>{
+ const car=(title,lines,features={},identityLines=[])=>{const v={vin:'stated-test',title,condition:'New',price:1,miles:5,locationId:'18393',locationVerified:true,status:'listed'};return [v,{vin:v.vin,status:'verified',lines,features,identityLines}];};
+ const kind=(pair,text)=>matchVehicle(pair[0],pair[1],parseQuery(text)).kind;
+ // Cloth on the sticker is not leather (and leather is not cloth); a sticker that names neither stays unconfirmed.
+ const cloth=car('New 2026 JEEP WRANGLER 4-DOOR SAHARA',['Interior: Cloth Low-Back Bucket Seats'],{cloth:{value:true,evidence:['Interior: Cloth Low-Back Bucket Seats']}});
+ assert.equal(kind(cloth,'sahara with leather seats'),'excluded');
+ assert.equal(kind(cloth,'sahara with cloth seats'),'match');
+ assert.equal(kind(cloth,'sahara without leather'),'match');
+ const leather=car('New 2026 RAM 1500 LARAMIE',['Interior: Leather-Trimmed Bucket Seats'],{leather:{value:true,evidence:['Interior: Leather-Trimmed Bucket Seats']}});
+ assert.equal(kind(leather,'ram with cloth seats'),'excluded');
+ assert.equal(kind(car('New 2027 JEEP REWIND',['Interior: Rewind Seat with Tag']),'leather seats'),'unknown');
+ // 4x4, AWD and two-wheel drive are different things; go by what the sticker's model line calls the vehicle.
+ const fourByFour=car('New 2026 RAM 1500 LARAMIE CREW CAB 4X4',['Heated Front Seats'],{},['2026 MODEL YEAR','RAM 1500 LARAMIE CREW CAB 4X4']);
+ assert.equal(kind(fourByFour,'ram 4x4'),'match');
+ assert.equal(kind(fourByFour,'ram awd'),'excluded');
+ const awd=car('New 2026 DODGE DURANGO GT PLUS AWD',['All-Wheel Drive'],{awd:{value:true,evidence:['All-Wheel Drive']}},['2026 MODEL YEAR','DURANGO GT PLUS AWD']);
+ assert.equal(kind(awd,'durango awd'),'match');
+ assert.equal(kind(awd,'durango 4wd'),'excluded');
+ const twoWheel=car('New 2026 RAM 1500 LONE STAR CREW CAB 4X2',['Heated Front Seats'],{},['2026 MODEL YEAR','RAM 1500 LONE STAR CREW CAB 4X2']);
+ assert.equal(kind(twoWheel,'ram 4x4'),'excluded');
+ assert.equal(kind(twoWheel,'ram awd'),'excluded');
+ // No sticker on file: nothing is claimed either way.
+ const [v]=car('New 2027 JEEP SAHARA',[]);
+ assert.equal(matchVehicle(v,{vin:v.vin,status:'unavailable',lines:[],features:{}},parseQuery('sahara 4x4')).kind,'unknown');
+});
