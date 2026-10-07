@@ -1,4 +1,5 @@
 import {shoppingContext,comparisonLink} from './shopping-context.mjs?v=audit2';
+import {vehiclePhotos} from './vehicle-photos.mjs?v=1';
 // Keep the shopper's vehicle context on Cars With Sam.
 let dialog;
 const element = (tag, text, className) => {
@@ -27,16 +28,25 @@ export function openVehiclePreview(vehicle, request = '') {
   const title = element('h2', vehicle.title);
   title.id = 'vehicle-preview-title';
   dialog.append(close, title);
-  const photoUrls=[...new Set([vehicle.photoUrl,...(Array.isArray(vehicle.photoUrls)?vehicle.photoUrls:[])].filter(u=>typeof u==='string'&&u.startsWith('https://')))];
+  // The page's inventory carries one main photo; the rest of the gallery loads when this preview opens.
+  const usable=list=>[...new Set(list.filter(u=>typeof u==='string'&&u.startsWith('https://')))];
+  const galleryLoaded=Array.isArray(vehicle.photoUrls),opened=dialog.previewOpened=Symbol(vehicle.vin);
+  let photoUrls=usable([vehicle.photoUrl,...(galleryLoaded?vehicle.photoUrls:[])]);
   if(photoUrls.length){
-    let current=0;const image=element('img');image.className='vehicle-preview-photo';image.alt=vehicle.title;image.decoding='async';
+    let current=0,hasButtons=false;const image=element('img');image.className='vehicle-preview-photo';image.alt=vehicle.title;image.decoding='async';
     const count=element('p');count.setAttribute('role','status');
     const show=()=>{image.src=photoUrls[current];count.textContent=`Photo ${current+1} of ${photoUrls.length}`;};
     image.addEventListener('error',()=>{count.textContent='This photo is unavailable. Ask your advisor for current photos.';});
-    const nav=element('div',null,'gallery-nav');
-    if(photoUrls.length>1){for(const [label,step] of [['Previous photo',-1],['Next photo',1]]){const button=element('button',label,'mini-btn');button.type='button';button.addEventListener('click',()=>{current=(current+step+photoUrls.length)%photoUrls.length;show()});nav.append(button)}}
-    nav.append(count);dialog.append(image,nav);show();
-    if(photoUrls.length===1)dialog.append(element('p','One listing photo is available here. Ask us for more photos or a walkaround video.','stock-small'));
+    const nav=element('div',null,'gallery-nav');nav.append(count);
+    const addButtons=()=>{if(hasButtons||photoUrls.length<2)return;hasButtons=true;for(const [label,step] of [['Previous photo',-1],['Next photo',1]]){const button=element('button',label,'mini-btn');button.type='button';button.addEventListener('click',()=>{current=(current+step+photoUrls.length)%photoUrls.length;show()});nav.insertBefore(button,count)}};
+    const onePhoto=()=>{if(photoUrls.length===1)nav.after(element('p','One listing photo is available here. Ask us for more photos or a walkaround video.','stock-small'));};
+    addButtons();dialog.append(image,nav);show();
+    if(galleryLoaded)onePhoto();
+    else{
+      if(vehicle.photoCount>1)count.textContent=`Photo 1 of ${vehicle.photoCount} · loading the rest…`;
+      vehiclePhotos(vehicle).then(more=>{if(dialog.previewOpened!==opened)return;photoUrls=usable([vehicle.photoUrl,...more]);addButtons();show();onePhoto();})
+        .catch(()=>{if(dialog.previewOpened===opened)count.textContent='Photo 1. More photos could not load. Ask us for current photos.';});
+    }
   } else dialog.append(element('p','Ask us for current photos of this vehicle.'));
   const checked=vehicle.photoCheckedAt||vehicle.observedAt; if(checked)dialog.append(element('p','Listing photo saved '+new Date(checked).toLocaleDateString()+'. Listing photos may include manufacturer stock images.','stock-small'));
   const price = vehicle.price == null ? 'Ask for price' : new Intl.NumberFormat('en-US', {style:'currency', currency:'USD', maximumFractionDigits:0}).format(vehicle.price);

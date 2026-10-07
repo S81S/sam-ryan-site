@@ -1,5 +1,5 @@
 {
-  "note": "Example searches the home page search bar types, in order. scripts/home-examples.mjs checks each one against the current inventory and writes the ones that still find vehicles into index.html. Keep each example to 24 characters or fewer so it fits the bar on a narrow phone.",
+  "note": "Example searches the search bar types on the home page and on Find Your Car, in order. scripts/home-examples.mjs checks each one against the current inventory and writes the ones that still find vehicles into index.html and inventory.html. Keep each example to 24 characters or fewer so it fits the bar on a narrow phone.",
   "minimumMatches": 3,
   "examples": [
     "Ram 1500 Night Edition",

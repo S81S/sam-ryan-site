@@ -9,6 +9,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { normalize } from '../../inventory-engine.mjs';
 import { analyzeSticker } from '../../equipment-search.mjs';
+import { browserInventoryScript, vehiclePhotosJson } from '../browser-data.mjs';
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const REPO = path.resolve(HERE, '../..');
@@ -203,7 +204,7 @@ function apply() {
     if (p?.status === 'verified' && JSON.stringify(p) !== JSON.stringify(r)) throw Error('An already-verified sticker record changed ' + v.vin);
   }
   const a = JSON.stringify(inv), b = JSON.stringify(eq);
-  write(path.join(REPO, 'data/used-inventory.json'), a); write(path.join(REPO, 'data/used-inventory.js'), 'window.usedInventoryData=' + a + ';');
+  write(path.join(REPO, 'data/used-inventory.json'), a); write(path.join(REPO, 'data/used-inventory.js'), browserInventoryScript(inv)); write(path.join(REPO, 'data/vehicle-photos.json'), vehiclePhotosJson(inv));
   write(path.join(REPO, 'data/equipment-index.json'), b); write(path.join(REPO, 'data/equipment-index.js'), 'window.equipmentIndex=' + b + ';');
   const report = { ...read(work('report.json')), newlyVerified: newly, checkedNoSticker: none, verified: eq.verified, unverified: eq.unavailable };
   write(work('report.json'), JSON.stringify(report, null, 2));

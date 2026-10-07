@@ -1,0 +1,13 @@
+/* The one search bar, used on the home page and on Find Your Car. */
+.hs-bar{display:flex;align-items:center;gap:10px;box-sizing:border-box;min-height:56px;padding:4px 5px 4px 18px;border:1px solid #dfe3e8;border-radius:999px;background:#fff;color:#5b6875;box-shadow:0 2px 12px #0007;text-align:left}
+.hs-bar:focus-within{outline:3px solid #ffc447;outline-offset:2px}
+.hs-bar .hs-mag{flex:0 0 auto}
+.hs-bar .hs-input{flex:1;min-width:0;width:auto;height:46px;margin:0;padding:0;border:0;border-radius:0;background:transparent;color:#14202b;font:inherit;font-size:17px;outline:0;box-shadow:none;-webkit-appearance:none;appearance:none}
+.hs-bar .hs-input::placeholder{color:#5b6875;opacity:1}
+.hs-bar .hs-input::-webkit-search-cancel-button{-webkit-appearance:none}
+.hs-bar .hs-round{flex:0 0 46px;display:flex;align-items:center;justify-content:center;width:46px;height:46px;min-height:0;margin:0;padding:0;border:0;border-radius:50%;background:#bd1424;color:#fff;cursor:pointer;box-shadow:none}
+.hs-bar .hs-round:hover{background:#a91120}
+.hs-bar .hs-round:focus-visible{outline:3px solid #ffc447;outline-offset:2px}
+@media(max-width:900px){.hs-bar .hs-input{font-size:16px}}
+@media(max-width:360px){.hs-bar{gap:8px;padding-left:16px}.hs-bar>.hs-mag{display:none}}
+@media(max-width:330px){.hs-bar .hs-input::placeholder{font-size:15px}}

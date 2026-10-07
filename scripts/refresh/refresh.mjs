@@ -23,6 +23,7 @@ import { normalize } from '../../inventory-engine.mjs';
 import { crawlAll } from './fetchInventory.mjs';
 import { fetchStickersForVins } from './fetchStickers.mjs';
 import { validateCapture, mergeSticker } from './guards.mjs';
+import { browserInventoryScript, vehiclePhotosJson } from '../browser-data.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '../..');
@@ -213,7 +214,8 @@ export async function run({ log = console, stickerLimit } = {}) {
 
   await fs.mkdir(path.dirname(INVENTORY_JSON), { recursive: true });
   await fs.writeFile(INVENTORY_JSON, JSON.stringify(inventory));
-  await fs.writeFile(INVENTORY_JS, `window.usedInventoryData=${JSON.stringify(inventory)};`);
+  await fs.writeFile(INVENTORY_JS, browserInventoryScript(inventory));
+  await fs.writeFile(path.join(ROOT, 'data/vehicle-photos.json'), vehiclePhotosJson(inventory));
   await fs.writeFile(EQUIPMENT_JSON, JSON.stringify(equipment));
   await fs.writeFile(EQUIPMENT_JS, `window.equipmentIndex=${JSON.stringify(equipment)};`);
 

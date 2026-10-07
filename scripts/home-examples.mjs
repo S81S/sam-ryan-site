@@ -1,16 +1,16 @@
 #!/usr/bin/env node
 // Keeps the home page search bar's typed examples honest.
 //
-// The bar on index.html types example searches. Inventory changes daily, so an
+// The search bar on the home page and on Find Your Car types example searches. Inventory changes daily, so an
 // example that found vehicles last week can come up empty today. This script
 // runs every example in home-search-examples.json through the site's own search
 // (parseQuery + matchVehicle, the same code the Find Your Car page uses) against
 // the current data files, and writes the examples that still find vehicles into
-// index.html, in their listed order. An example that comes back later returns
+// both pages, in their listed order. An example that comes back later returns
 // on its own.
 //
-//   node scripts/home-examples.mjs           update index.html if needed
-//   node scripts/home-examples.mjs --check   report only; exit 1 if index.html is out of date
+//   node scripts/home-examples.mjs           update the pages if needed
+//   node scripts/home-examples.mjs --check   report only; exit 1 if a page is out of date
 import {readFileSync, writeFileSync} from 'node:fs';
 import {parseQuery, matchVehicle} from '../equipment-search.mjs';
 
@@ -38,16 +38,23 @@ for (const row of rows) {
   console.log(String(row.matches).padStart(4) + '  ' + row.text.padEnd(26) + verdict);
 }
 if (kept.length < KEEP_AT_LEAST) {
-  console.log('Only ' + kept.length + ' examples find vehicles; leaving index.html unchanged. Check the inventory data.');
+  console.log('Only ' + kept.length + ' examples find vehicles; leaving the pages unchanged. Check the inventory data.');
   process.exit(checkOnly ? 1 : 0);
 }
 
 const attribute = value => value.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
-const html = read('index.html');
-const pattern = /(<input id="home-q"[^>]*? placeholder=")[^"]*("[^>]*? data-examples=')[^']*(')/;
-if (!pattern.test(html)) throw new Error('index.html: home search bar not found');
-const updated = html.replace(pattern, (all, a, b, c) => a + attribute(kept[0]) + b + attribute(JSON.stringify(kept)).replace(/&quot;/g, '"') + c);
-if (updated === html) { console.log('index.html already shows these ' + kept.length + ' examples.'); process.exit(0); }
-if (checkOnly) { console.log('index.html is out of date: it should show ' + kept.length + ' examples.'); process.exit(1); }
-writeFileSync(at('index.html'), updated);
-console.log('index.html updated: ' + kept.length + ' of ' + rows.length + ' examples shown.');
+// Every search bar that types examples: the home page and Find Your Car.
+const pages = ['index.html', 'inventory.html'];
+const pattern = /(<input [^>]*? placeholder=")[^"]*("[^>]*? data-examples=')[^']*(')/;
+let stale = 0;
+for (const page of pages) {
+  const html = read(page);
+  if (!pattern.test(html)) throw new Error(page + ': search bar with data-examples not found');
+  const updated = html.replace(pattern, (all, a, b, c) => a + attribute(kept[0]) + b + attribute(JSON.stringify(kept)).replace(/&quot;/g, '"') + c);
+  if (updated === html) { console.log(page + ' already shows these ' + kept.length + ' examples.'); continue; }
+  stale++;
+  if (checkOnly) { console.log(page + ' is out of date: it should show ' + kept.length + ' examples.'); continue; }
+  writeFileSync(at(page), updated);
+  console.log(page + ' updated: ' + kept.length + ' of ' + rows.length + ' examples shown.');
+}
+process.exit(checkOnly && stale ? 1 : 0);

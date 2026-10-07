@@ -12,7 +12,7 @@ Follow the steps in order. A full run is about 15 page reads plus a sticker scan
 - Publish only when `build` and `apply` both pass. If any step fails and the fix below does not clear it, publish
   nothing, leave the live site as it is, and report what failed.
 - Never loosen a check in `refresh.mjs` to get a run through.
-- Change only the four data files in step 6. Nothing else in the repo is part of a refresh.
+- Change only the five data files in step 6. Nothing else in the repo is part of a refresh.
 - If either site shows a human-verification check or a block page, stop and report. Do not try to get past it.
 - Read only the store's own search pages (`lc=18393`) and the manufacturer's window-sticker files. No sign-in is needed
   for either.
@@ -94,13 +94,13 @@ are picked up on a later run.
 node scripts/browser-refresh/refresh.mjs apply
 ```
 
-It merges the sticker results, re-checks that no already-verified sticker record changed, writes the four data
+It merges the sticker results, re-checks that no already-verified sticker record changed, writes the five data
 files, and prints a suggested commit message.
 
 ## 6. Publish
 
 ```
-git add data/used-inventory.json data/used-inventory.js data/equipment-index.json data/equipment-index.js
+git add data/used-inventory.json data/used-inventory.js data/equipment-index.json data/equipment-index.js data/vehicle-photos.json
 git commit -m "<the suggested message>"
 git push origin main
 ```
