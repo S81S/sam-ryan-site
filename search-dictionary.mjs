@@ -517,7 +517,9 @@ export const searchDictionary = [
     "label": "Forward collision warning",
     "phrases": [
       "forward collision warning",
+      "forward collision alert",
       "collision warning",
+      "collision alert",
       "fcw"
     ]
   },

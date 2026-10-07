@@ -323,7 +323,13 @@ test('sticker wording follows the sales-floor rulings',()=>{
  // The older 2.0 turbo is not a Hurricane; GM's IntelliBeam is automatic high beams; spray-on is a bedliner.
  assert.equal(kind(car('New 2026 JEEP WRANGLER 4-DOOR SAHARA',['Engine: 2.0L I4 DOHC DI Turbo Engine with Stop/Start']),'wrangler hurricane'),'excluded');
  const chevy=car('Used 2024 Chevrolet Colorado ZR2',['• INTELLIBEAM-AUTO HIGH BEAM','• BED LINER, SPRAY ON','• RED RECOVERY HOOKS']);
- assert.equal(kind(chevy,'colorado automatic high beams'),'match');assert.equal(kind(chevy,'colorado bedliner'),'match');assert.equal(kind(chevy,'colorado tow hooks'),'unknown');
+ assert.equal(kind(chevy,'colorado automatic high beams'),'match');assert.equal(kind(chevy,'colorado bedliner'),'match');
+ // Recovery hooks and tow hooks are the same thing; GM's Forward Collision Alert is forward collision warning.
+ assert.equal(kind(chevy,'colorado tow hooks'),'match');assert.equal(kind(chevy,'colorado recovery hooks'),'match');
+ assert.equal(kind(car('Used 2024 Chevrolet Silverado 1500',['*FORWARD COLLISION ALERT']),'silverado forward collision warning'),'match');
+ // "No Soft Top" means no soft top, even with the standard soft top printed further up the sticker.
+ const replaced=car('New 2026 JEEP WRANGLER 4-DOOR SPORT S',['Black Sunrider Soft Top','Black 3-Piece Hard Top $1,895','No Soft Top'],null,{softTop:{value:true,evidence:['Black Sunrider Soft Top','No Soft Top']},hardTop:{value:true,evidence:['Black 3-Piece Hard Top $1,895']}});
+ assert.equal(kind(replaced,'wrangler soft top'),'excluded');assert.equal(kind(replaced,'wrangler hard top'),'match');assert.equal(kind(replaced,'wrangler without soft top'),'match');
  assert.equal(kind(car('New 2026 RAM 1500 REBEL',['Tru-Lok Front Axle']),'ram locking rear differential'),'unknown');
  assert.equal(kind(car('New 2026 JEEP WRANGLER SPORT',['Trac-Lok Anti-Spin Rear Differential']),'wrangler limited slip'),'match');
  assert.equal(kind(car('New 2026 RAM 1500 LIMITED',['Power-Heated Mirrors with Power Fold-Away']),'ram power folding mirrors'),'match');

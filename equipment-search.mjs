@@ -41,7 +41,7 @@ export const definitions = [
  ["rearAir","Rear air conditioning",new RegExp("rear.*air.condition|rear.*a/c","i")],
  ["parkingSensors","Parking sensors",new RegExp("parksense|park.assist","i")],
  ["laneAssist","Lane assistance",new RegExp("lane.management|lane.keep|lane.departure|lanesense","i")],
- ["forwardWarning","Forward collision warning",new RegExp("forward.collision warning","i")],
+ ["forwardWarning","Forward collision warning",wording.forwardWarning],
  ["emergencyBrake","Automatic emergency braking",wording.emergencyBrake],
  ["pedestrianBrake","Pedestrian emergency braking",wording.pedestrianBrake],
  ["rearCross","Rear cross-path detection",new RegExp("cross.path|cross.traffic","i")],
@@ -70,7 +70,7 @@ export const definitions = [
  ["rearLocker","Locking rear differential",wording.rearLocker],
  ["limitedSlip","Limited-slip rear differential",wording.limitedSlip],
  ["skidPlates","Skid plates",new RegExp("skid.plate","i")],
- ["towHooks","Tow hooks",new RegExp("tow.hooks","i")],
+ ["towHooks","Tow hooks",wording.towHooks],
  ["runningBoards","Running boards / side steps",new RegExp("running.board|side.step|tubular.side","i")],
  ["powerBoards","Power running boards",new RegExp("power.*running.board","i")],
  ["tonneau","Tonneau cover",new RegExp("tonneau","i")],
@@ -131,7 +131,7 @@ export function analyzeSticker(text,vin){
  for(const [id,,pattern] of definitions){
   const pool=id.startsWith('exterior')?exteriorPaintLines(raw):id.startsWith('interior')?raw.filter(l=>/^interior(?: color)?:/i.test(l)).map(l=>l.split(/exterior(?: color)?:/i)[0]):['hemi','v8','diesel','electric','hybrid'].includes(id)?(engine?[engine]:[]):lines;
   const evidence=pool.filter(l=>pattern.test(l)&&validSeatEvidence(id,l));
-  const negative=evidence.filter(l=>/\b(?:delete|deleted|deletion|without|not equipped|not included|no sunroof|no moonroof)\b/i.test(l));
+  const negative=evidence.filter(l=>/\b(?:delete|deleted|deletion|without|not equipped|not included|no sunroof|no moonroof|no soft[ -]?top|no hard[ -]?top)\b/i.test(l));
   const positive=evidence.filter(l=>!negative.includes(l)&&!/^optional equipment|if equipped|available separately/i.test(l)&&(!/N\/A.*manual transmission/i.test(l)||lines.some(x=>/^transmission:.*automatic/i.test(x))));
   // A factory deletion overrides a standard-equipment mention.
   if(negative.length)features[id]={value:false,evidence:negative.slice(0,2)};

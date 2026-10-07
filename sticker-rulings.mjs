@@ -26,6 +26,10 @@ export const wording={
  towMirrors:/trailer[ -]tow.*mirror|tow[ -]mirror|\bTT mirrors?\b|\btelescop\w*\b[^,;]*\bmirrors?\b|\bmirrors?\b[^,;]*\btelescop/i,
  // GM prints its automatic high beams as "IntelliBeam - Auto High Beam".
  autoHighBeam:/automatic high.?beam|\bintellibeam\b|\bauto high.?beam|\bhigh beam assist\b/i,
+ // Recovery hooks and tow hooks are the same thing.
+ towHooks:/\btow[ -]hooks?\b|\brecovery[ -]hooks?\b/i,
+ // GM's "Forward Collision Alert" is forward collision warning.
+ forwardWarning:/\bforward[ -]collision[ -](?:warning|warn\b|alert)/i,
  // Spray-in and spray-on are the same thing: a bedliner.
  bedliner:/spray.(?:in|on) bed.?liner|bed.?liner, spray.on/i,
  foldMirrors:/\b(?:power|pwr)[ -]fold(?:ing|[ -]away)?\b.*\bmirrors?\b|\bmirrors?\b.*\b(?:power|pwr)[ -]fold|\bpower heat\/fold\b/i,
@@ -57,7 +61,7 @@ function read(lines,id){
 // any other saved answer (another make's reader, a reviewed record) is left alone.
 const retired={leather:/\bleatherette\b|\b(?:steering wheel|door trim|shift knob)\b/i,emergencyBrake:/\bbrake[ -]hold\b|\bmulti[ -]collision\b/i};
 // Added when the wording is there; a saved answer is never taken away.
-const added=['towMirrors','autoHighBeam','bedliner','leatherette','captains','thirdRow','memorySeats','rearLocker','limitedSlip','foldMirrors','pedestrianBrake','passiveEntry','keylessEntry','pushStart','premiumAudio','outlet','dualClimate','triClimate','quadClimate'];
+const added=['towMirrors','autoHighBeam','bedliner','towHooks','forwardWarning','leatherette','captains','thirdRow','memorySeats','rearLocker','limitedSlip','foldMirrors','pedestrianBrake','passiveEntry','keylessEntry','pushStart','premiumAudio','outlet','dualClimate','triClimate','quadClimate'];
 
 // Four-wheel drive, all-wheel drive and two-wheel drive are different things. Go by what the sticker's model line
 // calls this vehicle (the listing title when that line does not say).
@@ -106,6 +110,9 @@ export function applyRulings(vehicle,sticker){
  const bench=features.secondRowBench?.value===true?features.secondRowBench:wheelSeatFeatures(lines).secondRowBench;
  if(bench?.value===true&&!features.captains)set('captains',{value:false,evidence:bench.evidence||[]});
  // Tops: a Sky One-Touch roof is not a soft top; a hard top with no soft top listed has no soft top, and the reverse.
+ // A "No Soft Top" line means exactly that: the hard top replaced it.
+ const noSoftTop=lines.find(l=>/^no soft[ -]?top\b/i.test(l));
+ if(noSoftTop)set('softTop',{value:false,evidence:[noSoftTop]});
  if(yes('skyRoof'))set('softTop',{value:false,evidence:because('skyRoof')});
  if(yes('hardTop')&&!features.softTop)set('softTop',{value:false,evidence:because('hardTop')});
  if(yes('softTop')&&!features.hardTop)set('hardTop',{value:false,evidence:because('softTop')});
