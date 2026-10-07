@@ -156,3 +156,16 @@ test('selected equipment survives comparison links and advisor requests',async()
  assert.equal(installedOptionFact(vehicle,s,option).value,true);
  assert.equal(installedOptionFact(vehicle,s,{...option,value:'8.4 inches'}).value,false);
  });
+test('a named edition is matched as one name, not as two loose words',()=>{
+ const kind=(title,lines,text)=>{const v={vin:'edition-test',title,condition:'New',price:1,miles:5,locationId:'18393',locationVerified:true,status:'listed'};return matchVehicle(v,{vin:v.vin,status:'verified',lines,features:{}},parseQuery(text)).kind;};
+ const night=['Night Edition','Rear-View Day / Night Mirror'],anniversary=['Jeep 85th Anniversary Edition','Rear-View Day / Night Mirror'];
+ assert.equal(kind('New 2026 RAM 1500 LONE STAR',night,'Ram 1500 Night Edition'),'match');
+ assert.equal(kind('New 2026 RAM 1500 LONE STAR',night,'night edition'),'match');
+ // An 85th Anniversary Edition has a day/night mirror and the word "edition", but it is not a Night Edition.
+ assert.equal(kind('New 2026 JEEP GRAND CHEROKEE 85TH ANNIVERSARY EDITION 4X4',anniversary,'night edition'),'excluded');
+ assert.equal(kind('New 2026 JEEP GRAND CHEROKEE 85TH ANNIVERSARY EDITION 4X4',anniversary,'85th edition'),'match');
+ assert.equal(kind('New 2026 JEEP GRAND CHEROKEE 85TH ANNIVERSARY EDITION 4X4',anniversary,'85th anniversary edition'),'match');
+ // "Edition" after a name that is already in the title is how people talk, even when the title leaves the word out.
+ assert.equal(kind('New 2026 RAM 1500 LONE STAR',['Rear-View Day / Night Mirror'],'lone star edition'),'match');
+ assert.equal(kind('New 2026 RAM 1500 LONE STAR',['Rear-View Day / Night Mirror'],'night edition'),'excluded');
+});

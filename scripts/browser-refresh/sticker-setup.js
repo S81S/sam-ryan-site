@@ -5,7 +5,6 @@
 const PATHS = {
   'www.chrysler.com': '/hostd/windowsticker/getWindowStickerPdf.do?vin=',
   'cws.gm.com': '/vs-cws/vehshop/v2/vehicle/windowsticker?vin=',
-  'www.hyundaiusa.com': '/var/hyundai/services/inventory/monroney.pdf?model=Venue&vin=',
   'www.windowsticker.forddirect.com': '/windowsticker.pdf?vin=',
   'www.subaru.com': '/services/vehicles/windowsticker/',
   'carswithsam.com': '/api/original-sticker?vin=',
@@ -20,7 +19,7 @@ window.__readSticker = async vin => {
   const at = new Date().toISOString();
   if (!r.ok) return { vin, at, source, http: r.status };
   const bytes = new Uint8Array(await r.arrayBuffer()), size = bytes.length;
-  // An empty or non-PDF reply is how GM, Hyundai and Subaru say "no sticker for this VIN".
+  // An empty or non-PDF reply is how GM and Subaru say "no sticker for this VIN".
   if (new TextDecoder().decode(bytes.slice(0, 5)) !== '%PDF-') return { vin, at, source, http: r.status, notPdf: true, size };
   if (size < 10000) return { vin, at, source, http: r.status, size, small: true }; // Chrysler's "no sticker for this VIN" placeholder
   const digest = await crypto.subtle.digest('SHA-256', bytes);

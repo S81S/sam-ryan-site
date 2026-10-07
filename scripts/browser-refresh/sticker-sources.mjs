@@ -3,12 +3,13 @@
 // Every source here was tested against real VINs from this store's inventory (October 2026):
 //   stellantis  chrysler.com serves Jeep, Ram, Dodge, Chrysler, Fiat and Alfa Romeo stickers.
 //   gm          cws.gm.com serves Chevrolet, GMC, Buick and Cadillac. An empty reply means GM has none for that VIN.
-//   hyundai     hyundaiusa.com serves Hyundai. A small non-PDF reply means none.
 //   ford        windowsticker.forddirect.com serves Ford and Lincoln, but only while Ford keeps the label on file;
 //               otherwise it returns a "not yet released" page.
 //   subaru      subaru.com serves Subaru (roughly 2021 and newer). A web page instead of a PDF means none.
 //   relay       this site's own /api/original-sticker, which asks WindowSticker.org for the manufacturer's PDF.
-//               Used for makes whose manufacturer address is not public (Kia, Toyota, Lexus, Nissan, Infiniti).
+//               Used for makes whose manufacturer address is not public (Kia, Toyota, Lexus, Nissan, Infiniti), and
+//               for Hyundai: hyundaiusa.com has the file, but it refuses anyone who opens the address directly
+//               ("Sorry, you have been blocked"), so a link to it is useless to a shopper.
 //               Toyota and Lexus only answer for 2025+ vehicles still in a Toyota dealer's stock. Nissan and Infiniti
 //               answer for most 2014+ vehicles, but with a picture of the label (no text), so it is linked, not read.
 // Makes with no public source at all are not listed, so no lookup is attempted for them. Checked October 2026:
@@ -20,7 +21,6 @@
 export const SOURCES = {
   stellantis: { origin: 'https://www.chrysler.com', path: '/hostd/windowsticker/getWindowStickerPdf.do?vin=' },
   gm: { origin: 'https://cws.gm.com', path: '/vs-cws/vehshop/v2/vehicle/windowsticker?vin=' },
-  hyundai: { origin: 'https://www.hyundaiusa.com', path: '/var/hyundai/services/inventory/monroney.pdf?model=Venue&vin=' },
   ford: { origin: 'https://www.windowsticker.forddirect.com', path: '/windowsticker.pdf?vin=' },
   subaru: { origin: 'https://www.subaru.com', path: '/services/vehicles/windowsticker/' },
   relay: { origin: 'https://carswithsam.com', path: '/api/original-sticker?vin=' },
@@ -28,7 +28,7 @@ export const SOURCES = {
 // make at the start of the title (after "New 2026 " / "Used 2021 ") -> [source, the document layout its sticker must have]
 const MAKES = [
   [/^(?:Chevrolet|GMC|Buick|Cadillac)\b/i, 'gm', 'GM'],
-  [/^Hyundai\b/i, 'hyundai', 'Hyundai'],
+  [/^Hyundai\b/i, 'relay', 'Hyundai'],
   [/^(?:Ford|Lincoln)\b/i, 'ford', 'Ford'],
   [/^Kia\b/i, 'relay', 'Kia'],
   [/^Subaru\b/i, 'subaru', 'Subaru'],

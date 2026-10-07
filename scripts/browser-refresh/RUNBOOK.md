@@ -81,9 +81,9 @@ It must print `Capture is valid.` followed by the counts and a list of VINs due 
 
 `build` prints the VINs due for a sticker lookup in groups, one group for each site the stickers are read from, with
 the address to open for that group. The sites are listed in `sticker-sources.mjs`: Chrysler for Jeep, Ram, Dodge and
-Chrysler; GM for Chevrolet, GMC, Buick and Cadillac; Hyundai; Subaru; Ford for Ford and Lincoln; and this site's own
-`/api/original-sticker` for Kia, Toyota, Lexus, Nissan and Infiniti. Makes with no public sticker source are never
-listed.
+Chrysler; GM for Chevrolet, GMC, Buick and Cadillac; Subaru; Ford for Ford and Lincoln; and this site's own
+`/api/original-sticker` for Hyundai, Kia, Toyota, Lexus, Nissan and Infiniti. Makes with no public sticker source are
+never listed.
 
 For each group, in any order:
 

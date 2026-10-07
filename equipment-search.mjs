@@ -308,10 +308,21 @@ export function matchVehicle(vehicle,sticker,query){
   if(!/\bcherokee\b/.test(identity)||grand!==query.terms.includes('grand'))return {kind:'excluded',reason:'model'};
  }
  for(const trim of ['rho','trx','rebel','rubicon','mojave'])if(query.terms.includes(trim)&&!identity.split(/[^a-z0-9'-]+/).includes(trim))return {kind:'excluded',reason:'trim'};
- const unmatched=query.terms.filter(t=>!title.split(/[^a-z0-9'-]+/).includes(t));
+ const titleWords=title.split(/[^a-z0-9'-]+/);
  // Remaining words must be found in the VIN-verified equipment text; listing descriptions are never searched.
  const lines=sticker?.status==='verified'?sticker.lines||[]:[];
  const text=joinUnits(normalizeText(lines.join(' ')).toLowerCase());
+ // A named edition is one thing, not two loose words: "Night Edition" must not match an 85th Anniversary Edition
+ // that happens to have a day/night mirror. The word before "edition" has to name this vehicle (its title), or sit
+ // on the same sticker line as "edition".
+ const named=new Set();
+ for(let i=1;i<query.terms.length;i++){
+  if(query.terms[i]!=='edition')continue;
+  const name=query.terms[i-1];
+  if(!titleWords.includes(name)&&!lines.some(l=>{const words=joinUnits(normalizeText(l).toLowerCase()).split(/[^a-z0-9'-]+/);return words.includes(name)&&words.includes('edition');}))return {kind:'excluded',reason:'terms'};
+  named.add(i).add(i-1);
+ }
+ const unmatched=query.terms.filter((t,i)=>!named.has(i)&&!titleWords.includes(t));
  // Read displacement from the original engine line even for previously scanned stickers.
  if(sticker?.status==='verified'){
   const engineLines=[sticker.engine,...lines.filter(l=>/^engine:/i.test(l))].filter(Boolean);

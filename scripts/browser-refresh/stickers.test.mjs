@@ -17,7 +17,7 @@ test('each make is read from its own source, and makes without a public source a
   assert.equal(source('Used 2026 Chevrolet Traverse Z71'), 'gm');
   assert.equal(source('Used 2025 GMC Sierra 1500 SLT'), 'gm');
   assert.equal(source('Used 2023 Cadillac XT4 Premium Luxury'), 'gm');
-  assert.equal(source('Used 2025 Hyundai Palisade XRT'), 'hyundai');
+  assert.equal(source('Used 2025 Hyundai Palisade XRT'), 'relay');
   assert.equal(source('Used 2022 Ford F-150 Lariat'), 'ford');
   assert.equal(source('Used 2023 Kia Telluride SX X-LINE'), 'relay');
   assert.equal(source('Used 2024 Subaru Forester Sport'), 'subaru');
@@ -86,7 +86,7 @@ test('the nightly plan asks every source for its own makes', () => {
   const records = Object.fromEntries(vehicles.map(v => [v.vin, {vin: v.vin, status: 'unavailable', checkedAt: null}]));
   const due = stickerCandidates({vehicles}, {records});
   assert.deepEqual(due.sort(), ['1C4PJXEG3VW581069', '1GNEVJKS2TJ172614', '5NMP5DG18SH062691']);
-  assert.deepEqual(stickerPlan(due, {vehicles}).map(g => g.source).sort(), ['gm', 'hyundai', 'stellantis']);
+  assert.deepEqual(stickerPlan(due, {vehicles}).map(g => g.source).sort(), ['gm', 'relay', 'stellantis']);
 });
 
 test('Subaru is read from subaru.com, which puts the VIN in the path', () => {
@@ -112,11 +112,13 @@ test('Subaru is read from subaru.com, which puts the VIN in the path', () => {
 test('a sticker that exists but cannot be read is linked, and claims no equipment', () => {
   // A rental-fleet Hyundai label: price and colours, no equipment list.
   const palisade = {vin: 'KM8R24GE7SU862018', title: 'Used 2025 Hyundai Palisade SEL'};
-  const fleet = stickerOutcome(palisade, {vin: palisade.vin, at: '2026-10-07T03:30:59.118Z', source: 'www.hyundaiusa.com', http: 200, size: 212670, sha256: 'z', text: fixture('hyundai-fleet-KM8R24GE7SU862018')});
+  const fleet = stickerOutcome(palisade, {vin: palisade.vin, at: '2026-10-07T03:30:59.118Z', source: 'carswithsam.com', http: 200, size: 212670, sha256: 'z', text: fixture('hyundai-fleet-KM8R24GE7SU862018')});
   assert.equal(fleet.kind, 'found');
   assert.equal(fleet.record.status, 'unavailable');
   assert.equal(fleet.record.stickerFound, true);
-  assert.equal(fleet.record.sourceUrl, 'https://www.hyundaiusa.com/var/hyundai/services/inventory/monroney.pdf?model=Venue&vin=KM8R24GE7SU862018');
+  // Hyundai's own address refuses anyone who opens it directly, so the link is one a shopper can open.
+  assert.equal(fleet.record.sourceUrl, 'https://carswithsam.com/api/original-sticker?vin=KM8R24GE7SU862018');
+  assert.ok(!sourceHosts().includes('www.hyundaiusa.com'));
   assert.deepEqual([fleet.record.features, fleet.record.lines], [{}, []]);
   // Nissan's copy is a picture: the only text is its notice, with no VIN.
   const kicks = {vin: '3N8AP6DA4SL312953', title: 'Used 2025 Nissan Kicks SR'};
