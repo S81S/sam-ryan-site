@@ -84,5 +84,5 @@ $('#table-output').addEventListener('click',e=>{const b=e.target.closest('[data-
 $('#feature-dialog .close').addEventListener('click',()=>$('#feature-dialog').close());$('.dialog-done').addEventListener('click',()=>$('#feature-dialog').close());
 phoneLayout.addEventListener('change',()=>{if(accepted&&model)renderEquipment()});
 try{const response=await fetch('trim-standard-data.json');if(!response.ok)throw Error('Catalog unavailable');data=await response.json();chooseModel(params.get('model')||(accepted?'wrangler':'chrysler-pacifica'),true);document.documentElement.dataset.ready='true'}catch(e){$('#table-output').innerHTML='<p class="empty-state">The equipment guide could not load. Please refresh the page.</p>';console.error(e)}
-// Ghost-arrow walkthrough of this page. For now it only runs when the address asks for a preview (?hint=1, 2 or 3).
-{const hint=params.get('hint');if(/^[123]$/.test(hint||''))import('./trim-hint.mjs').then(m=>m.startTrimHint({variant:Number(hint),preview:true})).catch(e=>console.error(e));}
+// Ghost-arrow walkthrough of this page: "Watch it work" (style 1) for everyone. ?hint=1, 2 or 3 previews a style.
+{const hint=params.get('hint');import('./trim-hint.mjs').then(m=>m.startTrimHint(/^[123]$/.test(hint||'')?{variant:Number(hint),preview:true}:{variant:1})).catch(e=>console.error(e));}

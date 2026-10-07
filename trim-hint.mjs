@@ -340,8 +340,15 @@ export function startTrimHint({ variant = 1, preview = false, storageKey = 'cws-
     start.type = 'button';
     start.addEventListener('click', () => (variant === 1 ? watch() : guide()));
     intro.after(start);
-    // First visit: style 1 plays by itself once; style 2 waits to be asked. In a preview both start right away.
-    if (preview || (variant === 1 && !stored())) setTimeout(() => (variant === 1 ? watch() : guide()), preview ? 900 : 1600);
+    // First visit: style 1 plays by itself once (never for people who asked for reduced motion, and not while the
+    // page is in a background tab); after that it only plays from the button. Style 2 waits to be asked.
+    // In a preview both start right away.
+    const begin = () => (variant === 1 ? watch() : guide());
+    if (preview) setTimeout(begin, 900);
+    else if (variant === 1 && !stored() && !still) {
+      const first = () => { store('seen'); setTimeout(() => { if (!playing && scrollY < 400) watch(); }, 1600); };
+      if (document.hidden) document.addEventListener('visibilitychange', () => { if (!document.hidden) first(); }, { once: true }); else first();
+    }
   }
 
   if (preview) {
