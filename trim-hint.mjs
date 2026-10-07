@@ -345,7 +345,8 @@ export function startTrimHint({ variant = 1, preview = false, storageKey = 'cws-
     // In a preview both start right away.
     const begin = () => (variant === 1 ? watch() : guide());
     if (preview) setTimeout(begin, 900);
-    else if (variant === 1 && !stored() && !still) {
+    // Someone who arrives with trims already chosen (from a vehicle comparison, say) came for that table: no auto-play.
+    else if (variant === 1 && !stored() && !still && !new URLSearchParams(location.search).get('trims')) {
       const first = () => { store('seen'); setTimeout(() => { if (!playing && scrollY < 400) watch(); }, 1600); };
       if (document.hidden) document.addEventListener('visibilitychange', () => { if (!document.hidden) first(); }, { once: true }); else first();
     }
