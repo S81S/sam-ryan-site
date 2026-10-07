@@ -81,9 +81,9 @@ It must print `Capture is valid.` followed by the counts and a list of VINs due 
 
 `build` prints the VINs due for a sticker lookup in groups, one group for each site the stickers are read from, with
 the address to open for that group. The sites are listed in `sticker-sources.mjs`: Chrysler for Jeep, Ram, Dodge and
-Chrysler; GM for Chevrolet, GMC, Buick and Cadillac; Hyundai; Ford for Ford and Lincoln; and this site's own
-`/api/original-sticker` for Kia, Subaru, Toyota, Lexus, Nissan and Infiniti. Makes with no public sticker source are
-never listed.
+Chrysler; GM for Chevrolet, GMC, Buick and Cadillac; Hyundai; Subaru; Ford for Ford and Lincoln; and this site's own
+`/api/original-sticker` for Kia, Toyota, Lexus, Nissan and Infiniti. Makes with no public sticker source are never
+listed.
 
 For each group, in any order:
 
@@ -102,8 +102,9 @@ A scan that stops early because a sticker site refused a request is fine. Carry 
 picked up on a later run. Ford answers most VINs with a "not yet released" page, and older GM and Toyota VINs have no
 sticker on file; `apply` records those as having no sticker and they are asked again in two weeks.
 
-If `apply` lists stickers "found in a layout this site does not read yet", include that list in the report. Do not
-try to read them another way.
+If `apply` lists stickers "found but not read", include that list in the report. Those stickers exist but cannot be
+read here (a layout with no checked reader, a fleet label with no equipment list, or Nissan's picture of the label).
+The site links to them and claims nothing about the vehicle's equipment. Do not try to read them another way.
 
 ### Stickers only
 
@@ -111,6 +112,7 @@ To look up stickers without re-reading the dealer's listings (for example after 
 
 ```
 node scripts/browser-refresh/refresh.mjs stickers          # add --cap 100 to allow more than 60 lookups
+node scripts/browser-refresh/refresh.mjs stickers --vins VIN1,VIN2   # ask again for named vehicles now, due or not
 ```
 
 It starts from the published inventory, prints the same groups, and is followed by the scan above, `ingest`, `apply`
@@ -132,6 +134,10 @@ git add data/used-inventory.json data/used-inventory.js data/equipment-index.jso
 git commit -m "<the suggested message>"
 git push origin main
 ```
+
+If one of the three files made from the source data (`data/used-inventory.js`, `data/vehicle-photos.json`,
+`data/equipment-index.js`) is left out of a commit, the "Build searchable vehicle pages" workflow rewrites it from
+the source files within a minute (`scripts/browser-copies.mjs`). Commit all five anyway.
 
 Publish even when no vehicles changed: the files carry the time of the check, which the site shows shoppers as
 "Listings checked".

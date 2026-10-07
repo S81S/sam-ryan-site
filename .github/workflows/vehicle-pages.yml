@@ -11,6 +11,8 @@ on:
       - 'indexnow-key.txt'
       - 'home-search-examples.json'
       - 'scripts/home-examples.mjs'
+      - 'scripts/browser-copies.mjs'
+      - 'scripts/browser-data.mjs'
       - '.github/workflows/vehicle-pages.yml'
   workflow_dispatch:
 permissions:
@@ -28,6 +30,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Keep the files the browser loads in step with the data
+        run: node scripts/browser-copies.mjs
       - run: node build-vehicle-pages.cjs
       - run: node notify-indexnow.cjs --prepare
       - name: Keep the home page example searches valid
@@ -36,7 +40,7 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add vehicle-*.html vehicles*.html sitemap-vehicles.xml vehicle-pages-version.json index.html inventory.html
+          git add vehicle-*.html vehicles*.html sitemap-vehicles.xml vehicle-pages-version.json index.html inventory.html data/used-inventory.js data/vehicle-photos.json data/equipment-index.js
           if ! git diff --cached --quiet; then
             git commit -m "Update searchable vehicle pages from verified inventory snapshot"
             git push origin HEAD:main

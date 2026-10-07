@@ -5,8 +5,8 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {analyzeOtherOriginal} from '../../multibrand-sticker.mjs';
 import {parseQuery, matchVehicle} from '../../equipment-search.mjs';
-import {SOURCES, stickerSource, stickerUrl, sourceHosts} from './sticker-sources.mjs';
-import {stickerCandidates, stickerPlan} from './refresh.mjs';
+import {SOURCES, stickerSource, stickerUrl, stickerUrlVin, sourceHosts} from './sticker-sources.mjs';
+import {stickerCandidates, stickerPlan, stickerOutcome} from './refresh.mjs';
 
 const fixture = name => fs.readFileSync(new URL('./fixtures/' + name + '.txt', import.meta.url), 'utf8');
 const read = name => analyzeOtherOriginal(fixture(name), name.split('-')[1]);
@@ -20,7 +20,7 @@ test('each make is read from its own source, and makes without a public source a
   assert.equal(source('Used 2025 Hyundai Palisade XRT'), 'hyundai');
   assert.equal(source('Used 2022 Ford F-150 Lariat'), 'ford');
   assert.equal(source('Used 2023 Kia Telluride SX X-LINE'), 'relay');
-  assert.equal(source('Used 2024 Subaru Forester Sport'), 'relay');
+  assert.equal(source('Used 2024 Subaru Forester Sport'), 'subaru');
   assert.equal(source('Used 2020 Toyota Tacoma TRD Pro'), 'relay');
   assert.equal(source('New 2026 Jeep Wrangler Sahara'), 'stellantis');
   assert.equal(source('Used 2022 Ram 1500 Laramie'), 'stellantis');
@@ -87,4 +87,48 @@ test('the nightly plan asks every source for its own makes', () => {
   const due = stickerCandidates({vehicles}, {records});
   assert.deepEqual(due.sort(), ['1C4PJXEG3VW581069', '1GNEVJKS2TJ172614', '5NMP5DG18SH062691']);
   assert.deepEqual(stickerPlan(due, {vehicles}).map(g => g.source).sort(), ['gm', 'hyundai', 'stellantis']);
+});
+
+test('Subaru is read from subaru.com, which puts the VIN in the path', () => {
+  const subaru = {vin: 'JF2SKAGC0RH407132', title: 'Used 2024 Subaru Forester Sport'}, source = stickerSource(subaru);
+  const url = stickerUrl(source, subaru.vin);
+  assert.equal(url, 'https://www.subaru.com/services/vehicles/windowsticker/JF2SKAGC0RH407132');
+  assert.equal(stickerUrlVin(url), subaru.vin);
+  assert.equal(stickerUrlVin('https://cws.gm.com/vs-cws/vehshop/v2/vehicle/windowsticker?vin=1GNEVJKS2TJ172614'), '1GNEVJKS2TJ172614');
+  assert.ok(sourceHosts().includes('www.subaru.com'));
+  // The same document read from subaru.com is verified like any other.
+  const read = stickerOutcome(subaru, {vin: subaru.vin, at: '2026-10-07T03:29:35.865Z', source: 'www.subaru.com', http: 200, size: 440388, sha256: 'x', text: fixture('subaru-JF2SKAGC0RH407132')});
+  assert.equal(read.kind, 'verified');
+  assert.equal(read.record.sourceUrl, url);
+  assert.equal(read.record.documentFamily, 'Subaru');
+  // Subaru's "not available at this time" page is a PDF too; it does not carry the VIN, so it is not a sticker.
+  const none = stickerOutcome(subaru, {vin: subaru.vin, at: 'now', source: 'www.subaru.com', http: 200, size: 16483, sha256: 'y', text: 'We are sorry, the window sticker for the vehicle you selected is not available\nat this time. Please contact your Subaru Retailer for more information. (c:01)'});
+  assert.equal(none.kind, 'none');
+  assert.equal(none.record.sourceUrl, null);
+  // A result read from another site is not this vehicle's source.
+  assert.equal(stickerOutcome(subaru, {vin: subaru.vin, at: 'now', source: 'carswithsam.com', http: 200, size: 440388, text: fixture('subaru-JF2SKAGC0RH407132')}), null);
+});
+
+test('a sticker that exists but cannot be read is linked, and claims no equipment', () => {
+  // A rental-fleet Hyundai label: price and colours, no equipment list.
+  const palisade = {vin: 'KM8R24GE7SU862018', title: 'Used 2025 Hyundai Palisade SEL'};
+  const fleet = stickerOutcome(palisade, {vin: palisade.vin, at: '2026-10-07T03:30:59.118Z', source: 'www.hyundaiusa.com', http: 200, size: 212670, sha256: 'z', text: fixture('hyundai-fleet-KM8R24GE7SU862018')});
+  assert.equal(fleet.kind, 'found');
+  assert.equal(fleet.record.status, 'unavailable');
+  assert.equal(fleet.record.stickerFound, true);
+  assert.equal(fleet.record.sourceUrl, 'https://www.hyundaiusa.com/var/hyundai/services/inventory/monroney.pdf?model=Venue&vin=KM8R24GE7SU862018');
+  assert.deepEqual([fleet.record.features, fleet.record.lines], [{}, []]);
+  // Nissan's copy is a picture: the only text is its notice, with no VIN.
+  const kicks = {vin: '3N8AP6DA4SL312953', title: 'Used 2025 Nissan Kicks SR'};
+  const notice = '**Not actual Monroney Label. Provided for informational purposes only. Unofficial Copy**';
+  const picture = stickerOutcome(kicks, {vin: kicks.vin, at: 'now', source: 'carswithsam.com', http: 200, size: 637671, sha256: 'n', text: notice});
+  assert.equal(picture.kind, 'found');
+  assert.equal(picture.record.sourceUrl, 'https://carswithsam.com/api/original-sticker?vin=3N8AP6DA4SL312953');
+  assert.match(picture.record.reason, /picture/);
+  // The same notice for a make that is not Nissan, or Ford's "not yet released" page, is not a sticker.
+  assert.equal(stickerOutcome({vin: '4T1DAACK9TU678241', title: 'Used 2026 Toyota Camry XLE'}, {at: 'now', source: 'carswithsam.com', http: 200, size: 637671, text: notice}).kind, 'none');
+  assert.equal(stickerOutcome({vin: '1FTFW1E54NFA27483', title: 'Used 2022 Ford F-150 Lariat'}, {at: 'now', source: 'www.windowsticker.forddirect.com', http: 200, size: 300000, text: 'The window sticker for this vehicle has not yet been released.'}).kind, 'none');
+  // No reply, a web page instead of a PDF, and "not found" all mean none.
+  for (const t of [{notPdf: true, size: 82}, {small: true, size: 900}, {http: 404}])
+    assert.equal(stickerOutcome({vin: '1GNSKRKD0MR306602', title: 'Used 2021 Chevrolet Tahoe RST'}, {at: 'now', source: 'cws.gm.com', http: 200, ...t}).kind, 'none');
 });
