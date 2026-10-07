@@ -14,7 +14,7 @@ export function appendEquipmentFact(container,fact,document=globalThis.document,
  if(missingReason?.sourceUrl){const link=el(document,'a','Check original sticker ↗');link.href=missingReason.sourceUrl;link.target='_blank';link.rel='noopener';container.append(link);}return;
  }
  const details=el(document,'details');details.className='equipment-proof';details.append(el(document,'summary','View source'));
- const method=fact.method==='factory-standard'?'Standard on this trim':fact.method==='factory-package'?'Included in the listed package':fact.method==='factory-option-omission'?'Not ordered on the complete original sticker':'Original sticker evidence';
+ const method=fact.method==='trim-guide-standard'?'Standard on this trim, from the factory trim guide. Standard equipment is often not printed on the window sticker.':fact.method==='trim-guide-optional'?'Optional on this trim, from the factory trim guide. This vehicle’s window sticker does not list it.':fact.method==='trim-guide-unavailable'?'Not offered on this trim, from the factory trim guide.':fact.method==='factory-standard'?'Standard on this trim':fact.method==='factory-package'?'Included in the listed package':fact.method==='factory-option-omission'?'Not ordered on the complete original sticker':'Original sticker evidence';
  details.append(el(document,'small',method));
  for(const line of fact.evidence||[])details.append(el(document,'p',line));
  if(fact.sourceUrl){const a=el(document,'a','Factory reference ↗');a.href=fact.sourceUrl;a.target='_blank';a.rel='noopener';details.append(a);}

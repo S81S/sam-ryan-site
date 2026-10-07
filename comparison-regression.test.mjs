@@ -22,15 +22,20 @@ test('audio requires the selected VIN and does not guess a brand from generic sp
  const s=repairInstalledAudioEvidence(vehicle,{...sticker,lines:['9-Amplified Speakers with Subwoofer']});
  assert.equal(s.features.harman,undefined);assert.equal(s.features.alpine,undefined);
 });
-test('all confirmed equipment includes shared absences, while evidence gaps stay separate',()=>{
+test('all confirmed equipment includes shared absences; a feature on one sticker only is a difference',()=>{
  const defs=[['same','Same'],['absent','Absent'],['different','Different'],['partial','Partial'],['missing','Missing']];
  const a={status:'verified',features:{same:{value:true},absent:{value:false},different:{value:true},partial:{value:true}}};
  const b={status:'verified',features:{same:{value:true},absent:{value:false},different:{value:false}}};
  const rows=comparisonRows(defs,[a,b]);
- assert.equal(visibleComparisonRows(rows,'complete').length,3);
+ assert.equal(visibleComparisonRows(rows,'complete').length,4);
  assert.equal(visibleComparisonRows(rows,'all').length,2);
- assert.equal(visibleComparisonRows(rows,'important').length,1);
- assert.equal(visibleComparisonRows(rows,'check').length,1);
+ // "different" (one has it, one is stated not to) and "partial" (listed on one readable sticker only) are both differences.
+ assert.deepEqual(visibleComparisonRows(rows,'important').map(r=>[r.id,r.group]),[['different','difference'],['partial','listed-on-some']]);
+ assert.equal(visibleComparisonRows(rows,'check').length,0);
+ // With no readable sticker for one vehicle, the same gap is still only an item to check.
+ const unread=comparisonRows(defs,[a,{status:'unavailable',features:{}}]);
+ assert.equal(unread.find(r=>r.id==='partial').group,'check');
+ assert.equal(visibleComparisonRows(unread,'important').length,0);
  assert.equal(visibleComparisonRows(rows,'check','Missing').length,1);
  assert.equal(visibleComparisonRows(rows,'all','Different').length,0);
 });
@@ -202,4 +207,63 @@ test('what the sticker states is an answer, not something left to confirm',()=>{
  // No sticker on file: nothing is claimed either way.
  const [v]=car('New 2027 JEEP SAHARA',[]);
  assert.equal(matchVehicle(v,{vin:v.vin,status:'unavailable',lines:[],features:{}},parseQuery('sahara 4x4')).kind,'unknown');
+});
+
+// The vehicle comparison and the Compare Trims page read the same factory trim guide.
+import {guideTrim,guideDifferences,guideFeatureFacts,guideLink} from './trim-link.mjs';
+const trimGuideData=JSON.parse(fs.readFileSync(new URL('./trim-standard-data.json',import.meta.url),'utf8'));
+const stickerFor=(vin,model,extra={})=>({status:'verified',vin,identityLines:['2026 MODEL YEAR',model],lines:[],features:{},...extra});
+test('a vehicle is matched to its own trim guide column from the sticker model line',()=>{
+ const match=(model,title='New 2026 TRUCK')=>{const m=guideTrim({vin:'V',title},stickerFor('V',model),trimGuideData);return m&&[m.model.id,m.trim.id,m.variant];};
+ assert.deepEqual(match('RAM 1500 LARAMIE CREW CAB 4X4'),['ram-1500','laramie','']);
+ assert.deepEqual(match('RAM 1500 LONE STAR CREW CAB 4X2'),['ram-1500','big-horn-lone-star','']);
+ assert.deepEqual(match('RAM 1500 LONGHORN CREW CAB 4X4'),['ram-1500','limited-longhorn','']);
+ assert.deepEqual(match('RAM 2500 LARAMIE NIGHT CREW CAB 4X4'),['ram-2500','laramie','NIGHT']);
+ assert.deepEqual(match('WRANGLER 4-DOOR RUBICON X 4X4'),['wrangler','rubicon-x','']);
+ assert.deepEqual(match('WRANGLER 2-DOOR SPORT 4X4'),['wrangler-2-door','sport','']);
+ assert.deepEqual(match('GRAND CHEROKEE L LIMITED RESERVE 4X4'),['jeep-grand-cherokee','limited-reserve','']);
+ assert.deepEqual(match('GRAND WAGONEER 4X4'),['jeep-grand-wagoneer','grand-wagoneer','']);
+ // Another model year, a trim the guide does not list, or another make: no column, never a near match.
+ assert.equal(guideTrim({vin:'V',title:'Used 2021 RAM 1500'},{...stickerFor('V','RAM 1500 LONE STAR CREW CAB 4X4'),identityLines:['2021 MODEL YEAR','RAM 1500 LONE STAR CREW CAB 4X4']},trimGuideData),null);
+ assert.equal(match('RAM 1500 PROMASTER CARGO'),null);
+ assert.equal(guideTrim({vin:'F',title:'Used 2025 Ford F-150 XLT'},null,trimGuideData),null);
+ // With no readable sticker the dealer title is used, and only when it names model and trim.
+ assert.deepEqual((m=>[m.trim.id,m.basis])(guideTrim({vin:'T',title:"New 2027 RAM 1500 TUNGSTEN CREW CAB 4X4 5'7' BOX"},null,trimGuideData)),['tungsten','title']);
+ assert.equal(guideTrim({vin:'T',title:'New 2027 JEEP SAHARA'},null,trimGuideData),null);
+});
+test('the trim guide fills in what a window sticker leaves off, and only that',()=>{
+ const ram=id=>({model:trimGuideData.models.find(m=>m.id==='ram-1500'),trim:trimGuideData.models.find(m=>m.id==='ram-1500').trims.find(t=>t.id===id),variant:''});
+ const warlock=ram('warlock'),loneStar=ram('big-horn-lone-star'),laramie=ram('laramie');
+ assert.equal(guideLink([warlock,loneStar]),'/trim-guide?model=ram-1500&trims=warlock,big-horn-lone-star');
+ // The same rows the Compare Trims page shows as different for these two trims.
+ const labels=guideDifferences([warlock,loneStar]).map(r=>r.label);
+ assert.ok(labels.includes('Rear traction differential')&&labels.includes('Front tow hooks')&&labels.includes('Standard suspension'));
+ assert.deepEqual(guideDifferences([loneStar,loneStar]),[]);
+ assert.deepEqual(guideDifferences([loneStar,null]),[]);
+ const facts=guideFeatureFacts(laramie.trim);
+ assert.equal(facts.get('heatedWheel').status,'standard');
+ assert.equal(facts.get('alpine').status,'standard');
+ assert.equal(facts.get('foldMirrors').status,'standard');
+ // The guide's columns describe one stated configuration, so drive type and engine stay with the sticker.
+ for(const id of ['fourWheel','awd','manualTransmission','hemi','leather'])assert.equal(facts.has(id),false,id);
+ // A standard item is not claimed when the sticker shows the upgrade that replaces it.
+ assert.equal(guideFeatureFacts(laramie.trim,{harman:{value:true}}).has('alpine'),false);
+ const defs=[['towHooks','Tow hooks'],['heatedWheel','Heated steering wheel'],['skidPlates','Skid plates'],['massage','Massage seats']];
+ const a=stickerFor('A','RAM 1500 WARLOCK CREW CAB 4X4',{features:{towHooks:{value:true},skidPlates:{value:true}}});
+ const b=stickerFor('B','RAM 1500 LARAMIE CREW CAB 4X4',{features:{}});
+ const guides=[warlock,laramie].map(m=>({name:m.trim.name,facts:guideFeatureFacts(m.trim)}));
+ const rows=Object.fromEntries(comparisonRows(defs,[a,b],[],guides).map(r=>[r.id,r]));
+ // Optional on the Laramie and not on its sticker: a real difference.
+ assert.equal(rows.towHooks.group,'difference');assert.equal(rows.towHooks.facts[1].method,'trim-guide-optional');
+ // On one sticker, and the guide has nothing to add: shown as listed on one sticker only.
+ assert.equal(rows.skidPlates.group,'listed-on-some');assert.equal(rows.skidPlates.facts[1],null);
+ // Neither sticker mentions it: the guide does not invent a row here (the trim rows below cover it).
+ assert.equal(rows.heatedWheel.group,'unknown');assert.equal(rows.massage.group,'unknown');
+ // Standard on the trim and simply not printed on the sticker: the same, not a difference.
+ const c=stickerFor('C','RAM 1500 LONE STAR CREW CAB 4X4',{features:{heatedWheel:{value:true}}});
+ const shared=comparisonRows(defs,[c,b],[],[loneStar,laramie].map(m=>({name:m.trim.name,facts:guideFeatureFacts(m.trim)}))).find(r=>r.id==='heatedWheel');
+ assert.equal(shared.group,'same');assert.equal(shared.facts[1].displayValue,'✓ Standard on Laramie');
+ // With no readable sticker, "optional" settles nothing.
+ const unread=comparisonRows(defs,[a,{status:'unavailable',features:{}}],[],guides).find(r=>r.id==='towHooks');
+ assert.equal(unread.facts[1],null);assert.equal(unread.group,'check');
 });

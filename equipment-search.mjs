@@ -301,6 +301,14 @@ function seatMaterialFact(id,lines){
  if(id==='cloth'&&(leather||vinyl)&&!cloth)return {value:false,evidence:[seat]};
  return null;
 }
+// The same sticker statements the search uses, for the side-by-side comparison: the seat material and the
+// drive type printed on a readable sticker answer leather / cloth / 4x4 / AWD even with no line of their own.
+export function withStickerStatements(vehicle,sticker){
+ if(sticker?.status!=='verified'||sticker.vin!==vehicle?.vin)return sticker;
+ const features={...sticker.features};
+ for(const id of ['leather','cloth','fourWheel','awd']){const fact=drivetrainFact(id,vehicle,sticker)||(features[id]?null:seatMaterialFact(id,sticker.lines||[]));if(fact)features[id]={...fact,method:'sticker-statement',sourceUrl:sticker.sourceUrl};}
+ return {...sticker,features};
+}
 export function matchVehicle(vehicle,sticker,query){
  if(vehicle.locationId!=='18393')return {kind:'excluded',reason:'store'};
  sticker=applyFactoryEquipment(vehicle,sticker);
