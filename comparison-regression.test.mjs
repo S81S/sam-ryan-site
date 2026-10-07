@@ -169,3 +169,12 @@ test('a named edition is matched as one name, not as two loose words',()=>{
  assert.equal(kind('New 2026 RAM 1500 LONE STAR',['Rear-View Day / Night Mirror'],'lone star edition'),'match');
  assert.equal(kind('New 2026 RAM 1500 LONE STAR',['Rear-View Day / Night Mirror'],'night edition'),'excluded');
 });
+test('McKinley-trimmed seats count as leather-trimmed, as Jeep describes them',()=>{
+ const pattern=definitions.find(d=>d[0]==='leather')[2];
+ for(const line of ['Interior: McKinley-Trimmed Seats','Premium McKinley-Trimmed Seats','McKinley-Trimmed Seats $1,995','Leather-Trimmed Bucket Seats','Capri Leatherette Seats'])assert.ok(pattern.test(line),line);
+ for(const line of ['Interior: Cloth Low-Back Bucket Seats','Leather-Wrapped Steering Wheel','Heavy-Duty Vinyl 40/20/40 Split Bench Seat','Capri Seats w/ Pattern','Mount McKinley Edition Badge'])assert.ok(!pattern.test(line),line);
+ const v={vin:'mckinley-test',title:'New 2026 JEEP WRANGLER 4-DOOR SAHARA',condition:'New',price:1,miles:5,locationId:'18393',locationVerified:true,status:'listed'};
+ const lines=['Interior: McKinley-Trimmed Seats','Heated Front Seats'];
+ const sticker={vin:v.vin,status:'verified',lines,features:{leather:{value:true,evidence:[lines[0]]}}};
+ assert.equal(matchVehicle(v,sticker,parseQuery('new Wrangler sahara with leather seats')).kind,'match');
+});

@@ -92,7 +92,8 @@ export const definitions = [
  ['panoramic','Panoramic sunroof',/panoramic.*(?:sunroof|moonroof)|dual.pane.*sunroof/i],
  ['heatedSeats','Heated front seats',/heated front seats|front.*heated seats/i],
  ['heatedWheel','Heated steering wheel',/heated steering.wheel/i],
- ['leather','Leather-trimmed seats',/\bleather(?:ette)?\b.*(?:seats|trimmed bucket)|(?:seats).*\bleather(?:ette)?\b/i],
+ // Jeep's window stickers print "McKinley-Trimmed Seats" for what Jeep's own releases call McKinley leather-trimmed seats.
+ ['leather','Leather-trimmed seats',/\bleather(?:ette)?\b.*(?:seats|trimmed bucket)|(?:seats).*\bleather(?:ette)?\b|\bmckinley[ -]trimmed\b.*\bseats?\b/i],
  ['adaptiveCruise','Adaptive cruise control',/adaptive cruise/i],
  ['blindSpot','Blind-spot monitoring',/blind.spot/i],
  ['surroundCamera','Surround-view camera',surroundCameraPattern],
