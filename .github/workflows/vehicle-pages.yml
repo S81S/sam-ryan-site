@@ -12,6 +12,8 @@ on:
       - 'home-search-examples.json'
       - 'scripts/home-examples.mjs'
       - 'scripts/browser-copies.mjs'
+      - 'scripts/complete-titles.mjs'
+      - 'title-model.mjs'
       - 'scripts/browser-data.mjs'
       - '.github/workflows/vehicle-pages.yml'
   workflow_dispatch:
@@ -30,6 +32,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Complete dealer titles that leave the model out
+        run: node scripts/complete-titles.mjs
       - name: Keep the files the browser loads in step with the data
         run: node scripts/browser-copies.mjs
       - run: node build-vehicle-pages.cjs
@@ -42,7 +46,7 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           # -A with quoted patterns also records pages the build removed (vehicles that left the inventory).
           git add -A -- 'vehicle-*.html' 'vehicles*.html'
-          git add sitemap-vehicles.xml vehicle-pages-version.json index.html inventory.html data/used-inventory.js data/vehicle-photos.json data/equipment-index.js
+          git add sitemap-vehicles.xml vehicle-pages-version.json index.html inventory.html data/used-inventory.json data/used-inventory.js data/vehicle-photos.json data/equipment-index.js
           if ! git diff --cached --quiet; then
             git commit -m "Update searchable vehicle pages from verified inventory snapshot"
             git push origin HEAD:main

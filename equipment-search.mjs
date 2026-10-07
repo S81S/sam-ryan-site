@@ -11,6 +11,7 @@ import {translateSearchTerms} from './search-dictionary.mjs';
 import {surroundCameraPattern,cameraSearchTerms,tireDefinitions,tireAliases,tireSearchTerms,cameraTireFeatures} from './camera-tire-evidence.mjs';
 import {wheelFinishDefinitions,wheelFinishAliases,wheelFinishSearchTerms,wheelFinishFeatures} from './wheel-finish-evidence.mjs';
 import {extractVehicleCategories,matchVehicleCategories,vehicleBodyTypes} from './vehicle-categories.mjs';
+import {wording} from './sticker-rulings.mjs';
 export const definitions = [
  ...wheelFinishDefinitions,
  ...engineDefinitions,
@@ -26,21 +27,23 @@ export const definitions = [
  ["familyCamera","Rear-seat passenger camera",/fam[ -]?cam|family camera|rear[ -]seat (?:monitoring )?camera|rear passenger (?:monitoring )?camera|interior rear[ -]facing camera/i],
  ["rearHeated","Heated rear seats",new RegExp("heated (?:second.row|rear) seats","i")],
  ["rearVented","Ventilated rear seats",new RegExp("ventilated (?:rear|second.row) seats","i")],
- ["memorySeats","Driver seat memory",new RegExp("driver.seat memory|memory.*driver.*seat|memory.*seats","i")],
+ ["memorySeats","Driver seat memory",wording.memorySeats],
  ["powerDriver","Power driver seat",new RegExp("power.*(?:driver.*seat|adjustable driver)","i")],
  ["powerPassenger","Power passenger seat",new RegExp("power.*(?:front )?passenger.*seat","i")],
  ["lumbar","Power lumbar adjustment",new RegExp("power lumbar","i")],
  ["massage","Massaging seats",new RegExp("massag","i")],
  ["cloth","Cloth seats",new RegExp("cloth.*(?:seat|bucket)|interior:.*cloth","i")],
- ["captains","Second-row captain chairs",new RegExp("(?:second|2nd).row.*captain|captain.*chair","i")],
- ["dualClimate","Dual-zone climate control",new RegExp("dual.zone.*(?:temperature|climate)|(?:temperature|climate).*dual.zone","i")],
- ["triClimate","Three-zone climate control",new RegExp("3.zone.*temperature|tri.zone|three.zone","i")],
+ ["captains","Second-row captain chairs",wording.captains],
+ ["dualClimate","Dual-zone climate control",wording.dualClimate],
+ ["triClimate","Three-zone climate control",wording.triClimate],
+ ["quadClimate","Four-zone climate control",wording.quadClimate],
  ["airConditioning","Cabin air conditioning",new RegExp("air conditioning|\\ba/c\\b","i")],
  ["rearAir","Rear air conditioning",new RegExp("rear.*air.condition|rear.*a/c","i")],
  ["parkingSensors","Parking sensors",new RegExp("parksense|park.assist","i")],
  ["laneAssist","Lane assistance",new RegExp("lane.management|lane.keep|lane.departure|lanesense","i")],
  ["forwardWarning","Forward collision warning",new RegExp("forward.collision warning","i")],
- ["emergencyBrake","Automatic emergency braking",new RegExp("emergency brak|automatic.*brak|collision.*brak","i")],
+ ["emergencyBrake","Automatic emergency braking",wording.emergencyBrake],
+ ["pedestrianBrake","Pedestrian emergency braking",wording.pedestrianBrake],
  ["rearCross","Rear cross-path detection",new RegExp("cross.path|cross.traffic","i")],
  ["trafficSigns","Traffic sign recognition",new RegExp("traffic.sign recognition","i")],
  ["driverAlert","Drowsy driver detection",new RegExp("drowsy.driver|driver.attention","i")],
@@ -48,24 +51,24 @@ export const definitions = [
  ["autoHighBeam","Automatic high beams",new RegExp("automatic high.beam","i")],
  ["ledLights","LED headlights",new RegExp("led.*(?:headlamp|headlight|reflector)|(?:headlamp|headlight).*led","i")],
  ["fogLights","Fog lamps",new RegExp("fog.lamp|fog.light","i")],
- ["pushStart","Push-button start",new RegExp("push.button start","i")],
- ["passiveEntry","Passive entry",new RegExp("passive.entry|keyless.enter","i")],
- ["keylessEntry","Remote keyless entry",new RegExp("remote.keyless.entry","i")],
+ ["pushStart","Push-button start",wording.pushStart],
+ ["passiveEntry","Passive entry",wording.passiveEntry],
+ ["keylessEntry","Remote keyless entry",wording.keylessEntry],
  ["garageOpener","Garage-door opener",new RegExp("garage.door opener|homelink","i")],
  ["wifi","Wi-Fi hotspot",new RegExp("wi.fi.*hot.spot|wi.fi.*hotspot","i")],
  ["bluetooth","Hands-free phone / Bluetooth",new RegExp("bluetooth|handsfree phone|hands.free phone","i")],
- ["premiumAudio","Amplified audio",new RegExp("amplified speakers|harman.kardon|alpine|mcintosh","i")],
+ ["premiumAudio","Premium / amplified audio",wording.premiumAudio],
  ["alpine","Alpine audio",new RegExp("alpine","i")],
  ["harman","Harman Kardon audio",new RegExp("harman.kardon","i")],
  ["mcintosh","McIntosh audio",new RegExp("mcintosh","i")],
  ["subwoofer","Subwoofer",new RegExp("subwoofer","i")],
  ["satelliteRadio","Satellite radio",new RegExp("siriusxm|satellite.radio","i")],
- ["outlet","AC power outlet",new RegExp("115.volt|115v|120.volt|120v|ac.outlet","i")],
+ ["outlet","AC power outlet",wording.outlet],
  ["brakeController","Trailer brake controller",brakeControllerPattern],
  ["towMirrors","Trailer tow mirrors",new RegExp("trailer.tow.*mirror|tow.mirror","i")],
  ["airSuspension","Air suspension",new RegExp("air.suspension","i")],
- ["rearLocker","Locking rear differential",new RegExp("locking rear.axle|rear.*locking differential|electronic.*rear.*locker","i")],
- ["limitedSlip","Limited-slip rear differential",new RegExp("anti.spin differential|limited.slip","i")],
+ ["rearLocker","Locking rear differential",wording.rearLocker],
+ ["limitedSlip","Limited-slip rear differential",wording.limitedSlip],
  ["skidPlates","Skid plates",new RegExp("skid.plate","i")],
  ["towHooks","Tow hooks",new RegExp("tow.hooks","i")],
  ["runningBoards","Running boards / side steps",new RegExp("running.board|side.step|tubular.side","i")],
@@ -73,7 +76,7 @@ export const definitions = [
  ["tonneau","Tonneau cover",new RegExp("tonneau","i")],
  ["rambox","RamBox storage",new RegExp("rambox","i")],
  ["slidingWindow","Power sliding rear window",new RegExp("rear.power.sliding window|power.sliding.rear.window","i")],
- ["foldMirrors","Power-folding mirrors",new RegExp("power.folding mirror","i")],
+ ["foldMirrors","Power-folding mirrors",wording.foldMirrors],
  ["adjustPedals","Power adjustable pedals",new RegExp("power.adjustable pedals","i")],
  ["softTop","Soft top",new RegExp("soft.top","i")],
  ["hardTop","Hard top",new RegExp("hard.top","i")],
@@ -93,16 +96,20 @@ export const definitions = [
  ['heatedSeats','Heated front seats',/heated front seats|front.*heated seats/i],
  ['heatedWheel','Heated steering wheel',/heated steering.wheel/i],
  // Jeep's window stickers print "McKinley-Trimmed Seats" for what Jeep's own releases call McKinley leather-trimmed seats.
- ['leather','Leather-trimmed seats',/\bleather(?:ette)?\b.*(?:seats|trimmed bucket)|(?:seats).*\bleather(?:ette)?\b|\bmckinley[ -]trimmed\b.*\bseats?\b/i],
+ ['leather','Leather-trimmed seats',wording.leather],
+ // Leatherette is its own material, not leather.
+ ['leatherette','Leatherette seats',wording.leatherette],
  ['adaptiveCruise','Adaptive cruise control',/adaptive cruise/i],
  ['blindSpot','Blind-spot monitoring',/blind.spot/i],
  ['surroundCamera','Surround-view camera',surroundCameraPattern],
  ['backupCamera','Rear-view camera',/rear.back.up camera|rear.view camera|back.up camera/i],
  ['remoteStart','Remote start',/remote.start/i],
- ['thirdRow','Third-row seats',/(?:third|3rd).row.*seat/i],
+ ['thirdRow','Third-row seats',wording.thirdRow],
  ['tow','Trailer hitch / tow equipment',towEquipmentPattern],
  ['fourWheel','Four-wheel drive',/\b4x4\b|\b4wd\b|four.wheel.drive|4.wheel.drive/i],
  ['awd','All-wheel drive',/all.wheel.drive|\bawd\b/i],
+ // Answered from the sticker's model line (4X2, RWD, FWD), never from a loose equipment line.
+ ['twoWheel','Two-wheel drive (4x2)',/$a/],['rwd','Rear-wheel drive',/$a/],['fwd','Front-wheel drive',/$a/],
  ['carplay','Apple CarPlay',/apple carplay/i], ['androidAuto','Android Auto',/android auto/i],
  ['navigation','Navigation',/\bnav\b|navigation/i], ['diesel','Diesel engine',/diesel/i],
  ['electric','Electric powertrain',/electric.drive|electric.motor|battery.electric/i],
@@ -163,11 +170,13 @@ const aliases=[
  ["captains",/\bfeaturetokencaptains\b/g],
  ["dualClimate",/\bfeaturetokendualclimate\b/g],
  ["triClimate",/\bfeaturetokentriclimate\b/g],
+ ["quadClimate",/\bfeaturetokenquadclimate\b/g],
  ["airConditioning",/\bfeaturetokenairconditioning\b/g],
  ["rearAir",/\bfeaturetokenrearair\b/g],
  ["parkingSensors",/\bfeaturetokenparkingsensors\b/g],
  ["laneAssist",/\bfeaturetokenlaneassist\b/g],
  ["forwardWarning",/\bfeaturetokenforwardwarning\b/g],
+ ["pedestrianBrake",/\bfeaturetokenpedestrianbrake\b/g],
  ["emergencyBrake",/\bfeaturetokenemergencybrake\b/g],
  ["rearCross",/\bfeaturetokenrearcross\b/g],
  ["trafficSigns",/\bfeaturetokentrafficsigns\b/g],
@@ -219,12 +228,13 @@ const aliases=[
  ['sunroof',/\b(?:sun\s*roof|sunrrof|moon\s*roof)s?\b/g],
  ['ventilated',/\b(?:(?:air[ -]?condition(?:ed|ing)?|a\/?c|ac|cooled|cooling|ventilated|vented)(?:\s+front)?\s+seats?)\b/g],
  ['heatedSeats',/\bheated(?:\s+front)?\s+seats?\b/g],['heatedWheel',/\bheated steering wheel\b/g],
- ['hemi',/\bhemi\b/g],['v8',/\bv[ -]?8\b/g],['leather',/\bleather(?:ette)?(?:[ -]trimmed)?(?:\s+seats?)?\b/g],
+ ['hemi',/\bhemi\b/g],['v8',/\bv[ -]?8\b/g],['leatherette',/\b(?:leatherette|faux[ -]leather|vegan[ -]leather|synthetic[ -]leather|imitation[ -]leather|pleather)(?:\s+seats?)?\b/g],['leather',/\bleather(?:[ -]trimmed)?(?:\s+seats?)?\b/g],
  ['adaptiveCruise',/\badaptive cruise(?: control)?\b/g],['blindSpot',/\bblind[ -]spot(?: monitoring)?\b/g],
  ['surroundCamera',/\b(?:360(?:[ -]degree)?|surround[ -]view)\s*cameras?\b/g],
  ['backupCamera',/\b(?:back[ -]?up|rear[ -]view) camera\b/g],['remoteStart',/\bremote start\b/g],
  ['thirdRow',/\b(?:third|3rd|3)[ -]row(?:\s+seats?)?\b/g],['tow',/\b(?:tow(?:ing)? package|trailer hitch|tow hitch)\b/g],
  ['fourWheel',/\b(?:4x4|4wd|four wheel drive)\b/g],['awd',/\b(?:awd|all wheel drive)\b/g],
+ ['rwd',/\b(?:rwd|rear[ -]wheel[ -]drive)\b/g],['fwd',/\b(?:fwd|front[ -]wheel[ -]drive)\b/g],['twoWheel',/\b(?:2wd|4x2|2x4|(?:two|2)[ -]wheel[ -]drive)\b/g],
  ['carplay',/\b(?:apple )?carplay\b/g],['androidAuto',/\bandroid auto\b/g],
  ['navigation',/\b(?:navigation|nav)\b/g],['diesel',/\bdiesel\b/g],['electric',/\belectric\b/g],['hybrid',/\bhybrid\b/g],
  ['bedliner',/\b(?:spray[ -]in )?bedliner\b/g],['hud',/\b(?:head[ -]up display|hud)\b/g],['wireless',/\bwireless charging\b/g],['powerLiftgate',/\bpower liftgate\b/g]
@@ -280,35 +290,6 @@ export function parseQuery(input){
  if(result.requirements.some(x=>x.id.startsWith('wheel')))result.warnings.push('Wheel finishes are matched to the factory wheel specification. Chrome, polished and black finishes are checked separately. Confirm the currently fitted wheels on a used vehicle.');
  return result;
 }
-// Four-wheel drive, all-wheel drive and two-wheel drive are three different things. Go by what the sticker's model
-// line calls this vehicle (the listing title when the sticker's line does not say): a 4x4 is not AWD, an AWD is not
-// 4x4, and a 4x2, RWD or FWD is neither.
-function drivetrainFact(id,vehicle,sticker){
- if(id!=='fourWheel'&&id!=='awd')return null;
- if(sticker?.status!=='verified'||sticker.vin!==vehicle.vin)return null;
- const kindOf=text=>/\b(?:4X4|4WD)\b/i.test(text)?'fourWheel':/\bAWD\b/i.test(text)?'awd':/\b(?:4X2|2WD|RWD|FWD)\b/i.test(text)?'two':null;
- const model=(sticker.identityLines||[]).find(kindOf),said=model||(kindOf(vehicle.title)?vehicle.title:null);
- return said?{value:kindOf(said)===id,evidence:[said]}:null;
-}
-// The sticker's "Interior:" line names what the seats are made of. When it says cloth, vinyl or fabric and no
-// leather, that is a plain "not leather", not something left to confirm; a leather line likewise means "not cloth".
-function seatMaterialFact(id,lines){
- if(id!=='leather'&&id!=='cloth')return null;
- const seat=lines.find(l=>/^interior:/i.test(l));
- if(!seat)return null;
- const leather=/\bleather(?:ette)?\b|\bmckinley[ -]trimmed\b/i.test(seat),cloth=/\b(?:cloth|fabric)\b/i.test(seat),vinyl=/\bvinyl\b/i.test(seat);
- if(id==='leather'&&(cloth||vinyl)&&!leather)return {value:false,evidence:[seat]};
- if(id==='cloth'&&(leather||vinyl)&&!cloth)return {value:false,evidence:[seat]};
- return null;
-}
-// The same sticker statements the search uses, for the side-by-side comparison: the seat material and the
-// drive type printed on a readable sticker answer leather / cloth / 4x4 / AWD even with no line of their own.
-export function withStickerStatements(vehicle,sticker){
- if(sticker?.status!=='verified'||sticker.vin!==vehicle?.vin)return sticker;
- const features={...sticker.features};
- for(const id of ['leather','cloth','fourWheel','awd']){const fact=drivetrainFact(id,vehicle,sticker)||(features[id]?null:seatMaterialFact(id,sticker.lines||[]));if(fact)features[id]={...fact,method:'sticker-statement',sourceUrl:sticker.sourceUrl};}
- return {...sticker,features};
-}
 export function matchVehicle(vehicle,sticker,query){
  if(vehicle.locationId!=='18393')return {kind:'excluded',reason:'store'};
  sticker=applyFactoryEquipment(vehicle,sticker);
@@ -363,7 +344,7 @@ export function matchVehicle(vehicle,sticker,query){
   }
  }
  if(unmatched.length&&!unmatched.every(t=>text.split(/[^a-z0-9'-]+/).includes(t)))return {kind:'excluded',reason:'terms'};
- const checks=query.requirements.map(req=>{let fact=engineFact(req.id,sticker)||drivetrainFact(req.id,vehicle,sticker)||(sticker?.status==='verified'?sticker.features?.[req.id]:null);if(req.id.startsWith('interior')&&sticker?.status==='verified'){const color=interiorColors.find(c=>c.id===req.id);const interior=lines.filter(l=>/^interior(?: color)?:/i.test(l)).map(l=>l.split(/exterior(?: color)?:/i)[0]);if(color&&interior.length)fact={value:interior.some(l=>new RegExp(color.pattern,'i').test(l)),evidence:interior};}if(!fact&&sticker?.status==='verified')fact=seatMaterialFact(req.id,lines);if(sticker?.vin!==vehicle.vin)fact=null;if(req.id.startsWith('exterior'))fact=sticker?.vin===vehicle.vin?exteriorColorFact(req.id,sticker):null;return {...req,label:labels[req.id],sourceUrl:fact?.sourceUrl,method:fact?.method,state:fact?fact.value===req.wanted?'match':'conflict':'unknown',evidence:fact?.evidence||[]};});
+ const checks=query.requirements.map(req=>{let fact=engineFact(req.id,sticker)||(sticker?.status==='verified'?sticker.features?.[req.id]:null);if(req.id.startsWith('interior')&&sticker?.status==='verified'){const color=interiorColors.find(c=>c.id===req.id);const interior=lines.filter(l=>/^interior(?: color)?:/i.test(l)).map(l=>l.split(/exterior(?: color)?:/i)[0]);if(color&&interior.length)fact={value:interior.some(l=>new RegExp(color.pattern,'i').test(l)),evidence:interior};}if(sticker?.vin!==vehicle.vin)fact=null;if(req.id.startsWith('exterior'))fact=sticker?.vin===vehicle.vin?exteriorColorFact(req.id,sticker):null;return {...req,label:labels[req.id],sourceUrl:fact?.sourceUrl,method:fact?.method,state:fact?fact.value===req.wanted?'match':'conflict':'unknown',evidence:fact?.evidence||[]};});
  if(query.equipmentOption){const fact=installedOptionFact(vehicle,sticker,query.equipmentOption);checks.push({id:'selectedOption',label:query.equipmentOption.label,wanted:true,state:fact?fact.value?'match':'conflict':'unknown',evidence:fact?.evidence||[],sourceUrl:fact?.sourceUrl,reason:fact?null:optionEvidenceReason(vehicle,sticker,query.equipmentOption)});}
  if(checks.some(c=>c.state==='conflict'))return {kind:'excluded',reason:'equipment',checks};
  if(checks.some(c=>c.state==='unknown'))return {kind:'unknown',checks,categoryChecks:categoryMatch.checks};

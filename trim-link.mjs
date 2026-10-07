@@ -91,7 +91,7 @@ export function guideDifferences(matches){
 // Which searchable feature a guide row is about. The row's own name decides ("Heated rear seats",
 // "Adaptive cruise control"). Drive type, engine and transmission are left to the window sticker, which
 // names the vehicle's own; the guide's columns describe one stated configuration of each trim.
-const leftToSticker=/^(?:fourWheel|awd|manualTransmission|automatic|airConditioning|diesel|electric|hybrid|tow|leather|cloth)$|^(?:engine|tire|wheel|exterior|interior)/;
+const leftToSticker=/^(?:fourWheel|awd|twoWheel|rwd|fwd|manualTransmission|automaticTransmission|airConditioning|diesel|electric|hybrid|tow|leather|leatherette|cloth)$|^(?:engine|tire|wheel|exterior|interior)/;
 // For standard equipment a few rows name the feature in their value instead ("Standard audio: Alpine 10 speakers").
 const namedInValue=[[/audio/i,/^(?:alpine|harman|mcintosh|subwoofer)$/],[/touchscreen/i,/^navigation$/],[/adjustment$/i,/^lumbar$/],[/underbody|trail equipment/i,/^(?:skidPlates|towHooks)$/],[/differential/i,/^rearLocker$/],[/suspension/i,/^airSuspension$/],[/^second-row seat/i,/^captains$/],[/sunroof/i,/^(?:panoramic|sunroof)$/],[/^standard camera/i,/^(?:backupCamera|surroundCamera)$/],[/^parking assist/i,/^parkingSensors$/],[/^lane /i,/^laneAssist$/],[/^remote /i,/^remoteStart$/],[/seat heating/i,/^heatedSeats$/],[/headlamps/i,/^fogLights$/]];
 // Plain wording in a standard row's value that names a feature the search does not pick out of a short phrase.
@@ -102,15 +102,12 @@ export function guideRowFeature(label){const ids=wantedIds(label);return ids.len
 // What the guide says about each searchable feature on one trim: Map(feature id → guide fact).
 // `installed` is the vehicle's own sticker features. A standard item named only in a row's value is
 // skipped when the sticker shows the upgrade that replaces it (Harman Kardon in place of Alpine).
-// Features whose window-sticker wording is still being confirmed with Sam. "Optional and not on this
-// sticker" is only as good as the sticker reading, so no such answer is given for these yet.
-const wordingOpen=/^(?:towMirrors|foldMirrors|rearLocker|limitedSlip|fogLights|passiveEntry|keylessEntry|pushStart|emergencyBrake|backupCamera|dualClimate|triClimate|premiumAudio|outlet|captains|thirdRow|memorySeats)$/;
 export function guideFeatureFacts(trim,installed={}){
  const facts=new Map(),all=trim?.comparison||[];
  for(const fact of all){
   if(fact.upgradeOf||!['standard','optional','unavailable'].includes(fact.status))continue;
   const id=guideRowFeature(fact.label);
-  if(id&&!facts.has(id)&&!(fact.status==='optional'&&wordingOpen.test(id)))facts.set(id,fact);
+  if(id&&!facts.has(id))facts.set(id,fact);
  }
  for(const fact of all){
   if(fact.upgradeOf||fact.status!=='standard')continue;

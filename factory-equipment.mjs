@@ -6,6 +6,7 @@ import {repairTowEvidence,repairTrailerBrakeEvidence} from './tow-evidence.mjs';
 import {additionalFactoryRules} from './factory-catalog-2026.mjs';
 import {repairCameraTireEvidence} from './camera-tire-evidence.mjs';
 import {repairWheelFinishEvidence} from './wheel-finish-evidence.mjs';
+import {applyRulings} from './sticker-rulings.mjs';
 const ramSource='https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf';
 const pacificaSource='https://www.chrysler.com/news/2027-chrysler-pacifica-debut.html';
 const norm=s=>String(s||'').normalize('NFKC').replace(/[®™]/g,'').replace(/[\u2010-\u2015]/g,'-').replace(/\s+/g,' ').trim().toLowerCase();
@@ -73,6 +74,8 @@ function identity(sticker){
 function packageOn(lines,name){const n=norm(name);return lines.find(l=>{const value=norm(l).replace(/\s+\$[\d,.]+$/,'');return value===n||value===n+' package';});}
 export function applyFactoryEquipment(vehicle,sticker){
  if(sticker?.status!=='verified'||!vehicle?.vin||sticker.vin&&sticker.vin!==vehicle.vin)return sticker;
+ // Read the saved sticker text by the current wording rules before anything else builds on its features.
+ sticker=applyRulings(vehicle,sticker);
  sticker=repairInstalledAudioEvidence(vehicle,sticker);
  sticker=repairWheelSeatEvidence(repairTowEvidence(repairSeatEvidence(sticker)));
  if(sticker.vin===vehicle.vin){sticker=repairCameraTireEvidence(sticker);sticker=repairWheelFinishEvidence(sticker);}

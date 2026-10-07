@@ -7,7 +7,7 @@ import {appendEquipmentFact} from './comparison-layout.mjs';
 import {applyFactoryEquipment} from './factory-equipment.mjs';
 import {comparisonRows,visibleComparisonRows} from './comparison-rows.mjs';
 import {withComparisonSpecifications,specificationDefinitions} from './comparison-specs.mjs';
-import {definitions,parseQuery,withStickerStatements} from './equipment-search.mjs';
+import {definitions,parseQuery} from './equipment-search.mjs';
 import {guideTrim,guideDifferences,guideFeatureFacts,guideLink,guideColumnName} from './trim-link.mjs';
 import {featureMatches} from './trim-comparison.mjs';
 const $=id=>document.getElementById(id),el=(tag,text)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;return n};
@@ -22,14 +22,14 @@ const trimGuideReady=fetch('trim-standard-data.json').then(r=>r.ok?r.json():null
 const answeredBySticker=[[/^(?:engine|engine-output|horsepower|torque|power|powertrain)$/,['engineSpecification']],[/^(?:transmission|gearbox)$/,['transmissionSpecification']],[/^(?:drive|drivetrain|awd|four_wheel_drive)$/,['fourWheel','awd']],[/^(?:front-seats|front-seat-material|seat-material|upholstery)$/,['seatUpholstery']],[/^(?:wheels|tires)$/,['wheelSize']],[/^(?:touchscreen|screen|screen-navigation)$/,['infotainmentScreen']],[/^(?:driver-display|cluster|instrument-display)$/,['instrumentScreen']],[/^driver[-_]seat$/,['driverAdjustment']],[/^passenger[-_]seat$/,['passengerAdjustment']],[/^(?:audio|premium[-_]audio)$/,['audioSystem']],[/^climate$/,['dualClimate']]];
 function render(){
  const out=$('automatic-equipment');out.replaceChildren();
- const recs=['1','2','3','4','5'].map(side=>({side,v:window.usedInventoryData.vehicles.find(v=>v.vin===$('choose-'+side)?.value)})).filter(r=>r.v).map(r=>({...r,s:withComparisonSpecifications(r.v,withStickerStatements(r.v,applyFactoryEquipment(r.v,window.equipmentIndex.records[r.v.vin])))}));
+ const recs=['1','2','3','4','5'].map(side=>({side,v:window.usedInventoryData.vehicles.find(v=>v.vin===$('choose-'+side)?.value)})).filter(r=>r.v).map(r=>({...r,s:withComparisonSpecifications(r.v,applyFactoryEquipment(r.v,window.equipmentIndex.records[r.v.vin]))}));
  if(recs.length<2){out.append(el('p','Choose two vehicles above to compare.'));return;}
  const pendingEquipment=recs.some(({s,side,v})=>s?.status!=='verified'&&(v.decodePending||$('lookup-status-'+side)?.getAttribute('aria-busy')==='true'));
  const contextParams=new URLSearchParams(location.search);
  const requested=[...new Set(parseQuery([$('group-query')?.value||contextParams.get('q')||'',contextParams.get('requestedEquipment')||''].join(' ')).requirements.map(r=>r.id))];
  const matches=recs.map(r=>trimGuide?guideTrim(r.v,r.s,trimGuide):null);
  const guides=matches.map((m,i)=>m?{name:m.trim.name,facts:guideFeatureFacts(m.trim,recs[i].s?.features||{})}:null);
- const allRows=comparisonRows([...specificationDefinitions,...definitions.filter(([id])=>!/^engine(?:Size|Cyl|Inline)|^engine20$|^engine36$/.test(id))],recs.map(r=>r.s),requested,guides);
+ const allRows=comparisonRows([...specificationDefinitions,...definitions.filter(([id])=>!/^engine(?:Size|Cyl|Inline)|^engine20$|^engine36$|^(?:rwd|fwd)$/.test(id))],recs.map(r=>r.s),requested,guides);
  // With every vehicle's engine and transmission named in full, the one-word rows (V8, HEMI, turbo…) only repeat them.
  const named=id=>allRows.find(r=>r.id===id)?.facts.every(Boolean);
  const rows=allRows.filter(r=>r.requested||!(named('engineSpecification')&&/^(?:dieselCummins|hurricane|pentastar|supercharged|turbo|v6|v8|hemi|diesel|electric|hybrid)$/.test(r.id))&&!(named('transmissionSpecification')&&/^(?:manual|automatic)Transmission$/.test(r.id)));

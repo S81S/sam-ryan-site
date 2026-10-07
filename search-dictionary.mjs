@@ -449,6 +449,27 @@ export const searchDictionary = [
     ]
   },
   {
+    "canonical": "featuretokenquadclimate",
+    "label": "Four-zone climate control",
+    "phrases": [
+      "four zone climate",
+      "4 zone climate",
+      "quad zone climate",
+      "four zone ac",
+      "4 zone ac"
+    ]
+  },
+  {
+    "canonical": "featuretokenpedestrianbrake",
+    "label": "Pedestrian emergency braking",
+    "phrases": [
+      "pedestrian emergency braking",
+      "pedestrian braking",
+      "pedestrian detection braking",
+      "pedestrian automatic braking"
+    ]
+  },
+  {
     "canonical": "featuretokenairconditioning",
     "label": "Cabin air conditioning",
     "phrases": [
@@ -507,7 +528,6 @@ export const searchDictionary = [
       "automatic emergency braking",
       "auto emergency braking",
       "aeb",
-      "pedestrian braking",
       "emergency braking"
     ]
   },

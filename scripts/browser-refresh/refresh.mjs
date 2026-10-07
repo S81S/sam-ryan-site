@@ -13,6 +13,7 @@ import { analyzeSticker } from '../../equipment-search.mjs';
 import { analyzeOtherOriginal } from '../../multibrand-sticker.mjs';
 import { stickerSource, stickerUrl, stickerUrlVin, sourceHosts } from './sticker-sources.mjs';
 import { browserInventoryScript, vehiclePhotosJson } from '../browser-data.mjs';
+import { completeTitle } from '../../title-model.mjs';
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const REPO = path.resolve(HERE, '../..');
@@ -137,7 +138,8 @@ export function build(pages, previous, previousEquipment, now = Date.now()) {
     const v = normalize({ ...row, docFee, salePrice: /^\d+(\.\d+)?$/.test(row.salePrice || '') ? row.salePrice : null }, p.capturedAt);
     const old = prior.get(v.vin), evidence = previousEquipment.records[v.vin];
     v.carfaxUrl = old?.carfaxUrl || null;
-    v.title = v.title.replace(/^NEW /, 'New ').replace(/^USED /, 'Used ');
+    // A dealer title that leaves the model out is completed from the window sticker already on file.
+    v.title = completeTitle(v.title.replace(/^NEW /, 'New ').replace(/^USED /, 'Used '), evidence, v.vin);
     v.firstSeenAt = old?.firstSeenAt || p.capturedAt;
     v.photoUrls = row.photoUrls; v.photoCheckedAt = p.capturedAt;
     v.priceLabel = row.priceLabel || v.priceLabel; v.priceDetails = row.priceDetails;
