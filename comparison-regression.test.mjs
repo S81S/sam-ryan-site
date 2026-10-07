@@ -257,8 +257,14 @@ test('the trim guide fills in what a window sticker leaves off, and only that',(
  assert.equal(rows.towHooks.group,'difference');assert.equal(rows.towHooks.facts[1].method,'trim-guide-optional');
  // On one sticker, and the guide has nothing to add: shown as listed on one sticker only.
  assert.equal(rows.skidPlates.group,'listed-on-some');assert.equal(rows.skidPlates.facts[1],null);
- // Neither sticker mentions it: the guide does not invent a row here (the trim rows below cover it).
- assert.equal(rows.heatedWheel.group,'unknown');assert.equal(rows.massage.group,'unknown');
+ // Neither sticker mentions it: the guide still answers for each trim, and stays silent where it has no row.
+ assert.equal(rows.heatedWheel.group,'listed-on-some');assert.equal(rows.heatedWheel.facts[0],null);assert.equal(rows.heatedWheel.facts[1].method,'trim-guide-standard');
+ assert.equal(rows.massage.group,'unknown');
+ // Both silent, both standard per the guide: shared equipment.
+ const both=comparisonRows([['blindSpot','Blind-spot monitoring']],[a,b],[],guides)[0];
+ assert.equal(both.group,'same');assert.deepEqual(both.facts.map(f=>f.method),['trim-guide-standard','trim-guide-standard']);
+ // An option whose sticker wording is not settled yet is never called absent.
+ assert.equal(guideFeatureFacts(laramie.trim).has('rearLocker'),false);
  // Standard on the trim and simply not printed on the sticker: the same, not a difference.
  const c=stickerFor('C','RAM 1500 LONE STAR CREW CAB 4X4',{features:{heatedWheel:{value:true}}});
  const shared=comparisonRows(defs,[c,b],[],[loneStar,laramie].map(m=>({name:m.trim.name,facts:guideFeatureFacts(m.trim)}))).find(r=>r.id==='heatedWheel');

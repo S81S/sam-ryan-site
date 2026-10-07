@@ -39,7 +39,7 @@ function render(){
  const trimRows=guideDifferences(matches).filter(row=>{const ids=rowFeatures(row);if(ids.length&&ids.every(settled))return false;return !answeredBySticker.some(([key,ids])=>key.test(row.key)&&ids.every(settled));});
  const trimLink=guideLink(matches),sameTrim=matches.every(Boolean)&&new Set(matches.map(m=>m.model.id+'/'+m.trim.id)).size===1;
  const counts={difference:rows.filter(r=>r.group==='difference'||r.group==='listed-on-some').length+trimRows.length,oneSided:rows.filter(r=>r.group==='listed-on-some').length,same:rows.filter(r=>r.group==='same').length,check:rows.filter(r=>r.group==='check'||(r.requested&&r.group==='unknown')).length};
- out.append(el('h2','Compare side by side'));if(pendingEquipment)out.append(el('p','Checking original equipment. The comparison updates as each vehicle’s source is read.'));out.append(el('p',`${counts.same} shared details · ${counts.difference} differences`+(counts.oneSided?` (${counts.oneSided} listed on one window sticker only)`:'')+(counts.check?` · ${counts.check} items need source details`:'')));if(matches.some(Boolean)){const p=el('p');p.className='comparison-trim-note';
+ out.append(el('h2','Compare side by side'));if(pendingEquipment)out.append(el('p','Checking original equipment. The comparison updates as each vehicle’s source is read.'));out.append(el('p',`${counts.same} shared details · ${counts.difference} differences`+(counts.oneSided?` (${counts.oneSided} where another vehicle’s sticker does not say)`:'')+(counts.check?` · ${counts.check} items need source details`:'')));if(matches.some(Boolean)){const p=el('p');p.className='comparison-trim-note';
   const found=matches.filter(Boolean),oneModel=new Set(found.map(m=>m.model.id)).size===1;
   const extra=m=>m.variant?' ('+m.variant.replace(/^G T$/,'G/T').toLowerCase().replace(/\b[a-z]/g,c=>c.toUpperCase())+')':'';
   const names=[...new Set(found.map(m=>(oneModel?m.trim.name:guideColumnName(m))+extra(m)))];
@@ -67,7 +67,7 @@ function render(){
    const fields=[['Data source',v=>v.external?(v.decodedAt?'External VIN identity confirmed; dealer listing unverified':'External VIN; identity and dealer listing unverified'):'Covert dealer listing snapshot'],['VIN',v=>v.vin],['Advertised price',v=>Number.isFinite(v.price)?new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(v.price):'Not supplied for this outside vehicle'],['Mileage',v=>Number.isFinite(v.miles)?v.miles.toLocaleString():'Not supplied for this outside vehicle'],['Body / cab',v=>v.decodedSpecs?.body||(/CREW CAB/i.test(v.title)?'Crew cab (listing)':v.decodePending?'Checking VIN…':'VIN decoder did not provide this field')],['Engine',v=>indexEngine(v)||v.decodedSpecs?.engine||(v.decodePending?'Checking VIN…':'VIN decoder did not provide this field')],['Fuel',v=>v.decodedSpecs?.fuel||(v.decodePending?'Checking VIN…':'VIN decoder did not provide this field')]];
    for(const [label,value] of fields){const row=el('tr'),th=el('th',label);th.scope='row';row.append(th);for(const {v} of recs)row.append(el('td',value(v)));body.append(row);}
   }
-  for(const row of visible){const tr=el('tr'),name=el('th');name.scope='row';name.append(el('strong',(row.requested?'★ ':'')+row.label),el('small',row.group==='difference'?'Different':row.group==='listed-on-some'?'On one window sticker only':row.group==='same'?'Same on all vehicles':'Source details needed'));tr.dataset.comparisonGroup=row.group;tr.append(name);
+  for(const row of visible){const tr=el('tr'),name=el('th');name.scope='row';name.append(el('strong',(row.requested?'★ ':'')+row.label),el('small',row.group==='difference'?'Different':row.group==='listed-on-some'?(recs.length===2?'Listed for one; not stated for the other':'Not stated for every vehicle'):row.group==='same'?'Same on all vehicles':'Source details needed'));tr.dataset.comparisonGroup=row.group;tr.append(name);
    row.facts.forEach((f,i)=>{const td=el('td');appendEquipmentFact(td,f,document,equipmentReviewReason(window.equipmentIndex.records[recs[i].v.vin],recs[i].v.vin));
     const audioFeature=['audioSystem','premiumAudio'].includes(row.id)?audioInventoryFeature(recs[i].s?.features?.audioSystem):null;
     const inventoryFeature=audioFeature||(!row.specification&&definitions.some(([id])=>id===row.id)?row.id:null);
@@ -82,6 +82,14 @@ function render(){
     }tr.append(td)});body.append(tr);
   }if(body.children.length){table.append(body);wrap.append(table);}
   drawTrimRows();
+  // Shared equipment is not a difference, so say where it went: shoppers look for the safety features here.
+  if(mode==='important'&&!search.value&&counts.same){
+   const lead=['blindSpot','adaptiveCruise','emergencyBrake','forwardWarning','laneAssist','parkingSensors','backupCamera','remoteStart','carplay','heatedSeats'];
+   const shared=rows.filter(r=>r.group==='same'&&r.facts.every(f=>f?.value===true)&&!r.specification).sort((a,b)=>(lead.indexOf(a.id)+1||99)-(lead.indexOf(b.id)+1||99)).slice(0,5).map(r=>r.label.toLowerCase());
+   const note=el('p');note.className='comparison-shared-note';
+   note.append(el('strong',recs.length===2?'Not in this list because both have it: ':'Not in this list because every vehicle has it: '),shared.length?shared.join(', ')+(counts.same>shared.length?`, and ${counts.same-shared.length} more shared details. `:'. '):`${counts.same} shared details. `);
+   const all=el('button','Show shared equipment');all.type='button';all.addEventListener('click',()=>{mode='all';draw();wrap.scrollIntoView({block:'nearest'})});note.append(all);wrap.prepend(note);
+  }
   if(!wrap.children.length)wrap.append(el('p','No confirmed differences in the recorded equipment. Open Items to check for the evidence gaps and what needs checking.'));
  }
  // What each trim starts with, from the same factory guide as the Compare Trims page.

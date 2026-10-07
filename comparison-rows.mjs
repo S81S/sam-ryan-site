@@ -13,8 +13,9 @@ function fromTrimGuide(guide,id,verified){
 export function comparisonRows(definitions,records,requested=[],guides=[]){
  return definitions.map(([id,label])=>{
   const facts=records.map(s=>s?.status==='verified'?s.features?.[id]||null:null);
-  // The guide only completes a row that at least one window sticker speaks to.
-  if(facts.some(Boolean))facts.forEach((f,i)=>{if(!f)facts[i]=fromTrimGuide(guides[i],id,records[i]?.status==='verified');});
+  // Where a sticker says nothing, the guide's column for that vehicle's trim answers — also when no sticker
+  // prints the feature at all (blind-spot monitoring on a truck whose sticker leaves the safety list off).
+  facts.forEach((f,i)=>{if(!f)facts[i]=fromTrimGuide(guides[i],id,records[i]?.status==='verified');});
   const states=facts.map(f=>f?(f.comparisonValue??(f.value?'present':'absent')):'unknown');
   const known=states.filter(s=>s!=='unknown');
   let group=known.length===0?'unknown':known.length<states.length?'check':'same';
