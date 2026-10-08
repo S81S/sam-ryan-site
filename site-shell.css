@@ -130,3 +130,6 @@
  .site-layout .site-header .brand-main{font-size:16px}
  .site-layout .nav-toggle{padding:0 9px}
 }
+
+/* Nine menu links: tighter spacing keeps them on one row on tablets. */
+@media(min-width:701px) and (max-width:1050px){.site-layout #primary-nav{gap:2px}.site-layout #primary-nav a{padding:8px 9px}}
