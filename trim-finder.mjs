@@ -1,6 +1,6 @@
 // Perfect Match (the interactive car-buying guide): start at a model's base trim, see what each trim above it adds, pick what you want and land on the
 // first trim that has it — with the matching vehicles in stock. Built on the same factory trim guide as Compare Trims.
-import {finderModels,standardEquipment,stepUp,nextMatch,pickStatus,inventoryFit} from './trim-ladder.mjs';
+import {finderModels,standardEquipment,stepUp,trimOptions,nextMatch,pickStatus,inventoryFit} from './trim-ladder.mjs';
 
 const root=document.getElementById('finder');
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -47,7 +47,7 @@ function pathView(){
 function pickList(title,items,kind){
  if(!items.length)return '';
  const trims=trimsOf(),here=trims[state.at];
- return `<fieldset class="tf-group tf-${kind}"><legend>${title}</legend>${items.map((it,n)=>`<label class="tf-item"><input type="checkbox" data-pick="${kind}:${n}"><span class="tf-check" aria-hidden="true"></span><span class="tf-text"><strong>${esc(it.label)}</strong><span>${kind==='options'?'<i class="bubble optional" aria-hidden="true">+</i> Option: ':''}${esc(it.value)}</span>${it.before?`<small>${esc(here.name)}: ${esc(it.before)}</small>`:''}</span></label>`).join('')}</fieldset>`;
+ return `<fieldset class="tf-group tf-${kind}"><legend>${title}</legend>${items.map((it,n)=>`<label class="tf-item"><input type="checkbox" data-pick="${kind}:${n}"><span class="tf-check" aria-hidden="true"></span><span class="tf-text"><strong>${esc(it.label)}</strong><span>${kind==='options'||kind==='own'?'<i class="bubble optional" aria-hidden="true">+</i> Option: ':''}${esc(it.value)}</span>${it.before?`<small>${esc(here.name)}: ${esc(it.before)}</small>`:''}</span></label>`).join('')}</fieldset>`;
 }
 
 const listOf=a=>a.length>1?a.slice(0,-1).join(', ')+' and '+a.at(-1):a[0]||'';
@@ -66,7 +66,11 @@ let offer=null;
 function stepView(){
  const trims=trimsOf(),here=trims[state.at],next=trims[state.at+1],m=modelOf(state.model);
  const std=standardEquipment(here);
- offer=next?stepUp(here,next):null;
+ // The next trim's list leaves out what this trim already has: documented here, standard on a trim below, or on the
+ // window sticker of one of this trim's vehicles in stock.
+ const entry=stock.models?.[state.model];
+ const onCurrent=key=>{const ids=entry?.rows?.[key]||[];return !!ids.length&&(entry?.vehicles||[]).some(v=>v.trim===here.id&&v.sticker&&ids.some(n=>v.y.includes(n)));};
+ offer={...(next?stepUp(here,next,{below:[...m.below,...trims.slice(0,state.at)],onCurrent}):{adds:[],changes:[],options:[]}),own:trimOptions(here).filter(o=>!state.picks.some(p=>p.key===o.key))};
  const first=state.at===0&&!state.picks.length;
  return `${pathView()}
  ${state.note?`<p class="tf-note">${esc(state.note)}</p>`:''}
@@ -76,10 +80,11 @@ function stepView(){
   <div class="tf-current-text"><p class="eyebrow">${first?'Start here · the base model':'You’re on'}</p><h2>${esc(m.year+' '+m.name)} <span>${esc(here.name)}</span></h2>${here.difference?`<p>${esc(here.difference)}</p>`:''}${stockLine(here)}
   ${state.picks.length?`<div class="tf-picks"><strong>You picked:</strong> ${state.picks.map(p=>`<span>${esc(p.label)}${p.need==='option'?' (option)':''}</span>`).join('')}</div>${liveCount()}`:''}</div>
  </article>
- <details class="tf-standard"${first?' open':''}><summary>${first?`What comes standard on the ${esc(here.name)}, the base of the lineup`:`Everything standard on the ${esc(here.name)}`} <small>(${std.length})</small></summary><ul>${std.map(f=>`<li><i class="bubble standard" aria-hidden="true">✓</i><span><strong>${esc(f.label)}</strong> ${esc(f.value)}</span></li>`).join('')}</ul>${(here.comparison||[]).some(f=>f.status==='optional')?`<p class="tf-small">Options you can add to the ${esc(here.name)}: ${(here.comparison||[]).filter(f=>f.status==='optional').map(f=>esc(f.label)).join(', ')}.</p>`:''}</details>
+ <details class="tf-standard"${first?' open':''}><summary>${first?`What comes standard on the ${esc(here.name)}, the base of the lineup`:`Everything standard on the ${esc(here.name)}`} <small>(${std.length})</small></summary><ul>${std.map(f=>`<li><i class="bubble standard" aria-hidden="true">✓</i><span><strong>${esc(f.label)}</strong> ${esc(f.value)}</span></li>`).join('')}</ul></details>
+ ${offer.own.length?`<section class="tf-own">${pickList('Options you can add to the '+esc(here.name),offer.own,'own')}${next?'':`<div class="tf-actions"><button type="button" class="btn" data-act="up" disabled>Pick what you want above</button></div>`}</section>`:''}
  ${next?`<section class="tf-next">
   <div class="tf-next-head">${photo(next,'tf-next-photo')}<div><p class="eyebrow">Next trim up</p><h3>Step up to the ${esc(next.name)}</h3><p class="tf-sub">What the ${esc(next.name)} adds over the ${esc(here.name)}</p>${next.difference?`<p>${esc(next.difference)}</p>`:''}${stockLine(next)}</div></div>
-  <p class="tf-how">Check anything you want. We’ll take you to the first trim that has all of it.</p>
+  <p class="tf-how">Check anything you want — options on the ${esc(here.name)} above, or what the ${esc(next.name)} adds. We’ll take you to the first trim that has all of it.</p>
   ${pickList('New on the '+esc(next.name),offer.adds,'adds')}
   ${pickList('Different on the '+esc(next.name),offer.changes,'changes')}
   ${pickList('Options you can add on the '+esc(next.name),offer.options,'options')}
@@ -137,7 +142,7 @@ function draw(scroll){
  if(scroll)root.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});
  const up=root.querySelector('[data-act=up]');
  if(up){
-  const sync=()=>{const n=root.querySelectorAll('[data-pick]:checked').length;up.disabled=!n;up.textContent=n?`Take me to the trim with ${n===1?'this':'these '+n}`:'Pick what you want above';};
+  const sync=()=>{const n=root.querySelectorAll('[data-pick]:checked').length;up.disabled=!n;up.textContent=n?`Continue with ${n===1?'this':'these '+n}`:'Pick what you want above';};
   root.querySelectorAll('[data-pick]').forEach(b=>b.addEventListener('change',sync));sync();
  }
 }
@@ -156,7 +161,9 @@ root.addEventListener('click',e=>{
  if(act==='skip'){go({at:state.at+1,path:[...state.path,state.at+1],note:null});return;}
  if(act==='up'){
   const chosen=[...root.querySelectorAll('[data-pick]:checked')].map(x=>{const [kind,n]=x.dataset.pick.split(':');return {...offer[kind][Number(n)],at:state.at};});
-  const picks=[...state.picks,...chosen],match=nextMatch(modelOf(state.model).model,state.at,picks);
+  // The first trim, this one included, with everything picked: options on this trim keep the shopper here.
+  const picks=[...state.picks,...chosen],match=nextMatch(modelOf(state.model).model,state.at-1,picks);
+  if(match&&match.index===state.at){go({picks,note:`The ${trims[state.at].name} can have everything you picked so far.`});return;}
   if(!match){go({done:true,picks,note:null});return;}
   const skipped=trims.slice(state.at+1,match.index).map(t=>t.name);
   const note=match.missing.length?`No single trim has everything you picked. The ${trims[match.index].name} has the most of it.`:skipped.length?`The ${trims[match.index].name} is the first trim with everything you picked${skipped.length?` (we skipped the ${skipped.join(', ')})`:''}.`:null;

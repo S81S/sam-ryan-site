@@ -35,23 +35,39 @@ const factFor=(trim,key)=>facts(trim).find(f=>f.key===key)||null;
 // Everything standard on a trim, in the guide's order.
 export function standardEquipment(trim){return facts(trim).filter(f=>f.status==='standard');}
 
-// What `next` adds over `current`: new standard equipment, standard equipment that is different, and options newly offered.
-export function stepUp(current,next){
+// What `next` adds over `current`: only what the next trim has that the current trim does not — new standard
+// equipment, a different standard version (a bigger screen), and options the current trim does not offer.
+// Anything the current trim already has, standard or as an option, is left out. When the guide does not list an
+// item for the current trim, it is still left out if there is evidence the current trim has it: a trim below it
+// lists it as standard, or a window sticker on one of the current trim's vehicles in stock shows it (`onCurrent`).
+export function stepUp(current,next,{below=[],onCurrent=()=>false}={}){
  const adds=[],changes=[],options=[];
+ const already=key=>below.some(t=>factFor(t,key)?.status==='standard')||onCurrent(key);
+ const upgradeOn=(now,value)=>(now?.options||[]).some(x=>norm(x.value)===norm(value));
  for(const f of facts(next)){
   const now=factFor(current,f.key);
   if(f.status==='standard'){
-   if(!now||now.status!=='standard')adds.push({key:f.key,label:f.label,value:f.value,note:f.note,sourceUrl:f.sourceUrl,before:now?describe(now):null,need:'standard'});
-   // Same item, different standard version (a bigger screen, other tires): shown apart, as a change rather than an addition.
-   else if(norm(now.value)!==norm(f.value))changes.push({key:f.key,label:f.label,value:f.value,note:f.note,sourceUrl:f.sourceUrl,before:describe(now),need:'standard',was:now.value});
-  }else if(f.status==='optional'&&(!now||now.status==='unavailable'))options.push({key:f.key,label:f.label,value:f.value,note:f.note,sourceUrl:f.sourceUrl,before:now?describe(now):null,need:'option'});
-  // Upgrades offered on the next trim that this trim does not offer (a bigger screen, a better stereo).
+   if(now?.status==='standard'){
+    // Same item, different standard version: only when the current trim cannot have that version as an upgrade.
+    if(norm(now.value)!==norm(f.value)&&!upgradeOn(now,f.value))changes.push({key:f.key,label:f.label,value:f.value,note:f.note,sourceUrl:f.sourceUrl,before:describe(now),need:'standard',was:now.value});
+   }else if(now?.status==='unavailable'||(!now&&!already(f.key)))adds.push({key:f.key,label:f.label,value:f.value,note:f.note,sourceUrl:f.sourceUrl,before:now?describe(now):null,need:'standard'});
+  }else if(f.status==='optional'&&(now?.status==='unavailable'||(!now&&!already(f.key))))options.push({key:f.key,label:f.label,value:f.value,note:f.note,sourceUrl:f.sourceUrl,before:now?describe(now):null,need:'option'});
+  // Upgrades offered on the next trim that the current trim does not offer (a bigger screen, a better stereo).
   for(const o of f.options||[]){
-   const offered=(now?.options||[]).some(x=>norm(x.value)===norm(o.value));
-   if(!offered&&!(now?.status==='standard'&&norm(now.value)===norm(o.value)))options.push({key:o.key||o.label,label:o.label,value:o.value,note:o.note,sourceUrl:o.sourceUrl,base:f.key,before:now?describe(now):null,need:'option'});
+   if(upgradeOn(now,o.value)||(now?.status==='standard'&&norm(now.value)===norm(o.value)))continue;
+   options.push({key:o.key||o.label,label:o.label,value:o.value,note:o.note,sourceUrl:o.sourceUrl,base:f.key,before:now?describe(now):null,need:'option'});
   }
  }
  return {adds,changes,options};
+}
+// The options a trim offers (extra-cost packages and upgrades), so a shopper can add them without changing trim.
+export function trimOptions(trim){
+ const out=[];
+ for(const f of facts(trim)){
+  if(f.status==='optional')out.push({key:f.key,label:f.label,value:f.value,note:f.note,sourceUrl:f.sourceUrl,need:'option'});
+  for(const o of f.options||[])out.push({key:o.key||o.label,label:o.label,value:o.value,note:o.note,sourceUrl:o.sourceUrl,base:f.key,need:'option'});
+ }
+ return out;
 }
 function describe(f){return f.status==='standard'?f.value:f.status==='optional'?'Optional: '+f.value:f.status==='unavailable'?'Not offered':'Not documented';}
 
