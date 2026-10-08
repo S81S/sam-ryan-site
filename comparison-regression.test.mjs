@@ -370,3 +370,22 @@ test('a dealer title with no model name is completed from the window sticker, an
  // Running it again changes nothing.
  assert.equal(completeTitle('New 2027 JEEP WRANGLER 4-DOOR SAHARA',sticker('WRANGLER 4-DOOR SAHARA 4X4'),'V'),'New 2027 JEEP WRANGLER 4-DOOR SAHARA');
 });
+import {finderModels,stepUp,nextMatch,pickStatus,standardEquipment} from './trim-ladder.mjs';
+test('the trim finder walks a lineup from the base trim up',()=>{
+ const wrangler=trimGuideData.models.find(m=>m.id==='wrangler'),[sport,sportS,willys]=wrangler.trims;
+ assert.ok(finderModels(trimGuideData).some(m=>m.id==='wrangler'&&m.brand==='Jeep'));
+ assert.ok(standardEquipment(sport).length>10);
+ const step=stepUp(sport,sportS);
+ // New standard equipment, a different version of something the Sport has, and options the Sport does not offer.
+ assert.ok(step.adds.some(a=>a.label==='Adaptive cruise control'));
+ assert.ok(step.changes.some(a=>a.label==='Wheels'&&/black steel/.test(a.before)));
+ assert.ok(step.options.some(a=>a.label==='Heated front seats'&&a.need==='option'));
+ // Picking the Willys' locking rear differential from the Sport skips straight past the Sport S.
+ const locker=stepUp(sportS,willys).adds.find(a=>a.label==='Rear differential');
+ assert.equal(wrangler.trims[nextMatch(wrangler,0,[locker]).index].id,'willys');
+ // An option picked on the way up is reported as an option, not as standard.
+ const heated=step.options.find(a=>a.label==='Heated front seats');
+ const match=nextMatch(wrangler,0,[heated,locker]);
+ assert.equal(wrangler.trims[match.index].id,'willys');
+ assert.deepEqual(pickStatus(willys,[heated,locker]).map(p=>p.on),['option','standard']);
+});
