@@ -106,3 +106,5 @@
 .tf-avail small{display:block;color:var(--muted)}
 .tf-avail .tf-gone strong{color:#f6a6b1}
 .tf-subhead{margin:18px 0 10px;font-size:17px}
+
+.tf-sub{margin:0 0 6px;font-weight:700;color:#e8edf1}
