@@ -71,6 +71,8 @@ export const definitions = [
  ["limitedSlip","Limited-slip rear differential",wording.limitedSlip],
  ["skidPlates","Skid plates",new RegExp("skid.plate","i")],
  ["towHooks","Tow hooks",wording.towHooks],
+ // A winch, not a bumper that can take one.
+ ["winch","Factory winch",/\bwinch\b(?![- ]capable|[- ]ready)/i],
  ["runningBoards","Running boards / side steps",new RegExp("running.board|side.step|tubular.side","i")],
  ["powerBoards","Power running boards",new RegExp("power.*running.board","i")],
  ["tonneau","Tonneau cover",new RegExp("tonneau","i")],
@@ -205,6 +207,7 @@ const aliases=[
  ["limitedSlip",/\bfeaturetokenlimitedslip\b/g],
  ["skidPlates",/\bfeaturetokenskidplates\b/g],
  ["towHooks",/\bfeaturetokentowhooks\b/g],
+ ["winch",/\bwinch(?:es)?\b/g],
  ["runningBoards",/\bfeaturetokenrunningboards\b/g],
  ["powerBoards",/\bfeaturetokenpowerboards\b/g],
  ["tonneau",/\bfeaturetokentonneau\b/g],

@@ -389,3 +389,20 @@ test('the trim finder walks a lineup from the base trim up',()=>{
  assert.equal(wrangler.trims[match.index].id,'willys');
  assert.deepEqual(pickStatus(willys,[heated,locker]).map(p=>p.on),['option','standard']);
 });
+import {vehicleFit,inventoryFit} from './trim-ladder.mjs';
+test('picked features are checked against each in-stock vehicle, whatever its trim',()=>{
+ const wrangler=trimGuideData.models.find(m=>m.id==='wrangler'),[sport,sportS,willys]=wrangler.trims;
+ const heated=stepUp(sport,sportS).options.find(a=>a.label==='Heated front seats'),locker=stepUp(sportS,willys).adds.find(a=>a.label==='Rear differential');
+ const entry={ids:['heatedSeats'],rows:{[heated.key]:[0]},vehicles:[
+  {vin:'A',trim:'willys',sticker:true,y:[0],n:[],price:2},   // heated seats on its sticker, locker standard on Willys
+  {vin:'B',trim:'willys',sticker:true,y:[],n:[],price:1},    // Willys, no heated seats listed: the option is not on it
+  {vin:'C',trim:'sport',sticker:true,y:[0],n:[],price:0},    // heated seats; the guide does not document a rear locker for the Sport
+  {vin:'D',trim:'willys',sticker:false,y:[],n:[],price:3}]}; // no sticker read: heated seats need checking
+ const fit=inventoryFit(entry,wrangler.trims,[heated,locker]);
+ assert.deepEqual(fit.exact.map(r=>r.v.vin),['A']);
+ // Not documented is not the same as absent: those are left to confirm, never shown as a match.
+ assert.deepEqual(fit.possible.map(r=>r.v.vin).sort(),['C','D']);
+ assert.deepEqual(vehicleFit(entry.vehicles[1],willys,[heated,locker],entry).map(f=>f.on+'/'+f.by),['no/sticker','yes/trim']);
+ assert.deepEqual(vehicleFit(entry.vehicles[2],sport,[heated,locker],entry).map(f=>f.on),['yes','check']);
+ assert.deepEqual(fit.availability.map(a=>[a.yes,a.check]),[[2,1],[3,1]]);
+});

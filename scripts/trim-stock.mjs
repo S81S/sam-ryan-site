@@ -1,7 +1,8 @@
 // Which new vehicles in stock are which trim, for the trim finder. Each vehicle is matched to its factory trim-guide
 // column from its own window sticker (same rules as Compare VINs), and each trim gets a search that finds them.
 import {readFileSync,writeFileSync} from 'node:fs';
-import {guideTrim} from '../trim-link.mjs';
+import {guideTrim,guideRowIds} from '../trim-link.mjs';
+import {applyFactoryEquipment} from '../factory-equipment.mjs';
 import {parseQuery,matchVehicle} from '../equipment-search.mjs';
 const read=f=>JSON.parse(readFileSync(new URL('../'+f,import.meta.url),'utf8'));
 const data=read('trim-standard-data.json'),inventory=read('data/used-inventory.json'),records=read('data/equipment-index.json').records;
@@ -33,10 +34,30 @@ for(const [key,{m,vehicles}] of groups){
  const prices=vehicles.map(v=>v.price).filter(Number.isFinite);
  const q=bestQuery(vehicles,m);
  trims[key]={count:vehicles.length,from:prices.length?Math.min(...prices):null,query:q?.q||null,queryExtra:q?.extra??null,
-  // Every vehicle, cheapest first; photos for the first few only, to keep the file small.
-  vehicles:vehicles.map((v,i)=>({vin:v.vin,stock:v.stock,title:v.title,price:Number.isFinite(v.price)?v.price:null,miles:Number.isFinite(v.miles)?v.miles:null,...(i<6?{photo:(v.photoUrls||[])[0]||v.photoUrl||null}:{})}))};
+  vins:vehicles.map(v=>v.vin)};
 }
-const out={generatedAt:inventory.capturedAt,trims};
+// Per model: every in-stock vehicle with what its own window sticker says about each feature a guide row can be
+// checked against, so a shopper's picks are matched to actual VINs whatever their trim.
+const models={};
+for(const [key,{m,vehicles}] of groups){
+ const id=m.model.id,entry=models[id]||(models[id]={ids:[],rows:{},vehicles:[]});
+ for(const trim of m.model.trims)for(const [row,ids] of guideRowIds(trim)){
+  const list=entry.rows[row]||(entry.rows[row]=[]);
+  for(const f of ids){let n=entry.ids.indexOf(f);if(n<0){n=entry.ids.length;entry.ids.push(f);}if(!list.includes(n))list.push(n);}
+ }
+ for(const v of vehicles){
+  const sticker=applyFactoryEquipment(v,records[v.vin]),features=sticker?.status==='verified'?sticker.features||{}:{};
+  entry.vehicles.push({vin:v.vin,stock:v.stock,title:v.title,trim:m.trim.id,price:Number.isFinite(v.price)?v.price:null,photo:(v.photoUrls||[])[0]||v.photoUrl||null,sticker:sticker?.status==='verified',_v:v,_f:features});
+ }
+}
+for(const entry of Object.values(models)){
+ for(const v of entry.vehicles){
+  v.y=[];v.n=[];entry.ids.forEach((f,n)=>{if(v._f[f]?.value===true)v.y.push(n);else if(v._f[f]?.value===false)v.n.push(n);});
+  delete v._v;delete v._f;
+ }
+ entry.vehicles.sort((a,b)=>(a.price??Infinity)-(b.price??Infinity));
+}
+const out={generatedAt:inventory.capturedAt,trims,models};
 const file=new URL('../data/trim-stock.json',import.meta.url),text=JSON.stringify(out);
 let old='';try{old=readFileSync(file,'utf8')}catch{}
 if(old!==text)writeFileSync(file,text);

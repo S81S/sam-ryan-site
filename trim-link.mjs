@@ -124,6 +124,30 @@ export function guideFeatureFacts(trim,installed={}){
  return facts;
 }
 
+// For each guide row on a trim, the window-sticker features that answer it: Map(row key → feature ids). Lets a
+// feature picked in the guide be checked against each in-stock vehicle's own sticker. An upgrade only counts by what
+// it adds over its base row (a bigger screen that also has navigation does not make "navigation" the upgrade).
+export function guideRowIds(trim){
+ const rows=new Map(),add=(key,id)=>{if(!rows.has(key))rows.set(key,new Set());rows.get(key).add(id);};
+ for(const [id,fact] of guideFeatureFacts(trim))add(fact.key,id);
+ for(const fact of trim?.comparison||[]){
+  // Engine and transmission choices are read from the vehicle's own engine line, not from option wording.
+  if(!fact.upgradeOf||/engine|powertrain|transmission|gearbox/i.test(fact.upgradeOf+' '+fact.key))continue;
+  const base=rows.get(fact.upgradeOf)||new Set();
+  for(const id of stickerIds(fact.value))if(!base.has(id)&&!/^(?:navigation|lumbar|thirdRow)$/.test(id))add(fact.key||fact.label,id);
+ }
+ // Rows the trim-fill mapping leaves alone can still be read off a sticker: the tire size, the factory roof, a hitch,
+ // the Sky One-Touch top. Rows about something the sticker feature would not settle (a camera, shades, switches,
+ // a screen size, seat adjustment) are left to the trim.
+ for(const fact of trim?.comparison||[]){
+  if(fact.upgradeOf||rows.has(fact.key)||/camera|shades|switch|accessory|touchscreen|screen|display|adjustment/i.test(fact.label))continue;
+  const byLabel=stickerIds(fact.label),ids=byLabel.length?byLabel:stickerIds(fact.value);
+  for(const id of ids)if(!/^(?:navigation|lumbar|thirdRow)$/.test(id)&&(id!=='tow'||/hitch|tow/i.test(fact.label)))add(fact.key,id);
+ }
+ return new Map([...rows].map(([k,v])=>[k,[...v]]));
+}
+const stickerIds=text=>parseQuery(text).requirements.filter(r=>r.wanted).map(r=>r.id).filter(id=>!/^(?:exterior|interior|engine)|^(?:fourWheel|awd|twoWheel|rwd|fwd|manualTransmission|automaticTransmission|diesel|electric|hybrid|leather|leatherette|cloth|turbo|v6|v8|hemi|pentastar|hurricane|supercharged|dieselCummins)$/.test(id));
+
 export function guideLink(matches){
  const found=matches.filter(Boolean);
  if(!found.length||new Set(found.map(m=>m.model.id)).size!==1)return null;

@@ -83,3 +83,27 @@ export function nextMatch(model,from,picks){
 
 // How the shopper's picks stand on the trim they ended on.
 export function pickStatus(trim,picks){return picks.map(p=>({...p,on:satisfies(trim,p)}));}
+
+// How one in-stock vehicle measures up to the picks, by its own window sticker where the sticker can answer, and by
+// the factory guide's column for its trim where it cannot. Per pick: on = 'yes' | 'no' | 'check', by = 'sticker' | 'trim'.
+// `entry` is the model's block of data/trim-stock.json (feature ids, guide row → feature ids, vehicles).
+export function vehicleFit(vehicle,trim,picks,entry){
+ return picks.map(pick=>{
+  const ids=entry?.rows?.[pick.key]||[],read=vehicle.sticker&&ids.length;
+  if(read&&ids.some(n=>vehicle.y.includes(n)))return {pick,on:'yes',by:'sticker'};
+  if(read&&ids.every(n=>vehicle.n.includes(n)))return {pick,on:'no',by:'sticker'};
+  const t=trim?satisfies(trim,pick):null;
+  if(t==='standard')return {pick,on:'yes',by:'trim'};
+  // An option the sticker can be checked for and does not list is not on this vehicle.
+  if(t==='option')return {pick,on:read?'no':'check',by:read?'sticker':'trim'};
+  return {pick,on:t===false?'no':'check',by:'trim'};
+ });
+}
+// Every in-stock vehicle of the model, scored against the picks: exact matches first, then the closest.
+export function inventoryFit(entry,trims,picks){
+ const rows=(entry?.vehicles||[]).map(v=>{const fit=vehicleFit(v,trims.find(t=>t.id===v.trim),picks,entry);
+  return {v,fit,yes:fit.filter(f=>f.on==='yes').length,no:fit.filter(f=>f.on==='no').length,check:fit.filter(f=>f.on==='check').length};});
+ rows.sort((a,b)=>b.yes-a.yes||a.no-b.no||(a.v.price??Infinity)-(b.v.price??Infinity));
+ const availability=picks.map((pick,i)=>({pick,yes:rows.filter(r=>r.fit[i].on==='yes').length,check:rows.filter(r=>r.fit[i].on==='check').length}));
+ return {rows,exact:rows.filter(r=>r.yes===picks.length),possible:rows.filter(r=>r.no===0&&r.check>0),availability};
+}

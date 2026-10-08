@@ -94,3 +94,15 @@
  .tf-car>span{padding:8px 12px}
 }
 @media(max-width:400px){.tf-models{grid-template-columns:1fr}}
+
+.tf-trimtag{align-self:flex-start;font-style:normal;font-size:12px;font-weight:800;letter-spacing:.5px;text-transform:uppercase;color:var(--gold)}
+.tf-hit{color:#9ef0c6;font-weight:700}
+.tf-miss{color:#f6a6b1}
+.tf-ask{color:#ffe095}
+.tf-live{margin:10px 0 0;font-size:15px;color:#c7d0d8}
+.tf-live strong{color:#9ef0c6;font-size:18px}
+.tf-avail{list-style:none;margin:6px 0 16px;padding:0;display:grid;gap:8px}
+.tf-avail li{display:flex;gap:9px;align-items:flex-start;font-size:15px}
+.tf-avail small{display:block;color:var(--muted)}
+.tf-avail .tf-gone strong{color:#f6a6b1}
+.tf-subhead{margin:18px 0 10px;font-size:17px}

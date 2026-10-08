@@ -26,6 +26,7 @@ export const wording={
  towMirrors:/trailer[ -]tow.*mirror|tow[ -]mirror|\bTT mirrors?\b|\btelescop\w*\b[^,;]*\bmirrors?\b|\bmirrors?\b[^,;]*\btelescop/i,
  // GM prints its automatic high beams as "IntelliBeam - Auto High Beam".
  autoHighBeam:/automatic high.?beam|\bintellibeam\b|\bauto high.?beam|\bhigh beam assist\b/i,
+ winch:/\bwinch\b(?![- ]capable|[- ]ready)/i,
  // Recovery hooks and tow hooks are the same thing.
  towHooks:/\btow[ -]hooks?\b|\brecovery[ -]hooks?\b/i,
  // GM's "Forward Collision Alert" is forward collision warning.
@@ -61,7 +62,7 @@ function read(lines,id){
 // any other saved answer (another make's reader, a reviewed record) is left alone.
 const retired={leather:/\bleatherette\b|\b(?:steering wheel|door trim|shift knob)\b/i,emergencyBrake:/\bbrake[ -]hold\b|\bmulti[ -]collision\b/i};
 // Added when the wording is there; a saved answer is never taken away.
-const added=['towMirrors','autoHighBeam','bedliner','towHooks','forwardWarning','leatherette','captains','thirdRow','memorySeats','rearLocker','limitedSlip','foldMirrors','pedestrianBrake','passiveEntry','keylessEntry','pushStart','premiumAudio','outlet','dualClimate','triClimate','quadClimate'];
+const added=['winch','towMirrors','autoHighBeam','bedliner','towHooks','forwardWarning','leatherette','captains','thirdRow','memorySeats','rearLocker','limitedSlip','foldMirrors','pedestrianBrake','passiveEntry','keylessEntry','pushStart','premiumAudio','outlet','dualClimate','triClimate','quadClimate'];
 
 // Four-wheel drive, all-wheel drive and two-wheel drive are different things. Go by what the sticker's model line
 // calls this vehicle (the listing title when that line does not say).
