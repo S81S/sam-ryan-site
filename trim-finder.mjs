@@ -1,4 +1,4 @@
-// Trim Finder: start at a model's base trim, see what each trim above it adds, pick what you want and land on the
+// Perfect Match (the interactive car-buying guide): start at a model's base trim, see what each trim above it adds, pick what you want and land on the
 // first trim that has it — with the matching vehicles in stock. Built on the same factory trim guide as Compare Trims.
 import {finderModels,standardEquipment,stepUp,nextMatch,pickStatus} from './trim-ladder.mjs';
 
@@ -88,7 +88,7 @@ function resultView(){
  const status=pickStatus(here,state.picks),options=status.filter(p=>p.on==='option'),missing=status.filter(p=>!p.on);
  const prev=state.path.length>1?trims[state.path[state.path.length-2]]:trims[state.at-1];
  const compare=`/trim-guide?model=${encodeURIComponent(state.model)}&trims=${[prev?.id,here.id].filter(Boolean).map(encodeURIComponent).join(',')}`;
- const request=`I used the Trim Finder and landed on the ${fullName(here)}.`+(state.picks.length?` What I want: ${state.picks.map(p=>p.label+(p.need==='option'?' (option)':'')).join(', ')}.`:'')+` Can you help me find the right one?`;
+ const request=`I used Perfect Match on Cars With Sam and landed on the ${fullName(here)}.`+(state.picks.length?` What I want: ${state.picks.map(p=>p.label+(p.need==='option'?' (option)':'')).join(', ')}.`:'')+` Can you help me find the right one?`;
  const cars=s?.vehicles||[];
  return `${pathView()}
  <article class="tf-current tf-result">

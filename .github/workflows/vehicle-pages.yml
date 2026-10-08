@@ -37,7 +37,7 @@ jobs:
           node-version: '22'
       - name: Complete dealer titles that leave the model out
         run: node scripts/complete-titles.mjs
-      - name: Match new vehicles in stock to their factory trims for the Trim Finder
+      - name: Match new vehicles in stock to their factory trims for Perfect Match
         run: node scripts/trim-stock.mjs
       - name: Keep the files the browser loads in step with the data
         run: node scripts/browser-copies.mjs
