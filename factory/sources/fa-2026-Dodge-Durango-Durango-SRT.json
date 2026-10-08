@@ -1,0 +1,2794 @@
+{
+"kind": "fa",
+"title": "2026 Dodge Durango / Durango SRT",
+"rows": [
+{
+"page": 1,
+"section": "ENGINES/TRANSMISSIONS",
+"parent": "",
+"text": "3.6-liter Pentastar variable- valve timing (VVT) V-6 with TorqueFlite eight-speed automatic transmission",
+"marks": {
+"GT": "S",
+"GT PLUS": "S",
+"GT HEMI": "NA",
+"GT HEMI Plus": "NA",
+"GT HEMI Premium": "NA",
+"R/T 392 Launch Edition": "NA",
+"R/T 392 Premium Launch Edition": "NA",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "NA"
+}
+},
+{
+"page": 1,
+"section": "ENGINES/TRANSMISSIONS",
+"parent": "",
+"text": "5.7-liter HEMI variable- camshaft timing (VCT) V-8 with Fuel Saver Technology paired to the TorqueFlite eight-speed automatic transmission",
+"marks": {
+"GT": "NA",
+"GT PLUS": "NA",
+"GT HEMI": "S",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "NA",
+"R/T 392 Premium Launch Edition": "NA",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "NA"
+}
+},
+{
+"page": 1,
+"section": "ENGINES/TRANSMISSIONS",
+"parent": "",
+"text": "6.4-liter HEMI variable- camshaft timing (VCT) V-8 paired to the TorqueFlite eight-speed automatic transmission",
+"marks": {
+"GT": "NA",
+"GT PLUS": "NA",
+"GT HEMI": "NA",
+"GT HEMI Plus": "NA",
+"GT HEMI Premium": "NA",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "NA"
+}
+},
+{
+"page": 1,
+"section": "ENGINES/TRANSMISSIONS",
+"parent": "",
+"text": "Supercharged 6.2-liter HEMI SRT Hellcat V-8 paired to the TorqueFlite eight-speed automatic transmission",
+"marks": {
+"GT": "NA",
+"GT PLUS": "NA",
+"GT HEMI": "NA",
+"GT HEMI Plus": "NA",
+"GT HEMI Premium": "NA",
+"R/T 392 Launch Edition": "NA",
+"R/T 392 Premium Launch Edition": "NA",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL FEATURES",
+"parent": "Brakes",
+"text": "Anti-lock four-wheel disc heavy-duty",
+"marks": {
+"GT": "S",
+"GT PLUS": "S",
+"GT HEMI": "S",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "NA",
+"R/T 392 Premium Launch Edition": "NA",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "NA"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL FEATURES",
+"parent": "Brakes",
+"text": "Anti-lock four-wheel disc performance — Brembo brake calipers with SRT logo (included with Tow N Go Package)",
+"marks": {
+"GT": "NA",
+"GT PLUS": "NA",
+"GT HEMI": "P",
+"GT HEMI Plus": "P",
+"GT HEMI Premium": "P",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "NA"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Brakes",
+"text": "Anti-lock four-wheel disc performance — Brembo brake calipers with SRT logo (two-piece front rotors)",
+"marks": {
+"GT": "NA",
+"GT PLUS": "NA",
+"GT HEMI": "NA",
+"GT HEMI Plus": "NA",
+"GT HEMI Premium": "NA",
+"R/T 392 Launch Edition": "NA",
+"R/T 392 Premium Launch Edition": "P",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Brakes",
+"text": "Brembo brake calipers (black)",
+"marks": {
+"GT": "NA",
+"GT PLUS": "NA",
+"GT HEMI": "O",
+"GT HEMI Plus": "O",
+"GT HEMI Premium": "O",
+"R/T 392 Launch Edition": "O",
+"R/T 392 Premium Launch Edition": "O",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "O"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Brakes",
+"text": "Brembo brake calipers (red)",
+"marks": {
+"GT": "NA",
+"GT PLUS": "NA",
+"GT HEMI": "NA",
+"GT HEMI Plus": "NA",
+"GT HEMI Premium": "NA",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Brakes",
+"text": "Brembo brake calipers (orange, yellow)",
+"marks": {
+"GT": "NA",
+"GT PLUS": "NA",
+"GT HEMI": "NA",
+"GT HEMI Plus": "NA",
+"GT HEMI Premium": "NA",
+"R/T 392 Launch Edition": "NA",
+"R/T 392 Premium Launch Edition": "NA",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "O"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Drivetrain",
+"text": "Rear-wheel drive (RWD)",
+"marks": {
+"GT": "S",
+"GT PLUS": "NA",
+"GT HEMI": "NA",
+"GT HEMI Plus": "NA",
+"GT HEMI Premium": "NA",
+"R/T 392 Launch Edition": "NA",
+"R/T 392 Premium Launch Edition": "NA",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "NA"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Drivetrain",
+"text": "All-wheel drive (AWD)",
+"marks": {
+"GT": "O",
+"GT PLUS": "S",
+"GT HEMI": "S",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Exhaust System",
+"text": "Dual rear with bright tips",
+"marks": {
+"GT": "S",
+"GT PLUS": "S",
+"GT HEMI": "S",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Exhaust System",
+"text": "Dual rear with Eclipse Black tips",
+"marks": {
+"GT": "O",
+"GT PLUS": "O",
+"GT HEMI": "O",
+"GT HEMI Plus": "O",
+"GT HEMI Premium": "O",
+"R/T 392 Launch Edition": "O",
+"R/T 392 Premium Launch Edition": "O",
+"SRT Hellcat": "O",
+"SRT Hellcat Jailbreak": "O"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "",
+"text": "Fuel door — push-push",
+"marks": {
+"GT": "S",
+"GT PLUS": "S",
+"GT HEMI": "S",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "",
+"text": "Fuel tank — 24.6-gallon",
+"marks": {
+"GT": "S",
+"GT PLUS": "S",
+"GT HEMI": "S",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Steering",
+"text": "Electric power",
+"marks": {
+"GT": "S",
+"GT PLUS": "S",
+"GT HEMI": "S",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Steering",
+"text": "SRT performance tuned (included with Tow N Go Package)",
+"marks": {
+"GT": "NA",
+"GT PLUS": "NA",
+"GT HEMI": "P",
+"GT HEMI Plus": "P",
+"GT HEMI Premium": "P",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Steering",
+"text": "Tilt/telescoping steering column (manual)",
+"marks": {
+"GT": "S",
+"GT PLUS": "NA",
+"GT HEMI": "S",
+"GT HEMI Plus": "NA",
+"GT HEMI Premium": "NA",
+"R/T 392 Launch Edition": "NA",
+"R/T 392 Premium Launch Edition": "NA",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "NA"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Steering",
+"text": "Tilt/telescoping steering column (power) (included with Plus Package and Premium Package)",
+"marks": {
+"GT": "NA",
+"GT PLUS": "S",
+"GT HEMI": "NA",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 3,
+"section": "MECHANICAL FEATURES",
+"parent": "Suspensions",
+"text": "Eco suspension III",
+"marks": {
+"GT": "S",
+"GT PLUS": "S",
+"GT HEMI": "NA",
+"GT HEMI Plus": "NA",
+"GT HEMI Premium": "NA",
+"R/T 392 Launch Edition": "NA",
+"R/T 392 Premium Launch Edition": "NA",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "NA"
+}
+},
+{
+"page": 3,
+"section": "MECHANICAL FEATURES",
+"parent": "Suspensions",
+"text": "Normal duty (on AWD only)",
+"marks": {
+"GT": "S",
+"GT PLUS": "S",
+"GT HEMI": "NA",
+"GT HEMI Plus": "NA",
+"GT HEMI Premium": "NA",
+"R/T 392 Launch Edition": "NA",
+"R/T 392 Premium Launch Edition": "NA",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "NA"
+}
+},
+{
+"page": 3,
+"section": "MECHANICAL FEATURES",
+"parent": "Suspensions",
+"text": "Rear load-leveling (included with Trailer-tow Group IV or Trailer-tow)",
+"marks": {
+"GT": "NA",
+"GT PLUS": "NA",
+"GT HEMI": "P",
+"GT HEMI Plus": "P",
+"GT HEMI Premium": "P",
+"R/T 392 Launch Edition": "P",
+"R/T 392 Premium Launch Edition": "P",
+"SRT Hellcat": "P",
+"SRT Hellcat Jailbreak": "P"
+}
+},
+{
+"page": 3,
+"section": "MECHANICAL FEATURES",
+"parent": "Suspensions",
+"text": "Sport",
+"marks": {
+"GT": "NA",
+"GT PLUS": "NA",
+"GT HEMI": "S",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "NA",
+"R/T 392 Premium Launch Edition": "NA",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "NA"
+}
+},
+{
+"page": 3,
+"section": "MECHANICAL FEATURES",
+"parent": "Suspensions",
+"text": "High-performance and adaptive damping (included with Tow N Go Package)",
+"marks": {
+"GT": "NA",
+"GT PLUS": "NA",
+"GT HEMI": "P",
+"GT HEMI Plus": "P",
+"GT HEMI Premium": "P",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "NA"
+}
+},
+{
+"page": 3,
+"section": "MECHANICAL FEATURES",
+"parent": "Suspensions",
+"text": "Competition",
+"marks": {
+"GT": "NA",
+"GT PLUS": "NA",
+"GT HEMI": "NA",
+"GT HEMI Plus": "NA",
+"GT HEMI Premium": "NA",
+"R/T 392 Launch Edition": "NA",
+"R/T 392 Premium Launch Edition": "NA",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 3,
+"section": "MECHANICAL FEATURES",
+"parent": "Transfer Case",
+"text": "Single-speed, full-time AWD, includes MP310 transfer case",
+"marks": {
+"GT": "S",
+"GT PLUS": "S",
+"GT HEMI": "S",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "NA",
+"R/T 392 Premium Launch Edition": "NA",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "NA"
+}
+},
+{
+"page": 3,
+"section": "MECHANICAL FEATURES",
+"parent": "Transfer Case",
+"text": "Two-speed, active on- demand AWD (included with 5.7-liter V-8 engine, models with Trailer-tow only)",
+"marks": {
+"GT": "NA",
+"GT PLUS": "NA",
+"GT HEMI": "P",
+"GT HEMI Plus": "P",
+"GT HEMI Premium": "P",
+"R/T 392 Launch Edition": "NA",
+"R/T 392 Premium Launch Edition": "NA",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "NA"
+}
+},
+{
+"page": 3,
+"section": "MECHANICAL FEATURES",
+"parent": "Transfer Case",
+"text": "Performance-tuned AWD system (included with Tow N Go Package)",
+"marks": {
+"GT": "NA",
+"GT PLUS": "NA",
+"GT HEMI": "P",
+"GT HEMI Plus": "P",
+"GT HEMI Premium": "P",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Fascias",
+"text": "Body-color upper",
+"marks": {
+"GT": "S",
+"GT PLUS": "S",
+"GT HEMI": "S",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Fascias",
+"text": "Body-color lower",
+"marks": {
+"GT": "S",
+"GT PLUS": "S",
+"GT HEMI": "S",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Grille",
+"text": "Black with Sport inner",
+"marks": {
+"GT": "S",
+"GT PLUS": "S",
+"GT HEMI": "S",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "NA"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Grille",
+"text": "Black with Performance inner",
+"marks": {
+"GT": "NA",
+"GT PLUS": "NA",
+"GT HEMI": "NA",
+"GT HEMI Plus": "NA",
+"GT HEMI Premium": "NA",
+"R/T 392 Launch Edition": "NA",
+"R/T 392 Premium Launch Edition": "NA",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Hood",
+"text": "Standard hood",
+"marks": {
+"GT": "S",
+"GT PLUS": "S",
+"GT HEMI": "NA",
+"GT HEMI Plus": "NA",
+"GT HEMI Premium": "NA",
+"R/T 392 Launch Edition": "NA",
+"R/T 392 Premium Launch Edition": "NA",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "NA"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Hood",
+"text": "Body-color performance design with center air intake and dual heat extractors",
+"marks": {
+"GT": "NA",
+"GT PLUS": "O",
+"GT HEMI": "S",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Hood",
+"text": "Gloss Black-painted",
+"marks": {
+"GT": "NA",
+"GT PLUS": "NA",
+"GT HEMI": "NA",
+"GT HEMI Plus": "NA",
+"GT HEMI Premium": "NA",
+"R/T 392 Launch Edition": "NA",
+"R/T 392 Premium Launch Edition": "NA",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "O"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "Liftgate — power with key fob, overhead console and rear cargo area controls",
+"marks": {
+"GT": "S",
+"GT PLUS": "S",
+"GT HEMI": "S",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Lighting",
+"text": "Auto high-beam headlamp control",
+"marks": {
+"GT": "NA",
+"GT PLUS": "S",
+"GT HEMI": "NA",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Lighting",
+"text": "Automatic headlamps (ON/OFF) actuate when ambient light is at low levels; includes headlamps- on-with-wipers",
+"marks": {
+"GT": "S",
+"GT PLUS": "S",
+"GT HEMI": "S",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Lighting",
+"text": "Automatic headlamp leveling system (included with Tow N Go Package)",
+"marks": {
+"GT": "NA",
+"GT PLUS": "NA",
+"GT HEMI": "P",
+"GT HEMI Plus": "P",
+"GT HEMI Premium": "P",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Lighting",
+"text": "LED low/high headlamps",
+"marks": {
+"GT": "S",
+"GT PLUS": "S",
+"GT HEMI": "S",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Lighting",
+"text": "LED auxiliary low beam (included with Tow N Go Package)",
+"marks": {
+"GT": "NA",
+"GT PLUS": "NA",
+"GT HEMI": "P",
+"GT HEMI Plus": "P",
+"GT HEMI Premium": "P",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Lighting",
+"text": "LED daytime running lamps",
+"marks": {
+"GT": "S",
+"GT PLUS": "S",
+"GT HEMI": "S",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Mirrors",
+"text": "Black, power, manual foldaway, heating element",
+"marks": {
+"GT": "S",
+"GT PLUS": "NA",
+"GT HEMI": "S",
+"GT HEMI Plus": "NA",
+"GT HEMI Premium": "NA",
+"R/T 392 Launch Edition": "NA",
+"R/T 392 Premium Launch Edition": "NA",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "NA"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Mirrors",
+"text": "Black, power, manual foldaway, heating element, auto-dimming driver’s side mirror, supplemental turn signals and memory",
+"marks": {
+"GT": "NA",
+"GT PLUS": "S",
+"GT HEMI": "NA",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 5,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "Remote start system — control integrated into key fob, radio frequency system with 300-ft. range",
+"marks": {
+"GT": "S",
+"GT PLUS": "S",
+"GT HEMI": "S",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 5,
+"section": "EXTERIOR FEATURES",
+"parent": "Stow ‘n Place Roof Rails",
+"text": "Black side with integrated, storable cross rails",
+"marks": {
+"GT": "NA",
+"GT PLUS": "S",
+"GT HEMI": "NA",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "O",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "NA"
+}
+},
+{
+"page": 5,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "Stripes — dual-center design available in five colors: Bright Blue, Flame Red, Gun Metal Low Gloss (metallic finish), Sterling Silver (metallic finish) and Redline",
+"marks": {
+"GT": "NA",
+"GT PLUS": "O",
+"GT HEMI": "O",
+"GT HEMI Plus": "O",
+"GT HEMI Premium": "O",
+"R/T 392 Launch Edition": "O",
+"R/T 392 Premium Launch Edition": "O",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "O"
+}
+},
+{
+"page": 5,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "Sunroof — power with express open/close and comfort-stop features",
+"marks": {
+"GT": "NA",
+"GT PLUS": "S",
+"GT HEMI": "NA",
+"GT HEMI Plus": "P",
+"GT HEMI Premium": "P",
+"R/T 392 Launch Edition": "NA",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "O",
+"SRT Hellcat Jailbreak": "O"
+}
+},
+{
+"page": 5,
+"section": "EXTERIOR FEATURES",
+"parent": "Tires",
+"text": "P265/60R18 all-season, low-rolling resistance (GT RWD)",
+"marks": {
+"GT": "S",
+"GT PLUS": "NA",
+"GT HEMI": "NA",
+"GT HEMI Plus": "NA",
+"GT HEMI Premium": "NA",
+"R/T 392 Launch Edition": "NA",
+"R/T 392 Premium Launch Edition": "NA",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "NA"
+}
+},
+{
+"page": 5,
+"section": "EXTERIOR FEATURES",
+"parent": "Tires",
+"text": "P265/50R20 all-season, low-rolling resistance (GT AWD)",
+"marks": {
+"GT": "O",
+"GT PLUS": "S",
+"GT HEMI": "S",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "NA",
+"R/T 392 Premium Launch Edition": "NA",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "NA"
+}
+},
+{
+"page": 5,
+"section": "EXTERIOR FEATURES",
+"parent": "Tires",
+"text": "P265/50R20 performance all-season (included with Blacktop Package)",
+"marks": {
+"GT": "P",
+"GT PLUS": "P",
+"GT HEMI": "O",
+"GT HEMI Plus": "P",
+"GT HEMI Premium": "P",
+"R/T 392 Launch Edition": "NA",
+"R/T 392 Premium Launch Edition": "NA",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "NA"
+}
+},
+{
+"page": 5,
+"section": "EXTERIOR FEATURES",
+"parent": "Tires",
+"text": "P295/45ZR20 all-season run-flat",
+"marks": {
+"GT": "NA",
+"GT PLUS": "NA",
+"GT HEMI": "NA",
+"GT HEMI Plus": "NA",
+"GT HEMI Premium": "NA",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 5,
+"section": "EXTERIOR FEATURES",
+"parent": "Tires",
+"text": "P295/45ZR20 three-season run-flat",
+"marks": {
+"GT": "NA",
+"GT PLUS": "NA",
+"GT HEMI": "NA",
+"GT HEMI Plus": "NA",
+"GT HEMI Premium": "NA",
+"R/T 392 Launch Edition": "O",
+"R/T 392 Premium Launch Edition": "O",
+"SRT Hellcat": "O",
+"SRT Hellcat Jailbreak": "O"
+}
+},
+{
+"page": 5,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheel Lip Moldings",
+"text": "Body color (included with Blacktop)",
+"marks": {
+"GT": "S",
+"GT PLUS": "S",
+"GT HEMI": "S",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 6,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels (aluminum)",
+"text": "18-inch",
+"marks": {
+"GT": "S",
+"GT PLUS": "NA",
+"GT HEMI": "NA",
+"GT HEMI Plus": "NA",
+"GT HEMI Premium": "NA",
+"R/T 392 Launch Edition": "NA",
+"R/T 392 Premium Launch Edition": "NA",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "NA"
+}
+},
+{
+"page": 6,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels (aluminum)",
+"text": "20-by-8-in. Fine Silver",
+"marks": {
+"GT": "NA",
+"GT PLUS": "S",
+"GT HEMI": "NA",
+"GT HEMI Plus": "NA",
+"GT HEMI Premium": "NA",
+"R/T 392 Launch Edition": "NA",
+"R/T 392 Premium Launch Edition": "NA",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "NA"
+}
+},
+{
+"page": 6,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels (aluminum)",
+"text": "20-by-8-in. Satin Carbon",
+"marks": {
+"GT": "NA",
+"GT PLUS": "NA",
+"GT HEMI": "S",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "NA",
+"R/T 392 Premium Launch Edition": "NA",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "NA"
+}
+},
+{
+"page": 6,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels (aluminum)",
+"text": "20-by-8-in. Black Noise (included with Blacktop Package)",
+"marks": {
+"GT": "P",
+"GT PLUS": "P",
+"GT HEMI": "P",
+"GT HEMI Plus": "P",
+"GT HEMI Premium": "P",
+"R/T 392 Launch Edition": "NA",
+"R/T 392 Premium Launch Edition": "NA",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "NA"
+}
+},
+{
+"page": 6,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels (aluminum)",
+"text": "20-by-10-in. machine face",
+"marks": {
+"GT": "NA",
+"GT PLUS": "NA",
+"GT HEMI": "NA",
+"GT HEMI Plus": "NA",
+"GT HEMI Premium": "NA",
+"R/T 392 Launch Edition": "NA",
+"R/T 392 Premium Launch Edition": "NA",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 6,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels (aluminum)",
+"text": "20-by-10-in. Forged Y- spoke painted Brass Monkey",
+"marks": {
+"GT": "NA",
+"GT PLUS": "NA",
+"GT HEMI": "NA",
+"GT HEMI Plus": "NA",
+"GT HEMI Premium": "NA",
+"R/T 392 Launch Edition": "NA",
+"R/T 392 Premium Launch Edition": "NA",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "O"
+}
+},
+{
+"page": 6,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels (aluminum)",
+"text": "20-by-10-in. painted Brass Monkey",
+"marks": {
+"GT": "NA",
+"GT PLUS": "NA",
+"GT HEMI": "NA",
+"GT HEMI Plus": "NA",
+"GT HEMI Premium": "NA",
+"R/T 392 Launch Edition": "NA",
+"R/T 392 Premium Launch Edition": "NA",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "O"
+}
+},
+{
+"page": 6,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels (aluminum)",
+"text": "20-by-10-in. painted Lights Out (included with Blacktop)",
+"marks": {
+"GT": "NA",
+"GT PLUS": "NA",
+"GT HEMI": "NA",
+"GT HEMI Plus": "NA",
+"GT HEMI Premium": "NA",
+"R/T 392 Launch Edition": "O",
+"R/T 392 Premium Launch Edition": "O",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "O"
+}
+},
+{
+"page": 6,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels (aluminum)",
+"text": "20-by-10-in. painted Satin Carbon (included in Tow N Go Package)",
+"marks": {
+"GT": "NA",
+"GT PLUS": "NA",
+"GT HEMI": "P",
+"GT HEMI Plus": "P",
+"GT HEMI Premium": "P",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "O"
+}
+},
+{
+"page": 6,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels (aluminum)",
+"text": "20-by-10-in. Forged Y- spoke painted Lights Out (included in Tow N Go Package with Blacktop/Blacktop Redline)",
+"marks": {
+"GT": "NA",
+"GT PLUS": "NA",
+"GT HEMI": "P",
+"GT HEMI Plus": "P",
+"GT HEMI Premium": "P",
+"R/T 392 Launch Edition": "NA",
+"R/T 392 Premium Launch Edition": "NA",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "O"
+}
+},
+{
+"page": 6,
+"section": "EXTERIOR FEATURES",
+"parent": "Wiper System",
+"text": "Front, speed-sensitive, variable/intermittent with one-gallon fluid capacity",
+"marks": {
+"GT": "S",
+"GT PLUS": "NA",
+"GT HEMI": "NA",
+"GT HEMI Plus": "NA",
+"GT HEMI Premium": "NA",
+"R/T 392 Launch Edition": "NA",
+"R/T 392 Premium Launch Edition": "NA",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "NA"
+}
+},
+{
+"page": 6,
+"section": "EXTERIOR FEATURES",
+"parent": "Wiper System",
+"text": "Front, rain-sensing automatic feature with one- gallon fluid capacity (included with Plus Group)",
+"marks": {
+"GT": "NA",
+"GT PLUS": "S",
+"GT HEMI": "S",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 6,
+"section": "EXTERIOR FEATURES",
+"parent": "Wiper System",
+"text": "Rear, fixed intermittent and continuous speeds, with washer",
+"marks": {
+"GT": "S",
+"GT PLUS": "S",
+"GT HEMI": "S",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "7-in. thin-film transistor reconfigurable digital gauge cluster — includes custom programmable features",
+"marks": {
+"GT": "S",
+"GT PLUS": "S",
+"GT HEMI": "S",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR FEATURES",
+"parent": "Air Conditioning",
+"text": "Rear with headliner vents and rear-seat controls",
+"marks": {
+"GT": "S",
+"GT PLUS": "S",
+"GT HEMI": "S",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR FEATURES",
+"parent": "Air Conditioning",
+"text": "Three-zone, automatic temperature control, includes infrared sensors and rear-seat outlets",
+"marks": {
+"GT": "S",
+"GT PLUS": "S",
+"GT HEMI": "S",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Air filtration N95 system",
+"marks": {
+"GT": "S",
+"GT PLUS": "S",
+"GT HEMI": "S",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR FEATURES",
+"parent": "Cargo Area",
+"text": "Bright scuff plates",
+"marks": {
+"GT": "NA",
+"GT PLUS": "NA",
+"GT HEMI": "NA",
+"GT HEMI Plus": "NA",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR FEATURES",
+"parent": "Cargo Area",
+"text": "Carpeted — includes storage tray and cargo tie- down loops in floor, driver’s side storage bin and 12-volt auxiliary power outlet",
+"marks": {
+"GT": "S",
+"GT PLUS": "S",
+"GT HEMI": "S",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR FEATURES",
+"parent": "Cargo Area",
+"text": "Covered cargo storage",
+"marks": {
+"GT": "S",
+"GT PLUS": "S",
+"GT HEMI": "S",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR FEATURES",
+"parent": "Console",
+"text": "Full-length front floor console with two illuminated cup holders, interior 12-volt power outlet and LED- illuminated USB connection (if equipped), console lid tissue holder and storage tray with anodized shifter bezel; rear of console features air-conditioning vent controls, rear-seat heat controls (if equipped) and video jacks (if equipped)",
+"marks": {
+"GT": "S",
+"GT PLUS": "S",
+"GT HEMI": "S",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR FEATURES",
+"parent": "Console",
+"text": "Second-row mini floor console with cup holders and storage; also includes a floor mat for the third row (included with second-row, fold-and-tumble captain’s chairs)",
+"marks": {
+"GT": "NA",
+"GT PLUS": "P",
+"GT HEMI": "NA",
+"GT HEMI Plus": "P",
+"GT HEMI Premium": "P",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "NA"
+}
+},
+{
+"page": 8,
+"section": "INTERIOR FEATURES",
+"parent": "Console",
+"text": "Overhead front console with two LED map lamps, two dome lamps, sunglasses storage bin, universal garage door opener control switches (if equipped) and power sunroof/sunshade controls (if equipped)",
+"marks": {
+"GT": "S",
+"GT PLUS": "S",
+"GT HEMI": "S",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 8,
+"section": "INTERIOR FEATURES",
+"parent": "Console",
+"text": "Second-row floor console with armrest, covered storage, illuminated cup holders, 12-volt auxiliary outlet and USB charging port; also includes floor mat for third row (requires second-row, fold-and- tumble captain’s chairs)",
+"marks": {
+"GT": "NA",
+"GT PLUS": "NA",
+"GT HEMI": "NA",
+"GT HEMI Plus": "NA",
+"GT HEMI Premium": "NA",
+"R/T 392 Launch Edition": "NA",
+"R/T 392 Premium Launch Edition": "NA",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "P"
+}
+},
+{
+"page": 8,
+"section": "INTERIOR FEATURES",
+"parent": "Console",
+"text": "Leather-wrapped armrest, center console",
+"marks": {
+"GT": "NA",
+"GT PLUS": "P",
+"GT HEMI": "NA",
+"GT HEMI Plus": "P",
+"GT HEMI Premium": "P",
+"R/T 392 Launch Edition": "NA",
+"R/T 392 Premium Launch Edition": "NA",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 8,
+"section": "INTERIOR FEATURES",
+"parent": "Floor Mats",
+"text": "Luxury front and rear",
+"marks": {
+"GT": "S",
+"GT PLUS": "S",
+"GT HEMI": "S",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "NA"
+}
+},
+{
+"page": 8,
+"section": "INTERIOR FEATURES",
+"parent": "Floor Mats",
+"text": "Third-row, bench seat mat",
+"marks": {
+"GT": "S",
+"GT PLUS": "S",
+"GT HEMI": "S",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "NA"
+}
+},
+{
+"page": 8,
+"section": "INTERIOR FEATURES",
+"parent": "Floor Mats",
+"text": "Third-row, full console mat (included with second-row console)",
+"marks": {
+"GT": "NA",
+"GT PLUS": "NA",
+"GT HEMI": "NA",
+"GT HEMI Plus": "NA",
+"GT HEMI Premium": "NA",
+"R/T 392 Launch Edition": "NA",
+"R/T 392 Premium Launch Edition": "NA",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "P"
+}
+},
+{
+"page": 8,
+"section": "INTERIOR FEATURES",
+"parent": "Floor Mats",
+"text": "Third-row, mini console mat (included with second-row mini console)",
+"marks": {
+"GT": "NA",
+"GT PLUS": "P",
+"GT HEMI": "NA",
+"GT HEMI Plus": "P",
+"GT HEMI Premium": "P",
+"R/T 392 Launch Edition": "P",
+"R/T 392 Premium Launch Edition": "P",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "NA"
+}
+},
+{
+"page": 8,
+"section": "INTERIOR FEATURES",
+"parent": "Floor Mats",
+"text": "Black with SRT logo",
+"marks": {
+"GT": "NA",
+"GT PLUS": "NA",
+"GT HEMI": "NA",
+"GT HEMI Plus": "NA",
+"GT HEMI Premium": "NA",
+"R/T 392 Launch Edition": "NA",
+"R/T 392 Premium Launch Edition": "NA",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 8,
+"section": "INTERIOR FEATURES",
+"parent": "Headliner",
+"text": "Black",
+"marks": {
+"GT": "S",
+"GT PLUS": "S",
+"GT HEMI": "S",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "NA",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 8,
+"section": "INTERIOR FEATURES",
+"parent": "Headliner",
+"text": "Dinamica suede",
+"marks": {
+"GT": "NA",
+"GT PLUS": "NA",
+"GT HEMI": "NA",
+"GT HEMI Plus": "NA",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "NA",
+"R/T 392 Premium Launch Edition": "P",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "O"
+}
+},
+{
+"page": 8,
+"section": "INTERIOR FEATURES",
+"parent": "Instrument Panel",
+"text": "Hand-wrapped with live stitch (packaged with Blacktop Redline for GT, GT HEMI and R/T, Premium Group for SRT Hellcat Jailbreak)",
+"marks": {
+"GT": "NA",
+"GT PLUS": "P",
+"GT HEMI": "NA",
+"GT HEMI Plus": "P",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "NA",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "P"
+}
+},
+{
+"page": 8,
+"section": "INTERIOR FEATURES",
+"parent": "Instrument Panel",
+"text": "Forged carbon-fiber accents",
+"marks": {
+"GT": "NA",
+"GT PLUS": "NA",
+"GT HEMI": "NA",
+"GT HEMI Plus": "NA",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "NA",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 9,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Lighting — glove box lamp, front LED map lamps, second-row aimable LED map lamps, courtesy door lamps, overhead console/rear-passenger overhead reading/courtesy lamps, cargo compartment lamp, Sapphire Blue interior switch lighting and Sapphire Blue ambient LED lighting for front-door inside handles and map pockets",
+"marks": {
+"GT": "S",
+"GT PLUS": "S",
+"GT HEMI": "S",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 9,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Memory system — radio station presets, last station settings, driver’s seat position, exterior mirrors, power tilt/telescoping steering wheel (if equipped) with settings for two drivers; actuated from driver door panel or each unique key fob",
+"marks": {
+"GT": "NA",
+"GT PLUS": "S",
+"GT HEMI": "NA",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 9,
+"section": "INTERIOR FEATURES",
+"parent": "Mirrors",
+"text": "Rearview, auto-dimming",
+"marks": {
+"GT": "S",
+"GT PLUS": "S",
+"GT HEMI": "S",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 9,
+"section": "INTERIOR FEATURES",
+"parent": "Seatbelts",
+"text": "Black",
+"marks": {
+"GT": "S",
+"GT PLUS": "S",
+"GT HEMI": "S",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 9,
+"section": "INTERIOR FEATURES",
+"parent": "Seatbelts",
+"text": "Red",
+"marks": {
+"GT": "NA",
+"GT PLUS": "NA",
+"GT HEMI": "NA",
+"GT HEMI Plus": "NA",
+"GT HEMI Premium": "NA",
+"R/T 392 Launch Edition": "NA",
+"R/T 392 Premium Launch Edition": "NA",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "O"
+}
+},
+{
+"page": 9,
+"section": "INTERIOR FEATURES",
+"parent": "Seatbelts",
+"text": "Sepia",
+"marks": {
+"GT": "NA",
+"GT PLUS": "NA",
+"GT HEMI": "NA",
+"GT HEMI Plus": "NA",
+"GT HEMI Premium": "NA",
+"R/T 392 Launch Edition": "NA",
+"R/T 392 Premium Launch Edition": "NA",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "O"
+}
+},
+{
+"page": 9,
+"section": "INTERIOR FEATURES",
+"parent": "Seatbelts",
+"text": "Hammerhead Gray",
+"marks": {
+"GT": "NA",
+"GT PLUS": "NA",
+"GT HEMI": "NA",
+"GT HEMI Plus": "NA",
+"GT HEMI Premium": "NA",
+"R/T 392 Launch Edition": "NA",
+"R/T 392 Premium Launch Edition": "NA",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "O"
+}
+},
+{
+"page": 9,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Eight-way power driver seat, power four-way driver lumbar adjuster and front passenger forward fold-flat seat",
+"marks": {
+"GT": "S",
+"GT PLUS": "NA",
+"GT HEMI": "S",
+"GT HEMI Plus": "NA",
+"GT HEMI Premium": "NA",
+"R/T 392 Launch Edition": "NA",
+"R/T 392 Premium Launch Edition": "NA",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "NA"
+}
+},
+{
+"page": 9,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Power driver/front passenger four-way lumbar adjust",
+"marks": {
+"GT": "NA",
+"GT PLUS": "S",
+"GT HEMI": "NA",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 9,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Power eight-way driver and front passenger seats; driver’s seat includes memory feature",
+"marks": {
+"GT": "NA",
+"GT PLUS": "S",
+"GT HEMI": "NA",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 10,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "First-row, heated",
+"marks": {
+"GT": "S",
+"GT PLUS": "S",
+"GT HEMI": "S",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 10,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "First-row, ventilated",
+"marks": {
+"GT": "NA",
+"GT PLUS": "S",
+"GT HEMI": "NA",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 10,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Second-row, 60/40 fold- and-tumble three- passenger bench (included with Third-row Seating Group)",
+"marks": {
+"GT": "S",
+"GT PLUS": "S",
+"GT HEMI": "S",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "NA",
+"R/T 392 Premium Launch Edition": "NA",
+"SRT Hellcat": "O",
+"SRT Hellcat Jailbreak": "O"
+}
+},
+{
+"page": 10,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Second-row, heated",
+"marks": {
+"GT": "NA",
+"GT PLUS": "S",
+"GT HEMI": "NA",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 10,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Second-row, 60/40 split folding seats",
+"marks": {
+"GT": "NA",
+"GT PLUS": "NA",
+"GT HEMI": "NA",
+"GT HEMI Plus": "NA",
+"GT HEMI Premium": "NA",
+"R/T 392 Launch Edition": "NA",
+"R/T 392 Premium Launch Edition": "NA",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 10,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Second-row, fold-and- tumble captain’s chairs",
+"marks": {
+"GT": "NA",
+"GT PLUS": "O",
+"GT HEMI": "NA",
+"GT HEMI Plus": "O",
+"GT HEMI Premium": "O",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "O"
+}
+},
+{
+"page": 10,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Third-row, 50/50 split- folding — includes head restraints that can be folded down electronically from a switch on the instrument panel center stack (included with Third-row Seating Group)",
+"marks": {
+"GT": "S",
+"GT PLUS": "S",
+"GT HEMI": "S",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "O",
+"SRT Hellcat Jailbreak": "O"
+}
+},
+{
+"page": 10,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Seven-passenger configuration",
+"marks": {
+"GT": "S",
+"GT PLUS": "S",
+"GT HEMI": "S",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "NA",
+"R/T 392 Premium Launch Edition": "NA",
+"SRT Hellcat": "O",
+"SRT Hellcat Jailbreak": "O"
+}
+},
+{
+"page": 10,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Six-passenger configuration",
+"marks": {
+"GT": "NA",
+"GT PLUS": "O",
+"GT HEMI": "NA",
+"GT HEMI Plus": "O",
+"GT HEMI Premium": "O",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "O"
+}
+},
+{
+"page": 10,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Shift mesh cloth with Carolina Cloth bolsters; available in black",
+"marks": {
+"GT": "S",
+"GT PLUS": "NA",
+"GT HEMI": "S",
+"GT HEMI Plus": "NA",
+"GT HEMI Premium": "NA",
+"R/T 392 Launch Edition": "NA",
+"R/T 392 Premium Launch Edition": "NA",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "NA"
+}
+},
+{
+"page": 10,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Black Nappa leather with Nappa Axis II perforated inserts and accent stitching in red; includes embroidered “//” logo",
+"marks": {
+"GT": "NA",
+"GT PLUS": "S",
+"GT HEMI": "NA",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "NA",
+"R/T 392 Premium Launch Edition": "NA",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "NA"
+}
+},
+{
+"page": 10,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Ebony Red",
+"marks": {
+"GT": "NA",
+"GT PLUS": "O",
+"GT HEMI": "NA",
+"GT HEMI Plus": "O",
+"GT HEMI Premium": "O",
+"R/T 392 Launch Edition": "NA",
+"R/T 392 Premium Launch Edition": "NA",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "NA"
+}
+},
+{
+"page": 10,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Embroidered SRT logo",
+"marks": {
+"GT": "NA",
+"GT PLUS": "NA",
+"GT HEMI": "NA",
+"GT HEMI Plus": "NA",
+"GT HEMI Premium": "NA",
+"R/T 392 Launch Edition": "NA",
+"R/T 392 Premium Launch Edition": "NA",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 10,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Black Nappa leather with Alcantara inserts and red accent stitching",
+"marks": {
+"GT": "NA",
+"GT PLUS": "NA",
+"GT HEMI": "NA",
+"GT HEMI Plus": "NA",
+"GT HEMI Premium": "NA",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "NA"
+}
+},
+{
+"page": 10,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Black Nappa leather with Alcantara inserts and silver accent stitching",
+"marks": {
+"GT": "NA",
+"GT PLUS": "NA",
+"GT HEMI": "NA",
+"GT HEMI Plus": "NA",
+"GT HEMI Premium": "NA",
+"R/T 392 Launch Edition": "NA",
+"R/T 392 Premium Launch Edition": "NA",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 11,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Performance Nappa seats with perforated inserts and silver accent stitching (only available in Ebony Red)",
+"marks": {
+"GT": "NA",
+"GT PLUS": "NA",
+"GT HEMI": "NA",
+"GT HEMI Plus": "NA",
+"GT HEMI Premium": "NA",
+"R/T 392 Launch Edition": "NA",
+"R/T 392 Premium Launch Edition": "NA",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "O"
+}
+},
+{
+"page": 11,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Performance Laguna leather seats (Demonic Red, Hammerhead Grey or Sepia with silver accent stitching)",
+"marks": {
+"GT": "NA",
+"GT PLUS": "NA",
+"GT HEMI": "NA",
+"GT HEMI Plus": "NA",
+"GT HEMI Premium": "NA",
+"R/T 392 Launch Edition": "NA",
+"R/T 392 Premium Launch Edition": "NA",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "O"
+}
+},
+{
+"page": 11,
+"section": "INTERIOR FEATURES",
+"parent": "Steering Wheel",
+"text": "Heated",
+"marks": {
+"GT": "S",
+"GT PLUS": "S",
+"GT HEMI": "S",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 11,
+"section": "INTERIOR FEATURES",
+"parent": "Steering Wheel",
+"text": "SRT leather",
+"marks": {
+"GT": "NA",
+"GT PLUS": "NA",
+"GT HEMI": "NA",
+"GT HEMI Plus": "NA",
+"GT HEMI Premium": "NA",
+"R/T 392 Launch Edition": "NA",
+"R/T 392 Premium Launch Edition": "NA",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 11,
+"section": "INTERIOR FEATURES",
+"parent": "Steering Wheel",
+"text": "SRT Alcantara",
+"marks": {
+"GT": "NA",
+"GT PLUS": "NA",
+"GT HEMI": "NA",
+"GT HEMI Plus": "NA",
+"GT HEMI Premium": "NA",
+"R/T 392 Launch Edition": "NA",
+"R/T 392 Premium Launch Edition": "NA",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "O"
+}
+},
+{
+"page": 11,
+"section": "UCONNECT MULTIMEDIA",
+"parent": "",
+"text": "Media hub — includes four USB ports (Type A, Type C) and auxiliary jack",
+"marks": {
+"GT": "S",
+"GT PLUS": "S",
+"GT HEMI": "S",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 11,
+"section": "UCONNECT MULTIMEDIA",
+"parent": "Power Outlet",
+"text": "Three 12-volt power outlets (passenger-side outboard in the center console, inside the center console and in rear cargo compartment)",
+"marks": {
+"GT": "S",
+"GT PLUS": "S",
+"GT HEMI": "S",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 11,
+"section": "UCONNECT MULTIMEDIA",
+"parent": "Power Outlet",
+"text": "12-volt power outlet and Type C USB port in second-row console (included with second-row console with armrest and storage)",
+"marks": {
+"GT": "NA",
+"GT PLUS": "NA",
+"GT HEMI": "NA",
+"GT HEMI Plus": "NA",
+"GT HEMI Premium": "NA",
+"R/T 392 Launch Edition": "NA",
+"R/T 392 Premium Launch Edition": "NA",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "P"
+}
+},
+{
+"page": 11,
+"section": "UCONNECT MULTIMEDIA",
+"parent": "Power Outlet",
+"text": "115-volt auxiliary power outlet includes two Type C USB charge ports (included with Trailer-tow Package)",
+"marks": {
+"GT": "O",
+"GT PLUS": "S",
+"GT HEMI": "O",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "O",
+"SRT Hellcat Jailbreak": "O"
+}
+},
+{
+"page": 12,
+"section": "UCONNECT MULTIMEDIA",
+"parent": "Radio",
+"text": "Uconnect 5 NAV with 10.1- in. display — includes 10.1-in. touchscreen, personalized home screen, AM/FM, AUX/USB, integrated voice command with Bluetooth, voice text reply, wireless Android Auto, wireless Apple CarPlay, HD radio, navigation, SiriusXM Guardian, SiriusXM Traffic, SiriusXM Travel Link, TomTom Navigation, Amazon Alexa compatibility, Sirius XM 360L includes Personalized Stations Powered by Pandora, Maps OTA, Firmware OTA and dual phone connectivity",
+"marks": {
+"GT": "S",
+"GT PLUS": "S",
+"GT HEMI": "S",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 12,
+"section": "UCONNECT MULTIMEDIA",
+"parent": "",
+"text": "SiriusXM Radio — includes trial subscription",
+"marks": {
+"GT": "S",
+"GT PLUS": "S",
+"GT HEMI": "S",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 12,
+"section": "UCONNECT MULTIMEDIA",
+"parent": "",
+"text": "SiriusXM Traffic Plus — includes five-year trial subscription (included with 10.1-in. radio)",
+"marks": {
+"GT": "S",
+"GT PLUS": "S",
+"GT HEMI": "S",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 12,
+"section": "UCONNECT MULTIMEDIA",
+"parent": "",
+"text": "SiriusXM Travel Link — includes five-year trial subscription (included with 10.1-in. radio)",
+"marks": {
+"GT": "S",
+"GT PLUS": "S",
+"GT HEMI": "S",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 12,
+"section": "UCONNECT MULTIMEDIA",
+"parent": "",
+"text": "Six speakers",
+"marks": {
+"GT": "S",
+"GT PLUS": "NA",
+"GT HEMI": "NA",
+"GT HEMI Plus": "NA",
+"GT HEMI Premium": "NA",
+"R/T 392 Launch Edition": "NA",
+"R/T 392 Premium Launch Edition": "NA",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "NA"
+}
+},
+{
+"page": 12,
+"section": "UCONNECT MULTIMEDIA",
+"parent": "",
+"text": "Speakers — Alpine premium audio system with nine speakers, subwoofer and 506-watt amplifier",
+"marks": {
+"GT": "NA",
+"GT PLUS": "S",
+"GT HEMI": "S",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "NA",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "NA",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 12,
+"section": "UCONNECT MULTIMEDIA",
+"parent": "",
+"text": "Speakers — Harman Kardon premium audio system with 19 speakers, subwoofer and 825-watt amplifier",
+"marks": {
+"GT": "NA",
+"GT PLUS": "NA",
+"GT HEMI": "NA",
+"GT HEMI Plus": "NA",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "NA",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "O"
+}
+},
+{
+"page": 13,
+"section": "UCONNECT MULTIMEDIA",
+"parent": "USB Port",
+"text": "Media hub — four USB ports (Type A, Type C) and auxiliary jack",
+"marks": {
+"GT": "S",
+"GT PLUS": "S",
+"GT HEMI": "S",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 13,
+"section": "UCONNECT MULTIMEDIA",
+"parent": "USB Port",
+"text": "Second-row center console — Type C USB charge port (included with second-row console with armrest)",
+"marks": {
+"GT": "S",
+"GT PLUS": "S",
+"GT HEMI": "NA",
+"GT HEMI Plus": "NA",
+"GT HEMI Premium": "NA",
+"R/T 392 Launch Edition": "NA",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "P"
+}
+},
+{
+"page": 13,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Adaptive Cruise Control with Stop",
+"marks": {
+"GT": "NA",
+"GT PLUS": "S",
+"GT HEMI": "NA",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "NA",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "P"
+}
+},
+{
+"page": 13,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Advanced Brake Assist",
+"marks": {
+"GT": "NA",
+"GT PLUS": "NA",
+"GT HEMI": "NA",
+"GT HEMI Plus": "NA",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "NA",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "P"
+}
+},
+{
+"page": 13,
+"section": "SAFETY & SECURITY",
+"parent": "Air Bags",
+"text": "Advanced multistage, driver and front passenger",
+"marks": {
+"GT": "S",
+"GT PLUS": "S",
+"GT HEMI": "S",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 13,
+"section": "SAFETY & SECURITY",
+"parent": "Air Bags",
+"text": "Supplemental side-curtain (all rows)",
+"marks": {
+"GT": "S",
+"GT PLUS": "S",
+"GT HEMI": "S",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 13,
+"section": "SAFETY & SECURITY",
+"parent": "Air Bags",
+"text": "Supplemental side",
+"marks": {
+"GT": "S",
+"GT PLUS": "S",
+"GT HEMI": "S",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 13,
+"section": "SAFETY & SECURITY",
+"parent": "Air Bags",
+"text": "Driver inflatable knee bolster",
+"marks": {
+"GT": "S",
+"GT PLUS": "S",
+"GT HEMI": "S",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 13,
+"section": "SAFETY & SECURITY",
+"parent": "Air Bags",
+"text": "Supplemental front-seat side",
+"marks": {
+"GT": "S",
+"GT PLUS": "S",
+"GT HEMI": "S",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 13,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Blind-spot Monitoring and Rear Cross Path detection",
+"marks": {
+"GT": "S",
+"GT PLUS": "S",
+"GT HEMI": "S",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 13,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Blind-spot Monitoring with Trailer Detect (packaged with Tow N Go Package or Trailer-tow Group)",
+"marks": {
+"GT": "P",
+"GT PLUS": "P",
+"GT HEMI": "P",
+"GT HEMI Plus": "P",
+"GT HEMI Premium": "P",
+"R/T 392 Launch Edition": "O",
+"R/T 392 Premium Launch Edition": "O",
+"SRT Hellcat": "O",
+"SRT Hellcat Jailbreak": "O"
+}
+},
+{
+"page": 14,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Electronic stability control — includes vehicle stability management system, Electronic Roll Mitigation, all-speed traction control, Brake Assist and four- channel anti-lock braking system",
+"marks": {
+"GT": "S",
+"GT PLUS": "S",
+"GT HEMI": "S",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 14,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Hill-start Assist — prevents vehicle from rolling back for two seconds when starting vehicle on an incline",
+"marks": {
+"GT": "S",
+"GT PLUS": "S",
+"GT HEMI": "S",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 14,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "LaneSense Lane Departure Warning System (included with Premium on R/T 392, SRT Hellcat)",
+"marks": {
+"GT": "NA",
+"GT PLUS": "NA",
+"GT HEMI": "NA",
+"GT HEMI Plus": "NA",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "NA",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "P",
+"SRT Hellcat Jailbreak": "P"
+}
+},
+{
+"page": 14,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "ParkSense rear park assist system — sensors in rear bumper detect obstacles; includes shut-off switch",
+"marks": {
+"GT": "S",
+"GT PLUS": "S",
+"GT HEMI": "S",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 14,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "ParkSense front park assist system — sensors in front bumper detect obstacles; includes shut-off switch",
+"marks": {
+"GT": "NA",
+"GT PLUS": "P",
+"GT HEMI": "S",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 14,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "ParkView rear backup camera — rear-mounted with display in vehicle, activated when shifted into reverse",
+"marks": {
+"GT": "S",
+"GT PLUS": "S",
+"GT HEMI": "S",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 14,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Rain Brake Support",
+"marks": {
+"GT": "S",
+"GT PLUS": "S",
+"GT HEMI": "S",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 14,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Ready Alert Braking",
+"marks": {
+"GT": "S",
+"GT PLUS": "S",
+"GT HEMI": "S",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 14,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Security alarm",
+"marks": {
+"GT": "NA",
+"GT PLUS": "P",
+"GT HEMI": "S",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 14,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Sentry Key anti-theft engine immobilizer",
+"marks": {
+"GT": "S",
+"GT PLUS": "S",
+"GT HEMI": "S",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 14,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Trailer-sway control",
+"marks": {
+"GT": "S",
+"GT PLUS": "S",
+"GT HEMI": "S",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 14,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Universal garage door opener",
+"marks": {
+"GT": "S",
+"GT PLUS": "S",
+"GT HEMI": "S",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "S",
+"SRT Hellcat Jailbreak": "S"
+}
+},
+{
+"page": 15,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Blacktop Package — includes Gloss Black badging, 20-in. Dark Finish wheels, Eclipse Black exhaust tips, Satin Black Dodge taillamp badge, black roof rails, integrated roof tail crossbars, all-season Pirelli tires",
+"marks": {
+"GT": "O",
+"GT PLUS": "O",
+"GT HEMI": "O",
+"GT HEMI Plus": "O",
+"GT HEMI Premium": "O",
+"R/T 392 Launch Edition": "O",
+"R/T 392 Premium Launch Edition": "O",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "NA"
+}
+},
+{
+"page": 15,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Blacktop Redline Package — includes Gloss black badging, Satin Black Dodge taillamp badge, front and rear SRT spoilers, GT decklid decal with red tracer, leather/Alcantara SRT performance seats with red accent stitching, laser- etched “Crypto Sweep” interior inlays, premium leather-wrapped door panels/IP/console, second- row fold/tumble captain chairs, all-season Pirelli tires",
+"marks": {
+"GT": "NA",
+"GT PLUS": "O",
+"GT HEMI": "NA",
+"GT HEMI Plus": "O",
+"GT HEMI Premium": "O",
+"R/T 392 Launch Edition": "NA",
+"R/T 392 Premium Launch Edition": "NA",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "NA"
+}
+},
+{
+"page": 15,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Mopar All-weather Package — includes slush mats, front and rear door sill guards and cargo net",
+"marks": {
+"GT": "O",
+"GT PLUS": "O",
+"GT HEMI": "O",
+"GT HEMI Plus": "O",
+"GT HEMI Premium": "O",
+"R/T 392 Launch Edition": "O",
+"R/T 392 Premium Launch Edition": "O",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "NA"
+}
+},
+{
+"page": 15,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Mopar Black Tubular Side Steps",
+"marks": {
+"GT": "O",
+"GT PLUS": "O",
+"GT HEMI": "O",
+"GT HEMI Plus": "O",
+"GT HEMI Premium": "O",
+"R/T 392 Launch Edition": "O",
+"R/T 392 Premium Launch Edition": "O",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "NA"
+}
+},
+{
+"page": 16,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Plus Package GT (V-6) — includes power sunroof, Advanced Brake Assist, rain- sensing windshield wipers, Lane Departure Warning, Alpine premium audio with nine speakers and subwoofer, LED aux low beam, LED amber turn signal, Nappa leather seats, 12-way power driver and passenger seats, power tilt/telescoping column, heated first- and second row seats, vented first-row seats, memory settings, adaptive cruise control, wireless Apple CarPlay, wireless Android Auto, Trailer-tow Group, and Blind-spot Monitoring with Trailer Detect",
+"marks": {
+"GT": "NA",
+"GT PLUS": "S",
+"GT HEMI": "NA",
+"GT HEMI Plus": "NA",
+"GT HEMI Premium": "NA",
+"R/T 392 Launch Edition": "NA",
+"R/T 392 Premium Launch Edition": "NA",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "NA"
+}
+},
+{
+"page": 16,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Plus Package GT HEMI — includes power sunroof, automatic headlamp control, Nappa leather seats, leather-wrapped door panels, eight-way power driver and passenger seats with four-way power lumbar, power tilt/telescoping column, heated first- and second-row seats, auto dim exterior driver-side mirror, vented first-row seats, black roof rails, integrated roof rail crossbars, memory settings, adaptive cruise control, Trailer-tow Group, Forward Collision Warning Plus",
+"marks": {
+"GT": "NA",
+"GT PLUS": "NA",
+"GT HEMI": "NA",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "NA",
+"R/T 392 Launch Edition": "NA",
+"R/T 392 Premium Launch Edition": "NA",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "NA"
+}
+},
+{
+"page": 17,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Premium Package GT HEMI (content adds to Plus Package) — includes Advanced Brake Assist, Lane Departure Warning Plus, Harman Kardon 19- speaker system, premium leather-wrapped door panel, instrument panel and console, suede headliner, forged carbon-fiber interior accents, bright cargo area scuff pads",
+"marks": {
+"GT": "NA",
+"GT PLUS": "NA",
+"GT HEMI": "NA",
+"GT HEMI Plus": "NA",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "NA",
+"R/T 392 Premium Launch Edition": "NA",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "NA"
+}
+},
+{
+"page": 17,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Premium Package R/T 392 Launch Edition (content adds to R/T 392 Launch Edition model) — includes Trailer Tow, two-piece rotor Brembo brakes, adaptive cruise control, Advanced Brake Assist, Lane Departure Warning Plus, automatic emergency braking, Harman Kardon 19- speaker system, sunroof, premium leather-wrapped door panel/instrument panel/console, suede headliner, forged carbon- fiber interior accents, bright cargo area scuff pads, auto high-beam headlamps",
+"marks": {
+"GT": "NA",
+"GT PLUS": "NA",
+"GT HEMI": "NA",
+"GT HEMI Plus": "NA",
+"GT HEMI Premium": "NA",
+"R/T 392 Launch Edition": "NA",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "NA"
+}
+},
+{
+"page": 17,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Second-row Fold/Tumble Captain Chairs (requires GT HEMI Plus or Premium) — includes second-row mini-console with cupholders, six-passenger seating",
+"marks": {
+"GT": "NA",
+"GT PLUS": "O",
+"GT HEMI": "NA",
+"GT HEMI Plus": "O",
+"GT HEMI Premium": "O",
+"R/T 392 Launch Edition": "S",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "NA"
+}
+},
+{
+"page": 18,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Tow N Go Package — includes 20-in. SRT Satin Carbon wheels (20-in. SRT Lights Out wheels and SRT Black exhaust tips with Blacktop or Blacktop Redline Package), high-performance exhaust, widebody flares, black Brembo brake calipers, Bilstein adaptive damping high-performance suspension, electronic limited slip rear axle, Pirelli Scorpion Zero Run-Flat 295 tires, hard-button Drive Modes, Class IV trailer hitch (8,700 lbs.), integrated trailer brake controller, active noise cancelling, automatic headlamp leveling",
+"marks": {
+"GT": "NA",
+"GT PLUS": "NA",
+"GT HEMI": "O",
+"GT HEMI Plus": "O",
+"GT HEMI Premium": "O",
+"R/T 392 Launch Edition": "NA",
+"R/T 392 Premium Launch Edition": "NA",
+"SRT Hellcat": "NA",
+"SRT Hellcat Jailbreak": "NA"
+}
+},
+{
+"page": 18,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Trailer-tow Group IV (included with GT Plus, R/T Plus and Premium Packages) — includes integrated trailer brake controller, HD cooling (standard on SRT), rear-load leveling suspension, full-size spare (compact on SRT), Class IV receiver hitch, Blind-spot with Trailer Detection, two-speed transfer case",
+"marks": {
+"GT": "O",
+"GT PLUS": "S",
+"GT HEMI": "O",
+"GT HEMI Plus": "S",
+"GT HEMI Premium": "S",
+"R/T 392 Launch Edition": "O",
+"R/T 392 Premium Launch Edition": "S",
+"SRT Hellcat": "O",
+"SRT Hellcat Jailbreak": "O"
+}
+}
+],
+"url": "https://media.stellantisnorthamerica.com/view-spec.do?id=27418"
+}

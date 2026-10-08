@@ -11,3 +11,6 @@ body{padding-bottom:24px}.preview-header,main{max-width:1440px}.intro{max-width:
 
 /* Keep each factory upgrade attached to its base equipment. */
 .cell-upgrade{margin-top:12px;padding-top:10px;border-top:1px solid var(--line)}.cell-upgrade>strong{display:block;font-size:12px;color:var(--gold);margin-bottom:6px}.cell-upgrade .cell-value{font-size:13px}.upgrade-source{font-size:13px;line-height:1.5}.documented-options .feature-card{margin:12px 0}.documented-options .feature-trim{align-items:start}
+
+.factory-chart .chart-section th{background:#1c1a12;color:var(--gold,#d8b46a);text-align:left;font-size:12px;letter-spacing:1px;text-transform:uppercase;padding:8px 10px}
+.factory-chart .group-intro a{color:#ffb0b7}

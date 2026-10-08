@@ -1,0 +1,1597 @@
+{
+"kind": "fa",
+"title": "2027 Dodge Charger Daytona Scat Pack",
+"rows": [
+{
+"page": 1,
+"section": "POWERTRAIN",
+"parent": "",
+"text": "400V 250/250kW EDM",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL FEATURES",
+"parent": "",
+"text": "All-wheel drive (AWD)",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL FEATURES",
+"parent": "Battery and Charging",
+"text": "100.5 kWh battery",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL FEATURES",
+"parent": "Battery and Charging",
+"text": "11 kW onboard charger",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL FEATURES",
+"parent": "Battery and Charging",
+"text": "NACS charging port",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL FEATURES",
+"parent": "Battery and Charging",
+"text": "J1772 charging adapter",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL FEATURES",
+"parent": "Brake Assist",
+"text": "Intelligent Brake by wire technology with regen capability",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL FEATURES",
+"parent": "Brake System",
+"text": "Four-wheel disc anti-lock braking system (ABS), all-speed traction control, electronic brake-force distribution (EBD) and Brake Assist",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL FEATURES",
+"parent": "Brake System",
+"text": "Brembo six-piston fixed front calipers and floating rear calipers",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL FEATURES",
+"parent": "Brake System",
+"text": "Painted red Brembo six-piston fixed front calipers and fixed Brembo four-piston rear calipers (included with Track Package)",
+"marks": {
+"Daytona Scat Pack": "P",
+"Daytona Scat Pack Plus": "P"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL FEATURES",
+"parent": "Brake System",
+"text": "Brembo brake calipers – (Black, Orange)*",
+"marks": {
+"Daytona Scat Pack": "O",
+"Daytona Scat Pack Plus": "O"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL FEATURES",
+"parent": "",
+"text": "Braking — regenerative (three levels of regen braking accessible through steering wheel paddles)",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL FEATURES",
+"parent": "Drive Modes",
+"text": "Auto/Custom/Eco/Sport/Wet-Snow/Valet",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL FEATURES",
+"parent": "Drive Modes",
+"text": "Drag/Track Mode",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL FEATURES",
+"parent": "",
+"text": "Electronic stability control (ESC)",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Exhaust System",
+"text": "Fratzonic Chambered Exhaust",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "",
+"text": "Launch Control",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "",
+"text": "Paddles (on steering wheel)",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "",
+"text": "Performance Pages (via Uconnect 5 system)",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "",
+"text": "PowerShot",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "",
+"text": "Race Options",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "",
+"text": "Race Prep",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "",
+"text": "Drift/Donut Mode",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "",
+"text": "Remote cabin conditioning",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Steering",
+"text": "Electric power steering (EPS)",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Suspension",
+"text": "High-performance suspension",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Suspension",
+"text": "Widebody competition suspension (included with Track Package)",
+"marks": {
+"Daytona Scat Pack": "P",
+"Daytona Scat Pack Plus": "P"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Suspension",
+"text": "Dual-valve adaptive damping shocks (included with Track Package)",
+"marks": {
+"Daytona Scat Pack": "P",
+"Daytona Scat Pack Plus": "P"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "",
+"text": "Tire Fill Alert System",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "Antenna — flat satellite design",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "Scat Pack “Bee”",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "Scat Pack “Bee” Dark Finish",
+"marks": {
+"Daytona Scat Pack": "P",
+"Daytona Scat Pack Plus": "P"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "Door handles — body color with Keyless Enter ’n Go",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Glass",
+"text": "Acoustic windshield and front windows",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Glass",
+"text": "Privacy rear windows",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Headlamps / Taillamps",
+"text": "Automatic ON/OFF",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Headlamps / Taillamps",
+"text": "LED headlamps",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Headlamps / Taillamps",
+"text": "LED-illuminated daytime running lamps with park and turn indicators",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Headlamps / Taillamps",
+"text": "Auto high-beam control",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Headlamps / Taillamps",
+"text": "Lit front Fratzog badge",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Headlamps / Taillamps",
+"text": "Lit rear Fratzog badge",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Headlamps / Taillamps",
+"text": "Premium LED headlamps with signature DRL",
+"marks": {
+"Daytona Scat Pack": "NA",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Hood",
+"text": "Gloss Black painted hood",
+"marks": {
+"Daytona Scat Pack": "O",
+"Daytona Scat Pack Plus": "O"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Liftgate",
+"text": "Keyless manual liftgate",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "NA"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Liftgate",
+"text": "Keyless power liftgate with programable height",
+"marks": {
+"Daytona Scat Pack": "NA",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Mirrors",
+"text": "Gloss Black power-heated mirrors",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Mirrors",
+"text": "Carbon-fiber power-heated mirrors (included with Carbon & Suede Package)",
+"marks": {
+"Daytona Scat Pack": "NA",
+"Daytona Scat Pack Plus": "P"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Mirrors",
+"text": "Blind-spot Monitoring lights",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Roof",
+"text": "Sculpted, Gloss Black painted steel roof",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Roof",
+"text": "Full-length panoramic glass roof",
+"marks": {
+"Daytona Scat Pack": "NA",
+"Daytona Scat Pack Plus": "O"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Roof",
+"text": "Sunshade",
+"marks": {
+"Daytona Scat Pack": "NA",
+"Daytona Scat Pack Plus": "O"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "R-Wing front aero pass-through (patent-pending)",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "Spoiler — Gloss Black (included with Track Package)",
+"marks": {
+"Daytona Scat Pack": "P",
+"Daytona Scat Pack Plus": "P"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Stripes",
+"text": "Bodyside “Charger” blade stripe (Gloss Red, Satin Black, Satin White)",
+"marks": {
+"Daytona Scat Pack": "O",
+"Daytona Scat Pack Plus": "O"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Stripes",
+"text": "Bodyside “Charger” strobe stripe (Gloss Red, Satin Black. Satin White)",
+"marks": {
+"Daytona Scat Pack": "O",
+"Daytona Scat Pack Plus": "O"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Stripes",
+"text": "Dual stripes (Gloss Black, Gloss White, Satin Black, Satin White)",
+"marks": {
+"Daytona Scat Pack": "O",
+"Daytona Scat Pack Plus": "O"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Stripes",
+"text": "Fratzog dual stripes with red accents",
+"marks": {
+"Daytona Scat Pack": "O",
+"Daytona Scat Pack Plus": "O"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Tires",
+"text": "305/35ZR20XLGoodyear Eagle Sport All-Season",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Tires",
+"text": "Front 305/35ZR20XL/Rear 325/35ZR20 Goodyear Eagle Sport All-Season (included with Track Package)",
+"marks": {
+"Daytona Scat Pack": "P",
+"Daytona Scat Pack Plus": "P"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Tires",
+"text": "Front 305/35ZR20XL/Rear 325/35ZR20 Goodyear Eagle F1 Supercar 3 (optional with Track Package)",
+"marks": {
+"Daytona Scat Pack": "O/P",
+"Daytona Scat Pack Plus": "O/P"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels (aluminum)",
+"text": "20 x 11-inch Satin Carbon",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels (aluminum)",
+"text": "20 x 11/11.5-inch Satin Carbon (included with Track Package)",
+"marks": {
+"Daytona Scat Pack": "P",
+"Daytona Scat Pack Plus": "P"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels (aluminum)",
+"text": "20 x 11-inch Luster (included in Carbon & Suede Package)",
+"marks": {
+"Daytona Scat Pack": "NA",
+"Daytona Scat Pack Plus": "P"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels (aluminum)",
+"text": "20 x 11/11.5-inch Luster (included with Carbon & Suede Package and Track Package)",
+"marks": {
+"Daytona Scat Pack": "NA",
+"Daytona Scat Pack Plus": "P"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels (aluminum)",
+"text": "Windows — power with driver and passenger one-touch auto up/down",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Windshield Wipers",
+"text": "Rain-sensing",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Windshield Wipers",
+"text": "Variable/intermittent",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Cargo mats",
+"marks": {
+"Daytona Scat Pack": "O",
+"Daytona Scat Pack Plus": "O"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Climate Control",
+"text": "Dual-zone automatic temperature control with humidity sensor",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Climate Control",
+"text": "Physical buttons with independent control for driver and front passenger",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Cup Holders",
+"text": "Front cup holders integrated on center console",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Cup Holders",
+"text": "Rear cup holder integrated on central armrest",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Defroster — rear window",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Door locks — power, speed-sensitive",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Driver Information Display",
+"text": "12.3-inch central display",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Floor Mats",
+"text": "Front and rear",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Floor Mats",
+"text": "All-weather floor mats",
+"marks": {
+"Daytona Scat Pack": "O",
+"Daytona Scat Pack Plus": "O"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Frunk",
+"marks": {
+"Daytona Scat Pack": "NA",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Headliner",
+"text": "All-black headliner and interior trim",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Headliner",
+"text": "Black suede headliner and A-pillar (included with Carbon & Suede Package)",
+"marks": {
+"Daytona Scat Pack": "NA",
+"Daytona Scat Pack Plus": "P"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Instrument Cluster Display",
+"text": "10.25-inch free-standing cluster",
+"marks": {
+"Daytona Scat Pack": "NA",
+"Daytona Scat Pack Plus": "NA"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Instrument Cluster Display",
+"text": "16-inch free-standing cluster",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Instrument Cluster Display",
+"text": "Dodge G-meter",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Instrument Cluster Display",
+"text": "PowerShot indicator",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Instrument Cluster Display",
+"text": "Tire-pressure monitoring system",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Lighting, Interior",
+"text": "Attitude Adjustment interior lighting",
+"marks": {
+"Daytona Scat Pack": "NA",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Lighting, Interior",
+"text": "Driver and passenger lower ambient LED lamps",
+"marks": {
+"Daytona Scat Pack": "NA",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Lighting, Interior",
+"text": "LED front and rear map lights",
+"marks": {
+"Daytona Scat Pack": "NA",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Lighting, Interior",
+"text": "Front overhead LED lighting",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Lighting, Interior",
+"text": "Glove box lamp",
+"marks": {
+"Daytona Scat Pack": "NA",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Lighting, Interior",
+"text": "Cargo area lamps",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Mirrors",
+"text": "Auto-dimming rearview",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Mirrors",
+"text": "Visor vanity, illuminated, driver and passenger sides",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Power outlets — 12-volt, located in center console",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Black cloth and leatherette",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "NA"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "High-back black leather",
+"marks": {
+"Daytona Scat Pack": "NA",
+"Daytona Scat Pack Plus": "P"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "High-back Demonic Red leather",
+"marks": {
+"Daytona Scat Pack": "NA",
+"Daytona Scat Pack Plus": "O"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "High-back black suede and leatherette (included with Track Package)",
+"marks": {
+"Daytona Scat Pack": "P",
+"Daytona Scat Pack Plus": "P"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "High-back Demonic Red suede and leatherette (optional with Track Package)",
+"marks": {
+"Daytona Scat Pack": "NA",
+"Daytona Scat Pack Plus": "O"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "High-back black suede and Nappa leather (included with Carbon & Suede Package)",
+"marks": {
+"Daytona Scat Pack": "NA",
+"Daytona Scat Pack Plus": "P"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "High-back Demonic Red suede and Nappa leather (optional with Carbon & Suede Package)",
+"marks": {
+"Daytona Scat Pack": "NA",
+"Daytona Scat Pack Plus": "O"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Petrol Blue performance leather",
+"marks": {
+"Daytona Scat Pack": "NA",
+"Daytona Scat Pack Plus": "O"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Seats, rear — fold-flat rear seats",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Black",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Red",
+"marks": {
+"Daytona Scat Pack": "O",
+"Daytona Scat Pack Plus": "O"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Shift knob — leather wrapped",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Steering Column",
+"text": "Manual tilt/telescoping",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "NA"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Steering Column",
+"text": "Power tilt/telescoping (included with Plus Group)",
+"marks": {
+"Daytona Scat Pack": "NA",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Steering Wheel",
+"text": "Flat-bottom, flat-top design, paddles, heated, PowerShot button, Drive Modes button",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Temperature display — outside",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Universal garage door opener",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Wireless charging pad",
+"marks": {
+"Daytona Scat Pack": "NA",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 7,
+"section": "UCONNECT / AUDIO",
+"parent": "",
+"text": "Amazon Alexa integration",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 7,
+"section": "UCONNECT / AUDIO",
+"parent": "Audio Systems",
+"text": "Alpine nine amplified speakers with subwoofer and amplifier",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 7,
+"section": "UCONNECT / AUDIO",
+"parent": "Audio Systems",
+"text": "Alpine premium 18 speakers with subwoofer and amplifier",
+"marks": {
+"Daytona Scat Pack": "NA",
+"Daytona Scat Pack Plus": "P"
+}
+},
+{
+"page": 7,
+"section": "UCONNECT / AUDIO",
+"parent": "",
+"text": "Dodge Connect — connected services trials included",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 7,
+"section": "UCONNECT / AUDIO",
+"parent": "",
+"text": "Drive eXperience Recorder",
+"marks": {
+"Daytona Scat Pack": "P",
+"Daytona Scat Pack Plus": "P"
+}
+},
+{
+"page": 7,
+"section": "UCONNECT / AUDIO",
+"parent": "",
+"text": "Drive Mode Pages",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 7,
+"section": "UCONNECT / AUDIO",
+"parent": "",
+"text": "Dual Phone Connectivity",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 7,
+"section": "UCONNECT / AUDIO",
+"parent": "",
+"text": "Integrated Uconnect voice command",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 7,
+"section": "UCONNECT / AUDIO",
+"parent": "",
+"text": "Media hub (includes two USB-C ports)",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 7,
+"section": "UCONNECT / AUDIO",
+"parent": "",
+"text": "Personalized profiles for vehicle, Uconnect and media settings",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 7,
+"section": "UCONNECT / AUDIO",
+"parent": "",
+"text": "Rear (2) USB-C ports",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 7,
+"section": "UCONNECT / AUDIO",
+"parent": "",
+"text": "SiriusXM Radio — includes trial subscription",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 7,
+"section": "UCONNECT / AUDIO",
+"parent": "",
+"text": "Uconnect 5 with Navigation 12.3-inch display — AM/FM radio system with wireless Apple CarPlay and Android Auto, SiriusXM Radio with trial subscription included, TomTom integrated navigation, integrated voice command with Bluetooth, 12.3-inch touchscreen for displaying music, climate controls and vehicle information, Bluetooth, streaming audio",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 7,
+"section": "UCONNECT / AUDIO",
+"parent": "",
+"text": "Vehicle information pages, including technical gauges, driving story, drive mode information",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Active Driving Assist",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Active Lane Management",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Adaptive Cruise Control with Stop and Go",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 8,
+"section": "SAFETY & SECURITY",
+"parent": "Air Bags",
+"text": "Advanced multistage front",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 8,
+"section": "SAFETY & SECURITY",
+"parent": "Air Bags",
+"text": "Supplemental front-seat-mounted side",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 8,
+"section": "SAFETY & SECURITY",
+"parent": "Air Bags",
+"text": "Supplemental side-curtain, front and rear",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 8,
+"section": "SAFETY & SECURITY",
+"parent": "Air Bags",
+"text": "Driver knee airbag",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 8,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Automatic Emergency Braking with Road user detection",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 8,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Blind-spot detection with Rear Cross Path detection",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 8,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Blind-spot turn signal activated view",
+"marks": {
+"Daytona Scat Pack": "NA",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 8,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Brake Assist",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 8,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Child Seat Anchor System (LATCH)",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 8,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Drowsy Driver Detection",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 8,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Electronic stability control (ESC) — includes Brake Assist",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 8,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Electronic Park Brake — automatic",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 8,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Full-speed Forward Collision Warning",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 8,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Head-up Display",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 8,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Hill-start Assist",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 8,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "ParkSense front, side and rear park assist system with adaptive guidelines and vehicle path detection",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 8,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "ParkView rear backup camera",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 8,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "ParkView 360 surround view camera (included with Plus Group)",
+"marks": {
+"Daytona Scat Pack": "NA",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 8,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Rain brake support",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 8,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Ready Alert Braking",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 8,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Remote Keyless Enter ‘n Go",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 8,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Seat belt alert — driver and front passenger",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 8,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Seat belt pretensioners — driver and front passenger",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 8,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Security alarm",
+"marks": {
+"Daytona Scat Pack": "S",
+"Daytona Scat Pack Plus": "NA"
+}
+},
+{
+"page": 8,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Security alarm with intrusion sensor",
+"marks": {
+"Daytona Scat Pack": "NA",
+"Daytona Scat Pack Plus": "S"
+}
+},
+{
+"page": 9,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "",
+"text": "Blacktop Package — includes 20-by-11-inch aluminum wheels in Luster, Dark Finish badging",
+"marks": {
+"Daytona Scat Pack": "O",
+"Daytona Scat Pack Plus": "O"
+}
+},
+{
+"page": 9,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "",
+"text": "Carbon & Suede Package — includes carbon-fiber mirror caps; carbon-fiber interior appliques; suede headliner/pillar; suede-wrapped instrument panel; carbon-fiber center console applique; leather and suede high-back seats with power 12-way driver, power 12-way passenger, fixed head restraint, four-way lumbar, heated, vented, driver memory, high-performance seat cushion",
+"marks": {
+"Daytona Scat Pack": "NA",
+"Daytona Scat Pack Plus": "O"
+}
+},
+{
+"page": 9,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "",
+"text": "Panoramic glass roof — full-length glass roof",
+"marks": {
+"Daytona Scat Pack": "NA",
+"Daytona Scat Pack Plus": "O"
+}
+},
+{
+"page": 9,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "",
+"text": "Premium 18-speaker Alpine Audio — 18 speakers with subwoofer and amplifier",
+"marks": {
+"Daytona Scat Pack": "NA",
+"Daytona Scat Pack Plus": "O"
+}
+},
+{
+"page": 9,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "",
+"text": "Track Package — includes Drive eXperience Recorder, red six-piston fixed front calipers with 16-inch two-piece rotors and fixed rear calipers; 20-by-11-inch/11.5-inch wheels; 305/35R20 A/S BSW tires/325/35R20 A/S BSW tires; suede and leatherette high-back seats with power 12-way driver, power 12-way passenger, fixed head restraint, four-way lumbar, heated, vented, driver memory, high-performance seat cushion; Gloss Black spoiler; Dual-valve adaptive damping shocks",
+"marks": {
+"Daytona Scat Pack": "O",
+"Daytona Scat Pack Plus": "O"
+}
+}
+],
+"url": "https://media.stellantisnorthamerica.com/view-spec.do?id=27792"
+}

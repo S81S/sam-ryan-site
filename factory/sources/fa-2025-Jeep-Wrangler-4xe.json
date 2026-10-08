@@ -1,0 +1,1606 @@
+{
+"kind": "fa",
+"title": "2025 Jeep Wrangler 4xe",
+"rows": [
+{
+"page": 1,
+"section": "ENGINE",
+"parent": "",
+"text": "2.0-liter inline four-cylinder with eTorque belt-start generator/motor and integrated transmission traction motor / Eight-speed automatic",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "S",
+"Wrangler (four-door) Willys 4xe": "S",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL / CAPABILITY",
+"parent": "Axle Ratios",
+"text": "3.73:1",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "S",
+"Wrangler (four-door) Willys 4xe": "NA",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "NA"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL / CAPABILITY",
+"parent": "Axle Ratios",
+"text": "4.10:1",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "NA",
+"Wrangler (four-door) Willys 4xe": "S",
+"Wrangler (four-door) Sahara 4xe": "NA",
+"Wrangler (four-door) High Altitude 4xe": "NA",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL / CAPABILITY",
+"parent": "Axles",
+"text": "rd 3 generation Dana 44 heavy-duty solid front",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "S",
+"Wrangler (four-door) Willys 4xe": "S",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL / CAPABILITY",
+"parent": "Axles",
+"text": "d 3r generation Dana 44 heavy-duty solid rear",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "S",
+"Wrangler (four-door) Willys 4xe": "S",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "NA"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL / CAPABILITY",
+"parent": "Axles",
+"text": "rd 3 generation Full Float Dana 44 heavy-duty solid rear",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "NA",
+"Wrangler (four-door) Willys 4xe": "NA",
+"Wrangler (four-door) Sahara 4xe": "NA",
+"Wrangler (four-door) High Altitude 4xe": "NA",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL / CAPABILITY",
+"parent": "Differentials",
+"text": "Tru-Lok rear, electronic remote locking",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "NA",
+"Wrangler (four-door) Willys 4xe": "S",
+"Wrangler (four-door) Sahara 4xe": "NA",
+"Wrangler (four-door) High Altitude 4xe": "NA",
+"Wrangler (four-door) Rubicon 4xe": "NA"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL / CAPABILITY",
+"parent": "Differentials",
+"text": "Tru-Lok front and rear, electronic remote locking",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "NA",
+"Wrangler (four-door) Willys 4xe": "NA",
+"Wrangler (four-door) Sahara 4xe": "NA",
+"Wrangler (four-door) High Altitude 4xe": "NA",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL / CAPABILITY",
+"parent": "Differentials",
+"text": "Trac-Lok limited slip rear",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "NA",
+"Wrangler (four-door) Willys 4xe": "NA",
+"Wrangler (four-door) Sahara 4xe": "NA",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "NA"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL / CAPABILITY",
+"parent": "Differentials",
+"text": "Sway Bar Disconnect — electronically controlled, front",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "NA",
+"Wrangler (four-door) Willys 4xe": "NA",
+"Wrangler (four-door) Sahara 4xe": "NA",
+"Wrangler (four-door) High Altitude 4xe": "NA",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL / CAPABILITY",
+"parent": "",
+"text": "Towing — Trailer-tow Group includes Class II hitch receiver, four-pin and seven-pin adapter, 700-amp battery, auxiliary switches",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "O",
+"Wrangler (four-door) Willys 4xe": "S",
+"Wrangler (four-door) Sahara 4xe": "O",
+"Wrangler (four-door) High Altitude 4xe": "O",
+"Wrangler (four-door) Rubicon 4xe": "O"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL / CAPABILITY",
+"parent": "",
+"text": "Trailer-sway control",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "S",
+"Wrangler (four-door) Willys 4xe": "S",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL / CAPABILITY",
+"parent": "Transfer Case",
+"text": "Selec-Trac full-time transfer case (2.72:1)",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "S",
+"Wrangler (four-door) Willys 4xe": "S",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "NA"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL / CAPABILITY",
+"parent": "Transfer Case",
+"text": "Rock-Trac NV241 OR, full-time, shift-on-the-fly transfer case; 4:1 low-gear ratio",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "NA",
+"Wrangler (four-door) Willys 4xe": "NA",
+"Wrangler (four-door) Sahara 4xe": "NA",
+"Wrangler (four-door) High Altitude 4xe": "NA",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR",
+"parent": "Doors",
+"text": "Full metal with power windows",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "S",
+"Wrangler (four-door) Willys 4xe": "S",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR",
+"parent": "Door Locks",
+"text": "Power (speed-sensitive locking) — door-mounted switches",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "S",
+"Wrangler (four-door) Willys 4xe": "S",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR",
+"parent": "Fender Flares",
+"text": "Two-piece — black",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "S",
+"Wrangler (four-door) Willys 4xe": "S",
+"Wrangler (four-door) Sahara 4xe": "NA",
+"Wrangler (four-door) High Altitude 4xe": "NA",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR",
+"parent": "Fender Flares",
+"text": "Two-piece — body-color with black lower",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "NA",
+"Wrangler (four-door) Willys 4xe": "NA",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "P"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR",
+"parent": "Fender Flares",
+"text": "Forward-facing off-road camera",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "NA",
+"Wrangler (four-door) Willys 4xe": "NA",
+"Wrangler (four-door) Sahara 4xe": "P",
+"Wrangler (four-door) High Altitude 4xe": "P",
+"Wrangler (four-door) Rubicon 4xe": "P"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR",
+"parent": "Glass",
+"text": "Deep-tinted sunscreen rear and quarter windows",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "S",
+"Wrangler (four-door) Willys 4xe": "S",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR",
+"parent": "Glass",
+"text": "Corning Gorilla Glass windshield",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "NA",
+"Wrangler (four-door) Willys 4xe": "NA",
+"Wrangler (four-door) Sahara 4xe": "NA",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR",
+"parent": "Windows",
+"text": "Power windows (front and rear), driver and passenger one-touch down",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "S",
+"Wrangler (four-door) Willys 4xe": "S",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Lighting",
+"text": "LED reflector headlamps",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "P",
+"Wrangler (four-door) Willys 4xe": "S",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Lighting",
+"text": "LED fog lamps",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "P",
+"Wrangler (four-door) Willys 4xe": "S",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Lighting",
+"text": "Automatic headlamps",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "S",
+"Wrangler (four-door) Willys 4xe": "S",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Mirrors",
+"text": "Mold-in color black manual folding",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "S",
+"Wrangler (four-door) Willys 4xe": "S",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Mirrors",
+"text": "Power-heated",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "S",
+"Wrangler (four-door) Willys 4xe": "S",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Mirrors",
+"text": "Blind-spot indicator",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "P",
+"Wrangler (four-door) Willys 4xe": "P",
+"Wrangler (four-door) Sahara 4xe": "P",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "P"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "",
+"text": "Power Box — four 120-volt outlets with 30 amps of total output",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "P",
+"Wrangler (four-door) Willys 4xe": "P",
+"Wrangler (four-door) Sahara 4xe": "P",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "P"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "",
+"text": "Side steps — tubular, diamond plate surface pattern",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "NA",
+"Wrangler (four-door) Willys 4xe": "NA",
+"Wrangler (four-door) Sahara 4xe": "O",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "NA"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "",
+"text": "Skid plates — fuel tank and transfer case",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "S",
+"Wrangler (four-door) Willys 4xe": "S",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "",
+"text": "Rock rails — black, painted steel, heavy-duty, protective",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "NA",
+"Wrangler (four-door) Willys 4xe": "S",
+"Wrangler (four-door) Sahara 4xe": "NA",
+"Wrangler (four-door) High Altitude 4xe": "NA",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Tires",
+"text": "All-season, 255/60R20 Nexen",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "S",
+"Wrangler (four-door) Willys 4xe": "NA",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "NA",
+"Wrangler (four-door) Rubicon 4xe": "NA"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Tires",
+"text": "All-terrain, 285/70R17 BF Goodrich KO2, BSW, Off-road",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "NA",
+"Wrangler (four-door) Willys 4xe": "NA",
+"Wrangler (four-door) Sahara 4xe": "NA",
+"Wrangler (four-door) High Altitude 4xe": "NA",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Tires",
+"text": "Mud-terrain, 285/70R17 Falken, BSW, Off-road",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "NA",
+"Wrangler (four-door) Willys 4xe": "S",
+"Wrangler (four-door) Sahara 4xe": "NA",
+"Wrangler (four-door) High Altitude 4xe": "NA",
+"Wrangler (four-door) Rubicon 4xe": "NA"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Tires",
+"text": "All-terrain, 275/55R20 General Grabber",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "NA",
+"Wrangler (four-door) Willys 4xe": "NA",
+"Wrangler (four-door) Sahara 4xe": "NA",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "NA"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Tops",
+"text": "Sunrider soft-top",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "S",
+"Wrangler (four-door) Willys 4xe": "S",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "NA",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Tops",
+"text": "Freedom Top three-piece black modular hardtop with rear wiper/washer, rear defroster, full-framed doors and Freedom Panel storage bag",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "O",
+"Wrangler (four-door) Willys 4xe": "O",
+"Wrangler (four-door) Sahara 4xe": "NA",
+"Wrangler (four-door) High Altitude 4xe": "NA",
+"Wrangler (four-door) Rubicon 4xe": "O"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Tops",
+"text": "Body-color three-piece hardtop with rear wiper/washer, rear defroster, full-framed doors and Freedom Panel storage bag",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "NA",
+"Wrangler (four-door) Willys 4xe": "NA",
+"Wrangler (four-door) Sahara 4xe": "O",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "P"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Tops",
+"text": "Sky One-touch powertop",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "O",
+"Wrangler (four-door) Willys 4xe": "O",
+"Wrangler (four-door) Sahara 4xe": "O",
+"Wrangler (four-door) High Altitude 4xe": "O",
+"Wrangler (four-door) Rubicon 4xe": "O"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Tops",
+"text": "Dual Top Group (available Sunrider)",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "O",
+"Wrangler (four-door) Willys 4xe": "O",
+"Wrangler (four-door) Sahara 4xe": "O",
+"Wrangler (four-door) High Altitude 4xe": "NA",
+"Wrangler (four-door) Rubicon 4xe": "O"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Tops",
+"text": "Mopar Sunrider flip top for hardtop",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "O",
+"Wrangler (four-door) Willys 4xe": "O",
+"Wrangler (four-door) Sahara 4xe": "O",
+"Wrangler (four-door) High Altitude 4xe": "NA",
+"Wrangler (four-door) Rubicon 4xe": "O"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "",
+"text": "Tow hooks — two front, one rear",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "S",
+"Wrangler (four-door) Willys 4xe": "S",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "",
+"text": "Warn winch (8,000-lb. capacity)",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "NA",
+"Wrangler (four-door) Willys 4xe": "NA",
+"Wrangler (four-door) Sahara 4xe": "NA",
+"Wrangler (four-door) High Altitude 4xe": "NA",
+"Wrangler (four-door) Rubicon 4xe": "O/P"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "Wheels",
+"text": "20-in. aluminum machined Baltic Gray",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "S",
+"Wrangler (four-door) Willys 4xe": "NA",
+"Wrangler (four-door) Sahara 4xe": "NA",
+"Wrangler (four-door) High Altitude 4xe": "NA",
+"Wrangler (four-door) Rubicon 4xe": "NA"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "Wheels",
+"text": "17-in. aluminum fully painted black",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "NA",
+"Wrangler (four-door) Willys 4xe": "S",
+"Wrangler (four-door) Sahara 4xe": "NA",
+"Wrangler (four-door) High Altitude 4xe": "NA",
+"Wrangler (four-door) Rubicon 4xe": "NA"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "Wheels",
+"text": "17-in. aluminum Rubicon machined with black pockets",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "NA",
+"Wrangler (four-door) Willys 4xe": "NA",
+"Wrangler (four-door) Sahara 4xe": "NA",
+"Wrangler (four-door) High Altitude 4xe": "NA",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "Wheels",
+"text": "20-in. aluminum fully painted High Gloss Black",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "NA",
+"Wrangler (four-door) Willys 4xe": "NA",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "NA",
+"Wrangler (four-door) Rubicon 4xe": "NA"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "Wheels",
+"text": "20-in. aluminum machined Baltic Gray",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "NA",
+"Wrangler (four-door) Willys 4xe": "NA",
+"Wrangler (four-door) Sahara 4xe": "NA",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "NA"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR",
+"parent": "Air Conditioning",
+"text": "Automatic temperature control — dual zone",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "P",
+"Wrangler (four-door) Willys 4xe": "P",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR",
+"parent": "",
+"text": "Cabin air filter — dual zone",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "P",
+"Wrangler (four-door) Willys 4xe": "P",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR",
+"parent": "",
+"text": "Console — full-floor with front and rear cup holders, locking storage and armrest",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "S",
+"Wrangler (four-door) Willys 4xe": "S",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR",
+"parent": "",
+"text": "Floor heat ducts — rear",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "S",
+"Wrangler (four-door) Willys 4xe": "S",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR",
+"parent": "Floor Mats",
+"text": "Front and rear",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "S",
+"Wrangler (four-door) Willys 4xe": "S",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR",
+"parent": "Floor Mats",
+"text": "Mopar slush mats",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "O",
+"Wrangler (four-door) Willys 4xe": "O",
+"Wrangler (four-door) Sahara 4xe": "O",
+"Wrangler (four-door) High Altitude 4xe": "O",
+"Wrangler (four-door) Rubicon 4xe": "O"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "Lighting",
+"text": "LED front cup holder",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "S",
+"Wrangler (four-door) Willys 4xe": "S",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "Lighting",
+"text": "LED overhead courtesy lamp",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "S",
+"Wrangler (four-door) Willys 4xe": "S",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "Lighting",
+"text": "LED second-row overhead / cargo courtesy lamp",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "S",
+"Wrangler (four-door) Willys 4xe": "S",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "Lighting",
+"text": "LED door bezel ambient lamp",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "S",
+"Wrangler (four-door) Willys 4xe": "S",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "Lighting",
+"text": "LED foot well courtesy — functional",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "S",
+"Wrangler (four-door) Willys 4xe": "S",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "Lighting",
+"text": "LED ambient footwell lamp — mood/accent light",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "S",
+"Wrangler (four-door) Willys 4xe": "S",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "",
+"text": "Passive entry",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "P",
+"Wrangler (four-door) Willys 4xe": "P",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "",
+"text": "Push-button start",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "S",
+"Wrangler (four-door) Willys 4xe": "S",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "",
+"text": "Remote keyless entry with mechanical flip key",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "S",
+"Wrangler (four-door) Willys 4xe": "S",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "",
+"text": "Remote start system",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "O/P",
+"Wrangler (four-door) Willys 4xe": "O/P",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "O/P"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "Seating",
+"text": "Premium cloth",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "S",
+"Wrangler (four-door) Willys 4xe": "S",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "NA",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "Seating",
+"text": "Premium McKinley-trimmed",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "NA",
+"Wrangler (four-door) Willys 4xe": "NA",
+"Wrangler (four-door) Sahara 4xe": "O",
+"Wrangler (four-door) High Altitude 4xe": "NA",
+"Wrangler (four-door) Rubicon 4xe": "NA"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "Seating",
+"text": "Leather-trimmed",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "NA",
+"Wrangler (four-door) Willys 4xe": "NA",
+"Wrangler (four-door) Sahara 4xe": "NA",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "O/P"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "Seating",
+"text": "Heated front",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "P",
+"Wrangler (four-door) Willys 4xe": "P",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "O/P"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "Seating",
+"text": "Driver seat — six-way manual (fore/aft, recline, height adjust)",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "S",
+"Wrangler (four-door) Willys 4xe": "S",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "NA",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "Seating",
+"text": "Front-passenger seat — four-way manual (fore/aft, recline)",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "S",
+"Wrangler (four-door) Willys 4xe": "S",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "NA",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "Seating",
+"text": "Driver seat — 12-way power (fore/aft, recline, height adjust, lumbar)",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "NA",
+"Wrangler (four-door) Willys 4xe": "NA",
+"Wrangler (four-door) Sahara 4xe": "O",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "O/P"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "Seating",
+"text": "Front-passenger seat — 12-way power (fore/aft, recline, height adjust, lumbar)",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "NA",
+"Wrangler (four-door) Willys 4xe": "NA",
+"Wrangler (four-door) Sahara 4xe": "O",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "O/P"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "Seating",
+"text": "Two-way manual lumbar (driver only)",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "S",
+"Wrangler (four-door) Willys 4xe": "S",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "NA",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "Seating",
+"text": "Tilt/telescoping steering column — manual",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "S",
+"Wrangler (four-door) Willys 4xe": "S",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Steering Wheel",
+"text": "Premium wrapped",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "S",
+"Wrangler (four-door) Willys 4xe": "S",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Steering Wheel",
+"text": "Mounted audio controls",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "S",
+"Wrangler (four-door) Willys 4xe": "S",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Steering Wheel",
+"text": "Electronic Vehicle Information Center (EVIC) controls",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "S",
+"Wrangler (four-door) Willys 4xe": "S",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Steering Wheel",
+"text": "Heated",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "P",
+"Wrangler (four-door) Willys 4xe": "P",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "P"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Steering Wheel",
+"text": "Speed and cruise control",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "S",
+"Wrangler (four-door) Willys 4xe": "S",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "",
+"text": "Universal garage door opener",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "P",
+"Wrangler (four-door) Willys 4xe": "P",
+"Wrangler (four-door) Sahara 4xe": "P",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "P"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "",
+"text": "Hardtop headliner",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "O",
+"Wrangler (four-door) Willys 4xe": "O",
+"Wrangler (four-door) Sahara 4xe": "O",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "O"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "",
+"text": "Wash-out interior with removable carpet and drain plugs",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "S",
+"Wrangler (four-door) Willys 4xe": "S",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 6,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "Audio System",
+"text": "Nine Alpine speakers with all-weather subwoofer and 552-watt amplifier",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "P",
+"Wrangler (four-door) Willys 4xe": "P",
+"Wrangler (four-door) Sahara 4xe": "P",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "P"
+}
+},
+{
+"page": 6,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "",
+"text": "Auxiliary power, 115-volt outlet in center console",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "NA",
+"Wrangler (four-door) Willys 4xe": "NA",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 6,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "",
+"text": "Media hub (one full-function USB and auxiliary port)",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "S",
+"Wrangler (four-door) Willys 4xe": "S",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 6,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "",
+"text": "Power outlet, 12-volt, instrument panel",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "S",
+"Wrangler (four-door) Willys 4xe": "S",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 6,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "",
+"text": "Power outlet, 12-volt, cargo area",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "S",
+"Wrangler (four-door) Willys 4xe": "S",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 6,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "",
+"text": "Radio with Uconnect 5 with 12.3-in. display",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "S",
+"Wrangler (four-door) Willys 4xe": "S",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "NA",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 6,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "",
+"text": "Radio with Uconnect 5 NAV with 12.3-in. display",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "NA",
+"Wrangler (four-door) Willys 4xe": "NA",
+"Wrangler (four-door) Sahara 4xe": "P",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "P"
+}
+},
+{
+"page": 6,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "",
+"text": "SiriusXM Radio — includes three-month trial subscription",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "P",
+"Wrangler (four-door) Willys 4xe": "P",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 6,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "",
+"text": "SiriusXM Guardian Connected Services — includes one-year trial subscription",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "NA",
+"Wrangler (four-door) Willys 4xe": "NA",
+"Wrangler (four-door) Sahara 4xe": "P",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "P"
+}
+},
+{
+"page": 6,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "",
+"text": "SiriusXM Travel Link — includes five-year trial subscription",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "NA",
+"Wrangler (four-door) Willys 4xe": "NA",
+"Wrangler (four-door) Sahara 4xe": "P",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "P"
+}
+},
+{
+"page": 7,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "",
+"text": "SiriusXM Traffic Plus — includes five-year trial subscription",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "NA",
+"Wrangler (four-door) Willys 4xe": "NA",
+"Wrangler (four-door) Sahara 4xe": "P",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "P"
+}
+},
+{
+"page": 7,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "",
+"text": "Uconnect Voice Command — hands-free calling with address book and Bluetooth",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "S",
+"Wrangler (four-door) Willys 4xe": "S",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 7,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "",
+"text": "USB — fully functional in center console",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "S",
+"Wrangler (four-door) Willys 4xe": "S",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 7,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "",
+"text": "USBs — two charge-only in the back of the center console",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "NA",
+"Wrangler (four-door) Willys 4xe": "NA",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Advanced multistage front airbags",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "S",
+"Wrangler (four-door) Willys 4xe": "S",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Supplemental front seat side airbag",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "S",
+"Wrangler (four-door) Willys 4xe": "S",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Side curtain airbags",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "S",
+"Wrangler (four-door) Willys 4xe": "S",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Front passenger seat occupant detection system",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "S",
+"Wrangler (four-door) Willys 4xe": "S",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Driver and front passenger seat belt alert (all markets)",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "S",
+"Wrangler (four-door) Willys 4xe": "S",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Rear Child Seat Anchors — LATCH",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "S",
+"Wrangler (four-door) Willys 4xe": "S",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Tire-pressure Monitoring",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "S",
+"Wrangler (four-door) Willys 4xe": "S",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Blind-spot Monitoring",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "P",
+"Wrangler (four-door) Willys 4xe": "P",
+"Wrangler (four-door) Sahara 4xe": "P",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "P"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Rear Park Assist",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "P",
+"Wrangler (four-door) Willys 4xe": "P",
+"Wrangler (four-door) Sahara 4xe": "P",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "P"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "ParkView rear backup camera with dynamic gridlines",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "S",
+"Wrangler (four-door) Willys 4xe": "S",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Sentry Key antitheft engine immobilizer",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "S",
+"Wrangler (four-door) Willys 4xe": "S",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Vehicle theft alarm — protects doors and liftgate",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "S",
+"Wrangler (four-door) Willys 4xe": "S",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Antilock braking system with hydraulic assist braking",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "S",
+"Wrangler (four-door) Willys 4xe": "S",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Electronic roll mitigation",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "S",
+"Wrangler (four-door) Willys 4xe": "S",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Electronic stability control — includes hydraulic assist brake booster and traction control",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "S",
+"Wrangler (four-door) Willys 4xe": "S",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 8,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Selec-Speed Control",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "S",
+"Wrangler (four-door) Willys 4xe": "S",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 8,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Hill-start Assist",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "S",
+"Wrangler (four-door) Willys 4xe": "S",
+"Wrangler (four-door) Sahara 4xe": "S",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "S"
+}
+},
+{
+"page": 8,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "",
+"text": "Jeep Active Safety Group — includes ParkSense rear park assist, Blind-spot Monitoring and LED taillamps",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "O",
+"Wrangler (four-door) Willys 4xe": "O",
+"Wrangler (four-door) Sahara 4xe": "O",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "O/P"
+}
+},
+{
+"page": 8,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "",
+"text": "Technology Group — includes nine-speaker premium audio system with all-weather subwoofer and Power Box Sahara/Rubicon includes: • Uconnect 5 NAV with 12.3-in. display • Inside electrochromatic rearview mirror • Front off-road TrailCam • Universal garage door opener (Sahara)",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "O",
+"Wrangler (four-door) Willys 4xe": "O",
+"Wrangler (four-door) Sahara 4xe": "O",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "O/P"
+}
+},
+{
+"page": 8,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "",
+"text": "Convenience Group — includes heated front seats, heated steering wheel, remote start and universal garage door opener Sport/Willys Includes: • Satellite radio • Proximity entry • Dual-zone automatic temperature control",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "O",
+"Wrangler (four-door) Willys 4xe": "O",
+"Wrangler (four-door) Sahara 4xe": "O",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "O/P"
+}
+},
+{
+"page": 8,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "",
+"text": "Black Three-piece Hardtop Group — includes black three-piece hardtop, rear window defroster, rear window washer and wiper, and Freedom Panel storage bag",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "O",
+"Wrangler (four-door) Willys 4xe": "O",
+"Wrangler (four-door) Sahara 4xe": "NA",
+"Wrangler (four-door) High Altitude 4xe": "NA",
+"Wrangler (four-door) Rubicon 4xe": "O"
+}
+},
+{
+"page": 8,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "",
+"text": "Body-color Three-piece Hardtop Group — includes color three-piece hardtop, rear window defroster, rear window washer and wiper, and Freedom Panel storage bag",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "NA",
+"Wrangler (four-door) Willys 4xe": "NA",
+"Wrangler (four-door) Sahara 4xe": "O",
+"Wrangler (four-door) High Altitude 4xe": "S",
+"Wrangler (four-door) Rubicon 4xe": "P"
+}
+},
+{
+"page": 8,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "",
+"text": "Sport LED Lighting Group — includes LED headlamps with round signature lighting and LED front fog lamps",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "O",
+"Wrangler (four-door) Willys 4xe": "S",
+"Wrangler (four-door) Sahara 4xe": "NA",
+"Wrangler (four-door) High Altitude 4xe": "NA",
+"Wrangler (four-door) Rubicon 4xe": "NA"
+}
+},
+{
+"page": 9,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "",
+"text": "Trailer-tow and Aux Switch Group — includes four programmable auxiliary switches, Class II hitch receiver, four-pin and seven-pin adapters, forward-facing trail camera (High Altitude only); Only includes hitch receiver and aux switches w/ Rubicon X",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "O",
+"Wrangler (four-door) Willys 4xe": "S",
+"Wrangler (four-door) Sahara 4xe": "O",
+"Wrangler (four-door) High Altitude 4xe": "O",
+"Wrangler (four-door) Rubicon 4xe": "S/O"
+}
+},
+{
+"page": 9,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "",
+"text": "Capability Group — includes front and rear steel bumpers and 8,000-lb-capacity Warn winch",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "NA",
+"Wrangler (four-door) Willys 4xe": "NA",
+"Wrangler (four-door) Sahara 4xe": "NA",
+"Wrangler (four-door) High Altitude 4xe": "NA",
+"Wrangler (four-door) Rubicon 4xe": "O"
+}
+},
+{
+"page": 9,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "",
+"text": "Rubicon X — includes steel bumpers (winch-capable front), Safety Group, Technology Group, Convenience Group, body-color hardtop, 12-way power adjustable front seats, Nappa leather seats, body-color fender flares",
+"marks": {
+"Wrangler (four-door) Sport S 4xe": "NA",
+"Wrangler (four-door) Willys 4xe": "NA",
+"Wrangler (four-door) Sahara 4xe": "NA",
+"Wrangler (four-door) High Altitude 4xe": "NA",
+"Wrangler (four-door) Rubicon 4xe": "P"
+}
+}
+],
+"url": "https://media.stellantisnorthamerica.com/view-spec.do?id=26157"
+}

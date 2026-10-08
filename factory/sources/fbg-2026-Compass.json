@@ -1,0 +1,1989 @@
+{
+"kind": "fbg",
+"title": "2026 JEEP COMPASS",
+"columns": [
+{
+"code": "2DN",
+"name": "Latitude Altitude"
+},
+{
+"code": "2DW",
+"name": "Limited Altitude"
+},
+{
+"code": "2DE",
+"name": "Trailhawk"
+}
+],
+"colors": [
+"Diamond Black Crystal Pearl",
+"Silver Zynith Metallic",
+"Hydro Blue Pearl",
+"Red Hot Pearl",
+"Joose*",
+"Bright White"
+],
+"rows": [
+{
+"page": 2,
+"section": "ENGINE / TRANSMISSION",
+"parent": "",
+"text": "2.0L I-4 Direct-Injection (DI) Turbo with Engine Stop/Start (ESS) Technology/8-speed Automatic (EC1/DGD)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "Alternator",
+"text": "180-amp (BA5)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "",
+"text": "AutoStick Automatic Transmission (DHD)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "",
+"text": "Transmission Oil Heater (NHQ)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "Exhaust System",
+"text": "Dual tips, hidden (NEJ)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "",
+"text": "4x4 Drive System (590)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "Four-Wheel Drive (4WD) System with Rear-Axle Disconnect",
+"text": "Jeep Active Drive – Full-time 4x4 system",
+"marks": {
+"2DN": "•",
+"2DW": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "Four-Wheel Drive (4WD) System with Rear-Axle Disconnect",
+"text": "Jeep Active Drive Low – Full-time 4x4 system with low range for a 20:1 crawl ratio",
+"marks": {
+"2DE": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "Fuel Door",
+"text": "Capless fuel-filler (XJM)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "",
+"text": "Push-Button Start (GX4)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "Selec-Terrain® Traction Management System",
+"text": "Center-stack toggle with traction control settings: Auto, Snow and Sand/Mud Modes (XAB)",
+"marks": {
+"2DN": "•",
+"2DW": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "Selec-Terrain® Traction Management System",
+"text": "Auto, Snow, Sand/Mud and Rock Modes with Hill Descent Control (XAB)",
+"marks": {
+"2DE": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "Steering",
+"text": "Electric power; tilt/telescoping column (SBL/SUD)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "Suspension",
+"text": "All-Wheel Drive (AWD) (SDE)",
+"marks": {
+"2DN": "•",
+"2DW": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "Suspension",
+"text": "Off-road (SDJ)",
+"marks": {
+"2DE": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "Trail Rated® Capability",
+"text": "Includes Jeep Active Drive Low Mode with 20:1 crawl ratio and Hill Descent Control, 1-inch increased height, unique front and rear fascia skid plates, off-road suspension, signature Ruby Red accents including front and rear tow hooks, Trail Rated and Trailhawk badges, and unique 17-inch wheels with BSW All-Terrain tires (MT2)",
+"marks": {
+"2DE": "•"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Accents",
+"text": "Lower bodyside cladding with Body-color/Accent-color fascias (MRB/MCD)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Accents",
+"text": "Neutral Gray badging and exterior accents (included with Altitude Special Edition (ADZ) and Limited Altitude Pack (ACC)) (MEQ/MHX)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Accents",
+"text": "Middle fascia texture – Molded-in-color Black (MLD)",
+"marks": {
+"2DN": "•",
+"2DE": "•"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Accents",
+"text": "Middle fascia texture – Gloss Black (MLB)",
+"marks": {
+"2DW": "•"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Accents",
+"text": "Rear fascia skid plate appliqué (MTA)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Accents",
+"text": "Mopar® Bodyside Graphics (included with Mopar Graphics Package) (MZQ)",
+"marks": {
+"2DN": "P"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Accents",
+"text": "Mopar Rock Rails (not available with Sun and Sound Group on Trailhawk models) (MMU)",
+"marks": {
+"2DN": "O",
+"2DW": "O",
+"2DE": "O"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Daylight Opening (DLO) Moldings",
+"text": "Black (MMR)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Door Handles",
+"text": "Body-color (MNK)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Glass",
+"text": "Deep-tint sunscreen (GEG)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Grilles",
+"text": "Black surround with Neutral Gray rings (MF6)",
+"marks": {
+"2DE": "•"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Grilles",
+"text": "Gloss Black surround with Neutral Gray rings (MFJ)",
+"marks": {
+"2DN": "•",
+"2DW": "•"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Hood",
+"text": "Decal in Black (MYA)",
+"marks": {
+"2DE": "•"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Hood",
+"text": "Mopar Hood Graphic (included with Mopar Graphics Package) (MGV)",
+"marks": {
+"2DN": "P"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "Fog and Cornering Lamps (LNP)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "Premium LED with cornering function (included with Driver Assistance Group) (LNT)",
+"marks": {
+"2DN": "P"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Lighting",
+"text": "LED reflector headlamps (LPX)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Lighting",
+"text": "Automatic headlamps (LMG)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Lighting",
+"text": "Auto High-Beam Headlamp Control (requires Full-Speed Forward Collision Warning with Active Braking(9)) (LMS)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Lighting",
+"text": "Daytime running lamp (DRL) system (LMX)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Lighting",
+"text": "Headlamps-off time delay (LHD)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Lighting",
+"text": "Incandescent taillamps (LA6)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Mirrors",
+"text": "Power-adjust, heated and manual-folding in Gloss Black (GTC/LE7)",
+"marks": {
+"2DN": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Mirrors",
+"text": "Power-adjust, heated and manual-folding in Gloss Black with turn signals (GTC/LEB/LE7)",
+"marks": {
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "Power Liftgate with Foot-Activated Open ’N Go (included with Convenience group) (JRC/XZ2)",
+"marks": {
+"2DN": "P",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Removable Short-Mast Antenna",
+"text": "Roof-mounted (RDB)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Roof",
+"text": "Body-color (MXU)",
+"marks": {
+"2DN": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Roof",
+"text": "Black (MXS)",
+"marks": {
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Roof Rails",
+"text": "Black (MWE)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Skid Plates",
+"text": "Fuel tank, transfer case, front suspension and transmission (XEE/XEF/XEU/XE9)",
+"marks": {
+"2DE": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Sunroof",
+"text": "Power, dual-pane with front tilt/fore/aft and rear fixed glass (included with Sun, Sound and NAV Group and Sun and Sound Group) (GWJ)",
+"marks": {
+"2DN": "P",
+"2DW": "P",
+"2DE": "P"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Tires",
+"text": "225/60R17 BSW All-Season (A/S) (TTU)",
+"marks": {
+"2DN": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Tires",
+"text": "215/65R17 BSW All-Terrain (A/T) (TAK)",
+"marks": {
+"2DE": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Tires",
+"text": "225/55R18 BSW A/S (TJC)",
+"marks": {
+"2DN": "P",
+"2DW": "O"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Tires",
+"text": "225/55R18 BSW A/S (TWL)",
+"marks": {
+"2DN": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Tires",
+"text": "235/45R19 BSW A/S (included with Limited Altitude Pack and 19-inch Diamond-Cut painted aluminum wheels) (TPS)",
+"marks": {
+"2DN": "O",
+"2DW": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Tires",
+"text": "Tire Service Kit (XFP/TBF)",
+"marks": {
+"2DN": "•",
+"2DW": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Tires",
+"text": "Spare Tire – Full-size (TBB)",
+"marks": {
+"2DE": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Tow Hooks",
+"text": "Two front and one rear in Ruby Red (XEA/XH6)",
+"marks": {
+"2DE": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels",
+"text": "17-inch Diamond-Cut aluminum with Satin Black pockets (WD4)",
+"marks": {
+"2DE": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels",
+"text": "18-inch Gloss Black-painted aluminum (WBA)",
+"marks": {
+"2DN": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels",
+"text": "19-inch Satin Granite Crystal-painted aluminum (WS6)",
+"marks": {
+"2DN": "O",
+"2DW": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Windows",
+"text": "Power front, one-touch up and down (JP3)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Windows",
+"text": "Rear, defroster (GFA)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Wiper System",
+"text": "Front, variable/intermittent (JHA)",
+"marks": {
+"2DN": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Wiper System",
+"text": "Rain-sensitive/intermittent (included with Driver Assistance Group) (JHC)",
+"marks": {
+"2DN": "P",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Wiper System",
+"text": "Windshield wiper de-icer (included with Convenience Group) (NHL)",
+"marks": {
+"2DN": "P",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Wiper System",
+"text": "Rear window wiper/washer (JHB)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Accents",
+"text": "Piano Black (XTE)",
+"marks": {
+"2DN": "•",
+"2DW": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Accents",
+"text": "Piano Black/Brushed Hydro (XST)",
+"marks": {
+"2DE": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Air Conditioning (HAA)",
+"marks": {
+"2DN": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Dual-Zone automatic temperature control, including humidity sensors (included with Convenience Group) (HAF)",
+"marks": {
+"2DN": "P",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Jeep Air Filtration System (JMD)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Assist Handles",
+"text": "Driver and passenger; coat hook included on rear passenger (four) (CSR/CSW/XCT)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Cargo Area",
+"text": "Tie-down loops (four) (CKT)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Cargo Area",
+"text": "Compartment lamp (LDB)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Cargo Area",
+"text": "Height-adjustable load floor – One-, two- or three-position adjustment depending on spare tire/Tire Service Kit availability",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Cargo Area",
+"text": "Rear cargo underfloor tray (CK6)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Cargo Area",
+"text": "Cargo compartment carpet (CKN)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Cargo Area",
+"text": "Mopar® Carpet Cargo Mat (included with Mopar Interior Premium Package) (CMK)",
+"marks": {
+"2DN": "P"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Cargo Area",
+"text": "Mopar Molded Cargo Tray (included with Mopar Interior Protection Package) (CKZ)",
+"marks": {
+"2DN": "P"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Cluster",
+"text": "7-inch color Driver Information Display (JAL)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Cluster",
+"text": "10.25-inch all-digital, full-color (included with Sun, Sound and NAV Group) (JAU)",
+"marks": {
+"2DW": "P",
+"2DE": "P"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Cluster",
+"text": "Outside temperature display in odometer (LAH)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Cluster",
+"text": "Speedometer – 160-mph (JCC)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Cluster",
+"text": "Tachometer (JFH)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Console",
+"text": "Full-length front floor console with fore/aft sliding armrest (CM6)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Console",
+"text": "Media center electronics storage (CU7)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Console",
+"text": "Air vents on rear of center console for rear passengers (XGA)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Console",
+"text": "Overhead console (CUN)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Console",
+"text": "Wireless Charging Pad (included with Driver Assistance Group and Driver Assist Group I) (RFX)",
+"marks": {
+"2DN": "P",
+"2DW": "P",
+"2DE": "P"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Cup Holders (included with full-length front floor console) (CM6)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Rear-seat armrest with cup holders (CSN)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Electronic Vehicle Information Center (EVIC)",
+"text": "Controls located on steering wheel (LAZ)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Floor Mats",
+"text": "Front and rear (CLE)",
+"marks": {
+"2DN": "•",
+"2DW": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Floor Mats",
+"text": "All-season (included with Convenience Group) (CLF)",
+"marks": {
+"2DN": "P",
+"2DE": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Floor Mats",
+"text": "Mopar Premium Carpet Floor Mats (included with Mopar Interior Premium Package) (CLQ)",
+"marks": {
+"2DN": "P"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Floor Mats",
+"text": "Mopar All-Weather Floor Mats (included with Mopar Interior Protection Package) (CKV)",
+"marks": {
+"2DN": "P"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Glove Box",
+"text": "With damped door (JKA)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Instrument and Door Panel",
+"text": "Black perforated vinyl mid-panel with Ruby Red accent stitching",
+"marks": {
+"2DE": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Instrument and Door Panel",
+"text": "Black perforated vinyl mid-panel and door bolsters with Bright Blue accent stitching",
+"marks": {
+"2DN": "•",
+"2DW": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Lighting",
+"text": "Two front overhead incandescent map lamps (LBA)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Lighting",
+"text": "Overhead cupola LED lamps (LHJ)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Lighting",
+"text": "Door handle LED lamps (LB3)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Lighting",
+"text": "Front map pocket LED lamp (LBG)",
+"marks": {
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Lighting",
+"text": "Front dome lamp (LCK)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Lighting",
+"text": "Map/dome reading lamps (LCD)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Lighting",
+"text": "Illuminated entry (LAC)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Mirrors",
+"text": "Rearview day/night mirror (GNA)",
+"marks": {
+"2DN": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Mirrors",
+"text": "Rearview, auto-dimming mirror (included with Convenience Group) (GNK)",
+"marks": {
+"2DN": "P",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Mirrors",
+"text": "Sliding sun visors with illuminated mirrors (GNC)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Power Outlet",
+"text": "12-volt auxiliary located behind center console (JKP)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seating",
+"text": "Premium cloth and vinyl bucket in Black with Bright Blue accent stitching (*G7)",
+"marks": {
+"2DN": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seating",
+"text": "Premium leather-trimmed with cloth insert bucket in Black with Ruby Red and Tungsten dual accent stitching and embroidered Trailhawk logo (*Q6)",
+"marks": {
+"2DE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seating",
+"text": "Leatherette bucket in Black with Bright Blue accent stitching (*A6)",
+"marks": {
+"2DW": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seats, Front-Row",
+"text": "Driver’s – Manual-adjust six-way including driver height adjuster (JVB/CDH)",
+"marks": {
+"2DN": "•",
+"2DE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seats, Front-Row",
+"text": "Driver’s – Power-adjust eight-way with power two-way lumbar-adjust (included with Convenience Group) (JVG)",
+"marks": {
+"2DN": "P",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seats, Front-Row",
+"text": "Front-passenger – Manual-adjust six-way (JWB)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seats, Front-Row",
+"text": "Power two-way driver’s lumbar-adjust (included with Convenience Group) (JPE)",
+"marks": {
+"2DN": "P",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seats, Front-Row",
+"text": "Heated (JPM)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seats, Front-Row",
+"text": "Two-way headrests (CDX)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seats, Front-Row",
+"text": "Front height-adjustable shoulder belts (CGD)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seats, Front-Row",
+"text": "Front seatback map pocket (CSM)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seats, Front-Row",
+"text": "Front-passenger fold forward (packaged with manual-adjust six-way front-passenger seat) (CDW)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seats, Second-Row",
+"text": "60/40 split-folding and pull-down rear-seat armrest with cup holders (CFN/CSN)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seats, Second-Row",
+"text": "Rear-seat head restraints,(36) three (CSH)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seats, Second-Row",
+"text": "Center rear three-point seat belt (CG6)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seats, Second-Row",
+"text": "Heat ducts (XGR)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seats, Second-Row",
+"text": "Air vents – Located behind center console (XGA)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Shift Knob",
+"text": "Leather-wrapped (CVB)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Speed-Sensitive Power Door Locks (JPH)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Steering Wheel",
+"text": "Premium-wrapped (SCJ)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Steering Wheel",
+"text": "Heated (NHS)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Steering Wheel",
+"text": "Mounted audio controls (RDZ)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 4,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "",
+"text": "Wireless Apple CarPlayTM(16) iPhone® Integration and Android AutoTM(15) Compatibility (RFP/RF5)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 4,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "",
+"text": "Hands-Free(24) Phone and Audio (RTE)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 4,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "Media Device Connections",
+"text": "Front-row USB port Type-A/-C (RTX)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 4,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "Media Device Connections",
+"text": "Second-row USB port Type-A (charge only) (RS4)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 4,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "Media Device Connections",
+"text": "Second-row USB port Type-A/-C (charge only) (included with Convenience Group and Driver Assist Group I) (RS2)",
+"marks": {
+"2DN": "P",
+"2DW": "P",
+"2DE": "•"
+}
+},
+{
+"page": 4,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "SiriusXM® Radio(21)",
+"text": "Includes three-month All-Access trial subscription (RSD)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 4,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "SiriusXM with 360L(21)",
+"text": "Includes three-month trial subscription (packaged with Uconnect 5 NAV with 10.1-inch Touchscreen Display) (RTU)",
+"marks": {
+"2DW": "P",
+"2DE": "P"
+}
+},
+{
+"page": 4,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "Jeep Connect(17)",
+"text": "Includes three-month trial subscription and 4G LTE Wi-Fi Hotspot(23) (RT1)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 4,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "",
+"text": "Connected Travel and Traffic Services(22) (packaged with Uconnect 5 NAV with 10.1-inch Touchscreen Display) (RTV)",
+"marks": {
+"2DW": "P",
+"2DE": "P"
+}
+},
+{
+"page": 4,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "Speakers",
+"text": "Six (RCG)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 4,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "Speakers",
+"text": "Premium Alpine® Sound System with nine amplified speakers, plus a subwoofer (included with Sun, Sound and NAV Group and Sun and Sound Group) (RC3)",
+"marks": {
+"2DN": "P",
+"2DW": "P",
+"2DE": "P"
+}
+},
+{
+"page": 4,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "Uconnect 5 with 10.1-inch Touchscreen Display",
+"text": "Includes 10.1-inch touchscreen display, hands-free(24) phone and audio, SiriusXM Radio(21) (three-month trial subscription), Jeep Connect(17) (three-month trial subscription) including 4G LTE Wi-Fi Hotspot(23) (UBU)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 4,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "Uconnect 5 NAV with 10.1-inch Touchscreen Display",
+"text": "Includes 10.1-inch touchscreen display with GPS Navigation,(25) HD radio, Alexa Built-In,(14) Integrated Voice Command, SiriusXM with 360L(21) including three-month trial subscription, Jeep Connect(17) (three-month trial subscription) including 4G LTE Wi-Fi Hotspot,(23) and Connected Travel and Traffic Services(22) (included with Sun, Sound and NAV Group) (UBN)",
+"marks": {
+"2DW": "P",
+"2DE": "P"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "Air Bags(31) (seven total)",
+"text": "Advanced multistage front (CG3)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "Air Bags(31) (seven total)",
+"text": "Supplemental full-length front and rear side-curtain (CJ2)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "Air Bags(31) (seven total)",
+"text": "Supplemental front-seat-mounted side (CJ1)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "Air Bags(31) (seven total)",
+"text": "Driver’s inflatable knee-bolster (CGY)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "All-Speed Traction Control (BNP)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Battery Run-Down Protection (BCS)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "Brakes",
+"text": "Antilock four-wheel disc performance (BR5)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "Brakes",
+"text": "Advanced Brake Assist(9) (BGG)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "Brakes",
+"text": "Electric Park Brake (XC4)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "Brakes",
+"text": "Rain Brake Support (BHC)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "Cruise Control Systems",
+"text": "Cruise Control (NHU)",
+"marks": {
+"2DN": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "Cruise Control Systems",
+"text": "Adaptive Cruise Control (ACC) with Stop and Go(6) (included with Driver Assistance Group) (NHZ)",
+"marks": {
+"2DN": "P",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "Driver Assist Systems",
+"text": "Active Lane Management System(5) (XNW)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "Driver Assist Systems",
+"text": "Active Driving Assist System(5) (included with Driver Assist Group I) (SJJ)",
+"marks": {
+"2DW": "P",
+"2DE": "P"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "Driver Assist Systems",
+"text": "Traffic Sign Recognition System(13) (included with Driver Assist Group I) (SJB)",
+"marks": {
+"2DW": "P",
+"2DE": "P"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "Driver Assist Systems",
+"text": "Full-Speed Forward Collision Warning with Active Braking(9) – Includes Advanced Brake Assist(9) (LSU)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "Driver Assist Systems",
+"text": "Blind Spot Monitoring (BSM)(7) and Rear Cross-Path Detection System(4) (XAN)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "Driver Assist Systems",
+"text": "Pedestrian/Cyclist Detection with Emergency Braking(9) (LST)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "Driver Assist Systems",
+"text": "Drowsy-Driver Detection(6) (XNM)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "Driver Assist Systems",
+"text": "Electronic Roll Mitigation (BNS)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "Driver Assist Systems",
+"text": "Electronic Stability Control (ESC)(8) (BNB)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "Driver Assist Systems",
+"text": "Hill Descent Control (BNH)",
+"marks": {
+"2DE": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "Driver Assist Systems",
+"text": "Hill Start Assist (BNG)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "Entry Systems",
+"text": "Two-door passive entry (front-door locks)/Keyless Enter ’n GoTM with push-button start (GXD/GX4)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "Entry Systems",
+"text": "Keyless Entry with engine immobilizer (GXW)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "Park Assist System",
+"text": "ParkSense® Rear Park Assist System(12) (XAA)",
+"marks": {
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "Camera System",
+"text": "ParkView® Rear Back-Up Camera(4) with active grid lines (XAC)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Remote Start(27) System (XBM)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "Seat Belt and Door Systems",
+"text": "Front-passenger seat-belt alert (LAX)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "Seat Belt and Door Systems",
+"text": "Motorized pretensioning seat belts (CGN)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "Seat Belt and Door Systems",
+"text": "Child Seat Anchor System – LATCH-ready (CGU)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "Seat Belt and Door Systems",
+"text": "Rear-door child protection locks (GXT)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "Seat Belt and Door Systems",
+"text": "Rear-seat reminder alert (JFB)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Security Alarm(34) (LSA)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Tire Pressure Monitoring Display (XGM)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Trailer Sway Damping(8) (BNT)",
+"marks": {
+"2DN": "•",
+"2DW": "•",
+"2DE": "•"
+}
+},
+{
+"page": 5,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "Convenience Group",
+"text": "Includes power-adjust eight-way driver’s seat with power two-way lumbar-adjust, rearview auto-dimming mirror, Dual-Zone automatic temperature control including humidity sensor, all-season floor mats, second-row USB port Type-A/-C (charge only), Power Liftgate with Foot-Activated Open ’N Go and windshield wiper de-icer (AHM)",
+"marks": {
+"2DN": "O"
+}
+},
+{
+"page": 5,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "Driver Assistance Group",
+"text": "Includes wireless charging pad, premium LED fog lamps, rain-sensitive/intermittent windshield wipers, and ACC with Stop and Go(6) (requires Convenience Group) (AAH)",
+"marks": {
+"2DN": "O"
+}
+},
+{
+"page": 5,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "Driver Assist Group I",
+"text": "Includes wireless charging pad, Traffic Sign Recognition System(13) and Active Driving Assist System(5); Limited Altitude models add second-row Type-A/-C USB port (charge only); requires Sun, Sound and NAV Group (AAY)",
+"marks": {
+"2DW": "O",
+"2DE": "O"
+}
+},
+{
+"page": 5,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "Mopar® Graphics Package",
+"text": "Includes Mopar Hood Graphic and Mopar Bodyside Graphic (ALB)",
+"marks": {
+"2DN": "O"
+}
+},
+{
+"page": 5,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "Mopar Interior Premium Package",
+"text": "Includes Mopar Carpet Cargo Mat, Mopar Premium Carpet Floor Mats and Mopar Pedal Kit (ACX)",
+"marks": {
+"2DN": "O"
+}
+},
+{
+"page": 5,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "Mopar Interior Protection Package",
+"text": "Includes Mopar All-Weather Floor Mats and Mopar Molded Cargo Tray (not available with Mopar Interior Premium Package or Mopar Graphics Package) (AD4)",
+"marks": {
+"2DN": "O"
+}
+},
+{
+"page": 5,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "Sun and Sound Group",
+"text": "Includes dual-pane panoramic power sunroof and Premium Alpine® Sound System, including nine speakers and subwoofer (requires Convenience Group for Latitude models) (AGR)",
+"marks": {
+"2DN": "O"
+}
+},
+{
+"page": 5,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "Sun, Sound and NAV Group",
+"text": "Includes dual-pane panoramic power sunroof; Premium Alpine Sound System, including nine speakers and subwoofer; 10.25-inch digital, full-color Driver Information Display; Uconnect® 5 NAV with 10.1-inch touchscreen display; GPS Navigation(25); HD radio; Jeep Connect(17) (three-month trial subscription) including 4G LTE Wi-Fi Hotspot(23); SiriusXM® Radio,(21) including SiriusXM with 360L(21) (three-month trial subscription); Alexa Built-in(14); and Connected Travel and Traffic Services(22) (not available with Mopar Rock Rails) (AD1)",
+"marks": {
+"2DW": "O",
+"2DE": "O"
+}
+},
+{
+"page": 5,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "Trailer Tow Group",
+"text": "Includes Class III hitch receiver and four-pin wiring harness (AHT)",
+"marks": {
+"2DE": "O"
+}
+}
+],
+"url": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Compass.pdf"
+}

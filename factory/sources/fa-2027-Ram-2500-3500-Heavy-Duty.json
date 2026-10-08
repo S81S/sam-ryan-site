@@ -1,0 +1,1316 @@
+{
+"kind": "fa",
+"title": "2027 Ram 2500 & 3500 Heavy Duty",
+"rows": [
+{
+"page": 1,
+"section": "BODY MODEL",
+"parent": "",
+"text": "Regular Cab 8-ft. box — 169.1-in. wheelbase",
+"marks": {
+"TDARSEMNA": "S",
+"SSE KCA R PXE L B": "NA",
+"WRALOKC": "NA",
+"BIGHONR/ LONESTRA": "S",
+"POWER WAOGN": "NA",
+"REBEL": "NA",
+"LARAMIE": "NA",
+"LIMITED LONGHONR": "NA",
+"LIMITED": "NA"
+}
+},
+{
+"page": 1,
+"section": "BODY MODEL",
+"parent": "",
+"text": "Crew Cab 6-ft. 4-in. box — 149.1-in. wheelbase",
+"marks": {
+"TDARSEMNA": "O",
+"SSE KCA R PXE L B": "S",
+"WRALOKC": "S",
+"BIGHONR/ LONESTRA": "O",
+"POWER WAOGN": "S",
+"REBEL": "S",
+"LARAMIE": "S",
+"LIMITED LONGHONR": "S",
+"LIMITED": "S"
+}
+},
+{
+"page": 1,
+"section": "BODY MODEL",
+"parent": "",
+"text": "Crew Cab 8-ft. box — 169.1-in. wheelbase",
+"marks": {
+"TDARSEMNA": "O",
+"SSE KCA R PXE L B": "O",
+"WRALOKC": "NA",
+"BIGHONR/ LONESTRA": "O",
+"POWER WAOGN": "NA",
+"REBEL": "NA",
+"LARAMIE": "O",
+"LIMITED LONGHONR": "O",
+"LIMITED": "O"
+}
+},
+{
+"page": 1,
+"section": "BODY MODEL",
+"parent": "",
+"text": "Mega Cab 6-ft. 4-in. box — 160.2-in. wheelbase",
+"marks": {
+"TDARSEMNA": "NA",
+"SSE KCA R PXE L B": "NA",
+"WRALOKC": "NA",
+"BIGHONR/ LONESTRA": "NA",
+"POWER WAOGN": "NA",
+"REBEL": "NA",
+"LARAMIE": "O",
+"LIMITED LONGHONR": "O",
+"LIMITED": "O"
+}
+},
+{
+"page": 1,
+"section": "DRIVE",
+"parent": "",
+"text": "4x2",
+"marks": {
+"TDARSEMNA": "S",
+"SSE KCA R PXE L B": "S",
+"WRALOKC": "NA",
+"BIGHONR/ LONESTRA": "S",
+"POWER WAOGN": "NA",
+"REBEL": "NA",
+"LARAMIE": "S",
+"LIMITED LONGHONR": "S",
+"LIMITED": "S"
+}
+},
+{
+"page": 1,
+"section": "DRIVE",
+"parent": "",
+"text": "4x4",
+"marks": {
+"TDARSEMNA": "O",
+"SSE KCA R PXE L B": "O",
+"WRALOKC": "S",
+"BIGHONR/ LONESTRA": "O",
+"POWER WAOGN": "S",
+"REBEL": "S",
+"LARAMIE": "O",
+"LIMITED LONGHONR": "O",
+"LIMITED": "O"
+}
+},
+{
+"page": 1,
+"section": "ENGINE / TRANSMISSION",
+"parent": "",
+"text": "â 6.4-liter V8 HEMI , eight-speed automatic transmission",
+"marks": {
+"TDARSEMNA": "S",
+"SSE KCA R PXE L B": "S",
+"WRALOKC": "S",
+"BIGHONR/ LONESTRA": "S",
+"POWER WAOGN": "S",
+"REBEL": "S",
+"LARAMIE": "S",
+"LIMITED LONGHONR": "S",
+"LIMITED": "S"
+}
+},
+{
+"page": 1,
+"section": "ENGINE / TRANSMISSION",
+"parent": "",
+"text": "6.7-liter I-6 Cummins Turbo Diesel High-Output, eight-speed automatic transmission",
+"marks": {
+"TDARSEMNA": "O",
+"SSE KCA R PXE L B": "O",
+"WRALOKC": "O",
+"BIGHONR/ LONESTRA": "O",
+"POWER WAOGN": "O",
+"REBEL": "O",
+"LARAMIE": "O",
+"LIMITED LONGHONR": "O",
+"LIMITED": "O"
+}
+},
+{
+"page": 2,
+"section": "REAR AXLE",
+"parent": "",
+"text": "3.42 (diesel)",
+"marks": {
+"TDARSEMNA": "S",
+"SSE KCA R PXE L B": "S",
+"WRALOKC": "S",
+"BIGHONR/ LONESTRA": "S",
+"POWER WAOGN": "O",
+"REBEL": "S",
+"LARAMIE": "S",
+"LIMITED LONGHONR": "S",
+"LIMITED": "S"
+}
+},
+{
+"page": 2,
+"section": "REAR AXLE",
+"parent": "",
+"text": "3.73 axle ratio (HEMI)",
+"marks": {
+"TDARSEMNA": "S",
+"SSE KCA R PXE L B": "S",
+"WRALOKC": "S",
+"BIGHONR/ LONESTRA": "S",
+"POWER WAOGN": "NA",
+"REBEL": "S",
+"LARAMIE": "S",
+"LIMITED LONGHONR": "S",
+"LIMITED": "S"
+}
+},
+{
+"page": 2,
+"section": "REAR AXLE",
+"parent": "",
+"text": "4.10 axle ratio (HEMI)",
+"marks": {
+"TDARSEMNA": "O",
+"SSE KCA R PXE L B": "O",
+"WRALOKC": "O",
+"BIGHONR/ LONESTRA": "O",
+"POWER WAOGN": "S",
+"REBEL": "O",
+"LARAMIE": "O",
+"LIMITED LONGHONR": "O",
+"LIMITED": "O"
+}
+},
+{
+"page": 2,
+"section": "REAR AXLE",
+"parent": "",
+"text": "Electronic-locking front and rear differentials (includes Anti-Slip)",
+"marks": {
+"TDARSEMNA": "P",
+"SSE KCA R PXE L B": "NA",
+"WRALOKC": "NA",
+"BIGHONR/ LONESTRA": "NA",
+"POWER WAOGN": "S",
+"REBEL": "S",
+"LARAMIE": "NA",
+"LIMITED LONGHONR": "NA",
+"LIMITED": "NA"
+}
+},
+{
+"page": 2,
+"section": "REAR AXLE",
+"parent": "",
+"text": "Anti-spin differential (electronic locking rear axle and anti-spin are mutually exclusive; standard on all 3500 trim levels)",
+"marks": {
+"TDARSEMNA": "S/O/P",
+"SSE KCA R PXE L B": "S/P",
+"WRALOKC": "S",
+"BIGHONR/ LONESTRA": "S/P",
+"POWER WAOGN": "NA",
+"REBEL": "NA",
+"LARAMIE": "S/P",
+"LIMITED LONGHONR": "S/P",
+"LIMITED": "S/P"
+}
+},
+{
+"page": 2,
+"section": "REAR AXLE",
+"parent": "",
+"text": "Warn front electric 12,000 lb. winch",
+"marks": {
+"TDARSEMNA": "NA",
+"SSE KCA R PXE L B": "NA",
+"WRALOKC": "NA",
+"BIGHONR/ LONESTRA": "NA",
+"POWER WAOGN": "O/P",
+"REBEL": "O",
+"LARAMIE": "NA",
+"LIMITED LONGHONR": "NA",
+"LIMITED": "NA"
+}
+},
+{
+"page": 2,
+"section": "SUSPENSION",
+"parent": "",
+"text": "Auto-leveling rear air suspension system",
+"marks": {
+"TDARSEMNA": "NA",
+"SSE KCA R PXE L B": "NA",
+"WRALOKC": "NA",
+"BIGHONR/ LONESTRA": "NA",
+"POWER WAOGN": "NA",
+"REBEL": "O",
+"LARAMIE": "O/P",
+"LIMITED LONGHONR": "O/P",
+"LIMITED": "O/P"
+}
+},
+{
+"page": 2,
+"section": "TRANSFER CASE",
+"parent": "",
+"text": "Electronic on-demand",
+"marks": {
+"TDARSEMNA": "S",
+"SSE KCA R PXE L B": "S",
+"WRALOKC": "S",
+"BIGHONR/ LONESTRA": "S",
+"POWER WAOGN": "S",
+"REBEL": "S",
+"LARAMIE": "S",
+"LIMITED LONGHONR": "S",
+"LIMITED": "S"
+}
+},
+{
+"page": 3,
+"section": "SUNROOF",
+"parent": "",
+"text": "Single-pane, power-operated (Crew Cab/Mega Cab)",
+"marks": {
+"TDARSEMNA": "NA",
+"SSE KCA R PXE L B": "NA",
+"WRALOKC": "NA",
+"BIGHONR/ LONESTRA": "NA",
+"POWER WAOGN": "O",
+"REBEL": "O",
+"LARAMIE": "O",
+"LIMITED LONGHONR": "O",
+"LIMITED": "O"
+}
+},
+{
+"page": 3,
+"section": "RADIOS",
+"parent": "",
+"text": "Uconnect 8.4 AM/FM/Bluetooth/SiriusXM radio",
+"marks": {
+"TDARSEMNA": "S",
+"SSE KCA R PXE L B": "S",
+"WRALOKC": "S",
+"BIGHONR/ LONESTRA": "S",
+"POWER WAOGN": "NA",
+"REBEL": "NA",
+"LARAMIE": "NA",
+"LIMITED LONGHONR": "NA",
+"LIMITED": "NA"
+}
+},
+{
+"page": 3,
+"section": "RADIOS",
+"parent": "",
+"text": "Uconnect 12-in. radio",
+"marks": {
+"TDARSEMNA": "P",
+"SSE KCA R PXE L B": "P",
+"WRALOKC": "P",
+"BIGHONR/ LONESTRA": "P",
+"POWER WAOGN": "S",
+"REBEL": "S",
+"LARAMIE": "S",
+"LIMITED LONGHONR": "NA",
+"LIMITED": "NA"
+}
+},
+{
+"page": 3,
+"section": "RADIOS",
+"parent": "",
+"text": "Uconnect 14.5-in. radio",
+"marks": {
+"TDARSEMNA": "NA",
+"SSE KCA R PXE L B": "NA",
+"WRALOKC": "NA",
+"BIGHONR/ LONESTRA": "NA",
+"POWER WAOGN": "P",
+"REBEL": "P",
+"LARAMIE": "P",
+"LIMITED LONGHONR": "S",
+"LIMITED": "S"
+}
+},
+{
+"page": 3,
+"section": "SOUND SYSTEM",
+"parent": "",
+"text": "Base six-speaker (four-speaker, Regular Cab)",
+"marks": {
+"TDARSEMNA": "S",
+"SSE KCA R PXE L B": "S",
+"WRALOKC": "S",
+"BIGHONR/ LONESTRA": "S",
+"POWER WAOGN": "S",
+"REBEL": "S",
+"LARAMIE": "NA",
+"LIMITED LONGHONR": "NA",
+"LIMITED": "NA"
+}
+},
+{
+"page": 3,
+"section": "SOUND SYSTEM",
+"parent": "",
+"text": "Premium Alpine nine-speaker with subwoofer (seven-speaker, Regular Cab)",
+"marks": {
+"TDARSEMNA": "NA",
+"SSE KCA R PXE L B": "NA",
+"WRALOKC": "NA",
+"BIGHONR/ LONESTRA": "P",
+"POWER WAOGN": "P",
+"REBEL": "P",
+"LARAMIE": "S",
+"LIMITED LONGHONR": "NA",
+"LIMITED": "NA"
+}
+},
+{
+"page": 3,
+"section": "SOUND SYSTEM",
+"parent": "",
+"text": "Premium Harman Kardon 17-speaker with subwoofer",
+"marks": {
+"TDARSEMNA": "NA",
+"SSE KCA R PXE L B": "NA",
+"WRALOKC": "NA",
+"BIGHONR/ LONESTRA": "NA",
+"POWER WAOGN": "P",
+"REBEL": "P",
+"LARAMIE": "P",
+"LIMITED LONGHONR": "S",
+"LIMITED": "S"
+}
+},
+{
+"page": 4,
+"section": "CAMERA",
+"parent": "",
+"text": "ParkView rear backup camera with dynamic gridlines, center lines and zoom",
+"marks": {
+"TDARSEMNA": "S",
+"SSE KCA R PXE L B": "S",
+"WRALOKC": "S",
+"BIGHONR/ LONESTRA": "S",
+"POWER WAOGN": "S",
+"REBEL": "S",
+"LARAMIE": "S",
+"LIMITED LONGHONR": "S",
+"LIMITED": "S"
+}
+},
+{
+"page": 4,
+"section": "CAMERA",
+"parent": "",
+"text": "Digital rearview mirror 3.0 with available “tow mode”",
+"marks": {
+"TDARSEMNA": "O",
+"SSE KCA R PXE L B": "O",
+"WRALOKC": "O",
+"BIGHONR/ LONESTRA": "O",
+"POWER WAOGN": "O",
+"REBEL": "O",
+"LARAMIE": "O",
+"LIMITED LONGHONR": "O",
+"LIMITED": "O"
+}
+},
+{
+"page": 4,
+"section": "CAMERA",
+"parent": "",
+"text": "360-degree surround view camera system (included in Tow Tech Group)",
+"marks": {
+"TDARSEMNA": "P",
+"SSE KCA R PXE L B": "P",
+"WRALOKC": "P",
+"BIGHONR/ LONESTRA": "P",
+"POWER WAOGN": "P",
+"REBEL": "P",
+"LARAMIE": "P",
+"LIMITED LONGHONR": "P",
+"LIMITED": "P"
+}
+},
+{
+"page": 4,
+"section": "CAMERA",
+"parent": "",
+"text": "Cargo view camera (included in Tow Tech and Max Tow Groups)",
+"marks": {
+"TDARSEMNA": "P",
+"SSE KCA R PXE L B": "P",
+"WRALOKC": "P",
+"BIGHONR/ LONESTRA": "P",
+"POWER WAOGN": "O/P",
+"REBEL": "O/P",
+"LARAMIE": "O/P",
+"LIMITED LONGHONR": "P",
+"LIMITED": "P"
+}
+},
+{
+"page": 4,
+"section": "CAMERA",
+"parent": "",
+"text": "Auxiliary camera prep (supports up to two remote cameras based on vehicle configuration)",
+"marks": {
+"TDARSEMNA": "O/P",
+"SSE KCA R PXE L B": "O/P",
+"WRALOKC": "O/P",
+"BIGHONR/ LONESTRA": "O/P",
+"POWER WAOGN": "O/P",
+"REBEL": "O/P",
+"LARAMIE": "O/P",
+"LIMITED LONGHONR": "O/P",
+"LIMITED": "O/P"
+}
+},
+{
+"page": 4,
+"section": "CAMERA",
+"parent": "",
+"text": "Auxiliary remote camera (Mopar camera available at dealer)",
+"marks": {
+"TDARSEMNA": "O",
+"SSE KCA R PXE L B": "O",
+"WRALOKC": "O",
+"BIGHONR/ LONESTRA": "O",
+"POWER WAOGN": "O",
+"REBEL": "O",
+"LARAMIE": "O",
+"LIMITED LONGHONR": "O",
+"LIMITED": "O"
+}
+},
+{
+"page": 4,
+"section": "ACTIVE FEATURES",
+"parent": "",
+"text": "Adaptive cruise control",
+"marks": {
+"TDARSEMNA": "S",
+"SSE KCA R PXE L B": "S",
+"WRALOKC": "S",
+"BIGHONR/ LONESTRA": "S",
+"POWER WAOGN": "S",
+"REBEL": "S",
+"LARAMIE": "S",
+"LIMITED LONGHONR": "S",
+"LIMITED": "S"
+}
+},
+{
+"page": 4,
+"section": "ACTIVE FEATURES",
+"parent": "",
+"text": "Adaptive steering (included in Safety Group)",
+"marks": {
+"TDARSEMNA": "P",
+"SSE KCA R PXE L B": "P",
+"WRALOKC": "P",
+"BIGHONR/ LONESTRA": "P",
+"POWER WAOGN": "P",
+"REBEL": "P",
+"LARAMIE": "P",
+"LIMITED LONGHONR": "P",
+"LIMITED": "P"
+}
+},
+{
+"page": 4,
+"section": "ACTIVE FEATURES",
+"parent": "",
+"text": "Blind-spot Monitoring with conventional trailer coverage, Pedestrian Detection and Rear Cross Path detection (included in Safety Group)",
+"marks": {
+"TDARSEMNA": "P",
+"SSE KCA R PXE L B": "P",
+"WRALOKC": "P",
+"BIGHONR/ LONESTRA": "P",
+"POWER WAOGN": "S",
+"REBEL": "S",
+"LARAMIE": "S",
+"LIMITED LONGHONR": "S",
+"LIMITED": "S"
+}
+},
+{
+"page": 4,
+"section": "ACTIVE FEATURES",
+"parent": "",
+"text": "Forward Collision Mitigation (Automatic Emergency Braking) (included in Safety Group)",
+"marks": {
+"TDARSEMNA": "P",
+"SSE KCA R PXE L B": "P",
+"WRALOKC": "P",
+"BIGHONR/ LONESTRA": "P",
+"POWER WAOGN": "P",
+"REBEL": "P",
+"LARAMIE": "P",
+"LIMITED LONGHONR": "P",
+"LIMITED": "P"
+}
+},
+{
+"page": 4,
+"section": "ACTIVE FEATURES",
+"parent": "",
+"text": "Active Lane Management (included in Safety Group)",
+"marks": {
+"TDARSEMNA": "P",
+"SSE KCA R PXE L B": "P",
+"WRALOKC": "P",
+"BIGHONR/ LONESTRA": "P",
+"POWER WAOGN": "P",
+"REBEL": "P",
+"LARAMIE": "P",
+"LIMITED LONGHONR": "P",
+"LIMITED": "P"
+}
+},
+{
+"page": 5,
+"section": "PARKING SENSORS",
+"parent": "",
+"text": "ParkSense front/rear park assist",
+"marks": {
+"TDARSEMNA": "P",
+"SSE KCA R PXE L B": "P",
+"WRALOKC": "P",
+"BIGHONR/ LONESTRA": "S",
+"POWER WAOGN": "S",
+"REBEL": "S",
+"LARAMIE": "S",
+"LIMITED LONGHONR": "S",
+"LIMITED": "S"
+}
+},
+{
+"page": 5,
+"section": "FUEL TANK",
+"parent": "",
+"text": "28-gal. (standard on Regular Cab, diesel engines)",
+"marks": {
+"TDARSEMNA": "P",
+"SSE KCA R PXE L B": "NA",
+"WRALOKC": "NA",
+"BIGHONR/ LONESTRA": "P",
+"POWER WAOGN": "NA",
+"REBEL": "NA",
+"LARAMIE": "NA",
+"LIMITED LONGHONR": "NA",
+"LIMITED": "NA"
+}
+},
+{
+"page": 5,
+"section": "FUEL TANK",
+"parent": "",
+"text": "31-gal. (standard on Crew Cab and Mega Cab with 6-ft. 4-In. box)",
+"marks": {
+"TDARSEMNA": "S",
+"SSE KCA R PXE L B": "S",
+"WRALOKC": "S",
+"BIGHONR/ LONESTRA": "S",
+"POWER WAOGN": "S",
+"REBEL": "S",
+"LARAMIE": "S",
+"LIMITED LONGHONR": "S",
+"LIMITED": "S"
+}
+},
+{
+"page": 5,
+"section": "FUEL TANK",
+"parent": "",
+"text": "32-gal. (standard on Regular Cab and Crew Cab with 8-ft. box)",
+"marks": {
+"TDARSEMNA": "S",
+"SSE KCA R PXE L B": "S",
+"WRALOKC": "NA",
+"BIGHONR/ LONESTRA": "S",
+"POWER WAOGN": "NA",
+"REBEL": "NA",
+"LARAMIE": "S",
+"LIMITED LONGHONR": "S",
+"LIMITED": "S"
+}
+},
+{
+"page": 5,
+"section": "FUEL TANK",
+"parent": "",
+"text": "50-gal. (optional on Crew Cab with 8-ft. box) (All Ram 3500 trims and Ram 2500 Tradesman)",
+"marks": {
+"TDARSEMNA": "O",
+"SSE KCA R PXE L B": "O",
+"WRALOKC": "NA",
+"BIGHONR/ LONESTRA": "O",
+"POWER WAOGN": "NA",
+"REBEL": "NA",
+"LARAMIE": "O",
+"LIMITED LONGHONR": "O",
+"LIMITED": "O"
+}
+},
+{
+"page": 5,
+"section": "TRAILER BRAKE CONTROLLER",
+"parent": "",
+"text": "Integrated controller",
+"marks": {
+"TDARSEMNA": "S",
+"SSE KCA R PXE L B": "S",
+"WRALOKC": "S",
+"BIGHONR/ LONESTRA": "S",
+"POWER WAOGN": "S",
+"REBEL": "S",
+"LARAMIE": "S",
+"LIMITED LONGHONR": "S",
+"LIMITED": "S"
+}
+},
+{
+"page": 5,
+"section": "TRAILER BRAKE CONTROLLER",
+"parent": "",
+"text": "Trailer tire-pressure monitoring system",
+"marks": {
+"TDARSEMNA": "P",
+"SSE KCA R PXE L B": "P",
+"WRALOKC": "P",
+"BIGHONR/ LONESTRA": "P",
+"POWER WAOGN": "P",
+"REBEL": "P",
+"LARAMIE": "P",
+"LIMITED LONGHONR": "P",
+"LIMITED": "P"
+}
+},
+{
+"page": 6,
+"section": "APPEARANCE PACKAGES",
+"parent": "",
+"text": "Chrome Bumper Package Bright front/rear bumpers",
+"marks": {
+"TDARSEMNA": "NA",
+"SSE KCA R PXE L B": "NA",
+"WRALOKC": "NA",
+"BIGHONR/ LONESTRA": "NA",
+"POWER WAOGN": "NA",
+"REBEL": "NA",
+"LARAMIE": "O",
+"LIMITED LONGHONR": "O",
+"LIMITED": "O"
+}
+},
+{
+"page": 6,
+"section": "APPEARANCE PACKAGES",
+"parent": "",
+"text": "Sport Performance Hood",
+"marks": {
+"TDARSEMNA": "NA",
+"SSE KCA R PXE L B": "S",
+"WRALOKC": "NA",
+"BIGHONR/ LONESTRA": "O/P",
+"POWER WAOGN": "O/P",
+"REBEL": "O/P",
+"LARAMIE": "P",
+"LIMITED LONGHONR": "NA",
+"LIMITED": "P"
+}
+},
+{
+"page": 6,
+"section": "APPEARANCE PACKAGES",
+"parent": "",
+"text": "Body-Color Fender Flares",
+"marks": {
+"TDARSEMNA": "NA",
+"SSE KCA R PXE L B": "NA",
+"WRALOKC": "NA",
+"BIGHONR/ LONESTRA": "NA",
+"POWER WAOGN": "NA",
+"REBEL": "NA",
+"LARAMIE": "O",
+"LIMITED LONGHONR": "S",
+"LIMITED": "S"
+}
+},
+{
+"page": 6,
+"section": "APPEARANCE PACKAGES",
+"parent": "",
+"text": "Chrome Appearance Group (Tradesman) Bright front/rear bumper Upper header/lower applique Tradesman grille Steel chrome-clad wheels 18 x 8-in. (single rear wheel) Aluminum polished (forged) wheels 17-in. x 6.0-in. (dual rear wheel) T275/70R18E BSW Firestone TransForce HT all-season tires (2500 only) Remote keyless entry (Regular Cab only)",
+"marks": {
+"TDARSEMNA": "O",
+"SSE KCA R PXE L B": "NA",
+"WRALOKC": "NA",
+"BIGHONR/ LONESTRA": "NA",
+"POWER WAOGN": "NA",
+"REBEL": "NA",
+"LARAMIE": "NA",
+"LIMITED LONGHONR": "NA",
+"LIMITED": "NA"
+}
+},
+{
+"page": 6,
+"section": "APPEARANCE PACKAGES",
+"parent": "",
+"text": "Night Edition Package Monotone paint only Body-color front bumper Body-color rear bumper Black badging Black grille and surround Body-color door handles Body-color mirror caps Dark headlight bezels 20 x 8-in. black wheels (17-in. on 3500 DRW) All-terrain tires Sport performance hood (Big Horn / Lone Star optional; Laramie and Limited standard) Satin Black Symbol of Protest fender badge (HEMI only)",
+"marks": {
+"TDARSEMNA": "NA",
+"SSE KCA R PXE L B": "NA",
+"WRALOKC": "NA",
+"BIGHONR/ LONESTRA": "O",
+"POWER WAOGN": "NA",
+"REBEL": "NA",
+"LARAMIE": "O",
+"LIMITED LONGHONR": "NA",
+"LIMITED": "O"
+}
+},
+{
+"page": 7,
+"section": "APPEARANCE PACKAGES",
+"parent": "",
+"text": "Sport Appearance Group Monotone paint Body-color door handles, front/rear bumper Upper header/lower applique — painted body color Interior, black with black headliner ParkSense front/rear park assist Sport decal 17 x 6-in. polished aluminum wheels (Big Horn / LoneStar and Laramie dual rear wheel only) 20-in. polished wheels (Laramie only) All-terrain tires (Laramie only) Sport performance hood (Big Horn / Lone Star, optional; Laramie standard)",
+"marks": {
+"TDARSEMNA": "NA",
+"SSE KCA R PXE L B": "NA",
+"WRALOKC": "NA",
+"BIGHONR/ LONESTRA": "O",
+"POWER WAOGN": "NA",
+"REBEL": "NA",
+"LARAMIE": "O",
+"LIMITED LONGHONR": "NA",
+"LIMITED": "NA"
+}
+},
+{
+"page": 7,
+"section": "APPEARANCE PACKAGES",
+"parent": "",
+"text": "Lunar Edition Ceramic Grey Clear Coat with Diamond Black - Crystal Pearl - Coat lower body Ceramic Grey grille surround Gloss Black Lunar side stripe graphics Black-painted wheels Copperhead Orange contrast stitching Alloy center console badge in black with machined- face Satin Chrome lettering Lockable console storage (Mopar)",
+"marks": {
+"TDARSEMNA": "NA",
+"SSE KCA R PXE L B": "NA",
+"WRALOKC": "NA",
+"BIGHONR/ LONESTRA": "NA",
+"POWER WAOGN": "O",
+"REBEL": "O",
+"LARAMIE": "NA",
+"LIMITED LONGHONR": "NA",
+"LIMITED": "NA"
+}
+},
+{
+"page": 7,
+"section": "EQUIPMENT GROUPS",
+"parent": "",
+"text": "Tradesman Level 1 Equipment Group Overhead console, incandescent lighting (Regular Cab only) Mirrors, mid-level: manual fold/telescope, power adjust, w/ heat, front & rear utility lighting Active noise cancellation, Regular Cab (diesel only)",
+"marks": {
+"TDARSEMNA": "O",
+"SSE KCA R PXE L B": "O",
+"WRALOKC": "O",
+"BIGHONR/ LONESTRA": "NA",
+"POWER WAOGN": "NA",
+"REBEL": "NA",
+"LARAMIE": "NA",
+"LIMITED LONGHONR": "NA",
+"LIMITED": "NA"
+}
+},
+{
+"page": 8,
+"section": "EQUIPMENT GROUPS",
+"parent": "",
+"text": "Tradesman Level 2 Equipment Group Chrome front bumper Chrome rear bumper Upper header/lower applique, chrome Tradesman grille chrome nostrils Steel wheels, chrome clad, 18 x 8-in. SRW LT275/70R18E BSW Firestone TransForce HT all-season tires (2500 only) Aluminum polished (forged) wheels 17 x 6.0-in. DRW Overhead console, incandescent lighting (Regular Cab only) Mirrors, mid-level: manual fold/telescope, power- adjustable, w/heat, F&R utility lighting Active noise cancellation, Regular Cab (diesel only) Anti-spin differential (2500) Remote keyless entry (Regular Cab only) Seats, bench — cloth Floor covering, carpet Floor mats — carpeted, front (Regular Cab) and front/rear (Crew Cab) Side steps, tubular, black, cab length — (Mopar) Convenience Group (includes: acoustic windshield (GBH), auto-dimming rearview mirror (GNK), dual- zone automatic temperature control (HAF), 12-in. radio (U$Q), CHMSL & DRVM relocation kit (XA#)",
+"marks": {
+"TDARSEMNA": "O",
+"SSE KCA R PXE L B": "NA",
+"WRALOKC": "NA",
+"BIGHONR/ LONESTRA": "NA",
+"POWER WAOGN": "NA",
+"REBEL": "NA",
+"LARAMIE": "NA",
+"LIMITED LONGHONR": "NA",
+"LIMITED": "NA"
+}
+},
+{
+"page": 9,
+"section": "EQUIPMENT GROUPS",
+"parent": "",
+"text": "Big Horn Level 1 Equipment Group High-level mirrors (power fold / telescope / adjust, w/ heat, F&R utility lighting) Seats: 8-way power + 2-way lumbar driver seat, manual passenger seat Wrapped steering wheel w/ audio controls Interior mirror, rearview, auto-dimming Switchable dome lamp Anti-spin differential (2500) Footwell lighting Upper closed glove box with painted door Big Horn IP badge (2TZ) Lone Star IP badge (2TY) Badge, Big Horn, chrome Lighting, glove boxes Storage, in-floor boxes, rear (Crew Cab only) Rear window, manual sliding (Regular Cab only) Seats, bench — cloth, power driver seat Rear window, defroster (Crew and Mega Cab only) Security alarm",
+"marks": {
+"TDARSEMNA": "NA",
+"SSE KCA R PXE L B": "NA",
+"WRALOKC": "NA",
+"BIGHONR/ LONESTRA": "O",
+"POWER WAOGN": "NA",
+"REBEL": "NA",
+"LARAMIE": "NA",
+"LIMITED LONGHONR": "NA",
+"LIMITED": "NA"
+}
+},
+{
+"page": 9,
+"section": "EQUIPMENT GROUPS",
+"parent": "",
+"text": "Big Horn Level 1 Plus Equipment Group (Includes Big Horn Level 1 Group Equipment) Alpine nine-speaker audio system with subwoofer Premium 7-speaker system with center IP speaker and amplifier (Regular Cab) Remote start, key fob activated Uconnect 12.0-in. (AM/FM/SXM/Bluetooth/HD/ tow-specific NAV/voice) Bed utility group (includes pickup box lighting (LPL), spray-in bedliner (XMF), Mopar bed step (MDN)",
+"marks": {
+"TDARSEMNA": "NA",
+"SSE KCA R PXE L B": "NA",
+"WRALOKC": "NA",
+"BIGHONR/ LONESTRA": "O",
+"POWER WAOGN": "NA",
+"REBEL": "NA",
+"LARAMIE": "NA",
+"LIMITED LONGHONR": "NA",
+"LIMITED": "NA"
+}
+},
+{
+"page": 9,
+"section": "EQUIPMENT GROUPS",
+"parent": "",
+"text": "Big Horn Level 2 Equipment Group High-level mirrors (power-fold / telescope / adjust, w/ heat, F&R utility lighting) Seats, bucket — cloth, power driver seat",
+"marks": {
+"TDARSEMNA": "NA",
+"SSE KCA R PXE L B": "NA",
+"WRALOKC": "NA",
+"BIGHONR/ LONESTRA": "O",
+"POWER WAOGN": "NA",
+"REBEL": "NA",
+"LARAMIE": "NA",
+"LIMITED LONGHONR": "NA",
+"LIMITED": "NA"
+}
+},
+{
+"page": 11,
+"section": "EQUIPMENT GROUPS",
+"parent": "",
+"text": "Big Horn Level 2 Plus Equipment Group (includes Big Horn Level 2 Group Equipment Alpine nine-speaker audio system with subwoofer Premium 7-speaker system, with center IP speaker and amplifier (Regular Cab) Bed Utility Group (includes pickup box lighting (LPL), spray-in bedliner (XMF), Mopar bed step (MDN)) Safety Group Tow Technology Group",
+"marks": {
+"TDARSEMNA": "NA",
+"SSE KCA R PXE L B": "NA",
+"WRALOKC": "NA",
+"BIGHONR/ LONESTRA": "O",
+"POWER WAOGN": "NA",
+"REBEL": "NA",
+"LARAMIE": "NA",
+"LIMITED LONGHONR": "NA",
+"LIMITED": "NA"
+}
+},
+{
+"page": 11,
+"section": "EQUIPMENT GROUPS",
+"parent": "",
+"text": "Power Wagon Level 1 Equipment Group Seats, bucket — Black Bristol leather w/ Axis II perf. + Gode-Tex vinyl accents Alpine nine-speaker audio system with subwoofer Premium mirrors (power fold / telescope / adjust, w/ heat, F&R utility lighting, auto-dimming, memory) Pedals, power-adjustable w/ memory (replaces XAP, w/o memory) Radio / driver seat / mirror / pedal memory Auto high-beam headlamp control (NAW DRVM (GRG) without Forward Collision Mitigation (LSU)) Rain-sensing wipers Lighting, dome lamp, switchable (LED) Overhead console (LED) Front footwell lighting (LED) Remote proximity (passive) keyless entry, 2 doors Body-color door/tailgate handles Dual rear USB ports — 2 type A/C pairs (charging only) (bucket seat) 115-volt 400-watt AC power outlet (rear) Security alarm Lighting, front LED lamps (Pkg w/ X1, X2, W1, W2 & CUS) Sport performance hood (standard with diesel) Mopar Rock Rails w/ step pad (standard with diesel) Floor mats, front and rear, rubber (Mopar) Universal garage door opener in visor Storage, in-floor boxes, rear (Crew Cab only)",
+"marks": {
+"TDARSEMNA": "NA",
+"SSE KCA R PXE L B": "NA",
+"WRALOKC": "NA",
+"BIGHONR/ LONESTRA": "NA",
+"POWER WAOGN": "O",
+"REBEL": "NA",
+"LARAMIE": "NA",
+"LIMITED LONGHONR": "NA",
+"LIMITED": "NA"
+}
+},
+{
+"page": 12,
+"section": "EQUIPMENT GROUPS",
+"parent": "",
+"text": "Power Wagon Level 2 Equipment Group (Includes Power Wagon Level 1 Group Equipment) Premium full-leather interior (doors) Seats, bucket — Natura Plus with Axis II inserts, piping, Power Wagon embossment, hard badge on ctr. console I/P bezel — Alum Litho w/ Piano Black Silverline trim Uconnect 14.5-in. (AM/FM/SXM/Bluetooth/HD/ tow-specific NAV/voice) Premium 17-speaker Harman Kardon audio system with subwoofer Front passenger interactive display Column shifter w/leather-wrapped handle Bed Utility Group (includes pickup box lighting (LPL), spray-in bedliner (XMF), Mopar bed step (MDN)) Cargo-view camera w/ dynamic center line Universal garage door opener in visor",
+"marks": {
+"TDARSEMNA": "NA",
+"SSE KCA R PXE L B": "NA",
+"WRALOKC": "NA",
+"BIGHONR/ LONESTRA": "NA",
+"POWER WAOGN": "O",
+"REBEL": "NA",
+"LARAMIE": "NA",
+"LIMITED LONGHONR": "NA",
+"LIMITED": "NA"
+}
+},
+{
+"page": 12,
+"section": "EQUIPMENT GROUPS",
+"parent": "",
+"text": "Rebel Level 1 Equipment Group Seats, bucket — Black Bristol leather w/ Axis II perf. + Gode-Tex vinyl accents Alpine nine-speaker audio system with subwoofer Premium mirrors (power fold / telescope / adjust, w/ heat, F&R utility lighting, auto-dim, memory) Pedals, power-adjustable w/ memory (replaces XAP, w/o memory) Radio / driver seat / mirror / pedal memory Auto high-beam headlamp control (NAW DRVM (GRG) without Forward Collision Mitigation (LSU)) Rain-sensing wipers Front / rear door accent lighting (LED) Overhead console (LED) Front footwell lighting (LED) Remote proximity (passive) keyless entry, 2-door",
+"marks": {
+"TDARSEMNA": "NA",
+"SSE KCA R PXE L B": "NA",
+"WRALOKC": "NA",
+"BIGHONR/ LONESTRA": "NA",
+"POWER WAOGN": "NA",
+"REBEL": "O",
+"LARAMIE": "NA",
+"LIMITED LONGHONR": "NA",
+"LIMITED": "NA"
+}
+},
+{
+"page": 13,
+"section": "EQUIPMENT GROUPS",
+"parent": "",
+"text": "Rebel Level 2 Equipment Group (Includes Rebel Level 1 Group Equipment) Premium full-leather interior (doors) Seats, bucket — Natura with Axis II inserts, piping, Rebel embossment, hard badge on center console I/P bezel — alum. Litho w/ Piano Black Silverline trim Uconnect 14.5-in. (AM/FM/SXM/Bluetooth/HD/ tow-specific NAV/voice) Premium 17-speaker Harman Kardon audio system Front passenger interactive display Column shifter w/leather-wrapped handle Bed Utility Group (includes pickup box lighting (LPL), spray-in bedliner (XMF), Mopar bed step (MDN)) Cargo view camera w/ dynamic center line Lighting, dome lamp, switchable (LED) Power running boards",
+"marks": {
+"TDARSEMNA": "NA",
+"SSE KCA R PXE L B": "NA",
+"WRALOKC": "NA",
+"BIGHONR/ LONESTRA": "NA",
+"POWER WAOGN": "NA",
+"REBEL": "O",
+"LARAMIE": "NA",
+"LIMITED LONGHONR": "NA",
+"LIMITED": "NA"
+}
+},
+{
+"page": 13,
+"section": "EQUIPMENT GROUPS",
+"parent": "",
+"text": "Laramie Level 1 Equipment Group Auto high-beam headlamp control Rain-sensing wipers Power-release tailgate Anti-spin rear differential (2500) Storage, in-floor boxes, rear (Crew Cab only) Foam bottle inserts (front doors only) Ventilated outboard seating positions (3 levels) Pedals, power-adjustable (replaces XAP)",
+"marks": {
+"TDARSEMNA": "NA",
+"SSE KCA R PXE L B": "NA",
+"WRALOKC": "NA",
+"BIGHONR/ LONESTRA": "NA",
+"POWER WAOGN": "NA",
+"REBEL": "NA",
+"LARAMIE": "O",
+"LIMITED LONGHONR": "NA",
+"LIMITED": "NA"
+}
+},
+{
+"page": 14,
+"section": "EQUIPMENT GROUPS",
+"parent": "",
+"text": "Laramie Level 1 Plus Equipment Group (Includes Laramie Level 1 Group Equipment) Seats, bucket — Bristol soft leather, suede accents, Herringbone perf. inserts, Bristol vinyl, piping, power and ventilated driver and front passenger seats Bed Utility Group (includes pickup box lighting (LPL), spray-in bedliner (XMF), Mopar bed step (MDN)) Cargo view camera w/ dynamic center line Dual wireless charger Safety Group",
+"marks": {
+"TDARSEMNA": "NA",
+"SSE KCA R PXE L B": "NA",
+"WRALOKC": "NA",
+"BIGHONR/ LONESTRA": "NA",
+"POWER WAOGN": "NA",
+"REBEL": "NA",
+"LARAMIE": "O",
+"LIMITED LONGHONR": "NA",
+"LIMITED": "NA"
+}
+},
+{
+"page": 14,
+"section": "EQUIPMENT GROUPS",
+"parent": "",
+"text": "Laramie Level 2 Equipment Group Rear seat — heat (3 adjustment levels) Dual rear USB ports — (charging only) (bench seat) Dual rear USB ports — 2 type A/C pairs (charging only) (bucket seat) Premium 17-speaker surround sound system (16 amplified speakers + subwoofer) Uconnect 14.5-in. (AM/FM/SXM/Bluetooth/HD/ tow-specific NAV/voice) Dual wireless charger Seats, bucket — Bristol soft leather, suede accents, Herringbone perf. inserts, Bristol vinyl, piping, power and ventilated driver and front passenger seats Auto high-beam headlamp control (NAW DRVM (GRG) without Forward Collision Mitigation (LSU)) Rain-sensing wipers Power-release tailgate Anti-spin rear differential (2500) Storage, in-floor boxes, rear (Crew Cab only) Foam bottle inserts (front doors only) Ventilated outboard seating positions (3 Levels) Pedals, power-adjustable (replaces XAP) Radio / driver seat / mirror / pedal memory Premium mirrors (power fold / telescope / adjust, w/ heat, F&R utility lighting, auto-dim, memory) 2 type A connections (charging only)",
+"marks": {
+"TDARSEMNA": "NA",
+"SSE KCA R PXE L B": "NA",
+"WRALOKC": "NA",
+"BIGHONR/ LONESTRA": "NA",
+"POWER WAOGN": "NA",
+"REBEL": "NA",
+"LARAMIE": "O",
+"LIMITED LONGHONR": "NA",
+"LIMITED": "NA"
+}
+},
+{
+"page": 15,
+"section": "EQUIPMENT GROUPS",
+"parent": "",
+"text": "Laramie Level 2 Plus Equipment Group (Includes Laramie Level 2 Group Equipment) Bed Utility Group (includes pickup box lighting (LPL), spray-in bedliner (XMF), Mopar bed step (MDN)) Cargo view camera w/ dynamic center line Running boards, power Safety Group",
+"marks": {
+"TDARSEMNA": "NA",
+"SSE KCA R PXE L B": "NA",
+"WRALOKC": "NA",
+"BIGHONR/ LONESTRA": "NA",
+"POWER WAOGN": "NA",
+"REBEL": "NA",
+"LARAMIE": "O",
+"LIMITED LONGHONR": "NA",
+"LIMITED": "NA"
+}
+},
+{
+"page": 15,
+"section": "EQUIPMENT GROUPS",
+"parent": "",
+"text": "Longhorn Level 1 Equipment Group Running boards, power Tow Technology Group (includes: 360-degree surround view camera system (XAK), trailer reverse guidance (XPU), cargo view camera w dynamic center line (LPD)) Anti-spin rear differential (2500) Safety Group (includes: adaptive steering (SJE), Active Lane Management (XNW), Drowsy Driver Detection (XNM), Traffic Sign Recognition (XPS)) Digital rearview mirror 2.0 Bed Utility Group (includes pickup box lighting (LPL), spray-in bedliner (XMF), Mopar bed step (MDN))",
+"marks": {
+"TDARSEMNA": "NA",
+"SSE KCA R PXE L B": "NA",
+"WRALOKC": "NA",
+"BIGHONR/ LONESTRA": "NA",
+"POWER WAOGN": "NA",
+"REBEL": "NA",
+"LARAMIE": "NA",
+"LIMITED LONGHONR": "O",
+"LIMITED": "NA"
+}
+},
+{
+"page": 15,
+"section": "EQUIPMENT GROUPS",
+"parent": "",
+"text": "Limited Level 1 Equipment Group Running boards, power Tow Technology Group (includes: 360-degree surround view camera system (XAK), trailer reverse guidance (XPU), cargo view camera w/ dynamic center line (LPD)) Anti-spin rear differential (2500) Safety Group (includes: adaptive steering (SJE), Active Lane Management (XNW), Drowsy Driver Detection (XNM), Traffic Sign Recognition (XPS)) Digital rearview mirror 2.0 Bed Utility Group (includes pickup box lighting (LPL), spray-in bedliner (XMF), Mopar bed step (MDN))",
+"marks": {
+"TDARSEMNA": "NA",
+"SSE KCA R PXE L B": "NA",
+"WRALOKC": "NA",
+"BIGHONR/ LONESTRA": "NA",
+"POWER WAOGN": "NA",
+"REBEL": "NA",
+"LARAMIE": "NA",
+"LIMITED LONGHONR": "NA",
+"LIMITED": "O"
+}
+},
+{
+"page": 16,
+"section": "FUNCTIONAL PACKAGES",
+"parent": "",
+"text": "Bed Utility Group Deployable bed step LED bed lighting Spray-in bedliner",
+"marks": {
+"TDARSEMNA": "O",
+"SSE KCA R PXE L B": "O",
+"WRALOKC": "O",
+"BIGHONR/ LONESTRA": "O/P",
+"POWER WAOGN": "O/P",
+"REBEL": "O/P",
+"LARAMIE": "O/P",
+"LIMITED LONGHONR": "O/P",
+"LIMITED": "O/P"
+}
+},
+{
+"page": 16,
+"section": "FUNCTIONAL PACKAGES",
+"parent": "",
+"text": "Box Delete (Regular Cab or Crew Cab) (Not available with Power Wagon Package)",
+"marks": {
+"TDARSEMNA": "O",
+"SSE KCA R PXE L B": "NA",
+"WRALOKC": "NA",
+"BIGHONR/ LONESTRA": "O",
+"POWER WAOGN": "NA",
+"REBEL": "NA",
+"LARAMIE": "NA",
+"LIMITED LONGHONR": "NA",
+"LIMITED": "NA"
+}
+},
+{
+"page": 16,
+"section": "FUNCTIONAL PACKAGES",
+"parent": "",
+"text": "RamBox Bed Storage System",
+"marks": {
+"TDARSEMNA": "NA",
+"SSE KCA R PXE L B": "NA",
+"WRALOKC": "NA",
+"BIGHONR/ LONESTRA": "O",
+"POWER WAOGN": "O",
+"REBEL": "O",
+"LARAMIE": "O",
+"LIMITED LONGHONR": "S",
+"LIMITED": "S"
+}
+},
+{
+"page": 16,
+"section": "FUNCTIONAL PACKAGES",
+"parent": "",
+"text": "Dual Rear Wheel Group (3500 only) Rear wheelhouse liners Cab-mounted, box and rear fender LED clearance lamps",
+"marks": {
+"TDARSEMNA": "O",
+"SSE KCA R PXE L B": "NA",
+"WRALOKC": "NA",
+"BIGHONR/ LONESTRA": "O",
+"POWER WAOGN": "NA",
+"REBEL": "NA",
+"LARAMIE": "O",
+"LIMITED LONGHONR": "O",
+"LIMITED": "O"
+}
+},
+{
+"page": 16,
+"section": "FUNCTIONAL PACKAGES",
+"parent": "",
+"text": "Fifth-wheel/Gooseneck Prep Group Bed-mounted seven-pin connector Mounting holes for fifth-wheel hitch and gooseneck ball Mounting hole covers",
+"marks": {
+"TDARSEMNA": "O/P",
+"SSE KCA R PXE L B": "O",
+"WRALOKC": "O",
+"BIGHONR/ LONESTRA": "O/P",
+"POWER WAOGN": "NA",
+"REBEL": "O",
+"LARAMIE": "O/P",
+"LIMITED LONGHONR": "O/P",
+"LIMITED": "O/P"
+}
+},
+{
+"page": 16,
+"section": "FUNCTIONAL PACKAGES",
+"parent": "",
+"text": "Max Towing Package (3500 DRW, diesel, Crew or Mega Cab only) Auto-leveling rear air suspension (Laramie, Limited and Longhorn only) Fifth-wheel/Gooseneck Prep Group Cargo view camera",
+"marks": {
+"TDARSEMNA": "O",
+"SSE KCA R PXE L B": "NA",
+"WRALOKC": "NA",
+"BIGHONR/ LONESTRA": "O",
+"POWER WAOGN": "NA",
+"REBEL": "NA",
+"LARAMIE": "O",
+"LIMITED LONGHONR": "O",
+"LIMITED": "O"
+}
+},
+{
+"page": 16,
+"section": "FUNCTIONAL PACKAGES",
+"parent": "",
+"text": "Payload Upgrade Package (2500 HEMI, Reg or Crew Cab only) GVWR 11,040 3500 frame Leaf spring rear suspension Upgraded rear shock absorbers Anti-spin differential 18-in. x 8-in. steel wheel (Tradesman only) LT275/70R18E BSW Firestone TransForce HT all-season tires",
+"marks": {
+"TDARSEMNA": "O",
+"SSE KCA R PXE L B": "NA",
+"WRALOKC": "NA",
+"BIGHONR/ LONESTRA": "O",
+"POWER WAOGN": "NA",
+"REBEL": "NA",
+"LARAMIE": "O",
+"LIMITED LONGHONR": "O",
+"LIMITED": "O"
+}
+},
+{
+"page": 17,
+"section": "FUNCTIONAL PACKAGES",
+"parent": "",
+"text": "Off-road Group (4x4 2500 only) Front/rear Bilstein shocks Transfer case skid plate Hill-descent Control All-terrain tires",
+"marks": {
+"TDARSEMNA": "NA",
+"SSE KCA R PXE L B": "NA",
+"WRALOKC": "S",
+"BIGHONR/ LONESTRA": "O",
+"POWER WAOGN": "NA",
+"REBEL": "NA",
+"LARAMIE": "O",
+"LIMITED LONGHONR": "O",
+"LIMITED": "O"
+}
+},
+{
+"page": 17,
+"section": "FUNCTIONAL PACKAGES",
+"parent": "",
+"text": "Power Wagon Equipment Group (4x4 2500 HEMI V8 only) Articulink suspension Front/rear Bilstein shocks (Power Wagon-tuned) Raised ride height Hill-descent Control Tru-Lok front and rear axles 4.10 axle ratio Fuel tank skid plate Transfer case skid plate Front, electric 12,000-lb. winch Black wheel flares, Power Wagon design Black Powder coated front and rear bumpers Front disconnecting stabilizer bar 17 x 8.0-in. cast aluminum Power Wagon wheels LT285/70R17D OWL Goodyear Wrangler Duratrac all-terrain tires Wheel-well liners, rear Front and rear parksense",
+"marks": {
+"TDARSEMNA": "O",
+"SSE KCA R PXE L B": "NA",
+"WRALOKC": "NA",
+"BIGHONR/ LONESTRA": "NA",
+"POWER WAOGN": "S",
+"REBEL": "NA",
+"LARAMIE": "NA",
+"LIMITED LONGHONR": "NA",
+"LIMITED": "NA"
+}
+},
+{
+"page": 17,
+"section": "FUNCTIONAL PACKAGES",
+"parent": "",
+"text": "Safety Group Blind-spot Monitoring with trailer coverage and Rear Cross Path detection Active Lane Management Rain-sensing wipers SmartBeam headlamps Interior mirror, rearview, auto-dimming 7in.- cluster (Tradesman and Base Big Horn/ Lone Star) Drowsy Driver Detection",
+"marks": {
+"TDARSEMNA": "O",
+"SSE KCA R PXE L B": "O",
+"WRALOKC": "O",
+"BIGHONR/ LONESTRA": "O/P",
+"POWER WAOGN": "O",
+"REBEL": "O",
+"LARAMIE": "O/P",
+"LIMITED LONGHONR": "O",
+"LIMITED": "O"
+}
+},
+{
+"page": 18,
+"section": "FUNCTIONAL PACKAGES",
+"parent": "",
+"text": "Tow Technology Group Surround 360-degree camera Center stop lamp with Cargo-View Camera Trailer reverse guidance Blind spot Monitoring with Rear Cross Path detection Trailer Tire Pressure Monitoring System Trailer Camera Wiring (Mopar)",
+"marks": {
+"TDARSEMNA": "O",
+"SSE KCA R PXE L B": "O",
+"WRALOKC": "O",
+"BIGHONR/ LONESTRA": "O",
+"POWER WAOGN": "O",
+"REBEL": "O",
+"LARAMIE": "O",
+"LIMITED LONGHONR": "O",
+"LIMITED": "O"
+}
+},
+{
+"page": 18,
+"section": "FUNCTIONAL PACKAGES",
+"parent": "",
+"text": "Tow Technology Plus Group Digital rearview mirror 3.0 Trailer reverse steering control",
+"marks": {
+"TDARSEMNA": "O",
+"SSE KCA R PXE L B": "O",
+"WRALOKC": "O",
+"BIGHONR/ LONESTRA": "O",
+"POWER WAOGN": "O",
+"REBEL": "O",
+"LARAMIE": "O",
+"LIMITED LONGHONR": "O",
+"LIMITED": "O"
+}
+},
+{
+"page": 18,
+"section": "FUNCTIONAL PACKAGES",
+"parent": "",
+"text": "Tow-Mode Digital Rearview Mirror Package Digital rearview mirror Wired tow-mode camera",
+"marks": {
+"TDARSEMNA": "O",
+"SSE KCA R PXE L B": "O",
+"WRALOKC": "O",
+"BIGHONR/ LONESTRA": "O",
+"POWER WAOGN": "O",
+"REBEL": "O",
+"LARAMIE": "O",
+"LIMITED LONGHONR": "O",
+"LIMITED": "O"
+}
+}
+],
+"url": "https://media.stellantisnorthamerica.com/view-spec.do?id=27337"
+}

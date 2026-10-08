@@ -1,0 +1,2164 @@
+{
+"kind": "fa",
+"title": "2026 Jeep Gladiator",
+"rows": [
+{
+"page": 1,
+"section": "ENGINES",
+"parent": "",
+"text": "Pentastar 3.6-liter V-6 SMPI / Eight-speed automatic",
+"marks": {
+"Sport": "S",
+"Sport S": "S",
+"Willys": "S",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL / CAPABILITY",
+"parent": "Axle Ratios",
+"text": "3.73:1",
+"marks": {
+"Sport": "S",
+"Sport S": "S",
+"Willys": "S",
+"Mojave": "NA",
+"Rubicon": "NA"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL / CAPABILITY",
+"parent": "Axle Ratios",
+"text": "4.10:1",
+"marks": {
+"Sport": "P",
+"Sport S": "P",
+"Willys": "NA",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL / CAPABILITY",
+"parent": "Axles",
+"text": "3rd generation Dana 44 heavy-duty solid front",
+"marks": {
+"Sport": "S",
+"Sport S": "S",
+"Willys": "S",
+"Mojave": "NA",
+"Rubicon": "NA"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL / CAPABILITY",
+"parent": "Axles",
+"text": "3rd generation Dana 44 heavy-duty solid rear",
+"marks": {
+"Sport": "S",
+"Sport S": "S",
+"Willys": "S",
+"Mojave": "NA",
+"Rubicon": "NA"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL / CAPABILITY",
+"parent": "Axles",
+"text": "3rd generation Dana 44 heavy-duty solid front (wide track)",
+"marks": {
+"Sport": "P",
+"Sport S": "P",
+"Willys": "NA",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL / CAPABILITY",
+"parent": "Axles",
+"text": "3rd generation Dana 44 heavy-duty solid rear (wide track)",
+"marks": {
+"Sport": "P",
+"Sport S": "P",
+"Willys": "NA",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL / CAPABILITY",
+"parent": "Differentials",
+"text": "Trac-Lok limited-slip, rear",
+"marks": {
+"Sport": "P",
+"Sport S": "P",
+"Willys": "NA",
+"Mojave": "NA",
+"Rubicon": "NA"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL / CAPABILITY",
+"parent": "Differentials",
+"text": "Tru-Lok front, electronic remote locking",
+"marks": {
+"Sport": "NA",
+"Sport S": "NA",
+"Willys": "NA",
+"Mojave": "NA",
+"Rubicon": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL / CAPABILITY",
+"parent": "Differentials",
+"text": "Tru-Lok rear, electronic remote locking",
+"marks": {
+"Sport": "NA",
+"Sport S": "NA",
+"Willys": "S",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL / CAPABILITY",
+"parent": "Differentials",
+"text": "Sway-bar disconnect — electronically controlled, front",
+"marks": {
+"Sport": "NA",
+"Sport S": "NA",
+"Willys": "NA",
+"Mojave": "NA",
+"Rubicon": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL / CAPABILITY",
+"parent": "Suspension",
+"text": "FOX internal bypass, external reservoir shocks",
+"marks": {
+"Sport": "NA",
+"Sport S": "NA",
+"Willys": "NA",
+"Mojave": "S",
+"Rubicon": "NA"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL / CAPABILITY",
+"parent": "Suspension",
+"text": "FOX front hydraulic jounce bumpers",
+"marks": {
+"Sport": "NA",
+"Sport S": "NA",
+"Willys": "NA",
+"Mojave": "S",
+"Rubicon": "NA"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL / CAPABILITY",
+"parent": "Suspension",
+"text": "Trailer-sway control",
+"marks": {
+"Sport": "S",
+"Sport S": "S",
+"Willys": "S",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL / CAPABILITY",
+"parent": "Transfer Case",
+"text": "4WD system — Command-Trac NV241, part-time, shift-on-the-fly transfer case",
+"marks": {
+"Sport": "S",
+"Sport S": "S",
+"Willys": "S",
+"Mojave": "S",
+"Rubicon": "NA"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL / CAPABILITY",
+"parent": "Transfer Case",
+"text": "Selec-Trac full-time transfer case (2.72:1)",
+"marks": {
+"Sport": "NA",
+"Sport S": "NA",
+"Willys": "NA",
+"Mojave": "P",
+"Rubicon": "NA"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL / CAPABILITY",
+"parent": "Transfer Case",
+"text": "Rock-Trac NV241 OR, part-time, shift-on-the-fly transfer case; 4:1 low-gear ratio",
+"marks": {
+"Sport": "NA",
+"Sport S": "NA",
+"Willys": "NA",
+"Mojave": "NA",
+"Rubicon": "S"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL / CAPABILITY",
+"parent": "Transfer Case",
+"text": "Rock-Trac NV241 OR, full-time, shift-on-the-fly transfer case; 4:1 low-gear ratio",
+"marks": {
+"Sport": "NA",
+"Sport S": "NA",
+"Willys": "NA",
+"Mojave": "NA",
+"Rubicon": "P"
+}
+},
+{
+"page": 2,
+"section": "TOWING AND HAULING",
+"parent": "Towing",
+"text": "Four-pin and seven-pin trailer wiring",
+"marks": {
+"Sport": "S",
+"Sport S": "S",
+"Willys": "S",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 2,
+"section": "TOWING AND HAULING",
+"parent": "Towing",
+"text": "Class II bumper hitch",
+"marks": {
+"Sport": "S",
+"Sport S": "S",
+"Willys": "NA",
+"Mojave": "NA",
+"Rubicon": "NA"
+}
+},
+{
+"page": 2,
+"section": "TOWING AND HAULING",
+"parent": "Towing",
+"text": "Class IV receiver hitch",
+"marks": {
+"Sport": "P",
+"Sport S": "P",
+"Willys": "S",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 2,
+"section": "TOWING AND HAULING",
+"parent": "Truck Bed",
+"text": "5-ft. steel box",
+"marks": {
+"Sport": "S",
+"Sport S": "S",
+"Willys": "S",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 2,
+"section": "TOWING AND HAULING",
+"parent": "Truck Bed",
+"text": "Damped three-position tailgate",
+"marks": {
+"Sport": "S",
+"Sport S": "S",
+"Willys": "S",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 2,
+"section": "TOWING AND HAULING",
+"parent": "Truck Bed",
+"text": "Cargo lights",
+"marks": {
+"Sport": "S",
+"Sport S": "S",
+"Willys": "S",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 2,
+"section": "TOWING AND HAULING",
+"parent": "Truck Bed",
+"text": "Spray-in bedliner",
+"marks": {
+"Sport": "O",
+"Sport S": "O",
+"Willys": "O",
+"Mojave": "O",
+"Rubicon": "O"
+}
+},
+{
+"page": 2,
+"section": "TOWING AND HAULING",
+"parent": "Truck Bed",
+"text": "Roll-up tonneau cover",
+"marks": {
+"Sport": "O",
+"Sport S": "O",
+"Willys": "O",
+"Mojave": "O",
+"Rubicon": "O"
+}
+},
+{
+"page": 2,
+"section": "TOWING AND HAULING",
+"parent": "Truck Bed",
+"text": "115-volt power outlet",
+"marks": {
+"Sport": "P",
+"Sport S": "P",
+"Willys": "P",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 2,
+"section": "TOWING AND HAULING",
+"parent": "Truck Bed",
+"text": "Adjustable rail-based tie-down system",
+"marks": {
+"Sport": "O",
+"Sport S": "O",
+"Willys": "O",
+"Mojave": "O",
+"Rubicon": "O"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR",
+"parent": "Doors",
+"text": "Full-metal with power windows",
+"marks": {
+"Sport": "S",
+"Sport S": "S",
+"Willys": "S",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR",
+"parent": "Door Locks",
+"text": "Power (speed-sensitive locking) — door-mounted switches",
+"marks": {
+"Sport": "S",
+"Sport S": "S",
+"Willys": "S",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Fender Flares",
+"text": "One-piece — black",
+"marks": {
+"Sport": "S",
+"Sport S": "S",
+"Willys": "NA",
+"Mojave": "NA",
+"Rubicon": "NA"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Fender Flares",
+"text": "Two-piece — body-color insert",
+"marks": {
+"Sport": "P",
+"Sport S": "P",
+"Willys": "S",
+"Mojave": "NA",
+"Rubicon": "NA"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Fender Flares",
+"text": "Two-piece, high-clearance — black",
+"marks": {
+"Sport": "NA",
+"Sport S": "NA",
+"Willys": "NA",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Fender Flares",
+"text": "Two-piece, high-clearance — body-color insert",
+"marks": {
+"Sport": "NA",
+"Sport S": "NA",
+"Willys": "NA",
+"Mojave": "P",
+"Rubicon": "P"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "",
+"text": "Forward-facing off-road camera",
+"marks": {
+"Sport": "NA",
+"Sport S": "NA",
+"Willys": "NA",
+"Mojave": "P",
+"Rubicon": "P"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Glass",
+"text": "Standard",
+"marks": {
+"Sport": "S",
+"Sport S": "NA",
+"Willys": "NA",
+"Mojave": "NA",
+"Rubicon": "NA"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Glass",
+"text": "Deep-tinted sunscreen rear and quarter windows",
+"marks": {
+"Sport": "P",
+"Sport S": "S",
+"Willys": "S",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Glass",
+"text": "Corning Gorilla Glass windshield",
+"marks": {
+"Sport": "P",
+"Sport S": "P",
+"Willys": "S",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Grille",
+"text": "Body-color",
+"marks": {
+"Sport": "S",
+"Sport S": "S",
+"Willys": "NA",
+"Mojave": "NA",
+"Rubicon": "NA"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Grille",
+"text": "Black",
+"marks": {
+"Sport": "NA",
+"Sport S": "NA",
+"Willys": "S",
+"Mojave": "NA",
+"Rubicon": "NA"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Grille",
+"text": "Body-color — Mojave and Rubicon accent throats and headlamp rings",
+"marks": {
+"Sport": "NA",
+"Sport S": "NA",
+"Willys": "NA",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Lighting",
+"text": "Halogen headlamps",
+"marks": {
+"Sport": "S",
+"Sport S": "S",
+"Willys": "NA",
+"Mojave": "NA",
+"Rubicon": "NA"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Lighting",
+"text": "LED reflector headlamps (packaged with LED Lighting Group)",
+"marks": {
+"Sport": "P",
+"Sport S": "P",
+"Willys": "S",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Lighting",
+"text": "Halogen fog lamps",
+"marks": {
+"Sport": "S",
+"Sport S": "S",
+"Willys": "NA",
+"Mojave": "NA",
+"Rubicon": "NA"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Lighting",
+"text": "LED fog lamps (packaged with LED Lighting Group)",
+"marks": {
+"Sport": "P",
+"Sport S": "P",
+"Willys": "S",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Lighting",
+"text": "Automatic headlamps",
+"marks": {
+"Sport": "P",
+"Sport S": "S",
+"Willys": "S",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Mirrors",
+"text": "Mold-in-color manual folding",
+"marks": {
+"Sport": "S",
+"Sport S": "S",
+"Willys": "S",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Mirrors",
+"text": "Standard — no power",
+"marks": {
+"Sport": "S",
+"Sport S": "NA",
+"Willys": "NA",
+"Mojave": "NA",
+"Rubicon": "NA"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Mirrors",
+"text": "Power-heated",
+"marks": {
+"Sport": "P",
+"Sport S": "S",
+"Willys": "S",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Mirrors",
+"text": "Blind-spot Monitoring indicator",
+"marks": {
+"Sport": "P",
+"Sport S": "P",
+"Willys": "P",
+"Mojave": "P",
+"Rubicon": "P"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "Rock Rails",
+"text": "Cab and bed, black, painted steel, heavy-duty, protective",
+"marks": {
+"Sport": "NA",
+"Sport S": "NA",
+"Willys": "NA",
+"Mojave": "P",
+"Rubicon": "S"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "Rock Rails",
+"text": "Cab, black, painted steel, heavy-duty, protective",
+"marks": {
+"Sport": "O",
+"Sport S": "O",
+"Willys": "S",
+"Mojave": "S",
+"Rubicon": "NA"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "Skid Plates",
+"text": "Fuel tank and transfer case",
+"marks": {
+"Sport": "S",
+"Sport S": "S",
+"Willys": "S",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "Skid Plates",
+"text": "Front skid plate/brush guard",
+"marks": {
+"Sport": "NA",
+"Sport S": "NA",
+"Willys": "NA",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "Tires",
+"text": "32-in. — all-season, 245/75 R17 BSW Bridgestone Dueler H/T",
+"marks": {
+"Sport": "S",
+"Sport S": "S",
+"Willys": "NA",
+"Mojave": "NA",
+"Rubicon": "NA"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "Tires",
+"text": "32-in. — all-terrain, 245/75 R17 BSW Bridgestone Dueler A/T",
+"marks": {
+"Sport": "O",
+"Sport S": "O",
+"Willys": "NA",
+"Mojave": "NA",
+"Rubicon": "NA"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "Tires",
+"text": "33-in. — all-terrain, 285/70R17 Falken Wildpeak A/T",
+"marks": {
+"Sport": "NA",
+"Sport S": "NA",
+"Willys": "NA",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "Tires",
+"text": "32-in. — mud-terrain, LT255/75R17",
+"marks": {
+"Sport": "NA",
+"Sport S": "NA",
+"Willys": "S",
+"Mojave": "NA",
+"Rubicon": "NA"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "Tires",
+"text": "33-in. — mud-terrain, 285/70R17 Falken Wildpeak M/T",
+"marks": {
+"Sport": "NA",
+"Sport S": "NA",
+"Willys": "NA",
+"Mojave": "O",
+"Rubicon": "O"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "Tops",
+"text": "Black Sunrider soft-top",
+"marks": {
+"Sport": "S",
+"Sport S": "S",
+"Willys": "S",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "Tops",
+"text": "Freedom Top three-piece modular hardtop with rear defroster, sliding rear window and Freedom Panel storage bag",
+"marks": {
+"Sport": "O",
+"Sport S": "O",
+"Willys": "O",
+"Mojave": "O",
+"Rubicon": "O"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "Tops",
+"text": "Body-color three-piece hardtop",
+"marks": {
+"Sport": "P",
+"Sport S": "O",
+"Willys": "NA",
+"Mojave": "P",
+"Rubicon": "P"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "Tops",
+"text": "Dual Top Group (includes premium Sunrider)",
+"marks": {
+"Sport": "O",
+"Sport S": "O",
+"Willys": "O",
+"Mojave": "O",
+"Rubicon": "O"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "Tops",
+"text": "Mopar Sunrider flip-top for hardtop",
+"marks": {
+"Sport": "O",
+"Sport S": "O",
+"Willys": "O",
+"Mojave": "O",
+"Rubicon": "O"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "Tow Hooks",
+"text": "Three — two front, one rear",
+"marks": {
+"Sport": "S",
+"Sport S": "S",
+"Willys": "S",
+"Mojave": "NA",
+"Rubicon": "NA"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "Tow Hooks",
+"text": "Four — two front, two rear",
+"marks": {
+"Sport": "NA",
+"Sport S": "NA",
+"Willys": "NA",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 5,
+"section": "EXTERIOR",
+"parent": "Wheels",
+"text": "17-in. full-face steel painted Low Gloss Black",
+"marks": {
+"Sport": "S",
+"Willys": "NA",
+"Mojave": "NA",
+"Rubicon": "NA"
+}
+},
+{
+"page": 5,
+"section": "EXTERIOR",
+"parent": "Wheels",
+"text": "17-in. aluminum fully painted gray",
+"marks": {
+"Sport": "P",
+"Sport S": "NA",
+"Willys": "NA",
+"Mojave": "NA",
+"Rubicon": "NA"
+}
+},
+{
+"page": 5,
+"section": "EXTERIOR",
+"parent": "Wheels",
+"text": "17-in. aluminum painted gray with machined face (Sport S)",
+"marks": {
+"Sport": "O",
+"Sport S": "S",
+"Willys": "NA",
+"Mojave": "NA",
+"Rubicon": "NA"
+}
+},
+{
+"page": 5,
+"section": "EXTERIOR",
+"parent": "Wheels",
+"text": "17-in. aluminum painted Mid Gloss Black",
+"marks": {
+"Sport": "NA",
+"Sport S": "NA",
+"Willys": "S",
+"Mojave": "NA",
+"Rubicon": "NA"
+}
+},
+{
+"page": 5,
+"section": "EXTERIOR",
+"parent": "Wheels",
+"text": "17-in. aluminum painted gray with machined face",
+"marks": {
+"Sport": "NA",
+"Sport S": "NA",
+"Willys": "NA",
+"Mojave": "S",
+"Rubicon": "NA"
+}
+},
+{
+"page": 5,
+"section": "EXTERIOR",
+"parent": "Wheels",
+"text": "17-in. aluminum machined gray wheels",
+"marks": {
+"Sport": "NA",
+"Sport S": "NA",
+"Willys": "NA",
+"Mojave": "O",
+"Rubicon": "NA"
+}
+},
+{
+"page": 5,
+"section": "EXTERIOR",
+"parent": "Wheels",
+"text": "17-in. aluminum machined with Mid Gloss Black pockets",
+"marks": {
+"Sport": "NA",
+"Sport S": "O",
+"Willys": "NA",
+"Mojave": "NA",
+"Rubicon": "S"
+}
+},
+{
+"page": 5,
+"section": "EXTERIOR",
+"parent": "Wheels",
+"text": "Optional 17-in. aluminum machined Mid Gloss Black",
+"marks": {
+"Sport": "NA",
+"Sport S": "NA",
+"Willys": "NA",
+"Mojave": "NA",
+"Rubicon": "O"
+}
+},
+{
+"page": 5,
+"section": "EXTERIOR",
+"parent": "Wheels",
+"text": "Optional 18-in, aluminum machined painted grey",
+"marks": {
+"Sport": "O",
+"Sport S": "NA",
+"Willys": "NA",
+"Mojave": "NA",
+"Rubicon": "NA"
+}
+},
+{
+"page": 5,
+"section": "EXTERIOR",
+"parent": "Windows",
+"text": "Power (front and rear), driver and passenger one-touch down",
+"marks": {
+"Sport": "S",
+"Sport S": "S",
+"Willys": "S",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "Air Conditioning",
+"text": "Manual, single zone",
+"marks": {
+"Sport": "S",
+"Sport S": "S",
+"Willys": "NA",
+"Mojave": "NA",
+"Rubicon": "NA"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "Air Conditioning",
+"text": "Automatic temperature control — dual zone",
+"marks": {
+"Sport": "P",
+"Sport S": "P",
+"Willys": "S",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "",
+"text": "Cabin air filter — dual zone",
+"marks": {
+"Sport": "P",
+"Sport S": "P",
+"Willys": "S",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "",
+"text": "Console — full-floor with front and rear cup holders, locking storage and armrest",
+"marks": {
+"Sport": "S",
+"Sport S": "S",
+"Willys": "S",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "",
+"text": "Floor heat ducts — rear",
+"marks": {
+"Sport": "S",
+"Sport S": "S",
+"Willys": "S",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "Floor Mats",
+"text": "Front and rear",
+"marks": {
+"Sport": "S",
+"Sport S": "S",
+"Willys": "S",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "Floor Mats",
+"text": "Mopar all-weather slush mats",
+"marks": {
+"Sport": "O",
+"Sport S": "O",
+"Willys": "S",
+"Mojave": "O",
+"Rubicon": "O"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Lighting",
+"text": "LED front cup holder",
+"marks": {
+"Sport": "S",
+"Sport S": "S",
+"Willys": "S",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Lighting",
+"text": "LED rear cup holder",
+"marks": {
+"Sport": "S",
+"Sport S": "S",
+"Willys": "S",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Lighting",
+"text": "LED overhead courtesy lamp",
+"marks": {
+"Sport": "S",
+"Sport S": "S",
+"Willys": "S",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Lighting",
+"text": "LED door bezel ambient lamp",
+"marks": {
+"Sport": "S",
+"Sport S": "S",
+"Willys": "S",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Lighting",
+"text": "LED footwell courtesy — functional",
+"marks": {
+"Sport": "S",
+"Sport S": "S",
+"Willys": "S",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Lighting",
+"text": "LED ambient footwell lamp — mood/accent light",
+"marks": {
+"Sport": "NA",
+"Sport S": "NA",
+"Willys": "S",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Lighting",
+"text": "LED center console ambient lamp",
+"marks": {
+"Sport": "NA",
+"Sport S": "NA",
+"Willys": "NA",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "",
+"text": "Passive entry",
+"marks": {
+"Sport": "P",
+"Sport S": "P",
+"Willys": "S",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "",
+"text": "Push-button start",
+"marks": {
+"Sport": "S",
+"Sport S": "S",
+"Willys": "S",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "",
+"text": "Remote keyless entry with mechanical flip key",
+"marks": {
+"Sport": "P",
+"Sport S": "P",
+"Willys": "S",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "",
+"text": "Remote start system",
+"marks": {
+"Sport": "P",
+"Sport S": "P",
+"Willys": "P",
+"Mojave": "P",
+"Rubicon": "P"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "",
+"text": "Lockable rear behind-seat storage",
+"marks": {
+"Sport": "S",
+"Sport S": "S",
+"Willys": "S",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "",
+"text": "Rear under-seat storage",
+"marks": {
+"Sport": "S",
+"Sport S": "S",
+"Willys": "S",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "",
+"text": "Lockable and removable storage bin under rear seat",
+"marks": {
+"Sport": "P",
+"Sport S": "P",
+"Willys": "P",
+"Mojave": "P",
+"Rubicon": "P"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "",
+"text": "Auxiliary electrical switches — four programmable switches, heavy-duty 240-amp alternator",
+"marks": {
+"Sport": "P",
+"Sport S": "P",
+"Willys": "S",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Seating",
+"text": "Cloth",
+"marks": {
+"Sport": "S",
+"Sport S": "S",
+"Willys": "S",
+"Mojave": "NA",
+"Rubicon": "NA"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Seating",
+"text": "Premium cloth",
+"marks": {
+"Sport": "NA",
+"Sport S": "NA",
+"Willys": "NA",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Seating",
+"text": "Leather-trimmed",
+"marks": {
+"Sport": "P",
+"Sport S": "P",
+"Willys": "NA",
+"Mojave": "P",
+"Rubicon": "P"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Seating",
+"text": "Heated front",
+"marks": {
+"Sport": "P",
+"Sport S": "P",
+"Willys": "P",
+"Mojave": "P",
+"Rubicon": "P"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Seating",
+"text": "Driver — six-way manual (fore/aft, recline, height adjust)",
+"marks": {
+"Sport": "S",
+"Sport S": "S",
+"Willys": "S",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Seating",
+"text": "Front passenger — four-way manual (fore/aft, recline)",
+"marks": {
+"Sport": "S",
+"Sport S": "S",
+"Willys": "S",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Seating",
+"text": "Two-way lumbar (driver only)",
+"marks": {
+"Sport": "S",
+"Sport S": "S",
+"Willys": "S",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Seating",
+"text": "Driver — 12-way power (fore/aft, recline, height adjust, lumbar)",
+"marks": {
+"Sport": "P",
+"Sport S": "P",
+"Willys": "NA",
+"Mojave": "P",
+"Rubicon": "P"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Seating",
+"text": "Front passenger — 12-way power (fore/aft, recline, height adjust, lumbar)",
+"marks": {
+"Sport": "P",
+"Sport S": "P",
+"Willys": "NA",
+"Mojave": "P",
+"Rubicon": "P"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR",
+"parent": "",
+"text": "Tilt/telescoping steering column — manual",
+"marks": {
+"Sport": "S",
+"Sport S": "S",
+"Willys": "S",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR",
+"parent": "Steering Wheel",
+"text": "Base (urethane)",
+"marks": {
+"Sport": "S",
+"Sport S": "NA",
+"Willys": "NA",
+"Mojave": "NA",
+"Rubicon": "NA"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR",
+"parent": "Steering Wheel",
+"text": "Leather-wrapped",
+"marks": {
+"Sport": "P",
+"Sport S": "S",
+"Willys": "S",
+"Mojave": "NA",
+"Rubicon": "S"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR",
+"parent": "Steering Wheel",
+"text": "Mounted audio controls",
+"marks": {
+"Sport": "S",
+"Sport S": "S",
+"Willys": "S",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR",
+"parent": "Steering Wheel",
+"text": "EVIC controls",
+"marks": {
+"Sport": "S",
+"Sport S": "S",
+"Willys": "S",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR",
+"parent": "Steering Wheel",
+"text": "Heated",
+"marks": {
+"Sport": "P",
+"Sport S": "P",
+"Willys": "P",
+"Mojave": "P",
+"Rubicon": "P"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR",
+"parent": "Steering Wheel",
+"text": "Speed and cruise control",
+"marks": {
+"Sport": "S",
+"Sport S": "S",
+"Willys": "S",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR",
+"parent": "",
+"text": "Universal garage door opener",
+"marks": {
+"Sport": "P",
+"Sport S": "P",
+"Willys": "P",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR",
+"parent": "",
+"text": "Hardtop headliner",
+"marks": {
+"Sport": "O",
+"Sport S": "O",
+"Willys": "O",
+"Mojave": "P",
+"Rubicon": "P"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR",
+"parent": "",
+"text": "Wash-out interior with removable carpet and drain plugs",
+"marks": {
+"Sport": "S",
+"Sport S": "S",
+"Willys": "S",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 7,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "Audio System",
+"text": "Eight speakers",
+"marks": {
+"Sport": "S",
+"Sport S": "S",
+"Willys": "S",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 7,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "Audio System",
+"text": "Nine Alpine speakers with all-weather subwoofer and 552-watt amplifier",
+"marks": {
+"Sport": "P",
+"Sport S": "P",
+"Willys": "P",
+"Mojave": "P",
+"Rubicon": "P"
+}
+},
+{
+"page": 7,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "",
+"text": "Auxiliary power, 115-volt outlet in center console",
+"marks": {
+"Sport": "P",
+"Sport S": "P",
+"Willys": "P",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 7,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "",
+"text": "Media hub (one full-function USB and auxiliary port)",
+"marks": {
+"Sport": "S",
+"Sport S": "S",
+"Willys": "S",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 7,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "",
+"text": "Power outlet, 12-volt, instrument panel",
+"marks": {
+"Sport": "S",
+"Sport S": "S",
+"Willys": "S",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 7,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "",
+"text": "Radio with Uconnect 5 with 12.3-in. display",
+"marks": {
+"Sport": "S",
+"Sport S": "S",
+"Willys": "S",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 7,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "",
+"text": "Radio with Uconnect 5 NAV with 12.3-in. display",
+"marks": {
+"Sport": "NA",
+"Sport S": "NA",
+"Willys": "NA",
+"Mojave": "P",
+"Rubicon": "P"
+}
+},
+{
+"page": 7,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "",
+"text": "Removable Bluetooth wireless speaker",
+"marks": {
+"Sport": "P",
+"Sport S": "P",
+"Willys": "P",
+"Mojave": "P",
+"Rubicon": "P"
+}
+},
+{
+"page": 7,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "",
+"text": "SiriusXM Radio — includes a three-month trial subscription",
+"marks": {
+"Sport": "S",
+"Sport S": "S",
+"Willys": "S",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 7,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "",
+"text": "SiriusXM Guardian Connected Services — includes one-year trial",
+"marks": {
+"Sport": "P",
+"Sport S": "P",
+"Willys": "P",
+"Mojave": "P",
+"Rubicon": "P"
+}
+},
+{
+"page": 7,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "",
+"text": "SiriusXM Travel Link — includes five-year trial subscription",
+"marks": {
+"Sport": "P",
+"Sport S": "P",
+"Willys": "P",
+"Mojave": "P",
+"Rubicon": "P"
+}
+},
+{
+"page": 8,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "",
+"text": "SiriusXM Traffic Plus — includes five-year trial subscription",
+"marks": {
+"Sport": "P",
+"Sport S": "P",
+"Willys": "P",
+"Mojave": "P",
+"Rubicon": "P"
+}
+},
+{
+"page": 8,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "",
+"text": "Uconnect Voice Command — hands-free calling with address book and Bluetooth",
+"marks": {
+"Sport": "S",
+"Sport S": "S",
+"Willys": "S",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 8,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "",
+"text": "USB — fully functional in center console",
+"marks": {
+"Sport": "S",
+"Sport S": "S",
+"Willys": "S",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 8,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "",
+"text": "Two USBs and two USB-Cs in back of center console",
+"marks": {
+"Sport": "P",
+"Sport S": "P",
+"Willys": "P",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 8,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Advanced multistage front airbags",
+"marks": {
+"Sport": "S",
+"Sport S": "S",
+"Willys": "S",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 8,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Adaptive cruise control",
+"marks": {
+"Sport": "P",
+"Sport S": "S",
+"Willys": "S",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 8,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Anti-lock brake system with hydraulic-assist brake booster",
+"marks": {
+"Sport": "S",
+"Sport S": "S",
+"Willys": "S",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 8,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Blind-spot Monitoring",
+"marks": {
+"Sport": "P",
+"Sport S": "P",
+"Willys": "P",
+"Mojave": "P",
+"Rubicon": "P"
+}
+},
+{
+"page": 8,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Driver and front passenger seat belt alert (all markets)",
+"marks": {
+"Sport": "S",
+"Sport S": "S",
+"Willys": "S",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 8,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Electronic roll mitigation",
+"marks": {
+"Sport": "S",
+"Sport S": "S",
+"Willys": "S",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 8,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Electronic stability control — includes hydraulic- assist brake booster and traction control",
+"marks": {
+"Sport": "S",
+"Sport S": "S",
+"Willys": "S",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 8,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Front-passenger seat-occupant detection system",
+"marks": {
+"Sport": "S",
+"Sport S": "S",
+"Willys": "S",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 8,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Hill-start Assist",
+"marks": {
+"Sport": "S",
+"Sport S": "S",
+"Willys": "S",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 8,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Rear Child Seat Anchor System — LATCH",
+"marks": {
+"Sport": "S",
+"Sport S": "S",
+"Willys": "S",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 8,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Rear Park Assist",
+"marks": {
+"Sport": "P",
+"Sport S": "P",
+"Willys": "P",
+"Mojave": "P",
+"Rubicon": "P"
+}
+},
+{
+"page": 8,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Rear backup camera with dynamic gridlines",
+"marks": {
+"Sport": "S",
+"Sport S": "S",
+"Willys": "S",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 8,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Selec-Speed Control",
+"marks": {
+"Sport": "P",
+"Sport S": "P",
+"Willys": "P",
+"Mojave": "P",
+"Rubicon": "P"
+}
+},
+{
+"page": 8,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Sentry Key anti-theft engine immobilizer",
+"marks": {
+"Sport": "S",
+"Sport S": "S",
+"Willys": "S",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 8,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Side curtain airbags for first and second rows",
+"marks": {
+"Sport": "S",
+"Sport S": "S",
+"Willys": "S",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 8,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Supplemental front seat side airbag",
+"marks": {
+"Sport": "S",
+"Sport S": "S",
+"Willys": "S",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 8,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Tire-pressure Monitoring",
+"marks": {
+"Sport": "S",
+"Sport S": "S",
+"Willys": "S",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 8,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Vehicle theft alarm — protects doors and liftgate",
+"marks": {
+"Sport": "P",
+"Sport S": "S",
+"Willys": "S",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 9,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "",
+"text": "Jeep Active Safety Group — includes Rear park assist, Blind-spot Monitoring and LED taillamps",
+"marks": {
+"Sport": "O",
+"Sport S": "O",
+"Willys": "O",
+"Mojave": "O/P",
+"Rubicon": "O/P"
+}
+},
+{
+"page": 9,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "",
+"text": "Trail Rail Cargo Management Group — includes three box rails, four anchor pods, 115-volt bed power outlet, roll-up tonneau cover and lockable rear under- seat storage bin",
+"marks": {
+"Sport": "O",
+"Sport S": "O",
+"Willys": "O",
+"Mojave": "O",
+"Rubicon": "O"
+}
+},
+{
+"page": 9,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "",
+"text": "Black Three-piece Hardtop Group — includes black three-piece hardtop with Freedom panels, rear window defroster and sliding rear window",
+"marks": {
+"Sport": "O",
+"Sport S": "O",
+"Willys": "O",
+"Mojave": "O",
+"Rubicon": "O"
+}
+},
+{
+"page": 9,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "",
+"text": "Body-color Three-piece Hardtop Group — includes body-color three-piece hardtop with Freedom Panels, rear window defroster and sliding rear window",
+"marks": {
+"Sport": "NA",
+"Sport S": "O",
+"Willys": "NA",
+"Mojave": "P",
+"Rubicon": "P"
+}
+},
+{
+"page": 9,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "",
+"text": "LED Headlamp and Fog Lamp Package",
+"marks": {
+"Sport": "O",
+"Sport S": "O",
+"Willys": "NA",
+"Mojave": "NA",
+"Rubicon": "NA"
+}
+},
+{
+"page": 9,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "",
+"text": "Trailer Tow and AUX Switch Group — includes heavy-duty 240-amp alternator, Class IV hitch receiver, heavy-duty cooling and programmable auxiliary switches",
+"marks": {
+"Sport": "O",
+"Sport S": "O",
+"Willys": "S",
+"Mojave": "S",
+"Rubicon": "S"
+}
+},
+{
+"page": 9,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "",
+"text": "Max Trailer Tow Group — includes heavy-duty 240- amp alternator, Class IV hitch receiver heavy-duty cooling, wide-track axles with 4.10:1 axle ratio",
+"marks": {
+"Sport": "O",
+"Sport S": "O",
+"Willys": "NA",
+"Mojave": "NA",
+"Rubicon": "NA"
+}
+},
+{
+"page": 9,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "",
+"text": "Convenience Group (Sport/Willys) — includes passive entry, automatic temperature control with dual zone, heated front seats, heated steering wheel, 7-in. thin-film transistor (TFT) cluster, SiriusXM and universal garage door opener",
+"marks": {
+"Sport": "O",
+"Sport S": "O",
+"Willys": "O",
+"Mojave": "NA",
+"Rubicon": "NA"
+}
+},
+{
+"page": 9,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "",
+"text": "Convenience Group (Rubicon/Mojave) — includes heated front seats, heated steering wheel and remote start",
+"marks": {
+"Sport": "NA",
+"Sport S": "NA",
+"Willys": "NA",
+"Mojave": "O/P",
+"Rubicon": "O/P"
+}
+},
+{
+"page": 9,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "",
+"text": "Technology Group (Sport/Willys) — includes inside electrochromatic rearview mirror, nine-speaker premium audio system with all-weather subwoofer, and Bluetooth wireless speaker, 115V interior outlet and rear center console USBs",
+"marks": {
+"Sport": "O",
+"Sport S": "O",
+"Willys": "O",
+"Mojave": "NA",
+"Rubicon": "NA"
+}
+},
+{
+"page": 10,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "",
+"text": "Technology Group (Rubicon/Mojave) — includes Uconnect 5 NAV with 12.3-in. display, inside electrochromatic rearview mirror, nine-speaker premium audio system with all-weather subwoofer, front off-road trail camera and Bluetooth wireless speaker",
+"marks": {
+"Sport": "NA",
+"Sport S": "NA",
+"Willys": "NA",
+"Mojave": "O/P",
+"Rubicon": "O/P"
+}
+},
+{
+"page": 10,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "",
+"text": "Steel Bumper Group (Rubicon) — includes winch- capable steel front bumper with removable endcaps",
+"marks": {
+"Sport": "NA",
+"Sport S": "NA",
+"Willys": "NA",
+"Mojave": "NA",
+"Rubicon": "O"
+}
+},
+{
+"page": 10,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "",
+"text": "Steel Bumper Group (Mojave) — includes winch- capable steel front bumper with removable endcaps and steel rear bumper with bed rock rails",
+"marks": {
+"Sport": "NA",
+"Sport S": "NA",
+"Willys": "NA",
+"Mojave": "O",
+"Rubicon": "NA"
+}
+},
+{
+"page": 10,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "",
+"text": "Mojave X Package — includes heated leather- trimmed seats with 12-way power front adjust, body- color fender flares, body-color hardtop, hardtop headliner, Convenience Group, Technology Group, steel/front bumpers and Safety Group",
+"marks": {
+"Sport": "NA",
+"Sport S": "NA",
+"Willys": "NA",
+"Mojave": "O",
+"Rubicon": "NA"
+}
+},
+{
+"page": 10,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "",
+"text": "Rubicon X Package — includes heated leather- trimmed seats with 12-way power front adjust, body- color fender flares, body-color hardtop, hardtop headliner, Convenience Group, Technology Group, steel front bumper and Safety Group",
+"marks": {
+"Sport": "NA",
+"Sport S": "NA",
+"Willys": "NA",
+"Mojave": "NA",
+"Rubicon": "O"
+}
+},
+{
+"page": 10,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "",
+"text": "Dark Sky Appearance Package — includes body- color fender flares, daytime running lamp system, premium front bumper with Gloss Black accents and performance hood",
+"marks": {
+"Sport": "NA",
+"Sport S": "P",
+"Willys": "NA",
+"Mojave": "NA",
+"Rubicon": "NA"
+}
+}
+],
+"url": "https://media.stellantisnorthamerica.com/view-spec.do?id=27252"
+}

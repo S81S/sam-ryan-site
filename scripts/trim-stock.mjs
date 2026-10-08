@@ -4,8 +4,15 @@ import {readFileSync,writeFileSync} from 'node:fs';
 import {guideTrim,guideRowIds} from '../trim-link.mjs';
 import {applyFactoryEquipment} from '../factory-equipment.mjs';
 import {parseQuery,matchVehicle} from '../equipment-search.mjs';
+import {factoryFacts} from '../factory-facts.mjs';
+import {factoryRowIds} from '../factory-stickers.mjs';
+import {colorKey,colorName} from '../color-names.mjs';
 const read=f=>JSON.parse(readFileSync(new URL('../'+f,import.meta.url),'utf8'));
 const data=read('trim-standard-data.json'),inventory=read('data/used-inventory.json'),records=read('data/equipment-index.json').records;
+// The factory charts (data/factory): their rows are what Perfect Match offers, so each row is mapped to the window-sticker
+// features that answer it, the same way as the trim guide's rows.
+const factoryIndex=read('data/factory/index.json');
+const charts=Object.entries(factoryIndex.models).map(([id,m])=>({id,model:m.model,fleet:m.fleet,entry:read('data/factory/'+m.file)}));
 const listed=inventory.vehicles.filter(v=>v.condition==='New'&&v.locationId==='18393'&&v.status!=='not-observed');
 const groups=new Map();
 for(const v of listed){
@@ -40,14 +47,17 @@ for(const [key,{m,vehicles}] of groups){
 // checked against, so a shopper's picks are matched to actual VINs whatever their trim.
 const models={};
 for(const [key,{m,vehicles}] of groups){
- const id=m.model.id,entry=models[id]||(models[id]={ids:[],rows:{},vehicles:[]});
- for(const trim of m.model.trims)for(const [row,ids] of guideRowIds(trim)){
-  const list=entry.rows[row]||(entry.rows[row]=[]);
-  for(const f of ids){let n=entry.ids.indexOf(f);if(n<0){n=entry.ids.length;entry.ids.push(f);}if(!list.includes(n))list.push(n);}
+ const id=m.model.id,fresh=!models[id],entry=models[id]||(models[id]={ids:[],rows:{},vehicles:[]});
+ const add=(row,ids)=>{const list=entry.rows[row]||(entry.rows[row]=[]);for(const f of ids){let n=entry.ids.indexOf(f);if(n<0){n=entry.ids.length;entry.ids.push(f);}if(!list.includes(n))list.push(n);}};
+ if(fresh){
+  for(const trim of m.model.trims)for(const [row,ids] of guideRowIds(trim))add(row,ids);
+  // Chart rows: only a sticker feature that covers the row itself (factory-stickers.mjs).
+  for(const c of charts.filter(c=>c.model===id))for(const t of c.entry.trims)for(const fact of factoryFacts(c.entry,t,{fleet:c.fleet})){const ids=factoryRowIds(fact);if(ids.length)add(fact.key,ids);}
  }
  for(const v of vehicles){
   const sticker=applyFactoryEquipment(v,records[v.vin]),features=sticker?.status==='verified'?sticker.features||{}:{};
-  entry.vehicles.push({vin:v.vin,stock:v.stock,title:v.title,trim:m.trim.id,price:Number.isFinite(v.price)?v.price:null,photo:(v.photoUrls||[])[0]||v.photoUrl||null,sticker:sticker?.status==='verified',_v:v,_f:features});
+  const paint=(records[v.vin]?.lines||[]).find(l=>/^Exterior Color:/i.test(l));
+  entry.vehicles.push({vin:v.vin,stock:v.stock,title:v.title,trim:m.trim.id,color:paint?colorName(paint):null,colorKey:paint?colorKey(paint):null,price:Number.isFinite(v.price)?v.price:null,photo:(v.photoUrls||[])[0]||v.photoUrl||null,sticker:sticker?.status==='verified',_v:v,_f:features});
  }
 }
 for(const entry of Object.values(models)){

@@ -1,0 +1,1762 @@
+{
+"kind": "fa",
+"title": "2026 Chrysler Pacifica / Pacifica Plug-In Hybrid",
+"rows": [
+{
+"page": 1,
+"section": "ENGINE AND TRANSMISSION",
+"parent": "",
+"text": "3.6-liter Pentastar V-6 variable-valve timing (VVT) with engine stop-start (ESS) and nine-speed automatic transmission",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "NA",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "NA"
+}
+},
+{
+"page": 1,
+"section": "ENGINE AND TRANSMISSION – HYBRID",
+"parent": "",
+"text": "3.6-liter Atkinson cycle V-6 plug-in hybrid engine with electrically variable transmission with dual-motor EV drive capability",
+"marks": {
+"Pacifica Select": "NA",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "NA",
+"Pacifica Pinnacle": "NA",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL",
+"parent": "Alternator",
+"text": "High-efficiency 180 amp",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "NA",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "NA"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL",
+"parent": "Alternator",
+"text": "High-efficiency 220 amp (included with Uconnect Theater with wireless streaming)",
+"marks": {
+"Pacifica Select": "P",
+"Pacifica Plug-in Hybrid Select": "NA",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "NA"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL",
+"parent": "Battery",
+"text": "650-amp, maintenance free",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL",
+"parent": "Battery",
+"text": "Auxiliary battery",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "NA",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "NA"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL",
+"parent": "Brakes",
+"text": "Four-wheel discs with anti-lock",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL",
+"parent": "",
+"text": "Defroster — rear",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL",
+"parent": "Driveline",
+"text": "FWD",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL",
+"parent": "Driveline",
+"text": "AWD",
+"marks": {
+"Pacifica Select": "O",
+"Pacifica Plug-in Hybrid Select": "NA",
+"Pacifica Limited": "O",
+"Pacifica Pinnacle": "O",
+"Pacifica Plug-in Hybrid Pinnacle": "NA"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL",
+"parent": "",
+"text": "Engine block heater",
+"marks": {
+"Pacifica Select": "O",
+"Pacifica Plug-in Hybrid Select": "NA",
+"Pacifica Limited": "O",
+"Pacifica Pinnacle": "O",
+"Pacifica Plug-in Hybrid Pinnacle": "NA"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL",
+"parent": "Fuel Tank",
+"text": "19-gallon",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "NA",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "NA"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL",
+"parent": "Fuel Tank",
+"text": "16.5-gallon",
+"marks": {
+"Pacifica Select": "NA",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "NA",
+"Pacifica Pinnacle": "NA",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL",
+"parent": "Suspension",
+"text": "Touring-tuned",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "NA",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "NA"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL",
+"parent": "Suspension",
+"text": "AWD suspension (when equipped with AWD Driveline)*",
+"marks": {
+"Pacifica Select": "O",
+"Pacifica Plug-in Hybrid Select": "NA",
+"Pacifica Limited": "O",
+"Pacifica Pinnacle": "O",
+"Pacifica Plug-in Hybrid Pinnacle": "NA"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL",
+"parent": "Suspension",
+"text": "Heavy-duty suspension",
+"marks": {
+"Pacifica Select": "NA",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "NA",
+"Pacifica Pinnacle": "NA",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR",
+"parent": "Door Handles",
+"text": "Body color",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR",
+"parent": "Doors",
+"text": "Power-sliding",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "NA",
+"Pacifica Plug-in Hybrid Pinnacle": "NA"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR",
+"parent": "Doors",
+"text": "Hands-free power-sliding doors",
+"marks": {
+"Pacifica Select": "NA",
+"Pacifica Plug-in Hybrid Select": "NA",
+"Pacifica Limited": "P",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR",
+"parent": "Fog Lamps",
+"text": "LED",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Glass",
+"text": "Sunscreen",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Glass",
+"text": "Acoustic windshield",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Glass",
+"text": "Tempered, first row",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "NA",
+"Pacifica Limited": "NA",
+"Pacifica Pinnacle": "NA",
+"Pacifica Plug-in Hybrid Pinnacle": "NA"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Glass",
+"text": "Laminated, first row",
+"marks": {
+"Pacifica Select": "NA",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Grille",
+"text": "Black with Bright surround",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "NA",
+"Pacifica Plug-in Hybrid Pinnacle": "NA"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Grille",
+"text": "Black with Gloss Black surround",
+"marks": {
+"Pacifica Select": "P",
+"Pacifica Plug-in Hybrid Select": "P",
+"Pacifica Limited": "P",
+"Pacifica Pinnacle": "NA",
+"Pacifica Plug-in Hybrid Pinnacle": "NA"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Grille",
+"text": "Black with Platinum Chrome surround",
+"marks": {
+"Pacifica Select": "NA",
+"Pacifica Plug-in Hybrid Select": "NA",
+"Pacifica Limited": "NA",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "LED Headlamps",
+"text": "Auto high-beam headlamp control",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "LED Headlamps",
+"text": "Automatic",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "LED Headlamps",
+"text": "LED daytime running lamps",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Liftgate",
+"text": "Power",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "NA",
+"Pacifica Pinnacle": "NA",
+"Pacifica Plug-in Hybrid Pinnacle": "NA"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Liftgate",
+"text": "Hands-free power",
+"marks": {
+"Pacifica Select": "NA",
+"Pacifica Plug-in Hybrid Select": "P",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Mirrors",
+"text": "Foldaway, power, heated Gloss Black color, supplemental turn indicator",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "NA",
+"Pacifica Pinnacle": "NA",
+"Pacifica Plug-in Hybrid Pinnacle": "NA"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Mirrors",
+"text": "Power-folding, heated with Gloss Black exterior, memory feature, auto-dimming, driver side, courtesy lamps, supplemental turn indicator and auto-adjust-in-reverse, auto-fold in park",
+"marks": {
+"Pacifica Select": "NA",
+"Pacifica Plug-in Hybrid Select": "NA",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "NA",
+"Pacifica Plug-in Hybrid Pinnacle": "NA"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Mirrors",
+"text": "Power-folding, heated with chrome cap exterior, memory feature, auto-dimming, driver side, courtesy lamps, supplemental turn indicator and auto-adjust-in-reverse",
+"marks": {
+"Pacifica Select": "NA",
+"Pacifica Plug-in Hybrid Select": "NA",
+"Pacifica Limited": "NA",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Roof Rack",
+"text": "Stow ’n Place, black",
+"marks": {
+"Pacifica Select": "P",
+"Pacifica Plug-in Hybrid Select": "P",
+"Pacifica Limited": "P",
+"Pacifica Pinnacle": "NA",
+"Pacifica Plug-in Hybrid Pinnacle": "NA"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Roof Rack",
+"text": "Stow ’n Place, Platinum Chrome",
+"marks": {
+"Pacifica Select": "NA",
+"Pacifica Plug-in Hybrid Select": "NA",
+"Pacifica Limited": "NA",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "Sunroof",
+"text": "Dual-pane panoramic",
+"marks": {
+"Pacifica Select": "O",
+"Pacifica Plug-in Hybrid Select": "P",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "Tires",
+"text": "235/65R17 BSW all-season (FWD)",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "NA",
+"Pacifica Pinnacle": "NA",
+"Pacifica Plug-in Hybrid Pinnacle": "NA"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "Tires",
+"text": "245/60R18 BSW all-season self-sealing",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "NA",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "NA",
+"Pacifica Plug-in Hybrid Pinnacle": "NA"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "Tires",
+"text": "235/60R18 BSW all-season",
+"marks": {
+"Pacifica Select": "P",
+"Pacifica Plug-in Hybrid Select": "P",
+"Pacifica Limited": "NA",
+"Pacifica Pinnacle": "NA",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "Tires",
+"text": "245/50R20 BSW all-season self-sealing",
+"marks": {
+"Pacifica Select": "P",
+"Pacifica Plug-in Hybrid Select": "NA",
+"Pacifica Limited": "P",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "NA"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "Tires",
+"text": "Inflator kit with sealant",
+"marks": {
+"Pacifica Select": "P",
+"Pacifica Plug-in Hybrid Select": "P",
+"Pacifica Limited": "P",
+"Pacifica Pinnacle": "P",
+"Pacifica Plug-in Hybrid Pinnacle": "P"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "Wheels",
+"text": "17-in. Tech Silver (FWD)",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "NA",
+"Pacifica Limited": "NA",
+"Pacifica Pinnacle": "NA",
+"Pacifica Plug-in Hybrid Pinnacle": "NA"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "Wheels",
+"text": "17-in. Machined with Baltic Gray Pockets",
+"marks": {
+"Pacifica Select": "NA",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "NA",
+"Pacifica Pinnacle": "NA",
+"Pacifica Plug-in Hybrid Pinnacle": "NA"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "Wheels",
+"text": "18-in. Full Polish (Select AWD/Limited)",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "NA",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "NA",
+"Pacifica Plug-in Hybrid Pinnacle": "NA"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "Wheels",
+"text": "18-in Polished",
+"marks": {
+"Pacifica Select": "O",
+"Pacifica Plug-in Hybrid Select": "NA",
+"Pacifica Limited": "NA",
+"Pacifica Pinnacle": "NA",
+"Pacifica Plug-in Hybrid Pinnacle": "NA"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "Wheels",
+"text": "18-in. Foreshadow",
+"marks": {
+"Pacifica Select": "NA",
+"Pacifica Plug-in Hybrid Select": "O",
+"Pacifica Limited": "NA",
+"Pacifica Pinnacle": "NA",
+"Pacifica Plug-in Hybrid Pinnacle": "NA"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "Wheels",
+"text": "18-in. Polished with Baltic Gray pockets — Hybrid",
+"marks": {
+"Pacifica Select": "NA",
+"Pacifica Plug-in Hybrid Select": "NA",
+"Pacifica Limited": "NA",
+"Pacifica Pinnacle": "NA",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "Wheels",
+"text": "20-in. Foreshadow",
+"marks": {
+"Pacifica Select": "P",
+"Pacifica Plug-in Hybrid Select": "NA",
+"Pacifica Limited": "P",
+"Pacifica Pinnacle": "NA",
+"Pacifica Plug-in Hybrid Pinnacle": "NA"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "Wheels",
+"text": "20-in. Polished with Baltic Gray Pockets",
+"marks": {
+"Pacifica Select": "NA",
+"Pacifica Plug-in Hybrid Select": "NA",
+"Pacifica Limited": "NA",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "NA"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "Windshield Wipers",
+"text": "Front, rain-sensing",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR",
+"parent": "",
+"text": "Adaptive Cruise Control with Stop and Go",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR",
+"parent": "Air Conditioning",
+"text": "Three-zone automatic temperature control",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR",
+"parent": "Air Conditioning",
+"text": "Chrysler clean air filtration system",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "",
+"text": "Grocery bag hooks on third-row seatbacks",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "Lighting",
+"text": "Front and rear LED lamps",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "Lighting",
+"text": "Cargo compartment lamp",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "Lighting",
+"text": "Footwell courtesy lamp",
+"marks": {
+"Pacifica Select": "NA",
+"Pacifica Plug-in Hybrid Select": "NA",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "Lighting",
+"text": "Front, courtesy lamp",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "Lighting",
+"text": "Overhead, ambient surround",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "Lighting",
+"text": "Rear ambient lighting",
+"marks": {
+"Pacifica Select": "NA",
+"Pacifica Plug-in Hybrid Select": "NA",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "Lighting",
+"text": "Rear reading/courtesy lamps",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "Lighting",
+"text": "Illuminated map pocket",
+"marks": {
+"Pacifica Select": "NA",
+"Pacifica Plug-in Hybrid Select": "NA",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "Mirrors",
+"text": "Auto-dimming rearview",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "Mirrors",
+"text": "Illuminated visor vanity",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "Power Outlets",
+"text": "Auxiliary, 12-volt in instrument panel",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "Power Outlets",
+"text": "Auxiliary, 115-volt (included with Uconnect Theater with wireless streaming)",
+"marks": {
+"Pacifica Select": "P",
+"Pacifica Plug-in Hybrid Select": "P",
+"Pacifica Limited": "P",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "",
+"text": "Remote start system",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "Shades",
+"text": "Second-row retractable",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "NA",
+"Pacifica Plug-in Hybrid Pinnacle": "NA"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "Shades",
+"text": "Second- and third-row retractable",
+"marks": {
+"Pacifica Select": "NA",
+"Pacifica Plug-in Hybrid Select": "P",
+"Pacifica Limited": "P",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "",
+"text": "Steering column — tilt/telescoping",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "Steering Wheel",
+"text": "Mounted audio controls",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "Steering Wheel",
+"text": "Techno leather-wrapped",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "Steering Wheel",
+"text": "Heated",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Storage",
+"text": "Floor tray",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Storage",
+"text": "Super Console",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "NA",
+"Pacifica Pinnacle": "NA",
+"Pacifica Plug-in Hybrid Pinnacle": "NA"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Storage",
+"text": "Integrated Premium console",
+"marks": {
+"Pacifica Select": "NA",
+"Pacifica Plug-in Hybrid Select": "P",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "NA",
+"Pacifica Plug-in Hybrid Pinnacle": "NA"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Storage",
+"text": "Integrated Ultra console",
+"marks": {
+"Pacifica Select": "NA",
+"Pacifica Plug-in Hybrid Select": "NA",
+"Pacifica Limited": "NA",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Storage",
+"text": "Glove box, locking",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Storage",
+"text": "Lower instrument panel cubby",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "",
+"text": "Stow ’n Vac integrated vacuum cleaner (packaged with Uconnect Theater Family Group)",
+"marks": {
+"Pacifica Select": "NA",
+"Pacifica Plug-in Hybrid Select": "NA",
+"Pacifica Limited": "P",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "NA"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "",
+"text": "Trip computer — Electronic Vehicle Information Center (EVIC) 7-in. configurable digital display instrument cluster with controls mounted on steering wheel",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "",
+"text": "Universal garage door opener — programmable, three function",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Windows",
+"text": "Power front and rear one-touch up/down",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Windows",
+"text": "Power second row",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Seats",
+"text": "Eight-way power driver seat with four-way power lumbar support (includes Stow ’n Assist on driver side)",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Seats",
+"text": "Driver seat memory",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Seats",
+"text": "Eight- way power front passenger seat (includes Stow ’n Assist on passenger side; packaged with Uconnect Theater Family Group)",
+"marks": {
+"Pacifica Select": "P",
+"Pacifica Plug-in Hybrid Select": "P",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Seats",
+"text": "Heated second row",
+"marks": {
+"Pacifica Select": "NA",
+"Pacifica Plug-in Hybrid Select": "NA",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "NA"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Seats",
+"text": "Heated front seats",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Seats",
+"text": "Caprice leatherette trim",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "NA",
+"Pacifica Pinnacle": "NA",
+"Pacifica Plug-in Hybrid Pinnacle": "NA"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Seats",
+"text": "Premium Nappa leather trimmed",
+"marks": {
+"Pacifica Select": "NA",
+"Pacifica Plug-in Hybrid Select": "P",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "NA",
+"Pacifica Plug-in Hybrid Pinnacle": "NA"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Seats",
+"text": "Premium quilted sepia Nappa leather with second-row lumbar pillows",
+"marks": {
+"Pacifica Select": "NA",
+"Pacifica Plug-in Hybrid Select": "NA",
+"Pacifica Limited": "NA",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Seats",
+"text": "Second- row Stow ’n Go bucket seats with in -floor storage bins",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "NA",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "NA",
+"Pacifica Plug-in Hybrid Pinnacle": "NA"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Seats",
+"text": "Second- row captain’s chairs",
+"marks": {
+"Pacifica Select": "NA",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "NA",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Seats",
+"text": "Third- row Stow ’n Go bench seat",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Seats",
+"text": "Third-row power-folding Stow ’n Go bench seat",
+"marks": {
+"Pacifica Select": "NA",
+"Pacifica Plug-in Hybrid Select": "NA",
+"Pacifica Limited": "NA",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "NA"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR",
+"parent": "Seats",
+"text": "Eight-passenger seating (not available with AWD)",
+"marks": {
+"Pacifica Select": "O",
+"Pacifica Plug-in Hybrid Select": "NA",
+"Pacifica Limited": "NA",
+"Pacifica Pinnacle": "NA",
+"Pacifica Plug-in Hybrid Pinnacle": "NA"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR",
+"parent": "Seats",
+"text": "Ventilated front seats",
+"marks": {
+"Pacifica Select": "NA",
+"Pacifica Plug-in Hybrid Select": "P",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 7,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "",
+"text": "SiriusXM Radio",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 7,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "Sound Systems",
+"text": "Six speakers",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "NA",
+"Pacifica Pinnacle": "NA",
+"Pacifica Plug-in Hybrid Pinnacle": "NA"
+}
+},
+{
+"page": 7,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "Sound Systems",
+"text": "Alpine, 13 speakers (packaged with Uconnect Theater Family Group)",
+"marks": {
+"Pacifica Select": "P",
+"Pacifica Plug-in Hybrid Select": "P",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "NA",
+"Pacifica Plug-in Hybrid Pinnacle": "NA"
+}
+},
+{
+"page": 7,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "Sound Systems",
+"text": "Harman Kardon, 19 speakers, 10-in. subwoofer",
+"marks": {
+"Pacifica Select": "NA",
+"Pacifica Plug-in Hybrid Select": "NA",
+"Pacifica Limited": "P",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "NA"
+}
+},
+{
+"page": 7,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "Sound Systems",
+"text": "Harman Kardon, 20 speakers",
+"marks": {
+"Pacifica Select": "NA",
+"Pacifica Plug-in Hybrid Select": "NA",
+"Pacifica Limited": "NA",
+"Pacifica Pinnacle": "P",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 7,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "",
+"text": "Uconnect 5 with 10.1-in. display — includes 10.1-in. touchscreen, AM/FM, AUX/USB, voice text reply, wireless Android Auto, wireless Apple CarPlay, HD radio, Amazon Alexa compatibility, SiriusXM 360L with Pandora, Firmware OTA and dual phone connectivity",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "NA",
+"Pacifica Pinnacle": "NA",
+"Pacifica Plug-in Hybrid Pinnacle": "NA"
+}
+},
+{
+"page": 7,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "",
+"text": "Uconnect 5 NAV with 10.1-in. display — includes 10.1-in. touchscreen, AM/FM, AUX/USB, Integrated Voice Command with Bluetooth, voice text reply, wireless Android Auto, wireless Apple CarPlay, HD radio, navigation, Chrysler Connect, SiriusXM Traffic and SiriusXM Travel Link, TomTom Navigation, Amazon Alexa compatibility, SiriusXM 360L with Pandora, Maps OTA, Firmware OTA and dual phone connectivity (packaged with Uconnect Theater Family Group)",
+"marks": {
+"Pacifica Select": "P",
+"Pacifica Plug-in Hybrid Select": "P",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 7,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "",
+"text": "Uconnect Theater with wireless streaming — includes 10.1-in. seatback touchscreens, Amazon Fire TV for Auto, 115-volt auxiliary power outlet, wireless headphones, video remote controls, HDMI inputs, third-row USB charge port, USB ports, Blu-ray/DVD player (only on Limited/Pinnacle models) and 220-amp alternator* (packaged with Uconnect Theater Family Group)",
+"marks": {
+"Pacifica Select": "P",
+"Pacifica Plug-in Hybrid Select": "P",
+"Pacifica Limited": "P",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 8,
+"section": "SAFETY & SECURITY",
+"parent": "Air Bags",
+"text": "Advanced multistage driver and front passenger; includes low-risk deployment",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 8,
+"section": "SAFETY & SECURITY",
+"parent": "Air Bags",
+"text": "Driver and front passenger inflatable knee blocker",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 8,
+"section": "SAFETY & SECURITY",
+"parent": "Air Bags",
+"text": "Front seat-mounted side",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 8,
+"section": "SAFETY & SECURITY",
+"parent": "Air Bags",
+"text": "Side-curtain for outboard passengers in all three rows",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 8,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Blind-spot Monitoring with Rear Cross Path detection system",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 8,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Child Seat Anchor System (LATCH)",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 8,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Electric parking brake with Safe Hold",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 8,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Electronic stability control (ESC)",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 8,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Lane Departure Warning-Plus",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 8,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "ParkSense rear park assist system with stop — assists while parking",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 8,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "ParkView rear backup camera (not available with 360-degree surround view camera system)",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "NA",
+"Pacifica Plug-in Hybrid Pinnacle": "NA"
+}
+},
+{
+"page": 8,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "360-degree surround view camera system",
+"marks": {
+"Pacifica Select": "P",
+"Pacifica Plug-in Hybrid Select": "P",
+"Pacifica Limited": "P",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 8,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Remote keyless/illuminated entry system",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 8,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Pedestrian AEB",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 8,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Remote proximity (all doors)",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 8,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Security alarm",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 8,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Third-row lockout",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 8,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Tire-pressure monitoring system",
+"marks": {
+"Pacifica Select": "S",
+"Pacifica Plug-in Hybrid Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 8,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "ParkSense front and rear park assist with stop",
+"marks": {
+"Pacifica Select": "P",
+"Pacifica Plug-in Hybrid Select": "P",
+"Pacifica Limited": "P",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 8,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Trailer-sway control",
+"marks": {
+"Pacifica Select": "NA",
+"Pacifica Plug-in Hybrid Select": "NA",
+"Pacifica Limited": "P",
+"Pacifica Pinnacle": "P",
+"Pacifica Plug-in Hybrid Pinnacle": "NA"
+}
+},
+{
+"page": 9,
+"section": "EQUIPMENT GROUPS",
+"parent": "",
+"text": "Uconnect Theater Family Group II — includes Uconnect Theater with wireless streaming, 10.1-in. seatback touchscreens, Amazon Fire TV for Auto, 115-volt auxiliary power outlet, video remote controls, HDMI inputs, third-row USB charge port, USB ports, 220-amp alternator*, auto advance/return front passenger seat ), power passenger seat, Alpine 13-speaker audio (Select/Plug-in Hybrid Select), Uconnect 5 NAV with 10.1-in. display, which includes 10.1-in. touchscreen, AM/FM, AUX/USB, Integrated Voice Command with Bluetooth, voice text reply, wireless Android Auto, wireless Apple CarPlay, HD radio, navigation, Chrysler Connect, SiriusXM Traffic and SiriusXM Travel Link, TomTom navigation, Amazon Alexa compatibility, SiriusXM 360L with Pandora, Maps OTA, Firmware OTA and dual-phone",
+"marks": {
+"Pacifica Select": "O",
+"Pacifica Plug-in Hybrid Select": "O",
+"Pacifica Limited": "NA",
+"Pacifica Pinnacle": "NA",
+"Pacifica Plug-in Hybrid Pinnacle": "NA"
+}
+},
+{
+"page": 9,
+"section": "EQUIPMENT GROUPS",
+"parent": "",
+"text": "Uconnect Theater Family Group — includes Uconnect Theater with wireless streaming, 10.1-in. seatback touchscreens, Amazon Fire TV for Auto, 115-volt auxiliary power outlet, video remote controls, HDMI inputs, third-row USB charge port, USB ports, Blu-ray/DVD player*, 220-amp alternator* , FamCAM interior camera, Stow ’n Vac*, hands -free sliding doors and liftgate, heated second-row seats*, third-row sunshade, power passenger seat, Harman Kardon 19-speaker with subwoofer audio (Limited/Pinnacle), Harman Kardon 20- speaker audio (Plug-in Hybrid Pinnacle), Uconnect 5 NAV with 10.1-in. display, which includes 10.1-in. touchscreen, AM/FM, AUX/USB, Integrated Voice Command with Bluetooth, voice text reply, wireless Android Auto, wireless Apple CarPlay, HD radio, navigation, Chrysler Connect, SiriusXM Traffic and SiriusXM Travel Link, TomTom navigation, Amazon Alexa compatibility, SiriusXM 360L with Pandora, Maps OTA, Firmware OTA and dual-phone connectivity",
+"marks": {
+"Pacifica Select": "NA",
+"Pacifica Plug-in Hybrid Select": "NA",
+"Pacifica Limited": "O",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 9,
+"section": "EQUIPMENT GROUPS",
+"parent": "",
+"text": "Uconnect Theater and Sound Group — includes Uconnect Theater with wireless streaming, 10.1-in. seatback touchscreens, Amazon Fire TV for Auto, 115-volt auxiliary power outlet, video remote controls, HDMI inputs, third-row USB charge port, USB ports, FamCAM interior camera, hands- free sliding doors and liftgate, second- and third-row windowshades, Harman Kardon 20-speaker audio, Uconnect 5 NAV with 10.1-in. display, which includes 10.1-in. touchscreen, AM/FM, AUX/USB, Integrated Voice Command with Bluetooth, voice text reply, wireless Android Auto, wireless Apple CarPlay, HD radio, navigation, Chrysler Connect, SiriusXM Traffic and SiriusXM Travel Link, TomTom navigation, Amazon Alexa compatibility, SiriusXM 360L with Pandora, Maps OTA, Firmware OTA and dual-phone connectivity",
+"marks": {
+"Pacifica Select": "NA",
+"Pacifica Plug-in Hybrid Select": "O",
+"Pacifica Limited": "NA",
+"Pacifica Pinnacle": "NA",
+"Pacifica Plug-in Hybrid Pinnacle": "NA"
+}
+},
+{
+"page": 9,
+"section": "EQUIPMENT GROUPS",
+"parent": "",
+"text": "Safety Sphere Group — includes ParkSense front park assist with stop, 360-degree surround view camera system",
+"marks": {
+"Pacifica Select": "O",
+"Pacifica Plug-in Hybrid Select": "O",
+"Pacifica Limited": "O",
+"Pacifica Pinnacle": "S",
+"Pacifica Plug-in Hybrid Pinnacle": "S"
+}
+},
+{
+"page": 10,
+"section": "EQUIPMENT GROUPS",
+"parent": "",
+"text": "S Appearance — includes Anodized Ink exterior badging/accents, 18-in**/ 20-in* Foreshadow wheels, black seats with “S” logo, black Stow ‘n Place roof rack",
+"marks": {
+"Pacifica Select": "O",
+"Pacifica Plug-in Hybrid Select": "O",
+"Pacifica Limited": "O",
+"Pacifica Pinnacle": "NA",
+"Pacifica Plug-in Hybrid Pinnacle": "NA"
+}
+},
+{
+"page": 10,
+"section": "EQUIPMENT GROUPS",
+"parent": "",
+"text": "Premium Group — includes integrated Premium console with wireless charging, dual-pane sunroof, Nappa leather seats, ventilated front seats, front passenger power adjust seat, hands-free power liftgate, Gloss Black power mirrors, Alpine 13-speaker audio",
+"marks": {
+"Pacifica Select": "NA",
+"Pacifica Plug-in Hybrid Select": "O",
+"Pacifica Limited": "NA",
+"Pacifica Pinnacle": "NA",
+"Pacifica Plug-in Hybrid Pinnacle": "NA"
+}
+},
+{
+"page": 10,
+"section": "EQUIPMENT GROUPS",
+"parent": "",
+"text": "Trailer-tow Group — includes trailer-tow four- and seven-pin wiring harness, Class II 2-in. hitch receiver, trailer-sway damping, heavy-duty radiator and 220-amp alternator (towing capacity 3,600 lbs.)",
+"marks": {
+"Pacifica Select": "NA",
+"Pacifica Plug-in Hybrid Select": "NA",
+"Pacifica Limited": "O",
+"Pacifica Pinnacle": "O",
+"Pacifica Plug-in Hybrid Pinnacle": "NA"
+}
+}
+],
+"url": "https://media.stellantisnorthamerica.com/view-spec.do?id=27043"
+}

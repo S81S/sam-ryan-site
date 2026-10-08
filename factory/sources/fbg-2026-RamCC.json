@@ -1,0 +1,2364 @@
+{
+"kind": "fbg",
+"title": "2026 RAM 3500 / 4500 / 5500 CHASSIS CAB",
+"columns": [
+{
+"code": "2TA",
+"name": "Tradesman / Reg/Crew"
+},
+{
+"code": "2TZ",
+"name": "0054 Big Horn Reg/Crew"
+}
+],
+"colors": [
+"Diamond Black Crystal Pearl",
+"Granite Crystal Metallic",
+"Silver Zynith",
+"Forged Blue Metallic",
+"Flame Red",
+"Serrano Green Metallic",
+"Molten Red Pearl",
+"Bright White"
+],
+"rows": [
+{
+"page": 3,
+"section": "BODY MODELS",
+"parent": "3500 (DD)",
+"text": "Regular Cab – 60-inch CA (143.5-inch wheelbase) (L63)",
+"marks": {
+"2TA": "O",
+"2TZ": "O"
+}
+},
+{
+"page": 3,
+"section": "BODY MODELS",
+"parent": "3500 (DD)",
+"text": "Regular Cab – 84-inch CA (167.5-inch wheelbase; DD only) (L64)",
+"marks": {
+"2TA": "O",
+"2TZ": "O"
+}
+},
+{
+"page": 3,
+"section": "BODY MODELS",
+"parent": "3500 (DD)",
+"text": "Crew Cab – 60-inch CA (172.4-inch wheelbase) (L93)",
+"marks": {
+"2TA": "O",
+"2TZ": "O"
+}
+},
+{
+"page": 3,
+"section": "BODY MODELS",
+"parent": "Drive Systems",
+"text": "4x2 (DD)",
+"marks": {
+"2TA": "•"
+}
+},
+{
+"page": 3,
+"section": "BODY MODELS",
+"parent": "Drive Systems",
+"text": "4x4 (DD)",
+"marks": {
+"2TA": "O",
+"2TZ": "•"
+}
+},
+{
+"page": 3,
+"section": "BODY MODELS",
+"parent": "4500/5500 (DP)",
+"text": "Regular Cab – 60-inch CA (144.5-inch wheelbase) (L63)",
+"marks": {
+"2TA": "O",
+"2TZ": "O"
+}
+},
+{
+"page": 3,
+"section": "BODY MODELS",
+"parent": "4500/5500 (DP)",
+"text": "Regular Cab – 84-inch CA (168.5-inch wheelbase) (L64)",
+"marks": {
+"2TA": "O",
+"2TZ": "O"
+}
+},
+{
+"page": 3,
+"section": "BODY MODELS",
+"parent": "4500/5500 (DP)",
+"text": "Regular Cab – 108-inch CA (192.5-inch wheelbase) (L65)",
+"marks": {
+"2TA": "O",
+"2TZ": "O"
+}
+},
+{
+"page": 3,
+"section": "BODY MODELS",
+"parent": "4500/5500 (DP)",
+"text": "Regular Cab – 120-inch CA (204.5-inch wheelbase) (L66)",
+"marks": {
+"2TA": "O",
+"2TZ": "O"
+}
+},
+{
+"page": 3,
+"section": "BODY MODELS",
+"parent": "4500/5500 (DP)",
+"text": "Crew Cab – 60-inch CA (173.5-inch wheelbase) (L93)",
+"marks": {
+"2TA": "O",
+"2TZ": "O"
+}
+},
+{
+"page": 3,
+"section": "BODY MODELS",
+"parent": "4500/5500 (DP)",
+"text": "Crew Cab – 84-inch CA (197.4-inch wheelbase) (L94)",
+"marks": {
+"2TA": "O",
+"2TZ": "O"
+}
+},
+{
+"page": 3,
+"section": "BODY MODELS",
+"parent": "Drive Systems",
+"text": "4x2 (DP 4/5)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 3,
+"section": "BODY MODELS",
+"parent": "Drive Systems",
+"text": "4x4 (DP 9/0)",
+"marks": {
+"2TA": "O",
+"2TZ": "O"
+}
+},
+{
+"page": 3,
+"section": "ENGINES / TRANSMISSIONS",
+"parent": "",
+"text": "6.4L HEMI® V8/8HP75 TorqueFlite® 8-speed Automatic (3500 only) (ESL/DFX)",
+"marks": {
+"2TA": "•"
+}
+},
+{
+"page": 3,
+"section": "ENGINES / TRANSMISSIONS",
+"parent": "",
+"text": "6.4L HEMI V8/8-speed ZF 8AP430 TorqueFlite HD Automatic (optional for 3500 Tradesman; standard on 4500/5500) (ESL/DFZ)",
+"marks": {
+"2TA": "O/•",
+"2TZ": "•"
+}
+},
+{
+"page": 3,
+"section": "ENGINES / TRANSMISSIONS",
+"parent": "",
+"text": "6.7L I-6 Cummins® Turbo Diesel/8-speed ZF TorqueFlite HD Automatic (ETN/DFM)",
+"marks": {
+"2TA": "O",
+"2TZ": "O"
+}
+},
+{
+"page": 3,
+"section": "MECHANICAL FEATURES",
+"parent": "Alternators",
+"text": "220-amp (BAJ)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 3,
+"section": "MECHANICAL FEATURES",
+"parent": "Alternators",
+"text": "400-amp (dual alternators; require 6.4L HEMI V8) (XBJ)",
+"marks": {
+"2TA": "O",
+"2TZ": "O"
+}
+},
+{
+"page": 3,
+"section": "MECHANICAL FEATURES",
+"parent": "Alternators",
+"text": "480-amp (dual alternators; require 6.7L I-6 Cummins; included with Emergency/Fire/Rescue Special Emissions Package (AH6)) (XF1)",
+"marks": {
+"2TA": "O/P",
+"2TZ": "O/P"
+}
+},
+{
+"page": 3,
+"section": "MECHANICAL FEATURES",
+"parent": "Axles: 3500",
+"text": "Single Rear Wheel (SRW) Group (standard on 3L63, 8L63, 3L93 and 8L93) (WL1)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 3,
+"section": "MECHANICAL FEATURES",
+"parent": "Axles: 3500",
+"text": "Dual Rear Wheels (DRW) (standard on 3L64 and 8L64) (WLA)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 3,
+"section": "MECHANICAL FEATURES",
+"parent": "Axles: 3500",
+"text": "DRW (optional on DD 3L63, 8L63, 3L93 and 8L93; includes front, 205-mm (DRW axle) and rear, 11.5-inch (DRW axle)) (WLA)",
+"marks": {
+"2TA": "O",
+"2TZ": "O"
+}
+},
+{
+"page": 3,
+"section": "MECHANICAL FEATURES",
+"parent": "Axles: 3500",
+"text": "Front, 6,000-lb GAWR (SRW axle; standard on 3L63, 8L63, 3L93 and 8L93) (DJN)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 3,
+"section": "MECHANICAL FEATURES",
+"parent": "Axles: 3500",
+"text": "Rear, 11.5-inch (SRW axle; standard on 3L63, 8L63, 3L93 and 8L93) (DRQ)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 3,
+"section": "MECHANICAL FEATURES",
+"parent": "Axles: 3500",
+"text": "Front, 205-mm (DRW axle; standard on 3L64 and 8L64; included with optional DRW on 3L63, 8L63, 3L93 and 8L93) (DJM)",
+"marks": {
+"2TA": "•/P",
+"2TZ": "•/P"
+}
+},
+{
+"page": 3,
+"section": "MECHANICAL FEATURES",
+"parent": "Axles: 3500",
+"text": "Rear, 11.5-inch (DRW axle; standard on 3L64 and 8L64; included with optional DRW on 3L63, 8L63, 3L93 and 8L93) (DRX)",
+"marks": {
+"2TA": "•/P",
+"2TZ": "•/P"
+}
+},
+{
+"page": 3,
+"section": "MECHANICAL FEATURES",
+"parent": "Axle Ratios: 3500",
+"text": "3.42 (included with diesel models only) (DMR)",
+"marks": {
+"2TA": "P",
+"2TZ": "P"
+}
+},
+{
+"page": 3,
+"section": "MECHANICAL FEATURES",
+"parent": "Axle Ratios: 3500",
+"text": "4.10 (standard with 6.4L HEMI V8) (DMF)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 3,
+"section": "MECHANICAL FEATURES",
+"parent": "Axle Ratios: 3500",
+"text": "Front-axle disconnect, electronic disconnect (4x4 only)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 3,
+"section": "MECHANICAL FEATURES",
+"parent": "Axle Ratios: 3500",
+"text": "Rear, antispin differential (DSA)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 3,
+"section": "MECHANICAL FEATURES",
+"parent": "Axles: 4500/5500",
+"text": "DRW (WLA)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 3,
+"section": "MECHANICAL FEATURES",
+"parent": "Axles: 4500/5500",
+"text": "Front, 10.5-inch (DJK)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 3,
+"section": "MECHANICAL FEATURES",
+"parent": "Axles: 4500/5500",
+"text": "Front, 10.5-inch, 7,250-lb GAWR (includes taller springs) (AZB)",
+"marks": {
+"2TA": "O",
+"2TZ": "O"
+}
+},
+{
+"page": 3,
+"section": "MECHANICAL FEATURES",
+"parent": "Axles: 4500/5500",
+"text": "Front-axle disconnect, electronic disconnect (4x4 only)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 3,
+"section": "MECHANICAL FEATURES",
+"parent": "Axles: 4500/5500",
+"text": "Rear, antispin differential (DSA)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 3,
+"section": "MECHANICAL FEATURES",
+"parent": "Axle Ratios: 4500",
+"text": "Rear, 4.44 (DMK)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 3,
+"section": "MECHANICAL FEATURES",
+"parent": "Axle Ratios: 4500",
+"text": "Rear, by American Axle (12,000-lb GAWR) (DR8)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 3,
+"section": "MECHANICAL FEATURES",
+"parent": "Axle Ratios: 5500",
+"text": "4.44 (DMK)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 3,
+"section": "MECHANICAL FEATURES",
+"parent": "Axle Ratios: 5500",
+"text": "Rear, by American Axle (13,500-lb GAWR) (DR8)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 3,
+"section": "MECHANICAL FEATURES",
+"parent": "Battery",
+"text": "730-amp maintenance-free (included with 6.4L HEMI V8) (BCN)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 3,
+"section": "MECHANICAL FEATURES",
+"parent": "Battery",
+"text": "Dual 730-amp maintenance-free (included with 6.7L I-6 Cummins) (BCC)",
+"marks": {
+"2TA": "P",
+"2TZ": "P"
+}
+},
+{
+"page": 3,
+"section": "MECHANICAL FEATURES",
+"parent": "",
+"text": "Engine Block Heater (available with 6.4L HEMI V8; included with Cold Weather Group with 6.7L I-6 Cummins) (NHK)",
+"marks": {
+"2TA": "O/P",
+"2TZ": "O/P"
+}
+},
+{
+"page": 3,
+"section": "MECHANICAL FEATURES",
+"parent": "Diesel Engine",
+"text": "Diesel Exhaust Brake (included with 6.7L I-6 Cummins) (NEN)",
+"marks": {
+"2TA": "P",
+"2TZ": "P"
+}
+},
+{
+"page": 3,
+"section": "MECHANICAL FEATURES",
+"parent": "Diesel Engine",
+"text": "Manual DPF regeneration (optional with 6.7L I-6 Cummins; included with Emergency/Fire/Rescue Special Emissions Package (AH6)) (XNR)",
+"marks": {
+"2TA": "O/P",
+"2TZ": "O/P"
+}
+},
+{
+"page": 3,
+"section": "MECHANICAL FEATURES",
+"parent": "Diesel Engine",
+"text": "Clean idle emission label (4500/5500 only; included with 6.7L I-6 Cummins) (XKH)",
+"marks": {
+"2TA": "P",
+"2TZ": "P"
+}
+},
+{
+"page": 3,
+"section": "MECHANICAL FEATURES",
+"parent": "Diesel Engine",
+"text": "Selective catalytic reduction (urea; included with 6.7L I-6 Cummins) (XAL)",
+"marks": {
+"2TA": "P",
+"2TZ": "P"
+}
+},
+{
+"page": 3,
+"section": "MECHANICAL FEATURES",
+"parent": "Diesel Engine",
+"text": "Winter front grille cover (included with Cold Weather Group) (XD6)",
+"marks": {
+"2TA": "P",
+"2TZ": "P"
+}
+},
+{
+"page": 3,
+"section": "MECHANICAL FEATURES",
+"parent": "",
+"text": "Dash Pass-Through Wire Circuits (BC3)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 3,
+"section": "MECHANICAL FEATURES",
+"parent": "Emissions",
+"text": "50-state-compliant (included with 6.7L I-6 Cummins) (NAS)",
+"marks": {
+"2TA": "P",
+"2TZ": "P"
+}
+},
+{
+"page": 3,
+"section": "MECHANICAL FEATURES",
+"parent": "Engine Cooling",
+"text": "Heavy-duty (NMC)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 3,
+"section": "MECHANICAL FEATURES",
+"parent": "Vehicle Speed (max speed options)",
+"text": "65-mph (JJ4)",
+"marks": {
+"2TA": "O",
+"2TZ": "O"
+}
+},
+{
+"page": 3,
+"section": "MECHANICAL FEATURES",
+"parent": "Vehicle Speed (max speed options)",
+"text": "70-mph (JJ5)",
+"marks": {
+"2TA": "O",
+"2TZ": "O"
+}
+},
+{
+"page": 3,
+"section": "MECHANICAL FEATURES",
+"parent": "Vehicle Speed (max speed options)",
+"text": "77-mph (JJ9)",
+"marks": {
+"2TA": "O",
+"2TZ": "O"
+}
+},
+{
+"page": 3,
+"section": "MECHANICAL FEATURES",
+"parent": "Fuel Tank",
+"text": "52-gallon, rear (NFH)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 3,
+"section": "MECHANICAL FEATURES",
+"parent": "Fuel Tank",
+"text": "74-gallon dual – 52- and 22-gallon tanks (not available with 6.4L HEMI V8 on 63/93 models) (NLL)",
+"marks": {
+"2TA": "O",
+"2TZ": "O"
+}
+},
+{
+"page": 3,
+"section": "MECHANICAL FEATURES",
+"parent": "Fuel Tank",
+"text": "22-gallon mid-ship fuel tank (optional on 3500 DD and 4500/5500 Chassis Cab models) (NFA)",
+"marks": {
+"2TA": "O",
+"2TZ": "O"
+}
+},
+{
+"page": 3,
+"section": "MECHANICAL FEATURES",
+"parent": "",
+"text": "Right-/Left-Side Power Take-Off (included with DFZ or DFM transmission) (XG7)",
+"marks": {
+"2TA": "P",
+"2TZ": "P"
+}
+},
+{
+"page": 3,
+"section": "MECHANICAL FEATURES",
+"parent": "",
+"text": "Split-shaft (included with Right-/Left-Side Power Take-Off with 6.7L I-6 Cummins) (LBX)",
+"marks": {
+"2TA": "P",
+"2TZ": "P"
+}
+},
+{
+"page": 3,
+"section": "MECHANICAL FEATURES",
+"parent": "",
+"text": "Hardwired Remote Start(27)/Stop (included with Right-/Left-Side Power Take-Off) (XBV)",
+"marks": {
+"2TA": "P",
+"2TZ": "P"
+}
+},
+{
+"page": 3,
+"section": "MECHANICAL FEATURES",
+"parent": "Shock Absorbers",
+"text": "Front, heavy-duty (SFB)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 3,
+"section": "MECHANICAL FEATURES",
+"parent": "Shock Absorbers",
+"text": "Rear, heavy-duty (SGB)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 3,
+"section": "MECHANICAL FEATURES",
+"parent": "Skid Plate",
+"text": "Transfer case (included with DFZ or DFM transmission (4x4 only)) (XEF)",
+"marks": {
+"2TA": "P",
+"2TZ": "P"
+}
+},
+{
+"page": 3,
+"section": "MECHANICAL FEATURES",
+"parent": "Steering",
+"text": "Power, recirculating ball (SBE)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 3,
+"section": "MECHANICAL FEATURES",
+"parent": "Suspension",
+"text": "Stabilizer Bar – Front (SHA)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 4,
+"section": "MECHANICAL FEATURES",
+"parent": "Tow Hooks",
+"text": "Black (XEA)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 4,
+"section": "MECHANICAL FEATURES",
+"parent": "Trailer Tow",
+"text": "Seven wires (seven blunt-cut wires, shrink-wrapped and labeled) (XFK)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 4,
+"section": "MECHANICAL FEATURES",
+"parent": "",
+"text": "Trailer Brake Controller (included with L1 and L2 Groups on 3500/4500/5500; included with Max Tow Package on 5500 4x4) (XHC)",
+"marks": {
+"2TA": "O/P",
+"2TZ": "•"
+}
+},
+{
+"page": 4,
+"section": "MECHANICAL FEATURES",
+"parent": "Transfer Case",
+"text": "Electric shift, part-time (4x4 only) (DK3)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 4,
+"section": "MECHANICAL FEATURES",
+"parent": "Transfer Case",
+"text": "Max tow electric shift, part-time (included with Max Tow Package on 5500 4x4 only) (DHV)",
+"marks": {
+"2TA": "P",
+"2TZ": "P"
+}
+},
+{
+"page": 4,
+"section": "MECHANICAL FEATURES",
+"parent": "Transmission",
+"text": "Electronic range select (DH4)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 4,
+"section": "MECHANICAL FEATURES",
+"parent": "Voltage Monitoring",
+"text": "Auto idle-up (XF6)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Antenna",
+"text": "Shark-fin (AM/FM; passenger-side roof) (RD3)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Bumpers",
+"text": "Front, Black (MB1)",
+"marks": {
+"2TA": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Bumpers",
+"text": "Front, Chrome (included with Chrome Appearance Group) (MCT)",
+"marks": {
+"2TA": "P",
+"2TZ": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Bumpers",
+"text": "Front, painted (included with H3 Group) (MBA)",
+"marks": {
+"2TZ": "P"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Cab Steps",
+"text": "Tubular side steps (Black; Regular Cab and Crew Cab) (MRU)",
+"marks": {
+"2TA": "F",
+"2TZ": "F"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Door Handles",
+"text": "Black (included with low-volume paints) (MNA)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Door Handles",
+"text": "Body-color (included with H3 Group) (MNK)",
+"marks": {
+"2TZ": "P"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Engine Shut-Off Timer",
+"text": "6.4L HEMI® V8 and 6.7L I-6 Cummins® (5 minutes; dealer-programmable from 1 to 60 minutes) (XCL)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Fog Lamps",
+"text": "LED (LNV)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Grille",
+"text": "Upper header/lower appliqué – Matte Black-painted (MM5)",
+"marks": {
+"2TA": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Grille",
+"text": "Upper header/lower appliqué – Chrome (included with Chrome Appearance Group) (MNQ)",
+"marks": {
+"2TA": "P",
+"2TZ": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Grille",
+"text": "Tradesman grille – Matte Black-painted nostrils (MFF)",
+"marks": {
+"2TA": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Grille",
+"text": "Matte Black mesh with Chrome (included with Chrome Appearance Group) (MAF)",
+"marks": {
+"2TA": "P",
+"2TZ": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Grille",
+"text": "Chrome billets/accents (included with H3 Group) (MF1)",
+"marks": {
+"2TZ": "P"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Grille",
+"text": "Active grille shutters (MDX)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Grille",
+"text": "Grille module (X79)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Headlamps",
+"text": "Auto-on (LMG)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Headlamps",
+"text": "Headlamp-off – Time delay (LHD)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Headlamps",
+"text": "LED-reflector (LM3)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Headlamps",
+"text": "LED-projector (included with H3 Group) (LM6)",
+"marks": {
+"2TZ": "P"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Headlamps",
+"text": "Black headlamp bezels (MFA)",
+"marks": {
+"2TA": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Headlamps",
+"text": "Daytime running lamps (DRLs) (customer on/off programmability availability in radios) (LM1)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Lighting, Exterior Cab",
+"text": "Roof-mounted LED clearance lamps (LNC)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Lighting, Exterior Cab",
+"text": "Center High-Mounted Stop Lamp (CHMSL) Delete, CHMSL/cargo lamp plate (LP8)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Lighting, Exterior Cab",
+"text": "CHMSL (incandescent) and cargo lamps (not available with CHMSL camera) (LPE)",
+"marks": {
+"2TA": "O",
+"2TZ": "O"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Lighting, Exterior Cab",
+"text": "CHMSL LED with camera (included with H2 and H3 Groups) (LPD)",
+"marks": {
+"2TZ": "P"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Mirrors, Exterior",
+"text": "Black, manual-folding, manual-adjust, manual-telescoping (Regular Cab only) (GT1)",
+"marks": {
+"2TA": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Mirrors, Exterior",
+"text": "Black, heated, manual-folding, manual-telescoping, power-adjust; includes courtesy lamps, supplemental turn signal and running lights (included with L1 and L2 Groups) (GT2)",
+"marks": {
+"2TA": "P",
+"2TZ": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Start Engine Feature",
+"text": "Tip start (XBN)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "Remote Start(27) System (included with L2, H1, H2 and H3 Groups) (XBM)",
+"marks": {
+"2TA": "P",
+"2TZ": "P"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Tires, 3500",
+"text": "LT275/70R18E BSW All-Season (A/S) (standard with Single Rear Wheels (SRW)) (TCM)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Tires, 3500",
+"text": "LT235/80R17E BSW A/S (standard on 3L64 and 8L64; included with Dual Rear Wheels (DRW) on 3L63, 8L63, 3L93 and 8L93) (TV2)",
+"marks": {
+"2TA": "•/P",
+"2TZ": "•/P"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Tires, 3500",
+"text": "LT235/80R17E Off-Road (TSG)",
+"marks": {
+"2TA": "O",
+"2TZ": "O"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Tires, 4500/5500",
+"text": "225/70R19.5G BSW All-Purpose (A/P) (4x2 models only) (TAE)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Tires, 4500/5500",
+"text": "225/70R19.5G BSW A/P front, rear traction (standard on 4x4; optional for 4x2 models) (TAJ)",
+"marks": {
+"2TA": "•/O",
+"2TZ": "•/O"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Tires, 4500/5500",
+"text": "LT225/70R19.5 Michelin® XDS Off-Road (TSJ)",
+"marks": {
+"2TA": "O",
+"2TZ": "O"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Taillamps",
+"text": "Incandescent (LA6)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheel Flares",
+"text": "Black (included with L2, H1 and H2 Groups on 3500; standard with 4500/5500) (MMZ)",
+"marks": {
+"2TA": "P/•",
+"2TZ": "P/•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheel Flares",
+"text": "Body-color (included with H3 Group) (MML)",
+"marks": {
+"2TZ": "O/P"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Windshield Wipers",
+"text": "Variable/intermittent (JHA)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheel Well Liners",
+"text": "Front (MHR)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheel Well Liners",
+"text": "Splash guards/mud flaps, front (4500/5500 only) (MKM)",
+"marks": {
+"2TA": "F",
+"2TZ": "F"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels, 3500 SRW",
+"text": "18x8-inch Black-painted steel (WBF)",
+"marks": {
+"2TA": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels, 3500 SRW",
+"text": "18x8-inch polished aluminum (included with Chrome Appearance Group) (WBE)",
+"marks": {
+"2TA": "P",
+"2TZ": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels, 3500 SRW",
+"text": "18x8-inch Diamond-Cut aluminum with Black pockets (included with H3 Group) (WBC)",
+"marks": {
+"2TZ": "O/P"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels, 3500 DRW",
+"text": "17x6-inch Black-painted steel (WFG)",
+"marks": {
+"2TA": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels, 3500 DRW",
+"text": "17x6-inch polished aluminum (included with Chrome Appearance Group) (WF7)",
+"marks": {
+"2TA": "P",
+"2TZ": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels, 4500/5500 DRW",
+"text": "19.5x6-inch Black-painted steel (WPJ)",
+"marks": {
+"2TA": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels, 4500/5500 DRW",
+"text": "19.5x6-inch steel (included with Chrome Appearance Group) (WP3)",
+"marks": {
+"2TA": "P",
+"2TZ": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels, 4500/5500 DRW",
+"text": "19.5x6-inch polished aluminum (set of four; included with H2 and H3 Groups) (WP4)",
+"marks": {
+"2TZ": "P"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Air Conditioning",
+"text": "Single-Zone manual temperature control (HAA)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Air Conditioning",
+"text": "Dual-Zone automatic temperature control (included with L2, H1, H2 and H3 Groups) (HAF)",
+"marks": {
+"2TA": "P",
+"2TZ": "P"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Auxiliary Switches",
+"text": "Six push-button switches (the sixth switch becomes a Power Take-Off on/off switch when equipped with DFM/DFZ transmissions only) (LHL)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Consoles",
+"text": "Floor – Storage tray (included with *TX, *V9 and *AP bench seats) (CUY)",
+"marks": {
+"2TA": "P",
+"2TZ": "P"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Consoles",
+"text": "Full-length upgraded floor console (included with *GJ bucket seats) (CUP)",
+"marks": {
+"2TZ": "P"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Console, Overhead",
+"text": "Incandescent lighting (included with L1 and L2 Groups; standard on Crew Cab Tradesman) (CUN)",
+"marks": {
+"2TA": "P/•",
+"2TZ": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Console, Overhead",
+"text": "Premium; includes LED overhead lamps (included with H3 Group) (CUS)",
+"marks": {
+"2TZ": "P"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Door Locks",
+"text": "Manual (Regular Cab only) (JE8)",
+"marks": {
+"2TA": "•"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Door Locks",
+"text": "Speed-sensitive (included with L1 and L2 Groups; standard on Crew Cab Tradesman) (JPH)",
+"marks": {
+"2TA": "P/•",
+"2TZ": "•"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Door Locks",
+"text": "Remote keyless entry (included with L1 and L2 Groups; standard on Crew Cab Tradesman) (GXM)",
+"marks": {
+"2TA": "P/•",
+"2TZ": "•"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Door Locks",
+"text": "Remote proximity, passive keyless entry (included with H3 Group) (GXD)",
+"marks": {
+"2TZ": "P"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Floor Covering",
+"text": "Heavy-duty vinyl (CKJ)",
+"marks": {
+"2TA": "•"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Floor Covering",
+"text": "Carpet (CKE)",
+"marks": {
+"2TZ": "•"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Floor Mats",
+"text": "Front, carpeted (Regular Cab; included with carpet) (CLA)",
+"marks": {
+"2TZ": "•"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Floor Mats",
+"text": "Front and rear, carpeted (Crew Cab; included with carpet) (CLE)",
+"marks": {
+"2TZ": "•"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Heat (supplemental)",
+"text": "Rapid cabin supplemental heater (included with 6.7L I-6 Cummins® ) (HDB)",
+"marks": {
+"2TA": "P",
+"2TZ": "P"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Instrument Cluster Displays",
+"text": "3.5-inch color Driver Information Display (DID) (JAK)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Instrument Cluster Displays",
+"text": "7-inch DID (included with Safety Group and H1 and H2 Groups) (JAL)",
+"marks": {
+"2TA": "P",
+"2TZ": "P"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Instrument Cluster Displays",
+"text": "Premium digital 12-inch DID (included with H3 Group) (JAN)",
+"marks": {
+"2TZ": "P"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Key",
+"text": "Extra base metal key option (Regular Cab only; adds two keys for a total of four; each key includes a fob; not available with L1 or L2 Group, GXM or JPH) (GXJ)",
+"marks": {
+"2TA": "F"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Key",
+"text": "Sentry Key® Theft Deterrent System (GXX)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Mirrors (inside; DD and DP only)",
+"text": "Day/night, manual (GNA)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Mirrors (inside; DD and DP only)",
+"text": "Digital rearview mirror (included with L2, H1 and H2 Groups and Safety Group) (GRG)",
+"marks": {
+"2TA": "P",
+"2TZ": "P"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Pedals",
+"text": "Non-adjustable (3500/4500/5500) (XA8)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Heavy-duty vinyl 40/20/40 split-bench front with manual-adjust, rear full-length fold-up bench (Crew Cab only) (*TX)",
+"marks": {
+"2TA": "•"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Cloth 40/20/40 split-bench front with manual-adjust, rear full-length fold-up bench (Crew Cab only) (*V9)",
+"marks": {
+"2TA": "O",
+"2TZ": "•"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Leather-trimmed, 40/20/40 split-bench with power-adjust for driver and passenger (Regular Cab only) (*AP)",
+"marks": {
+"2TZ": "F"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Leather-trimmed, ventilated front bucket with full-length center console, power-adjust for driver and passenger, rear 60/40 split-folding bench with center fold-down armrest and fold-flat load floor (included with H3 Group) (*GJ)",
+"marks": {
+"2TZ": "P"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Power two-way lumbar-adjust for driver’s (optional with vinyl and cloth seats; packaged with leather seats) (JPE)",
+"marks": {
+"2TA": "F",
+"2TZ": "F/P"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Seat Delete Options",
+"text": "Front Center Seat Delete (included with Interior Trim Delete Group) (CJT)",
+"marks": {
+"2TA": "F/P",
+"2TZ": "F/P"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Seat Delete Options",
+"text": "Rear Seat Delete (Crew Cab) (CF8)",
+"marks": {
+"2TA": "F",
+"2TZ": "F"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Seat Belts",
+"text": "Front, shoulder, height-adjustable (CGD)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Seat Belts",
+"text": "Red (CGQ)",
+"marks": {
+"2TA": "O",
+"2TZ": "O"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Steering",
+"text": "Tilt column (SUA)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Steering",
+"text": "Four-spoke, urethane (SCF)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Steering",
+"text": "Luxury with remote audio control buttons (included with Safety Group; H1, H2 and H3 Groups; and *AP seats) (SCK)",
+"marks": {
+"2TA": "P",
+"2TZ": "P"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Steering",
+"text": "Audio controls (included with SCK and SCW steering wheels) (RDZ)",
+"marks": {
+"2TA": "P",
+"2TZ": "P"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Steering",
+"text": "Heated steering wheel (included with H1, H2 and H3 Groups and *AP seats) (NHS)",
+"marks": {
+"2TZ": "P"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Storage",
+"text": "Front, behind-seat (Regular Cab only) (CU3)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Storage",
+"text": "Front, center-seat cushion (included with *AP seats) (CVH)",
+"marks": {
+"2TZ": "P"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Storage",
+"text": "Rear, underseat (standard with Crew Cab only) (CUE)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Storage",
+"text": "Fold-flat load floor (included with *GJ seats) (CVN)",
+"marks": {
+"2TZ": "P"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Turn Signals",
+"text": "One-touch three-blink lane-change feature",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Upfitter Interface",
+"text": "Vehicle System Interface Module (VSIM) (XXS)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Universal Garage Door Opener (included with H2 and H3 Groups) (XGD)",
+"marks": {
+"2TZ": "P"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Visors",
+"text": "Passenger-side vinyl with mirror (GNM)",
+"marks": {
+"2TA": "•"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Visors",
+"text": "Passenger-side cloth with lighted mirror (GN6)",
+"marks": {
+"2TZ": "•"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Visors",
+"text": "Driver’s-/passenger-side cloth incandescent illuminated mirrors and Universal Garage Door Opener (included with H2 and H3 Groups) (GNC)",
+"marks": {
+"2TZ": "P"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Windows",
+"text": "Manual (Regular Cab only) (JF8)",
+"marks": {
+"2TA": "•"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Windows",
+"text": "Power, front with driver’s one-touch down (Regular Cab only; included with L1 and L2 Groups) (JPY)",
+"marks": {
+"2TA": "P",
+"2TZ": "•"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Windows",
+"text": "Power, front and rear with driver’s one-touch up-and-down (Crew Cab models only) (JP3)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Windows",
+"text": "Rear backlight, fixed (GJD)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Windows",
+"text": "Rear backlight, power-sliding – Includes rear defroster (Crew Cab models only; included with L2, H1, H2 and H3 Groups) (GFE)",
+"marks": {
+"2TA": "P",
+"2TZ": "P"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Windows",
+"text": "Rear defroster (included with L1 Group and GFE rear window) (GFA)",
+"marks": {
+"2TA": "P",
+"2TZ": "P"
+}
+},
+{
+"page": 5,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "",
+"text": "Uconnect Voice Command (XRB)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 5,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "Compass",
+"text": "Compass display in the radio (JFJ)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 5,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "",
+"text": "GPS Antenna Input on Radio (JLP)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 5,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "Connectivity",
+"text": "Front: Media Hub – Includes two fully functional Type-A/-C USB port pairs and one auxiliary jack (four USB connection points) (RSF)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 5,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "Connectivity",
+"text": "Middle: 2.5-amp charge-only single USB port (located in center console or armrest) (RS3)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 5,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "Connectivity",
+"text": "Rear: Dual remote USB port, two Type-A/-C pairs; charge-only (included with H3 Group) (RS2)",
+"marks": {
+"2TZ": "P"
+}
+},
+{
+"page": 5,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "Connectivity",
+"text": "Auxiliary headphone jack for mobile devices (RSU)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 5,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "Connectivity",
+"text": "Dual wireless charging pads (included with *GJ seats) (CMS)",
+"marks": {
+"2TZ": "P"
+}
+},
+{
+"page": 5,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "Power",
+"text": "Accessory delay (JKY)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 5,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "Power",
+"text": "Auxiliary outlets (one battery and one ignition-fed) (JJJ)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 5,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "Power",
+"text": "115-volt auxiliary power outlet, instrument-panel-mounted (included with L2, H1, H2 and H3 Groups) (JKV)",
+"marks": {
+"2TA": "P",
+"2TZ": "P"
+}
+},
+{
+"page": 5,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "Power",
+"text": "115-volt auxiliary power outlet, rear-facing (included with *GJ seats; Crew Cab only) (JJN)",
+"marks": {
+"2TZ": "P"
+}
+},
+{
+"page": 5,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "Power",
+"text": "400-watt inverter (included with JKV and JJN) (XHR)",
+"marks": {
+"2TA": "P",
+"2TZ": "P"
+}
+},
+{
+"page": 5,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "Power",
+"text": "2.4-kW on-board power system (requires XBJ or XF1 dual alternators) (XBH)",
+"marks": {
+"2TA": "O",
+"2TZ": "O"
+}
+},
+{
+"page": 5,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "Radios",
+"text": "Uconnect 5 with 8.4-inch touchscreen display and available SiriusXM® Radio(21) (UBE)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 5,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "Radios",
+"text": "Uconnect 5 NAV with 12-inch touchscreen display, navigation, available SiriusXM Radio(21) and HD radio (included with L2, H1, H2 and H3 Groups) (UBQ)",
+"marks": {
+"2TA": "P",
+"2TZ": "P"
+}
+},
+{
+"page": 5,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "Radios",
+"text": "Radio controls – Steering wheel-mounted audio controls (included with SCK and SCW steering wheels) (RDZ)",
+"marks": {
+"2TA": "P",
+"2TZ": "P"
+}
+},
+{
+"page": 5,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "",
+"text": "SiriusXM Radio(21) (RSD)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 5,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "",
+"text": "TomTom® Connected Travel and Traffic Services(22) (included with NAV radios) (RTV)",
+"marks": {
+"2TA": "P",
+"2TZ": "P"
+}
+},
+{
+"page": 5,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "",
+"text": "SiriusXM with 360L(21) (included with NAV radios) (RTU)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 6,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "Speakers",
+"text": "Four standard (Regular Cab only) (RCD)",
+"marks": {
+"2TA": "•"
+}
+},
+{
+"page": 6,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "Speakers",
+"text": "Six (standard on Crew Cab Tradesman) (RCG)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 6,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "Speakers",
+"text": "Premium seven-speaker audio system (Regular Cab only; included with H1 and H2 Groups) (RCK)",
+"marks": {
+"2TZ": "P"
+}
+},
+{
+"page": 6,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "Speakers",
+"text": "Premium 10-speaker Surround Sound system (Crew Cab only; included with H1 and H2 Groups) (RC3)",
+"marks": {
+"2TZ": "P"
+}
+},
+{
+"page": 6,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "Speakers",
+"text": "Premium 17-speaker Surround Sound system (included with H3 Group) (RCA)",
+"marks": {
+"2TZ": "P"
+}
+},
+{
+"page": 6,
+"section": "SAFETY & SECURITY",
+"parent": "Air Bags(31)",
+"text": "Multistage front (3500/4500/5500) (CG3)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 6,
+"section": "SAFETY & SECURITY",
+"parent": "Belt Alert",
+"text": "Driver’s",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 6,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Rear-Seat Reminder Alert (JFB)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 6,
+"section": "SAFETY & SECURITY",
+"parent": "Brakes",
+"text": "Power-assisted four-wheel antilock disc (BRT)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 6,
+"section": "SAFETY & SECURITY",
+"parent": "Electronic Stability Control (ESC)(8) System",
+"text": "Four-channel Antilock Brake System, Electronic Brake-Force Distribution, Traction Control, Ready Alert Braking, Brake Assist, Hydraulic Boost Compensation, Rain Brake Support, Engine Drag Control, Trailer Sway Damping,(8) Electronic Roll Mitigation and Hill Start Assist (BNB)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 6,
+"section": "SAFETY & SECURITY",
+"parent": "Cameras",
+"text": "ParkView® Rear Back-Up Camera(4) (XAC)",
+"marks": {
+"2TA": "O",
+"2TZ": "O"
+}
+},
+{
+"page": 6,
+"section": "SAFETY & SECURITY",
+"parent": "Cameras",
+"text": "Cargo camera (requires UBQ radio; includes LED Center High-Mounted Stop Lamp (CHMSL) and cargo lamps; included with H2 and H3 Groups) (LPD)",
+"marks": {
+"2TZ": "P"
+}
+},
+{
+"page": 6,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "ParkSense® Rear Park Assist(12) (XAA)",
+"marks": {
+"2TA": "O",
+"2TZ": "O"
+}
+},
+{
+"page": 6,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "ParkSense Front/Rear Park Assist System(12) (included with H3 Group) (XAG)",
+"marks": {
+"2TA": "O",
+"2TZ": "P"
+}
+},
+{
+"page": 6,
+"section": "SAFETY FEATURES",
+"parent": "",
+"text": "Security Alarm(34) (included with Safety Group) (LSA)",
+"marks": {
+"2TA": "P",
+"2TZ": "P"
+}
+},
+{
+"page": 6,
+"section": "SAFETY FEATURES",
+"parent": "Back-Up Alarm",
+"text": "Audible alarm when vehicle is in Reverse (XAW)",
+"marks": {
+"2TA": "O",
+"2TZ": "O"
+}
+},
+{
+"page": 6,
+"section": "SAFETY FEATURES",
+"parent": "",
+"text": "Adaptive Cruise Control (ACC) with Stop(6) (NH3)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 6,
+"section": "SAFETY FEATURES",
+"parent": "",
+"text": "LaneSense® Lane Departure Warning Plus(5) (included with Safety Group) (LAS)",
+"marks": {
+"2TA": "P",
+"2TZ": "P"
+}
+},
+{
+"page": 6,
+"section": "SAFETY FEATURES",
+"parent": "",
+"text": "Ready Alert Braking (BHD)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 6,
+"section": "SAFETY FEATURES",
+"parent": "",
+"text": "Full-Speed Forward Collision Warning Plus with Auto Emergency Braking(9) (LSU)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 6,
+"section": "SAFETY FEATURES",
+"parent": "",
+"text": "Trailer Tire Pressure Monitoring System (XG9)",
+"marks": {
+"2TA": "O",
+"2TZ": "O"
+}
+},
+{
+"page": 6,
+"section": "SAFETY FEATURES",
+"parent": "",
+"text": "DOT-Certified Roadside Safety Kit (DOT fire extinguisher, three reflecting triangles, two Red vinyl flags and spare fuses) (ACL)",
+"marks": {
+"2TA": "O",
+"2TZ": "O"
+}
+},
+{
+"page": 6,
+"section": "SAFETY FEATURES",
+"parent": "",
+"text": "Auto High-Beam Headlamp Control (included with H3 Group and Safety Group) (LMS)",
+"marks": {
+"2TA": "P",
+"2TZ": "P"
+}
+},
+{
+"page": 6,
+"section": "SAFETY FEATURES",
+"parent": "",
+"text": "Rain-Sensitive Windshield Wipers (included with H3 Group and Safety Group) (JHC)",
+"marks": {
+"2TA": "P",
+"2TZ": "P"
+}
+},
+{
+"page": 6,
+"section": "SAFETY FEATURES",
+"parent": "",
+"text": "Pedestrian/Cyclist Emergency Braking(9) (LST)",
+"marks": {
+"2TA": "•",
+"2TZ": "•"
+}
+},
+{
+"page": 6,
+"section": "SAFETY FEATURES",
+"parent": "",
+"text": "Drowsy-Driver Detection(6) (included with Safety Group) (XNM)",
+"marks": {
+"2TA": "P",
+"2TZ": "P"
+}
+},
+{
+"page": 6,
+"section": "SAFETY FEATURES",
+"parent": "",
+"text": "Traffic Sign Recognition(13) (included with Safety Group) (SJB)",
+"marks": {
+"2TA": "P",
+"2TZ": "P"
+}
+},
+{
+"page": 6,
+"section": "SAFETY FEATURES",
+"parent": "",
+"text": "Adaptive Steering System(6) (included with Safety Group) (SJE)",
+"marks": {
+"2TA": "P",
+"2TZ": "P"
+}
+},
+{
+"page": 6,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "Emergency/Fire/Rescue Special Emissions Package",
+"text": "Includes dual alternators rated at 480 amps, manual DPF regeneration and Rear Air Conditioning/Heater Prep Group (requires valid Fleet Account Number) (AH6)",
+"marks": {
+"2TA": "F",
+"2TZ": "F"
+}
+},
+{
+"page": 6,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "Ambulance Prep Group",
+"text": "Includes remote rear heat/air conditioning (provides ability to run auxiliary-mounted heater and air conditioning independently of instrument-panel controls), air conditioning line tap and engine coolant access for upfitter (AH2)",
+"marks": {
+"2TA": "O",
+"2TZ": "O"
+}
+},
+{
+"page": 6,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "Chrome Appearance Group",
+"text": "Includes Chrome front bumper, Chrome grille and polished aluminum wheels on 3500 models (AMP)",
+"marks": {
+"2TA": "O"
+}
+},
+{
+"page": 6,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "Cold Weather Group",
+"text": "Includes engine block heater cord and winter front grille cover (diesel models only) (ADE)",
+"marks": {
+"2TA": "O",
+"2TZ": "O"
+}
+},
+{
+"page": 6,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "Heavy-Duty Front Suspension Group (a stand-alone option for 4500/5500 only)",
+"text": "Increases max front GAWR to 7,000 with the 6.4L HEMI® V8 and max front GAWR to 7,250 with the 6.7L I-6 Cummins® (AZB)",
+"marks": {
+"2TA": "O",
+"2TZ": "O"
+}
+},
+{
+"page": 6,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "Tradesman Level 1 Equipment (L1 Group)",
+"text": "Includes overhead console, power windows (Regular Cab), power door locks (Regular Cab), trailer brake controller, rear window defroster, GT2 exterior mirrors, upgraded door trim panels and remote keyless entry (A7B)",
+"marks": {
+"2TA": "O"
+}
+},
+{
+"page": 6,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "Tradesman Level 2 Equipment (L2 Group)",
+"text": "Includes L1 Group, Remote Start(27) System, power-sliding rear window, digital rearview mirror, tinted acoustic windshield, Dual-Zone automatic temperature control, 115-volt power outlet and Uconnect 5 NAV with 12-inch touchscreen display (A7C)",
+"marks": {
+"2TA": "O"
+}
+},
+{
+"page": 6,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "Big Horn Level 1 Equipment (H1 Group)",
+"text": "Includes Remote Start(27) System, power-sliding rear window, digital rearview mirror, Dual-Zone automatic temperature control, 115-volt power outlet, dual glove boxes, driver’s-door foam bottle insert, 7-inch Driver Information Display (DID) cluster, glove box lamp, rear dome lamp with on/off switch, premium speaker audio system (seven for Regular Cab; nine for Crew Cab), luxury steering wheel and Uconnect 5 NAV with 12-inch touchscreen display (A7E)",
+"marks": {
+"2TZ": "O"
+}
+},
+{
+"page": 6,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "Big Horn Level 2 Equipment (H2 Group)",
+"text": "Includes H1 Group, sun visors with illuminated vanity mirrors, Universal Garage Door Opener, LED CHMSL with camera and polished aluminum wheels on 4500/5500 (A7F)",
+"marks": {
+"2TZ": "O"
+}
+},
+{
+"page": 6,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "Big Horn Level 3 Equipment (H3 Group)",
+"text": "Includes premium overhead console, highline door trim panel, *GJ leather-trimmed bucket seats, Body-color door handles, Remote Start(27) System, power-sliding rear window, sun visors with illuminated vanity mirrors, remote proximity keyless entry, Dual-Zone automatic temperature control, Universal Garage Door Opener, heated steering wheel, 115-volt power outlet, dual glove boxes, driver’s-door foam bottle insert, rain-sensitive windshield wipers, 12-inch DID digital cluster, heated front seats, glove box lamp, exterior mirror-mounted Reverse lamps, LED interior lighting, LED CHMSL with camera, Auto High-Beam Headlamp Control, LED projector headlamps, LED daytime running lamps (DRLs), Body-color wheel flares, Body-color front bumper, Chrome Billet grille, ultra-premium 17-speaker audio system, RS2 Media Hub, Uconnect 5 NAV with 12-inch touchscreen display, luxury steering wheel, ParkSense Front/Rear Park Assist System(12) and aluminum wheels (A7G)",
+"marks": {
+"2TZ": "O"
+}
+},
+{
+"page": 6,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "Safety Group",
+"text": "Includes security alarm, (34) Drowsy-Driver Detection, (6) digital rearview mirror, rain-sensitive windshield wipers, 7-inch DID cluster for Tradesman and Big Horn, Auto High-Beam Headlamp Control, LaneSense Lane Departure Warning Plus, (5) Traffic Sign Recognition, (13) Adaptive Steering System,(6) and luxury steering wheel for Tradesman and Big Horn (AAU)",
+"marks": {
+"2TA": "O",
+"2TZ": "O"
+}
+},
+{
+"page": 6,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "Max Tow Package",
+"text": "Includes max tow electronic shift part-time transfer case and trailer brake controller for Tradesman (5500 4x4 only; requires diesel engine) (AHQ)",
+"marks": {
+"2TA": "O",
+"2TZ": "O"
+}
+},
+{
+"page": 6,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "Max Payload Package",
+"text": "Includes 19,000-lb GVWR on 63 and 93 models and 19,500-lb GVWR on 64, 65, 66 and 94 models (5500 gas models only) (AH5)",
+"marks": {
+"2TA": "O",
+"2TZ": "O"
+}
+},
+{
+"page": 6,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "Interior Trim Delete Group",
+"text": "Includes Front Center Seat Delete, Rear Floor Storage Tray Delete and Cab Back Trim Panel Delete (Regular Cab only) (AS8)",
+"marks": {
+"2TA": "F",
+"2TZ": "F"
+}
+},
+{
+"page": 6,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "15,000 GVWR Package",
+"text": "Includes 15,000-lb GVWR (4500) 4x2 (Z4B), 4x4 (Z9B) (Z4B/Z9B)",
+"marks": {
+"2TA": "O",
+"2TZ": "O"
+}
+},
+{
+"page": 6,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "16,000 GVWR Package",
+"text": "Includes 16,000-lb GVWR (4500) 4x2 (Z4C), 4x4 (Z9C) (Z4C/Z9C)",
+"marks": {
+"2TA": "O",
+"2TZ": "O"
+}
+}
+],
+"url": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_RamCC.pdf"
+}

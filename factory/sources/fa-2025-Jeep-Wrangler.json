@@ -1,0 +1,2391 @@
+{
+"kind": "fa",
+"title": "2025 Jeep Wrangler",
+"rows": [
+{
+"page": 1,
+"section": "ENGINES / TRANSMISSIONS",
+"parent": "",
+"text": "Pentastar 3.6-liter V-6 SMPI / Six-speed manual",
+"marks": {
+"Wrangler (two-door) Sport": "S",
+"Wrangler (two-door) Sport S": "S",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "S",
+"Wrangler (four- door) Sport S": "S",
+"Wrangler (four- door) Sahara": "NA",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "NA"
+}
+},
+{
+"page": 1,
+"section": "ENGINES / TRANSMISSIONS",
+"parent": "",
+"text": "2.0-liter inline four-cylinder / Eight-speed automatic",
+"marks": {
+"Wrangler (two-door) Sport": "O",
+"Wrangler (two-door) Sport S": "O",
+"Wrangler (two-door) Rubicon": "O",
+"Wrangler (four- door) Sport": "O",
+"Wrangler (four- door) Sport S": "O",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "O",
+"Wrangler (four- door) Rubicon 392 Final Edition": "NA"
+}
+},
+{
+"page": 1,
+"section": "ENGINES / TRANSMISSIONS",
+"parent": "",
+"text": "392-cu.-in. HEMI VCT V-8 with Fuel Saver Technology / Eight-speed automatic",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "NA",
+"Wrangler (two-door) Rubicon": "NA",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "NA",
+"Wrangler (four- door) Sahara": "NA",
+"Wrangler (four- door) Rubicon": "NA",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL / CAPABILITY",
+"parent": "Axle Ratios",
+"text": "3.45:1",
+"marks": {
+"Wrangler (two-door) Sport": "S",
+"Wrangler (two-door) Sport S": "S",
+"Wrangler (two-door) Rubicon": "NA",
+"Wrangler (four- door) Sport": "S",
+"Wrangler (four- door) Sport S": "S",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "NA",
+"Wrangler (four- door) Rubicon 392 Final Edition": "NA"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL / CAPABILITY",
+"parent": "Axle Ratios",
+"text": "3.73:1",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "NA",
+"Wrangler (two-door) Rubicon": "NA",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "NA",
+"Wrangler (four- door) Sahara": "NA",
+"Wrangler (four- door) Rubicon": "NA",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL / CAPABILITY",
+"parent": "Axle Ratios",
+"text": "4.10:1",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "P",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "P",
+"Wrangler (four- door) Sahara": "NA",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "NA"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL / CAPABILITY",
+"parent": "Axle Ratios",
+"text": "4.56:1",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "P",
+"Wrangler (two-door) Rubicon": "P",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "P",
+"Wrangler (four- door) Sahara": "NA",
+"Wrangler (four- door) Rubicon": "P",
+"Wrangler (four- door) Rubicon 392 Final Edition": "P"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL / CAPABILITY",
+"parent": "Axle Ratios",
+"text": "4.88:1",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "NA",
+"Wrangler (two-door) Rubicon": "O",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "NA",
+"Wrangler (four- door) Sahara": "NA",
+"Wrangler (four- door) Rubicon": "O",
+"Wrangler (four- door) Rubicon 392 Final Edition": "NA"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL / CAPABILITY",
+"parent": "Axles",
+"text": "3rd generation Dana solid front",
+"marks": {
+"Wrangler (two-door) Sport": "S",
+"Wrangler (two-door) Sport S": "S",
+"Wrangler (two-door) Rubicon": "NA",
+"Wrangler (four- door) Sport": "S",
+"Wrangler (four- door) Sport S": "S",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "NA",
+"Wrangler (four- door) Rubicon 392 Final Edition": "NA"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL / CAPABILITY",
+"parent": "Axles",
+"text": "3rd generation Dana solid rear",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "NA",
+"Wrangler (two-door) Rubicon": "NA",
+"Wrangler (four- door) Sport": "P",
+"Wrangler (four- door) Sport S": "P",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "NA",
+"Wrangler (four- door) Rubicon 392 Final Edition": "NA"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL / CAPABILITY",
+"parent": "Axles",
+"text": "3rd generation Dana 44 heavy-duty solid front",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "P",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "P",
+"Wrangler (four- door) Sahara": "NA",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL / CAPABILITY",
+"parent": "",
+"text": "3rd generation Dana 44 heavy-duty solid rear",
+"marks": {
+"Wrangler (two-door) Sport": "S",
+"Wrangler (two-door) Sport S": "S",
+"Wrangler (two-door) Rubicon": "NA",
+"Wrangler (four- door) Sport": "S",
+"Wrangler (four- door) Sport S": "S",
+"Wrangler (four- door) Sahara": "NA",
+"Wrangler (four- door) Rubicon": "NA",
+"Wrangler (four- door) Rubicon 392 Final Edition": "NA"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL / CAPABILITY",
+"parent": "",
+"text": "3rd generation Full Float Dana 44 heavy-duty solid rear",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "NA",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "NA",
+"Wrangler (four- door) Sahara": "NA",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL / CAPABILITY",
+"parent": "Differentials",
+"text": "Tru-Lok rear, electronic remote locking",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "P",
+"Wrangler (two-door) Rubicon": "NA",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "P",
+"Wrangler (four- door) Sahara": "NA",
+"Wrangler (four- door) Rubicon": "NA",
+"Wrangler (four- door) Rubicon 392 Final Edition": "NA"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL / CAPABILITY",
+"parent": "Differentials",
+"text": "Tru-Lok front and rear, electronic remote locking",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "NA",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "NA",
+"Wrangler (four- door) Sahara": "NA",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL / CAPABILITY",
+"parent": "Differentials",
+"text": "Trac-Lok limited slip rear",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "NA",
+"Wrangler (two-door) Rubicon": "NA",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "NA",
+"Wrangler (four- door) Sahara": "NA",
+"Wrangler (four- door) Rubicon": "NA",
+"Wrangler (four- door) Rubicon 392 Final Edition": "NA"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL / CAPABILITY",
+"parent": "Differentials",
+"text": "Sway Bar Disconnect — electronically controlled, front",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "NA",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "NA",
+"Wrangler (four- door) Sahara": "NA",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL / CAPABILITY",
+"parent": "",
+"text": "Towing — Trailer-tow Group includes Class II hitch receiver, four-pin and seven-pin adapter, 700-amp battery, auxiliary switches (Rubicon only includes hitch receiver, aux switches)",
+"marks": {
+"Wrangler (two-door) Sport": "O",
+"Wrangler (two-door) Sport S": "O/P",
+"Wrangler (two-door) Rubicon": "O",
+"Wrangler (four- door) Sport": "O",
+"Wrangler (four- door) Sport S": "O/P",
+"Wrangler (four- door) Sahara": "O",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "O"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL / CAPABILITY",
+"parent": "",
+"text": "Trailer-sway control",
+"marks": {
+"Wrangler (two-door) Sport": "S",
+"Wrangler (two-door) Sport S": "S",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "S",
+"Wrangler (four- door) Sport S": "S",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL / CAPABILITY",
+"parent": "Transfer Case",
+"text": "Transfer case/4WD system — Command-Trac NV241, part-time, shift-on-the-fly transfer case",
+"marks": {
+"Wrangler (two-door) Sport": "S",
+"Wrangler (two-door) Sport S": "S",
+"Wrangler (two-door) Rubicon": "NA",
+"Wrangler (four- door) Sport": "S",
+"Wrangler (four- door) Sport S": "S",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "NA",
+"Wrangler (four- door) Rubicon 392 Final Edition": "NA"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL / CAPABILITY",
+"parent": "Transfer Case",
+"text": "Rock-Trac NV241 OR, part-time, shift- on-the-fly transfer case; 4:1 low-gear ratio",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "NA",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "NA",
+"Wrangler (four- door) Sahara": "NA",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "NA"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL / CAPABILITY",
+"parent": "Transfer Case",
+"text": "Rock-Trac NV241 OR, full-time, shift- on-the-fly transfer case; 4:1 low-gear ratio",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "NA",
+"Wrangler (two-door) Rubicon": "P",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "NA",
+"Wrangler (four- door) Sahara": "NA",
+"Wrangler (four- door) Rubicon": "P",
+"Wrangler (four- door) Rubicon 392 Final Edition": "NA"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL / CAPABILITY",
+"parent": "Transfer Case",
+"text": "Selec-Trac, full-time transfer case (2.72:1), no 2WD High",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "NA",
+"Wrangler (two-door) Rubicon": "NA",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "NA",
+"Wrangler (four- door) Sahara": "NA",
+"Wrangler (four- door) Rubicon": "NA",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Doors",
+"text": "Full metal with power windows",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "S",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "S",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Door Locks",
+"text": "Power (speed-sensitive locking) — door-mounted switches",
+"marks": {
+"Wrangler (two-door) Sport": "S",
+"Wrangler (two-door) Sport S": "S",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "S",
+"Wrangler (four- door) Sport S": "S",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Fender Flares",
+"text": "Black, one-piece",
+"marks": {
+"Wrangler (two-door) Sport": "S",
+"Wrangler (two-door) Sport S": "S",
+"Wrangler (two-door) Rubicon": "NA",
+"Wrangler (four- door) Sport": "S",
+"Wrangler (four- door) Sport S": "S",
+"Wrangler (four- door) Sahara": "NA",
+"Wrangler (four- door) Rubicon": "NA",
+"Wrangler (four- door) Rubicon 392 Final Edition": "NA"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Fender Flares",
+"text": "Two-piece — body-color w/ black lower",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "NA",
+"Wrangler (two-door) Rubicon": "P",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "NA",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "P",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Fender Flares",
+"text": "Forward-facing off-road camera",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "NA",
+"Wrangler (two-door) Rubicon": "P",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "NA",
+"Wrangler (four- door) Sahara": "P",
+"Wrangler (four- door) Rubicon": "P",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Glass",
+"text": "Deep-tinted sunscreen rear and quarter windows",
+"marks": {
+"Wrangler (two-door) Sport": "O",
+"Wrangler (two-door) Sport S": "S",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "O",
+"Wrangler (four- door) Sport S": "S",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Glass",
+"text": "Corning Gorilla Glass windshield",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "S",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "S",
+"Wrangler (four- door) Sahara": "NA",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Windows",
+"text": "Power (front and rear), driver and passenger one-touch down",
+"marks": {
+"Wrangler (two-door) Sport": "S",
+"Wrangler (two-door) Sport S": "S",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "S",
+"Wrangler (four- door) Sport S": "S",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Lighting",
+"text": "Halogen headlamps",
+"marks": {
+"Wrangler (two-door) Sport": "S",
+"Wrangler (two-door) Sport S": "S",
+"Wrangler (two-door) Rubicon": "NA",
+"Wrangler (four- door) Sport": "S",
+"Wrangler (four- door) Sport S": "S",
+"Wrangler (four- door) Sahara": "NA",
+"Wrangler (four- door) Rubicon": "NA",
+"Wrangler (four- door) Rubicon 392 Final Edition": "NA"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Lighting",
+"text": "LED reflector headlamps (packaged with LED Lighting Group)",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "P",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "P",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Lighting",
+"text": "Fog lamps",
+"marks": {
+"Wrangler (two-door) Sport": "S",
+"Wrangler (two-door) Sport S": "S",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "S",
+"Wrangler (four- door) Sport S": "S",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "NA"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Lighting",
+"text": "LED fog lamps (packaged with LED Lighting Group)",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "P",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "P",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Lighting",
+"text": "Automatic headlamps",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "S",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "S",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Mirrors",
+"text": "Mold-in color manual folding",
+"marks": {
+"Wrangler (two-door) Sport": "S",
+"Wrangler (two-door) Sport S": "S",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "S",
+"Wrangler (four- door) Sport S": "S",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Mirrors",
+"text": "Standard — no power",
+"marks": {
+"Wrangler (two-door) Sport": "S",
+"Wrangler (two-door) Sport S": "NA",
+"Wrangler (two-door) Rubicon": "NA",
+"Wrangler (four- door) Sport": "S",
+"Wrangler (four- door) Sport S": "NA",
+"Wrangler (four- door) Sahara": "NA",
+"Wrangler (four- door) Rubicon": "NA",
+"Wrangler (four- door) Rubicon 392 Final Edition": "NA"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Mirrors",
+"text": "Power-heated",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "S",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "S",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "",
+"text": "Blind-spot detection indicator",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "P",
+"Wrangler (two-door) Rubicon": "P",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "P",
+"Wrangler (four- door) Sahara": "P",
+"Wrangler (four- door) Rubicon": "P",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "",
+"text": "Side steps — tubular, diamond plate surface pattern",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "NA",
+"Wrangler (two-door) Rubicon": "NA",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "NA",
+"Wrangler (four- door) Sahara": "O",
+"Wrangler (four- door) Rubicon": "NA",
+"Wrangler (four- door) Rubicon 392 Final Edition": "NA"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "",
+"text": "Skid plates — fuel tank and transfer case",
+"marks": {
+"Wrangler (two-door) Sport": "S",
+"Wrangler (two-door) Sport S": "S",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "S",
+"Wrangler (four- door) Sport S": "S",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "",
+"text": "Rock rails — black, painted steel, heavy- duty, protective",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "P",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "NA",
+"Wrangler (four- door) Sahara": "P",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "Tires",
+"text": "All-season, 245/75 R17 BSW Nexen",
+"marks": {
+"Wrangler (two-door) Sport": "S",
+"Wrangler (two-door) Sport S": "S",
+"Wrangler (two-door) Rubicon": "NA",
+"Wrangler (four- door) Sport": "S",
+"Wrangler (four- door) Sport S": "S",
+"Wrangler (four- door) Sahara": "NA",
+"Wrangler (four- door) Rubicon": "NA",
+"Wrangler (four- door) Rubicon 392 Final Edition": "NA"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "Tires",
+"text": "All-terrain, 245/75 R17 BSW Nexen",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "O",
+"Wrangler (two-door) Rubicon": "NA",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "O",
+"Wrangler (four- door) Sahara": "NA",
+"Wrangler (four- door) Rubicon": "NA",
+"Wrangler (four- door) Rubicon 392 Final Edition": "NA"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "Tires",
+"text": "All-season, 255/70R18 Bridgestone Dueler",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "NA",
+"Wrangler (two-door) Rubicon": "NA",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "NA",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "NA",
+"Wrangler (four- door) Rubicon 392 Final Edition": "NA"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "Tires",
+"text": "All-terrain, 255/70R18 General",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "NA",
+"Wrangler (two-door) Rubicon": "NA",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "NA",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "NA",
+"Wrangler (four- door) Rubicon 392 Final Edition": "NA"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "Tires",
+"text": "All-terrain, 285/70R17 BF Goodrich KO2, BSW, Off-road",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "NA",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "NA",
+"Wrangler (four- door) Sahara": "NA",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "NA"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "Tires",
+"text": "Mud-terrain, 285/70R17 Falken, BSW, Off-road",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "P",
+"Wrangler (two-door) Rubicon": "NA",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "P",
+"Wrangler (four- door) Sahara": "NA",
+"Wrangler (four- door) Rubicon": "NA",
+"Wrangler (four- door) Rubicon 392 Final Edition": "NA"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "Tires",
+"text": "All-terrain, 315/70R17 BF Goodrich KO2, BSW, Off-road",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "P",
+"Wrangler (two-door) Rubicon": "P",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "P",
+"Wrangler (four- door) Sahara": "NA",
+"Wrangler (four- door) Rubicon": "P",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "Tops",
+"text": "Sunrider soft-top",
+"marks": {
+"Wrangler (two-door) Sport": "S",
+"Wrangler (two-door) Sport S": "S",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "S",
+"Wrangler (four- door) Sport S": "S",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "NA"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "Tops",
+"text": "Freedom Top three-piece modular hardtop with rear wiper/washer, rear defroster, full-framed doors and Freedom Panel storage bag",
+"marks": {
+"Wrangler (two-door) Sport": "O",
+"Wrangler (two-door) Sport S": "O",
+"Wrangler (two-door) Rubicon": "O",
+"Wrangler (four- door) Sport": "O",
+"Wrangler (four- door) Sport S": "O",
+"Wrangler (four- door) Sahara": "NA",
+"Wrangler (four- door) Rubicon": "O",
+"Wrangler (four- door) Rubicon 392 Final Edition": "NA"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "Tops",
+"text": "Body-color three-piece hardtop with rear wiper/washer, rear defroster, full- framed doors and Freedom Panel storage bag",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "NA",
+"Wrangler (two-door) Rubicon": "P",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "NA",
+"Wrangler (four- door) Sahara": "O",
+"Wrangler (four- door) Rubicon": "P",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "Tops",
+"text": "Sky One-touch powertop",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "NA",
+"Wrangler (two-door) Rubicon": "NA",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "O",
+"Wrangler (four- door) Sahara": "O",
+"Wrangler (four- door) Rubicon": "O",
+"Wrangler (four- door) Rubicon 392 Final Edition": "O"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "Tops",
+"text": "Dual Top Group (available Sunrider)",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "NA",
+"Wrangler (two-door) Rubicon": "NA",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "O",
+"Wrangler (four- door) Sahara": "O",
+"Wrangler (four- door) Rubicon": "O",
+"Wrangler (four- door) Rubicon 392 Final Edition": "O"
+}
+},
+{
+"page": 5,
+"section": "EXTERIOR",
+"parent": "",
+"text": "Sunrider for Hardtop by Mopar",
+"marks": {
+"Wrangler (two-door) Sport": "O",
+"Wrangler (two-door) Sport S": "O",
+"Wrangler (two-door) Rubicon": "O",
+"Wrangler (four- door) Sport": "O",
+"Wrangler (four- door) Sport S": "O",
+"Wrangler (four- door) Sahara": "O",
+"Wrangler (four- door) Rubicon": "O",
+"Wrangler (four- door) Rubicon 392 Final Edition": "O"
+}
+},
+{
+"page": 5,
+"section": "EXTERIOR",
+"parent": "",
+"text": "Tow hooks — two front, one rear",
+"marks": {
+"Wrangler (two-door) Sport": "S",
+"Wrangler (two-door) Sport S": "S",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "S",
+"Wrangler (four- door) Sport S": "S",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 5,
+"section": "EXTERIOR",
+"parent": "",
+"text": "Warn winch (8,000-lb. capacity)",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "NA",
+"Wrangler (two-door) Rubicon": "P",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "NA",
+"Wrangler (four- door) Sahara": "NA",
+"Wrangler (four- door) Rubicon": "O/P",
+"Wrangler (four- door) Rubicon 392 Final Edition": "O"
+}
+},
+{
+"page": 5,
+"section": "EXTERIOR",
+"parent": "Wheels",
+"text": "17-in. full face steel painted Low Gloss Black",
+"marks": {
+"Wrangler (two-door) Sport": "S",
+"Wrangler (two-door) Sport S": "NA",
+"Wrangler (two-door) Rubicon": "NA",
+"Wrangler (four- door) Sport": "S",
+"Wrangler (four- door) Sport S": "NA",
+"Wrangler (four- door) Sahara": "NA",
+"Wrangler (four- door) Rubicon": "NA",
+"Wrangler (four- door) Rubicon 392 Final Edition": "NA"
+}
+},
+{
+"page": 5,
+"section": "EXTERIOR",
+"parent": "Wheels",
+"text": "17-in. aluminum painted Baltic Gray",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "S",
+"Wrangler (two-door) Rubicon": "NA",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "S",
+"Wrangler (four- door) Sahara": "NA",
+"Wrangler (four- door) Rubicon": "NA",
+"Wrangler (four- door) Rubicon 392 Final Edition": "NA"
+}
+},
+{
+"page": 5,
+"section": "EXTERIOR",
+"parent": "Wheels",
+"text": "17-in. aluminum machined Baltic Gray",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "O",
+"Wrangler (two-door) Rubicon": "NA",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "O",
+"Wrangler (four- door) Sahara": "NA",
+"Wrangler (four- door) Rubicon": "NA",
+"Wrangler (four- door) Rubicon 392 Final Edition": "NA"
+}
+},
+{
+"page": 5,
+"section": "EXTERIOR",
+"parent": "Wheels",
+"text": "17-in. aluminum painted Mid-Gloss Black",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "P",
+"Wrangler (two-door) Rubicon": "NA",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "P",
+"Wrangler (four- door) Sahara": "NA",
+"Wrangler (four- door) Rubicon": "NA",
+"Wrangler (four- door) Rubicon 392 Final Edition": "NA"
+}
+},
+{
+"page": 5,
+"section": "EXTERIOR",
+"parent": "Wheels",
+"text": "18-in. aluminum machined Baltic Gray",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "NA",
+"Wrangler (two-door) Rubicon": "NA",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "NA",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "NA",
+"Wrangler (four- door) Rubicon 392 Final Edition": "NA"
+}
+},
+{
+"page": 5,
+"section": "EXTERIOR",
+"parent": "Wheels",
+"text": "17-in. aluminum Rubicon machined with black pockets",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "NA",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "NA",
+"Wrangler (four- door) Sahara": "NA",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "NA"
+}
+},
+{
+"page": 5,
+"section": "EXTERIOR",
+"parent": "Wheels",
+"text": "17-in. aluminum Rubicon machined with black pockets",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "NA",
+"Wrangler (two-door) Rubicon": "O",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "NA",
+"Wrangler (four- door) Sahara": "NA",
+"Wrangler (four- door) Rubicon": "O",
+"Wrangler (four- door) Rubicon 392 Final Edition": "NA"
+}
+},
+{
+"page": 5,
+"section": "EXTERIOR",
+"parent": "Wheels",
+"text": "17-in. aluminum beadlock-capable machined with black pockets",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "P",
+"Wrangler (two-door) Rubicon": "P",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "P",
+"Wrangler (four- door) Sahara": "NA",
+"Wrangler (four- door) Rubicon": "P",
+"Wrangler (four- door) Rubicon 392 Final Edition": "NA"
+}
+},
+{
+"page": 5,
+"section": "EXTERIOR",
+"parent": "Wheels",
+"text": "17-in. aluminum beadlock-capable Low Gloss Smoked Bronze",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "NA",
+"Wrangler (two-door) Rubicon": "NA",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "NA",
+"Wrangler (four- door) Sahara": "NA",
+"Wrangler (four- door) Rubicon": "NA",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "Air Conditioning",
+"text": "Manual, single zone",
+"marks": {
+"Wrangler (two-door) Sport": "S",
+"Wrangler (two-door) Sport S": "S",
+"Wrangler (two-door) Rubicon": "NA",
+"Wrangler (four- door) Sport": "S",
+"Wrangler (four- door) Sport S": "S",
+"Wrangler (four- door) Sahara": "NA",
+"Wrangler (four- door) Rubicon": "NA",
+"Wrangler (four- door) Rubicon 392 Final Edition": "NA"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "Air Conditioning",
+"text": "Automatic temperature control — dual zone",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "P",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "P",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "",
+"text": "Cabin air filter — dual zone",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "P",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "P",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "",
+"text": "Console — full-floor with front and rear cup holders, locking storage and armrest",
+"marks": {
+"Wrangler (two-door) Sport": "S",
+"Wrangler (two-door) Sport S": "S",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "S",
+"Wrangler (four- door) Sport S": "S",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "",
+"text": "Floor heat ducts — rear",
+"marks": {
+"Wrangler (two-door) Sport": "S",
+"Wrangler (two-door) Sport S": "S",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "S",
+"Wrangler (four- door) Sport S": "S",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Floor Mats",
+"text": "Front",
+"marks": {
+"Wrangler (two-door) Sport": "S",
+"Wrangler (two-door) Sport S": "S",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "NA",
+"Wrangler (four- door) Sahara": "NA",
+"Wrangler (four- door) Rubicon": "NA",
+"Wrangler (four- door) Rubicon 392 Final Edition": "NA"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Floor Mats",
+"text": "Front and rear",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "NA",
+"Wrangler (two-door) Rubicon": "NA",
+"Wrangler (four- door) Sport": "S",
+"Wrangler (four- door) Sport S": "S",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Floor Mats",
+"text": "Mopar slush mats",
+"marks": {
+"Wrangler (two-door) Sport": "O",
+"Wrangler (two-door) Sport S": "O",
+"Wrangler (two-door) Rubicon": "O",
+"Wrangler (four- door) Sport": "O",
+"Wrangler (four- door) Sport S": "O",
+"Wrangler (four- door) Sahara": "O",
+"Wrangler (four- door) Rubicon": "O",
+"Wrangler (four- door) Rubicon 392 Final Edition": "O"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Lighting",
+"text": "LED front cup holder",
+"marks": {
+"Wrangler (two-door) Sport": "S",
+"Wrangler (two-door) Sport S": "S",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "S",
+"Wrangler (four- door) Sport S": "S",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Lighting",
+"text": "LED overhead courtesy lamp",
+"marks": {
+"Wrangler (two-door) Sport": "S",
+"Wrangler (two-door) Sport S": "S",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "S",
+"Wrangler (four- door) Sport S": "S",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Lighting",
+"text": "LED second-row, overhead / cargo courtesy lamp",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "NA",
+"Wrangler (two-door) Rubicon": "NA",
+"Wrangler (four- door) Sport": "S",
+"Wrangler (four- door) Sport S": "S",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Lighting",
+"text": "LED door bezel ambient lamp",
+"marks": {
+"Wrangler (two-door) Sport": "S",
+"Wrangler (two-door) Sport S": "S",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "S",
+"Wrangler (four- door) Sport S": "S",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Lighting",
+"text": "LED foot well courtesy — functional",
+"marks": {
+"Wrangler (two-door) Sport": "S",
+"Wrangler (two-door) Sport S": "S",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "S",
+"Wrangler (four- door) Sport S": "S",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "",
+"text": "Passive entry",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "P",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "P",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "",
+"text": "Push-button start",
+"marks": {
+"Wrangler (two-door) Sport": "S",
+"Wrangler (two-door) Sport S": "S",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "S",
+"Wrangler (four- door) Sport S": "S",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "",
+"text": "Remote keyless entry with mechanical flip key",
+"marks": {
+"Wrangler (two-door) Sport": "S",
+"Wrangler (two-door) Sport S": "S",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "S",
+"Wrangler (four- door) Sport S": "S",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "",
+"text": "Remote start system",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "P",
+"Wrangler (two-door) Rubicon": "P",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "P",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "P",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Seating",
+"text": "Cloth",
+"marks": {
+"Wrangler (two-door) Sport": "S",
+"Wrangler (two-door) Sport S": "S",
+"Wrangler (two-door) Rubicon": "NA",
+"Wrangler (four- door) Sport": "S",
+"Wrangler (four- door) Sport S": "S",
+"Wrangler (four- door) Sahara": "NA",
+"Wrangler (four- door) Rubicon": "NA",
+"Wrangler (four- door) Rubicon 392 Final Edition": "NA"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Seating",
+"text": "Premium cloth",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "NA",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "NA",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "NA"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Seating",
+"text": "Premium McKinley-trimmed",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "NA",
+"Wrangler (two-door) Rubicon": "NA",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "NA",
+"Wrangler (four- door) Sahara": "O",
+"Wrangler (four- door) Rubicon": "NA",
+"Wrangler (four- door) Rubicon 392 Final Edition": "NA"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Seating",
+"text": "Leather-trimmed",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "NA",
+"Wrangler (two-door) Rubicon": "P/O",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "NA",
+"Wrangler (four- door) Sahara": "NA",
+"Wrangler (four- door) Rubicon": "P/O",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Seating",
+"text": "Heated front",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "P",
+"Wrangler (two-door) Rubicon": "P",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "P",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "P",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Seating",
+"text": "Driver seat — six-way manual (fore/aft, recline, height adjust)",
+"marks": {
+"Wrangler (two-door) Sport": "S",
+"Wrangler (two-door) Sport S": "S",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "S",
+"Wrangler (four- door) Sport S": "S",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "NA"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR",
+"parent": "",
+"text": "Front-passenger seat — four-way manual (fore/aft, recline)",
+"marks": {
+"Wrangler (two-door) Sport": "S",
+"Wrangler (two-door) Sport S": "S",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "S",
+"Wrangler (four- door) Sport S": "S",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "NA"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR",
+"parent": "",
+"text": "Driver seat — 12-way power (fore/aft, recline, height adjust, lumbar)",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "NA",
+"Wrangler (two-door) Rubicon": "P",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "NA",
+"Wrangler (four- door) Sahara": "P",
+"Wrangler (four- door) Rubicon": "P",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR",
+"parent": "",
+"text": "Front-passenger seat — 12-way power (fore/aft, recline, height adjust, lumbar)",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "NA",
+"Wrangler (two-door) Rubicon": "P",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "NA",
+"Wrangler (four- door) Sahara": "P",
+"Wrangler (four- door) Rubicon": "P",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR",
+"parent": "",
+"text": "Two-way manual lumbar (driver only)",
+"marks": {
+"Wrangler (two-door) Sport": "S",
+"Wrangler (two-door) Sport S": "S",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "S",
+"Wrangler (four- door) Sport S": "S",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "NA"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR",
+"parent": "",
+"text": "Fold-and-tumble rear bench, removable",
+"marks": {
+"Wrangler (two-door) Sport": "S",
+"Wrangler (two-door) Sport S": "S",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "NA",
+"Wrangler (four- door) Sahara": "NA",
+"Wrangler (four- door) Rubicon": "NA",
+"Wrangler (four- door) Rubicon 392 Final Edition": "NA"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR",
+"parent": "",
+"text": "Tilt/telescoping steering column — manual",
+"marks": {
+"Wrangler (two-door) Sport": "S",
+"Wrangler (two-door) Sport S": "S",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "S",
+"Wrangler (four- door) Sport S": "S",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR",
+"parent": "Steering Wheel",
+"text": "Base (urethane)",
+"marks": {
+"Wrangler (two-door) Sport": "S",
+"Wrangler (two-door) Sport S": "NA",
+"Wrangler (two-door) Rubicon": "NA",
+"Wrangler (four- door) Sport": "S",
+"Wrangler (four- door) Sport S": "NA",
+"Wrangler (four- door) Sahara": "NA",
+"Wrangler (four- door) Rubicon": "NA",
+"Wrangler (four- door) Rubicon 392 Final Edition": "NA"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR",
+"parent": "Steering Wheel",
+"text": "Premium wrapped",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "S",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "S",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "NA"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR",
+"parent": "Steering Wheel",
+"text": "Sport with paddle shifters",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "NA",
+"Wrangler (two-door) Rubicon": "NA",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "NA",
+"Wrangler (four- door) Sahara": "NA",
+"Wrangler (four- door) Rubicon": "NA",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR",
+"parent": "Steering Wheel",
+"text": "Mounted audio controls",
+"marks": {
+"Wrangler (two-door) Sport": "S",
+"Wrangler (two-door) Sport S": "S",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "S",
+"Wrangler (four- door) Sport S": "S",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR",
+"parent": "Steering Wheel",
+"text": "Electronic Vehicle Information Center (EVIC) controls",
+"marks": {
+"Wrangler (two-door) Sport": "S",
+"Wrangler (two-door) Sport S": "S",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "S",
+"Wrangler (four- door) Sport S": "S",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR",
+"parent": "Steering Wheel",
+"text": "Heated",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "P",
+"Wrangler (two-door) Rubicon": "P",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "P",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "P",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR",
+"parent": "Steering Wheel",
+"text": "Speed and cruise control",
+"marks": {
+"Wrangler (two-door) Sport": "S",
+"Wrangler (two-door) Sport S": "S",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "S",
+"Wrangler (four- door) Sport S": "S",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR",
+"parent": "",
+"text": "Universal garage door opener",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "P",
+"Wrangler (two-door) Rubicon": "P",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "P",
+"Wrangler (four- door) Sahara": "P",
+"Wrangler (four- door) Rubicon": "P",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR",
+"parent": "",
+"text": "Hardtop headliner",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "O",
+"Wrangler (two-door) Rubicon": "O",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "O",
+"Wrangler (four- door) Sahara": "O",
+"Wrangler (four- door) Rubicon": "O",
+"Wrangler (four- door) Rubicon 392 Final Edition": "O"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR",
+"parent": "",
+"text": "Wash-out interior with removable carpet and drain plugs",
+"marks": {
+"Wrangler (two-door) Sport": "S",
+"Wrangler (two-door) Sport S": "S",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "S",
+"Wrangler (four- door) Sport S": "S",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 8,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "Audio System",
+"text": "Eight speakers",
+"marks": {
+"Wrangler (two-door) Sport": "S",
+"Wrangler (two-door) Sport S": "S",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "S",
+"Wrangler (four- door) Sport S": "S",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "NA"
+}
+},
+{
+"page": 8,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "Audio System",
+"text": "Nine Alpine speakers with all-weather subwoofer and 552-watt amplifier",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "P",
+"Wrangler (two-door) Rubicon": "P",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "P",
+"Wrangler (four- door) Sahara": "P",
+"Wrangler (four- door) Rubicon": "P",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 8,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "",
+"text": "Auxiliary power, 115-volt outlet in center console",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "NA",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "NA",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 8,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "",
+"text": "Media hub (one full-function USB and auxiliary port)",
+"marks": {
+"Wrangler (two-door) Sport": "S",
+"Wrangler (two-door) Sport S": "S",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "S",
+"Wrangler (four- door) Sport S": "S",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 8,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "",
+"text": "Power outlet, 12-volt, instrument panel",
+"marks": {
+"Wrangler (two-door) Sport": "S",
+"Wrangler (two-door) Sport S": "S",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "S",
+"Wrangler (four- door) Sport S": "S",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 8,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "",
+"text": "Power outlet, 12-volt, cargo area",
+"marks": {
+"Wrangler (two-door) Sport": "S",
+"Wrangler (two-door) Sport S": "S",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "S",
+"Wrangler (four- door) Sport S": "S",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 8,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "",
+"text": "Radio with Uconnect 5 with 12.3-in. display",
+"marks": {
+"Wrangler (two-door) Sport": "S",
+"Wrangler (two-door) Sport S": "S",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "S",
+"Wrangler (four- door) Sport S": "S",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "NA"
+}
+},
+{
+"page": 8,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "",
+"text": "Radio with Uconnect 5 NAV with 12.3-in. display",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "NA",
+"Wrangler (two-door) Rubicon": "P",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "NA",
+"Wrangler (four- door) Sahara": "P",
+"Wrangler (four- door) Rubicon": "P",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 8,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "",
+"text": "SiriusXM Radio — includes three-month trial subscription",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "P",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "P",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 8,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "",
+"text": "SiriusXM Guardian Connected Services — includes one-year trial subscription",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "NA",
+"Wrangler (two-door) Rubicon": "P",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "NA",
+"Wrangler (four- door) Sahara": "P",
+"Wrangler (four- door) Rubicon": "P",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 8,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "",
+"text": "SiriusXM Travel Link — includes five- year trial subscription",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "NA",
+"Wrangler (two-door) Rubicon": "P",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "NA",
+"Wrangler (four- door) Sahara": "P",
+"Wrangler (four- door) Rubicon": "P",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 8,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "",
+"text": "SiriusXM Traffic Plus — includes five- year trial subscription",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "NA",
+"Wrangler (two-door) Rubicon": "P",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "NA",
+"Wrangler (four- door) Sahara": "P",
+"Wrangler (four- door) Rubicon": "P",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 8,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "",
+"text": "Uconnect Voice Command — hands-free calling with address book and Bluetooth",
+"marks": {
+"Wrangler (two-door) Sport": "S",
+"Wrangler (two-door) Sport S": "S",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "S",
+"Wrangler (four- door) Sport S": "S",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 8,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "",
+"text": "USB — fully functional in center console",
+"marks": {
+"Wrangler (two-door) Sport": "S",
+"Wrangler (two-door) Sport S": "S",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "S",
+"Wrangler (four- door) Sport S": "S",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 8,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "",
+"text": "USBs — two charge-only in the back of the center console",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "NA",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "NA",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 9,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Advanced multistage front airbags",
+"marks": {
+"Wrangler (two-door) Sport": "S",
+"Wrangler (two-door) Sport S": "S",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "S",
+"Wrangler (four- door) Sport S": "S",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 9,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Supplemental front seat side airbags",
+"marks": {
+"Wrangler (two-door) Sport": "S",
+"Wrangler (two-door) Sport S": "S",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "S",
+"Wrangler (four- door) Sport S": "S",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 9,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Side curtain airbags",
+"marks": {
+"Wrangler (two-door) Sport": "S",
+"Wrangler (two-door) Sport S": "S",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "S",
+"Wrangler (four- door) Sport S": "S",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 9,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Front passenger seat occupant detection system",
+"marks": {
+"Wrangler (two-door) Sport": "S",
+"Wrangler (two-door) Sport S": "S",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "S",
+"Wrangler (four- door) Sport S": "S",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 9,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Driver and front-passenger seat belt alert (all markets)",
+"marks": {
+"Wrangler (two-door) Sport": "S",
+"Wrangler (two-door) Sport S": "S",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "S",
+"Wrangler (four- door) Sport S": "S",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 9,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Rear Child Seat Anchors — LATCH",
+"marks": {
+"Wrangler (two-door) Sport": "S",
+"Wrangler (two-door) Sport S": "S",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "S",
+"Wrangler (four- door) Sport S": "S",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 9,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Tire-pressure monitoring",
+"marks": {
+"Wrangler (two-door) Sport": "S",
+"Wrangler (two-door) Sport S": "S",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "S",
+"Wrangler (four- door) Sport S": "S",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 9,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Blind-spot Monitoring",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "P",
+"Wrangler (two-door) Rubicon": "P",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "P",
+"Wrangler (four- door) Sahara": "P",
+"Wrangler (four- door) Rubicon": "P",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 9,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Rear Park Assist",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "P",
+"Wrangler (two-door) Rubicon": "P",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "P",
+"Wrangler (four- door) Sahara": "P",
+"Wrangler (four- door) Rubicon": "P",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 9,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "ParkView rear backup camera with dynamic gridlines",
+"marks": {
+"Wrangler (two-door) Sport": "S",
+"Wrangler (two-door) Sport S": "S",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "S",
+"Wrangler (four- door) Sport S": "S",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 9,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Sentry Key antitheft engine immobilizer",
+"marks": {
+"Wrangler (two-door) Sport": "S",
+"Wrangler (two-door) Sport S": "S",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "S",
+"Wrangler (four- door) Sport S": "S",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 9,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Vehicle theft alarm — protects doors and liftgate",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "S",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "S",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 9,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Antilock brake system with hydraulic assist braking",
+"marks": {
+"Wrangler (two-door) Sport": "S",
+"Wrangler (two-door) Sport S": "S",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "S",
+"Wrangler (four- door) Sport S": "S",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 9,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Electronic roll mitigation",
+"marks": {
+"Wrangler (two-door) Sport": "S",
+"Wrangler (two-door) Sport S": "S",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "S",
+"Wrangler (four- door) Sport S": "S",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 9,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Electronic stability control — includes hydraulic assist brake booster and traction control",
+"marks": {
+"Wrangler (two-door) Sport": "S",
+"Wrangler (two-door) Sport S": "S",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "S",
+"Wrangler (four- door) Sport S": "S",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 9,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Selec-Speed Control (packaged with eight-speed automatic transmission)",
+"marks": {
+"Wrangler (two-door) Sport": "P",
+"Wrangler (two-door) Sport S": "P",
+"Wrangler (two-door) Rubicon": "P",
+"Wrangler (four- door) Sport": "P",
+"Wrangler (four- door) Sport S": "P",
+"Wrangler (four- door) Sahara": "P",
+"Wrangler (four- door) Rubicon": "P",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 9,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Hill-start Assist",
+"marks": {
+"Wrangler (two-door) Sport": "S",
+"Wrangler (two-door) Sport S": "S",
+"Wrangler (two-door) Rubicon": "S",
+"Wrangler (four- door) Sport": "S",
+"Wrangler (four- door) Sport S": "S",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "S",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 10,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "",
+"text": "Jeep Active Safety Group — includes ParkSense rear park assist, Blind-spot Monitoring, Rear Cross Path detection and LED taillamps",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "O",
+"Wrangler (two-door) Rubicon": "O/P",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "O",
+"Wrangler (four- door) Sahara": "O",
+"Wrangler (four- door) Rubicon": "O/P",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 10,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "",
+"text": "Technology Group — includes nine- speaker premium audio system with all-weather subwoofer Sahara/Rubicon includes: • Uconnect 5 NAV with 12.3-in. display • Inside electrochromatic rearview mirror • Front off-road TrailCam • Universal garage door opener (Sahara)",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "O",
+"Wrangler (two-door) Rubicon": "O/P",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "O",
+"Wrangler (four- door) Sahara": "O",
+"Wrangler (four- door) Rubicon": "O/P",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 10,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "",
+"text": "Convenience Group — includes heated front seats and heated steering wheel, remote start and universal garage door opener Sport/Willys includes: • Satellite radio • Proximity entry • Dual-zone automatic temperature control • 7-in. thin-film transistor (TFT) cluster",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "O",
+"Wrangler (two-door) Rubicon": "O/P",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "O",
+"Wrangler (four- door) Sahara": "S",
+"Wrangler (four- door) Rubicon": "O/P",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 10,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "",
+"text": "Black Three-piece Hardtop Group — includes black three-piece hardtop, rear window defroster, rear window washer and wiper, and Freedom Panel storage bag",
+"marks": {
+"Wrangler (two-door) Sport": "O",
+"Wrangler (two-door) Sport S": "O",
+"Wrangler (two-door) Rubicon": "O",
+"Wrangler (four- door) Sport": "O",
+"Wrangler (four- door) Sport S": "O",
+"Wrangler (four- door) Sahara": "NA",
+"Wrangler (four- door) Rubicon": "O",
+"Wrangler (four- door) Rubicon 392 Final Edition": "NA"
+}
+},
+{
+"page": 10,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "",
+"text": "Body-color Three-piece Hardtop Group — includes color three-piece hardtop, rear window defroster, rear window washer and wiper, and Freedom Panel storage bag",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "NA",
+"Wrangler (two-door) Rubicon": "P",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "NA",
+"Wrangler (four- door) Sahara": "O",
+"Wrangler (four- door) Rubicon": "P",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 11,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "",
+"text": "Sport LED Lighting Group — includes LED headlamps with round signature lighting and LED front fog lamps",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "O",
+"Wrangler (two-door) Rubicon": "NA",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "O",
+"Wrangler (four- door) Sahara": "NA",
+"Wrangler (four- door) Rubicon": "NA",
+"Wrangler (four- door) Rubicon 392 Final Edition": "NA"
+}
+},
+{
+"page": 11,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "",
+"text": "Trailer-tow and Aux Switch Group — includes four auxiliary switches, trailer tow, Class II hitch receiver, four-pin and seven-pin adapters; hitch receiver, auxiliary switches only w/ Rubicon (other content is standard)",
+"marks": {
+"Wrangler (two-door) Sport": "O",
+"Wrangler (two-door) Sport S": "O/P",
+"Wrangler (two-door) Rubicon": "O",
+"Wrangler (four- door) Sport": "O",
+"Wrangler (four- door) Sport S": "O/P",
+"Wrangler (four- door) Sahara": "O",
+"Wrangler (four- door) Rubicon": "O",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 11,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "",
+"text": "Capability Group — includes front and rear steel bumpers and 8,000-lb-capacity Warn winch",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "NA",
+"Wrangler (two-door) Rubicon": "O",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "NA",
+"Wrangler (four- door) Sahara": "NA",
+"Wrangler (four- door) Rubicon": "O",
+"Wrangler (four- door) Rubicon 392 Final Edition": "NA"
+}
+},
+{
+"page": 11,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "",
+"text": "Xtreme 35 Package — includes LT315/70R17C (35-in.) BF Goodrich KO2 all-terrain tires, 17-by-8-in. beadlock- capable wheels, 4.56:1 axle ratio, swing gate reinforcement and 1.5-in. factory suspension lift with uniquely tuned shocks",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "O",
+"Wrangler (two-door) Rubicon": "O/P",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "O",
+"Wrangler (four- door) Sahara": "NA",
+"Wrangler (four- door) Rubicon": "O/P",
+"Wrangler (four- door) Rubicon 392 Final Edition": "S"
+}
+},
+{
+"page": 11,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "",
+"text": "Willys — includes 33-inch mud-terrain tires, trailer tow and heavy-duty electrical group, rear locker, limited-slip rear differential, rock rails, LED headlamps and fog lamps",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "NA",
+"Wrangler (two-door) Rubicon": "NA",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "P",
+"Wrangler (four- door) Sahara": "NA",
+"Wrangler (four- door) Rubicon": "NA",
+"Wrangler (four- door) Rubicon 392 Final Edition": "NA"
+}
+},
+{
+"page": 11,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "",
+"text": "Rubicon X — includes Xtreme 35 Package (with 4-door auto trans and 2-door 2.0L), steel bumpers (winch- capable front), Safety Group, Technology Group, Convenience Group, body-color hardtop, 12-way power adjustable front seats, Nappa leather seats, body-color fender flares, full-time 4:1 transfer case",
+"marks": {
+"Wrangler (two-door) Sport": "NA",
+"Wrangler (two-door) Sport S": "NA",
+"Wrangler (two-door) Rubicon": "P",
+"Wrangler (four- door) Sport": "NA",
+"Wrangler (four- door) Sport S": "NA",
+"Wrangler (four- door) Sahara": "NA",
+"Wrangler (four- door) Rubicon": "P",
+"Wrangler (four- door) Rubicon 392 Final Edition": "NA"
+}
+}
+],
+"url": "https://media.stellantisnorthamerica.com/view-spec.do?id=26155"
+}

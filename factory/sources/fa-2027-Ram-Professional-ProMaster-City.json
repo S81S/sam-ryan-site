@@ -1,0 +1,691 @@
+{
+"kind": "fa",
+"title": "2027 Ram Professional ProMaster City PRELIMINARY",
+"rows": [
+{
+"page": 1,
+"section": "POWERTRAIN",
+"parent": "",
+"text": "1.6-liter 16-valve I-4 turbocharged engine",
+"marks": {
+"Tradesman Cargo Van": "S",
+"SLT Cargo Van": "S",
+"Tradesman Passenger Van": "S",
+"SLT Passenger Van": "S"
+}
+},
+{
+"page": 1,
+"section": "POWERTRAIN",
+"parent": "",
+"text": "8-speed automatic transmission",
+"marks": {
+"Tradesman Cargo Van": "S",
+"SLT Cargo Van": "S",
+"Tradesman Passenger Van": "S",
+"SLT Passenger Van": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL FEATURES",
+"parent": "",
+"text": "18.5-gallon fuel tank",
+"marks": {
+"Tradesman Cargo Van": "S",
+"SLT Cargo Van": "S",
+"Tradesman Passenger Van": "S",
+"SLT Passenger Van": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL FEATURES",
+"parent": "",
+"text": "Anti-lock four-wheel disc brakes",
+"marks": {
+"Tradesman Cargo Van": "S",
+"SLT Cargo Van": "S",
+"Tradesman Passenger Van": "S",
+"SLT Passenger Van": "S"
+}
+},
+{
+"page": 1,
+"section": "EXTERIOR",
+"parent": "Doors",
+"text": "180-degree rear hinged swing doors with fixed glass windows",
+"marks": {
+"Tradesman Cargo Van": "S",
+"SLT Cargo Van": "S",
+"Tradesman Passenger Van": "S",
+"SLT Passenger Van": "S"
+}
+},
+{
+"page": 1,
+"section": "EXTERIOR",
+"parent": "Doors",
+"text": "Manual rear liftgate, wiper and fixed glass window with defrost",
+"marks": {
+"Tradesman Cargo Van": "O",
+"SLT Cargo Van": "O",
+"Tradesman Passenger Van": "O",
+"SLT Passenger Van": "O"
+}
+},
+{
+"page": 1,
+"section": "EXTERIOR",
+"parent": "Doors",
+"text": "Passenger side sliding door",
+"marks": {
+"Tradesman Cargo Van": "S",
+"SLT Cargo Van": "S",
+"Tradesman Passenger Van": "S",
+"SLT Passenger Van": "S"
+}
+},
+{
+"page": 1,
+"section": "EXTERIOR",
+"parent": "Doors",
+"text": "Cargo Window Group 1: Side and rear security panels (rear hinged doors only)",
+"marks": {
+"Tradesman Cargo Van": "S",
+"SLT Cargo Van": "S",
+"Tradesman Passenger Van": "—",
+"SLT Passenger Van": "—"
+}
+},
+{
+"page": 1,
+"section": "EXTERIOR",
+"parent": "Doors",
+"text": "Cargo Window Group 2: Side security panels, fixed glass rear window(s)",
+"marks": {
+"Tradesman Cargo Van": "O",
+"SLT Cargo Van": "O",
+"Tradesman Passenger Van": "—",
+"SLT Passenger Van": "—"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR",
+"parent": "Doors",
+"text": "Cargo Window Group 3: Fixed glass passenger-side sliding door window with grate, side and quarter security panels, fixed glass rear window(s)",
+"marks": {
+"Tradesman Cargo Van": "O",
+"SLT Cargo Van": "O",
+"Tradesman Passenger Van": "—",
+"SLT Passenger Van": "—"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR",
+"parent": "Doors",
+"text": "Cargo Window Group 4: Fixed glass side windows with grate, rear quarter security panels, fixed glass rear window(s)",
+"marks": {
+"Tradesman Cargo Van": "O",
+"SLT Cargo Van": "O",
+"Tradesman Passenger Van": "—",
+"SLT Passenger Van": "—"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR",
+"parent": "Doors",
+"text": "Cargo Window Group 5: Fixed glass grated side windows, fixed glass rear quarter windows, fixed glass rear window(s)",
+"marks": {
+"Tradesman Cargo Van": "O",
+"SLT Cargo Van": "O",
+"Tradesman Passenger Van": "—",
+"SLT Passenger Van": "—"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR",
+"parent": "Doors",
+"text": "Passenger Window Group: Fixed glass side and quarter windows, fixed glass rear window(s)",
+"marks": {
+"Tradesman Cargo Van": "O",
+"SLT Cargo Van": "O",
+"Tradesman Passenger Van": "S",
+"SLT Passenger Van": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR",
+"parent": "Wheels",
+"text": "17-inch silver painted steel wheels with Ram center caps",
+"marks": {
+"Tradesman Cargo Van": "S",
+"SLT Cargo Van": "—",
+"Tradesman Passenger Van": "S",
+"SLT Passenger Van": "—"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR",
+"parent": "Wheels",
+"text": "17-inch grey alloy wheels with diamond-turned faces",
+"marks": {
+"Tradesman Cargo Van": "—",
+"SLT Cargo Van": "S",
+"Tradesman Passenger Van": "—",
+"SLT Passenger Van": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR",
+"parent": "Trim",
+"text": "Black front & rear bumpers",
+"marks": {
+"Tradesman Cargo Van": "S",
+"SLT Cargo Van": "—",
+"Tradesman Passenger Van": "S",
+"SLT Passenger Van": "—"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR",
+"parent": "Trim",
+"text": "Body-color front & rear bumpers",
+"marks": {
+"Tradesman Cargo Van": "—",
+"SLT Cargo Van": "S",
+"Tradesman Passenger Van": "—",
+"SLT Passenger Van": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR",
+"parent": "Trim",
+"text": "Body-color rail cover",
+"marks": {
+"Tradesman Cargo Van": "—",
+"SLT Cargo Van": "S",
+"Tradesman Passenger Van": "—",
+"SLT Passenger Van": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR",
+"parent": "Lighting",
+"text": "LED daytime running lamps",
+"marks": {
+"Tradesman Cargo Van": "S",
+"SLT Cargo Van": "S",
+"Tradesman Passenger Van": "S",
+"SLT Passenger Van": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR",
+"parent": "Lighting",
+"text": "LED fog lamps",
+"marks": {
+"Tradesman Cargo Van": "—",
+"SLT Cargo Van": "S",
+"Tradesman Passenger Van": "—",
+"SLT Passenger Van": "S"
+}
+},
+{
+"page": 2,
+"section": "INTERIOR",
+"parent": "Seating",
+"text": "Heated driver and passenger bucket seats",
+"marks": {
+"Tradesman Cargo Van": "S",
+"SLT Cargo Van": "S",
+"Tradesman Passenger Van": "S",
+"SLT Passenger Van": "S"
+}
+},
+{
+"page": 2,
+"section": "INTERIOR",
+"parent": "Seating",
+"text": "Passenger Van – 5 -seat configuration; removable second row",
+"marks": {
+"Tradesman Cargo Van": "—",
+"SLT Cargo Van": "—",
+"Tradesman Passenger Van": "S",
+"SLT Passenger Van": "S"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR",
+"parent": "Seating",
+"text": "Passenger Van – 8-seat configuration; removable second and third row",
+"marks": {
+"Tradesman Cargo Van": "—",
+"SLT Cargo Van": "—",
+"Tradesman Passenger Van": "O",
+"SLT Passenger Van": "O"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR",
+"parent": "Infotainment and Connectivity",
+"text": "10-in. radio display with navigation, Bluetooth, Apple CarPlay, Android Auto",
+"marks": {
+"Tradesman Cargo Van": "S",
+"SLT Cargo Van": "S",
+"Tradesman Passenger Van": "S",
+"SLT Passenger Van": "S"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR",
+"parent": "Infotainment and Connectivity",
+"text": "10-in. color digital driver display",
+"marks": {
+"Tradesman Cargo Van": "S",
+"SLT Cargo Van": "S",
+"Tradesman Passenger Van": "S",
+"SLT Passenger Van": "S"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR",
+"parent": "Speakers",
+"text": "Four",
+"marks": {
+"Tradesman Cargo Van": "S",
+"SLT Cargo Van": "S",
+"Tradesman Passenger Van": "S",
+"SLT Passenger Van": "S"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR",
+"parent": "Cargo/Storage",
+"text": "Closed central storage bin",
+"marks": {
+"Tradesman Cargo Van": "S",
+"SLT Cargo Van": "S",
+"Tradesman Passenger Van": "S",
+"SLT Passenger Van": "S"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR",
+"parent": "Cargo/Storage",
+"text": "Partition wall",
+"marks": {
+"Tradesman Cargo Van": "O",
+"SLT Cargo Van": "O",
+"Tradesman Passenger Van": "—",
+"SLT Passenger Van": "—"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR",
+"parent": "Cargo/Storage",
+"text": "Cargo/passenger area overhead lighting",
+"marks": {
+"Tradesman Cargo Van": "S",
+"SLT Cargo Van": "S",
+"Tradesman Passenger Van": "S",
+"SLT Passenger Van": "S"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR",
+"parent": "Cargo/Storage",
+"text": "Rear reading lamps",
+"marks": {
+"Tradesman Cargo Van": "—",
+"SLT Cargo Van": "—",
+"Tradesman Passenger Van": "S",
+"SLT Passenger Van": "S"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR",
+"parent": "Cargo/Storage",
+"text": "Cargo/passenger area vinyl liner",
+"marks": {
+"Tradesman Cargo Van": "S",
+"SLT Cargo Van": "S",
+"Tradesman Passenger Van": "S",
+"SLT Passenger Van": "S"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR",
+"parent": "Convenience Features",
+"text": "Electronic shifter",
+"marks": {
+"Tradesman Cargo Van": "S",
+"SLT Cargo Van": "S",
+"Tradesman Passenger Van": "S",
+"SLT Passenger Van": "S"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR",
+"parent": "Convenience Features",
+"text": "Tilt-and-telescoping steering column",
+"marks": {
+"Tradesman Cargo Van": "S",
+"SLT Cargo Van": "S",
+"Tradesman Passenger Van": "S",
+"SLT Passenger Van": "S"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR",
+"parent": "Convenience Features",
+"text": "Heated steering wheel",
+"marks": {
+"Tradesman Cargo Van": "O",
+"SLT Cargo Van": "O",
+"Tradesman Passenger Van": "O",
+"SLT Passenger Van": "O"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR",
+"parent": "Convenience Features",
+"text": "Steering wheel-mounted paddle shifters",
+"marks": {
+"Tradesman Cargo Van": "S",
+"SLT Cargo Van": "S",
+"Tradesman Passenger Van": "S",
+"SLT Passenger Van": "S"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR",
+"parent": "Convenience Features",
+"text": "Steering wheel-mounted audio controls",
+"marks": {
+"Tradesman Cargo Van": "S",
+"SLT Cargo Van": "S",
+"Tradesman Passenger Van": "S",
+"SLT Passenger Van": "S"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR",
+"parent": "Convenience Features",
+"text": "One-touch express up/down windows",
+"marks": {
+"Tradesman Cargo Van": "S",
+"SLT Cargo Van": "S",
+"Tradesman Passenger Van": "S",
+"SLT Passenger Van": "S"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR",
+"parent": "Convenience Features",
+"text": "Rear climate control",
+"marks": {
+"Tradesman Cargo Van": "—",
+"SLT Cargo Van": "—",
+"Tradesman Passenger Van": "S",
+"SLT Passenger Van": "S"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR",
+"parent": "Convenience Features",
+"text": "Wireless charger",
+"marks": {
+"Tradesman Cargo Van": "—",
+"SLT Cargo Van": "S",
+"Tradesman Passenger Van": "—",
+"SLT Passenger Van": "S"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR",
+"parent": "Convenience Features",
+"text": "Programmable speed limiter",
+"marks": {
+"Tradesman Cargo Van": "S",
+"SLT Cargo Van": "S",
+"Tradesman Passenger Van": "S",
+"SLT Passenger Van": "S"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Automatic emergency braking (AEB)",
+"marks": {
+"Tradesman Cargo Van": "S",
+"SLT Cargo Van": "S",
+"Tradesman Passenger Van": "S",
+"SLT Passenger Van": "S"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Forward collision warning (FCW)",
+"marks": {
+"Tradesman Cargo Van": "S",
+"SLT Cargo Van": "S",
+"Tradesman Passenger Van": "S",
+"SLT Passenger Van": "S"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Anti-lock braking system (ABS)",
+"marks": {
+"Tradesman Cargo Van": "S",
+"SLT Cargo Van": "S",
+"Tradesman Passenger Van": "S",
+"SLT Passenger Van": "S"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Electronic stability control (ESC)",
+"marks": {
+"Tradesman Cargo Van": "S",
+"SLT Cargo Van": "S",
+"Tradesman Passenger Van": "S",
+"SLT Passenger Van": "S"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Driver and passenger airbags",
+"marks": {
+"Tradesman Cargo Van": "S",
+"SLT Cargo Van": "S",
+"Tradesman Passenger Van": "S",
+"SLT Passenger Van": "S"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Front side-curtain airbags",
+"marks": {
+"Tradesman Cargo Van": "S",
+"SLT Cargo Van": "S",
+"Tradesman Passenger Van": "S",
+"SLT Passenger Van": "S"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Second- and third-row side-curtain airbags",
+"marks": {
+"Tradesman Cargo Van": "—",
+"SLT Cargo Van": "—",
+"Tradesman Passenger Van": "S",
+"SLT Passenger Van": "S"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Driver Attention Alert",
+"marks": {
+"Tradesman Cargo Van": "S",
+"SLT Cargo Van": "S",
+"Tradesman Passenger Van": "S",
+"SLT Passenger Van": "S"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Exterior temperature alert with ice warning",
+"marks": {
+"Tradesman Cargo Van": "S",
+"SLT Cargo Van": "S",
+"Tradesman Passenger Van": "S",
+"SLT Passenger Van": "S"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "ParkSense rear parking sensors",
+"marks": {
+"Tradesman Cargo Van": "S",
+"SLT Cargo Van": "S",
+"Tradesman Passenger Van": "S",
+"SLT Passenger Van": "S"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "ParkSense front and rear parking sensors",
+"marks": {
+"Tradesman Cargo Van": "—",
+"SLT Cargo Van": "S",
+"Tradesman Passenger Van": "—",
+"SLT Passenger Van": "S"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "ParkView back-up camera",
+"marks": {
+"Tradesman Cargo Van": "S",
+"SLT Cargo Van": "S",
+"Tradesman Passenger Van": "S",
+"SLT Passenger Van": "S"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Digital rearview mirror",
+"marks": {
+"Tradesman Cargo Van": "S",
+"SLT Cargo Van": "S",
+"Tradesman Passenger Van": "S",
+"SLT Passenger Van": "S"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Hill-start Assist",
+"marks": {
+"Tradesman Cargo Van": "S",
+"SLT Cargo Van": "S",
+"Tradesman Passenger Van": "S",
+"SLT Passenger Van": "S"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Automatic headlamps with automatic high-beams",
+"marks": {
+"Tradesman Cargo Van": "S",
+"SLT Cargo Van": "S",
+"Tradesman Passenger Van": "S",
+"SLT Passenger Van": "S"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Inflator kit",
+"marks": {
+"Tradesman Cargo Van": "S",
+"SLT Cargo Van": "S",
+"Tradesman Passenger Van": "S",
+"SLT Passenger Van": "S"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Spare wheel",
+"marks": {
+"Tradesman Cargo Van": "O",
+"SLT Cargo Van": "O",
+"Tradesman Passenger Van": "O",
+"SLT Passenger Van": "O"
+}
+}
+],
+"url": "https://media.stellantisnorthamerica.com/view-spec.do?id=27533"
+}

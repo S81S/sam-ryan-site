@@ -1,0 +1,2095 @@
+{
+"kind": "fa",
+"title": "2025 Jeep Grand Cherokee L",
+"rows": [
+{
+"page": 1,
+"section": "ENGINES",
+"parent": "",
+"text": "3.6-liter Pentastar V-6 variable-valve timing / Eight-speed automatic",
+"marks": {
+"Laredo": "S",
+"Limited": "S",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "",
+"text": "Dual exhaust system",
+"marks": {
+"Laredo": "S",
+"Limited": "S",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "",
+"text": "Fuel filler door — power-locking, capless",
+"marks": {
+"Laredo": "S",
+"Limited": "S",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "",
+"text": "Fuel tank — 23-gallon capacity with power-locking capless filler door",
+"marks": {
+"Laredo": "S",
+"Limited": "S",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "",
+"text": "Hill-descent Control",
+"marks": {
+"Laredo": "NA",
+"Limited": "NA",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "",
+"text": "Selec-Terrain traction management system with five traction control settings (included with Quadra-Trac II on Limited; 4x4 models only)",
+"marks": {
+"Laredo": "NA",
+"Limited": "S",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "Suspensions",
+"text": "Normal duty",
+"marks": {
+"Laredo": "S",
+"Limited": "S",
+"Overland": "NA",
+"Summit": "NA"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "Suspensions",
+"text": "Quadra-Lift air suspension system — features air springs that replace conventional coil springs at each wheel, with five modes; adds up to 4.17 in. (106mm) of lift span",
+"marks": {
+"Laredo": "NA",
+"Limited": "NA",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "Suspensions",
+"text": "Rear load-leveling (included with Trailer-tow Group)",
+"marks": {
+"Laredo": "P",
+"Limited": "P",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "Suspensions",
+"text": "Semi-active damping",
+"marks": {
+"Laredo": "NA",
+"Limited": "NA",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "Transfer Case / 4WD System",
+"text": "Quadra-Trac I full-time single-speed 4WD (4x4 models only)",
+"marks": {
+"Laredo": "S",
+"Limited": "S",
+"Overland": "NA",
+"Summit": "NA"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "Transfer Case / 4WD System",
+"text": "Quadra-Trac II active 4WD includes two-speed transfer case and Hill-descent Control",
+"marks": {
+"Laredo": "NA",
+"Limited": "NA",
+"Overland": "S",
+"Summit": "NA"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "Transfer Case / 4WD System",
+"text": "Quadra-Drive II 4WD system includes electronic limited slip differential for rear axle",
+"marks": {
+"Laredo": "NA",
+"Limited": "NA",
+"Overland": "NA",
+"Summit": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Door Handles",
+"text": "Body color",
+"marks": {
+"Laredo": "S",
+"Limited": "S",
+"Overland": "NA",
+"Summit": "NA"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Door Handles",
+"text": "Body color with bright chrome insert",
+"marks": {
+"Laredo": "NA",
+"Limited": "NA",
+"Overland": "S",
+"Summit": "NA"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Door Handles",
+"text": "Body color with platinum chrome insert",
+"marks": {
+"Laredo": "NA",
+"Limited": "NA",
+"Overland": "NA",
+"Summit": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Front Fascia",
+"text": "Body color with molded-in-color (MIC) lower fascia and bright chrome lower insert trim",
+"marks": {
+"Laredo": "S",
+"Limited": "S",
+"Overland": "NA",
+"Summit": "NA"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Front Fascia",
+"text": "Body-color unique Overland-specific fascia set with body-color lower fascia and bright chrome lower insert trim",
+"marks": {
+"Laredo": "NA",
+"Limited": "NA",
+"Overland": "S",
+"Summit": "NA"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Front Fascia",
+"text": "Body-color upper and lower fascia, with painted upper and lower grille textures and platinum chrome insert trim",
+"marks": {
+"Laredo": "NA",
+"Limited": "NA",
+"Overland": "NA",
+"Summit": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "Front Tow Hooks",
+"marks": {
+"Laredo": "NA",
+"Limited": "NA",
+"Overland": "S",
+"Summit": "NA"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Grille",
+"text": "MIC black insert with floating bright chrome grille rings and trim, MIC upper and lower grille textures",
+"marks": {
+"Laredo": "S",
+"Limited": "NA",
+"Overland": "NA",
+"Summit": "NA"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Grille",
+"text": "Gloss Black insert with floating bright chrome grille rings and trim, MIC upper and lower grille textures",
+"marks": {
+"Laredo": "NA",
+"Limited": "S",
+"Overland": "S",
+"Summit": "NA"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Grille",
+"text": "Gloss Black insert with floating platinum chrome grille rings and trim, painted upper and lower grille textures",
+"marks": {
+"Laredo": "NA",
+"Limited": "NA",
+"Overland": "NA",
+"Summit": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Liftgate",
+"text": "Manual",
+"marks": {
+"Laredo": "S",
+"Limited": "NA",
+"Overland": "NA",
+"Summit": "NA"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Liftgate",
+"text": "Power with programmable height feature (packaged with Lux Tech Group)",
+"marks": {
+"Laredo": "P",
+"Limited": "S",
+"Overland": "NA",
+"Summit": "NA"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Liftgate",
+"text": "Hands-free, power foot-activated with programmable height feature",
+"marks": {
+"Laredo": "NA",
+"Limited": "NA",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Liftgate",
+"text": "Spoiler — Gloss Black with LED center high-mounted stop lamp (CHMSL)",
+"marks": {
+"Laredo": "S",
+"Limited": "S",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Lighting",
+"text": "Automatic headlamps",
+"marks": {
+"Laredo": "S",
+"Limited": "S",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Lighting",
+"text": "Auto high-beam headlamp control system",
+"marks": {
+"Laredo": "NA",
+"Limited": "S",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Lighting",
+"text": "Premium LED reflector headlamps with integrated daytime running lamps (amber color) and LED taillamps",
+"marks": {
+"Laredo": "S",
+"Limited": "S",
+"Overland": "NA",
+"Summit": "NA"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Lighting",
+"text": "Premium LED reflector headlamps with LED accent lighting/ integrated daytime running lamps (bright white color) and LED taillamps",
+"marks": {
+"Laredo": "NA",
+"Limited": "NA",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Lighting",
+"text": "Premium LED fog lamps",
+"marks": {
+"Laredo": "NA",
+"Limited": "S",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Lighting",
+"text": "Approach-lit door handles and rearview mirror puddle lighting",
+"marks": {
+"Laredo": "NA",
+"Limited": "NA",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Mirrors",
+"text": "Power, manual foldaway with heating element and blind-spot indicator — Fine Silver cap",
+"marks": {
+"Laredo": "S",
+"Limited": "NA",
+"Overland": "NA",
+"Summit": "NA"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Mirrors",
+"text": "Power, manual foldaway with heating element, blind-spot indicator and memory; supplemental turn signals — Fine Silver cap with bright chrome insert",
+"marks": {
+"Laredo": "NA",
+"Limited": "S",
+"Overland": "NA",
+"Summit": "NA"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Mirrors",
+"text": "Power-folding multifunctional with heating element, blind-spot indicator and memory; auto-tilt down in reverse, auto-dimming glass on driver’s side with supplemental turn signals and courtesy lighting — Gloss Black cap with bright chrome insert",
+"marks": {
+"Laredo": "NA",
+"Limited": "NA",
+"Overland": "S",
+"Summit": "NA"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Mirrors",
+"text": "Power-folding multifunction with heating element, blind-spot indicator and memory; auto-tilt down in reverse, auto-dimming on driver’s side with supplemental turn signals, courtesy lighting and 360-degree camera — Gloss Black cap with platinum insert",
+"marks": {
+"Laredo": "NA",
+"Limited": "NA",
+"Overland": "NA",
+"Summit": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "Remote Start System — control integrated into key fob, radio frequency system with 300-ft. range (included with Lux Tech Group)",
+"marks": {
+"Laredo": "P",
+"Limited": "S",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "Roof Color — Gloss Black",
+"marks": {
+"Laredo": "NA",
+"Limited": "NA",
+"Overland": "O",
+"Summit": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Roof Rack",
+"text": "MIC black rails with bright stainless insert",
+"marks": {
+"Laredo": "S",
+"Limited": "S",
+"Overland": "NA",
+"Summit": "NA"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Roof Rack",
+"text": "Gloss Black rails with bright stainless insert",
+"marks": {
+"Laredo": "NA",
+"Limited": "NA",
+"Overland": "S",
+"Summit": "NA"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Roof Rack",
+"text": "Fine Silver rails with Gloss Black insert",
+"marks": {
+"Laredo": "NA",
+"Limited": "NA",
+"Overland": "NA",
+"Summit": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Sunroof",
+"text": "Single-pane power with express open/close and comfort-stop features",
+"marks": {
+"Laredo": "O",
+"Limited": "NA",
+"Overland": "NA",
+"Summit": "NA"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Sunroof",
+"text": "CommandView dual-pane panoramic sunroof — includes full power sunroof with power sunshade in front and fixed glass in rear (standalone option on Limited and includes interior rear monitoring camera)",
+"marks": {
+"Laredo": "NA",
+"Limited": "O",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Tires",
+"text": "265/60R18 Michelin Primacy XC A/S or Michelin Primacy LTX A/S",
+"marks": {
+"Laredo": "S",
+"Limited": "S",
+"Overland": "NA",
+"Summit": "NA"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Tires",
+"text": "265/50R20 Bridgestone Ecopia H/L 422 Plus All-Season",
+"marks": {
+"Laredo": "NA",
+"Limited": "O",
+"Overland": "S",
+"Summit": "NA"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Tires",
+"text": "265/50R20 Pirelli Scorpion Verde All-Season",
+"marks": {
+"Laredo": "NA",
+"Limited": "NA",
+"Overland": "NA",
+"Summit": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Tires",
+"text": "275/45R21 Continental CrossContact (included with Summit Reserve Package)",
+"marks": {
+"Laredo": "NA",
+"Limited": "NA",
+"Overland": "NA",
+"Summit": "P"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels",
+"text": "18-in. painted cast aluminum in Fine Silver",
+"marks": {
+"Laredo": "S",
+"Limited": "NA",
+"Overland": "NA",
+"Summit": "NA"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels",
+"text": "18-in. painted cast aluminum in low-gloss Highlight Silver",
+"marks": {
+"Laredo": "NA",
+"Limited": "S",
+"Overland": "NA",
+"Summit": "NA"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels",
+"text": "20-in. painted cast aluminum in Gloss Black (included with Altitude Package)",
+"marks": {
+"Laredo": "P",
+"Limited": "NA",
+"Overland": "NA",
+"Summit": "NA"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels",
+"text": "20-in. diamond-cut aluminum with high-gloss Technical Gray pockets",
+"marks": {
+"Laredo": "NA",
+"Limited": "O",
+"Overland": "NA",
+"Summit": "NA"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels",
+"text": "20-in. machined cast aluminum with Black Noise pockets",
+"marks": {
+"Laredo": "NA",
+"Limited": "NA",
+"Overland": "S",
+"Summit": "NA"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels",
+"text": "20-in. painted low-gloss Silver Lithos cast aluminum",
+"marks": {
+"Laredo": "NA",
+"Limited": "NA",
+"Overland": "NA",
+"Summit": "S"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels",
+"text": "21-in. machined cast aluminum with mid-gloss Granite Crystal pockets (included with Summit Reserve Package)",
+"marks": {
+"Laredo": "NA",
+"Limited": "NA",
+"Overland": "NA",
+"Summit": "P"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels",
+"text": "21-in. painted cast aluminum in black (included with High Altitude Package)",
+"marks": {
+"Laredo": "NA",
+"Limited": "NA",
+"Overland": "NA",
+"Summit": "P"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Wiper System",
+"text": "Front, speed-sensitive, variable/intermittent",
+"marks": {
+"Laredo": "S",
+"Limited": "S",
+"Overland": "NA",
+"Summit": "NA"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Wiper System",
+"text": "Front, rain-sensing automatic (included with Lux Tech Group)",
+"marks": {
+"Laredo": "P",
+"Limited": "P",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Wiper System",
+"text": "Rear with fixed intermittent and continuous speeds, with washer",
+"marks": {
+"Laredo": "S",
+"Limited": "S",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Air Conditioning",
+"text": "Dual-zone automatic front temperature control with single-zone rear",
+"marks": {
+"Laredo": "S",
+"Limited": "S",
+"Overland": "S",
+"Summit": "NA"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Air Conditioning",
+"text": "Four-zone automatic temperature control for first- and second-row passengers, with personalized temperature settings, fan levels and modes (included with Lux Tech Group on Overland, standard on Summit models)",
+"marks": {
+"Laredo": "NA",
+"Limited": "NA",
+"Overland": "P",
+"Summit": "S"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Air Filtration System",
+"marks": {
+"Laredo": "S",
+"Limited": "S",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Cargo Area",
+"text": "Carpeted — includes storage tray and four cargo tie-down loops in floor, driver’s side storage bin, 12-volt auxiliary power outlet",
+"marks": {
+"Laredo": "S",
+"Limited": "S",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Cargo Area",
+"text": "Electronic remote release to fold second-row seating",
+"marks": {
+"Laredo": "NA",
+"Limited": "NA",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Consoles",
+"text": "Full-length front-row floor console with two illuminated cup holders, two-tier armrest storage and front bin for storage of two wireless devices",
+"marks": {
+"Laredo": "S",
+"Limited": "S",
+"Overland": "NA",
+"Summit": "NA"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Consoles",
+"text": "Full-length front-row floor console with covered compartment containing two illuminated cup holders, two-tier armrest storage and wireless charging pad for two devices (included with Lux Tech Group)",
+"marks": {
+"Laredo": "NA",
+"Limited": "NA",
+"Overland": "P",
+"Summit": "P"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Consoles",
+"text": "Unique second-row floor console with two illuminated cup holders, two-tier armrest with additional storage for mobile devices",
+"marks": {
+"Laredo": "NA",
+"Limited": "NA",
+"Overland": "NA",
+"Summit": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Consoles",
+"text": "Overhead front with two LED map lamps, sunglasses storage bin, SOS emergency controls and power sunroof/sunshade controls (if equipped)",
+"marks": {
+"Laredo": "S",
+"Limited": "S",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Consoles",
+"text": "Wireless charging pad (included in Lux Tech Group)",
+"marks": {
+"Laredo": "P",
+"Limited": "P",
+"Overland": "P",
+"Summit": "P"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Gauge Cluster",
+"text": "Full-color frameless 10.25-in. digital gauge cluster with customizable menus and memory",
+"marks": {
+"Laredo": "S",
+"Limited": "S",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Lighting",
+"text": "LED with daytime/nighttime settings",
+"marks": {
+"Laredo": "S",
+"Limited": "S",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Lighting",
+"text": "Single-color ambient lighting for instrument panel, front and rear doors",
+"marks": {
+"Laredo": "NA",
+"Limited": "S",
+"Overland": "NA",
+"Summit": "NA"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Lighting",
+"text": "Ambient lighting with a five-color selection for instrument panel, front and rear doors",
+"marks": {
+"Laredo": "NA",
+"Limited": "NA",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Memory System — last-station settings, driver’s seat position, exterior mirrors and power tilt/telescoping steering wheel (if equipped); settings for two drivers, actuated from driver’s door panel or each unique key fob",
+"marks": {
+"Laredo": "NA",
+"Limited": "S",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Mirrors",
+"text": "Rearview, day/night setting",
+"marks": {
+"Laredo": "S",
+"Limited": "NA",
+"Overland": "NA",
+"Summit": "NA"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Mirrors",
+"text": "Rearview, auto-dimming",
+"marks": {
+"Laredo": "NA",
+"Limited": "S",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Mirrors",
+"text": "Digital rearview mirror (included with Lux Tech Group on Limited and Overland, included with Advanced ProTech Group on Summit)",
+"marks": {
+"Laredo": "NA",
+"Limited": "P",
+"Overland": "P",
+"Summit": "P"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Seat Fabrics",
+"text": "Cloth seats",
+"marks": {
+"Laredo": "S",
+"Limited": "NA",
+"Overland": "NA",
+"Summit": "NA"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Seat Fabrics",
+"text": "Capri leatherette seats",
+"marks": {
+"Laredo": "NA",
+"Limited": "S",
+"Overland": "NA",
+"Summit": "NA"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Seat Fabrics",
+"text": "Perforated Capri leatherette seats (included with Lux Tech Group)",
+"marks": {
+"Laredo": "NA",
+"Limited": "P",
+"Overland": "NA",
+"Summit": "NA"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Seat Fabrics",
+"text": "Perforated Nappa leather-trimmed seating and smooth Nappa leather bolsters",
+"marks": {
+"Laredo": "NA",
+"Limited": "NA",
+"Overland": "S",
+"Summit": "NA"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Seat Fabrics",
+"text": "Perforated Nappa leather-trimmed seating and quilted Nappa leather bolsters",
+"marks": {
+"Laredo": "NA",
+"Limited": "NA",
+"Overland": "NA",
+"Summit": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Seat Fabrics",
+"text": "Quilted Palermo leather seats (included with Summit Reserve Package)",
+"marks": {
+"Laredo": "NA",
+"Limited": "NA",
+"Overland": "NA",
+"Summit": "P"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "50/50 manual-folding third-row bench seat",
+"marks": {
+"Laredo": "S",
+"Limited": "S",
+"Overland": "NA",
+"Summit": "NA"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "50/50 power-folding third-row bench seat",
+"marks": {
+"Laredo": "NA",
+"Limited": "NA",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Manual-folding “tip and slide” second-row bucket seats",
+"marks": {
+"Laredo": "S",
+"Limited": "S",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Second-row bench seat",
+"marks": {
+"Laredo": "O",
+"Limited": "O",
+"Overland": "O",
+"Summit": "O"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Second- and third-row folding seats",
+"marks": {
+"Laredo": "S",
+"Limited": "S",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Length-adjustable front-row cushions (included with Lux Tech Group)",
+"marks": {
+"Laredo": "NA",
+"Limited": "NA",
+"Overland": "P",
+"Summit": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Power eight-way driver and manual front-passenger with driver lumbar adjuster",
+"marks": {
+"Laredo": "S",
+"Limited": "NA",
+"Overland": "NA",
+"Summit": "NA"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Power eight-way driver with memory and power front-passenger with lumbar adjuster",
+"marks": {
+"Laredo": "NA",
+"Limited": "S",
+"Overland": "S",
+"Summit": "NA"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Heated front (included with Lux Tech Group)",
+"marks": {
+"Laredo": "P",
+"Limited": "S",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Heated second-row seating",
+"marks": {
+"Laredo": "NA",
+"Limited": "S",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Ventilated front seating (included with Lux Tech Group)",
+"marks": {
+"Laredo": "NA",
+"Limited": "P",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Ventilated second-row seating (included with Summit Reserve Package)",
+"marks": {
+"Laredo": "NA",
+"Limited": "NA",
+"Overland": "NA",
+"Summit": "P"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Power four-way driver/front-passenger lumbar adjuster with memory",
+"marks": {
+"Laredo": "NA",
+"Limited": "S",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Power 12-way driver and front passenger with memory (packaged with Lux Tech Group)",
+"marks": {
+"Laredo": "NA",
+"Limited": "NA",
+"Overland": "P",
+"Summit": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Seat-back massage with five customizable profiles and three levels of pressure intensity (included with Lux Tech Group)",
+"marks": {
+"Laredo": "NA",
+"Limited": "NA",
+"Overland": "P",
+"Summit": "S"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR FEATURES",
+"parent": "Steering Wheel",
+"text": "Heated (included with Lux Tech Group on Laredo models)",
+"marks": {
+"Laredo": "P",
+"Limited": "S",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR FEATURES",
+"parent": "Steering Wheel",
+"text": "Techno leather-wrapped with audio, speed, Electronic Vehicle Information Center, voice recognition and adaptive cruise control",
+"marks": {
+"Laredo": "S",
+"Limited": "S",
+"Overland": "NA",
+"Summit": "NA"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR FEATURES",
+"parent": "Steering Wheel",
+"text": "Tilt/telescoping steering wheel/column, all manual",
+"marks": {
+"Laredo": "S",
+"Limited": "S",
+"Overland": "NA",
+"Summit": "NA"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR FEATURES",
+"parent": "Steering Wheel",
+"text": "Power tilt-steering wheel/telescoping steering column (included with Lux Tech Group)",
+"marks": {
+"Laredo": "NA",
+"Limited": "P",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR FEATURES",
+"parent": "Steering Wheel",
+"text": "Wood (Absolute Oak on Summit, Waxed Walnut on Summit Reserve) and leather-wrapped with audio, speed, Electronic Vehicle Information Center, voice recognition and adaptive cruise control",
+"marks": {
+"Laredo": "NA",
+"Limited": "NA",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR FEATURES",
+"parent": "Steering Wheel",
+"text": "Electronic paddle shifters",
+"marks": {
+"Laredo": "S",
+"Limited": "S",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Universal Garage Door Opener — programmable, three-function",
+"marks": {
+"Laredo": "NA",
+"Limited": "S",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR FEATURES",
+"parent": "Windows",
+"text": "Front, power with driver one-touch up/down, front-passenger one-touch down",
+"marks": {
+"Laredo": "S",
+"Limited": "S",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR FEATURES",
+"parent": "Windows",
+"text": "Power second-row",
+"marks": {
+"Laredo": "S",
+"Limited": "S",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR FEATURES",
+"parent": "Windows",
+"text": "Second-row, power with one-touch up/down",
+"marks": {
+"Laredo": "NA",
+"Limited": "NA",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR FEATURES",
+"parent": "Windows",
+"text": "Manual second-row window shades (included with Lux Tech Group)",
+"marks": {
+"Laredo": "NA",
+"Limited": "P",
+"Overland": "P",
+"Summit": "P"
+}
+},
+{
+"page": 7,
+"section": "ADVANCED TECHNOLOGY",
+"parent": "",
+"text": "Front passenger interactive display — includes 10.25-in. touchscreen (included with Summit Reserve Package)",
+"marks": {
+"Laredo": "NA",
+"Limited": "O",
+"Overland": "O",
+"Summit": "O/P"
+}
+},
+{
+"page": 7,
+"section": "ADVANCED TECHNOLOGY",
+"parent": "",
+"text": "Rear-seat entertainment system — includes dual 10.1-in. touchscreens, fully functional USB/HDMI ports and Fire TV for Auto",
+"marks": {
+"Laredo": "NA",
+"Limited": "O",
+"Overland": "O",
+"Summit": "O"
+}
+},
+{
+"page": 7,
+"section": "ADVANCED TECHNOLOGY",
+"parent": "",
+"text": "Rear-seat monitoring camera (included with dual-pane sunroof on Limited; included with Advanced ProTech Group on Overland and Summit models)",
+"marks": {
+"Laredo": "NA",
+"Limited": "O",
+"Overland": "P",
+"Summit": "P"
+}
+},
+{
+"page": 7,
+"section": "ADVANCED TECHNOLOGY",
+"parent": "",
+"text": "Digital rearview mirror (included with Lux Tech Group on Limited and Overland; packaged with Advanced ProTech Group on Summit models)",
+"marks": {
+"Laredo": "NA",
+"Limited": "P",
+"Overland": "P",
+"Summit": "P"
+}
+},
+{
+"page": 7,
+"section": "ADVANCED TECHNOLOGY",
+"parent": "",
+"text": "Full-color, 10-in. windshield Head-up Display (HUD) (included with Advanced ProTech Group)",
+"marks": {
+"Laredo": "NA",
+"Limited": "NA",
+"Overland": "P",
+"Summit": "P"
+}
+},
+{
+"page": 7,
+"section": "ADVANCED TECHNOLOGY",
+"parent": "",
+"text": "Active Driving Assist system (included with Advanced ProTech Group, standard on Summit models)",
+"marks": {
+"Laredo": "NA",
+"Limited": "NA",
+"Overland": "P",
+"Summit": "S"
+}
+},
+{
+"page": 8,
+"section": "ADVANCED TECHNOLOGY",
+"parent": "",
+"text": "Hands-Free Active Driving Assist",
+"marks": {
+"Laredo": "NA",
+"Limited": "NA",
+"Overland": "O",
+"Summit": "O"
+}
+},
+{
+"page": 8,
+"section": "ADVANCED TECHNOLOGY",
+"parent": "",
+"text": "Wireless charging pad (included in Lux Tech Group)",
+"marks": {
+"Laredo": "P",
+"Limited": "P",
+"Overland": "P",
+"Summit": "P"
+}
+},
+{
+"page": 8,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "USB Ports",
+"text": "Type A and Type C ports (12 total for all three rows)",
+"marks": {
+"Laredo": "S",
+"Limited": "S",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 8,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "USB Ports",
+"text": "Third-row USB port (included in the Lux Tech Group)",
+"marks": {
+"Laredo": "P",
+"Limited": "S",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 8,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "Power Outlets",
+"text": "12-volt, two auxiliary power outlets (front console and cargo area)",
+"marks": {
+"Laredo": "S",
+"Limited": "S",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 8,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "Power Outlets",
+"text": "115-volt auxiliary power outlet (packaged with Lux Tech Group)",
+"marks": {
+"Laredo": "P",
+"Limited": "S",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 8,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "",
+"text": "SiriusXM Radio",
+"marks": {
+"Laredo": "S",
+"Limited": "S",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 8,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "Speakers/Audio Systems",
+"text": "Six speakers: two instrument panel-mounted with 2.5-in. tweeters, two front-door 6-in. x 9-in. full-range speakers and two rear-door 6.5-in. full-range speakers",
+"marks": {
+"Laredo": "S",
+"Limited": "NA",
+"Overland": "NA",
+"Summit": "NA"
+}
+},
+{
+"page": 8,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "Speakers/Audio Systems",
+"text": "Six premium speakers with active noise cancellation",
+"marks": {
+"Laredo": "NA",
+"Limited": "S",
+"Overland": "NA",
+"Summit": "NA"
+}
+},
+{
+"page": 8,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "Speakers/Audio Systems",
+"text": "Alpine audio system with nine speakers, subwoofer and 506-watt amplifier",
+"marks": {
+"Laredo": "NA",
+"Limited": "O",
+"Overland": "S",
+"Summit": "NA"
+}
+},
+{
+"page": 8,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "Speakers/Audio Systems",
+"text": "Premium McIntosh high-performance audio sound system with 19 speakers, 10-in. subwoofer and 17-channel, 950-watt amplifier (packaged with Entertainment Group on Overland; standalone option for Summit model, included with Summit Reserve Package)",
+"marks": {
+"Laredo": "NA",
+"Limited": "NA",
+"Overland": "O",
+"Summit": "O/S"
+}
+},
+{
+"page": 8,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "",
+"text": "Uconnect 5 — includes 8.4-in. digital touchscreen, AM/FM, Aux/USB, integrated voice command with Bluetooth, voice text reply, wireless Android Auto, wireless Apple CarPlay, HD radio, Amazon Alexa compatible, SiriusXM 360L, Firmware OTA and dual phone connectivity",
+"marks": {
+"Laredo": "S",
+"Limited": "NA",
+"Overland": "NA",
+"Summit": "NA"
+}
+},
+{
+"page": 8,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "",
+"text": "Uconnect 5 NAV — includes 10.1-in. digital touchscreen, AM/FM, Aux/USB, integrated voice command with Bluetooth, voice text reply, wireless Android Auto, wireless Apple CarPlay, HD radio, navigation, SiriusXM Guardian, SiriusXM Traffic and SiriusXM Travel Link, TomTom navigation, Amazon Alexa compatible, SiriusXM 360L, Maps OTA, Firmware OTA and dual phone connectivity (included in the Entertainment Group)",
+"marks": {
+"Laredo": "NA",
+"Limited": "S",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 9,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Active Lane Management",
+"marks": {
+"Laredo": "S",
+"Limited": "S",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 9,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Adaptive Cruise Control with Stop and Go",
+"marks": {
+"Laredo": "S",
+"Limited": "S",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 9,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Advanced Brake Assist",
+"marks": {
+"Laredo": "S",
+"Limited": "S",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 9,
+"section": "SAFETY AND SECURITY",
+"parent": "Air Bags",
+"text": "Advanced multistage, driver and front passenger",
+"marks": {
+"Laredo": "S",
+"Limited": "S",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 9,
+"section": "SAFETY AND SECURITY",
+"parent": "Air Bags",
+"text": "Advanced side-curtain",
+"marks": {
+"Laredo": "S",
+"Limited": "S",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 9,
+"section": "SAFETY AND SECURITY",
+"parent": "Air Bags",
+"text": "Advanced supplemental front-seat side air bags",
+"marks": {
+"Laredo": "S",
+"Limited": "S",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 9,
+"section": "SAFETY AND SECURITY",
+"parent": "Air Bags",
+"text": "Driver’s side inflatable knee bolster",
+"marks": {
+"Laredo": "S",
+"Limited": "S",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 9,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Blind-spot Monitoring",
+"marks": {
+"Laredo": "S",
+"Limited": "S",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 9,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Child Seat Anchor System (LATCH)",
+"marks": {
+"Laredo": "S",
+"Limited": "S",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 9,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Electric-park brake with safe hold",
+"marks": {
+"Laredo": "S",
+"Limited": "S",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 9,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Electronic stability control (ESC) — includes vehicle stability management system, Electronic Roll Mitigation, all-speed traction control, Brake Assist and four-channel antilock brake system",
+"marks": {
+"Laredo": "S",
+"Limited": "S",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 9,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Drowsy Driver Detection",
+"marks": {
+"Laredo": "NA",
+"Limited": "NA",
+"Overland": "NA",
+"Summit": "S"
+}
+},
+{
+"page": 9,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Full-Speed Collision Warning with Active Braking and Pedestrian Detection",
+"marks": {
+"Laredo": "S",
+"Limited": "S",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 9,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Highway Assist System (included with Advanced ProTech Group, standard on Summit models)",
+"marks": {
+"Laredo": "NA",
+"Limited": "NA",
+"Overland": "P",
+"Summit": "S"
+}
+},
+{
+"page": 9,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Hill-descent Control",
+"marks": {
+"Laredo": "NA",
+"Limited": "NA",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 9,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Hill-start Assist",
+"marks": {
+"Laredo": "S",
+"Limited": "S",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 9,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Intersection Collision Assist (included with Advanced ProTech Group on Overland, standard on Summit models)",
+"marks": {
+"Laredo": "NA",
+"Limited": "NA",
+"Overland": "P",
+"Summit": "S"
+}
+},
+{
+"page": 9,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "LaneSense Lane Departure Warning with Lane Keep Assist",
+"marks": {
+"Laredo": "S",
+"Limited": "S",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 9,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Night Vision with Pedestrian and Animal Detection (included with Advanced ProTech Group)",
+"marks": {
+"Laredo": "NA",
+"Limited": "NA",
+"Overland": "P",
+"Summit": "P"
+}
+},
+{
+"page": 9,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "ParkSense rear park assist with reverse stop",
+"marks": {
+"Laredo": "S",
+"Limited": "S",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 9,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "ParkSense front park assist with stop (included with Lux Tech Group)",
+"marks": {
+"Laredo": "NA",
+"Limited": "P",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 9,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "ParkSense parallel/perpendicular park assist",
+"marks": {
+"Laredo": "NA",
+"Limited": "NA",
+"Overland": "NA",
+"Summit": "S"
+}
+},
+{
+"page": 9,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "ParkView rear backup camera — includes ParkSense rear park assist system",
+"marks": {
+"Laredo": "S",
+"Limited": "S",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 9,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Passive Entry — two-door, front driver and passenger",
+"marks": {
+"Laredo": "S",
+"Limited": "S",
+"Overland": "NA",
+"Summit": "NA"
+}
+},
+{
+"page": 10,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Passive Entry — four-door, front and rear (included with Lux Tech Group)",
+"marks": {
+"Laredo": "NA",
+"Limited": "P",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 10,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Rain brake support",
+"marks": {
+"Laredo": "S",
+"Limited": "S",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 10,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Ready Alert Braking",
+"marks": {
+"Laredo": "S",
+"Limited": "S",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 10,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Rear Cross Path detection",
+"marks": {
+"Laredo": "S",
+"Limited": "S",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 10,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Security alarm",
+"marks": {
+"Laredo": "S",
+"Limited": "S",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 10,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Sentry Key antitheft engine immobilizer",
+"marks": {
+"Laredo": "S",
+"Limited": "S",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 10,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Surround 360-degree camera with front and rear lens washers (included with Lux Tech Group on Limited; included with Advanced ProTech Group on Overland; standard on Summit models)",
+"marks": {
+"Laredo": "NA",
+"Limited": "P",
+"Overland": "P",
+"Summit": "S"
+}
+},
+{
+"page": 10,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Switch-activated electric park brake",
+"marks": {
+"Laredo": "S",
+"Limited": "S",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 10,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Tire-pressure monitoring",
+"marks": {
+"Laredo": "S",
+"Limited": "S",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 10,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Traffic Sign Recognition",
+"marks": {
+"Laredo": "NA",
+"Limited": "NA",
+"Overland": "NA",
+"Summit": "S"
+}
+},
+{
+"page": 10,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Trailer-sway control",
+"marks": {
+"Laredo": "S",
+"Limited": "S",
+"Overland": "S",
+"Summit": "S"
+}
+},
+{
+"page": 10,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "",
+"text": "Advanced ProTech Group I — includes Map-in-Cluster display, windshield Head-up Display, Active Driving Assist system, Night Vision with Pedestrian and Animal Detection, interior rear monitoring camera, Intersection Collision Assist system, Surround 360 camera and rear back-up camera washer",
+"marks": {
+"Laredo": "NA",
+"Limited": "NA",
+"Overland": "P",
+"Summit": "NA"
+}
+},
+{
+"page": 10,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "",
+"text": "Advanced ProTech Group II — includes windshield Head-up Display, Night Vision with Pedestrian and Animal Detection, interior rear monitoring camera and rear-view auto-dimming digital display mirror",
+"marks": {
+"Laredo": "NA",
+"Limited": "NA",
+"Overland": "NA",
+"Summit": "P"
+}
+},
+{
+"page": 10,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "",
+"text": "Altitude Package — Gloss Black appearance details, including 20-in. Gloss Black aluminum wheels and Gloss Black exterior accents, plus badging, roof rails, unique seven-slot grille, remote start, heated front seats, heated steering wheel, adjustable height liftgate, rain-sensing wipers, wireless charging pad, 115-volt power outlet and third-row USB ports",
+"marks": {
+"Laredo": "P",
+"Limited": "NA",
+"Overland": "NA",
+"Summit": "NA"
+}
+},
+{
+"page": 10,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "",
+"text": "Black Package — includes black exterior accents and 20-in. wheels",
+"marks": {
+"Laredo": "NA",
+"Limited": "P",
+"Overland": "NA",
+"Summit": "NA"
+}
+},
+{
+"page": 10,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "",
+"text": "High Altitude Package — includes black exterior accents and 21-in. wheels",
+"marks": {
+"Laredo": "NA",
+"Limited": "NA",
+"Overland": "NA",
+"Summit": "P"
+}
+},
+{
+"page": 11,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "",
+"text": "Lux Tech Group I — includes rain-sensing windshield wipers, 115-volt auxiliary power outlet, heated front seats, heated steering wheel, power liftgate, selectable tire-fill alert, wireless charging pad and remote start system",
+"marks": {
+"Laredo": "P",
+"Limited": "NA",
+"Overland": "NA",
+"Summit": "NA"
+}
+},
+{
+"page": 11,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "",
+"text": "Lux Tech Group II — includes rain-sensing windshield wipers, wireless charging pad, passive entry, Capri leatherette seats with perforated inserts, ventilated front seats, power tilt telescope steering column with memory, second-row manual window shades, digital rearview mirror, rear back-up camera with washer, Surround 360 camera, ParkSense front and rear park assist with stop, Intersection Collision Assist system",
+"marks": {
+"Laredo": "NA",
+"Limited": "P",
+"Overland": "NA",
+"Summit": "NA"
+}
+},
+{
+"page": 11,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "",
+"text": "Lux Tech Group III — includes wireless charging pad, second-row manual window shades, digital rearview mirror, power seat back massage for driver and front passenger, 12-way with a four-way power lumbar adjustable seat position with memory for driver and front passenger",
+"marks": {
+"Laredo": "NA",
+"Limited": "NA",
+"Overland": "P",
+"Summit": "NA"
+}
+},
+{
+"page": 11,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "",
+"text": "Lux Tech Group IV — includes wireless charging pad and second-row manual window shades",
+"marks": {
+"Laredo": "NA",
+"Limited": "NA",
+"Overland": "NA",
+"Summit": "P"
+}
+},
+{
+"page": 11,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "",
+"text": "Summit Reserve Package — includes premium hand-wrapped Palermo leather seats, leather-wrapped armrest and door trim, open- pore Waxed Walnut wood trim, suede pillars and headliner, ventilated front- and second-row seats, memory and massage front seats, front passenger interactive display with 10.25-in. touchscreen, premium 19-speaker McIntosh audio system, 21-in. wheels and Summit Reserve badge",
+"marks": {
+"Laredo": "NA",
+"Limited": "NA",
+"Overland": "NA",
+"Summit": "P"
+}
+},
+{
+"page": 11,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "",
+"text": "Trailer-tow Group I — includes Class IV hitch receiver, four- and seven-pin wiring harness, rear load-leveling suspension and full-size spare tire",
+"marks": {
+"Laredo": "P",
+"Limited": "O",
+"Overland": "NA",
+"Summit": "NA"
+}
+}
+],
+"url": "https://media.stellantisnorthamerica.com/view-spec.do?id=26342"
+}

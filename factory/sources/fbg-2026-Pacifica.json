@@ -1,0 +1,1959 @@
+{
+"kind": "fbg",
+"title": "2026 CHRYSLER PACIFICA / CHRYSLER PACIFICA PHEV / CHRYSLER VOYAGER",
+"columns": [
+{
+"code": "2DE",
+"name": "Voyager"
+},
+{
+"code": "2DL",
+"name": "Pacifica Select"
+},
+{
+"code": "2DP",
+"name": "Pacifica Limited"
+},
+{
+"code": "2DS",
+"name": "Pacifica Pinnacle"
+},
+{
+"code": "2DP/2DT",
+"name": "Pacifica Select PHEV"
+},
+{
+"code": "2DS#2",
+"name": "Pacifica Pinnacle PHEV"
+}
+],
+"colors": [
+"Hydro Blue",
+"Diamond Black Crystal Pearl",
+"Silver Mist",
+"Red Hot Pearl",
+"Olive Green",
+"Bright White"
+],
+"rows": [
+{
+"page": 2,
+"section": "ENGINES / TRANSMISSIONS",
+"parent": "",
+"text": "3.6L Pentastar® V6 Variable Valve Timing (VVT) with Engine Stop/Start (ESS) Technology and 9-speed Automatic (ERC/DFH)",
+"marks": {
+"2DE": "•",
+"2DL": "•",
+"2DP": "•",
+"2DS": "•"
+}
+},
+{
+"page": 2,
+"section": "ENGINES / TRANSMISSIONS",
+"parent": "",
+"text": "3.6L Pentastar V6 Plug-in Hybrid Electric Vehicle (PHEV) Atkinson Cycle with Electrically Variable Transmission (EVT) (EH3/DFQ)",
+"marks": {
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "",
+"text": "All-Wheel Drive (AWD) (non-PHEV only)",
+"marks": {
+"2DL": "O",
+"2DP": "O",
+"2DS": "O"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "",
+"text": "Front-Wheel Drive (FWD)",
+"marks": {
+"2DE": "•",
+"2DL": "•",
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Alternator",
+"text": "180-amp (non-PHEV only) (BAD)",
+"marks": {
+"2DE": "•",
+"2DL": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Alternator",
+"text": "220-amp (included with Uconnect® Theater Family Group; non-PHEV only) (BAJ)",
+"marks": {
+"2DL": "P",
+"2DP": "•",
+"2DS": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Alternator",
+"text": "Alternator Delete (PHEV only) (BA8)",
+"marks": {
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Battery",
+"text": "650-amp, Absorbent Glass Mat (AGM) (BCZ)",
+"marks": {
+"2DE": "•",
+"2DL": "•",
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Battery",
+"text": "Auxiliary battery (packaged with ESS dual battery system; non-PHEV only) (BC1)",
+"marks": {
+"2DE": "P",
+"2DL": "P",
+"2DP": "P",
+"2DS": "P"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Battery",
+"text": "Battery charge indicator (PHEV only) (XAT)",
+"marks": {
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "",
+"text": "6.6-kW Battery Charger with Cord (PHEV only) (XFE)",
+"marks": {
+"2DP/2DT": "P",
+"2DS#2": "P"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Brakes",
+"text": "Four-wheel antilock disc regenerative brakes (PHEV only) (BRT)",
+"marks": {
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Brakes",
+"text": "Four-wheel antilock with discs (FWD non-PHEV only) (BRG)",
+"marks": {
+"2DE": "•",
+"2DL": "•",
+"2DP": "•",
+"2DS": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Brakes",
+"text": "Four-wheel antilock with heavy-duty discs (AWD only) (BR3)",
+"marks": {
+"2DL": "P",
+"2DP": "P",
+"2DS": "P"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "",
+"text": "Engine Block Heater (non-PHEV only) (NHK)",
+"marks": {
+"2DE": "O",
+"2DL": "O",
+"2DP": "O",
+"2DS": "O"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Defroster",
+"text": "Rear (GFA)",
+"marks": {
+"2DE": "•",
+"2DL": "•",
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Fuel Tank",
+"text": "16.5-gallon (PHEV only) (NF3)",
+"marks": {
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Fuel Tank",
+"text": "19-gallon (non-PHEV only) (NF1)",
+"marks": {
+"2DE": "•",
+"2DL": "•",
+"2DP": "•",
+"2DS": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Suspension",
+"text": "Heavy-duty (PHEV only) (SDB)",
+"marks": {
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Suspension",
+"text": "AWD (non-PHEV only) (SDE)",
+"marks": {
+"2DL": "P",
+"2DP": "P",
+"2DS": "P"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Suspension",
+"text": "Touring (non-PHEV only) (SDC)",
+"marks": {
+"2DE": "•",
+"2DL": "•",
+"2DP": "•",
+"2DS": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "",
+"text": "Tip Start (XBN)",
+"marks": {
+"2DE": "•",
+"2DL": "•",
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Daylight Opening",
+"text": "Bright (MMP)",
+"marks": {
+"2DE": "•",
+"2DL": "•",
+"2DP": "•",
+"2DP/2DT": "•"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Daylight Opening",
+"text": "Platinum Chrome (MMF)",
+"marks": {
+"2DS": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Door Handles",
+"text": "Body-color (MNK)",
+"marks": {
+"2DE": "•",
+"2DL": "•",
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Doors",
+"text": "Power-sliding (JRK)",
+"marks": {
+"2DE": "•",
+"2DL": "•",
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Doors",
+"text": "Hands-free power-sliding doors (included with Uconnect Theater and Sound Group) (XZ3)",
+"marks": {
+"2DP": "P",
+"2DS": "•",
+"2DP/2DT": "P",
+"2DS#2": "•"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Fog Lamps",
+"text": "LED (LNV)",
+"marks": {
+"2DL": "•",
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Fog Lamps",
+"text": "Chrome accent bezels (LTB)",
+"marks": {
+"2DL": "•",
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Glass",
+"text": "Sunscreen (GAE)",
+"marks": {
+"2DE": "•",
+"2DL": "•",
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Glass",
+"text": "Acoustic windshield (GAK)",
+"marks": {
+"2DL": "•",
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Glass",
+"text": "Laminated front-door glass (GAP)",
+"marks": {
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Grille",
+"text": "Black (MFS)",
+"marks": {
+"2DE": "•"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Grille",
+"text": "Black upper with Bright surround (MFF)",
+"marks": {
+"2DL": "•",
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Headlamps",
+"text": "Halogen (LMA)",
+"marks": {
+"2DE": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Headlamps",
+"text": "Auto High-Beam Headlamp Control (LMS)",
+"marks": {
+"2DL": "•",
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Headlamps",
+"text": "Automatic (LMG)",
+"marks": {
+"2DE": "•",
+"2DL": "•",
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Headlamps",
+"text": "LED low-/high-beam (LM6)",
+"marks": {
+"2DL": "•",
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Headlamps",
+"text": "Daytime running (LM1)",
+"marks": {
+"2DL": "•",
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Liftgate",
+"text": "Power (JRC)",
+"marks": {
+"2DE": "•",
+"2DL": "•",
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Liftgate",
+"text": "Hands-free power (XZ2)",
+"marks": {
+"2DP": "•",
+"2DS": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Mirrors",
+"text": "Power, Black, heated (GPK)",
+"marks": {
+"2DE": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Mirrors",
+"text": "Foldaway, power, heated, Gloss Black with supplemental turn indicator (GUR)",
+"marks": {
+"2DL": "•",
+"2DP/2DT": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Mirrors",
+"text": "Power-folding, power-adjust, heated with memory feature, courtesy lamps, supplemental turn indicator, auto-adjust-in-Reverse and auto-fold-in-Park with Gloss Black exterior (memory mirrors not available on Plug-in Hybrid Electric Vehicle (PHEV)) (GPL)",
+"marks": {
+"2DP": "•",
+"2DP/2DT": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Mirrors",
+"text": "Power-folding, power-adjust, heated with memory feature, courtesy lamps, supplemental turn indicator, auto-adjust-in-Reverse and auto-fold-in-Park with Platinum Chrome/Gloss Black exterior (GTK)",
+"marks": {
+"2DS": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Molding",
+"text": "Platinum Chrome (MJB)",
+"marks": {
+"2DS": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Roof Rack",
+"text": "Stow N Place,® Black (MW1)",
+"marks": {
+"2DP": "P",
+"2DP/2DT": "P"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Roof Rack",
+"text": "Stow N Place with Platinum Chrome side rails (MNF)",
+"marks": {
+"2DS": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Sill Appliqué",
+"text": "Body-color (MPK)",
+"marks": {
+"2DE": "•",
+"2DL": "•",
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Sill",
+"text": "Bright front-door scuff pads (CLT)",
+"marks": {
+"2DS": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Tires",
+"text": "235/65R17 BSW All-Season (A/S) (standard on Front-Wheel Drive (FWD) Voyager and Select models) (TMK)",
+"marks": {
+"2DE": "•",
+"2DL": "•",
+"2DP/2DT": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Tires",
+"text": "235/60R18 BSW A/S (not available on FWD/All-Wheel Drive (AWD) Pinnacle) (TWZ)",
+"marks": {
+"2DS#2": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Tires",
+"text": "245/50R20 BSW A/S self-sealing (non-PHEV only) (TP3)",
+"marks": {
+"2DS": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Tires",
+"text": "245/60R18 BSW A/S self-sealing (AWD only) (TJK)",
+"marks": {
+"2DL": "•",
+"2DP": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Tires",
+"text": "Puncture sealant and portable air compressor (standard on Voyager, FWD Select and all PHEV models) (XAH)",
+"marks": {
+"2DE": "•",
+"2DL": "•",
+"2DP": "•",
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Sunroof",
+"text": "Dual-pane panoramic – Power front, fixed rear (includes power open/close shade) (GWJ)",
+"marks": {
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "P",
+"2DS#2": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels",
+"text": "17-inch fully painted Tech Silver cast aluminum (standard on FWD Voyager and Select non-PHEV) (WFN)",
+"marks": {
+"2DE": "•",
+"2DL": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels",
+"text": "17-inch Diamond-Cut with Baltic Gray pockets aluminum (WJR)",
+"marks": {
+"2DP/2DT": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels",
+"text": "18-inch Foreshadow-finish aluminum (PHEV only) (WP6)",
+"marks": {
+"2DP/2DT": "P"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels",
+"text": "18-inch painted aluminum (non-PHEV only; standard on AWD Select) (WBS)",
+"marks": {
+"2DL": "•",
+"2DP": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels",
+"text": "18-inch polished with Baltic Gray pockets aluminum (PHEV only) (WDP)",
+"marks": {
+"2DS#2": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels",
+"text": "18-inch Foreshadow-finish aluminum (included with Select PHEV models) (WP6)",
+"marks": {
+"2DP/2DT": "P"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels",
+"text": "20-inch Foreshadow-finish aluminum (non-PHEV only) (WPF)",
+"marks": {
+"2DP": "P"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels",
+"text": "20-inch polished with Baltic Gray pockets aluminum (non-PHEV only) (WH5)",
+"marks": {
+"2DS": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Windshield Wipers",
+"text": "Front, rain-sensitive (JHC)",
+"marks": {
+"2DE": "•",
+"2DL": "•",
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Windshield Wipers",
+"text": "Rear wiper/washer (JHB)",
+"marks": {
+"2DE": "•",
+"2DL": "•",
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Air Conditioning",
+"text": "Three-Zone automatic temperature control (HAH)",
+"marks": {
+"2DE": "•",
+"2DL": "•",
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Door Locks",
+"text": "Power (JPB)",
+"marks": {
+"2DE": "•",
+"2DL": "•",
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Chrysler Air Filtration System",
+"marks": {
+"2DE": "•",
+"2DL": "•",
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Headliner",
+"text": "Deluxe (CHE)",
+"marks": {
+"2DE": "•",
+"2DL": "•",
+"2DP": "•",
+"2DS": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Headliner",
+"text": "Suede (CHG)",
+"marks": {
+"2DS": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Grocery Bag Hooks",
+"text": "On third-row seatbacks (XGH)",
+"marks": {
+"2DL": "•",
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Lighting",
+"text": "Front and rear LED lamps (LBR)",
+"marks": {
+"2DE": "•",
+"2DL": "•",
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Lighting",
+"text": "Cargo compartment lamp (LDB)",
+"marks": {
+"2DE": "•",
+"2DL": "•",
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Lighting",
+"text": "Footwell courtesy lamp (LBB)",
+"marks": {
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "P",
+"2DS#2": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Lighting",
+"text": "Front, courtesy lamp (LCA)",
+"marks": {
+"2DE": "•",
+"2DL": "•",
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Lighting",
+"text": "Overhead, ambient surround (LCJ)",
+"marks": {
+"2DE": "•",
+"2DL": "•",
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Lighting",
+"text": "Rear reading/courtesy lamps (LBH)",
+"marks": {
+"2DL": "•",
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Lighting",
+"text": "Rear ambient lighting (LCU)",
+"marks": {
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "P",
+"2DS#2": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Lighting",
+"text": "Illuminated map pocket (LCF)",
+"marks": {
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "P",
+"2DS#2": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Mirrors",
+"text": "Auto-dimming rearview (GNK)",
+"marks": {
+"2DL": "•",
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Mirrors",
+"text": "Illuminated visor vanity (GN9)",
+"marks": {
+"2DE": "•",
+"2DL": "•",
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Power Outlets",
+"text": "Auxiliary, 12-volt (JJJ/JKP)",
+"marks": {
+"2DE": "•",
+"2DL": "•",
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Power Outlets",
+"text": "Auxiliary, 115-volt (included with Uconnect® Theater Family Group) (JKV)",
+"marks": {
+"2DL": "P",
+"2DP": "P",
+"2DS": "•",
+"2DP/2DT": "P",
+"2DS#2": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Remote Start(27) System (XBM)",
+"marks": {
+"2DE": "•",
+"2DL": "•",
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Shades",
+"text": "Second- and third-row retractable (GF1)",
+"marks": {
+"2DS": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Shades",
+"text": "Second-row (non-PHEV only) (GF3)",
+"marks": {
+"2DE": "•",
+"2DL": "•",
+"2DP": "•",
+"2DP/2DT": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Steering Column",
+"text": "Tilt/telescoping (SUD)",
+"marks": {
+"2DE": "•",
+"2DL": "•",
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Steering Wheel",
+"text": "Heated (NHS)",
+"marks": {
+"2DE": "•",
+"2DL": "•",
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Steering Wheel",
+"text": "Mounted audio controls (RDZ)",
+"marks": {
+"2DE": "•",
+"2DL": "•",
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Steering Wheel",
+"text": "Techno-leather-wrapped (SCJ)",
+"marks": {
+"2DE": "•",
+"2DL": "•",
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Storage",
+"text": "Floor tray (CVU)",
+"marks": {
+"2DE": "•",
+"2DL": "•",
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Storage",
+"text": "Super Console with covered storage (CM7)",
+"marks": {
+"2DE": "•",
+"2DL": "•",
+"2DP/2DT": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Storage",
+"text": "Integrated Premium Console (includes illuminated cup holders) (CM5)",
+"marks": {
+"2DP": "•",
+"2DP/2DT": "P"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Storage",
+"text": "Integrated Ultra Console (includes illuminated cup holders) (CVM)",
+"marks": {
+"2DS": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Storage",
+"text": "Glove box, locking (JKA)",
+"marks": {
+"2DE": "•",
+"2DL": "•",
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Storage",
+"text": "Lower instrument panel drawer (RF9)",
+"marks": {
+"2DE": "•",
+"2DL": "•",
+"2DP/2DT": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Stow ’n Vac® Integrated Vacuum Cleaner (non-PHEV only) (CJW)",
+"marks": {
+"2DP": "P",
+"2DS": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Trip Computer",
+"text": "Electronic Vehicle Information Center (EVIC) 7-inch configurable digital display in instrument cluster; controls mounted on steering wheel (LAZ)",
+"marks": {
+"2DE": "•",
+"2DL": "•",
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Universal Garage Door Opener (XGD)",
+"marks": {
+"2DL": "•",
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Windows",
+"text": "Front, power with driver’s one-touch up/down, front-passenger one-touch down (JP3)",
+"marks": {
+"2DE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Windows",
+"text": "Power front and rear one-touch up/down (JSB)",
+"marks": {
+"2DL": "•",
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Windows",
+"text": "Power second-row (JPG)",
+"marks": {
+"2DE": "•",
+"2DL": "•",
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Wireless Charging Pad (RFX)",
+"marks": {
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "P",
+"2DS#2": "•"
+}
+},
+{
+"page": 4,
+"section": "SEATING AND TRIM",
+"parent": "Seats",
+"text": "Driver’s four-way power lumbar-adjust (included with power driver’s seat) (JPU)",
+"marks": {
+"2DE": "•",
+"2DL": "•",
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 4,
+"section": "SEATING AND TRIM",
+"parent": "Seats",
+"text": "Eight-way power driver’s (JVG)",
+"marks": {
+"2DE": "•",
+"2DL": "•",
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 4,
+"section": "SEATING AND TRIM",
+"parent": "Seats",
+"text": "Eight-way power front-passenger (included with Uconnect® Theater Family Group) (JWG)",
+"marks": {
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "P",
+"2DS#2": "•"
+}
+},
+{
+"page": 4,
+"section": "SEATING AND TRIM",
+"parent": "Seats",
+"text": "Heated second-row (non-Plug-in Hybrid Electric Vehicle (PHEV) only) (JPZ)",
+"marks": {
+"2DP": "•",
+"2DS": "•"
+}
+},
+{
+"page": 4,
+"section": "SEATING AND TRIM",
+"parent": "Seats",
+"text": "Heated front (JPM)",
+"marks": {
+"2DE": "•",
+"2DL": "•",
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 4,
+"section": "SEATING AND TRIM",
+"parent": "Seats",
+"text": "Caprice leatherette-trimmed bucket (*SJ)",
+"marks": {
+"2DE": "•",
+"2DL": "•",
+"2DP/2DT": "•"
+}
+},
+{
+"page": 4,
+"section": "SEATING AND TRIM",
+"parent": "Seats",
+"text": "Nappa leather-trimmed bucket (*AL)",
+"marks": {
+"2DP": "•"
+}
+},
+{
+"page": 4,
+"section": "SEATING AND TRIM",
+"parent": "Seats",
+"text": "Premium Nappa leather-trimmed quilted bucket (*DL)",
+"marks": {
+"2DS": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 4,
+"section": "SEATING AND TRIM",
+"parent": "Seats",
+"text": "Premium Nappa leather-trimmed with S logo (*RL)",
+"marks": {
+"2DP": "P",
+"2DP/2DT": "P"
+}
+},
+{
+"page": 4,
+"section": "SEATING AND TRIM",
+"parent": "Seats",
+"text": "Second- and third-row Stow ’n Go® that fold in the floor and include second-row in-floor storage bins (non-PHEV only) (CYC)",
+"marks": {
+"2DE": "•",
+"2DL": "•",
+"2DP": "•"
+}
+},
+{
+"page": 4,
+"section": "SEATING AND TRIM",
+"parent": "Seats",
+"text": "Easy slide second-row Captain’s Chairs (PHEV and Pinnacle) (CY3)",
+"marks": {
+"2DS": "•",
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 4,
+"section": "SEATING AND TRIM",
+"parent": "Seats",
+"text": "Auto Advance ’n Return, driver’s-side (non-PHEV only) (CJK)",
+"marks": {
+"2DL": "•",
+"2DP": "•",
+"2DS": "•"
+}
+},
+{
+"page": 4,
+"section": "SEATING AND TRIM",
+"parent": "Seats",
+"text": "Auto Advance ’n Return, passenger-side (non-PHEV only; included with Uconnect Theater Family Group) (CJZ)",
+"marks": {
+"2DL": "P",
+"2DP": "•",
+"2DS": "•"
+}
+},
+{
+"page": 4,
+"section": "SEATING AND TRIM",
+"parent": "Seats",
+"text": "Third-row power-folding Stow ’n Go 60/40 split-bench that folds in the floor (non-PHEV only) (JRJ)",
+"marks": {
+"2DS": "•"
+}
+},
+{
+"page": 4,
+"section": "SEATING AND TRIM",
+"parent": "Seats",
+"text": "Third-row Stow ’n Go 60/40 split-bench that folds in the floor (CFX)",
+"marks": {
+"2DE": "•",
+"2DL": "•",
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 4,
+"section": "SEATING AND TRIM",
+"parent": "Seats",
+"text": "Ventilated front (CAJ)",
+"marks": {
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "P",
+"2DS#2": "•"
+}
+},
+{
+"page": 4,
+"section": "UCONNECT MULTIMEDIA",
+"parent": "",
+"text": "SiriusXM® Radio(21) (three-month trial subscription) (RSD)",
+"marks": {
+"2DE": "•",
+"2DL": "•",
+"2DP/2DT": "•"
+}
+},
+{
+"page": 4,
+"section": "UCONNECT MULTIMEDIA",
+"parent": "Sound Systems",
+"text": "Harman Kardon® 20 speakers (includes 760-watt amplifier; standard on Pinnacle PHEV; included with Uconnect Theater and Sound Group) (RGE)",
+"marks": {
+"2DP/2DT": "P",
+"2DS#2": "•"
+}
+},
+{
+"page": 4,
+"section": "UCONNECT MULTIMEDIA",
+"parent": "Sound Systems",
+"text": "Harman Kardon 19 speakers with 10-inch subwoofer (includes 760-watt amplifier; non-PHEV only; included with Uconnect Theater Family Group) (RCA)",
+"marks": {
+"2DP": "•",
+"2DS": "•"
+}
+},
+{
+"page": 4,
+"section": "UCONNECT MULTIMEDIA",
+"parent": "Sound Systems",
+"text": "Alpine® 13 speakers (includes 506-watt amplifier; included with Uconnect Theater Family Group) (RC3)",
+"marks": {
+"2DL": "P",
+"2DP": "•",
+"2DP/2DT": "P"
+}
+},
+{
+"page": 4,
+"section": "UCONNECT MULTIMEDIA",
+"parent": "Sound Systems",
+"text": "Six speakers (includes Active Noise Cancellation) (RCG)",
+"marks": {
+"2DE": "•",
+"2DL": "•",
+"2DP/2DT": "•"
+}
+},
+{
+"page": 4,
+"section": "UCONNECT MULTIMEDIA",
+"parent": "Uconnect 5 with 10.1-inch Display",
+"text": "Includes 10.1-inch touchscreen, AM/FM, USB host flip, hands-free phone and audio, Android Auto,TM(15) Apple CarPlayTM(16) and available SiriusXM with 360L(21) (UBG)",
+"marks": {
+"2DE": "•",
+"2DL": "•",
+"2DP/2DT": "•"
+}
+},
+{
+"page": 4,
+"section": "UCONNECT MULTIMEDIA",
+"parent": "Uconnect 5 NAV with 10.1-inch Display",
+"text": "Includes 10.1-inch touchscreen, AM/FM, USB host flip, Integrated Voice Command, Android Auto,(15) Apple CarPlay,(16) HD radio, Navigation and available SiriusXM with 360L(21) (included with Uconnect Theater Family Group) (UBN)",
+"marks": {
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "P",
+"2DS#2": "•"
+}
+},
+{
+"page": 4,
+"section": "UCONNECT MULTIMEDIA",
+"parent": "",
+"text": "Integrated Voice Command (included with Uconnect 5 NAV with 10.1-inch display) (XRB)",
+"marks": {
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "P",
+"2DS#2": "•"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Adaptive Cruise Control (ACC) with Stop and Go(6) (NHZ)",
+"marks": {
+"2DE": "•",
+"2DL": "•",
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "Air Bags(31)",
+"text": "Advanced multistage driver’s and front-passenger (CG3)",
+"marks": {
+"2DE": "•",
+"2DL": "•",
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "Air Bags(31)",
+"text": "Driver’s- and front-passenger-side inflatable knee blocker (CGY/CHF)",
+"marks": {
+"2DE": "•",
+"2DL": "•",
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "Air Bags(31)",
+"text": "Supplemental front-seat-mounted side (CJ1)",
+"marks": {
+"2DE": "•",
+"2DL": "•",
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "Air Bags(31)",
+"text": "Supplemental side-curtain, for outboard passengers in all three rows (CJ5)",
+"marks": {
+"2DE": "•",
+"2DL": "•",
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Blind Spot Monitoring (BSM)(7) and Rear Cross-Path Detection System(4) (XAN)",
+"marks": {
+"2DE": "•",
+"2DL": "•",
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Child Seat Anchor System (LATCH) (CGU)",
+"marks": {
+"2DE": "•",
+"2DL": "•",
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Electric Parking Brake (XC4)",
+"marks": {
+"2DE": "•",
+"2DL": "•",
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Electronic Stability Control (ESC)(8) (BNB)",
+"marks": {
+"2DE": "•",
+"2DL": "•",
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Emergency Vehicle Alert System (EVAS)",
+"marks": {
+"2DL": "•",
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "FamCAMTM(41)",
+"text": "Interior rear-facing camera (XPR)",
+"marks": {
+"2DP": "P",
+"2DS": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Full-Speed Forward Collision Warning Plus(9) (LSU)",
+"marks": {
+"2DE": "•",
+"2DL": "•",
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "LaneSense® Lane Departure Warning Plus with Lane Keep Assist(5) (LAS)",
+"marks": {
+"2DE": "•",
+"2DL": "•",
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Automatic Pedestrian Emergency Braking(9) (LST)",
+"marks": {
+"2DE": "•",
+"2DL": "•",
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "ParkSense® Front/Rear Park Assist with Stop(12) (included with Safety Sphere Group) (XH4)",
+"marks": {
+"2DL": "P",
+"2DP": "P",
+"2DS": "•",
+"2DP/2DT": "P",
+"2DS#2": "•"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "ParkSense Rear Park Assist with Stop(12) (XH3)",
+"marks": {
+"2DE": "•",
+"2DL": "•",
+"2DP": "•",
+"2DS": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "ParkView® Rear Back-Up Camera(4) (XAC)",
+"marks": {
+"2DE": "•",
+"2DL": "•",
+"2DP": "•",
+"2DP/2DT": "•"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Remote Keyless Entry (GXM)",
+"marks": {
+"2DE": "•",
+"2DL": "•",
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "Remote Proximity",
+"text": "All doors (GXD)",
+"marks": {
+"2DE": "•",
+"2DL": "•",
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Security Alarm(34) (LSA)",
+"marks": {
+"2DE": "•",
+"2DL": "•",
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "360° Surround-View Camera(4) (included with Safety Sphere Group) (XAK)",
+"marks": {
+"2DL": "P",
+"2DP": "P",
+"2DS": "•",
+"2DP/2DT": "P",
+"2DS#2": "•"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Tire Pressure Monitoring Display (XGM)",
+"marks": {
+"2DE": "•",
+"2DL": "•",
+"2DP": "•",
+"2DS": "•",
+"2DP/2DT": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Trailer Sway Damping(8) (packaged with Trailer-Tow Group with 3,600-lb Rating; non-PHEV only) (BNT)",
+"marks": {
+"2DP": "P",
+"2DS": "•"
+}
+},
+{
+"page": 5,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Eight-Passenger Seating (Front-Wheel Drive (FWD) non-Plug-in Hybrid Electric Vehicle (PHEV) only) (CYF)",
+"marks": {
+"2DL": "O"
+}
+},
+{
+"page": 5,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "Family Convenience Group",
+"text": "Includes in-vehicle intercom (AAE)",
+"marks": {
+"2DS": "•",
+"2DS#2": "•"
+}
+},
+{
+"page": 5,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "Mopar Interior Protection Package A",
+"text": "Includes Stow ’n Go® All-Weather Floor Mats, Rear Cargo Bin Stow ’n Go ® Storage, Cargo Area Liner, All-Weather Floor Mats, All-Weather Cargo Floor Mats and Bright Door Sills (Select only; restrictions apply) (ACX)",
+"marks": {
+"2DE": "O",
+"2DL": "O"
+}
+},
+{
+"page": 5,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "Mopar Roadside Emergency Kit",
+"text": "Includes Toolkit, Reflecting Triangle and First Aid Kit (not available with eight-passenger seating) (ACK)",
+"marks": {
+"2DE": "O",
+"2DL": "O",
+"2DP": "O",
+"2DS": "O",
+"2DP/2DT": "O",
+"2DS#2": "O"
+}
+},
+{
+"page": 5,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "S Appearance Group",
+"text": "Includes Piano Black and Anodized Ice Cave interior accents, S badge, Anodized Ink and Black badging, Black Stow N Place® Roof Rack, Black daylight opening (DLO) moldings, premium front fascia, upper/lower grilles with Black surround, premium rear fascia, 18-inch Foreshadow-finish aluminum wheels (Select PHEV), 20-inch Foreshadow-finish aluminum wheels (Select gas and Limited), Caprice leatherette bucket seats with S logo (Select), Nappa leather-trimmed bucket seats with S logo (Select PHEV 2DT and Limited), P235/60R18 BSW tires (Select PHEV) and P245/50R20 BSW tires (Select and Limited; late availability for group on Select and Limited)",
+"marks": {
+"2DL": "O",
+"2DP": "O",
+"2DP/2DT": "O"
+}
+},
+{
+"page": 5,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "Safety Sphere Group",
+"text": "Includes ParkSense® Front/Rear Park Assist with Stop(12) and 360° Surround-View Camera(4) (restrictions apply) (AAU)",
+"marks": {
+"2DL": "O",
+"2DP": "O",
+"2DS": "•",
+"2DP/2DT": "O",
+"2DS#2": "•"
+}
+},
+{
+"page": 5,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "Trailer-Tow Group with 3,600-lb Rating",
+"text": "Includes trailer-tow seven-/four-pin wiring harness, 2-inch hitch receiver, Trailer Sway Damping(8) and heavy-duty radiator (non-PHEV only) (AHT)",
+"marks": {
+"2DP": "O",
+"2DS": "O"
+}
+},
+{
+"page": 5,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "Uconnect® Theater Family Group",
+"text": "Includes rear-seat entertainment with Amazon Fire TV®(18) Built-In, interior rear-facing FamCAMTM(41) camera, 115-volt auxiliary power outlet, video remote control, HDMI input, video USB port, two 10-inch seatback touchscreens, 220-amp alternator, Stow ’n Vac® integrated vacuum cleaner, heated second-row seats, Blu-rayTM/DVD player (Select), eight-passenger seating on FWD Select, Auto Advance ’n Return front-passenger seat, eight-way power front-passenger seat, hands-free power liftgate, hands-free power-sliding doors and 19-speaker Harman Kardon® premium audio system (AEZ)",
+"marks": {
+"2DP": "O"
+}
+},
+{
+"page": 5,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "Uconnect Theater Family Group II",
+"text": "Includes rear-seat entertainment with Amazon Fire TV(18) Built-In, interior rear-facing FamCAM(41) camera, 115-volt auxiliary power outlet, video remote control, HDMI input, two 10-inch seatback touchscreens, video USB port (Select and Limited; standard on Pinnacle), 220-amp alternator, Blu-ray/DVD player (Select), Auto Advance ’n Return front-passenger seat, eight-way power front-passenger seat, 13-speaker Alpine® audio system, Uconnect 5 NAV with 10-inch display (Select) and 19-speaker Harman Kardon premium audio system with 10-inch subwoofer (Select; Pinnacle adds Uconnect Theater with streaming apps) (AEY/AT3)",
+"marks": {
+"2DL": "O",
+"2DS": "•",
+"2DP/2DT": "O",
+"2DS#2": "•"
+}
+},
+{
+"page": 5,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "Uconnect Theater and Sound Group",
+"text": "Includes rear-seat entertainment with Amazon Fire TV(18) built-in, video remote control, HDMI input, video USB port, two 10-inch seatback touchscreens, hands-free power-sliding doors, interior rear-facing FamCAM(41) camera, second- and third-row window shades, 115-volt auxiliary power outlet and 20-speaker Harman Kardon premium audio system with 10-inch subwoofer (included with Select Premium and Safety Sphere Group only; available on 2DT only) (AAH)",
+"marks": {
+"2DP/2DT": "O"
+}
+}
+],
+"url": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Pacifica.pdf"
+}

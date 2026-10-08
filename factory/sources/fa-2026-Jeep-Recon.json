@@ -1,0 +1,709 @@
+{
+"kind": "fa",
+"title": "2026 Jeep Recon",
+"rows": [
+{
+"page": 1,
+"section": "EXTERIOR FEATURES",
+"parent": "Fascia",
+"text": "Titanium inserts",
+"marks": {
+"Moab Trim": "S"
+}
+},
+{
+"page": 1,
+"section": "EXTERIOR FEATURES",
+"parent": "Fascia",
+"text": "Front-facing camera with washer",
+"marks": {
+"Moab Trim": "S"
+}
+},
+{
+"page": 1,
+"section": "EXTERIOR FEATURES",
+"parent": "Fascia",
+"text": "Lit grille",
+"marks": {
+"Moab Trim": "S"
+}
+},
+{
+"page": 1,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "Roof – Gloss Black painted",
+"marks": {
+"Moab Trim": "O"
+}
+},
+{
+"page": 1,
+"section": "EXTERIOR FEATURES",
+"parent": "Lighting",
+"text": "LED headlamps",
+"marks": {
+"Moab Trim": "S"
+}
+},
+{
+"page": 1,
+"section": "EXTERIOR FEATURES",
+"parent": "Lighting",
+"text": "LED daytime running headlamps",
+"marks": {
+"Moab Trim": "S"
+}
+},
+{
+"page": 1,
+"section": "EXTERIOR FEATURES",
+"parent": "Lighting",
+"text": "LED fog lamps",
+"marks": {
+"Moab Trim": "S"
+}
+},
+{
+"page": 1,
+"section": "EXTERIOR FEATURES",
+"parent": "Lighting",
+"text": "LED taillamps",
+"marks": {
+"Moab Trim": "S"
+}
+},
+{
+"page": 1,
+"section": "EXTERIOR FEATURES",
+"parent": "Lighting",
+"text": "Auto high-beam headlamp control system",
+"marks": {
+"Moab Trim": "S"
+}
+},
+{
+"page": 1,
+"section": "EXTERIOR FEATURES",
+"parent": "Mirrors",
+"text": "Gloss Black with heating element and memory; auto-dimming; supplemental turn signals; auto-adjust in reverse; courtesy lamps",
+"marks": {
+"Moab Trim": "S"
+}
+},
+{
+"page": 1,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "Skid plates — battery packs, front and rear EDMs and transfer case",
+"marks": {
+"Moab Trim": "S"
+}
+},
+{
+"page": 1,
+"section": "EXTERIOR FEATURES",
+"parent": "Sunroof",
+"text": "Dual-pane panoramic sunroof — includes full power sunroof with power sunshade",
+"marks": {
+"Moab Trim": "S"
+}
+},
+{
+"page": 1,
+"section": "EXTERIOR FEATURES",
+"parent": "Sunroof",
+"text": "Sky One-Touch Power Top",
+"marks": {
+"Moab Trim": "O"
+}
+},
+{
+"page": 1,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "Swing gate with full-size spare",
+"marks": {
+"Moab Trim": "S"
+}
+},
+{
+"page": 1,
+"section": "EXTERIOR FEATURES",
+"parent": "Tires",
+"text": "33-in. all-terrain (265/70R18)",
+"marks": {
+"Moab Trim": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels",
+"text": "18-in. fully painted aluminum",
+"marks": {
+"Moab Trim": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Wiper System",
+"text": "Front, speed-sensitive and rain-sensing with automatic feature, variable/intermittent; heated wiper park",
+"marks": {
+"Moab Trim": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Wiper System",
+"text": "Rear with fixed intermittent and continuous speeds, with washer",
+"marks": {
+"Moab Trim": "S"
+}
+},
+{
+"page": 2,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "12.3-in. multiview digital cluster display",
+"marks": {
+"Moab Trim": "S"
+}
+},
+{
+"page": 2,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Air filtration system",
+"marks": {
+"Moab Trim": "S"
+}
+},
+{
+"page": 2,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Climate control — dual-zone automatic temperature control",
+"marks": {
+"Moab Trim": "S"
+}
+},
+{
+"page": 2,
+"section": "INTERIOR FEATURES",
+"parent": "Cargo Area",
+"text": "Carpeted — includes storage tray and cargo tie-down loops in floor, storage bin, 12-volt auxiliary power outlet",
+"marks": {
+"Moab Trim": "S"
+}
+},
+{
+"page": 2,
+"section": "INTERIOR FEATURES",
+"parent": "Console",
+"text": "Full-length front floor console with two cup holders, concealable front storage bin and armrest storage bin",
+"marks": {
+"Moab Trim": "S"
+}
+},
+{
+"page": 2,
+"section": "INTERIOR FEATURES",
+"parent": "Console",
+"text": "Overhead front with two LED map lamps, two dome lamps, universal garage door opener control switches and power sunroof/sunshade controls",
+"marks": {
+"Moab Trim": "S"
+}
+},
+{
+"page": 2,
+"section": "INTERIOR FEATURES",
+"parent": "Lighting",
+"text": "Customizable interior LED lighting with daytime/nighttime settings, plus active, direct ambient lighting",
+"marks": {
+"Moab Trim": "S"
+}
+},
+{
+"page": 2,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Memory system — radio station presets, last- station settings, driver’s seat position, exterior mirrors and power tilt/telescoping steering wheel",
+"marks": {
+"Moab Trim": "S"
+}
+},
+{
+"page": 2,
+"section": "INTERIOR FEATURES",
+"parent": "Mirrors",
+"text": "Rearview, auto-dimming",
+"marks": {
+"Moab Trim": "S"
+}
+},
+{
+"page": 2,
+"section": "INTERIOR FEATURES",
+"parent": "Mirrors",
+"text": "Digital rearview mirror",
+"marks": {
+"Moab Trim": "P"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Seat Fabric",
+"text": "Capri Leatherette with a unique pattern",
+"marks": {
+"Moab Trim": "S"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Seating",
+"text": "Power 8-way driver and front-passenger with 2-way power lumbar adjuster with memory",
+"marks": {
+"Moab Trim": "S"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Seating",
+"text": "Heated front seats",
+"marks": {
+"Moab Trim": "S"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Seating",
+"text": "Ventilated front seats",
+"marks": {
+"Moab Trim": "P"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Seating",
+"text": "Heated second-row seating",
+"marks": {
+"Moab Trim": "P"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Seating",
+"text": "60/40 bench second-row seating",
+"marks": {
+"Moab Trim": "S"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Selec-Terrain drive mode selector – Auto, Sport, Sand, Snow, Rock,",
+"marks": {
+"Moab Trim": "S"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Steering Wheel",
+"text": "Premium-wrapped and heated with audio, speed, Electronic Vehicle Information Center, voice recognition, and Adaptive Cruise Control",
+"marks": {
+"Moab Trim": "S"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Steering Wheel",
+"text": "Power tilt-steering wheel/telescoping steering column; memory",
+"marks": {
+"Moab Trim": "S"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Windows",
+"text": "Power one-touch up/down, front driver/passenger",
+"marks": {
+"Moab Trim": "S"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Wireless charging pad",
+"marks": {
+"Moab Trim": "S"
+}
+},
+{
+"page": 3,
+"section": "UCONNECT MULTIMEDIA",
+"parent": "",
+"text": "Media hub — Four USB-C data and charge (two in front, two in rear)",
+"marks": {
+"Moab Trim": "S"
+}
+},
+{
+"page": 3,
+"section": "UCONNECT MULTIMEDIA",
+"parent": "Power outlet",
+"text": "12-volt, two auxiliary power outlets",
+"marks": {
+"Moab Trim": "S"
+}
+},
+{
+"page": 3,
+"section": "UCONNECT MULTIMEDIA",
+"parent": "Power outlet",
+"text": "115-volt auxiliary power outlet",
+"marks": {
+"Moab Trim": "S"
+}
+},
+{
+"page": 3,
+"section": "UCONNECT MULTIMEDIA",
+"parent": "",
+"text": "SiriusXM Radio (includes three-month trial subscription)",
+"marks": {
+"Moab Trim": "S"
+}
+},
+{
+"page": 3,
+"section": "UCONNECT MULTIMEDIA",
+"parent": "",
+"text": "TomTom Traffic and Travel (includes three-month trial subscription)",
+"marks": {
+"Moab Trim": "S"
+}
+},
+{
+"page": 3,
+"section": "UCONNECT MULTIMEDIA",
+"parent": "Speakers",
+"text": "Alpine 11-speaker premium audio system with 500-watt amplifier and 8-in. subwoofer",
+"marks": {
+"Moab Trim": "S"
+}
+},
+{
+"page": 3,
+"section": "UCONNECT MULTIMEDIA",
+"parent": "",
+"text": "Uconnect 5C NAV with 14.5-in. display",
+"marks": {
+"Moab Trim": "S"
+}
+},
+{
+"page": 4,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "360-degree surround view camera",
+"marks": {
+"Moab Trim": "S"
+}
+},
+{
+"page": 4,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Active Driving Assist (L2)",
+"marks": {
+"Moab Trim": "S"
+}
+},
+{
+"page": 4,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Active Lane Management",
+"marks": {
+"Moab Trim": "S"
+}
+},
+{
+"page": 4,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Adaptive Cruise Control",
+"marks": {
+"Moab Trim": "S"
+}
+},
+{
+"page": 4,
+"section": "SAFETY AND SECURITY",
+"parent": "Air Bags",
+"text": "Advanced multistage, driver and front passenger",
+"marks": {
+"Moab Trim": "S"
+}
+},
+{
+"page": 4,
+"section": "SAFETY AND SECURITY",
+"parent": "Air Bags",
+"text": "Supplemental front / rear side-curtain air bags",
+"marks": {
+"Moab Trim": "S"
+}
+},
+{
+"page": 4,
+"section": "SAFETY AND SECURITY",
+"parent": "Air Bags",
+"text": "Driver-side inflatable knee air bag",
+"marks": {
+"Moab Trim": "S"
+}
+},
+{
+"page": 4,
+"section": "SAFETY AND SECURITY",
+"parent": "Air Bags",
+"text": "Supplemental rear seat side air bags",
+"marks": {
+"Moab Trim": "S"
+}
+},
+{
+"page": 4,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Auto hold braking",
+"marks": {
+"Moab Trim": "S"
+}
+},
+{
+"page": 4,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Autonomous parking assist",
+"marks": {
+"Moab Trim": "S"
+}
+},
+{
+"page": 4,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Blind-spot Monitoring with Rear Cross Path detection",
+"marks": {
+"Moab Trim": "S"
+}
+},
+{
+"page": 4,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Electronic stability control — includes vehicle stability management system, electronic roll mitigation, all-speed traction control, brake assist and four-channel antilock brake system, Rain Brake Support",
+"marks": {
+"Moab Trim": "S"
+}
+},
+{
+"page": 4,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Drowsy Driver Detection",
+"marks": {
+"Moab Trim": "S"
+}
+},
+{
+"page": 4,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Full-speed Forward Collision Warning with Advanced Brake Assist",
+"marks": {
+"Moab Trim": "S"
+}
+},
+{
+"page": 4,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Intelligent Speed Assist",
+"marks": {
+"Moab Trim": "S"
+}
+},
+{
+"page": 4,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Intersection Collision Assist",
+"marks": {
+"Moab Trim": "S"
+}
+},
+{
+"page": 4,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Front and rear park assist system — front and rear cameras equipped with washers",
+"marks": {
+"Moab Trim": "S"
+}
+},
+{
+"page": 4,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Rear backup camera — includes rear park assist system; washer",
+"marks": {
+"Moab Trim": "S"
+}
+},
+{
+"page": 4,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Rough Road Cruise Control",
+"marks": {
+"Moab Trim": "S"
+}
+},
+{
+"page": 4,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Parallel/perpendicular park assist",
+"marks": {
+"Moab Trim": "S"
+}
+},
+{
+"page": 4,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "ParkSense automated parking system",
+"marks": {
+"Moab Trim": "S"
+}
+},
+{
+"page": 4,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Remote Keyless Entry",
+"marks": {
+"Moab Trim": "S"
+}
+},
+{
+"page": 4,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Security alarm",
+"marks": {
+"Moab Trim": "S"
+}
+},
+{
+"page": 4,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Selec-Speed Control",
+"marks": {
+"Moab Trim": "S"
+}
+},
+{
+"page": 5,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Side Distance Warning",
+"marks": {
+"Moab Trim": "S"
+}
+},
+{
+"page": 5,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Traffic Sign Recognition",
+"marks": {
+"Moab Trim": "S"
+}
+},
+{
+"page": 5,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Trailer-sway control",
+"marks": {
+"Moab Trim": "S"
+}
+},
+{
+"page": 5,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Universal garage door opener",
+"marks": {
+"Moab Trim": "S"
+}
+},
+{
+"page": 5,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Black Painted Roof",
+"marks": {
+"Moab Trim": "O"
+}
+},
+{
+"page": 5,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Comfort Package — includes ventilated front seats, digital rearview mirror with auto dim, interior passenger camera, and heated rear seats",
+"marks": {
+"Moab Trim": "P"
+}
+},
+{
+"page": 5,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Sky One-Touch Power Top",
+"marks": {
+"Moab Trim": "O"
+}
+},
+{
+"page": 5,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Trailer Tow Group — includes Class III hitch receiver, trailer tow wiring harness, 7- and 4-pin connectors, trailer hitch view with zoom, blind-spot monitoring with trailer detection",
+"marks": {
+"Moab Trim": "P"
+}
+}
+],
+"url": "https://media.stellantisnorthamerica.com/view-spec.do?id=27236"
+}

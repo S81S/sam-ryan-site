@@ -1,0 +1,997 @@
+{
+"kind": "fa",
+"title": "2027 Ram 3500/4500/5500 Chassis Cab",
+"rows": [
+{
+"page": 1,
+"section": "3500 – BODY MODEL",
+"parent": "",
+"text": "Regular Cab — 60-in. CA (143.5-in. wheelbase)",
+"marks": {
+"TRADESMAN": "S",
+"BIG HORN": "S"
+}
+},
+{
+"page": 1,
+"section": "3500 – BODY MODEL",
+"parent": "",
+"text": "Regular Cab — 84-in. CA (167.5-in. wheelbase)",
+"marks": {
+"TRADESMAN": "O",
+"BIG HORN": "O"
+}
+},
+{
+"page": 1,
+"section": "3500 – BODY MODEL",
+"parent": "",
+"text": "Crew Cab — 60-in. CA (172.4-in. wheelbase)",
+"marks": {
+"TRADESMAN": "O",
+"BIG HORN": "O"
+}
+},
+{
+"page": 1,
+"section": "3500 – DRIVE SYSTEM",
+"parent": "",
+"text": "4x2",
+"marks": {
+"TRADESMAN": "S",
+"BIG HORN": "NA"
+}
+},
+{
+"page": 1,
+"section": "3500 – DRIVE SYSTEM",
+"parent": "",
+"text": "4x4",
+"marks": {
+"TRADESMAN": "O",
+"BIG HORN": "S"
+}
+},
+{
+"page": 1,
+"section": "4500/5500 – BODY MODEL",
+"parent": "",
+"text": "Regular Cab — 60-in. CA (144.5-in. wheelbase)",
+"marks": {
+"TRADESMAN": "S",
+"BIG HORN": "S"
+}
+},
+{
+"page": 1,
+"section": "4500/5500 – BODY MODEL",
+"parent": "",
+"text": "Regular Cab — 84-in. CA (168.5-in. wheelbase)",
+"marks": {
+"TRADESMAN": "O",
+"BIG HORN": "O"
+}
+},
+{
+"page": 1,
+"section": "4500/5500 – BODY MODEL",
+"parent": "",
+"text": "Regular Cab — 108-in. CA (192.5-in. wheelbase)",
+"marks": {
+"TRADESMAN": "O",
+"BIG HORN": "O"
+}
+},
+{
+"page": 1,
+"section": "4500/5500 – BODY MODEL",
+"parent": "",
+"text": "Regular Cab — 120-in. CA (204.5-in. wheelbase)",
+"marks": {
+"TRADESMAN": "O",
+"BIG HORN": "O"
+}
+},
+{
+"page": 1,
+"section": "4500/5500 – BODY MODEL",
+"parent": "",
+"text": "Crew Cab — 60-in. CA (173.4-in. wheelbase)",
+"marks": {
+"TRADESMAN": "O",
+"BIG HORN": "O"
+}
+},
+{
+"page": 1,
+"section": "4500/5500 – BODY MODEL",
+"parent": "",
+"text": "Crew Cab — 84-in. CA (197.4-in. wheelbase)",
+"marks": {
+"TRADESMAN": "O",
+"BIG HORN": "O"
+}
+},
+{
+"page": 1,
+"section": "4500/5500 – DRIVE SYSTEM",
+"parent": "",
+"text": "4x2",
+"marks": {
+"TRADESMAN": "S",
+"BIG HORN": "S"
+}
+},
+{
+"page": 1,
+"section": "4500/5500 – DRIVE SYSTEM",
+"parent": "",
+"text": "4x4",
+"marks": {
+"TRADESMAN": "O",
+"BIG HORN": "O"
+}
+},
+{
+"page": 2,
+"section": "3500 ENGINE / TRANSMISSION",
+"parent": "",
+"text": " 6.4-liter HEMI V8 with TorqueFlite eight-speed 8HP75 automatic transmission",
+"marks": {
+"TRADESMAN": "S",
+"BIG HORN": "S"
+}
+},
+{
+"page": 2,
+"section": "3500 ENGINE / TRANSMISSION",
+"parent": "",
+"text": "6.4-liter HEMI V8 with eight-speed ZF TorqueFlite HD automatic transmission",
+"marks": {
+"TRADESMAN": "O",
+"BIG HORN": "O"
+}
+},
+{
+"page": 2,
+"section": "3500 ENGINE / TRANSMISSION",
+"parent": "",
+"text": "6.7-liter Cummins turbo diesel inline 6 engine with eight-speed ZF TorqueFlite HD automatic transmission",
+"marks": {
+"TRADESMAN": "O",
+"BIG HORN": "O"
+}
+},
+{
+"page": 2,
+"section": "4500/5500 ENGINE / TRANSMISSION",
+"parent": "",
+"text": "6.4-liter HEMI V8 with eight-speed ZF TorqueFlite HD automatic transmission",
+"marks": {
+"TRADESMAN": "S",
+"BIG HORN": "S"
+}
+},
+{
+"page": 2,
+"section": "4500/5500 ENGINE / TRANSMISSION",
+"parent": "",
+"text": "6.7-liter Cummins turbo diesel inline 6 engine with eight-speed ZF TorqueFlite HD automatic transmission",
+"marks": {
+"TRADESMAN": "O",
+"BIG HORN": "O"
+}
+},
+{
+"page": 2,
+"section": "ALTERNATOR",
+"parent": "",
+"text": "220-amp",
+"marks": {
+"TRADESMAN": "S",
+"BIG HORN": "S"
+}
+},
+{
+"page": 2,
+"section": "ALTERNATOR",
+"parent": "",
+"text": "400-amp (dual 220-amp and 180-amp; requires 6.4-liter; included with On-Board Power System)",
+"marks": {
+"TRADESMAN": "O/P",
+"BIG HORN": "O/P"
+}
+},
+{
+"page": 2,
+"section": "ALTERNATOR",
+"parent": "",
+"text": "480-amp (dual 240-amp alternators; requires 6.7-liter; included with On-Board Power System)",
+"marks": {
+"TRADESMAN": "O/P",
+"BIG HORN": "O/P"
+}
+},
+{
+"page": 2,
+"section": "AXLES: 3500",
+"parent": "",
+"text": "Single rear wheel",
+"marks": {
+"TRADESMAN": "S",
+"BIG HORN": "S"
+}
+},
+{
+"page": 2,
+"section": "AXLES: 3500",
+"parent": "",
+"text": "Dual rear wheel",
+"marks": {
+"TRADESMAN": "O",
+"BIG HORN": "O"
+}
+},
+{
+"page": 2,
+"section": "AXLES: 3500",
+"parent": "",
+"text": "Front, 6,000-lb. GAWR (SRW axle)",
+"marks": {
+"TRADESMAN": "S",
+"BIG HORN": "S"
+}
+},
+{
+"page": 2,
+"section": "AXLES: 3500",
+"parent": "",
+"text": "Rear, 11.5 in. (292.1 mm) (SRW axle)",
+"marks": {
+"TRADESMAN": "S",
+"BIG HORN": "S"
+}
+},
+{
+"page": 2,
+"section": "AXLES: 3500",
+"parent": "",
+"text": "Front, 8.1 in. (205.0 mm) (DRW axle)",
+"marks": {
+"TRADESMAN": "S/O",
+"BIG HORN": "S/O"
+}
+},
+{
+"page": 2,
+"section": "AXLES: 3500",
+"parent": "",
+"text": "Rear, 11.5 in. (292.1 mm) (DRW axle)",
+"marks": {
+"TRADESMAN": "S/O",
+"BIG HORN": "S/O"
+}
+},
+{
+"page": 3,
+"section": "AXLES: 3500",
+"parent": "",
+"text": "Rear, anti-spin differential",
+"marks": {
+"TRADESMAN": "S",
+"BIG HORN": "S"
+}
+},
+{
+"page": 3,
+"section": "AXLES: 4500/5500",
+"parent": "",
+"text": "Dual rear wheel",
+"marks": {
+"TRADESMAN": "S",
+"BIG HORN": "S"
+}
+},
+{
+"page": 3,
+"section": "AXLES: 4500/5500",
+"parent": "",
+"text": "Front, 10.5 in. (266.7 mm)",
+"marks": {
+"TRADESMAN": "S",
+"BIG HORN": "S"
+}
+},
+{
+"page": 3,
+"section": "AXLES: 4500/5500",
+"parent": "",
+"text": "Rear, 12.0 in. (304.8 mm)",
+"marks": {
+"TRADESMAN": "S",
+"BIG HORN": "S"
+}
+},
+{
+"page": 3,
+"section": "AXLES: 4500/5500",
+"parent": "",
+"text": "Front, 10.5 in. (266.7mm), 7,250-lb. GAWR",
+"marks": {
+"TRADESMAN": "O",
+"BIG HORN": "O"
+}
+},
+{
+"page": 3,
+"section": "AXLES: 4500/5500",
+"parent": "",
+"text": "Front-axle disconnect (4500/5500 included on all 4x4)",
+"marks": {
+"TRADESMAN": "P",
+"BIG HORN": "P"
+}
+},
+{
+"page": 3,
+"section": "AXLES: 4500/5500",
+"parent": "",
+"text": "Rear, anti-spin differential",
+"marks": {
+"TRADESMAN": "S",
+"BIG HORN": "S"
+}
+},
+{
+"page": 3,
+"section": "AXLE RATIOS: 3500",
+"parent": "",
+"text": "4.10 ratio (standard on 6.4-liter HEMI V8)",
+"marks": {
+"TRADESMAN": "S",
+"BIG HORN": "S"
+}
+},
+{
+"page": 3,
+"section": "AXLE RATIOS: 3500",
+"parent": "",
+"text": "3.42 ratio (packaged with 6.7-liter turbo diesel)",
+"marks": {
+"TRADESMAN": "P",
+"BIG HORN": "P"
+}
+},
+{
+"page": 3,
+"section": "AXLE RATIOS: 4500/5500",
+"parent": "",
+"text": "4.44 ratio",
+"marks": {
+"TRADESMAN": "S",
+"BIG HORN": "S"
+}
+},
+{
+"page": 3,
+"section": "FUEL TANK",
+"parent": "",
+"text": "52-gallon, rear",
+"marks": {
+"TRADESMAN": "S",
+"BIG HORN": "S"
+}
+},
+{
+"page": 3,
+"section": "FUEL TANK",
+"parent": "",
+"text": "74-gallon dual fuel tanks (52 and 22 gals.)",
+"marks": {
+"TRADESMAN": "O",
+"BIG HORN": "O"
+}
+},
+{
+"page": 3,
+"section": "FUEL TANK",
+"parent": "",
+"text": "22-gallon mid-ship fuel tank",
+"marks": {
+"TRADESMAN": "O",
+"BIG HORN": "O"
+}
+},
+{
+"page": 3,
+"section": "POWER TAKE OFF (PTO)",
+"parent": "",
+"text": "PTO gas (6.4-liter HEMI V8 w/ TorqueFlite HD only)",
+"marks": {
+"TRADESMAN": "O",
+"BIG HORN": "O"
+}
+},
+{
+"page": 4,
+"section": "POWER TAKE OFF (PTO)",
+"parent": "",
+"text": "PTO 6 diesel (packaged w/ 6.7-liter turbo diesel) Stationary elevated engine idle up Right-side / left-side PTO Split-shaft PTO Hard-wired remote start/stop",
+"marks": {
+"TRADESMAN": "P",
+"BIG HORN": "P"
+}
+},
+{
+"page": 4,
+"section": "ENGINE SHUT-OFF TIMER",
+"parent": "",
+"text": "6.4-liter HEMI V8 and 6.7-liter turbo diesel (5 minutes) (dealer programmable from 1 to 60 minutes)",
+"marks": {
+"TRADESMAN": "O",
+"BIG HORN": "O"
+}
+},
+{
+"page": 4,
+"section": "INSTRUMENT CLUSTER DISPLAYS",
+"parent": "",
+"text": "Cluster 3.5-in. TFT color display",
+"marks": {
+"TRADESMAN": "S",
+"BIG HORN": "S"
+}
+},
+{
+"page": 4,
+"section": "INSTRUMENT CLUSTER DISPLAYS",
+"parent": "",
+"text": "Cluster 7.0-in. TFT color display",
+"marks": {
+"TRADESMAN": "P",
+"BIG HORN": "P"
+}
+},
+{
+"page": 4,
+"section": "INSTRUMENT CLUSTER DISPLAYS",
+"parent": "",
+"text": "Cluster 12.0-in. TFT color display",
+"marks": {
+"TRADESMAN": "NA",
+"BIG HORN": "P"
+}
+},
+{
+"page": 4,
+"section": "TELEMATICS",
+"parent": "",
+"text": "Connectivity (standard for US / Canada markets)",
+"marks": {
+"TRADESMAN": "S",
+"BIG HORN": "S"
+}
+},
+{
+"page": 4,
+"section": "UPFITTER INTERFACE",
+"parent": "",
+"text": "Vehicle system interface module (VSIM)",
+"marks": {
+"TRADESMAN": "S",
+"BIG HORN": "S"
+}
+},
+{
+"page": 5,
+"section": "BLUETOOTH",
+"parent": "",
+"text": "Uconnect Voice Command with Bluetooth",
+"marks": {
+"TRADESMAN": "S",
+"BIG HORN": "S"
+}
+},
+{
+"page": 5,
+"section": "COMPASS / GPS",
+"parent": "",
+"text": "Compass display in the radio",
+"marks": {
+"TRADESMAN": "S",
+"BIG HORN": "S"
+}
+},
+{
+"page": 5,
+"section": "COMPASS / GPS",
+"parent": "",
+"text": "GPS antenna input on radio",
+"marks": {
+"TRADESMAN": "S",
+"BIG HORN": "S"
+}
+},
+{
+"page": 5,
+"section": "MEDIA",
+"parent": "",
+"text": "Front: media hub — includes two fully functional type A/C USB port pairs and one auxiliary jack (four USB connection points)",
+"marks": {
+"TRADESMAN": "S",
+"BIG HORN": "S"
+}
+},
+{
+"page": 5,
+"section": "MEDIA",
+"parent": "",
+"text": "Middle: 2.5-amp charge-only single USB port (located in center console or armrest)",
+"marks": {
+"TRADESMAN": "S",
+"BIG HORN": "S"
+}
+},
+{
+"page": 5,
+"section": "MEDIA",
+"parent": "",
+"text": "Rear: dual remote USB port 2 A/C pairs; one pair fully functional, one pair charge only (packaged with Big Horn Level 3)",
+"marks": {
+"TRADESMAN": "NA",
+"BIG HORN": "P"
+}
+},
+{
+"page": 5,
+"section": "MEDIA",
+"parent": "",
+"text": "Auxiliary headphone jack for mobile devices",
+"marks": {
+"TRADESMAN": "S",
+"BIG HORN": "S"
+}
+},
+{
+"page": 5,
+"section": "MEDIA",
+"parent": "",
+"text": "Dual wireless charging pad (packaged with Big Horn Level 3)",
+"marks": {
+"TRADESMAN": "NA",
+"BIG HORN": "P"
+}
+},
+{
+"page": 5,
+"section": "POWER",
+"parent": "",
+"text": "Accessory delay",
+"marks": {
+"TRADESMAN": "S",
+"BIG HORN": "S"
+}
+},
+{
+"page": 5,
+"section": "POWER",
+"parent": "",
+"text": "Auxiliary outlets (one battery and one ignition-fed)",
+"marks": {
+"TRADESMAN": "S",
+"BIG HORN": "S"
+}
+},
+{
+"page": 5,
+"section": "POWER",
+"parent": "",
+"text": "115-volt auxiliary power outlet w/ 400-watt inverter, instrument panel-mounted",
+"marks": {
+"TRADESMAN": "P",
+"BIG HORN": "P"
+}
+},
+{
+"page": 5,
+"section": "POWER",
+"parent": "",
+"text": "115-volt auxiliary power outlet, rear facing (packaged with Big Horn Level 3)",
+"marks": {
+"TRADESMAN": "NA",
+"BIG HORN": "P"
+}
+},
+{
+"page": 5,
+"section": "POWER",
+"parent": "",
+"text": "2.4-kW on-board power system",
+"marks": {
+"TRADESMAN": "O",
+"BIG HORN": "O"
+}
+},
+{
+"page": 5,
+"section": "RADIOS",
+"parent": "",
+"text": "Uconnect 8.4 — AM/FM/BT/SiriusXM with 8.4-in. touchscreen display, Apple CarPlay and Android Auto, Uconnect with Bluetooth, SiriusXM Radio",
+"marks": {
+"TRADESMAN": "S",
+"BIG HORN": "S"
+}
+},
+{
+"page": 5,
+"section": "RADIOS",
+"parent": "",
+"text": "Uconnect 12.0 — AM/FM/BT/SiriusXM/Nav with 12.0-in. touchscreen display, GPS Navigation, Apple CarPlay and Android Auto, Uconnect with Bluetooth, SiriusXM Radio",
+"marks": {
+"TRADESMAN": "P",
+"BIG HORN": "P"
+}
+},
+{
+"page": 6,
+"section": "CAMERA",
+"parent": "",
+"text": "ParkView rear backup camera",
+"marks": {
+"TRADESMAN": "O",
+"BIG HORN": "O"
+}
+},
+{
+"page": 6,
+"section": "CAMERA",
+"parent": "",
+"text": "Cargo View Camera requires 12-in. radio, includes LED CHMSL and cargo lamps (packaged with Big Horn Level 2 & 3)",
+"marks": {
+"TRADESMAN": "NA",
+"BIG HORN": "P"
+}
+},
+{
+"page": 6,
+"section": "CAMERA",
+"parent": "",
+"text": "Surround 270-degree camera",
+"marks": {
+"TRADESMAN": "O",
+"BIG HORN": "O"
+}
+},
+{
+"page": 6,
+"section": "CAMERA",
+"parent": "",
+"text": "Auxiliary wired camera (Mopar camera available at dealer)",
+"marks": {
+"TRADESMAN": "O",
+"BIG HORN": "O"
+}
+},
+{
+"page": 6,
+"section": "CAMERA",
+"parent": "",
+"text": "Digital rearview mirror camera relocation kit",
+"marks": {
+"TRADESMAN": "O",
+"BIG HORN": "O"
+}
+},
+{
+"page": 6,
+"section": "PARKING SENSORS",
+"parent": "",
+"text": "Rear park assist",
+"marks": {
+"TRADESMAN": "O",
+"BIG HORN": "O"
+}
+},
+{
+"page": 6,
+"section": "PARKING SENSORS",
+"parent": "",
+"text": "ParkSense front/rear park assist",
+"marks": {
+"TRADESMAN": "O",
+"BIG HORN": "O/P"
+}
+},
+{
+"page": 6,
+"section": "SAFETY FEATURES",
+"parent": "",
+"text": "Security alarm",
+"marks": {
+"TRADESMAN": "P",
+"BIG HORN": "P"
+}
+},
+{
+"page": 6,
+"section": "SAFETY FEATURES",
+"parent": "",
+"text": "Backup alarm (audible alarm when vehicle is in reverse)",
+"marks": {
+"TRADESMAN": "O",
+"BIG HORN": "O"
+}
+},
+{
+"page": 6,
+"section": "SAFETY FEATURES",
+"parent": "",
+"text": "Lane Departure Warning, (Lane Keep Assist)",
+"marks": {
+"TRADESMAN": "P",
+"BIG HORN": "P"
+}
+},
+{
+"page": 6,
+"section": "SAFETY FEATURES",
+"parent": "",
+"text": "Adaptive steering",
+"marks": {
+"TRADESMAN": "P",
+"BIG HORN": "P"
+}
+},
+{
+"page": 6,
+"section": "SAFETY FEATURES",
+"parent": "",
+"text": "Adaptive Cruise Control with Stop",
+"marks": {
+"TRADESMAN": "S",
+"BIG HORN": "S"
+}
+},
+{
+"page": 6,
+"section": "SAFETY FEATURES",
+"parent": "",
+"text": "Ready Alert Braking",
+"marks": {
+"TRADESMAN": "S",
+"BIG HORN": "S"
+}
+},
+{
+"page": 6,
+"section": "SAFETY FEATURES",
+"parent": "",
+"text": "Full-speed Forward Collision Warning-Plus",
+"marks": {
+"TRADESMAN": "S",
+"BIG HORN": "S"
+}
+},
+{
+"page": 6,
+"section": "SAFETY FEATURES",
+"parent": "",
+"text": "Pedestrian Automatic Emergency Braking",
+"marks": {
+"TRADESMAN": "P",
+"BIG HORN": "P"
+}
+},
+{
+"page": 6,
+"section": "SAFETY FEATURES",
+"parent": "",
+"text": "Max speed settings (65 mph, 70 mph, 77 mph)",
+"marks": {
+"TRADESMAN": "O",
+"BIG HORN": "O"
+}
+},
+{
+"page": 6,
+"section": "SAFETY FEATURES",
+"parent": "",
+"text": "Auto high-beam headlamp control",
+"marks": {
+"TRADESMAN": "P",
+"BIG HORN": "P"
+}
+},
+{
+"page": 6,
+"section": "SAFETY FEATURES",
+"parent": "",
+"text": "Rain-sensing wipers",
+"marks": {
+"TRADESMAN": "P",
+"BIG HORN": "P"
+}
+},
+{
+"page": 7,
+"section": "SAFETY FEATURES",
+"parent": "",
+"text": "Drowsy Driver Detection",
+"marks": {
+"TRADESMAN": "P",
+"BIG HORN": "P"
+}
+},
+{
+"page": 7,
+"section": "SAFETY FEATURES",
+"parent": "",
+"text": "Traffic Sign Recognition",
+"marks": {
+"TRADESMAN": "P",
+"BIG HORN": "P"
+}
+},
+{
+"page": 7,
+"section": "SAFETY FEATURES",
+"parent": "",
+"text": "Auxiliary reverse lamps (packaged with Big Horn Level 3)",
+"marks": {
+"TRADESMAN": "NA",
+"BIG HORN": "P"
+}
+},
+{
+"page": 7,
+"section": "APPEARANCE PACKAGES",
+"parent": "",
+"text": "Night Edition Package (Requires Big Horn Level 1, Level 2 or Level 3) Sport performance hood Black-painted wheels Black badging Body-color grille surround Body-color front bumper Body-color fender flares Dark headlight bezels ParkSense front/rear park assist",
+"marks": {
+"TRADESMAN": "NA",
+"BIG HORN": "O"
+}
+},
+{
+"page": 7,
+"section": "APPEARANCE PACKAGES",
+"parent": "",
+"text": "Chrome Appearance Group Chrome front bumper (3500/4500/5500) Chrome grille (3500/4500/5500) Chrome inserts Polished aluminum wheels on 3500 Bright wheel cover (4500/5500)",
+"marks": {
+"TRADESMAN": "O",
+"BIG HORN": "NA"
+}
+},
+{
+"page": 7,
+"section": "EQUIPMENT PACKAGES",
+"parent": "",
+"text": "Ambulance Prep Group Remote rear heat/AC (provides ability to run auxiliary-mounted heater and A/C independently of instrument panel controls) A/C line tap and engine coolant access for upfitter Foam roof blocks (included with Regular Cab only)",
+"marks": {
+"TRADESMAN": "O",
+"BIG HORN": "O"
+}
+},
+{
+"page": 7,
+"section": "EQUIPMENT PACKAGES",
+"parent": "",
+"text": "Cold Weather Group (Diesel option)",
+"marks": {
+"TRADESMAN": "O",
+"BIG HORN": "O"
+}
+},
+{
+"page": 8,
+"section": "EQUIPMENT PACKAGES",
+"parent": "",
+"text": "Tradesman Level 1 Equipment Group Overhead console (Regular Cab) Power windows (Regular Cab) Power door locks (Regular Cab) (speed-sensitive actuation) Black trailer tow mirrors (Regular Cab) Door trim: (Regular Cab) (wrapped bolster/armrest, 360 door handles, join seam, Iron Gray-painted surround and accent) Remote keyless entry (Regular Cab) Rear window defroster",
+"marks": {
+"TRADESMAN": "O",
+"BIG HORN": "NA"
+}
+},
+{
+"page": 8,
+"section": "EQUIPMENT PACKAGES",
+"parent": "",
+"text": "Tradesman Level 2 Equipment Group Tradesman Level 1 content 115V power outlet 12.0-inch radio Dual zone AC Power-sliding rear window (Crew Cab) Remote start Tinted acoustic windshield Digital rearview mirror Power 2-way driver lumbar Trailer brake control Black wheel flares (3500)",
+"marks": {
+"TRADESMAN": "O",
+"BIG HORN": "NA"
+}
+},
+{
+"page": 9,
+"section": "EQUIPMENT PACKAGES",
+"parent": "",
+"text": "Big Horn Level 1 Equipment Group Power-sliding rear window (Crew Cab) Rear window defroster 115V power outlet Dual glove boxes Foam bottle door trim panel insert Cluster 7.0-in. TFT color display Glove box lamp Rear dome lamp Leather-wrapped steering wheel Remote start Digital rearview mirror 12.0-in. radio Dual zone AC Nine Alpine speakers w/ subwoofer (Crew Cab) Premium speakers (Regular Cab) Black wheel flares (3500)",
+"marks": {
+"TRADESMAN": "NA",
+"BIG HORN": "O"
+}
+},
+{
+"page": 9,
+"section": "EQUIPMENT PACKAGES",
+"parent": "",
+"text": "Big Horn Level 2 Equipment Group Big Horn Level 1 content CHMSL lamp w/ camera Digital cargo camera Universal garage door opener Power 2-way driver lumbar Polished aluminum wheels (set of 4)",
+"marks": {
+"TRADESMAN": "NA",
+"BIG HORN": "O"
+}
+},
+{
+"page": 9,
+"section": "EQUIPMENT PACKAGES",
+"parent": "",
+"text": "Big Horn Level 3 Equipment Group Laramie Package (Crew Cab 4x4 only) Big Horn Level 2 content ParkSense front/rear park assist Painted body-color front bumper, wheel flares & door handles Unique grille Auto high beam headlamp control High-level signature LED headlamps Daytime running lamps I/P bezels — painted w/ premium film Overhead console — premium",
+"marks": {
+"TRADESMAN": "NA",
+"BIG HORN": "O"
+}
+},
+{
+"page": 10,
+"section": "EQUIPMENT PACKAGES",
+"parent": "",
+"text": "Safety Group Security alarm Lane Keep Assist Adaptive steering Rain-sensing wipers Traffic Sign Recognition Drowsy Driver Detection Cluster 7.0-in. TFT color display Digital rearview mirror Auto high-beam headlamp control",
+"marks": {
+"TRADESMAN": "O",
+"BIG HORN": "O"
+}
+},
+{
+"page": 10,
+"section": "EQUIPMENT PACKAGES",
+"parent": "",
+"text": "Max Tow Package (Requires Diesel, 5500 only) Max tow electronic shift-on-the-fly transfer case Trailer brake controller",
+"marks": {
+"TRADESMAN": "O",
+"BIG HORN": "O"
+}
+},
+{
+"page": 11,
+"section": "EQUIPMENT PACKAGES",
+"parent": "",
+"text": "Max Payload Package (6.4-liter 5500 only) 19,000-lb. GVWR or 19,500-lb. GVWR",
+"marks": {
+"TRADESMAN": "O",
+"BIG HORN": "O"
+}
+},
+{
+"page": 11,
+"section": "EQUIPMENT PACKAGES",
+"parent": "",
+"text": "Rear Interior Trim Delete Group (Regular Cab only, Fleet only) Delete front center seat Delete rear floor storage tray Delete cab back trim panel",
+"marks": {
+"TRADESMAN": "O",
+"BIG HORN": "O"
+}
+},
+{
+"page": 11,
+"section": "EQUIPMENT PACKAGES",
+"parent": "",
+"text": "15,000-lb. GVWR Package (4500 only) Includes 15,000-lb. Gross Vehicle Weight Rating 4x2, 4x4",
+"marks": {
+"TRADESMAN": "O",
+"BIG HORN": "O"
+}
+},
+{
+"page": 11,
+"section": "EQUIPMENT PACKAGES",
+"parent": "",
+"text": "16,000 GVWR Package (4500 only) Includes 16,000-lb. Gross Vehicle Weight Rating 4x2, 4x4",
+"marks": {
+"TRADESMAN": "O",
+"BIG HORN": "O"
+}
+}
+],
+"url": "https://media.stellantisnorthamerica.com/view-spec.do?id=28051"
+}

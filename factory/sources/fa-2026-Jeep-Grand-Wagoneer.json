@@ -1,0 +1,1379 @@
+{
+"kind": "fa",
+"title": "2026 Jeep Grand Wagoneer",
+"rows": [
+{
+"page": 1,
+"section": "ENGINE",
+"parent": "",
+"text": "3.0-liter Twin Turbo I-6, Standard Output / Eight-speed automatic",
+"marks": {
+"Grand Wagoneer": "S",
+"Grand Wagoneer L": "S",
+"Grand Wagoneer Limited": "S",
+"Grand Wagoneer Limited L": "S",
+"Grand Wagoneer Summit": "S",
+"Grand Wagoneer Summit L": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "Exhaust System",
+"text": "Single, rear",
+"marks": {
+"Grand Wagoneer": "S",
+"Grand Wagoneer L": "S",
+"Grand Wagoneer Limited": "S",
+"Grand Wagoneer Limited L": "S",
+"Grand Wagoneer Summit": "S",
+"Grand Wagoneer Summit L": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "",
+"text": "Fuel tank — 26.5-gallon capacity with capless filler door (30.5-gallon capacity on LWB)",
+"marks": {
+"Grand Wagoneer": "S",
+"Grand Wagoneer L": "S",
+"Grand Wagoneer Limited": "S",
+"Grand Wagoneer Limited L": "S",
+"Grand Wagoneer Summit": "S",
+"Grand Wagoneer Summit L": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "",
+"text": "Selec-Speed Control (4x4 only)",
+"marks": {
+"Grand Wagoneer": "P",
+"Grand Wagoneer L": "P",
+"Grand Wagoneer Limited": "P",
+"Grand Wagoneer Limited L": "P",
+"Grand Wagoneer Summit": "P",
+"Grand Wagoneer Summit L": "P"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "",
+"text": "Selec-Terrain traction control system — center stack-mounted switch with traction control settings (4x4 only)",
+"marks": {
+"Grand Wagoneer": "S",
+"Grand Wagoneer L": "S",
+"Grand Wagoneer Limited": "S",
+"Grand Wagoneer Limited L": "S",
+"Grand Wagoneer Summit": "S",
+"Grand Wagoneer Summit L": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "Suspension",
+"text": "Normal duty (standard on 4x4 models, included on 4x2 models with rear load- leveling suspension)",
+"marks": {
+"Grand Wagoneer": "S",
+"Grand Wagoneer L": "S",
+"Grand Wagoneer Limited": "S",
+"Grand Wagoneer Limited L": "S",
+"Grand Wagoneer Summit": "NA",
+"Grand Wagoneer Summit L": "NA"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "Suspension",
+"text": "Quadra-Lift air suspension system — features air springs that replace conventional coil springs at each wheel, with five modes totaling 3.6 in. of lift",
+"marks": {
+"Grand Wagoneer": "P",
+"Grand Wagoneer L": "NA",
+"Grand Wagoneer Limited": "P",
+"Grand Wagoneer Limited L": "P",
+"Grand Wagoneer Summit": "S",
+"Grand Wagoneer Summit L": "S"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "Transfer Case/4WD System",
+"text": "Quadra-Trac I full-time single-speed 4WD (4x4 only)",
+"marks": {
+"Grand Wagoneer": "S",
+"Grand Wagoneer L": "S",
+"Grand Wagoneer Limited": "S",
+"Grand Wagoneer Limited L": "S",
+"Grand Wagoneer Summit": "S",
+"Grand Wagoneer Summit L": "S"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "Transfer Case/4WD System",
+"text": "Quadra-Trac II active 4WD includes two-speed transfer case and Selec-Speed Control",
+"marks": {
+"Grand Wagoneer": "P",
+"Grand Wagoneer L": "P",
+"Grand Wagoneer Limited": "P",
+"Grand Wagoneer Limited L": "P",
+"Grand Wagoneer Summit": "P",
+"Grand Wagoneer Summit L": "P"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "Roof — body color",
+"marks": {
+"Grand Wagoneer": "S",
+"Grand Wagoneer L": "S",
+"Grand Wagoneer Limited": "S",
+"Grand Wagoneer Limited L": "S",
+"Grand Wagoneer Summit": "O",
+"Grand Wagoneer Summit L": "O"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "Roof — black accent color",
+"marks": {
+"Grand Wagoneer": "P",
+"Grand Wagoneer L": "NA",
+"Grand Wagoneer Limited": "NA",
+"Grand Wagoneer Limited L": "NA",
+"Grand Wagoneer Summit": "S",
+"Grand Wagoneer Summit L": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "Liftgate — power, hands-free",
+"marks": {
+"Grand Wagoneer": "S",
+"Grand Wagoneer L": "S",
+"Grand Wagoneer Limited": "S",
+"Grand Wagoneer Limited L": "S",
+"Grand Wagoneer Summit": "S",
+"Grand Wagoneer Summit L": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Lighting",
+"text": "LED headlamps",
+"marks": {
+"Grand Wagoneer": "S",
+"Grand Wagoneer L": "S",
+"Grand Wagoneer Limited": "S",
+"Grand Wagoneer Limited L": "S",
+"Grand Wagoneer Summit": "S",
+"Grand Wagoneer Summit L": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Lighting",
+"text": "LED daytime running headlamps",
+"marks": {
+"Grand Wagoneer": "S",
+"Grand Wagoneer L": "S",
+"Grand Wagoneer Limited": "S",
+"Grand Wagoneer Limited L": "S",
+"Grand Wagoneer Summit": "S",
+"Grand Wagoneer Summit L": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Lighting",
+"text": "LED taillamps",
+"marks": {
+"Grand Wagoneer": "S",
+"Grand Wagoneer L": "S",
+"Grand Wagoneer Limited": "S",
+"Grand Wagoneer Limited L": "S",
+"Grand Wagoneer Summit": "S",
+"Grand Wagoneer Summit L": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Lighting",
+"text": "Auto high-beam headlamp control system",
+"marks": {
+"Grand Wagoneer": "S",
+"Grand Wagoneer L": "S",
+"Grand Wagoneer Limited": "S",
+"Grand Wagoneer Limited L": "S",
+"Grand Wagoneer Summit": "S",
+"Grand Wagoneer Summit L": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Mirrors",
+"text": "Power, manual fold with memory, supplemental turn, auto-dimming, heating element and approach lamps",
+"marks": {
+"Grand Wagoneer": "S",
+"Grand Wagoneer L": "S",
+"Grand Wagoneer Limited": "NA",
+"Grand Wagoneer Limited L": "NA",
+"Grand Wagoneer Summit": "NA",
+"Grand Wagoneer Summit L": "NA"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Mirrors",
+"text": "Power foldaway with heating element and memory, auto- dimming on driver’s side with supplemental turn signals",
+"marks": {
+"Grand Wagoneer": "NA",
+"Grand Wagoneer L": "NA",
+"Grand Wagoneer Limited": "S",
+"Grand Wagoneer Limited L": "S",
+"Grand Wagoneer Summit": "S",
+"Grand Wagoneer Summit L": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "Remote start system — control integrated into key fob, radio frequency system with 300-ft. range",
+"marks": {
+"Grand Wagoneer": "S",
+"Grand Wagoneer L": "S",
+"Grand Wagoneer Limited": "S",
+"Grand Wagoneer Limited L": "S",
+"Grand Wagoneer Summit": "S",
+"Grand Wagoneer Summit L": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Sunroof",
+"text": "Tri-pane panoramic — includes full power sunroof with power sunshade in front and fixed glass in rear",
+"marks": {
+"Grand Wagoneer": "P",
+"Grand Wagoneer L": "P",
+"Grand Wagoneer Limited": "P",
+"Grand Wagoneer Limited L": "P",
+"Grand Wagoneer Summit": "S",
+"Grand Wagoneer Summit L": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Wiper System",
+"text": "Front, variable/intermittent with one-gallon fluid capacity",
+"marks": {
+"Grand Wagoneer": "S",
+"Grand Wagoneer L": "S",
+"Grand Wagoneer Limited": "S",
+"Grand Wagoneer Limited L": "S",
+"Grand Wagoneer Summit": "S",
+"Grand Wagoneer Summit L": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Wiper System",
+"text": "Front speed-sensitive and rain-sensing with automatic feature",
+"marks": {
+"Grand Wagoneer": "S",
+"Grand Wagoneer L": "S",
+"Grand Wagoneer Limited": "S",
+"Grand Wagoneer Limited L": "S",
+"Grand Wagoneer Summit": "S",
+"Grand Wagoneer Summit L": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Wiper System",
+"text": "Rear with fixed intermittent and continuous speeds, with washer",
+"marks": {
+"Grand Wagoneer": "S",
+"Grand Wagoneer L": "S",
+"Grand Wagoneer Limited": "S",
+"Grand Wagoneer Limited L": "S",
+"Grand Wagoneer Summit": "S",
+"Grand Wagoneer Summit L": "S"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "10.25-in. TFT multiview cluster display",
+"marks": {
+"Grand Wagoneer": "S",
+"Grand Wagoneer L": "S",
+"Grand Wagoneer Limited": "S",
+"Grand Wagoneer Limited L": "S",
+"Grand Wagoneer Summit": "NA",
+"Grand Wagoneer Summit L": "NA"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "12.3-in. TFT multiview cluster display",
+"marks": {
+"Grand Wagoneer": "NA",
+"Grand Wagoneer L": "NA",
+"Grand Wagoneer Limited": "P",
+"Grand Wagoneer Limited L": "P",
+"Grand Wagoneer Summit": "S",
+"Grand Wagoneer Summit L": "S"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Front passenger interactive display",
+"marks": {
+"Grand Wagoneer": "NA",
+"Grand Wagoneer L": "NA",
+"Grand Wagoneer Limited": "NA",
+"Grand Wagoneer Limited L": "NA",
+"Grand Wagoneer Summit": "P",
+"Grand Wagoneer Summit L": "P"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Air filtration system",
+"marks": {
+"Grand Wagoneer": "S",
+"Grand Wagoneer L": "S",
+"Grand Wagoneer Limited": "S",
+"Grand Wagoneer Limited L": "S",
+"Grand Wagoneer Summit": "S",
+"Grand Wagoneer Summit L": "S"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Climate control — tri-zone automatic temperature control",
+"marks": {
+"Grand Wagoneer": "S",
+"Grand Wagoneer L": "S",
+"Grand Wagoneer Limited": "S",
+"Grand Wagoneer Limited L": "S",
+"Grand Wagoneer Summit": "NA",
+"Grand Wagoneer Summit L": "NA"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Climate control — four-zone automatic temperature control with comfort display",
+"marks": {
+"Grand Wagoneer": "NA",
+"Grand Wagoneer L": "NA",
+"Grand Wagoneer Limited": "NA",
+"Grand Wagoneer Limited L": "NA",
+"Grand Wagoneer Summit": "S",
+"Grand Wagoneer Summit L": "S"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Cargo Area",
+"text": "Carpeted — includes storage tray and cargo tie- down loops in floor, driver’s side storage bin, 12-volt auxiliary power outlet",
+"marks": {
+"Grand Wagoneer": "S",
+"Grand Wagoneer L": "S",
+"Grand Wagoneer Limited": "S",
+"Grand Wagoneer Limited L": "S",
+"Grand Wagoneer Summit": "S",
+"Grand Wagoneer Summit L": "S"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Cargo Area",
+"text": "Reversible cargo mat",
+"marks": {
+"Grand Wagoneer": "P",
+"Grand Wagoneer L": "P",
+"Grand Wagoneer Limited": "P",
+"Grand Wagoneer Limited L": "P",
+"Grand Wagoneer Summit": "P",
+"Grand Wagoneer Summit L": "P"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Console",
+"text": "Full-length front floor console with two cup holders, two-tier armrest storage",
+"marks": {
+"Grand Wagoneer": "S",
+"Grand Wagoneer L": "S",
+"Grand Wagoneer Limited": "S",
+"Grand Wagoneer Limited L": "S",
+"Grand Wagoneer Summit": "S",
+"Grand Wagoneer Summit L": "S"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Console",
+"text": "Overhead front with two LED map lamps, two dome lamps, universal garage door opener control switches and power sunroof/sunshade controls",
+"marks": {
+"Grand Wagoneer": "S",
+"Grand Wagoneer L": "S",
+"Grand Wagoneer Limited": "S",
+"Grand Wagoneer Limited L": "S",
+"Grand Wagoneer Summit": "S",
+"Grand Wagoneer Summit L": "S"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Front console cooler",
+"marks": {
+"Grand Wagoneer": "NA",
+"Grand Wagoneer L": "NA",
+"Grand Wagoneer Limited": "NA",
+"Grand Wagoneer Limited L": "NA",
+"Grand Wagoneer Summit": "P",
+"Grand Wagoneer Summit L": "P"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Memory system — radio station presets, last- station settings, driver’s seat position, exterior mirrors and power tilt/telescoping steering wheel",
+"marks": {
+"Grand Wagoneer": "S",
+"Grand Wagoneer L": "S",
+"Grand Wagoneer Limited": "S",
+"Grand Wagoneer Limited L": "S",
+"Grand Wagoneer Summit": "S",
+"Grand Wagoneer Summit L": "S"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Mirrors",
+"text": "Rearview, auto-dimming",
+"marks": {
+"Grand Wagoneer": "S",
+"Grand Wagoneer L": "S",
+"Grand Wagoneer Limited": "S",
+"Grand Wagoneer Limited L": "S",
+"Grand Wagoneer Summit": "S",
+"Grand Wagoneer Summit L": "S"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Mirrors",
+"text": "Digital rearview",
+"marks": {
+"Grand Wagoneer": "NA",
+"Grand Wagoneer L": "NA",
+"Grand Wagoneer Limited": "NA",
+"Grand Wagoneer Limited L": "NA",
+"Grand Wagoneer Summit": "P",
+"Grand Wagoneer Summit L": "P"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seat Fabrics",
+"text": "Perforated Capri leather-trimmed seating and smooth Capri leather bolsters",
+"marks": {
+"Grand Wagoneer": "S",
+"Grand Wagoneer L": "S",
+"Grand Wagoneer Limited": "NA",
+"Grand Wagoneer Limited L": "NA",
+"Grand Wagoneer Summit": "NA",
+"Grand Wagoneer Summit L": "NA"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seat Fabrics",
+"text": "Perforated Nappa leather-trimmed seating and smooth Nappa leather bolsters",
+"marks": {
+"Grand Wagoneer": "NA",
+"Grand Wagoneer L": "NA",
+"Grand Wagoneer Limited": "S",
+"Grand Wagoneer Limited L": "S",
+"Grand Wagoneer Summit": "NA",
+"Grand Wagoneer Summit L": "NA"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seat Fabrics",
+"text": "Premium perforated Nappa leather- trimmed seating and smooth Nappa leather bolsters",
+"marks": {
+"Grand Wagoneer": "NA",
+"Grand Wagoneer L": "NA",
+"Grand Wagoneer Limited": "NA",
+"Grand Wagoneer Limited L": "NA",
+"Grand Wagoneer Summit": "S",
+"Grand Wagoneer Summit L": "S"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seat Fabrics",
+"text": "Palermo leather-trimmed seating",
+"marks": {
+"Grand Wagoneer": "NA",
+"Grand Wagoneer L": "NA",
+"Grand Wagoneer Limited": "NA",
+"Grand Wagoneer Limited L": "NA",
+"Grand Wagoneer Summit": "P",
+"Grand Wagoneer Summit L": "P"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seating",
+"text": "Power 12-way driver and front-passenger with driver lumbar adjuster",
+"marks": {
+"Grand Wagoneer": "S",
+"Grand Wagoneer L": "S",
+"Grand Wagoneer Limited": "S",
+"Grand Wagoneer Limited L": "S",
+"Grand Wagoneer Summit": "NA",
+"Grand Wagoneer Summit L": "NA"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seating",
+"text": "Power 24-way driver and front-passenger with driver with lumbar adjuster",
+"marks": {
+"Grand Wagoneer": "NA",
+"Grand Wagoneer L": "NA",
+"Grand Wagoneer Limited": "NA",
+"Grand Wagoneer Limited L": "NA",
+"Grand Wagoneer Summit": "S",
+"Grand Wagoneer Summit L": "S"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seating",
+"text": "Heated and ventilated front seats",
+"marks": {
+"Grand Wagoneer": "S",
+"Grand Wagoneer L": "S",
+"Grand Wagoneer Limited": "S",
+"Grand Wagoneer Limited L": "S",
+"Grand Wagoneer Summit": "S",
+"Grand Wagoneer Summit L": "S"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seating",
+"text": "Heated second-row seating",
+"marks": {
+"Grand Wagoneer": "NA",
+"Grand Wagoneer L": "NA",
+"Grand Wagoneer Limited": "S",
+"Grand Wagoneer Limited L": "S",
+"Grand Wagoneer Summit": "S",
+"Grand Wagoneer Summit L": "S"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seating",
+"text": "Ventilated second-row seating",
+"marks": {
+"Grand Wagoneer": "NA",
+"Grand Wagoneer L": "NA",
+"Grand Wagoneer Limited": "NA",
+"Grand Wagoneer Limited L": "NA",
+"Grand Wagoneer Summit": "P",
+"Grand Wagoneer Summit L": "P"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seating",
+"text": "60/40 folding third-row seating",
+"marks": {
+"Grand Wagoneer": "S",
+"Grand Wagoneer L": "S",
+"Grand Wagoneer Limited": "S",
+"Grand Wagoneer Limited L": "S",
+"Grand Wagoneer Summit": "S",
+"Grand Wagoneer Summit L": "S"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seating",
+"text": "40/20/40 bench second-row seating",
+"marks": {
+"Grand Wagoneer": "O",
+"Grand Wagoneer L": "O",
+"Grand Wagoneer Limited": "O",
+"Grand Wagoneer Limited L": "O",
+"Grand Wagoneer Summit": "O",
+"Grand Wagoneer Summit L": "O"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seating",
+"text": "Captain’s chairs, second -row seating",
+"marks": {
+"Grand Wagoneer": "S",
+"Grand Wagoneer L": "S",
+"Grand Wagoneer Limited": "S",
+"Grand Wagoneer Limited L": "S",
+"Grand Wagoneer Summit": "S",
+"Grand Wagoneer Summit L": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Steering Wheel",
+"text": "Techno leather-wrapped and heated with audio, speed, Electronic Vehicle Information Center, voice recognition",
+"marks": {
+"Grand Wagoneer": "S",
+"Grand Wagoneer L": "S",
+"Grand Wagoneer Limited": "NA",
+"Grand Wagoneer Limited L": "NA",
+"Grand Wagoneer Summit": "NA",
+"Grand Wagoneer Summit L": "NA"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Steering Wheel",
+"text": "Leather-wrapped and heated with audio, speed, Electronic Vehicle Information Center, voice recognition and adaptive cruise control with stop",
+"marks": {
+"Grand Wagoneer": "NA",
+"Grand Wagoneer L": "NA",
+"Grand Wagoneer Limited": "S",
+"Grand Wagoneer Limited L": "S",
+"Grand Wagoneer Summit": "S",
+"Grand Wagoneer Summit L": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Steering Wheel",
+"text": "Power tilt-steering wheel/telescoping steering column",
+"marks": {
+"Grand Wagoneer": "S",
+"Grand Wagoneer L": "S",
+"Grand Wagoneer Limited": "S",
+"Grand Wagoneer Limited L": "S",
+"Grand Wagoneer Summit": "S",
+"Grand Wagoneer Summit L": "S"
+}
+},
+{
+"page": 5,
+"section": "UCONNECT MULTIMEDIA",
+"parent": "",
+"text": "Media hub — includes eight USB ports (11 when equipped with Rear Seat Entertainment package), auxiliary jack",
+"marks": {
+"Grand Wagoneer": "S",
+"Grand Wagoneer L": "S",
+"Grand Wagoneer Limited": "S",
+"Grand Wagoneer Limited L": "S",
+"Grand Wagoneer Summit": "S",
+"Grand Wagoneer Summit L": "S"
+}
+},
+{
+"page": 5,
+"section": "UCONNECT MULTIMEDIA",
+"parent": "",
+"text": "Wireless charging pad",
+"marks": {
+"Grand Wagoneer": "S",
+"Grand Wagoneer L": "S",
+"Grand Wagoneer Limited": "S",
+"Grand Wagoneer Limited L": "S",
+"Grand Wagoneer Summit": "S",
+"Grand Wagoneer Summit L": "S"
+}
+},
+{
+"page": 5,
+"section": "UCONNECT MULTIMEDIA",
+"parent": "Power Outlet",
+"text": "12-volt auxiliary power outlets",
+"marks": {
+"Grand Wagoneer": "S",
+"Grand Wagoneer L": "S",
+"Grand Wagoneer Limited": "S",
+"Grand Wagoneer Limited L": "S",
+"Grand Wagoneer Summit": "S",
+"Grand Wagoneer Summit L": "S"
+}
+},
+{
+"page": 5,
+"section": "UCONNECT MULTIMEDIA",
+"parent": "Power Outlet",
+"text": "115-volt auxiliary power outlet",
+"marks": {
+"Grand Wagoneer": "S",
+"Grand Wagoneer L": "S",
+"Grand Wagoneer Limited": "S",
+"Grand Wagoneer Limited L": "S",
+"Grand Wagoneer Summit": "S",
+"Grand Wagoneer Summit L": "S"
+}
+},
+{
+"page": 5,
+"section": "UCONNECT MULTIMEDIA",
+"parent": "",
+"text": "SiriusXM Radio includes six-month trial subscription",
+"marks": {
+"Grand Wagoneer": "S",
+"Grand Wagoneer L": "S",
+"Grand Wagoneer Limited": "S",
+"Grand Wagoneer Limited L": "S",
+"Grand Wagoneer Summit": "S",
+"Grand Wagoneer Summit L": "S"
+}
+},
+{
+"page": 5,
+"section": "UCONNECT MULTIMEDIA",
+"parent": "",
+"text": "TomTom Traffic includes six-month trial subscription",
+"marks": {
+"Grand Wagoneer": "S",
+"Grand Wagoneer L": "S",
+"Grand Wagoneer Limited": "S",
+"Grand Wagoneer Limited L": "S",
+"Grand Wagoneer Summit": "S",
+"Grand Wagoneer Summit L": "S"
+}
+},
+{
+"page": 5,
+"section": "UCONNECT MULTIMEDIA",
+"parent": "",
+"text": "TomTom Travel includes six-month trial subscription",
+"marks": {
+"Grand Wagoneer": "S",
+"Grand Wagoneer L": "S",
+"Grand Wagoneer Limited": "S",
+"Grand Wagoneer Limited L": "S",
+"Grand Wagoneer Summit": "S",
+"Grand Wagoneer Summit L": "S"
+}
+},
+{
+"page": 5,
+"section": "UCONNECT MULTIMEDIA",
+"parent": "Speakers",
+"text": "Alpine premium audio system with nine speakers, subwoofer and amplifier",
+"marks": {
+"Grand Wagoneer": "S",
+"Grand Wagoneer L": "S",
+"Grand Wagoneer Limited": "S",
+"Grand Wagoneer Limited L": "S",
+"Grand Wagoneer Summit": "NA",
+"Grand Wagoneer Summit L": "NA"
+}
+},
+{
+"page": 5,
+"section": "UCONNECT MULTIMEDIA",
+"parent": "Speakers",
+"text": "McIntosh MX950 entertainment system includes a 19-speaker, 950-watt premium audio system with 10-in. subwoofer",
+"marks": {
+"Grand Wagoneer": "NA",
+"Grand Wagoneer L": "NA",
+"Grand Wagoneer Limited": "P",
+"Grand Wagoneer Limited L": "P",
+"Grand Wagoneer Summit": "S",
+"Grand Wagoneer Summit L": "S"
+}
+},
+{
+"page": 6,
+"section": "UCONNECT MULTIMEDIA",
+"parent": "Speakers",
+"text": "McIntosh MX1375 entertainment system includes a 23-speaker, 1,375-watt premium audio system with 12-in. subwoofer",
+"marks": {
+"Grand Wagoneer": "NA",
+"Grand Wagoneer L": "NA",
+"Grand Wagoneer Limited": "NA",
+"Grand Wagoneer Limited L": "NA",
+"Grand Wagoneer Summit": "P",
+"Grand Wagoneer Summit L": "P"
+}
+},
+{
+"page": 6,
+"section": "UCONNECT MULTIMEDIA",
+"parent": "Speakers",
+"text": "Uconnect 5C NAV with 12-in. display",
+"marks": {
+"Grand Wagoneer": "S",
+"Grand Wagoneer L": "S",
+"Grand Wagoneer Limited": "S",
+"Grand Wagoneer Limited L": "S",
+"Grand Wagoneer Summit": "S",
+"Grand Wagoneer Summit L": "S"
+}
+},
+{
+"page": 6,
+"section": "UCONNECT MULTIMEDIA",
+"parent": "Speakers",
+"text": "Off-road Pages (located in TFT, 4x4 models only)",
+"marks": {
+"Grand Wagoneer": "S",
+"Grand Wagoneer L": "S",
+"Grand Wagoneer Limited": "S",
+"Grand Wagoneer Limited L": "S",
+"Grand Wagoneer Summit": "S",
+"Grand Wagoneer Summit L": "S"
+}
+},
+{
+"page": 6,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "360-degree surround view camera system",
+"marks": {
+"Grand Wagoneer": "P",
+"Grand Wagoneer L": "P",
+"Grand Wagoneer Limited": "P",
+"Grand Wagoneer Limited L": "P",
+"Grand Wagoneer Summit": "S",
+"Grand Wagoneer Summit L": "S"
+}
+},
+{
+"page": 6,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Active Driving Assist",
+"marks": {
+"Grand Wagoneer": "S",
+"Grand Wagoneer L": "S",
+"Grand Wagoneer Limited": "S",
+"Grand Wagoneer Limited L": "S",
+"Grand Wagoneer Summit": "S",
+"Grand Wagoneer Summit L": "S"
+}
+},
+{
+"page": 6,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Adaptive Cruise Control with Stop",
+"marks": {
+"Grand Wagoneer": "S",
+"Grand Wagoneer L": "S",
+"Grand Wagoneer Limited": "S",
+"Grand Wagoneer Limited L": "S",
+"Grand Wagoneer Summit": "S",
+"Grand Wagoneer Summit L": "S"
+}
+},
+{
+"page": 6,
+"section": "SAFETY AND SECURITY",
+"parent": "Airbags",
+"text": "Advanced multistage, driver and front passenger airbags",
+"marks": {
+"Grand Wagoneer": "S",
+"Grand Wagoneer L": "S",
+"Grand Wagoneer Limited": "S",
+"Grand Wagoneer Limited L": "S",
+"Grand Wagoneer Summit": "S",
+"Grand Wagoneer Summit L": "S"
+}
+},
+{
+"page": 6,
+"section": "SAFETY AND SECURITY",
+"parent": "Airbags",
+"text": "Advanced side-curtain airbags",
+"marks": {
+"Grand Wagoneer": "S",
+"Grand Wagoneer L": "S",
+"Grand Wagoneer Limited": "S",
+"Grand Wagoneer Limited L": "S",
+"Grand Wagoneer Summit": "S",
+"Grand Wagoneer Summit L": "S"
+}
+},
+{
+"page": 6,
+"section": "SAFETY AND SECURITY",
+"parent": "Airbags",
+"text": "Advanced supplemental front-seat side airbags",
+"marks": {
+"Grand Wagoneer": "S",
+"Grand Wagoneer L": "S",
+"Grand Wagoneer Limited": "S",
+"Grand Wagoneer Limited L": "S",
+"Grand Wagoneer Summit": "S",
+"Grand Wagoneer Summit L": "S"
+}
+},
+{
+"page": 6,
+"section": "SAFETY AND SECURITY",
+"parent": "Airbags",
+"text": "Driver and passenger’s side inflatable knee airbag",
+"marks": {
+"Grand Wagoneer": "S",
+"Grand Wagoneer L": "S",
+"Grand Wagoneer Limited": "S",
+"Grand Wagoneer Limited L": "S",
+"Grand Wagoneer Summit": "S",
+"Grand Wagoneer Summit L": "S"
+}
+},
+{
+"page": 6,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Auto hold braking",
+"marks": {
+"Grand Wagoneer": "NA",
+"Grand Wagoneer L": "NA",
+"Grand Wagoneer Limited": "NA",
+"Grand Wagoneer Limited L": "NA",
+"Grand Wagoneer Summit": "S",
+"Grand Wagoneer Summit L": "S"
+}
+},
+{
+"page": 6,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Blind-spot Monitoring with Rear Cross Path detection",
+"marks": {
+"Grand Wagoneer": "S",
+"Grand Wagoneer L": "S",
+"Grand Wagoneer Limited": "S",
+"Grand Wagoneer Limited L": "S",
+"Grand Wagoneer Summit": "S",
+"Grand Wagoneer Summit L": "S"
+}
+},
+{
+"page": 6,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Active Lane Management",
+"marks": {
+"Grand Wagoneer": "S",
+"Grand Wagoneer L": "S",
+"Grand Wagoneer Limited": "S",
+"Grand Wagoneer Limited L": "S",
+"Grand Wagoneer Summit": "S",
+"Grand Wagoneer Summit L": "S"
+}
+},
+{
+"page": 6,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Electronic stability control — includes vehicle stability management system, electronic roll mitigation, all-speed traction control, brake assist and four-channel anti-lock braking system",
+"marks": {
+"Grand Wagoneer": "S",
+"Grand Wagoneer L": "S",
+"Grand Wagoneer Limited": "S",
+"Grand Wagoneer Limited L": "S",
+"Grand Wagoneer Summit": "S",
+"Grand Wagoneer Summit L": "S"
+}
+},
+{
+"page": 6,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Head-up Display",
+"marks": {
+"Grand Wagoneer": "NA",
+"Grand Wagoneer L": "NA",
+"Grand Wagoneer Limited": "P",
+"Grand Wagoneer Limited L": "P",
+"Grand Wagoneer Summit": "S",
+"Grand Wagoneer Summit L": "S"
+}
+},
+{
+"page": 6,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Hill-start Assist",
+"marks": {
+"Grand Wagoneer": "S",
+"Grand Wagoneer L": "S",
+"Grand Wagoneer Limited": "S",
+"Grand Wagoneer Limited L": "S",
+"Grand Wagoneer Summit": "S",
+"Grand Wagoneer Summit L": "S"
+}
+},
+{
+"page": 7,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Intersection Collision Assist",
+"marks": {
+"Grand Wagoneer": "S",
+"Grand Wagoneer L": "S",
+"Grand Wagoneer Limited": "S",
+"Grand Wagoneer Limited L": "S",
+"Grand Wagoneer Summit": "S",
+"Grand Wagoneer Summit L": "S"
+}
+},
+{
+"page": 7,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Front and rear park assist system (with rear backup camera)",
+"marks": {
+"Grand Wagoneer": "S",
+"Grand Wagoneer L": "S",
+"Grand Wagoneer Limited": "S",
+"Grand Wagoneer Limited L": "S",
+"Grand Wagoneer Summit": "S",
+"Grand Wagoneer Summit L": "S"
+}
+},
+{
+"page": 7,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "ParkSense parallel/perpendicular park assist",
+"marks": {
+"Grand Wagoneer": "P",
+"Grand Wagoneer L": "P",
+"Grand Wagoneer Limited": "P",
+"Grand Wagoneer Limited L": "P",
+"Grand Wagoneer Summit": "S",
+"Grand Wagoneer Summit L": "S"
+}
+},
+{
+"page": 7,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Rain brake support",
+"marks": {
+"Grand Wagoneer": "S",
+"Grand Wagoneer L": "S",
+"Grand Wagoneer Limited": "S",
+"Grand Wagoneer Limited L": "S",
+"Grand Wagoneer Summit": "S",
+"Grand Wagoneer Summit L": "S"
+}
+},
+{
+"page": 7,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Remote keyless entry",
+"marks": {
+"Grand Wagoneer": "S",
+"Grand Wagoneer L": "S",
+"Grand Wagoneer Limited": "S",
+"Grand Wagoneer Limited L": "S",
+"Grand Wagoneer Summit": "S",
+"Grand Wagoneer Summit L": "S"
+}
+},
+{
+"page": 7,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Security alarm",
+"marks": {
+"Grand Wagoneer": "S",
+"Grand Wagoneer L": "S",
+"Grand Wagoneer Limited": "S",
+"Grand Wagoneer Limited L": "S",
+"Grand Wagoneer Summit": "S",
+"Grand Wagoneer Summit L": "S"
+}
+},
+{
+"page": 7,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Sentry Key anti-theft engine immobilizer",
+"marks": {
+"Grand Wagoneer": "S",
+"Grand Wagoneer L": "S",
+"Grand Wagoneer Limited": "S",
+"Grand Wagoneer Limited L": "S",
+"Grand Wagoneer Summit": "S",
+"Grand Wagoneer Summit L": "S"
+}
+},
+{
+"page": 7,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Universal garage door opener",
+"marks": {
+"Grand Wagoneer": "S",
+"Grand Wagoneer L": "S",
+"Grand Wagoneer Limited": "S",
+"Grand Wagoneer Limited L": "S",
+"Grand Wagoneer Summit": "S",
+"Grand Wagoneer Summit L": "S"
+}
+},
+{
+"page": 7,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "8-Passenger Seating Package — includes second-row 40/20/40 bench seat with power, tip, recline and full-length floor console",
+"marks": {
+"Grand Wagoneer": "P",
+"Grand Wagoneer L": "P",
+"Grand Wagoneer Limited": "P",
+"Grand Wagoneer Limited L": "P",
+"Grand Wagoneer Summit": "P",
+"Grand Wagoneer Summit L": "P"
+}
+},
+{
+"page": 7,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Advanced Tech Package — includes Head-up Display and 12-in. cluster color display",
+"marks": {
+"Grand Wagoneer": "NA",
+"Grand Wagoneer L": "NA",
+"Grand Wagoneer Limited": "P",
+"Grand Wagoneer Limited L": "P",
+"Grand Wagoneer Summit": "NA",
+"Grand Wagoneer Summit L": "NA"
+}
+},
+{
+"page": 7,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Convenience Group I — includes smartphone as a key, Side Distance Warning, 360-degree surround view camera, ParkSense parallel/perpendicular park assist, Quadra-Lift air suspension, semi-active damping and second-row window sunshades (manual)",
+"marks": {
+"Grand Wagoneer": "NA",
+"Grand Wagoneer L": "NA",
+"Grand Wagoneer Limited": "P",
+"Grand Wagoneer Limited L": "P",
+"Grand Wagoneer Summit": "NA",
+"Grand Wagoneer Summit L": "NA"
+}
+},
+{
+"page": 7,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Heavy-duty Trailer Tow (4x4 only) — includes two-speed transfer case, 3.92 final drive ratio, removable front and rear tow hooks, electric limited-slip differential, Selec-Speed Control, integrated trailer brake control, adjustable roof rail crossbars, trailer hitch zoom, trailer light monitoring, trailer tire pressure monitoring, Blind-spot Monitoring with Trailer Tow Detection System, all-season tires",
+"marks": {
+"Grand Wagoneer": "O",
+"Grand Wagoneer L": "O",
+"Grand Wagoneer Limited": "O",
+"Grand Wagoneer Limited L": "O",
+"Grand Wagoneer Summit": "O",
+"Grand Wagoneer Summit L": "O"
+}
+},
+{
+"page": 8,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Limited Altitude Appearance Package — includes black exterior accents, Black Chiseled Metal interior accents, Titanium daylight opening (DLO) upper and grille applique, 22-in. aluminum painted wheel and all-season tires",
+"marks": {
+"Grand Wagoneer": "NA",
+"Grand Wagoneer L": "NA",
+"Grand Wagoneer Limited": "P",
+"Grand Wagoneer Limited L": "P",
+"Grand Wagoneer Summit": "NA",
+"Grand Wagoneer Summit L": "NA"
+}
+},
+{
+"page": 8,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Limited Reserve Appearance Package — includes Quadra-lift air suspension, semi-active damping, cargo cover, reversible carpet/vinyl cargo mat, premium floor mats and instrument panel, tri-pane sunroof, power side steps, 19-speaker McIntosh audio system, interior rear-facing camera, second-row window sunshades (manual), 360-degree surround view camera, ParkSense parallel/perpendicular park assist, Side Distance Warning, Head-up Display, 12-in. TFT cluster and Black Appearance Package",
+"marks": {
+"Grand Wagoneer": "NA",
+"Grand Wagoneer L": "NA",
+"Grand Wagoneer Limited": "P",
+"Grand Wagoneer Limited L": "P",
+"Grand Wagoneer Summit": "NA",
+"Grand Wagoneer Summit L": "NA"
+}
+},
+{
+"page": 8,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Premium Group I — includes third-row 60/40 power recline, auto power-folding exterior mirrors, interior rear-facing camera, Side Distance Warning, 360-degree surround view camera, ParkSense parallel/perpendicular park assist and 22-in. aluminum wheels",
+"marks": {
+"Grand Wagoneer": "P",
+"Grand Wagoneer L": "P",
+"Grand Wagoneer Limited": "NA",
+"Grand Wagoneer Limited L": "NA",
+"Grand Wagoneer Summit": "NA",
+"Grand Wagoneer Summit L": "NA"
+}
+},
+{
+"page": 8,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Premium Group II — includes three- panel sunroof, luxury front and rear floor mats, reversible carpet/vinyl cargo mat, interior rear-facing camera, cargo cover, power-deployable running boards and 19-speaker McIntosh audio system",
+"marks": {
+"Grand Wagoneer": "NA",
+"Grand Wagoneer L": "NA",
+"Grand Wagoneer Limited": "P",
+"Grand Wagoneer Limited L": "P",
+"Grand Wagoneer Summit": "NA",
+"Grand Wagoneer Summit L": "NA"
+}
+},
+{
+"page": 8,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Premium Group III — includes ventilated rear seats, rearview auto dim digital display mirror, reversible carpet/vinyl cargo mat, cargo cover and front passenger interactive display",
+"marks": {
+"Grand Wagoneer": "NA",
+"Grand Wagoneer L": "NA",
+"Grand Wagoneer Limited": "NA",
+"Grand Wagoneer Limited L": "NA",
+"Grand Wagoneer Summit": "P",
+"Grand Wagoneer Summit L": "P"
+}
+},
+{
+"page": 8,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Summit Obsidian Appearance Package — includes 22-in. polished wheels with black inserts, adjustable roof rail crossbars, Gloss Black upper/lower daylight opening (DLO) molding, black exterior and interior accents",
+"marks": {
+"Grand Wagoneer": "NA",
+"Grand Wagoneer L": "NA",
+"Grand Wagoneer Limited": "NA",
+"Grand Wagoneer Limited L": "NA",
+"Grand Wagoneer Summit": "P",
+"Grand Wagoneer Summit L": "P"
+}
+},
+{
+"page": 9,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Summit Reserve Appearance Package — includes ventilated rear seats, suede headliner, full-length premium floor console, leather-trimmed bucket seats, rearview auto dim digital display mirror, reversible carpet/vinyl cargo mat, cargo cover, front console cooler, real wood interior accents, 23-speaker McIntosh audio system, front interactive passenger display and Black Appearance Package",
+"marks": {
+"Grand Wagoneer": "NA",
+"Grand Wagoneer L": "NA",
+"Grand Wagoneer Limited": "NA",
+"Grand Wagoneer Limited L": "NA",
+"Grand Wagoneer Summit": "P",
+"Grand Wagoneer Summit L": "P"
+}
+},
+{
+"page": 9,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Rear Seat Entertainment — includes dual 10.1-in. screens, fully functional USB/HDMI ports and Fire TV",
+"marks": {
+"Grand Wagoneer": "NA",
+"Grand Wagoneer L": "NA",
+"Grand Wagoneer Limited": "O",
+"Grand Wagoneer Limited L": "O",
+"Grand Wagoneer Summit": "O",
+"Grand Wagoneer Summit L": "O"
+}
+},
+{
+"page": 9,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Upland Package — includes Selec- Speed Control, locking in-vehicle safe, active two speed transfer case, limited slip differential, 3.92 final drive ratio, trailer light monitoring, Quadra-Lift air suspension, semi-active damping, fuel tank, transfer case and front-axle skid plates, trailer tire pressure monitoring system, trailer brake control, trailer hitch zoom/line-up assist, removable rear tow hooks, Vapor front tow hooks, Blind-spot Monitoring with Trailer Tow Detection System, 20-in. aluminum painted wheel and all-season tires",
+"marks": {
+"Grand Wagoneer": "P",
+"Grand Wagoneer L": "NA",
+"Grand Wagoneer Limited": "NA",
+"Grand Wagoneer Limited L": "NA",
+"Grand Wagoneer Summit": "NA",
+"Grand Wagoneer Summit L": "NA"
+}
+}
+],
+"url": "https://media.stellantisnorthamerica.com/view-spec.do?id=27116"
+}

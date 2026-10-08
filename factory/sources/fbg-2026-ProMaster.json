@@ -1,0 +1,1757 @@
+{
+"kind": "fbg",
+"title": "2026 RAM PROMASTER",
+"columns": [
+{
+"code": "2TA/2TB2TG/2TH",
+"name": "Cargo Van"
+},
+{
+"code": "2TB/2TH",
+"name": "Window Van"
+},
+{
+"code": "2TA/2TB2TG/2TH#2",
+"name": "Cutaway"
+}
+],
+"colors": [
+"Black",
+"Granite Crystal Metallic",
+"Ceramic Gray",
+"Bright Silver Metallic",
+"Forged Blue Metallic",
+"Deep Cherry Red Crystal Pearl",
+"Flame Red",
+"Sandstone",
+"Bright White"
+],
+"rows": [
+{
+"page": 2,
+"section": "ENGINE / TRANSMISSION",
+"parent": "",
+"text": "3.6L Pentastar® V6 with TorqueFlite® Front-Wheel Drive (FWD) Transmission (ERF/DFH)",
+"marks": {
+"2TA/2TB2TG/2TH": "•",
+"2TB/2TH": "•",
+"2TA/2TB2TG/2TH#2": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Roof Height",
+"text": "Standard",
+"marks": {
+"2TA/2TB2TG/2TH": "•",
+"2TA/2TB2TG/2TH#2": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Roof Height",
+"text": "High",
+"marks": {
+"2TA/2TB2TG/2TH": "O",
+"2TB/2TH": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Roof Height",
+"text": "Super-High (3500 159-inch wheelbase, extended load floor only)",
+"marks": {
+"2TA/2TB2TG/2TH": "O"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Additional Key Fobs",
+"text": "Two (GXK)",
+"marks": {
+"2TA/2TB2TG/2TH": "F",
+"2TB/2TH": "F",
+"2TA/2TB2TG/2TH#2": "F"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Alternator",
+"text": "180-amp (BAD)",
+"marks": {
+"2TA/2TB2TG/2TH": "•",
+"2TB/2TH": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Alternator",
+"text": "220-amp (included with Power Group and Cold Weather Group on Tradesman®; included with SLT and SLT+) (BAJ)",
+"marks": {
+"2TA/2TB2TG/2TH": "P",
+"2TB/2TH": "P",
+"2TA/2TB2TG/2TH#2": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "",
+"text": "Auxiliary Fuel Tap (XFZ)",
+"marks": {
+"2TA/2TB2TG/2TH": "•",
+"2TB/2TH": "•",
+"2TA/2TB2TG/2TH#2": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Battery",
+"text": "95-amp (BCY)",
+"marks": {
+"2TA/2TB2TG/2TH": "•",
+"2TB/2TH": "•",
+"2TA/2TB2TG/2TH#2": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Battery",
+"text": "100-amp (included with Power Group, SLT and SLT+) (BDC)",
+"marks": {
+"2TA/2TB2TG/2TH": "P",
+"2TB/2TH": "P",
+"2TA/2TB2TG/2TH#2": "P"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Battery",
+"text": "Auxiliary Power Connector (BC1)",
+"marks": {
+"2TA/2TB2TG/2TH": "•",
+"2TB/2TH": "•",
+"2TA/2TB2TG/2TH#2": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "",
+"text": "Crosswind Assist (BNU)",
+"marks": {
+"2TA/2TB2TG/2TH": "•",
+"2TB/2TH": "•",
+"2TA/2TB2TG/2TH#2": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "",
+"text": "Rear Crossmember Delete (XWJ)",
+"marks": {
+"2TA/2TB2TG/2TH#2": "F"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "",
+"text": "Electronic Stability Control (ESC)(8) (BNB)",
+"marks": {
+"2TA/2TB2TG/2TH": "•",
+"2TB/2TH": "•",
+"2TA/2TB2TG/2TH#2": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "",
+"text": "Electronic Parking Brake (XC4)",
+"marks": {
+"2TA/2TB2TG/2TH": "•",
+"2TB/2TH": "•",
+"2TA/2TB2TG/2TH#2": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "",
+"text": "Engine Block Heater (NHK)",
+"marks": {
+"2TA/2TB2TG/2TH": "O",
+"2TB/2TH": "O",
+"2TA/2TB2TG/2TH#2": "O"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Fuel Tank",
+"text": "24-gallon (NFE)",
+"marks": {
+"2TA/2TB2TG/2TH": "•",
+"2TB/2TH": "•",
+"2TA/2TB2TG/2TH#2": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "",
+"text": "Full-Size Spare Tire (optional on Tradesman; packaged with SLT and SLT+) (TBB)",
+"marks": {
+"2TA/2TB2TG/2TH": "O/P",
+"2TB/2TH": "O/P",
+"2TA/2TB2TG/2TH#2": "O/P"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "",
+"text": "Electric Power Steering (SBL)",
+"marks": {
+"2TA/2TB2TG/2TH": "•",
+"2TB/2TH": "•",
+"2TA/2TB2TG/2TH#2": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "",
+"text": "Push-Button Start (GX4)",
+"marks": {
+"2TA/2TB2TG/2TH": "•",
+"2TB/2TH": "•",
+"2TA/2TB2TG/2TH#2": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Speed Limiter",
+"text": "65-mph maximum speed (JJ4)",
+"marks": {
+"2TA/2TB2TG/2TH": "O",
+"2TB/2TH": "O",
+"2TA/2TB2TG/2TH#2": "O"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Speed Limiter",
+"text": "70-mph maximum speed (JJ5)",
+"marks": {
+"2TA/2TB2TG/2TH": "O",
+"2TB/2TH": "O",
+"2TA/2TB2TG/2TH#2": "O"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Speed Limiter",
+"text": "77-mph maximum speed (JJ9)",
+"marks": {
+"2TA/2TB2TG/2TH": "O",
+"2TB/2TH": "O",
+"2TA/2TB2TG/2TH#2": "O"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Suspensions",
+"text": "Heavy-duty (2500 / 3500) (SDB)",
+"marks": {
+"2TA/2TB2TG/2TH": "•",
+"2TB/2TH": "O"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Suspensions",
+"text": "Light-duty (118-inch-wheelbase 1500 models only) (SDA)",
+"marks": {
+"2TA/2TB2TG/2TH": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Suspensions",
+"text": "Medium-duty (136-inch-wheelbase 1500 models only) (SDJ)",
+"marks": {
+"2TA/2TB2TG/2TH": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Suspensions",
+"text": "Premium heavy-duty (3500 models only; Cargo Van and Window Van require 159-inch wheelbase) (SDD)",
+"marks": {
+"2TA/2TB2TG/2TH": "O",
+"2TB/2TH": "O",
+"2TA/2TB2TG/2TH#2": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Suspensions",
+"text": "Touring (SDC)",
+"marks": {
+"2TB/2TH": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "",
+"text": "Temporary Spare Tire Mount (TBA)",
+"marks": {
+"2TA/2TB2TG/2TH#2": "O"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Upfitter Electronic Module",
+"text": "Vehicle System Interface Module (VSIM) (included with Upfitter’s Prep Package) (XXS)",
+"marks": {
+"2TA/2TB2TG/2TH": "P",
+"2TB/2TH": "P",
+"2TA/2TB2TG/2TH#2": "P"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "“RAM” Grille in Black with Chrome “RAM” Badge (ME6/MFF)",
+"marks": {
+"2TA/2TB2TG/2TH": "•",
+"2TB/2TH": "•",
+"2TA/2TB2TG/2TH#2": "•"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "Black Front Fascia (MLF)",
+"marks": {
+"2TA/2TB2TG/2TH": "•",
+"2TB/2TH": "•",
+"2TA/2TB2TG/2TH#2": "•"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "Black Rear Bumper (MBN)",
+"marks": {
+"2TA/2TB2TG/2TH": "•",
+"2TB/2TH": "•"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "Chrome Grille (included with SLT or SLT+; requires fog lamps or LED fog lamps) (MFE)",
+"marks": {
+"2TA/2TB2TG/2TH": "P",
+"2TB/2TH": "P",
+"2TA/2TB2TG/2TH#2": "P"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "“RAM” grille badge in Black (included with Black Appearance Package) (ME3)",
+"marks": {
+"2TA/2TB2TG/2TH": "F/P",
+"2TB/2TH": "F/P",
+"2TA/2TB2TG/2TH#2": "F/P"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "Cowl aesthetic cover (included with SLT and SLT+) (MYN)",
+"marks": {
+"2TA/2TB2TG/2TH": "•",
+"2TB/2TH": "•",
+"2TA/2TB2TG/2TH#2": "•"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "Daytime Running Lamps (DRLs) (LMK)",
+"marks": {
+"2TA/2TB2TG/2TH": "•",
+"2TB/2TH": "•",
+"2TA/2TB2TG/2TH#2": "•"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Doors, Rear",
+"text": "260°-opening (GLF)",
+"marks": {
+"2TA/2TB2TG/2TH": "•",
+"2TB/2TH": "•"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Doors, Rear",
+"text": "Rear hinged doors with fixed glass (includes deep-tint sunscreen glass, rear window defroster and rearview day/night mirror) (GLB)",
+"marks": {
+"2TA/2TB2TG/2TH": "O",
+"2TB/2TH": "•"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Doors, Side",
+"text": "Right side with no glass (GKA)",
+"marks": {
+"2TA/2TB2TG/2TH": "•"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Doors, Side",
+"text": "Right side with fixed window (High Roof models only; includes deep-tint sunscreen glass; included with Crew Van Package) (GKS)",
+"marks": {
+"2TA/2TB2TG/2TH": "O/P",
+"2TB/2TH": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Side Door Badging",
+"text": "ProMaster (included with roll-up rear door on 3500 Cargo Van Super-High Roof models only) (MUU)",
+"marks": {
+"2TA/2TB2TG/2TH": "P",
+"2TA/2TB2TG/2TH#2": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Side Door Badging",
+"text": "Side Badging Delete (included with 3500 Cargo Van Super-High Roof 159-inch wheelbase Extended models only) (MSY)",
+"marks": {
+"2TA/2TB2TG/2TH": "F",
+"2TA/2TB2TG/2TH#2": "F"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Rear Door Badging",
+"text": "ProMaster (not available with roll-up rear door) (MUX)",
+"marks": {
+"2TA/2TB2TG/2TH": "•",
+"2TB/2TH": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Rear Door Badging",
+"text": "Rear Badging Delete (MS8)",
+"marks": {
+"2TA/2TB2TG/2TH": "F",
+"2TB/2TH": "F"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "Front Fog Lamps with Cornering Function (included with Convenience Group, SLT and SLT+) (LNJ)",
+"marks": {
+"2TA/2TB2TG/2TH": "P",
+"2TB/2TH": "•",
+"2TA/2TB2TG/2TH#2": "P"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "LED fog lamps with cornering function (included with SLT and SLT+) (LNV)",
+"marks": {
+"2TA/2TB2TG/2TH": "P",
+"2TB/2TH": "P",
+"2TA/2TB2TG/2TH#2": "P"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "Front License Plate Bracket (MDA)",
+"marks": {
+"2TA/2TB2TG/2TH": "O",
+"2TB/2TH": "O",
+"2TA/2TB2TG/2TH#2": "O"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "Halogen Headlamps (LMA)",
+"marks": {
+"2TA/2TB2TG/2TH": "•",
+"2TB/2TH": "•",
+"2TA/2TB2TG/2TH#2": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "LED reflector (included with SLT and SLT+) (LPX)",
+"marks": {
+"2TA/2TB2TG/2TH": "P",
+"2TB/2TH": "P",
+"2TA/2TB2TG/2TH#2": "P"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "Automatic (included with Premium Convenience Group and Cold Weather Group on Tradesman®; included with SLT and SLT+) (LMG)",
+"marks": {
+"2TA/2TB2TG/2TH": "P",
+"2TB/2TH": "P",
+"2TA/2TB2TG/2TH#2": "P"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "Auto High-Beam Headlamp Control (included with Premium Convenience Group and Cold Weather Group on Tradesman; included with SLT and SLT+) (LMS)",
+"marks": {
+"2TA/2TB2TG/2TH": "P",
+"2TB/2TH": "P",
+"2TA/2TB2TG/2TH#2": "P"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "Class IV Hitch Receiver (XFH)",
+"marks": {
+"2TA/2TB2TG/2TH": "O",
+"2TB/2TH": "O"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Mirrors",
+"text": "Manual-adjust/manual-folding (GTP)",
+"marks": {
+"2TA/2TB2TG/2TH": "•",
+"2TB/2TH": "•",
+"2TA/2TB2TG/2TH#2": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Mirrors",
+"text": "Power-adjust/power-folding, heated (included with Convenience Group, SLT and SLT+) (GTR)",
+"marks": {
+"2TA/2TB2TG/2TH": "P",
+"2TB/2TH": "P"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Mirrors",
+"text": "Wide power-adjust, heated (included with Convenience Group for Cutaway models) (GTB)",
+"marks": {
+"2TA/2TB2TG/2TH#2": "P"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Roof Clearance Lamps",
+"text": "Front (LNC)",
+"marks": {
+"2TA/2TB2TG/2TH": "•",
+"2TB/2TH": "•",
+"2TA/2TB2TG/2TH#2": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Roof Clearance Lamps",
+"text": "Rear (LNG)",
+"marks": {
+"2TA/2TB2TG/2TH": "•",
+"2TB/2TH": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Splash Guards",
+"text": "Vehicle Set (by Mopar®; late availability) (MKN)",
+"marks": {
+"2TA/2TB2TG/2TH": "O",
+"2TB/2TH": "O"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "Front Mud Flaps (by Mopar) (MEJ)",
+"marks": {
+"2TA/2TB2TG/2TH#2": "F"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Step",
+"text": "Rear Bumper Extension (not available with Class IV hitch receiver; see your dealer for availability; by Mopar) (MDM)",
+"marks": {
+"2TA/2TB2TG/2TH": "O",
+"2TB/2TH": "O"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Step",
+"text": "Sliding Door Step, Right Side (not available on 118-inch-wheelbase models; see your dealer for availability; by Mopar) (MRZ)",
+"marks": {
+"2TA/2TB2TG/2TH": "O",
+"2TB/2TH": "O"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels",
+"text": "16-inch Silver-painted aluminum (included with SLT and SLT+; not available with Black Appearance Package) (WJR)",
+"marks": {
+"2TA/2TB2TG/2TH": "P",
+"2TB/2TH": "P",
+"2TA/2TB2TG/2TH#2": "P"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels",
+"text": "16-inch Silver-painted steel with center cap (WCS)",
+"marks": {
+"2TA/2TB2TG/2TH": "•",
+"2TB/2TH": "•",
+"2TA/2TB2TG/2TH#2": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels",
+"text": "16-inch Black-painted steel (not available with Black Appearance Package) (WDL)",
+"marks": {
+"2TA/2TB2TG/2TH": "F",
+"2TB/2TH": "F",
+"2TA/2TB2TG/2TH#2": "F"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels",
+"text": "16-inch Black-painted aluminum with machined face (included with SLT and SLT+; not available with Black Appearance Package) (WNY)",
+"marks": {
+"2TA/2TB2TG/2TH": "O",
+"2TB/2TH": "O",
+"2TA/2TB2TG/2TH#2": "O"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels",
+"text": "16-inch White-painted steel (not available with Black Appearance Package) (WDW)",
+"marks": {
+"2TA/2TB2TG/2TH": "F",
+"2TB/2TH": "F",
+"2TA/2TB2TG/2TH#2": "F"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels",
+"text": "16-inch Black-painted aluminum (included with Black Appearance Package) (WNA)",
+"marks": {
+"2TA/2TB2TG/2TH": "P",
+"2TB/2TH": "P",
+"2TA/2TB2TG/2TH#2": "P"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "Spare Tire Delete (includes tire sealant and air compressor) (TBF)",
+"marks": {
+"2TA/2TB2TG/2TH": "•",
+"2TB/2TH": "•",
+"2TA/2TB2TG/2TH#2": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "Roll-Up Rear Door (3500 Super-High Roof only; includes power-folding and heated mirrors on Tradesman; includes Blind Spot Monitoring (BSM)(7) and Rear Cross-Path Detection System(4) on all models) (GMF)",
+"marks": {
+"2TA/2TB2TG/2TH": "O"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "Taillamp Extension Wiring (XGF)",
+"marks": {
+"2TA/2TB2TG/2TH#2": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Tires",
+"text": "LT255/75R16E BSW All-Season (A/S) (TWA)",
+"marks": {
+"2TA/2TB2TG/2TH": "•",
+"2TB/2TH": "•",
+"2TA/2TB2TG/2TH#2": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Tires",
+"text": "225/75R16C BSW A/S (included with SLT and SLT+) (TU5)",
+"marks": {
+"2TA/2TB2TG/2TH": "O",
+"2TB/2TH": "O",
+"2TA/2TB2TG/2TH#2": "O"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Window",
+"text": "Left-side, second-row fixed with deep-tint sunscreen glass (High Roof or Super-High Roof Cargo Van only; included with Crew Van Package; not available with left-side sliding door) (GEA)",
+"marks": {
+"2TA/2TB2TG/2TH": "P",
+"2TB/2TH": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Window Defroster",
+"text": "Rear (requires rear doors with glass on Cargo Van) (GFA)",
+"marks": {
+"2TA/2TB2TG/2TH": "P",
+"2TB/2TH": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "Rain-Sensitive Windshield Wipers (included with Premium Convenience Group on Tradesman, Cold Weather Group, SLT and SLT+) (JHC)",
+"marks": {
+"2TA/2TB2TG/2TH": "P",
+"2TB/2TH": "P",
+"2TA/2TB2TG/2TH#2": "P"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Auxiliary Power Outlet",
+"text": "12-volt, front (JJJ)",
+"marks": {
+"2TA/2TB2TG/2TH": "•",
+"2TB/2TH": "•",
+"2TA/2TB2TG/2TH#2": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Auxiliary Power Outlet",
+"text": "Rear (included with Power Group on Cargo Van and Window Van; included with SLT and SLT+) (JKP)",
+"marks": {
+"2TA/2TB2TG/2TH": "P",
+"2TB/2TH": "P",
+"2TA/2TB2TG/2TH#2": "P"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Auxiliary Power Outlet",
+"text": "115-volt (included with Power Group on Cargo Van and Window Van; included with SLT and SLT+) (JKV)",
+"marks": {
+"2TA/2TB2TG/2TH": "P",
+"2TB/2TH": "P",
+"2TA/2TB2TG/2TH#2": "P"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Air Conditioning",
+"text": "Air Conditioning Delete; heater only (not available with Cold Weather Group) (HCD)",
+"marks": {
+"2TA/2TB2TG/2TH": "F",
+"2TB/2TH": "F",
+"2TA/2TB2TG/2TH#2": "F"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Air Conditioning",
+"text": "Manually controlled, with heat (HAA)",
+"marks": {
+"2TA/2TB2TG/2TH": "•",
+"2TB/2TH": "•",
+"2TA/2TB2TG/2TH#2": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Air Conditioning",
+"text": "Rear Heater Air Conditioning Prep Package (included with SLT and SLT+; not available with Air Conditioning Delete) (HDG)",
+"marks": {
+"2TA/2TB2TG/2TH": "P",
+"2TB/2TH": "P",
+"2TA/2TB2TG/2TH#2": "P"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Assist Handle",
+"text": "Rear Doors (by Mopar) (CSR)",
+"marks": {
+"2TA/2TB2TG/2TH": "O",
+"2TB/2TH": "O"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Auxiliary Upfitter Switches",
+"text": "Two (included with Upfitter’s Prep Package) (LHL)",
+"marks": {
+"2TA/2TB2TG/2TH": "P",
+"2TB/2TH": "P",
+"2TA/2TB2TG/2TH#2": "P"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Cargo Area Lighting",
+"text": "Incandescent (LPE)",
+"marks": {
+"2TA/2TB2TG/2TH": "•",
+"2TB/2TH": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Cargo Area Lighting",
+"text": "LED rear cargo lamp (packaged with Convenience Group, SLT and SLT+; not available with Crew Van Package) (LDB)",
+"marks": {
+"2TA/2TB2TG/2TH": "P",
+"2TB/2TH": "P"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Cargo Area Lighting",
+"text": "Ambient LED interior lighting (included with SLT and SLT+) (LHA)",
+"marks": {
+"2TA/2TB2TG/2TH": "P",
+"2TB/2TH": "P",
+"2TA/2TB2TG/2TH#2": "P"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Cargo Compartment Floor Mat (by Mopar; not available with Crew Van Package) (CKL)",
+"marks": {
+"2TA/2TB2TG/2TH": "O"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Cargo Partition",
+"text": "None (CTP)",
+"marks": {
+"2TA/2TB2TG/2TH": "•",
+"2TB/2TH": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Cargo Partition",
+"text": "With sliding window (not available with Crew Van Package) (XJ1)",
+"marks": {
+"2TA/2TB2TG/2TH": "O"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Cargo Tie-Downs",
+"text": "Floor",
+"marks": {
+"2TA/2TB2TG/2TH": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Cluster",
+"text": "3.5-inch Thin Film Transistor (TFT) Black-and-White Driver Information Display (JAE)",
+"marks": {
+"2TA/2TB2TG/2TH": "•",
+"2TB/2TH": "•",
+"2TA/2TB2TG/2TH#2": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Cluster",
+"text": "7-inch TFT Color Driver Information Display (included with Premium Convenience Group on Tradesman, Active Driving Assist System,(5) SLT and SLT+) (JAL)",
+"marks": {
+"2TA/2TB2TG/2TH": "P",
+"2TB/2TH": "P",
+"2TA/2TB2TG/2TH#2": "P"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Floor Mats",
+"text": "Premium Carpet (not available with passenger double seat; by Mopar) (CCL)",
+"marks": {
+"2TA/2TB2TG/2TH": "O",
+"2TB/2TH": "O"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Floor Mats",
+"text": "All-Weather (not available with passenger double seat or carpet floor mat front walk-thru; by Mopar) (CCK)",
+"marks": {
+"2TA/2TB2TG/2TH": "O",
+"2TB/2TH": "O"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Instrument Panel with Bright Bezels (included with SLT and SLT+) (JBD)",
+"marks": {
+"2TA/2TB2TG/2TH": "P",
+"2TB/2TH": "P",
+"2TA/2TB2TG/2TH#2": "P"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Power Door Locks",
+"text": "Speed-sensitive (JPH)",
+"marks": {
+"2TA/2TB2TG/2TH": "•",
+"2TB/2TH": "•",
+"2TA/2TB2TG/2TH#2": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Rear Door Cargo Net (included with Storage Group) (CKR)",
+"marks": {
+"2TA/2TB2TG/2TH": "P",
+"2TB/2TH": "P"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Seating Surfaces",
+"text": "Cloth (*A7)",
+"marks": {
+"2TA/2TB2TG/2TH": "•",
+"2TB/2TH": "•",
+"2TA/2TB2TG/2TH#2": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Seating Surfaces",
+"text": "Vinyl (not available with Crew Van Package) (*B7)",
+"marks": {
+"2TA/2TB2TG/2TH": "O",
+"2TB/2TH": "O",
+"2TA/2TB2TG/2TH#2": "O"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Seating Surfaces",
+"text": "Leather-trimmed bucket (includes driver’s and passenger swivel seats with six-way adjust with Leather Interior Group; not available with Crew Van Package) (*AL)",
+"marks": {
+"2TA/2TB2TG/2TH": "P",
+"2TB/2TH": "P",
+"2TA/2TB2TG/2TH#2": "P"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Four-way manual-adjust driver’s bucket (JVA)",
+"marks": {
+"2TA/2TB2TG/2TH": "•",
+"2TB/2TH": "•",
+"2TA/2TB2TG/2TH#2": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Passenger Seat Delete (includes deactivation of the passenger air bag(31) and deletion of the passenger seat belt mount; not available with Cold Weather Group, passenger double seat or passenger six-way adjust with two-way lumbar-adjust seats) (CD9)",
+"marks": {
+"2TA/2TB2TG/2TH": "•",
+"2TB/2TH": "•",
+"2TA/2TB2TG/2TH#2": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Passenger four-way manual-adjust bucket (JWA)",
+"marks": {
+"2TA/2TB2TG/2TH": "P",
+"2TB/2TH": "P",
+"2TA/2TB2TG/2TH#2": "P"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Driver’s six-way adjust with two-way manual lumbar-adjust (JVB)",
+"marks": {
+"2TA/2TB2TG/2TH": "P",
+"2TB/2TH": "P",
+"2TA/2TB2TG/2TH#2": "P"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Driver’s and passenger six-way adjust with two-way manual lumbar-adjust (JWB)",
+"marks": {
+"2TA/2TB2TG/2TH": "P",
+"2TB/2TH": "P",
+"2TA/2TB2TG/2TH#2": "P"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Driver’s swivel (not available with vinyl bucket seats or cargo partition; included with leather-trimmed bucket seats) (CEA)",
+"marks": {
+"2TA/2TB2TG/2TH": "P",
+"2TB/2TH": "P",
+"2TA/2TB2TG/2TH#2": "P"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Heated driver’s (optional with driver’s six-way adjust with two-way manual lumbar-adjust seat; included with Cold Weather Group; not available with driver’s swivel seat or leather seats) (CMB)",
+"marks": {
+"2TA/2TB2TG/2TH": "P",
+"2TB/2TH": "P",
+"2TA/2TB2TG/2TH#2": "P"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Heated passenger (requires heated driver’s seat; included in Cold Weather Group; not available with passenger swivel seat; optional with passenger six-way adjust with two-way lumbar-adjust seats) (CMC)",
+"marks": {
+"2TA/2TB2TG/2TH": "P",
+"2TB/2TH": "P",
+"2TA/2TB2TG/2TH#2": "P"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Passenger double (not available with Cold Weather Group, driver’s swivel seat or passenger six-way adjust with two-way lumbar-adjust seats) (CAA)",
+"marks": {
+"2TA/2TB2TG/2TH": "O"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Passenger swivel (not available with vinyl bucket seats or cargo partition; included with leather-trimmed bucket seats and Swivel Seat Group; requires driver’s swivel seat) (CHR)",
+"marks": {
+"2TA/2TB2TG/2TH": "P",
+"2TB/2TH": "P",
+"2TA/2TB2TG/2TH#2": "P"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seat Belts",
+"text": "Orange (CGQ)",
+"marks": {
+"2TA/2TB2TG/2TH": "F",
+"2TA/2TB2TG/2TH#2": "F"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Shelf Above Roof Trim (included with Storage Group) (CTA)",
+"marks": {
+"2TA/2TB2TG/2TH": "P",
+"2TB/2TH": "P",
+"2TA/2TB2TG/2TH#2": "P"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Spray-On Floor Liner (by Mopar®) (XMF)",
+"marks": {
+"2TA/2TB2TG/2TH": "O",
+"2TB/2TH": "O"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Steering Column",
+"text": "Telescoping (SUC)",
+"marks": {
+"2TA/2TB2TG/2TH": "•",
+"2TB/2TH": "•",
+"2TA/2TB2TG/2TH#2": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Steering Wheel",
+"text": "Premium (included with Leather Interior Group, Cold Weather Group and Active Driving Assist System(5)) (SC3)",
+"marks": {
+"2TA/2TB2TG/2TH": "P",
+"2TB/2TH": "P",
+"2TA/2TB2TG/2TH#2": "P"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Tire Pressure Monitoring Light (XGM)",
+"marks": {
+"2TA/2TB2TG/2TH": "•",
+"2TB/2TH": "•",
+"2TA/2TB2TG/2TH#2": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Upfit Interface Connectors (included with Rear-Speaker Wiring Prep) (BC3)",
+"marks": {
+"2TA/2TB2TG/2TH": "•",
+"2TB/2TH": "•",
+"2TA/2TB2TG/2TH#2": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Wall Panels",
+"text": "Upper- and lower-side (not available with Crew Van Package) (CTE)",
+"marks": {
+"2TA/2TB2TG/2TH": "O"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Wall Panels",
+"text": "Lower-side (included with upper- and lower-side wall paneling; not available with Crew Van Package) (CMG)",
+"marks": {
+"2TA/2TB2TG/2TH": "O/P",
+"2TB/2TH": "O"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Windows",
+"text": "Power with one-touch down feature (JPY)",
+"marks": {
+"2TA/2TB2TG/2TH": "•",
+"2TB/2TH": "•",
+"2TA/2TB2TG/2TH#2": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Windows",
+"text": "Window Guards, Rear (requires rear hinged doors with fixed glass; not available on 118-inch-wheelbase or 136-inch-wheelbase Standard Roof Cargo Vans or 136-inch-wheelbase 2500 Window Van; by Mopar) (XGC)",
+"marks": {
+"2TA/2TB2TG/2TH": "O",
+"2TB/2TH": "O"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Wireless Charging Pad (included with Premium Convenience Group and SLT+) (RFX)",
+"marks": {
+"2TA/2TB2TG/2TH": "P",
+"2TB/2TH": "P",
+"2TA/2TB2TG/2TH#2": "P"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Wood Floor",
+"text": "Rear (not available with Spray-On Floor Liner or Crew Van Package) (CME)",
+"marks": {
+"2TA/2TB2TG/2TH": "O",
+"2TB/2TH": "O"
+}
+},
+{
+"page": 4,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "",
+"text": "Rear-Speaker Wiring Prep (includes upfit interface connectors) (RED)",
+"marks": {
+"2TA/2TB2TG/2TH": "•",
+"2TB/2TH": "•",
+"2TA/2TB2TG/2TH#2": "•"
+}
+},
+{
+"page": 4,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "Uconnect 5C with 7-inch Display",
+"text": "Includes Android Auto,TM(15) Apple CarPlay,TM(16) hands-free(24) phone and audio, integrated center stack radio and SiriusXM® with 360L(21) (UBC)",
+"marks": {
+"2TA/2TB2TG/2TH": "•",
+"2TB/2TH": "•",
+"2TA/2TB2TG/2TH#2": "•"
+}
+},
+{
+"page": 4,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "Uconnect 5C NAV with 10.1-inch Display",
+"text": "Includes Navigation, HD radio, Android Auto,(15) Apple CarPlay,(16) Integrated Voice Command, integrated center stack and SiriusXM with 360L(21) (included with Premium Convenience Group and SLT+) (UBN)",
+"marks": {
+"2TA/2TB2TG/2TH": "P",
+"2TB/2TH": "P",
+"2TA/2TB2TG/2TH#2": "P"
+}
+},
+{
+"page": 4,
+"section": "UCONNECT MULTIMEDIA",
+"parent": "",
+"text": "Global Telematics Box Module (TBM) (RDG)",
+"marks": {
+"2TA/2TB2TG/2TH": "•",
+"2TB/2TH": "•",
+"2TA/2TB2TG/2TH#2": "•"
+}
+},
+{
+"page": 4,
+"section": "UCONNECT MULTIMEDIA",
+"parent": "",
+"text": "Factory-Activation/Rear-Speaker Wiring (XAS)",
+"marks": {
+"2TA/2TB2TG/2TH": "F",
+"2TB/2TH": "F",
+"2TA/2TB2TG/2TH#2": "F"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Adaptive Cruise Control (ACC) with Stop and Go(6) (included with Convenience Group, Cold Weather Group, SLT, SLT+ and Active Driving Assist System(5)) (NHZ)",
+"marks": {
+"2TA/2TB2TG/2TH": "P",
+"2TB/2TH": "•",
+"2TA/2TB2TG/2TH#2": "P"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "Air Bags(31)",
+"text": "Driver’s and front-passenger (CGW)",
+"marks": {
+"2TA/2TB2TG/2TH": "•",
+"2TB/2TH": "•",
+"2TA/2TB2TG/2TH#2": "•"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "Air Bags(31)",
+"text": "Supplemental side-curtain front (CJ4)",
+"marks": {
+"2TA/2TB2TG/2TH": "•",
+"2TB/2TH": "•",
+"2TA/2TB2TG/2TH#2": "•"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "Air Bags(31)",
+"text": "Supplemental front-seat side (CJ1)",
+"marks": {
+"2TA/2TB2TG/2TH": "•",
+"2TB/2TH": "•",
+"2TA/2TB2TG/2TH#2": "•"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Drowsy-Driver Detection(6) (XNM)",
+"marks": {
+"2TA/2TB2TG/2TH": "•",
+"2TB/2TH": "•",
+"2TA/2TB2TG/2TH#2": "•"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Blind Spot Monitoring (BSM)(7) and Rear Cross-Path Detection System(4) (included with roll-up rear door on Super-High Roof models, SLT+ and Safety Group; requires power-heated mirrors or power-folding/heated mirrors) (XAN)",
+"marks": {
+"2TA/2TB2TG/2TH": "P",
+"2TB/2TH": "P"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Rearview Auto-Dimming Digital Display Mirror (included with Safety Group and SLT+) (GRG)",
+"marks": {
+"2TA/2TB2TG/2TH": "P",
+"2TB/2TH": "P",
+"2TA/2TB2TG/2TH#2": "P"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "LaneSense® Lane Departure Warning Plus(5) (included with Safety Group and SLT+) (LAS)",
+"marks": {
+"2TA/2TB2TG/2TH": "P",
+"2TB/2TH": "P",
+"2TA/2TB2TG/2TH#2": "P"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Full-Speed Forward Collision Warning Plus(9) with Pedestrian/Cyclist Emergency Braking(9) (LSU)",
+"marks": {
+"2TA/2TB2TG/2TH": "•",
+"2TB/2TH": "•",
+"2TA/2TB2TG/2TH#2": "•"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Intelligent Speed Assist (ISA)(10) (included with Safety Group and SLT+) (NH4)",
+"marks": {
+"2TA/2TB2TG/2TH": "P",
+"2TB/2TH": "P",
+"2TA/2TB2TG/2TH#2": "P"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "ParkView® Rear Back-Up Camera(4) with Dynamic Grid Lines (not available with 360° Surround-View Camera System(4)) (XAC)",
+"marks": {
+"2TA/2TB2TG/2TH": "•",
+"2TB/2TH": "•"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "ParkView Rear Back-Up Camera Kit(4) (XA3)",
+"marks": {
+"2TA/2TB2TG/2TH#2": "•"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "ParkSense® Front/Rear Park Assist System(12) (included with Safety Group and SLT+; requires front fog lamps or front LED fog lamps; not available with Parallel and Perpendicular Park and Unpark Assist System(12)) (XAG)",
+"marks": {
+"2TA/2TB2TG/2TH": "P",
+"2TB/2TH": "P"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "ParkSense Rear Park Assist System(12) (included with Premium Convenience Group on Tradesman®; not available with ParkSense Front/Rear Park Assist System(12) or Parallel and Perpendicular Park and Unpark Assist System(12)) (XAA)",
+"marks": {
+"2TA/2TB2TG/2TH": "O/P",
+"2TB/2TH": "O/P"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Parallel and Perpendicular Park and Unpark Assist System(12) (included with Advanced Safety Group, SLT and SLT+; requires front fog lamps or front LED fog lamps) (XPK)",
+"marks": {
+"2TA/2TB2TG/2TH": "P",
+"2TB/2TH": "P"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Remote Keyless Entry (GXM)",
+"marks": {
+"2TA/2TB2TG/2TH": "•",
+"2TB/2TH": "•",
+"2TA/2TB2TG/2TH#2": "•"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Multi-Collision Braking (BNA)",
+"marks": {
+"2TA/2TB2TG/2TH": "•",
+"2TB/2TH": "•",
+"2TA/2TB2TG/2TH#2": "•"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Remote Proximity Keyless Entry (included with Premium Convenience Group and SLT+; requires ParkSense Rear Park Assist System,(12) ParkSense Front/Rear Park Assist System(12) or Parallel and Perpendicular Park and Unpark Assist System(12) on Cargo Van and Window Van) (GXD)",
+"marks": {
+"2TA/2TB2TG/2TH": "P",
+"2TB/2TH": "P",
+"2TA/2TB2TG/2TH#2": "P"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Remote Start(27) System (included with SLT and SLT+) (XBM)",
+"marks": {
+"2TA/2TB2TG/2TH": "P",
+"2TB/2TH": "P",
+"2TA/2TB2TG/2TH#2": "P"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Security Alarm(34) (included with SLT and SLT+) (LSA)",
+"marks": {
+"2TA/2TB2TG/2TH": "P",
+"2TB/2TH": "P",
+"2TA/2TB2TG/2TH#2": "P"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "360° Surround-View Camera System(4) (included with Advanced Safety Group; requires wide power-heated mirrors or power-folding/heated mirrors) (XAK)",
+"marks": {
+"2TA/2TB2TG/2TH": "P",
+"2TB/2TH": "P"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Traffic Sign Recognition(13) (SJB)",
+"marks": {
+"2TA/2TB2TG/2TH": "•",
+"2TB/2TH": "•",
+"2TA/2TB2TG/2TH#2": "•"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Traffic Sign Information(13) (included with Premium Convenience Group and SLT+) (SJF)",
+"marks": {
+"2TA/2TB2TG/2TH": "P",
+"2TB/2TH": "P",
+"2TA/2TB2TG/2TH#2": "P"
+}
+},
+{
+"page": 5,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "Advanced Safety Group",
+"text": "Includes Active Driving Assist System(5) on all SLT and SLT+ models, 360° Surround-View Camera System,(4) and Parallel and Perpendicular Park and Unpark Assist System(12) on Cargo Van and Window Van (requires wide heated mirrors or power-folding/heated mirrors) (ALP)",
+"marks": {
+"2TA/2TB2TG/2TH": "O",
+"2TB/2TH": "O",
+"2TA/2TB2TG/2TH#2": "O"
+}
+},
+{
+"page": 5,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "Black Appearance Package",
+"text": "Includes Black exterior badging, Black “RAM” grille badge and 16-inch Black-painted aluminum wheels (available on SLT+ only) (AMQ)",
+"marks": {
+"2TA/2TB2TG/2TH": "O",
+"2TB/2TH": "O",
+"2TA/2TB2TG/2TH#2": "O"
+}
+},
+{
+"page": 5,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "Cold Weather Group",
+"text": "Includes 220-amp alternator, heated driver’s and passenger seats with six-way manual- adjust and two-way lumbar-adjust, heated windshield, rain-sensitive windshield wipers, Auto High-Beam Headlamp Control, heated steering wheel, Adaptive Cruise Control (ACC) with Stop and Go,(6) and leather- wrapped steering wheel (not available on all models) (AD7)",
+"marks": {
+"2TA/2TB2TG/2TH": "O",
+"2TB/2TH": "O",
+"2TA/2TB2TG/2TH#2": "O"
+}
+},
+{
+"page": 5,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "Convenience Group",
+"text": "Includes front fog lamps and ACC with Stop and Go(6); adds wide power-heated mirrors on Cutaway models; adds power-folding and heated mirrors and rear cargo LED lamp on Cargo Van and Window Van (AJK)",
+"marks": {
+"2TA/2TB2TG/2TH": "O",
+"2TA/2TB2TG/2TH#2": "O"
+}
+},
+{
+"page": 5,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "Crew Van Package",
+"text": "Includes Mopar® Crew Van Kit, driver’s-side second-row fixed window, passenger sliding door with window and second-row bench seat (provides seating for up to five including driver; up to six passengers with front-passenger double seat; late availability; restrictions apply; not available on all models; requires High Roof) (AAF) 6' 4\" 6\" CARGO HEIGHT HEIGHT",
+"marks": {
+"2TA/2TB2TG/2TH": "O"
+}
+},
+{
+"page": 5,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "Leather Interior Group",
+"text": "Includes Black/Gray leather-trimmed driver’s and passenger bucket and swivel seats and premium steering wheel (available on SLT and SLT+) (AJD)",
+"marks": {
+"2TA/2TB2TG/2TH": "O",
+"2TB/2TH": "O",
+"2TA/2TB2TG/2TH#2": "O"
+}
+},
+{
+"page": 5,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "Power Group",
+"text": "Includes 220-amp alternator, 100-amp battery, 12-volt rear auxiliary power outlet and 115-volt auxiliary power outlet (available on Tradesman®) (ATT)",
+"marks": {
+"2TA/2TB2TG/2TH": "O"
+}
+},
+{
+"page": 5,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "Premium Convenience Group",
+"text": "Includes remote proximity keyless entry, wireless charging pad, rain-sensitive windshield wipers, 7-inch Thin Film Transistor (TFT) color cluster, automatic headlamps, Auto High-Beam Headlamp Control, Uconnect® 5C NAV with 10.1-inch display, Traffic Sign Information(13) and ParkSense® Rear Park Assist System(12) (requires ACC with Stop and Go(6)) (ADK)",
+"marks": {
+"2TA/2TB2TG/2TH": "O",
+"2TB/2TH": "O",
+"2TA/2TB2TG/2TH#2": "O"
+}
+},
+{
+"page": 5,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "Safety Group",
+"text": "Includes rearview auto-dimming digital display mirror, ParkSense Front/Rear Park Assist System,(12) Intelligent Speed Assist (ISA),(10) LaneSense® Lane Departure Warning Plus,(5) and Blind Spot Monitoring (BSM)(7) and Rear Cross-Path Detection System(4) (available on Tradesman and SLT) (AJ1)",
+"marks": {
+"2TA/2TB2TG/2TH": "O"
+}
+},
+{
+"page": 5,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "Storage Group",
+"text": "Includes underseat storage tray, cargo net, and shelf above roof trim on Cargo Van and Window Van; deletes cargo net on Cutaway (ALV)",
+"marks": {
+"2TA/2TB2TG/2TH": "O",
+"2TB/2TH": "O",
+"2TA/2TB2TG/2TH#2": "O"
+}
+},
+{
+"page": 5,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "Swivel Seat Group",
+"text": "Includes driver’s and passenger swivel seats with six-way manual-adjust, two-way lumbar- adjust and armrest (available on SLT and SLT+) (AFD)",
+"marks": {
+"2TA/2TB2TG/2TH": "O",
+"2TB/2TH": "O",
+"2TA/2TB2TG/2TH#2": "O"
+}
+},
+{
+"page": 5,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "Upfitter’s Prep Package",
+"text": "Includes two auxiliary switches and upfitter electronic module (Vehicle System Interface Module (VSIM)) (AZ3) 7' 2\" CARGO HEIGHT",
+"marks": {
+"2TA/2TB2TG/2TH": "O",
+"2TB/2TH": "O",
+"2TA/2TB2TG/2TH#2": "O"
+}
+}
+],
+"url": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_ProMaster.pdf"
+}

@@ -1,0 +1,1853 @@
+{
+"kind": "fbg",
+"title": "2025 JEEP WAGONEER S",
+"columns": [
+{
+"code": "2TD",
+"name": "PEEJ Limited"
+},
+{
+"code": "2TE",
+"name": "Launch Edition"
+}
+],
+"colors": [
+"Diamond Black Crystal Pearl",
+"Baltic Gray Metallic",
+"Silver Zynith",
+"Fathom Blue Pearl",
+"Hydro Blue Pearl",
+"Red Hot Pearl",
+"Bright White"
+],
+"rows": [
+{
+"page": 3,
+"section": "POWERTRAINS",
+"parent": "",
+"text": "400-kW Dual Electric Drive Motors with 400-volt, 100.5-kWh Battery Pack (NZJ/BPF)",
+"marks": {
+"2TD": "•"
+}
+},
+{
+"page": 3,
+"section": "POWERTRAINS",
+"parent": "",
+"text": "500-kW Dual Electric Drive Motors with 400-volt, 100.5-kWh Battery Pack (NZS/BPF)",
+"marks": {
+"2TE": "•"
+}
+},
+{
+"page": 3,
+"section": "MECHANICAL FEATURES/CAPABILITY",
+"parent": "Drive System",
+"text": "4x4 (5I4)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 3,
+"section": "MECHANICAL FEATURES/CAPABILITY",
+"parent": "Battery",
+"text": "300-amp maintenance-free (BC9)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 3,
+"section": "MECHANICAL FEATURES/CAPABILITY",
+"parent": "",
+"text": "Battery Charge Port/Indicator (4NU/XAT)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 3,
+"section": "MECHANICAL FEATURES/CAPABILITY",
+"parent": "",
+"text": "Battery Electric Vehicle (BEV) Cooling (NMH)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 3,
+"section": "MECHANICAL FEATURES/CAPABILITY",
+"parent": "",
+"text": "Front Offset/Rear Offset One-Speed Gearbox (DCC)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 3,
+"section": "MECHANICAL FEATURES/CAPABILITY",
+"parent": "",
+"text": "Push-Button Start (GX4)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 3,
+"section": "MECHANICAL FEATURES/CAPABILITY",
+"parent": "Suspension",
+"text": "Heavy-duty (SDB)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 3,
+"section": "MECHANICAL FEATURES/CAPABILITY",
+"parent": "Traction Systems",
+"text": "All-Speed Traction Control (BNP)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 3,
+"section": "MECHANICAL FEATURES/CAPABILITY",
+"parent": "Traction Systems",
+"text": "Four-Wheel Traction Control (BNR)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 3,
+"section": "MECHANICAL FEATURES/CAPABILITY",
+"parent": "Traction Systems",
+"text": "Selec-Terrain® Traction Management System – Toggle switch for traction control settings: Sport, Auto, Eco, Snow and Sand (BNV)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 3,
+"section": "MECHANICAL FEATURES/CAPABILITY",
+"parent": "",
+"text": "Underbody Aerodynamic Treatment (XXN)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Accents",
+"text": "Bright (MCG)",
+"marks": {
+"2TD": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Accents",
+"text": "Dark Neutral Gray (included with Obsidian Package) (CST)",
+"marks": {
+"2TD": "P",
+"2TE": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Accents",
+"text": "Front upper and rear fascia in Body-color (MBA/ML9)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Accents",
+"text": "Painted lower front fascia (ML6)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Accents",
+"text": "Rear fascia appliqué – Bright (MCA)",
+"marks": {
+"2TD": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Accents",
+"text": "Rear fascia appliqué – Dark Neutral Gray (included with Obsidian Package and Dark Appearance Package) (MCH)",
+"marks": {
+"2TD": "P",
+"2TE": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Accents",
+"text": "Door cladding and wheel flares in Gloss Black (MJW)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Accents",
+"text": "Sill molding lower – Mold-in-color Black (MRF)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Accents",
+"text": "Upper and lower rear spoilers in Gloss Black",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Antenna",
+"text": "Shark-fin (RHC)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Daylight Opening (DLO) Moldings",
+"text": "Bright (MMH)",
+"marks": {
+"2TD": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Daylight Opening (DLO) Moldings",
+"text": "Upper, Dark Neutral Gray (included with Obsidian Package and Dark Appearance Package) (MMR)",
+"marks": {
+"2TD": "P",
+"2TE": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Door Handle",
+"text": "Body-color, flush (MNK)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Frunk",
+"text": "Front trunk storage space (NND)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Glass",
+"text": "Deep-tint sunscreen (GEG)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Glass",
+"text": "Acoustic windshield (GAK)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Glass",
+"text": "Acoustic laminated – Front and rear doors (GAP/GAH)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Glass",
+"text": "Laminated rear (GAZ)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Grille",
+"text": "Gloss Black/billet accents (MAK)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Grille",
+"text": "Upper appliqué – Bright (MNQ)",
+"marks": {
+"2TD": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Grille",
+"text": "Upper appliqué – Dark Neutral Gray (included with Obsidian Package and Dark Appearance Package) (MM5)",
+"marks": {
+"2TD": "P",
+"2TE": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Grille",
+"text": "Seven-slot illuminated (LHK)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Grille",
+"text": "Active grille shutters (MDX)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Lighting",
+"text": "LED projector/reflector headlamps (LM6)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Lighting",
+"text": "Front LED fog lamps (LNV)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Lighting",
+"text": "Automatic headlamps (LMG)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Lighting",
+"text": "Auto High-Beam Headlamp Control (LMS)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Lighting",
+"text": "LED daytime running lamp (DRL) system (park/turn) (LPJ)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Lighting",
+"text": "Headlamp-off time delay (LHD)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Lighting",
+"text": "LED taillamps (LAY)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Lighting",
+"text": "Proximity approach/departure lamps (LNR)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Lighting",
+"text": "Turn signal on outside mirror (LEB)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Mirrors",
+"text": "Automatic power-folding, heated mirrors in Gloss Black with auto-dimming glass on driver’s and passenger sides, memory, turn signals, auto-adjust-in-Reverse and courtesy lamps (GTG)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Liftgate",
+"text": "Power (JRC)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Liftgate",
+"text": "Hands-free power (included with Comfort Package and Luxury Group) (XZ2)",
+"marks": {
+"2TD": "P",
+"2TE": "P"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Roof",
+"text": "Gloss Black-painted (MXS)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Sunroof",
+"text": "Power, dual-pane panoramic, including power sunshade (GWJ)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Tires",
+"text": "235/50R20XL All-Season (A/S) LLR (TX3)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Tires",
+"text": "Tire Service Kit (XFP/TBF)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels",
+"text": "20-inch painted Diamond-Cut aluminum (WR3)",
+"marks": {
+"2TD": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels",
+"text": "20-inch painted aluminum (WHA)",
+"marks": {
+"2TE": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels",
+"text": "20-inch Gloss Black-painted aluminum (included with Obsidian Package) (WH7)",
+"marks": {
+"2TD": "P",
+"2TE": "O"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Windows",
+"text": "Rear, defroster (GFA)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Wiper System",
+"text": "Rain-sensitive windshield wipers (JHC)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Wiper System",
+"text": "Windshield wiper de-icer (NHL)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Wiper System",
+"text": "Heated washer nozzles (JHH)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Accents",
+"text": "Ara Black ceramic with haptic",
+"marks": {
+"2TD": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Accents",
+"text": "CrossMetal aluminum instrument panel appliqué",
+"marks": {
+"2TE": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Air Conditioning",
+"text": "Dual-Zone automatic temperature control – Includes humidity sensor and cabin filter (HAF/XXT/JMD)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Air Conditioning",
+"text": "Remote climate control activation (XBR)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Assist Handles (CSV)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Cargo Area",
+"text": "Cargo tie-down loops (CKT)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Cargo Area",
+"text": "Overhead cargo area LED lighting (LCP)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Cargo Area",
+"text": "Reversible carpet/vinyl cargo mat (CKK)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Cargo Area",
+"text": "Tonneau cover (included with Comfort Package and Luxury Group) (CSD)",
+"marks": {
+"2TD": "P",
+"2TE": "P"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Cluster",
+"text": "12.3-inch digital, full-color multiview Driver Information Display (JAN)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Cluster",
+"text": "Map-in-Cluster Display (JBA)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Cluster",
+"text": "Head-Up Display (included with Comfort Package and Luxury Group) (LBK)",
+"marks": {
+"2TD": "P",
+"2TE": "P"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Cluster",
+"text": "Low washer fluid warning signal (LAL)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Console",
+"text": "Full-length front floor console with concealable front storage bin and armrest storage bin (CUF)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Console",
+"text": "Center console lower comfort controls screen (RD1)",
+"marks": {
+"2TE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Console",
+"text": "Overhead console with two LED map lamps, Universal Garage Door Opener control switches and power sunroof/sunshade controls",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Console",
+"text": "Wireless charging pad (RFX)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Console",
+"text": "Air vents on rear of center console for rear passengers (XGA)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Cup Holders",
+"text": "Included with full-length front floor console (CUF)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Cup Holders",
+"text": "Rear-seat armrest with cup holders (CSN)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Entry Systems",
+"text": "Four-door passive entry, front-door locks (GX7)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Entry Systems",
+"text": "Push-button start (GX4)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Floor Mats",
+"text": "Luxury front and rear (CLL)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Glove Box",
+"text": "With lamp (JKH/LBC)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Headliner",
+"text": "Cloth (CHD)",
+"marks": {
+"2TD": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Headliner",
+"text": "Suede (CHG)",
+"marks": {
+"2TE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Lighting",
+"text": "Ambient light color control, including up to 64 colors (LBZ)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Lighting",
+"text": "Front reading/map lamps (LBG)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Lighting",
+"text": "Rear reading/courtesy lamps (LBH)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Lighting",
+"text": "Illuminated entry (LAC)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Memory System",
+"text": "Driver’s-seat (LEQ)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Memory System",
+"text": "Front-passenger seat (LE5)",
+"marks": {
+"2TE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Memory System",
+"text": "Steering column (included with Comfort Package) (LEW)",
+"marks": {
+"2TD": "P",
+"2TE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Memory System",
+"text": "Radio (LEK)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Memory System",
+"text": "Exterior mirror (LEM)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Mirrors",
+"text": "Rearview auto-dimming mirror (GNK)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Mirrors",
+"text": "Digital rearview auto-dimming display mirror (included with Comfort Package and Luxury Group) (GRG)",
+"marks": {
+"2TD": "P",
+"2TE": "P"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Mirrors",
+"text": "Sun visors with illuminated mirrors (GNC)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Power Outlet",
+"text": "12-volt auxiliary (JJJ)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Power Outlet",
+"text": "12-volt auxiliary in rear (JJM)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Power Outlet",
+"text": "115-volt auxiliary (included with Comfort Package and Luxury Group) (JKV)",
+"marks": {
+"2TD": "P",
+"2TE": "P"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seating",
+"text": "Neo Ultra Lux II in Global Black or Black/Arctic with Wine accent stitching and Crescent piping (*B2)",
+"marks": {
+"2TD": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seating",
+"text": "Perforated Neo Ultra Lux III in Global Black with Blue Agave and Wine dual accent stitching and Rouge piping (*B3)",
+"marks": {
+"2TE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seating",
+"text": "Perforated Neo Ultra Lux III in Black/Radar Red with Blue Agave and Light Slate Gray dual accent stitching and Frost piping (*B3)",
+"marks": {
+"2TE": "O"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seats, Front",
+"text": "Driver’s – Power-adjust eight-way, including power two-way lumbar-adjust (JVG/JPE)",
+"marks": {
+"2TD": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seats, Front",
+"text": "Driver’s – Power-adjust 12-way, including power four-way lumbar-adjust (JVJ/JPU)",
+"marks": {
+"2TE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seats, Front",
+"text": "Passenger – Power-adjust eight-way, including power two-way lumbar-adjust (JWG/JRP)",
+"marks": {
+"2TD": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seats, Front",
+"text": "Passenger – Power-adjust 12-way, including power four-way lumbar-adjust (JWJ/JRS)",
+"marks": {
+"2TE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seats, Front",
+"text": "Power seatback massage – Driver’s and front-passenger (CE9/CE5)",
+"marks": {
+"2TE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seats, Front",
+"text": "Ventilated – Driver’s and front-passenger (included with Comfort Package) (CAJ)",
+"marks": {
+"2TD": "P",
+"2TE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seats, Front",
+"text": "Seat memory – Driver’s (LEQ)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seats, Front",
+"text": "Seat memory – Front-passenger (LE5)",
+"marks": {
+"2TE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seats, Front",
+"text": "Heated (JPM)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seats, Front",
+"text": "Four-way headrests – Driver’s and front-passenger (CDP)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seats, Front",
+"text": "Front height-adjustable shoulder belts (CGD)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seats, Second Row",
+"text": "60/40 split-folding and rear-seat armrest with cup holders (CFN)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seats, Second Row",
+"text": "Ventilated (CAH)",
+"marks": {
+"2TE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seats, Second Row",
+"text": "Heated (JPZ)",
+"marks": {
+"2TE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seats, Second Row",
+"text": "Heat ducts (XGR)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seats, Second Row",
+"text": "Air vents – Located behind center console (XGA)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seats, Second Row",
+"text": "Three rear-seat head restraints(36) (CSH)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Speed-Sensitive Power Door Locks (JPH)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Steering",
+"text": "Electric power (SBL)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Steering",
+"text": "Tilt/telescoping column with memory (included with Comfort Package) (SUB/LEW)",
+"marks": {
+"2TD": "P",
+"2TE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Steering Wheel",
+"text": "Premium-wrapped (SCJ)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Steering Wheel",
+"text": "Heated (NHS)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Steering Wheel",
+"text": "Mounted audio controls (RDZ)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Universal Garage Door Opener (XGD)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Windows",
+"text": "Power front, one-touch up-and-down (JSB)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Windows",
+"text": "Power, global down with key fob (included with Comfort Package) (XTX)",
+"marks": {
+"2TD": "P",
+"2TE": "•"
+}
+},
+{
+"page": 5,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "",
+"text": "Front-Passenger Interactive Display (included with Comfort Package and Luxury Group) (RJA)",
+"marks": {
+"2TD": "P",
+"2TE": "P"
+}
+},
+{
+"page": 5,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "",
+"text": "4G LTE Wi-Fi Hotspot(23) (RTQ)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 5,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "",
+"text": "Wireless Apple CarPlayTM(16) iPhone® Integration and Android AutoTM(15) Compatibility (RFP/RF5)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 5,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "",
+"text": "Integrated Hands-Free Phone and Audio (XRB)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 5,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "Media Device Connections",
+"text": "Front dual, full-function Type-C (RSF)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 5,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "Media Device Connections",
+"text": "Second-row dual, charge-only Type-C (RS2)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 5,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "Speakers",
+"text": "Premium Alpine® Speakers with 9 amplified speakers, including subwoofer (RC3)",
+"marks": {
+"2TD": "•"
+}
+},
+{
+"page": 5,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "Speakers",
+"text": "McIntosh® MX920 Entertainment System with 19-speaker, 920-watt premium audio sound system and 10-inch subwoofer (included with Comfort Package) (RCA)",
+"marks": {
+"2TD": "P"
+}
+},
+{
+"page": 5,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "Speakers",
+"text": "McIntosh MX1200 Entertainment System with 19-speaker, 1,200-watt premium audio sound system and 12-inch subwoofer (RCM)",
+"marks": {
+"2TE": "•"
+}
+},
+{
+"page": 5,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "Uconnect 5 NAV with 12.3-inch Display",
+"text": "Includes 12.3-inch touchscreen display with GPS Navigation,(25) HD radio, wireless Apple CarPlay(16) and Android Auto(15) integration, integrated voice command with Bluetooth,® integrated center stack radio, SiriusXM® with 360L,(21) 4G LTE Wi-Fi Hotspot(23) and Jeep Connect(17) (UBX)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "Air Bags (nine total)",
+"text": "Advanced multistage front (CG3)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "Air Bags (nine total)",
+"text": "Supplemental full-length front and rear side-curtain (CJ2)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "Air Bags (nine total)",
+"text": "Supplemental front-seat-mounted side (CJ1)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "Air Bags (nine total)",
+"text": "Supplemental rear-seat-mounted side (CJ7)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "Air Bags (nine total)",
+"text": "Driver’s inflatable knee bolster (CGY)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "Braking Systems",
+"text": "Antilock four-wheel disc (BR2)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "Braking Systems",
+"text": "Pedestrian/Cyclist Emergency Braking(9) (LST)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "Braking Systems",
+"text": "Full-Speed Forward Collision Warning Plus(9) – Includes Advanced Brake Assist (LSU)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "Braking Systems",
+"text": "Advanced Brake Assist (packaged with Full-Speed Forward Collision Warning Plus(9)) (BGG)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "Braking Systems",
+"text": "Electric Park Brake (XC4)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "Braking Systems",
+"text": "Rain Brake Support (BHC)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "Braking Systems",
+"text": "Ready Alert Braking (BHD)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "Braking Systems",
+"text": "Hold ’n Go (BHG)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "Cruise Control Systems",
+"text": "Adaptive Cruise Control (ACC) with Stop & Go(6) (NHZ)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "Cruise Control Systems",
+"text": "Rough-Road Cruise Control (BNZ)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "Driver Assist Systems",
+"text": "Active Driving Assist System(5) (SJJ)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "Driver Assist Systems",
+"text": "Active Lane Management System(5) (XNW)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "Driver Assist Systems",
+"text": "Blind Spot Monitoring (BSM)(7) and Rear Cross-Path Detection System(4) (XAN)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "Driver Assist Systems",
+"text": "Blind Spot Monitoring (BSM)(7) with Trailer Detection(4) (included with Trailer Tow Group) (XPV)",
+"marks": {
+"2TD": "P",
+"2TE": "P"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "Driver Assist Systems",
+"text": "Traffic Sign Information(13) (SJF)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "Driver Assist Systems",
+"text": "High-Speed Overtake Warning (SJG)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "Driver Assist Systems",
+"text": "Side-Distance Warning (XAJ)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "Driver Assist Systems",
+"text": "Intersection Collision Assist System(11) (XPS)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "Driver Assist Systems",
+"text": "Drowsy-Driver Detection(6) (XNM)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "Driver Assist Systems",
+"text": "Acoustic Vehicle Alert System (AVAS) (MN2)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "Driver Assist Systems",
+"text": "Electronic Roll Mitigation (BNS)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "Driver Assist Systems",
+"text": "Electronic Stability Control (ESC)(8) (BNB)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "Driver Assist Systems",
+"text": "Hill Start Assist (BNG)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "Park Assist Systems",
+"text": "ParkSense® Automated Parking System(12) (XPM)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "Park Assist Systems",
+"text": "ParkSense Front and Rear Park Assist System with Stop(12) (XH4)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "Camera Systems",
+"text": "360° Surround-View Camera System(4) (XAK)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "Camera Systems",
+"text": "Front and Rear Camera(4) Washer (XDR/JHE)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "Seat Belt and Door Systems",
+"text": "Front-passenger seat belt alert (LAX)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "Seat Belt and Door Systems",
+"text": "Rear-seat reminder alert (JFB)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "Seat Belt and Door Systems",
+"text": "Child Seat Anchor System – LATCH-ready (CGU)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "Seat Belt and Door Systems",
+"text": "Rear-door child protection locks (GXT)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Security Alarm(34) (LSA)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "Tire Systems",
+"text": "Tire Pressure Monitoring Display (XGM)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "Tire Systems",
+"text": "Selectable tire-fill alert (LA5)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "Tire Systems",
+"text": "Lock-on-sync tire pressure sensor (CXG)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Trailer Sway Damping(8) (BNT)",
+"marks": {
+"2TD": "•",
+"2TE": "•"
+}
+},
+{
+"page": 5,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "Comfort Package",
+"text": "Includes ventilated front seats, memory steering column, power tilt/telescoping steering column, power windows global down with key fob, digital rearview auto-dimming display mirror, 115-volt auxiliary power outlet, hands-free power liftgate, tonneau cover, Head-Up Display, front-passenger interactive touchscreen display, McIntosh MX920 Entertainment System with 19-speaker, 920-watt premium audio sound system and 10-inch subwoofer, and illuminated McIntosh badges on front doors (AGF)",
+"marks": {
+"2TD": "O"
+}
+},
+{
+"page": 5,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "Dark Appearance Package",
+"text": "Includes Dark Neutral Gray exterior accents, including daylight opening (DLO) upper moldings, upper grille appliqué and rear fascia appliqué (ALS)",
+"marks": {
+"2TD": "O"
+}
+},
+{
+"page": 5,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "Luxury Group",
+"text": "Includes front-passenger interactive touchscreen display, Head-Up display, hands free power liftgate, digital rearview auto-dimming display mirror, 115-volt auxiliary power outlet, tonneau cover (AND)",
+"marks": {
+"2TE": "O"
+}
+},
+{
+"page": 5,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "Obsidian Package",
+"text": "Includes Dark Neutral Gray exterior accents, including lower bodyside, front and rear fascia appliqué; daylight opening (DLO) upper moldings and upper grille appliqué; and 20-inch Gloss Black-painted aluminum wheels (late availability) (AMP)",
+"marks": {
+"2TD": "O"
+}
+},
+{
+"page": 5,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "Propulsion Boost Package",
+"text": "Includes 500-kW dual electric drive power output (late availability) (NZS)",
+"marks": {
+"2TD": "O"
+}
+},
+{
+"page": 5,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "Trailer Tow Group",
+"text": "Includes Class III hitch receiver, seven- and four-pin wiring harness, and BSM(7) with Trailer Detection(4) (AHC)",
+"marks": {
+"2TD": "O",
+"2TE": "O"
+}
+}
+],
+"url": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_WagoneerS.pdf"
+}

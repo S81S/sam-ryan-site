@@ -1,0 +1,1129 @@
+{
+"kind": "fbg",
+"title": "2026 D0DGE DURANGO",
+"columns": [
+{
+"code": "2TD",
+"name": "GT"
+},
+{
+"code": "2TS",
+"name": "R/T"
+}
+],
+"colors": [
+"DB Black",
+"Vapor Gray",
+"Destroyer Gray",
+"B5 Blue",
+"Octane Red Pearl",
+"Green Machine",
+"White Knuckle"
+],
+"rows": [
+{
+"page": 2,
+"section": "ENGINES / TRANSMISSIONS",
+"parent": "",
+"text": "3.6L Pentastar® V6 Variable Valve Timing (VVT) (ERC) with 8-speed Automatic (DFT)",
+"marks": {
+"2TD": "•"
+}
+},
+{
+"page": 2,
+"section": "ENGINES / TRANSMISSIONS",
+"parent": "",
+"text": "5.7L HEMI® V8 with Multi-Displacement System and VVT (EZH) with 8-speed Automatic (DFD)",
+"marks": {
+"2TS": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "Brakes",
+"text": "Antilock four-wheel disc heavy-duty (BR6)",
+"marks": {
+"2TD": "•",
+"2TS": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "Exhaust System",
+"text": "Dual rear with Bright tips (NEX)",
+"marks": {
+"2TD": "•",
+"2TS": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "",
+"text": "Brembo® Black Brake Calipers (included with Tow N Go Package)",
+"marks": {
+"2TS": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "Fuel Door",
+"text": "Power-locking",
+"marks": {
+"2TD": "•",
+"2TS": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "Fuel Tank",
+"text": "24.6-gallon (NF4)",
+"marks": {
+"2TD": "•",
+"2TS": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "Steering",
+"text": "Electric Power (SBL)",
+"marks": {
+"2TD": "•",
+"2TS": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "Suspensions",
+"text": "Eco Suspension III (SD2)",
+"marks": {
+"2TD": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "Suspensions",
+"text": "Normal-duty (All-Wheel Drive (AWD) only) (SDA)",
+"marks": {
+"2TD": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "Suspensions",
+"text": "Rear load-leveling (SES)",
+"marks": {
+"2TD": "•",
+"2TS": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "Transfer Case/AWD System",
+"text": "Single-speed, full-time AWD; includes MP310 transfer case (AWD models only) (DHY)",
+"marks": {
+"2TD": "•"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "Dual Stripes",
+"marks": {
+"2TS": "O"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Fascias",
+"text": "Body-color rear (ML9)",
+"marks": {
+"2TD": "•",
+"2TS": "•"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Fascias",
+"text": "Body-color upper (MBP)",
+"marks": {
+"2TD": "•",
+"2TS": "•"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Fascias",
+"text": "Body-color lower (MLB)",
+"marks": {
+"2TD": "•",
+"2TS": "•"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Grille",
+"text": "Black surround, molded-in-color insert (MAJ)",
+"marks": {
+"2TD": "•",
+"2TS": "•"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Liftgate",
+"text": "Power, with key fob, overhead console and rear cargo-area controls (JRC)",
+"marks": {
+"2TD": "•",
+"2TS": "•"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Liftgate Spoiler",
+"text": "Body-color; includes Center High-Mounted Stop Lamp (CHMSL)",
+"marks": {
+"2TD": "•",
+"2TS": "•"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Lighting",
+"text": "Auto High-Beam Headlamp Control (packaged with 2TH) (LMS)",
+"marks": {
+"2TD": "P",
+"2TS": "•"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Lighting",
+"text": "Automatic headlamps (on/off) actuate when ambient light is at low levels; includes headlamps-on-with-wipers (LMG)",
+"marks": {
+"2TD": "•",
+"2TS": "•"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Lighting",
+"text": "LED low-/high-beam headlamps (LM6)",
+"marks": {
+"2TD": "•",
+"2TS": "•"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Lighting",
+"text": "LED auxiliary low-beam and turn signal (packaged with 2TH) (LPU)",
+"marks": {
+"2TD": "P",
+"2TS": "•"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Lighting",
+"text": "LED daytime running lamps (DRLs) (LMZ)",
+"marks": {
+"2TD": "•",
+"2TS": "•"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Mirrors",
+"text": "Black, power, manual foldaway with heating element (NHJ/GTS)",
+"marks": {
+"2TD": "•"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Mirrors",
+"text": "Gloss Black, power-folding multifunction with heating element, auto-dimming driver’s-side mirror, supplemental turn signals and memory (included with Blacktop Package) (GUN/LEM/GNZ/NHJ/LEB/LE7)",
+"marks": {
+"2TD": "P",
+"2TS": "P"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Remote Start(27) System",
+"text": "Control integrated into key fob; radio frequency system with 300-ft range (XBM)",
+"marks": {
+"2TD": "•",
+"2TS": "•"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Roof Rails",
+"text": "Black side, with integrated, storable crossrails (included with Blacktop Package, 2TG and 2TH) (MWE/MXQ)",
+"marks": {
+"2TD": "P",
+"2TS": "P"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Sunroof",
+"text": "Power with express-open/close and comfort-stop features (included with 2TG and 2TH) (GWA)",
+"marks": {
+"2TD": "P",
+"2TS": "P"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Tires",
+"text": "P265/50R20 BSW All-Season (A/S) LRR (TKJ)",
+"marks": {
+"2TD": "•",
+"2TS": "•"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Tires",
+"text": "P265/50R20 Performance A/S (included with 2TG and 2TH if Blacktop Package is optioned) (TKY)",
+"marks": {
+"2TD": "P",
+"2TS": "P"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheel Lip Moldings",
+"text": "Body-color (MML)",
+"marks": {
+"2TD": "•",
+"2TS": "•"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels",
+"text": "18-inch painted aluminum (WP1)",
+"marks": {
+"2TD": "•"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels",
+"text": "20-inch Fine Silver (WHJ)",
+"marks": {
+"2TD": "O",
+"2TS": "•"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels",
+"text": "20-inch Black Noise aluminum (WH4)",
+"marks": {
+"2TD": "F",
+"2TS": "F"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels",
+"text": "20-inch Satin Carbon (WSK)",
+"marks": {
+"2TS": "F"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels",
+"text": "20-inch Black Noise Split 5-spoke (included with Blacktop Redline Package on 2TS, 2TT and 2TU) (WST)",
+"marks": {
+"2TS": "•"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels",
+"text": "20-inch Lights Out (included with Tow N Go Package) (WSL)",
+"marks": {
+"2TS": "•"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Wiper System",
+"text": "Front, speed-sensitive, variable/intermittent with 1-gallon fluid capacity (JHA)",
+"marks": {
+"2TD": "•"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Wiper System",
+"text": "Rear, with fixed intermittent and continuous speeds, with washer (JHB)",
+"marks": {
+"2TD": "•",
+"2TS": "•"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Wiper System",
+"text": "Rain-sensitive windshield (packaged with 2TH) (JHC)",
+"marks": {
+"2TD": "P",
+"2TS": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "7-inch Thin Film Transistor (TFT) Reconfigurable Digital Gauge Cluster",
+"text": "Includes custom-programmable features (JAJ)",
+"marks": {
+"2TD": "•",
+"2TS": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Air Conditioning",
+"text": "Rear air conditioning with headliner vents and rear-seat controls (HBB)",
+"marks": {
+"2TD": "•",
+"2TS": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Air Conditioning",
+"text": "Three-Zone automatic temperature control; includes infrared sensors and rear-seat outlets (HAH)",
+"marks": {
+"2TD": "•",
+"2TS": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Dodge Air Filtration System (JMA)",
+"marks": {
+"2TD": "•",
+"2TS": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Cargo Area",
+"text": "Bright scuff plates (packaged with 2TH and 2TU) (CTB)",
+"marks": {
+"2TD": "P",
+"2TS": "P"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Cargo Area",
+"text": "Carpeted; includes storage tray and cargo tie-down loops in floor, driver’s-side storage bin and 12-volt auxiliary power outlet (CKN/CKT/JJM)",
+"marks": {
+"2TD": "•",
+"2TS": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Cargo Area",
+"text": "Covered cargo storage (CLG)",
+"marks": {
+"2TD": "•",
+"2TS": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Console",
+"text": "Full-length front floor console with two illuminated cup holders, two-tier armrest storage with interior 12-volt power outlet and LED-illuminated USB connection (if equipped), console lid tissue holder, and storage tray with anodized shifter bezel; rear of console features air conditioning vent controls, rear-seat heat controls (if equipped) and video jacks (if equipped) (CUF)",
+"marks": {
+"2TD": "•",
+"2TS": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Console",
+"text": "Second-row mini floor console with cup holders and storage; also includes a floor mat for the third row (packaged with second- row Fold-and-Tumble Captain’s Chairs) (CUM)",
+"marks": {
+"2TD": "P",
+"2TS": "P"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Console",
+"text": "Overhead front console with two LED map lamps, two dome lamps, sunglasses storage bin, Universal Garage Door Opener control switches (if equipped) and power sunroof/sunshade controls (if equipped) (CUN)",
+"marks": {
+"2TD": "•",
+"2TS": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Console",
+"text": "Leather-wrapped armrest, center console (packaged with leather-trimmed bucket seats) (CMH)",
+"marks": {
+"2TD": "P",
+"2TS": "P"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Floor Mats",
+"text": "Luxury front and rear (CLX)",
+"marks": {
+"2TD": "•",
+"2TS": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Floor Mats",
+"text": "Third-row, bench seat mat (CWD)",
+"marks": {
+"2TD": "•",
+"2TS": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Floor Mats",
+"text": "Third-row, mini console mat (packaged with second-row mini console) (CCF)",
+"marks": {
+"2TD": "P",
+"2TS": "P"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Lighting",
+"text": "Glove box lamp, front LED map lamps, second-row aimable LED map lamps, courtesy door lamps, overhead console/ rear-passenger overhead reading/courtesy lamps, cargo compartment lamp, Sapphire Blue interior switch lighting, and Sapphire Blue ambient LED lighting for front-door inside handles and map pockets (LBC/LBR)",
+"marks": {
+"2TD": "•",
+"2TS": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Memory System",
+"text": "Radio station presets, last station settings, driver’s-seat position and exterior mirrors (packaged with 2TH); actuated from driver’s door panel or each unique key fob (LEW)",
+"marks": {
+"2TD": "P",
+"2TS": "P"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Mirrors",
+"text": "Rearview, auto-dimming (GNK)",
+"marks": {
+"2TD": "•",
+"2TS": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Cloth bucket in Black (*C5)",
+"marks": {
+"2TD": "•",
+"2TS": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Nappa leather-trimmed with Nappa Axis II perforated inserts and Silver accent stitching; available in Black, Black/Ebony Red or Black/Vitra Gray (packaged with 2TH, 2TT and 2TU) (*ML)",
+"marks": {
+"2TD": "P",
+"2TS": "P"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "First-row, power eight-way driver’s with memory (JPR)",
+"marks": {
+"2TD": "•",
+"2TS": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "First-row, passenger forward fold-flat (not available with leather-trimmed seats) (CDW)",
+"marks": {
+"2TD": "•",
+"2TS": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "First-row, power four-way driver’s lumbar-adjust (JPU)",
+"marks": {
+"2TD": "•",
+"2TS": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "First-row, power four-way driver’s and passenger lumbar-adjust (packaged with 2TH, 2TT and 2TU) (JRN)",
+"marks": {
+"2TD": "P",
+"2TS": "P"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "First-row, power eight-way driver’s and passenger; driver’s includes memory feature (packaged with leather-trimmed seats) (JT2)",
+"marks": {
+"2TD": "P",
+"2TS": "P"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "First-row, heated (JPM)",
+"marks": {
+"2TD": "•",
+"2TS": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "First-row, ventilated (included with leather-trimmed bucket seats) (CAJ)",
+"marks": {
+"2TD": "P",
+"2TS": "P"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Second-row, 60/40 Fold-and-Tumble three-passenger bench (CFF)",
+"marks": {
+"2TD": "•",
+"2TS": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Second-row, heated (packaged with 2TH, 2TT and 2TU) (JPZ)",
+"marks": {
+"2TD": "P",
+"2TS": "P"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Second-row, Fold-and-Tumble Captain’s Chairs; includes second-row, seat-mounted inboard armrests (CFU/CSL)",
+"marks": {
+"2TD": "O",
+"2TS": "O"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Third-row, 50/50 split-folding; includes head restraints(36) which can be folded down electronically from a switch on the instrument-panel center stack (CFP)",
+"marks": {
+"2TD": "O",
+"2TS": "O"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Steering Wheel",
+"text": "Heated (NHS)",
+"marks": {
+"2TD": "•",
+"2TS": "•"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Steering Wheel",
+"text": "Power tilt/telescoping steering column (packaged with 2TH, 2TT and 2TU) (SUB)",
+"marks": {
+"2TD": "P",
+"2TS": "P"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Steering Wheel",
+"text": "Tilt/telescoping steering column (SUD)",
+"marks": {
+"2TD": "•",
+"2TS": "•"
+}
+},
+{
+"page": 3,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "Media Hub",
+"text": "Two USB ports and auxiliary jack (RSF)",
+"marks": {
+"2TD": "•",
+"2TS": "•"
+}
+},
+{
+"page": 3,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "Power Outlets",
+"text": "Two 12-volt, located on the instrument panel and in the rear cargo compartment (JKP/JJM)",
+"marks": {
+"2TD": "•",
+"2TS": "•"
+}
+},
+{
+"page": 3,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "Power Outlets",
+"text": "115-volt auxiliary (packaged with 2TH, 2TT and 2TU) (JKV)",
+"marks": {
+"2TD": "P",
+"2TS": "P"
+}
+},
+{
+"page": 3,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "Radios",
+"text": "Uconnect 5 NAV with 10.1-inch display (UBN)",
+"marks": {
+"2TD": "•",
+"2TS": "•"
+}
+},
+{
+"page": 3,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "SiriusXM® Radio(21)",
+"text": "Includes three-month trial subscription (RSD)",
+"marks": {
+"2TD": "•",
+"2TS": "•"
+}
+},
+{
+"page": 3,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "",
+"text": "SiriusXM with 360L(21) (packaged with Uconnect 5 NAV with 10.1-inch display) (RTU)",
+"marks": {
+"2TD": "P",
+"2TS": "•"
+}
+},
+{
+"page": 3,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "Speakers",
+"text": "Alpine® premium audio system with nine speakers, subwoofer and 506-watt amplifier (packaged with 2TH) (RC3)",
+"marks": {
+"2TD": "P",
+"2TS": "•"
+}
+},
+{
+"page": 3,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "Speakers",
+"text": "Six speakers (RCG)",
+"marks": {
+"2TD": "•"
+}
+},
+{
+"page": 3,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "Speakers",
+"text": "Harman Kardon® premium 19-speaker audio system with 825-watt amplifier and subwoofer (packaged with 2TU) (RCA)",
+"marks": {
+"2TS": "•"
+}
+},
+{
+"page": 3,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "USB Port",
+"text": "Dual remote ports, charging only (packaged with 2TH, 2TT and 2TU) (RS4)",
+"marks": {
+"2TD": "P",
+"2TS": "P"
+}
+},
+{
+"page": 3,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Adaptive Cruise Control (ACC) with Stop(6) (packaged with 2TH, 2TT and 2TU) (NH3)",
+"marks": {
+"2TD": "P",
+"2TS": "P"
+}
+},
+{
+"page": 3,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Advanced Brake Assist(9) (included with 2TU on R/T and 2TH on GT) (BGG)",
+"marks": {
+"2TD": "P",
+"2TS": "P"
+}
+},
+{
+"page": 3,
+"section": "SAFETY & SECURITY",
+"parent": "Air Bags(31)",
+"text": "Advanced multistage, driver’s and front-passenger (CG3)",
+"marks": {
+"2TD": "•",
+"2TS": "•"
+}
+},
+{
+"page": 3,
+"section": "SAFETY & SECURITY",
+"parent": "Air Bags(31)",
+"text": "Supplemental side-curtain (all rows) (CJ5)",
+"marks": {
+"2TD": "•",
+"2TS": "•"
+}
+},
+{
+"page": 3,
+"section": "SAFETY & SECURITY",
+"parent": "Air Bags(31)",
+"text": "Supplemental side (CGS)",
+"marks": {
+"2TD": "•",
+"2TS": "•"
+}
+},
+{
+"page": 3,
+"section": "SAFETY & SECURITY",
+"parent": "Air Bags(31)",
+"text": "Driver’s inflatable knee bolster (CGY)",
+"marks": {
+"2TD": "•",
+"2TS": "•"
+}
+},
+{
+"page": 3,
+"section": "SAFETY & SECURITY",
+"parent": "Air Bags(31)",
+"text": "Supplemental front-seat side (CJ1)",
+"marks": {
+"2TD": "•",
+"2TS": "•"
+}
+},
+{
+"page": 3,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Blind Spot Monitoring (BSM)(7) and Rear Cross-Path Detection System(4) (XAN)",
+"marks": {
+"2TD": "•",
+"2TS": "•"
+}
+},
+{
+"page": 3,
+"section": "SAFETY & SECURITY",
+"parent": "Electronic Stability Control (ESC)(8)",
+"text": "Includes Vehicle Stability Management System, Electronic Roll Mitigation, All-Speed Traction Control, Brake Assist and four-channel Antilock Brake System (BNB/BNR)",
+"marks": {
+"2TD": "•",
+"2TS": "•"
+}
+},
+{
+"page": 3,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Full-Speed Forward Collision Warning Plus(9) (packaged with 2TH, 2TT and 2TU) (LSU)",
+"marks": {
+"2TD": "P",
+"2TS": "P"
+}
+},
+{
+"page": 3,
+"section": "SAFETY & SECURITY",
+"parent": "Hill Start Assist",
+"text": "Prevents vehicle from rolling back for two seconds when starting vehicle on an incline (BNG)",
+"marks": {
+"2TD": "•",
+"2TS": "•"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "Keyless Enter ’n GoTM",
+"text": "Push-button ignition system with proximity entry: driver can leave the key fob in pocket or purse; the doors are unlocked by touching the exterior door handle, and the vehicle will start with the push of a button on the instrument panel when the brake pedal is depressed (GX4)",
+"marks": {
+"2TD": "•",
+"2TS": "•"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "LaneSense® Lane Departure Warning Plus(5) (included with 2TU on R/T and 2TH on GT) (LAS)",
+"marks": {
+"2TD": "P",
+"2TS": "P"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "ParkSense® Front/Rear Park Assist System(12)",
+"text": "Sensors in front/rear bumpers detect obstacles (packaged with 2TH) (XH4)",
+"marks": {
+"2TD": "P",
+"2TS": "•"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "ParkView® Rear Back-Up Camera(4)",
+"text": "Rear-mounted camera with display in vehicle, activated when vehicle is shifted into Reverse (XAC)",
+"marks": {
+"2TD": "•",
+"2TS": "•"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Rain Brake Support (BHC)",
+"marks": {
+"2TD": "•",
+"2TS": "•"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Ready Alert Braking (BHD)",
+"marks": {
+"2TD": "•",
+"2TS": "•"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Security Alarm(34) (packaged with 2TH) (LSA)",
+"marks": {
+"2TD": "P",
+"2TS": "•"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Sentry Key® Antitheft Engine Immobilizer (GXX)",
+"marks": {
+"2TD": "•",
+"2TS": "•"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Trailer Sway Control(8) (BNT)",
+"marks": {
+"2TD": "•",
+"2TS": "•"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Universal Garage Door Opener (packaged with 2TH) (XGD)",
+"marks": {
+"2TD": "•",
+"2TS": "•"
+}
+},
+{
+"page": 4,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "Blacktop Package",
+"text": "Includes Black roof rails, Gloss Black exterior mirrors, Gloss Black badging, Satin Black Dodge taillamp badge, performance hood, 265/50R20 Performance All-Season (A/S) tires, 20-inch Black Noise aluminum wheels and 20-inch Lights Out aluminum wheels (All-Wheel Drive (AWD) models only) (ADX)",
+"marks": {
+"2TD": "O",
+"2TS": "O"
+}
+},
+{
+"page": 4,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "Blacktop Redline Package",
+"text": "Includes Blacktop leather (R/T Premium)/cloth (GT/ R/T Plus) SRT® performance heated/ventilated seats, eight-way power driver’s seat with memory and manual passenger seat, Gloss Black exterior mirrors, Satin Black Dodge taillamp badge, Gloss Black badges, performance lower splitter, “HEMI®” badge, GT decal with Red tracer, Black roof rails, integrated roof rail bars, SRT rear spoiler, Black Dodge grille badge, Eclipse Black exhaust tip, 265/50R20 Performance tires, 20-inch Black Noise aluminum wheels, 20-inch Black Noise split 5-spoke wheels, premium door panels and Crypto Sweep Etch interior accents (XSJ)",
+"marks": {
+"2TD": "O",
+"2TS": "O"
+}
+},
+{
+"page": 4,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "GT Plus and R/T Plus Packages",
+"text": "Include power sunroof, 10.1-inch flush-mounted radio with premium navigation (standard on R/T), Alpine® premium audio system with nine speakers and subwoofer, LED auxiliary low-beam lighting, LED amber turn signal, Nappa leather-trimmed seats, 12-way power driver’s and front-passenger seats, power tilt/telescoping steering column, heated first- and second-row seats, ventilated first-row seats, memory settings, Full-Speed Forward Collision Warning Plus,(9) Adaptive Cruise Control (ACC) with Stop,(6) wireless Apple CarPlay,TM(16) Android AutoTM(15) and Trailer-Tow Group IV",
+"marks": {
+"2TD": "O",
+"2TS": "O"
+}
+},
+{
+"page": 4,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "Mopar® All-Weather Package",
+"text": "Includes Mopar Cargo Net, Mopar Front and Rear Door Entry Guards, and Mopar Slush Mats (AAW)",
+"marks": {
+"2TD": "O",
+"2TS": "O"
+}
+},
+{
+"page": 4,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "R/T Premium Package",
+"text": "Includes Harman Kardon® Premium 19-speaker audio system with 825-watt amplifier and sub-woofer, Advanced Brake Assist,(9) Bright cargo area scuff pads, Forged Carbon Fiber interior accents, LaneSense Lane Departure Warning Plus,(5) premium instrument panel and suede headliner",
+"marks": {
+"2TS": "O"
+}
+},
+{
+"page": 4,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "R/T Tow N Go Package",
+"text": "Includes Bilstein® Active Damping High-Performance suspension, electronic limited-slip rear axle, 20-inch Lights Out wheels, Pirelli® Scorpion Zero run-flat tires, Black Brembo® brake calipers, widebody fender flares, performance exhaust, Class IV trailer hitch, integrated trailer brake controller, Active Noise Cancellation and automatic headlamp leveling (AAN)",
+"marks": {
+"2TS": "O"
+}
+},
+{
+"page": 4,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "Trailer-Tow Group IV",
+"text": "Includes trailer brake control, HD cooling, rear load-leveling suspension, Class IV hitch receiver, seven- and four-pin wiring harness, 180-amp alternator, and Blind Spot Monitoring (BSM)(7) and Rear Cross-Path Detection System(4) with trailer detection(4)",
+"marks": {
+"2TD": "O",
+"2TS": "O"
+}
+}
+],
+"url": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Durango.pdf"
+}

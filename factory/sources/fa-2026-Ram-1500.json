@@ -1,0 +1,1177 @@
+{
+"kind": "fa",
+"title": "2026 Ram 1500",
+"rows": [
+{
+"page": 1,
+"section": "BODY MODEL",
+"parent": "",
+"text": "Quad Cab 6-ft. 4-in. box — 140.5-in. wheelbase",
+"marks": {
+"TRADESMAN": "S",
+"EXPRESS": "S",
+"WARLOCK": "NA",
+"BIGHORN/ LONESTAR": "S",
+"REBEL": "NA",
+"LARAMIE": "NA",
+"LIMITED LONGHORN": "NA",
+"LIMITED": "NA",
+"RHO": "NA",
+"TUNGSTEN": "NA"
+}
+},
+{
+"page": 1,
+"section": "BODY MODEL",
+"parent": "",
+"text": "Crew Cab 5-ft. 7-in. box — 144.5-in. wheelbase",
+"marks": {
+"TRADESMAN": "O",
+"EXPRESS": "O",
+"WARLOCK": "S",
+"BIGHORN/ LONESTAR": "O",
+"REBEL": "S",
+"LARAMIE": "S",
+"LIMITED LONGHORN": "S",
+"LIMITED": "S",
+"RHO": "S",
+"TUNGSTEN": "S"
+}
+},
+{
+"page": 1,
+"section": "BODY MODEL",
+"parent": "",
+"text": "Crew Cab 6-ft. 4-in. box — 153.5-in. wheelbase",
+"marks": {
+"TRADESMAN": "O",
+"EXPRESS": "O",
+"WARLOCK": "NA",
+"BIGHORN/ LONESTAR": "O",
+"REBEL": "NA",
+"LARAMIE": "O",
+"LIMITED LONGHORN": "O",
+"LIMITED": "O",
+"RHO": "NA",
+"TUNGSTEN": "NA"
+}
+},
+{
+"page": 1,
+"section": "DRIVE",
+"parent": "",
+"text": "4x2",
+"marks": {
+"TRADESMAN": "S",
+"EXPRESS": "S",
+"WARLOCK": "NA",
+"BIGHORN/ LONESTAR": "S",
+"REBEL": "NA",
+"LARAMIE": "S",
+"LIMITED LONGHORN": "NA",
+"LIMITED": "NA",
+"RHO": "NA",
+"TUNGSTEN": "NA"
+}
+},
+{
+"page": 1,
+"section": "DRIVE",
+"parent": "",
+"text": "4x4",
+"marks": {
+"TRADESMAN": "O",
+"EXPRESS": "O",
+"WARLOCK": "S",
+"BIGHORN/ LONESTAR": "O",
+"REBEL": "S",
+"LARAMIE": "O",
+"LIMITED LONGHORN": "S",
+"LIMITED": "S",
+"RHO": "S",
+"TUNGSTEN": "S"
+}
+},
+{
+"page": 2,
+"section": "ENGINE / TRANSMISSIONS",
+"parent": "",
+"text": "3.6-liter V-6 Pentastar eTorque, eight-speed automatic transmission",
+"marks": {
+"TRADESMAN": "S",
+"EXPRESS": "S",
+"WARLOCK": "S",
+"BIGHORN/ LONESTAR": "S",
+"REBEL": "NA",
+"LARAMIE": "NA",
+"LIMITED LONGHORN": "NA",
+"LIMITED": "NA",
+"RHO": "NA",
+"TUNGSTEN": "NA"
+}
+},
+{
+"page": 2,
+"section": "ENGINE / TRANSMISSIONS",
+"parent": "",
+"text": "3.0-liter Twin Turbo, Standard Output (SST), eight-speed automatic transmission",
+"marks": {
+"TRADESMAN": "O",
+"EXPRESS": "O",
+"WARLOCK": "O",
+"BIGHORN/ LONESTAR": "O",
+"REBEL": "S",
+"LARAMIE": "S",
+"LIMITED LONGHORN": "NA",
+"LIMITED": "NA",
+"RHO": "NA",
+"TUNGSTEN": "NA"
+}
+},
+{
+"page": 2,
+"section": "ENGINE / TRANSMISSIONS",
+"parent": "",
+"text": "5.7-liter HEMI V-8 eTorque, eight-speed automatic transmission",
+"marks": {
+"TRADESMAN": "O",
+"EXPRESS": "O",
+"WARLOCK": "O",
+"BIGHORN/ LONESTAR": "O",
+"REBEL": "O",
+"LARAMIE": "O",
+"LIMITED LONGHORN": "O",
+"LIMITED": "O",
+"RHO": "NA",
+"TUNGSTEN": "NA"
+}
+},
+{
+"page": 2,
+"section": "ENGINE / TRANSMISSIONS",
+"parent": "",
+"text": "3.0-liter Twin Turbo, High Output (SST HO), eight-speed automatic transmission",
+"marks": {
+"TRADESMAN": "NA",
+"EXPRESS": "NA",
+"WARLOCK": "NA",
+"BIGHORN/ LONESTAR": "NA",
+"REBEL": "NA",
+"LARAMIE": "NA",
+"LIMITED LONGHORN": "S",
+"LIMITED": "S",
+"RHO": "S",
+"TUNGSTEN": "S"
+}
+},
+{
+"page": 2,
+"section": "REAR AXLE",
+"parent": "",
+"text": "3.21 axle ratio",
+"marks": {
+"TRADESMAN": "S",
+"EXPRESS": "S",
+"WARLOCK": "NA",
+"BIGHORN/ LONESTAR": "S",
+"REBEL": "NA",
+"LARAMIE": "S",
+"LIMITED LONGHORN": "NA",
+"LIMITED": "NA",
+"RHO": "NA",
+"TUNGSTEN": "NA"
+}
+},
+{
+"page": 2,
+"section": "REAR AXLE",
+"parent": "",
+"text": "3.55 axle ratio",
+"marks": {
+"TRADESMAN": "O/P",
+"EXPRESS": "O/P",
+"WARLOCK": "NA",
+"BIGHORN/ LONESTAR": "O/P",
+"REBEL": "NA",
+"LARAMIE": "O/P",
+"LIMITED LONGHORN": "NA",
+"LIMITED": "NA",
+"RHO": "NA",
+"TUNGSTEN": "NA"
+}
+},
+{
+"page": 2,
+"section": "REAR AXLE",
+"parent": "",
+"text": "3.92 axle ratio",
+"marks": {
+"TRADESMAN": "O",
+"EXPRESS": "O",
+"WARLOCK": "S",
+"BIGHORN/ LONESTAR": "O",
+"REBEL": "S",
+"LARAMIE": "O",
+"LIMITED LONGHORN": "S",
+"LIMITED": "S",
+"RHO": "S",
+"TUNGSTEN": "S"
+}
+},
+{
+"page": 2,
+"section": "REAR AXLE",
+"parent": "",
+"text": "Electronic-locking differential (raised ride height available on all axle ratios; standard ride height available only on 3.92 axle ratio; included with 4x4 Off-road Group)",
+"marks": {
+"TRADESMAN": "O/P",
+"EXPRESS": "O/P",
+"WARLOCK": "S",
+"BIGHORN/ LONESTAR": "O/P",
+"REBEL": "S",
+"LARAMIE": "O/P",
+"LIMITED LONGHORN": "O/P",
+"LIMITED": "O/P",
+"RHO": "S",
+"TUNGSTEN": "O/P"
+}
+},
+{
+"page": 2,
+"section": "REAR AXLE",
+"parent": "",
+"text": "Anti-spin differential (electronic locking and anti-spin are mutually exclusive)",
+"marks": {
+"TRADESMAN": "O/P",
+"EXPRESS": "O/P",
+"WARLOCK": "NA",
+"BIGHORN/ LONESTAR": "O/P",
+"REBEL": "NA",
+"LARAMIE": "O/P",
+"LIMITED LONGHORN": "S",
+"LIMITED": "S",
+"RHO": "NA",
+"TUNGSTEN": "S"
+}
+},
+{
+"page": 2,
+"section": "REAR AXLE",
+"parent": "",
+"text": "High-torque-capacity rear axle (included with 3.0L I6 HO)",
+"marks": {
+"TRADESMAN": "NA",
+"EXPRESS": "NA",
+"WARLOCK": "NA",
+"BIGHORN/ LONESTAR": "NA",
+"REBEL": "NA",
+"LARAMIE": "NA",
+"LIMITED LONGHORN": "P",
+"LIMITED": "P",
+"RHO": "NA",
+"TUNGSTEN": "P"
+}
+},
+{
+"page": 3,
+"section": "SUSPENSION",
+"parent": "",
+"text": "Active-level four-corner air suspension system (RHO includes Active Damping Suspension)",
+"marks": {
+"TRADESMAN": "NA",
+"EXPRESS": "NA",
+"WARLOCK": "NA",
+"BIGHORN/ LONESTAR": "O",
+"REBEL": "O",
+"LARAMIE": "O",
+"LIMITED LONGHORN": "S",
+"LIMITED": "S",
+"RHO": "NA",
+"TUNGSTEN": "S"
+}
+},
+{
+"page": 3,
+"section": "TRANSFER CASE",
+"parent": "",
+"text": "Electronic part-time",
+"marks": {
+"TRADESMAN": "S",
+"EXPRESS": "S",
+"WARLOCK": "S",
+"BIGHORN/ LONESTAR": "NA",
+"REBEL": "NA",
+"LARAMIE": "NA",
+"LIMITED LONGHORN": "NA",
+"LIMITED": "NA",
+"RHO": "NA",
+"TUNGSTEN": "NA"
+}
+},
+{
+"page": 3,
+"section": "TRANSFER CASE",
+"parent": "",
+"text": "Electronic on-demand",
+"marks": {
+"TRADESMAN": "NA",
+"EXPRESS": "NA",
+"WARLOCK": "NA",
+"BIGHORN/ LONESTAR": "S",
+"REBEL": "S",
+"LARAMIE": "S",
+"LIMITED LONGHORN": "S",
+"LIMITED": "S",
+"RHO": "NA",
+"TUNGSTEN": "S"
+}
+},
+{
+"page": 3,
+"section": "TRANSFER CASE",
+"parent": "",
+"text": "Electronic full-time with drive modes",
+"marks": {
+"TRADESMAN": "NA",
+"EXPRESS": "NA",
+"WARLOCK": "NA",
+"BIGHORN/ LONESTAR": "NA",
+"REBEL": "NA",
+"LARAMIE": "NA",
+"LIMITED LONGHORN": "NA",
+"LIMITED": "NA",
+"RHO": "S",
+"TUNGSTEN": "NA"
+}
+},
+{
+"page": 3,
+"section": "SUNROOF",
+"parent": "",
+"text": "Dual pane, power-operated (Crew Cab only)",
+"marks": {
+"TRADESMAN": "NA",
+"EXPRESS": "NA",
+"WARLOCK": "NA",
+"BIGHORN/ LONESTAR": "O",
+"REBEL": "O",
+"LARAMIE": "O/P",
+"LIMITED LONGHORN": "O",
+"LIMITED": "O",
+"RHO": "O",
+"TUNGSTEN": "S"
+}
+},
+{
+"page": 4,
+"section": "RADIOS",
+"parent": "",
+"text": "Uconnect 8.4 AM/FM/Bluetooth/SiriusXM Radio",
+"marks": {
+"TRADESMAN": "S",
+"EXPRESS": "S",
+"WARLOCK": "S",
+"BIGHORN/ LONESTAR": "S",
+"REBEL": "NA",
+"LARAMIE": "NA",
+"LIMITED LONGHORN": "NA",
+"LIMITED": "NA",
+"RHO": "NA",
+"TUNGSTEN": "NA"
+}
+},
+{
+"page": 4,
+"section": "RADIOS",
+"parent": "",
+"text": "Uconnect 12-in. Radio",
+"marks": {
+"TRADESMAN": "P",
+"EXPRESS": "P",
+"WARLOCK": "NA",
+"BIGHORN/ LONESTAR": "P",
+"REBEL": "S",
+"LARAMIE": "S",
+"LIMITED LONGHORN": "S",
+"LIMITED": "S",
+"RHO": "S",
+"TUNGSTEN": "NA"
+}
+},
+{
+"page": 4,
+"section": "RADIOS",
+"parent": "",
+"text": "Uconnect 14.5-in. Radio",
+"marks": {
+"TRADESMAN": "NA",
+"EXPRESS": "NA",
+"WARLOCK": "NA",
+"BIGHORN/ LONESTAR": "NA",
+"REBEL": "P",
+"LARAMIE": "P",
+"LIMITED LONGHORN": "P",
+"LIMITED": "P",
+"RHO": "P",
+"TUNGSTEN": "S"
+}
+},
+{
+"page": 4,
+"section": "SOUND SYSTEM",
+"parent": "",
+"text": "Base — six-speaker",
+"marks": {
+"TRADESMAN": "S",
+"EXPRESS": "S",
+"WARLOCK": "S",
+"BIGHORN/ LONESTAR": "S",
+"REBEL": "NA",
+"LARAMIE": "NA",
+"LIMITED LONGHORN": "NA",
+"LIMITED": "NA",
+"RHO": "NA",
+"TUNGSTEN": "NA"
+}
+},
+{
+"page": 4,
+"section": "SOUND SYSTEM",
+"parent": "",
+"text": "Premium — 10-speaker",
+"marks": {
+"TRADESMAN": "NA",
+"EXPRESS": "NA",
+"WARLOCK": "NA",
+"BIGHORN/ LONESTAR": "O/P",
+"REBEL": "S",
+"LARAMIE": "S",
+"LIMITED LONGHORN": "NA",
+"LIMITED": "NA",
+"RHO": "S",
+"TUNGSTEN": "NA"
+}
+},
+{
+"page": 4,
+"section": "SOUND SYSTEM",
+"parent": "",
+"text": "Premium Plus — 19-speaker",
+"marks": {
+"TRADESMAN": "NA",
+"EXPRESS": "NA",
+"WARLOCK": "NA",
+"BIGHORN/ LONESTAR": "NA",
+"REBEL": "P",
+"LARAMIE": "P",
+"LIMITED LONGHORN": "S",
+"LIMITED": "S",
+"RHO": "P",
+"TUNGSTEN": "NA"
+}
+},
+{
+"page": 4,
+"section": "SOUND SYSTEM",
+"parent": "",
+"text": "Ultra-premium — 23-speaker",
+"marks": {
+"TRADESMAN": "NA",
+"EXPRESS": "NA",
+"WARLOCK": "NA",
+"BIGHORN/ LONESTAR": "NA",
+"REBEL": "NA",
+"LARAMIE": "NA",
+"LIMITED LONGHORN": "NA",
+"LIMITED": "NA",
+"RHO": "NA",
+"TUNGSTEN": "S"
+}
+},
+{
+"page": 4,
+"section": "CAMERA",
+"parent": "",
+"text": "ParkView rear backup camera with dynamic gridlines and center lines",
+"marks": {
+"TRADESMAN": "S",
+"EXPRESS": "S",
+"WARLOCK": "S",
+"BIGHORN/ LONESTAR": "S",
+"REBEL": "S",
+"LARAMIE": "S",
+"LIMITED LONGHORN": "S",
+"LIMITED": "S",
+"RHO": "S",
+"TUNGSTEN": "S"
+}
+},
+{
+"page": 4,
+"section": "CAMERA",
+"parent": "",
+"text": "Surround 360-degree camera",
+"marks": {
+"TRADESMAN": "NA",
+"EXPRESS": "NA",
+"WARLOCK": "NA",
+"BIGHORN/ LONESTAR": "O",
+"REBEL": "P",
+"LARAMIE": "P",
+"LIMITED LONGHORN": "P",
+"LIMITED": "P",
+"RHO": "P",
+"TUNGSTEN": "S"
+}
+},
+{
+"page": 5,
+"section": "ACTIVE FEATURES",
+"parent": "",
+"text": "Active Lane Management system",
+"marks": {
+"TRADESMAN": "S",
+"EXPRESS": "S",
+"WARLOCK": "S",
+"BIGHORN/ LONESTAR": "S",
+"REBEL": "S",
+"LARAMIE": "S",
+"LIMITED LONGHORN": "S",
+"LIMITED": "S",
+"RHO": "S",
+"TUNGSTEN": "S"
+}
+},
+{
+"page": 5,
+"section": "ACTIVE FEATURES",
+"parent": "",
+"text": "Adaptive cruise control",
+"marks": {
+"TRADESMAN": "S",
+"EXPRESS": "S",
+"WARLOCK": "S",
+"BIGHORN/ LONESTAR": "S",
+"REBEL": "S",
+"LARAMIE": "S",
+"LIMITED LONGHORN": "S",
+"LIMITED": "S",
+"RHO": "S",
+"TUNGSTEN": "S"
+}
+},
+{
+"page": 5,
+"section": "ACTIVE FEATURES",
+"parent": "",
+"text": "Blind-spot Monitoring with trailer coverage and Rear Cross Path detection",
+"marks": {
+"TRADESMAN": "S",
+"EXPRESS": "S",
+"WARLOCK": "S",
+"BIGHORN/ LONESTAR": "S",
+"REBEL": "S",
+"LARAMIE": "S",
+"LIMITED LONGHORN": "S",
+"LIMITED": "S",
+"RHO": "S",
+"TUNGSTEN": "S"
+}
+},
+{
+"page": 5,
+"section": "ACTIVE FEATURES",
+"parent": "",
+"text": "Drowsy Driver Detection",
+"marks": {
+"TRADESMAN": "NA",
+"EXPRESS": "NA",
+"WARLOCK": "NA",
+"BIGHORN/ LONESTAR": "P",
+"REBEL": "P",
+"LARAMIE": "P",
+"LIMITED LONGHORN": "P",
+"LIMITED": "P",
+"RHO": "P",
+"TUNGSTEN": "S"
+}
+},
+{
+"page": 5,
+"section": "ACTIVE FEATURES",
+"parent": "",
+"text": "Evasive Steer Assist",
+"marks": {
+"TRADESMAN": "NA",
+"EXPRESS": "NA",
+"WARLOCK": "NA",
+"BIGHORN/ LONESTAR": "P",
+"REBEL": "P",
+"LARAMIE": "P",
+"LIMITED LONGHORN": "P",
+"LIMITED": "P",
+"RHO": "P",
+"TUNGSTEN": "S"
+}
+},
+{
+"page": 5,
+"section": "ACTIVE FEATURES",
+"parent": "",
+"text": "Head-Up Display (included in Advanced Technology Group)",
+"marks": {
+"TRADESMAN": "NA",
+"EXPRESS": "NA",
+"WARLOCK": "NA",
+"BIGHORN/ LONESTAR": "P",
+"REBEL": "P",
+"LARAMIE": "P",
+"LIMITED LONGHORN": "P",
+"LIMITED": "P",
+"RHO": "P",
+"TUNGSTEN": "P"
+}
+},
+{
+"page": 5,
+"section": "ACTIVE FEATURES",
+"parent": "",
+"text": "Intersection Collision Warning",
+"marks": {
+"TRADESMAN": "NA",
+"EXPRESS": "NA",
+"WARLOCK": "NA",
+"BIGHORN/ LONESTAR": "P",
+"REBEL": "P",
+"LARAMIE": "P",
+"LIMITED LONGHORN": "P",
+"LIMITED": "P",
+"RHO": "P",
+"TUNGSTEN": "S"
+}
+},
+{
+"page": 5,
+"section": "ACTIVE FEATURES",
+"parent": "",
+"text": "Traffic Sign Recognition",
+"marks": {
+"TRADESMAN": "NA",
+"EXPRESS": "NA",
+"WARLOCK": "NA",
+"BIGHORN/ LONESTAR": "P",
+"REBEL": "P",
+"LARAMIE": "P",
+"LIMITED LONGHORN": "P",
+"LIMITED": "P",
+"RHO": "P",
+"TUNGSTEN": "S"
+}
+},
+{
+"page": 5,
+"section": "ACTIVE FEATURES",
+"parent": "",
+"text": "Trailer reverse steering control",
+"marks": {
+"TRADESMAN": "P",
+"EXPRESS": "P",
+"WARLOCK": "P",
+"BIGHORN/ LONESTAR": "P",
+"REBEL": "P",
+"LARAMIE": "P",
+"LIMITED LONGHORN": "P",
+"LIMITED": "P",
+"RHO": "P",
+"TUNGSTEN": "P"
+}
+},
+{
+"page": 5,
+"section": "PARKING SENSORS",
+"parent": "",
+"text": "ParkSense front/rear park assist with automatic reverse stop",
+"marks": {
+"TRADESMAN": "S",
+"EXPRESS": "S",
+"WARLOCK": "S",
+"BIGHORN/ LONESTAR": "S",
+"REBEL": "S",
+"LARAMIE": "S",
+"LIMITED LONGHORN": "S",
+"LIMITED": "S",
+"RHO": "S",
+"TUNGSTEN": "S"
+}
+},
+{
+"page": 5,
+"section": "FUEL TANK",
+"parent": "",
+"text": "26-gallon",
+"marks": {
+"TRADESMAN": "S",
+"EXPRESS": "S",
+"WARLOCK": "S",
+"BIGHORN/ LONESTAR": "S",
+"REBEL": "S",
+"LARAMIE": "S",
+"LIMITED LONGHORN": "NA",
+"LIMITED": "NA",
+"RHO": "NA",
+"TUNGSTEN": "NA"
+}
+},
+{
+"page": 5,
+"section": "FUEL TANK",
+"parent": "",
+"text": "33-gallon",
+"marks": {
+"TRADESMAN": "O/P",
+"EXPRESS": "O/P",
+"WARLOCK": "O/P",
+"BIGHORN/ LONESTAR": "O/P",
+"REBEL": "O/P",
+"LARAMIE": "O/P",
+"LIMITED LONGHORN": "S",
+"LIMITED": "S",
+"RHO": "S",
+"TUNGSTEN": "S"
+}
+},
+{
+"page": 6,
+"section": "TRAILER BRAKE CONTROLLER",
+"parent": "",
+"text": "Integrated electronic controller (requires Class IV trailer hitch; included with Trailer-tow Group)",
+"marks": {
+"TRADESMAN": "O/P",
+"EXPRESS": "O/P",
+"WARLOCK": "O/P",
+"BIGHORN/ LONESTAR": "O/P",
+"REBEL": "O/P",
+"LARAMIE": "O/P",
+"LIMITED LONGHORN": "O/P",
+"LIMITED": "O/P",
+"RHO": "O/P",
+"TUNGSTEN": "O/P"
+}
+},
+{
+"page": 6,
+"section": "RHO PERFORMANCE FEATURES",
+"parent": "",
+"text": "Launch control, shift light, long-travel suspension system with active damping",
+"marks": {
+"TRADESMAN": "NA",
+"EXPRESS": "NA",
+"WARLOCK": "NA",
+"BIGHORN/ LONESTAR": "NA",
+"REBEL": "NA",
+"LARAMIE": "NA",
+"LIMITED LONGHORN": "NA",
+"LIMITED": "NA",
+"RHO": "S",
+"TUNGSTEN": "NA"
+}
+},
+{
+"page": 6,
+"section": "APPEARANCE PACKAGES",
+"parent": "",
+"text": "Body-color Bumper Front/rear bumpers painted body color",
+"marks": {
+"TRADESMAN": "NA",
+"EXPRESS": "NA",
+"WARLOCK": "NA",
+"BIGHORN/ LONESTAR": "NA",
+"REBEL": "NA",
+"LARAMIE": "NA",
+"LIMITED LONGHORN": "NA",
+"LIMITED": "O",
+"RHO": "NA",
+"TUNGSTEN": "NA"
+}
+},
+{
+"page": 6,
+"section": "APPEARANCE PACKAGES",
+"parent": "",
+"text": "Low Sport Package Monotone paint only Body-color front bumper Body-color rear bumper Body-color grille surround 20-in. cast aluminum wheels Cloth bench seats LED fog lamps",
+"marks": {
+"TRADESMAN": "O",
+"EXPRESS": "NA",
+"WARLOCK": "NA",
+"BIGHORN/ LONESTAR": "NA",
+"REBEL": "NA",
+"LARAMIE": "NA",
+"LIMITED LONGHORN": "NA",
+"LIMITED": "NA",
+"RHO": "NA",
+"TUNGSTEN": "NA"
+}
+},
+{
+"page": 6,
+"section": "APPEARANCE PACKAGES",
+"parent": "",
+"text": "Medium Sport Package Monotone paint only Body-color front bumper Body-color rear bumper Body-color grille surround Body-color door handles Body-color mirror caps P20-in. OWL all-season tires Vinyl/cloth bucket seats SPORT decal (not available on Night Edition)",
+"marks": {
+"TRADESMAN": "NA",
+"EXPRESS": "NA",
+"WARLOCK": "NA",
+"BIGHORN/ LONESTAR": "O",
+"REBEL": "NA",
+"LARAMIE": "NA",
+"LIMITED LONGHORN": "NA",
+"LIMITED": "NA",
+"RHO": "NA",
+"TUNGSTEN": "NA"
+}
+},
+{
+"page": 7,
+"section": "APPEARANCE PACKAGES",
+"parent": "",
+"text": "High Sport Package Monotone paint only Body-color front bumper Body-color rear bumper Body-color grille surround Body-color mirror caps Sport hood 20-in. OWL all-season tires Optional 22 x 9-in. forged aluminum polished premium paint wheels Optional 22-in. BSW all-season tires (packaged with optional 22-in. wheels)",
+"marks": {
+"TRADESMAN": "NA",
+"EXPRESS": "NA",
+"WARLOCK": "NA",
+"BIGHORN/ LONESTAR": "NA",
+"REBEL": "NA",
+"LARAMIE": "O",
+"LIMITED LONGHORN": "NA",
+"LIMITED": "NA",
+"RHO": "NA",
+"TUNGSTEN": "NA"
+}
+},
+{
+"page": 7,
+"section": "APPEARANCE PACKAGES",
+"parent": "",
+"text": "Night Edition Package Monotone paint only (select colors) Body-color front bumper Body-color rear bumper Black badging Black grille and surround Body-color door handles Body-color mirror caps Dark headlight bezel 20 x 9-in. cast aluminum black wheels (Big Horn) 20-in. OWL all-season tires 22 x 9-in. forged aluminum black wheels (Laramie) 22-in. painted black wheels (Limited) 22-in. BSW all-season tires",
+"marks": {
+"TRADESMAN": "O",
+"EXPRESS": "NA",
+"WARLOCK": "NA",
+"BIGHORN/ LONESTAR": "O",
+"REBEL": "NA",
+"LARAMIE": "O",
+"LIMITED LONGHORN": "NA",
+"LIMITED": "O",
+"RHO": "NA",
+"TUNGSTEN": "NA"
+}
+},
+{
+"page": 8,
+"section": "EQUIPMENT PACKAGES",
+"parent": "",
+"text": "Tradesman Level 1 Equipment Group Rear backlight, power sliding, not available with manual sliding Cloth 40/20/40 bench seat In-floor storage Carpeted floor covering Carpeted floor mats SiriusXM Radio Option: vinyl floor covering",
+"marks": {
+"TRADESMAN": "O",
+"EXPRESS": "NA",
+"WARLOCK": "NA",
+"BIGHORN/ LONESTAR": "NA",
+"REBEL": "NA",
+"LARAMIE": "NA",
+"LIMITED LONGHORN": "NA",
+"LIMITED": "NA",
+"RHO": "NA",
+"TUNGSTEN": "NA"
+}
+},
+{
+"page": 8,
+"section": "EQUIPMENT PACKAGES",
+"parent": "",
+"text": "Big Horn Level 1 Equipment Group Switchable rear dome lamp Glove box lamp Upper closed glove box with painted hard door Automatic-dimming interior rearview mirror Exterior power-folding mirrors with signal and puddle lamps Rear defroster In-floor storage bins with removable liners (Crew Cab only) SiriusXM Radio BIG HORN (badge on instrument panel) LONE STAR (badge on instrument panel, Texas market only) 8-way power driver seat 2-way power driver lumbar 110-volt outlet (front seat) Heated front seats and steering wheel Automatic temperature control (two-zone) Rear: two USB ports, charging only",
+"marks": {
+"TRADESMAN": "NA",
+"EXPRESS": "NA",
+"WARLOCK": "NA",
+"BIGHORN/ LONESTAR": "O",
+"REBEL": "NA",
+"LARAMIE": "NA",
+"LIMITED LONGHORN": "NA",
+"LIMITED": "NA",
+"RHO": "NA",
+"TUNGSTEN": "NA"
+}
+},
+{
+"page": 9,
+"section": "EQUIPMENT PACKAGES",
+"parent": "",
+"text": "Big Horn Level 2 Equipment Group 12-in. Uconnect touchscreen 7-in. programmable cluster display Security alarm Automatic temperature control (two-zone) Rear: one 2.5-amp USB port, fully functional Rear: one 2.5-amp USB port, charging only Front seat — 115-volt outlet (three-prong), battery-fed Rear seat — 115-volt outlet (three-prong), battery-fed 400-watt inverter Fully dampened/assisted tailgate Rear backlight, power sliding Power tailgate release Drive modes Wireless charging pad 20 x 9-in. cast aluminum chrome-clad wheels",
+"marks": {
+"TRADESMAN": "NA",
+"EXPRESS": "NA",
+"WARLOCK": "NA",
+"BIGHORN/ LONESTAR": "O",
+"REBEL": "NA",
+"LARAMIE": "NA",
+"LIMITED LONGHORN": "NA",
+"LIMITED": "NA",
+"RHO": "NA",
+"TUNGSTEN": "NA"
+}
+},
+{
+"page": 9,
+"section": "EQUIPMENT PACKAGES",
+"parent": "",
+"text": "Rebel Level 1 Equipment Group Power-folding mirrors with signal and puddle lamps Power-adjustable pedals Rear defroster Power tailgate release Security alarm Wireless charging pad (available with bucket seats only)",
+"marks": {
+"TRADESMAN": "NA",
+"EXPRESS": "NA",
+"WARLOCK": "NA",
+"BIGHORN/ LONESTAR": "NA",
+"REBEL": "O",
+"LARAMIE": "NA",
+"LIMITED LONGHORN": "NA",
+"LIMITED": "NA",
+"RHO": "NA",
+"TUNGSTEN": "NA"
+}
+},
+{
+"page": 9,
+"section": "EQUIPMENT PACKAGES",
+"parent": "",
+"text": "Rebel Level 2 Equipment Group 14.5-in. Uconnect touchscreen 10.25 in. front passenger interactive display Power-folding mirrors painted black with signal and puddle lamps Power-adjustable pedals Dual wireless charging pad (available with bucket seats only) Power open/close tailgate Rear seat – 115-volt outlet (three-prong), battery fed",
+"marks": {
+"TRADESMAN": "NA",
+"EXPRESS": "NA",
+"WARLOCK": "NA",
+"BIGHORN/ LONESTAR": "NA",
+"REBEL": "O",
+"LARAMIE": "NA",
+"LIMITED LONGHORN": "NA",
+"LIMITED": "NA",
+"RHO": "NA",
+"TUNGSTEN": "NA"
+}
+},
+{
+"page": 10,
+"section": "EQUIPMENT PACKAGES",
+"parent": "",
+"text": "Laramie Level 1 Equipment Group Rain-sensing wipers Power tailgate release Wireless charging pad (available with bucket seats only)",
+"marks": {
+"TRADESMAN": "NA",
+"EXPRESS": "NA",
+"WARLOCK": "NA",
+"BIGHORN/ LONESTAR": "NA",
+"REBEL": "NA",
+"LARAMIE": "O",
+"LIMITED LONGHORN": "NA",
+"LIMITED": "NA",
+"RHO": "NA",
+"TUNGSTEN": "NA"
+}
+},
+{
+"page": 10,
+"section": "EQUIPMENT PACKAGES",
+"parent": "",
+"text": "Laramie Level 2 Equipment Group 14.5-in. Uconnect touchscreen 10.25 in. front passenger interactive display 12-in. driver display cluster Dual wireless charging pad (available with bucket seats only) 19-speaker premium plus audio system Rear seat – heated (3 adjustable levels each) Smartphone as key (late availability)",
+"marks": {
+"TRADESMAN": "NA",
+"EXPRESS": "NA",
+"WARLOCK": "NA",
+"BIGHORN/ LONESTAR": "NA",
+"REBEL": "NA",
+"LARAMIE": "O",
+"LIMITED LONGHORN": "NA",
+"LIMITED": "NA",
+"RHO": "NA",
+"TUNGSTEN": "NA"
+}
+},
+{
+"page": 11,
+"section": "EQUIPMENT PACKAGES",
+"parent": "",
+"text": "GT Equipment Group GT decals Bucket seats Performance steering wheel with aluminum paddle shifters Performance floor shifter Performance screens Metal pedals kit All-weather floor mats",
+"marks": {
+"TRADESMAN": "NA",
+"EXPRESS": "NA",
+"WARLOCK": "NA",
+"BIGHORN/ LONESTAR": "NA",
+"REBEL": "O",
+"LARAMIE": "NA",
+"LIMITED LONGHORN": "NA",
+"LIMITED": "NA",
+"RHO": "NA",
+"TUNGSTEN": "NA"
+}
+},
+{
+"page": 11,
+"section": "EQUIPMENT PACKAGES",
+"parent": "",
+"text": "Limited Level 1 Equipment Group 14.5-in. Uconnect touchscreen Surround 360-degree camera Hands-free Active Driving Assist Smartphone as key (late availability) Heads-up Display Digital rearview mirror with tow mode RamBox",
+"marks": {
+"TRADESMAN": "NA",
+"EXPRESS": "NA",
+"WARLOCK": "NA",
+"BIGHORN/ LONESTAR": "NA",
+"REBEL": "NA",
+"LARAMIE": "NA",
+"LIMITED LONGHORN": "NA",
+"LIMITED": "O",
+"RHO": "NA",
+"TUNGSTEN": "O"
+}
+},
+{
+"page": 11,
+"section": "EQUIPMENT PACKAGES",
+"parent": "",
+"text": "RHO Level 1 Equipment Group 14.5-in. Uconnect touchscreen Surround 360-degree camera Rain-sensing wipers Ventilated outboard seating positions Massaging seats (driver and front passenger) Power-adjustable pedals with memory Memory (seat, exterior mirrors, power adjustable pedals, radio presets) 60/40 stadium-folding bench with manual recline and 20%-fold-down center console Performance and off-road screens (cluster/radio) Front seat — heated and ventilated (three adjustment levels each) Rear seat — heated and ventilated (three adjustment levels each) Smartphone as key (late availability)",
+"marks": {
+"TRADESMAN": "NA",
+"EXPRESS": "NA",
+"WARLOCK": "NA",
+"BIGHORN/ LONESTAR": "NA",
+"REBEL": "NA",
+"LARAMIE": "NA",
+"LIMITED LONGHORN": "NA",
+"LIMITED": "NA",
+"RHO": "O",
+"TUNGSTEN": "NA"
+}
+},
+{
+"page": 12,
+"section": "EQUIPMENT PACKAGES",
+"parent": "",
+"text": "Bed Utility Group Upper adjustable tie downs Bed extender (available with RamBox only) Bed step, deployable Bed lighting Spray-in bed liner (bed liner standard on Limited Longhorn and Limited)",
+"marks": {
+"TRADESMAN": "O",
+"EXPRESS": "O",
+"WARLOCK": "O",
+"BIGHORN/ LONESTAR": "O",
+"REBEL": "O",
+"LARAMIE": "O",
+"LIMITED LONGHORN": "O",
+"LIMITED": "O",
+"RHO": "O",
+"TUNGSTEN": "O"
+}
+},
+{
+"page": 12,
+"section": "EQUIPMENT PACKAGES",
+"parent": "",
+"text": "Protection Group (4x4 models only) Tow hooks Front suspension skid plate Transfer case skid plate Electronic power steering skid plate Fuel tank skid plate",
+"marks": {
+"TRADESMAN": "O",
+"EXPRESS": "O",
+"WARLOCK": "NA",
+"BIGHORN/ LONESTAR": "O",
+"REBEL": "NA",
+"LARAMIE": "NA",
+"LIMITED LONGHORN": "NA",
+"LIMITED": "NA",
+"RHO": "NA",
+"TUNGSTEN": "NA"
+}
+},
+{
+"page": 13,
+"section": "EQUIPMENT PACKAGES",
+"parent": "",
+"text": "4x4 Off-road Group (standard on Warlock and Rebel models) Tow hooks Front suspension skid plate Transfer case skid plate (on 4x4 models only) Electronic power steering skid plate Fuel tank skid plate Rear electronic locking axle Front/rear off-road calibrated shocks Hill-descent Control Off-road decals (both sides, rear quarter panel, not included with Rebel) All-terrain tires",
+"marks": {
+"TRADESMAN": "O",
+"EXPRESS": "O",
+"WARLOCK": "NA",
+"BIGHORN/ LONESTAR": "O",
+"REBEL": "NA",
+"LARAMIE": "O",
+"LIMITED LONGHORN": "O",
+"LIMITED": "O",
+"RHO": "NA",
+"TUNGSTEN": "O"
+}
+},
+{
+"page": 13,
+"section": "EQUIPMENT PACKAGES",
+"parent": "",
+"text": "Trailer-tow Group Integrated trailer brake controller Trailer tire-pressure monitoring system Trailer reverse steering control Trailer light check Trailer tow mirror (not included on Limited, Longhorn, Tungsten, and RHO)",
+"marks": {
+"TRADESMAN": "O",
+"EXPRESS": "O",
+"WARLOCK": "O",
+"BIGHORN/ LONESTAR": "O",
+"REBEL": "O",
+"LARAMIE": "O",
+"LIMITED LONGHORN": "O",
+"LIMITED": "O",
+"RHO": "O",
+"TUNGSTEN": "O"
+}
+},
+{
+"page": 13,
+"section": "EQUIPMENT PACKAGES",
+"parent": "",
+"text": "Trailer Technology Package Trailer hitch line-up assist Integrated trailer health monitor Trailer reverse guidance with dynamic grid lines (not available on Tradesman, Express, Warlock and Big Horn) Surround 360-degree trailer camera Tow-specific navigation Digital rearview mirror with tow mode (included when Advanced Technology Group selected)",
+"marks": {
+"TRADESMAN": "O",
+"EXPRESS": "O",
+"WARLOCK": "O",
+"BIGHORN/ LONESTAR": "O",
+"REBEL": "O",
+"LARAMIE": "O",
+"LIMITED LONGHORN": "O",
+"LIMITED": "O/P",
+"RHO": "O",
+"TUNGSTEN": "O/P"
+}
+},
+{
+"page": 14,
+"section": "EQUIPMENT PACKAGES",
+"parent": "",
+"text": "Advanced Safety Group Surround 360-degree camera Evasive Steer Assist Intersection Collision Assist Traffic Sign Recognition Drowsy Driver Detection Hands-free Active Driving Assist",
+"marks": {
+"TRADESMAN": "O",
+"EXPRESS": "NA",
+"WARLOCK": "NA",
+"BIGHORN/ LONESTAR": "O",
+"REBEL": "O",
+"LARAMIE": "O",
+"LIMITED LONGHORN": "NA",
+"LIMITED": "NA",
+"RHO": "O",
+"TUNGSTEN": "NA"
+}
+},
+{
+"page": 14,
+"section": "EQUIPMENT PACKAGES",
+"parent": "",
+"text": "Advanced Technology Group Head-up Display Digital rearview mirror with tow mode",
+"marks": {
+"TRADESMAN": "NA",
+"EXPRESS": "NA",
+"WARLOCK": "NA",
+"BIGHORN/ LONESTAR": "O",
+"REBEL": "O",
+"LARAMIE": "O",
+"LIMITED LONGHORN": "P",
+"LIMITED": "P",
+"RHO": "P",
+"TUNGSTEN": "P"
+}
+}
+],
+"url": "https://media.stellantisnorthamerica.com/view-spec.do?id=27024"
+}

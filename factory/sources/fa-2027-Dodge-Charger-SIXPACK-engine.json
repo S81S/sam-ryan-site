@@ -1,0 +1,2047 @@
+{
+"kind": "fa",
+"title": "2027 Dodge Charger (SIXPACK engine)",
+"rows": [
+{
+"page": 1,
+"section": "ENGINES AND TRANSMISSIONS",
+"parent": "",
+"text": "3.0L Twin-turbo SIXPACK with eight-speed automatic transmission",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "NA",
+"Scat Pack Plus": "NA"
+}
+},
+{
+"page": 1,
+"section": "ENGINES AND TRANSMISSIONS",
+"parent": "",
+"text": "3.0L Twin-turbo SIXPACK (High Output) with eight-speed automatic transmission",
+"marks": {
+"R/T": "NA",
+"R/T Plus": "NA",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL FEATURES",
+"parent": "",
+"text": "All-wheel drive (AWD)",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL FEATURES",
+"parent": "Brake Assist",
+"text": "Intelligent Brake by Wire technology",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL FEATURES",
+"parent": "Brake System",
+"text": "Four-wheel disc anti-lock braking system (ABS), all-speed traction control, electronic brake-force distribution (EBD) and brake assist",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL FEATURES",
+"parent": "Brake System",
+"text": "Two-piston floating front and rear calipers",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "NA",
+"Scat Pack Plus": "NA"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL FEATURES",
+"parent": "Brake System",
+"text": "Brembo six-piston fixed front calipers and floating rear calipers",
+"marks": {
+"R/T": "P",
+"R/T Plus": "P",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL FEATURES",
+"parent": "Brake System",
+"text": "Brembo brake calipers – (black, orange; must have Performance Handling Group for R/T)*",
+"marks": {
+"R/T": "O",
+"R/T Plus": "O",
+"Scat Pack": "O",
+"Scat Pack Plus": "O"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL FEATURES",
+"parent": "Drive Modes",
+"text": "Auto/Eco/Sport/Wet-Snow/Valet",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL FEATURES",
+"parent": "Drive Modes",
+"text": "Custom (included in Performance Handling Group)",
+"marks": {
+"R/T": "P",
+"R/T Plus": "P",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL FEATURES",
+"parent": "",
+"text": "Electronic stability control (ESC)",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Exhaust System",
+"text": "Bright exhaust tips",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Exhaust System",
+"text": "Black exhaust tips (included in Blacktop Package)",
+"marks": {
+"R/T": "P",
+"R/T Plus": "P",
+"Scat Pack": "P",
+"Scat Pack Plus": "P"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "",
+"text": "Launch Control (included in Performance Handling Group)",
+"marks": {
+"R/T": "P",
+"R/T Plus": "P",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "",
+"text": "Line Lock (included in Performance Handling Group)",
+"marks": {
+"R/T": "P",
+"R/T Plus": "P",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "",
+"text": "Paddles on steering wheel (included in Driver Convenience Group)",
+"marks": {
+"R/T": "P",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "",
+"text": "Performance pages (via Uconnect 5 system, included in Performance Handling Group)",
+"marks": {
+"R/T": "P",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "",
+"text": "Rear-wheel-drive mode",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "",
+"text": "Remote start",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Steering",
+"text": "Electric power steering (EPS)",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Suspension",
+"text": "Touring suspension",
+"marks": {
+"R/T": "S",
+"R/T Plus": "NA",
+"Scat Pack": "NA",
+"Scat Pack Plus": "NA"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Suspension",
+"text": "Sport suspension (included in Blacktop Package)",
+"marks": {
+"R/T": "P",
+"R/T Plus": "S",
+"Scat Pack": "NA",
+"Scat Pack Plus": "NA"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Suspension",
+"text": "Performance suspension (included in Performance Handling Group)",
+"marks": {
+"R/T": "P",
+"R/T Plus": "P",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "",
+"text": "Tire-fill Alert",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "Antenna — flat satellite design",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Badges (fender)",
+"text": "R/T",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "NA",
+"Scat Pack Plus": "NA"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Badges (fender)",
+"text": "R/T Dark Finish (included in Blacktop Package)",
+"marks": {
+"R/T": "P",
+"R/T Plus": "P",
+"Scat Pack": "NA",
+"Scat Pack Plus": "NA"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Badges (fender)",
+"text": "Scat Pack “Bee”",
+"marks": {
+"R/T": "NA",
+"R/T Plus": "NA",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Badges (fender)",
+"text": "Scat Pack “Bee” Dark Finish (included in Blacktop Package)",
+"marks": {
+"R/T": "NA",
+"R/T Plus": "NA",
+"Scat Pack": "P",
+"Scat Pack Plus": "P"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "Door handles — body color with Keyless Enter ’n Go",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "Fuel filler door — push-push",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Glass",
+"text": "Acoustic windshield and front windows",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Glass",
+"text": "Privacy rear windows",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Headlamps / Taillamps",
+"text": "Automatic ON/OFF",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Headlamps / Taillamps",
+"text": "LED headlamps",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Headlamps / Taillamps",
+"text": "LED-illuminated daytime running lamps with park and turn indicators",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Headlamps / Taillamps",
+"text": "Auto high-beam control",
+"marks": {
+"R/T": "NA",
+"R/T Plus": "S",
+"Scat Pack": "NA",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Headlamps / Taillamps",
+"text": "Lit front Fratzog badge",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Headlamps / Taillamps",
+"text": "Lit rear Fratzog badge",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Headlamps / Taillamps",
+"text": "Premium LED headlamps with signature DRL",
+"marks": {
+"R/T": "NA",
+"R/T Plus": "S",
+"Scat Pack": "NA",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Hood",
+"text": "Satin Black hood patch",
+"marks": {
+"R/T": "O",
+"R/T Plus": "O",
+"Scat Pack": "O",
+"Scat Pack Plus": "O"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Hood",
+"text": "Satin Black painted hood",
+"marks": {
+"R/T": "O",
+"R/T Plus": "O",
+"Scat Pack": "O",
+"Scat Pack Plus": "O"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Hood",
+"text": "SIXPACK bezel",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Liftgate",
+"text": "Keyless manual liftgate",
+"marks": {
+"R/T": "S",
+"R/T Plus": "NA",
+"Scat Pack": "S",
+"Scat Pack Plus": "NA"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Liftgate",
+"text": "Keyless power liftgate with programmable height",
+"marks": {
+"R/T": "NA",
+"R/T Plus": "S",
+"Scat Pack": "NA",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Mirrors",
+"text": "Gloss Black, heated, power mirrors",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Mirrors",
+"text": "Carbon-fiber, heated, power mirrors (included with Carbon & Suede Package)",
+"marks": {
+"R/T": "NA",
+"R/T Plus": "NA",
+"Scat Pack": "NA",
+"Scat Pack Plus": "P"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Mirrors",
+"text": "Blind-spot Monitoring signals",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Roof",
+"text": "Sculpted, Gloss Black-painted steel roof",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Roof",
+"text": "Full-length glass roof",
+"marks": {
+"R/T": "NA",
+"R/T Plus": "O",
+"Scat Pack": "NA",
+"Scat Pack Plus": "O"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Roof",
+"text": "Sunshade",
+"marks": {
+"R/T": "NA",
+"R/T Plus": "O",
+"Scat Pack": "NA",
+"Scat Pack Plus": "O"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "Spoiler — Gloss Black (included in Performance Handling Group)",
+"marks": {
+"R/T": "P",
+"R/T Plus": "P",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Stripes",
+"text": "Bodyside “Charger” blade stripe (Gloss Red, Satin Black, Satin White)",
+"marks": {
+"R/T": "O",
+"R/T Plus": "O",
+"Scat Pack": "O",
+"Scat Pack Plus": "O"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "Bodyside “Charger” strobe stripe (Gloss Red, Satin Black, Satin White)",
+"marks": {
+"R/T": "O",
+"R/T Plus": "O",
+"Scat Pack": "O",
+"Scat Pack Plus": "O"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "Dual stripes (Gloss Black, Gloss White, Satin Black, Satin White)",
+"marks": {
+"R/T": "O",
+"R/T Plus": "O",
+"Scat Pack": "O",
+"Scat Pack Plus": "O"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "Dual Fratzog stripes",
+"marks": {
+"R/T": "O",
+"R/T Plus": "O",
+"Scat Pack": "O",
+"Scat Pack Plus": "O"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Tires",
+"text": "245/55R18 Nexen All-Season",
+"marks": {
+"R/T": "S",
+"R/T Plus": "NA",
+"Scat Pack": "NA",
+"Scat Pack Plus": "NA"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Tires",
+"text": "255/45R20XLA Nexen All-Season Package",
+"marks": {
+"R/T": "P",
+"R/T Plus": "S",
+"Scat Pack": "NA",
+"Scat Pack Plus": "NA"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Tires",
+"text": "275/40ZR20 Goodyear All-Season (included in Performance Handling Group)",
+"marks": {
+"R/T": "P",
+"R/T Plus": "P",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Tires",
+"text": "305/35ZR20 Goodyear All-Season (included in 20-by-11-in Wheel Package)",
+"marks": {
+"R/T": "NA",
+"R/T Plus": "NA",
+"Scat Pack": "P",
+"Scat Pack Plus": "P"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Tires",
+"text": "305/35ZR20 Goodyear Three-Season (must have 20-by-11-in Wheel Package)",
+"marks": {
+"R/T": "NA",
+"R/T Plus": "NA",
+"Scat Pack": "O",
+"Scat Pack Plus": "O"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels (aluminum)",
+"text": "18-by-8.5-in. Tech Silver",
+"marks": {
+"R/T": "S",
+"R/T Plus": "NA",
+"Scat Pack": "NA",
+"Scat Pack Plus": "NA"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels (aluminum)",
+"text": "20-by-9-in. Fine Silver",
+"marks": {
+"R/T": "NA",
+"R/T Plus": "S",
+"Scat Pack": "NA",
+"Scat Pack Plus": "NA"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels (aluminum)",
+"text": "20-by-10-in. Diamond Cut with Luster (included in Performance Handling Group)",
+"marks": {
+"R/T": "P",
+"R/T Plus": "P",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels (aluminum)",
+"text": "20-by-11-in. Satin Carbon (included in 20-by-11-inch Wheel Package)",
+"marks": {
+"R/T": "NA",
+"R/T Plus": "NA",
+"Scat Pack": "P",
+"Scat Pack Plus": "P"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels (aluminum)",
+"text": "20-by-10-in. Blacknoise, Dark Finish (included in Blacktop Package)",
+"marks": {
+"R/T": "NA",
+"R/T Plus": "NA",
+"Scat Pack": "P",
+"Scat Pack Plus": "P"
+}
+},
+{
+"page": 5,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels (aluminum)",
+"text": "20-by-11-in. Luster, Dark Finish (included in Blacktop Package)",
+"marks": {
+"R/T": "NA",
+"R/T Plus": "NA",
+"Scat Pack": "P",
+"Scat Pack Plus": "P"
+}
+},
+{
+"page": 5,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "Windows — power with driver and passenger one-touch auto up/down",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 5,
+"section": "EXTERIOR FEATURES",
+"parent": "Windshield Wipers",
+"text": "Rain-sensing",
+"marks": {
+"R/T": "NA",
+"R/T Plus": "S",
+"Scat Pack": "NA",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 5,
+"section": "EXTERIOR FEATURES",
+"parent": "Windshield Wipers",
+"text": "Variable/intermittent",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Cargo mats",
+"marks": {
+"R/T": "O",
+"R/T Plus": "O",
+"Scat Pack": "O",
+"Scat Pack Plus": "O"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Climate Control",
+"text": "Dual-zone automatic temperature control with humidity sensor",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Climate Control",
+"text": "Physical buttons with independent control for driver and front passenger",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Cup Holders",
+"text": "Front cup holders integrated into center console",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Cup Holders",
+"text": "Rear cup holder integrated into central armrest",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Defroster — rear window",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Door locks — power, speed-sensitive",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Driver Information Display",
+"text": "12.3-in. central display",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Floor Mats",
+"text": "Front and rear",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Floor Mats",
+"text": "All-weather floor mats",
+"marks": {
+"R/T": "O",
+"R/T Plus": "O",
+"Scat Pack": "O",
+"Scat Pack Plus": "O"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Headliner",
+"text": "All-black headliner and interior trim",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Headliner",
+"text": "Black suede headliner and A-pillar (included with Carbon & Suede Package)",
+"marks": {
+"R/T": "NA",
+"R/T Plus": "NA",
+"Scat Pack": "NA",
+"Scat Pack Plus": "P"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Instrument Cluster Display",
+"text": "10.25-in. freestanding cluster",
+"marks": {
+"R/T": "S",
+"R/T Plus": "NA",
+"Scat Pack": "S",
+"Scat Pack Plus": "NA"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Instrument Cluster Display",
+"text": "16-in. freestanding cluster (included with Plus Group)",
+"marks": {
+"R/T": "NA",
+"R/T Plus": "S",
+"Scat Pack": "NA",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Instrument Cluster Display",
+"text": "Dodge G-meter",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Instrument Cluster Display",
+"text": "Tire-pressure monitoring system",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Lighting, Interior",
+"text": "Attitude Adjustment interior lighting",
+"marks": {
+"R/T": "NA",
+"R/T Plus": "S",
+"Scat Pack": "NA",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Lighting, Interior",
+"text": "Driver and front passenger lower ambient LED lamps",
+"marks": {
+"R/T": "NA",
+"R/T Plus": "S",
+"Scat Pack": "NA",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Lighting, Interior",
+"text": "LED front and rear map lights",
+"marks": {
+"R/T": "NA",
+"R/T Plus": "S",
+"Scat Pack": "NA",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Lighting, Interior",
+"text": "Front overhead LED lighting",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Lighting, Interior",
+"text": "Glove box lamp (included with Plus Group)",
+"marks": {
+"R/T": "NA",
+"R/T Plus": "S",
+"Scat Pack": "NA",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Lighting, Interior",
+"text": "Cargo area lamps",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Mirrors",
+"text": "Rearview",
+"marks": {
+"R/T": "S",
+"R/T Plus": "NA",
+"Scat Pack": "NA",
+"Scat Pack Plus": "NA"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Mirrors",
+"text": "Auto-dimming rearview (included in Driver Convenience Group)",
+"marks": {
+"R/T": "P",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Mirrors",
+"text": "Visor vanity, illuminated, driver and passenger sides",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Power outlets — 12-volt, located in center console",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Black cloth",
+"marks": {
+"R/T": "S",
+"R/T Plus": "NA",
+"Scat Pack": "NA",
+"Scat Pack Plus": "NA"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Black vinyl",
+"marks": {
+"R/T": "NA",
+"R/T Plus": "S",
+"Scat Pack": "NA",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Black cloth and leatherette (included in Driver Convenience Group)",
+"marks": {
+"R/T": "P",
+"R/T Plus": "NA",
+"Scat Pack": "S",
+"Scat Pack Plus": "NA"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "High-back black leather and suede (included in Performance Handling Group)",
+"marks": {
+"R/T": "P",
+"R/T Plus": "P",
+"Scat Pack": "NA",
+"Scat Pack Plus": "NA"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "High-back black leather and suede, Demonic Red",
+"marks": {
+"R/T": "NA",
+"R/T Plus": "O",
+"Scat Pack": "NA",
+"Scat Pack Plus": "NA"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "High-back black leather",
+"marks": {
+"R/T": "NA",
+"R/T Plus": "NA",
+"Scat Pack": "NA",
+"Scat Pack Plus": "O"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "High-back Demonic Red leather",
+"marks": {
+"R/T": "NA",
+"R/T Plus": "NA",
+"Scat Pack": "NA",
+"Scat Pack Plus": "O"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "High-back black suede and Nappa leather (included with Carbon & Suede Package)",
+"marks": {
+"R/T": "NA",
+"R/T Plus": "NA",
+"Scat Pack": "NA",
+"Scat Pack Plus": "P"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "High-back Demonic Red suede and Nappa leather (optional with Carbon & Suede Package)",
+"marks": {
+"R/T": "NA",
+"R/T Plus": "NA",
+"Scat Pack": "NA",
+"Scat Pack Plus": "O"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Petrol Blue performance leather",
+"marks": {
+"R/T": "NA",
+"R/T Plus": "NA",
+"Scat Pack": "NA",
+"Scat Pack Plus": "O"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Rear — fold-flat",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR FEATURES",
+"parent": "Seat Belts",
+"text": "Black",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR FEATURES",
+"parent": "Seat Belts",
+"text": "Red",
+"marks": {
+"R/T": "O",
+"R/T Plus": "O",
+"Scat Pack": "O",
+"Scat Pack Plus": "O"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Shift knob — leather wrapped",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR FEATURES",
+"parent": "Steering Column",
+"text": "Manual tilt/telescoping",
+"marks": {
+"R/T": "S",
+"R/T Plus": "NA",
+"Scat Pack": "S",
+"Scat Pack Plus": "NA"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR FEATURES",
+"parent": "Steering Column",
+"text": "Power tilt/telescoping",
+"marks": {
+"R/T": "NA",
+"R/T Plus": "S",
+"Scat Pack": "NA",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR FEATURES",
+"parent": "Steering Wheel",
+"text": "Flat-bottom, flat-top design, Drive Modes button",
+"marks": {
+"R/T": "S",
+"R/T Plus": "NA",
+"Scat Pack": "NA",
+"Scat Pack Plus": "NA"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR FEATURES",
+"parent": "Steering Wheel",
+"text": "Flat-bottom, flat-top design, paddles, heated, Drive Modes button (included in Driver Convenience Group)",
+"marks": {
+"R/T": "P",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Temperature display — outside",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Universal garage door opener (included in Driver Convenience Group)",
+"marks": {
+"R/T": "P",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Wireless charging pad",
+"marks": {
+"R/T": "NA",
+"R/T Plus": "S",
+"Scat Pack": "NA",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 7,
+"section": "UCONNECT / AUDIO",
+"parent": "",
+"text": "Amazon Alexa integration",
+"marks": {
+"R/T": "NA",
+"R/T Plus": "S",
+"Scat Pack": "NA",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 7,
+"section": "UCONNECT / AUDIO",
+"parent": "Audio Systems",
+"text": "Six speaker system",
+"marks": {
+"R/T": "S",
+"R/T Plus": "NA",
+"Scat Pack": "NA",
+"Scat Pack Plus": "NA"
+}
+},
+{
+"page": 7,
+"section": "UCONNECT / AUDIO",
+"parent": "Audio Systems",
+"text": "Alpine nine amplified speakers with subwoofer and amplifier (included in Driver Convenience Group)",
+"marks": {
+"R/T": "P",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 8,
+"section": "UCONNECT / AUDIO",
+"parent": "Audio Systems",
+"text": "Alpine premium 18 speakers with subwoofer and amplifier",
+"marks": {
+"R/T": "NA",
+"R/T Plus": "O",
+"Scat Pack": "NA",
+"Scat Pack Plus": "O"
+}
+},
+{
+"page": 8,
+"section": "UCONNECT / AUDIO",
+"parent": "",
+"text": "Dodge Connect — connected services trials included",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 8,
+"section": "UCONNECT / AUDIO",
+"parent": "",
+"text": "Drive Mode Pages",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 8,
+"section": "UCONNECT / AUDIO",
+"parent": "",
+"text": "Dual-phone connectivity",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 8,
+"section": "UCONNECT / AUDIO",
+"parent": "",
+"text": "Uconnect Voice Command",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 8,
+"section": "UCONNECT / AUDIO",
+"parent": "",
+"text": "Media hub (includes two USB-C ports)",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 8,
+"section": "UCONNECT / AUDIO",
+"parent": "",
+"text": "Personalized profiles for vehicle, Uconnect and media settings",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 8,
+"section": "UCONNECT / AUDIO",
+"parent": "",
+"text": "Rear (2) USB-C ports",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 8,
+"section": "UCONNECT / AUDIO",
+"parent": "",
+"text": "SiriusXM Radio — includes trial subscription",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 8,
+"section": "UCONNECT / AUDIO",
+"parent": "",
+"text": "Uconnect 5 with 12.3-in. display — AM/FM radio system with wireless Apple CarPlay and Android Auto, SiriusXM Radio with trial subscription included, integrated voice command with Bluetooth, 12.3-in. touchscreen for displaying music, climate controls and vehicle information, Bluetooth, streaming audio",
+"marks": {
+"R/T": "S",
+"R/T Plus": "NA",
+"Scat Pack": "S",
+"Scat Pack Plus": "NA"
+}
+},
+{
+"page": 8,
+"section": "UCONNECT / AUDIO",
+"parent": "",
+"text": "Uconnect 5 with Navigation 12.3-in. display — AM/FM radio system with wireless Apple CarPlay and Android Auto, SiriusXM Radio with trial subscription included, TomTom integrated navigation, integrated voice command with Bluetooth, 12.3-in. touchscreen for displaying music, climate controls and vehicle information, Bluetooth, streaming audio",
+"marks": {
+"R/T": "NA",
+"R/T Plus": "S",
+"Scat Pack": "NA",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 8,
+"section": "UCONNECT / AUDIO",
+"parent": "",
+"text": "Vehicle information pages, driving story, drive mode information",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 8,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Active Driving Assist",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 8,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Active Lane Management",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 8,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Adaptive Cruise Control with Stop and Go",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 9,
+"section": "SAFETY & SECURITY",
+"parent": "Airbags",
+"text": "Advanced multistage front",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 9,
+"section": "SAFETY & SECURITY",
+"parent": "Airbags",
+"text": "Supplemental front-seat-mounted side",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 9,
+"section": "SAFETY & SECURITY",
+"parent": "Airbags",
+"text": "Supplemental side-curtain, front and rear",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 9,
+"section": "SAFETY & SECURITY",
+"parent": "Airbags",
+"text": "Driver knee airbag",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 9,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Automatic emergency braking with road user detection",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 9,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Blind-spot Monitoring",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 9,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Blind-spot Monitoring and Rear Cross Path detection",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 9,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Blind-spot turn-signal-activated view",
+"marks": {
+"R/T": "NA",
+"R/T Plus": "S",
+"Scat Pack": "NA",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 9,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Brake assist",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 9,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Child seat anchor system (LATCH)",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 9,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Drowsy Driver Detection",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 9,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Electronic stability control (ESC) — includes brake assist",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 9,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Electronic park brake — automatic",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 9,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Full-speed Forward Collision Warning",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 9,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Head-up Display",
+"marks": {
+"R/T": "NA",
+"R/T Plus": "S",
+"Scat Pack": "NA",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 9,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Hill-start Assist",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 9,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "ParkSense rear view camera",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 9,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "ParkSense front, side and rear park assist system with adaptive guidelines and vehicle path detection (included in Driver Convenience Group)",
+"marks": {
+"R/T": "P",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 9,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "ParkView rear backup camera",
+"marks": {
+"R/T": "S",
+"R/T Plus": "NA",
+"Scat Pack": "S",
+"Scat Pack Plus": "NA"
+}
+},
+{
+"page": 9,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Surround 360-degree camera",
+"marks": {
+"R/T": "NA",
+"R/T Plus": "S",
+"Scat Pack": "NA",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 9,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Rain brake support",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 9,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Ready Alert Braking",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 9,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Remote Keyless Enter ‘n Go",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 9,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Seat belt alert — driver and front passenger",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 9,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Seat belt pretensioners — driver and front passenger",
+"marks": {
+"R/T": "S",
+"R/T Plus": "S",
+"Scat Pack": "S",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 10,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Security alarm",
+"marks": {
+"R/T": "S",
+"R/T Plus": "NA",
+"Scat Pack": "S",
+"Scat Pack Plus": "NA"
+}
+},
+{
+"page": 10,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Security alarm with intrusion sensor",
+"marks": {
+"R/T": "NA",
+"R/T Plus": "S",
+"Scat Pack": "NA",
+"Scat Pack Plus": "S"
+}
+},
+{
+"page": 10,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "",
+"text": "Blacktop Package — includes 20-by-9-in. or 20-by-10-in. aluminum dark finish wheels, dark finish badging, dark finish exhaust tips",
+"marks": {
+"R/T": "O",
+"R/T Plus": "O",
+"Scat Pack": "O",
+"Scat Pack Plus": "O"
+}
+},
+{
+"page": 10,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "",
+"text": "20-by-11-in. aluminum wheel package in Satin Carbon or Luster with Blacktop",
+"marks": {
+"R/T": "NA",
+"R/T Plus": "NA",
+"Scat Pack": "O",
+"Scat Pack Plus": "O"
+}
+},
+{
+"page": 10,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "",
+"text": "Leather high-back performance seat — power 12-way driver, 12-way passenger, fixed head restraint, four-way lumbar, heat, vent, driver memory",
+"marks": {
+"R/T": "NA",
+"R/T Plus": "NA",
+"Scat Pack": "NA",
+"Scat Pack Plus": "O"
+}
+},
+{
+"page": 10,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "",
+"text": "Carbon & Suede Package — includes carbon-fiber mirror caps; carbon-fiber interior appliques; suede headliner/pillar; suede-wrapped instrument panel; carbon-fiber center console applique; leather and suede high-back seats with power 12-way driver, power 12-way passenger, fixed head restraint, four-way lumbar, heated, vented, driver memory, high-performance seat cushion",
+"marks": {
+"R/T": "NA",
+"R/T Plus": "NA",
+"Scat Pack": "NA",
+"Scat Pack Plus": "O"
+}
+},
+{
+"page": 10,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "",
+"text": "Driver Convenience Group — Heated cloth/leatherette performance seats, eight-way power driver seat, two-way driver power lumbar, four-way manual passenger seat, heated steering wheel, front/rear ParkSense with stop, side distance warning, universal garage door opener, auto-dim rearview mirror, nine-speaker audio, hatch tonneau cover, Active Noise Cancellation, cluster shift light",
+"marks": {
+"R/T": "P",
+"R/T Plus": "NA",
+"Scat Pack": "NA",
+"Scat Pack Plus": "NA"
+}
+},
+{
+"page": 10,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "",
+"text": "Performance Handling Group — Silver Brembo six-piston fixed front calipers with floating rear, performance suspension, Line Lock, Launch control, Custom Drive Mode, 20-by-10-in aluminum wheels, 275/40R20 all-season tires, Gloss Black spoiler, high-back leather/suede performance seats, 12-way power driver/passenger seat, four-way power lumbar, ventilated front seats, heated second row, steering wheel mounted paddle shifters, Uconnect 5 with Navigation, enhanced display synchronization, cluster shift light",
+"marks": {
+"R/T": "P",
+"R/T Plus": "P",
+"Scat Pack": "NA",
+"Scat Pack Plus": "NA"
+}
+},
+{
+"page": 11,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "",
+"text": "Panoramic glass roof — full-length glass roof",
+"marks": {
+"R/T": "NA",
+"R/T Plus": "O",
+"Scat Pack": "NA",
+"Scat Pack Plus": "O"
+}
+},
+{
+"page": 11,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "",
+"text": "Premium 18-speaker Alpine Audio — 18 speakers with subwoofer and amplifier",
+"marks": {
+"R/T": "NA",
+"R/T Plus": "O",
+"Scat Pack": "NA",
+"Scat Pack Plus": "O"
+}
+}
+],
+"url": "https://media.stellantisnorthamerica.com/view-spec.do?id=27786"
+}

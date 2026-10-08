@@ -1,0 +1,2063 @@
+{
+"kind": "fbg",
+"title": "2026 JEEP GLADIATOR",
+"columns": [
+{
+"code": "2TB/2TS/2TW",
+"name": "Sport"
+},
+{
+"code": "2TD/2TA",
+"name": "Mojave"
+},
+{
+"code": "2TR/2TY",
+"name": "Rubicon"
+}
+],
+"colors": [
+"Black",
+"Granite Crystal Metallic",
+"Anvil",
+"Hydro Blue",
+"Firecracker Red",
+"‘41",
+"Mojito!",
+"Bright White"
+],
+"rows": [
+{
+"page": 2,
+"section": "ENGINES / TRANSMISSIONS",
+"parent": "",
+"text": "3.6L Pentastar® V6 24V Variable Valve Timing (VVT) with Engine Stop/Start (ESS) Technology (ERC)",
+"marks": {
+"2TB/2TS/2TW": "•",
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 2,
+"section": "ENGINES / TRANSMISSIONS",
+"parent": "",
+"text": "8-speed Automatic 850RE (includes skid plate) (DFT)",
+"marks": {
+"2TB/2TS/2TW": "•",
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 2,
+"section": "ENGINES / TRANSMISSIONS",
+"parent": "Transfer Case",
+"text": "Command-Trac® Part-Time 4x4 (DHN)",
+"marks": {
+"2TB/2TS/2TW": "•",
+"2TD/2TA": "•"
+}
+},
+{
+"page": 2,
+"section": "ENGINES / TRANSMISSIONS",
+"parent": "Transfer Case",
+"text": "Rock-Trac® Heavy-Duty Part-Time 4x4 with 4:1 low-range ratio (DHW)",
+"marks": {
+"2TR/2TY": "•"
+}
+},
+{
+"page": 2,
+"section": "ENGINES / TRANSMISSIONS",
+"parent": "Transfer Case",
+"text": "Skid plate shield (XEF)",
+"marks": {
+"2TB/2TS/2TW": "•",
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 2,
+"section": "ENGINES / TRANSMISSIONS",
+"parent": "",
+"text": "Selec-Speed® Control (BNK)",
+"marks": {
+"2TB/2TS/2TW": "•",
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "Axles",
+"text": "Dana® M210 front (DJE)",
+"marks": {
+"2TB/2TS/2TW": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "Axles",
+"text": "Dana M210 wide front (included with Max Tow Package with 4.10 Axle Ratio on Sport) (DJF)",
+"marks": {
+"2TB/2TS/2TW": "P",
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "Axles",
+"text": "Dana M220 rear (DRE)",
+"marks": {
+"2TB/2TS/2TW": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "Axles",
+"text": "Dana M220 wide rear (included with Max Tow Package with 4.10 Axle Ratio on Sport) (DRF)",
+"marks": {
+"2TB/2TS/2TW": "P",
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "Differential",
+"text": "Conventional “open” rear (DS8)",
+"marks": {
+"2TB/2TS/2TW": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "Differential",
+"text": "Antispin rear (included with Max Tow Package with 4.10 Axle Ratio and Willys; packaged with 2TT and 2TW) (DSA)",
+"marks": {
+"2TB/2TS/2TW": "O/P"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "Differential",
+"text": "E-Locker rear axle (DSH)",
+"marks": {
+"2TB/2TS/2TW": "P",
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "Differential",
+"text": "Tru-Lok® front (packaged with 2TT and 2TW) (DSL)",
+"marks": {
+"2TR/2TY": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "Differential",
+"text": "Front conventional differential axle (DS7)",
+"marks": {
+"2TB/2TS/2TW": "P",
+"2TD/2TA": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "Differential",
+"text": "Front conventional differential axle with disconnect (DSM)",
+"marks": {
+"2TB/2TS/2TW": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "Axle Ratios",
+"text": "3.73:1 (DME)",
+"marks": {
+"2TB/2TS/2TW": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "Axle Ratios",
+"text": "4.10:1 (included with Max Tow Package with 4.10 Axle Ratio) (DMF)",
+"marks": {
+"2TB/2TS/2TW": "P",
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "Alternator",
+"text": "240-amp (BAL)",
+"marks": {
+"2TB/2TS/2TW": "•",
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "Battery",
+"text": "700-amp maintenance-free (BCH)",
+"marks": {
+"2TB/2TS/2TW": "•",
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "Battery",
+"text": "Auxiliary (included with ESS Technology) (BC1)",
+"marks": {
+"2TB/2TS/2TW": "•",
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "Brakes",
+"text": "Heavy-duty antilock four-wheel disc (BR6)",
+"marks": {
+"2TB/2TS/2TW": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "Brakes",
+"text": "Heavy-duty antilock four-wheel disc (BR1)",
+"marks": {
+"2TD/2TA": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "Brakes",
+"text": "Hydraulic assist brake booster (BPT)",
+"marks": {
+"2TB/2TS/2TW": "•",
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "Fuel Tank",
+"text": "22-gallon (NF5)",
+"marks": {
+"2TB/2TS/2TW": "•",
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "Fuel Tank",
+"text": "Skid plate shield (XEE)",
+"marks": {
+"2TB/2TS/2TW": "•/P",
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "",
+"text": "Off-Road Plus Mode (packaged with 2TT and 2TW) (XG7)",
+"marks": {
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "",
+"text": "Underbody Skid Plate (XF3)",
+"marks": {
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "Shocks",
+"text": "Heavy-duty front and rear (SFB/SGB)",
+"marks": {
+"2TB/2TS/2TW": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "Shocks",
+"text": "Heavy-duty front and rear Red-painted (packaged with 2TT and 2TW) (SFE/SGE)",
+"marks": {
+"2TB/2TS/2TW": "P"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "Shocks",
+"text": "FOX® performance internal bypass front and rear with remote reservoirs (SFD/SGD)",
+"marks": {
+"2TD/2TA": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "Shocks",
+"text": "FOX performance hydro jounce bumpers (SHH)",
+"marks": {
+"2TD/2TA": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "Shocks",
+"text": "Red Tenneco front and rear (SFF/SGF)",
+"marks": {
+"2TR/2TY": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "Stabilizer Bar",
+"text": "Front (SHA)",
+"marks": {
+"2TB/2TS/2TW": "•",
+"2TD/2TA": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "Stabilizer Bar",
+"text": "Front disconnecting (SHG)",
+"marks": {
+"2TR/2TY": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "Stabilizer Bar",
+"text": "Rear (SHF)",
+"marks": {
+"2TB/2TS/2TW": "•",
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "Suspension",
+"text": "Normal-duty (SDA)",
+"marks": {
+"2TB/2TS/2TW": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "Suspension",
+"text": "Normal-duty plus (packaged with Sport S) (SDW)",
+"marks": {
+"2TB/2TS/2TW": "P"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "Suspension",
+"text": "Heavy-duty with gas shocks (SDU)",
+"marks": {
+"2TD/2TA": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "Suspension",
+"text": "Heavy-duty performance (SDD)",
+"marks": {
+"2TR/2TY": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "TORX® Toolkit (XE4)",
+"marks": {
+"2TB/2TS/2TW": "•",
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Tow Hooks",
+"text": "Black, two front and one rear (XHQ/XQA/XQB)",
+"marks": {
+"2TB/2TS/2TW": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Tow Hooks",
+"text": "Orange, two front and two rear (XEQ/XQA)",
+"marks": {
+"2TD/2TA": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Tow Hooks",
+"text": "Red, two front and two rear (XQA/XH6)",
+"marks": {
+"2TR/2TY": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Bumper",
+"text": "Molded-in-color with Accent-color front (packaged on Sport with 2TT) (MBA)",
+"marks": {
+"2TB/2TS/2TW": "•",
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Bumper",
+"text": "Steel front (MC6)",
+"marks": {
+"2TD/2TA": "P",
+"2TR/2TY": "P"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Bumper",
+"text": "Black-painted rear (MBC)",
+"marks": {
+"2TB/2TS/2TW": "•",
+"2TD/2TA": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Bumper",
+"text": "Steel rear (MD6)",
+"marks": {
+"2TD/2TA": "P",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "Exterior 115-Volt A/C Outlet (packaged with Cargo Group with Trail RailTM System) (XBE)",
+"marks": {
+"2TB/2TS/2TW": "P",
+"2TD/2TA": "P",
+"2TR/2TY": "P"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "Cargo Tie-Down Loops (CKT)",
+"marks": {
+"2TB/2TS/2TW": "•",
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Doors",
+"text": "Full metal with quick-release hinges (GCE)",
+"marks": {
+"2TB/2TS/2TW": "•",
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Fender",
+"text": "Black Molded-in-color flares – One-piece (MMJ)",
+"marks": {
+"2TB/2TS/2TW": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Fender",
+"text": "Molded-in-color high-clearance flares – Two-piece (MMZ)",
+"marks": {
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Fender",
+"text": "Body-color flares – Two-piece (included with Willys) (MM3)",
+"marks": {
+"2TB/2TS/2TW": "P"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Top",
+"text": "Black Sunrider® Soft Top (STA)",
+"marks": {
+"2TB/2TS/2TW": "•",
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Top",
+"text": "Soft top window storage bag (CWJ)",
+"marks": {
+"2TB/2TS/2TW": "O",
+"2TD/2TA": "O",
+"2TR/2TY": "O"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Top",
+"text": "Black three-piece hardtop – Includes Freedom Panel storage bag, rear sliding window and rear window defroster (included with Dual Top Group) (HT1)",
+"marks": {
+"2TB/2TS/2TW": "O/P",
+"2TD/2TA": "O/P",
+"2TR/2TY": "O/P"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Top",
+"text": "Body-color three-piece hardtop – Includes Freedom Panel storage bag, rear sliding window and rear window defroster (HT3)",
+"marks": {
+"2TB/2TS/2TW": "P",
+"2TD/2TA": "O",
+"2TR/2TY": "O"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Top",
+"text": "Dual Top Group – Includes Freedom Panel storage bag, rear sliding window, three-piece hardtop and premium Black Sunrider Soft Top (optional on Sport S and Willys; requires Mopar® Hard Tri-Fold Tonneau Cover, Mopar Soft Tri-Fold Tonneau Cover or Roll-Up Tonneau Cover) (AEN)",
+"marks": {
+"2TB/2TS/2TW": "O",
+"2TD/2TA": "O",
+"2TR/2TY": "O"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Top",
+"text": "Mopar Hardtop Headliner (requires hardtop or Dual Top Group; optional on Sport S and Willys) (CHD)",
+"marks": {
+"2TB/2TS/2TW": "O",
+"2TD/2TA": "O",
+"2TR/2TY": "O"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Headlamps",
+"text": "Halogen (LMA)",
+"marks": {
+"2TB/2TS/2TW": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Headlamps",
+"text": "Automatic (LMG)",
+"marks": {
+"2TB/2TS/2TW": "P",
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Headlamps",
+"text": "LED reflector (packaged with LED Headlamp and Fog Lamp Group) (LPX)",
+"marks": {
+"2TB/2TS/2TW": "P",
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Fog Lamps",
+"text": "Front (LNJ)",
+"marks": {
+"2TB/2TS/2TW": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Fog Lamps",
+"text": "LED front (packaged with LED Headlamp and Fog Lamp Group) (LNV)",
+"marks": {
+"2TB/2TS/2TW": "P",
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Hood",
+"text": "Non-vented (MC9)",
+"marks": {
+"2TB/2TS/2TW": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Hood",
+"text": "Unique performance-style (MHZ)",
+"marks": {
+"2TD/2TA": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Hood",
+"text": "Hood with dual air vents and decal (MEW)",
+"marks": {
+"2TR/2TY": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "Corning® Gorilla® Glass (packaged with Willys and Convenience Group) (GMA)",
+"marks": {
+"2TB/2TS/2TW": "P",
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "Integrated Off-Road Camera(4) (included with Technology Group) (XNY)",
+"marks": {
+"2TD/2TA": "P",
+"2TR/2TY": "P"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Mirrors",
+"text": "Black exterior (LE4)",
+"marks": {
+"2TB/2TS/2TW": "•",
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Mirrors",
+"text": "Manual foldaway (GTP)",
+"marks": {
+"2TB/2TS/2TW": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Mirrors",
+"text": "Power heated (GTB)",
+"marks": {
+"2TB/2TS/2TW": "P",
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Mopar Bodyside Graphic",
+"text": "Hex (restrictions apply) (M9A)",
+"marks": {
+"2TB/2TS/2TW": "O",
+"2TR/2TY": "O"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Mopar Bodyside Graphic",
+"text": "Star (restrictions apply) (M9B)",
+"marks": {
+"2TB/2TS/2TW": "O",
+"2TR/2TY": "O"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Mopar Bodyside Graphic",
+"text": "Retro (restrictions apply; not available on Willys) (M9C)",
+"marks": {
+"2TB/2TS/2TW": "O",
+"2TR/2TY": "O"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "Mopar Sunrider Flip Top (restrictions apply; requires Mopar Hard Tri-Fold Tonneau Cover, Mopar Soft Tri-Fold Tonneau Cover, Roll-Up Tonneau Cover, Black Three-Piece Hardtop or Body-Color Three-Piece Hardtop; not available with Dual Top Group) (MHW)",
+"marks": {
+"2TB/2TS/2TW": "O",
+"2TD/2TA": "O",
+"2TR/2TY": "O"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Mopar Sun Bonnet",
+"text": "Mesh (restrictions apply; late availability) (CS7)",
+"marks": {
+"2TB/2TS/2TW": "O",
+"2TD/2TA": "O",
+"2TR/2TY": "O"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Mopar Sun Bonnet",
+"text": "Solid (late availability) (CS3)",
+"marks": {
+"2TB/2TS/2TW": "O",
+"2TD/2TA": "O",
+"2TR/2TY": "O"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "Mopar Windshield Tie-Downs (CT9)",
+"marks": {
+"2TB/2TS/2TW": "O",
+"2TD/2TA": "O",
+"2TR/2TY": "O"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "Mopar Snorkel (restrictions apply; late availability) (NNC)",
+"marks": {
+"2TB/2TS/2TW": "O",
+"2TR/2TY": "O"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "Mopar Cold Air Intake System (restrictions apply) (JFF)",
+"marks": {
+"2TB/2TS/2TW": "O",
+"2TR/2TY": "O"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Mopar Door Sill Guards",
+"text": "Black (restrictions apply) (CLP)",
+"marks": {
+"2TB/2TS/2TW": "O",
+"2TD/2TA": "O",
+"2TR/2TY": "O"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Mopar Door Sill Guards",
+"text": "Stainless Steel (not available on Willys) (CLN)",
+"marks": {
+"2TB/2TS/2TW": "O",
+"2TD/2TA": "O",
+"2TR/2TY": "O"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "Mopar Doors-Off Mirror Kit (LFR)",
+"marks": {
+"2TB/2TS/2TW": "O",
+"2TD/2TA": "O",
+"2TR/2TY": "O"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Mopar Splash Guards",
+"text": "Vehicle Set (not available with Dana® wide front and rear axles or Mopar Heavy-Duty Rock Slider with Assist Step; restrictions apply) (MKN)",
+"marks": {
+"2TB/2TS/2TW": "O"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Mopar Tubular Side Steps",
+"text": "Chrome (restrictions apply; not available on Willys) (MRT)",
+"marks": {
+"2TB/2TS/2TW": "O",
+"2TD/2TA": "O"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Mopar Tubular Side Steps",
+"text": "Black (restrictions apply; not available with Willys) (MRU)",
+"marks": {
+"2TB/2TS/2TW": "O",
+"2TD/2TA": "O"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "Mopar Jeep Trail Rated® Kit (XWX)",
+"marks": {
+"2TB/2TS/2TW": "O",
+"2TD/2TA": "O",
+"2TR/2TY": "O"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "Mopar Grille, Satin Black (not available with Integrated Off-Road Camera(4); restrictions apply; not available on Willys) (MHJ)",
+"marks": {
+"2TB/2TS/2TW": "O",
+"2TD/2TA": "O",
+"2TR/2TY": "O"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Mopar Hood Graphics",
+"text": "American Flag (restrictions apply) (M9D)",
+"marks": {
+"2TB/2TS/2TW": "O"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Mopar Hood Graphics",
+"text": "1941 (restrictions apply) (M9E)",
+"marks": {
+"2TB/2TS/2TW": "O"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Mopar Hood Graphics",
+"text": "Jeep Grille (MGV)",
+"marks": {
+"2TR/2TY": "O"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Tires",
+"text": "245/75R17 Bridgestone® Dueler Highway-Terrain (H/T) (TQK)",
+"marks": {
+"2TB/2TS/2TW": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Tires",
+"text": "245/75R17 BSW Bridgestone Dueler All-Terrain (A/T) (included with Max Tow Package with 4.10 Axle Ratio) (TTH)",
+"marks": {
+"2TB/2TS/2TW": "P"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Tires",
+"text": "LT255/75R17C OWL Bridgestone On-/Off-Road (packaged with Willys) (TTP)",
+"marks": {
+"2TB/2TS/2TW": "P"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Tires",
+"text": "LT285/70R17C BSW Falken® Wildpeak All-Terrain (A/T) (TW2)",
+"marks": {
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Tires",
+"text": "LT285/70R17C BSW Falken Wildpeak Mud-Terrain (M/T) (TWG)",
+"marks": {
+"2TD/2TA": "O",
+"2TR/2TY": "O"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Tires",
+"text": "Spare — Full-size (TBB)",
+"marks": {
+"2TB/2TS/2TW": "•",
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels",
+"text": "17-inch Low-Gloss Black-painted steel (WAA)",
+"marks": {
+"2TB/2TS/2TW": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels",
+"text": "17-inch Tech Gray-painted aluminum (packaged with Sport S) (WFD)",
+"marks": {
+"2TB/2TS/2TW": "P"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels",
+"text": "17-inch Black-painted aluminum (packaged with Willys) (WFY)",
+"marks": {
+"2TB/2TS/2TW": "P"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels",
+"text": "17-inch machined aluminum with Black pockets (optional on Sport S model) (WFH)",
+"marks": {
+"2TB/2TS/2TW": "O"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels",
+"text": "17-inch Dark Gray-painted aluminum (WFT)",
+"marks": {
+"2TD/2TA": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels",
+"text": "17-inch machined aluminum with Black pockets (WGD)",
+"marks": {
+"2TD/2TA": "O"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels",
+"text": "17-inch Black-painted machined (WFV)",
+"marks": {
+"2TR/2TY": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels",
+"text": "17-inch Black-painted machined (WFE)",
+"marks": {
+"2TR/2TY": "O"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels",
+"text": "Spare – Steel (WLB/W1A)",
+"marks": {
+"2TB/2TS/2TW": "•",
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Taillamps",
+"text": "Incandescent (LA6)",
+"marks": {
+"2TB/2TS/2TW": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Taillamps",
+"text": "LED (packaged with Safety Group) (LAY)",
+"marks": {
+"2TB/2TS/2TW": "P",
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Trailer Wiring Harness",
+"text": "Seven- and four-pin (XF2)",
+"marks": {
+"2TB/2TS/2TW": "•",
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Tailgate",
+"text": "Power-locking (JEX)",
+"marks": {
+"2TB/2TS/2TW": "•",
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Tonneau Covers",
+"text": "Roll-up (CSD)",
+"marks": {
+"2TB/2TS/2TW": "O",
+"2TD/2TA": "O",
+"2TR/2TY": "O"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Tonneau Covers",
+"text": "Mopar® Hard Tri-Fold (restrictions apply) (CSU)",
+"marks": {
+"2TB/2TS/2TW": "O",
+"2TD/2TA": "O",
+"2TR/2TY": "O"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Tonneau Covers",
+"text": "Mopar Soft Tri-Fold (CT6)",
+"marks": {
+"2TB/2TS/2TW": "O",
+"2TD/2TA": "O",
+"2TR/2TY": "O"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Side Steps",
+"text": "Mopar Chrome (packaged with Sport, Sport S and Mojave) (MRT)",
+"marks": {
+"2TB/2TS/2TW": "O",
+"2TD/2TA": "O"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Side Steps",
+"text": "Mopar Black (packaged with Sport, Sport S and Mojave) (MRU)",
+"marks": {
+"2TB/2TS/2TW": "O",
+"2TD/2TA": "O"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "Rock Protection Sill Rails (MEF)",
+"marks": {
+"2TD/2TA": "P",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "Protection sill rails (XGS)",
+"marks": {
+"2TB/2TS/2TW": "P",
+"2TD/2TA": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "Mopar Heavy-Duty Rock Slider with Step Assist (restrictions apply) (MMU)",
+"marks": {
+"2TB/2TS/2TW": "O",
+"2TD/2TA": "O"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Tint",
+"text": "Solar-Control Glass (GAM)",
+"marks": {
+"2TB/2TS/2TW": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Tint",
+"text": "Deep-tint sunscreen windows (packaged with Sport S and Willys) (GCD)",
+"marks": {
+"2TB/2TS/2TW": "P",
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "Rear Sliding Window (packaged with Black three-piece hardtop and Body-color three-piece hardtop) (GFD)",
+"marks": {
+"2TB/2TS/2TW": "P",
+"2TD/2TA": "P",
+"2TR/2TY": "P"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "Selectable Tire-Fill Alert (LA5)",
+"marks": {
+"2TB/2TS/2TW": "•",
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "Spray-In Bedliner (XMF)",
+"marks": {
+"2TB/2TS/2TW": "O",
+"2TD/2TA": "O",
+"2TR/2TY": "O"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Windows",
+"text": "Power with one-touch down (JPY)",
+"marks": {
+"2TB/2TS/2TW": "•",
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Air Conditioning (HAA)",
+"marks": {
+"2TB/2TS/2TW": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Automatic temperature control (packaged with Convenience Group) (HAB)",
+"marks": {
+"2TB/2TS/2TW": "P",
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Jeep Air Filtration System (JMA)",
+"marks": {
+"2TB/2TS/2TW": "•",
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Console",
+"text": "Full-length floor (CUF)",
+"marks": {
+"2TB/2TS/2TW": "•",
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Console",
+"text": "Full-length premium armrests (packaged with leather-trimmed seats) (CVM)",
+"marks": {
+"2TD/2TA": "P",
+"2TR/2TY": "P"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Console Bin Task Light (LDB)",
+"marks": {
+"2TB/2TS/2TW": "•",
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Door Locks",
+"text": "Power, speed-sensitive (JPH)",
+"marks": {
+"2TB/2TS/2TW": "•",
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Floor Mats",
+"text": "Front and rear (CLE)",
+"marks": {
+"2TB/2TS/2TW": "•",
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Floor Mats",
+"text": "All-weather slush mats (packaged with Willys) (CWA)",
+"marks": {
+"2TB/2TS/2TW": "O/P",
+"2TD/2TA": "O",
+"2TR/2TY": "O"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Glove Box",
+"text": "Locking (JKA)",
+"marks": {
+"2TB/2TS/2TW": "•",
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Instrumentation",
+"text": "3.5-inch Black-and-White display (JAE)",
+"marks": {
+"2TB/2TS/2TW": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Instrumentation",
+"text": "7-inch color display (packaged with Convenience Group and Willys) (JAL)",
+"marks": {
+"2TB/2TS/2TW": "P",
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Media Hub",
+"text": "USB, auxiliary (RSF)",
+"marks": {
+"2TB/2TS/2TW": "•",
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Driver’s and Passenger Assist Handles (CSP)",
+"marks": {
+"2TB/2TS/2TW": "•",
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Power Point",
+"text": "12-volt auxiliary (JJJ)",
+"marks": {
+"2TB/2TS/2TW": "•",
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Power Point",
+"text": "Remote USB port (RSX)",
+"marks": {
+"2TB/2TS/2TW": "•",
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Power Point",
+"text": "Remote USB charge-only port (RS3)",
+"marks": {
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Power Point",
+"text": "115-volt auxiliary power outlet (packaged with Technology Group) (JKV)",
+"marks": {
+"2TB/2TS/2TW": "P",
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Power Point",
+"text": "Exterior 115-volt A/C power outlet (packaged with Cargo Group with Trail RailTM System) (XBE)",
+"marks": {
+"2TB/2TS/2TW": "P",
+"2TD/2TA": "P",
+"2TR/2TY": "P"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Rear Compartment Storage (CUR)",
+"marks": {
+"2TB/2TS/2TW": "•",
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Steering Wheel",
+"text": "Base (SCA)",
+"marks": {
+"2TB/2TS/2TW": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Steering Wheel",
+"text": "Premium-wrapped (packaged with Sport S and Willys) (SCJ)",
+"marks": {
+"2TB/2TS/2TW": "P",
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Steering Wheel",
+"text": "Heated (packaged with Convenience Group) (NHS)",
+"marks": {
+"2TB/2TS/2TW": "P",
+"2TD/2TA": "P",
+"2TR/2TY": "P"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Storage Tray (CUY)",
+"marks": {
+"2TB/2TS/2TW": "•",
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Trailer Brake Controller (restrictions apply; late availability) (XHC)",
+"marks": {
+"2TB/2TS/2TW": "O",
+"2TD/2TA": "O",
+"2TR/2TY": "O"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Lockable Rear Underseat Storage with Drawer (packaged with Cargo Group with Trail Rail System) (CUW)",
+"marks": {
+"2TB/2TS/2TW": "P",
+"2TD/2TA": "P",
+"2TR/2TY": "P"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Sun Visors",
+"text": "Sliding with mirrors (GNV)",
+"marks": {
+"2TB/2TS/2TW": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Sun Visors",
+"text": "Illuminated vanity mirrors (packaged with remote keyless entry) (GND)",
+"marks": {
+"2TB/2TS/2TW": "P",
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Cloth low-back bucket (*E7)",
+"marks": {
+"2TB/2TS/2TW": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Premium cloth with Sport bolsters (*A5)",
+"marks": {
+"2TD/2TA": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Premium cloth low-back bucket (*K7)",
+"marks": {
+"2TR/2TY": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "McKinley leather-trimmed bucket – Includes power eight-way driver’s and front-passenger seats with four-way lumbar-adjust, full-length floor console, premium armrest, leather-wrapped shift knob and parking brake (included with Premium Package) (*CP)",
+"marks": {
+"2TB/2TS/2TW": "P"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Leather-trimmed bucket – Includes power eight-way driver’s seat with four-way lumbar-adjust, power eight-way front-passenger seat, full-length floor console, rear armrest with cup holder, premium armrest, premium door trim and leather-wrapped shifter knob (*PL)",
+"marks": {
+"2TD/2TA": "O"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Nappa leather-trimmed bucket – Includes power eight-way driver’s seat with four-way lumbar-adjust, power eight-way front-passenger seat, full-length floor console, rear armrest with cup holder, premium armrest, premium door trim and leather-wrapped shifter knob (*VL)",
+"marks": {
+"2TR/2TY": "O"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Heated front (packaged with Convenience Group) (JPM)",
+"marks": {
+"2TB/2TS/2TW": "P",
+"2TD/2TA": "P",
+"2TR/2TY": "P"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Reclining front (CDB)",
+"marks": {
+"2TB/2TS/2TW": "•",
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Rear 60/40 split-folding (CFN)",
+"marks": {
+"2TB/2TS/2TW": "•",
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Driver’s height-adjust (CDH)",
+"marks": {
+"2TB/2TS/2TW": "•",
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Mopar® Katzkin® Leather, Perforated Pattern (not available with leather-trimmed seats or Willys; late availability) (CBQ)",
+"marks": {
+"2TB/2TS/2TW": "O",
+"2TD/2TA": "O",
+"2TR/2TY": "O"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Mopar Katzkin Leather, Stitched Pattern (not available with leather-trimmed seats or Willys; late availability) (CBS)",
+"marks": {
+"2TB/2TS/2TW": "O",
+"2TD/2TA": "O",
+"2TR/2TY": "O"
+}
+},
+{
+"page": 5,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "Uconnect 5 with 12.3-inch Display",
+"text": "Includes Apple CarPlayTM(16) and Android Auto,TM(15) USB Host Flip, Integrated Voice Command, Jeep Connect(17) with three-month trial and integrated center stack radio (UBP)",
+"marks": {
+"2TB/2TS/2TW": "•",
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 5,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "Uconnect 5 NAV with 12.3-inch Display",
+"text": "Includes HD radio, USB Host Flip, Off-Road Information Pages, Apple CarPlay(16) and Android Auto,(15) GPS Navigation,(25) Integrated Voice Command, integrated center stack radio and Jeep Connect(17) with three-month trial (includes air conditioning with automatic temperature control on Sport S and Willys) (UBX)",
+"marks": {
+"2TD/2TA": "P",
+"2TR/2TY": "P"
+}
+},
+{
+"page": 5,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "Speakers",
+"text": "Eight (RCH)",
+"marks": {
+"2TB/2TS/2TW": "•",
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 5,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "Speakers",
+"text": "Alpine® Premium Audio System – Includes 220-amp alternator if not already equipped with 240-amp alternator (requires remote keyless entry; optional on Sport S and Willys) (RC4)",
+"marks": {
+"2TB/2TS/2TW": "P",
+"2TD/2TA": "P",
+"2TR/2TY": "P"
+}
+},
+{
+"page": 5,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "",
+"text": "Wireless Speaker (requires Alpine Premium Audio System; optional on Sport S and Willys) (RSJ)",
+"marks": {
+"2TD/2TA": "P",
+"2TR/2TY": "P"
+}
+},
+{
+"page": 5,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "",
+"text": "SiriusXM® with 360L(21) (RTU)",
+"marks": {
+"2TB/2TS/2TW": "•",
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Adaptive Cruise Control (ACC) with Stop(6) (standard on Sport S and Willys) (NH3)",
+"marks": {
+"2TB/2TS/2TW": "P",
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "Air Bags(31)",
+"text": "Advanced multistage driver’s and front-passenger (CG3)",
+"marks": {
+"2TB/2TS/2TW": "•",
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "Air Bags(31)",
+"text": "Supplemental front-seat-mounted side (CJ1)",
+"marks": {
+"2TB/2TS/2TW": "•",
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "Air Bags(31)",
+"text": "First- and second-row side-curtain",
+"marks": {
+"2TB/2TS/2TW": "•",
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Child Seat Anchor System (LATCH) (CF3)",
+"marks": {
+"2TB/2TS/2TW": "•",
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "Electronic Stability Control (ESC)(8)",
+"text": "Includes Electronic Roll Mitigation, Hill Start Assist and Trailer Sway Damping(8) (BNB/BNS/BNG/BNT)",
+"marks": {
+"2TB/2TS/2TW": "•",
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Full-Speed Forward Collision Warning Plus(9) (standard on Sport S and Willys) (NH3)",
+"marks": {
+"2TB/2TS/2TW": "P",
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "ParkSense® Rear Park Assist System(12) (packaged with Safety Group) (XAA)",
+"marks": {
+"2TB/2TS/2TW": "P",
+"2TD/2TA": "P",
+"2TR/2TY": "P"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "ParkView® Rear Back-Up Camera(4) (not available with Integrated Off-Road Camera(4)) (XAC)",
+"marks": {
+"2TB/2TS/2TW": "•",
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Remote Keyless Entry (packaged with Sport S and Willys) (GXM)",
+"marks": {
+"2TB/2TS/2TW": "•",
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Remote Start(27) System (packaged with Convenience Group; requires Automatic transmission) (XBM)",
+"marks": {
+"2TB/2TS/2TW": "P",
+"2TD/2TA": "O/P",
+"2TR/2TY": "O/P"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Remote Proximity Keyless Entry (packaged with Convenience Group) (GXD)",
+"marks": {
+"2TB/2TS/2TW": "O/P",
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Security Alarm(34) (packaged with Sport S and Willys) (LSA)",
+"marks": {
+"2TB/2TS/2TW": "P",
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Sentry Key® Theft Deterrent System (GXX)",
+"marks": {
+"2TB/2TS/2TW": "•",
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Tire Pressure Monitoring Display (XGM)",
+"marks": {
+"2TB/2TS/2TW": "•",
+"2TD/2TA": "•",
+"2TR/2TY": "•"
+}
+},
+{
+"page": 5,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "Convenience Group",
+"text": "Includes air conditioning with automatic temperature control, 7-inch Thin Film Transistor (TFT) cluster, heated front seats, Corning® Gorilla® glass, Universal Garage Door Opener, heated steering wheel, SiriusXM satellite radio,(21) Emergency Call Assistance, two-door passive entry with front-door locks, 4G LTE Wi-Fi Hotspot(23) (packaged with Mojave and Rubicon) and SiriusXM with 360L(21) (packaged with Mojave and Rubicon) (AJK)",
+"marks": {
+"2TB/2TS/2TW": "O",
+"2TD/2TA": "O",
+"2TR/2TY": "O"
+}
+},
+{
+"page": 5,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "Capability Package",
+"text": "Includes steel front bumper (AD3)",
+"marks": {
+"2TR/2TY": "O"
+}
+},
+{
+"page": 5,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "Dual Top Group",
+"text": "Includes Freedom Panel storage bag, rear sliding window, three-piece hardtop and Black Sunrider® Soft Top (optional on Sport S and Willys; requires Mopar Hard Tri-Fold Tonneau Cover, Mopar Soft Tri-Fold Tonneau Cover or Roll-Up Tonneau Cover) (AEN)",
+"marks": {
+"2TB/2TS/2TW": "O",
+"2TD/2TA": "O",
+"2TR/2TY": "O"
+}
+},
+{
+"page": 5,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "Max Tow Package with 4.10 Axle Ratio",
+"text": "Includes Dana® M210 wide front axle, 4.10:1 axle ratio, Dana M220 wide rear axle, antispin rear differential, heavy-duty engine cooling, Class IV hitch receiver, molded-in- color high-clearance fender flares (two-piece), 245/75R17 BSW All-Terrain (A/T) Dueler tires and Gross Vehicle Weight Rating (GVWR) of 6,500 lb (requires Automatic transmission; restrictions apply) (AJQ)",
+"marks": {
+"2TB/2TS/2TW": "O"
+}
+},
+{
+"page": 5,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "Trailer Tow and Auxiliary Switch Group",
+"text": "Includes heavy-duty engine cooling, Class IV hitch receiver, auxiliary switches and trailer hitch zoom (ADH)",
+"marks": {
+"2TB/2TS/2TW": "O"
+}
+},
+{
+"page": 5,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "LED Headlamp and Fog Lamp Group",
+"text": "Includes front LED fog lamps, LED reflector headlamps, daytime running lamp (DRL) LED accents and molded-in-color fender flares (Sport S only) (ADA)",
+"marks": {
+"2TB/2TS/2TW": "O"
+}
+},
+{
+"page": 6,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "Premium Package",
+"text": "Includes premium McKinley leather-trimmed seats, leather-wrapped shift knob and brake handle, full-length floor console with premium armrest, power eight-way adjustable driver’s and passenger seats with four-way lumbar-adjust, Body-color three-piece hardtop with rear window defroster, rear sliding window and Freedom Panel storage bag, 255/70R18 BSW Bridgestone® tires and 18-inch Gray aluminum wheels (available on Sport S only) (AAP)",
+"marks": {
+"2TB/2TS/2TW": "O"
+}
+},
+{
+"page": 6,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "Safety Group",
+"text": "Includes Auto High-Beam Headlamp Control, ParkSense® Rear Park Assist System,(12) and Blind Spot Monitoring (BSM)(7) and Rear Cross-Path Detection System(4) (adds LED taillamps on Sport S and Willys) (AJ1)",
+"marks": {
+"2TB/2TS/2TW": "O",
+"2TD/2TA": "O",
+"2TR/2TY": "O"
+}
+},
+{
+"page": 6,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "Technology Group",
+"text": "Includes auto-dimming rearview mirror, 115-volt power outlet, Alpine® Premium Audio System, wireless speaker, two USB charging hubs, Uconnect® 5 NAV with 12-inch display, Apple CarPlayTM(16) and Android Auto,TM(15) 4G LTE Wi-Fi Hotspot,(23) SiriusXM® with 360L(21) and Integrated Voice Command (packaged with Sport S and Willys only), and Integrated Off-Road Camera(4) (AJY)",
+"marks": {
+"2TB/2TS/2TW": "O",
+"2TD/2TA": "O",
+"2TR/2TY": "O"
+}
+},
+{
+"page": 6,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "Cargo Group with Trail RailTM System",
+"text": "Includes lockable rear underseat storage, exterior 115-volt A/C outlet and 400-watt inverter on Sport (requires Technology Group; optional on Sport S and Willys) (ACG)",
+"marks": {
+"2TB/2TS/2TW": "O",
+"2TD/2TA": "O",
+"2TR/2TY": "O"
+}
+},
+{
+"page": 6,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "Sport S Package",
+"text": "Includes Advanced Brake Assist,(9) security alarm,(34) deep-tint sunscreen windows, sun visors with illuminated vanity mirrors, remote keyless entry, power heated mirrors, automatic headlamps, daytime running lamps (DRLs), Full-Speed Forward Collision Warning Plus,(9) Enhanced Adaptive Cruise Control (ACC) with Stop,(6) Body-color fender flares (two-piece), premium-wrapped steering wheel, normal-duty plus suspension and 17-inch Tech Gray-painted aluminum wheels (2TS)",
+"marks": {
+"2TB/2TS/2TW": "O"
+}
+},
+{
+"page": 6,
+"section": "PACKAGES / EQUIPMENT GROUPS",
+"parent": "Willys",
+"text": "Includes protection sill rails, Advanced Brake Assist,(9) heavy-duty engine cooling, Class IV hitch receiver, Off-Road Plus Mode, air conditioning with automatic temperature control, auxiliary switches, 7-inch Thin Film Transistor (TFT) cluster, front LED fog lamps, automatic LED premium reflector headlamps, LED taillamps, DRLs, Full-Speed Forward Collision Warning Plus,(9) Enhanced ACC with Stop,(6) Willys suspension, trailer hitch zoom, security alarm,(34) deep-tint sunscreen windows, remote keyless entry, power heated mirrors, all-weather slush mats, Black grille, Four-Wheel Drive (4WD) decal, Willys hood decal, Body-color fender flares (two-piece), Gloss Black-painted front bumper, premium-wrapped steering wheel, Red-painted front and rear heavy-duty shock absorbers, LT255/75R17C tires and 17-inch Black-painted aluminum wheels (2TW)",
+"marks": {
+"2TB/2TS/2TW": "O"
+}
+}
+],
+"url": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Gladiator.pdf"
+}

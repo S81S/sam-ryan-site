@@ -1,0 +1,2335 @@
+{
+"kind": "fa",
+"title": "2025 Jeep Compass",
+"rows": [
+{
+"page": 1,
+"section": "ENGINE",
+"parent": "",
+"text": "2.0-liter Turbo I-4 with engine stop-start (ESS) / Eight-speed automatic",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL",
+"parent": "",
+"text": "Alternator — 180-amp",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL",
+"parent": "",
+"text": "Auto Stick automatic transmission",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL",
+"parent": "",
+"text": "Cruise control",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "NA",
+"Limited 4x4": "NA"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL",
+"parent": "",
+"text": "Adaptive Cruise Control with Stop and Go (packaged with Driver Assist Group)",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "P",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL",
+"parent": "Final Drive Gear Ratios",
+"text": "3.73",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "NA",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL",
+"parent": "Final Drive Gear Ratios",
+"text": "4.398 (Trailhawk only)",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "NA",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "NA"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL",
+"parent": "",
+"text": "Fuel door — capless fuel filler",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL",
+"parent": "",
+"text": "Fuel tank — 13.5 gallons",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL",
+"parent": "",
+"text": "Jeep Active Drive — full-time 4x4 system",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "NA",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL",
+"parent": "",
+"text": "Jeep Active Drive Low — full-time 4x4 system with low range for a 20:1 crawl ratio",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "NA",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "NA"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL",
+"parent": "",
+"text": "Hill-descent Control",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "NA",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "NA"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL",
+"parent": "",
+"text": "Push-button start",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL",
+"parent": "Selec-Terrain",
+"text": "Center stack toggle with three traction control settings: Auto, Snow, Sand/Mud (Trailhawk adds Rock mode)",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL",
+"parent": "",
+"text": "Steering — electric power; tilt/telescoping column",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL",
+"parent": "",
+"text": "Stop-start dual-battery system",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL",
+"parent": "Suspension",
+"text": "Normal duty (4x4)",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "NA",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL",
+"parent": "Suspension",
+"text": "Off-road",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "NA",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "NA"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL",
+"parent": "",
+"text": "Towing capacity — 2,000 lbs. (when properly equipped) (packaged with Trailer Tow Group)",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "NA",
+"Trailhawk 4x4": "P",
+"Limited 4x4": "NA"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL",
+"parent": "",
+"text": "Trail Rated capability — includes Jeep Active Drive Low mode with 20:1 crawl ratio, 1-in. increased height, unique front and rear fascias, unique 17-in. wheels and all-season on/off-road tires, skid plates, two front and one rear anodized red tow hooks, signature red/black accents and Trail Rated badge",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "NA",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "NA"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR",
+"parent": "Daylight Opening (DLO) Trim",
+"text": "Bright Chrome",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "NA",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR",
+"parent": "Daylight Opening (DLO) Trim",
+"text": "Gloss Black (included with Altitude Package, High Altitude Package)",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "P",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "P"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR",
+"parent": "Door Handles",
+"text": "Black",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "NA",
+"Trailhawk 4x4": "NA",
+"Limited 4x4": "NA"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR",
+"parent": "Door Handles",
+"text": "Body color",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR",
+"parent": "Front and Rear Fascias",
+"text": "Mold-in-color black front and rear lower fascias",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "NA",
+"Limited 4x4": "NA"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR",
+"parent": "Front and Rear Fascias",
+"text": "Mold-in-color black front and rear lower fascias with Neutral Grey accents",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "P",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "NA"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR",
+"parent": "Front and Rear Fascias",
+"text": "Mold-in-color black front and rear lower fascias with silver accents",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "NA",
+"Trailhawk 4x4": "NA",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR",
+"parent": "Front and Rear Fascias",
+"text": "Diamond Black front and rear lower fascias with painted silver accents (packaged with Elite Group)",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "NA",
+"Trailhawk 4x4": "NA",
+"Limited 4x4": "P"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR",
+"parent": "Front and Rear Fascias",
+"text": "Body-color painted front and rear lower fascias with Neutral Grey accents (included with High Altitude Package)",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "NA",
+"Trailhawk 4x4": "NA",
+"Limited 4x4": "P"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Glass",
+"text": "Deep-tint sunscreen",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Grille/Surround",
+"text": "Mold-in-color black surround with Chrome grille rings",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "NA",
+"Limited 4x4": "NA"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Grille/Surround",
+"text": "Mold-in-color black surround with Neutral Grey grille rings",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "NA",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "NA"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Grille/Surround",
+"text": "Gloss Black surround with Bright Chrome grille rings",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "NA",
+"Trailhawk 4x4": "NA",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Grille/Surround",
+"text": "Gloss Black surround with Neutral Grey grille rings (included with Altitude and High Altitude Packages)",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "P",
+"Trailhawk 4x4": "NA",
+"Limited 4x4": "P"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Grille/Surround",
+"text": "Hood decal — signature red and black anti-glare (all-black decal for Red Hot and Hydro Blue exterior colors)",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "NA",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "NA"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "",
+"text": "Manual",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "",
+"text": "Hands-free, foot-activated power liftgate (packaged with Convenience Group on Latitude and Driver Assist Group on Elite Group on Trailhawk and Limited models)",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "P",
+"Trailhawk 4x4": "P",
+"Limited 4x4": "P"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Lighting",
+"text": "Cornering front fog lamps",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Lighting",
+"text": "Halogen fog lamps",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Lighting",
+"text": "LED reflector headlamps",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Lighting",
+"text": "Projector LED headlamps (packaged Elite Group on Trailhawk and Limited models, included with High Altitude Package)",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "NA",
+"Trailhawk 4x4": "P",
+"Limited 4x4": "P"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Lighting",
+"text": "Automatic headlamps",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Lighting",
+"text": "Automatic high-beam headlamp control",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Lighting",
+"text": "Premium LED fog lamps (packaged with Driver Assist Group on Latitude and Elite Group on Trailhawk and Limited, included in High Altitude Package)",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "P",
+"Trailhawk 4x4": "P",
+"Limited 4x4": "P"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Lighting",
+"text": "Daytime running lamp system",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Lighting",
+"text": "Headlamp off time delay",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Lighting",
+"text": "Incandescent taillamps",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "Lighting",
+"text": "LED taillamps (packaged with Driver Assist Group on Latitude and Elite Group on Trailhawk and Limited models, included with High Altitude Package)",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "P",
+"Trailhawk 4x4": "P",
+"Limited 4x4": "P"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "Mirrors",
+"text": "Front side marker/side repeater on outside mirror",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "NA",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "Mirrors",
+"text": "Power adjustable, heated, manual folding in Gloss Black",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "",
+"text": "Removable short mast antenna — roof mounted",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "Roof",
+"text": "Body color",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "NA",
+"Limited 4x4": "NA"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "Roof",
+"text": "Gloss Black (included with Altitude and High Altitude Packages)",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "P",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "Roof Rack/Rails",
+"text": "Black",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "",
+"text": "Skid plates — fuel tank, transfer case, transmission and front suspension",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "NA",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "NA"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "",
+"text": "Sunroof — power, dual-pane with front tilt/fore/aft and rear fixed glass (packaged with Sun and Sound Group; included with High Altitude Package)",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "P",
+"Trailhawk 4x4": "P",
+"Limited 4x4": "P"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "Tires",
+"text": "225/60R17 BSW All-season",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "NA",
+"Limited 4x4": "NA"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "Tires",
+"text": "215/65R17 BSW All-terrain",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "NA",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "NA"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "Tires",
+"text": "225/55R18 BSW All-season (included with Altitude Package)",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "P",
+"Trailhawk 4x4": "NA",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "Tires",
+"text": "235/45R19 BSW All-season (packaged with Elite Exterior Group; included with High Altitude Package)",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "NA",
+"Trailhawk 4x4": "NA",
+"Limited 4x4": "P"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "Tires",
+"text": "Full-size spare",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "NA",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "NA"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "",
+"text": "Tow hooks — two front and one rear (signature red)",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "NA",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "NA"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "Wheels",
+"text": "17-in. aluminum painted Fine Silver",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "NA",
+"Limited 4x4": "NA"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "Wheels",
+"text": "17-in. aluminum diamond cut with Satin Black",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "NA",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "NA"
+}
+},
+{
+"page": 5,
+"section": "EXTERIOR",
+"parent": "Wheels",
+"text": "18-in. aluminum painted Gloss Black (included with Altitude Package)",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "P",
+"Trailhawk 4x4": "NA",
+"Limited 4x4": "NA"
+}
+},
+{
+"page": 5,
+"section": "EXTERIOR",
+"parent": "Wheels",
+"text": "18-in. aluminum diamond cut with Gloss Black pockets",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "NA",
+"Trailhawk 4x4": "NA",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 5,
+"section": "EXTERIOR",
+"parent": "Wheels",
+"text": "19-in. aluminum diamond cut with Gloss Black pockets (packaged with Elite Exterior Group)",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "NA",
+"Trailhawk 4x4": "NA",
+"Limited 4x4": "P"
+}
+},
+{
+"page": 5,
+"section": "EXTERIOR",
+"parent": "Wheels",
+"text": "19-in. aluminum painted Satin Granite Crystal (included with High Altitude Package)",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "NA",
+"Trailhawk 4x4": "NA",
+"Limited 4x4": "P"
+}
+},
+{
+"page": 5,
+"section": "EXTERIOR",
+"parent": "",
+"text": "Windows — power front windows, one-touch up and down; second-row power",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 5,
+"section": "EXTERIOR",
+"parent": "Wiper System",
+"text": "Front, variable intermittent (not available with rain- sensing/intermittent)",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 5,
+"section": "EXTERIOR",
+"parent": "Wiper System",
+"text": "Windshield wiper de-icer (packaged with Convenience Group on Latitude and Trailhawk)",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "P",
+"Trailhawk 4x4": "P",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 5,
+"section": "EXTERIOR",
+"parent": "Wiper System",
+"text": "Rain-sensing/intermittent (packaged with Driver Assist Group on Latitude)",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "P",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 5,
+"section": "EXTERIOR",
+"parent": "Wiper System",
+"text": "Rear, defroster and wiper/washer",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "Cargo Area",
+"text": "Tie-down loops (four total)",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "Cargo Area",
+"text": "Compartment lamp",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "Cargo Area",
+"text": "Height-adjustable load floor — one-, two- or three-position adjustment depending on spare tire/tire service kit availability",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "Cargo Area",
+"text": "Rear cargo underfloor tray",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "Cargo Area",
+"text": "Reversible carpet/vinyl cargo mat (packaged with Convenience Group on Latitude, Trailhawk and Elite Group on Limited)",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "P",
+"Trailhawk 4x4": "P",
+"Limited 4x4": "P"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "Cargo Area",
+"text": "Cargo compartment carpet",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Console",
+"text": "Full-length front floor console with sliding armrest in soft vinyl",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Console",
+"text": "Air vents on rear of center console",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Cup Holders",
+"text": "Included with full-length front floor console",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Cup Holders",
+"text": "Rear seat armrest — included with 60/40 split-folding rear seats",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Driver Information Display",
+"text": "7-in. full-color TFT digital cluster display",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Driver Information Display",
+"text": "10.25-in. frameless TFT digital cluster display (packaged with the Elite Group on Trailhawk and Limited; standard with the High Altitude Package)",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "NA",
+"Trailhawk 4x4": "P",
+"Limited 4x4": "P"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "",
+"text": "Electronic Vehicle Information Center (EVIC) — controls located on steering wheel",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Floor Mats",
+"text": "Front and rear",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "NA",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Floor Mats",
+"text": "All-season front and rear, rubber (packaged with the Convenience Group on Latitude)",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "P",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "NA"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "",
+"text": "Glove box with dampened, door",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "HVAC System",
+"text": "Dual-zone automatic temperature control (packaged with Convenience Group on Latitude)",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "P",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "HVAC System",
+"text": "Humidity sensor (packaged with Convenience Group on Latitude)",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "P",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "HVAC System",
+"text": "N95 + BIO HVAC cabin air filter",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Lighting",
+"text": "Two front overhead incandescent map lamps",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Lighting",
+"text": "Ambient LED interior overhead console",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "",
+"text": "Media center electronics storage — located behind shifter",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR",
+"parent": "Mirrors",
+"text": "Rearview day/night mirror",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "NA",
+"Limited 4x4": "NA"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR",
+"parent": "Mirrors",
+"text": "Rearview, auto-dimming mirror (packaged with the Convenience Group on Latitude)",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "P",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR",
+"parent": "Mirrors",
+"text": "Sliding sun visor with mirrors",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "NA",
+"Trailhawk 4x4": "NA",
+"Limited 4x4": "NA"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR",
+"parent": "Mirrors",
+"text": "Sliding sun visor with illuminated mirrors (packaged with Convenience Group on Latitude)",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "P",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR",
+"parent": "",
+"text": "Outside temperature display in odometer",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR",
+"parent": "Power Outlets",
+"text": "12-volt auxiliary located second row behind center console",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR",
+"parent": "Shift Knob",
+"text": "Urethane",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "NA",
+"Trailhawk 4x4": "NA",
+"Limited 4x4": "NA"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR",
+"parent": "Shift Knob",
+"text": "Leather wrapped",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR",
+"parent": "",
+"text": "Speedometer — 160 mph",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR",
+"parent": "",
+"text": "Speed-sensitive power door locks",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR",
+"parent": "Steering Wheel",
+"text": "Urethane with Satin Chrome Silver",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "NA",
+"Trailhawk 4x4": "NA",
+"Limited 4x4": "NA"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR",
+"parent": "Steering Wheel",
+"text": "Techno-leather steering wheel with Satin Chrome Silver",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "NA"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR",
+"parent": "Steering Wheel",
+"text": "Heated, techno leather wrapped with Satin Chrome Silver (packaged with the Convenience Group on Trailhawk and Elite Group on Trailhawk)",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "P",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR",
+"parent": "Steering Wheel",
+"text": "Mounted audio controls",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 7,
+"section": "INTERIOR",
+"parent": "",
+"text": "Tachometer",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 8,
+"section": "SEATS",
+"parent": "Seating",
+"text": "Cloth low-back bucket seats in black with Bright Blue accent stitching",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "NA",
+"Trailhawk 4x4": "NA",
+"Limited 4x4": "NA"
+}
+},
+{
+"page": 8,
+"section": "SEATS",
+"parent": "Seating",
+"text": "Premium vinyl trim with Kimberlite cloth insert low-back bucket seats in black with Bright Blue stitching",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "NA",
+"Limited 4x4": "NA"
+}
+},
+{
+"page": 8,
+"section": "SEATS",
+"parent": "Seating",
+"text": "Luxury leather trim with Spectre cloth insert bucket seats in black with dual Ruby Red and Diesel accent stitching and embroidered Trailhawk logo",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "NA",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "NA"
+}
+},
+{
+"page": 8,
+"section": "SEATS",
+"parent": "Seating",
+"text": "Luxury leather trim with Axis II leather perforated insert bucket seats in black with dual Ruby Red and Diesel accent stitching and embroidered Trailhawk logo in Ruby Red (packaged with Elite Group)",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "NA",
+"Trailhawk 4x4": "P",
+"Limited 4x4": "NA"
+}
+},
+{
+"page": 8,
+"section": "SEATS",
+"parent": "Seating",
+"text": "Luxury leatherette trim McKinley Lux vinyl seats in black with Bright Blue accent stitching (packaged with High Altitude)",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "NA",
+"Trailhawk 4x4": "NA",
+"Limited 4x4": "P"
+}
+},
+{
+"page": 8,
+"section": "SEATS",
+"parent": "Seating",
+"text": "Luxury leatherette trim McKinley Lux vinyl seats in black with Steel Grey accent stitching",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "NA",
+"Trailhawk 4x4": "NA",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 8,
+"section": "SEATS",
+"parent": "Seating",
+"text": "Premium leather-trimmed bucket seats with ventilated front bucket seats, driver-seat memory and eight-way adjustable driver and passenger seats; available in black with Steel Grey accent stitching (packaged with Elite Group)",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "NA",
+"Trailhawk 4x4": "NA",
+"Limited 4x4": "P"
+}
+},
+{
+"page": 8,
+"section": "SEATS",
+"parent": "Seats, Front",
+"text": "Manual six-way driver adjuster",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "NA"
+}
+},
+{
+"page": 8,
+"section": "SEATS",
+"parent": "Seats, Front",
+"text": "Manual six-way passenger adjuster",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 8,
+"section": "SEATS",
+"parent": "Seats, Front",
+"text": "Power eight-way driver seat with power two-way lumbar adjuster and manual six-way passenger seat (packaged with Convenience Group on Latitude and Elite Group on Trailhawk)",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "P",
+"Trailhawk 4x4": "P",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 8,
+"section": "SEATS",
+"parent": "Seats, Front",
+"text": "Heated front seats (packaged with Elite Group on Trailhawk)",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "P",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 8,
+"section": "SEATS",
+"parent": "Seats, Front",
+"text": "Front height-adjust shoulder belts",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 8,
+"section": "SEATS",
+"parent": "Seats, Front",
+"text": "Front seat back map pocket",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 9,
+"section": "SEATS",
+"parent": "Seats, Front",
+"text": "Front-passenger fold forward (not available with power passenger seats)",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 9,
+"section": "SEATS",
+"parent": "Seats, Front",
+"text": "Memory front driver seat (packaged with the Elite Group on Trailhawk and Limited)",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "NA",
+"Trailhawk 4x4": "P",
+"Limited 4x4": "P"
+}
+},
+{
+"page": 9,
+"section": "SEATS",
+"parent": "Seats, Front",
+"text": "Ventilated front seats (packaged with the Elite Group on Trailhawk and Limited)",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "NA",
+"Trailhawk 4x4": "P",
+"Limited 4x4": "P"
+}
+},
+{
+"page": 9,
+"section": "SEATS",
+"parent": "Seats, Second Row",
+"text": "60/40 split-folding seat and rear seat armrest with cup holder",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 9,
+"section": "SEATS",
+"parent": "Seats, Second Row",
+"text": "Center rear three-point seat belt",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 9,
+"section": "SEATS",
+"parent": "Seats, Second Row",
+"text": "Three rear-seat head restraints",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 9,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "USB Ports",
+"text": "Front row Type A and C",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 9,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "USB Ports",
+"text": "Second row Type A",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 9,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "USB Ports",
+"text": "Second row Type C (packaged with the Convenience Group on Latitude, Trailhawk and Elite Group on Trailhawk and Limited)",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "P",
+"Trailhawk 4x4": "P",
+"Limited 4x4": "P"
+}
+},
+{
+"page": 9,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "",
+"text": "SiriusXM Satellite Radio",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 9,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "Speakers/Audio Systems",
+"text": "Six speakers",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 9,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "Speakers/Audio Systems",
+"text": "Alpine premium audio system with nine speakers, including subwoofer (packaged with Sun and Sound Group; included with High Altitude Package)",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "P",
+"Trailhawk 4x4": "P",
+"Limited 4x4": "P"
+}
+},
+{
+"page": 9,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "",
+"text": "Uconnect 5 with 8.4-in. infotainment display includes 8.4-in. digital touchscreen, AM/FM, integrated voice command with Bluetooth, voice text reply, SiriusXM Guardian, Firmware OTA and dual phone connectivity",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "NA",
+"Limited 4x4": "NA"
+}
+},
+{
+"page": 10,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "",
+"text": "Uconnect 5 with 10.1-in. infotainment display includes 10.1-in. digital touchscreen, AM/FM, integrated voice command with Bluetooth, voice text reply, SiriusXM Guardian, Firmware OTA and dual phone connectivity (included with Altitude Package)",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "P",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 10,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "",
+"text": "Uconnect 5 NAV with 10.1-in. infotainment display includes 10.1-in. digital touchscreen, AM/FM, integrated voice command with Bluetooth, voice text reply, HD radio, SiriusXM Guardian, Alexa Built-In (Wi-Fi data plan required), Firmware OTA and dual phone connectivity (packaged with Elite Group on Trailhawk and Limited; standard with High Altitude Package)",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "NA",
+"Trailhawk 4x4": "P",
+"Limited 4x4": "P"
+}
+},
+{
+"page": 10,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "",
+"text": "Wireless Apple CarPlay and Android Auto",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 10,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "",
+"text": "Wireless charging pad (packaged with Driver Assist Groups)",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "P",
+"Trailhawk 4x4": "P",
+"Limited 4x4": "P"
+}
+},
+{
+"page": 10,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Active Driving Assist (packaged with Driver Assist Group on Limited and Trailhawk models)",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "NA",
+"Trailhawk 4x4": "P",
+"Limited 4x4": "P"
+}
+},
+{
+"page": 10,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Active Lane Management",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 10,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Adaptive Cruise Control with Stop and Go (packaged with Driver Assist Groups)",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "P",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 10,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Advanced Brake Assist",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 10,
+"section": "SAFETY & SECURITY",
+"parent": "Air Bags",
+"text": "Advanced multistage driver and front passenger air bags (seven total)",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 10,
+"section": "SAFETY & SECURITY",
+"parent": "Air Bags",
+"text": "Supplemental front and rear side curtain",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 10,
+"section": "SAFETY & SECURITY",
+"parent": "Air Bags",
+"text": "Supplemental front seat-mounted side",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 10,
+"section": "SAFETY & SECURITY",
+"parent": "Air Bags",
+"text": "Driver inflatable knee bolster",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 10,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "All-speed traction control",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 10,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Battery rundown protection",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 11,
+"section": "SAFETY & SECURITY",
+"parent": "Brakes",
+"text": "Antilock four-wheel disc",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 11,
+"section": "SAFETY & SECURITY",
+"parent": "Brakes",
+"text": "Electric park brake",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 11,
+"section": "SAFETY & SECURITY",
+"parent": "Brakes",
+"text": "Rain brake support",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 11,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Blind-spot Monitoring",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 11,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Child Seat Anchor System — LATCH ready",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 11,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Drowsy Driver Detection",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 11,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Electronic roll mitigation",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 11,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Electronic stability control (ESC)",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 11,
+"section": "SAFETY & SECURITY",
+"parent": "Entry Systems",
+"text": "Remote keyless entry with immobilizer",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "NA",
+"Trailhawk 4x4": "NA",
+"Limited 4x4": "NA"
+}
+},
+{
+"page": 11,
+"section": "SAFETY & SECURITY",
+"parent": "Entry Systems",
+"text": "Remote Proximity Keyless with immobilizer",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 11,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Front passenger seat-belt alert",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 11,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Front seat headrests",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 11,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Hill-descent Control",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "NA",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "NA"
+}
+},
+{
+"page": 11,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Hill-start Assist",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 11,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Motorized seat belt pretensioners",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 11,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Occupant classification system",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 11,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Panic alarm",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 11,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "ParkSense rear park assist sensors",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "NA",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 11,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "ParkView rear backup camera with active grid lines",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 11,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Parallel and perpendicular park assist (packaged with Driver Assist Groups; adds ParkSense front and rear park assist sensors)",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "P",
+"Trailhawk 4x4": "P",
+"Limited 4x4": "P"
+}
+},
+{
+"page": 11,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Pedestrian Automatic Emergency Braking",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 11,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Rear Cross Path detection system",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 11,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Rear door child protection",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 11,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Rear seat reminder alert",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 12,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Remote start system (packaged with the Convenience Group on Trailhawk)",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "P",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 12,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Security alarm",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 12,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Surround View camera (packaged with Driver Assist Groups)",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "P",
+"Trailhawk 4x4": "P",
+"Limited 4x4": "P"
+}
+},
+{
+"page": 12,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Switch-activated electric park brake",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 12,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Traffic Sign Recognition system (packaged with Driver Assist Groups)",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "NA",
+"Trailhawk 4x4": "P",
+"Limited 4x4": "P"
+}
+},
+{
+"page": 12,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Tire pressure monitoring",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 12,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Trailer-sway control",
+"marks": {
+"Sport 4x4": "S",
+"Latitude 4x4": "S",
+"Trailhawk 4x4": "S",
+"Limited 4x4": "S"
+}
+},
+{
+"page": 12,
+"section": "GROUPS, PACKAGES & SPECIAL EDITIONS",
+"parent": "",
+"text": "Convenience Group includes eight-way power driver seat with power two-way lumbar adjuster, rearview auto-dimming mirror, illuminated sun visor, dual-zone automatic temperature control, additional second-row USB port, windshield wiper de-icer, heated front seats, heated techno leather-wrapped steering wheel, remote start system, humidity sensor, reversible cargo mat, all-season floor mats, hands-free and foot-activated power liftgate",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "P",
+"Trailhawk 4x4": "NA",
+"Limited 4x4": "NA"
+}
+},
+{
+"page": 12,
+"section": "GROUPS, PACKAGES & SPECIAL EDITIONS",
+"parent": "",
+"text": "Trailhawk Convenience Group (not available with Elite Group) includes power eight-way driver seat with power two- way lumbar adjuster, additional second-row USB port, windshield wiper de-icer, heated front seats, heated Techno leather-wrapped steering wheel, remote start system and reversible cargo mat",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "NA",
+"Trailhawk 4x4": "P",
+"Limited 4x4": "NA"
+}
+},
+{
+"page": 12,
+"section": "GROUPS, PACKAGES & SPECIAL EDITIONS",
+"parent": "",
+"text": "Driver Assist Group I (must have Convenience Group) includes Adaptive Cruise Control with Stop and Go, rain- sensing/intermittent wipers, 360-degree surround view camera system, parallel and perpendicular park assist, wireless charging pad and premium LED fog lamps",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "P",
+"Trailhawk 4x4": "NA",
+"Limited 4x4": "NA"
+}
+},
+{
+"page": 12,
+"section": "GROUPS, PACKAGES & SPECIAL EDITIONS",
+"parent": "",
+"text": "Driver Assist Group III (must have Elite Group) includes Active Driving Assist system, Traffic Sign Recognition, 360-degree surround view camera system, parallel and perpendicular park assist and wireless charging pad",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "NA",
+"Trailhawk 4x4": "P",
+"Limited 4x4": "P"
+}
+},
+{
+"page": 13,
+"section": "GROUPS, PACKAGES & SPECIAL EDITIONS",
+"parent": "",
+"text": "Driver Assist Group IV (must have Elite Group; High Altitude models only) includes Active Driver Assist system, Traffic Sign Recognition, ParkSense front and rear park assist system, 360-degree surround view camera system, parallel and perpendicular park assist and wireless charging pad",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "NA",
+"Trailhawk 4x4": "NA",
+"Limited 4x4": "P"
+}
+},
+{
+"page": 13,
+"section": "GROUPS, PACKAGES & SPECIAL EDITIONS",
+"parent": "",
+"text": "Trailhawk Elite Group includes LED projector headlamps, premium LED fog lamps, premium LED taillamps, remote start, heated steering wheel, premium leather bucket seats, power eight-way front-row seats with power two-way lumbar adjuster, driver memory seat, heated and ventilated front- row seats, windshield wiper de-icer, additional second-row USB port, reversible cargo mat, 10.25-in. TFT color cluster, 10.1-in. Uconnect radio with navigation and hands-free, foot-activated power liftgate",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "NA",
+"Trailhawk 4x4": "P",
+"Limited 4x4": "NA"
+}
+},
+{
+"page": 13,
+"section": "GROUPS, PACKAGES & SPECIAL EDITIONS",
+"parent": "",
+"text": "Limited Elite Group includes LED projector headlamps, premium LED fog lamps and taillamps, 19-in. aluminum wheels, Diamond Black exterior accents, hands-free, foot- activated power liftgate, premium leather bucket seats, power eight-way front-row seats with power two-way lumbar adjuster, driver memory seat, heated and ventilated front- row seats, additional second-row USB port, reversible cargo mat, 10.25-in. TFT color cluster and 10.1-in. Uconnect radio with navigation",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "NA",
+"Trailhawk 4x4": "NA",
+"Limited 4x4": "P"
+}
+},
+{
+"page": 13,
+"section": "GROUPS, PACKAGES & SPECIAL EDITIONS",
+"parent": "",
+"text": "Elite Interior Group (must have High Altitude package) includes premium leather bucket seats, ventilated front seats, power eight-way driver and passenger seats with power two-way lumbar adjuster, driver memory seat, additional second-row USB port, reversible cargo mat and hands-free, foot-activated power liftgate",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "NA",
+"Trailhawk 4x4": "NA",
+"Limited 4x4": "P"
+}
+},
+{
+"page": 13,
+"section": "GROUPS, PACKAGES & SPECIAL EDITIONS",
+"parent": "",
+"text": "Premium Lighting Group (must have Sun and Sound Group) includes premium LED taillamps, LED projector headlamps, premium LED fog lamps",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "NA",
+"Trailhawk 4x4": "NA",
+"Limited 4x4": "NA"
+}
+},
+{
+"page": 13,
+"section": "GROUPS, PACKAGES & SPECIAL EDITIONS",
+"parent": "",
+"text": "Sun and Sound Group includes dual-pane panoramic sunroof and premium Alpine nine-speaker sound system with subwoofer (not available with Mopar rock rails on Trailhawk)",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "P",
+"Trailhawk 4x4": "P",
+"Limited 4x4": "P"
+}
+},
+{
+"page": 13,
+"section": "GROUPS, PACKAGES & SPECIAL EDITIONS",
+"parent": "",
+"text": "Trailer Tow Group includes Class III hitch receiver plus four-pin wiring harness",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "NA",
+"Trailhawk 4x4": "P",
+"Limited 4x4": "NA"
+}
+},
+{
+"page": 14,
+"section": "GROUPS, PACKAGES & SPECIAL EDITIONS",
+"parent": "",
+"text": "Altitude Package includes Neutral Grey Black badging, Gloss Black grille surround with Neutral Grey rings, Gloss Black daylight opening molding, black roof, Gloss Black lower rear fascia valance, 18-in. Gloss Black aluminum wheels, premium vinyl/cloth seats in black with Bright Blue accent stitching, Piano Black interior accents and 10.1-in. Uconnect radio",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "P",
+"Trailhawk 4x4": "NA",
+"Limited 4x4": "NA"
+}
+},
+{
+"page": 14,
+"section": "GROUPS, PACKAGES & SPECIAL EDITIONS",
+"parent": "",
+"text": "High Altitude Package includes Neutral Grey badging Gloss Black grille surround with Neutral Grey rings, Gloss Black daylight opening molding, black roof, body-color painted front and rear lower fascias with Neutral Grey accents, body-color painted side flares, full suite of premium LED lighting (projector LED headlamps, fog lamps, taillamps), 19-in. Satin Granite Crystal aluminum wheels, leather seats in black with Bright Blue accent stitching and Piano Black interior accents, premium Alpine audio system, dual-pane panoramic sunroof, 10.25-in. TFT color cluster and 10.1-in. Uconnect radio with navigation",
+"marks": {
+"Sport 4x4": "NA",
+"Latitude 4x4": "NA",
+"Trailhawk 4x4": "NA",
+"Limited 4x4": "P"
+}
+}
+],
+"url": "https://media.stellantisnorthamerica.com/view-spec.do?id=26014"
+}

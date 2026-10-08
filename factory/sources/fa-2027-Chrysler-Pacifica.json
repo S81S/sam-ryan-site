@@ -1,0 +1,1579 @@
+{
+"kind": "fa",
+"title": "2027 Chrysler Pacifica",
+"rows": [
+{
+"page": 1,
+"section": "ENGINE AND TRANSMISSION",
+"parent": "",
+"text": "3.6-liter Pentastar V-6 variable-valve timing (VVT) with engine stop-start (ESS) and nine-speed automatic transmission",
+"marks": {
+"Pacifica LX": "S",
+"Pacifica Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL",
+"parent": "Alternator",
+"text": "High-efficiency 180 amp",
+"marks": {
+"Pacifica LX": "S",
+"Pacifica Select": "S",
+"Pacifica Limited": "NA",
+"Pacifica Pinnacle": "NA"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL",
+"parent": "Alternator",
+"text": "High-efficiency 220 amp (included with Family Tech Group)",
+"marks": {
+"Pacifica LX": "NA",
+"Pacifica Select": "P",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL",
+"parent": "Battery",
+"text": "650-amp, maintenance free",
+"marks": {
+"Pacifica LX": "S",
+"Pacifica Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL",
+"parent": "Battery",
+"text": "Auxiliary battery",
+"marks": {
+"Pacifica LX": "S",
+"Pacifica Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL",
+"parent": "Brakes",
+"text": "Four-wheel discs with anti-lock",
+"marks": {
+"Pacifica LX": "S",
+"Pacifica Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL",
+"parent": "",
+"text": "Defroster — rear",
+"marks": {
+"Pacifica LX": "S",
+"Pacifica Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL",
+"parent": "Driveline",
+"text": "FWD",
+"marks": {
+"Pacifica LX": "S",
+"Pacifica Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL",
+"parent": "Driveline",
+"text": "AWD",
+"marks": {
+"Pacifica LX": "NA",
+"Pacifica Select": "O",
+"Pacifica Limited": "O",
+"Pacifica Pinnacle": "O"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL",
+"parent": "",
+"text": "Engine block heater",
+"marks": {
+"Pacifica LX": "O",
+"Pacifica Select": "O",
+"Pacifica Limited": "O",
+"Pacifica Pinnacle": "O"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL",
+"parent": "Fuel Tank",
+"text": "19-gallon",
+"marks": {
+"Pacifica LX": "S",
+"Pacifica Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL",
+"parent": "Suspension",
+"text": "Touring-tuned",
+"marks": {
+"Pacifica LX": "S",
+"Pacifica Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL",
+"parent": "Suspension",
+"text": "AWD suspension",
+"marks": {
+"Pacifica LX": "NA",
+"Pacifica Select": "O",
+"Pacifica Limited": "O",
+"Pacifica Pinnacle": "O"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR",
+"parent": "Door Handles",
+"text": "Body color",
+"marks": {
+"Pacifica LX": "S",
+"Pacifica Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR",
+"parent": "Doors",
+"text": "Power-sliding",
+"marks": {
+"Pacifica LX": "S",
+"Pacifica Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "NA"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR",
+"parent": "Doors",
+"text": "Hands-free power-sliding doors",
+"marks": {
+"Pacifica LX": "NA",
+"Pacifica Select": "NA",
+"Pacifica Limited": "NA",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR",
+"parent": "Glass",
+"text": "Sunscreen",
+"marks": {
+"Pacifica LX": "S",
+"Pacifica Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR",
+"parent": "Glass",
+"text": "Acoustic windshield",
+"marks": {
+"Pacifica LX": "S",
+"Pacifica Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR",
+"parent": "Glass",
+"text": "Tempered, first row",
+"marks": {
+"Pacifica LX": "S",
+"Pacifica Select": "S",
+"Pacifica Limited": "NA",
+"Pacifica Pinnacle": "NA"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR",
+"parent": "Glass",
+"text": "Laminated, first row",
+"marks": {
+"Pacifica LX": "NA",
+"Pacifica Select": "NA",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR",
+"parent": "Grille",
+"text": "Black with Bright surround",
+"marks": {
+"Pacifica LX": "S",
+"Pacifica Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "NA"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR",
+"parent": "Grille",
+"text": "Black with Gloss Black surround",
+"marks": {
+"Pacifica LX": "NA",
+"Pacifica Select": "P",
+"Pacifica Limited": "P",
+"Pacifica Pinnacle": "NA"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR",
+"parent": "Grille",
+"text": "Black with Platinum Chrome surround",
+"marks": {
+"Pacifica LX": "NA",
+"Pacifica Select": "NA",
+"Pacifica Limited": "NA",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR",
+"parent": "LED Headlamps",
+"text": "Auto high-beam headlamp control",
+"marks": {
+"Pacifica LX": "NA",
+"Pacifica Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR",
+"parent": "LED Headlamps",
+"text": "Automatic",
+"marks": {
+"Pacifica LX": "S",
+"Pacifica Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR",
+"parent": "LED Headlamps",
+"text": "LED daytime running lamps",
+"marks": {
+"Pacifica LX": "S",
+"Pacifica Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR",
+"parent": "Liftgate",
+"text": "Power, adjustable height",
+"marks": {
+"Pacifica LX": "S",
+"Pacifica Select": "S",
+"Pacifica Limited": "NA",
+"Pacifica Pinnacle": "NA"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR",
+"parent": "Liftgate",
+"text": "Hands-free power, adjustable height",
+"marks": {
+"Pacifica LX": "NA",
+"Pacifica Select": "NA",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Mirrors",
+"text": "Foldaway, power, heated Gloss Black color, supplemental turn indicator",
+"marks": {
+"Pacifica LX": "S",
+"Pacifica Select": "S",
+"Pacifica Limited": "NA",
+"Pacifica Pinnacle": "NA"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Mirrors",
+"text": "Power-folding, heated with Gloss Black exterior, memory feature, auto-dimming, driver side, courtesy lamps, supplemental turn indicator and auto-adjust-in-reverse, auto-fold in park",
+"marks": {
+"Pacifica LX": "NA",
+"Pacifica Select": "NA",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "NA"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Mirrors",
+"text": "Power-folding, heated with chrome cap exterior, memory feature, auto-dimming, driver side, courtesy lamps, supplemental turn indicator and auto-adjust-in-reverse",
+"marks": {
+"Pacifica LX": "NA",
+"Pacifica Select": "NA",
+"Pacifica Limited": "NA",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Roof Rack",
+"text": "Stow ’n Place, black",
+"marks": {
+"Pacifica LX": "NA",
+"Pacifica Select": "P",
+"Pacifica Limited": "P",
+"Pacifica Pinnacle": "NA"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Roof Rack",
+"text": "Stow ’n Place, Platinum Chrome",
+"marks": {
+"Pacifica LX": "NA",
+"Pacifica Select": "NA",
+"Pacifica Limited": "NA",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Sunroof",
+"text": "Dual-pane panoramic",
+"marks": {
+"Pacifica LX": "NA",
+"Pacifica Select": "O",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Tires",
+"text": "235/65R17 BSW all-season (FWD)",
+"marks": {
+"Pacifica LX": "S",
+"Pacifica Select": "S",
+"Pacifica Limited": "NA",
+"Pacifica Pinnacle": "NA"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Tires",
+"text": "235/60R18 BSW all-season",
+"marks": {
+"Pacifica LX": "NA",
+"Pacifica Select": "O",
+"Pacifica Limited": "NA",
+"Pacifica Pinnacle": "NA"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Tires",
+"text": "245/60R18 BSW all-season self-sealing",
+"marks": {
+"Pacifica LX": "NA",
+"Pacifica Select": "S/P",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "NA"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Tires",
+"text": "245/50R20 BSW all-season self-sealing",
+"marks": {
+"Pacifica LX": "NA",
+"Pacifica Select": "NA",
+"Pacifica Limited": "P",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Tires",
+"text": "Inflator kit with sealant",
+"marks": {
+"Pacifica LX": "S",
+"Pacifica Select": "NA",
+"Pacifica Limited": "NA",
+"Pacifica Pinnacle": "NA"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Wheels",
+"text": "17-in. Tech Silver (FWD)",
+"marks": {
+"Pacifica LX": "S",
+"Pacifica Select": "S",
+"Pacifica Limited": "NA",
+"Pacifica Pinnacle": "NA"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Wheels",
+"text": "18-in Polished",
+"marks": {
+"Pacifica LX": "NA",
+"Pacifica Select": "O",
+"Pacifica Limited": "NA",
+"Pacifica Pinnacle": "NA"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Wheels",
+"text": "18-in. Full Polish (Select AWD)",
+"marks": {
+"Pacifica LX": "NA",
+"Pacifica Select": "S",
+"Pacifica Limited": "NA",
+"Pacifica Pinnacle": "NA"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Wheels",
+"text": "18-in. Foreshadow",
+"marks": {
+"Pacifica LX": "NA",
+"Pacifica Select": "P",
+"Pacifica Limited": "NA",
+"Pacifica Pinnacle": "NA"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Wheels",
+"text": "18-in. Machined with Foreshadow pockets",
+"marks": {
+"Pacifica LX": "NA",
+"Pacifica Select": "NA",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "NA"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Wheels",
+"text": "20-in. Diamond-cut with painted pockets",
+"marks": {
+"Pacifica LX": "NA",
+"Pacifica Select": "NA",
+"Pacifica Limited": "O",
+"Pacifica Pinnacle": "NA"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Wheels",
+"text": "20-in. Foreshadow",
+"marks": {
+"Pacifica LX": "NA",
+"Pacifica Select": "NA",
+"Pacifica Limited": "P",
+"Pacifica Pinnacle": "NA"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR",
+"parent": "Wheels",
+"text": "20-in. Machined with painted pockets",
+"marks": {
+"Pacifica LX": "NA",
+"Pacifica Select": "NA",
+"Pacifica Limited": "NA",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR",
+"parent": "Windshield Wipers",
+"text": "Front, rain-sensing",
+"marks": {
+"Pacifica LX": "S",
+"Pacifica Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR",
+"parent": "",
+"text": "Adaptive Cruise Control with Stop and Go",
+"marks": {
+"Pacifica LX": "S",
+"Pacifica Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR",
+"parent": "Air Conditioning",
+"text": "Three-zone automatic temperature control",
+"marks": {
+"Pacifica LX": "S",
+"Pacifica Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR",
+"parent": "Air Conditioning",
+"text": "Chrysler clean air filtration system",
+"marks": {
+"Pacifica LX": "S",
+"Pacifica Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR",
+"parent": "",
+"text": "Grocery bag hooks on third-row seatbacks",
+"marks": {
+"Pacifica LX": "NA",
+"Pacifica Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR",
+"parent": "Lighting",
+"text": "Front and rear LED lamps",
+"marks": {
+"Pacifica LX": "S",
+"Pacifica Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR",
+"parent": "Lighting",
+"text": "Cargo compartment lamp",
+"marks": {
+"Pacifica LX": "S",
+"Pacifica Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR",
+"parent": "Lighting",
+"text": "Footwell courtesy lamp",
+"marks": {
+"Pacifica LX": "NA",
+"Pacifica Select": "NA",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR",
+"parent": "Lighting",
+"text": "Front, courtesy lamp",
+"marks": {
+"Pacifica LX": "S",
+"Pacifica Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR",
+"parent": "Lighting",
+"text": "Overhead, ambient surround",
+"marks": {
+"Pacifica LX": "S",
+"Pacifica Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR",
+"parent": "Lighting",
+"text": "Rear ambient lighting",
+"marks": {
+"Pacifica LX": "NA",
+"Pacifica Select": "NA",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR",
+"parent": "Lighting",
+"text": "Rear reading/courtesy lamps",
+"marks": {
+"Pacifica LX": "NA",
+"Pacifica Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR",
+"parent": "Lighting",
+"text": "Illuminated map pocket",
+"marks": {
+"Pacifica LX": "NA",
+"Pacifica Select": "NA",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR",
+"parent": "Mirrors",
+"text": "Day/night rearview",
+"marks": {
+"Pacifica LX": "S",
+"Pacifica Select": "NA",
+"Pacifica Limited": "NA",
+"Pacifica Pinnacle": "NA"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR",
+"parent": "Mirrors",
+"text": "Auto-dimming rearview",
+"marks": {
+"Pacifica LX": "NA",
+"Pacifica Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR",
+"parent": "Mirrors",
+"text": "Illuminated visor vanity",
+"marks": {
+"Pacifica LX": "S",
+"Pacifica Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR",
+"parent": "Power Outlets",
+"text": "Auxiliary, 12-volt in instrument panel",
+"marks": {
+"Pacifica LX": "S",
+"Pacifica Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR",
+"parent": "Power Outlets",
+"text": "Auxiliary, 115-volt (included with Family Tech Group)",
+"marks": {
+"Pacifica LX": "NA",
+"Pacifica Select": "P",
+"Pacifica Limited": "P",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR",
+"parent": "",
+"text": "Remote start system",
+"marks": {
+"Pacifica LX": "S",
+"Pacifica Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "Shades",
+"text": "Second-row retractable",
+"marks": {
+"Pacifica LX": "S",
+"Pacifica Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "NA"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "Shades",
+"text": "Second- and third-row retractable",
+"marks": {
+"Pacifica LX": "NA",
+"Pacifica Select": "NA",
+"Pacifica Limited": "P",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "",
+"text": "Steering column — tilt/telescoping",
+"marks": {
+"Pacifica LX": "S",
+"Pacifica Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "Steering Wheel",
+"text": "Mounted audio controls",
+"marks": {
+"Pacifica LX": "S",
+"Pacifica Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "Steering Wheel",
+"text": "Techno leather-wrapped",
+"marks": {
+"Pacifica LX": "S",
+"Pacifica Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "Steering Wheel",
+"text": "Heated",
+"marks": {
+"Pacifica LX": "S",
+"Pacifica Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "Storage",
+"text": "Floor tray",
+"marks": {
+"Pacifica LX": "S",
+"Pacifica Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "Storage",
+"text": "Super Console",
+"marks": {
+"Pacifica LX": "S",
+"Pacifica Select": "S",
+"Pacifica Limited": "NA",
+"Pacifica Pinnacle": "NA"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "Storage",
+"text": "Integrated Premium console",
+"marks": {
+"Pacifica LX": "NA",
+"Pacifica Select": "NA",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "NA"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "Storage",
+"text": "Integrated Ultra console",
+"marks": {
+"Pacifica LX": "NA",
+"Pacifica Select": "NA",
+"Pacifica Limited": "NA",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "Storage",
+"text": "Glove box, locking",
+"marks": {
+"Pacifica LX": "S",
+"Pacifica Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "Storage",
+"text": "Lower instrument panel cubby",
+"marks": {
+"Pacifica LX": "S",
+"Pacifica Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "",
+"text": "Stow ’n Vac integrated vacuum cleaner (packaged with Uconnect Theater Family Group)",
+"marks": {
+"Pacifica LX": "NA",
+"Pacifica Select": "NA",
+"Pacifica Limited": "P",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "",
+"text": "Trip computer — Electronic Vehicle Information Center (EVIC) 7-in. configurable digital display instrument cluster with controls mounted on steering wheel",
+"marks": {
+"Pacifica LX": "S",
+"Pacifica Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "",
+"text": "Universal garage door opener — programmable, three function",
+"marks": {
+"Pacifica LX": "NA",
+"Pacifica Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "Windows",
+"text": "Power front and rear one-touch up/down",
+"marks": {
+"Pacifica LX": "S",
+"Pacifica Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "Windows",
+"text": "Power second row",
+"marks": {
+"Pacifica LX": "S",
+"Pacifica Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "Seats",
+"text": "Eight-way power driver seat with four-way power lumbar support (includes Stow ’n Assist on driver side)",
+"marks": {
+"Pacifica LX": "S",
+"Pacifica Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "Seats",
+"text": "Driver seat memory",
+"marks": {
+"Pacifica LX": "NA",
+"Pacifica Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "Seats",
+"text": "Eight-way power front passenger seat (includes Stow ’n Assist on passenger side; packaged with Family Tech Group)",
+"marks": {
+"Pacifica LX": "NA",
+"Pacifica Select": "P",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "Seats",
+"text": "Heated second row",
+"marks": {
+"Pacifica LX": "NA",
+"Pacifica Select": "NA",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR",
+"parent": "Seats",
+"text": "Heated front seats",
+"marks": {
+"Pacifica LX": "S",
+"Pacifica Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Seats",
+"text": "Caprice leatherette trim",
+"marks": {
+"Pacifica LX": "S",
+"Pacifica Select": "S",
+"Pacifica Limited": "NA",
+"Pacifica Pinnacle": "NA"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Seats",
+"text": "Premium Nappa leather trimmed",
+"marks": {
+"Pacifica LX": "NA",
+"Pacifica Select": "NA",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "NA"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Seats",
+"text": "Premium quilted sepia Nappa leather with second-row lumbar pillows",
+"marks": {
+"Pacifica LX": "NA",
+"Pacifica Select": "NA",
+"Pacifica Limited": "NA",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Seats",
+"text": "Second-row Stow ’n Go bucket seats with in-floor storage bins",
+"marks": {
+"Pacifica LX": "S",
+"Pacifica Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "NA"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Seats",
+"text": "Second-row captain’s chairs",
+"marks": {
+"Pacifica LX": "NA",
+"Pacifica Select": "NA",
+"Pacifica Limited": "NA",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Seats",
+"text": "Third-row Stow ’n Go bench seat",
+"marks": {
+"Pacifica LX": "S",
+"Pacifica Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Seats",
+"text": "Third-row power-folding Stow ’n Go bench seat",
+"marks": {
+"Pacifica LX": "NA",
+"Pacifica Select": "NA",
+"Pacifica Limited": "NA",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Seats",
+"text": "Eight-passenger seating (not available with AWD)",
+"marks": {
+"Pacifica LX": "NA",
+"Pacifica Select": "O",
+"Pacifica Limited": "NA",
+"Pacifica Pinnacle": "NA"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR",
+"parent": "Seats",
+"text": "Ventilated front seats",
+"marks": {
+"Pacifica LX": "NA",
+"Pacifica Select": "NA",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 6,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "",
+"text": "SiriusXM Radio",
+"marks": {
+"Pacifica LX": "S",
+"Pacifica Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 6,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "Sound Systems",
+"text": "Six speakers",
+"marks": {
+"Pacifica LX": "S",
+"Pacifica Select": "S",
+"Pacifica Limited": "NA",
+"Pacifica Pinnacle": "NA"
+}
+},
+{
+"page": 6,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "Sound Systems",
+"text": "Alpine, 13 speakers (packaged with Family Tech Group)",
+"marks": {
+"Pacifica LX": "NA",
+"Pacifica Select": "P",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "NA"
+}
+},
+{
+"page": 6,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "Sound Systems",
+"text": "Harman Kardon, 19 speakers, 10-in. subwoofer (packaged with Family Tech Group)",
+"marks": {
+"Pacifica LX": "NA",
+"Pacifica Select": "NA",
+"Pacifica Limited": "P",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 6,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "",
+"text": "Uconnect 5 with 10.1-in. display — includes 10.1-in. touchscreen, AM/FM, AUX/USB, voice text reply, wireless Android Auto, wireless Apple CarPlay, HD radio, Amazon Alexa compatibility, SiriusXM 360L with Pandora, Firmware OTA and dual phone connectivity",
+"marks": {
+"Pacifica LX": "S",
+"Pacifica Select": "S",
+"Pacifica Limited": "NA",
+"Pacifica Pinnacle": "NA"
+}
+},
+{
+"page": 6,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "",
+"text": "Uconnect 5 NAV with 10.1-in. display — includes 10.1-in. touchscreen, AM/FM, AUX/USB, Integrated Voice Command with Bluetooth, voice text reply, wireless Android Auto, wireless Apple CarPlay, HD radio, navigation, Chrysler Connect, SiriusXM Traffic and SiriusXM Travel Link, Amazon Alexa compatibility, SiriusXM 360L with Pandora, Maps OTA, Firmware OTA and dual phone connectivity",
+"marks": {
+"Pacifica LX": "NA",
+"Pacifica Select": "P",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "Air Bags",
+"text": "Advanced multistage driver and front passenger; includes low-risk deployment",
+"marks": {
+"Pacifica LX": "S",
+"Pacifica Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "Air Bags",
+"text": "Driver and front passenger inflatable knee blocker",
+"marks": {
+"Pacifica LX": "S",
+"Pacifica Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "Air Bags",
+"text": "Front seat-mounted side",
+"marks": {
+"Pacifica LX": "S",
+"Pacifica Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "Air Bags",
+"text": "Side-curtain for outboard passengers in all three rows",
+"marks": {
+"Pacifica LX": "S",
+"Pacifica Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Blind-spot Monitoring with Rear Cross Path detection system",
+"marks": {
+"Pacifica LX": "S",
+"Pacifica Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Turn signal-activated blind-spot view",
+"marks": {
+"Pacifica LX": "NA",
+"Pacifica Select": "P",
+"Pacifica Limited": "P",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Child Seat Anchor System (LATCH)",
+"marks": {
+"Pacifica LX": "S",
+"Pacifica Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Electric parking brake with Safe Hold",
+"marks": {
+"Pacifica LX": "S",
+"Pacifica Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Electronic stability control (ESC)",
+"marks": {
+"Pacifica LX": "S",
+"Pacifica Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Lane Departure Warning-Plus",
+"marks": {
+"Pacifica LX": "S",
+"Pacifica Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "ParkSense rear park assist system with stop — assists while parking",
+"marks": {
+"Pacifica LX": "S",
+"Pacifica Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "ParkSense-based camera activation",
+"marks": {
+"Pacifica LX": "NA",
+"Pacifica Select": "P",
+"Pacifica Limited": "P",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "ParkView rear backup camera (not available with 360-degree surround view camera system)",
+"marks": {
+"Pacifica LX": "S",
+"Pacifica Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "NA"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "360-degree surround view camera system",
+"marks": {
+"Pacifica LX": "NA",
+"Pacifica Select": "P",
+"Pacifica Limited": "P",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Remote keyless/illuminated entry system",
+"marks": {
+"Pacifica LX": "S",
+"Pacifica Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Pedestrian AEB",
+"marks": {
+"Pacifica LX": "S",
+"Pacifica Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Remote proximity (all doors)",
+"marks": {
+"Pacifica LX": "S",
+"Pacifica Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Security alarm",
+"marks": {
+"Pacifica LX": "S",
+"Pacifica Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Third-row lockout",
+"marks": {
+"Pacifica LX": "S",
+"Pacifica Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Tire-pressure monitoring system",
+"marks": {
+"Pacifica LX": "S",
+"Pacifica Select": "S",
+"Pacifica Limited": "S",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "ParkSense front and rear park assist with stop",
+"marks": {
+"Pacifica LX": "NA",
+"Pacifica Select": "P",
+"Pacifica Limited": "P",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Trailer-sway control",
+"marks": {
+"Pacifica LX": "NA",
+"Pacifica Select": "NA",
+"Pacifica Limited": "P",
+"Pacifica Pinnacle": "P"
+}
+},
+{
+"page": 8,
+"section": "EQUIPMENT GROUPS",
+"parent": "",
+"text": "Theater Group — includes Amazon Fire TV Built-in, Blu-ray/ DVD player, 10.1-in. seatback touchscreens, video remote control, video USB port",
+"marks": {
+"Pacifica LX": "NA",
+"Pacifica Select": "NA",
+"Pacifica Limited": "NA",
+"Pacifica Pinnacle": "O"
+}
+},
+{
+"page": 8,
+"section": "EQUIPMENT GROUPS",
+"parent": "",
+"text": "Family Tech Group (Select) — includes 115-volt auxiliary power outlet, 4G LTE Wi-Fi hot spot, Alpine 13-speaker audio, wireless Android Auto, wireless Apple CarPlay, Chrysler Connect, FamCAM interior camera, eight-way power front passenger seat with two-way lumbar adjust, Uconnect 5 NAV with 10.1-in. touchscreen, HD radio, integrated active noise cancelation, Integrated Voice Command with Bluetooth, SiriusXM 360L with Pandora, Maps OTA, Firmware OTA and dual-phone connectivity, third-row USB charge port, USB ports",
+"marks": {
+"Pacifica LX": "NA",
+"Pacifica Select": "O",
+"Pacifica Limited": "NA",
+"Pacifica Pinnacle": "NA"
+}
+},
+{
+"page": 8,
+"section": "EQUIPMENT GROUPS",
+"parent": "",
+"text": "Family Tech Group (Limited) — includes 115-volt auxiliary power outlet, second- and third-row window shades, FamCAM interior camera, Harman Kardon 19-speaker audio, Integrated Voice Command with Bluetooth, Stow ‘n Vac integrated vacuum",
+"marks": {
+"Pacifica LX": "NA",
+"Pacifica Select": "NA",
+"Pacifica Limited": "O",
+"Pacifica Pinnacle": "NA"
+}
+},
+{
+"page": 8,
+"section": "EQUIPMENT GROUPS",
+"parent": "",
+"text": "Safety Sphere — includes 360-degree surround view camera system, ParkSense-based camera activation, ParkSense front/rear park assist with stop, turn signal-activated blind-spot view",
+"marks": {
+"Pacifica LX": "NA",
+"Pacifica Select": "O",
+"Pacifica Limited": "O",
+"Pacifica Pinnacle": "S"
+}
+},
+{
+"page": 8,
+"section": "EQUIPMENT GROUPS",
+"parent": "",
+"text": "S Appearance — includes Anodized Ink exterior badging/accents, black daylight opening (DLO) moldings, black Stow ‘n Place roof rack, Gloss Black exterior mirrors, 18-in (Select) / 20-in (Limited) Foreshadow wheels, black seats with “S” logo",
+"marks": {
+"Pacifica LX": "NA",
+"Pacifica Select": "O",
+"Pacifica Limited": "O",
+"Pacifica Pinnacle": "NA"
+}
+},
+{
+"page": 8,
+"section": "EQUIPMENT GROUPS",
+"parent": "",
+"text": "Trailer-tow Group — includes trailer-tow four- and seven-pin wiring harness, Class II 2-in. hitch receiver, trailer-sway damping, heavy-duty radiator (towing capacity 3,600 lbs.)",
+"marks": {
+"Pacifica LX": "NA",
+"Pacifica Select": "NA",
+"Pacifica Limited": "O",
+"Pacifica Pinnacle": "O"
+}
+}
+],
+"url": "https://media.stellantisnorthamerica.com/view-spec.do?id=27614"
+}

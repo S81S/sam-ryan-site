@@ -1,0 +1,4406 @@
+{
+"kind": "fbg",
+"title": "2026 RAM 1500",
+"columns": [
+{
+"code": "A",
+"name": "Tradesman"
+},
+{
+"code": "D",
+"name": "Express"
+},
+{
+"code": "B",
+"name": "Warlock"
+},
+{
+"code": "Z/R",
+"name": "Big Horn/ Lone Star(30)"
+},
+{
+"code": "H",
+"name": "Laramie"
+},
+{
+"code": "W",
+"name": "Rebel"
+},
+{
+"code": "M",
+"name": "Limited"
+},
+{
+"code": "K",
+"name": "Limited Longhorn"
+},
+{
+"code": "V",
+"name": "Tungsten"
+}
+],
+"colors": [
+"Diamond Black Crystal Pearl",
+"Granite Crystal Metallic",
+"Billet Silver Metallic",
+"Silver Zynith",
+"Forged Blue Metallic",
+"Hydro Blue Pearl",
+"Delmonico Red Pearl",
+"Molten Red Pearl",
+"Serrano Green Metallic",
+"Canyon Lake",
+"Ivory White Tri-Coat Pearl",
+"Bright White"
+],
+"rows": [
+{
+"page": 2,
+"section": "ENGINES / TRANSMISSIONS",
+"parent": "",
+"text": "3.6L Pentastar® V6 with eTorque/8-speed Automatic (ERG/DFT)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•"
+}
+},
+{
+"page": 2,
+"section": "ENGINES / TRANSMISSIONS",
+"parent": "",
+"text": "3.0L I-6 Hurricane Standard-Output (SO) Twin-Turbo/8-speed Automatic (EFH/DFR)",
+"marks": {
+"A": "O",
+"D": "O",
+"B": "O",
+"Z/R": "O",
+"H": "•",
+"W": "•"
+}
+},
+{
+"page": 2,
+"section": "ENGINES / TRANSMISSIONS",
+"parent": "",
+"text": "3.0L I-6 Hurricane High-Output (HO) Twin-Turbo/8-speed Automatic (EFC/DFR)",
+"marks": {
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 2,
+"section": "ENGINES / TRANSMISSIONS",
+"parent": "",
+"text": "5.7L HEMI® V8 with eTorque/8-speed Automatic (EZL/DFR)",
+"marks": {
+"A": "O",
+"D": "O",
+"B": "O",
+"Z/R": "O",
+"H": "O",
+"W": "O",
+"M": "O",
+"K": "O"
+}
+},
+{
+"page": 2,
+"section": "ENGINES / TRANSMISSIONS",
+"parent": "Body Model",
+"text": "Quad Cab® 6'4\"-box – 140.5-inch wheelbase (41)",
+"marks": {
+"A": "•",
+"D": "•",
+"Z/R": "•"
+}
+},
+{
+"page": 2,
+"section": "ENGINES / TRANSMISSIONS",
+"parent": "Body Model",
+"text": "Crew Cab 5'7\"-box (98)",
+"marks": {
+"A": "O",
+"D": "O",
+"B": "•",
+"Z/R": "O",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 2,
+"section": "ENGINES / TRANSMISSIONS",
+"parent": "Body Model",
+"text": "Crew Cab 6'4\"-box (91)",
+"marks": {
+"A": "O",
+"D": "O",
+"Z/R": "O",
+"H": "O",
+"M": "O",
+"K": "O"
+}
+},
+{
+"page": 2,
+"section": "ENGINES / TRANSMISSIONS",
+"parent": "Drive System",
+"text": "4x2 (4)",
+"marks": {
+"A": "•",
+"D": "•",
+"Z/R": "•",
+"H": "•"
+}
+},
+{
+"page": 2,
+"section": "ENGINES / TRANSMISSIONS",
+"parent": "Drive System",
+"text": "4x4 (8)",
+"marks": {
+"A": "O",
+"D": "O",
+"B": "•",
+"Z/R": "O",
+"H": "O",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Rear Axle",
+"text": "3.21 ratio (included with EFH on Tradesman Quad Cab 4x2) (DMC)",
+"marks": {
+"A": "•/P",
+"D": "•/P",
+"B": "•",
+"Z/R": "•",
+"H": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Rear Axle",
+"text": "3.55 ratio (included with EFH on Tradesman and Big Horn/Lone Star(30) 4x4 models) (DMD)",
+"marks": {
+"B": "O",
+"Z/R": "•/O/P",
+"H": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Rear Axle",
+"text": "3.92 ratio (requires EFH for Tradesman and Big Horn/Lone Star(30) models) (DMH)",
+"marks": {
+"A": "O",
+"D": "O",
+"B": "O",
+"Z/R": "O",
+"H": "O",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Rear Axle",
+"text": "Electronic locking differential (available only on 3.92 axle ratio; included with Off-Road Group and Backcountry Package; 4x4 only) (DSH)",
+"marks": {
+"A": "O/P",
+"D": "O/P",
+"B": "•",
+"Z/R": "O/P",
+"H": "O/P",
+"W": "•",
+"M": "O/P",
+"K": "O/P",
+"V": "O/P"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Rear Axle",
+"text": "Antispin differential (included with Night Edition) (DSA)",
+"marks": {
+"A": "O/P",
+"D": "O/P",
+"Z/R": "O/P",
+"H": "O/P",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Battery",
+"text": "730-amp (BCN)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Battery",
+"text": "700-amp (included with EFH) (BCV)",
+"marks": {
+"A": "P",
+"D": "P",
+"B": "P",
+"Z/R": "P",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Fuel Fill",
+"text": "Capless with secondary seal (XJM)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Fuel Tank",
+"text": "26-gallon (NFW)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Fuel Tank",
+"text": "33-gallon (standard on Crew Cab 6'4\"-box models; included with 5.7L HEMI V8; requires H1, H2, X1, X2, P1 or P2 Group; Crew Cab only) (NFF)",
+"marks": {
+"B": "O",
+"W": "O/P",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Grille Shutters",
+"text": "Active (MDX)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Shock Absorbers",
+"text": "Front, heavy-duty (SFB)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Shock Absorbers",
+"text": "Off-road (included with Off-Road Group) (SFD)",
+"marks": {
+"A": "P",
+"D": "P",
+"Z/R": "P",
+"H": "P",
+"M": "P",
+"K": "P",
+"V": "P"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Shock Absorbers",
+"text": "Bilstein® shocks (SFC)",
+"marks": {
+"B": "•",
+"W": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Shock Absorbers",
+"text": "Rear, heavy-duty (SGB)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Shock Absorbers",
+"text": "Off-road (included with Off-Road Group) (SGD)",
+"marks": {
+"A": "P",
+"D": "P",
+"Z/R": "P",
+"H": "P",
+"M": "P",
+"K": "P",
+"V": "P"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Shock Absorbers",
+"text": "Bilstein shocks (SGC)",
+"marks": {
+"B": "•",
+"W": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Steering",
+"text": "Electronic power (rack and pinion) (SBL)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Suspension",
+"text": "Front, upper and lower A-arms, coil springs and twin-tube shocks",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Suspension",
+"text": "Rear, five-link, coil springs and twin-tube shocks",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Suspension",
+"text": "Active-LevelTM Four-Corner Air Suspension System (requires H2, X1, X2, P1 or P2 Group; not available with 3.6L Pentastar V6 (Crew Cab only)) (SER)",
+"marks": {
+"Z/R": "O",
+"H": "O",
+"W": "O",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Transfer Case (4x4 only)",
+"text": "Electronic part-time (DH9)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES",
+"parent": "Transfer Case (4x4 only)",
+"text": "Electronic on-demand (DH8)",
+"marks": {
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Air Dam",
+"text": "Fixed (MXA)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Air Dam",
+"text": "Active (not available with air suspension on Big Horn/Lone Star(30) and Laramie) (MXB)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Antenna",
+"text": "Shark-fin (AM/FM/SiriusXM® Radio(21)/GPS) (RD3/JLP)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Bed Rail Caps",
+"text": "Black",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Bedliner",
+"text": "Spray-in (included with Bed Utility Group) (XMF/AA1)",
+"marks": {
+"A": "P",
+"D": "P",
+"B": "P",
+"Z/R": "P",
+"H": "P",
+"W": "P",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Bedliner",
+"text": "Spray-In Delete (XM9)",
+"marks": {
+"M": "O",
+"K": "O",
+"V": "O"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Bodyside Moldings",
+"text": "Chrome (not available with Night Edition) (MJB)",
+"marks": {
+"M": "•"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Bodyside Moldings",
+"text": "Tungsten (MHH)",
+"marks": {
+"V": "•"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Daylight Opening (DLO) Moldings",
+"text": "Black (included with Night Edition) (MMR)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "P"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Daylight Opening (DLO) Moldings",
+"text": "Chrome (included with Chrome Appearance Group) (MMF)",
+"marks": {
+"H": "P",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Bumpers",
+"text": "Front and Rear, Black (MB1/MBN)",
+"marks": {
+"A": "•",
+"B": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Bumpers",
+"text": "Chrome (included with Chrome Appearance Group) (MCT/MBF)",
+"marks": {
+"A": "P",
+"Z/R": "•",
+"H": "•",
+"M": "•",
+"K": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Bumpers",
+"text": "Black powder-coated (MC6/MB5)",
+"marks": {
+"W": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Bumpers",
+"text": "Body-color-painted (included with Sport Appearance Package, Night Edition and Body-Color Bumper Group) (MBP/MBQ)",
+"marks": {
+"A": "P",
+"D": "•",
+"Z/R": "P",
+"H": "P",
+"M": "P",
+"K": "P"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Bumpers",
+"text": "Body-color-painted full front fascia and Body-color-painted rear bumper (MBL/MBQ)",
+"marks": {
+"V": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Door Handles",
+"text": "Black molded-in-color (MNA)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"W": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Door Handles",
+"text": "Body-color (included with Sport Appearance Package) (MNK)",
+"marks": {
+"Z/R": "P",
+"H": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Door Handles",
+"text": "Gloss Black-painted (included with X2 Group and Night Edition) (MNV)",
+"marks": {
+"Z/R": "P",
+"H": "P",
+"W": "P",
+"M": "P"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Exhaust",
+"text": "Single",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Exhaust",
+"text": "Dual, Bright tips (included with EZL and EFH; requires Chrome Appearance Group on Tradesman) (NER)",
+"marks": {
+"A": "P",
+"D": "P",
+"Z/R": "P",
+"H": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Exhaust",
+"text": "Dual, Black tips (included with EZL and EFH on Tradesman, Warlock and Night Edition) (NEP)",
+"marks": {
+"A": "P",
+"D": "P",
+"B": "P",
+"Z/R": "P",
+"H": "P",
+"W": "•",
+"M": "P"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Fog Lamps",
+"text": "LED (LNV)",
+"marks": {
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Fog Lamps",
+"text": "Premium LED (LNT)",
+"marks": {
+"V": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Glass",
+"text": "Tinted windows (GAC)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Glass",
+"text": "Privacy glass/deep-tint sunscreen (rear door) (GEG)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Glass",
+"text": "Acoustic laminated glass (front door) (GAQ)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Grille",
+"text": "Black surround, Black insert",
+"marks": {
+"A": "•",
+"B": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Grille",
+"text": "Chrome surround, Black insert with Chrome “RAM” letters (included with Chrome Appearance Group)",
+"marks": {
+"A": "P"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Grille",
+"text": "Chrome surround, Black insert with Chrome “RAM” letters",
+"marks": {
+"Z/R": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Grille",
+"text": "Body-color surround, Black insert (included with Sport Appearance Package)",
+"marks": {
+"D": "•",
+"Z/R": "P",
+"H": "P"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Grille",
+"text": "Black surround, Black insert with Black “RAM” letters (included with Night Edition)",
+"marks": {
+"D": "P",
+"Z/R": "P",
+"H": "P"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Grille",
+"text": "Unique Black Rebel grille",
+"marks": {
+"W": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Grille",
+"text": "Chrome surround, Chrome billet insert with Chrome “RAM” letters",
+"marks": {
+"H": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Grille",
+"text": "Unique Limited Chrome surround, Chrome insert with Chrome “RAM” letters",
+"marks": {
+"M": "•",
+"K": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Grille",
+"text": "Unique Limited Black-painted grille (included with Night Edition)",
+"marks": {
+"M": "P"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Grille",
+"text": "Unique Tungsten Chrome surround with Chrome insert",
+"marks": {
+"V": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Headlamps",
+"text": "Dark internal headlamp bezels (included with Night Edition) (MFA)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "P",
+"H": "P",
+"W": "•",
+"M": "P"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Headlamps",
+"text": "LED reflector headlamps (LM3)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Headlamps",
+"text": "Bi-functional LED projector headlamps (LM6)",
+"marks": {
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Headlamps",
+"text": "Automatic (day/night sensor) (LMG)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Headlamps",
+"text": "Auto High-Beam Headlamp Control (LMS)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "",
+"text": "Sport Performance Hood (included with Black Express Edition, Sport Appearance Package and Night Edition) (MGB)",
+"marks": {
+"D": "P",
+"H": "P",
+"W": "•",
+"M": "P"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Lighting",
+"text": "Cargo box Center High-Mounted Stop Lamp (CHMSL) (LPE)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Lighting",
+"text": "Cargo box LED CHMSL (included with Technology Group and M1 Group) (LPH)",
+"marks": {
+"H": "P",
+"W": "P",
+"M": "P",
+"K": "P",
+"V": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Lighting",
+"text": "LED bed lighting (included with tonneau cover and Bed Utility Group) (LPL)",
+"marks": {
+"A": "P",
+"D": "P",
+"B": "P",
+"Z/R": "P",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Mirrors, Exterior",
+"text": "6x9-inch, powered, Black molded-in-color, manual-folding, heated, convex wide-angle insert (GT6)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"W": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Mirrors, Exterior",
+"text": "6x9-inch, powered, Black molded-in-color, power-folding, heated, auto-dimming, convex wide-angle insert; includes exterior courtesy lamps and supplemental turn signal (included with H1, H2 and X1 Groups) (GUK)",
+"marks": {
+"Z/R": "P",
+"W": "P"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Mirrors, Exterior",
+"text": "6x9-inch, powered, Chrome, power-folding, heated, auto-dimming, multifunctional, convex wide-angle insert; includes exterior courtesy lamps, supplemental turn signal and position memory (GU4)",
+"marks": {
+"H": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Mirrors, Exterior",
+"text": "6x9-inch, powered, Gloss Black-painted, premium power-folding, heated, auto-dimming, multifunctional, convex wide-angle insert; includes exterior courtesy lamps, supplemental turn signal and position memory (included with X2 Group, Sport Appearance Package and Night Edition) (GT4)",
+"marks": {
+"Z/R": "P",
+"H": "P",
+"W": "P",
+"M": "P"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Mirrors, Exterior",
+"text": "7x11-inch trailer-tow, powered, Black molded-in-color, heated, manual-folding; includes exterior courtesy lamps, clearance/running lights and supplemental turn signal (included with Trailer-Tow Group) (GPG)",
+"marks": {
+"A": "P",
+"D": "P",
+"B": "P",
+"Z/R": "P",
+"W": "P"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Mirrors, Exterior",
+"text": "7x11-inch trailer-tow, powered, Chrome, heated, multifunctional; includes exterior courtesy lamps, supplemental turn signal, auto-dimming, power-folding, power- telescoping, clearance/running lights, Forward and Reverse utility lights, and position memory (included with Trailer-Tow Group) (GP2)",
+"marks": {
+"H": "P",
+"M": "O",
+"K": "O",
+"V": "O"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Mirrors, Exterior",
+"text": "7x11-inch trailer-tow, powered, Black, heated, multifunctional; includes exterior courtesy lamps, supplemental turn signal, auto-dimming, power-folding, power-telescoping, clearance/running lights, Forward and Reverse utility lights, and position memory (included with Trailer-Tow Group if equipped with X2 Group, Sport Appearance Package or Night Edition) (GP1)",
+"marks": {
+"H": "P",
+"W": "P",
+"M": "P"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Paint",
+"text": "Monotone (APA)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "O",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Paint",
+"text": "Two-tone (included with Backcountry Package) (APD)",
+"marks": {
+"Z/R": "P",
+"W": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Skid Plates",
+"text": "Transfer case (included with Backcountry Package, Protection Group and Off-Road Group) (XEF)",
+"marks": {
+"A": "P",
+"D": "P",
+"B": "•",
+"Z/R": "P",
+"H": "P",
+"W": "•",
+"M": "P",
+"K": "P",
+"V": "P"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Skid Plates",
+"text": "Electronic power steering (included with Backcountry Package, Protection Group and Off-Road Group) (XJ2)",
+"marks": {
+"A": "P",
+"D": "P",
+"B": "•",
+"Z/R": "P",
+"H": "P",
+"W": "•",
+"M": "P",
+"K": "P",
+"V": "P"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Skid Plates",
+"text": "Fuel tank (included with Backcountry Package, Protection Group and Off-Road Group) (XEE)",
+"marks": {
+"A": "P",
+"D": "P",
+"B": "•",
+"Z/R": "P",
+"H": "P",
+"W": "•",
+"M": "P",
+"K": "P",
+"V": "P"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Side Steps/Running Boards",
+"text": "Black Side Running Boards, Cab-Length (Mopar®; included with Black Express Edition; requires L1, X1 or X2 Group or Night Edition) (MRU)",
+"marks": {
+"A": "F/O/P",
+"D": "F/O/P",
+"B": "O",
+"Z/R": "O",
+"H": "O",
+"W": "O"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Side Steps/Running Boards",
+"text": "Chrome side steps, wheel-to-wheel (not available with Night Edition; requires H1, H2, P1 or P2 Group) (MRA)",
+"marks": {
+"Z/R": "O",
+"H": "O"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Side Steps/Running Boards",
+"text": "Running boards, power-deployable (requires P2 Group) (MY7)",
+"marks": {
+"H": "O",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Side Steps/Running Boards",
+"text": "Bed step, deployable (included with Bed Utility Group) (MDN/MD1)",
+"marks": {
+"A": "P",
+"D": "P",
+"B": "P",
+"Z/R": "P",
+"H": "P",
+"W": "P",
+"M": "P",
+"K": "P",
+"V": "P"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Storage",
+"text": "RamBox® System (available with 5'7\"-box model only; included with M1 Group; requires H1, H2, X1, X2, P1 or P2 Group) (XB9)",
+"marks": {
+"Z/R": "O",
+"H": "O",
+"W": "O",
+"M": "P",
+"K": "P",
+"V": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Storage",
+"text": "Bed divider (included with Bed Utility Group if equipped with RamBox System) (CKX)",
+"marks": {
+"Z/R": "P",
+"H": "P",
+"W": "P",
+"M": "P",
+"K": "P",
+"V": "P"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Tailgate",
+"text": "Standard, locking (XJJ)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Tailgate",
+"text": "Tailgate-ajar warning lamp (LAN)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Tailgate",
+"text": "Fully damped/assisted tailgate (MWD)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Tailgate",
+"text": "Power-release tailgate (included with H2, X1 and P1 Groups and multifunction tailgate) (JKR)",
+"marks": {
+"Z/R": "P",
+"H": "P",
+"W": "P",
+"M": "P",
+"K": "P"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Tailgate",
+"text": "Power up/down tailgate (included with X2 or P2 Group) (JRC)",
+"marks": {
+"H": "P",
+"W": "P",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Tailgate",
+"text": "Multifunction tailgate (requires spray-in bedliner and H1 or H2 Group) (MWK)",
+"marks": {
+"Z/R": "O",
+"H": "O",
+"W": "O",
+"M": "O",
+"K": "O",
+"V": "O"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Tailgate",
+"text": "LED hitch lamp in tailgate (LNK)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Taillamps",
+"text": "Incandescent (LA6)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Taillamps",
+"text": "Premium LED (LAY)",
+"marks": {
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Taillamps",
+"text": "Black taillamp bezels (included with Night Edition) (LTG)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "P",
+"H": "P",
+"W": "•",
+"M": "P"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Taillamps",
+"text": "Chrome taillamp bezels (LTM)",
+"marks": {
+"V": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Tie-Downs",
+"text": "Lower, fixed (four) (CKT)",
+"marks": {
+"A": "•",
+"D": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Tires",
+"text": "LT275/65R18C OWL On-/Off-Road (included with Off-Road Group) (TCP)",
+"marks": {
+"A": "F/P",
+"Z/R": "F/P"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Tires",
+"text": "275/65R18 BSW All-Season (A/S) (TUM)",
+"marks": {
+"A": "•",
+"Z/R": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Tires",
+"text": "LT275/70R18E OWL All-Terrain (A/T) (TT6)",
+"marks": {
+"B": "•",
+"W": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Tires",
+"text": "275/55R20 OWL A/S (included with WRF wheels on Tradesman, Sport Appearance Package and Night Edition) (TUB)",
+"marks": {
+"A": "P",
+"D": "•",
+"Z/R": "O/P",
+"H": "P",
+"M": "•",
+"K": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Tires",
+"text": "275/55R20 BSW A/S (TTH)",
+"marks": {
+"Z/R": "O/P",
+"H": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Tires",
+"text": "275/55R20 BSW A/T (included with Off-Road Group if equipped with 20-inch wheels) (TXP)",
+"marks": {
+"A": "P",
+"D": "P",
+"Z/R": "P",
+"H": "P",
+"M": "P",
+"K": "P"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Tires",
+"text": "285/45R22XL BSW A/S (included with 22-inch wheel offerings) (TAR)",
+"marks": {
+"H": "P",
+"M": "P",
+"K": "P",
+"V": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Tires",
+"text": "285/45R22XL BSW A/T (included with Off-Road Group if equipped with 22-inch wheels) (TXR)",
+"marks": {
+"H": "P",
+"M": "P",
+"K": "P",
+"V": "P"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Tires",
+"text": "Spare Tire – Full-size temporary-use (TBS)",
+"marks": {
+"A": "•",
+"D": "•",
+"Z/R": "•",
+"H": "•",
+"M": "•",
+"K": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Tires",
+"text": "Spare Tire – Full-size with matching wheel (TBW)",
+"marks": {
+"V": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Tires",
+"text": "Spare Tire – Full-size (included with Off-Road Group) (TBB)",
+"marks": {
+"A": "P",
+"D": "P",
+"B": "•",
+"Z/R": "P",
+"H": "P",
+"W": "•",
+"M": "P",
+"K": "P",
+"V": "P"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Tonneau Cover",
+"text": "Tri-fold, soft; includes bed lighting (included with M1 Group) (CS7)",
+"marks": {
+"A": "O",
+"D": "O",
+"Z/R": "O",
+"H": "O",
+"W": "O",
+"M": "P",
+"K": "P",
+"V": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Tow Hooks",
+"text": "Front, Black (included with Protection Group and Off-Road Group) (XEA)",
+"marks": {
+"A": "P",
+"D": "P",
+"B": "•",
+"Z/R": "P",
+"H": "P",
+"W": "•",
+"M": "•",
+"K": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Trailer Tow",
+"text": "Four-/seven-pin connector (XFK)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Trailer Tow",
+"text": "Class IV hitch receiver (XFH)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels",
+"text": "18x7.5-inch painted steel (WBF)",
+"marks": {
+"A": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels",
+"text": "18x8-inch painted aluminum (included with Chrome Appearance Group) (WBB)",
+"marks": {
+"A": "O/P",
+"Z/R": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels",
+"text": "18x8-inch Black-painted aluminum (included with Backcountry Package) (WBP)",
+"marks": {
+"B": "•",
+"Z/R": "P"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels",
+"text": "18x8-inch Mid-Gloss Black-painted aluminum (WBL)",
+"marks": {
+"W": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels",
+"text": "20x9-inch polished/painted aluminum (optional with Chrome Appearance Group on Tradesman) (WRF)",
+"marks": {
+"A": "O",
+"D": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels",
+"text": "20x9-inch Chrome-clad aluminum (included with H2 Group) (WRK)",
+"marks": {
+"Z/R": "O/P"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels",
+"text": "20x9-inch Chrome-clad aluminum (WRD)",
+"marks": {
+"Z/R": "O"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels",
+"text": "20x9-inch Chrome-clad aluminum (WRH)",
+"marks": {
+"Z/R": "O"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels",
+"text": "20x9-inch Black-painted-clad aluminum (included with Black Express Edition and Night Edition) (WRN)",
+"marks": {
+"D": "P",
+"Z/R": "P"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels",
+"text": "20x9-inch premium painted, polished aluminum (WRL)",
+"marks": {
+"H": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels",
+"text": "20x9-inch premium painted, polished aluminum (WRM)",
+"marks": {
+"M": "•",
+"K": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels",
+"text": "22x9-inch Black-painted aluminum (included with Night Edition; optional with Sport Appearance Package) (WPH)",
+"marks": {
+"H": "O/P"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels",
+"text": "22x9-inch premium painted, polished aluminum (WPG)",
+"marks": {
+"M": "O",
+"K": "O"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels",
+"text": "22x9-inch Black-painted aluminum (included with Night Edition) (WPD)",
+"marks": {
+"M": "P"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels",
+"text": "22x9-inch polished/painted aluminum with inserts (WPA)",
+"marks": {
+"V": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels, Spare",
+"text": "18-inch steel (W1C)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels, Spare",
+"text": "18-inch aluminum (included with 5.7L HEMI® V8) (W1F)",
+"marks": {
+"A": "P",
+"D": "P",
+"Z/R": "P",
+"H": "P",
+"W": "P",
+"M": "P",
+"K": "P"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels, Spare",
+"text": "20-inch aluminum (included with Off-Road Group if equipped with 22-inch wheels) (W1J)",
+"marks": {
+"H": "P",
+"M": "P",
+"K": "P",
+"V": "P"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels, Spare",
+"text": "Matching 22-inch aluminum (WKB)",
+"marks": {
+"V": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheel Well Liners",
+"text": "Front (MHR)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheel Well Liners",
+"text": "Rear (included with Night Edition on 4x2 Big Horn/Lone Star(30) models) (MWH)",
+"marks": {
+"Z/R": "•/P",
+"H": "•",
+"W": "O",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheel Flares",
+"text": "Monotone Body-color (included with H1 and H2 Group) (MML)",
+"marks": {
+"Z/R": "P",
+"H": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheel Flares",
+"text": "Off-road (MMQ)",
+"marks": {
+"W": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheel Flares",
+"text": "Black-painted (included with Backcountry Package) (MUG)",
+"marks": {
+"Z/R": "P"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Windshield Wipers",
+"text": "Variable/intermittent (JHA)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 4,
+"section": "EXTERIOR FEATURES",
+"parent": "Windshield Wipers",
+"text": "Rain-sensitive (included with X2, P1 and P2 Groups) (JHC)",
+"marks": {
+"H": "P",
+"W": "P",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Air Conditioning",
+"text": "Manual temperature control (HAA)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Air Conditioning",
+"text": "Dual-Zone automatic temperature control (included with H2 Group) (HAF)",
+"marks": {
+"Z/R": "P",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Clusters",
+"text": "Four-gauge with 3.5-inch color Driver Information Display (JAK)",
+"marks": {
+"A": "•",
+"D": "•",
+"Z/R": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Clusters",
+"text": "Six-gauge with 7-inch color Driver Information Display (included with Active Driving Assist System,(5) Black Express Edition and H2 Group) (JAL)",
+"marks": {
+"A": "P",
+"D": "P",
+"B": "•",
+"Z/R": "P",
+"H": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Clusters",
+"text": "Premium, 12-inch color digital Driver Information Display (included with P2 Group) (JAN)",
+"marks": {
+"H": "P",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Clusters",
+"text": "Head-Up Display (included with Technology Group and M1 Group) (LBK)",
+"marks": {
+"Z/R": "P",
+"H": "P",
+"W": "P",
+"M": "P",
+"K": "P",
+"V": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Console, Floor",
+"text": "Full console with sliding storage and wrapped lid (included with Black Express Edition) (CUF)",
+"marks": {
+"D": "P",
+"Z/R": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Console, Floor",
+"text": "Full console with sliding storage and wrapped lid with embossed logo (included with bucket seats) (CUP)",
+"marks": {
+"H": "P",
+"W": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Console, Floor",
+"text": "Full console with leather-wrapped shifter (included with G/T Package) (CUC)",
+"marks": {
+"W": "P"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Console, Floor",
+"text": "Full console with sliding storage with bombay door and premium, leather-wrapped lid with hard badge (CM5)",
+"marks": {
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Console, Overhead",
+"text": "Base (CUN)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Console, Overhead",
+"text": "Premium (included with H2 Group) (CUS)",
+"marks": {
+"Z/R": "P",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Keyless Enter ’n GoTM",
+"text": "Passive (included with X2 Group) (GXD)",
+"marks": {
+"H": "•",
+"W": "P",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Speed-Sensitive Power Locks",
+"text": "Illuminated entry (JPH)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Flooring",
+"text": "Vinyl (includes rear in-floor storage bins on Crew Cab) (CKJ)",
+"marks": {
+"A": "F",
+"D": "F"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Flooring",
+"text": "Carpet, base (CKE)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Floor Mats, Front and Rear",
+"text": "Carpet (included with Black Express Edition, L1 Group, Sport Appearance Package and Night Edition) (CLE)",
+"marks": {
+"A": "P",
+"D": "P",
+"Z/R": "•",
+"H": "•"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Floor Mats, Front and Rear",
+"text": "Luxury (CLX)",
+"marks": {
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Floor Mats, Front and Rear",
+"text": "Rubber (Mopar®; included with Backcountry Package) (CLF)",
+"marks": {
+"A": "O",
+"D": "O",
+"B": "•",
+"Z/R": "O/P",
+"H": "O",
+"W": "•"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Memory",
+"text": "Driver’s only; seat, exterior mirrors, power-adjust pedals, radio presets (included with X2 Group and G/T Package) (LEQ)",
+"marks": {
+"H": "•",
+"W": "P",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Mirror, Interior Rearview",
+"text": "Manual day/night (GNA)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Mirror, Interior Rearview",
+"text": "Auto-dimming, day/night (included with H1 and H2 Groups) (GNK)",
+"marks": {
+"Z/R": "P",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Mirror, Interior Rearview",
+"text": "Auto-dimming, digital display (included with Technology Group and M1 Group) (GRG)",
+"marks": {
+"Z/R": "P",
+"H": "P",
+"W": "P",
+"M": "P",
+"K": "P",
+"V": "•"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Pedals",
+"text": "Fixed (XA8)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"W": "•"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Pedals",
+"text": "Power-adjust (included with H1, H2 and X1 Groups) (XAP)",
+"marks": {
+"Z/R": "P",
+"W": "P"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Pedals",
+"text": "Power-adjust with memory (included with X2 Group) (XAM)",
+"marks": {
+"H": "•",
+"W": "P",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Vinyl front bench – 40/20/40 split-bench, four-way manual driver’s (fore/aft, seatback recline), four-way manual passenger (fore/aft, seatback recline), four-way manual-adjust head restraints(36) (up/down, fore/aft), outboard positions only; rear seats, full-length stadium-folding bench, outboard head restraints(36) manual dump feature (*TX)",
+"marks": {
+"A": "•"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Cloth front bucket – Four-way manual driver’s (fore/aft, seatback recline), four-way manual passenger (fore/aft, seatback recline), four-way manual-adjust head restraints(36) (up/down, fore/aft), outboard positions only; rear seats, full-length stadium-folding bench, outboard head restraints(36) manual dump feature (included with Black Express Edition) (*C5)",
+"marks": {
+"D": "P",
+"Z/R": "•"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Cloth front bench – 40/20/40 split-bench, four-way manual driver’s (fore/aft, seatback recline), four-way manual passenger (fore/aft, seatback recline), four-way manual passenger (fore/aft, seatback recline), four-way manual-adjust head restraints(36) (up/ down, fore/aft), outboard positions only, map pocket (back of outboard seats); rear seats, 60/40 split-folding bench, outboard head restraints(36) manual dump feature (included with L1 Group; requires H1 or H2 Group) (*E1)",
+"marks": {
+"A": "P",
+"D": "•",
+"B": "•",
+"Z/R": "O"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Cloth front bucket – Eight-way power driver’s (fore/aft, up/down, cushion tilt, seatback recline), four-way power driver’s lumbar (fore/aft, up/down), four-way manual passenger (fore/aft, seatback recline), four-way manual-adjust head restraints(36) (up/ down, fore/aft), outboard positions only, full-length floor console with two front and two rear cup holders, map pocket (back of outboard seats); rear seats, 60/40 split-folding bench, outboard head restraints(36) manual dump feature (included with H1 or H2 Group, Sport Appearance Package and Night Edition) (*T9)",
+"marks": {
+"Z/R": "P"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Vinyl/cloth front bucket – Eight-way power driver’s (fore/aft, up/down, cushion tilt, seatback recline), four-way power driver’s lumbar (fore/aft, up/down), four-way manual passenger (fore/aft, seatback recline), four-way manual-adjust head restraints(36) (up/down, fore/aft), outboard positions only, map pocket (back of outboard seats); rear seats, 60/40 split-folding bench, outboard head restraints(36) manual dump feature (*G7)",
+"marks": {
+"W": "•"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Leather-trimmed bucket – Eight-way power driver’s/passenger (fore/aft, up/down, cushion tilt, seatback recline), four-way power driver’s/passenger lumbar (fore/aft, up/ down), four-way manual-adjust head restraints(36) (up/down, fore/aft), outboard positions only, map pocket (back of outboard seats); rear seats, 60/40 split-folding bench, outboard head restraints(36) manual dump feature (requires X2 Group) (*TL)",
+"marks": {
+"W": "O"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Leather-trimmed front bucket – Front bucket, eight-way power driver’s (fore/aft, up/ down, cushion tilt, seatback recline), eight-way power passenger (fore/aft, up/down, cushion tilt, seatback recline), four-way power driver’s lumbar (fore/aft, up/down), four-way power passenger lumbar (fore/aft, up/down), driver’s memory, heated outboard seating positions, ventilated outboard seating positions, heated steering wheel, four-way manual-adjust head restraints(36) (up/down, fore/aft), outboard positions only, full-length floor console with two front and two rear cup holders, map pocket (back of outboard seats); rear seats, 60/40 split-folding bench with manual recline and center 20-percent fold-down console, outboard head restraints(36) manual dump feature, heated rear seat (three adjustment levels each) (*GJ)",
+"marks": {
+"H": "•"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Leather-trimmed front bucket – Front bucket, eight-way power driver’s (fore/aft, up/ down, cushion tilt, seatback recline), eight-way power passenger (fore/aft, up/down, cushion tilt, seatback recline), four-way power driver’s lumbar (fore/aft, up/down), four-way power passenger lumbar (fore/aft, up/down), driver’s memory, heated outboard seating positions, ventilated outboard seating positions, heated steering wheel, four-way manual-adjust head restraints(36) (up/down, fore/aft), outboard positions only, full-length floor console with leather-wrapped shifter, two front and two rear cup holders, map pocket (back of outboard seats); rear seats, 60/40 split- folding bench with manual recline and center 20-percent fold-down console, outboard head restraints(36) manual dump feature (included with G/T Package) (*W8)",
+"marks": {
+"W": "P"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Premium leather with filigree front bucket – Eight-way power driver’s (fore/aft, up/down, cushion tilt, seatback recline), eight-way power passenger (fore/aft, up/down, cushion tilt, seatback recline), four-way power driver’s lumbar (fore/aft, up/down), four-way power passenger lumbar (fore/aft, up/down), driver’s memory, heated outboard seating positions, ventilated outboard seating positions, heated steering wheel, four-way manual-adjust head restraints(36) (up/down, fore/aft), outboard positions only, full-length floor console with two front and two rear cup holders, map pocket (back of outboard seats); rear seats, 60/40 split-folding bench with manual recline and center 20-percent fold-down console, outboard head restraints(36) manual dump feature, heated rear seat (three adjustment levels each), ventilated rear seat (three adjustment levels each) (*XJ)",
+"marks": {
+"K": "•"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Premium leather with quilting front bucket – Eight-way power driver’s (fore/aft, up/down, cushion tilt, seatback recline), eight-way power passenger (fore/aft, up/ down, cushion tilt, seatback recline), four-way power driver’s lumbar (fore/aft, up/down), four-way power passenger lumbar (fore/aft, up/down), driver’s memory, heated outboard seating positions, ventilated outboard seating positions, heated steering wheel, four-way manual-adjust head restraints(36) (up/down, fore/aft), outboard positions only, full-length floor console with two front and two rear cup holders, map pocket (back of outboard seats); rear seats, 60/40 split-folding bench with manual recline and center 20-percent fold-down console, outboard head restraints(36) manual dump feature, heated rear seat (three adjustment levels each), ventilated rear seat (three adjustment levels each) (*SJ)",
+"marks": {
+"M": "•"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Seats",
+"text": "Ultra premium leather front bucket – 24-way power driver’s (adjust), 24-way power passenger (adjust), massage feature for driver’s and front-passenger seats, driver’s memory, heated outboard seating positions, ventilated outboard seating positions, heated steering wheel, four-way power-adjust head restraints(36) (up/down, fore/aft), outboard positions only, full-length floor console with two front and two rear cup holders, map pocket (back of outboard seats); rear seats, 60/40 split-folding bench with manual recline and center 20-percent fold-down console, outboard head restraints(36) manual dump feature, heated rear seat, ventilated rear seat (*HL)",
+"marks": {
+"V": "•"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Shifter",
+"text": "Rotary",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Shifter",
+"text": "Black (C1G)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Shifter",
+"text": "Bright (C1H)",
+"marks": {
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Shifter",
+"text": "Jeweled (C1N)",
+"marks": {
+"V": "•"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Shifter",
+"text": "Leather-wrapped (included with G/T Package) (CVW)",
+"marks": {
+"W": "P"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Sill Plates",
+"text": "Door sill scuff plates (plastic) (CLP)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Sill Plates",
+"text": "Door sill scuff plates (metal) (CLN/CLT)",
+"marks": {
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Speed Control",
+"text": "Adaptive Cruise Control (ACC) with Stop and Go(6) (NHZ)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Speed Control",
+"text": "Selec-Speed® Control – Off-road feature (included with Backcountry Package and Off-Road Group; requires electronic locking rear differential) (BNK)",
+"marks": {
+"A": "P",
+"D": "P",
+"B": "•",
+"Z/R": "P",
+"H": "P",
+"W": "•",
+"M": "P",
+"K": "P",
+"V": "P"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Start",
+"text": "Keyless push-button (GX4)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Steering Column",
+"text": "Manual tilt/telescoping (SUD)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Steering Wheel",
+"text": "Urethane (SCA)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Steering Wheel",
+"text": "Leather-wrapped (included with Active Driving Assist System(5) and H1 and H2 Groups) (SCV)",
+"marks": {
+"A": "P",
+"D": "P",
+"B": "P",
+"Z/R": "P",
+"H": "•"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Steering Wheel",
+"text": "Leather-wrapped, perforated, accent stitching (SCB)",
+"marks": {
+"W": "•"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Steering Wheel",
+"text": "Leather-wrapped with integrated paddle shifters (included with G/T Package and Rebel X) (SC4)",
+"marks": {
+"W": "P"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Steering Wheel",
+"text": "Leather-wrapped, real-wood (SCW)",
+"marks": {
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Steering Wheel",
+"text": "Heated (included with H1 and H2 Groups) (NHS)",
+"marks": {
+"Z/R": "P",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Steering Wheel",
+"text": "Button controls – Driver Information Display",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Steering Wheel",
+"text": "Button controls – Hands-free(24)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Steering Wheel",
+"text": "Button controls – ACC with Stop and Go(6)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Steering Wheel",
+"text": "Dual-note electric horns (JJB)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Steering Wheel",
+"text": "Electronic Range Select",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Storage",
+"text": "Center stack pull-out drawer (bench seats only)",
+"marks": {
+"A": "•",
+"D": "•",
+"Z/R": "O"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Storage",
+"text": "Front-seat-center underseat bin (bench seats only; included with *E1 seats) (CVH)",
+"marks": {
+"A": "P",
+"D": "P",
+"Z/R": "P"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Storage",
+"text": "Front-seat-center seatback bin (bench seat only)",
+"marks": {
+"A": "•",
+"D": "•",
+"Z/R": "O"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Storage",
+"text": "Front-seat-center console bin (bucket seats only)",
+"marks": {
+"A": "P",
+"D": "P",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Storage",
+"text": "Rear in-floor bins with removable liners (Crew Cab only; included with Black Express Edition and L1, H1 and H2 Groups) (CB9)",
+"marks": {
+"A": "P",
+"D": "P",
+"B": "•",
+"Z/R": "P",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Storage",
+"text": "Rear underseat – Crew Cab only (requires H1 or H2 Group) (CUE)",
+"marks": {
+"Z/R": "O",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Sunroof",
+"text": "Dual-pane, power-operated (Crew Cab only; requires H2, X2, P1 or P2 Group) (GWJ)",
+"marks": {
+"Z/R": "O",
+"H": "O",
+"W": "O",
+"M": "O",
+"K": "O",
+"V": "•"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Sun Visors",
+"text": "Passenger-side with mirror (GNE)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Sun Visors",
+"text": "Driver’s- and passenger-side with mirror and light (included with H1 and H2 Groups) (GNC)",
+"marks": {
+"Z/R": "P",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Turn Signals",
+"text": "Three-blink lane-change feature",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Window Control",
+"text": "Windows, power one-touch up/down, driver’s and front-passenger (JP3)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Window Control",
+"text": "Rear backlight, fixed (GJD)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Window Control",
+"text": "Rear backlight, power-sliding (included with Black Express Edition and L1, H1 and H2 Groups) (GFE)",
+"marks": {
+"A": "P",
+"D": "P",
+"B": "•",
+"Z/R": "P",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 6,
+"section": "INTERIOR FEATURES",
+"parent": "Window Control",
+"text": "Rear defroster (with power-sliding backlight only; included with H1, H2, X1 and X2 Groups) (GFA)",
+"marks": {
+"Z/R": "P",
+"H": "•",
+"W": "P",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 6,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "",
+"text": "Uconnect Integrated Voice Command (RTE/XRB)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 6,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "",
+"text": "Front: two 2.5A USB ports – Fully functional (RSF)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 6,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "",
+"text": "Middle: one 2.5A USB port – Charging-only (RS3)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 6,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "",
+"text": "Rear: one 2.5A USB port – Charging-only (included with H2 and X2 Groups) (RS2)",
+"marks": {
+"Z/R": "P",
+"H": "•",
+"W": "P",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 6,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "",
+"text": "Front – Auxiliary headphone jack (RSU)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 6,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "Power",
+"text": "Accessory delay (JKY)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 6,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "Power",
+"text": "Front-seat, 12-volt ignition-fed (JJJ)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 6,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "Power",
+"text": "Front-seat, 115-volt outlet (three-prong), battery-fed (included with H1 and H2 Groups; requires L1 Group) (JKV)",
+"marks": {
+"A": "O/P",
+"D": "O/P",
+"B": "•",
+"Z/R": "P",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 6,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "Power",
+"text": "Rear-seat, 115-volt outlet (three-prong), battery-fed (included with H2 and X2 Groups) (JJN)",
+"marks": {
+"Z/R": "P",
+"H": "•",
+"W": "P",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 6,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "Power",
+"text": "Exterior, 115-volt outlet (three-prong), battery-fed (included with Bed Utility Group and RamBox® Cargo Management System) (XBE)",
+"marks": {
+"A": "P",
+"D": "P",
+"B": "P",
+"Z/R": "P",
+"H": "P",
+"W": "P",
+"M": "P",
+"K": "P",
+"V": "P"
+}
+},
+{
+"page": 6,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "Power",
+"text": "Front-seat, wireless charging pad (available with bucket seats only; included with H2, X1 and P1 Groups) (RFX)",
+"marks": {
+"Z/R": "P",
+"H": "P",
+"W": "P"
+}
+},
+{
+"page": 6,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "Power",
+"text": "Front-seat, dual wireless charging pads (available with bucket seats only; included with X2 and P2 Groups) (CMS)",
+"marks": {
+"H": "P",
+"W": "P",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 6,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "Power",
+"text": "400-watt inverter (included with JKV, Bed Utility Group, and H1 and H2 Groups) (XHR)",
+"marks": {
+"A": "P",
+"D": "P",
+"B": "P",
+"Z/R": "P",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 6,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "Power",
+"text": "2-kW 120-volt on-board power system (Crew Cab 5'7\"-box models only) (XBH)",
+"marks": {
+"A": "O",
+"D": "O",
+"B": "O",
+"Z/R": "O",
+"H": "O",
+"W": "O",
+"M": "O",
+"K": "O",
+"V": "O"
+}
+},
+{
+"page": 7,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "Radio Systems",
+"text": "Uconnect 5 with 8.4-inch touchscreen display (UBE)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•"
+}
+},
+{
+"page": 7,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "Radio Systems",
+"text": "Uconnect 5 NAV with 12-inch touchscreen display (included with H2 Group) (UBQ)",
+"marks": {
+"Z/R": "P",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•"
+}
+},
+{
+"page": 7,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "Radio Systems",
+"text": "Uconnect 5 NAV with 14.5-inch touchscreen display (included with P2, X2 and M1 Groups) (UBW)",
+"marks": {
+"H": "P",
+"W": "P",
+"M": "P",
+"K": "P",
+"V": "•"
+}
+},
+{
+"page": 7,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "Radio Systems",
+"text": "10.25-inch front-passenger interactive display (included with P2 and X2 Groups) (RJA)",
+"marks": {
+"H": "P",
+"W": "P",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 7,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "Radio Controls",
+"text": "Steering wheel-mounted (included with H1 and H2 Groups) (RDZ)",
+"marks": {
+"Z/R": "P",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 7,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "",
+"text": "SiriusXM® Radio(21) (three-month trial; included with Black Express Edition and L1 and H1 Groups) (RSD)",
+"marks": {
+"A": "P",
+"D": "P",
+"B": "•",
+"Z/R": "P"
+}
+},
+{
+"page": 7,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "",
+"text": "SiriusXM with 360L(21) (included with UBQ and UBW radios) (RTU)",
+"marks": {
+"Z/R": "P",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 7,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "",
+"text": "TomTom® Connected Travel and Traffic Services(22) (included with UBQ and UBW radios) (RTV)",
+"marks": {
+"Z/R": "P",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 7,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "Sound System",
+"text": "Six-speaker (RCG)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•"
+}
+},
+{
+"page": 7,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "Sound System",
+"text": "Alpine® 10-speaker audio system (included with H2 Group; requires H1 Group) (RC3)",
+"marks": {
+"Z/R": "O/P",
+"H": "•",
+"W": "•"
+}
+},
+{
+"page": 7,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "Sound System",
+"text": "Harman Kardon® 19-speaker audio system (included with P2 and X2 Groups) (RCA)",
+"marks": {
+"H": "P",
+"W": "P",
+"M": "•",
+"K": "•"
+}
+},
+{
+"page": 7,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "Sound System",
+"text": "Klipsch® 23-speaker premiere audio system (RGE)",
+"marks": {
+"V": "•"
+}
+},
+{
+"page": 7,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "Uconnect Features",
+"text": "Apple CarPlayTM(16)/Android AutoTM(15) (included with 8.4-inch and 12-inch radios) (RFP/RF5)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 7,
+"section": "UCONNECT® MULTIMEDIA",
+"parent": "Uconnect Features",
+"text": "Active Noise Cancellation (included with EFH and EZL engines) (JLW)",
+"marks": {
+"A": "P",
+"D": "P",
+"B": "P",
+"Z/R": "P",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "Air Bags(31)",
+"text": "Advanced multistage driver’s and front-passenger (CG3)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "Air Bags(31)",
+"text": "Supplemental side-curtain (CGS)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "Air Bags(31)",
+"text": "Supplemental side seat (CJ1)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Active Driving Assist System(5) (included with Advanced Safety Group) (SJJ)",
+"marks": {
+"A": "F",
+"D": "F",
+"B": "F",
+"Z/R": "F",
+"H": "P",
+"W": "P",
+"M": "•",
+"K": "•"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "Active Driving Assist System(5)",
+"text": "Hands-free (included with M1 Group; requires P2 Group) (SJH)",
+"marks": {
+"H": "O",
+"M": "P",
+"K": "P",
+"V": "•"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "Belt Alert",
+"text": "Driver’s (LAX)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "Belt Alert",
+"text": "Passenger (LAX)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "Brakes",
+"text": "Power-assisted four-wheel antilock disc (BRT)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "Brakes",
+"text": "Brake override",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Drowsy-Driver Detection(6) (included with Advanced Safety Group and M1 Group) (XNM)",
+"marks": {
+"A": "F",
+"D": "F",
+"B": "F",
+"Z/R": "F",
+"H": "P",
+"W": "P",
+"M": "P",
+"K": "P",
+"V": "•"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Electronic Parking Brake (XC4)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Electronic Stability Control (ESC)(8) (BNB)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Brake Assist (BGE)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Electronic Roll Mitigation (BNS)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Hill Start Assist (BNG)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Advanced Brake Assist(9) (BGG)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Pedestrian/Cyclist Emergency Braking(9) (LST)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "All-Speed Traction Control (BNM)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Trailer Sway Damping(8) (BNT)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Evasive Steer Assist(9) (included with Advanced Safety Group and M1 Group) (SJK)",
+"marks": {
+"A": "F",
+"D": "F",
+"B": "F",
+"Z/R": "F",
+"H": "P",
+"W": "P",
+"M": "P",
+"K": "P",
+"V": "•"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Selec-Speed® Control (included with Backcountry Package and Off-Road Group) (BNK)",
+"marks": {
+"A": "P",
+"D": "P",
+"B": "•",
+"Z/R": "P",
+"H": "P",
+"W": "•",
+"M": "P",
+"K": "P",
+"V": "P"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Intersection Collision Assist System(11) (included with Advanced Safety Group and M1 Group) (XPS)",
+"marks": {
+"A": "F",
+"D": "F",
+"B": "F",
+"Z/R": "F",
+"H": "P",
+"W": "P",
+"M": "P",
+"K": "P",
+"V": "•"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "Camera",
+"text": "ParkView® Rear Back-Up Camera(4) with dynamic grid lines and center lines (XAC)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "Camera",
+"text": "360° Surround-View Camera System(4) (included with Advanced Safety Group and M1 Group; requires H2 Group) (XAK)",
+"marks": {
+"Z/R": "O",
+"H": "P",
+"W": "P",
+"M": "P",
+"K": "P",
+"V": "•"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Blind Spot Monitoring (BSM)(7) and Rear Cross-Path and Trailer Detection System(4) (XAN)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Full-Speed Forward Collision Warning Plus(9) (LSU)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Active Lane Management System(5) (XNW)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "Head Restraints(36)",
+"text": "Front – Outboard, four-way manual-adjust (up/down, fore/aft) (CDP)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "Head Restraints(36)",
+"text": "Rear – Manual dump feature on outboard seating positions (CSH)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "ParkSense® Front and Rear Park Assist with Rear ParkSense Stop(12) (XH4)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "Remote Keyless Entry",
+"text": "Controls for power locks (including doors, tailgate and RamBox® Cargo Management System when so equipped) – Illuminated entry system, panic alarm; includes two transmitters (GXM)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "Remote Start(27) System",
+"text": "Key fob activation (XBM)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "Restraints",
+"text": "Front, three-point seat belts, shoulder height-adjustable (outboard seating positions) (CGD)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "Restraints",
+"text": "Front, three-point seat belts (center seating position, bench only)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "Restraints",
+"text": "Rear, three-point seat belts (all seating positions)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "LATCH",
+"text": "Child Seat Anchor System (CGU)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "LATCH",
+"text": "Occupant Classification System",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "Security",
+"text": "Sentry Key® engine immobilizer (GXX)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "Security",
+"text": "Security alarm(34) (included with H2 and X2 Groups) (LSA)",
+"marks": {
+"Z/R": "P",
+"H": "•",
+"W": "P",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "Tire Pressure Monitor",
+"text": "Tire-specific Tire Pressure Monitoring Display (XGM)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "Tire Pressure Monitor",
+"text": "Tire Pressure Fill Alert System (LAW)",
+"marks": {
+"A": "•",
+"D": "•",
+"B": "•",
+"Z/R": "•",
+"H": "•",
+"W": "•",
+"M": "•",
+"K": "•",
+"V": "•"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Traffic Sign Recognition(13) (included with Advanced Safety Group and M1 Group) (SJB)",
+"marks": {
+"A": "F",
+"D": "F",
+"B": "F",
+"Z/R": "F",
+"H": "P",
+"W": "P",
+"M": "P",
+"K": "P",
+"V": "•"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "Trailer Brake Controller",
+"text": "Integrated electronic controller (included with Trailer-Tow Group) (XHC)",
+"marks": {
+"A": "O/P",
+"D": "O/P",
+"B": "O/P",
+"Z/R": "O/P",
+"H": "O/P",
+"W": "O/P",
+"M": "O/P",
+"K": "O/P",
+"V": "•"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Trailer Tire Pressure Monitoring (included with Trailer-Tow Group) (XG9)",
+"marks": {
+"A": "P",
+"D": "P",
+"B": "P",
+"Z/R": "P",
+"H": "P",
+"W": "P",
+"M": "P",
+"K": "P",
+"V": "P"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Trailer Light Check (included with Trailer-Tow Group if equipped with UBQ or UBW radio) (JJ1)",
+"marks": {
+"Z/R": "P",
+"H": "P",
+"W": "P",
+"M": "P",
+"K": "P",
+"V": "P"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Trailer Reverse Steering Control(5) (included with Trailer-Tow Group) (XA1)",
+"marks": {
+"A": "P",
+"D": "P",
+"B": "P",
+"Z/R": "P",
+"H": "P",
+"W": "P",
+"M": "P",
+"K": "P",
+"V": "P"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Trailer Reverse Guidance(4) (included with Towing Technology Group; requires XAK) (XPU)",
+"marks": {
+"H": "P",
+"W": "P",
+"M": "P",
+"K": "P",
+"V": "P"
+}
+},
+{
+"page": 7,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Trailer Hitch Line-Up Assist (included with Towing Technology Group) (XNP)",
+"marks": {
+"A": "P",
+"D": "P",
+"B": "P",
+"Z/R": "P",
+"H": "P",
+"W": "P",
+"M": "P",
+"K": "P",
+"V": "P"
+}
+},
+{
+"page": 8,
+"section": "APPEARANCE PACKAGES",
+"parent": "Backcountry Package",
+"text": "Includes Selec-Speed® Control; cloth/vinyl bucket seats; electronic locking rear axle; Black exhaust tips; skid plates for fuel tank, transfer case and steering gear; rubber floor mats; Backcountry dash badge; Black exterior badging; headlamps and taillamps with Black bezels; Accent-color wheel flares; Black-painted front and rear bumpers; Black lower two-tone paint; raised ride height; LT275/65R18C OWL On-/Off-Road Tires; and 18-inch Black-painted aluminum wheels (requires H1 or H2 Group) (AXY)",
+"marks": {
+"Z/R": "O"
+}
+},
+{
+"page": 8,
+"section": "APPEARANCE PACKAGES",
+"parent": "Black Express Edition",
+"text": "Includes *C5 cloth bucket seats, full-length floor center console, rear in-floor storage bins, rear antispin differential, Sport Performance Hood, power-sliding rear window, floor mats, Black interior accents, 7-inch Driver Information Display cluster, LED fog lamps, Black Chrome front lower fascia trim, Mopar Black Tubular Side Steps, ® Body-color front and rear bumpers, Black grille and insert, SiriusXM® Radio(21) and 20-inch Black-painted-clad aluminum wheels (AMQ)",
+"marks": {
+"D": "O"
+}
+},
+{
+"page": 8,
+"section": "APPEARANCE PACKAGES",
+"parent": "Chrome Appearance Group",
+"text": "Includes Chrome headlamp bezels, Chrome front and rear bumpers, Chrome grille surround and “RAM” badge, 18-inch painted aluminum wheels and dual Chrome exhaust tips (if equipped with EFH; requires L1 Group) (AMP)",
+"marks": {
+"A": "O"
+}
+},
+{
+"page": 8,
+"section": "APPEARANCE PACKAGES",
+"parent": "Chrome Appearance Group",
+"text": "Includes Chrome window surround and Chrome wheel-to-wheel side steps (requires P1 or P2 Group) (AMP)",
+"marks": {
+"H": "O"
+}
+},
+{
+"page": 8,
+"section": "APPEARANCE PACKAGES",
+"parent": "Sport Appearance Package (Big Horn/Lone Star(30))",
+"text": "Includes Body-color front bumper, Body-color rear bumper, Body-color grille surround, Body-color door handles, cloth bucket seats and Black interior accents (requires H1 or H2 Group) (AEF)",
+"marks": {
+"Z/R": "O"
+}
+},
+{
+"page": 8,
+"section": "APPEARANCE PACKAGES",
+"parent": "Sport Appearance Package (Laramie)",
+"text": "Includes Body-color front bumper, Body-color rear bumper, Body-color grille surround, Gloss Black GT4 exterior mirrors, Sport Performance Hood, 20-inch OWL All-Season (A/S) tires and Black interior accents (requires P1 or P2 Group) (AEF)",
+"marks": {
+"H": "O"
+}
+},
+{
+"page": 8,
+"section": "APPEARANCE PACKAGES",
+"parent": "Night Edition (Big Horn/Lone Star(30))",
+"text": "Includes Black interior accents, Gloss Black exterior mirrors, rear wheelhouse liners, Body-color front and rear bumpers, Black grille, 20x9-inch Black-painted clad aluminum wheels with OWL A/S tires, Black badges, Gloss Black door handles, dual Black exhaust tips (if equipped with EZL or EFH), antispin differential, and headlamps and taillamps with Black bezels (requires H2 Group) (ASH)",
+"marks": {
+"Z/R": "O"
+}
+},
+{
+"page": 8,
+"section": "APPEARANCE PACKAGES",
+"parent": "Night Edition (Laramie)",
+"text": "Includes Black interior accents, Sport Performance Hood, Gloss Black GT4 exterior mirrors, proximity approach/departure lamps, Body-color front and rear bumpers, Black grille, 22x9-inch forged Black-painted aluminum wheels, Black badges, Gloss Black door handles, dual Black exhaust tips and antispin differential, and headlamps and taillamps with Black bezels (requires P1 or P2 Group) (ASH)",
+"marks": {
+"H": "O"
+}
+},
+{
+"page": 8,
+"section": "APPEARANCE PACKAGES",
+"parent": "Night Edition (Limited)",
+"text": "Includes Black grille; Gloss Black door handles; Gloss Black GT4 exterior mirrors; Body-color front and rear bumpers; Sport Performance Hood; 22-inch Black-painted aluminum wheels; dual Black exhaust tips; Black badges; and Black window moldings, headlamps and taillamps with Black bezels (ASH)",
+"marks": {
+"M": "O"
+}
+},
+{
+"page": 8,
+"section": "EQUIPMENT PACKAGES",
+"parent": "Tradesman Level 1 Equipment (L1 Group)",
+"text": "Includes power-sliding rear window, *E1 cloth bench seat, rear in-floor storage bins, power-sliding rear window, carpet floor mats and SiriusXM Radio(21) (A61)",
+"marks": {
+"A": "O"
+}
+},
+{
+"page": 8,
+"section": "EQUIPMENT PACKAGES",
+"parent": "Big Horn/Lone Star(30) Level 1 Equipment (H1 Group)",
+"text": "Includes rear in-floor storage bins, *T9 cloth bucket seats with 10-way power-adjust driver’s seat, 400-watt inverter, 115-volt power outlet, power-sliding rear window, sun visors with illuminated vanity, auto-dimming rearview mirror, GUK exterior mirrors, rear window defroster, heated leather-wrapped steering wheel, instrument-panel (I/P) badge, heated front seats, glove box lamp, rear dome lamp with on/off switch, SiriusXM Radio(21) and power-adjust pedals (A62)",
+"marks": {
+"Z/R": "O"
+}
+},
+{
+"page": 8,
+"section": "EQUIPMENT PACKAGES",
+"parent": "Big Horn/Lone Star(30) Level 2 Equipment (H2 Group)",
+"text": "Includes H1 Group, premium overhead console, security alarm(34) system, rear window defroster, configurable drive mode, Dual-Zone automatic temperature control, wireless charging pad (if equipped with bucket seats), 115-volt rear power outlet, 7-inch Driver Information Display cluster, LED interior lighting, 10-speaker premium audio system, RS2 Media Hub, Uconnect® 5 NAV with 12-inch touchscreen display, remote tailgate release and 20-inch Chrome-clad aluminum wheels (A63)",
+"marks": {
+"Z/R": "O"
+}
+},
+{
+"page": 8,
+"section": "EQUIPMENT PACKAGES",
+"parent": "Rebel Level 1 Equipment (X1 Group)",
+"text": "Includes wireless charging pad, GUK exterior mirrors, remote tailgate release, rear window defroster and power-adjust pedals (A64)",
+"marks": {
+"W": "O"
+}
+},
+{
+"page": 8,
+"section": "EQUIPMENT PACKAGES",
+"parent": "Rebel Level 2 Equipment (X2 Group)",
+"text": "Includes X1 Group; 10-way power-adjust front- passenger seat; Gloss Black door handles; security alarm(34) system; power up/down tailgate; memory for mirrors, radio, pedals and driver’s seat; smartphone-as-a-key capable; keyless passive entry system; Gloss Black GT4 exterior mirrors; 115-volt rear power outlet; dual wireless charging pads; rain-sensitive windshield wipers; heated rear seats; proximity approach/departure lamps; 19-speaker premium audio system; RS2 Media Hub; 10.25-inch front-passenger interactive display; and Uconnect 5 NAV with 14.5-inch touchscreen display (A65)",
+"marks": {
+"W": "O"
+}
+},
+{
+"page": 8,
+"section": "EQUIPMENT PACKAGES",
+"parent": "G/T Package",
+"text": "Includes underseat lighting, floor console with integrated leather-wrapped shift lever, *W8 leather-trimmed bucket seating, G/T decal, upgraded exhaust, leather- wrapped steering wheel with integrated paddle shifters, Mopar Bright Pedal Kit, Performance Pages and G/T interior theme (requires X2 Group) (ASU)",
+"marks": {
+"W": "O"
+}
+},
+{
+"page": 8,
+"section": "EQUIPMENT PACKAGES",
+"parent": "Laramie Level 1 Equipment (P1 Group)",
+"text": "Includes wireless charging pad, rain-sensitive windshield wipers and remote tailgate release (A66)",
+"marks": {
+"H": "O"
+}
+},
+{
+"page": 8,
+"section": "EQUIPMENT PACKAGES",
+"parent": "Laramie Level 2 Equipment (P2 Group)",
+"text": "Includes P1 Group, power up/down tailgate, smartphone-as-a-key capable, dual wireless charging pads, 12-inch digital Driver Information Display cluster, heated rear seats, 19-speaker premium audio system, 10.25-inch front-passenger interactive display and Uconnect 5 NAV with 14.5-inch touchscreen display (A67)",
+"marks": {
+"H": "O"
+}
+},
+{
+"page": 8,
+"section": "EQUIPMENT PACKAGES",
+"parent": "Limited Level 1 Equipment (M1 Group)",
+"text": "Includes tri-fold tonneau cover, Drowsy-Driver Detection,(6) smartphone-as-a-key capable, digital rearview mirror, Head-Up Display, LED Center High-Mounted Stop Lamp (CHMSL), Uconnect 5 NAV with 14.5-inch touchscreen display, Traffic Sign Recognition,(13) Hands-Free Active Driving Assist System,(5) Evasive Steer Assist,(9) 360º Surround-View Camera System,(4) Intersection Collision Assist System(11) and RamBox® Cargo Management System (A79)",
+"marks": {
+"M": "O",
+"K": "O"
+}
+},
+{
+"page": 9,
+"section": "FUNCTIONAL PACKAGES / GROUPS",
+"parent": "Bed Utility Group",
+"text": "Includes 115-volt exterior power outlet, 400-watt inverter, upper adjustable tie-downs, bed divider (available with RamBox® Cargo Management System only), LED bed lighting, deployable bed step and spray-in bedliner (requires L1, H1, H2, X1, X2, P1 or P2 Group) (ANT)",
+"marks": {
+"A": "O",
+"D": "O",
+"B": "O",
+"Z/R": "O",
+"H": "O",
+"W": "O",
+"M": "O",
+"K": "O",
+"V": "O"
+}
+},
+{
+"page": 9,
+"section": "FUNCTIONAL PACKAGES / GROUPS",
+"parent": "Power Driver’s Seat Group",
+"text": "Includes 10-way power driver’s seat (requires *E1 cloth seats) (AFP)",
+"marks": {
+"A": "F"
+}
+},
+{
+"page": 9,
+"section": "FUNCTIONAL PACKAGES / GROUPS",
+"parent": "Protection Group",
+"text": "Includes tow hooks, transfer case skid plate, electronic power steering skid plate and fuel tank skid plate (4x4 models only) (ADB)",
+"marks": {
+"A": "O",
+"Z/R": "O",
+"H": "O"
+}
+},
+{
+"page": 9,
+"section": "FUNCTIONAL PACKAGES / GROUPS",
+"parent": "Off-Road Group",
+"text": "Includes Selec-Speed® Control, tow hooks, transfer case skid plate, electronic power steering skid plate, fuel tank skid plate, rear electronic locking axle, front and rear off-road calibrated shocks, off-road decals, Off-Road Information Pages (if equipped with UBQ or UBW radio), raised ride height, All-Terrain (A/T) tires and full-size spare (requires L1, H1 or H2 Group) (AWL)",
+"marks": {
+"A": "O",
+"D": "O",
+"Z/R": "O",
+"H": "O",
+"M": "O",
+"K": "O",
+"V": "O"
+}
+},
+{
+"page": 9,
+"section": "FUNCTIONAL PACKAGES / GROUPS",
+"parent": "Trailer-Tow Group",
+"text": "Includes integrated Trailer Brake Controller, 7x11-inch trailer-tow mirrors, Trailer Light Check (if equipped with UBQ or UBW radio), Trailer Tire Pressure Monitoring and Trailer Reverse Steering Control(5) (AHC)",
+"marks": {
+"A": "O",
+"D": "O",
+"B": "O",
+"Z/R": "O",
+"H": "O",
+"W": "O",
+"M": "O",
+"K": "O",
+"V": "O"
+}
+},
+{
+"page": 9,
+"section": "FUNCTIONAL PACKAGES / GROUPS",
+"parent": "Advanced Safety Group",
+"text": "Includes Drowsy-Driver Detection,(6) Traffic Sign Recognition,(13) Evasive Steer Assist(9) and Intersection Collision Assist System(11) (requires H2 Group) (ALP)",
+"marks": {
+"A": "F",
+"D": "F",
+"B": "F",
+"Z/R": "F"
+}
+},
+{
+"page": 9,
+"section": "FUNCTIONAL PACKAGES / GROUPS",
+"parent": "Advanced Safety Group",
+"text": "Includes Drowsy-Driver Detection,(6) Traffic Sign Recognition,(13) Evasive Steer Assist,(9) Intersection Collision Assist System(11) and 360º Surround-View Camera System(4) (requires P2 or X2 Group) (ALQ)",
+"marks": {
+"H": "O",
+"W": "O"
+}
+},
+{
+"page": 9,
+"section": "FUNCTIONAL PACKAGES / GROUPS",
+"parent": "Technology Group",
+"text": "Includes digital rearview mirror, Head-Up Display and LED Center High-Mounted Stop Lamp (CHMSL) (requires P2 or X2 Group, Advanced Safety Group, and UBQ or UBW radio) (ADG)",
+"marks": {
+"H": "O",
+"W": "O"
+}
+},
+{
+"page": 9,
+"section": "FUNCTIONAL PACKAGES / GROUPS",
+"parent": "Towing Technology Group",
+"text": "Includes Trailer Hitch Line-Up Assist and Trailer Reverse Guidance(4) (if equipped with 360° Surround-View Camera System(4); requires Trailer-Tow Group) (AAN)",
+"marks": {
+"A": "O",
+"D": "O",
+"B": "O",
+"Z/R": "O",
+"H": "O",
+"W": "O",
+"M": "O",
+"K": "O",
+"V": "O"
+}
+},
+{
+"page": 9,
+"section": "FUNCTIONAL PACKAGES / GROUPS",
+"parent": "Body-Color Bumper Group",
+"text": "Includes Body-color front bumper and Body-color rear bumper (ALN)",
+"marks": {
+"M": "O",
+"K": "O"
+}
+}
+],
+"url": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf"
+}

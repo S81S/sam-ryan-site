@@ -1,0 +1,2443 @@
+{
+"kind": "fa",
+"title": "2025 Jeep Wagoneer / Grand Wagoneer",
+"rows": [
+{
+"page": 1,
+"section": "ENGINES",
+"parent": "",
+"text": "3.0-liter Twin Turbo I-6, Standard Output / Eight-speed automatic",
+"marks": {
+"Wagoneer": "S",
+"Wagoneer Series II": "S",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "NA",
+"Grand Wagoneer Obsidian": "NA",
+"Grand Wagoneer Series III": "NA"
+}
+},
+{
+"page": 1,
+"section": "ENGINES",
+"parent": "",
+"text": "3.0-liter Twin Turbo I-6, High Output / Eight-speed automatic",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "NA",
+"Wagoneer Series III": "NA",
+"Grand Wagoneer": "S",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "Exhaust System",
+"text": "Single rear",
+"marks": {
+"Wagoneer": "S",
+"Wagoneer Series II": "S",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "NA",
+"Grand Wagoneer Obsidian": "NA",
+"Grand Wagoneer Series III": "NA"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "Exhaust System",
+"text": "Dual rear",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "NA",
+"Wagoneer Series III": "NA",
+"Grand Wagoneer": "S",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "",
+"text": "Fuel tank — 26.5-gallon capacity with capless filler door",
+"marks": {
+"Wagoneer": "S",
+"Wagoneer Series II": "S",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "S",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "",
+"text": "Selec-Speed Control (4x4 only)",
+"marks": {
+"Wagoneer": "P",
+"Wagoneer Series II": "P",
+"Wagoneer Series III": "P",
+"Grand Wagoneer": "P",
+"Grand Wagoneer Obsidian": "P",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "",
+"text": "Selec-Terrain traction management system — floor dial with traction control settings (4x4 only)",
+"marks": {
+"Wagoneer": "S",
+"Wagoneer Series II": "S",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "S",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "Suspensions",
+"text": "Normal duty (standard on 4x4 models only, included on 4x2 models with rear load-leveling suspension)",
+"marks": {
+"Wagoneer": "S",
+"Wagoneer Series II": "S",
+"Wagoneer Series III": "NA",
+"Grand Wagoneer": "NA",
+"Grand Wagoneer Obsidian": "NA",
+"Grand Wagoneer Series III": "NA"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "Suspensions",
+"text": "Quadra-Lift air suspension system — features air springs that replace conventional coil springs at each wheel, with five modes totaling 3.6 in. of lift",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "P",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "S",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "Transfer Case/4WD System",
+"text": "Quadra-Trac I full-time single-speed 4WD (4x4 only)",
+"marks": {
+"Wagoneer": "S",
+"Wagoneer Series II": "S",
+"Wagoneer Series III": "NA",
+"Grand Wagoneer": "NA",
+"Grand Wagoneer Obsidian": "NA",
+"Grand Wagoneer Series III": "NA"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "Transfer Case/4WD System",
+"text": "Quadra-Trac II active 4WD includes two- speed transfer case and Hill-descent Control",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "NA",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "NA",
+"Grand Wagoneer Obsidian": "NA",
+"Grand Wagoneer Series III": "NA"
+}
+},
+{
+"page": 2,
+"section": "MECHANICAL FEATURES / CAPABILITY",
+"parent": "Transfer Case/4WD System",
+"text": "Quadra-Drive II 4WD system includes electronic limited-slip differential for rear axle and Hill-descent Control",
+"marks": {
+"Wagoneer": "P",
+"Wagoneer Series II": "P",
+"Wagoneer Series III": "P",
+"Grand Wagoneer": "S",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Fascia",
+"text": "Body color with bright inserts",
+"marks": {
+"Wagoneer": "S",
+"Wagoneer Series II": "S",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "S",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Fascia",
+"text": "Body color with black inserts",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "P",
+"Wagoneer Series III": "NA",
+"Grand Wagoneer": "NA",
+"Grand Wagoneer Obsidian": "P",
+"Grand Wagoneer Series III": "P"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Fascia",
+"text": "Roof — body color",
+"marks": {
+"Wagoneer": "S",
+"Wagoneer Series II": "S",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "O",
+"Grand Wagoneer Obsidian": "O",
+"Grand Wagoneer Series III": "O"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Fascia",
+"text": "Roof — black accent color",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "NA",
+"Wagoneer Series III": "NA",
+"Grand Wagoneer": "S",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Fascia",
+"text": "Liftgate — power",
+"marks": {
+"Wagoneer": "S",
+"Wagoneer Series II": "S",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "S",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Lighting",
+"text": "LED headlamps",
+"marks": {
+"Wagoneer": "S",
+"Wagoneer Series II": "S",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "S",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Lighting",
+"text": "LED daytime running headlamps",
+"marks": {
+"Wagoneer": "S",
+"Wagoneer Series II": "S",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "S",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Lighting",
+"text": "LED fog lamps",
+"marks": {
+"Wagoneer": "S",
+"Wagoneer Series II": "S",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "S",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Lighting",
+"text": "LED taillamps",
+"marks": {
+"Wagoneer": "S",
+"Wagoneer Series II": "S",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "S",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Lighting",
+"text": "Auto high-beam headlamp control system",
+"marks": {
+"Wagoneer": "P",
+"Wagoneer Series II": "P",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "S",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Mirrors",
+"text": "Power foldaway with heating element and memory in body color; auto-dimming on driver’s side with supplemental turn signals",
+"marks": {
+"Wagoneer": "O",
+"Wagoneer Series II": "O",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "S",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Mirrors",
+"text": "Remote start system — control integrated into key fob, radio frequency system with 300-ft. range",
+"marks": {
+"Wagoneer": "S",
+"Wagoneer Series II": "S",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "S",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Sunroof",
+"text": "Tri-pane panoramic — includes full power sunroof with power sunshade in front and fixed glass in rear",
+"marks": {
+"Wagoneer": "P",
+"Wagoneer Series II": "P",
+"Wagoneer Series III": "P",
+"Grand Wagoneer": "S",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Tires",
+"text": "P275/55R20 BSW All-Season",
+"marks": {
+"Wagoneer": "P",
+"Wagoneer Series II": "S",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "S",
+"Grand Wagoneer Obsidian": "NA",
+"Grand Wagoneer Series III": "NA"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Tires",
+"text": "P285/45R22XL BSW All-Season",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "P",
+"Wagoneer Series III": "P",
+"Grand Wagoneer": "O",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels",
+"text": "20-in. aluminum",
+"marks": {
+"Wagoneer": "P",
+"Wagoneer Series II": "S",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "S",
+"Grand Wagoneer Obsidian": "NA",
+"Grand Wagoneer Series III": "NA"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels",
+"text": "20-in. Gloss Black",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "P",
+"Wagoneer Series III": "NA",
+"Grand Wagoneer": "NA",
+"Grand Wagoneer Obsidian": "NA",
+"Grand Wagoneer Series III": "NA"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels",
+"text": "22-in. aluminum",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "P",
+"Wagoneer Series III": "P",
+"Grand Wagoneer": "O",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels",
+"text": "22-in. Gloss Black",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "O",
+"Wagoneer Series III": "NA",
+"Grand Wagoneer": "NA",
+"Grand Wagoneer Obsidian": "P",
+"Grand Wagoneer Series III": "P"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Wiper System",
+"text": "Front, variable/intermittent with one-gallon fluid capacity",
+"marks": {
+"Wagoneer": "S",
+"Wagoneer Series II": "S",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "S",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Wiper System",
+"text": "Front speed-sensitive and rain-sensing with automatic feature (Wagoneer Packaged with Convenience Group I)",
+"marks": {
+"Wagoneer": "O",
+"Wagoneer Series II": "S",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "S",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 3,
+"section": "EXTERIOR FEATURES",
+"parent": "Wiper System",
+"text": "Rear with fixed intermittent and continuous speeds, with washer",
+"marks": {
+"Wagoneer": "S",
+"Wagoneer Series II": "S",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "S",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "10.25-in. multiview cluster display",
+"marks": {
+"Wagoneer": "S",
+"Wagoneer Series II": "S",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "NA",
+"Grand Wagoneer Obsidian": "NA",
+"Grand Wagoneer Series III": "NA"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "12.3-in. multiview cluster display",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "NA",
+"Wagoneer Series III": "NA",
+"Grand Wagoneer": "S",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Air filtration system",
+"marks": {
+"Wagoneer": "S",
+"Wagoneer Series II": "S",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "S",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Climate control — tri-zone automatic temperature control",
+"marks": {
+"Wagoneer": "S",
+"Wagoneer Series II": "S",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "NA",
+"Grand Wagoneer Obsidian": "NA",
+"Grand Wagoneer Series III": "NA"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Climate control — four-zone automatic temperature control with comfort display",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "NA",
+"Wagoneer Series III": "NA",
+"Grand Wagoneer": "S",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Cargo Area",
+"text": "Carpeted — includes storage tray and cargo tie-down loops in floor, driver’s side storage bin, 12-volt auxiliary power outlet",
+"marks": {
+"Wagoneer": "S",
+"Wagoneer Series II": "S",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "S",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Cargo Area",
+"text": "Reversible cargo mat",
+"marks": {
+"Wagoneer": "P",
+"Wagoneer Series II": "P",
+"Wagoneer Series III": "P",
+"Grand Wagoneer": "P",
+"Grand Wagoneer Obsidian": "P",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Console",
+"text": "Full-length front floor console with two cup holders, two-tier armrest storage",
+"marks": {
+"Wagoneer": "S",
+"Wagoneer Series II": "S",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "S",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Console",
+"text": "Overhead front with two LED map lamps, two dome lamps, universal garage door opener control switches and power sunroof/sunshade controls",
+"marks": {
+"Wagoneer": "S",
+"Wagoneer Series II": "S",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "S",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Console",
+"text": "Memory system — radio station presets, last-station settings, driver’s seat position, exterior mirrors and power tilt/telescoping steering wheel",
+"marks": {
+"Wagoneer": "S",
+"Wagoneer Series II": "S",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "S",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Mirrors",
+"text": "Rearview, auto-dimming",
+"marks": {
+"Wagoneer": "S",
+"Wagoneer Series II": "S",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "S",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Mirrors",
+"text": "Digital rearview",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "NA",
+"Wagoneer Series III": "NA",
+"Grand Wagoneer": "P",
+"Grand Wagoneer Obsidian": "P",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seat Fabrics",
+"text": "Perforated Capri leather-trimmed seating and smooth Capri leather bolsters",
+"marks": {
+"Wagoneer": "S",
+"Wagoneer Series II": "NA",
+"Wagoneer Series III": "NA",
+"Grand Wagoneer": "NA",
+"Grand Wagoneer Obsidian": "NA",
+"Grand Wagoneer Series III": "NA"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seat Fabrics",
+"text": "Perforated Nappa leather-trimmed seating and smooth Nappa leather bolsters",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "S",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "NA",
+"Grand Wagoneer Obsidian": "NA",
+"Grand Wagoneer Series III": "NA"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seat Fabrics",
+"text": "Premium perforated Nappa leather- trimmed seating and smooth Nappa leather bolsters",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "NA",
+"Wagoneer Series III": "NA",
+"Grand Wagoneer": "S",
+"Grand Wagoneer Obsidian": "NA",
+"Grand Wagoneer Series III": "NA"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seat Fabrics",
+"text": "Palermo leather-trimmed seating",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "NA",
+"Wagoneer Series III": "NA",
+"Grand Wagoneer": "NA",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "NA"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seat Fabrics",
+"text": "Palermo leather-trimmed seating with quilted accents",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "NA",
+"Wagoneer Series III": "NA",
+"Grand Wagoneer": "NA",
+"Grand Wagoneer Obsidian": "NA",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seating",
+"text": "Power 12-way driver and front-passenger with driver lumbar adjuster",
+"marks": {
+"Wagoneer": "S",
+"Wagoneer Series II": "S",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "NA",
+"Grand Wagoneer Obsidian": "NA",
+"Grand Wagoneer Series III": "NA"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seating",
+"text": "Power 24-way driver and front-passenger with driver with lumbar adjuster",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "NA",
+"Wagoneer Series III": "NA",
+"Grand Wagoneer": "S",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seating",
+"text": "Heated and ventilated front seats",
+"marks": {
+"Wagoneer": "S",
+"Wagoneer Series II": "S",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "S",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Seating",
+"text": "Heated second-row seating",
+"marks": {
+"Wagoneer": "P",
+"Wagoneer Series II": "P",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "S",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Seating",
+"text": "Ventilated second-row seating",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "NA",
+"Wagoneer Series III": "NA",
+"Grand Wagoneer": "NA",
+"Grand Wagoneer Obsidian": "P",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Seating",
+"text": "60/40 folding third-row seating",
+"marks": {
+"Wagoneer": "S",
+"Wagoneer Series II": "S",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "S",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Seating",
+"text": "40/20/40 bench second-row seating",
+"marks": {
+"Wagoneer": "S",
+"Wagoneer Series II": "S",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "O",
+"Grand Wagoneer Obsidian": "O",
+"Grand Wagoneer Series III": "O"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Seating",
+"text": "Captain’s chairs, second-row seating",
+"marks": {
+"Wagoneer": "O",
+"Wagoneer Series II": "O",
+"Wagoneer Series III": "O",
+"Grand Wagoneer": "O",
+"Grand Wagoneer Obsidian": "O",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Steering Wheel",
+"text": "Techno leather-wrapped and heated with audio, speed, Electronic Vehicle Information Center, voice recognition",
+"marks": {
+"Wagoneer": "S",
+"Wagoneer Series II": "S",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "NA",
+"Grand Wagoneer Obsidian": "NA",
+"Grand Wagoneer Series III": "NA"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Steering Wheel",
+"text": "Leather-wrapped and heated with audio, speed, Electronic Vehicle Information Center, voice recognition and adaptive cruise control with stop",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "NA",
+"Wagoneer Series III": "NA",
+"Grand Wagoneer": "S",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 5,
+"section": "INTERIOR FEATURES",
+"parent": "Steering Wheel",
+"text": "Power tilt-steering wheel/telescoping steering column",
+"marks": {
+"Wagoneer": "S",
+"Wagoneer Series II": "S",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "S",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 5,
+"section": "UCONNECT MULTIMEDIA",
+"parent": "",
+"text": "Media hub — includes eight USB ports (11 when equipped with Rear Seat Video Group), auxiliary jack",
+"marks": {
+"Wagoneer": "S",
+"Wagoneer Series II": "S",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "S",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 5,
+"section": "UCONNECT MULTIMEDIA",
+"parent": "Power Outlet",
+"text": "12-volt, two auxiliary power outlets",
+"marks": {
+"Wagoneer": "S",
+"Wagoneer Series II": "S",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "S",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 5,
+"section": "UCONNECT MULTIMEDIA",
+"parent": "Power Outlet",
+"text": "115-volt auxiliary power outlet",
+"marks": {
+"Wagoneer": "S",
+"Wagoneer Series II": "S",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "S",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 5,
+"section": "UCONNECT MULTIMEDIA",
+"parent": "",
+"text": "SiriusXM Radio includes six-month trial subscription",
+"marks": {
+"Wagoneer": "S",
+"Wagoneer Series II": "S",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "S",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 5,
+"section": "UCONNECT MULTIMEDIA",
+"parent": "",
+"text": "TomTom Traffic includes six-month trial subscription",
+"marks": {
+"Wagoneer": "S",
+"Wagoneer Series II": "S",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "S",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 5,
+"section": "UCONNECT MULTIMEDIA",
+"parent": "",
+"text": "TomTom Travel includes six-month trial subscription",
+"marks": {
+"Wagoneer": "S",
+"Wagoneer Series II": "S",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "S",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 5,
+"section": "UCONNECT MULTIMEDIA",
+"parent": "Speakers",
+"text": "Alpine premium audio system with nine speakers, subwoofer and amplifier",
+"marks": {
+"Wagoneer": "S",
+"Wagoneer Series II": "S",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "NA",
+"Grand Wagoneer Obsidian": "NA",
+"Grand Wagoneer Series III": "NA"
+}
+},
+{
+"page": 6,
+"section": "UCONNECT MULTIMEDIA",
+"parent": "Speakers",
+"text": "McIntosh MX950 entertainment system includes a 19-speaker, 950-watt premium audio system with 10-in. subwoofer",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "NA",
+"Wagoneer Series III": "P",
+"Grand Wagoneer": "S",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "NA"
+}
+},
+{
+"page": 6,
+"section": "UCONNECT MULTIMEDIA",
+"parent": "Speakers",
+"text": "McIntosh MX1375 entertainment system includes a 23-speaker, 1,375-watt premium audio system with 12-in. subwoofer",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "NA",
+"Wagoneer Series III": "NA",
+"Grand Wagoneer": "NA",
+"Grand Wagoneer Obsidian": "P",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 6,
+"section": "UCONNECT MULTIMEDIA",
+"parent": "Speakers",
+"text": "Uconnect 5C NAV with 10.1-in. display",
+"marks": {
+"Wagoneer": "S",
+"Wagoneer Series II": "S",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "NA",
+"Grand Wagoneer Obsidian": "NA",
+"Grand Wagoneer Series III": "NA"
+}
+},
+{
+"page": 6,
+"section": "UCONNECT MULTIMEDIA",
+"parent": "Speakers",
+"text": "Uconnect 5C NAV with 12-in. display",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "NA",
+"Wagoneer Series III": "NA",
+"Grand Wagoneer": "S",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 6,
+"section": "UCONNECT MULTIMEDIA",
+"parent": "Speakers",
+"text": "USB port — dual remote (second row, full function)",
+"marks": {
+"Wagoneer": "S",
+"Wagoneer Series II": "S",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "S",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 6,
+"section": "UCONNECT MULTIMEDIA",
+"parent": "Speakers",
+"text": "Off-road Pages (located in TFT, 4x4 models only)",
+"marks": {
+"Wagoneer": "S",
+"Wagoneer Series II": "S",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "S",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 6,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "360-degree surround view camera system",
+"marks": {
+"Wagoneer": "P",
+"Wagoneer Series II": "P",
+"Wagoneer Series III": "P",
+"Grand Wagoneer": "S",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 6,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Adaptive Cruise Control with Stop",
+"marks": {
+"Wagoneer": "P",
+"Wagoneer Series II": "S",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "S",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 6,
+"section": "SAFETY AND SECURITY",
+"parent": "Airbags",
+"text": "Advanced multistage, driver and front passenger",
+"marks": {
+"Wagoneer": "S",
+"Wagoneer Series II": "S",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "S",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 6,
+"section": "SAFETY AND SECURITY",
+"parent": "Airbags",
+"text": "Advanced side-curtain",
+"marks": {
+"Wagoneer": "S",
+"Wagoneer Series II": "S",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "S",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 6,
+"section": "SAFETY AND SECURITY",
+"parent": "Airbags",
+"text": "Advanced supplemental front-seat side airbags",
+"marks": {
+"Wagoneer": "S",
+"Wagoneer Series II": "S",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "S",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 6,
+"section": "SAFETY AND SECURITY",
+"parent": "Airbags",
+"text": "Driver and passenger’s side inflatable knee airbag",
+"marks": {
+"Wagoneer": "S",
+"Wagoneer Series II": "S",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "S",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 6,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Auto hold braking",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "NA",
+"Wagoneer Series III": "NA",
+"Grand Wagoneer": "S",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 6,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Blind-spot Monitoring with Rear Cross Path detection",
+"marks": {
+"Wagoneer": "S",
+"Wagoneer Series II": "S",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "S",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 6,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Active Lane Management",
+"marks": {
+"Wagoneer": "P",
+"Wagoneer Series II": "S",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "S",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 7,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Electronic stability control — includes vehicle stability management system, electronic roll mitigation, all-speed traction control, brake assist and four-channel antilock brake system",
+"marks": {
+"Wagoneer": "S",
+"Wagoneer Series II": "S",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "S",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 7,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Hill-start Assist",
+"marks": {
+"Wagoneer": "S",
+"Wagoneer Series II": "S",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "S",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 7,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Intersection Collision Assist",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "P",
+"Wagoneer Series III": "P",
+"Grand Wagoneer": "P",
+"Grand Wagoneer Obsidian": "P",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 7,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Front and rear park assist system",
+"marks": {
+"Wagoneer": "S",
+"Wagoneer Series II": "S",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "S",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 7,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Rear backup camera — includes rear park assist system",
+"marks": {
+"Wagoneer": "S",
+"Wagoneer Series II": "S",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "S",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 7,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Parallel/perpendicular park assist",
+"marks": {
+"Wagoneer": "P",
+"Wagoneer Series II": "P",
+"Wagoneer Series III": "P",
+"Grand Wagoneer": "NA",
+"Grand Wagoneer Obsidian": "NA",
+"Grand Wagoneer Series III": "NA"
+}
+},
+{
+"page": 7,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "ParkSense automated parking system",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "NA",
+"Wagoneer Series III": "NA",
+"Grand Wagoneer": "S",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 7,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Rain brake support",
+"marks": {
+"Wagoneer": "S",
+"Wagoneer Series II": "S",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "S",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 7,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Remote keyless entry",
+"marks": {
+"Wagoneer": "S",
+"Wagoneer Series II": "S",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "S",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 7,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Security alarm",
+"marks": {
+"Wagoneer": "S",
+"Wagoneer Series II": "S",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "S",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 7,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Sentry Key antitheft engine immobilizer",
+"marks": {
+"Wagoneer": "S",
+"Wagoneer Series II": "S",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "S",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 7,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Trailer-sway control",
+"marks": {
+"Wagoneer": "S",
+"Wagoneer Series II": "S",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "S",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 7,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Universal garage door opener",
+"marks": {
+"Wagoneer": "S",
+"Wagoneer Series II": "S",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "S",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 7,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Convenience Group I",
+"marks": {
+"Wagoneer": "O",
+"Wagoneer Series II": "O",
+"Wagoneer Series III": "O",
+"Grand Wagoneer": "NA",
+"Grand Wagoneer Obsidian": "NA",
+"Grand Wagoneer Series III": "NA"
+}
+},
+{
+"page": 7,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Active Lane Management system",
+"marks": {
+"Wagoneer": "P",
+"Wagoneer Series II": "S",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "NA",
+"Grand Wagoneer Obsidian": "NA",
+"Grand Wagoneer Series III": "NA"
+}
+},
+{
+"page": 7,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Adaptive Cruise Control with Stop & Go",
+"marks": {
+"Wagoneer": "P",
+"Wagoneer Series II": "S",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "NA",
+"Grand Wagoneer Obsidian": "NA",
+"Grand Wagoneer Series III": "NA"
+}
+},
+{
+"page": 7,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Auto high-beam headlamp control",
+"marks": {
+"Wagoneer": "P",
+"Wagoneer Series II": "P",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "NA",
+"Grand Wagoneer Obsidian": "NA",
+"Grand Wagoneer Series III": "NA"
+}
+},
+{
+"page": 7,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Drowsy Driver Detection",
+"marks": {
+"Wagoneer": "P",
+"Wagoneer Series II": "P",
+"Wagoneer Series III": "P",
+"Grand Wagoneer": "NA",
+"Grand Wagoneer Obsidian": "NA",
+"Grand Wagoneer Series III": "NA"
+}
+},
+{
+"page": 7,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Traffic Sign Recognition",
+"marks": {
+"Wagoneer": "P",
+"Wagoneer Series II": "P",
+"Wagoneer Series III": "P",
+"Grand Wagoneer": "NA",
+"Grand Wagoneer Obsidian": "NA",
+"Grand Wagoneer Series III": "NA"
+}
+},
+{
+"page": 7,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Intersection Collision Assist",
+"marks": {
+"Wagoneer": "P",
+"Wagoneer Series II": "P",
+"Wagoneer Series III": "P",
+"Grand Wagoneer": "NA",
+"Grand Wagoneer Obsidian": "NA",
+"Grand Wagoneer Series III": "NA"
+}
+},
+{
+"page": 7,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Head-up Display (HUD)",
+"marks": {
+"Wagoneer": "P",
+"Wagoneer Series II": "P",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "NA",
+"Grand Wagoneer Obsidian": "NA",
+"Grand Wagoneer Series III": "NA"
+}
+},
+{
+"page": 8,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "360-degree surround view camera system",
+"marks": {
+"Wagoneer": "P",
+"Wagoneer Series II": "P",
+"Wagoneer Series III": "P",
+"Grand Wagoneer": "NA",
+"Grand Wagoneer Obsidian": "NA",
+"Grand Wagoneer Series III": "NA"
+}
+},
+{
+"page": 8,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Wireless charging pad",
+"marks": {
+"Wagoneer": "P",
+"Wagoneer Series II": "S",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "NA",
+"Grand Wagoneer Obsidian": "NA",
+"Grand Wagoneer Series III": "NA"
+}
+},
+{
+"page": 8,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Heated second-row seats",
+"marks": {
+"Wagoneer": "P",
+"Wagoneer Series II": "P",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "NA",
+"Grand Wagoneer Obsidian": "NA",
+"Grand Wagoneer Series III": "NA"
+}
+},
+{
+"page": 8,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Parallel/perpendicular park assist",
+"marks": {
+"Wagoneer": "P",
+"Wagoneer Series II": "P",
+"Wagoneer Series III": "P",
+"Grand Wagoneer": "NA",
+"Grand Wagoneer Obsidian": "NA",
+"Grand Wagoneer Series III": "NA"
+}
+},
+{
+"page": 8,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Quadra-Lift air suspension (4x4 only)",
+"marks": {
+"Wagoneer": "P",
+"Wagoneer Series II": "P",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "NA",
+"Grand Wagoneer Obsidian": "NA",
+"Grand Wagoneer Series III": "NA"
+}
+},
+{
+"page": 8,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Rain-sensing windshield wipers",
+"marks": {
+"Wagoneer": "P",
+"Wagoneer Series II": "S",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "NA",
+"Grand Wagoneer Obsidian": "NA",
+"Grand Wagoneer Series III": "NA"
+}
+},
+{
+"page": 8,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Rear door sunshades (manual)",
+"marks": {
+"Wagoneer": "P",
+"Wagoneer Series II": "P",
+"Wagoneer Series III": "P",
+"Grand Wagoneer": "NA",
+"Grand Wagoneer Obsidian": "NA",
+"Grand Wagoneer Series III": "NA"
+}
+},
+{
+"page": 8,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Convenience Group III",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "NA",
+"Wagoneer Series III": "NA",
+"Grand Wagoneer": "O",
+"Grand Wagoneer Obsidian": "O",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 8,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Advanced Security Alert system",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "NA",
+"Wagoneer Series III": "NA",
+"Grand Wagoneer": "NA",
+"Grand Wagoneer Obsidian": "P",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 8,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Drowsy Driver Detection",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "NA",
+"Wagoneer Series III": "NA",
+"Grand Wagoneer": "P",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 8,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Active Driving Assist",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "NA",
+"Wagoneer Series III": "NA",
+"Grand Wagoneer": "P",
+"Grand Wagoneer Obsidian": "P",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 8,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Rear seat monitoring camera",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "NA",
+"Wagoneer Series III": "NA",
+"Grand Wagoneer": "P",
+"Grand Wagoneer Obsidian": "P",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 8,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Intersection Collision Assist",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "NA",
+"Wagoneer Series III": "NA",
+"Grand Wagoneer": "P",
+"Grand Wagoneer Obsidian": "P",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 8,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Traffic Sign Recognition",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "NA",
+"Wagoneer Series III": "NA",
+"Grand Wagoneer": "P",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 8,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Night Vision with Pedestrian and Animal Detection",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "NA",
+"Wagoneer Series III": "NA",
+"Grand Wagoneer": "P",
+"Grand Wagoneer Obsidian": "P",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 8,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Digital rearview mirror",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "NA",
+"Wagoneer Series III": "NA",
+"Grand Wagoneer": "P",
+"Grand Wagoneer Obsidian": "P",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 8,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Flexible Seating Group",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "O",
+"Wagoneer Series III": "O",
+"Grand Wagoneer": "O",
+"Grand Wagoneer Obsidian": "O",
+"Grand Wagoneer Series III": "O"
+}
+},
+{
+"page": 8,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Seven-passenger seating",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "P",
+"Wagoneer Series III": "P",
+"Grand Wagoneer": "S",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 8,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Second-row captain’s chairs — power, tip, recline",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "P",
+"Wagoneer Series III": "P",
+"Grand Wagoneer": "S",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 8,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Heated second-row captain’s chairs — power, tip, recline",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "P",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "S",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 8,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Third-row 60/40 seat with power recline",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "P",
+"Wagoneer Series III": "P",
+"Grand Wagoneer": "S",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 8,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Floor console with cup holders",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "P",
+"Wagoneer Series III": "P",
+"Grand Wagoneer": "P",
+"Grand Wagoneer Obsidian": "P",
+"Grand Wagoneer Series III": "P"
+}
+},
+{
+"page": 8,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Eight-passenger seating",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "S",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "P",
+"Grand Wagoneer Obsidian": "P",
+"Grand Wagoneer Series III": "P"
+}
+},
+{
+"page": 8,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Second-row dual charge-only USB ports",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "S",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "P",
+"Grand Wagoneer Obsidian": "P",
+"Grand Wagoneer Series III": "P"
+}
+},
+{
+"page": 8,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "40/20/40 seating — power, tip, recline",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "S",
+"Wagoneer Series III": "S",
+"Grand Wagoneer": "P",
+"Grand Wagoneer Obsidian": "P",
+"Grand Wagoneer Series III": "P"
+}
+},
+{
+"page": 9,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Front Passenger Interactive Display — includes front passenger display screen",
+"marks": {
+"Wagoneer": "O",
+"Wagoneer Series II": "O",
+"Wagoneer Series III": "O",
+"Grand Wagoneer": "O",
+"Grand Wagoneer Obsidian": "O",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 9,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Heavy-duty Trailer Tow",
+"marks": {
+"Wagoneer": "O",
+"Wagoneer Series II": "O",
+"Wagoneer Series III": "O",
+"Grand Wagoneer": "O",
+"Grand Wagoneer Obsidian": "O",
+"Grand Wagoneer Series III": "O"
+}
+},
+{
+"page": 9,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Two-speed transfer case",
+"marks": {
+"Wagoneer": "P",
+"Wagoneer Series II": "P",
+"Wagoneer Series III": "P",
+"Grand Wagoneer": "P",
+"Grand Wagoneer Obsidian": "P",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 9,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "3.92 final drive ratio",
+"marks": {
+"Wagoneer": "P",
+"Wagoneer Series II": "P",
+"Wagoneer Series III": "P",
+"Grand Wagoneer": "P",
+"Grand Wagoneer Obsidian": "P",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 9,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Front and rear (removable) tow hooks",
+"marks": {
+"Wagoneer": "P",
+"Wagoneer Series II": "P",
+"Wagoneer Series III": "P",
+"Grand Wagoneer": "P",
+"Grand Wagoneer Obsidian": "P",
+"Grand Wagoneer Series III": "P"
+}
+},
+{
+"page": 9,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Electric limited slip differential",
+"marks": {
+"Wagoneer": "P",
+"Wagoneer Series II": "P",
+"Wagoneer Series III": "P",
+"Grand Wagoneer": "P",
+"Grand Wagoneer Obsidian": "P",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 9,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Heavy-duty engine cooling",
+"marks": {
+"Wagoneer": "P",
+"Wagoneer Series II": "P",
+"Wagoneer Series III": "P",
+"Grand Wagoneer": "P",
+"Grand Wagoneer Obsidian": "P",
+"Grand Wagoneer Series III": "P"
+}
+},
+{
+"page": 9,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Locking in-vehicle safe",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "NA",
+"Wagoneer Series III": "P",
+"Grand Wagoneer": "P",
+"Grand Wagoneer Obsidian": "NA",
+"Grand Wagoneer Series III": "NA"
+}
+},
+{
+"page": 9,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Selec-Speed Control",
+"marks": {
+"Wagoneer": "P",
+"Wagoneer Series II": "P",
+"Wagoneer Series III": "P",
+"Grand Wagoneer": "P",
+"Grand Wagoneer Obsidian": "P",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 9,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Integrated trailer brake control",
+"marks": {
+"Wagoneer": "P",
+"Wagoneer Series II": "P",
+"Wagoneer Series III": "P",
+"Grand Wagoneer": "P",
+"Grand Wagoneer Obsidian": "P",
+"Grand Wagoneer Series III": "P"
+}
+},
+{
+"page": 9,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Premium Group I",
+"marks": {
+"Wagoneer": "O",
+"Wagoneer Series II": "O",
+"Wagoneer Series III": "O",
+"Grand Wagoneer": "NA",
+"Grand Wagoneer Obsidian": "NA",
+"Grand Wagoneer Series III": "NA"
+}
+},
+{
+"page": 9,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "22-in. aluminum wheels",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "P",
+"Wagoneer Series III": "P",
+"Grand Wagoneer": "NA",
+"Grand Wagoneer Obsidian": "NA",
+"Grand Wagoneer Series III": "NA"
+}
+},
+{
+"page": 9,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "McIntosh MX950 entertainment system",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "NA",
+"Wagoneer Series III": "P",
+"Grand Wagoneer": "NA",
+"Grand Wagoneer Obsidian": "NA",
+"Grand Wagoneer Series III": "NA"
+}
+},
+{
+"page": 9,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Power-deployable running boards",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "NA",
+"Wagoneer Series III": "P",
+"Grand Wagoneer": "NA",
+"Grand Wagoneer Obsidian": "NA",
+"Grand Wagoneer Series III": "NA"
+}
+},
+{
+"page": 9,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Tri-pane sunroof",
+"marks": {
+"Wagoneer": "P",
+"Wagoneer Series II": "P",
+"Wagoneer Series III": "P",
+"Grand Wagoneer": "NA",
+"Grand Wagoneer Obsidian": "NA",
+"Grand Wagoneer Series III": "NA"
+}
+},
+{
+"page": 9,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Reversible carpet/vinyl cargo mat",
+"marks": {
+"Wagoneer": "P",
+"Wagoneer Series II": "P",
+"Wagoneer Series III": "P",
+"Grand Wagoneer": "NA",
+"Grand Wagoneer Obsidian": "NA",
+"Grand Wagoneer Series III": "NA"
+}
+},
+{
+"page": 9,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Adjustable roof rail crossbars",
+"marks": {
+"Wagoneer": "P",
+"Wagoneer Series II": "P",
+"Wagoneer Series III": "P",
+"Grand Wagoneer": "NA",
+"Grand Wagoneer Obsidian": "NA",
+"Grand Wagoneer Series III": "NA"
+}
+},
+{
+"page": 9,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Foldable cargo shade",
+"marks": {
+"Wagoneer": "P",
+"Wagoneer Series II": "P",
+"Wagoneer Series III": "P",
+"Grand Wagoneer": "NA",
+"Grand Wagoneer Obsidian": "NA",
+"Grand Wagoneer Series III": "NA"
+}
+},
+{
+"page": 9,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Luxury floor mats",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "NA",
+"Wagoneer Series III": "P",
+"Grand Wagoneer": "NA",
+"Grand Wagoneer Obsidian": "NA",
+"Grand Wagoneer Series III": "NA"
+}
+},
+{
+"page": 9,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Premium Group II",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "NA",
+"Wagoneer Series III": "NA",
+"Grand Wagoneer": "NA",
+"Grand Wagoneer Obsidian": "O",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 9,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "McIntosh MX1375 entertainment system",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "NA",
+"Wagoneer Series III": "NA",
+"Grand Wagoneer": "NA",
+"Grand Wagoneer Obsidian": "P",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 9,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Adjustable roof rail crossbars",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "NA",
+"Wagoneer Series III": "NA",
+"Grand Wagoneer": "NA",
+"Grand Wagoneer Obsidian": "P",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 9,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Foldable cargo shade",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "NA",
+"Wagoneer Series III": "NA",
+"Grand Wagoneer": "NA",
+"Grand Wagoneer Obsidian": "P",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 9,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Front console cooler",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "NA",
+"Wagoneer Series III": "NA",
+"Grand Wagoneer": "NA",
+"Grand Wagoneer Obsidian": "P",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 9,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Ventilated rear seats",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "NA",
+"Wagoneer Series III": "NA",
+"Grand Wagoneer": "NA",
+"Grand Wagoneer Obsidian": "P",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 9,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Carbide Package",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "O",
+"Wagoneer Series III": "NA",
+"Grand Wagoneer": "NA",
+"Grand Wagoneer Obsidian": "NA",
+"Grand Wagoneer Series III": "NA"
+}
+},
+{
+"page": 9,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "20 x 9 Gloss Black wheels",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "P",
+"Wagoneer Series III": "NA",
+"Grand Wagoneer": "NA",
+"Grand Wagoneer Obsidian": "NA",
+"Grand Wagoneer Series III": "NA"
+}
+},
+{
+"page": 9,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Adjustable roof rail crossbars",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "P",
+"Wagoneer Series III": "NA",
+"Grand Wagoneer": "NA",
+"Grand Wagoneer Obsidian": "NA",
+"Grand Wagoneer Series III": "NA"
+}
+},
+{
+"page": 10,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Black interior accents",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "P",
+"Wagoneer Series III": "NA",
+"Grand Wagoneer": "NA",
+"Grand Wagoneer Obsidian": "NA",
+"Grand Wagoneer Series III": "NA"
+}
+},
+{
+"page": 10,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Cargo cover",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "P",
+"Wagoneer Series III": "NA",
+"Grand Wagoneer": "NA",
+"Grand Wagoneer Obsidian": "NA",
+"Grand Wagoneer Series III": "NA"
+}
+},
+{
+"page": 10,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Piano Black exterior accents",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "P",
+"Wagoneer Series III": "NA",
+"Grand Wagoneer": "NA",
+"Grand Wagoneer Obsidian": "NA",
+"Grand Wagoneer Series III": "NA"
+}
+},
+{
+"page": 10,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Reversible carpet/vinyl cargo mat",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "P",
+"Wagoneer Series III": "NA",
+"Grand Wagoneer": "NA",
+"Grand Wagoneer Obsidian": "NA",
+"Grand Wagoneer Series III": "NA"
+}
+},
+{
+"page": 10,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Tri-pane panoramic sunroof",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "P",
+"Wagoneer Series III": "NA",
+"Grand Wagoneer": "NA",
+"Grand Wagoneer Obsidian": "NA",
+"Grand Wagoneer Series III": "NA"
+}
+},
+{
+"page": 10,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Obsidian Package",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "NA",
+"Wagoneer Series III": "NA",
+"Grand Wagoneer": "NA",
+"Grand Wagoneer Obsidian": "S",
+"Grand Wagoneer Series III": "O"
+}
+},
+{
+"page": 10,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "22-in. polished wheels with black inserts",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "NA",
+"Wagoneer Series III": "NA",
+"Grand Wagoneer": "NA",
+"Grand Wagoneer Obsidian": "P",
+"Grand Wagoneer Series III": "P"
+}
+},
+{
+"page": 10,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "McIntosh MX1375 entertainment system",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "NA",
+"Wagoneer Series III": "NA",
+"Grand Wagoneer": "NA",
+"Grand Wagoneer Obsidian": "P",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 10,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Adjustable roof rail crossbars",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "NA",
+"Wagoneer Series III": "NA",
+"Grand Wagoneer": "NA",
+"Grand Wagoneer Obsidian": "P",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 10,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Black interior accents",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "NA",
+"Wagoneer Series III": "NA",
+"Grand Wagoneer": "NA",
+"Grand Wagoneer Obsidian": "P",
+"Grand Wagoneer Series III": "P"
+}
+},
+{
+"page": 10,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Onyx Black exterior accents",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "NA",
+"Wagoneer Series III": "NA",
+"Grand Wagoneer": "NA",
+"Grand Wagoneer Obsidian": "P",
+"Grand Wagoneer Series III": "P"
+}
+},
+{
+"page": 10,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Front console cooler",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "NA",
+"Wagoneer Series III": "NA",
+"Grand Wagoneer": "NA",
+"Grand Wagoneer Obsidian": "P",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 10,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Front passenger interactive display",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "NA",
+"Wagoneer Series III": "NA",
+"Grand Wagoneer": "NA",
+"Grand Wagoneer Obsidian": "P",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 10,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Gloss Black upper/lower daylight opening (DLO) molding",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "NA",
+"Wagoneer Series III": "NA",
+"Grand Wagoneer": "NA",
+"Grand Wagoneer Obsidian": "P",
+"Grand Wagoneer Series III": "P"
+}
+},
+{
+"page": 10,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Ventilated rear seats",
+"marks": {
+"Wagoneer": "NA",
+"Wagoneer Series II": "NA",
+"Wagoneer Series III": "NA",
+"Grand Wagoneer": "NA",
+"Grand Wagoneer Obsidian": "P",
+"Grand Wagoneer Series III": "S"
+}
+},
+{
+"page": 10,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Rear Seat Entertainment — includes dual 10.1-in. screens, fully functional USB/HDMI ports and Fire TV for Auto",
+"marks": {
+"Wagoneer": "O",
+"Wagoneer Series II": "O",
+"Wagoneer Series III": "O",
+"Grand Wagoneer": "O",
+"Grand Wagoneer Obsidian": "O",
+"Grand Wagoneer Series III": "O"
+}
+}
+],
+"url": "https://media.stellantisnorthamerica.com/view-spec.do?id=26285"
+}

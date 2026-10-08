@@ -1,0 +1,937 @@
+{
+"kind": "fa",
+"title": "2025 Jeep Wagoneer S",
+"rows": [
+{
+"page": 1,
+"section": "EXTERIOR FEATURES",
+"parent": "Fascia",
+"text": "Body color with Titanium inserts",
+"marks": {
+"Launch Edition": "S",
+"Limited": "NA"
+}
+},
+{
+"page": 1,
+"section": "EXTERIOR FEATURES",
+"parent": "Fascia",
+"text": "Body color with Silver Silk inserts",
+"marks": {
+"Launch Edition": "NA",
+"Limited": "S"
+}
+},
+{
+"page": 1,
+"section": "EXTERIOR FEATURES",
+"parent": "Fascia",
+"text": "Lit grille",
+"marks": {
+"Launch Edition": "S",
+"Limited": "S"
+}
+},
+{
+"page": 1,
+"section": "EXTERIOR FEATURES",
+"parent": "Fascia",
+"text": "Roof — Gloss Black painted",
+"marks": {
+"Launch Edition": "S",
+"Limited": "S"
+}
+},
+{
+"page": 1,
+"section": "EXTERIOR FEATURES",
+"parent": "Fascia",
+"text": "Liftgate — Hands-free; power",
+"marks": {
+"Launch Edition": "S",
+"Limited": "P"
+}
+},
+{
+"page": 1,
+"section": "EXTERIOR FEATURES",
+"parent": "Fascia",
+"text": "Liftgate — Power",
+"marks": {
+"Launch Edition": "S",
+"Limited": "S"
+}
+},
+{
+"page": 1,
+"section": "EXTERIOR FEATURES",
+"parent": "Lighting",
+"text": "LED headlamps",
+"marks": {
+"Launch Edition": "S",
+"Limited": "S"
+}
+},
+{
+"page": 1,
+"section": "EXTERIOR FEATURES",
+"parent": "Lighting",
+"text": "LED daytime running headlamps",
+"marks": {
+"Launch Edition": "S",
+"Limited": "S"
+}
+},
+{
+"page": 1,
+"section": "EXTERIOR FEATURES",
+"parent": "Lighting",
+"text": "LED fog lamps",
+"marks": {
+"Launch Edition": "S",
+"Limited": "S"
+}
+},
+{
+"page": 1,
+"section": "EXTERIOR FEATURES",
+"parent": "Lighting",
+"text": "LED taillamps",
+"marks": {
+"Launch Edition": "S",
+"Limited": "S"
+}
+},
+{
+"page": 1,
+"section": "EXTERIOR FEATURES",
+"parent": "Lighting",
+"text": "Auto high-beam headlamp control system",
+"marks": {
+"Launch Edition": "S",
+"Limited": "S"
+}
+},
+{
+"page": 1,
+"section": "EXTERIOR FEATURES",
+"parent": "Mirrors",
+"text": "Power foldaway with heating element and memory in Gloss Black; auto-dimming; supplemental turn signals; auto adjust in reverse; courtesy lamps",
+"marks": {
+"Launch Edition": "S",
+"Limited": "S"
+}
+},
+{
+"page": 1,
+"section": "EXTERIOR FEATURES",
+"parent": "Sunroof",
+"text": "Dual-pane panoramic sunroof — includes full power sunroof with power sunshade",
+"marks": {
+"Launch Edition": "S",
+"Limited": "S"
+}
+},
+{
+"page": 1,
+"section": "EXTERIOR FEATURES",
+"parent": "Tires",
+"text": "235/50R20XL all-season",
+"marks": {
+"Launch Edition": "S",
+"Limited": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels",
+"text": "20-in. Black Aero painted wheel",
+"marks": {
+"Launch Edition": "S",
+"Limited": "NA"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels",
+"text": "20-in. Gloss Black painted (available with Obsidian Package, late availability on Limited)",
+"marks": {
+"Launch Edition": "S",
+"Limited": "O"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Wheels",
+"text": "20-in. Diamond Cut painted aluminum",
+"marks": {
+"Launch Edition": "NA",
+"Limited": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Wiper System",
+"text": "Front, speed-sensitive and rain-sensing with automatic feature, variable/intermittent; heated washer nozzles",
+"marks": {
+"Launch Edition": "S",
+"Limited": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR FEATURES",
+"parent": "Wiper System",
+"text": "Rear with fixed intermittent and continuous speeds, with washer",
+"marks": {
+"Launch Edition": "S",
+"Limited": "S"
+}
+},
+{
+"page": 2,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "10-in. Head-up Display",
+"marks": {
+"Launch Edition": "S",
+"Limited": "P"
+}
+},
+{
+"page": 2,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "10.25-in. front passenger screen with HDMI connectivity",
+"marks": {
+"Launch Edition": "S",
+"Limited": "P"
+}
+},
+{
+"page": 2,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "12.3-in. multiview cluster display",
+"marks": {
+"Launch Edition": "S",
+"Limited": "S"
+}
+},
+{
+"page": 2,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Air filtration system",
+"marks": {
+"Launch Edition": "S",
+"Limited": "S"
+}
+},
+{
+"page": 2,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Climate control — dual-zone automatic temperature control",
+"marks": {
+"Launch Edition": "S",
+"Limited": "S"
+}
+},
+{
+"page": 2,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "10.25-inch deployable lower comfort display",
+"marks": {
+"Launch Edition": "S",
+"Limited": "S"
+}
+},
+{
+"page": 2,
+"section": "INTERIOR FEATURES",
+"parent": "Cargo Area",
+"text": "Carpeted — includes storage tray and cargo tie-down loops in floor, driver’s side storage bin, 12-volt auxiliary power outlet",
+"marks": {
+"Launch Edition": "S",
+"Limited": "S"
+}
+},
+{
+"page": 2,
+"section": "INTERIOR FEATURES",
+"parent": "Cargo Area",
+"text": "Reversible cargo mat",
+"marks": {
+"Launch Edition": "S",
+"Limited": "S"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Console",
+"text": "Full-length front floor console with two cup holders, concealable front storage bin and armrest storage bin",
+"marks": {
+"Launch Edition": "S",
+"Limited": "S"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Console",
+"text": "Overhead front with two LED map lamps, two dome lamps, universal garage door opener control switches and power sunroof/sunshade controls",
+"marks": {
+"Launch Edition": "S",
+"Limited": "S"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Lighting",
+"text": "Customizable interior LED lighting with daytime/nighttime settings, plus active, direct ambient lighting with up to 64 colors",
+"marks": {
+"Launch Edition": "S",
+"Limited": "S"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Memory system — radio station presets, last-station settings, driver’s seat position and exterior mirrors power tilt/telescoping steering wheel",
+"marks": {
+"Launch Edition": "S",
+"Limited": "S"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Power tilt/telescoping steering wheel with memory",
+"marks": {
+"Launch Edition": "S",
+"Limited": "P"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Mirrors",
+"text": "Rearview, auto-dimming",
+"marks": {
+"Launch Edition": "S",
+"Limited": "S"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Mirrors",
+"text": "Digital rearview mirror",
+"marks": {
+"Launch Edition": "S",
+"Limited": "P"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Seat Color",
+"text": "Global Black / Arctic Grey",
+"marks": {
+"Launch Edition": "NA",
+"Limited": "O"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Seat Color",
+"text": "Global Black",
+"marks": {
+"Launch Edition": "S",
+"Limited": "S"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Seat Color",
+"text": "Radar Red",
+"marks": {
+"Launch Edition": "O",
+"Limited": "NA"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Seat Features",
+"text": "Power 12-way driver and front-passenger with 4-way power lumbar adjuster with memory and massage",
+"marks": {
+"Launch Edition": "S",
+"Limited": "NA"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Seat Features",
+"text": "Power 10-way driver and front-passenger with 4-way power lumbar adjuster with memory",
+"marks": {
+"Launch Edition": "NA",
+"Limited": "S"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Seat Features",
+"text": "Heated front seats",
+"marks": {
+"Launch Edition": "S",
+"Limited": "S"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Seat Features",
+"text": "Ventilated front seats",
+"marks": {
+"Launch Edition": "S",
+"Limited": "P"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Seat Features",
+"text": "Heated second row",
+"marks": {
+"Launch Edition": "S",
+"Limited": "NA"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Seat Features",
+"text": "Ventilated second row",
+"marks": {
+"Launch Edition": "S",
+"Limited": "NA"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR FEATURES",
+"parent": "Seat Features",
+"text": "60/40 bench second row",
+"marks": {
+"Launch Edition": "S",
+"Limited": "S"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Steering Wheel",
+"text": "Premium-wrapped and heated with audio, speed, Electronic Vehicle Information Center, voice recognition and Adaptive Cruise Control with Stop",
+"marks": {
+"Launch Edition": "S",
+"Limited": "S"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "Steering Wheel",
+"text": "Power-tilt steering wheel/telescoping steering column; memory",
+"marks": {
+"Launch Edition": "S",
+"Limited": "P"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Wireless charging pad",
+"marks": {
+"Launch Edition": "S",
+"Limited": "S"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Tonneau cover",
+"marks": {
+"Launch Edition": "S",
+"Limited": "P"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR FEATURES",
+"parent": "",
+"text": "Suede headliner and pillars",
+"marks": {
+"Launch Edition": "S",
+"Limited": "NA"
+}
+},
+{
+"page": 4,
+"section": "UCONNECT MULTIMEDIA",
+"parent": "",
+"text": "Media hub — 2 USB C data / charge",
+"marks": {
+"Launch Edition": "S",
+"Limited": "S"
+}
+},
+{
+"page": 4,
+"section": "UCONNECT MULTIMEDIA",
+"parent": "Power Outlet",
+"text": "12-volt, two auxiliary power outlets",
+"marks": {
+"Launch Edition": "S",
+"Limited": "S"
+}
+},
+{
+"page": 4,
+"section": "UCONNECT MULTIMEDIA",
+"parent": "Power Outlet",
+"text": "115-volt auxiliary power outlet",
+"marks": {
+"Launch Edition": "S",
+"Limited": "P"
+}
+},
+{
+"page": 4,
+"section": "UCONNECT MULTIMEDIA",
+"parent": "",
+"text": "SiriusXM Radio (includes three-month trial subscription)",
+"marks": {
+"Launch Edition": "S",
+"Limited": "S"
+}
+},
+{
+"page": 4,
+"section": "UCONNECT MULTIMEDIA",
+"parent": "",
+"text": "TomTom Traffic and Travel (includes three-month trial subscription)",
+"marks": {
+"Launch Edition": "S",
+"Limited": "S"
+}
+},
+{
+"page": 4,
+"section": "UCONNECT MULTIMEDIA",
+"parent": "Speakers",
+"text": "McIntosh MX1200 entertainment system — includes a 19-speaker, 1,200-watt premium audio sound system with 12-in. subwoofer",
+"marks": {
+"Launch Edition": "S",
+"Limited": "NA"
+}
+},
+{
+"page": 4,
+"section": "UCONNECT MULTIMEDIA",
+"parent": "Speakers",
+"text": "McIntosh MX920 entertainment system — includes a 19-speaker, 920-watt premium audio sound system with 10-in. subwoofer",
+"marks": {
+"Launch Edition": "NA",
+"Limited": "P"
+}
+},
+{
+"page": 4,
+"section": "UCONNECT MULTIMEDIA",
+"parent": "Speakers",
+"text": "Alpine nine-speaker premium audio system with 500-watt amplifier and 8-in. subwoofer",
+"marks": {
+"Launch Edition": "NA",
+"Limited": "S"
+}
+},
+{
+"page": 5,
+"section": "UCONNECT MULTIMEDIA",
+"parent": "",
+"text": "Uconnect 5C NAV with 12.3-in. display",
+"marks": {
+"Launch Edition": "S",
+"Limited": "S"
+}
+},
+{
+"page": 5,
+"section": "UCONNECT MULTIMEDIA",
+"parent": "",
+"text": "USB C port — dual (second row, charge only)",
+"marks": {
+"Launch Edition": "S",
+"Limited": "S"
+}
+},
+{
+"page": 5,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "360-degree surround view camera",
+"marks": {
+"Launch Edition": "S",
+"Limited": "S"
+}
+},
+{
+"page": 5,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Active Driving Assist",
+"marks": {
+"Launch Edition": "S",
+"Limited": "S"
+}
+},
+{
+"page": 5,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Active Lane Management",
+"marks": {
+"Launch Edition": "S",
+"Limited": "S"
+}
+},
+{
+"page": 5,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Adaptive Cruise Control with Stop",
+"marks": {
+"Launch Edition": "S",
+"Limited": "S"
+}
+},
+{
+"page": 5,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Air Bags",
+"marks": {
+"Launch Edition": "S",
+"Limited": "S"
+}
+},
+{
+"page": 5,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Advanced multistage, driver and front passenger",
+"marks": {
+"Launch Edition": "S",
+"Limited": "S"
+}
+},
+{
+"page": 5,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Supplemental front / rear side-curtain",
+"marks": {
+"Launch Edition": "S",
+"Limited": "S"
+}
+},
+{
+"page": 5,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Driver-side inflatable knee",
+"marks": {
+"Launch Edition": "S",
+"Limited": "S"
+}
+},
+{
+"page": 5,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Supplemental rear seat side",
+"marks": {
+"Launch Edition": "S",
+"Limited": "S"
+}
+},
+{
+"page": 5,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Auto hold braking",
+"marks": {
+"Launch Edition": "S",
+"Limited": "S"
+}
+},
+{
+"page": 5,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Autonomous parking assist",
+"marks": {
+"Launch Edition": "S",
+"Limited": "S"
+}
+},
+{
+"page": 5,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Blind-spot Monitoring with Rear Cross Path detection",
+"marks": {
+"Launch Edition": "S",
+"Limited": "S"
+}
+},
+{
+"page": 5,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Electronic stability control — includes vehicle stability management system, electronic roll mitigation, all- speed traction control, brake assist and four-channel antilock brake system, Rain Brake Support",
+"marks": {
+"Launch Edition": "S",
+"Limited": "S"
+}
+},
+{
+"page": 5,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Drowsy Driver Detection",
+"marks": {
+"Launch Edition": "S",
+"Limited": "S"
+}
+},
+{
+"page": 5,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Full-speed Forward Collision Warning with Advanced Brake Assist",
+"marks": {
+"Launch Edition": "S",
+"Limited": "S"
+}
+},
+{
+"page": 5,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Intelligent Speed Assist/Active Speed",
+"marks": {
+"Launch Edition": "S",
+"Limited": "S"
+}
+},
+{
+"page": 5,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Intersection Collision Assist",
+"marks": {
+"Launch Edition": "S",
+"Limited": "S"
+}
+},
+{
+"page": 6,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Front and rear park assist system — front and rear cameras equipped with washers",
+"marks": {
+"Launch Edition": "S",
+"Limited": "S"
+}
+},
+{
+"page": 6,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Full autonomous parking assist",
+"marks": {
+"Launch Edition": "S",
+"Limited": "S"
+}
+},
+{
+"page": 6,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Rear backup camera — includes rear park assist system; washer",
+"marks": {
+"Launch Edition": "S",
+"Limited": "S"
+}
+},
+{
+"page": 6,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Parallel/perpendicular park assist",
+"marks": {
+"Launch Edition": "S",
+"Limited": "S"
+}
+},
+{
+"page": 6,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "ParkSense automated parking system",
+"marks": {
+"Launch Edition": "S",
+"Limited": "S"
+}
+},
+{
+"page": 6,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Rain Brake Support",
+"marks": {
+"Launch Edition": "S",
+"Limited": "S"
+}
+},
+{
+"page": 6,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Remote keyless entry",
+"marks": {
+"Launch Edition": "S",
+"Limited": "S"
+}
+},
+{
+"page": 6,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Security alarm",
+"marks": {
+"Launch Edition": "S",
+"Limited": "S"
+}
+},
+{
+"page": 6,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Side Distance Warning",
+"marks": {
+"Launch Edition": "S",
+"Limited": "S"
+}
+},
+{
+"page": 6,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Traffic Sign Recognition",
+"marks": {
+"Launch Edition": "S",
+"Limited": "S"
+}
+},
+{
+"page": 6,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Trailer-sway control",
+"marks": {
+"Launch Edition": "S",
+"Limited": "S"
+}
+},
+{
+"page": 6,
+"section": "SAFETY AND SECURITY",
+"parent": "",
+"text": "Universal garage door opener",
+"marks": {
+"Launch Edition": "S",
+"Limited": "S"
+}
+},
+{
+"page": 6,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Luxury Package – includes Head-up Display, front passenger display, digital rearview mirror, foot- activated power liftgate with adjustable height and Tonneau cover",
+"marks": {
+"Launch Edition": "S",
+"Limited": "NA"
+}
+},
+{
+"page": 6,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Comfort Package – includes front passenger display, ventilated front seats, cargo cover, Head-up Display, digital rearview mirror, 115v power outlet, McIntosh 900-watt audio system, foot-activated liftgate and power-tilt steering column",
+"marks": {
+"Launch Edition": "NA",
+"Limited": "P"
+}
+},
+{
+"page": 6,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Obsidian Appearance Package – includes Titanium exterior accents and Gloss Black 20-in wheels (late availability on Limited)",
+"marks": {
+"Launch Edition": "NA",
+"Limited": "O"
+}
+},
+{
+"page": 7,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Propulsion Boost Package — includes 100-hp upgrade over the air (late availability on Limited)",
+"marks": {
+"Launch Edition": "NA",
+"Limited": "O"
+}
+},
+{
+"page": 7,
+"section": "PACKAGES/EQUIPMENT GROUPS",
+"parent": "",
+"text": "Trailer Tow Group — includes 7/4 pin wiring harness; Class III receiver hitch; blind spot with trailer detection",
+"marks": {
+"Launch Edition": "O",
+"Limited": "O"
+}
+}
+],
+"url": "https://media.stellantisnorthamerica.com/view-spec.do?id=26580"
+}

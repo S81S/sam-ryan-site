@@ -1,0 +1,719 @@
+{
+"kind": "fa",
+"title": "2026 Ram Professional ProMaster and ProMaster EV",
+"rows": [
+{
+"page": 1,
+"section": "POWERTRAIN",
+"parent": "",
+"text": "3.6-liter Pentastar V-6 engine with TorqueFlite FWD automatic transmission",
+"marks": {
+"Cargo Van": "S",
+"Step Van": "NA",
+"Cutaway": "S"
+}
+},
+{
+"page": 1,
+"section": "POWERTRAIN",
+"parent": "",
+"text": "110-kilowatt-hour (kWh) battery pack (ProMaster EV)",
+"marks": {
+"Cargo Van": "NA",
+"Step Van": "S",
+"Cutaway": "NA"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL",
+"parent": "",
+"text": "Electronic Vehicle Tracking System (by Mopar)",
+"marks": {
+"Cargo Van": "O",
+"Step Van": "O",
+"Cutaway": "O"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL",
+"parent": "",
+"text": "Telematics box module",
+"marks": {
+"Cargo Van": "S",
+"Step Van": "S",
+"Cutaway": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL",
+"parent": "",
+"text": "Speed limiter — dealer-activated, 60 mph, 65 mph, 70 mph and 77 mph",
+"marks": {
+"Cargo Van": "S",
+"Step Van": "S",
+"Cutaway": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL",
+"parent": "",
+"text": "Vehicle system interface module (VSIM)",
+"marks": {
+"Cargo Van": "P",
+"Step Van": "NA",
+"Cutaway": "P"
+}
+},
+{
+"page": 1,
+"section": "EXTERIOR",
+"parent": "",
+"text": "Automatic high-beam headlamps",
+"marks": {
+"Cargo Van": "P",
+"Step Van": "P",
+"Cutaway": "P"
+}
+},
+{
+"page": 1,
+"section": "EXTERIOR",
+"parent": "Doors, side",
+"text": "Right side with fixed glass (includes window grate on low roof models when no cargo partition is ordered)",
+"marks": {
+"Cargo Van": "O",
+"Step Van": "NA",
+"Cutaway": "NA"
+}
+},
+{
+"page": 1,
+"section": "EXTERIOR",
+"parent": "Doors, side",
+"text": "Right side with no glass",
+"marks": {
+"Cargo Van": "S",
+"Step Van": "NA",
+"Cutaway": "NA"
+}
+},
+{
+"page": 1,
+"section": "EXTERIOR",
+"parent": "Doors, side",
+"text": "Pocket door with sliding window",
+"marks": {
+"Cargo Van": "NA",
+"Step Van": "S",
+"Cutaway": "NA"
+}
+},
+{
+"page": 1,
+"section": "EXTERIOR",
+"parent": "",
+"text": "LED headlamps and fog lights",
+"marks": {
+"Cargo Van": "P",
+"Step Van": "S",
+"Cutaway": "O"
+}
+},
+{
+"page": 1,
+"section": "EXTERIOR",
+"parent": "",
+"text": "Fog lamps with cornering function",
+"marks": {
+"Cargo Van": "P",
+"Step Van": "S",
+"Cutaway": "P"
+}
+},
+{
+"page": 1,
+"section": "EXTERIOR",
+"parent": "",
+"text": "Rain-sensing windshield wipers",
+"marks": {
+"Cargo Van": "P",
+"Step Van": "S",
+"Cutaway": "P"
+}
+},
+{
+"page": 2,
+"section": "INTERIOR",
+"parent": "",
+"text": "Auxiliary upfitter switches — two",
+"marks": {
+"Cargo Van": "P",
+"Cutaway": "P"
+}
+},
+{
+"page": 2,
+"section": "INTERIOR",
+"parent": "",
+"text": "Cargo net (included with Interior Convenience Group)",
+"marks": {
+"Cargo Van": "P",
+"Step Van": "NA",
+"Cutaway": "NA"
+}
+},
+{
+"page": 2,
+"section": "INTERIOR",
+"parent": "Cargo Partition",
+"text": "None (standard)",
+"marks": {
+"Cargo Van": "S",
+"Step Van": "NA",
+"Cutaway": "NA"
+}
+},
+{
+"page": 2,
+"section": "INTERIOR",
+"parent": "Cargo Partition",
+"text": "Sliding window",
+"marks": {
+"Cargo Van": "O",
+"Step Van": "NA",
+"Cutaway": "NA"
+}
+},
+{
+"page": 2,
+"section": "INTERIOR",
+"parent": "",
+"text": "Center-stack phone shelf",
+"marks": {
+"Cargo Van": "S",
+"Step Van": "S",
+"Cutaway": "S"
+}
+},
+{
+"page": 2,
+"section": "INTERIOR",
+"parent": "",
+"text": "Premium steering wheel",
+"marks": {
+"Cargo Van": "P",
+"Step Van": "P",
+"Cutaway": "P"
+}
+},
+{
+"page": 2,
+"section": "INTERIOR",
+"parent": "",
+"text": "Push-button ignition",
+"marks": {
+"Cargo Van": "S",
+"Step Van": "S",
+"Cutaway": "S"
+}
+},
+{
+"page": 2,
+"section": "INTERIOR",
+"parent": "",
+"text": "LED rear cargo lamp",
+"marks": {
+"Cargo Van": "P",
+"Step Van": "S",
+"Cutaway": "NA"
+}
+},
+{
+"page": 2,
+"section": "INTERIOR",
+"parent": "Wall Panels",
+"text": "Upper side (includes lower side)",
+"marks": {
+"Cargo Van": "O",
+"Step Van": "NA",
+"Cutaway": "NA"
+}
+},
+{
+"page": 2,
+"section": "INTERIOR",
+"parent": "Wall Panels",
+"text": "Lower side",
+"marks": {
+"Cargo Van": "O",
+"Step Van": "NA",
+"Cutaway": "NA"
+}
+},
+{
+"page": 2,
+"section": "INTERIOR",
+"parent": "",
+"text": "Wireless phone charger",
+"marks": {
+"Cargo Van": "P",
+"Step Van": "P",
+"Cutaway": "P"
+}
+},
+{
+"page": 2,
+"section": "INTERIOR",
+"parent": "",
+"text": "Wood floor — rear",
+"marks": {
+"Cargo Van": "O/P",
+"Step Van": "NA",
+"Cutaway": "NA"
+}
+},
+{
+"page": 2,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "",
+"text": "Uconnect 5C radio with 7-in. display",
+"marks": {
+"Cargo Van": "S",
+"Step Van": "NA",
+"Cutaway": "S"
+}
+},
+{
+"page": 2,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "",
+"text": "Uconnect 5C Nav radio with 10.1-in. display",
+"marks": {
+"Cargo Van": "P",
+"Step Van": "S",
+"Cutaway": "P"
+}
+},
+{
+"page": 2,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "",
+"text": "3.5-in. driver’s display cluster",
+"marks": {
+"Cargo Van": "S",
+"Step Van": "NA",
+"Cutaway": "S"
+}
+},
+{
+"page": 2,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "",
+"text": "7-in. driver’s display cluster",
+"marks": {
+"Cargo Van": "P",
+"Step Van": "S",
+"Cutaway": "P"
+}
+},
+{
+"page": 2,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "",
+"text": "115-volt outlet",
+"marks": {
+"Cargo Van": "O",
+"Step Van": "O",
+"Cutaway": "O"
+}
+},
+{
+"page": 2,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "",
+"text": "Alexa Custom Assistant",
+"marks": {
+"Cargo Van": "P",
+"Step Van": "P",
+"Cutaway": "P"
+}
+},
+{
+"page": 2,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "",
+"text": "Dual-phone connectivity",
+"marks": {
+"Cargo Van": "S",
+"Step Van": "S",
+"Cutaway": "S"
+}
+},
+{
+"page": 2,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "",
+"text": "USB outlets — 2 (1 fully functional, 1 charge-only)",
+"marks": {
+"Cargo Van": "S",
+"Step Van": "S",
+"Cutaway": "S"
+}
+},
+{
+"page": 3,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Active Driving Assist (freestanding option for fleet only)",
+"marks": {
+"Cargo Van": "P",
+"Step Van": "NA",
+"Cutaway": "P"
+}
+},
+{
+"page": 3,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Adaptive Cruise Control with Stop & Go",
+"marks": {
+"Cargo Van": "P",
+"Step Van": "P",
+"Cutaway": "P"
+}
+},
+{
+"page": 3,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Ambient/courtesy lights",
+"marks": {
+"Cargo Van": "P",
+"Step Van": "P",
+"Cutaway": "P"
+}
+},
+{
+"page": 3,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Blind-spot Monitoring with Rear Cross Path detection",
+"marks": {
+"Cargo Van": "P",
+"Step Van": "P"
+}
+},
+{
+"page": 3,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Crosswind Assist",
+"marks": {
+"Cargo Van": "S",
+"Step Van": "S",
+"Cutaway": "S"
+}
+},
+{
+"page": 3,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Digital rearview mirror",
+"marks": {
+"Cargo Van": "O/P",
+"Step Van": "S",
+"Cutaway": "O/P"
+}
+},
+{
+"page": 3,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Drowsy Driver Detection",
+"marks": {
+"Cargo Van": "S",
+"Step Van": "S",
+"Cutaway": "S"
+}
+},
+{
+"page": 3,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Intelligent Speed Assist",
+"marks": {
+"Cargo Van": "P",
+"Step Van": "P",
+"Cutaway": "P"
+}
+},
+{
+"page": 3,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Lane Keep Assist",
+"marks": {
+"Cargo Van": "P",
+"Step Van": "P",
+"Cutaway": "P"
+}
+},
+{
+"page": 3,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "ParkSense front/rear park assist",
+"marks": {
+"Cargo Van": "P",
+"Step Van": "P",
+"Cutaway": "NA"
+}
+},
+{
+"page": 3,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "ParkSense rear park assist",
+"marks": {
+"Cargo Van": "O/P",
+"Step Van": "NA",
+"Cutaway": "NA"
+}
+},
+{
+"page": 3,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "ParkView rear backup camera (kit supplied on Chassis Cab and Cutaway models; requires installation by upfitter)",
+"marks": {
+"Cargo Van": "S",
+"Step Van": "S",
+"Cutaway": "S"
+}
+},
+{
+"page": 3,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Remote proximity keyless entry (all doors)",
+"marks": {
+"Cargo Van": "P",
+"Step Van": "P",
+"Cutaway": "P"
+}
+},
+{
+"page": 3,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Surround 360-degree camera",
+"marks": {
+"Cargo Van": "P",
+"Step Van": "P",
+"Cutaway": "P"
+}
+},
+{
+"page": 3,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Traffic Sign Information",
+"marks": {
+"Cargo Van": "P",
+"Step Van": "S",
+"Cutaway": "P"
+}
+},
+{
+"page": 3,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Traffic Sign Recognition",
+"marks": {
+"Cargo Van": "S",
+"Step Van": "NA",
+"Cutaway": "S"
+}
+},
+{
+"page": 3,
+"section": "EQUIPMENT PACKAGES",
+"parent": "",
+"text": "Convenience Group Front fog lamps Adaptive Cruise Control with Stop & Go LED rear cargo lamp Power-folding heated mirrors",
+"marks": {
+"Cargo Van": "O",
+"Step Van": "NA",
+"Cutaway": "O"
+}
+},
+{
+"page": 4,
+"section": "EQUIPMENT PACKAGES",
+"parent": "",
+"text": "Premium Convenience Group Remote proximity keyless entry Wireless charging pad Rain-sensing windshield wipers 7-in. TFT color instrument cluster Automatic headlamps Auto high beam headlamps Adaptive Cruise Control with Stop & Go Uconnect 5C Nav radio with 10.1-in. display Traffic Sign Information ParkSense rear park assist Front fog lamps",
+"marks": {
+"Cargo Van": "O",
+"Step Van": "NA",
+"Cutaway": "O"
+}
+},
+{
+"page": 4,
+"section": "EQUIPMENT PACKAGES",
+"parent": "",
+"text": "Trailer-tow Group Class IV receiver hitch Four- and seven-pin wiring harness",
+"marks": {
+"Cargo Van": "O",
+"Step Van": "NA",
+"Cutaway": "NA"
+}
+},
+{
+"page": 4,
+"section": "EQUIPMENT PACKAGES",
+"parent": "",
+"text": "Crew Van Package Mopar crew van kit nd Driver-side 2 -row fixed window Delete rearview mirror Passenger sliding door with window (polycarbonate)",
+"marks": {
+"Cargo Van": "O",
+"Step Van": "NA",
+"Cutaway": "NA"
+}
+},
+{
+"page": 4,
+"section": "EQUIPMENT PACKAGES",
+"parent": "",
+"text": "Safety Group Digital rearview mirror Power-folding heated mirrors Front fog lamps Daytime running headlamps ParkSense front/rear park assist Blind-spot Monitoring with Rear Cross Path detection Intelligent Speed Assist Adaptive Cruise Control with Stop & Go",
+"marks": {
+"Cargo Van": "O",
+"Step Van": "NA",
+"Cutaway": "NA"
+}
+},
+{
+"page": 5,
+"section": "EQUIPMENT PACKAGES",
+"parent": "",
+"text": "Advanced Safety Group 7-in. TFT color instrument cluster Front fog lamps Adaptive Cruise Control with Stop & Go ParkSense parallel/perpendicular park assist Hands-free Active Driving Assist Leather-wrapped steering wheel Surround 360-degree camera",
+"marks": {
+"Cargo Van": "O",
+"Step Van": "NA",
+"Cutaway": "NA"
+}
+},
+{
+"page": 5,
+"section": "EQUIPMENT PACKAGES",
+"parent": "",
+"text": "Storage Group Shelf above roof trim Under-seat storage tray Cargo net",
+"marks": {
+"Cargo Van": "P",
+"Step Van": "NA",
+"Cutaway": "NA"
+}
+},
+{
+"page": 5,
+"section": "EQUIPMENT PACKAGES",
+"parent": "",
+"text": "Power Group 220-amp alternator (std on Cutaway) 100-amp battery 115-volt auxiliary power outlet 12-volt rear auxiliary power outlet",
+"marks": {
+"Cargo Van": "P",
+"Step Van": "NA",
+"Cutaway": "P"
+}
+},
+{
+"page": 5,
+"section": "EQUIPMENT PACKAGES",
+"parent": "",
+"text": "Leather Group Leather-wrapped steering wheel Leather-trimmed bucket seats Black or black/gray seats Driver and passenger swivel seats",
+"marks": {
+"Cargo Van": "O",
+"Step Van": "NA",
+"Cutaway": "O"
+}
+},
+{
+"page": 5,
+"section": "EQUIPMENT PACKAGES",
+"parent": "",
+"text": "Upfitter Group Vehicle system interface module (VSIM) Auxiliary switches",
+"marks": {
+"Cargo Van": "O",
+"Step Van": "NA",
+"Cutaway": "O"
+}
+},
+{
+"page": 5,
+"section": "EQUIPMENT PACKAGES",
+"parent": "",
+"text": "Black Appearance Group Black exterior badging – trucks 'RAM'' grille badge – black 16X6.0-in. black-painted aluminum wheels",
+"marks": {
+"Cargo Van": "O",
+"Step Van": "NA",
+"Cutaway": "O"
+}
+},
+{
+"page": 6,
+"section": "EQUIPMENT PACKAGES",
+"parent": "",
+"text": "Cold Weather Group Heated windshield Heated steering wheel Rain-sensing windshield wipers Auto high beam headlamp control Heated driver’s seat Heated passenger seat Leather-wrapped steering wheel 220-amp alternator Adaptive Cruise Control with Stop & Go",
+"marks": {
+"Cargo Van": "O",
+"Step Van": "NA",
+"Cutaway": "O"
+}
+},
+{
+"page": 6,
+"section": "EQUIPMENT PACKAGES",
+"parent": "",
+"text": "Safety & Convenience Group Heated steering wheel Heated windshield Blind Spot and Rear Cross Path detection White noise backup alarm ParkSense front/rear park assist with (reverse?) stop Adaptive Cruise Control with Stop & Go 70-mph maximum speed LED rear cargo lamps (2) Passive entry Surround 360-degree camera Wireless charging pad Upfit Kit",
+"marks": {
+"Cargo Van": "NA",
+"Cutaway": "NA"
+}
+},
+{
+"page": 6,
+"section": "EQUIPMENT PACKAGES",
+"parent": "",
+"text": "Upfit Kit Non-skid cargo flooring Hard step (floor covering) between front seats and step ramp Pocket door protection Grab handles (pocket door- A and B Pillars) Walk-in partition with door / jump seat",
+"marks": {
+"Cargo Van": "NA",
+"Step Van": "P",
+"Cutaway": "NA"
+}
+},
+{
+"page": 7,
+"section": "EQUIPMENT PACKAGES",
+"parent": "",
+"text": "Delivery Van Package Door auto lock-unlock Lane Departure Warning Plus Intelligent Speed Assist (Isa) Radio mute on reverse Heated steering wheel Heated windshield Blind-spot Monitoring with Cross Path detection White noise backup alarm ParkSense front/rear park assist with stop and release Adaptive Cruise Control with Stop & Go 70-mph maximum speed LED rear cargo lamps (2) Passive entry Surround 360-degree camera Wireless charging pad Last Mile Delivery Upfit Kit",
+"marks": {
+"Cargo Van": "NA",
+"Step Van": "O",
+"Cutaway": "NA"
+}
+},
+{
+"page": 7,
+"section": "EQUIPMENT PACKAGES",
+"parent": "",
+"text": "Last Mile Delivery Upfit Kit Grab handles – rear door Wall panels Shelving Hand truck/dolly Fire extinguisher Safety kit Safety triangle Exterior spot lamps Document holders Rear step Side step",
+"marks": {
+"Cargo Van": "NA",
+"Step Van": "P",
+"Cutaway": "NA"
+}
+}
+],
+"url": "https://media.stellantisnorthamerica.com/view-spec.do?id=27027"
+}

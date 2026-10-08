@@ -1,0 +1,655 @@
+{
+"kind": "fa",
+"title": "2026 Chrysler Voyager",
+"rows": [
+{
+"page": 1,
+"section": "ENGINE AND TRANSMISSION",
+"parent": "",
+"text": "3.6-liter Pentastar V-6 engine with variable-valve timing (VVT) and engine stop-start (ESS) and nine-speed automatic transmission",
+"marks": {
+"Voyager LX": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL",
+"parent": "Alternator",
+"text": "High-efficiency 180-amp",
+"marks": {
+"Voyager LX": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL",
+"parent": "Battery",
+"text": "730-amp, maintenance free",
+"marks": {
+"Voyager LX": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL",
+"parent": "Battery",
+"text": "Auxiliary battery (packaged with ESS configuration)",
+"marks": {
+"Voyager LX": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL",
+"parent": "Brakes",
+"text": "Four-wheel discs with antilock",
+"marks": {
+"Voyager LX": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL",
+"parent": "",
+"text": "Defroster — rear",
+"marks": {
+"Voyager LX": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL",
+"parent": "Fuel Tank",
+"text": "19-gallon",
+"marks": {
+"Voyager LX": "S"
+}
+},
+{
+"page": 1,
+"section": "MECHANICAL",
+"parent": "Suspension",
+"text": "Touring-tuned",
+"marks": {
+"Voyager LX": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR",
+"parent": "Doors",
+"text": "Power sliding",
+"marks": {
+"Voyager LX": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR",
+"parent": "Door Handles",
+"text": "Body color",
+"marks": {
+"Voyager LX": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR",
+"parent": "",
+"text": "Glass — sunscreen",
+"marks": {
+"Voyager LX": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR",
+"parent": "Grille",
+"text": "Black grille with Bright surround",
+"marks": {
+"Voyager LX": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR",
+"parent": "Headlamps",
+"text": "Automatic",
+"marks": {
+"Voyager LX": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR",
+"parent": "Headlamps",
+"text": "Quad halogen reflector",
+"marks": {
+"Voyager LX": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR",
+"parent": "",
+"text": "Liftgate — power",
+"marks": {
+"Voyager LX": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR",
+"parent": "Mirrors",
+"text": "Power, gloss black, with heating element",
+"marks": {
+"Voyager LX": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR",
+"parent": "Tires",
+"text": "235/65R17 BSW all-season",
+"marks": {
+"Voyager LX": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR",
+"parent": "Tires",
+"text": "Inflatable spare tire kit",
+"marks": {
+"Voyager LX": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR",
+"parent": "Wheels",
+"text": "17-in. aluminum",
+"marks": {
+"Voyager LX": "S"
+}
+},
+{
+"page": 2,
+"section": "EXTERIOR",
+"parent": "Windshield Wipers",
+"text": "Front, variable/intermittent",
+"marks": {
+"Voyager LX": "S"
+}
+},
+{
+"page": 2,
+"section": "INTERIOR",
+"parent": "Air Conditioning",
+"text": "Three-zone auto temperature control",
+"marks": {
+"Voyager LX": "S"
+}
+},
+{
+"page": 2,
+"section": "INTERIOR",
+"parent": "Air Conditioning",
+"text": "High-efficiency cabin air filter",
+"marks": {
+"Voyager LX": "S"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR",
+"parent": "Lighting",
+"text": "Front halogen headlamps (daytime running and automatic)",
+"marks": {
+"Voyager LX": "S"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR",
+"parent": "Lighting",
+"text": "Rear incandescent lamps",
+"marks": {
+"Voyager LX": "S"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR",
+"parent": "Lighting",
+"text": "Cargo compartment lamp",
+"marks": {
+"Voyager LX": "S"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR",
+"parent": "Lighting",
+"text": "Front, courtesy lamp",
+"marks": {
+"Voyager LX": "S"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR",
+"parent": "Lighting",
+"text": "Overhead, ambient surround",
+"marks": {
+"Voyager LX": "S"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR",
+"parent": "Mirrors",
+"text": "Rearview day/night",
+"marks": {
+"Voyager LX": "S"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR",
+"parent": "Mirrors",
+"text": "Illuminated visor vanity",
+"marks": {
+"Voyager LX": "S"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR",
+"parent": "Power Outlets",
+"text": "Auxiliary, 12-volt in instrument panel",
+"marks": {
+"Voyager LX": "S"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR",
+"parent": "",
+"text": "Remote start system",
+"marks": {
+"Voyager LX": "S"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR",
+"parent": "Seats",
+"text": "Driver eight-way power seat with four-way power lumbar support",
+"marks": {
+"Voyager LX": "S"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR",
+"parent": "Seats",
+"text": "Heated front seats",
+"marks": {
+"Voyager LX": "S"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR",
+"parent": "Seats",
+"text": "Leatherette Black Caprice seats with Light Diesel stitching",
+"marks": {
+"Voyager LX": "S"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR",
+"parent": "Seats",
+"text": "Passenger four-way manual seats",
+"marks": {
+"Voyager LX": "S"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR",
+"parent": "Seats",
+"text": "Second-row sunshades",
+"marks": {
+"Voyager LX": "S"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR",
+"parent": "Seats",
+"text": "Second-row Stow 'n Go bucket seats with in-floor storage bins",
+"marks": {
+"Voyager LX": "S"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR",
+"parent": "Seats",
+"text": "Third- row Stow ’n Go bench seat",
+"marks": {
+"Voyager LX": "S"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR",
+"parent": "Seats",
+"text": "Seven-passenger seating",
+"marks": {
+"Voyager LX": "S"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR",
+"parent": "",
+"text": "Speed control",
+"marks": {
+"Voyager LX": "S"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR",
+"parent": "",
+"text": "Steering column — tilt/telescoping",
+"marks": {
+"Voyager LX": "S"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR",
+"parent": "Steering Wheel",
+"text": "Mounted audio controls",
+"marks": {
+"Voyager LX": "S"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR",
+"parent": "Steering Wheel",
+"text": "Techno leather-wrapped",
+"marks": {
+"Voyager LX": "S"
+}
+},
+{
+"page": 3,
+"section": "INTERIOR",
+"parent": "Steering Wheel",
+"text": "Heated",
+"marks": {
+"Voyager LX": "S"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR",
+"parent": "Storage",
+"text": "Floor tray",
+"marks": {
+"Voyager LX": "S"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR",
+"parent": "Storage",
+"text": "Super console with covered and second-row accessible storage",
+"marks": {
+"Voyager LX": "S"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR",
+"parent": "Storage",
+"text": "Glove box, locking",
+"marks": {
+"Voyager LX": "S"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR",
+"parent": "Storage",
+"text": "Lower instrument panel cubby",
+"marks": {
+"Voyager LX": "S"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR",
+"parent": "",
+"text": "7-in. digital display in instrument cluster, with controls mounted on steering wheel",
+"marks": {
+"Voyager LX": "S"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR",
+"parent": "Windows",
+"text": "Front, power with driver one-touch up/down, front-passenger one-touch down",
+"marks": {
+"Voyager LX": "S"
+}
+},
+{
+"page": 4,
+"section": "INTERIOR",
+"parent": "Windows",
+"text": "Power second row",
+"marks": {
+"Voyager LX": "S"
+}
+},
+{
+"page": 4,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "",
+"text": "SiriusXM Radio",
+"marks": {
+"Voyager LX": "S"
+}
+},
+{
+"page": 4,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "",
+"text": "Sound system — six speakers",
+"marks": {
+"Voyager LX": "S"
+}
+},
+{
+"page": 4,
+"section": "UCONNECT / MULTIMEDIA",
+"parent": "",
+"text": "Uconnect 5 with 10.1-in. display — includes 10.1-in. touchscreen, AM/FM, Aux/USB, integrated voice command with Bluetooth, voice text reply, wireless Android Auto and Apple Carplay, Amazon Alexa voice, Uconnect Market, Firmware OTA and dual phone connectivity",
+"marks": {
+"Voyager LX": "S"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Adaptive cruise control",
+"marks": {
+"Voyager LX": "S"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "Air Bags",
+"text": "Advanced multistage driver and front passenger, includes low-risk deployment",
+"marks": {
+"Voyager LX": "S"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "Air Bags",
+"text": "Driver and front passenger-side inflatable knee blocker",
+"marks": {
+"Voyager LX": "S"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "Air Bags",
+"text": "Front seat-mounted side",
+"marks": {
+"Voyager LX": "S"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "Air Bags",
+"text": "Side-curtain for outboard passengers in all three rows",
+"marks": {
+"Voyager LX": "S"
+}
+},
+{
+"page": 4,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Blind-spot Monitoring with Rear Cross Path detection system",
+"marks": {
+"Voyager LX": "S"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Child Seat Anchor System (LATCH)",
+"marks": {
+"Voyager LX": "S"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Electric parking brake with Safe Hold",
+"marks": {
+"Voyager LX": "S"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Electronic stability control (ESC)",
+"marks": {
+"Voyager LX": "S"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "ParkSense rear park assist system with stop — assists while parking",
+"marks": {
+"Voyager LX": "S"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "ParkView rear backup camera",
+"marks": {
+"Voyager LX": "S"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Pedestrian Automatic Emergency Braking",
+"marks": {
+"Voyager LX": "S"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Remote keyless/illuminated entry system",
+"marks": {
+"Voyager LX": "S"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Remote proximity (driver door only)",
+"marks": {
+"Voyager LX": "S"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Remote proximity (all doors)",
+"marks": {
+"Voyager LX": "S"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Security alarm",
+"marks": {
+"Voyager LX": "S"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Tire-pressure monitoring system",
+"marks": {
+"Voyager LX": "S"
+}
+},
+{
+"page": 5,
+"section": "SAFETY & SECURITY",
+"parent": "",
+"text": "Vehicle tracking system",
+"marks": {
+"Voyager LX": "O"
+}
+}
+],
+"url": "https://media.stellantisnorthamerica.com/view-spec.do?id=27037"
+}

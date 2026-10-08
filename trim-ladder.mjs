@@ -109,6 +109,9 @@ export function pickStatus(trim,picks){return picks.map(p=>({...p,on:satisfies(t
 // `entry` is the model's block of data/trim-stock.json (feature ids, guide row → feature ids, vehicles).
 export function vehicleFit(vehicle,trim,picks,entry){
  return picks.map(pick=>{
+  // The factory chart says the vehicle's trim is never built with it: no sticker reading can make it a match.
+  const chartFact=trim?.comparison?.find(f=>f.factory&&f.key===(pick.base||pick.key));
+  if(chartFact?.status==='unavailable'&&!pick.base)return {pick,on:'no',by:'trim'};
   const ids=entry?.rows?.[pick.key]||[],read=vehicle.sticker&&ids.length;
   if(read&&ids.some(n=>vehicle.y.includes(n)))return {pick,on:'yes',by:'sticker'};
   if(read&&ids.every(n=>vehicle.n.includes(n)))return {pick,on:'no',by:'sticker'};
