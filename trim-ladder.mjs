@@ -35,11 +35,12 @@ const factFor=(trim,key)=>facts(trim).find(f=>f.key===key)||null;
 // Everything standard on a trim, in the guide's order.
 export function standardEquipment(trim){return facts(trim).filter(f=>f.status==='standard');}
 
-// What `next` adds over `current`: only what the next trim has that the current trim does not — new standard
-// equipment, a different standard version (a bigger screen), and options the current trim does not offer.
-// Anything the current trim already has, standard or as an option, is left out. When the guide does not list an
-// item for the current trim, it is still left out if there is evidence the current trim has it: a trim below it
-// lists it as standard, or a window sticker on one of the current trim's vehicles in stock shows it (`onCurrent`).
+// What `next` adds over `current`: equipment that becomes standard on the next trim (including what is only an
+// option on the current trim — Sam: an option is not taken off), a different standard version (a bigger screen),
+// and options the current trim does not offer. What the current trim already has standard is left out. When the
+// guide does not list an item for the current trim, it is still left out if there is evidence the current trim has
+// it standard: a trim below it lists it as standard, or a window sticker on one of the current trim's vehicles in
+// stock shows it (`onCurrent`).
 export function stepUp(current,next,{below=[],onCurrent=()=>false}={}){
  const adds=[],changes=[],options=[];
  const already=key=>below.some(t=>factFor(t,key)?.status==='standard')||onCurrent(key);
@@ -48,9 +49,9 @@ export function stepUp(current,next,{below=[],onCurrent=()=>false}={}){
   const now=factFor(current,f.key);
   if(f.status==='standard'){
    if(now?.status==='standard'){
-    // Same item, different standard version: only when the current trim cannot have that version as an upgrade.
-    if(norm(now.value)!==norm(f.value)&&!upgradeOn(now,f.value))changes.push({key:f.key,label:f.label,value:f.value,note:f.note,sourceUrl:f.sourceUrl,before:describe(now),need:'standard',was:now.value});
-   }else if(now?.status==='unavailable'||(!now&&!already(f.key)))adds.push({key:f.key,label:f.label,value:f.value,note:f.note,sourceUrl:f.sourceUrl,before:now?describe(now):null,need:'standard'});
+    // Same item, different standard version (a bigger screen, other tires).
+    if(norm(now.value)!==norm(f.value))changes.push({key:f.key,label:f.label,value:f.value,note:f.note,sourceUrl:f.sourceUrl,before:describe(now),need:'standard',was:now.value});
+   }else if(now?.status==='optional'||now?.status==='unavailable'||(!now&&!already(f.key)))adds.push({key:f.key,label:f.label,value:f.value,note:f.note,sourceUrl:f.sourceUrl,before:now?describe(now):null,need:'standard'});
   }else if(f.status==='optional'&&(now?.status==='unavailable'||(!now&&!already(f.key))))options.push({key:f.key,label:f.label,value:f.value,note:f.note,sourceUrl:f.sourceUrl,before:now?describe(now):null,need:'option'});
   // Upgrades offered on the next trim that the current trim does not offer (a bigger screen, a better stereo).
   for(const o of f.options||[]){
