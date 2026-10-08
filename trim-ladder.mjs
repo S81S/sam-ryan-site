@@ -55,6 +55,9 @@ export function stepUp(current,next,{below=[],onCurrent=()=>false}={}){
   // Upgrades offered on the next trim that the current trim does not offer (a bigger screen, a better stereo).
   for(const o of f.options||[]){
    if(upgradeOn(now,o.value)||(now?.status==='standard'&&norm(now.value)===norm(o.value)))continue;
+   // The current trim has this item standard while the next trim only offers it as an extra (a Warlock's standard
+   // locker against a Big Horn's locker option): nothing new to step up for.
+   if(now?.status==='standard'&&f.status!=='standard')continue;
    options.push({key:o.key||o.label,label:o.label,value:o.value,note:o.note,sourceUrl:o.sourceUrl,base:f.key,before:now?describe(now):null,need:'option'});
   }
  }
