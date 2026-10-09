@@ -2209,6 +2209,443 @@
           "sourceContext": "2026 U.S. two-row Laredo 4x2, 22D; VIN 1C4RJGAG1TC307222."
         }
       ]
+    },
+    {
+      "id": "wrangler",
+      "year": 2026,
+      "baseTrim": "sport",
+      "sourceUrl": "https://media.stellantisnorthamerica.com/view-spec.do?id=27222",
+      "scope": "2026 U.S. left-hand-drive, four-door Jeep Wrangler gasoline models with 2.0L four-cylinder or 3.6L V6 only. Covers the ordinary Sport, Sport S, Willys, Sahara, Rubicon and Rubicon X configurations. Two-door, 4xe, 392/V8, RHD and separately equipped special editions require separate evidence.",
+      "shopperScope": "This guide covers four-door, four- and six-cylinder Wranglers. Begin with Sport, then choose upholstery and roof options. Two-door, 4xe, 392 and special editions have separate equipment.",
+      "rankNote": "These are trim and package branches, not a universal price or capability ladder. Sahara and Rubicon have different purposes and upholstery options.",
+      "sourceReconciliation": "The general feature chart labels Sahara/Rubicon seating premium cloth. The manufacturer order guide identifies exact E7 Sport/Sahara and K7 Rubicon cloth codes, while VIN stickers use the same generic Cloth Low-Back Bucket Seats wording for both. The E7 photo must not match K7 merely by that wording. Rubicon and Rubicon X share the VL Nappa code. Hardtop photos illustrate the three-piece architecture only, with black or body-color finish stated separately. Factory roof options supersede a retained base soft-top line on a sticker; Dual Top Group remains a valid exception with both roof types.",
+      "trims": [
+        {
+          "id": "sport",
+          "name": "Sport",
+          "rank": 0,
+          "choices": {
+            "j22109-cloth": {
+              "status": "standard",
+              "note": "The pictured black cloth is the E7 seat configuration. Optional Mopar seat coverings are a different configuration.",
+              "sourceUrl": "https://www.jeepgladiatorforum.com/forum/attachments/2026-4-door-wrangler-pdf.446484/",
+              "sourcePage": 5,
+              "sourceMark": "E7X9 (S)",
+              "upholsteryCode": "E7",
+              "vinEvidenceSource": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4PJXDN3TW207204"
+            },
+            "j22412-nappa": {
+              "status": "unavailable",
+              "note": "The pictured VL Nappa leather seat is a Rubicon/Rubicon X configuration. Mopar leather seat-cover options are distinct from this Nappa seat.",
+              "sourceUrl": "https://www.jeepgladiatorforum.com/forum/attachments/2026-4-door-wrangler-pdf.446484/",
+              "sourcePages": [
+                5,
+                9,
+                13,
+                17
+              ],
+              "sourceMark": "VL trim application",
+              "upholsteryCode": "VL"
+            },
+            "j22109-hardtop": {
+              "status": "optional",
+              "note": "A black three-piece hardtop is optional on Sport. The photo shows the removable-panel design in black. The pictured Sport has a hardtop and an explicit soft-top deletion.",
+              "sourceUrl": "https://www.jeepgladiatorforum.com/forum/attachments/2026-4-door-wrangler-pdf.446484/",
+              "sourcePage": 3,
+              "sourceMark": "HT1 option",
+              "roofCodes": [
+                "HT1"
+              ],
+              "vinEvidenceSource": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4PJXDN3TW207204",
+              "replaces": "The fitted Sunrider soft top when ordered as a hardtop-only configuration.",
+              "canOmit": true
+            },
+            "j22412-skyroof": {
+              "status": "unavailable",
+              "note": "Sky One-Touch starts with applicable Sport S and higher trim configurations; the base Sport roof options use a manual soft top or removable hardtop.",
+              "sourceUrl": "https://media.stellantisnorthamerica.com/view-spec.do?id=27222",
+              "sourceRows": [
+                "f:exterior|tops|sky-one-touch-powertop"
+              ],
+              "sourceMark": "Not offered on Sport",
+              "supportingSourceUrl": "https://www.jeepgladiatorforum.com/forum/attachments/2026-4-door-wrangler-pdf.446484/",
+              "supportingSourcePage": 3
+            }
+          }
+        },
+        {
+          "id": "sport-s",
+          "name": "Sport S",
+          "rank": 1,
+          "choices": {
+            "j22109-cloth": {
+              "status": "standard",
+              "note": "The pictured black cloth is the E7 seat configuration. Optional Mopar seat coverings are a different configuration.",
+              "sourceUrl": "https://www.jeepgladiatorforum.com/forum/attachments/2026-4-door-wrangler-pdf.446484/",
+              "sourcePage": 5,
+              "sourceMark": "E7X9 (S)",
+              "upholsteryCode": "E7",
+              "vinEvidenceSource": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4PJXDN3TW207204"
+            },
+            "j22412-nappa": {
+              "status": "unavailable",
+              "note": "The pictured VL Nappa leather seat is a Rubicon/Rubicon X configuration. Mopar leather seat-cover options are distinct from this Nappa seat.",
+              "sourceUrl": "https://www.jeepgladiatorforum.com/forum/attachments/2026-4-door-wrangler-pdf.446484/",
+              "sourcePages": [
+                5,
+                9,
+                13,
+                17
+              ],
+              "sourceMark": "VL trim application",
+              "upholsteryCode": "VL"
+            },
+            "j22109-hardtop": {
+              "status": "optional",
+              "note": "A black three-piece hardtop is optional on Sport S. The photo shows the removable-panel design in black. The separately ordered Dual Top Group includes a hardtop and a soft top.",
+              "sourceUrl": "https://www.jeepgladiatorforum.com/forum/attachments/2026-4-door-wrangler-pdf.446484/",
+              "sourcePage": 3,
+              "sourceMark": "HT1 option",
+              "roofCodes": [
+                "HT1"
+              ],
+              "vinEvidenceSource": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4PJXDN3TW207204",
+              "replaces": "The fitted Sunrider soft top when ordered as a hardtop-only configuration.",
+              "canOmit": true
+            },
+            "j22412-skyroof": {
+              "status": "optional",
+              "note": "Sky One-Touch is an optional power-opening fabric roof on Sport S. It replaces the conventional roof and cannot be combined with the three-piece hardtop or Dual Top Group.",
+              "sourceUrl": "https://www.jeepgladiatorforum.com/forum/attachments/2026-4-door-wrangler-pdf.446484/",
+              "sourcePage": 3,
+              "sourceMark": "STJ option; excludes AEN and HT1/HT3",
+              "roofCodes": [
+                "STJ"
+              ],
+              "vinEvidenceSource": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4PJXFNXTW271754",
+              "replaces": "The fitted Sunrider soft top or three-piece hardtop.",
+              "canOmit": true
+            }
+          }
+        },
+        {
+          "id": "willys",
+          "name": "Willys",
+          "rank": 2,
+          "choices": {
+            "j22109-cloth": {
+              "status": "standard",
+              "note": "The pictured black cloth is the E7 seat configuration. Optional Mopar seat coverings are a different configuration.",
+              "sourceUrl": "https://www.jeepgladiatorforum.com/forum/attachments/2026-4-door-wrangler-pdf.446484/",
+              "sourcePage": 5,
+              "sourceMark": "E7X9 (S)",
+              "upholsteryCode": "E7",
+              "vinEvidenceSource": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4PJXDN3TW207204"
+            },
+            "j22412-nappa": {
+              "status": "unavailable",
+              "note": "The pictured VL Nappa leather seat is a Rubicon/Rubicon X configuration. Mopar leather seat-cover options are distinct from this Nappa seat.",
+              "sourceUrl": "https://www.jeepgladiatorforum.com/forum/attachments/2026-4-door-wrangler-pdf.446484/",
+              "sourcePages": [
+                5,
+                9,
+                13,
+                17
+              ],
+              "sourceMark": "VL trim application",
+              "upholsteryCode": "VL"
+            },
+            "j22109-hardtop": {
+              "status": "optional",
+              "note": "A black three-piece hardtop is optional on Willys. The photo shows the removable-panel design in black. The separately ordered Dual Top Group includes a hardtop and a soft top.",
+              "sourceUrl": "https://www.jeepgladiatorforum.com/forum/attachments/2026-4-door-wrangler-pdf.446484/",
+              "sourcePage": 3,
+              "sourceMark": "HT1 option",
+              "roofCodes": [
+                "HT1"
+              ],
+              "vinEvidenceSource": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4PJXDN3TW207204",
+              "replaces": "The fitted Sunrider soft top when ordered as a hardtop-only configuration.",
+              "canOmit": true
+            },
+            "j22412-skyroof": {
+              "status": "optional",
+              "note": "Sky One-Touch is an optional power-opening fabric roof on Willys. It replaces the conventional roof and cannot be combined with the three-piece hardtop or Dual Top Group.",
+              "sourceUrl": "https://www.jeepgladiatorforum.com/forum/attachments/2026-4-door-wrangler-pdf.446484/",
+              "sourcePage": 3,
+              "sourceMark": "STJ option; excludes AEN and HT1/HT3",
+              "roofCodes": [
+                "STJ"
+              ],
+              "vinEvidenceSource": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4PJXFNXTW271754",
+              "replaces": "The fitted Sunrider soft top or three-piece hardtop.",
+              "canOmit": true
+            }
+          }
+        },
+        {
+          "id": "sahara",
+          "name": "Sahara",
+          "rank": 3,
+          "choices": {
+            "j22109-cloth": {
+              "status": "standard",
+              "note": "The pictured black cloth is the E7 seat configuration. Sahara can instead be equipped with McKinley-trimmed seats.",
+              "sourceUrl": "https://www.jeepgladiatorforum.com/forum/attachments/2026-4-door-wrangler-pdf.446484/",
+              "sourcePage": 9,
+              "sourceMark": "E7X9 (S)",
+              "upholsteryCode": "E7",
+              "vinEvidenceSource": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4PJXDN3TW207204"
+            },
+            "j22412-nappa": {
+              "status": "unavailable",
+              "note": "The pictured VL Nappa leather seat is a Rubicon/Rubicon X configuration. Sahara offers a different McKinley-trimmed seat option.",
+              "sourceUrl": "https://www.jeepgladiatorforum.com/forum/attachments/2026-4-door-wrangler-pdf.446484/",
+              "sourcePages": [
+                5,
+                9,
+                13,
+                17
+              ],
+              "sourceMark": "VL trim application",
+              "upholsteryCode": "VL"
+            },
+            "j22109-hardtop": {
+              "status": "optional",
+              "note": "A body-color three-piece hardtop is optional on Sahara. The photo shows the removable-panel design in black. The separately ordered Dual Top Group includes a hardtop and a soft top.",
+              "sourceUrl": "https://www.jeepgladiatorforum.com/forum/attachments/2026-4-door-wrangler-pdf.446484/",
+              "sourcePage": 7,
+              "sourceMark": "HT3 option",
+              "roofCodes": [
+                "HT3"
+              ],
+              "vinEvidenceSource": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4PJXDN3TW207204",
+              "replaces": "The fitted Sunrider soft top when ordered as a hardtop-only configuration.",
+              "canOmit": true
+            },
+            "j22412-skyroof": {
+              "status": "optional",
+              "note": "Sky One-Touch is an optional power-opening fabric roof on Sahara. It replaces the conventional roof and cannot be combined with the three-piece hardtop or Dual Top Group.",
+              "sourceUrl": "https://www.jeepgladiatorforum.com/forum/attachments/2026-4-door-wrangler-pdf.446484/",
+              "sourcePage": 7,
+              "sourceMark": "STJ option; excludes AEN and HT1/HT3",
+              "roofCodes": [
+                "STJ"
+              ],
+              "vinEvidenceSource": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4PJXFNXTW271754",
+              "replaces": "The fitted Sunrider soft top or three-piece hardtop.",
+              "canOmit": true
+            }
+          }
+        },
+        {
+          "id": "rubicon",
+          "name": "Rubicon",
+          "rank": 4,
+          "choices": {
+            "j22109-cloth": {
+              "status": "unavailable",
+              "note": "Rubicon starts with K7 cloth upholstery. This photo shows the different E7 Sport cloth, even though both use the same short sticker description.",
+              "sourceUrl": "https://www.jeepgladiatorforum.com/forum/attachments/2026-4-door-wrangler-pdf.446484/",
+              "sourcePages": [
+                5,
+                13,
+                23
+              ],
+              "sourceMark": "E7 versus K7 seat codes",
+              "upholsteryCode": "K7"
+            },
+            "j22412-nappa": {
+              "status": "optional",
+              "note": "Nappa leather is an optional Rubicon upholstery upgrade. It includes 8-way power front seats and 4-way power lumbar adjustment for both front occupants.",
+              "sourceUrl": "https://www.jeepgladiatorforum.com/forum/attachments/2026-4-door-wrangler-pdf.446484/",
+              "sourcePages": [
+                13,
+                17
+              ],
+              "sourceMark": "VL option",
+              "upholsteryCode": "VL",
+              "vinEvidenceSource": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4PJXFNXTW271754",
+              "replaces": "Rubicon K7 cloth seats and the corresponding manual front-seat adjustment.",
+              "supportingSourceUrl": "https://media.stellantisnorthamerica.com/view-spec.do?id=27222",
+              "supportingSourceRows": [
+                "f:interior|seating|leather-trimmed",
+                "f:interior|seating|driver-seat-12-way-power-fore-aft-recline-height-adjust-lumbar"
+              ]
+            },
+            "j22109-hardtop": {
+              "status": "optional",
+              "note": "A black or body-color three-piece hardtop is optional on Rubicon. The photo shows the removable-panel design in black. The separately ordered Dual Top Group includes a hardtop and a soft top.",
+              "sourceUrl": "https://www.jeepgladiatorforum.com/forum/attachments/2026-4-door-wrangler-pdf.446484/",
+              "sourcePage": 11,
+              "sourceMark": "HT1/HT3 option",
+              "roofCodes": [
+                "HT1",
+                "HT3"
+              ],
+              "vinEvidenceSource": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4PJXDN3TW207204",
+              "replaces": "The fitted Sunrider soft top when ordered as a hardtop-only configuration.",
+              "canOmit": true
+            },
+            "j22412-skyroof": {
+              "status": "optional",
+              "note": "Sky One-Touch is an optional power-opening fabric roof on Rubicon. It replaces the conventional roof and cannot be combined with the three-piece hardtop or Dual Top Group.",
+              "sourceUrl": "https://www.jeepgladiatorforum.com/forum/attachments/2026-4-door-wrangler-pdf.446484/",
+              "sourcePage": 11,
+              "sourceMark": "STJ option; excludes AEN and HT1/HT3",
+              "roofCodes": [
+                "STJ"
+              ],
+              "vinEvidenceSource": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4PJXFNXTW271754",
+              "replaces": "The fitted Sunrider soft top or three-piece hardtop.",
+              "canOmit": true
+            }
+          }
+        },
+        {
+          "id": "rubicon-x",
+          "name": "Rubicon X",
+          "rank": 5,
+          "choices": {
+            "j22109-cloth": {
+              "status": "unavailable",
+              "note": "Rubicon X includes VL Nappa leather in place of the cloth upholstery.",
+              "sourceUrl": "https://www.jeepgladiatorforum.com/forum/attachments/2026-4-door-wrangler-pdf.446484/",
+              "sourcePages": [
+                10,
+                13
+              ],
+              "sourceMark": "Rubicon X package replacement",
+              "upholsteryCode": "VL"
+            },
+            "j22412-nappa": {
+              "status": "standard",
+              "note": "Nappa leather and power front seats are included with Rubicon X. This is the same VL upholstery code as the optional Rubicon Nappa configuration.",
+              "sourceUrl": "https://www.jeepgladiatorforum.com/forum/attachments/2026-4-door-wrangler-pdf.446484/",
+              "sourcePages": [
+                10,
+                13,
+                17
+              ],
+              "sourceMark": "Rubicon X package",
+              "upholsteryCode": "VL",
+              "replaces": "Rubicon K7 cloth seats and manual front-seat adjustment."
+            },
+            "j22109-hardtop": {
+              "status": "standard",
+              "note": "Rubicon X includes a body-color three-piece hardtop. The photo demonstrates the removable-panel design in black; roof finish depends on the selected vehicle. Sky One-Touch is an alternative roof option.",
+              "sourceUrl": "https://www.jeepgladiatorforum.com/forum/attachments/2026-4-door-wrangler-pdf.446484/",
+              "sourcePages": [
+                10,
+                11
+              ],
+              "sourceMark": "HT3 included in Rubicon X",
+              "roofCodes": [
+                "HT3"
+              ],
+              "replaces": "The standard soft-top configuration on the underlying Rubicon.",
+              "canOmit": true
+            },
+            "j22412-skyroof": {
+              "status": "optional",
+              "note": "Sky One-Touch is an optional power-opening fabric roof on Rubicon X. It replaces the conventional roof and cannot be combined with the three-piece hardtop or Dual Top Group.",
+              "sourceUrl": "https://www.jeepgladiatorforum.com/forum/attachments/2026-4-door-wrangler-pdf.446484/",
+              "sourcePage": 11,
+              "sourceMark": "STJ option; excludes AEN and HT1/HT3",
+              "roofCodes": [
+                "STJ"
+              ],
+              "vinEvidenceSource": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4PJXFNXTW271754",
+              "replaces": "The fitted Sunrider soft top or three-piece hardtop.",
+              "canOmit": true
+            }
+          }
+        }
+      ],
+      "baseFeatures": [
+        {
+          "id": "engine",
+          "label": "Starting powertrain",
+          "value": "3.6L Pentastar V6; 6-speed manual",
+          "note": "The 2.0L turbo/8-speed automatic and V6/8-speed automatic are separate powertrain configurations. The pictured J22109 has the 2.0L turbo and automatic.",
+          "sourceUrl": "https://media.stellantisnorthamerica.com/view-spec.do?id=27222",
+          "sourceRows": [
+            "f:engines-transmissions||pentastar-3-6-liter-v-6-six-speed-manual",
+            "f:engines-transmissions||2-0-liter-inline-four-cylinder-eight-speed-automatic"
+          ],
+          "supportingSourceUrl": "https://www.jeepgladiatorforum.com/forum/attachments/2026-4-door-wrangler-pdf.446484/",
+          "supportingSourcePage": 2
+        },
+        {
+          "id": "drive",
+          "label": "Base drive system",
+          "value": "Command-Trac part-time 4WD",
+          "note": "Rubicon uses a different off-road drivetrain; selecting a roof or fabric does not select that drivetrain.",
+          "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4PJXDN3TW207204",
+          "sourceEvidence": "Command-Trac Part-Time 4WD System"
+        },
+        {
+          "id": "screen",
+          "label": "Base center screen",
+          "value": "12.3-inch Uconnect 5",
+          "note": "Navigation is a separate equipment upgrade; the base screen is already 12.3 inches.",
+          "sourceUrl": "https://media.stellantisnorthamerica.com/view-spec.do?id=27222",
+          "sourceRows": [
+            "f:uconnect-multimedia||radio-with-uconnect-5-with-12-3-in-display",
+            "f:uconnect-multimedia||radio-with-uconnect-5-nav-with-12-3-in-display"
+          ]
+        },
+        {
+          "id": "front-seats",
+          "label": "Base upholstery",
+          "value": "Black cloth low-back bucket seats",
+          "note": "The base Sport uses E7 cloth. Rubicon K7 cloth is a different upholstery configuration.",
+          "sourceUrl": "https://www.jeepgladiatorforum.com/forum/attachments/2026-4-door-wrangler-pdf.446484/",
+          "sourcePages": [
+            5,
+            13
+          ],
+          "sourceMark": "E7X9 (S)"
+        },
+        {
+          "id": "roof",
+          "label": "Base roof",
+          "value": "Black Sunrider soft top",
+          "note": "A three-piece hardtop replaces the fitted soft top; eligible Dual Top Group orders include both roof systems.",
+          "sourceUrl": "https://media.stellantisnorthamerica.com/view-spec.do?id=27222",
+          "sourceRows": [
+            "f:exterior|tops|sunrider-soft-top",
+            "f:exterior|tops|freedom-top-three-piece-modular-hardtop-with-rear-wiper-washer-rear-defroste",
+            "f:exterior|tops|dual-top-group-available-sunrider"
+          ],
+          "supportingSourceUrl": "https://www.jeepgladiatorforum.com/forum/attachments/2026-4-door-wrangler-pdf.446484/",
+          "supportingSourcePages": [
+            3,
+            17,
+            22
+          ]
+        },
+        {
+          "id": "seat-adjustment",
+          "label": "Base front-seat adjustment",
+          "value": "6-way manual driver; 4-way manual passenger",
+          "note": "The Nappa option includes power adjustment and power lumbar instead.",
+          "sourceUrl": "https://media.stellantisnorthamerica.com/view-spec.do?id=27222",
+          "sourceRows": [
+            "f:interior|seating|driver-seat-six-way-manual-fore-aft-recline-height-adjust",
+            "f:interior|seating|front-passenger-seat-four-way-manual-fore-aft-recline",
+            "f:interior|seating|driver-seat-12-way-power-fore-aft-recline-height-adjust-lumbar"
+          ],
+          "supportingSourceUrl": "https://www.jeepgladiatorforum.com/forum/attachments/2026-4-door-wrangler-pdf.446484/",
+          "supportingSourcePage": 17
+        }
+      ],
+      "orderGuide": {
+        "title": "FCA US LLC 2026 Jeep Wrangler four-door Customer Preferred Code Guide",
+        "issuedAt": "2025-07-24",
+        "url": "https://www.jeepgladiatorforum.com/forum/attachments/2026-4-door-wrangler-pdf.446484/",
+        "note": "Manufacturer document hosted as a public PDF attachment; base and pictured configurations corroborated against exact 2026 VIN stickers."
+      }
     }
   ]
 }
