@@ -167,3 +167,6 @@
 }
 
 .site-layout .site-header .brand-main b{color:#ff8790}
+
+/* Disclosure controls need a usable touch target on phones. */
+main summary{min-height:44px;padding-top:10px;padding-bottom:10px;box-sizing:border-box}

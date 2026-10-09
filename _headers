@@ -64,3 +64,9 @@ https://:version.:project.pages.dev/*
 
 /shopping-mobile-check.html
   X-Robots-Tag: noindex, nofollow
+
+/trim-finder.css
+  Cache-Control: public, max-age=0, must-revalidate
+
+/inquiry.js
+  Cache-Control: public, max-age=0, must-revalidate
