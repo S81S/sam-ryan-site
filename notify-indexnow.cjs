@@ -7,8 +7,8 @@ async function main(){
  const key=read('indexnow-key.txt').trim();if(!/^[a-zA-Z0-9-]{8,128}$/.test(key))throw Error('Invalid verification key');
  let urls;
  if(process.argv.includes('--initial')) urls=[...read('sitemap-vehicles.xml').matchAll(/<loc>(.*?)<\/loc>/g)].map(m=>m[1]);
- else urls=execFileSync('git',['diff-tree','--no-commit-id','--name-only','-r','HEAD'],{cwd:root,encoding:'utf8'}).trim().split('\n').filter(f=>/^vehicle-[A-HJ-NPR-Z0-9]{17}\.html$|^vehicles(?:-\d+)?\.html$/.test(f)).map(f=>origin+'/'+f.slice(0,-5));
- urls=[...new Set(urls)];if(!urls.length){console.log('No changed vehicle URLs; no notification sent.');return;}
+ else urls=execFileSync('git',['diff-tree','--no-commit-id','--name-only','-r','HEAD'],{cwd:root,encoding:'utf8'}).trim().split('\n').filter(f=>/^vehicle-[A-HJ-NPR-Z0-9]{17}\.html$|^vehicles(?:-\d+)?\.html$|^[a-z0-9-]+-with-[a-z0-9-]+-austin\.html$|^shop-by-feature\.html$/.test(f)).map(f=>origin+'/'+f.slice(0,-5));
+ urls=[...new Set(urls)];if(!urls.length){console.log('No changed vehicle or feature URLs; no notification sent.');return;}
  if(urls.length>10000||urls.some(u=>new URL(u).origin!==origin))throw Error('Invalid notification scope');
  const version=sha();let deployed=false;
  for(let attempt=0;attempt<24;attempt++){

@@ -146,6 +146,8 @@ Publish even when no vehicles changed: the files carry the time of the check, wh
 
 - The push starts the "Build searchable vehicle pages" workflow, which regenerates the vehicle pages and commits
   them. Check that it finished: `gh run list --limit 2`.
+- The same workflow rebuilds the shop-by-feature pages (`build-feature-pages.cjs`: `/shop-by-feature` and the
+  `<model>-with-<feature>-austin` pages) from the new data. Nothing extra to run or commit.
 - In the browser, on any carswithsam.com page, run
   `(await (await fetch('/data/used-inventory.json', {cache: 'reload'})).json()).capturedAt` and confirm it is the new
   capture time. Cloudflare usually publishes within a minute or two.

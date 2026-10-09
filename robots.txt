@@ -3,3 +3,4 @@ Allow: /
 
 Sitemap: https://carswithsam.com/sitemap.xml
 Sitemap: https://carswithsam.com/sitemap-vehicles.xml
+Sitemap: https://carswithsam.com/sitemap-features.xml
