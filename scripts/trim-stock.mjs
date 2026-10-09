@@ -5,7 +5,7 @@ import {guideTrim,guideRowIds} from '../trim-link.mjs';
 import {applyFactoryEquipment} from '../factory-equipment.mjs';
 import {parseQuery,matchVehicle} from '../equipment-search.mjs';
 import {factoryFacts} from '../factory-facts.mjs';
-import {factoryRowIds} from '../factory-stickers.mjs';
+import {factoryRowIds,optionWords,nameWords,stickerHas,engineRow,engineMatches} from '../factory-stickers.mjs';
 import {colorKey,colorName} from '../color-names.mjs';
 const read=f=>JSON.parse(readFileSync(new URL('../'+f,import.meta.url),'utf8'));
 const data=read('trim-standard-data.json'),inventory=read('data/used-inventory.json'),records=read('data/equipment-index.json').records;
@@ -53,6 +53,15 @@ for(const [key,{m,vehicles}] of groups){
   for(const trim of m.model.trims)for(const [row,ids] of guideRowIds(trim))add(row,ids);
   // Chart rows: only a sticker feature that covers the row itself (factory-stickers.mjs).
   for(const c of charts.filter(c=>c.model===id))for(const t of c.entry.trims)for(const fact of factoryFacts(c.entry,t,{fleet:c.fleet})){const ids=factoryRowIds(fact);if(ids.length)add(fact.key,ids);}
+  // Chart options, to be read off each sticker by name (factory-stickers.mjs): key → words.
+  entry.opts=[];entry._words=[];
+  for(const c of charts.filter(c=>c.model===id))for(const t of c.entry.trims)for(const fact of factoryFacts(c.entry,t,{fleet:c.fleet})){
+   if(entry.opts.includes(fact.key))continue;
+   // Engine rows are read off the sticker's own engine and transmission lines; other options by name.
+   const eng=engineRow(fact);if(eng){entry.opts.push(fact.key);entry._words.push({engine:eng});continue;}
+   if(fact.status!=='optional')continue;
+   const w=optionWords(fact);if(w){entry.opts.push(fact.key);entry._words.push(w);}
+  }
  }
  for(const v of vehicles){
   const sticker=applyFactoryEquipment(v,records[v.vin]),features=sticker?.status==='verified'?sticker.features||{}:{};
@@ -63,9 +72,21 @@ for(const [key,{m,vehicles}] of groups){
 for(const entry of Object.values(models)){
  for(const v of entry.vehicles){
   v.y=[];v.n=[];entry.ids.forEach((f,n)=>{if(v._f[f]?.value===true)v.y.push(n);else if(v._f[f]?.value===false)v.n.push(n);});
+  // Chart options named on this vehicle's own window sticker.
+  const lines=v.sticker?(records[v.vin]?.lines||[]).map(l=>new Set(nameWords(l))):[];
+  const raw=v.sticker?records[v.vin]?.lines||[]:[];
+  v.o=[];(entry._words||[]).forEach((w,n)=>{if(!lines.length)return;if(w.engine?engineMatches(w.engine,raw):stickerHas(lines,w))v.o.push(n);});
   delete v._v;delete v._f;
  }
  entry.vehicles.sort((a,b)=>(a.price??Infinity)-(b.price??Infinity));
+}
+// An option name that no sticker in stock ever matches can't be judged by its absence; one that some sticker matches can.
+for(const entry of Object.values(models)){
+ if(!entry.opts)continue;
+ entry.optSeen=entry.opts.map((k,n)=>n).filter(n=>entry.vehicles.some(v=>v.o.includes(n)));
+ // Engine rows: every sticker names its engine, so a sticker without this one doesn't have it.
+ entry.eng=entry._words.map((w,n)=>w.engine?n:-1).filter(n=>n>=0);
+ delete entry._words;
 }
 const out={generatedAt:inventory.capturedAt,trims,models};
 const file=new URL('../data/trim-stock.json',import.meta.url),text=JSON.stringify(out);

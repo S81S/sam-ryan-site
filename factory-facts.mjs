@@ -37,8 +37,10 @@ export function factoryFacts(entry,trimId,opts={}){
  // A chart can print the same line twice (two wheel codes, both "17-in. aluminum Rubicon machined with black pockets",
  // one standard and one optional on the Rubicon). The shopper sees it once, at its best: standard, else optional.
  const rank={standard:0,optional:1,unavailable:2},best=new Map();
- for(const f of out){const k=f.label.toLowerCase(),b=best.get(k);if(!b||rank[f.status]<rank[b.status])best.set(k,f);}
- for(let n=out.length-1;n>=0;n--)if(best.get(out[n].label.toLowerCase())!==out[n])out.splice(n,1);
+ // Order codes don't count: front and rear "Off-road (SFD)" / "Off-road (SGD)" shocks read the same to a shopper.
+ const same=f=>f.label.replace(/\(\s*[*–-]?[A-Z0-9]{1,4}(?:\s*[\/,]\s*[*–-]?[A-Z0-9]{1,4})*\s*\)/g,'').replace(/\s+/g,' ').trim().toLowerCase();
+ for(const f of out){const k=same(f),b=best.get(k);if(!b||rank[f.status]<rank[b.status])best.set(k,f);}
+ for(let n=out.length-1;n>=0;n--)if(best.get(same(out[n]))!==out[n])out.splice(n,1);
  // Some charts mark more than one engine standard on a trim (the engine depends on the configuration, e.g. the 2026
  // Wrangler Sahara's V-6 and 2.0L turbo rows): neither is "the" standard engine, so each reads as one of the choices.
  const engines=out.filter(f=>f.status==='standard'&&/ENGINE|POWERTRAIN/i.test(f.section||'')&&(!f.parent||/engine/i.test(f.parent))&&/\b\d\.\d\s*-?\s*(?:L|liter)\b|\bHEMI\b|Pentastar|Hurricane|SIXPACK/i.test(f.text||''));
