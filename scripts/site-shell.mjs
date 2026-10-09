@@ -10,7 +10,7 @@ for(const file of fs.readdirSync(root).filter(n=>n.endsWith('.html')&&!/^vehicle
  const route=file==='index.html'?'/':'/'+file.replace(/\.html$/,''),advisor=file==='ryan.html'?'Ryan':'Sam';
  const header=shell.header(route,advisor).split('<div class="affiliation-bar">')[0];
  const next=text.replace(/<header\b[^>]*data-site-header[\s\S]*?<\/header>/,header)
-  .replaceAll('/site-shell.css?v=20261005-fixes','/site-shell.css?v=20261009-cleanup');
+  .replace(/\/site-shell\.css\?v=[^\"]+/g,'/site-shell.css?v=20261009-touch');
  if(next!==text){fs.writeFileSync(url,next);count++;}
 }
 console.log(`Updated shared navigation on ${count} static pages.`);
