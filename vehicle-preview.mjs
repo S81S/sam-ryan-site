@@ -22,7 +22,7 @@ export function openVehiclePreview(vehicle, request = '') {
   }
   dialog.replaceChildren();
   const close = element('button', 'Close ×', 'mini-btn');
-  close.type = 'button';
+  close.type = 'button';close.autofocus=true;
   close.classList.add('vehicle-preview-close');
   close.addEventListener('click', () => dialog.close());
   const title = element('h2', vehicle.title);
@@ -84,4 +84,5 @@ export function openVehiclePreview(vehicle, request = '') {
   photos.className = 'mini-btn'; photos.target = '_blank'; photos.rel = 'noopener';
   dialog.append(photos);
   dialog.showModal();
+  dialog.scrollTop=0;
 }

@@ -10,7 +10,9 @@ for(const file of fs.readdirSync(root).filter(n=>n.endsWith('.html')&&!/^vehicle
  const route=file==='index.html'?'/':'/'+file.replace(/\.html$/,''),advisor=file==='ryan.html'?'Ryan':'Sam';
  const header=shell.header(route,advisor).split('<div class="affiliation-bar">')[0];
  const next=text.replace(/<header\b[^>]*data-site-header[\s\S]*?<\/header>/,header)
-  .replace(/\/site-shell\.css\?v=[^\"]+/g,'/site-shell.css?v=20261009-touch');
- if(next!==text){fs.writeFileSync(url,next);count++;}
+  .replace(/\/site-shell\.css\?v=[^\"]+/g,'/site-shell.css?v=20261009-responsive')
+  .replace(/(<meta name="viewport" content=")[^"]+(">)/,'$1width=device-width,initial-scale=1,viewport-fit=cover$2');
+ const result=next.includes('src="/site-navigation.mjs"')?next:next.replace('</head>','<script type="module" src="/site-navigation.mjs"></script></head>');
+ if(result!==text){fs.writeFileSync(url,result);count++;}
 }
 console.log(`Updated shared navigation on ${count} static pages.`);

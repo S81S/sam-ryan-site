@@ -2,3 +2,27 @@
 
 .vehicle-search-page .search-options{gap:12px;flex-wrap:wrap}.vehicle-search-page .search-options label{flex:1 1 220px;min-width:0}.vehicle-search-page .search-options select{box-sizing:border-box;width:100%;min-width:0;margin-left:0}.vehicle-preview .gallery-nav{flex-wrap:wrap}.vehicle-preview .gallery-nav button{min-height:44px}
 .vehicle-search-page #edit-search{color:#17232e;background:#fff;min-height:44px}.vehicle-search-page .compare-selection-bar{color:#fff}.vehicle-search-page .compare-selection-bar span{color:#fff}
+
+/* The shortlist stays above the contact dock without covering the last vehicle. */
+.vehicle-search-page .inventory-compare-bar{position:fixed;inset:auto 0 var(--cws-bottom-dock-height,0px);z-index:65;display:flex;align-items:center;justify-content:center;gap:8px 12px;flex-wrap:wrap;padding:10px max(16px,env(safe-area-inset-right,0px)) 10px max(16px,env(safe-area-inset-left,0px));margin:0;background:#0d1117;border-top:1px solid #ffffff40;box-shadow:0 -6px 20px #0007;box-sizing:border-box}
+.vehicle-search-page .inventory-compare-bar[hidden]{display:none!important}
+.vehicle-search-page .inventory-compare-bar>span{min-width:0;overflow-wrap:anywhere;font-size:14px;line-height:1.5}
+.vehicle-search-page .inventory-compare-bar .mini-btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;margin:0;white-space:normal;text-align:center}
+.vehicle-search-page .results-title{flex-wrap:wrap}
+.vehicle-search-page .results-title h2{min-width:0;overflow-wrap:anywhere}
+.vehicle-search-page .match,.vehicle-search-page .match-list,.vehicle-search-page .search-summary,.vehicle-search-page .stock-actions>*{min-width:0;overflow-wrap:anywhere}
+.vehicle-search-page .search-options select{font-size:16px;min-height:44px}
+.vehicle-search-page .verification-toggle{min-height:44px}
+.vehicle-search-page .filter-btn{min-height:44px;white-space:normal}
+.vehicle-search-page .more-actions-list .mini-btn{min-height:44px;display:inline-flex;align-items:center}
+/* Dynamic viewport units keep the close control and actions inside a mobile keyboard/landscape viewport. */
+.vehicle-preview{box-sizing:border-box;max-width:calc(100vw - 24px);max-height:calc(100vh - 24px);max-height:calc(100dvh - 24px);overflow-wrap:anywhere;overscroll-behavior:contain;scrollbar-gutter:stable}
+.vehicle-preview .vehicle-preview-close{z-index:1;min-height:44px;margin:0 0 10px 12px}
+.vehicle-preview h2{font-size:clamp(1.25rem,4vw,1.8rem);line-height:1.3}
+.vehicle-preview .vehicle-preview-photo{max-height:48dvh}
+.vehicle-preview select{max-width:100%;font-size:16px;min-height:44px}
+.vehicle-preview .gallery-nav button{min-width:44px;white-space:normal}
+.vehicle-preview .hero-actions>a{min-width:0;white-space:normal;text-align:center;overflow-wrap:anywhere}
+@media(max-width:600px){.vehicle-search-page .inventory-compare-bar>span{flex-basis:100%;text-align:center}.vehicle-search-page .inventory-compare-bar>a{flex:1}.vehicle-preview .gallery-nav{gap:8px}.vehicle-preview .gallery-nav>p{flex-basis:100%;margin:0;text-align:center}}
+@media(max-width:1050px),(hover:none) and (pointer:coarse){.vehicle-search-page:has(textarea:focus,input:not([type="button"]):not([type="submit"]):not([type="checkbox"]):not([type="radio"]):not([type="range"]):focus,[contenteditable="true"]:focus) .inventory-compare-bar{display:none}}
+@media print{.vehicle-search-page .inventory-compare-bar{display:none!important}}

@@ -27,7 +27,7 @@ export function installVehiclePickers(vehicles,document=globalThis.document) {
  const heading=el('h2'),chips=el('div'),jump=el('button','See equipment comparison ↓');
  heading.setAttribute('aria-live','polite');chips.className='compare-selection-chips';jump.type='button';jump.className='btn';
  bar.append(heading,chips,jump);document.querySelector('.sticker-grid').before(bar);
- jump.addEventListener('click',()=>{const results=$('automatic-equipment');results.setAttribute('tabindex','-1');results.scrollIntoView({behavior:'smooth',block:'start'});results.focus({preventScroll:true});});
+ jump.addEventListener('click',()=>{const results=$('automatic-equipment');results.setAttribute('tabindex','-1');results.scrollIntoView({behavior:globalThis.matchMedia?.('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});results.focus({preventScroll:true});});
  function updateBar(){
   const selected=sides.map(side=>({side,vehicle:vehicles.find(v=>v.vin===$('choose-'+side).value)})).filter(item=>item.vehicle);
   heading.textContent=selected.length<2?`${selected.length} of 2 vehicles selected to start`:`${selected.length} vehicles ready to compare`;
@@ -49,10 +49,12 @@ export function installVehiclePickers(vehicles,document=globalThis.document) {
   const startingCondition=new URLSearchParams(globalThis.location?.search||'').get('condition');
   condition.value=['New','Used','Both'].includes(startingCondition)?startingCondition:'New';box.append(label,condition);selection.after(box);box.append(lookup);
   lookup.querySelector('label').textContent=`Find vehicle ${side}`;
-  input.type='search';input.placeholder='Try Ram 1500 with Harman Kardon under $60k';input.setAttribute('aria-describedby','picker-count-'+side);
+  input.type='search';input.placeholder='Try Ram 1500 with Harman Kardon under $60k';input.setAttribute('aria-describedby','picker-count-'+side);input.setAttribute('enterkeyhint','search');input.setAttribute('autocapitalize','none');input.spellcheck=false;
   const count=el('p');count.id='picker-count-'+side;count.className='picker-count';count.setAttribute('role','status');
-  const results=el('ul');results.className='picker-results';results.setAttribute('aria-label',`Matches for vehicle ${side}`);
+  const results=el('ul');results.className='picker-results';results.id='picker-results-'+side;input.setAttribute('aria-controls',results.id);results.setAttribute('aria-label',`Matches for vehicle ${side}`);
   input.closest('.lookup-input-row').after(count,results);
+  // Change vehicle reveals this picker again; keep keyboard users at its search field.
+  $('clear-'+side).addEventListener('click',()=>input.focus());
   let choosing=false,previous=selection.value,searchTimer;
   function render(){
    results.replaceChildren();

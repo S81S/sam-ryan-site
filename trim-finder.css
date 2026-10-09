@@ -171,3 +171,32 @@
 .tf-budget{display:grid;gap:6px;max-width:400px;margin:0 0 20px}.tf-budget label{font-weight:800}.tf-budget input{font:inherit;padding:12px;min-height:48px;border-radius:8px;border:1px solid #647386;background:#0b141b;color:#fff;width:100%;box-sizing:border-box}.tf-budget small,.tf-snapshot{font-size:13px;color:#c3cdd8;line-height:1.5}.tf-snapshot{margin:0 0 16px}
 
 #finder{min-height:900px}.tf-source a{text-decoration:underline;text-underline-offset:3px}
+
+/* Shrink nested grids and fieldsets without clipping equipment names or controls. */
+.finder{min-width:0;width:100%;box-sizing:border-box;overflow-wrap:anywhere}
+.finder :is(.tf-group,.tf-current>*,.tf-next-head>*,.tf-model,.tf-car,.tf-car>span,.tf-text,.tf-lines li>span,.tf-path li){min-width:0}
+.tf-models{grid-template-columns:repeat(auto-fill,minmax(min(100%,220px),1fr))}
+.tf-standard ul,.tf-summary ul{grid-template-columns:repeat(auto-fill,minmax(min(100%,260px),1fr))}
+.tf-cars{grid-template-columns:repeat(auto-fill,minmax(min(100%,250px),1fr))}
+.tf-lines{grid-template-columns:repeat(auto-fill,minmax(min(100%,280px),1fr))}
+.tf-path li>*{max-width:100%;white-space:normal;text-align:left}
+.tf-fold summary,.tf-standard summary{overflow-wrap:anywhere}
+.tf-fold summary{flex-wrap:wrap}
+.tf-fold summary::before{content:'+';flex:none;font-size:20px}
+.tf-fold[open]>summary::before{content:'−'}
+.finder :is(button,.btn,.tf-secondary){max-width:100%;white-space:normal;overflow-wrap:anywhere;box-sizing:border-box}
+.finder :is(button,a,input,summary):focus-visible{outline:3px solid var(--gold,#ffc447);outline-offset:3px}
+.finder :is(.tf-priorities input,.tf-budget input){font-size:16px}
+.tf-photo,.tf-next-photo,.tf-model img,.tf-car img{object-fit:contain}
+.tf-current h2,.tf-title{scroll-margin-top:var(--cws-header-offset,120px)}
+.tf-sticky{bottom:var(--cws-bottom-dock-height,0px)}
+.tf-source a{display:inline-block;min-height:44px;padding-block:10px;box-sizing:border-box}
+@media(max-width:720px){
+ .tf-models{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .tf-standard ul,.tf-summary ul,.tf-lines,.tf-cars{grid-template-columns:minmax(0,1fr)}
+ .tf-current,.tf-next,.tf-summary,.tf-instock,.tf-live-stock,.tf-priorities,.tf-answer{min-width:0}
+ .tf-car img,.tf-live-stock .tf-car img{width:clamp(72px,25vw,118px);flex-basis:clamp(72px,25vw,118px)}
+ .tf-car>span,.tf-live-stock .tf-car>span{padding:8px;flex:1 1 0}
+ .tf-actions .tf-link{align-self:flex-start}
+}
+@media(max-width:400px){.tf-models{grid-template-columns:minmax(0,1fr)}.tf-priorities,.tf-summary,.tf-instock,.tf-answer{padding:14px}.tf-path{gap:5px}}

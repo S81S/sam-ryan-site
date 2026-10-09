@@ -10,3 +10,25 @@
 
 .pg-base{background:#111923;border:1px solid #566372;border-radius:16px;padding:24px;margin-top:22px}.pg-base-features{padding:0;list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.pg-base-features li{display:grid;gap:5px;padding:12px 0;border-bottom:1px solid #34414f}.pg-base-features li>span{color:#bcc7d2;font-size:13px}.pg-base-features strong{font-size:17px}.pg-base-features small{line-height:1.4;color:#bcc7d2}.pg-factory-link{color:#ff939c;display:inline-flex;min-height:44px;align-items:center;text-decoration:underline}.pg-trim-summary{padding:16px 20px;border:1px solid #73613a;background:#242015;border-radius:12px;margin:20px 0}.pg-trim-summary h3{margin:6px 0;font-size:22px}.pg-trim-summary p{font-size:13px;color:#dfd7c7;margin:8px 0 0}.pg-route{display:block;color:#b8e5d0;font-size:13px;margin-bottom:10px}.pg-linked{display:block;color:#ffe16a;font-size:13px;margin-top:10px}.pg-linked-list{font-size:13px;color:#ffe16a;margin:10px 0 0;padding-left:20px}.pg-starting-feature{font-size:14px;color:#dce5ee}.pg-unavailable{margin:18px 0}.pg-unavailable>summary{color:#bcc7d2;cursor:pointer;min-height:44px;display:flex;align-items:center;text-decoration:underline}.pg-unavailable .pg-card{opacity:.6}
 @media(max-width:600px){.pg-base{padding:18px 14px}.pg-base-features{grid-template-columns:1fr}.pg-trim-summary{padding:14px}.pg-trim-summary h3{font-size:20px}}
+
+/* Keep long factory labels and native controls inside narrow and zoomed layouts. */
+.photo-guide{box-sizing:border-box;width:100%;min-width:0;overflow-wrap:anywhere}
+.pg-setup label,.pg-option,.pg-base-features li,.pg-bar>*{min-width:0}
+.pg-card{touch-action:pan-y pinch-zoom}
+.pg-card-actions{display:flex;gap:8px;margin-top:8px}
+.pg-card-actions button{flex:1 1 0;min-width:0;min-height:48px;border:1px solid #627080;border-radius:9px;padding:10px 12px;color:#f5f7fa;font:inherit;cursor:pointer;overflow-wrap:anywhere}
+.pg-card-actions .pg-negative{background:#39242b;border-color:#ab7883}
+.pg-card-actions .pg-positive{background:#234638;border-color:#79a891}
+.pg-controls button,.pg-result-controls button,.pg-result-controls a,.pg-tools button,.pg-setup button{max-width:100%;white-space:normal;overflow-wrap:anywhere;text-align:center;justify-content:center}
+.pg-source summary,.pg-unavailable>summary{gap:8px}
+.pg-source summary::before,.pg-unavailable>summary::before{content:'+';flex:none;font-size:20px;font-weight:700;text-decoration:none}
+.pg-source[open]>summary::before,.pg-unavailable[open]>summary::before{content:'−'}
+.photo-guide input:focus-visible,.photo-guide select:focus-visible,.photo-guide summary:focus-visible{outline:3px solid #e9bb4c;outline-offset:4px}
+.photo-guide [data-heading]{scroll-margin-top:var(--cws-header-offset,120px)}
+@media(max-width:600px){
+ .pg-controls{gap:8px}.pg-controls button{flex:1 1 145px}
+ .pg-result-controls>*{flex:1 1 100%;box-sizing:border-box}
+ .pg-setup label{flex-basis:100%}
+ .pg-card-caption small{font-size:13px}
+}
+@media(hover:none){.pg-card:hover{border-color:#566372;box-shadow:none}}

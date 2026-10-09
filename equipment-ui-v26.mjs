@@ -33,19 +33,25 @@ const pageSize=()=>Number($('results-per-page').value);
 let compareVins=[];
 try{compareVins=JSON.parse(sessionStorage.getItem('samRyanCompareVins')||'[]')}catch{}
 const compareBar=el('div');
-compareBar.className='compare-selection-bar';
-compareBar.style.cssText='display:none;position:fixed;left:0;right:0;bottom:58px;z-index:1000;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;padding:12px 16px;border-top:1px solid rgba(255,255,255,.25);background:#0d1117;box-shadow:0 -6px 20px rgba(0,0,0,.45)';
-const compareText=el('span');
+compareBar.className='compare-selection-bar inventory-compare-bar';
+compareBar.hidden=true;compareBar.setAttribute('role','region');compareBar.setAttribute('aria-label','Vehicles selected for comparison');
+const compareText=el('span');compareText.setAttribute('role','status');compareText.setAttribute('aria-atomic','true');
 const compareGo=link('Compare selected →','#');
 const compareClear=el('button','Clear','mini-btn');compareClear.type='button';
 compareBar.append(compareText,compareGo,compareClear);
 $('matchResults').parentNode.insertBefore(compareBar,$('matchResults'));
+// Reserve the actual toolbar height as it wraps, including larger text and foldable layouts.
+// ResizeObserver also releases this space when the keyboard rules hide the toolbar.
+const syncCompareBarHeight=()=>document.documentElement.style.setProperty('--cws-compare-bar-height',`${Math.ceil(compareBar.getBoundingClientRect().height)}px`);
+if(typeof ResizeObserver==='function')new ResizeObserver(syncCompareBarHeight).observe(compareBar);
+else window.addEventListener('resize',syncCompareBarHeight);
 
 function saveCompare(){try{sessionStorage.setItem('samRyanCompareVins',JSON.stringify(compareVins))}catch{}}
 function updateCompareBar(){
- compareBar.style.display=compareVins.length?'flex':'none';
+ compareBar.hidden=!compareVins.length;
  compareText.textContent=compareVins.length+(compareVins.length===1?' vehicle selected to compare.':' vehicles selected to compare.');
  compareGo.href=comparisonLink(compareVins,shoppingContext());
+ syncCompareBarHeight();
 }
 function toggleCompare(vin,checked){
  if(checked){
