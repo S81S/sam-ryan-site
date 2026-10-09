@@ -1,0 +1,2214 @@
+{
+  "version": 1,
+  "verifiedAt": "2026-10-09",
+  "policy": "Factory trim eligibility and exact-VIN installed equipment are separate checks. Unknown or conflicting factory applicability does not become selectable merely because a stock vehicle has the feature. Package notes are conditions, not independent orderability promises.",
+  "models": [
+    {
+      "id": "ram-1500",
+      "year": 2026,
+      "baseTrim": "tradesman",
+      "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+      "scope": "2026 U.S. Ram 1500. Seating and roof photos depict Crew Cab examples; body, engine and package eligibility must also be met.",
+      "rankNote": "Ranks control display order only; specialty trims are separate branches, not a universal price or equipment ladder.",
+      "trims": [
+        {
+          "id": "tradesman",
+          "name": "Tradesman",
+          "rank": 0,
+          "choices": {
+            "r12196-dashboard": {
+              "status": "standard",
+              "note": "Included as standard equipment on this trim.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:uconnect-multimedia|radio-systems|uconnect-5-with-8-4-inch-touchscreen-display-ube"
+              ],
+              "sourceMark": "S",
+              "replaces": "A higher screen option replaces this center screen; both are not installed together."
+            },
+            "r12527-dashboard": {
+              "status": "unavailable",
+              "note": "This pictured equipment configuration is not listed for this trim.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:uconnect-multimedia|radio-systems|uconnect-5-nav-with-12-inch-touchscreen-display-included"
+              ],
+              "sourceMark": "NA",
+              "replaces": "The standard 8.4-inch center system when selected on Big Horn/Lone Star."
+            },
+            "r12315-dashboard": {
+              "status": "unavailable",
+              "note": "The factory chart does not list the UBW radio for this trim. The code-based 14.4/14.5 naming crosswalk does not add trim availability.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:uconnect-multimedia|radio-systems|uconnect-5-nav-with-14-5-inch-touchscreen-display-includ"
+              ],
+              "sourceMark": "NA",
+              "replaces": "This UBW center-radio upgrade is not listed for this trim.",
+              "radioCode": "UBW",
+              "factoryLabel": "Uconnect 5 NAV with 14.5-inch touchscreen display",
+              "stickerLabel": "14.4-Inch Touchscreen Display",
+              "crosswalkSource": "https://static.nhtsa.gov/odi/tsbs/2026/MC-11034895-0001.pdf",
+              "crosswalkEvidence": "Stellantis TSB 08-255-26, July 1, 2026, page 1 identifies Uconnect 5 NAV 14.4-inch display as sales code UBW for North American 2026\u20132027 DT Ram 1500 and D2 Ram 3500. The factory availability chart identifies the 14.5-inch-labeled radio with the same UBW sales code. This establishes a model-specific radio-code naming crosswalk, not a generic numeric size alias or software-update eligibility for the pictured VIN."
+            },
+            "r12527-cloth": {
+              "status": "unavailable",
+              "note": "Tradesman can have a cloth bench through L1, but this photo shows Deluxe Cloth Bucket Seats. It does not illustrate that bench.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:interior-features|seats|cloth-front-bucket-eight-way-power-driver-s-fore-aft-up-down-cushi"
+              ],
+              "sourceMark": "NA",
+              "replaces": "The base front-seat upholstery/layout; the pictured configuration also includes eight-way power driver adjustment."
+            },
+            "r12315-leather": {
+              "status": "unavailable",
+              "note": "This pictured equipment configuration is not listed for this trim.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:interior-features|seats|leather-trimmed-front-bucket-front-bucket-eight-way-power-driver-s"
+              ],
+              "sourceMark": "NA",
+              "replaces": "Lower trim cloth/vinyl front seating when choosing Laramie."
+            },
+            "r12315-panoramic": {
+              "status": "unavailable",
+              "note": "This pictured equipment configuration is not listed for this trim.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:interior-features|sunroof|dual-pane-power-operated-crew-cab-only-requires-h2-x2-p1-or-p2-g"
+              ],
+              "sourceMark": "NA",
+              "replaces": "The conventional roof configuration."
+            },
+            "r12196-manual-seat": {
+              "status": "standard",
+              "note": "Four-way manual driver adjustment is in this trim\u2019s base seat row. The Express photo illustrates the adjustment only; it does not select its cloth upholstery or bench layout.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:interior-features|seats|vinyl-front-bench-40-20-40-split-bench-four-way-manual-driver-s-fo"
+              ],
+              "sourceMark": "S",
+              "replaces": "Eight-way power adjustment replaces manual adjustment where an eligible seat/package is selected."
+            },
+            "r12527-power-seat": {
+              "status": "unavailable",
+              "note": "This pictured equipment configuration is not listed for this trim.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:interior-features|seats|cloth-front-bucket-eight-way-power-driver-s-fore-aft-up-down-cushi"
+              ],
+              "sourceMark": "NA",
+              "replaces": "Four-way manual driver adjustment where the base trim has manual seats."
+            },
+            "r12546-dashboard": {
+              "status": "standard",
+              "note": "Included as standard equipment on this trim.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:uconnect-multimedia|radio-systems|uconnect-5-with-8-4-inch-touchscreen-display-ube"
+              ],
+              "sourceMark": "S",
+              "replaces": "A higher screen option replaces this center screen; both are not installed together."
+            },
+            "r12546-vinyl-bench": {
+              "status": "standard",
+              "note": "Tradesman standard heavy-duty vinyl 40/20/40 split bench with four-way manual driver adjustment. This is the pictured R12546 configuration.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:interior-features|seats|vinyl-front-bench-40-20-40-split-bench-four-way-manual-driver-s-fo"
+              ],
+              "sourceMark": "S",
+              "replaces": "An eligible cloth or leather seating configuration replaces this base vinyl bench; bucket-seat layouts also remove the front-center seating position.",
+              "requires": [
+                "r12196-manual-seat"
+              ],
+              "conflictsWith": [
+                "r12527-power-seat"
+              ]
+            }
+          }
+        },
+        {
+          "id": "express",
+          "name": "Express",
+          "rank": 1,
+          "choices": {
+            "r12196-dashboard": {
+              "status": "standard",
+              "note": "Included as standard equipment on this trim.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:uconnect-multimedia|radio-systems|uconnect-5-with-8-4-inch-touchscreen-display-ube"
+              ],
+              "sourceMark": "S",
+              "replaces": "A higher screen option replaces this center screen; both are not installed together."
+            },
+            "r12527-dashboard": {
+              "status": "optional",
+              "note": "Ram\u2019s U.S. 2026 model page lists an available 12-inch touchscreen for Express. The page does not identify its required equipment package, so no package prerequisite is assumed. The photo illustrates the 12-inch center display in a Lone Star; other cabin trim can differ.",
+              "sourceUrl": "https://www.ramtrucks.com/2026/ram-1500.html",
+              "sourceMark": "Available",
+              "replaces": "The standard 8.4-inch center display on Express.",
+              "sourceContext": "2026 U.S. Ram 1500; MODEL COMPARE > EXPRESS; available 12-inch touchscreen.",
+              "reconciliation": "Current model-year manufacturer page explicitly lists Express availability; the earlier fleet chart has a blank Express cell."
+            },
+            "r12315-dashboard": {
+              "status": "unavailable",
+              "note": "The factory chart does not list the UBW radio for this trim. The code-based 14.4/14.5 naming crosswalk does not add trim availability.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:uconnect-multimedia|radio-systems|uconnect-5-nav-with-14-5-inch-touchscreen-display-includ"
+              ],
+              "sourceMark": "NA",
+              "replaces": "This UBW center-radio upgrade is not listed for this trim.",
+              "radioCode": "UBW",
+              "factoryLabel": "Uconnect 5 NAV with 14.5-inch touchscreen display",
+              "stickerLabel": "14.4-Inch Touchscreen Display",
+              "crosswalkSource": "https://static.nhtsa.gov/odi/tsbs/2026/MC-11034895-0001.pdf",
+              "crosswalkEvidence": "Stellantis TSB 08-255-26, July 1, 2026, page 1 identifies Uconnect 5 NAV 14.4-inch display as sales code UBW for North American 2026\u20132027 DT Ram 1500 and D2 Ram 3500. The factory availability chart identifies the 14.5-inch-labeled radio with the same UBW sales code. This establishes a model-specific radio-code naming crosswalk, not a generic numeric size alias or software-update eligibility for the pictured VIN."
+            },
+            "r12527-cloth": {
+              "status": "unknown",
+              "note": "Black Express offers a different cloth-bucket configuration; this Deluxe Cloth Bucket Seat photo is not verified for that configuration.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:interior-features|seats|cloth-front-bucket-eight-way-power-driver-s-fore-aft-up-down-cushi"
+              ],
+              "sourceMark": "NA",
+              "replaces": "The base front-seat upholstery/layout; the pictured configuration also includes eight-way power driver adjustment."
+            },
+            "r12315-leather": {
+              "status": "unavailable",
+              "note": "This pictured equipment configuration is not listed for this trim.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:interior-features|seats|leather-trimmed-front-bucket-front-bucket-eight-way-power-driver-s"
+              ],
+              "sourceMark": "NA",
+              "replaces": "Lower trim cloth/vinyl front seating when choosing Laramie."
+            },
+            "r12315-panoramic": {
+              "status": "unavailable",
+              "note": "This pictured equipment configuration is not listed for this trim.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:interior-features|sunroof|dual-pane-power-operated-crew-cab-only-requires-h2-x2-p1-or-p2-g"
+              ],
+              "sourceMark": "NA",
+              "replaces": "The conventional roof configuration."
+            },
+            "r12196-manual-seat": {
+              "status": "standard",
+              "note": "Four-way manual driver adjustment is in this trim\u2019s base seat row. The Express photo illustrates the adjustment only; it does not select its cloth upholstery or bench layout.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:interior-features|seats|cloth-front-bench-40-20-40-split-bench-four-way-manual-driver-s-fo"
+              ],
+              "sourceMark": "S",
+              "replaces": "Eight-way power adjustment replaces manual adjustment where an eligible seat/package is selected."
+            },
+            "r12527-power-seat": {
+              "status": "unavailable",
+              "note": "This pictured equipment configuration is not listed for this trim.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:interior-features|seats|cloth-front-bucket-eight-way-power-driver-s-fore-aft-up-down-cushi"
+              ],
+              "sourceMark": "NA",
+              "replaces": "Four-way manual driver adjustment where the base trim has manual seats."
+            },
+            "r12546-dashboard": {
+              "status": "standard",
+              "note": "Included as standard equipment on this trim.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:uconnect-multimedia|radio-systems|uconnect-5-with-8-4-inch-touchscreen-display-ube"
+              ],
+              "sourceMark": "S",
+              "replaces": "A higher screen option replaces this center screen; both are not installed together."
+            },
+            "r12546-vinyl-bench": {
+              "status": "unavailable",
+              "note": "This factory vinyl 40/20/40 bench is not listed for this trim. Its standard upholstery/layout is a different configuration.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:interior-features|seats|vinyl-front-bench-40-20-40-split-bench-four-way-manual-driver-s-fo"
+              ],
+              "sourceMark": "NA",
+              "replaces": "An eligible cloth or leather seating configuration replaces this base vinyl bench; bucket-seat layouts also remove the front-center seating position."
+            }
+          }
+        },
+        {
+          "id": "warlock",
+          "name": "Warlock",
+          "rank": 2,
+          "choices": {
+            "r12196-dashboard": {
+              "status": "standard",
+              "note": "Included as standard equipment on this trim.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:uconnect-multimedia|radio-systems|uconnect-5-with-8-4-inch-touchscreen-display-ube"
+              ],
+              "sourceMark": "S",
+              "replaces": "A higher screen option replaces this center screen; both are not installed together."
+            },
+            "r12527-dashboard": {
+              "status": "unavailable",
+              "note": "This pictured equipment configuration is not listed for this trim.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:uconnect-multimedia|radio-systems|uconnect-5-nav-with-12-inch-touchscreen-display-included"
+              ],
+              "sourceMark": "NA",
+              "replaces": "The standard 8.4-inch center system when selected on Big Horn/Lone Star."
+            },
+            "r12315-dashboard": {
+              "status": "unavailable",
+              "note": "The factory chart does not list the UBW radio for this trim. The code-based 14.4/14.5 naming crosswalk does not add trim availability.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:uconnect-multimedia|radio-systems|uconnect-5-nav-with-14-5-inch-touchscreen-display-includ"
+              ],
+              "sourceMark": "NA",
+              "replaces": "This UBW center-radio upgrade is not listed for this trim.",
+              "radioCode": "UBW",
+              "factoryLabel": "Uconnect 5 NAV with 14.5-inch touchscreen display",
+              "stickerLabel": "14.4-Inch Touchscreen Display",
+              "crosswalkSource": "https://static.nhtsa.gov/odi/tsbs/2026/MC-11034895-0001.pdf",
+              "crosswalkEvidence": "Stellantis TSB 08-255-26, July 1, 2026, page 1 identifies Uconnect 5 NAV 14.4-inch display as sales code UBW for North American 2026\u20132027 DT Ram 1500 and D2 Ram 3500. The factory availability chart identifies the 14.5-inch-labeled radio with the same UBW sales code. This establishes a model-specific radio-code naming crosswalk, not a generic numeric size alias or software-update eligibility for the pictured VIN."
+            },
+            "r12527-cloth": {
+              "status": "unavailable",
+              "note": "Warlock lists a cloth bench, not this Deluxe Cloth Bucket Seat configuration.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:interior-features|seats|cloth-front-bucket-eight-way-power-driver-s-fore-aft-up-down-cushi"
+              ],
+              "sourceMark": "NA",
+              "replaces": "The base front-seat upholstery/layout; the pictured configuration also includes eight-way power driver adjustment."
+            },
+            "r12315-leather": {
+              "status": "unavailable",
+              "note": "This pictured equipment configuration is not listed for this trim.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:interior-features|seats|leather-trimmed-front-bucket-front-bucket-eight-way-power-driver-s"
+              ],
+              "sourceMark": "NA",
+              "replaces": "Lower trim cloth/vinyl front seating when choosing Laramie."
+            },
+            "r12315-panoramic": {
+              "status": "unavailable",
+              "note": "This pictured equipment configuration is not listed for this trim.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:interior-features|sunroof|dual-pane-power-operated-crew-cab-only-requires-h2-x2-p1-or-p2-g"
+              ],
+              "sourceMark": "NA",
+              "replaces": "The conventional roof configuration."
+            },
+            "r12196-manual-seat": {
+              "status": "standard",
+              "note": "Four-way manual driver adjustment is in this trim\u2019s base seat row. The Express photo illustrates the adjustment only; it does not select its cloth upholstery or bench layout.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:interior-features|seats|cloth-front-bench-40-20-40-split-bench-four-way-manual-driver-s-fo"
+              ],
+              "sourceMark": "S",
+              "replaces": "Eight-way power adjustment replaces manual adjustment where an eligible seat/package is selected."
+            },
+            "r12527-power-seat": {
+              "status": "unavailable",
+              "note": "This pictured equipment configuration is not listed for this trim.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:interior-features|seats|cloth-front-bucket-eight-way-power-driver-s-fore-aft-up-down-cushi"
+              ],
+              "sourceMark": "NA",
+              "replaces": "Four-way manual driver adjustment where the base trim has manual seats."
+            },
+            "r12546-dashboard": {
+              "status": "standard",
+              "note": "Included as standard equipment on this trim.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:uconnect-multimedia|radio-systems|uconnect-5-with-8-4-inch-touchscreen-display-ube"
+              ],
+              "sourceMark": "S",
+              "replaces": "A higher screen option replaces this center screen; both are not installed together."
+            },
+            "r12546-vinyl-bench": {
+              "status": "unavailable",
+              "note": "This factory vinyl 40/20/40 bench is not listed for this trim. Its standard upholstery/layout is a different configuration.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:interior-features|seats|vinyl-front-bench-40-20-40-split-bench-four-way-manual-driver-s-fo"
+              ],
+              "sourceMark": "NA",
+              "replaces": "An eligible cloth or leather seating configuration replaces this base vinyl bench; bucket-seat layouts also remove the front-center seating position."
+            }
+          }
+        },
+        {
+          "id": "big-horn-lone-star",
+          "name": "Big Horn / Lone Star",
+          "rank": 3,
+          "choices": {
+            "r12196-dashboard": {
+              "status": "standard",
+              "note": "Included as standard equipment on this trim.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:uconnect-multimedia|radio-systems|uconnect-5-with-8-4-inch-touchscreen-display-ube"
+              ],
+              "sourceMark": "S",
+              "replaces": "A higher screen option replaces this center screen; both are not installed together."
+            },
+            "r12527-dashboard": {
+              "status": "optional",
+              "note": "Included with the optional Big Horn/Lone Star Level 2 (H2) Equipment Group; replaces the standard 8.4-inch system.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:uconnect-multimedia|radio-systems|uconnect-5-nav-with-12-inch-touchscreen-display-included"
+              ],
+              "sourceMark": "P",
+              "replaces": "The standard 8.4-inch center system when selected on Big Horn/Lone Star."
+            },
+            "r12315-dashboard": {
+              "status": "unavailable",
+              "note": "The factory chart does not list the UBW radio for this trim. The code-based 14.4/14.5 naming crosswalk does not add trim availability.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:uconnect-multimedia|radio-systems|uconnect-5-nav-with-14-5-inch-touchscreen-display-includ"
+              ],
+              "sourceMark": "NA",
+              "replaces": "This UBW center-radio upgrade is not listed for this trim.",
+              "radioCode": "UBW",
+              "factoryLabel": "Uconnect 5 NAV with 14.5-inch touchscreen display",
+              "stickerLabel": "14.4-Inch Touchscreen Display",
+              "crosswalkSource": "https://static.nhtsa.gov/odi/tsbs/2026/MC-11034895-0001.pdf",
+              "crosswalkEvidence": "Stellantis TSB 08-255-26, July 1, 2026, page 1 identifies Uconnect 5 NAV 14.4-inch display as sales code UBW for North American 2026\u20132027 DT Ram 1500 and D2 Ram 3500. The factory availability chart identifies the 14.5-inch-labeled radio with the same UBW sales code. This establishes a model-specific radio-code naming crosswalk, not a generic numeric size alias or software-update eligibility for the pictured VIN."
+            },
+            "r12527-cloth": {
+              "status": "optional",
+              "note": "This pictured Deluxe Cloth Bucket Seat configuration corresponds to the eight-way-power cloth-bucket row. The chart includes it with H1/H2, Sport Appearance Package and Night Edition; body and package restrictions apply. It replaces the base seating configuration.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:interior-features|seats|cloth-front-bucket-eight-way-power-driver-s-fore-aft-up-down-cushi"
+              ],
+              "sourceMark": "P",
+              "replaces": "The base front-seat upholstery/layout; the pictured configuration also includes eight-way power driver adjustment.",
+              "requires": [
+                "r12527-power-seat"
+              ],
+              "conflictsWith": [
+                "r12196-manual-seat"
+              ]
+            },
+            "r12315-leather": {
+              "status": "unavailable",
+              "note": "This pictured equipment configuration is not listed for this trim.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:interior-features|seats|leather-trimmed-front-bucket-front-bucket-eight-way-power-driver-s"
+              ],
+              "sourceMark": "NA",
+              "replaces": "Lower trim cloth/vinyl front seating when choosing Laramie."
+            },
+            "r12315-panoramic": {
+              "status": "optional",
+              "note": "Optional dual-pane roof on Crew Cab; requires H2. H2 also includes the 12-inch Uconnect 5 NAV system.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:interior-features|sunroof|dual-pane-power-operated-crew-cab-only-requires-h2-x2-p1-or-p2-g"
+              ],
+              "sourceMark": "O",
+              "replaces": "The conventional roof configuration.",
+              "requires": [
+                "r12527-dashboard"
+              ]
+            },
+            "r12196-manual-seat": {
+              "status": "standard",
+              "note": "Four-way manual driver adjustment is in this trim\u2019s base seat row. The Express photo illustrates the adjustment only; it does not select its cloth upholstery or bench layout.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:interior-features|seats|cloth-front-bucket-four-way-manual-driver-s-fore-aft-seatback-recl"
+              ],
+              "sourceMark": "S",
+              "replaces": "Eight-way power adjustment replaces manual adjustment where an eligible seat/package is selected."
+            },
+            "r12527-power-seat": {
+              "status": "optional",
+              "note": "Eight-way power driver adjustment is included with the pictured Deluxe Cloth Bucket Seat configuration in eligible H1/H2, Sport Appearance or Night Edition equipment. The control photo selects adjustment only.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:interior-features|seats|cloth-front-bucket-eight-way-power-driver-s-fore-aft-up-down-cushi"
+              ],
+              "sourceMark": "P",
+              "replaces": "Four-way manual driver adjustment where the base trim has manual seats.",
+              "conflictsWith": [
+                "r12196-manual-seat"
+              ]
+            },
+            "r12546-dashboard": {
+              "status": "standard",
+              "note": "Included as standard equipment on this trim.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:uconnect-multimedia|radio-systems|uconnect-5-with-8-4-inch-touchscreen-display-ube"
+              ],
+              "sourceMark": "S",
+              "replaces": "A higher screen option replaces this center screen; both are not installed together."
+            },
+            "r12546-vinyl-bench": {
+              "status": "unavailable",
+              "note": "This factory vinyl 40/20/40 bench is not listed for this trim. Its standard upholstery/layout is a different configuration.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:interior-features|seats|vinyl-front-bench-40-20-40-split-bench-four-way-manual-driver-s-fo"
+              ],
+              "sourceMark": "NA",
+              "replaces": "An eligible cloth or leather seating configuration replaces this base vinyl bench; bucket-seat layouts also remove the front-center seating position."
+            }
+          }
+        },
+        {
+          "id": "laramie",
+          "name": "Laramie",
+          "rank": 4,
+          "choices": {
+            "r12196-dashboard": {
+              "status": "unavailable",
+              "note": "This pictured equipment configuration is not listed for this trim.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:uconnect-multimedia|radio-systems|uconnect-5-with-8-4-inch-touchscreen-display-ube"
+              ],
+              "sourceMark": "NA",
+              "replaces": "A higher screen option replaces this center screen; both are not installed together."
+            },
+            "r12527-dashboard": {
+              "status": "standard",
+              "note": "12-inch Uconnect 5 NAV is standard; a separately documented larger screen replaces it.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:uconnect-multimedia|radio-systems|uconnect-5-nav-with-12-inch-touchscreen-display-included"
+              ],
+              "sourceMark": "S",
+              "replaces": "The standard 8.4-inch center system when selected on Big Horn/Lone Star."
+            },
+            "r12315-dashboard": {
+              "status": "optional",
+              "note": "UBW is included with optional Laramie Level 2 (P2/A67). The pictured vehicle\u2019s sticker calls this screen 14.4 inches; the factory chart calls radio UBW 14.5 inches. The manufacturer service bulletin confirms the 14.4-inch name for UBW. This photo represents the center radio; other cabin finishes depend on trim.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:uconnect-multimedia|radio-systems|uconnect-5-nav-with-14-5-inch-touchscreen-display-includ",
+                "f:equipment-packages|laramie-level-2-equipment-p2-group-|includes-p1-group-power-up-down-tai"
+              ],
+              "sourceMark": "P",
+              "replaces": "The standard 12-inch center radio when the specified equipment group is selected.",
+              "vinEvidenceSource": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C6RREJP2TN381273",
+              "radioCode": "UBW",
+              "factoryLabel": "Uconnect 5 NAV with 14.5-inch touchscreen display",
+              "stickerLabel": "14.4-Inch Touchscreen Display",
+              "crosswalkSource": "https://static.nhtsa.gov/odi/tsbs/2026/MC-11034895-0001.pdf",
+              "crosswalkEvidence": "Stellantis TSB 08-255-26, July 1, 2026, page 1 identifies Uconnect 5 NAV 14.4-inch display as sales code UBW for North American 2026\u20132027 DT Ram 1500 and D2 Ram 3500. The factory availability chart identifies the 14.5-inch-labeled radio with the same UBW sales code. This establishes a model-specific radio-code naming crosswalk, not a generic numeric size alias or software-update eligibility for the pictured VIN."
+            },
+            "r12527-cloth": {
+              "status": "unavailable",
+              "note": "This pictured equipment configuration is not listed for this trim.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:interior-features|seats|cloth-front-bucket-eight-way-power-driver-s-fore-aft-up-down-cushi"
+              ],
+              "sourceMark": "NA",
+              "replaces": "The base front-seat upholstery/layout; the pictured configuration also includes eight-way power driver adjustment."
+            },
+            "r12315-leather": {
+              "status": "standard",
+              "note": "Laramie includes these leather-trimmed front buckets and eight-way power driver/passenger adjustment. This replaces the lower trim seating configuration.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:interior-features|seats|leather-trimmed-front-bucket-front-bucket-eight-way-power-driver-s"
+              ],
+              "sourceMark": "S",
+              "replaces": "Lower trim cloth/vinyl front seating when choosing Laramie.",
+              "requires": [
+                "r12527-power-seat"
+              ],
+              "conflictsWith": [
+                "r12196-manual-seat"
+              ]
+            },
+            "r12315-panoramic": {
+              "status": "optional",
+              "note": "Optional dual-pane roof on Crew Cab; requires P1 or P2. It replaces the conventional roof configuration.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:interior-features|sunroof|dual-pane-power-operated-crew-cab-only-requires-h2-x2-p1-or-p2-g"
+              ],
+              "sourceMark": "O",
+              "replaces": "The conventional roof configuration."
+            },
+            "r12196-manual-seat": {
+              "status": "unavailable",
+              "note": "This pictured equipment configuration is not listed for this trim.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:interior-features|seats|vinyl-front-bench-40-20-40-split-bench-four-way-manual-driver-s-fo"
+              ],
+              "sourceMark": "NA",
+              "replaces": "Eight-way power adjustment replaces manual adjustment where an eligible seat/package is selected."
+            },
+            "r12527-power-seat": {
+              "status": "standard",
+              "note": "Eight-way power driver adjustment is standard with Laramie leather-trimmed buckets. The control photo illustrates adjustment only, not the cloth seating surface.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:interior-features|seats|leather-trimmed-front-bucket-front-bucket-eight-way-power-driver-s"
+              ],
+              "sourceMark": "S",
+              "replaces": "Four-way manual driver adjustment where the base trim has manual seats.",
+              "conflictsWith": [
+                "r12196-manual-seat"
+              ]
+            },
+            "r12546-dashboard": {
+              "status": "unavailable",
+              "note": "This pictured equipment configuration is not listed for this trim.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:uconnect-multimedia|radio-systems|uconnect-5-with-8-4-inch-touchscreen-display-ube"
+              ],
+              "sourceMark": "NA",
+              "replaces": "A higher screen option replaces this center screen; both are not installed together."
+            },
+            "r12546-vinyl-bench": {
+              "status": "unavailable",
+              "note": "This factory vinyl 40/20/40 bench is not listed for this trim. Its standard upholstery/layout is a different configuration.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:interior-features|seats|vinyl-front-bench-40-20-40-split-bench-four-way-manual-driver-s-fo"
+              ],
+              "sourceMark": "NA",
+              "replaces": "An eligible cloth or leather seating configuration replaces this base vinyl bench; bucket-seat layouts also remove the front-center seating position."
+            }
+          }
+        },
+        {
+          "id": "rebel",
+          "name": "Rebel",
+          "rank": 5,
+          "choices": {
+            "r12196-dashboard": {
+              "status": "unavailable",
+              "note": "This pictured equipment configuration is not listed for this trim.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:uconnect-multimedia|radio-systems|uconnect-5-with-8-4-inch-touchscreen-display-ube"
+              ],
+              "sourceMark": "NA",
+              "replaces": "A higher screen option replaces this center screen; both are not installed together."
+            },
+            "r12527-dashboard": {
+              "status": "standard",
+              "note": "12-inch Uconnect 5 NAV is standard; the X2 package lists a larger replacement.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:uconnect-multimedia|radio-systems|uconnect-5-nav-with-12-inch-touchscreen-display-included"
+              ],
+              "sourceMark": "S",
+              "replaces": "The standard 8.4-inch center system when selected on Big Horn/Lone Star."
+            },
+            "r12315-dashboard": {
+              "status": "optional",
+              "note": "UBW is included with optional Rebel Level 2 (X2/A65). The pictured vehicle\u2019s sticker calls this screen 14.4 inches; the factory chart calls radio UBW 14.5 inches. The manufacturer service bulletin confirms the 14.4-inch name for UBW. This photo represents the center radio; other cabin finishes depend on trim.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:uconnect-multimedia|radio-systems|uconnect-5-nav-with-14-5-inch-touchscreen-display-includ",
+                "f:equipment-packages|rebel-level-2-equipment-x2-group-|includes-x1-group-10-way-power-adjust"
+              ],
+              "sourceMark": "P",
+              "replaces": "The standard 12-inch center radio when the specified equipment group is selected.",
+              "vinEvidenceSource": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C6RREJP2TN381273",
+              "radioCode": "UBW",
+              "factoryLabel": "Uconnect 5 NAV with 14.5-inch touchscreen display",
+              "stickerLabel": "14.4-Inch Touchscreen Display",
+              "crosswalkSource": "https://static.nhtsa.gov/odi/tsbs/2026/MC-11034895-0001.pdf",
+              "crosswalkEvidence": "Stellantis TSB 08-255-26, July 1, 2026, page 1 identifies Uconnect 5 NAV 14.4-inch display as sales code UBW for North American 2026\u20132027 DT Ram 1500 and D2 Ram 3500. The factory availability chart identifies the 14.5-inch-labeled radio with the same UBW sales code. This establishes a model-specific radio-code naming crosswalk, not a generic numeric size alias or software-update eligibility for the pictured VIN."
+            },
+            "r12527-cloth": {
+              "status": "unavailable",
+              "note": "This pictured equipment configuration is not listed for this trim.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:interior-features|seats|cloth-front-bucket-eight-way-power-driver-s-fore-aft-up-down-cushi"
+              ],
+              "sourceMark": "NA",
+              "replaces": "The base front-seat upholstery/layout; the pictured configuration also includes eight-way power driver adjustment."
+            },
+            "r12315-leather": {
+              "status": "unknown",
+              "note": "Rebel has separate leather-trimmed configurations with X2 or G/T conditions, but the Laramie seat photo is not verified as a depiction of those designs.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:interior-features|seats|leather-trimmed-front-bucket-front-bucket-eight-way-power-driver-s"
+              ],
+              "sourceMark": "NA",
+              "replaces": "Lower trim cloth/vinyl front seating when choosing Laramie."
+            },
+            "r12315-panoramic": {
+              "status": "optional",
+              "note": "Optional dual-pane roof on Crew Cab; requires X2. It replaces the conventional roof configuration.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:interior-features|sunroof|dual-pane-power-operated-crew-cab-only-requires-h2-x2-p1-or-p2-g"
+              ],
+              "sourceMark": "O",
+              "replaces": "The conventional roof configuration."
+            },
+            "r12196-manual-seat": {
+              "status": "unavailable",
+              "note": "This pictured equipment configuration is not listed for this trim.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:interior-features|seats|vinyl-front-bench-40-20-40-split-bench-four-way-manual-driver-s-fo"
+              ],
+              "sourceMark": "NA",
+              "replaces": "Eight-way power adjustment replaces manual adjustment where an eligible seat/package is selected."
+            },
+            "r12527-power-seat": {
+              "status": "standard",
+              "note": "Eight-way power driver adjustment is standard with Rebel\u2019s vinyl/cloth buckets. The control photo illustrates adjustment only.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:interior-features|seats|vinyl-cloth-front-bucket-eight-way-power-driver-s-fore-aft-up-down"
+              ],
+              "sourceMark": "S",
+              "replaces": "Four-way manual driver adjustment where the base trim has manual seats.",
+              "conflictsWith": [
+                "r12196-manual-seat"
+              ]
+            },
+            "r12546-dashboard": {
+              "status": "unavailable",
+              "note": "This pictured equipment configuration is not listed for this trim.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:uconnect-multimedia|radio-systems|uconnect-5-with-8-4-inch-touchscreen-display-ube"
+              ],
+              "sourceMark": "NA",
+              "replaces": "A higher screen option replaces this center screen; both are not installed together."
+            },
+            "r12546-vinyl-bench": {
+              "status": "unavailable",
+              "note": "This factory vinyl 40/20/40 bench is not listed for this trim. Its standard upholstery/layout is a different configuration.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:interior-features|seats|vinyl-front-bench-40-20-40-split-bench-four-way-manual-driver-s-fo"
+              ],
+              "sourceMark": "NA",
+              "replaces": "An eligible cloth or leather seating configuration replaces this base vinyl bench; bucket-seat layouts also remove the front-center seating position."
+            }
+          }
+        },
+        {
+          "id": "rho",
+          "name": "RHO",
+          "rank": 6,
+          "choices": {
+            "r12527-dashboard": {
+              "status": "unknown",
+              "note": "RHO is a separate performance branch outside the mapped main factory chart. This photo\u2019s exact RHO configuration has not been verified.",
+              "sourceUrl": "https://www.ramtrucks.com/towing/engine-performance/2026/rho.html"
+            },
+            "r12315-dashboard": {
+              "status": "unknown",
+              "note": "RHO is a separate performance branch outside the mapped main factory chart. This photo\u2019s exact RHO configuration has not been verified.",
+              "sourceUrl": "https://www.ramtrucks.com/towing/engine-performance/2026/rho.html"
+            },
+            "r12527-cloth": {
+              "status": "unknown",
+              "note": "RHO is a separate performance branch outside the mapped main factory chart. This photo\u2019s exact RHO configuration has not been verified.",
+              "sourceUrl": "https://www.ramtrucks.com/towing/engine-performance/2026/rho.html"
+            },
+            "r12315-leather": {
+              "status": "unknown",
+              "note": "RHO is a separate performance branch outside the mapped main factory chart. This photo\u2019s exact RHO configuration has not been verified.",
+              "sourceUrl": "https://www.ramtrucks.com/towing/engine-performance/2026/rho.html"
+            },
+            "r12315-panoramic": {
+              "status": "unknown",
+              "note": "RHO is a separate performance branch outside the mapped main factory chart. This photo\u2019s exact RHO configuration has not been verified.",
+              "sourceUrl": "https://www.ramtrucks.com/towing/engine-performance/2026/rho.html"
+            },
+            "r12196-dashboard": {
+              "status": "unknown",
+              "note": "RHO is a separate performance branch outside the mapped main factory chart. This photo\u2019s exact RHO configuration has not been verified.",
+              "sourceUrl": "https://www.ramtrucks.com/towing/engine-performance/2026/rho.html"
+            },
+            "r12196-manual-seat": {
+              "status": "unknown",
+              "note": "RHO is a separate performance branch outside the mapped main factory chart. This photo\u2019s exact RHO configuration has not been verified.",
+              "sourceUrl": "https://www.ramtrucks.com/towing/engine-performance/2026/rho.html"
+            },
+            "r12527-power-seat": {
+              "status": "unknown",
+              "note": "RHO is a separate performance branch outside the mapped main factory chart. This photo\u2019s exact RHO configuration has not been verified.",
+              "sourceUrl": "https://www.ramtrucks.com/towing/engine-performance/2026/rho.html"
+            },
+            "r12546-dashboard": {
+              "status": "unknown",
+              "note": "RHO is a separate performance branch outside the mapped main factory chart. This photo\u2019s exact RHO configuration has not been verified.",
+              "sourceUrl": "https://www.ramtrucks.com/towing/engine-performance/2026/rho.html"
+            },
+            "r12546-vinyl-bench": {
+              "status": "unknown",
+              "note": "RHO is a separate performance branch outside the mapped main factory chart. This photo\u2019s exact RHO configuration has not been verified.",
+              "sourceUrl": "https://www.ramtrucks.com/towing/engine-performance/2026/rho.html"
+            }
+          }
+        },
+        {
+          "id": "limited",
+          "name": "Limited",
+          "rank": 7,
+          "choices": {
+            "r12196-dashboard": {
+              "status": "unavailable",
+              "note": "This pictured equipment configuration is not listed for this trim.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:uconnect-multimedia|radio-systems|uconnect-5-with-8-4-inch-touchscreen-display-ube"
+              ],
+              "sourceMark": "NA",
+              "replaces": "A higher screen option replaces this center screen; both are not installed together."
+            },
+            "r12527-dashboard": {
+              "status": "standard",
+              "note": "12-inch Uconnect 5 NAV is standard; M1 lists a larger replacement.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:uconnect-multimedia|radio-systems|uconnect-5-nav-with-12-inch-touchscreen-display-included"
+              ],
+              "sourceMark": "S",
+              "replaces": "The standard 8.4-inch center system when selected on Big Horn/Lone Star."
+            },
+            "r12315-dashboard": {
+              "status": "optional",
+              "note": "UBW is included with optional Limited Level 1 (M1/A79). The pictured vehicle\u2019s sticker calls this screen 14.4 inches; the factory chart calls radio UBW 14.5 inches. The manufacturer service bulletin confirms the 14.4-inch name for UBW. This photo represents the center radio; other cabin finishes depend on trim.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:uconnect-multimedia|radio-systems|uconnect-5-nav-with-14-5-inch-touchscreen-display-includ",
+                "f:equipment-packages|limited-level-1-equipment-m1-group-|includes-tri-fold-tonneau-cover-dro"
+              ],
+              "sourceMark": "P",
+              "replaces": "The standard 12-inch center radio when the specified equipment group is selected.",
+              "vinEvidenceSource": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C6RREJP2TN381273",
+              "radioCode": "UBW",
+              "factoryLabel": "Uconnect 5 NAV with 14.5-inch touchscreen display",
+              "stickerLabel": "14.4-Inch Touchscreen Display",
+              "crosswalkSource": "https://static.nhtsa.gov/odi/tsbs/2026/MC-11034895-0001.pdf",
+              "crosswalkEvidence": "Stellantis TSB 08-255-26, July 1, 2026, page 1 identifies Uconnect 5 NAV 14.4-inch display as sales code UBW for North American 2026\u20132027 DT Ram 1500 and D2 Ram 3500. The factory availability chart identifies the 14.5-inch-labeled radio with the same UBW sales code. This establishes a model-specific radio-code naming crosswalk, not a generic numeric size alias or software-update eligibility for the pictured VIN."
+            },
+            "r12527-cloth": {
+              "status": "unavailable",
+              "note": "This pictured equipment configuration is not listed for this trim.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:interior-features|seats|cloth-front-bucket-eight-way-power-driver-s-fore-aft-up-down-cushi"
+              ],
+              "sourceMark": "NA",
+              "replaces": "The base front-seat upholstery/layout; the pictured configuration also includes eight-way power driver adjustment."
+            },
+            "r12315-leather": {
+              "status": "unavailable",
+              "note": "Limited uses premium leather with quilting; this Laramie seat photo is not that configuration.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:interior-features|seats|leather-trimmed-front-bucket-front-bucket-eight-way-power-driver-s"
+              ],
+              "sourceMark": "NA",
+              "replaces": "Lower trim cloth/vinyl front seating when choosing Laramie."
+            },
+            "r12315-panoramic": {
+              "status": "unknown",
+              "note": "The chart marks the roof optional but annotates H2/X2/P1/P2 prerequisites without identifying a Limited group. Exact package applicability needs verification before this becomes selectable.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:interior-features|sunroof|dual-pane-power-operated-crew-cab-only-requires-h2-x2-p1-or-p2-g"
+              ],
+              "sourceMark": "O",
+              "replaces": "The conventional roof configuration."
+            },
+            "r12196-manual-seat": {
+              "status": "unavailable",
+              "note": "This pictured equipment configuration is not listed for this trim.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:interior-features|seats|vinyl-front-bench-40-20-40-split-bench-four-way-manual-driver-s-fo"
+              ],
+              "sourceMark": "NA",
+              "replaces": "Eight-way power adjustment replaces manual adjustment where an eligible seat/package is selected."
+            },
+            "r12527-power-seat": {
+              "status": "standard",
+              "note": "Eight-way power driver adjustment is standard with Limited\u2019s premium quilted leather buckets. The control photo illustrates adjustment only.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:interior-features|seats|premium-leather-with-quilting-front-bucket-eight-way-power-driver-"
+              ],
+              "sourceMark": "S",
+              "replaces": "Four-way manual driver adjustment where the base trim has manual seats.",
+              "conflictsWith": [
+                "r12196-manual-seat"
+              ]
+            },
+            "r12546-dashboard": {
+              "status": "unavailable",
+              "note": "This pictured equipment configuration is not listed for this trim.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:uconnect-multimedia|radio-systems|uconnect-5-with-8-4-inch-touchscreen-display-ube"
+              ],
+              "sourceMark": "NA",
+              "replaces": "A higher screen option replaces this center screen; both are not installed together."
+            },
+            "r12546-vinyl-bench": {
+              "status": "unavailable",
+              "note": "This factory vinyl 40/20/40 bench is not listed for this trim. Its standard upholstery/layout is a different configuration.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:interior-features|seats|vinyl-front-bench-40-20-40-split-bench-four-way-manual-driver-s-fo"
+              ],
+              "sourceMark": "NA",
+              "replaces": "An eligible cloth or leather seating configuration replaces this base vinyl bench; bucket-seat layouts also remove the front-center seating position."
+            }
+          }
+        },
+        {
+          "id": "limited-longhorn",
+          "name": "Limited Longhorn",
+          "rank": 8,
+          "choices": {
+            "r12196-dashboard": {
+              "status": "unavailable",
+              "note": "This pictured equipment configuration is not listed for this trim.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:uconnect-multimedia|radio-systems|uconnect-5-with-8-4-inch-touchscreen-display-ube"
+              ],
+              "sourceMark": "NA",
+              "replaces": "A higher screen option replaces this center screen; both are not installed together."
+            },
+            "r12527-dashboard": {
+              "status": "standard",
+              "note": "12-inch Uconnect 5 NAV is standard; M1 lists a larger replacement.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:uconnect-multimedia|radio-systems|uconnect-5-nav-with-12-inch-touchscreen-display-included"
+              ],
+              "sourceMark": "S",
+              "replaces": "The standard 8.4-inch center system when selected on Big Horn/Lone Star."
+            },
+            "r12315-dashboard": {
+              "status": "optional",
+              "note": "UBW is included with optional Limited Level 1 (M1/A79). The pictured vehicle\u2019s sticker calls this screen 14.4 inches; the factory chart calls radio UBW 14.5 inches. The manufacturer service bulletin confirms the 14.4-inch name for UBW. This photo represents the center radio; other cabin finishes depend on trim.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:uconnect-multimedia|radio-systems|uconnect-5-nav-with-14-5-inch-touchscreen-display-includ",
+                "f:equipment-packages|limited-level-1-equipment-m1-group-|includes-tri-fold-tonneau-cover-dro"
+              ],
+              "sourceMark": "P",
+              "replaces": "The standard 12-inch center radio when the specified equipment group is selected.",
+              "vinEvidenceSource": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C6RREJP2TN381273",
+              "radioCode": "UBW",
+              "factoryLabel": "Uconnect 5 NAV with 14.5-inch touchscreen display",
+              "stickerLabel": "14.4-Inch Touchscreen Display",
+              "crosswalkSource": "https://static.nhtsa.gov/odi/tsbs/2026/MC-11034895-0001.pdf",
+              "crosswalkEvidence": "Stellantis TSB 08-255-26, July 1, 2026, page 1 identifies Uconnect 5 NAV 14.4-inch display as sales code UBW for North American 2026\u20132027 DT Ram 1500 and D2 Ram 3500. The factory availability chart identifies the 14.5-inch-labeled radio with the same UBW sales code. This establishes a model-specific radio-code naming crosswalk, not a generic numeric size alias or software-update eligibility for the pictured VIN."
+            },
+            "r12527-cloth": {
+              "status": "unavailable",
+              "note": "This pictured equipment configuration is not listed for this trim.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:interior-features|seats|cloth-front-bucket-eight-way-power-driver-s-fore-aft-up-down-cushi"
+              ],
+              "sourceMark": "NA",
+              "replaces": "The base front-seat upholstery/layout; the pictured configuration also includes eight-way power driver adjustment."
+            },
+            "r12315-leather": {
+              "status": "unavailable",
+              "note": "Limited Longhorn uses premium leather with filigree; this Laramie photo is not that configuration.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:interior-features|seats|leather-trimmed-front-bucket-front-bucket-eight-way-power-driver-s"
+              ],
+              "sourceMark": "NA",
+              "replaces": "Lower trim cloth/vinyl front seating when choosing Laramie."
+            },
+            "r12315-panoramic": {
+              "status": "unknown",
+              "note": "The chart marks the roof optional but annotates H2/X2/P1/P2 prerequisites without identifying a Limited Longhorn group. Exact package applicability needs verification before this becomes selectable.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:interior-features|sunroof|dual-pane-power-operated-crew-cab-only-requires-h2-x2-p1-or-p2-g"
+              ],
+              "sourceMark": "O",
+              "replaces": "The conventional roof configuration."
+            },
+            "r12196-manual-seat": {
+              "status": "unavailable",
+              "note": "This pictured equipment configuration is not listed for this trim.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:interior-features|seats|vinyl-front-bench-40-20-40-split-bench-four-way-manual-driver-s-fo"
+              ],
+              "sourceMark": "NA",
+              "replaces": "Eight-way power adjustment replaces manual adjustment where an eligible seat/package is selected."
+            },
+            "r12527-power-seat": {
+              "status": "standard",
+              "note": "Eight-way power driver adjustment is standard with Limited Longhorn\u2019s filigree leather buckets. The control photo illustrates adjustment only.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:interior-features|seats|premium-leather-with-filigree-front-bucket-eight-way-power-driver-"
+              ],
+              "sourceMark": "S",
+              "replaces": "Four-way manual driver adjustment where the base trim has manual seats.",
+              "conflictsWith": [
+                "r12196-manual-seat"
+              ]
+            },
+            "r12546-dashboard": {
+              "status": "unavailable",
+              "note": "This pictured equipment configuration is not listed for this trim.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:uconnect-multimedia|radio-systems|uconnect-5-with-8-4-inch-touchscreen-display-ube"
+              ],
+              "sourceMark": "NA",
+              "replaces": "A higher screen option replaces this center screen; both are not installed together."
+            },
+            "r12546-vinyl-bench": {
+              "status": "unavailable",
+              "note": "This factory vinyl 40/20/40 bench is not listed for this trim. Its standard upholstery/layout is a different configuration.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:interior-features|seats|vinyl-front-bench-40-20-40-split-bench-four-way-manual-driver-s-fo"
+              ],
+              "sourceMark": "NA",
+              "replaces": "An eligible cloth or leather seating configuration replaces this base vinyl bench; bucket-seat layouts also remove the front-center seating position."
+            }
+          }
+        },
+        {
+          "id": "tungsten",
+          "name": "Tungsten",
+          "rank": 9,
+          "choices": {
+            "r12196-dashboard": {
+              "status": "unavailable",
+              "note": "This pictured equipment configuration is not listed for this trim.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:uconnect-multimedia|radio-systems|uconnect-5-with-8-4-inch-touchscreen-display-ube"
+              ],
+              "sourceMark": "NA",
+              "replaces": "A higher screen option replaces this center screen; both are not installed together."
+            },
+            "r12527-dashboard": {
+              "status": "unavailable",
+              "note": "This pictured equipment configuration is not listed for this trim.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:uconnect-multimedia|radio-systems|uconnect-5-nav-with-12-inch-touchscreen-display-included"
+              ],
+              "sourceMark": "NA",
+              "replaces": "The standard 8.4-inch center system when selected on Big Horn/Lone Star."
+            },
+            "r12315-dashboard": {
+              "status": "standard",
+              "note": "UBW is standard on this trim. The pictured vehicle\u2019s sticker calls this screen 14.4 inches; the factory chart calls radio UBW 14.5 inches. The manufacturer service bulletin confirms the 14.4-inch name for UBW. The photo illustrates the center radio; surrounding cabin trim can differ.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:uconnect-multimedia|radio-systems|uconnect-5-nav-with-14-5-inch-touchscreen-display-includ"
+              ],
+              "sourceMark": "S",
+              "replaces": "Standard center infotainment configuration on this trim; no smaller standard radio is implied.",
+              "vinEvidenceSource": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C6RREJP2TN381273",
+              "radioCode": "UBW",
+              "factoryLabel": "Uconnect 5 NAV with 14.5-inch touchscreen display",
+              "stickerLabel": "14.4-Inch Touchscreen Display",
+              "crosswalkSource": "https://static.nhtsa.gov/odi/tsbs/2026/MC-11034895-0001.pdf",
+              "crosswalkEvidence": "Stellantis TSB 08-255-26, July 1, 2026, page 1 identifies Uconnect 5 NAV 14.4-inch display as sales code UBW for North American 2026\u20132027 DT Ram 1500 and D2 Ram 3500. The factory availability chart identifies the 14.5-inch-labeled radio with the same UBW sales code. This establishes a model-specific radio-code naming crosswalk, not a generic numeric size alias or software-update eligibility for the pictured VIN."
+            },
+            "r12527-cloth": {
+              "status": "unavailable",
+              "note": "This pictured equipment configuration is not listed for this trim.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:interior-features|seats|cloth-front-bucket-eight-way-power-driver-s-fore-aft-up-down-cushi"
+              ],
+              "sourceMark": "NA",
+              "replaces": "The base front-seat upholstery/layout; the pictured configuration also includes eight-way power driver adjustment."
+            },
+            "r12315-leather": {
+              "status": "unavailable",
+              "note": "Tungsten uses ultra-premium leather with 24-way adjustment; this Laramie photo is not that configuration.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:interior-features|seats|leather-trimmed-front-bucket-front-bucket-eight-way-power-driver-s"
+              ],
+              "sourceMark": "NA",
+              "replaces": "Lower trim cloth/vinyl front seating when choosing Laramie."
+            },
+            "r12315-panoramic": {
+              "status": "standard",
+              "note": "Dual-pane roof is listed as standard on Tungsten. No roof-deletion rule has been verified.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:interior-features|sunroof|dual-pane-power-operated-crew-cab-only-requires-h2-x2-p1-or-p2-g"
+              ],
+              "sourceMark": "S",
+              "replaces": "The conventional roof configuration."
+            },
+            "r12196-manual-seat": {
+              "status": "unavailable",
+              "note": "This pictured equipment configuration is not listed for this trim.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:interior-features|seats|vinyl-front-bench-40-20-40-split-bench-four-way-manual-driver-s-fo"
+              ],
+              "sourceMark": "NA",
+              "replaces": "Eight-way power adjustment replaces manual adjustment where an eligible seat/package is selected."
+            },
+            "r12527-power-seat": {
+              "status": "unavailable",
+              "note": "Tungsten has 24-way power adjustment; this eight-way choice is not the same configuration.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:interior-features|seats|cloth-front-bucket-eight-way-power-driver-s-fore-aft-up-down-cushi"
+              ],
+              "sourceMark": "NA",
+              "replaces": "Four-way manual driver adjustment where the base trim has manual seats."
+            },
+            "r12546-dashboard": {
+              "status": "unavailable",
+              "note": "This pictured equipment configuration is not listed for this trim.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:uconnect-multimedia|radio-systems|uconnect-5-with-8-4-inch-touchscreen-display-ube"
+              ],
+              "sourceMark": "NA",
+              "replaces": "A higher screen option replaces this center screen; both are not installed together."
+            },
+            "r12546-vinyl-bench": {
+              "status": "unavailable",
+              "note": "This factory vinyl 40/20/40 bench is not listed for this trim. Its standard upholstery/layout is a different configuration.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+              "sourceRows": [
+                "f:interior-features|seats|vinyl-front-bench-40-20-40-split-bench-four-way-manual-driver-s-fo"
+              ],
+              "sourceMark": "NA",
+              "replaces": "An eligible cloth or leather seating configuration replaces this base vinyl bench; bucket-seat layouts also remove the front-center seating position."
+            }
+          }
+        }
+      ],
+      "baseFeatures": [
+        {
+          "id": "engine",
+          "label": "Base powertrain",
+          "value": "3.6L Pentastar V6 with eTorque; 8-speed automatic",
+          "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+          "sourceRows": [
+            "f:engines-transmissions||3-6l-pentastar-v6-with-etorque-8-speed-automatic-erg-dft"
+          ],
+          "note": "Standard on Tradesman in the stated configuration."
+        },
+        {
+          "id": "screen",
+          "label": "Base center screen",
+          "value": "8.4-inch Uconnect 5",
+          "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+          "sourceRows": [
+            "f:uconnect-multimedia|radio-systems|uconnect-5-with-8-4-inch-touchscreen-display-ube"
+          ],
+          "note": "Standard on Tradesman in the stated configuration."
+        },
+        {
+          "id": "front-seats",
+          "label": "Base front seats",
+          "value": "Vinyl 40/20/40 split bench",
+          "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+          "sourceRows": [
+            "f:interior-features|seats|vinyl-front-bench-40-20-40-split-bench-four-way-manual-driver-s-fo"
+          ],
+          "note": "Tradesman base upholstery and 40/20/40 split-bench layout, shown by verified R12546 photo."
+        },
+        {
+          "id": "driver-seat",
+          "label": "Base driver adjustment",
+          "value": "4-way manual",
+          "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+          "sourceRows": [
+            "f:interior-features|seats|vinyl-front-bench-40-20-40-split-bench-four-way-manual-driver-s-fo"
+          ],
+          "note": "Standard on Tradesman in the stated configuration."
+        },
+        {
+          "id": "climate",
+          "label": "Base climate controls",
+          "value": "Manual temperature control",
+          "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+          "sourceRows": [
+            "f:interior-features|air-conditioning|manual-temperature-control-haa"
+          ],
+          "note": "Standard on Tradesman in the stated configuration."
+        },
+        {
+          "id": "drive",
+          "label": "Base drive system",
+          "value": "4x2",
+          "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf",
+          "sourceRows": [
+            "f:engines-transmissions|drive-system|4x2-4"
+          ],
+          "note": "4x4 is a separate configuration choice; do not infer it from the seating or screen photo."
+        }
+      ]
+    },
+    {
+      "id": "ram-3500",
+      "year": 2026,
+      "baseTrim": "tradesman",
+      "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_RamHD.pdf",
+      "scope": "2026 U.S. Ram 3500 pickup. Seating photos depict Crew Cab examples; cab, drivetrain, SRW/DRW and package restrictions remain separate.",
+      "rankNote": "Ranks control display order only; specialty trims are separate branches, not a universal price or equipment ladder.",
+      "trims": [
+        {
+          "id": "tradesman",
+          "name": "Tradesman",
+          "rank": 0,
+          "choices": {
+            "r12500-dashboard": {
+              "status": "optional",
+              "note": "12-inch Uconnect 5 NAV is included with Convenience Group (ADC), itself included with Tradesman L1/L2. It replaces the standard 8.4-inch system.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_RamHD.pdf",
+              "sourceRows": [
+                "f:uconnect-multimedia|systems|uconnect-5-nav-with-12-inch-touchscreen-display-included-with-"
+              ],
+              "sourceMark": "P",
+              "replaces": "The standard 8.4-inch system on Tradesman or Big Horn/Lone Star."
+            },
+            "r12249a-dashboard": {
+              "status": "unavailable",
+              "note": "The factory chart does not list the UBW radio for this trim. The code-based 14.4/14.5 naming crosswalk does not add trim availability.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_RamHD.pdf",
+              "sourceRows": [
+                "f:uconnect-multimedia|systems|uconnect-5-nav-with-14-5-inch-touchscreen-display-included-wit"
+              ],
+              "sourceMark": "NA",
+              "replaces": "This UBW center-radio upgrade is not listed for this trim.",
+              "radioCode": "UBW",
+              "factoryLabel": "Uconnect 5 NAV with 14.5-inch touchscreen display",
+              "stickerLabel": "14.4-Inch Touchscreen Display",
+              "crosswalkSource": "https://static.nhtsa.gov/odi/tsbs/2026/MC-11034895-0001.pdf",
+              "crosswalkEvidence": "Stellantis TSB 08-255-26, July 1, 2026, page 1 identifies Uconnect 5 NAV 14.4-inch display as sales code UBW for North American 2026\u20132027 DT Ram 1500 and D2 Ram 3500. The factory availability chart identifies the 14.5-inch-labeled radio with the same UBW sales code. This establishes a model-specific radio-code naming crosswalk, not a generic numeric size alias or software-update eligibility for the pictured VIN."
+            },
+            "r12500-vinyl-bench": {
+              "status": "standard",
+              "note": "Heavy-duty vinyl 40/20/40 split-bench front seating is standard; this photo depicts the Crew Cab configuration.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_RamHD.pdf",
+              "sourceRows": [
+                "f:interior-features|seats|heavy-duty-vinyl-40-20-40-split-bench-front-with-manual-adjust-and"
+              ],
+              "sourceMark": "S",
+              "replaces": "Optional cloth seating replaces the Tradesman vinyl seating when an eligible configuration is ordered."
+            },
+            "r12512-leather-buckets": {
+              "status": "unavailable",
+              "note": "This pictured equipment configuration is not listed for this trim.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_RamHD.pdf",
+              "sourceRows": [
+                "f:interior-features|seats|leather-trimmed-heated-front-bucket-with-full-length-center-consol"
+              ],
+              "sourceMark": "NA",
+              "replaces": "Laramie\u2019s standard leather-trimmed 40/20/40 bench, including the front-center seating position."
+            }
+          }
+        },
+        {
+          "id": "big-horn-lone-star",
+          "name": "Big Horn / Lone Star",
+          "rank": 1,
+          "choices": {
+            "r12500-dashboard": {
+              "status": "optional",
+              "note": "12-inch Uconnect 5 NAV is included with H1 Plus or H2 Plus equipment groups and replaces the standard 8.4-inch system.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_RamHD.pdf",
+              "sourceRows": [
+                "f:uconnect-multimedia|systems|uconnect-5-nav-with-12-inch-touchscreen-display-included-with-"
+              ],
+              "sourceMark": "P",
+              "replaces": "The standard 8.4-inch system on Tradesman or Big Horn/Lone Star."
+            },
+            "r12249a-dashboard": {
+              "status": "unavailable",
+              "note": "The factory chart does not list the UBW radio for this trim. The code-based 14.4/14.5 naming crosswalk does not add trim availability.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_RamHD.pdf",
+              "sourceRows": [
+                "f:uconnect-multimedia|systems|uconnect-5-nav-with-14-5-inch-touchscreen-display-included-wit"
+              ],
+              "sourceMark": "NA",
+              "replaces": "This UBW center-radio upgrade is not listed for this trim.",
+              "radioCode": "UBW",
+              "factoryLabel": "Uconnect 5 NAV with 14.5-inch touchscreen display",
+              "stickerLabel": "14.4-Inch Touchscreen Display",
+              "crosswalkSource": "https://static.nhtsa.gov/odi/tsbs/2026/MC-11034895-0001.pdf",
+              "crosswalkEvidence": "Stellantis TSB 08-255-26, July 1, 2026, page 1 identifies Uconnect 5 NAV 14.4-inch display as sales code UBW for North American 2026\u20132027 DT Ram 1500 and D2 Ram 3500. The factory availability chart identifies the 14.5-inch-labeled radio with the same UBW sales code. This establishes a model-specific radio-code naming crosswalk, not a generic numeric size alias or software-update eligibility for the pictured VIN."
+            },
+            "r12500-vinyl-bench": {
+              "status": "unknown",
+              "note": "The factory chart marks this vinyl seating F rather than standard retail equipment. Retail applicability is not established for this choice.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_RamHD.pdf",
+              "sourceRows": [
+                "f:interior-features|seats|heavy-duty-vinyl-40-20-40-split-bench-front-with-manual-adjust-and"
+              ],
+              "sourceMark": "F",
+              "replaces": "Optional cloth seating replaces the Tradesman vinyl seating when an eligible configuration is ordered."
+            },
+            "r12512-leather-buckets": {
+              "status": "unavailable",
+              "note": "This pictured equipment configuration is not listed for this trim.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_RamHD.pdf",
+              "sourceRows": [
+                "f:interior-features|seats|leather-trimmed-heated-front-bucket-with-full-length-center-consol"
+              ],
+              "sourceMark": "NA",
+              "replaces": "Laramie\u2019s standard leather-trimmed 40/20/40 bench, including the front-center seating position."
+            }
+          }
+        },
+        {
+          "id": "laramie",
+          "name": "Laramie",
+          "rank": 2,
+          "choices": {
+            "r12500-dashboard": {
+              "status": "standard",
+              "note": "12-inch Uconnect 5 NAV is standard on Laramie; P2/P2 Plus lists a larger replacement.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_RamHD.pdf",
+              "sourceRows": [
+                "f:uconnect-multimedia|systems|uconnect-5-nav-with-12-inch-touchscreen-display-included-with-"
+              ],
+              "sourceMark": "S",
+              "replaces": "The standard 8.4-inch system on Tradesman or Big Horn/Lone Star."
+            },
+            "r12249a-dashboard": {
+              "status": "optional",
+              "note": "UBW is included with optional Laramie Level 2 (P2/A7Q) or Level 2 Plus (P2 Plus/A7R). The pictured vehicle\u2019s sticker calls this screen 14.4 inches; the factory chart calls radio UBW 14.5 inches. The manufacturer service bulletin confirms the 14.4-inch name for UBW. This photo represents the center radio; other cabin finishes depend on trim.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_RamHD.pdf",
+              "sourceRows": [
+                "f:uconnect-multimedia|systems|uconnect-5-nav-with-14-5-inch-touchscreen-display-included-wit",
+                "f:equipment-groups|laramie-level-2-equipment-p2-group-|includes-rear-in-floor-storage-bins-g",
+                "f:equipment-groups|laramie-level-2-plus-equipment-p2-plus-group-|includes-p2-group-spray-in-"
+              ],
+              "sourceMark": "P",
+              "replaces": "The standard 12-inch center radio when the specified equipment group is selected.",
+              "vinEvidenceSource": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=3C63RRPL2TG212025",
+              "radioCode": "UBW",
+              "factoryLabel": "Uconnect 5 NAV with 14.5-inch touchscreen display",
+              "stickerLabel": "14.4-Inch Touchscreen Display",
+              "crosswalkSource": "https://static.nhtsa.gov/odi/tsbs/2026/MC-11034895-0001.pdf",
+              "crosswalkEvidence": "Stellantis TSB 08-255-26, July 1, 2026, page 1 identifies Uconnect 5 NAV 14.4-inch display as sales code UBW for North American 2026\u20132027 DT Ram 1500 and D2 Ram 3500. The factory availability chart identifies the 14.5-inch-labeled radio with the same UBW sales code. This establishes a model-specific radio-code naming crosswalk, not a generic numeric size alias or software-update eligibility for the pictured VIN."
+            },
+            "r12500-vinyl-bench": {
+              "status": "unavailable",
+              "note": "This pictured equipment configuration is not listed for this trim.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_RamHD.pdf",
+              "sourceRows": [
+                "f:interior-features|seats|heavy-duty-vinyl-40-20-40-split-bench-front-with-manual-adjust-and"
+              ],
+              "sourceMark": "NA",
+              "replaces": "Optional cloth seating replaces the Tradesman vinyl seating when an eligible configuration is ordered."
+            },
+            "r12512-leather-buckets": {
+              "status": "optional",
+              "note": "Optional leather-trimmed heated front buckets require P1, or are included with P1 Plus, P2 or P2 Plus. They replace Laramie\u2019s standard leather-trimmed 40/20/40 bench.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_RamHD.pdf",
+              "sourceRows": [
+                "f:interior-features|seats|leather-trimmed-heated-front-bucket-with-full-length-center-consol"
+              ],
+              "sourceMark": "O/P",
+              "replaces": "Laramie\u2019s standard leather-trimmed 40/20/40 bench, including the front-center seating position."
+            }
+          }
+        },
+        {
+          "id": "limited-longhorn",
+          "name": "Limited Longhorn",
+          "rank": 3,
+          "choices": {
+            "r12500-dashboard": {
+              "status": "unavailable",
+              "note": "This pictured equipment configuration is not listed for this trim.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_RamHD.pdf",
+              "sourceRows": [
+                "f:uconnect-multimedia|systems|uconnect-5-nav-with-12-inch-touchscreen-display-included-with-"
+              ],
+              "sourceMark": "NA",
+              "replaces": "The standard 8.4-inch system on Tradesman or Big Horn/Lone Star."
+            },
+            "r12249a-dashboard": {
+              "status": "standard",
+              "note": "UBW is standard on this trim. The pictured vehicle\u2019s sticker calls this screen 14.4 inches; the factory chart calls radio UBW 14.5 inches. The manufacturer service bulletin confirms the 14.4-inch name for UBW. The photo illustrates the center radio; surrounding cabin trim can differ.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_RamHD.pdf",
+              "sourceRows": [
+                "f:uconnect-multimedia|systems|uconnect-5-nav-with-14-5-inch-touchscreen-display-included-wit"
+              ],
+              "sourceMark": "S",
+              "replaces": "Standard center infotainment configuration on this trim; no smaller standard radio is implied.",
+              "vinEvidenceSource": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=3C63RRPL2TG212025",
+              "radioCode": "UBW",
+              "factoryLabel": "Uconnect 5 NAV with 14.5-inch touchscreen display",
+              "stickerLabel": "14.4-Inch Touchscreen Display",
+              "crosswalkSource": "https://static.nhtsa.gov/odi/tsbs/2026/MC-11034895-0001.pdf",
+              "crosswalkEvidence": "Stellantis TSB 08-255-26, July 1, 2026, page 1 identifies Uconnect 5 NAV 14.4-inch display as sales code UBW for North American 2026\u20132027 DT Ram 1500 and D2 Ram 3500. The factory availability chart identifies the 14.5-inch-labeled radio with the same UBW sales code. This establishes a model-specific radio-code naming crosswalk, not a generic numeric size alias or software-update eligibility for the pictured VIN."
+            },
+            "r12500-vinyl-bench": {
+              "status": "unavailable",
+              "note": "This pictured equipment configuration is not listed for this trim.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_RamHD.pdf",
+              "sourceRows": [
+                "f:interior-features|seats|heavy-duty-vinyl-40-20-40-split-bench-front-with-manual-adjust-and"
+              ],
+              "sourceMark": "NA",
+              "replaces": "Optional cloth seating replaces the Tradesman vinyl seating when an eligible configuration is ordered."
+            },
+            "r12512-leather-buckets": {
+              "status": "unavailable",
+              "note": "Limited Longhorn has a filigree premium-leather bucket design; this Laramie photo is not that configuration.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_RamHD.pdf",
+              "sourceRows": [
+                "f:interior-features|seats|leather-trimmed-heated-front-bucket-with-full-length-center-consol"
+              ],
+              "sourceMark": "NA",
+              "replaces": "Laramie\u2019s standard leather-trimmed 40/20/40 bench, including the front-center seating position."
+            }
+          }
+        },
+        {
+          "id": "limited",
+          "name": "Limited",
+          "rank": 4,
+          "choices": {
+            "r12500-dashboard": {
+              "status": "unavailable",
+              "note": "This pictured equipment configuration is not listed for this trim.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_RamHD.pdf",
+              "sourceRows": [
+                "f:uconnect-multimedia|systems|uconnect-5-nav-with-12-inch-touchscreen-display-included-with-"
+              ],
+              "sourceMark": "NA",
+              "replaces": "The standard 8.4-inch system on Tradesman or Big Horn/Lone Star."
+            },
+            "r12249a-dashboard": {
+              "status": "standard",
+              "note": "UBW is standard on this trim. The pictured vehicle\u2019s sticker calls this screen 14.4 inches; the factory chart calls radio UBW 14.5 inches. The manufacturer service bulletin confirms the 14.4-inch name for UBW. The photo illustrates the center radio; surrounding cabin trim can differ.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_RamHD.pdf",
+              "sourceRows": [
+                "f:uconnect-multimedia|systems|uconnect-5-nav-with-14-5-inch-touchscreen-display-included-wit"
+              ],
+              "sourceMark": "S",
+              "replaces": "Standard center infotainment configuration on this trim; no smaller standard radio is implied.",
+              "vinEvidenceSource": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=3C63RRPL2TG212025",
+              "radioCode": "UBW",
+              "factoryLabel": "Uconnect 5 NAV with 14.5-inch touchscreen display",
+              "stickerLabel": "14.4-Inch Touchscreen Display",
+              "crosswalkSource": "https://static.nhtsa.gov/odi/tsbs/2026/MC-11034895-0001.pdf",
+              "crosswalkEvidence": "Stellantis TSB 08-255-26, July 1, 2026, page 1 identifies Uconnect 5 NAV 14.4-inch display as sales code UBW for North American 2026\u20132027 DT Ram 1500 and D2 Ram 3500. The factory availability chart identifies the 14.5-inch-labeled radio with the same UBW sales code. This establishes a model-specific radio-code naming crosswalk, not a generic numeric size alias or software-update eligibility for the pictured VIN."
+            },
+            "r12500-vinyl-bench": {
+              "status": "unavailable",
+              "note": "This pictured equipment configuration is not listed for this trim.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_RamHD.pdf",
+              "sourceRows": [
+                "f:interior-features|seats|heavy-duty-vinyl-40-20-40-split-bench-front-with-manual-adjust-and"
+              ],
+              "sourceMark": "NA",
+              "replaces": "Optional cloth seating replaces the Tradesman vinyl seating when an eligible configuration is ordered."
+            },
+            "r12512-leather-buckets": {
+              "status": "unavailable",
+              "note": "Limited has a separate premium-leather bucket design; this Laramie leather-trimmed photo is not that configuration.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_RamHD.pdf",
+              "sourceRows": [
+                "f:interior-features|seats|leather-trimmed-heated-front-bucket-with-full-length-center-consol"
+              ],
+              "sourceMark": "NA",
+              "replaces": "Laramie\u2019s standard leather-trimmed 40/20/40 bench, including the front-center seating position."
+            }
+          }
+        }
+      ],
+      "baseFeatures": [
+        {
+          "id": "engine",
+          "label": "Base powertrain",
+          "value": "6.4L HEMI V8; 8-speed automatic",
+          "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_RamHD.pdf",
+          "sourceRows": [
+            "f:engines-transmissions||6-4l-hemi-v8-8-speed-automatic-8hp75-esl-dfx"
+          ],
+          "note": "Standard on Tradesman in the stated configuration."
+        },
+        {
+          "id": "screen",
+          "label": "Base center screen",
+          "value": "8.4-inch Uconnect 5",
+          "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_RamHD.pdf",
+          "sourceRows": [
+            "f:uconnect-multimedia|systems|uconnect-5-with-8-4-inch-touchscreen-display-ube"
+          ],
+          "note": "Tradesman base screen. The current 12-inch Tradesman photo depicts an upgrade, not its base configuration."
+        },
+        {
+          "id": "front-seats",
+          "label": "Base front seats",
+          "value": "Heavy-duty vinyl 40/20/40 split bench",
+          "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_RamHD.pdf",
+          "sourceRows": [
+            "f:interior-features|seats|heavy-duty-vinyl-40-20-40-split-bench-front-with-manual-adjust-and"
+          ],
+          "note": "Crew Cab configuration shown by the verified R12500 photo."
+        },
+        {
+          "id": "driver-seat",
+          "label": "Base driver adjustment",
+          "value": "Manual adjustment",
+          "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_RamHD.pdf",
+          "sourceRows": [
+            "f:interior-features|seats|heavy-duty-vinyl-40-20-40-split-bench-front-with-manual-adjust-and"
+          ],
+          "note": "The chart states manual adjustment without a number of adjustment directions."
+        },
+        {
+          "id": "climate",
+          "label": "Base climate controls",
+          "value": "Manual temperature control",
+          "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_RamHD.pdf",
+          "sourceRows": [
+            "f:interior-features|air-conditioning|manual-temperature-control-base-haa"
+          ],
+          "note": "Standard on Tradesman in the stated configuration."
+        },
+        {
+          "id": "drive",
+          "label": "Base drive system",
+          "value": "4x2",
+          "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_RamHD.pdf",
+          "sourceRows": [
+            "f:configurations|drive|4x2-2500-3500"
+          ],
+          "note": "4x4 is a separate configuration choice."
+        }
+      ]
+    },
+    {
+      "id": "chrysler-pacifica",
+      "year": 2026,
+      "baseTrim": "select",
+      "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Pacifica.pdf",
+      "scope": "2026 U.S. Chrysler Pacifica gasoline model only. Plug-in hybrid and Voyager trim/equipment mappings are separate.",
+      "rankNote": "Ranks control display order only; specialty trims are separate branches, not a universal price or equipment ladder.",
+      "trims": [
+        {
+          "id": "select",
+          "name": "Select",
+          "rank": 0,
+          "choices": {
+            "c02225-leatherette": {
+              "status": "standard",
+              "note": "Caprice leatherette-trimmed buckets are standard on Select. Nappa leather on Limited is a trim step, not proof that Select has a Nappa option.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Pacifica.pdf",
+              "sourceRows": [
+                "f:seating-and-trim|seats|caprice-leatherette-trimmed-bucket-sj"
+              ],
+              "sourceMark": "S",
+              "replaces": "Nappa leather-trimmed buckets on Limited replace this Select upholstery."
+            },
+            "p04984-nappa": {
+              "status": "unavailable",
+              "note": "This pictured equipment configuration is not listed for this trim.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Pacifica.pdf",
+              "sourceRows": [
+                "f:seating-and-trim|seats|nappa-leather-trimmed-bucket-al"
+              ],
+              "sourceMark": "NA",
+              "replaces": "Caprice leatherette seating when moving from Select to Limited."
+            },
+            "c02225-panoramic": {
+              "status": "optional",
+              "note": "The U.S. 2026 Chrysler retail brochure lists the dual-pane panoramic power sunroof as an available Select option (page 4); C02225\u2019s factory sticker independently confirms it as optional equipment. It does not require moving to Limited.",
+              "sourceUrl": "https://cdn.dealereprocess.org/cdn/brochures/chrysler/2026-pacifica.pdf",
+              "sourceMark": "Available",
+              "replaces": "The conventional roof configuration where the panoramic roof is an eligible upgrade.",
+              "vinEvidenceSource": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=2C4RC1BGXTR268658",
+              "sourcePage": 4,
+              "sourceContext": "2026 U.S. gasoline Pacifica Select; AVAILABLE (CONTINUED).",
+              "reconciliation": "Retail brochure and exact VIN sticker corroborate Select eligibility; the earlier fleet chart has a blank Select cell."
+            }
+          }
+        },
+        {
+          "id": "limited",
+          "name": "Limited",
+          "rank": 1,
+          "choices": {
+            "c02225-leatherette": {
+              "status": "unavailable",
+              "note": "This pictured equipment configuration is not listed for this trim.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Pacifica.pdf",
+              "sourceRows": [
+                "f:seating-and-trim|seats|caprice-leatherette-trimmed-bucket-sj"
+              ],
+              "sourceMark": "NA",
+              "replaces": "Nappa leather-trimmed buckets on Limited replace this Select upholstery."
+            },
+            "p04984-nappa": {
+              "status": "standard",
+              "note": "Nappa leather-trimmed buckets are standard on Limited, replacing Select\u2019s Caprice leatherette upholstery. The actual photo source P04984 is used; trim eligibility does not imply new inventory availability.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Pacifica.pdf",
+              "sourceRows": [
+                "f:seating-and-trim|seats|nappa-leather-trimmed-bucket-al"
+              ],
+              "sourceMark": "S",
+              "replaces": "Caprice leatherette seating when moving from Select to Limited."
+            },
+            "c02225-panoramic": {
+              "status": "standard",
+              "note": "Dual-pane panoramic roof with power front panel, fixed rear panel and power shade is standard on Limited. A roof-delete option has not been verified.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Pacifica.pdf",
+              "sourceRows": [
+                "f:exterior-features|sunroof|dual-pane-panoramic-power-front-fixed-rear-includes-power-open-c"
+              ],
+              "sourceMark": "S",
+              "replaces": "The conventional roof configuration where the panoramic roof is an eligible upgrade."
+            }
+          }
+        },
+        {
+          "id": "pinnacle",
+          "name": "Pinnacle",
+          "rank": 2,
+          "choices": {
+            "c02225-leatherette": {
+              "status": "unavailable",
+              "note": "This pictured equipment configuration is not listed for this trim.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Pacifica.pdf",
+              "sourceRows": [
+                "f:seating-and-trim|seats|caprice-leatherette-trimmed-bucket-sj"
+              ],
+              "sourceMark": "NA",
+              "replaces": "Nappa leather-trimmed buckets on Limited replace this Select upholstery."
+            },
+            "p04984-nappa": {
+              "status": "unavailable",
+              "note": "Pinnacle uses premium quilted Nappa leather. This unquilted Limited-seat photo is not that configuration.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Pacifica.pdf",
+              "sourceRows": [
+                "f:seating-and-trim|seats|nappa-leather-trimmed-bucket-al"
+              ],
+              "sourceMark": "NA",
+              "replaces": "Caprice leatherette seating when moving from Select to Limited."
+            },
+            "c02225-panoramic": {
+              "status": "standard",
+              "note": "Dual-pane panoramic roof with power front panel, fixed rear panel and power shade is standard on Pinnacle. A roof-delete option has not been verified.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Pacifica.pdf",
+              "sourceRows": [
+                "f:exterior-features|sunroof|dual-pane-panoramic-power-front-fixed-rear-includes-power-open-c"
+              ],
+              "sourceMark": "S",
+              "replaces": "The conventional roof configuration where the panoramic roof is an eligible upgrade."
+            }
+          }
+        }
+      ],
+      "baseFeatures": [
+        {
+          "id": "engine",
+          "label": "Base powertrain",
+          "value": "3.6L V6 with Stop/Start; 9-speed automatic",
+          "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Pacifica.pdf",
+          "sourceRows": [
+            "f:engines-transmissions||3-6l-pentastar-v6-variable-valve-timing-vvt-with-engine-stop-start-"
+          ],
+          "note": "Standard on Select in the stated configuration."
+        },
+        {
+          "id": "drive",
+          "label": "Base drive system",
+          "value": "Front-wheel drive",
+          "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Pacifica.pdf",
+          "sourceRows": [
+            "f:mechanical-features||front-wheel-drive-fwd"
+          ],
+          "note": "All-wheel drive is a separate option/configuration."
+        },
+        {
+          "id": "screen",
+          "label": "Base center screen",
+          "value": "10.1-inch Uconnect 5",
+          "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Pacifica.pdf",
+          "sourceRows": [
+            "f:uconnect-multimedia|uconnect-5-with-10-1-inch-display|includes-10-1-inch-touchscreen-am-fm"
+          ],
+          "note": "The Select screen is not a smaller screen than Limited\u2019s 10.1-inch NAV system; navigation is a separate upgrade."
+        },
+        {
+          "id": "front-seats",
+          "label": "Base front seats",
+          "value": "Caprice leatherette-trimmed buckets",
+          "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Pacifica.pdf",
+          "sourceRows": [
+            "f:seating-and-trim|seats|caprice-leatherette-trimmed-bucket-sj"
+          ],
+          "note": "Standard on Select in the stated configuration."
+        },
+        {
+          "id": "driver-seat",
+          "label": "Base driver adjustment",
+          "value": "8-way power",
+          "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Pacifica.pdf",
+          "sourceRows": [
+            "f:seating-and-trim|seats|eight-way-power-driver-s-jvg"
+          ],
+          "note": "Standard on Select in the stated configuration."
+        },
+        {
+          "id": "climate",
+          "label": "Base climate controls",
+          "value": "Three-zone automatic temperature control",
+          "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Pacifica.pdf",
+          "sourceRows": [
+            "f:interior-features|air-conditioning|three-zone-automatic-temperature-control-hah"
+          ],
+          "note": "Standard on Select in the stated configuration."
+        }
+      ]
+    },
+    {
+      "id": "jeep-grand-cherokee",
+      "year": 2026,
+      "baseTrim": "laredo",
+      "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_GrandCherokee.pdf",
+      "scope": "2026 U.S. two-row gasoline Grand Cherokee only. Start with the V6 Laredo; Laredo X, Laredo Altitude, Limited, 85th Anniversary, Limited Reserve and Summit have distinct equipment. Grand Cherokee L and 4xe are separate.",
+      "shopperScope": "2026 includes V6 Laredo and Laredo X versions with an 8.4-inch screen. Laredo Altitude and the refreshed upper trims use 12.3-inch NAV; moving between these trims also changes other included features.",
+      "rankNote": "Display order follows trim variants, not a universal price ladder. Laredo Altitude is a package/configuration change including the 2.0L engine, 12.3-inch NAV radio and leatherette/suede upholstery.",
+      "sourceReconciliation": "The retail brochure and fleet feature matrix start with Laredo Altitude and omit the base V6 Laredo/X columns. Do not apply their 12.3-inch statement to base V6 cars. Base facts are verified against the manufacturer VIN sticker; the 2026 two-row FCA order guide corroborates base cloth and 8.4-inch radio. 85th Anniversary and Laredo X are checked against their exact 2CZ/22J package records.",
+      "trims": [
+        {
+          "id": "laredo",
+          "name": "Laredo",
+          "rank": 0,
+          "choices": {
+            "j22581-dashboard": {
+              "status": "standard",
+              "note": "8.4-inch Uconnect 5 is the standard radio on the V6 Laredo. The 12.3-inch NAV upgrade comes with Laredo Altitude or another applicable trim configuration.",
+              "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4RJGAG1TC307222",
+              "sourceMark": "Standard equipment",
+              "sourceEvidence": "Uconnect 5 with 8.4-Inch Touch Screen Display",
+              "supportingSourceUrl": "https://www.jeepgladiatorforum.com/forum/attachments/2026-grand-cherokee-pdf.447472/",
+              "supportingSourcePage": 21
+            },
+            "j22581-cloth": {
+              "status": "standard",
+              "note": "The V6 Laredo keeps cloth upholstery; Laredo Altitude uses a different leatherette/suede seat.",
+              "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4RJGAG1TC307222",
+              "sourceMark": "Interior specification",
+              "sourceEvidence": "Interior: Cloth Seats",
+              "supportingSourceUrl": "https://www.jeepgladiatorforum.com/forum/attachments/2026-grand-cherokee-pdf.447472/",
+              "supportingSourcePage": 18
+            },
+            "j22138-dashboard": {
+              "status": "unavailable",
+              "note": "Moving to Laredo Altitude changes the radio to 12.3-inch NAV and also changes the powertrain and seat upholstery.",
+              "sourceUrl": "https://www.jeepgladiatorforum.com/forum/attachments/2026-grand-cherokee-pdf.447472/",
+              "sourcePage": 2,
+              "sourceMark": "2BB package replacement",
+              "sourceEvidence": "Laredo Altitude 2BB: EC7 engine, UBX radio and DZ upholstery.",
+              "replaces": "8.4-inch Uconnect 5 in the V6 Laredo configuration."
+            },
+            "j22138-capri": {
+              "status": "unavailable",
+              "note": "This plain Capri leatherette configuration belongs to Limited; Laredo Altitude instead uses leatherette with suede inserts.",
+              "sourceUrl": "https://cdn.dealereprocess.org/cdn/brochures/jeep/2026-grandcherokee.pdf",
+              "sourcePage": 6,
+              "sourceMark": "Trim-specific upholstery",
+              "replaces": "Laredo cloth when selecting Limited."
+            },
+            "j22560-palermo": {
+              "status": "unavailable",
+              "note": "This quilted Palermo seating belongs to Summit, which replaces the lower-trim upholstery.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_GrandCherokee.pdf",
+              "sourceRows": [
+                "f:interior-features|seat-fabrics|palermo-leather-with-quilted-palermo-leather-bolsters-avail"
+              ],
+              "sourceMark": "Summit-specific upholstery",
+              "replaces": "The selected lower-trim seat configuration."
+            },
+            "j22560-panoramic": {
+              "status": "unknown",
+              "note": "The reviewed Laredo sources do not establish a dual-pane panoramic option. Laredo X 22J includes a power sunroof, which is not the pictured two-pane roof.",
+              "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4RJGAG1TC307222",
+              "sourceMark": "Roof configurations kept distinct"
+            }
+          }
+        },
+        {
+          "id": "laredo-x",
+          "name": "Laredo X",
+          "rank": 1,
+          "choices": {
+            "j22581-dashboard": {
+              "status": "standard",
+              "note": "8.4-inch Uconnect 5 is the standard radio on the V6 Laredo X. The 12.3-inch NAV upgrade comes with Laredo Altitude or another applicable trim configuration.",
+              "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4RJGAG1TC222378",
+              "sourceMark": "Standard equipment",
+              "sourceEvidence": "Uconnect 5 with 8.4-Inch Touch Screen Display",
+              "supportingSourceUrl": "https://www.jeepgladiatorforum.com/forum/attachments/2026-grand-cherokee-pdf.447472/",
+              "supportingSourcePage": 21
+            },
+            "j22581-cloth": {
+              "status": "standard",
+              "note": "The V6 Laredo X keeps cloth upholstery; Laredo Altitude uses a different leatherette/suede seat.",
+              "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4RJGAG1TC222378",
+              "sourceMark": "Interior specification",
+              "sourceEvidence": "Interior: Cloth Seats",
+              "supportingSourceUrl": "https://www.jeepgladiatorforum.com/forum/attachments/2026-grand-cherokee-pdf.447472/",
+              "supportingSourcePage": 18
+            },
+            "j22138-dashboard": {
+              "status": "unavailable",
+              "note": "Moving to Laredo Altitude changes the radio to 12.3-inch NAV and also changes the powertrain and seat upholstery.",
+              "sourceUrl": "https://www.jeepgladiatorforum.com/forum/attachments/2026-grand-cherokee-pdf.447472/",
+              "sourcePage": 2,
+              "sourceMark": "2BB package replacement",
+              "sourceEvidence": "Laredo Altitude 2BB: EC7 engine, UBX radio and DZ upholstery.",
+              "replaces": "8.4-inch Uconnect 5 in the V6 Laredo configuration."
+            },
+            "j22138-capri": {
+              "status": "unavailable",
+              "note": "This plain Capri leatherette configuration belongs to Limited; Laredo Altitude instead uses leatherette with suede inserts.",
+              "sourceUrl": "https://cdn.dealereprocess.org/cdn/brochures/jeep/2026-grandcherokee.pdf",
+              "sourcePage": 6,
+              "sourceMark": "Trim-specific upholstery",
+              "replaces": "Laredo cloth when selecting Limited."
+            },
+            "j22560-palermo": {
+              "status": "unavailable",
+              "note": "This quilted Palermo seating belongs to Summit, which replaces the lower-trim upholstery.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_GrandCherokee.pdf",
+              "sourceRows": [
+                "f:interior-features|seat-fabrics|palermo-leather-with-quilted-palermo-leather-bolsters-avail"
+              ],
+              "sourceMark": "Summit-specific upholstery",
+              "replaces": "The selected lower-trim seat configuration."
+            },
+            "j22560-panoramic": {
+              "status": "unknown",
+              "note": "The reviewed Laredo X sources do not establish a dual-pane panoramic option. Laredo X 22J includes a power sunroof, which is not the pictured two-pane roof.",
+              "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4RJGAG1TC222378",
+              "sourceMark": "Roof configurations kept distinct"
+            }
+          }
+        },
+        {
+          "id": "laredo-altitude",
+          "name": "Laredo Altitude",
+          "rank": 2,
+          "choices": {
+            "j22138-dashboard": {
+              "status": "standard",
+              "note": "12.3-inch Uconnect 5 NAV is included on Laredo Altitude.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_GrandCherokee.pdf",
+              "sourceRows": [
+                "f:uconnect-multimedia|uconnect-5-nav-with-12-3-inch-display|includes-12-3-inch-touchscreen-d"
+              ],
+              "sourceMark": "S",
+              "replaces": "The V6 Laredo 8.4-inch system when moving to this trim configuration."
+            },
+            "j22581-dashboard": {
+              "status": "unavailable",
+              "note": "This trim includes the 12.3-inch NAV system in place of the V6 Laredo 8.4-inch radio.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_GrandCherokee.pdf",
+              "sourceRows": [
+                "f:uconnect-multimedia|uconnect-5-nav-with-12-3-inch-display|includes-12-3-inch-touchscreen-d"
+              ],
+              "sourceMark": "Standard replacement"
+            },
+            "j22581-cloth": {
+              "status": "unavailable",
+              "note": "Laredo Altitude uses Capri leatherette with suede inserts in place of the pictured Laredo cloth.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_GrandCherokee.pdf",
+              "sourceRows": [
+                "f:interior-features|seat-fabrics|capri-leatherette-with-perforated-suede-available-in-global"
+              ],
+              "sourceMark": "Defined replacement upholstery"
+            },
+            "j22138-capri": {
+              "status": "unavailable",
+              "note": "Laredo Altitude uses Capri leatherette with suede inserts, a different configuration from the pictured plain Limited Capri seat.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_GrandCherokee.pdf",
+              "sourceRows": [
+                "f:interior-features|seat-fabrics|capri-leatherette-with-perforated-suede-available-in-global"
+              ],
+              "sourceMark": "Defined replacement upholstery"
+            },
+            "j22560-palermo": {
+              "status": "unavailable",
+              "note": "The pictured quilted Palermo seat belongs to Summit; Laredo Altitude uses Capri leatherette with suede inserts.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_GrandCherokee.pdf",
+              "sourceRows": [
+                "f:interior-features|seat-fabrics|capri-leatherette-with-perforated-suede-available-in-global",
+                "f:interior-features|seat-fabrics|palermo-leather-with-quilted-palermo-leather-bolsters-avail"
+              ],
+              "sourceMark": "Defined replacement upholstery"
+            },
+            "j22560-panoramic": {
+              "status": "unavailable",
+              "note": "Laredo Altitude offers a single-pane sunroof; this pictured dual-pane panoramic configuration starts with Limited.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_GrandCherokee.pdf",
+              "sourceRows": [
+                "f:exterior-features|sunroof|single-pane-power-with-express-open-close-and-comfort-stop-featu",
+                "f:exterior-features|sunroof|dual-pane-panoramic-includes-full-power-sunroof-with-power-sunsh"
+              ],
+              "sourceMark": "GWA optional; GWJ not offered",
+              "replaces": "The optional single-pane roof is a distinct feature."
+            }
+          }
+        },
+        {
+          "id": "limited",
+          "name": "Limited",
+          "rank": 3,
+          "choices": {
+            "j22138-dashboard": {
+              "status": "standard",
+              "note": "12.3-inch Uconnect 5 NAV is included on Limited.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_GrandCherokee.pdf",
+              "sourceRows": [
+                "f:uconnect-multimedia|uconnect-5-nav-with-12-3-inch-display|includes-12-3-inch-touchscreen-d"
+              ],
+              "sourceMark": "S",
+              "replaces": "The V6 Laredo 8.4-inch system when moving to this trim configuration."
+            },
+            "j22581-dashboard": {
+              "status": "unavailable",
+              "note": "This trim includes the 12.3-inch NAV system in place of the V6 Laredo 8.4-inch radio.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_GrandCherokee.pdf",
+              "sourceRows": [
+                "f:uconnect-multimedia|uconnect-5-nav-with-12-3-inch-display|includes-12-3-inch-touchscreen-d"
+              ],
+              "sourceMark": "Standard replacement"
+            },
+            "j22581-cloth": {
+              "status": "unavailable",
+              "note": "Limited uses plain Capri leatherette in place of the pictured Laredo cloth.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_GrandCherokee.pdf",
+              "sourceRows": [
+                "f:interior-features|seat-fabrics|capri-leatherette-available-in-global-black-or-global-black"
+              ],
+              "sourceMark": "Defined replacement upholstery"
+            },
+            "j22138-capri": {
+              "status": "standard",
+              "note": "Plain Capri leatherette is included on Limited. Luxury Tech Group II replaces it with Axis II perforated upholstery and requires a panoramic roof.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_GrandCherokee.pdf",
+              "sourceRows": [
+                "f:interior-features|seat-fabrics|capri-leatherette-available-in-global-black-or-global-black",
+                "f:interior-features|seat-fabrics|capri-leatherette-with-axis-ii-perforations-available-in-gl",
+                "f:packages-equipment-groups|luxury-tech-group-ii|includes-capri-leatherette-seats-with-axis-"
+              ],
+              "sourceMark": "S; AJW replacement separate",
+              "replaces": "Laredo cloth; Axis II perforated Capri with Luxury Tech Group II replaces this plain Capri configuration.",
+              "requires": [
+                "j22138-dashboard"
+              ]
+            },
+            "j22560-palermo": {
+              "status": "unavailable",
+              "note": "The pictured quilted Palermo seat belongs to Summit; Limited uses plain Capri leatherette.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_GrandCherokee.pdf",
+              "sourceRows": [
+                "f:interior-features|seat-fabrics|capri-leatherette-available-in-global-black-or-global-black",
+                "f:interior-features|seat-fabrics|palermo-leather-with-quilted-palermo-leather-bolsters-avail"
+              ],
+              "sourceMark": "Defined replacement upholstery"
+            },
+            "j22560-panoramic": {
+              "status": "optional",
+              "note": "The dual-pane panoramic roof is a Limited option and is included with Limited Altitude Package. Luxury Tech Group II requires this roof and changes the seat upholstery to Axis II perforated Capri.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_GrandCherokee.pdf",
+              "sourceRows": [
+                "f:exterior-features|sunroof|dual-pane-panoramic-includes-full-power-sunroof-with-power-sunsh",
+                "f:packages-equipment-groups|limited-altitude-package|includes-20-inch-gloss-black-painted-al",
+                "f:packages-equipment-groups|luxury-tech-group-ii|includes-capri-leatherette-seats-with-axis-"
+              ],
+              "sourceMark": "O/P",
+              "replaces": "The conventional roof on Limited."
+            }
+          }
+        },
+        {
+          "id": "85th-anniversary-edition",
+          "name": "85th Anniversary Edition",
+          "rank": 4,
+          "choices": {
+            "j22138-dashboard": {
+              "status": "standard",
+              "note": "The 85th Anniversary configuration retains the 12.3-inch NAV radio.",
+              "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4RJHBR8TC313864",
+              "sourceMark": "Standard equipment",
+              "sourceEvidence": "Uconnect 5 Nav with 12.3-Inch Touch Screen Display"
+            },
+            "j22581-dashboard": {
+              "status": "unavailable",
+              "note": "The 85th Anniversary configuration uses the 12.3-inch NAV radio.",
+              "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4RJHBR8TC313864",
+              "sourceMark": "Installed replacement radio"
+            },
+            "j22581-cloth": {
+              "status": "unavailable",
+              "note": "85th Anniversary seats have their own seat tags and Mayan Gold stitching; this photo shows a different upholstery configuration.",
+              "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4RJHBR8TC313864",
+              "sourceMark": "2CZ package replacement",
+              "sourceEvidence": "85th Edition Leatherette Seats with Seat Tags; Mayan Gold Interior Accent Stitching"
+            },
+            "j22138-capri": {
+              "status": "unavailable",
+              "note": "85th Anniversary seats have their own seat tags and Mayan Gold stitching; this photo shows a different upholstery configuration.",
+              "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4RJHBR8TC313864",
+              "sourceMark": "2CZ package replacement",
+              "sourceEvidence": "85th Edition Leatherette Seats with Seat Tags; Mayan Gold Interior Accent Stitching"
+            },
+            "j22560-palermo": {
+              "status": "unavailable",
+              "note": "85th Anniversary seats have their own seat tags and Mayan Gold stitching; this photo shows a different upholstery configuration.",
+              "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4RJHBR8TC313864",
+              "sourceMark": "2CZ package replacement",
+              "sourceEvidence": "85th Edition Leatherette Seats with Seat Tags; Mayan Gold Interior Accent Stitching"
+            },
+            "j22560-panoramic": {
+              "status": "standard",
+              "note": "The dual-pane panoramic roof is included in the 85th Anniversary 2CZ package.",
+              "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4RJHBR8TC313864",
+              "sourceMark": "Included in 2CZ package",
+              "sourceEvidence": "Customer Preferred Package 2CZ; Dual-Pane Panoramic Sunroof",
+              "replaces": "The conventional Limited roof when selecting this package."
+            }
+          }
+        },
+        {
+          "id": "limited-reserve",
+          "name": "Limited Reserve",
+          "rank": 5,
+          "choices": {
+            "j22138-dashboard": {
+              "status": "standard",
+              "note": "12.3-inch Uconnect 5 NAV is included on Limited Reserve.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_GrandCherokee.pdf",
+              "sourceRows": [
+                "f:uconnect-multimedia|uconnect-5-nav-with-12-3-inch-display|includes-12-3-inch-touchscreen-d"
+              ],
+              "sourceMark": "S",
+              "replaces": "The V6 Laredo 8.4-inch system when moving to this trim configuration."
+            },
+            "j22581-dashboard": {
+              "status": "unavailable",
+              "note": "This trim includes the 12.3-inch NAV system in place of the V6 Laredo 8.4-inch radio.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_GrandCherokee.pdf",
+              "sourceRows": [
+                "f:uconnect-multimedia|uconnect-5-nav-with-12-3-inch-display|includes-12-3-inch-touchscreen-d"
+              ],
+              "sourceMark": "Standard replacement"
+            },
+            "j22581-cloth": {
+              "status": "unavailable",
+              "note": "Limited Reserve uses Nappa leather with Axis II perforations in place of the pictured Laredo cloth.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_GrandCherokee.pdf",
+              "sourceRows": [
+                "f:interior-features|seat-fabrics|nappa-leather-with-axis-ii-perforations-available-in-global"
+              ],
+              "sourceMark": "Defined replacement upholstery"
+            },
+            "j22138-capri": {
+              "status": "unavailable",
+              "note": "Limited Reserve uses Nappa leather with Axis II perforations, a different configuration from the pictured plain Limited Capri seat.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_GrandCherokee.pdf",
+              "sourceRows": [
+                "f:interior-features|seat-fabrics|nappa-leather-with-axis-ii-perforations-available-in-global"
+              ],
+              "sourceMark": "Defined replacement upholstery"
+            },
+            "j22560-palermo": {
+              "status": "unavailable",
+              "note": "The pictured quilted Palermo seat belongs to Summit; Limited Reserve uses Nappa leather with Axis II perforations.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_GrandCherokee.pdf",
+              "sourceRows": [
+                "f:interior-features|seat-fabrics|nappa-leather-with-axis-ii-perforations-available-in-global",
+                "f:interior-features|seat-fabrics|palermo-leather-with-quilted-palermo-leather-bolsters-avail"
+              ],
+              "sourceMark": "Defined replacement upholstery"
+            },
+            "j22560-panoramic": {
+              "status": "standard",
+              "note": "The dual-pane panoramic roof is included on Limited Reserve.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_GrandCherokee.pdf",
+              "sourceRows": [
+                "f:exterior-features|sunroof|dual-pane-panoramic-includes-full-power-sunroof-with-power-sunsh"
+              ],
+              "sourceMark": "S",
+              "replaces": "The lower-trim conventional roof configuration."
+            }
+          }
+        },
+        {
+          "id": "summit",
+          "name": "Summit",
+          "rank": 6,
+          "choices": {
+            "j22138-dashboard": {
+              "status": "standard",
+              "note": "12.3-inch Uconnect 5 NAV is included on Summit.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_GrandCherokee.pdf",
+              "sourceRows": [
+                "f:uconnect-multimedia|uconnect-5-nav-with-12-3-inch-display|includes-12-3-inch-touchscreen-d"
+              ],
+              "sourceMark": "S",
+              "replaces": "The V6 Laredo 8.4-inch system when moving to this trim configuration."
+            },
+            "j22581-dashboard": {
+              "status": "unavailable",
+              "note": "This trim includes the 12.3-inch NAV system in place of the V6 Laredo 8.4-inch radio.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_GrandCherokee.pdf",
+              "sourceRows": [
+                "f:uconnect-multimedia|uconnect-5-nav-with-12-3-inch-display|includes-12-3-inch-touchscreen-d"
+              ],
+              "sourceMark": "Standard replacement"
+            },
+            "j22581-cloth": {
+              "status": "unavailable",
+              "note": "Summit uses quilted Palermo leather in place of the pictured Laredo cloth.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_GrandCherokee.pdf",
+              "sourceRows": [
+                "f:interior-features|seat-fabrics|palermo-leather-with-quilted-palermo-leather-bolsters-avail"
+              ],
+              "sourceMark": "Defined replacement upholstery"
+            },
+            "j22138-capri": {
+              "status": "unavailable",
+              "note": "Summit uses quilted Palermo leather, a different configuration from the pictured plain Limited Capri seat.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_GrandCherokee.pdf",
+              "sourceRows": [
+                "f:interior-features|seat-fabrics|palermo-leather-with-quilted-palermo-leather-bolsters-avail"
+              ],
+              "sourceMark": "Defined replacement upholstery"
+            },
+            "j22560-palermo": {
+              "status": "standard",
+              "note": "Quilted Palermo leather is included on Summit, along with ventilated front/rear seats and front-seat massage.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_GrandCherokee.pdf",
+              "sourceRows": [
+                "f:interior-features|seat-fabrics|palermo-leather-with-quilted-palermo-leather-bolsters-avail",
+                "f:interior-features|seats-front-|ventilated-front-row-caj",
+                "f:interior-features|seats-front-|massage-power-seatback-driver-s-ce9",
+                "f:interior-features|seats-front-|massage-power-seatback-front-passenger-ce5",
+                "f:interior-features|seating-second-row-|ventilated-second-row-cah"
+              ],
+              "sourceMark": "S",
+              "replaces": "Lower-trim cloth, Capri or Nappa upholstery.",
+              "requires": [
+                "j22138-dashboard"
+              ]
+            },
+            "j22560-panoramic": {
+              "status": "standard",
+              "note": "The dual-pane panoramic roof is included on Summit.",
+              "sourceUrl": "https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_GrandCherokee.pdf",
+              "sourceRows": [
+                "f:exterior-features|sunroof|dual-pane-panoramic-includes-full-power-sunroof-with-power-sunsh"
+              ],
+              "sourceMark": "S",
+              "replaces": "The lower-trim conventional roof configuration."
+            }
+          }
+        }
+      ],
+      "baseFeatures": [
+        {
+          "id": "engine",
+          "label": "Base powertrain",
+          "value": "3.6L Pentastar V6; 8-speed automatic",
+          "note": "Laredo and Laredo X use the V6 configuration. Laredo Altitude and the refreshed upper trims use the 2.0L Hurricane 4 Turbo.",
+          "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4RJGAG1TC307222",
+          "sourceEvidence": "Engine: 3.6L V6 24V VVT Pentastar Engine with Stop/Start; Transmission: 8-Speed Automatic 850RE Transmission",
+          "sourceContext": "2026 U.S. two-row Laredo 4x2, 22D; VIN 1C4RJGAG1TC307222."
+        },
+        {
+          "id": "drive",
+          "label": "Starting drive system",
+          "value": "Rear-wheel drive (4x2)",
+          "note": "Laredo also has a separate 4x4 configuration.",
+          "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4RJGAG1TC307222",
+          "sourceEvidence": "JEEP GRAND CHEROKEE LAREDO 4X2",
+          "sourceContext": "2026 U.S. two-row Laredo 4x2, 22D; VIN 1C4RJGAG1TC307222."
+        },
+        {
+          "id": "screen",
+          "label": "Base center screen",
+          "value": "8.4-inch Uconnect 5",
+          "note": "The 12.3-inch screen belongs to applicable upgraded trim configurations; it is not the base Laredo screen.",
+          "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4RJGAG1TC307222",
+          "sourceEvidence": "Uconnect 5 with 8.4-Inch Touch Screen Display",
+          "sourceContext": "2026 U.S. two-row Laredo 4x2, 22D; VIN 1C4RJGAG1TC307222."
+        },
+        {
+          "id": "front-seats",
+          "label": "Base upholstery",
+          "value": "Cloth seats",
+          "note": "Verified on the pictured Laredo 22D configuration.",
+          "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4RJGAG1TC307222",
+          "sourceEvidence": "Interior: Cloth Seats",
+          "sourceContext": "2026 U.S. two-row Laredo 4x2, 22D; VIN 1C4RJGAG1TC307222."
+        },
+        {
+          "id": "driver-seat",
+          "label": "Base seat adjustment",
+          "value": "8-way power driver; 4-way manual passenger",
+          "note": "Power passenger adjustment comes with applicable higher trims.",
+          "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4RJGAG1TC307222",
+          "sourceEvidence": "8-Way Power Adjustable Driver Seat; 4-Way Manual Adjustable Front Passenger Seat",
+          "sourceContext": "2026 U.S. two-row Laredo 4x2, 22D; VIN 1C4RJGAG1TC307222."
+        },
+        {
+          "id": "climate",
+          "label": "Base climate controls",
+          "value": "Dual-zone automatic temperature control",
+          "note": "Standard on the pictured Laredo configuration.",
+          "sourceUrl": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4RJGAG1TC307222",
+          "sourceEvidence": "A/C with Dual-Zone Auto Temperature Control",
+          "sourceContext": "2026 U.S. two-row Laredo 4x2, 22D; VIN 1C4RJGAG1TC307222."
+        }
+      ]
+    }
+  ]
+}
