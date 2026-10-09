@@ -46,7 +46,8 @@ const plain=t=>String(t||'').replace(/\([^()]*\)/g,' ').replace(/\([^()]*\)/g,' 
 export function factoryRowIds(fact){
  const text=plain(fact.text),parent=plain(fact.parent);
  if(!text||bundle.test(text)||bundle.test(parent)||beside.test(text)||beside.test(parent))return [];
- let id=guideRowFeature(text);
+ // The chart uses the FamCAM trademark; VIN labels use Interior Rear-Facing Camera.
+ let id=/\b(?:fam[ -]?cam(?:tm)?|interior rear[ -]facing camera)\b/i.test(text)?'familyCamera':guideRowFeature(text);
  if(!id&&parent)id=guideRowFeature(parent+' '+text);
  if(!id)return [];
  if(aside(id,parent,text))return [];

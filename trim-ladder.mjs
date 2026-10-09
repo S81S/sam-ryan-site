@@ -112,22 +112,23 @@ export function vehicleFit(vehicle,trim,picks,entry){
   // The factory chart says the vehicle's trim is never built with it: no sticker reading can make it a match.
   const chartFact=trim?.comparison?.find(f=>f.factory&&f.key===(pick.base||pick.key));
   if(chartFact?.status==='unavailable'&&!pick.base)return {pick,on:'no',by:'trim'};
-  // A chart option named on the vehicle's own window sticker (or, once that name is known from other stickers, missing
-  // from this one).
-  const oi=entry?.opts?.indexOf(pick.key)??-1;
-  if(vehicle.sticker&&oi>=0){
-   if(vehicle.o?.includes(oi))return {pick,on:'yes',by:'sticker'};
-   if(entry.eng?.includes(oi))return {pick,on:'no',by:'sticker'};
-   if(trim&&satisfies(trim,pick)==='standard')return {pick,on:'yes',by:'trim'};
-   if(entry.optSeen?.includes(oi))return {pick,on:'no',by:'sticker'};
-  }
+  // Explicit mapped evidence resolves the same VIN facts used by Inventory.
+  // Missing evidence still permits a named installed option or a factory-standard answer.
   const ids=entry?.rows?.[pick.key]||[],read=vehicle.sticker&&ids.length;
   if(read&&ids.some(n=>vehicle.y.includes(n)))return {pick,on:'yes',by:'sticker'};
   if(read&&ids.every(n=>vehicle.n.includes(n)))return {pick,on:'no',by:'sticker'};
+  // A chart option named on the vehicle's own window sticker (or, once that name is known from other stickers, missing
+  // from this one).
+  const oi=entry?.opts?.indexOf(pick.key)??-1;
+  if(vehicle.sticker&&oi>=0&&vehicle.o?.includes(oi))return {pick,on:'yes',by:'sticker'};
+  if(vehicle.sticker&&oi>=0&&entry.eng?.includes(oi))return {pick,on:'no',by:'sticker'};
   const t=trim?satisfies(trim,pick):null;
   if(t==='standard')return {pick,on:'yes',by:'trim'};
-  // An option the sticker can be checked for and does not list is not on this vehicle.
-  if(t==='option')return {pick,on:read?'no':'check',by:read?'sticker':'trim'};
+  if(read)return {pick,on:'check',by:'sticker'};
+  if(vehicle.sticker&&oi>=0){
+   if(entry.optSeen?.includes(oi))return {pick,on:'no',by:'sticker'};
+  }
+  if(t==='option')return {pick,on:'check',by:'trim'};
   return {pick,on:t===false?'no':'check',by:'trim'};
  });
 }
