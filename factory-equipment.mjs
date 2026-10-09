@@ -8,6 +8,8 @@ import {repairCameraTireEvidence} from './camera-tire-evidence.mjs';
 import {repairWheelFinishEvidence} from './wheel-finish-evidence.mjs';
 import {applyRulings} from './sticker-rulings.mjs';
 import {installedMirrorFoldingFact} from './comparison-specs.mjs';
+import {repairWranglerRoofEvidence} from './wrangler-roof-evidence.mjs';
+import {applyGrandCherokeeAnswers} from './gc-equipment-answers.mjs';
 const ramSource='https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf';
 const pacificaSource='https://www.chrysler.com/news/2027-chrysler-pacifica-debut.html';
 const norm=s=>String(s||'').normalize('NFKC').replace(/[®™]/g,'').replace(/[\u2010-\u2015]/g,'-').replace(/\s+/g,' ').trim().toLowerCase();
@@ -90,7 +92,7 @@ const resolvedEquipment=new WeakMap();
 export function applyFactoryEquipment(vehicle,sticker){
  if(!vehicle||!sticker||typeof sticker!=='object')return sticker;
  const signature=[vehicle.vin,vehicle.title,vehicle.year].join('|'),cached=resolvedEquipment.get(sticker)?.get(vehicle);if(cached?.signature===signature)return cached.result;
- const result=resolveFactoryEquipment(vehicle,sticker);
+ const result=applyGrandCherokeeAnswers(vehicle,repairWranglerRoofEvidence(vehicle,resolveFactoryEquipment(vehicle,sticker)));
  let byVehicle=resolvedEquipment.get(sticker);if(!byVehicle){byVehicle=new WeakMap();resolvedEquipment.set(sticker,byVehicle);}
  byVehicle.set(vehicle,{signature,result});return result;
 }
