@@ -36,7 +36,7 @@ function save(replace){
  if(maxPrice)url.searchParams.set('maxPrice',String(maxPrice));
  history[replace?'replaceState':'pushState']({...state},'',url);
 }
-window.addEventListener('popstate',async e=>{state=e.state&&'path' in e.state?{...e.state}:{...blank};await ensureChart();draw(false);});
+window.addEventListener('popstate',async e=>{maxPrice=Math.max(0,Math.min(1000000,Number(new URLSearchParams(location.search).get('maxPrice'))||0));state=e.state&&'path' in e.state?{...e.state}:{...blank};await ensureChart();draw(false);});
 async function go(next){state={...state,...next};await ensureChart();save(false);draw(true);}
 // A lineup's chart file loads when the shopper opens it.
 async function ensureChart(){
@@ -104,7 +104,8 @@ function pickList(title,items,kind,trim){
 // ---- What's listed in inventory with everything picked so far, on any trim ----
 function carCard(r,i,limit){
  const t=allTrims().find(x=>x.id===r.v.trim),name=t?.name||'',missing=r.fit.filter(f=>f.on==='no'),check=r.fit.filter(f=>f.on==='check');
- return `<a class="tf-car${i>=limit?' tf-more':''}" href="/vehicle-${esc(r.v.vin)}"${i>=limit?' hidden':''}>${r.v.photo?`<img src="${esc(r.v.photo)}" alt="" loading="lazy">`:''}<span><em class="tf-trimtag">${esc(name)}</em><strong>${esc(r.v.title)}</strong><span>${r.v.price?money(r.v.price):'Ask for price'}${r.v.stock?` · Stock ${esc(r.v.stock)}`:''}</span>${r.v.color?`<small>${esc(r.v.color)}</small>`:''}${r.fit.length?(missing.length||check.length?`${missing.length?`<small class="tf-miss">Missing: ${esc(missing.map(f=>f.pick.name).join(', '))}</small>`:''}${check.length?`<small class="tf-ask">Ask us: ${esc(check.map(f=>f.pick.name).join(', '))}</small>`:''}`:`<small class="tf-hit">✓ Has everything you picked</small>`):''}</span></a>`;
+ const m=current(),query=[m.year,m.brand,m.name,...state.picks.map(p=>p.name),maxPrice?'under '+maxPrice:''].filter(Boolean).join(' '),context=new URLSearchParams({q:query,condition:'New'});
+ return `<a class="tf-car${i>=limit?' tf-more':''}" href="/vehicle-${esc(r.v.vin)}?${esc(context)}"${i>=limit?' hidden':''}>${r.v.photo?`<img src="${esc(r.v.photo)}" alt="" loading="lazy">`:''}<span><em class="tf-trimtag">${esc(name)}</em><strong>${esc(r.v.title)}</strong><span>${r.v.price?money(r.v.price):'Ask for price'}${r.v.stock?` · Stock ${esc(r.v.stock)}`:''}</span>${r.v.color?`<small>${esc(r.v.color)}</small>`:''}${r.fit.length?(missing.length||check.length?`${missing.length?`<small class="tf-miss">Missing: ${esc(missing.map(f=>f.pick.name).join(', '))}</small>`:''}${check.length?`<small class="tf-ask">Ask us: ${esc(check.map(f=>f.pick.name).join(', '))}</small>`:''}`:`<small class="tf-hit">✓ Has everything you picked</small>`):''}</span></a>`;
 }
 function carList(list,limit=6){
  return `<div class="tf-cars">${list.map((r,i)=>carCard(r,i,limit)).join('')}</div>${list.length>limit?`<button type="button" class="tf-secondary" data-act="more">Show all ${list.length}</button>`:''}`;
@@ -227,7 +228,8 @@ selection?.addEventListener('click',async()=>{
  const picks=withChecked(),match=picks.length?nextMatch(current().model,state.at-1,picks):null,at=match?match.index:state.at;
  await go({done:true,note:null,picks,at,path:state.path.includes(at)?state.path:[...state.path,at]});
 });
-root.addEventListener('change',e=>{if(e.target.id==='tf-budget'){maxPrice=Math.max(0,Math.min(1000000,Number(e.target.value)||0));save(true);draw(false);}});
+// Save while typing. Redrawing on blur can replace the model button before its click fires.
+root.addEventListener('input',e=>{if(e.target.id==='tf-budget'){maxPrice=Math.max(0,Math.min(1000000,Number(e.target.value)||0));save(true);}});
 function draw(scroll){
  if(!state.model||!current())root.innerHTML=pickerView();
  else root.innerHTML=state.done?resultView():stepView();
