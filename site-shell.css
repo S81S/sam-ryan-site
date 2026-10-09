@@ -170,3 +170,26 @@
 
 /* Disclosure controls need a usable touch target on phones. */
 main summary{min-height:44px;padding-top:10px;padding-bottom:10px;box-sizing:border-box}
+
+/* Visible action cues work on touch screens as well as with a mouse. */
+a[href],button:not(:disabled),summary{cursor:pointer}
+.site-layout a.sam-phone[href^="tel:"]{position:relative;flex-wrap:wrap;padding-bottom:18px}
+.site-layout a.sam-phone[href^="tel:"]::after{content:"Tap to call";position:absolute;bottom:0;left:0;right:0;text-align:center;color:#ffe16a;font:800 11px/16px system-ui;letter-spacing:.2px}
+.site-layout .site-header a.header-phone[href^="tel:"]{flex-wrap:nowrap;gap:4px;padding-bottom:14px;min-height:58px;border:1px solid #645728;border-radius:9px;background:#14130d!important;box-sizing:border-box}
+.site-layout .site-header a.header-phone[href^="tel:"]::after{font-size:10px;line-height:14px}
+.site-layout a.sam-phone[href^="tel:"]:hover{outline:2px solid #ffe16a;outline-offset:2px;border-radius:9px}
+.equipment-feature-link::after{content:"Find vehicles →";display:block;margin-top:4px;font:700 12px/1.4 system-ui;text-decoration:underline;text-underline-offset:3px}
+.tf-car::after{content:"View vehicle details →";display:block;flex:0 0 auto;padding:0 12px 12px;color:#ffe16a;font-size:12px;font-weight:800;text-decoration:underline;text-underline-offset:3px}
+.site-layout .early-team a::after{content:"Meet your advisor →";flex-basis:100%;color:#ffe16a;font-size:12px;font-weight:800;text-decoration:underline;text-underline-offset:3px}
+.site-layout .early-team a{flex-wrap:wrap}
+.site-layout main a:not([class]):not(:has(img)){text-decoration:underline;text-underline-offset:3px}
+.site-layout .match h3 a{text-decoration:underline;text-underline-offset:3px}
+.stock-photo{position:relative}
+.stock-photo::after{content:"View details →";position:absolute;right:8px;bottom:8px;padding:7px 10px;border-radius:6px;background:#0c151cee;color:#fff;font-size:12px;font-weight:800}
+.equipment-find-link{display:inline-flex;align-items:center;min-height:44px;margin-top:4px;text-decoration:underline;text-underline-offset:3px;font-size:12px;font-weight:800;color:inherit}
+@media(max-width:700px){
+ .site-layout .site-header a.header-phone[href^="tel:"]{padding-bottom:12px;min-height:56px}
+ .site-layout .site-header a.header-phone[href^="tel:"]::before{height:42px}
+ .tf-car{flex-wrap:wrap}
+ .tf-car::after{flex-basis:100%;padding:0 12px 10px}
+}

@@ -8,15 +8,26 @@ import {applyFactoryEquipment} from './factory-equipment.mjs';
 import {comparisonRows,visibleComparisonRows,usefulComparisonRow} from './comparison-rows.mjs';
 import {withComparisonSpecifications,specificationDefinitions} from './comparison-specs.mjs';
 import {definitions,parseQuery} from './equipment-search.mjs';
-import {guideTrim,guideDifferences,guideFeatureFacts,guideLink,guideColumnName} from './trim-link.mjs';
+import {guideTrim,guideDifferences,guideLink,guideColumnName} from './trim-link.mjs';
+import {comparisonFactoryChart,reviewedComparisonGuide} from './trim-confirmation.mjs';
 import {featureMatches} from './trim-comparison.mjs';
 const $=id=>document.getElementById(id),el=(tag,text)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;return n};
 const short=v=>v.stock?`Stock ${v.stock}`:`VIN …${v.vin.slice(-6)}`;
 const indexEngine=v=>{const s=window.equipmentIndex.records[v.vin];return s?.status==='verified'?s.engine?.replace(/^Engine:\s*/i,''):null;};
 const viewState={mode:'complete',search:''};
 // The factory trim guide behind the Compare Trims page. It loads once, then the comparison redraws with it.
-let trimGuide=null;
-const trimGuideReady=fetch('trim-standard-data.json').then(r=>r.ok?r.json():null).then(d=>{trimGuide=d;}).catch(()=>{});
+let trimGuide=null,factoryIndex=null;
+const factoryCharts=new Map(),factoryRequests=new Map();
+const trimGuideReady=Promise.all([
+ fetch('trim-standard-data.json').then(r=>r.ok?r.json():null).then(d=>{trimGuide=d;}).catch(()=>{}),
+ fetch('data/factory/index.json').then(r=>r.ok?r.json():null).then(d=>{factoryIndex=d;}).catch(()=>{})
+]);
+// Only charts needed by the selected vehicles are fetched, once per page.
+function factoryChart(meta){
+ if(!meta)return null;
+ if(!factoryRequests.has(meta.file))factoryRequests.set(meta.file,fetch('data/factory/'+meta.file).then(r=>r.ok?r.json():null).then(d=>{factoryCharts.set(meta.file,d);render();}).catch(()=>{factoryCharts.set(meta.file,null);}));
+ return factoryCharts.get(meta.file)||null;
+}
 // Guide rows the window stickers already answer for these exact vehicles (the engine each one has, its
 // wheels, its seats…). Showing the trim's starting equipment beside the real thing would only confuse.
 const answeredBySticker=[[/^(?:engine|engine-output|horsepower|torque|power|powertrain)$/,['engineSpecification']],[/^(?:transmission|gearbox)$/,['transmissionSpecification']],[/^(?:drive|drivetrain|awd|four_wheel_drive)$/,['fourWheel','awd']],[/^(?:front-seats|front-seat-material|seat-material|upholstery)$/,['seatUpholstery']],[/^(?:wheels|tires)$/,['wheelSize']],[/^(?:touchscreen|screen|screen-navigation)$/,['infotainmentScreen']],[/^(?:driver-display|cluster|instrument-display)$/,['instrumentScreen']],[/^driver[-_]seat$/,['driverAdjustment']],[/^passenger[-_]seat$/,['passengerAdjustment']],[/^(?:audio|premium[-_]audio)$/,['audioSystem']],[/^climate$/,['dualClimate']]];
@@ -28,7 +39,7 @@ function render(){
  const contextParams=new URLSearchParams(location.search);
  const requested=[...new Set(parseQuery([$('group-query')?.value||contextParams.get('q')||'',contextParams.get('requestedEquipment')||''].join(' ')).requirements.map(r=>r.id))];
  const matches=recs.map(r=>trimGuide?guideTrim(r.v,r.s,trimGuide):null);
- const guides=matches.map((m,i)=>m?{name:m.trim.name,facts:guideFeatureFacts(m.trim,recs[i].s?.features||{})}:null);
+ const guides=matches.map((m,i)=>reviewedComparisonGuide(m,recs[i].v,recs[i].s,factoryChart(comparisonFactoryChart(m,recs[i].v,recs[i].s,factoryIndex))));
  const allRows=comparisonRows([...specificationDefinitions,...definitions.filter(([id])=>!/^engine(?:Size|Cyl|Inline)|^engine20$|^engine36$|^(?:rwd|fwd)$/.test(id))],recs.map(r=>r.s),requested,guides);
  // With every vehicle's engine and transmission named in full, the one-word rows (V8, HEMI, turbo…) only repeat them.
  const named=id=>allRows.find(r=>r.id===id)?.facts.every(Boolean);
@@ -36,7 +47,7 @@ function render(){
  const settled=id=>{const row=rows.find(r=>r.id===id);return !!row&&row.facts.every(Boolean);};
  // The searchable features a guide row is about, on any of the compared trims.
  const rowFeatures=row=>{const ids=new Set();for(const g of guides)for(const [id,fact] of g?.facts||[])if(fact.key===row.key)ids.add(id);return [...ids];};
- const trimRows=guideDifferences(matches).filter(row=>{const ids=rowFeatures(row);if(ids.length&&ids.every(settled))return false;return !answeredBySticker.some(([key,ids])=>key.test(row.key)&&ids.every(settled));});
+ const trimRows=guideDifferences(matches).filter(row=>!guides.some(g=>[...g?.facts?.values()||[]].some(f=>f.key===row.key&&f.status==='verify'))).filter(row=>{const ids=rowFeatures(row);if(ids.length&&ids.every(settled))return false;return !answeredBySticker.some(([key,ids])=>key.test(row.key)&&ids.every(settled));});
  const trimLink=guideLink(matches),sameTrim=matches.every(Boolean)&&new Set(matches.map(m=>m.model.id+'/'+m.trim.id)).size===1;
  const counts={difference:rows.filter(r=>r.group==='difference').length+trimRows.length,oneSided:rows.filter(r=>r.group==='listed-on-some').length,same:rows.filter(r=>r.group==='same').length,check:rows.filter(r=>r.group==='check'||r.group==='listed-on-some'||(r.requested&&r.group==='unknown')).length};
  out.append(el('h2','Compare side by side'));if(pendingEquipment)out.append(el('p','Checking original equipment. The comparison updates as each vehicle’s source is read.'));out.append(el('p',`${counts.same} shared details · ${counts.difference} confirmed differences`+(counts.check?` · ${counts.check} items need confirmation`:'')));if(matches.some(Boolean)){const p=el('p');p.className='comparison-trim-note';
@@ -52,7 +63,7 @@ function render(){
  const status=el('p');status.setAttribute('role','status');
  const wrap=el('div');wrap.className='comparison-table-wrap';wrap.tabIndex=0;wrap.setAttribute('role','region');wrap.setAttribute('aria-label','Vehicle equipment comparison; scroll sideways for more vehicles');
  let mode=viewState.mode==='requested'&&!requested.length?'important':viewState.mode;const buttonRefs=[];
- const legend=el('p','“Not stated on sticker” means that vehicle’s window sticker does not list the feature. Stickers leave some standard equipment off, so ask us to confirm anything that matters to you.');legend.className='comparison-legend';
+ const legend=el('p','“Needs confirmation” means the available sources have not resolved this detail for that vehicle.');legend.className='comparison-legend';
  function draw(){
   wrap.replaceChildren();for(const [id,b] of buttonRefs)b.setAttribute('aria-pressed',String(id===mode));
   const visible=visibleComparisonRows(rows,mode,search.value);viewState.mode=mode;viewState.search=search.value;
@@ -67,12 +78,12 @@ function render(){
    const fields=[['Data source',v=>v.external?(v.decodedAt?'External VIN identity confirmed; dealer listing unverified':'External VIN; identity and dealer listing unverified'):'Covert dealer listing snapshot'],['VIN',v=>v.vin],['Advertised price',v=>Number.isFinite(v.price)?new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(v.price):'Not supplied for this outside vehicle'],['Mileage',v=>Number.isFinite(v.miles)?v.miles.toLocaleString():'Not supplied for this outside vehicle'],['Body / cab',v=>v.decodedSpecs?.body||(/CREW CAB/i.test(v.title)?'Crew cab (listing)':v.decodePending?'Checking VIN…':'VIN decoder did not provide this field')],['Engine',v=>indexEngine(v)||v.decodedSpecs?.engine||(v.decodePending?'Checking VIN…':'VIN decoder did not provide this field')],['Fuel',v=>v.decodedSpecs?.fuel||(v.decodePending?'Checking VIN…':'VIN decoder did not provide this field')]];
    for(const [label,value] of fields){const row=el('tr'),th=el('th',label);th.scope='row';row.append(th);for(const {v} of recs)row.append(el('td',value(v)));body.append(row);}
   }
-  for(const row of visible){const tr=el('tr'),name=el('th');name.scope='row';name.append(el('strong',(row.requested?'★ ':'')+row.label),el('small',row.group==='difference'?'Different':row.group==='listed-on-some'?(recs.length===2?'Listed for one; not stated for the other':'Not stated for every vehicle'):row.group==='same'?'Same on all vehicles':'Source details needed'));tr.dataset.comparisonGroup=row.group;tr.append(name);
-   row.facts.forEach((f,i)=>{const td=el('td');appendEquipmentFact(td,f,document,equipmentReviewReason(window.equipmentIndex.records[recs[i].v.vin],recs[i].v.vin));
+  for(const row of visible){const tr=el('tr'),name=el('th');name.scope='row';name.append(el('strong',(row.requested?'★ ':'')+row.label),el('small',row.group==='difference'?'Different':row.group==='listed-on-some'?(recs.length===2?'Confirmed for one; needs confirmation for the other':'Needs confirmation for some vehicles'):row.group==='same'?'Same on all vehicles':'Source details needed'));tr.dataset.comparisonGroup=row.group;tr.append(name);
+   row.facts.forEach((f,i)=>{const td=el('td');appendEquipmentFact(td,f,document,equipmentReviewReason(window.equipmentIndex.records[recs[i].v.vin],recs[i].v.vin,{guide:guides[i],feature:row.id}));
     const audioFeature=['audioSystem','premiumAudio'].includes(row.id)?audioInventoryFeature(recs[i].s?.features?.audioSystem):null;
     const inventoryFeature=audioFeature||(!row.specification&&definitions.some(([id])=>id===row.id)?row.id:null);
     const optionKey=row.specification?'comparison-'+row.id:null;
-    if(f?.value===true&&(inventoryFeature||optionKey)){
+    if(f?.value===true&&f.method!=='factory-specification'&&(inventoryFeature||optionKey)){
      const badge=td.querySelector('.equipment-answer');const a=el('a',badge.textContent);
      const context=parseQuery($('group-query')?.value||new URLSearchParams(location.search).get('q')||'');
      const linkContext={condition:new URLSearchParams(location.search).get('condition')||'Both',advisor:new URLSearchParams(location.search).get('advisor'),modelTerms:context.terms};

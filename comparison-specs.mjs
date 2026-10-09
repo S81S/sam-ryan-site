@@ -20,9 +20,20 @@ function installedFact(sticker,selector,extract,highest=false){
  if(values.some(x=>!x)||new Set(values).size!==1)return null;
  return {value:true,displayValue:values[0],comparisonValue:values[0].toLowerCase(),method:'sticker-specification',evidence:[...new Set(selected.map(x=>x.line))],sourceUrl:sticker.sourceUrl};
 }
+export function installedMirrorFoldingFact(vehicle,sticker){
+ if(sticker?.status!=='verified'||!vehicle?.vin||sticker.vin!==vehicle.vin||!Array.isArray(sticker.lines))return null;
+ // Power-adjustable mirrors can still fold manually. Read the folding action,
+ // not the unrelated adjustment motor, and let an optional replacement win.
+ const mirrorFolding=installedFact(sticker,l=>/\bmirrors?\b/i.test(l)&&/\b(?:manual|power)[ -]fold/i.test(l),l=>/\bmanual[ -]fold/i.test(l)?'manual':'power');
+ if(!mirrorFolding)return null;
+ const {comparisonValue,...fact}=mirrorFolding;
+ return {...fact,value:mirrorFolding.displayValue==='power',displayValue:mirrorFolding.displayValue==='power'?'✓ Power-folding mirrors':'— Manual-folding mirrors'};
+}
 export function withComparisonSpecifications(vehicle,sticker){
  if(sticker?.status!=='verified'||!vehicle?.vin||sticker.vin!==vehicle.vin||!Array.isArray(sticker.lines))return null;
  const features={...sticker.features};
+ const mirrorFolding=installedMirrorFoldingFact(vehicle,sticker);
+ if(mirrorFolding)features.foldMirrors=mirrorFolding;
  for(const [id] of specificationDefinitions)delete features[id];
  const screen=line=>{const match=line.match(inch);return match&&Number(match[1])>=4&&Number(match[1])<=40?Number(match[1])+' inches':null;};
  const field=prefix=>installedFact(sticker,l=>prefix.test(l),l=>l.replace(/^[^:]+:\s*/,''));

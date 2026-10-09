@@ -1,13 +1,30 @@
 (() => {
   const params = new URLSearchParams(location.search);
   const request = (params.get('q') || '').slice(0, 1000);
+  const equipment = (params.get('requestedEquipment') || '').slice(0, 2000);
   const condition = ['New', 'Used', 'Both'].includes(params.get('condition')) ? params.get('condition') : '';
+  const budget = Math.max(0, Math.min(1000000, Number(params.get('maxPrice')) || 0));
+  const source = ['photo-guide', 'compare'].includes(params.get('from')) ? params.get('from') : '';
+  const shortlist = [...new Set((params.get('vehicles') || '').split(',').filter(vin => /^[A-HJ-NPR-Z0-9]{17}$/.test(vin)))].slice(0, 5).join(',');
   const back = document.getElementById('back-results');
   const search = new URLSearchParams();
   if (request) search.set('q', request);
   if (condition) search.set('condition', condition);
-  if (back && search.size) back.href = '/inventory?' + search;
-  const description = [request, condition ? 'Shopping: ' + condition : ''].filter(Boolean).join('\n');
+  if (equipment) search.set('requestedEquipment', equipment);
+  if (budget) search.set('maxPrice', budget);
+  if (source) search.set('from', source);
+  if (params.get('advisor') === 'Ryan') search.set('advisor', 'Ryan');
+  if (back && (search.size || source)) {
+    if (source === 'photo-guide') {
+      back.href = '/perfect-match?' + search + '#photo-finder';
+      back.textContent = '← Back to my photo guide';
+    } else if (source === 'compare') {
+      if (shortlist) search.set('vehicles', shortlist);
+      back.href = '/compare?' + search;
+      back.textContent = '← Back to my comparison';
+    } else back.href = '/inventory?' + search;
+  }
+  const description = [request, condition ? 'Shopping: ' + condition : '', equipment ? 'My feature preferences: ' + equipment : '', budget ? 'Maximum listed price: $' + budget.toLocaleString('en-US') : ''].filter(Boolean).join('\n');
   if (!description) return;
   for (const link of document.querySelectorAll('a[href^="/contact?"], a[href^="/compare?"], a[href^="sms:"]')) {
     const url = new URL(link.href);
@@ -20,8 +37,7 @@
     } else if (url.pathname === '/contact') {
       url.searchParams.set('request', description);
     } else if (url.pathname === '/compare') {
-      if (request) url.searchParams.set('q', request);
-      if (condition) url.searchParams.set('condition', condition);
+      for (const [key, value] of search) url.searchParams.set(key, value);
     }
     link.href = url.toString();
   }
@@ -39,6 +55,8 @@ import('/sticker-credit.mjs').then(m=>m.installStickerCredits()).catch(()=>{});
   let current = 0;
   const show = (n, scrollThumb = true) => {
     current = (n + links.length) % links.length;
+    // A stale srcset takes precedence over src and keeps showing the previous photo.
+    main.removeAttribute('srcset');
     main.src = links[current].href;
     links.forEach((a, k) => a.setAttribute('aria-current', k === current ? 'true' : 'false'));
     if (count) count.textContent = (current + 1) + ' / ' + links.length;
