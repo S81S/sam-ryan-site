@@ -7,6 +7,7 @@ import {additionalFactoryRules} from './factory-catalog-2026.mjs';
 import {repairCameraTireEvidence} from './camera-tire-evidence.mjs';
 import {repairWheelFinishEvidence} from './wheel-finish-evidence.mjs';
 import {applyRulings} from './sticker-rulings.mjs';
+import {installedMirrorFoldingFact} from './comparison-specs.mjs';
 const ramSource='https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Ram1500.pdf';
 const pacificaSource='https://www.chrysler.com/news/2027-chrysler-pacifica-debut.html';
 const norm=s=>String(s||'').normalize('NFKC').replace(/[®™]/g,'').replace(/[\u2010-\u2015]/g,'-').replace(/\s+/g,' ').trim().toLowerCase();
@@ -48,6 +49,17 @@ add('Pacifica',2027,['LX','Select','Limited','Pinnacle'],'standard',['powerLiftg
 add('Pacifica',2027,['Select','Limited'],'package',['surroundCamera'],['Safety Sphere']);
 add('Pacifica',2027,['Pinnacle'],'standard',['surroundCamera']);
 factoryRules.push(...additionalFactoryRules);
+// Reviewed 2026 factory rows that were previously omitted from the shared
+// search/comparison resolver. Keep these useful answers consistent on both pages.
+const reviewed2026=[
+ ['Ram 1500',allRam,'standard',['tintedWindows'],ramSource+'#page=3'],
+ ['Ram 1500',['Laramie','Limited','Longhorn','Tungsten'],'standard',['passiveEntry'],ramSource],
+ ['Ram 1500',['Warlock','Laramie','Rebel','Limited','Longhorn','Tungsten'],'standard',['slidingWindow','outlet'],ramSource],
+ ['Ram 3500',['Tradesman'],'standard',['ledLights','fogLights','keylessEntry','towHooks'],'https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_RamHD.pdf'],
+ ['Ram 3500',['Tradesman'],'unavailable',['wireless','garageOpener','powerDriver','powerPassenger','memorySeats','passiveEntry','adjustPedals','sunroof','panoramic'],'https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_RamHD.pdf'],
+ ['Pacifica',['Select','Limited','Pinnacle'],'standard',['autoHighBeam','lumbar','tintedWindows'],'https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Pacifica.pdf']
+];
+for(const [model,trims,kind,features,sourceUrl] of reviewed2026)for(const feature of features)factoryRules.push({id:[model,2026,trims.join('-'),kind,feature].join(':'),model,year:2026,trims,kind,feature,packages:[],sourceUrl,reviewedAt:'2026-10-09'});
 
 const presencePatterns={sunroof:/sun.?roof|moon.?roof|panoramic|dual.?pane/i,panoramic:/sun.?roof|moon.?roof|panoramic|dual.?pane/i,surroundCamera:/surround|360.*camera/i,hud:/head.?up|\bhud\b/i,airSuspension:/air.suspension|active.level/i,bedliner:/bed.?liner|spray.in/i};
 function identity(sticker){
@@ -55,6 +67,8 @@ function identity(sticker){
  const name=norm(lines.filter(l=>!/^(?:[a-z]\s+)?20\d\d model year\b/i.test(l)).join(' ')).replace(/^20\d\d\s+/,'');
  const ram=name.match(/^ram 1500 (tradesman|black express|express|warlock|big horn|lone star|laramie|rebel|limited longhorn|longhorn|limited|tungsten) (crew|quad) cab\b/);
  if(ram)return {year,model:'Ram 1500',trim:ram[1]==='black express'?'express':ram[1]==='limited longhorn'?'longhorn':ram[1],cab:ram[2]};
+ const hd=name.match(/^ram 3500 (tradesman) (crew|regular|mega) cab\b/);
+ if(hd)return {year,model:'Ram 3500',trim:hd[1],cab:hd[2]};
  const compass=name.match(/^(?:jeep )?compass (latitude altitude|limited altitude|latitude|limited|trailhawk) (?:4x4|4x2|fwd)$/);
  if(compass)return {year,model:'Compass',trim:compass[1]};
  const gladiator=name.match(/^(?:jeep )?gladiator (sport s|sport|willys|mojave|rubicon) 4x4$/);
@@ -85,6 +99,8 @@ function resolveFactoryEquipment(vehicle,sticker){
  // Read the saved sticker text by the current wording rules before anything else builds on its features.
  sticker=applyRulings(vehicle,sticker);
  sticker=repairInstalledAudioEvidence(vehicle,sticker);
+ const mirrorFolding=installedMirrorFoldingFact(vehicle,sticker);
+ if(mirrorFolding)sticker={...sticker,features:{...sticker.features,foldMirrors:mirrorFolding}};
  sticker=repairWheelSeatEvidence(repairTowEvidence(repairSeatEvidence(sticker)));
  if(sticker.vin===vehicle.vin){sticker=repairCameraTireEvidence(sticker);sticker=repairWheelFinishEvidence(sticker);}
  const audit=stickerAudits[vehicle.vin];
@@ -114,12 +130,18 @@ function resolveFactoryEquipment(vehicle,sticker){
   if(features[f])continue;
   let value,method,evidence;
   if(rule.kind==='package'){
+   // Select's 2026 retail brochure and fleet Group II description conflict on
+   // FamCAM. A package name alone cannot settle it; explicit VIN evidence above can.
+   if(id.model==='Pacifica'&&id.year===2026&&id.trim==='select'&&f==='familyCamera')continue;
    const matched=rule.packages.map(p=>packageOn(lines,p)).find(Boolean);
    if(!matched||!complete||deletionLines.length)continue;
    value=true;method='factory-package';evidence=[matched,`Included in this package according to the ${rule.year} factory guide.`];
   }else if(rule.kind==='standard'){
    if(!complete||deletionLines.length)continue;
    value=true;method='factory-standard';evidence=[`Standard factory equipment for ${rule.year} ${rule.model} ${trimLabel}.`];
+  }else if(rule.kind==='unavailable'){
+   if(!complete||deletionLines.length)continue;
+   value=false;method='factory-unavailable';evidence=[`Not offered as factory equipment for ${rule.year} ${rule.model} ${trimLabel}.`];
   }else{
    if(!complete||deletionLines.length||!presencePatterns[f]||presencePatterns[f].test(text))continue;
    if(rule.packages.some(p=>packageOn(lines,p)))continue;
@@ -127,13 +149,14 @@ function resolveFactoryEquipment(vehicle,sticker){
    if(/edition|\brebel x\b|custom package/i.test(text))continue;
    value=false;method='factory-option-omission';evidence=[`Optional on ${rule.year} ${rule.model} ${trimLabel}; not ordered on this complete original sticker.`];
   }
-  features[f]={value,method,evidence,sourceUrl:rule.sourceUrl,ruleId:rule.id};
+  features[f]={value,method,evidence,sourceUrl:rule.sourceUrl,ruleId:rule.id,...(method==='factory-unavailable'?{displayValue:'— Not offered on '+trimLabel}:{})};
  }
  return {...sticker,features};
 }
 export function equipmentStatus(fact){
  if(!fact)return '? Not confirmed';
  if(fact.method==='factory-option-omission')return '− Not factory-equipped';
+ if(fact.method==='factory-unavailable')return '− Not offered on this trim';
  if(fact.method==='factory-standard')return '✓ Standard on this trim';
  if(fact.method==='factory-package')return '✓ Included in listed package';
  return fact.value?'✓ Listed on sticker':'− Explicitly excluded';

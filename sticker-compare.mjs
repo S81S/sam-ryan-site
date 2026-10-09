@@ -1,7 +1,7 @@
 import {vehicleImage,vehicleImageSet} from './vehicle-images.mjs';
 import {decodeVIN,normalizeVIN} from './vin-decoder.mjs';
 import {appendStickerCredit,usesWindowStickerOrg} from './sticker-credit.mjs';
-import {installVehiclePickers} from './compare-picker.mjs';
+import {installVehiclePickers,findInventoryByIdentifier} from './compare-picker.mjs';
 const readSticker=async(...args)=>(await import('./sticker-reader.mjs')).readSticker(...args);
 import {shoppingContext} from './shopping-context.mjs';
 import {openVehiclePreview} from './vehicle-preview.mjs';
@@ -10,6 +10,9 @@ const index=window.equipmentIndex;
 const validVIN=s=>/^[A-HJ-NPR-Z0-9]{17}$/.test(s);
 const SIDES=['1','2','3','4','5'];
 const $=id=>document.getElementById(id), urls={};
+const initialParams=new URLSearchParams(location.search);
+if(initialParams.has('q')&&$('group-query'))$('group-query').value=initialParams.get('q').slice(0,1000);
+if(['New','Used','Both'].includes(initialParams.get('condition'))&&$('group-condition'))$('group-condition').value=initialParams.get('condition');
 const cash=n=>n===null?'Not listed':new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(n);
 function vehicle(side){return vehicles.find(v=>v.vin===$('choose-'+side).value)}
 function updateStickerCredit(side, source) {
@@ -25,6 +28,17 @@ function hydrateInventorySpecs(v){
  inventoryDecodes.set(v.vin,task);
 }
 
+function updateDetailLink(side){
+ const v=vehicle(side);if(!v)return;
+ const context=shoppingContext(),detailParams=new URLSearchParams({q:context.q||'',condition:context.condition||'Both',from:'compare',vehicles:SIDES.map(id=>$('choose-'+id).value).filter(Boolean).join(',')});
+ if(context.requestedEquipment)detailParams.set('requestedEquipment',context.requestedEquipment);
+ if(context.advisor)detailParams.set('advisor',context.advisor);
+ const budget=new URLSearchParams(location.search).get('maxPrice');if(budget)detailParams.set('maxPrice',budget);
+ $('listing-'+side).hidden=!!v.external;$('listing-'+side).href='/vehicle-'+encodeURIComponent(v.vin)+'?'+detailParams;
+}
+document.addEventListener('compare:changed',()=>SIDES.forEach(updateDetailLink));
+for(const id of ['group-query','group-condition'])$(id)?.addEventListener('input',()=>SIDES.forEach(updateDetailLink));
+
 function reset(side){
  const chosen=$('choose-'+side).value;
  if(chosen&&SIDES.some(id=>id!==side&&$('choose-'+id).value===chosen)){$('choose-'+side).value=previousSelection[side]||'';$('lookup-status-'+side).textContent='That vehicle is already selected. Choose a different vehicle to compare.';document.dispatchEvent(new CustomEvent('compare:changed'));return false;}
@@ -33,14 +47,14 @@ function reset(side){
  hydrateInventorySpecs(v);
  updateStickerCredit(side,v?.stickerUrl);
  const photo=$('vehicle-photo-'+side);$('clear-'+side).hidden=!v;
- if(!v){photo.hidden=true;photo.removeAttribute('src');$('summary-'+side).textContent='';$('listing-'+side).hidden=true;$('listing-'+side).removeAttribute('href');$('sticker-'+side).hidden=true;$('sticker-'+side).removeAttribute('href');$('lookup-note-'+side).textContent='';if(urls[side]){URL.revokeObjectURL(urls[side]);delete urls[side]}$('pdf-'+side).removeAttribute('src');$('pdf-'+side).hidden=true;$('file-'+side).value='';$('file-status-'+side).textContent='No local PDF selected.';$('pdf-link-'+side).hidden=true;$('pdf-link-'+side).removeAttribute('href');document.dispatchEvent(new CustomEvent('compare:changed'));return}
- photo.hidden=!v.photoUrl;photo.alt=v.title+' — stock '+v.stock;photo.onerror=()=>{photo.hidden=true};if(v.photoUrl){photo.src=vehicleImage(v.photoUrl);photo.srcset=vehicleImageSet(v.photoUrl);photo.sizes='(max-width:700px) calc(100vw - 40px), 40vw';}else photo.removeAttribute('src');
+ if(!v){photo.hidden=true;photo.removeAttribute('srcset');photo.removeAttribute('src');$('summary-'+side).textContent='';$('listing-'+side).hidden=true;$('listing-'+side).removeAttribute('href');$('sticker-'+side).hidden=true;$('sticker-'+side).removeAttribute('href');$('lookup-note-'+side).textContent='';if(urls[side]){URL.revokeObjectURL(urls[side]);delete urls[side]}$('pdf-'+side).removeAttribute('src');$('pdf-'+side).hidden=true;$('file-'+side).value='';$('file-status-'+side).textContent='No local PDF selected.';$('pdf-link-'+side).hidden=true;$('pdf-link-'+side).removeAttribute('href');document.dispatchEvent(new CustomEvent('compare:changed'));return}
+ photo.hidden=!v.photoUrl;photo.alt=v.title+' — stock '+v.stock;photo.onerror=()=>{photo.hidden=true};if(v.photoUrl){photo.src=vehicleImage(v.photoUrl);photo.srcset=vehicleImageSet(v.photoUrl);photo.sizes='(max-width:700px) calc(100vw - 40px), 40vw';}else {photo.removeAttribute('srcset');photo.removeAttribute('src');}
  if(urls[side]){URL.revokeObjectURL(urls[side]);delete urls[side]}
  $('pdf-'+side).removeAttribute('src');$('pdf-'+side).hidden=true;$('file-'+side).value='';$('file-status-'+side).textContent='No local PDF selected.';
  $('summary-'+side).textContent=`${v.title} · ${cash(v.price)} · ${v.miles===null?'':v.miles.toLocaleString()+' miles · '}Stock ${v.stock}`;
  if(v.external){$('summary-'+side).textContent=`${v.title} · VIN ${v.vin} · ${v.decodedAt?'External decoded specs only (NHTSA)':'VIN identity lookup in progress'} · Price and mileage are not supplied for this outside vehicle. Availability must be confirmed with its seller.`;if(v.decodedSpecs){const specs=document.createElement('p');specs.textContent=Object.entries(v.decodedSpecs).map(([key,value])=>key+': '+value).join(' · ');const source=document.createElement('a');source.href=v.decodedSourceUrl;source.target='_blank';source.rel='noopener';source.textContent='NHTSA decoder source ↗';$('summary-'+side).append(specs,source);}}
  else {const evidence=document.createElement('small');evidence.textContent='Covert dealer listing snapshot • '+(v.observedAt||window.usedInventoryData.capturedAt)+' • Confirm current price and availability.';$('summary-'+side).append(document.createElement('br'),evidence);}
- $('listing-'+side).hidden=!!v.external;$('listing-'+side).href='/vehicle-'+encodeURIComponent(v.vin)+'?'+new URLSearchParams({q:shoppingContext().q||'',condition:v.condition||'Both'});$('listing-'+side).textContent='View photos & vehicle details';$('listing-'+side).removeAttribute('target');$('listing-'+side).onclick=null;
+ updateDetailLink(side);$('listing-'+side).textContent='View photos & vehicle details';$('listing-'+side).removeAttribute('target');$('listing-'+side).onclick=null;
  const originalSource=v.stickerUrl||index.records[v.vin]?.sourceUrl;$('sticker-'+side).hidden=!v.carfaxUrl&&!originalSource;$('sticker-'+side).href=originalSource||v.carfaxUrl||v.sourceUrl;$('sticker-'+side).textContent=originalSource?(usesWindowStickerOrg(originalSource)?'Open window sticker via WindowSticker.org ↗':'Open original window sticker ↗'):'Open CARFAX → Original Window Sticker ↗';
  $('lookup-note-'+side).textContent=v.stickerUrl?'Open the original document to check its VIN and equipment.':v.carfaxUrl?'Open the Covert-provided CARFAX report, then choose Original Window Sticker. A direct sticker link has not yet been checked for this vehicle.':'No CARFAX/sticker link captured for this vehicle. Open its official listing to check,.';
  $('pdf-link-'+side).hidden=true;$('pdf-link-'+side).removeAttribute('href');
@@ -83,7 +97,7 @@ for(const side of SIDES){
 // Preselect vehicles only from an explicit link — a single ?vehicle=VIN (e.g. from the inventory page)
 // or several via ?vehicles=VIN1,VIN2,... (e.g. "Add to compare" on Find My Car). Nothing is preloaded
 // otherwise; shoppers pick from the dropdowns or enter a stock number/VIN below.
-const params=new URLSearchParams(location.search);
+const params=initialParams;
 const multi=(params.get('vehicles')||'').split(',').map(s=>s.trim()).filter(Boolean);
 const requested=multi.length?multi:(params.get('vehicle')?[params.get('vehicle')]:[]);
 requested.forEach((vin,i)=>{
@@ -92,14 +106,15 @@ requested.forEach((vin,i)=>{
  else if(validVIN(vin))addExternal(vin,side);
 });
 
-function findByStockOrVin(q){const norm=q.trim().toUpperCase().replace(/\s+/g,'');if(!norm)return null;return vehicles.find(v=>(v.stock||'').toUpperCase()===norm)||vehicles.find(v=>(v.vin||'').toUpperCase()===norm)}
+function findByStockOrVin(q){return findInventoryByIdentifier(vehicles,q)}
 for(const side of SIDES){
  const input=$('lookup-'+side),status=$('lookup-status-'+side),go=()=>{
   const q=input.value;status.className='lookup-status';
   if(!q.trim()){status.textContent='Type a model, trim, stock number or VIN.';status.classList.add('is-error');return}
   const match=findByStockOrVin(q);
+ if(!match&&vehicles.some(v=>v.vin===normalizeVIN(q)&&v.status==='not-observed')){status.textContent='This VIN was not observed in the latest inventory. Ask Sam to confirm its availability.';return;}
  if(!match&&validVIN(normalizeVIN(q))){addExternal(normalizeVIN(q),side);return;}
-  if(!match){status.textContent='No inventory match. Enter a complete 17-character VIN (no I, O or Q) to check the public decoder, or choose a matching vehicle below.';return}
+  if(!match){status.textContent='Choose a matching vehicle from the results below. If no results appear, adjust your search or vehicle condition. You can also enter a complete 17-character VIN for an outside vehicle.';return}
   $('choose-'+side).value=match.vin;$('choose-'+side).dispatchEvent(new Event('change'));
   if(vehicle(side)?.vin!==match.vin)return;
   status.textContent=`Matched: ${match.title} — Stock ${match.stock} — VIN ${match.vin}.`;status.classList.add('is-ok');

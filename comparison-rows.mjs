@@ -4,14 +4,14 @@ const order=['difference','listed-on-some','wording','check','same','unknown'];
 // rows (for example, every other exterior paint color).
 export const usefulComparisonRow=row=>row.group!=='check'||row.requested||row.specification||row.facts.some(f=>f?.value===true);
 // What the factory trim guide says about a feature the window sticker leaves out. Standard equipment is
-// often not printed on a sticker; an option is. So: standard → the vehicle has it; optional and not on a
-// readable sticker → it does not; not offered on the trim → it does not.
-function fromTrimGuide(guide,id,verified){
+// often not printed on a sticker. A known option is available, but its installation
+// needs VIN-specific evidence; a readable sticker alone does not prove an omission.
+function fromTrimGuide(guide,id){
  const fact=guide?.facts?.get(id);if(!fact)return null;
  const base={trimGuide:fact.status,sourceUrl:fact.sourceUrl,evidence:[`${guide.name} — ${fact.label}: ${fact.value}`,fact.note].filter(Boolean)};
  if(fact.status==='standard')return {...base,value:true,displayValue:'✓ Standard on '+guide.name,method:'trim-guide-standard'};
  if(fact.status==='unavailable')return {...base,value:false,displayValue:'— Not offered on '+guide.name,method:'trim-guide-unavailable'};
- return verified?{...base,value:false,displayValue:'— Optional, not on this sticker',method:'trim-guide-optional'}:null;
+ return null;
 }
 // `guides[i]` is the trim guide column for vehicle i: {name, facts: Map(feature id → guide fact)} or null.
 export function comparisonRows(definitions,records,requested=[],guides=[]){
@@ -19,7 +19,7 @@ export function comparisonRows(definitions,records,requested=[],guides=[]){
   const facts=records.map(s=>s?.status==='verified'?s.features?.[id]||null:null);
   // Where a sticker says nothing, the guide's column for that vehicle's trim answers — also when no sticker
   // prints the feature at all (blind-spot monitoring on a truck whose sticker leaves the safety list off).
-  facts.forEach((f,i)=>{if(!f)facts[i]=fromTrimGuide(guides[i],id,records[i]?.status==='verified');});
+  facts.forEach((f,i)=>{if(!f)facts[i]=guides[i]?.resolvedFacts?.get(id)||fromTrimGuide(guides[i],id);});
   const states=facts.map(f=>f?(f.comparisonValue??(f.value?'present':'absent')):'unknown');
   const known=states.filter(s=>s!=='unknown');
   let group=known.length===0?'unknown':known.length<states.length?'check':'same';

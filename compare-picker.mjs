@@ -1,9 +1,22 @@
-export function searchVehicles(vehicles,query,condition='New') {
- const text=query.trim().toLowerCase(),terms=text.split(/\s+/).filter(Boolean),exact=text.replace(/\s/g,'');
+import {parseQuery,matchVehicle} from './equipment-search.mjs';
+export function findInventoryByIdentifier(vehicles,query) {
+ const identifier=String(query||'').trim().toLowerCase().replace(/\s+/g,'');
+ if(!identifier)return null;
+ return vehicles.find(v=>!v.external&&v.status!=='not-observed'&&[v.stock,v.vin].some(value=>String(value||'').toLowerCase().replace(/\s+/g,'')===identifier))||null;
+}
+export function searchVehicles(vehicles,query,condition='New',records={}) {
+ const text=query.trim().toLowerCase();
  if(text.length<2)return {matches:[],total:0};
- const rank=v=>[v.stock,v.vin].some(value=>String(value||'').toLowerCase().replace(/\s/g,'')===exact)?0:1;
- const matches=vehicles.filter(v=>v.locationId==='18393'&&!v.external&&v.status!=='not-observed'&&(condition==='Both'||v.condition===condition)&&terms.every(term=>`${v.title} ${v.stock||''} ${v.vin}`.toLowerCase().includes(term)))
-  .sort((a,b)=>rank(a)-rank(b)||a.title.localeCompare(b.title)||(a.price??Infinity)-(b.price??Infinity));
+ // A complete identifier names one vehicle, even when its condition differs
+ // from the browsing filter. Pressing Enter uses the same identifier match.
+ const identified=findInventoryByIdentifier(vehicles,query);
+ if(identified)return {matches:[identified],total:1};
+ const parsed=parseQuery(query);
+ // Explicit “used” or “new” in the search takes precedence over the browsing filter.
+ const eitherCondition=/\bnew\b/.test(text)&&/\b(?:used|pre[ -]owned)\b/.test(text);
+ if(!parsed.condition&&!eitherCondition&&condition!=='Both')parsed.condition=condition;
+ const matches=vehicles.filter(v=>!v.external&&v.status!=='not-observed'&&matchVehicle(v,records[v.vin],parsed).kind==='match')
+  .sort((a,b)=>a.title.localeCompare(b.title)||(a.price??Infinity)-(b.price??Infinity));
  return {matches:matches.slice(0,6),total:matches.length};
 }
 
@@ -33,30 +46,31 @@ export function installVehiclePickers(vehicles,document=globalThis.document) {
   const label=el('label','Vehicle condition');label.htmlFor='browse-condition-'+side;
   const condition=el('select');condition.id=label.htmlFor;
   for(const [value,text] of [['New','New vehicles'],['Used','Used vehicles'],['Both','New and used vehicles']]){const option=el('option',text);option.value=value;condition.append(option);}
-  condition.value='New';box.append(label,condition);selection.after(box);box.append(lookup);
+  const startingCondition=new URLSearchParams(globalThis.location?.search||'').get('condition');
+  condition.value=['New','Used','Both'].includes(startingCondition)?startingCondition:'New';box.append(label,condition);selection.after(box);box.append(lookup);
   lookup.querySelector('label').textContent=`Find vehicle ${side}`;
-  input.type='search';input.placeholder='Model, trim, stock number or VIN';input.setAttribute('aria-describedby','picker-count-'+side);
+  input.type='search';input.placeholder='Try Ram 1500 with Harman Kardon under $60k';input.setAttribute('aria-describedby','picker-count-'+side);
   const count=el('p');count.id='picker-count-'+side;count.className='picker-count';count.setAttribute('role','status');
   const results=el('ul');results.className='picker-results';results.setAttribute('aria-label',`Matches for vehicle ${side}`);
   input.closest('.lookup-input-row').after(count,results);
-  let choosing=false,previous=selection.value;
+  let choosing=false,previous=selection.value,searchTimer;
   function render(){
    results.replaceChildren();
-   const query=input.value.trim(),selected=vehicles.find(v=>v.vin===selection.value),{matches,total}=searchVehicles(vehicles,query,condition.value);
-   count.textContent=selected&&!query?`✓ Selected: ${selected.title} · ${selected.stock?'Stock '+selected.stock:'VIN '+selected.vin}`:query.length<2?'Type to see matches. For a stock number or VIN, press Enter or your keyboard’s Search key.':total?`Showing ${matches.length} of ${total} matches.${total>6?' Add a model, trim or stock number to narrow your search.':''}`:'No inventory matches. Try another term or condition. For your own vehicle, enter its complete VIN and press Enter or your keyboard’s Search key.';
+   const query=input.value.trim(),selected=vehicles.find(v=>v.vin===selection.value),{matches,total}=searchVehicles(vehicles,query,condition.value,globalThis.window?.equipmentIndex?.records||{});
+   count.textContent=selected&&!query?`✓ Selected: ${selected.title} · ${selected.stock?'Stock '+selected.stock:'VIN '+selected.vin}`:query.length<2?'Search by model, features, color, budget, stock number or VIN, just like Find Your Car.':total?`Showing ${matches.length} of ${total} matches.${total>6?' Add features, a budget, model or trim to narrow your search.':''}`:'No inventory matches. Try another term or condition. For your own vehicle, enter its complete VIN and press Enter or your keyboard’s Search key.';
    for(const v of matches){
     const chosen=sides.some(id=>$('choose-'+id).value===v.vin),row=el('li'),details=el('div');
     details.append(el('strong',v.title),el('small',`${v.condition} · ${money(v.price)} · ${v.stock?'Stock '+v.stock:'VIN …'+v.vin.slice(-6)}`));
     const choose=el('button',chosen?'Selected':'Choose');choose.type='button';choose.className='btn ghost';choose.disabled=chosen;choose.setAttribute('aria-label',`${chosen?'Already selected':'Choose'} ${v.title}, ${v.stock||v.vin}`);
     choose.addEventListener('click',()=>{
      if(sides.some(id=>$('choose-'+id).value===v.vin))return;
-     choosing=true;selection.value=v.vin;input.value='';$('lookup-status-'+side).textContent='';selection.dispatchEvent(new Event('change'));choosing=false;
+     choosing=true;selection.value=v.vin;input.value='';if(['New','Used'].includes(v.condition))condition.value=v.condition;$('lookup-status-'+side).textContent='';selection.dispatchEvent(new Event('change'));choosing=false;
      render();$('clear-'+side).focus();
     });
     row.append(details,choose);results.append(row);
    }
   }
-  input.addEventListener('input',()=>{$('lookup-status-'+side).textContent='';render();});condition.addEventListener('change',render);
+  input.addEventListener('input',()=>{$('lookup-status-'+side).textContent='';clearTimeout(searchTimer);searchTimer=setTimeout(render,180);});condition.addEventListener('change',()=>{clearTimeout(searchTimer);render();});
   function sync(){
    const v=vehicles.find(v=>v.vin===selection.value);
    if(selection.value!==previous){previous=selection.value;if(!choosing){input.value='';if(v&&['New','Used'].includes(v.condition))condition.value=v.condition;}}

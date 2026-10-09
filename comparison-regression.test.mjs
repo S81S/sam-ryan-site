@@ -257,8 +257,8 @@ test('the trim guide fills in what a window sticker leaves off, and only that',(
  const b=stickerFor('B','RAM 1500 LARAMIE CREW CAB 4X4',{features:{}});
  const guides=[warlock,laramie].map(m=>({name:m.trim.name,facts:guideFeatureFacts(m.trim)}));
  const rows=Object.fromEntries(comparisonRows(defs,[a,b],[],guides).map(r=>[r.id,r]));
- // Optional on the Laramie and not on its sticker: a real difference.
- assert.equal(rows.towHooks.group,'difference');assert.equal(rows.towHooks.facts[1].method,'trim-guide-optional');
+ // Optional on the Laramie: missing installation evidence does not prove absence.
+ assert.equal(rows.towHooks.group,'listed-on-some');assert.equal(rows.towHooks.facts[1],null);
  // On one sticker, and the guide has nothing to add: shown as listed on one sticker only.
  assert.equal(rows.skidPlates.group,'listed-on-some');assert.equal(rows.skidPlates.facts[1],null);
  // Neither sticker mentions it: the guide still answers for each trim, and stays silent where it has no row.
@@ -317,7 +317,7 @@ test('sticker wording follows the sales-floor rulings',()=>{
  // Trucks: Tru-Lok rear is a locker, Trac-Lok is limited slip, "TT" and telescoping mirrors are not tow mirrors.
  const truck=car('New 2026 RAM 2500 POWER WAGON',['Tru-Lok Front and Rear Axles','Pwr Adj Heated TT Mirrors w/ Manual Fold/Telescope','400W Inverter']);
  // "TT" is Trailer Tow, and telescoping mirrors are the tow mirrors (factory guide: standard on every 2500/3500).
- assert.equal(kind(truck,'ram locking rear differential'),'match');assert.equal(kind(truck,'ram tow mirrors'),'match');assert.equal(kind(truck,'ram power folding mirrors'),'unknown');
+ assert.equal(kind(truck,'ram locking rear differential'),'match');assert.equal(kind(truck,'ram tow mirrors'),'match');assert.equal(kind(truck,'ram power folding mirrors'),'excluded');
  for(const line of ['Manual-Folding Telescoping Black Mirrors','Power Heat/Fold/Telescoping Memory Mirrors','Power Black Trailer-Tow Mirrors w/ Power Fold-Away'])assert.equal(kind(car('New 2026 RAM 2500 TRADESMAN',[line]),'ram tow mirrors'),'match',line);
  for(const line of ['Power-Heated Mirrors with Power Fold-Away','Tilt/Telescoping Steering Column','Exterior Mirrors with Supplemental Signals'])assert.equal(kind(car('New 2026 RAM 1500 LARAMIE',[line]),'ram tow mirrors'),'unknown',line);
  // The older 2.0 turbo is not a Hurricane; GM's IntelliBeam is automatic high beams; spray-on is a bedliner.
