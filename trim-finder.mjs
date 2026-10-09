@@ -203,14 +203,36 @@ function sourceNote(){
  return `<p class="tf-source">The factory’s full chart for this lineup isn’t published yet. These details come from the manufacturer’s announcements — ask us to confirm anything you need.</p>`;
 }
 
+// The shopper's picks plus the boxes they have checked on this screen.
+function withChecked(){
+ const trims=trimsOf();
+ const chosen=[...root.querySelectorAll('[data-pick]:checked')].map(x=>{const [kind,n]=x.dataset.pick.split(':'),it=offer[kind][Number(n)],trim=kind==='own'?trims[state.at]:trims[state.at+1];return {...it,name:pickName(factOf(trim,it.key)||it),at:state.at};});
+ return [...state.picks,...chosen.filter((p,n)=>!state.picks.some(q=>q.key===p.key)&&chosen.findIndex(q=>q.key===p.key)===n)];
+}
+// The page's bottom bar (Perfect Match only): "See my selection" opens the match for the trim the shopper is on, with
+// what they picked and the vehicles on our lot that have it.
+const selection=document.querySelector('[data-selection]');
+function syncSelection(){
+ if(!selection)return;
+ const n=state.done||!state.model||!current()?state.picks.length:withChecked().length;
+ selection.innerHTML=!state.model||!current()?'Pick a vehicle to start':state.done?'Change my selection':`See my selection${n?` <b>${n}</b>`:''}`;
+}
+selection?.addEventListener('click',async()=>{
+ if(!state.model||!current()){root.scrollIntoView({behavior:'smooth',block:'start'});return;}
+ if(state.done){await go({done:false,note:null});return;}
+ // The match is the first trim, from this one up, that has everything picked (the most of it when none has it all).
+ const picks=withChecked(),match=picks.length?nextMatch(current().model,state.at-1,picks):null,at=match?match.index:state.at;
+ await go({done:true,note:null,picks,at,path:state.path.includes(at)?state.path:[...state.path,at]});
+});
 function draw(scroll){
  if(!state.model||!current())root.innerHTML=pickerView();
  else root.innerHTML=state.done?resultView():stepView();
+ syncSelection();
  if(scroll)root.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});
  const ups=root.querySelectorAll('[data-act=up]');
  if(ups.length){
   const sync=()=>{const n=root.querySelectorAll('[data-pick]:checked').length;ups.forEach(up=>{up.disabled=!n;up.textContent=n?`Continue with ${n===1?'this':'these '+n}`:'Pick what you want above';});};
-  root.querySelectorAll('[data-pick]').forEach(b=>b.addEventListener('change',sync));sync();
+  root.querySelectorAll('[data-pick]').forEach(b=>b.addEventListener('change',()=>{sync();syncSelection();}));sync();
  }
 }
 
@@ -228,9 +250,8 @@ root.addEventListener('click',async e=>{
  const trims=trimsOf();
  if(act==='skip'){await go({at:state.at+1,path:[...state.path,state.at+1],note:null});return;}
  if(act==='up'){
-  const chosen=[...root.querySelectorAll('[data-pick]:checked')].map(x=>{const [kind,n]=x.dataset.pick.split(':'),it=offer[kind][Number(n)],trim=kind==='own'?trims[state.at]:trims[state.at+1];return {...it,name:pickName(factOf(trim,it.key)||it),at:state.at};});
   // The first trim, this one included, with everything picked: options on this trim keep the shopper here.
-  const picks=[...state.picks,...chosen.filter((p,n)=>!state.picks.some(q=>q.key===p.key)&&chosen.findIndex(q=>q.key===p.key)===n)],match=nextMatch(current().model,state.at-1,picks);
+  const picks=withChecked(),match=nextMatch(current().model,state.at-1,picks);
   if(match&&match.index===state.at&&match.missing.length){await go({picks,note:`No trim has everything you picked. The ${trims[state.at].name} has the most of it.`});return;}
   if(match&&match.index===state.at){await go({picks,note:`The ${trims[state.at].name} can have everything you picked so far.`});return;}
   if(!match){await go({done:true,picks,note:null});return;}

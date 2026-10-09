@@ -154,3 +154,8 @@
 .tf-tag .bubble{width:18px;height:18px;font-size:13px}
 .tf-before{display:block;color:#c7d0d8;font-size:13px}
 .tf-standard .tf-section{margin:14px 0 8px}
+
+/* Perfect Match's bottom bar: "See my selection" in place of Find Your Car */
+.sticky-mobile .tf-selection{display:flex;align-items:center;justify-content:center;gap:6px;min-height:56px;margin:0;padding:12px;border:0;border-radius:0;background:#bd1424;color:#fff;font:900 13px/1.35 inherit;font-family:inherit;text-align:center;cursor:pointer}
+.sticky-mobile .tf-selection:focus-visible{outline:3px solid #ffc447;outline-offset:-4px}
+.sticky-mobile .tf-selection b{display:inline-flex;align-items:center;justify-content:center;min-width:22px;height:22px;padding:0 6px;border-radius:999px;background:#fff;color:#bd1424;font-size:12px}
