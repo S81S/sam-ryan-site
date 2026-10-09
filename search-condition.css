@@ -8,3 +8,6 @@
 .vehicle-search-page .condition-options input:checked+span::before{content:'✓';margin-right:7px}
 .vehicle-search-page .condition-options input:focus-visible+span{outline:3px solid #14202b;outline-offset:3px}
 .vehicle-search-page #search-condition[hidden]{display:none!important}
+
+.vehicle-search-page .condition-options span{height:100%;text-align:center;line-height:1.35;overflow-wrap:anywhere}.vehicle-search-page .condition-options input:checked+span::before{flex:0 0 auto}
+@media(max-width:360px){.vehicle-search-page .condition-options{gap:6px}.vehicle-search-page .condition-options span{padding:10px 7px}}

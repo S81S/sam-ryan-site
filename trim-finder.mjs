@@ -222,7 +222,7 @@ function syncSelection(){
  selection.innerHTML=!state.model||!current()?'Pick a vehicle to start':state.done?'Change my selection':`See my selection${n?` <b>${n}</b>`:''}`;
 }
 selection?.addEventListener('click',async()=>{
- if(!state.model||!current()){root.scrollIntoView({behavior:'smooth',block:'start'});return;}
+ if(!state.model||!current()){const heading=root.querySelector('.tf-title');heading?.setAttribute('tabindex','-1');heading?.focus({preventScroll:true});root.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});return;}
  if(state.done){await go({done:false,note:null});return;}
  // The match is the first trim, from this one up, that has everything picked (the most of it when none has it all).
  const picks=withChecked(),match=picks.length?nextMatch(current().model,state.at-1,picks):null,at=match?match.index:state.at;
@@ -239,7 +239,7 @@ function draw(scroll){
  if(search){const terms={seats:/seat|leather|upholstery/i,screen:/screen|display|uconnect/i,audio:/audio|speaker|sound|harman|alpine|mcintosh/i,roof:/roof|sunroof|top/i,camera:/camera|view|parksense/i,towing:/tow|trailer|hitch/i,engine:/engine|hemi|hurricane|pentastar|powertrain/i};
  const filter=()=>{const value=search.value.trim().toLowerCase(),pattern=terms[value];let count=0;root.querySelectorAll('.tf-item').forEach(item=>{const text=item.textContent.toLowerCase(),show=!value||(pattern?pattern.test(text):text.includes(value));item.hidden=!show;if(show)count++;});root.querySelectorAll('.tf-group').forEach(group=>{group.hidden=![...group.querySelectorAll('.tf-item')].some(i=>!i.hidden);});root.querySelector('#tf-feature-count').textContent=value?count?`${count} choices on this step match. Clear the search to see all choices.`:"No matching choices at this step. Clear the search, or skip to the next trim to see more equipment.":'';};
  search.addEventListener('input',filter);root.querySelectorAll('[data-priority]').forEach(b=>b.addEventListener('click',()=>{search.value=b.dataset.priority;filter();}));}
- if(scroll)root.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});
+ if(scroll){const heading=root.querySelector('.tf-current h2')||root.querySelector('.tf-title');heading?.setAttribute('tabindex','-1');heading?.focus({preventScroll:true});(heading||root).scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});}
  const ups=root.querySelectorAll('[data-act=up]');
  if(ups.length){
   const sync=()=>{const n=root.querySelectorAll('[data-pick]:checked').length;ups.forEach(up=>{up.disabled=!n;up.textContent=n?`Continue with ${n===1?'this':'these '+n}`:'Pick what you want above';});};
@@ -249,13 +249,13 @@ function draw(scroll){
 
 root.addEventListener('click',async e=>{
  const b=e.target.closest('button');if(!b||!root.contains(b))return;
- if(b.dataset.brand){state={...state,brand:b.dataset.brand};draw(false);return;}
+ if(b.dataset.brand){const brand=b.dataset.brand;state={...state,brand};draw(false);[...root.querySelectorAll('[data-brand]')].find(button=>button.dataset.brand===brand)?.focus({preventScroll:true});return;}
  if(b.dataset.model){b.disabled=true;await go({...blank,brand:state.brand,model:b.dataset.model});return;}
  // Back to a trim on the path: the picks made from that trim on (which moved the shopper off it) are dropped.
  if(b.dataset.back){const i=Number(b.dataset.back),keep=state.path.slice(0,state.path.indexOf(i)+1);await go({at:i,path:keep,done:false,note:null,picks:state.picks.filter(p=>p.at<i&&keep.includes(p.at))});return;}
  const act=b.dataset.act;
  if(act==='restart'){await go({...blank,brand:state.brand});return;}
- if(act==='more'){b.previousElementSibling?.querySelectorAll('.tf-more').forEach(a=>a.hidden=false);b.remove();return;}
+ if(act==='more'){const more=b.previousElementSibling?.querySelectorAll('.tf-more');more?.forEach(a=>a.hidden=false);more?.[0]?.focus({preventScroll:true});b.remove();return;}
  if(act==='back'){history.back();return;}
  if(act==='done'){await go({done:true,note:null});return;}
  const trims=trimsOf();

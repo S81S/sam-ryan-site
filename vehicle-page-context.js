@@ -52,27 +52,56 @@ import('/sticker-credit.mjs').then(m=>m.installStickerCredits()).catch(()=>{});
   const links = [...document.querySelectorAll('.photo-strip a')];
   if (!main || links.length < 2) return;
   const count = document.querySelector('.photo-count');
+  const initialAlt = main.alt;
+  if (count) {
+    count.setAttribute('role', 'status');
+    count.setAttribute('aria-live', 'polite');
+    count.setAttribute('aria-atomic', 'true');
+  }
   let current = 0;
+  const markCurrent = () => links.forEach((a, k) => a.setAttribute('aria-current', k === current ? 'true' : 'false'));
+  markCurrent();
   const show = (n, scrollThumb = true) => {
     current = (n + links.length) % links.length;
     // A stale srcset takes precedence over src and keeps showing the previous photo.
     main.removeAttribute('srcset');
     main.src = links[current].href;
-    links.forEach((a, k) => a.setAttribute('aria-current', k === current ? 'true' : 'false'));
+    main.alt = links[current].querySelector('img')?.alt || `${initialAlt} — photo ${current + 1} of ${links.length}`;
+    markCurrent();
     if (count) count.textContent = (current + 1) + ' / ' + links.length;
     if (scrollThumb) {
       const strip = links[current].parentNode;
-      strip.scrollTo({ left: links[current].offsetLeft - strip.clientWidth / 2 + links[current].clientWidth / 2, behavior: 'smooth' });
+      const reducedMotion = window.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches;
+      strip.scrollTo({ left: links[current].offsetLeft - strip.clientWidth / 2 + links[current].clientWidth / 2, behavior: reducedMotion ? 'instant' : 'smooth' });
     }
   };
-  links.forEach((a, k) => a.addEventListener('click', e => { e.preventDefault(); show(k); }));
+  links.forEach((a, k) => {
+    a.addEventListener('click', e => {
+      if (e.ctrlKey || e.metaKey || e.shiftKey || e.altKey || (e.button != null && e.button !== 0)) return;
+      e.preventDefault(); show(k);
+    });
+    a.addEventListener('keydown', e => {
+      if (e.altKey || e.ctrlKey || e.metaKey || !['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(e.key)) return;
+      e.preventDefault();
+      show(e.key === 'Home' ? 0 : e.key === 'End' ? links.length - 1 : k + (e.key === 'ArrowRight' ? 1 : -1));
+      links[current].focus({ preventScroll: true });
+    });
+  });
   document.querySelector('.photo-prev')?.addEventListener('click', () => show(current - 1));
   document.querySelector('.photo-next')?.addEventListener('click', () => show(current + 1));
-  let startX = null;
-  main.addEventListener('touchstart', e => { startX = e.touches[0].clientX; }, { passive: true });
+  let touchStart = null;
+  main.addEventListener('touchstart', e => {
+    const touch = e.touches.length === 1 ? e.touches[0] : null;
+    touchStart = touch ? { x: touch.clientX, y: touch.clientY, id: touch.identifier } : null;
+  }, { passive: true });
+  main.addEventListener('touchmove', e => { if (e.touches.length !== 1) touchStart = null; }, { passive: true });
+  main.addEventListener('touchcancel', () => { touchStart = null; }, { passive: true });
   main.addEventListener('touchend', e => {
-    if (startX === null) return;
-    const dx = e.changedTouches[0].clientX - startX; startX = null;
-    if (Math.abs(dx) > 40) show(current + (dx < 0 ? 1 : -1));
+    const start = touchStart; touchStart = null;
+    if (!start || e.touches.length) return;
+    const touch = [...e.changedTouches].find(t => t.identifier === start.id);
+    if (!touch) return;
+    const dx = touch.clientX - start.x, dy = touch.clientY - start.y;
+    if (Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy)) show(current + (dx < 0 ? 1 : -1));
   }, { passive: true });
 })();

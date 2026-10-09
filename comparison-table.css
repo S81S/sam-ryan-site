@@ -14,3 +14,25 @@
 @media(max-width:600px){.equipment-matrix th,.equipment-matrix td{min-width:140px!important}.equipment-matrix th:first-child{min-width:100px!important}}
 
 #main-content>.section:first-child{padding-top:30px}.compare-selection-bar{display:flex;align-items:center;justify-content:space-between;gap:12px}.group-compare-disclosure{background:#15212d!important;color:#fff!important;border:1px solid #425367}.group-compare-disclosure label{color:inherit}.sticker-side h2{margin:0 0 12px;font-size:1.1rem}
+
+/* Scope above the historical inline rules so narrow and wide layouts agree. */
+.site-layout .sticker-grid{max-width:100%;min-width:0;scroll-padding-inline:2px;padding-top:4px;overscroll-behavior-x:contain}
+.site-layout .sticker-grid .sticker-side{min-width:0;flex-basis:clamp(280px,29vw,360px);max-width:420px;overflow-wrap:anywhere}
+.site-layout .sticker-grid .comparison-picker{padding:12px;min-width:0}
+.site-layout .sticker-side input,.site-layout .sticker-side select,.site-layout .comparison-controls input,.site-layout .group-compare-disclosure input,.site-layout .group-compare-disclosure select{box-sizing:border-box;max-width:100%;min-width:0;font-size:16px;min-height:44px}
+.site-layout .sticker-side .btn,.site-layout .comparison-view-buttons button,.site-layout .group-compare-disclosure .btn{min-height:44px;white-space:normal;overflow-wrap:anywhere}
+.site-layout .comparison-picker .picker-results li{align-items:stretch;flex-direction:column}
+.site-layout .comparison-picker .picker-results button{width:100%}
+.site-layout .compare-selection-bar{flex-wrap:wrap}
+.site-layout .compare-selection-bar h2{min-width:0;overflow-wrap:anywhere}
+.site-layout .comparison-controls{min-width:0}
+.site-layout .comparison-controls input{flex:1 1 230px}
+.site-layout .comparison-view-buttons{max-width:100%}
+.site-layout .comparison-view-buttons button{font:inherit;font-size:14px}
+.site-layout .comparison-table-wrap{max-width:100%;max-height:72vh;max-height:72dvh;overscroll-behavior-x:contain;scrollbar-gutter:stable}
+.site-layout .comparison-scroll-hint{margin:8px 0;font-size:14px;line-height:1.5;color:#c4d2df}
+.site-layout .equipment-matrix .equipment-proof summary{min-height:44px;display:list-item;padding-block:10px;font-size:14px}
+.site-layout .equipment-matrix a{overflow-wrap:anywhere}
+.site-layout .comparison-shared-note button{min-height:44px;white-space:normal}
+@media(max-width:600px){.site-layout .sticker-grid .sticker-side{flex-basis:calc(100% - 24px);max-width:calc(100% - 24px);padding:12px}.site-layout .comparison-controls>label{flex-basis:100%}.site-layout .comparison-controls input{flex-basis:100%}.site-layout .comparison-view-buttons button{flex:1 1 130px;padding:10px 12px}.site-layout .compare-selection-bar>.btn{width:100%}.site-layout .equipment-matrix th:first-child{max-width:110px;width:110px}}
+@media print{.site-layout .comparison-table-wrap{max-height:none;overflow:visible}.site-layout .comparison-scroll-hint{display:none}}

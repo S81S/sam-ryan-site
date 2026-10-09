@@ -1,3 +1,4 @@
+import {createComparisonGuideLoader} from './comparison-guide-loader.mjs';
 import {optionInventoryLink} from './option-inventory.mjs';
 import {audioInventoryFeature} from './audio-evidence.mjs';
 import {equipmentReviewReason} from './equipment-review.mjs';
@@ -18,10 +19,12 @@ const viewState={mode:'complete',search:''};
 // The factory trim guide behind the Compare Trims page. It loads once, then the comparison redraws with it.
 let trimGuide=null,factoryIndex=null;
 const factoryCharts=new Map(),factoryRequests=new Map();
-const trimGuideReady=Promise.all([
- fetch('trim-standard-data.json').then(r=>r.ok?r.json():null).then(d=>{trimGuide=d;}).catch(()=>{}),
- fetch('data/factory/index.json').then(r=>r.ok?r.json():null).then(d=>{factoryIndex=d;}).catch(()=>{})
-]);
+const loadTrimGuide=createComparisonGuideLoader();
+let trimGuideRequest;
+function ensureTrimGuide(){
+ // The picker works immediately; only a real comparison needs the factory charts.
+ return trimGuideRequest ||= loadTrimGuide().then(data=>{trimGuide=data.trimGuide;factoryIndex=data.factoryIndex;if(trimGuide)render();});
+}
 // Only charts needed by the selected vehicles are fetched, once per page.
 function factoryChart(meta){
  if(!meta)return null;
@@ -35,6 +38,7 @@ function render(){
  const out=$('automatic-equipment');out.replaceChildren();
  const recs=['1','2','3','4','5'].map(side=>({side,v:window.usedInventoryData.vehicles.find(v=>v.vin===$('choose-'+side)?.value)})).filter(r=>r.v).map(r=>({...r,s:withComparisonSpecifications(r.v,applyFactoryEquipment(r.v,window.equipmentIndex.records[r.v.vin]))}));
  if(recs.length<2){out.append(el('p','Choose two vehicles above to compare.'));return;}
+ ensureTrimGuide();
  const pendingEquipment=recs.some(({s,side,v})=>s?.status!=='verified'&&(v.decodePending||$('lookup-status-'+side)?.getAttribute('aria-busy')==='true'));
  const contextParams=new URLSearchParams(location.search);
  const requested=[...new Set(parseQuery([$('group-query')?.value||contextParams.get('q')||'',contextParams.get('requestedEquipment')||''].join(' ')).requirements.map(r=>r.id))];
@@ -58,10 +62,11 @@ function render(){
   if(trimLink){const one=new Set(found.map(m=>m.trim.id)).size===1;const a=el('a',one?`See the ${found[0].trim.name} in Compare Trims ↗`:'See these trims side by side in Compare Trims ↗');a.href=trimLink;p.append(a);}out.append(p);}
  out.append(el('p','Like a feature? Click an Included checkmark to find inventory with that equipment.'));
  const controls=el('div');controls.className='comparison-controls';
- const label=el('label','Find a feature');label.htmlFor='comparison-feature-filter';const search=el('input');search.id='comparison-feature-filter';search.type='search';search.placeholder='Seats, cameras, roof, towing…';search.value=viewState.search;
+ const label=el('label','Find a feature');label.htmlFor='comparison-feature-filter';const search=el('input');search.id='comparison-feature-filter';search.type='search';search.setAttribute('enterkeyhint','search');search.placeholder='Seats, cameras, roof, towing…';search.value=viewState.search;
  controls.append(label,search);const buttons=el('div');buttons.className='comparison-view-buttons';controls.append(buttons);
  const status=el('p');status.setAttribute('role','status');
- const wrap=el('div');wrap.className='comparison-table-wrap';wrap.tabIndex=0;wrap.setAttribute('role','region');wrap.setAttribute('aria-label','Vehicle equipment comparison; scroll sideways for more vehicles');
+ const scrollHint=el('p','Swipe or scroll across to see every vehicle. On a keyboard, focus the table and use the arrow keys.');scrollHint.id='comparison-scroll-hint';scrollHint.className='comparison-scroll-hint';
+ const wrap=el('div');wrap.className='comparison-table-wrap';wrap.tabIndex=0;wrap.setAttribute('role','region');wrap.setAttribute('aria-label','Vehicle equipment comparison');wrap.setAttribute('aria-describedby',scrollHint.id);
  let mode=viewState.mode==='requested'&&!requested.length?'important':viewState.mode;const buttonRefs=[];
  const legend=el('p','“Needs confirmation” means the available sources have not resolved this detail for that vehicle.');legend.className='comparison-legend';
  function draw(){
@@ -124,7 +129,7 @@ function render(){
   table.append(body);section.append(table);wrap.append(section);
  }
  for(const [id,text] of [['complete','All equipment ('+(counts.same+counts.difference+counts.check)+')'],['important','Differences ('+counts.difference+')'],...(requested.length?[['requested','Your must-haves']]:[]),['all','Shared equipment ('+counts.same+')'],['check','Needs confirmation ('+counts.check+')']]){const b=el('button',text);b.type='button';b.addEventListener('click',()=>{mode=id;draw()});buttons.append(b);buttonRefs.push([id,b])}
- search.addEventListener('input',draw);out.append(controls,status,wrap,legend);draw();
+ search.addEventListener('input',draw);out.append(controls,status,scrollHint,wrap,legend);draw();
  const unresolved=rows.filter(r=>r.group==='check'&&r.facts.some(f=>f?.value));
  if(unresolved.length){const panel=el('details');panel.className='comparison-unresolved';panel.append(el('summary','More equipment details'));
  panel.append(el('p','These features are documented on some of your choices. A missing entry is not proof that another vehicle lacks the feature.'));
@@ -133,4 +138,4 @@ function render(){
  for(const {v,s} of recs){if(s?.status!=='verified')continue;const details=el('details');details.append(el('summary',`${v.title} · ${short(v)}`));if(s.sourceUrl){const a=el('a','Open original sticker ↗');a.href=s.sourceUrl;a.target='_blank';a.rel='noopener';details.append(a);appendStickerCredit(details,s.sourceUrl,v.stickerUrl)}const ul=el('ul');for(const line of s.lines||[])ul.append(el('li',line));details.append(ul);sources.append(details)}out.append(sources);
  out.append(el('p','Factory equipment describes the vehicle as built. Ask Sam or Ryan about current condition and any later modifications.'));
 }
-document.addEventListener('compare:changed',render);render();trimGuideReady.then(()=>{if(trimGuide)render();});
+document.addEventListener('compare:changed',render);render();

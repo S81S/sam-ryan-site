@@ -59,7 +59,7 @@ test('Choosing real photo cards advances to seats, roof, and matching vehicles',
 test('Left swiping a photo excludes it once and undo returns to the question',async()=>{
  const s=await session();const card=s.root.querySelectorAll('[data-choice]').find(n=>n.dataset.choice==='r12527-dashboard');
  card.listeners.pointerdown({button:0,clientX:200,clientY:100,pointerId:1});
- card.listeners.pointerup({clientX:100,clientY:102});card.listeners.click();
+ card.listeners.pointerup({clientX:100,clientY:102,pointerId:1});card.listeners.click();
  assert.equal(s.state().step,0);
  assert.deepEqual(s.state().answers.screen,['reject:r12527-dashboard']);
  assert.match(s.root.innerHTML,/Choose another photo or No preference/);
@@ -173,6 +173,49 @@ test('Advancing a photo choice scrolls the next question into the mobile viewpor
  const heading=s.find('[data-heading]');
  assert.ok(heading.scrolls.length>0,'the next heading must be revealed after a lower stacked photo is chosen');
  assert.notEqual(heading.scrolls.at(-1).behavior,'smooth','reduced motion is respected');
+});
+
+test('Every selectable photo can be excluded with a visible button and restored without a gesture',async()=>{
+ const s=await session(),choices=s.root.querySelectorAll('[data-choice]').filter(n=>!n.disabled);
+ assert.ok(choices.length>1);
+ for(const card of choices)assert.ok(s.find(`[data-reject="${card.dataset.choice}"]`));
+ const id=choices[0].dataset.choice;
+ s.find(`[data-reject="${id}"]`).listeners.click();
+ assert.deepEqual(s.state().answers.screen,['reject:'+id]);
+ s.find(`[data-restore="${id}"]`).listeners.click();
+ assert.equal(s.state().answers.screen,undefined);
+ assert.equal(s.find(`[data-choice="${id}"]`).disabled,false);
+});
+
+test('A second pointer cannot replace a swipe, and vertical scrolling cannot turn into a selection',async()=>{
+ const s=await session(),card=s.find('[data-choice]');
+ card.listeners.pointerdown({button:0,isPrimary:true,clientX:200,clientY:100,pointerId:1});
+ card.listeners.pointerdown({button:0,isPrimary:false,clientX:0,clientY:100,pointerId:2});
+ card.listeners.pointerup({clientX:200,clientY:100,pointerId:2});
+ assert.deepEqual(s.state().answers,{});
+ card.listeners.pointermove({clientX:201,clientY:130,pointerId:1});
+ card.listeners.pointerup({clientX:350,clientY:130,pointerId:1});
+ card.listeners.click({detail:1});
+ assert.deepEqual(s.state().answers,{});
+ assert.equal(s.state().step,0);
+});
+
+test('Lost capture cancels a gesture, while keyboard activation still works afterward',async()=>{
+ const s=await session(),card=s.find('[data-choice]');
+ card.listeners.pointerdown({button:0,clientX:200,clientY:100,pointerId:1});
+ card.listeners.lostpointercapture({pointerId:1});
+ card.listeners.pointerup({clientX:350,clientY:100,pointerId:1});
+ card.listeners.click({detail:1});
+ assert.deepEqual(s.state().answers,{});
+ card.listeners.click({detail:0});
+ assert.equal(s.state().step,1);
+});
+
+test('Changing condition keeps keyboard focus on the rebuilt condition field',async()=>{
+ const s=await session();
+ s.find('[data-condition]').listeners.change({target:{value:'Both'}});
+ assert.equal(s.state().condition,'Both');
+ assert.equal(s.find('[data-condition]').focused,true);
 });
 
 test('An unavailable photo cannot be chosen through the card or single-choice positive control',async()=>{

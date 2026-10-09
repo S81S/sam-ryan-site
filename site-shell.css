@@ -1,4 +1,7 @@
 /* Shared homepage-style navigation, contact artwork, and location strip. */
+:root{--cws-bottom-dock-height:0px;--cws-header-offset:100px}
+html{scroll-padding-top:var(--cws-header-offset);scroll-padding-bottom:calc(var(--cws-bottom-dock-height) + var(--cws-compare-bar-height,0px) + 16px);-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body.site-layout{padding-bottom:calc(var(--cws-bottom-dock-height) + var(--cws-compare-bar-height,0px))}
 .site-layout .site-header .nav-wrap{display:flex;align-items:center;gap:16px;min-height:72px}
 .site-layout .site-header .brand{display:grid;line-height:1;min-width:0;font-size:inherit;font-weight:inherit}
 .site-layout .site-header .brand-main{font-size:24px;font-weight:950;letter-spacing:-.8px}
@@ -34,6 +37,7 @@
 .site-layout .profile-content .hero-actions{margin-top:18px}
 .site-layout .vehicle-detail{padding-top:24px}
 @media(max-width:1050px){
+ :root{--cws-header-offset:16px}
  .site-layout .site-header{position:relative}
  .site-layout .site-header .nav-wrap{display:grid;grid-template-columns:minmax(0,1fr) 106px auto;gap:2px 10px;padding:6px 0}
  .site-layout .site-header .brand{grid-column:1;grid-row:1}
@@ -70,8 +74,7 @@
 
 /* Keep the same two actions available on narrow phones and unfolded touch screens. */
 @media(max-width:1050px),(hover:none) and (pointer:coarse){
- html{scroll-padding-bottom:calc(68px + env(safe-area-inset-bottom,0px))}
- body.site-layout{padding-bottom:calc(57px + env(safe-area-inset-bottom,0px))}
+ :root{--cws-bottom-dock-height:calc(57px + env(safe-area-inset-bottom,0px))}
  .site-layout .sticky-mobile{display:grid;position:fixed;z-index:60;inset:auto 0 0;grid-template-columns:minmax(0,1fr) minmax(0,1fr);background:#0a0e12;border-top:1px solid #29333e;padding:0 env(safe-area-inset-right,0px) env(safe-area-inset-bottom,0px) env(safe-area-inset-left,0px)}
  .site-layout .sticky-mobile a{display:flex;align-items:center;justify-content:center;min-height:56px;margin:0;padding:12px;color:#fff;font-size:13px;line-height:1.35;font-weight:900;text-align:center;text-decoration:none}
  .site-layout .sticky-mobile a:first-child{background:#bd1424}
@@ -80,7 +83,7 @@
  /* Clear the keyboard area while someone is entering search/contact details. */
  .site-layout:has(textarea:focus,input:not([type="button"]):not([type="submit"]):not([type="checkbox"]):not([type="radio"]):not([type="range"]):focus,[contenteditable="true"]:focus) .sticky-mobile{display:none}
 }
-@media print{.site-layout .sticky-mobile{display:none!important}body.site-layout{padding-bottom:0}}
+@media print{.site-layout .sticky-mobile{display:none!important}body.site-layout{padding-bottom:0!important}}
 
 /* Keep the phone number separate from the mascot, with one accessible call link. */
 .site-layout .site-header .header-phone{flex:0 0 272px;width:272px;gap:6px;min-height:58px}
@@ -193,3 +196,48 @@ a[href],button:not(:disabled),summary{cursor:pointer}
  .tf-car{flex-wrap:wrap}
  .tf-car::after{flex-basis:100%;padding:0 12px 10px}
 }
+
+/* Reflow content instead of clipping it on cover screens, landscape phones and text zoom. */
+.site-layout .wrap{max-width:calc(100% - max(12px,env(safe-area-inset-left,0px)) - max(12px,env(safe-area-inset-right,0px)))}
+.site-layout main,.site-layout .section-head,.site-layout .footer-inner{min-width:0}
+.site-layout :is(.hero-grid,.page-grid,.visual-split,.profile-layout,.contact-columns,.form-grid,.grid-3,.grid-4,.review-grid,.wall-cards,.footer-inner,.detail-grid,.directory)>*{min-width:0}
+.site-layout :is(h1,h2,h3,p,dd,label,.footer-note,.request-text){overflow-wrap:anywhere}
+.site-layout :is(input,select,textarea){min-width:0;max-width:100%}
+.site-layout :is(.btn,.mini-btn,.header-cta,.nav-toggle){min-height:44px;white-space:normal;text-align:center}
+.site-layout :is(.hero-actions,.quick-contact,.sy-actions,.review-filter){flex-wrap:wrap}
+.site-layout :is(.footer-links a,.review-card .source,.review-filter button){min-height:44px}
+.site-layout .section-head{flex-wrap:wrap}
+.site-layout .site-header .brand-main{white-space:normal;line-height:1.15}
+.site-layout #primary-nav .nav-more-links{max-width:calc(100vw - 32px);max-height:calc(100vh - 120px);max-height:calc(100dvh - 120px);overflow:auto;overscroll-behavior:contain}
+.site-layout #primary-nav .nav-more-links a{white-space:normal;overflow-wrap:anywhere}
+.site-layout .photo-strip{padding-bottom:8px;scroll-padding-inline:8px}
+.site-layout .vehicle-photo{touch-action:pan-y pinch-zoom}
+.site-layout .facts{grid-template-columns:minmax(0,1fr) minmax(0,2fr)}
+.site-layout .evidence{overflow-wrap:anywhere}
+.site-layout .footer a:not(.btn){display:inline-flex;align-items:center;min-height:44px}
+@media(max-width:1050px),(pointer:coarse){
+ .site-layout :is(.field input,.field select,.field textarea,.sy-controls input,.sy-controls select,.driveway-tool>select){font-size:16px;min-height:48px}
+ .site-layout :is(input[type="range"]){min-height:44px}
+}
+@media(max-width:700px){
+ .site-layout #primary-nav .nav-more-links{max-height:none;overflow:visible}
+ .site-layout :is(.hero-actions,.quick-contact)>.btn:not(.sam-phone){flex:1 1 160px}
+ .site-layout .vehicle-detail{padding-inline:max(12px,env(safe-area-inset-left,0px));padding-right:max(12px,env(safe-area-inset-right,0px))}
+ .site-layout .form-card{padding:18px}
+ .site-layout .proof-strip :is(cite,a){white-space:normal}
+}
+@media(max-width:420px){
+ .site-layout .site-header .nav-wrap{grid-template-columns:minmax(0,1fr) auto;gap:4px 10px}
+ .site-layout .site-header .brand{grid-column:1;grid-row:1}
+ .site-layout .nav-toggle{grid-column:2;grid-row:1}
+ .site-layout .site-header .header-phone{grid-column:1/-1;grid-row:2;justify-self:center}
+ .site-layout #primary-nav{grid-row:3}
+ .site-layout #primary-nav>a{flex-basis:100%}
+ .site-layout .profile-photo{flex-wrap:wrap}
+ .site-layout .hours{font-size:14px}
+}
+@media(max-height:500px) and (orientation:landscape){
+ .site-layout .site-header{position:relative}
+ .site-layout .nav-more-links{max-height:60vh;max-height:60dvh}
+}
+@media(prefers-reduced-motion:reduce){.site-layout .btn:hover,.site-layout .tool-card:hover{transform:none}}
