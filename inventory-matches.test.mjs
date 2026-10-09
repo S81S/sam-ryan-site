@@ -12,7 +12,8 @@ test('batched evidence checks retain the exact verified search results',async()=
  let yields=0;
  const actual=await collectInventoryMatches(inventory.vehicles,records,query,{budgetMs:0,yieldControl:async()=>{yields++;}});
  assert.deepEqual(actual.matches.map(r=>r.vehicle.vin),expected);
- assert.equal(actual.matches.length,38);
+ // The count changes with every inventory refresh; the line above already proves the batched result is exact.
+ assert.ok(actual.matches.length>0,'the search should find vehicles to compare');
  assert.equal(yields,inventory.vehicles.length);
 });
 test('a superseded search cannot publish its partially checked vehicles',async()=>{
