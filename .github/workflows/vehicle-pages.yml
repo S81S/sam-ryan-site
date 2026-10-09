@@ -6,6 +6,9 @@ on:
       - 'data/used-inventory.json'
       - 'data/equipment-index.json'
       - 'build-vehicle-pages.cjs'
+      - 'build-feature-pages.cjs'
+      - 'feature-inventory-link.mjs'
+      - 'equipment-search.mjs'
       - 'site-shell.cjs'
       - 'installed-equipment.mjs'
       - 'vehicle-images.mjs'
@@ -45,6 +48,8 @@ jobs:
         run: node scripts/trim-stock.mjs
       - name: Keep the files the browser loads in step with the data
         run: node scripts/browser-copies.mjs
+      - name: Build the shop-by-feature pages from the same window-sticker matches as Find Your Car
+        run: node build-feature-pages.cjs
       - run: node build-vehicle-pages.cjs
       - run: node notify-indexnow.cjs --prepare
       - name: Keep the home page example searches valid
@@ -54,7 +59,8 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           # -A with quoted patterns also records pages the build removed (vehicles that left the inventory).
-          git add -A -- 'vehicle-*.html' 'vehicles*.html'
+          git add -A -- 'vehicle-*.html' 'vehicles*.html' '*-with-*-austin.html'
+          git add shop-by-feature.html sitemap-features.xml data/feature-pages.json
           git add sitemap-vehicles.xml vehicle-pages-version.json index.html inventory.html data/used-inventory.json data/used-inventory.js data/vehicle-photos.json data/equipment-index.js data/trim-stock.json
           if ! git diff --cached --quiet; then
             git commit -m "Update searchable vehicle pages from verified inventory snapshot"
