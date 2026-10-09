@@ -75,7 +75,7 @@ function render(){
     if(f?.value===true&&(inventoryFeature||optionKey)){
      const badge=td.querySelector('.equipment-answer');const a=el('a',badge.textContent);
      const context=parseQuery($('group-query')?.value||new URLSearchParams(location.search).get('q')||'');
-     const linkContext={condition:recs[i].v.condition,advisor:new URLSearchParams(location.search).get('advisor'),modelTerms:context.terms};
+     const linkContext={condition:new URLSearchParams(location.search).get('condition')||'Both',advisor:new URLSearchParams(location.search).get('advisor'),modelTerms:context.terms};
      a.href=optionKey?optionInventoryLink({key:optionKey,label:row.label,value:f.displayValue||''},linkContext):featureInventoryLink(inventoryFeature,linkContext);
      a.className=badge.className+' equipment-feature-link';a.style.cssText='display:inline-block;min-height:44px;padding:10px 12px;text-decoration:underline;text-underline-offset:3px;border:1px solid currentColor;border-radius:6px';
      const targetLabel=definitions.find(([id])=>id===inventoryFeature)?.[1]||row.label;a.title='Find vehicles with '+targetLabel;a.setAttribute('aria-label','Find vehicles with '+targetLabel);badge.replaceWith(a);
