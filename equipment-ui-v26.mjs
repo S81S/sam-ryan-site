@@ -1,3 +1,4 @@
+import {collectInventoryMatches} from './inventory-matches.mjs';
 import {vehicleImage,vehicleImageSet} from './vehicle-images.mjs';
 import {optionFromParams} from './option-inventory.mjs';
 import {applyFeatureFilter} from './feature-inventory-link.mjs';
@@ -59,9 +60,11 @@ updateCompareBar();
 
 let searchCounts={},lastQuery=null,visible=pageSize(),restoringSearch=true;
 function revealResults(){if(!restoringSearch&&!keepSearchPosition){$('search-results').scrollIntoView({behavior:'instant',block:'start'});$('search-results').focus({preventScroll:true});}}
-function render(){
+let renderSequence=0;
+async function render(){
+ const sequence=++renderSequence;
  syncConditionChoices();
- const out=$('matchResults');out.replaceChildren();$('visible-count').textContent='';const q=lastQuery;if(!q)return;
+ const out=$('matchResults');out.replaceChildren();out.removeAttribute('aria-busy');$('visible-count').textContent='';const q=lastQuery;if(!q)return;
  const customerRequest=[q.original,q.equipmentOption?[q.equipmentOption.label,q.equipmentOption.value].filter(Boolean).join(': '):featureParam?labels[featureParam]:''].filter(Boolean).join(' — ');
  const summary=el('div',undefined,'search-summary');
  const items=[...(q.bodyType?[q.bodyType==='truck'?'Pickup trucks':q.bodyType==='suv'?'SUVs':'Pickup trucks or SUVs']:[]),...q.terms,...(q.condition?[q.condition]:[]),...(q.budget!==null?['Price up to '+cash(q.budget)]:[]),...(q.mileage!==null?['Mileage up to '+q.mileage.toLocaleString()]:[]),...(q.equipmentOption?['With '+q.equipmentOption.label+(q.equipmentOption.value?' — '+q.equipmentOption.value:'')]:[]),...q.requirements.map(r=>(r.wanted?'With ':'Without ')+labels[r.id])];
@@ -71,8 +74,10 @@ function render(){
  for(const warning of q.warnings)summary.append(el('p',warning,'stock-small'));out.append(summary);
  if(q.ambiguity||q.warnings.some(w=>/Conflicting|not both|More than one/.test(w))){out.append(el('p',q.ambiguity||'Please resolve the conflicting choices above, then search again.'));$('more-matches').hidden=true;return;}
  for(const notice of optionGuidance(q)){const message=el('p',notice.message,'stock-small');message.append(document.createTextNode(' '),link('View factory options',notice.sourceUrl));out.append(message);}
- const matches=[],unknown=[],equipmentConflicts=[];
- for(const vehicle of data.vehicles){const result=matchVehicle(vehicle,index.records[vehicle.vin],q);if(result.kind==='match')matches.push({vehicle,result});else if(result.kind==='unknown')unknown.push({vehicle,result});else if(result.reason==='equipment')equipmentConflicts.push({vehicle,result});}
+ const loading=el('p','Checking inventory against your choices…','stock-small');loading.setAttribute('role','status');out.append(loading);out.setAttribute('aria-busy','true');$('more-matches').hidden=true;
+ const groups=await collectInventoryMatches(data.vehicles,index.records,q,{isCurrent:()=>sequence===renderSequence});
+ if(!groups)return false;
+ const {matches,unknown,equipmentConflicts}=groups;loading.remove();out.removeAttribute('aria-busy');
  out.append(el('p',`${matches.length} ${(q.requirements.length||q.equipmentOption)?(q.requirements.some(r=>r.id==='flatTow')?'matches supported by stickers and towing manuals':'equipment-confirmed matches'):'matches'}${(q.requirements.length||q.equipmentOption)&&unknown.length?' · '+unknown.length+' need equipment confirmation':''}`,'result-count'));
  if(q.equipmentOption&&!matches.length){
   const reasons=new Map();for(const {result} of unknown){const reason=result.checks.find(c=>c.id==='selectedOption'&&c.state==='unknown')?.reason;if(reason)reasons.set(reason,(reasons.get(reason)||0)+1);}
@@ -145,8 +150,9 @@ function render(){
   } else if(!unknown.length)help.append(el('p','We couldn’t find an alternative by changing just one equipment, price or mileage requirement. Check the model spelling or let us help.'));
   out.append(help);
  }
+ return true;
 }
-$('matchBtn').addEventListener('click',()=>{const value=$('request').value.trim();if(!value&&!browseInventory){lastQuery=null;$('more-matches').hidden=true;$('matchResults').textContent='Tell us a model, budget or equipment you want.';return;}lastQuery=applyFeatureFilter(parseQuery(value),new URLSearchParams(location.search).get("feature"),definitions);lastQuery.equipmentOption=selectedOption;const selectedCondition=$('search-condition').value;if(lastQuery.condition&&selectedCondition!=='Both'&&lastQuery.condition!==selectedCondition){lastQuery.ambiguity=`Your request says ${lastQuery.condition.toLowerCase()}. Choose ${lastQuery.condition} above, or edit your request.`;}lastQuery.condition=selectedCondition==='Both'?lastQuery.condition:selectedCondition;const searchUrl=new URL(location.href);searchUrl.searchParams.set('q',value);searchUrl.searchParams.set('condition',selectedCondition);history.replaceState(null,'',searchUrl);try{sessionStorage.setItem('samRyanLastSearch',value);}catch{}visible=pageSize();searchCounts={};render();updateCompareBar();if(!restoringSearch&&Object.keys(searchCounts).length)window.cwsTrack?.('search_results',searchCounts);revealResults();});
+$('matchBtn').addEventListener('click',async()=>{const value=$('request').value.trim();if(!value&&!browseInventory){renderSequence++;lastQuery=null;$('more-matches').hidden=true;$('matchResults').textContent='Tell us a model, budget or equipment you want.';return;}lastQuery=applyFeatureFilter(parseQuery(value),new URLSearchParams(location.search).get("feature"),definitions);lastQuery.equipmentOption=selectedOption;const selectedCondition=$('search-condition').value;if(lastQuery.condition&&selectedCondition!=='Both'&&lastQuery.condition!==selectedCondition){lastQuery.ambiguity=`Your request says ${lastQuery.condition.toLowerCase()}. Choose ${lastQuery.condition} above, or edit your request.`;}lastQuery.condition=selectedCondition==='Both'?lastQuery.condition:selectedCondition;const searchUrl=new URL(location.href);searchUrl.searchParams.set('q',value);searchUrl.searchParams.set('condition',selectedCondition);history.replaceState(null,'',searchUrl);try{sessionStorage.setItem('samRyanLastSearch',value);}catch{}visible=pageSize();searchCounts={};const wasRestoring=restoringSearch,pending=render();updateCompareBar();revealResults();const finished=await pending;if(finished&&!wasRestoring&&Object.keys(searchCounts).length)window.cwsTrack?.('search_results',searchCounts);});
 $('results-per-page').addEventListener('change',()=>{visible=pageSize();render();});
 $('search-sort').addEventListener('change',()=>{visible=pageSize();render();});
 $('show-unverified').addEventListener('change',()=>{visible=pageSize();render();});
