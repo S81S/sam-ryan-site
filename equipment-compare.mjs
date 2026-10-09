@@ -38,8 +38,8 @@ function render(){
  const rowFeatures=row=>{const ids=new Set();for(const g of guides)for(const [id,fact] of g?.facts||[])if(fact.key===row.key)ids.add(id);return [...ids];};
  const trimRows=guideDifferences(matches).filter(row=>{const ids=rowFeatures(row);if(ids.length&&ids.every(settled))return false;return !answeredBySticker.some(([key,ids])=>key.test(row.key)&&ids.every(settled));});
  const trimLink=guideLink(matches),sameTrim=matches.every(Boolean)&&new Set(matches.map(m=>m.model.id+'/'+m.trim.id)).size===1;
- const counts={difference:rows.filter(r=>r.group==='difference'||r.group==='listed-on-some').length+trimRows.length,oneSided:rows.filter(r=>r.group==='listed-on-some').length,same:rows.filter(r=>r.group==='same').length,check:rows.filter(r=>r.group==='check'||(r.requested&&r.group==='unknown')).length};
- out.append(el('h2','Compare side by side'));if(pendingEquipment)out.append(el('p','Checking original equipment. The comparison updates as each vehicle’s source is read.'));out.append(el('p',`${counts.same} shared details · ${counts.difference} differences`+(counts.oneSided?` (${counts.oneSided} where another vehicle’s sticker does not say)`:'')+(counts.check?` · ${counts.check} items need source details`:'')));if(matches.some(Boolean)){const p=el('p');p.className='comparison-trim-note';
+ const counts={difference:rows.filter(r=>r.group==='difference').length+trimRows.length,oneSided:rows.filter(r=>r.group==='listed-on-some').length,same:rows.filter(r=>r.group==='same').length,check:rows.filter(r=>r.group==='check'||r.group==='listed-on-some'||(r.requested&&r.group==='unknown')).length};
+ out.append(el('h2','Compare side by side'));if(pendingEquipment)out.append(el('p','Checking original equipment. The comparison updates as each vehicle’s source is read.'));out.append(el('p',`${counts.same} shared details · ${counts.difference} confirmed differences`+(counts.check?` · ${counts.check} items need confirmation`:'')));if(matches.some(Boolean)){const p=el('p');p.className='comparison-trim-note';
   const found=matches.filter(Boolean),oneModel=new Set(found.map(m=>m.model.id)).size===1;
   const extra=m=>m.variant?' ('+m.variant.replace(/^G T$/,'G/T').toLowerCase().replace(/\b[a-z]/g,c=>c.toUpperCase())+')':'';
   const names=[...new Set(found.map(m=>(oneModel?m.trim.name:guideColumnName(m))+extra(m)))];
@@ -56,7 +56,7 @@ function render(){
  function draw(){
   wrap.replaceChildren();for(const [id,b] of buttonRefs)b.setAttribute('aria-pressed',String(id===mode));
   const visible=visibleComparisonRows(rows,mode,search.value);viewState.mode=mode;viewState.search=search.value;
-  status.textContent=search.value?'Matching '+(mode==='important'?'differences':mode==='all'?'shared equipment':mode==='check'?'items to check':'equipment'):mode==='complete'?'All confirmed equipment — shared details and differences':mode==='important'?'Differences: what one vehicle has that another does not':mode==='check'?'Why these items need checking':mode==='requested'?'Your requested features':'Shared equipment';
+  status.textContent=search.value?'Matching '+(mode==='important'?'differences':mode==='all'?'shared equipment':mode==='check'?'items to check':'equipment'):mode==='complete'?'All equipment — shared details, confirmed differences and items to check':mode==='important'?'Confirmed differences: equipment or specifications established by the sources':mode==='check'?'Why these items need checking':mode==='requested'?'Your requested features':'Shared equipment';
   legend.hidden=!visible.some(r=>r.facts.some(f=>!f));
   if(!visible.length&&!((mode==='important'||mode==='complete')&&trimRows.some(row=>!search.value||featureMatches(row,search.value)))){wrap.append(el('p',search.value?'No features match that wording.':pendingEquipment?'Checking original equipment. Shared details and differences will appear as the sources are read.':mode==='complete'?'No fully confirmed shared details or differences yet. Open Items to check for the source-specific reasons.':mode==='check'?'No evidence gaps in these recorded features.':mode==='all'?'No fully confirmed shared equipment in these recorded features.':'No confirmed differences in these recorded features. Check All equipment or Items to check.'));return;}
   const table=el('table');table.className='equipment-matrix';const caption=el('caption','Equipment at a glance');caption.className='matrix-caption';table.append(caption);
@@ -112,7 +112,7 @@ function render(){
     tr.append(td)});body.append(tr);}
   table.append(body);section.append(table);wrap.append(section);
  }
- for(const [id,text] of [['complete','All equipment ('+(counts.same+counts.difference)+')'],['important','Differences ('+counts.difference+')'],...(requested.length?[['requested','Your must-haves']]:[]),['all','Shared equipment ('+counts.same+')'],['check','Items to check ('+counts.check+')']]){const b=el('button',text);b.type='button';b.addEventListener('click',()=>{mode=id;draw()});buttons.append(b);buttonRefs.push([id,b])}
+ for(const [id,text] of [['complete','All equipment ('+(counts.same+counts.difference+counts.check)+')'],['important','Differences ('+counts.difference+')'],...(requested.length?[['requested','Your must-haves']]:[]),['all','Shared equipment ('+counts.same+')'],['check','Needs confirmation ('+counts.check+')']]){const b=el('button',text);b.type='button';b.addEventListener('click',()=>{mode=id;draw()});buttons.append(b);buttonRefs.push([id,b])}
  search.addEventListener('input',draw);out.append(controls,status,wrap,legend);draw();
  const unresolved=rows.filter(r=>r.group==='check'&&r.facts.some(f=>f?.value));
  if(unresolved.length){const panel=el('details');panel.className='comparison-unresolved';panel.append(el('summary','More equipment details'));

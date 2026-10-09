@@ -1,6 +1,6 @@
 // Perfect Match (the interactive car-buying guide) and Fleet Match (the same guide for fleet lineups): start at the base
 // trim, see what it comes with and what you can add, see everything the next trim adds, pick what you want and land on
-// the first trim that has it — with the vehicles on our lot that have it, whatever their trim, matched by VIN and window
+// the first trim that has it — with the vehicles listed in inventory that have it, whatever their trim, matched by VIN and window
 // sticker (data/trim-stock.json). Trim equipment comes from the factory's own standard/optional charts (data/factory, see
 // factory-facts.mjs), shown in the chart's words minus order codes (plain-labels.mjs); lineups without a chart use the
 // trim guide.
@@ -16,6 +16,7 @@ const money=n=>Number.isFinite(n)?'$'+Math.round(n).toLocaleString('en-US'):'';
 const plural=(n,one,many)=>n===1?one:many;
 const listOf=a=>a.length>1?a.slice(0,-1).join(', ')+' and '+a.at(-1):a[0]||'';
 const params=new URLSearchParams(location.search);
+let maxPrice=Math.max(0,Math.min(1000000,Number(params.get('maxPrice'))||0));
 let stock={trims:{}},models=[];
 const loaded=new Map();
 // Where the shopper is: the lineup, the trim they are on, the trims they passed, and what they picked.
@@ -32,6 +33,7 @@ const factOf=(trim,key)=>(trim?.comparison||[]).find(f=>f.key===key)||null;
 function save(replace){
  const url=new URL(location.href);url.search='';
  if(state.model)url.searchParams.set('model',state.model);
+ if(maxPrice)url.searchParams.set('maxPrice',String(maxPrice));
  history[replace?'replaceState':'pushState']({...state},'',url);
 }
 window.addEventListener('popstate',async e=>{state=e.state&&'path' in e.state?{...e.state}:{...blank};await ensureChart();draw(false);});
@@ -46,32 +48,32 @@ async function ensureChart(){
  catch(e){console.error(e);loaded.delete(m.file);if(i>=0)models[i]={...m,file:null,charted:false};}
 }
 
-// ---- Stock (data/trim-stock.json: every new vehicle on our lot, its trim by VIN and window sticker) ----
+// ---- Stock (data/trim-stock.json: every new vehicle listed in inventory, its trim by VIN and window sticker) ----
 // Lineups that share one stock model (the Grand Cherokee and Grand Cherokee L) keep only their own vehicles, by title.
 const ownVehicle=(m,v)=>{const f=m?.stockFilter;if(!f)return true;const t=String(v.title||'').toUpperCase();return f.only?new RegExp(f.only).test(t):!new RegExp(f.not).test(t);};
 function stockEntry(m=current()){
  const e=stock.models?.[m?.stockId]||null;
- return e&&m?.stockFilter?{...e,vehicles:e.vehicles.filter(v=>ownVehicle(m,v))}:e;
+ return e&&(m?.stockFilter||maxPrice)?{...e,vehicles:e.vehicles.filter(v=>ownVehicle(m,v)&&(!maxPrice||Number.isFinite(v.price)&&v.price<=maxPrice))}:e;
 }
 function stockFor(trim,m=current()){
- if(!m?.stockFilter)return stock.trims?.[m?.stockId+'/'+trim.id]||null;
+ if(!m?.stockFilter&&!maxPrice)return stock.trims?.[m?.stockId+'/'+trim.id]||null;
  const vs=(stockEntry(m)?.vehicles||[]).filter(v=>v.trim===trim.id),prices=vs.map(v=>v.price).filter(Number.isFinite);
  return vs.length?{count:vs.length,from:prices.length?Math.min(...prices):null,query:stock.trims?.[m.stockId+'/'+trim.id]?.query||null}:null;
 }
 function stockLine(trim){
  const s=stockFor(trim);
- return s?`<p class="tf-stock"><strong>${s.count} on our lot</strong>${s.from?` · from ${money(s.from)}`:''}</p>`:`<p class="tf-stock tf-none">None on our lot right now</p>`;
+ return s?`<p class="tf-stock"><strong>${s.count} listed in inventory</strong>${s.from?` · from ${money(s.from)}`:''}</p>`:`<p class="tf-stock tf-none">None listed in this snapshot</p>`;
 }
 function photo(trim,cls='tf-photo'){return trim.imageUrl?`<img class="${cls}" src="${esc(trim.imageUrl)}" alt="${esc(fullName(trim))}" loading="lazy">`:'';}
 
 function pickerView(){
  const brands=[...new Set(models.map(m=>m.brand))];
  const brand=state.brand&&brands.includes(state.brand)?state.brand:brands[0];
- return `<h2 class="tf-title">${fleet?'What does your business need?':'What are you shopping for?'}</h2>
+ return `<div class="tf-budget"><label for="tf-budget">Your maximum listed price (optional)</label><input id="tf-budget" type="number" inputmode="numeric" min="0" max="1000000" step="1000" value="${maxPrice||''}" placeholder="For example, 50000"><small>Prices may include conditional incentives. Confirm your price with us.</small></div><h2 class="tf-title">${fleet?'What does your business need?':'What are you shopping for?'}</h2>
  ${fleet?'':`<p class="tf-small">Shopping for a work fleet — chassis cabs or vans? <a href="/fleet-match">Try Fleet Match</a>.</p>`}
  <div class="tf-brands" role="group" aria-label="Brand">${brands.map(b=>`<button type="button" data-brand="${esc(b)}" aria-pressed="${b===brand}">${esc(b)}</button>`).join('')}</div>
  <div class="tf-models">${models.filter(m=>m.brand===brand).map(m=>{const base=m.model.trims[0],all=[...m.model.trims,...m.others],count=all.reduce((n,t)=>n+(stockFor(t,m)?.count||0),0);
-  return `<button type="button" class="tf-model" data-model="${esc(m.id)}">${base.imageUrl?`<img src="${esc(base.imageUrl)}" alt="" loading="lazy">`:''}<span><small>${m.year}</small><strong>${esc(m.name)}</strong><small>${all.length} ${plural(all.length,'trim','trims')}${count?` · ${count} on our lot`:''}</small></span></button>`;}).join('')}</div>`;
+  return `<button type="button" class="tf-model" data-model="${esc(m.id)}">${base.imageUrl?`<img src="${esc(base.imageUrl)}" alt="" loading="lazy">`:''}<span><small>${m.year}</small><strong>${esc(m.name)}</strong><small>${all.length} ${plural(all.length,'trim','trims')}${count?` · ${count} listed in inventory`:' · Research only — none listed'}</small></span></button>`;}).join('')}</div>`;
 }
 
 function pathView(){
@@ -99,7 +101,7 @@ function pickList(title,items,kind,trim){
   return `<label class="tf-item"><input type="checkbox" data-pick="${kind}:${n}"><span class="tf-check" aria-hidden="true"></span><span class="tf-text">${option?'<em class="tf-tag tf-tag-opt"><i class="bubble optional" aria-hidden="true">+</i> Option</em>':''}${itemText(f)}${it.before?`<small class="tf-before">${esc(here.name)}: ${esc(/^Optional/.test(it.before)?'optional — '+(it.before.replace(/^Optional:?\s*/,'')||'extra cost'):it.before==='Not offered'?'not available':it.before)}</small>`:''}</span></label>`;}).join('')}</fieldset>`;
 }
 
-// ---- What's on our lot with everything picked so far, on any trim ----
+// ---- What's listed in inventory with everything picked so far, on any trim ----
 function carCard(r,i,limit){
  const t=allTrims().find(x=>x.id===r.v.trim),name=t?.name||'',missing=r.fit.filter(f=>f.on==='no'),check=r.fit.filter(f=>f.on==='check');
  return `<a class="tf-car${i>=limit?' tf-more':''}" href="/vehicle-${esc(r.v.vin)}"${i>=limit?' hidden':''}>${r.v.photo?`<img src="${esc(r.v.photo)}" alt="" loading="lazy">`:''}<span><em class="tf-trimtag">${esc(name)}</em><strong>${esc(r.v.title)}</strong><span>${r.v.price?money(r.v.price):'Ask for price'}${r.v.stock?` · Stock ${esc(r.v.stock)}`:''}</span>${r.v.color?`<small>${esc(r.v.color)}</small>`:''}${r.fit.length?(missing.length||check.length?`${missing.length?`<small class="tf-miss">Missing: ${esc(missing.map(f=>f.pick.name).join(', '))}</small>`:''}${check.length?`<small class="tf-ask">Ask us: ${esc(check.map(f=>f.pick.name).join(', '))}</small>`:''}`:`<small class="tf-hit">✓ Has everything you picked</small>`):''}</span></a>`;
@@ -112,11 +114,11 @@ function liveStock(here){
  const fit=inventoryFit(e,allTrims(),state.picks),onHere=fit.exact.filter(r=>r.v.trim===here.id),elsewhere=fit.exact.filter(r=>r.v.trim!==here.id);
  if(!fit.exact.length){
   const maybe=fit.possible.length;
-  return `<section class="tf-live-stock"><p class="tf-live">Nothing on our lot has everything you’ve picked right now${maybe?` — ${maybe} may, ask us to confirm`:''}. We’ll show the closest at the end.</p></section>`;
+  return `<section class="tf-live-stock"><p class="tf-live">Nothing listed in inventory has everything you’ve picked right now${maybe?` — ${maybe} may, ask us to confirm`:''}. We’ll show the closest at the end.</p></section>`;
  }
  const trimsWord=plural(new Set(elsewhere.map(r=>r.v.trim)).size,'another trim','other trims');
- const head=onHere.length?`<strong>${onHere.length}</strong> ${esc(here.name)} on our lot ${plural(onHere.length,'has','have')} everything you’ve picked${elsewhere.length?`, and ${elsewhere.length} on ${trimsWord}`:''}`
-  :`No ${esc(here.name)} on our lot has everything you’ve picked — but ${elsewhere.length} on ${trimsWord} ${plural(elsewhere.length,'does','do')}`;
+ const head=onHere.length?`<strong>${onHere.length}</strong> ${esc(here.name)} listed in inventory ${plural(onHere.length,'has','have')} everything you’ve picked${elsewhere.length?`, and ${elsewhere.length} on ${trimsWord}`:''}`
+  :`No ${esc(here.name)} listed in inventory has everything you’ve picked — but ${elsewhere.length} on ${trimsWord} ${plural(elsewhere.length,'does','do')}`;
  return `<section class="tf-live-stock"><p class="tf-live">${head}:</p>${carList([...onHere,...elsewhere],3)}</section>`;
 }
 
@@ -125,7 +127,7 @@ function stepView(){
  const trims=trimsOf(),here=trims[state.at],next=trims[state.at+1],m=current();
  const std=standardEquipment(here);
  // The next trim's list leaves out what this trim already has: standard here, standard on a trim below, or (for a
- // lineup without a full chart) on the window sticker of one of this trim's vehicles on our lot.
+ // lineup without a full chart) on the window sticker of one of this trim's vehicles listed in inventory.
  const entry=stockEntry();
  const onCurrent=key=>{if(m.charted)return false;const ids=entry?.rows?.[key]||[];return !!ids.length&&(entry?.vehicles||[]).some(v=>v.trim===here.id&&v.sticker&&ids.some(n=>v.y.includes(n)));};
  offer={...(next?stepUp(here,next,{below:[...(m.charted?[]:m.below),...trims.slice(0,state.at)],onCurrent}):{adds:[],changes:[],options:[]}),own:trimOptions(here).filter(o=>!state.picks.some(p=>p.key===o.key))};
@@ -139,7 +141,8 @@ function stepView(){
   ${state.picks.length?`<div class="tf-picks"><strong>You picked:</strong> ${state.picks.map(p=>`<span>${esc(p.name)}${p.need==='option'?' (option)':''}</span>`).join('')}</div>`:''}</div>
  </article>
  ${liveStock(here)}
- <details class="tf-standard"${first?' open':''}><summary>${first?`What comes standard on the ${esc(here.name)}, the base of the lineup`:`Everything standard on the ${esc(here.name)}`} <small>(${std.length})</small></summary>${bySection(std).map(g=>`${g.name?`<h4 class="tf-section">${esc(g.name)}</h4>`:''}<ul>${g.items.map(f=>`<li><i class="bubble standard" aria-hidden="true">✓</i><span>${itemText(f)}</span></li>`).join('')}</ul>`).join('')}</details>
+ <div class="tf-priorities"><h3>What matters to you?</h3><p>Find an option below, then check the ones you want.</p><div class="tf-priority-buttons">${['Seats','Screen','Audio','Roof','Camera','Towing','Engine'].map(label=>`<button type="button" data-priority="${label.toLowerCase()}">${label}</button>`).join('')}</div><label for="tf-feature-search">Search choices on this step</label><input id="tf-feature-search" type="search" placeholder="Try heated seats, Harman Kardon or sunroof"><p id="tf-feature-count" role="status"></p></div>
+ <details class="tf-standard"><summary>${first?`What comes standard on the ${esc(here.name)}, the base of the lineup`:`Everything standard on the ${esc(here.name)}`} <small>(${std.length})</small></summary>${bySection(std).map(g=>`${g.name?`<h3 class="tf-section">${esc(g.name)}</h3>`:''}<ul>${g.items.map(f=>`<li><i class="bubble standard" aria-hidden="true">✓</i><span>${itemText(f)}</span></li>`).join('')}</ul>`).join('')}</details>
  ${offer.own.length?`<section class="tf-own">${pickList('Options you can add to the '+esc(here.name),offer.own,'own',here)}${next?'':`<div class="tf-actions"><button type="button" class="btn" data-act="up" disabled>Pick what you want above</button></div>`}</section>`:''}
  ${next?`<section class="tf-next">
   <div class="tf-next-head">${photo(next,'tf-next-photo')}<div><p class="eyebrow">Next trim up</p><h3>Step up to the ${esc(next.name)}</h3><p class="tf-sub">What the ${esc(next.name)} adds over the ${esc(here.name)}</p>${next.difference?`<p>${esc(next.difference)}</p>`:''}${stockLine(next)}</div></div>
@@ -154,22 +157,22 @@ function stepView(){
  <p class="tf-restart"><button type="button" class="tf-link" data-act="restart">Choose a different vehicle</button></p>`;
 }
 
-// Every vehicle of this lineup on our lot, matched to the picks by VIN and its own window sticker, whatever its trim.
+// Every vehicle of this lineup listed in inventory, matched to the picks by VIN and its own window sticker, whatever its trim.
 function inventoryView(here){
  const m=current(),entry=stockEntry(),label=`${m.year} ${m.name}`;
- if(!entry?.vehicles?.length)return `<section class="tf-instock"><h3>No ${esc(label)} on our lot right now</h3><p>Text Sam and he’ll look for one.</p></section>`;
+ if(!entry?.vehicles?.length)return `<section class="tf-instock"><h3>No ${esc(label)} listed in this snapshot</h3><p>Text Sam and he’ll look for one.</p></section>`;
  if(!state.picks.length){
   const list=inventoryFit(entry,allTrims(),[]).rows,mine=list.filter(r=>r.v.trim===here.id),rest=list.filter(r=>r.v.trim!==here.id);
-  if(mine.length)return `<section class="tf-instock"><h3>${mine.length} ${esc(here.name)} on our lot</h3>${carList(mine)}</section>`;
-  return `<section class="tf-instock"><h3>No ${esc(here.name)} on our lot right now</h3>${rest.length?`<p class="tf-small">These ${esc(label)}s are on our lot now:</p>${carList(rest)}`:'<p>Text Sam and he’ll look for one.</p>'}</section>`;
+  if(mine.length)return `<section class="tf-instock"><h3>${mine.length} ${esc(here.name)} listed in inventory</h3>${carList(mine)}</section>`;
+  return `<section class="tf-instock"><h3>No ${esc(here.name)} listed in this snapshot</h3>${rest.length?`<p class="tf-small">These ${esc(label)}s are listed in this snapshot:</p>${carList(rest)}`:'<p>Text Sam and he’ll look for one.</p>'}</section>`;
  }
  const fit=inventoryFit(entry,allTrims(),state.picks),total=entry.vehicles.length;
  const mine=fit.exact.filter(r=>r.v.trim===here.id),others=fit.exact.filter(r=>r.v.trim!==here.id);
  const gone=fit.availability.filter(a=>!a.yes);
- const summary=`<ul class="tf-avail">${fit.availability.map(a=>`<li class="${a.yes?'':'tf-gone'}">${a.yes?'<i class="bubble standard" aria-hidden="true">✓</i>':'<i class="bubble unavailable" aria-hidden="true">−</i>'}<span><strong>${esc(a.pick.name)}</strong> <small>${a.yes?`on ${a.yes} of our ${total} ${esc(label)}s`:a.check?`not confirmed on any of our ${total} — ${a.check} to check with us`:`not on any ${esc(label)} on our lot right now`}</small></span></li>`).join('')}</ul>`;
+ const summary=`<ul class="tf-avail">${fit.availability.map(a=>`<li class="${a.yes?'':'tf-gone'}">${a.yes?'<i class="bubble standard" aria-hidden="true">✓</i>':'<i class="bubble unavailable" aria-hidden="true">−</i>'}<span><strong>${esc(a.pick.name)}</strong> <small>${a.yes?`on ${a.yes} of our ${total} ${esc(label)}s`:a.check?`not confirmed on any of our ${total} — ${a.check} to check with us`:`not on any ${esc(label)} listed in this snapshot`}</small></span></li>`).join('')}</ul>`;
  let body;
- if(fit.exact.length)body=`<h3>${mine.length?`${mine.length} ${esc(here.name)}`:`No ${esc(here.name)}`} on our lot ${mine.length===1?'has':mine.length?'have':'has'} everything you picked</h3>${mine.length?`<p class="tf-small">Checked against each vehicle’s own window sticker.</p>${carList(mine)}`:''}${others.length?`<h4 class="tf-subhead">${mine.length?'Also on our lot':'On our lot'} — other trims with everything you picked</h4>${carList(others)}`:''}`;
- else body=`<h3>Nothing on our lot has everything you picked right now</h3><p class="tf-small">Here’s what we have of each pick, checked against every ${esc(label)}’s window sticker:</p>${summary}${fit.possible.length?`<h4 class="tf-subhead">May have it all — ask us to confirm</h4>${carList(fit.possible)}`:''}${fit.rows.length?`<h4 class="tf-subhead">Closest on our lot</h4>${carList(fit.rows.filter(r=>!fit.possible.includes(r)).slice(0,12))}`:''}<p class="tf-small">Want it exactly? Text Sam — he can locate or order one with everything on your list.</p>`;
+ if(fit.exact.length)body=`<h3>${mine.length?`${mine.length} ${esc(here.name)}`:`No ${esc(here.name)}`} listed in inventory ${mine.length===1?'has':mine.length?'have':'has'} everything you picked</h3>${mine.length?`<p class="tf-small">Checked against each vehicle’s own window sticker.</p>${carList(mine)}`:''}${others.length?`<h4 class="tf-subhead">${mine.length?'Also listed in inventory':'Listed in inventory'} — other trims with everything you picked</h4>${carList(others)}`:''}`;
+ else body=`<h3>Nothing listed in inventory has everything you picked right now</h3><p class="tf-small">Here’s what we have of each pick, checked against every ${esc(label)}’s window sticker:</p>${summary}${fit.possible.length?`<h4 class="tf-subhead">May have it all — ask us to confirm</h4>${carList(fit.possible)}`:''}${fit.rows.length?`<h4 class="tf-subhead">Closest listed in inventory</h4>${carList(fit.rows.filter(r=>!fit.possible.includes(r)).slice(0,12))}`:''}<p class="tf-small">Want it exactly? Text Sam — he can locate or order one with everything on your list.</p>`;
  return `<section class="tf-instock">${body}${fit.exact.length&&gone.length?summary:''}</section>`;
 }
 function resultView(){
@@ -191,11 +194,11 @@ function resultView(){
  ${sourceNote()}
  <div class="tf-actions tf-final"><a class="btn" href="/contact?request=${encodeURIComponent(request)}">Ask Sam about a ${esc(here.name)}</a>${prev?`<a class="tf-secondary" href="${esc(compare)}">Compare it with the ${esc(prev.name)}</a>`:''}${s?.query?`<a class="tf-secondary" href="/inventory?q=${encodeURIComponent(s.query)}">See them in Find Your Car</a>`:''}<button type="button" class="tf-secondary" data-act="back">Go back a step</button><button type="button" class="tf-link" data-act="restart">Start over</button></div>`;
 }
-// Trims the factory chart has no column for (special editions, packages sold as trims): named, with what is on our lot.
+// Trims the factory chart has no column for (special editions, packages sold as trims): named, with what is listed in inventory.
 function othersView(){
  const m=current();if(!m.others.length)return '';
  const why=m.charted?'The factory chart doesn’t give these their own column (they’re special editions or packages on another trim), so they aren’t in the steps above.':'The factory guide has fewer published details for these, so they aren’t in the steps above.';
- return `<section class="tf-others"><h3>Other ${esc(m.year+' '+m.name)} trims</h3><p class="tf-small">${why} Ask us about any of them.</p><ul>${m.others.map(t=>{const s=stockFor(t);return `<li><strong>${esc(t.name)}</strong>${t.difference?` — ${esc(t.difference)}`:''} <small>${s?`${s.count} on our lot${s.from?' · from '+money(s.from):''}`:'None on our lot'}</small></li>`;}).join('')}</ul></section>`;
+ return `<section class="tf-others"><h3>Other ${esc(m.year+' '+m.name)} trims</h3><p class="tf-small">${why} Ask us about any of them.</p><ul>${m.others.map(t=>{const s=stockFor(t);return `<li><strong>${esc(t.name)}</strong>${t.difference?` — ${esc(t.difference)}`:''} <small>${s?`${s.count} listed in inventory${s.from?' · from '+money(s.from):''}`:'None listed in inventory'}</small></li>`;}).join('')}</ul></section>`;
 }
 function sourceNote(){
  const m=current();
@@ -210,7 +213,7 @@ function withChecked(){
  return [...state.picks,...chosen.filter((p,n)=>!state.picks.some(q=>q.key===p.key)&&chosen.findIndex(q=>q.key===p.key)===n)];
 }
 // The page's bottom bar (Perfect Match only): "See my selection" opens the match for the trim the shopper is on, with
-// what they picked and the vehicles on our lot that have it.
+// what they picked and the vehicles listed in inventory that have it.
 const selection=document.querySelector('[data-selection]');
 function syncSelection(){
  if(!selection)return;
@@ -224,10 +227,16 @@ selection?.addEventListener('click',async()=>{
  const picks=withChecked(),match=picks.length?nextMatch(current().model,state.at-1,picks):null,at=match?match.index:state.at;
  await go({done:true,note:null,picks,at,path:state.path.includes(at)?state.path:[...state.path,at]});
 });
+root.addEventListener('change',e=>{if(e.target.id==='tf-budget'){maxPrice=Math.max(0,Math.min(1000000,Number(e.target.value)||0));save(true);draw(false);}});
 function draw(scroll){
  if(!state.model||!current())root.innerHTML=pickerView();
  else root.innerHTML=state.done?resultView():stepView();
+ const freshness=document.createElement('p');freshness.className='tf-snapshot';freshness.textContent='Inventory snapshot'+(Number.isFinite(Date.parse(stock.generatedAt))?' checked '+new Date(stock.generatedAt).toLocaleString('en-US',{timeZone:'America/Chicago',dateStyle:'medium',timeStyle:'short'})+' CT':'')+(maxPrice?' · Listed prices up to '+money(maxPrice):'')+'. Confirm current price and availability with Sam or Ryan.';root.prepend(freshness);
  syncSelection();
+ const search=root.querySelector('#tf-feature-search');
+ if(search){const terms={seats:/seat|leather|upholstery/i,screen:/screen|display|uconnect/i,audio:/audio|speaker|sound|harman|alpine|mcintosh/i,roof:/roof|sunroof|top/i,camera:/camera|view|parksense/i,towing:/tow|trailer|hitch/i,engine:/engine|hemi|hurricane|pentastar|powertrain/i};
+ const filter=()=>{const value=search.value.trim().toLowerCase(),pattern=terms[value];let count=0;root.querySelectorAll('.tf-item').forEach(item=>{const text=item.textContent.toLowerCase(),show=!value||(pattern?pattern.test(text):text.includes(value));item.hidden=!show;if(show)count++;});root.querySelectorAll('.tf-group').forEach(group=>{group.hidden=![...group.querySelectorAll('.tf-item')].some(i=>!i.hidden);});root.querySelector('#tf-feature-count').textContent=value?`${count} available choices match. Clear the search to see all choices.`:'';};
+ search.addEventListener('input',filter);root.querySelectorAll('[data-priority]').forEach(b=>b.addEventListener('click',()=>{search.value=b.dataset.priority;filter();}));}
  if(scroll)root.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});
  const ups=root.querySelectorAll('[data-act=up]');
  if(ups.length){
@@ -268,7 +277,7 @@ try{
   fetch('/data/trim-stock.json').then(r=>r.ok?r.json():{trims:{}}).catch(()=>({trims:{}}))]);
  stock=inStock;
  const charted=lineups(guide,index,{fleet}),chartedIds=new Set(charted.map(m=>m.stockId));
- // Lineups without a published factory chart stay in the guide when we have them on our lot (or, for fleet, always for
+ // Lineups without a published factory chart stay in the guide when we have them listed in inventory (or, for fleet, always for
  // the ProMaster vans): built from the trim guide, and labeled as such.
  const fallback=finderModels(guide).filter(m=>!chartedIds.has(m.id)&&FLEET.includes(m.id)===fleet&&(fleet||stock.models?.[m.id]?.vehicles?.length))
   .map(m=>({...m,stockId:m.id,charted:false}));

@@ -58,3 +58,9 @@ https://:version.:project.pages.dev/*
 
 /vehicles-featured.html
   X-Robots-Tag: noindex
+
+/shopping-mobile-check
+  X-Robots-Tag: noindex, nofollow
+
+/shopping-mobile-check.html
+  X-Robots-Tag: noindex, nofollow

@@ -9,7 +9,9 @@ export function installedAudioFact(vehicle,sticker){
  const candidates=lines.map((line,i)=>({line,i})).filter(({line})=>/\b\d+[ -]+(?:amplified[ -]+)?speakers?\b/i.test(line)||Object.values(brands).some(p=>p.test(line))&&/speaker|audio|sound/i.test(line));
  const upgrades=start<0?[]:candidates.filter(c=>c.i>start),selected=upgrades.length?upgrades:candidates;
  if(!selected.length||selected.some(c=>blocked.test(c.line)))return null;
- const values=[...new Set(selected.map(c=>c.line.replace(/\s+\$[\d,.]+\s*$/,'')))];
+ let values=[...new Set(selected.map(c=>c.line.replace(/\s+\$[\d,.]+\s*$/,'')))];
+ // A flattened source may omit the optional-equipment heading. The higher speaker-count system replaces its base system.
+ if(values.length>1){const sizes=values.map(v=>Number(v.match(/\b(\d+)[ -]+(?:amplified[ -]+)?speakers?\b/i)?.[1]));if(sizes.every(n=>n>0)){const max=Math.max(...sizes);values=values.filter((v,i)=>sizes[i]===max);}}
  if(values.length!==1)return null;
  return {value:true,displayValue:values[0],comparisonValue:values[0].toLowerCase(),method:'sticker-specification',evidence:values,sourceUrl:sticker.sourceUrl};
 }

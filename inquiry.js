@@ -45,6 +45,7 @@
     const detail = document.createElement('p'); detail.textContent = `Stock ${vehicle.stock} · VIN ${vehicle.vin}`;
     card.append(title, detail); card.hidden = false;
   }
+  for(const [id,who,number] of [['quick-text-sam','Sam','+17372091320'],['quick-text-ryan','Ryan','+14014104727']]){const a=byId(id);if(a){const about=vehicle?`stock ${vehicle.stock}, VIN ${vehicle.vin}`:requestedVin?`VIN ${requestedVin}`:'';a.href=`sms:${number}?body=${encodeURIComponent(`Hi ${who}, `+(about?`can you help me with ${about}? `:'')+(sharedRequest||''))}`;}}
   syncAdvisor();
   form.addEventListener('input', syncAdvisor);
   form.addEventListener('change', syncAdvisor);

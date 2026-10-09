@@ -20,9 +20,7 @@ export function comparisonRows(definitions,records,requested=[],guides=[]){
   const known=states.filter(s=>s!=='unknown');
   let group=known.length===0?'unknown':known.length<states.length?'check':'same';
   if(new Set(known).size>1)group='difference';
-  // One window sticker lists it and another readable sticker does not. A shopper comparing two trucks needs to see
-  // that (ventilated seats, a sunroof, skid plates), so it is shown with the differences, worded as what it is:
-  // listed on one sticker, not stated on the other. With no sticker at all for a vehicle it stays an item to check.
+  // Missing documentation is a separate evidence gap, never proof that equipment differs.
   else if(group==='check'&&records.every(s=>s?.status==='verified')&&known.some(s=>s!=='absent'))group='listed-on-some';
   return {id,label,facts,group,specification:facts.some(f=>f?.comparisonValue!==undefined),requested:requested.includes(id)};
  }).sort((a,b)=>Number(b.requested)-Number(a.requested)||(order.indexOf(a.group)-order.indexOf(b.group)));
@@ -34,8 +32,8 @@ export function visibleComparisonRows(rows, mode='important', search='') {
   if(term&&!(row.label+' '+row.facts.map(f=>f?.displayValue||'').join(' ')).toLowerCase().includes(term))return false;
   if(mode==='requested')return row.requested;
   if(mode==='all')return row.group==='same'&&row.facts.every(Boolean);
-  if(mode==='check')return row.group==='check'||(row.group==='unknown'&&(row.requested||Boolean(term)));
-  if(mode==='complete')return row.group==='same'||row.group==='difference'||row.group==='listed-on-some';
-  return row.group==='difference'||row.group==='listed-on-some';
+  if(mode==='check')return row.group==='check'||row.group==='listed-on-some'||(row.group==='unknown'&&(row.requested||Boolean(term)));
+  if(mode==='complete')return row.group==='same'||row.group==='difference'||row.group==='listed-on-some'||row.group==='check'||(row.requested&&row.group==='unknown');
+  return row.group==='difference';
  });
 }

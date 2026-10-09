@@ -72,7 +72,15 @@ function identity(sticker){
  return pacifica?{year,model:'Pacifica',trim:pacifica[1]}:null;
 }
 function packageOn(lines,name){const n=norm(name);return lines.find(l=>{const value=norm(l).replace(/\s+\$[\d,.]+$/,'');return value===n||value===n+' package';});}
+const resolvedEquipment=new WeakMap();
 export function applyFactoryEquipment(vehicle,sticker){
+ if(!vehicle||!sticker||typeof sticker!=='object')return sticker;
+ const signature=[vehicle.vin,vehicle.title,vehicle.year].join('|'),cached=resolvedEquipment.get(sticker)?.get(vehicle);if(cached?.signature===signature)return cached.result;
+ const result=resolveFactoryEquipment(vehicle,sticker);
+ let byVehicle=resolvedEquipment.get(sticker);if(!byVehicle){byVehicle=new WeakMap();resolvedEquipment.set(sticker,byVehicle);}
+ byVehicle.set(vehicle,{signature,result});return result;
+}
+function resolveFactoryEquipment(vehicle,sticker){
  if(sticker?.status!=='verified'||!vehicle?.vin||sticker.vin&&sticker.vin!==vehicle.vin)return sticker;
  // Read the saved sticker text by the current wording rules before anything else builds on its features.
  sticker=applyRulings(vehicle,sticker);

@@ -295,10 +295,11 @@ export function parseQuery(input){
 }
 export function matchVehicle(vehicle,sticker,query){
  if(vehicle.locationId!=='18393')return {kind:'excluded',reason:'store'};
- sticker=applyFactoryEquipment(vehicle,sticker);
  if(query.condition&&vehicle.condition!==query.condition)return {kind:'excluded',reason:'condition'};
  if(query.budget!==null&&(vehicle.price===null||vehicle.price>query.budget))return {kind:'excluded',reason:'price'};
  if(query.mileage!==null&&(vehicle.miles===null||vehicle.miles>query.mileage))return {kind:'excluded',reason:'mileage'};
+ // Plain browsing needs no equipment resolution. Keep the initial phone interaction responsive.
+ if(!query.requirements.length&&!query.equipmentOption&&!query.terms.length&&!query.bodyType&&!query.categories?.length)return {kind:'match',checks:[],categoryChecks:[]};
  const categoryMatch=matchVehicleCategories(vehicle,sticker,query);
  if(!categoryMatch.matches)return {kind:'excluded',reason:'vehicle category'};
  const title=joinUnits(normalizeText(vehicle.title+' '+vehicle.stock+' '+vehicle.vin).toLowerCase());
@@ -347,6 +348,7 @@ export function matchVehicle(vehicle,sticker,query){
   }
  }
  if(unmatched.length&&!unmatched.every(t=>text.split(/[^a-z0-9'-]+/).includes(t)))return {kind:'excluded',reason:'terms'};
+ sticker=applyFactoryEquipment(vehicle,sticker);
  const checks=query.requirements.map(req=>{let fact=engineFact(req.id,sticker)||(sticker?.status==='verified'?sticker.features?.[req.id]:null);if(req.id.startsWith('interior')&&sticker?.status==='verified'){const color=interiorColors.find(c=>c.id===req.id);const interior=lines.filter(l=>/^interior(?: color)?:/i.test(l)).map(l=>l.split(/exterior(?: color)?:/i)[0]);if(color&&interior.length)fact={value:interior.some(l=>new RegExp(color.pattern,'i').test(l)),evidence:interior};}if(sticker?.vin!==vehicle.vin)fact=null;if(req.id.startsWith('exterior'))fact=sticker?.vin===vehicle.vin?exteriorColorFact(req.id,sticker):null;return {...req,label:labels[req.id],sourceUrl:fact?.sourceUrl,method:fact?.method,state:fact?fact.value===req.wanted?'match':'conflict':'unknown',evidence:fact?.evidence||[]};});
  if(query.equipmentOption){const fact=installedOptionFact(vehicle,sticker,query.equipmentOption);checks.push({id:'selectedOption',label:query.equipmentOption.label,wanted:true,state:fact?fact.value?'match':'conflict':'unknown',evidence:fact?.evidence||[],sourceUrl:fact?.sourceUrl,reason:fact?null:optionEvidenceReason(vehicle,sticker,query.equipmentOption)});}
  if(checks.some(c=>c.state==='conflict'))return {kind:'excluded',reason:'equipment',checks};

@@ -8,11 +8,12 @@ const infotainment=line=>/\b(?:uconnect|infotainment|touch[ -]?screen|center(?: 
 const cluster=line=>/\b(?:cluster|instrument (?:panel|display))\b/i.test(line)&&/display|screen/i.test(line);
 export const specificationDefinitions=[['engineSpecification','Engine'],['transmissionSpecification','Transmission'],['exteriorPaint','Exterior color'],['interiorColor','Interior color'],['seatUpholstery','Seat upholstery'],['infotainmentScreen','Infotainment screen size'],['instrumentScreen','Instrument cluster screen size'],['equipmentGroup','Equipment group'],['listedPackages','Listed factory packages'],['driverAdjustment','Driver seat adjustment'],['passengerAdjustment','Front passenger seat adjustment'],['audioSystem','Audio system / speakers'],['bedPower','Truck-bed power outlet'],['powerInverter','Power inverter capacity'],['tailgateOperation','Tailgate operation'],['passengerDisplay','Front passenger display'],['digitalMirror','Digital rear-view mirror'],['handsFreeDriving','Hands-free driving assistance'],['wheelSize','Road wheel diameter'],['fuelTankCapacity','Fuel tank capacity']];
 
-function installedFact(sticker,selector,extract){
+function installedFact(sticker,selector,extract,highest=false){
  const lines=sticker.lines.map(norm),optionIndex=lines.findIndex(l=>/^(?:optional equipment|options & pricing|optional features)\b/i.test(l));
  const candidates=lines.map((line,index)=>({line,index})).filter(x=>selector(x.line));
  const optional=optionIndex<0?[]:candidates.filter(x=>x.index>optionIndex);
- const selected=optional.length?optional:candidates;
+ let selected=optional.length?optional:candidates;
+ if(highest&&selected.length>1){const sizes=selected.map(x=>Number(extract(x.line)?.match(/^[\d.]+/)?.[0]));if(sizes.every(n=>n>0)){const max=Math.max(...sizes);selected=selected.filter((x,i)=>sizes[i]===max);}}
  // A replacement of unspecified size must not leave a standard size in place.
  if(!selected.length||selected.some(x=>blocked.test(x.line)))return null;
  const values=selected.map(x=>extract(x.line));
@@ -31,8 +32,8 @@ export function withComparisonSpecifications(vehicle,sticker){
   exteriorPaint:field(/^Exterior Color:/i),
   interiorColor:field(/^Interior Color:/i),
   seatUpholstery:field(/^Interior:(?! Color)/i),
-  infotainmentScreen:installedFact(sticker,infotainment,screen),
-  instrumentScreen:installedFact(sticker,cluster,screen),
+  infotainmentScreen:installedFact(sticker,infotainment,screen,true),
+  instrumentScreen:installedFact(sticker,cluster,screen,true),
   fuelTankCapacity:installedFact(sticker,l=>/\bfuel[ -]tank\b/i.test(l)&&!/skid|plate|shield|cover|strap/i.test(l),l=>{const m=l.match(/\b(\d+(?:\.\d+)?)[ -]+gallon\b/i);return m?Number(m[1])+' gallons':null;}),
   equipmentGroup:installedFact(sticker,l=>/\blevel\s+[\dA-Z]+\s+(?:equipment\s+)?group\b/i.test(l),l=>l.replace(/\s+\$[\d,.]+\s*$/,'').replace(/[®™]/g,'')),
   driverAdjustment:installedFact(sticker,l=>/\b\d+[ -]+way\b.*\b(?:power|manual)\b.*\bdriver seat\b/i.test(l)&&!/lumbar/i.test(l),l=>{const m=l.match(/\b(\d+)[ -]+way\b.*\b(power|manual)\b/i);return m?m[1]+'-way '+m[2].toLowerCase():null;}),

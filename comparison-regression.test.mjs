@@ -23,16 +23,16 @@ test('audio requires the selected VIN and does not guess a brand from generic sp
  const s=repairInstalledAudioEvidence(vehicle,{...sticker,lines:['9-Amplified Speakers with Subwoofer']});
  assert.equal(s.features.harman,undefined);assert.equal(s.features.alpine,undefined);
 });
-test('all confirmed equipment includes shared absences; a feature on one sticker only is a difference',()=>{
+test('all equipment preserves shared absences and separates missing evidence from differences',()=>{
  const defs=[['same','Same'],['absent','Absent'],['different','Different'],['partial','Partial'],['missing','Missing']];
  const a={status:'verified',features:{same:{value:true},absent:{value:false},different:{value:true},partial:{value:true}}};
  const b={status:'verified',features:{same:{value:true},absent:{value:false},different:{value:false}}};
  const rows=comparisonRows(defs,[a,b]);
  assert.equal(visibleComparisonRows(rows,'complete').length,4);
  assert.equal(visibleComparisonRows(rows,'all').length,2);
- // "different" (one has it, one is stated not to) and "partial" (listed on one readable sticker only) are both differences.
- assert.deepEqual(visibleComparisonRows(rows,'important').map(r=>[r.id,r.group]),[['different','difference'],['partial','listed-on-some']]);
- assert.equal(visibleComparisonRows(rows,'check').length,0);
+ // Only a confirmed present/absent difference belongs in Differences.
+ assert.deepEqual(visibleComparisonRows(rows,'important').map(r=>[r.id,r.group]),[['different','difference']]);
+ assert.equal(visibleComparisonRows(rows,'check').length,1);
  // With no readable sticker for one vehicle, the same gap is still only an item to check.
  const unread=comparisonRows(defs,[a,{status:'unavailable',features:{}}]);
  assert.equal(unread.find(r=>r.id==='partial').group,'check');
@@ -405,4 +405,25 @@ test('picked features are checked against each in-stock vehicle, whatever its tr
  assert.deepEqual(vehicleFit(entry.vehicles[1],willys,[heated,locker],entry).map(f=>f.on+'/'+f.by),['no/sticker','yes/trim']);
  assert.deepEqual(vehicleFit(entry.vehicles[2],sport,[heated,locker],entry).map(f=>f.on),['yes','check']);
  assert.deepEqual(fit.availability.map(a=>[a.yes,a.check]),[[2,1],[3,1]]);
+});
+
+
+test('vehicle detail equipment displays installed upgrades and explains replaced base entries',async()=>{
+ const {installedEquipmentDisplay}=await import('./installed-equipment.mjs');
+ const data=JSON.parse(fs.readFileSync(new URL('./data/used-inventory.json',import.meta.url)));
+ const index=JSON.parse(fs.readFileSync(new URL('./data/equipment-index.json',import.meta.url)));
+ const v=data.vehicles.find(v=>v.stock==='R12315'),s=index.records[v.vin];
+ const display=installedEquipmentDisplay(v,s);
+ assert.ok(display.evidence.some(e=>/19-Speaker Harman/i.test(e)));
+ assert.ok(display.evidence.some(e=>/14\.4-Inch/i.test(e)));
+ assert.ok(!display.evidence.some(e=>/9-Amplified Speakers|12\.0-Inch/i.test(e)));
+ assert.ok(display.replaced.some(e=>/9-Amplified Speakers/i.test(e)));
+ assert.ok(display.replaced.some(e=>/12\.0-Inch/i.test(e)));
+ assert.equal(installedEquipmentDisplay({...v,vin:'wrong'},s).evidence.length,0);
+});
+test('flattened stickers resolve higher screen and speaker upgrades without a section heading',()=>{
+ const s={vin:vehicle.vin,status:'verified',features:{},lines:['9-Amplified Speakers with Subwoofer','19-Speaker Harman Kardon Premium Sound','Uconnect 5 Nav with 12.0-Inch Touch Screen Display','Uconnect 5 Nav with 14.4-Inch Touch Screen Display']};
+ const resolved=withComparisonSpecifications(vehicle,s);
+ assert.match(resolved.features.audioSystem.displayValue,/19-Speaker/);
+ assert.equal(resolved.features.infotainmentScreen.displayValue,'14.4 inches');
 });
