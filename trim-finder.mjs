@@ -172,7 +172,7 @@ function inventoryView(here){
  const summary=`<ul class="tf-avail">${fit.availability.map(a=>`<li class="${a.yes?'':'tf-gone'}">${a.yes?'<i class="bubble standard" aria-hidden="true">✓</i>':'<i class="bubble unavailable" aria-hidden="true">−</i>'}<span><strong>${esc(a.pick.name)}</strong> <small>${a.yes?`on ${a.yes} of our ${total} ${esc(label)}s`:a.check?`not confirmed on any of our ${total} — ${a.check} to check with us`:`not on any ${esc(label)} listed in this snapshot`}</small></span></li>`).join('')}</ul>`;
  let body;
  if(fit.exact.length)body=`<h3>${mine.length?`${mine.length} ${esc(here.name)}`:`No ${esc(here.name)}`} listed in inventory ${mine.length===1?'has':mine.length?'have':'has'} everything you picked</h3>${mine.length?`<p class="tf-small">Checked against each vehicle’s own window sticker.</p>${carList(mine)}`:''}${others.length?`<h4 class="tf-subhead">${mine.length?'Also listed in inventory':'Listed in inventory'} — other trims with everything you picked</h4>${carList(others)}`:''}`;
- else body=`<h3>Nothing listed in inventory has everything you picked right now</h3><p class="tf-small">Here’s what we have of each pick, checked against every ${esc(label)}’s window sticker:</p>${summary}${fit.possible.length?`<h4 class="tf-subhead">May have it all — ask us to confirm</h4>${carList(fit.possible)}`:''}${fit.rows.length?`<h4 class="tf-subhead">Closest listed in inventory</h4>${carList(fit.rows.filter(r=>!fit.possible.includes(r)).slice(0,12))}`:''}<p class="tf-small">Want it exactly? Text Sam — he can locate or order one with everything on your list.</p>`;
+ else body=`<h3>No vehicle in this inventory snapshot has everything you picked</h3><p class="tf-small">Here’s what we have of each pick, checked against every ${esc(label)}’s window sticker:</p>${summary}${fit.possible.length?`<h4 class="tf-subhead">May have it all — ask us to confirm</h4>${carList(fit.possible)}`:''}${fit.rows.length?`<h4 class="tf-subhead">Closest listed in inventory</h4>${carList(fit.rows.filter(r=>!fit.possible.includes(r)).slice(0,12))}`:''}<p class="tf-small">Want it exactly? Text Sam — he can locate or order one with everything on your list.</p>`;
  return `<section class="tf-instock">${body}${fit.exact.length&&gone.length?summary:''}</section>`;
 }
 function resultView(){
@@ -180,7 +180,7 @@ function resultView(){
  const status=pickStatus(here,state.picks),options=status.filter(p=>p.on==='option'),missing=status.filter(p=>!p.on);
  const prev=state.path.length>1?trims[state.path[state.path.length-2]]:trims[state.at-1];
  const compare=`/trim-guide?model=${encodeURIComponent(current().stockId||state.model)}&trims=${[prev?.id,here.id].filter(Boolean).map(encodeURIComponent).join(',')}`;
- const request=`I used ${toolName} on Cars With Sam and landed on the ${fullName(here)}.`+(state.picks.length?` What I want: ${state.picks.map(p=>p.name+(p.need==='option'?' (option)':'')).join(', ')}.`:'')+` Can you help me find the right one?`;
+ const request=`I used ${toolName} on Cars With Sam and landed on the ${fullName(here)}.`+(state.picks.length?` What I want: ${state.picks.map(p=>p.name+(p.need==='option'?' (option)':'')).join(', ')}.`:'')+(maxPrice?` My maximum listed price is ${money(maxPrice)}.`:'')+` Can you help me find the right one?`;
  return `${pathView()}
  <article class="tf-current tf-result">
   ${photo(here)}
@@ -192,7 +192,7 @@ function resultView(){
  ${inventoryView(here)}
  ${othersView()}
  ${sourceNote()}
- <div class="tf-actions tf-final"><a class="btn" href="/contact?request=${encodeURIComponent(request)}">Ask Sam about a ${esc(here.name)}</a>${prev?`<a class="tf-secondary" href="${esc(compare)}">Compare it with the ${esc(prev.name)}</a>`:''}${s?.query?`<a class="tf-secondary" href="/inventory?q=${encodeURIComponent(s.query)}">See them in Find Your Car</a>`:''}<button type="button" class="tf-secondary" data-act="back">Go back a step</button><button type="button" class="tf-link" data-act="restart">Start over</button></div>`;
+ <div class="tf-actions tf-final"><a class="btn" href="/contact?request=${encodeURIComponent(request)}">Ask Sam about a ${esc(here.name)}</a>${prev?`<a class="tf-secondary" href="${esc(compare)}">Compare it with the ${esc(prev.name)}</a>`:''}${s?.query&&!state.picks.length?`<a class="tf-secondary" href="/inventory?q=${encodeURIComponent(s.query+(maxPrice?' under '+maxPrice:''))}">Browse this trim in Find Your Car</a>`:''}<button type="button" class="tf-secondary" data-act="back">Go back a step</button><button type="button" class="tf-link" data-act="restart">Start over</button></div>`;
 }
 // Trims the factory chart has no column for (special editions, packages sold as trims): named, with what is listed in inventory.
 function othersView(){

@@ -1,6 +1,6 @@
 // One static header for the main site and generated vehicle pages.
 const maps='https://www.google.com/maps/place/Samuel+Sweitzer+at+Covert+Chrysler+Dodge+Jeep+Ram+of+Austin/data=!4m2!3m1!1s0x8644cbf5d9aed9b9:0xc8c2bee601bd021?hl=en';
-const headLinks='<link rel="icon" href="/favicon.ico" sizes="any"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="stylesheet" href="/phone-badge.css?v=stacked2"><link rel="stylesheet" href="/site-shell.css?v=20261009-cleanup">';
+const headLinks='<link rel="icon" href="/favicon.ico" sizes="any"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="stylesheet" href="/phone-badge.css?v=stacked2"><link rel="stylesheet" href="/site-shell.css?v=20261009-touch">';
 function phone(advisor='Sam',header=false){
  const ryan=advisor==='Ryan',number=ryan?'401-410-4727':'737-209-1320',tel=ryan?'+14014104727':'+17372091320';
  return `<a href="tel:${tel}" class="sam-phone${ryan?' ryan-phone':''}${header?' header-phone':''}" aria-label="Call ${advisor} at ${number}"><img class="sam-phone-stacked${ryan?' ryan-phone-stacked':''}" src="/${ryan?'ryan-phone-stacked-v1.webp':'sam-phone-stacked-v2.webp'}" alt="${number}" width="1546" height="1017" decoding="async"></a>`;
