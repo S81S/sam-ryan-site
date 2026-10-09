@@ -7,14 +7,15 @@ import * as factory from './factory-facts.mjs';
 import {plainFact} from './plain-labels.mjs';
 
 async function guideSession(){
+ let checked=[];
  const listeners={},windowListeners={},location={href:'https://carswithsam.com/perfect-match',search:''};
- const root={dataset:{},innerHTML:'',addEventListener:(name,fn)=>listeners[name]=fn,querySelector:()=>null,querySelectorAll:()=>[],contains:()=>true,prepend(node){this.freshness=node.textContent;},scrollIntoView(){}};
+ const root={dataset:{},innerHTML:'',addEventListener:(name,fn)=>listeners[name]=fn,querySelector:()=>null,querySelectorAll:selector=>selector==='[data-pick]:checked'?checked:[],contains:()=>true,prepend(node){this.freshness=node.textContent;},scrollIntoView(){}};
  const history={replaceState(state,unused,url){location.href=String(url);location.search=new URL(url).search;},pushState(state,unused,url){this.replaceState(state,unused,url);}};
  const context={...ladder,...factory,plainFact,URL,URLSearchParams,console,location,history,matchMedia:()=>({matches:true}),document:{getElementById:()=>root,querySelector:()=>null,createElement:()=>({})},window:{addEventListener:(name,fn)=>windowListeners[name]=fn},fetch:async path=>({ok:true,json:async()=>JSON.parse(readFileSync(new URL('.'+path,import.meta.url),'utf8'))})};
- const source=readFileSync(new URL('./trim-finder.mjs',import.meta.url),'utf8').replace(/^import .*;\n/gm,'');
+ const source=readFileSync(new URL('./trim-finder.mjs',import.meta.url),'utf8').replace(/^import .*;\r?\n/gm,'');
  await vm.runInNewContext('(async()=>{'+source+'})()',context);
- const click=async dataset=>{const button={dataset,disabled:false};await listeners.click({target:{closest:()=>button}});};
- return {root,location,listeners,windowListeners,click};
+ const click=async dataset=>{const button={dataset,disabled:false};await listeners.click({target:{closest:()=>button}});checked=[];};
+ return {root,location,listeners,windowListeners,click,check:pick=>{checked=[{dataset:{pick}}];}};
 }
 
 test('typed budget survives immediate model selection, vehicle links and advisor handoff',async()=>{
@@ -44,4 +45,20 @@ test('browser history restores the budget encoded in the destination URL',async(
  await s.windowListeners.popstate({state:null});
  assert.match(s.root.innerHTML,/value="30000"/);
  assert.match(s.root.freshness,/\$30,000/);
+});
+
+test('Grand Cherokee L FamCAM-only selection offers the evidence-confirmed Limited VINs and carries the request',async()=>{
+ const s=await guideSession();
+ await s.click({model:'jeep-grand-cherokee#l'});
+ const label=[...s.root.innerHTML.matchAll(/<label class="tf-item">[\s\S]*?<\/label>/g)].find(m=>/FamCAM/i.test(m[0]));
+ assert.ok(label,'FamCAM option is offered');
+ s.check(label[0].match(/data-pick="([^"]+)"/)[1]);
+ await s.click({act:'up'});
+ await s.click({act:'done'});
+ assert.doesNotMatch(s.root.innerHTML,/No Limited listed in inventory has everything/);
+ for(const vin of ['1C4RJKBR5T8556273','1C4RJKBR3T8556272','1C4RJKBR4T8565613']){
+  assert.ok(s.root.innerHTML.includes('/vehicle-'+vin),vin);
+ }
+ assert.match(decodeURIComponent(s.root.innerHTML),/FamCAM/);
+ assert.match(decodeURIComponent(s.root.innerHTML),/What I want:/);
 });

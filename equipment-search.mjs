@@ -1,4 +1,5 @@
 import {installedOptionFact,optionEvidenceReason} from './option-inventory.mjs';
+import {exhaustDefinitions,exhaustAliases,exhaustFact} from './exhaust-evidence.mjs';
 import {engineDefinitions,engineAliases,engineTerms,engineFact} from './engine-search.mjs';
 import {dualRearWheelPattern,secondRowBenchPattern,wheelSeatFeatures} from './wheel-seat-evidence.mjs';
 import {validSeatEvidence} from './seat-evidence.mjs';
@@ -13,6 +14,7 @@ import {wheelFinishDefinitions,wheelFinishAliases,wheelFinishSearchTerms,wheelFi
 import {extractVehicleCategories,matchVehicleCategories,vehicleBodyTypes} from './vehicle-categories.mjs';
 import {wording} from './sticker-rulings.mjs';
 export const definitions = [
+ ...exhaustDefinitions,
  ...wheelFinishDefinitions,
  ...engineDefinitions,
  ...tireDefinitions,
@@ -150,6 +152,7 @@ export function analyzeSticker(text,vin){
  return {identityLines:raw.slice(identityStart,identityStart+2),features,lines,engine:engine||null,equipmentSectionComplete};
 }
 const aliases=[
+ ...exhaustAliases,
  ...wheelFinishAliases,
  ...engineAliases,
  ...tireAliases,
@@ -291,6 +294,8 @@ export function parseQuery(input){
  if(result.requirements.some(x=>x.id==='ventilated'))result.warnings.push('“Air-conditioned seats” is treated as ventilated/cooled seats. The exact factory wording is shown.');
  if(result.requirements.some(x=>x.id.startsWith('tireDiameter')))result.warnings.push('Tire sizes refer to factory specifications on the window sticker. Confirm the currently fitted tires on a used vehicle.');
  if(result.requirements.some(x=>x.id.startsWith('wheel')))result.warnings.push('Wheel finishes are matched to the factory wheel specification. Chrome, polished and black finishes are checked separately. Confirm the currently fitted wheels on a used vehicle.');
+ if(result.requirements.some(x=>x.id.endsWith('Exhaust')))result.warnings.push('Exhaust matches require the requested description on the VIN-matched factory sticker. G/T, performance and sport descriptions are checked separately; tips, brakes and trim names do not establish an exhaust system. Confirm current equipment on used vehicles.');
+ if(result.requirements.some(x=>x.id==='upgradedExhaust'))result.warnings.push('Upgraded exhaust is ambiguous. Specify G/T, performance or sport exhaust if that is what you mean. A factory sticker cannot confirm a later aftermarket upgrade.');
  return result;
 }
 export function matchVehicle(vehicle,sticker,query){
@@ -349,7 +354,7 @@ export function matchVehicle(vehicle,sticker,query){
  }
  if(unmatched.length&&!unmatched.every(t=>text.split(/[^a-z0-9'-]+/).includes(t)))return {kind:'excluded',reason:'terms'};
  sticker=applyFactoryEquipment(vehicle,sticker);
- const checks=query.requirements.map(req=>{let fact=engineFact(req.id,sticker)||(sticker?.status==='verified'?sticker.features?.[req.id]:null);if(req.id.startsWith('interior')&&sticker?.status==='verified'){const color=interiorColors.find(c=>c.id===req.id);const interior=lines.filter(l=>/^interior(?: color)?:/i.test(l)).map(l=>l.split(/exterior(?: color)?:/i)[0]);if(color&&interior.length)fact={value:interior.some(l=>new RegExp(color.pattern,'i').test(l)),evidence:interior};}if(sticker?.vin!==vehicle.vin)fact=null;if(req.id.startsWith('exterior'))fact=sticker?.vin===vehicle.vin?exteriorColorFact(req.id,sticker):null;return {...req,label:labels[req.id],sourceUrl:fact?.sourceUrl,method:fact?.method,state:fact?fact.value===req.wanted?'match':'conflict':'unknown',evidence:fact?.evidence||[]};});
+ const checks=query.requirements.map(req=>{let fact=exhaustDefinitions.some(d=>d[0]===req.id)?exhaustFact(req.id,sticker):engineFact(req.id,sticker)||(sticker?.status==='verified'?sticker.features?.[req.id]:null);if(req.id.startsWith('interior')&&sticker?.status==='verified'){const color=interiorColors.find(c=>c.id===req.id);const interior=lines.filter(l=>/^interior(?: color)?:/i.test(l)).map(l=>l.split(/exterior(?: color)?:/i)[0]);if(color&&interior.length)fact={value:interior.some(l=>new RegExp(color.pattern,'i').test(l)),evidence:interior};}if(sticker?.vin!==vehicle.vin)fact=null;if(req.id.startsWith('exterior'))fact=sticker?.vin===vehicle.vin?exteriorColorFact(req.id,sticker):null;return {...req,label:labels[req.id],sourceUrl:fact?.sourceUrl,method:fact?.method,state:fact?fact.value===req.wanted?'match':'conflict':'unknown',evidence:fact?.evidence||[]};});
  if(query.equipmentOption){const fact=installedOptionFact(vehicle,sticker,query.equipmentOption);checks.push({id:'selectedOption',label:query.equipmentOption.label,wanted:true,state:fact?fact.value?'match':'conflict':'unknown',evidence:fact?.evidence||[],sourceUrl:fact?.sourceUrl,reason:fact?null:optionEvidenceReason(vehicle,sticker,query.equipmentOption)});}
  if(checks.some(c=>c.state==='conflict'))return {kind:'excluded',reason:'equipment',checks};
  if(checks.some(c=>c.state==='unknown'))return {kind:'unknown',checks,categoryChecks:categoryMatch.checks};
