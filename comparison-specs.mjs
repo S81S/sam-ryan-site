@@ -1,4 +1,6 @@
 import {installedAudioFact} from './audio-evidence.mjs';
+import {repairWranglerRoofEvidence} from './wrangler-roof-evidence.mjs';
+import {applyGrandCherokeeAnswers} from './gc-equipment-answers.mjs';
 // Compare installed specifications, not just yes/no feature flags. Only read
 // explicit wording from a verified sticker belonging to the selected VIN.
 const norm=s=>String(s||'').normalize('NFKC').replace(/[\u2010-\u2015]/g,'-').replace(/′′|[“”″]/g,'"').replace(/\s+/g,' ').trim();
@@ -61,5 +63,5 @@ export function withComparisonSpecifications(vehicle,sticker){
  const packages=sticker.lines.map(norm).filter(l=>!blocked.test(l)&&!/^optional equipment/i.test(l)&&/\b(?:package|(?:equipment|utility|off-road|tow|technology|safety) group|night edition)\b/i.test(l)).map(l=>l.replace(/\s+\$[\d,.]+\s*$/,''));
  if(packages.length){const values=[...new Set(packages)].sort();specs.listedPackages={value:true,displayValue:values.join('; '),comparisonValue:values.map(v=>v.toLowerCase()).join('|'),method:'sticker-specification',evidence:values,sourceUrl:sticker.sourceUrl};}
  for(const [id,fact] of Object.entries(specs))if(fact)features[id]=fact;
- return {...sticker,features};
+ return applyGrandCherokeeAnswers(vehicle,repairWranglerRoofEvidence(vehicle,{...sticker,features}));
 }

@@ -446,6 +446,96 @@
       "feature": "panoramic",
       "value": true,
       "availability": "The dual-pane panoramic sunroof is included on Summit according to the 2026 factory equipment chart. It replaces the conventional roof configuration; the single-pane sunroof offered on other trims is different."
+    },
+    {
+      "id": "j22109-cloth",
+      "model": "wrangler",
+      "year": 2026,
+      "vin": "1C4PJXDN3TW207204",
+      "stock": "J22109",
+      "title": "New 2026 JEEP WRANGLER 4-DOOR SPORT",
+      "label": "Sport-style cloth seats",
+      "image": "/assets/feature-photos/wrangler-j22109-cloth.jpg",
+      "imageSource": "https://cloudflareimages.dealereprocess.com/resrc/images/c_limit,fl_lossy,w_auto/v1/dvp/5427/57098154582/New-2026-Jeep-Wrangler-Sport-ID57098154582-aHR0cDovL2ltYWdlcy51bml0c2ludmVudG9yeS5jb20vdXBsb2Fkcy9waG90b3MvMC8yMDI2LTEwLTA3LzExLTI3Mjk5NzQxLTZhYzZiNjY5ODRjNTQuanBn",
+      "listingSource": "https://www.covertchryslerdodgejeepram.com/auto/new-2026-jeep-wrangler-4door-sport/118245692/",
+      "stickerSource": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4PJXDN3TW207204",
+      "photoIndex": 11,
+      "reviewedAt": "2026-10-09",
+      "reviewed": true,
+      "feature": "seatUpholstery",
+      "value": "Cloth Low-Back Bucket Seats",
+      "availability": "The pictured Sport includes cloth low-back bucket seats. This shows Sport-style cloth; Rubicon cloth has a different factory seat code.",
+      "reviewedScope": "2026-wrangler-four-door-gas",
+      "allowedTrimIds": [
+        "sport",
+        "sport-s",
+        "willys",
+        "sahara"
+      ]
+    },
+    {
+      "id": "j22412-nappa",
+      "model": "wrangler",
+      "year": 2026,
+      "vin": "1C4PJXFNXTW271754",
+      "stock": "J22412",
+      "title": "New 2026 JEEP WRANGLER 4-DOOR RUBICON",
+      "label": "Nappa leather seats",
+      "image": "/assets/feature-photos/wrangler-j22412-nappa.jpg",
+      "imageSource": "https://cloudflareimages.dealereprocess.com/resrc/images/c_limit,fl_lossy,w_auto/v1/dvp/5427/56329439214/New-2026-Jeep-Wrangler-Rubicon-ID56329439214-aHR0cDovL2ltYWdlcy51bml0c2ludmVudG9yeS5jb20vdXBsb2Fkcy9waG90b3MvMC8yMDI2LTA5LTI5LzEzLTI3OTcxMTUxLTZhYmJiZjE2NzlhZjEuanBn",
+      "listingSource": "https://www.covertchryslerdodgejeepram.com/auto/new-2026-jeep-wrangler-4door-rubicon/120210083/",
+      "stickerSource": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4PJXFNXTW271754",
+      "photoIndex": 13,
+      "reviewedAt": "2026-10-09",
+      "reviewed": true,
+      "feature": "seatUpholstery",
+      "value": "Nappa Leather Seats",
+      "availability": "The pictured Rubicon has the installed Nappa leather seat option. Nappa leather replaces the starting cloth upholstery.",
+      "reviewedScope": "2026-wrangler-four-door-gas",
+      "allowedTrimIds": [
+        "rubicon",
+        "rubicon-x"
+      ]
+    },
+    {
+      "id": "j22109-hardtop",
+      "model": "wrangler",
+      "year": 2026,
+      "vin": "1C4PJXDN3TW207204",
+      "stock": "J22109",
+      "title": "New 2026 JEEP WRANGLER 4-DOOR SPORT",
+      "label": "Removable 3-piece hardtop \u2014 black shown",
+      "image": "/assets/feature-photos/wrangler-j22109-hardtop.jpg",
+      "imageSource": "https://cloudflareimages.dealereprocess.com/resrc/images/c_limit,fl_lossy,w_auto/v1/dvp/5427/57098154522/New-2026-Jeep-Wrangler-Sport-ID57098154522-aHR0cDovL2ltYWdlcy51bml0c2ludmVudG9yeS5jb20vdXBsb2Fkcy9waG90b3MvMC8yMDI2LTEwLTA3LzEtMjcyOTk3NDEtNmFjNmI2NjNjYTZjZi5qcGc=",
+      "listingSource": "https://www.covertchryslerdodgejeepram.com/auto/new-2026-jeep-wrangler-4door-sport/118245692/",
+      "stickerSource": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4PJXDN3TW207204",
+      "photoIndex": 1,
+      "reviewedAt": "2026-10-09",
+      "reviewed": true,
+      "feature": "hardTop",
+      "value": true,
+      "availability": "The pictured Sport has the optional Black 3-Piece Hard Top and an explicit No Soft Top deletion. This choice selects a removable hardtop; available colors depend on the trim.",
+      "reviewedScope": "2026-wrangler-four-door-gas"
+    },
+    {
+      "id": "j22412-skyroof",
+      "model": "wrangler",
+      "year": 2026,
+      "vin": "1C4PJXFNXTW271754",
+      "stock": "J22412",
+      "title": "New 2026 JEEP WRANGLER 4-DOOR RUBICON",
+      "label": "Sky One-Touch power top",
+      "image": "/assets/feature-photos/wrangler-j22412-skyroof.jpg",
+      "imageSource": "https://cloudflareimages.dealereprocess.com/resrc/images/c_limit,fl_lossy,w_auto/v1/dvp/5427/56329439208/New-2026-Jeep-Wrangler-Rubicon-ID56329439208-aHR0cDovL2ltYWdlcy51bml0c2ludmVudG9yeS5jb20vdXBsb2Fkcy9waG90b3MvMC8yMDI2LTA5LTI5LzExLTI3OTcxMTUxLTZhYmJiZjE1ZGZkZGYuanBn",
+      "listingSource": "https://www.covertchryslerdodgejeepram.com/auto/new-2026-jeep-wrangler-4door-rubicon/120210083/",
+      "stickerSource": "https://www.chrysler.com/hostd/windowsticker/getWindowStickerPdf.do?vin=1C4PJXFNXTW271754",
+      "photoIndex": 11,
+      "reviewedAt": "2026-10-09",
+      "reviewed": true,
+      "feature": "skyRoof",
+      "value": true,
+      "availability": "The pictured Rubicon has the optional Sky One-Touch Power-Top. Its fabric roof is shown retracted along the roof tracks. This is a different roof system from the removable 3-piece hardtop.",
+      "reviewedScope": "2026-wrangler-four-door-gas"
     }
   ],
   "lineups": [
@@ -612,6 +702,48 @@
         "grand cherokee l",
         "4xe"
       ]
+    },
+    {
+      "id": "wrangler",
+      "year": 2026,
+      "name": "2026 Jeep Wrangler (4-door gas)",
+      "identity": "jeep wrangler",
+      "excludeIdentityTokens": [
+        "2 door",
+        "4xe",
+        "392",
+        "RHD",
+        "85th anniversary",
+        "Moab",
+        "Willys 41",
+        "America250",
+        "edition"
+      ],
+      "questions": [
+        {
+          "id": "seats",
+          "title": "Which front-seat covering do you want?",
+          "choices": [
+            "j22109-cloth",
+            "j22412-nappa"
+          ],
+          "explanation": "The photos show actual Sport cloth and Rubicon Nappa leather seats. Nappa leather replaces cloth; choosing the covering does not select the pictured paint color or roof.",
+          "availability": "Sport-style cloth and Rubicon Nappa leather are different factory seating configurations. Rubicon cloth uses a different seat code and is not represented by the Sport photo. Choosing the covering does not select every pictured seat feature. The original dealer banners remain; this guide does not select a promotional offer.",
+          "factorySource": "https://www.jeepgladiatorforum.com/forum/attachments/2026-4-door-wrangler-pdf.446484/"
+        },
+        {
+          "id": "roof",
+          "title": "Which roof system do you want?",
+          "choices": [
+            "j22109-hardtop",
+            "j22412-skyroof"
+          ],
+          "explanation": "A removable 3-piece hardtop and the Sky One-Touch power top are different installed roof systems. The Sky One-Touch image shows its fabric section retracted.",
+          "availability": "Sport starts with a Black Sunrider soft top. These photos show the removable hardtop and Sky One-Touch upgrades. Use No preference to leave the roof open. Roof color and other pictured features are not selected automatically.",
+          "factorySource": "https://www.jeepgladiatorforum.com/forum/attachments/2026-4-door-wrangler-pdf.446484/"
+        }
+      ],
+      "reviewedScope": "2026-wrangler-four-door-gas"
     }
   ],
   "verificationNotes": [
@@ -627,6 +759,13 @@
     "J22560 photo12 shows full Palermo front-seat upholstery; photo11 shows the dual-pane panoramic roof. Choosing these features does not select the pictured interior color or other equipment.",
     "Summit roof availability evidence: source row55 GWJ of 2026 fleet guide, corroborated retail brochure page8, researched by gc_trim. Current sharedfactory resolver verifies this boolean and photoengine accepts it.",
     "Scope is only 2026 two-row non-4xe Grand Cherokee. Parent handles explicit model exclusion before activation.",
-    "Stock-specific screen and upholstery values verified using withComparisonSpecifications; trim applicability owned by gc_trim. All six final photos pass createPhotoGuide source validation and choiceMatches for their pictured VINs."
+    "Stock-specific screen and upholstery values verified using withComparisonSpecifications; trim applicability owned by gc_trim. All six final photos pass createPhotoGuide source validation and choiceMatches for their pictured VINs.",
+    "Four final source JPG images individually visually inspected with view_image and copied byte-for-byte without alteration.",
+    "J22109 photo1 shows the closed black removable hardtop; photo11 shows Sport cloth seats. J22412 photo11 clearly shows the open Sky One-Touch roof with its tracks; photo13 shows full Rubicon Nappa leather seats.",
+    "Exact pictured VINs, dealer gallery positions, sticker URLs and source URLs preserved. Four original dealer promotional ribbons remain unchanged.",
+    "The current stock does not supply a verified in-scope standard 4-door soft-top source photo. Do not substitute a 2-door or special-edition picture.",
+    "Wrangler matching requires verified 2026 four-door identity, 2.0L I4 or 3.6L V6 engine and a reviewed ordinary CPP code. Two-door, 4xe, 392/V8, RHD and special editions are excluded, including special editions with a generic Sport listing title.",
+    "Wrangler cloth matching checks E7 Sport/Sport S/Willys/Sahara versus K7 Rubicon trim families in addition to the exact sticker upholstery description. Nappa VL is restricted to Rubicon/Rubicon X. The manufacturer order guide is FCA US material hosted as a public PDF attachment.",
+    "Installed Wrangler roof choices use the shared replacement resolver: Sky One-Touch excludes the conventional hard/soft tops; hardtop with No Soft Top excludes the base soft top; Dual Top Group preserves both supplied roofs."
   ]
 }
