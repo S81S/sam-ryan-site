@@ -32,7 +32,7 @@ function render(){
  const allRows=comparisonRows([...specificationDefinitions,...definitions.filter(([id])=>!/^engine(?:Size|Cyl|Inline)|^engine20$|^engine36$|^(?:rwd|fwd)$/.test(id))],recs.map(r=>r.s),requested,guides);
  // With every vehicle's engine and transmission named in full, the one-word rows (V8, HEMI, turbo…) only repeat them.
  const named=id=>allRows.find(r=>r.id===id)?.facts.every(Boolean);
- const rows=allRows.filter(usefulComparisonRow).filter(r=>r.requested||!(named('engineSpecification')&&/^(?:dieselCummins|hurricane|pentastar|supercharged|turbo|v6|v8|hemi|diesel|electric|hybrid)$/.test(r.id))&&!(named('transmissionSpecification')&&/^(?:manual|automatic)Transmission$/.test(r.id)));
+ const rows=allRows.filter(usefulComparisonRow).filter(r=>r.requested||!(!r.specification&&/^exterior/.test(r.id)&&allRows.find(row=>row.id==='exteriorPaint')?.facts.some(Boolean))&&!(!r.specification&&/^interior/.test(r.id)&&allRows.find(row=>row.id==='interiorColor')?.facts.some(Boolean))&&!(named('engineSpecification')&&/^(?:dieselCummins|hurricane|pentastar|supercharged|turbo|v6|v8|hemi|diesel|electric|hybrid)$/.test(r.id))&&!(named('transmissionSpecification')&&/^(?:manual|automatic)Transmission$/.test(r.id)));
  const settled=id=>{const row=rows.find(r=>r.id===id);return !!row&&row.facts.every(Boolean);};
  // The searchable features a guide row is about, on any of the compared trims.
  const rowFeatures=row=>{const ids=new Set();for(const g of guides)for(const [id,fact] of g?.facts||[])if(fact.key===row.key)ids.add(id);return [...ids];};
