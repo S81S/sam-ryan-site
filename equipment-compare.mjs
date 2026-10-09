@@ -5,7 +5,7 @@ import {featureInventoryLink} from './feature-inventory-link.mjs';
 import {appendStickerCredit} from './sticker-credit.mjs';
 import {appendEquipmentFact} from './comparison-layout.mjs';
 import {applyFactoryEquipment} from './factory-equipment.mjs';
-import {comparisonRows,visibleComparisonRows} from './comparison-rows.mjs';
+import {comparisonRows,visibleComparisonRows,usefulComparisonRow} from './comparison-rows.mjs';
 import {withComparisonSpecifications,specificationDefinitions} from './comparison-specs.mjs';
 import {definitions,parseQuery} from './equipment-search.mjs';
 import {guideTrim,guideDifferences,guideFeatureFacts,guideLink,guideColumnName} from './trim-link.mjs';
@@ -32,7 +32,7 @@ function render(){
  const allRows=comparisonRows([...specificationDefinitions,...definitions.filter(([id])=>!/^engine(?:Size|Cyl|Inline)|^engine20$|^engine36$|^(?:rwd|fwd)$/.test(id))],recs.map(r=>r.s),requested,guides);
  // With every vehicle's engine and transmission named in full, the one-word rows (V8, HEMI, turbo…) only repeat them.
  const named=id=>allRows.find(r=>r.id===id)?.facts.every(Boolean);
- const rows=allRows.filter(r=>r.requested||!(named('engineSpecification')&&/^(?:dieselCummins|hurricane|pentastar|supercharged|turbo|v6|v8|hemi|diesel|electric|hybrid)$/.test(r.id))&&!(named('transmissionSpecification')&&/^(?:manual|automatic)Transmission$/.test(r.id)));
+ const rows=allRows.filter(usefulComparisonRow).filter(r=>r.requested||!(named('engineSpecification')&&/^(?:dieselCummins|hurricane|pentastar|supercharged|turbo|v6|v8|hemi|diesel|electric|hybrid)$/.test(r.id))&&!(named('transmissionSpecification')&&/^(?:manual|automatic)Transmission$/.test(r.id)));
  const settled=id=>{const row=rows.find(r=>r.id===id);return !!row&&row.facts.every(Boolean);};
  // The searchable features a guide row is about, on any of the compared trims.
  const rowFeatures=row=>{const ids=new Set();for(const g of guides)for(const [id,fact] of g?.facts||[])if(fact.key===row.key)ids.add(id);return [...ids];};

@@ -3,7 +3,7 @@ import {equipmentRows} from './trim-comparison.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import {comparisonRows,visibleComparisonRows} from './comparison-rows.mjs';
+import {comparisonRows,visibleComparisonRows,usefulComparisonRow} from './comparison-rows.mjs';
 import {installedAudioFact,repairInstalledAudioEvidence,audioInventoryFeature} from './audio-evidence.mjs';
 import {parseQuery,matchVehicle,definitions} from './equipment-search.mjs';
 import {applyFeatureFilter} from './feature-inventory-link.mjs';
@@ -426,4 +426,12 @@ test('flattened stickers resolve higher screen and speaker upgrades without a se
  const resolved=withComparisonSpecifications(vehicle,s);
  assert.match(resolved.features.audioSystem.displayValue,/19-Speaker/);
  assert.equal(resolved.features.infotainmentScreen.displayValue,'14.4 inches');
+});
+
+
+test('unrequested absent-only gaps do not swamp meaningful comparison rows',()=>{
+ const records=[{status:'verified',features:{orange:{value:false},roof:{value:true}}},{status:'verified',features:{}}];
+ const rows=comparisonRows([['orange','Orange paint'],['roof','Sunroof']],records);
+ assert.deepEqual(rows.filter(usefulComparisonRow).map(r=>r.id),['roof']);
+ assert.equal(comparisonRows([['orange','Orange paint']],records,['orange']).filter(usefulComparisonRow).length,1);
 });

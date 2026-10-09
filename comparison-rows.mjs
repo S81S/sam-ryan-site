@@ -1,4 +1,8 @@
 const order=['difference','listed-on-some','wording','check','same','unknown'];
+// An absent feature on one vehicle, with no answer for the others, is useful
+// when the buyer requested it. Otherwise it creates irrelevant uncertainty
+// rows (for example, every other exterior paint color).
+export const usefulComparisonRow=row=>row.group!=='check'||row.requested||row.specification||row.facts.some(f=>f?.value===true);
 // What the factory trim guide says about a feature the window sticker leaves out. Standard equipment is
 // often not printed on a sticker; an option is. So: standard → the vehicle has it; optional and not on a
 // readable sticker → it does not; not offered on the trim → it does not.
