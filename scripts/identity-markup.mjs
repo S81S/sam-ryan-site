@@ -1,6 +1,6 @@
 // Keeps the "who is Sam / where does he work" markup the same on every static page, so search engines and AI
-// assistants can connect this site to Sam's own Google Business listing and to the dealership's street address.
-// Both facts are already shown on every page (the header's "Visit us at" link); this states them in the page markup.
+// assistants can connect this site to Sam's own Google Business listing, his Cars With Sam Facebook page and the
+// dealership's street address. The listing and address are already shown in every page's header.
 // Safe to re-run: a page whose markup already matches is left untouched.
 import fs from 'node:fs';
 import {createRequire} from 'node:module';
@@ -16,6 +16,8 @@ const spaced=ascii=>function write(value){
  return ascii&&typeof value==='string'?text.replace(/[\u0080-\uffff]/g,c=>'\\u'+c.charCodeAt(0).toString(16).padStart(4,'0')):text;
 };
 const forms=[JSON.stringify,spaced(true),spaced(false)];
+// Profiles Sam controls that already point back to this site. Add a profile here only once it is confirmed as his.
+const profiles=[maps,'https://www.facebook.com/carswithsamatx'];
 const check=process.argv.includes('--check');
 let changed=0,skipped=[];
 for(const file of fs.readdirSync(root).filter(n=>n.endsWith('.html')&&!/^vehicle-|^vehicles(?:-|\.)|-with-[a-z0-9-]+-austin\.html$|^shop-by-feature\.html$/.test(n))){
@@ -28,7 +30,7 @@ for(const file of fs.readdirSync(root).filter(n=>n.endsWith('.html')&&!/^vehicle
   if(!write){if(graph.some(n=>n['@id']===origin+'/#sam'))skipped.push(file);return all;}
   let touched=false;
   for(const node of graph){
-   if(node['@id']===origin+'/#sam'&&node['@type']==='Person'&&JSON.stringify(node.sameAs)!==JSON.stringify([maps])){node.sameAs=[maps];touched=true;}
+   if(node['@id']===origin+'/#sam'&&node['@type']==='Person'&&JSON.stringify(node.sameAs)!==JSON.stringify(profiles)){node.sameAs=profiles;touched=true;}
    if(node['@id']===origin+'/#dealership'&&(node['@type']!=='AutoDealer'||JSON.stringify(node.address)!==JSON.stringify(address))){node['@type']='AutoDealer';node.address=address;touched=true;}
   }
   return touched?open+write(data)+close:all;
