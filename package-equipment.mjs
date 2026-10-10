@@ -4,12 +4,13 @@ const normalize=s=>String(s||'').normalize('NFKC').replace(/[\u2010-\u2015]/g,'-
 const price=/\s+(?:\$[\d,.]+(?:\s*(?:CR|CREDIT))?|NO CHARGE)\s*$/i;
 export const packageName=s=>normalize(s).replace(price,'');
 const key=s=>packageName(s).toLowerCase();
-const excluded=/\b(?:delete[ds]?|deletion|without|not equipped|not included|if equipped|available separately|available with)\b/i;
+const excluded=/\b(?:delete[ds]?|deletion|without|not equipped|not included|if equipped|available separately|available with|not available|N\/A|except|only with|requires)\b/i;
 export function isPackageName(text){
  const value=packageName(text);
  return !excluded.test(value)&&!/[;:]|\b(?:included|includes|requires|available|optional equipment)\b/i.test(value)&&/\b(?:package(?:\s+[a-z0-9]{2,5})?|group(?:\s+[a-z0-9]{1,4})?|night edition)\s*$/i.test(value);
 }
 export function listedPackageNames(sticker){
+ if(Array.isArray(sticker?.packageGroups))return [...new Set(sticker.packageGroups.map(g=>g.name))];
  return [...new Set((sticker?.lines||[]).filter(isPackageName).map(packageName))];
 }
 
@@ -31,16 +32,19 @@ export function readPositionedPackages(rows){
   const indent=r.x-col.x;
   if(indent<1.5){
    active=null;
-   if(isPackageName(text)){active={name:packageName(text),equipment:[],exclusions:[],method:'sticker-package-layout'};groups.push(active);}
+   // A printed option heading with indented children is a bundle even when its
+   // name has no word "package" (e.g. Safety Sphere). Preserve its exact label.
+   if(!excluded.test(text)){active={name:packageName(text),kind:isPackageName(text)?'package':'option',equipment:[],exclusions:[],method:'sticker-package-layout'};groups.push(active);}
   }else if(active&&indent>=2&&indent<=12){
    // Priced entries and conditional wording never become included equipment.
    if(price.test(text)){active=null;continue;}
    if(excluded.test(text)){active.exclusions.push(text);continue;}
-   if(isPackageName(text)){active=null;continue;}
+   // An indented group name is included in its parent. It must not end the
+   // parent list or capture the following sibling items as its own children.
    active.equipment.push(text);
   }else active=null;
  }
- return groups.map(g=>({...g,equipment:[...new Set(g.equipment)],exclusions:[...new Set(g.exclusions)]}));
+ return groups.filter(g=>g.kind==='package'||g.equipment.length||g.exclusions.length).map(g=>({...g,equipment:[...new Set(g.equipment)],exclusions:[...new Set(g.exclusions)]}));
 }
 
 export function packageDetails(sticker,names=listedPackageNames(sticker)){
@@ -50,7 +54,7 @@ export function packageDetails(sticker,names=listedPackageNames(sticker)){
   const matches=(sticker.packageGroups||[]).filter(g=>key(g.name)===key(name)&&g.method==='sticker-package-layout');
   const group=matches.length===1?matches[0]:null;
   const removed=[];const equipment=(group?.equipment||[]).filter(item=>{const itemKey=deletionKey(item);const deletion=deletions.find(d=>{const k=deletionKey(d);return k.length>5&&(itemKey.includes(k)||k.includes(itemKey));});if(deletion)removed.push(deletion);return !deletion;});
-  return {name,equipment,exclusions:[...new Set([...(group?.exclusions||[]),...removed])],sourceUrl:sticker.packageSourceUrl||sticker.sourceUrl,
+  return {name,kind:group?.kind||'package',equipment,exclusions:[...new Set([...(group?.exclusions||[]),...removed])],sourceUrl:sticker.packageSourceUrl||sticker.sourceUrl,
    status:group?.equipment?.length?'documented':sticker.packageLookupState||(Array.isArray(sticker.packageGroups)?'checked':sticker.sha256?'pending':'unavailable')};
  });
 }

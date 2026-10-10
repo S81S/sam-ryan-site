@@ -20,7 +20,11 @@ export function comparisonRows(definitions,records,requested=[],guides=[]){
   // Where a sticker says nothing, the guide's column for that vehicle's trim answers — also when no sticker
   // prints the feature at all (blind-spot monitoring on a truck whose sticker leaves the safety list off).
   facts.forEach((f,i)=>{if(!f)facts[i]=guides[i]?.resolvedFacts?.get(id)||fromTrimGuide(guides[i],id);});
-  const states=facts.map(f=>f?(f.comparisonValue??(f.value?'present':'absent')):'unknown');
+  // A shared name is not proof of shared package contents. Compare complete,
+  // documented lists only; pending or partial lists remain a separate gap.
+  const packageKey=s=>String(s).normalize('NFKC').toLowerCase().replace(/[®™]/g,'').replace(/[\u2010-\u2015]/g,'-').replace(/\s+/g,' ').trim();
+  const packageSets=facts.every(f=>f?.packages?.length&&f.packages.every(p=>p.status==='documented'));
+  const states=facts.map(f=>!f?'unknown':packageSets?JSON.stringify(f.packages.map(p=>[packageKey(p.name),[...new Set(p.equipment.map(packageKey))].sort(),[...new Set((p.exclusions||[]).map(packageKey))].sort()]).sort((a,b)=>a[0].localeCompare(b[0]))):(f.comparisonValue??(f.value?'present':'absent')));
   const known=states.filter(s=>s!=='unknown');
   let group=known.length===0?'unknown':known.length<states.length?'check':'same';
   if(new Set(known).size>1)group='difference';

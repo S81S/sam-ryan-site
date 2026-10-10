@@ -6,7 +6,7 @@ export function preferredLayout(selectedLayout, narrowScreen, vehicleCount) {
 
 const packageKey=s=>String(s||'').toLowerCase().replace(/[®™]/g,'').replace(/[\u2010-\u2015]/g,'-').replace(/\s+/g,' ').trim();
 const packageFamily=s=>packageKey(s).replace(/\blevel\s+[\da-z]+\s+/g,'');
-const itemPriority=s=>/touch.?screen|uconnect/i.test(s)?0:/speaker|subwoofer/i.test(s)?1:/camera|surround/i.test(s)?2:/outlet|inverter/i.test(s)?3:/temperature|climate|a\/c/i.test(s)?4:/heated|ventilated|power.*seat/i.test(s)?5:/tailgate/i.test(s)?6:10;
+const itemPriority=s=>/screen|display|uconnect/i.test(s)?0:/speaker|subwoofer/i.test(s)?1:/camera|surround/i.test(s)?2:/outlet|inverter/i.test(s)?3:/temperature|climate|a\/c/i.test(s)?4:/heated|ventilated|power.*seat/i.test(s)?5:/tailgate/i.test(s)?6:10;
 export const orderedPackageItems=items=>[...items].sort((a,b)=>itemPriority(a)-itemPriority(b));
 
 // Compare printed membership only. A missing package or different wording is
@@ -26,19 +26,19 @@ export function appendPackageOverview(container,records,document=globalThis.docu
  const sections=packageComparisonSections(records);if(!sections.length)return;
  const overview=el(document,'section');overview.className='package-overview';overview.setAttribute('aria-labelledby','package-overview-title');
  const title=el(document,'h3','What’s inside each package?');title.id='package-overview-title';overview.append(title);
- overview.append(el(document,'p','Each package is matched to its vehicle below. Items that differ between the printed package lists come first.'));
+ overview.append(el(document,'p','Each package or option bundle is matched to its vehicle below. Items that differ between the printed lists come first.'));
  for(const section of sections){
   const family=el(document,'section');family.className='package-family';family.append(el(document,'h4',section.label));
   const grid=el(document,'div');grid.className='package-vehicle-grid';
   section.groups.forEach((groups,i)=>{
    const {v,side}=records[i],card=el(document,'article');card.className='package-vehicle-card';
-   const identity=el(document,'p',v.stock?`Vehicle ${side} · Stock ${v.stock}`:`Vehicle ${side} · VIN …${v.vin.slice(-6)}`);identity.className='package-vehicle-label';card.append(identity);
+   const identity=el(document,'p',v.stock?`Vehicle ${side} · Stock ${v.stock}`:`Vehicle ${side} · VIN …${v.vin.slice(-6)}`);identity.className='package-vehicle-label';card.append(identity);card.append(el(document,'p',v.title));
    if(!groups.length)card.append(el(document,'p','This package is not listed on this vehicle’s available sticker.'));
    for(const group of groups){
     const name=el(document,'h5',group.name);name.className='package-name';card.append(name);
     if(group.status==='documented'){
      const count=el(document,'p',`${group.equipment.length} included items listed`);count.className='package-count';card.append(count);
-     if(group.highlights.length){card.append(el(document,'strong',section.comparable?'Different items in this package list':'Included in this package'));const list=el(document,'ul');list.className='package-highlight-items';for(const item of group.highlights)list.append(el(document,'li',item));card.append(list);}
+     if(group.highlights.length){card.append(el(document,'strong',section.comparable?'Different items in this package list':group.kind==='option'?'Included with this option':'Included in this package'));const list=el(document,'ul');list.className='package-highlight-items';for(const item of group.highlights)list.append(el(document,'li',item));card.append(list);}
      else card.append(el(document,'p','Includes the shared package equipment below.'));
      if(section.shared.length)card.append(el(document,'small',`Also includes the ${section.shared.length} shared items below.`));
     }else card.append(el(document,'p',group.status==='pending'?'Reading this package’s equipment…':'Open this vehicle’s original sticker to confirm the package contents.'));

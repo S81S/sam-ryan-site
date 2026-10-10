@@ -1,12 +1,12 @@
-import {listedPackageNames,mergePackageEvidence} from './package-equipment.mjs';
+import {mergePackageEvidence} from './package-equipment.mjs';
 const requests=new Map();
-const cacheKey='carswithsam-package-contents-v1';
+const cacheKey='carswithsam-package-contents-v2';
 function readCache(storage){try{return JSON.parse(storage?.getItem(cacheKey)||'{}');}catch{return {};}}
 export function createPackageLoader({fetchPdf,readSticker,storage,changed=()=>{}}){
  const pending=new Map();
  return function loadPackages(vin,index){
   const original=index.records[vin];
-  if(original?.status!=='verified'||original.vin!==vin||!original.sha256||!listedPackageNames(original).length||Array.isArray(original.packageGroups))return Promise.resolve();
+  if(original?.status!=='verified'||original.vin!==vin||!original.sha256||Array.isArray(original.packageGroups))return Promise.resolve();
   const id=vin+':'+original.sha256;
   if(pending.has(id))return pending.get(id);
   const task=(async()=>{
