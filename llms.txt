@@ -14,7 +14,27 @@
 - [Perfect Car](https://carswithsam.com/perfect-match): choose must-have features, compare trim upgrades and see matching vehicles.
 - [Compare vehicles](https://carswithsam.com/compare): compare vehicles by stock number or VIN using their window stickers.
 - [Compare trims](https://carswithsam.com/trim-guide): factory equipment by trim for Chrysler, Dodge, Jeep and Ram, with manufacturer sources.
-- [Shop by feature](https://carswithsam.com/shop-by-feature): one page per model and feature, listing the vehicles that have it.
+- [Shop by feature](https://carswithsam.com/shop-by-feature): one page per model and feature, listing the vehicles that have it, plus a page per model.
+
+## Vehicles in Austin by model
+
+Counts are vehicles listed as of the last inventory check.
+
+- [Ram 1500](https://carswithsam.com/ram-1500-austin): 166 listed
+- [Ram 2500](https://carswithsam.com/ram-2500-austin): 57 listed
+- [Ram 3500](https://carswithsam.com/ram-3500-austin): 27 listed
+- [Jeep Wrangler](https://carswithsam.com/jeep-wrangler-austin): 72 listed
+- [Jeep Gladiator](https://carswithsam.com/jeep-gladiator-austin): 19 listed
+- [Jeep Grand Cherokee](https://carswithsam.com/jeep-grand-cherokee-austin): 113 listed
+- [Jeep Cherokee](https://carswithsam.com/jeep-cherokee-austin): 15 listed
+- [Jeep Compass](https://carswithsam.com/jeep-compass-austin): 29 listed
+- [Jeep Grand Wagoneer](https://carswithsam.com/jeep-grand-wagoneer-austin): 44 listed
+- [Jeep Wagoneer](https://carswithsam.com/jeep-wagoneer-austin): 5 listed
+- [Chrysler Pacifica](https://carswithsam.com/chrysler-pacifica-austin): 13 listed
+- [Dodge Durango](https://carswithsam.com/dodge-durango-austin): 6 listed
+- [Dodge Charger](https://carswithsam.com/dodge-charger-austin): 7 listed
+- [Ram ProMaster](https://carswithsam.com/ram-promaster-austin): 23 listed
+- [Jeep Recon](https://carswithsam.com/jeep-recon-austin): 5 listed
 
 ## Vehicles in Austin by feature
 

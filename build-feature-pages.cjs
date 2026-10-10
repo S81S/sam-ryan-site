@@ -12,12 +12,18 @@
 //  - No availability or offer claims: prices are the listing's own, and every page says to confirm before visiting.
 //  - Touchscreen size is not a yes/no search feature. Those pages group vehicles by the installed size that Compare
 //    reads from each window sticker (comparison-specs.mjs), so they agree with Compare instead of with Find Your Car.
-// Output: <model>-with-<feature>-austin.html, shop-by-feature.html, sitemap-features.xml, data/feature-pages.json,
-// and llms.txt (a plain summary of the site for AI assistants, with today's feature pages and counts).
+//  - Every model in MODELS without a hand-written shopping page (`landing`) also gets a model page,
+//    <model>-austin.html, listing that model's vehicles with its trims and feature pages. Same create-at-3,
+//    keep-while-1 rule. A hand-written page is never overwritten: only files carrying this script's marker are.
+// Output: <model>-with-<feature>-austin.html, <model>-austin.html, shop-by-feature.html, sitemap-features.xml,
+// data/feature-pages.json, and llms.txt (a plain summary of the site for AI assistants, with today's pages and counts).
 const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto');
-const CREATE_AT=3,MAX_CARDS=36,MAX_CARDS_UNFILTERED=96,SAME_LIST=0.85,NEARLY_ALL=0.95;
+const CREATE_AT=3,MAX_CARDS=36,MAX_CARDS_UNFILTERED=96,MAX_MODEL_CARDS=120,SAME_LIST=0.85,NEARLY_ALL=0.95;
+const MARKER='<meta name="generator" content="build-feature-pages model page">';
 
 // Models with enough vehicles to be worth a page. `test` runs against the completed, upper-case listing title.
+// `landing` names a hand-written shopping page; models without one get a generated model page. `listOnly` models
+// get the model page but no feature pages.
 const MODELS=[
  {slug:'ram-1500',name:'Ram 1500',plural:'Ram 1500 trucks',one:'truck',test:/\bRAM 1500\b/,not:/PROMASTER/,strip:/\bRAM 1500\b/,q:'ram 1500',landing:'/ram-1500-austin',questions:'/ram-1500-questions'},
  {slug:'ram-2500',name:'Ram 2500',plural:'Ram 2500 trucks',one:'truck',test:/\bRAM 2500\b/,not:/PROMASTER/,strip:/\bRAM 2500\b/,q:'ram 2500',questions:'/ram-2500-questions'},
@@ -31,7 +37,9 @@ const MODELS=[
  {slug:'jeep-wagoneer',name:'Jeep Wagoneer',plural:'Jeep Wagoneers',one:'Wagoneer',test:/\bWAGONEER\b/,not:/GRAND WAGONEER/,strip:/\bJEEP WAGONEER(?: L)?\b/,q:'wagoneer',questions:'/jeep-wagoneer-questions'},
  {slug:'chrysler-pacifica',name:'Chrysler Pacifica',plural:'Chrysler Pacifica minivans',one:'Pacifica',test:/\bPACIFICA\b/,strip:/\bCHRYSLER PACIFICA\b/,q:'pacifica',questions:'/chrysler-pacifica-questions'},
  {slug:'dodge-durango',name:'Dodge Durango',plural:'Dodge Durangos',one:'Durango',test:/\bDURANGO\b/,strip:/\bDODGE DURANGO\b/,q:'durango',questions:'/dodge-durango-questions'},
- {slug:'dodge-charger',name:'Dodge Charger',plural:'Dodge Chargers',one:'Charger',test:/\bCHARGER\b/,strip:/\bDODGE CHARGER\b/,q:'charger',questions:'/dodge-charger-questions'}
+ {slug:'dodge-charger',name:'Dodge Charger',plural:'Dodge Chargers',one:'Charger',test:/\bCHARGER\b/,strip:/\bDODGE CHARGER\b/,q:'charger',questions:'/dodge-charger-questions'},
+ {slug:'ram-promaster',listOnly:true,name:'Ram ProMaster',plural:'Ram ProMaster vans',one:'ProMaster',test:/\bPROMASTER\b/,strip:/\bRAM PROMASTER(?: [123]500)?\b|\b(?:HIGH|LOW|STANDARD|STD) ROOF\b/g,q:'promaster',questions:'/ram-promaster-questions'},
+ {slug:'jeep-recon',listOnly:true,name:'Jeep Recon',plural:'Jeep Recons',one:'Recon',test:/\bJEEP RECON\b/,strip:/\bJEEP RECON\b/,q:'jeep recon',questions:'/jeep-recon-questions'}
 ];
 
 // Features shoppers ask for by name, most-searched first. `id` is the search's own feature id; `name` is the
@@ -106,13 +114,15 @@ function displayTitle(title){
 // The trim a shopper would call it: the factory trim guide's name when the sticker identifies one, otherwise the
 // words the listing title puts between the model and the cab, drive or body description.
 const CONFIG=/^(?:CREW|QUAD|MEGA|REGULAR|REG|CAB|CHASSIS|CARGO|VAN|4X4|4X2|4XE|4WD|2WD|AWD|FWD|RWD|4-DOOR|2-DOOR|UNLIMITED|\d+['’].*)$/;
+// Dealer feeds sometimes put the body-generation code of an older vehicle ("WK") between the model and the trim.
+const BODY_CODE=/^WK2?$/;
 function trimName(v,model){
  const guide=guideTrim(v,records[v.vin],trimData);
  if(guide)return guide.trim.name.split(' / ')[0];
- const tokens=String(v.title||'').toUpperCase().replace(/^(?:NEW|USED)\s+\d{4}\s+/,'').replace(model.strip,' ').trim().split(/\s+/).filter(Boolean);
+ const tokens=String(v.title||'').toUpperCase().replace(/^(?:NEW|USED)\s+\d{4}\s+/,'').replace(model.strip,' ').replace(/\bR T\b/,'R/T').trim().split(/\s+/).filter(t=>t&&!BODY_CODE.test(t));
  while(tokens.length&&CONFIG.test(tokens[0]))tokens.shift();
  const cut=tokens.findIndex(t=>CONFIG.test(t)),words=cut<0?tokens:tokens.slice(0,cut);
- return words.map(w=>w.split('/').map(word).join('/')).join(' ');
+ return words.map(w=>w.split('/').map(word).join('/')).join(' ').replace(/\b(\d+)(ST|ND|RD|TH)\b/g,(m,n,suffix)=>n+suffix.toLowerCase());
 }
 const cleanEvidence=line=>String(line||'').replace(/\s*\(VS [^)]*\)/gi,'').replace(/\s+\$[\d,]+(?:\.\d\d)?\s*$/,'').replace(/\s+/g,' ').trim();
 
@@ -136,10 +146,17 @@ function screenGroups(stock){
 }
 let previous={pages:[]};try{previous=read('data/feature-pages.json')}catch{}
 const kept=new Map((previous.pages||[]).map(p=>[p.file,p]));
-const built=[];
+const keptModels=new Map((previous.models||[]).map(p=>[p.file,p]));
+const built=[],modelPages=[];
 for(const model of MODELS){
  const stock=vehicles.filter(v=>{const t=v.title.toUpperCase();return model.test.test(t)&&!(model.not&&model.not.test(t));});
  if(!stock.length)continue;
+ model.listed=stock.length;
+ if(!model.landing){
+  const file=model.slug+'-austin.html';
+  if(stock.length>=(keptModels.has(file)?1:CREATE_AT)){model.generated='/'+file.slice(0,-5);modelPages.push({model,file,url:model.generated,stock});}
+ }
+ if(model.listOnly)continue;
  const accepted=[],readable=stock.filter(v=>records[v.vin]?.status==='verified').length;
  // Screen sizes come last, so an existing feature page is never displaced by a screen page that lists the same vehicles.
  for(const candidate of [...FEATURES.map(feature=>({feature})),...screenGroups(stock)]){
@@ -216,7 +233,7 @@ ${manualNotes.length?`<h2>What the owner’s manual says</h2><ul class="fp-phras
 <h2>How these were matched</h2><p>${feature.manual?'Each vehicle’s drivetrain is read from its original window sticker and checked against the factory owner’s manual for that model year.':'Each vehicle is matched by VIN to its original window sticker, and the feature must appear in the sticker’s own wording.'} A window sticker describes the vehicle as it left the factory; on a used vehicle, check its current condition and any later changes. <a href="/sources">How we verify listings and factory equipment</a>.</p>
 ${sameModel.length?`<h2>More ${esc(model.name)} features</h2><p class="fp-links">${sameModel.map(o=>`<a href="${o.url}">${esc(o.feature.name)}</a>`).join('')}</p>`:''}
 ${sameFeature.length?`<h2>Other models with ${esc(feature.with)}</h2><p class="fp-links">${sameFeature.map(o=>`<a href="${o.url}">${esc(o.model.name)}</a>`).join('')}</p>`:''}
-<p class="fp-links">${model.landing?`<a href="${model.landing}">${esc(model.name)} shopping guide</a>`:''}${model.questions?`<a href="${model.questions}">${esc(model.name)} questions</a>`:''}<a href="/compare">Compare two vehicles by stock number</a><a href="/shop-by-feature">All features</a></p></div>`;
+<p class="fp-links">${model.landing?`<a href="${model.landing}">${esc(model.name)} shopping guide</a>`:model.generated?`<a href="${model.generated}">All ${esc(model.name)} listings</a>`:''}${model.questions?`<a href="${model.questions}">${esc(model.name)} questions</a>`:''}<a href="/compare">Compare two vehicles by stock number</a><a href="/shop-by-feature">All features</a></p></div>`;
  const pageUrl=origin+url;
  const graph=[...identity,
   {'@type':'CollectionPage','@id':pageUrl+'#page',url:pageUrl,name:h1,description:desc,inLanguage:'en-US',isPartOf:{'@id':origin+'/#website'},author:{'@id':origin+'/#sam'},publisher:{'@id':origin+'/#publisher'},mainEntity:{'@id':pageUrl+'#list'}},
@@ -239,10 +256,68 @@ for(const p of built){
 const current=new Set(manifest.map(m=>m.file));
 for(const file of kept.keys())if(!current.has(file)&&/^[a-z0-9-]+-with-[a-z0-9-]+-austin\.html$/.test(file)){try{fs.unlinkSync(path.join(root,file))}catch{}}
 
+// ── Model pages ──────────────────────────────────────────────────────────────────────────────────────────────
+const plainText=h=>h.replace(/<[^>]+>/g,' ').replace(/&amp;/g,'&').replace(/&#39;/g,"'").replace(/&quot;/g,'"').replace(/&rsquo;|&#8217;/g,'’').replace(/\s+/g,' ').trim();
+const pageFile=route=>path.join(root,route.slice(1)+'.html');
+// The questions a model's question page answers, read from that page so the two cannot drift.
+function questionsFor(model){
+ try{const h=fs.readFileSync(pageFile(model.questions),'utf8');return {title:plainText((h.match(/<h1[^>]*>([\s\S]*?)<\/h1>/)||[])[1]||''),list:[...h.matchAll(/<h2[^>]*>([\s\S]*?)<\/h2>/g)].map(m=>plainText(m[1])).filter(q=>/\?$/.test(q)).slice(0,5)};}catch{return null}
+}
+const years=list=>{const y=[...new Set(list.map(v=>v.year).filter(Number.isFinite))].sort();return y.length>2&&y.every((v,i)=>!i||v===y[i-1]+1)?y[0]+' to '+y[y.length-1]:y.length>2?y.slice(0,-1).join(', ')+' and '+y[y.length-1]:y.join(' and ');};
+const modelLinks=()=>MODELS.filter(m=>m.listed&&(m.landing||m.generated)).map(m=>({model:m,url:m.landing||m.generated}));
+function renderModel(p){
+ const {model,stock,url}=p,n=stock.length,h1=`${model.name} for sale in Austin, Texas`;
+ const sorted=[...stock].sort((a,b)=>(a.condition==='New'?0:1)-(b.condition==='New'?0:1)||(a.price??Infinity)-(b.price??Infinity));
+ const fresh=stock.filter(v=>v.condition==='New'),used=stock.filter(v=>v.condition!=='New');
+ const prices=stock.map(v=>v.price).filter(Number.isFinite),low=Math.min(...prices),high=Math.max(...prices);
+ const mix=[fresh.length?fresh.length+' new':'',used.length?used.length+' used':''].filter(Boolean).join(' and ');
+ const range=!prices.length?'':low===high?`, listed at ${money(low)}`:`, listed from ${money(low)} to ${money(high)}`;
+ const lead=`${cap(plural(n,model.name+' is',model.plural+' are'))} listed at Covert CDJR Austin, 8107 Research Blvd: ${mix}${range}. Each one has its own page with photos, the listed price and, where its window sticker is on file, the equipment it left the factory with.`;
+ const desc=`${cap(plural(n,model.name,model.plural))} listed at Covert CDJR Austin: ${mix}. See photos, listed prices and window-sticker equipment, then text Sam.`;
+ const yearLine=[fresh.length?`New: ${years(fresh)} model year${new Set(fresh.map(v=>v.year)).size>1?'s':''}.`:'',used.length?`Used: ${years(used)} model year${new Set(used.map(v=>v.year)).size>1?'s':''}.`:''].filter(Boolean).join(' ');
+ const rows=new Map();
+ for(const v of stock){const t=trimName(v,model)||'Trim not stated';if(!rows.has(t))rows.set(t,{t,fresh:0,used:0,from:Infinity});const r=rows.get(t);v.condition==='New'?r.fresh++:r.used++;if(Number.isFinite(v.price))r.from=Math.min(r.from,v.price);}
+ const trims=[...rows.values()].sort((a,b)=>(b.fresh+b.used)-(a.fresh+a.used)||a.from-b.from);
+ const trimTable=`<table class="fp-table"><caption>${esc(model.name)} trims listed in Austin</caption><thead><tr><th scope="col">Trim</th><th scope="col">New</th><th scope="col">Used</th><th scope="col">From</th></tr></thead><tbody>${trims.map(r=>`<tr><th scope="row">${esc(r.t)}</th><td>${r.fresh}</td><td>${r.used}</td><td>${Number.isFinite(r.from)?money(r.from):'Ask'}</td></tr>`).join('')}</tbody></table>`;
+ const features=built.filter(o=>o.model===model),questions=model.questions?questionsFor(model):null;
+ const live='/inventory?'+new URLSearchParams({q:model.q,condition:'Both'});
+ const sms=`sms:+17372091320?body=${encodeURIComponent(`Hi Sam, I’m looking for a ${model.name}. What do you have?`)}`;
+ const trimGuide=fs.existsSync(pageFile(`/2026-${model.slug}-trims`))?`/2026-${model.slug}-trims`:'';
+ const others=modelLinks().filter(o=>o.model!==model);
+ const body=`<div class="wrap"><p class="fp-crumbs"><a href="/">Home</a> / <a href="/inventory">Find Your Car</a></p><div class="eyebrow">Cars With Sam · Austin, Texas</div><h1>${esc(h1)}</h1><p class="authority-byline">Published by Cars With Sam, the shopping site created and owned by <a href="/sam">Samuel “Sam” Sweitzer</a>. Inventory checked <time datetime="${isoDay(checked)}">${esc(day(checked))}</time>.</p><p class="fp-lead">${esc(lead)}</p>${yearLine?`<p>${esc(yearLine)}</p>`:''}<div class="hero-actions"><a class="btn" href="${esc(sms)}">TEXT SAM ABOUT ${/^[AEIOU]/i.test(model.one)?'AN':'A'} ${esc(model.one.toUpperCase())}</a><a class="btn ghost" href="${esc(live)}">SEARCH THESE BY FEATURE</a></div>
+<h2>${esc(model.name)} trims listed right now</h2>${trimTable}<p>A trim name does not list every option. Two ${esc(model.plural)} in the same trim can leave the factory with different equipment, so check the window sticker on the vehicle you like.</p>
+${features.length?`<h2>Shop ${esc(model.name)} by feature</h2><p>Each link lists the ${esc(model.plural)} whose own window sticker shows that feature.</p><ul class="fp-directory">${features.map(o=>`<li><a href="${o.url}">${esc(o.feature.name)}</a> <span class="fp-muted">${o.matches.length}</span></li>`).join('')}</ul>`:''}
+<h2 id="vehicles">${esc(cap(plural(n,model.name,model.plural)))} listed in Austin</h2><p class="fp-muted">${n>MAX_MODEL_CARDS?`Showing ${MAX_MODEL_CARDS} of ${n}, new vehicles first and lowest listed price first. <a href="${esc(live)}">See all ${n} in Find Your Car</a>.`:'New vehicles first, lowest listed price first.'} Listed prices and incentives can have conditions. Confirm your price, taxes, fees and availability before visiting.</p><div class="fp-grid">${sorted.slice(0,MAX_MODEL_CARDS).map(v=>card({v,quoted:[]},{})).join('')}</div>
+${questions&&questions.list.length?`<h2>Questions shoppers ask about the ${esc(model.name)}</h2><ul class="fp-phrases">${questions.list.map(q=>`<li>${esc(q)}</li>`).join('')}</ul><p><a href="${model.questions}">${esc(questions.title||model.name+' questions')}</a></p>`:''}
+<h2>Don’t see the one you want?</h2><p>Listings change every day, and vehicles on order may not be listed yet. Text Sam at <a href="${esc(sms)}">737-209-1320</a> with the trim, color and features you want and your budget, or <a href="/contact?advisor=Sam">ask Sam</a> or <a href="/contact?advisor=Ryan">ask Ryan</a> to look for one.</p>
+<h2>How this list is built</h2><p>These are the store’s own published listings for this one location, checked on the date above. Equipment on each vehicle’s page comes from its VIN-matched original window sticker, which describes the vehicle as it left the factory; on a used vehicle, check its current condition and any later changes. <a href="/sources">How we verify listings and factory equipment</a>.</p>
+${others.length?`<h2>Other models in Austin</h2><p class="fp-links">${others.map(o=>`<a href="${o.url}">${esc(o.model.name)}</a>`).join('')}</p>`:''}
+<p class="fp-links">${trimGuide?`<a href="${trimGuide}">2026 ${esc(model.name)} trims compared</a>`:''}<a href="/trim-guide">Compare trims</a><a href="/compare">Compare two vehicles by stock number</a><a href="/shop-by-feature">Shop by feature</a><a href="/used-inventory">Used cars, trucks and SUVs</a></p></div>`;
+ const pageUrl=origin+url;
+ const graph=[...identity,
+  {'@type':'CollectionPage','@id':pageUrl+'#page',url:pageUrl,name:h1,description:desc,inLanguage:'en-US',isPartOf:{'@id':origin+'/#website'},author:{'@id':origin+'/#sam'},publisher:{'@id':origin+'/#publisher'},mainEntity:{'@id':pageUrl+'#list'}},
+  {'@type':'ItemList','@id':pageUrl+'#list',name:h1,numberOfItems:n,itemListElement:sorted.slice(0,MAX_MODEL_CARDS).map((v,i)=>({'@type':'ListItem',position:i+1,url:origin+'/vehicle-'+v.vin,name:displayTitle(v.title)}))},
+  {'@type':'BreadcrumbList',itemListElement:[{'@type':'ListItem',position:1,name:'Home',item:origin+'/'},{'@type':'ListItem',position:2,name:'Find Your Car',item:origin+'/inventory'},{'@type':'ListItem',position:3,name:h1,item:pageUrl}]}];
+ return {html:shell(`${model.name} for sale in Austin, TX`,desc,url,body,graph,safe(sorted[0]?.photoUrl)&&vehicleImage(sorted[0].photoUrl,960)).replace('<meta charset="utf-8">','<meta charset="utf-8">'+MARKER),h1};
+}
+const modelManifest=[];
+for(const p of modelPages){
+ const target=path.join(root,p.file);
+ // Never write over a page a person wrote: only this script's own model pages carry the marker.
+ if(fs.existsSync(target)&&!fs.readFileSync(target,'utf8').includes(MARKER))throw Error('Refusing to overwrite hand-written page '+p.file);
+ const {html,h1}=renderModel(p);
+ const hash=crypto.createHash('sha256').update(html.replace(/Inventory checked <time[^>]*>[^<]*<\/time>/,'')).digest('hex').slice(0,16);
+ const before=keptModels.get(p.file),modified=before&&before.hash===hash?before.modified:today;
+ fs.writeFileSync(target,html);
+ modelManifest.push({file:p.file,url:p.url,model:p.model.slug,title:h1,label:`All ${p.model.name} listings in Austin`,count:p.stock.length,hash,modified,vins:p.stock.map(v=>v.vin)});
+}
+{const currentModels=new Set(modelManifest.map(m=>m.file));
+ for(const file of keptModels.keys())if(!currentModels.has(file)&&/^[a-z0-9-]+-austin\.html$/.test(file)){const target=path.join(root,file);try{if(fs.readFileSync(target,'utf8').includes(MARKER))fs.unlinkSync(target)}catch{}}}
+
 // ── Directory page ───────────────────────────────────────────────────────────────────────────────────────────
 {const url='/shop-by-feature',title='Shop by feature in Austin',desc='Find a Ram, Jeep, Dodge or Chrysler at Covert CDJR Austin by the feature you want, matched by VIN to each original window sticker.';
  const groups=MODELS.map(model=>({model,pages:built.filter(p=>p.model===model)})).filter(g=>g.pages.length);
- const body=`<div class="wrap"><div class="eyebrow">Cars With Sam · Austin, Texas</div><h1>${esc(title)}</h1><p class="authority-byline">Published by Cars With Sam, the shopping site created and owned by <a href="/sam">Samuel “Sam” Sweitzer</a>. Inventory checked <time datetime="${isoDay(checked)}">${esc(day(checked))}</time>.</p><p class="fp-lead">A trim badge does not tell you every option a vehicle has. Pick a model and the feature you want to see the vehicles at Covert CDJR Austin, 8107 Research Blvd, that show it on their original window sticker.</p><p>Want something that is not listed here? <a href="/inventory">Describe it in Find Your Car</a>, or text Sam at <a href="sms:+17372091320">737-209-1320</a>.</p>${groups.map(g=>`<h2 id="${g.model.slug}">${esc(g.model.name)}</h2><ul class="fp-directory">${g.pages.map(p=>`<li><a href="${p.url}">${esc(p.feature.name)}</a> <span class="fp-muted">${p.matches.length}</span></li>`).join('')}</ul>`).join('')}<h2>How these lists are built</h2><p>Every vehicle is matched by VIN to its original window sticker. A feature is listed only when the sticker’s own wording shows it, and a vehicle without a readable sticker is left out, not guessed. <a href="/sources">How we verify listings and factory equipment</a>.</p></div>`;
+ const body=`<div class="wrap"><div class="eyebrow">Cars With Sam · Austin, Texas</div><h1>${esc(title)}</h1><p class="authority-byline">Published by Cars With Sam, the shopping site created and owned by <a href="/sam">Samuel “Sam” Sweitzer</a>. Inventory checked <time datetime="${isoDay(checked)}">${esc(day(checked))}</time>.</p><p class="fp-lead">A trim badge does not tell you every option a vehicle has. Pick a model and the feature you want to see the vehicles at Covert CDJR Austin, 8107 Research Blvd, that show it on their original window sticker.</p><p>Want something that is not listed here? <a href="/inventory">Describe it in Find Your Car</a>, or text Sam at <a href="sms:+17372091320">737-209-1320</a>.</p>${modelLinks().length?`<h2 id="models">Shop by model</h2><p class="fp-links">${modelLinks().map(o=>`<a href="${o.url}">${esc(o.model.name)}</a>`).join('')}</p>`:''}${groups.map(g=>`<h2 id="${g.model.slug}">${esc(g.model.name)}</h2>${g.model.generated?`<p><a href="${g.model.generated}">All ${esc(g.model.name)} listings in Austin</a></p>`:''}<ul class="fp-directory">${g.pages.map(p=>`<li><a href="${p.url}">${esc(p.feature.name)}</a> <span class="fp-muted">${p.matches.length}</span></li>`).join('')}</ul>`).join('')}<h2>How these lists are built</h2><p>Every vehicle is matched by VIN to its original window sticker. A feature is listed only when the sticker’s own wording shows it, and a vehicle without a readable sticker is left out, not guessed. <a href="/sources">How we verify listings and factory equipment</a>.</p></div>`;
  const pageUrl=origin+url,graph=[...identity,{'@type':'CollectionPage','@id':pageUrl+'#page',url:pageUrl,name:title,description:desc,inLanguage:'en-US',isPartOf:{'@id':origin+'/#website'},author:{'@id':origin+'/#sam'},publisher:{'@id':origin+'/#publisher'}},{'@type':'BreadcrumbList',itemListElement:[{'@type':'ListItem',position:1,name:'Home',item:origin+'/'},{'@type':'ListItem',position:2,name:'Shop by feature',item:pageUrl}]}];
  fs.writeFileSync(path.join(root,'shop-by-feature.html'),shell(title,desc,url,body,graph));}
 
@@ -268,7 +343,13 @@ for(const file of kept.keys())if(!current.has(file)&&/^[a-z0-9-]+-with-[a-z0-9-]
 - [Perfect Car](${origin}/perfect-match): choose must-have features, compare trim upgrades and see matching vehicles.
 - [Compare vehicles](${origin}/compare): compare vehicles by stock number or VIN using their window stickers.
 - [Compare trims](${origin}/trim-guide): factory equipment by trim for Chrysler, Dodge, Jeep and Ram, with manufacturer sources.
-- [Shop by feature](${origin}/shop-by-feature): one page per model and feature, listing the vehicles that have it.
+- [Shop by feature](${origin}/shop-by-feature): one page per model and feature, listing the vehicles that have it, plus a page per model.
+
+## Vehicles in Austin by model
+
+Counts are vehicles listed as of the last inventory check.
+
+${modelLinks().map(o=>`- [${o.model.name}](${origin+o.url}): ${o.model.listed} listed`).join('\n')}
 
 ## Vehicles in Austin by feature
 
@@ -289,10 +370,10 @@ ${guides.join('\n')}
  let before='';try{before=fs.readFileSync(path.join(root,'llms.txt'),'utf8')}catch{}
  if(before!==text)fs.writeFileSync(path.join(root,'llms.txt'),text);}
 
-const newest=manifest.map(m=>m.modified).sort().pop()||today;
-fs.writeFileSync(path.join(root,'sitemap-features.xml'),'<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+[{url:'/shop-by-feature',modified:newest},...manifest].map(m=>`<url><loc>${origin+m.url}</loc><lastmod>${m.modified}</lastmod></url>`).join('')+'</urlset>');
-const out=JSON.stringify({generatedAt:checked,pages:manifest});
+const newest=[...manifest,...modelManifest].map(m=>m.modified).sort().pop()||today;
+fs.writeFileSync(path.join(root,'sitemap-features.xml'),'<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+[{url:'/shop-by-feature',modified:newest},...modelManifest,...manifest].map(m=>`<url><loc>${origin+m.url}</loc><lastmod>${m.modified}</lastmod></url>`).join('')+'</urlset>');
+const out=JSON.stringify({generatedAt:checked,pages:manifest,models:modelManifest});
 let old='';try{old=fs.readFileSync(path.join(root,'data/feature-pages.json'),'utf8')}catch{}
 if(old!==out)fs.writeFileSync(path.join(root,'data/feature-pages.json'),out);
-console.log(`Generated ${manifest.length} feature pages across ${new Set(manifest.map(m=>m.model)).size} models, plus the directory, feature sitemap and llms.txt.`);
+console.log(`Generated ${manifest.length} feature pages across ${new Set(manifest.map(m=>m.model)).size} models and ${modelManifest.length} model pages, plus the directory, feature sitemap and llms.txt.`);
 })().catch(error=>{console.error(error);process.exitCode=1;});
