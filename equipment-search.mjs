@@ -1,4 +1,5 @@
 import {preferenceChecks} from './preference-evidence.mjs';
+import {matchesFeatureModelScope} from './feature-model-scope.mjs';
 import {installedOptionFact,optionEvidenceReason} from './option-inventory.mjs';
 import {exhaustDefinitions,exhaustAliases,exhaustFact} from './exhaust-evidence.mjs';
 import {engineDefinitions,engineAliases,engineTerms,engineFact} from './engine-search.mjs';
@@ -302,6 +303,7 @@ export function parseQuery(input){
 export function matchVehicle(vehicle,sticker,query){
  if(query.preferenceError)return {kind:'unknown',checks:[{id:'preferences',label:'Saved preferences',wanted:true,state:'unknown',evidence:[]}]};
  if(vehicle.locationId!=='18393')return {kind:'excluded',reason:'store'};
+ if(query.modelScope&&!matchesFeatureModelScope(vehicle,sticker,query.modelScope))return {kind:'excluded',reason:'model'};
  if(query.condition&&vehicle.condition!==query.condition)return {kind:'excluded',reason:'condition'};
  if(query.budget!==null&&(vehicle.price===null||vehicle.price>query.budget))return {kind:'excluded',reason:'price'};
  if(query.mileage!==null&&(vehicle.miles===null||vehicle.miles>query.mileage))return {kind:'excluded',reason:'mileage'};

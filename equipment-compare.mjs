@@ -6,6 +6,7 @@ import {optionInventoryLink} from './option-inventory.mjs';
 import {audioInventoryFeature} from './audio-evidence.mjs';
 import {equipmentReviewReason} from './equipment-review.mjs';
 import {featureInventoryLink} from './feature-inventory-link.mjs';
+import {vehicleFeatureModelTerms,vehicleFeatureModelScope} from './feature-model-scope.mjs';
 import {appendStickerCredit} from './sticker-credit.mjs';
 import {appendEquipmentFact} from './comparison-layout.mjs?v=20261010-shared-differences';
 import {applyFactoryEquipment} from './factory-equipment.mjs';
@@ -99,7 +100,7 @@ function render(){
     if(f?.value===true&&f.method!=='factory-specification'&&(inventoryFeature||optionKey)){
      const badge=td.querySelector('.equipment-answer');const a=el('a',badge.textContent);
      const context=parseQuery($('group-query')?.value||new URLSearchParams(location.search).get('q')||'');
-     const linkContext={...shoppingContext(),condition:new URLSearchParams(location.search).get('condition')||'Both',advisor:new URLSearchParams(location.search).get('advisor'),modelTerms:context.terms};
+     const linkContext={...shoppingContext(),condition:new URLSearchParams(location.search).get('condition')||'Both',advisor:new URLSearchParams(location.search).get('advisor'),modelTerms:vehicleFeatureModelTerms(recs[i].v,recs[i].s,context.terms),modelScope:vehicleFeatureModelScope(recs[i].v,recs[i].s)};
      a.href=optionKey?optionInventoryLink({key:optionKey,label:row.label,value:f.displayValue||''},linkContext):featureInventoryLink(inventoryFeature,linkContext);
      a.className=badge.className+' equipment-feature-link';a.style.cssText='display:inline-block;min-height:44px;padding:10px 12px;text-decoration:underline;text-underline-offset:3px;border:1px solid currentColor;border-radius:6px';
      const targetLabel=definitions.find(([id])=>id===inventoryFeature)?.[1]||row.label;a.title='Find vehicles with '+targetLabel;a.setAttribute('aria-label','Find vehicles with '+targetLabel);badge.replaceWith(a);

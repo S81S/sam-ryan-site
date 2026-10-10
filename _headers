@@ -76,3 +76,12 @@ https://:version.:project.pages.dev/*
 
 /compare.html
   Cache-Control: public, max-age=0, must-revalidate
+
+/trim-guide
+  Cache-Control: public, max-age=0, must-revalidate
+
+/trim-guide.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/vehicle-page-context.js
+  Cache-Control: public, max-age=0, must-revalidate
