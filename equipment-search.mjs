@@ -240,7 +240,8 @@ const aliases=[
  ['adaptiveCruise',/\badaptive cruise(?: control)?\b/g],['blindSpot',/\bblind[ -]spot(?: monitoring)?\b/g],
  ['surroundCamera',/\b(?:360(?:[ -]degree)?|surround[ -]view)\s*cameras?\b/g],
  ['backupCamera',/\b(?:back[ -]?up|rear[ -]view) camera\b/g],['remoteStart',/\bremote start\b/g],
- ['thirdRow',/\b(?:third|3rd|3)[ -]row(?:\s+seats?)?\b/g],['tow',/\b(?:tow(?:ing)? package|trailer hitch|tow hitch)\b/g],
+ // Row count and ordinal wording express the same seating requirement.
+ ['thirdRow',/\b(?:(?:three|third)[ -]+|3(?:rd)?[ -]*)rows?(?:[ -]+(?:seats?|seating))?\b/g],['tow',/\b(?:tow(?:ing)? package|trailer hitch|tow hitch)\b/g],
  ['fourWheel',/\b(?:4x4|4wd|four wheel drive)\b/g],['awd',/\b(?:awd|all wheel drive)\b/g],
  ['rwd',/\b(?:rwd|rear[ -]wheel[ -]drive)\b/g],['fwd',/\b(?:fwd|front[ -]wheel[ -]drive)\b/g],['twoWheel',/\b(?:2wd|4x2|2x4|(?:two|2)[ -]wheel[ -]drive)\b/g],
  ['carplay',/\b(?:apple )?carplay\b/g],['androidAuto',/\bandroid auto\b/g],

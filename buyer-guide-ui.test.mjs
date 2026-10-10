@@ -11,6 +11,11 @@ import {createPhotoGuide,swipeDecision} from './photo-guide-engine.mjs';
 import {createPhotoTrimPath} from './photo-trim-path.mjs';
 import {buildBuyerOptionGroups,findBuyerOptionGroup} from './buyer-option-groups.mjs';
 import {classifyGuideGroups} from './buyer-guide-routing.mjs';
+import {attachBuyerCardGestures} from './buyer-card-gestures.mjs';
+import {buyerFeatureExplanation} from './buyer-feature-copy.mjs';
+import {buyerFeaturePhoto} from './buyer-feature-photo-map.mjs';
+import {buyerAudioPhoto} from './buyer-audio-photos.mjs';
+import {renderBuyerFeatureVisual} from './buyer-feature-visuals.mjs';
 const read=path=>JSON.parse(fs.readFileSync(new URL(path,import.meta.url)));
 const guide=read('./trim-standard-data.json'),index=read('./data/factory/index.json');
 const catalog={guide,index,models:buyerModels(guide,index)};
@@ -46,7 +51,7 @@ async function session({saved=null,search='',fetchOverride}={}){
   }
  }});
  const errors=[],location={search};
- const context={loadBuyerCatalog:async()=>catalog,loadBuyerLineup:async id=>{const m=catalog.models.find(m=>m.id===id);return registerBuyerLineup(buyerLineup(m,m.meta?read('./data/factory/'+m.meta.file):null));},assessBuyerMatches,assessBuyerTrim,buyerVehicleTrim,photoPreferences,encodePreferences,readPreferences,createPhotoGuide,createPhotoTrimPath,swipeDecision,buildBuyerOptionGroups,findBuyerOptionGroup,classifyGuideGroups,URLSearchParams,AbortSignal,Intl,Date,structuredClone,matchMedia:()=>({matches:true}),console:{error:e=>errors.push(e)},location,sessionStorage:{getItem:k=>storage.get(k),setItem:(k,v)=>storage.set(k,v)},document:{getElementById:()=>root,querySelector:()=>null,createElement:tag=>make(tag)},fetch:async path=>fetchOverride?fetchOverride(path):({ok:true,json:async()=>read('.'+path)})};
+ const context={loadBuyerCatalog:async()=>catalog,loadBuyerLineup:async id=>{const m=catalog.models.find(m=>m.id===id);return registerBuyerLineup(buyerLineup(m,m.meta?read('./data/factory/'+m.meta.file):null));},assessBuyerMatches,assessBuyerTrim,buyerVehicleTrim,photoPreferences,encodePreferences,readPreferences,createPhotoGuide,createPhotoTrimPath,swipeDecision,buildBuyerOptionGroups,findBuyerOptionGroup,classifyGuideGroups,attachBuyerCardGestures,buyerFeatureExplanation,buyerFeaturePhoto,buyerAudioPhoto,renderBuyerFeatureVisual,URLSearchParams,AbortSignal,Intl,Date,structuredClone,matchMedia:()=>({matches:true}),console:{error:e=>errors.push(e)},location,sessionStorage:{getItem:k=>storage.get(k),setItem:(k,v)=>storage.set(k,v)},document:{getElementById:()=>root,querySelector:()=>null,createElement:tag=>make(tag)},fetch:async path=>fetchOverride?fetchOverride(path):({ok:true,json:async()=>read('.'+path)})};
  const source=fs.readFileSync(new URL('./buyer-guide.mjs',import.meta.url),'utf8').replace(/^import .*;\n/gm,'');
  await vm.runInNewContext('(async()=>{'+source+'})()',context);
  const find=selector=>root.querySelector(selector);
@@ -90,10 +95,10 @@ test('the deployed guide starts at base equipment and shows one browsable card',
  card.onpointerdown({button:0,isPrimary:true,clientX:100,clientY:100,pointerId:1});
  card.onpointerup({clientX:102,clientY:102,pointerId:1});assert.deepEqual(s.state().answers,{});
 });
-test('choosing narrows VINs but keeps the alternatives available until Continue',async()=>{
+test('Want narrows VINs and advances, with alternatives available when revisited',async()=>{
  const s=await start(),initial=count(s);await show(s,'r12315-dashboard');const group=s.state().groupId;
  assert.ok(s.find('[data-show-choice]'),'stack alternatives are visible and clickable');
- await want(s,'r12315-dashboard');assert.ok(count(s)<initial);assert.equal(s.state().groupId,group);assert.match(s.root.innerHTML,/Selected:/);
+ await want(s,'r12315-dashboard');assert.ok(count(s)<initial);assert.notEqual(s.state().groupId,group);assert.match(s.find('.pg-feedback').textContent,/Chosen:|Selected:/);await show(s,'r12315-dashboard');
  await s.click('[data-show-choice="r12527-dashboard"]');assert.equal(s.find('[data-card]').dataset.card,'r12527-dashboard');assert.equal(s.state().answers.screen,'r12315-dashboard');
  await s.click('[data-action="continue"]');assert.notEqual(s.state().groupId,group);assert.ok(s.find('[data-card]'));
  await want(s,'r12315-leather');await s.click('[data-action="results"]');
@@ -149,11 +154,11 @@ test('right swipes choose, left swipes exclude, and Back restores the narrowing'
  assert.deepEqual(s.state().answers.screen,['reject:r12315-dashboard']);assert.notEqual(s.find('[data-card]').dataset.card,'r12315-dashboard');
  await show(s,'r12315-dashboard');await s.click('[data-restore="r12315-dashboard"]');assert.equal(s.state().answers.screen,undefined);
 });
-test('a failed photo disables selection while the guide remains navigable',async()=>{
- const s=await start(),card=await show(s,'r12315-dashboard'),id=card.dataset.card;card.querySelector('img').listeners.error();
- assert.equal(card.getAttribute('aria-disabled'),'true');assert.equal(s.find('[data-answer="'+id+'"]').disabled,true);
- card.onkeydown({key:'Enter',preventDefault(){}});assert.deepEqual(s.state().answers,{});
- await s.click('[data-action="next-option"]');assert.notEqual(s.find('[data-card]').dataset.card,id);
+test('a failed photo falls back to an explained illustration and choices still work',async()=>{
+ const s=await start(),card=await show(s,'r12315-dashboard'),id=card.dataset.card,group=s.state().groupId;card.querySelector('img').listeners.error();
+ const fallback=s.find('[data-card]');assert.equal(fallback.querySelector('img'),null);assert.ok(fallback.querySelector('svg'));assert.ok(fallback.querySelector('.pg-feature-explanation').textContent);
+ assert.equal(s.find('[data-answer="'+id+'"]').disabled,false);
+ await s.click('[data-answer="'+id+'"]');assert.equal(s.state().answers.screen,id);assert.notEqual(s.state().groupId,group);assert.deepEqual(s.errors,[]);
 });
 test('all five reviewed models continue past their opening photo-topic count',async()=>{
  for(const [id,n] of [['ram-1500',4],['ram-3500',2],['chrysler-pacifica',2],['jeep-grand-cherokee',3],['wrangler',2]]){
@@ -171,8 +176,7 @@ test('Wrangler roof stack offers five physical systems and narrows exact vehicle
  assert.match(s.find('[data-card]').textContent,/Stock J22109/);
  await s.click('[data-answer="f1dj1wzb"]');
  assert.ok(count(s)>0&&count(s)<initial,'exact black hardtop selection narrows the pool');
- assert.equal(s.state().groupId,'options-roof');
- await s.click('[data-action="continue"]');
+ assert.notEqual(s.state().groupId,'options-roof');
  assert.ok(s.find('[data-card]'),'guide continues to other important categories');
  await s.click('[data-action="results"]');
  assert.match(s.root.innerHTML,/Stock J22109/);
@@ -220,7 +224,7 @@ test('saved choices resume with working undo after a reload',async()=>{
  const s=await start();await want(s,'r12315-dashboard');const reloaded=await session({saved:s.state()});
  await reloaded.click('[data-action="resume"]');assert.equal(reloaded.state().answers.screen,'r12315-dashboard');
  assert.equal(reloaded.find('[data-action="back"]').disabled,false);await reloaded.click('[data-action="back"]');
- assert.deepEqual(reloaded.state().answers,{});assert.equal(reloaded.state().groupId,s.state().groupId);assert.equal(reloaded.find('[data-card]').dataset.card,'r12315-dashboard');
+ assert.deepEqual(reloaded.state().answers,{});assert.equal(reloaded.state().groupId,'options-screen');assert.equal(reloaded.find('[data-card]').dataset.card,'r12315-dashboard');
 });
 test('review Change and Remove controls edit one preference without losing the others',async()=>{
  const s=await start();await want(s,'r12315-dashboard');await want(s,'r12315-leather');await s.click('[data-action="review"]');
@@ -291,12 +295,12 @@ test('resume preserves obsolete choices with or without portable evidence until 
  }
 });
 
-test('rejecting another alternative preserves the selected candidate until Continue',async()=>{
+test('rejecting another alternative preserves the selection and moves forward',async()=>{
  const s=await start();await want(s,'r12315-dashboard');const group=s.state().groupId;
  await show(s,'r12527-dashboard');await s.click('[data-answer="reject:r12527-dashboard"]');
  assert.equal(s.state().groupId,group);
  assert.equal(s.state().answers.screen,'r12315-dashboard','rejecting an alternate cannot erase the selected exclusive choice');
- assert.match(s.root.innerHTML,/Selected:/);assert.equal(s.find('[data-action="continue"]').disabled,false);
+ assert.match(s.find('.pg-feedback').textContent,/Kept|kept/);assert.ok(s.find('[data-card]'));
 });
 
 test('rejecting every alternative keeps the stack open with explicit recovery',async()=>{
@@ -307,4 +311,36 @@ test('rejecting every alternative keeps the stack open with explicit recovery',a
  await s.click('[data-action="restore-group"]');assert.deepEqual(s.state().answers,{});assert.equal(s.state().groupId,group.id);
  await s.click('[data-answer="skip"]');assert.notEqual(s.state().groupId,group.id);assert.ok(s.find('[data-card]'));
  for(const id of group.questionIds)assert.equal(s.state().answers[id],'skip','No preference preserves the canonical question IDs');
+});
+
+ test('choosing one engine resolves that category and moves to the next applicable feature',async()=>{
+ for(const model of ['wrangler','ram-1500']){
+  const s=await start(model),group=fixture(model).groups.find(g=>g.id==='options-engine');
+  const choice=group.choices.find(c=>Object.values(c.facts||{}).some(f=>['standard','optional'].includes(f.status)));
+  await show(s,choice.id);await s.click('[data-answer="'+choice.id+'"]');
+  assert.notEqual(s.state().groupId,'options-engine');assert.ok(s.find('[data-card]'));
+  assert.equal(Object.values(s.state().answers).filter(v=>group.choices.some(c=>c.id===v)).length,1);
+  assert.match(s.find('.pg-feedback').textContent,/confirmed/);assert.deepEqual(s.errors,[]);
+ }
+});
+ test('all important cards have a feature visual and an on-card explanation',async()=>{
+ const s=await start('wrangler'),seen=new Set();
+ while(s.find('[data-card]')){
+  const c=s.find('[data-card]');assert.ok(c.querySelector('img')||c.querySelector('svg'),s.state().groupId);assert.ok(c.querySelector('.pg-feature-explanation').textContent.length>25);
+  assert.ok(!seen.has(s.state().groupId));seen.add(s.state().groupId);await s.click('[data-answer="skip"]');
+ }
+ assert.ok(seen.size>20);assert.deepEqual(s.errors,[]);
+});
+ test('promotional photo viewports are cropped on both front and rear cards',async()=>{
+ const s=await start('wrangler');await show(s,'f1dj1wzb');
+ assert.ok(s.find('[data-card]').querySelector('.pg-cropped-photo'));assert.ok(s.find('[data-card]').querySelector('img').getAttribute('style').includes('left:-'));
+ assert.ok(s.find('.pg-stack-peeks').querySelector('.pg-cropped-photo'));assert.doesNotMatch(s.find('[data-card]').textContent,/manager.special/i);
+});
+
+test('branded audio cards show the exact OEM speaker photo and retain the equipment choice',async()=>{
+ const s=await start();
+ for(const [id,filename,brand] of [['f1uh0zqe','klipsch','Klipsch'],['f19v1dzs','harman-kardon','Harman Kardon']]){
+  const card=await show(s,id);assert.match(card.querySelector('img').getAttribute('src'),new RegExp('ram1500-2026-'+filename+'-oem'));assert.match(card.textContent,new RegExp(brand));assert.match(card.querySelector('.pg-photo-identity').textContent,/Ram OEM photo/);assert.doesNotMatch(card.querySelector('.pg-photo-identity').textContent,/Stock|undefined/);
+ }
+ assert.deepEqual(s.errors,[]);
 });

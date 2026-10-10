@@ -205,3 +205,69 @@ test('saved broad roof records resolve with their own ID and never become a hard
   assert.equal(rejected.choiceIds.length,5);
  }
 });
+
+const powertrainFixture=id=>{
+ const model=buyerModels(read('./trim-standard-data.json'),read('./data/factory/index.json')).find(m=>m.id===id);
+ const lineup=buyerLineup(model,read('./data/factory/'+model.meta.file));
+ const groups=buildBuyerOptionGroups(lineup).filter(g=>['options-engine','options-transmission'].includes(g.id));
+ return {lineup,groups};
+};
+
+test('choosing a reviewed engine bundle resolves its engine and transmission topics once',()=>{
+ for(const [id,engine,trims,label] of [
+  ['wrangler','f1fd7xjl',['sport','sport-s','sahara','rubicon'],'Six-speed manual transmission'],
+  ['wrangler','fbixrjd',['sport','sport-s','sahara','rubicon'],'Eight-speed automatic transmission'],
+  ['wrangler','f1j10ide',['moab-392'],'Eight-speed automatic transmission'],
+  ['wrangler','fvzymog',['willys','rubicon-x'],'Eight-speed automatic transmission'],
+  ['ram-1500','f1867aas',['tradesman','express','warlock','big-horn-lone-star'],'Eight-speed automatic transmission'],
+  ['ram-1500','fpw7o6e',['tradesman','laramie','rebel'],'Eight-speed automatic transmission'],
+  ['ram-1500','f43vdqj',['limited','limited-longhorn','tungsten'],'Eight-speed automatic transmission'],
+  ['ram-1500','f1r91s05',['tradesman','laramie','limited'],'Eight-speed automatic transmission']
+ ]){
+  const {lineup,groups}=powertrainFixture(id),answers={[engine]:engine};
+  const before=JSON.stringify({answers,questions:lineup.questions});
+  const routes=classifyGuideGroups({lineup,groups,candidateTrimIds:trims,answers});
+  const engineRoute=routes.find(r=>r.group.id==='options-engine'),transmission=routes.find(r=>r.group.id==='options-transmission');
+  assert.equal(engineRoute.status,'resolved',engine);assert.deepEqual(engineRoute.choiceIds,[engine]);
+  assert.equal(transmission.status,'autoIncluded',engine);assert.equal(transmission.reason,'includedBySelection');assert.equal(transmission.label,label);
+  assert.deepEqual(transmission.choiceIds,[engine],'bundle proof retains its own ID, never a scoped transmission alias');
+  assert.equal(transmission.includedBy[0].choiceId,engine);
+  assert.deepEqual(transmission.evidence.map(e=>e.trimId),trims);assert.ok(transmission.evidence.every(e=>e.choiceId===engine&&e.sourceUrl));
+  assert.equal(JSON.stringify({answers,questions:lineup.questions}),before,'no transmission preference or fact is added');
+ }
+});
+
+test('a Wrangler automatic bundle never summarizes its separate base manual transmission as included',()=>{
+ const {lineup,groups}=powertrainFixture('wrangler');
+ const route=classifyGuideGroups({lineup,groups,candidateTrimIds:['willys','rubicon-x'],answers:{fvzymog:'fvzymog'}}).find(r=>r.group.id==='options-transmission');
+ assert.equal(route.label,'Eight-speed automatic transmission');assert.deepEqual(route.choiceIds,['fvzymog']);
+ assert.ok(!route.evidence.some(e=>e.choiceId==='f1mqnvht'));
+ const manual=lineup.choices.get('f1mqnvht');assert.equal(manual.facts.willys.value,'6-speed manual');assert.equal(manual.facts.willys.status,'standard','the source base configuration stays intact');
+});
+
+test('transmission inclusion requires an exact offered bundle across every remaining candidate',()=>{
+ const {lineup,groups}=powertrainFixture('ram-1500'),answers={f1867aas:'f1867aas'};
+ for(const candidateTrimIds of [[],['missing'],['tradesman','rho'],['tradesman','limited']]){
+  const route=classifyGuideGroups({lineup,groups,candidateTrimIds,answers}).find(r=>r.group.id==='options-transmission');
+  assert.equal(route.status,'decision',candidateTrimIds.join(' / '));
+ }
+ for(const change of [f=>{f.text+=' with optional transmission';},f=>{f.sourceUrl='https://example.test/unreviewed';},f=>{f.note='Requires another package';},f=>{delete f.sourceUrl;}]){
+  const context=powertrainFixture('ram-1500');change(context.lineup.choices.get('f1867aas').facts.tradesman);
+  const route=classifyGuideGroups({...context,candidateTrimIds:['tradesman'],answers}).find(r=>r.group.id==='options-transmission');
+  assert.equal(route.status,'decision');
+ }
+ const engineOnly=classifyGuideGroups({lineup,groups,candidateTrimIds:['rho'],answers:{f14l5u3l:'f14l5u3l'}}).find(r=>r.group.id==='options-transmission');
+ assert.notEqual(engineOnly.reason,'includedBySelection','RHO engine-only source cannot settle its transmission');
+});
+
+test('conflicting powertrain selections and explicit transmission exclusions remain visible',()=>{
+ const {lineup,groups}=powertrainFixture('wrangler');
+ for(const answers of [
+  {f1fd7xjl:'f1fd7xjl',fbixrjd:'fbixrjd'},
+  {fbixrjd:['fbixrjd','reject:fbixrjd']},
+  {fbixrjd:'fbixrjd',f1mqnvht:['reject:f1mqnvht']}
+ ]){
+  const before=JSON.stringify(answers),route=classifyGuideGroups({lineup,groups,candidateTrimIds:['sport-s'],answers}).find(r=>r.group.id==='options-transmission');
+  assert.equal(route.status,'decision');assert.equal(JSON.stringify(answers),before);
+ }
+});

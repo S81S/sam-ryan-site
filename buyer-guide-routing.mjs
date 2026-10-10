@@ -2,6 +2,7 @@
 // claiming that a factory option is installed on a VIN. The UI owns when a
 // currently selected group advances; a right swipe can stay on a resolved group.
 import {packageFeatureCondition,sourcedPackageDependency,standardDependencyParents} from './buyer-package-dependencies.mjs';
+import {selectedTransmissionBundle} from './buyer-powertrain-dependencies.mjs';
 const list=value=>Array.isArray(value)?value:[];
 const sourced=f=>f&&typeof f.sourceUrl==='string'&&f.sourceUrl.trim()&&['standard','optional','unavailable'].includes(f.status);
 const offered=f=>sourced(f)&&['standard','optional'].includes(f.status);
@@ -58,6 +59,12 @@ export function classifyGuideGroups({lineup,groups,answers={},candidateTrimIds,p
   if(!trimIds.length)return result('decision','noCandidateTrims');
   if(trimIds.some(id=>!knownTrims.has(id)))return result('decision','unverifiedCandidateTrim');
   if(!choices.length)return result('decision','availabilityUnknown');
+
+  if(group.id==='options-transmission'){
+   const bundle=selectedTransmissionBundle({lineup,selected,trimIds,excludedChoiceIds});
+   if(bundle?.unresolved)return result('decision','powertrainAvailabilityUnknown');
+   if(bundle)return {...result('autoIncluded','includedBySelection',bundle.choiceIds,bundle.evidence,bundle.includedBy),label:bundle.label};
+  }
 
   // Only explicit choice-ID links and the audited package table establish
   // dependencies. "Available with" prose never proves included equipment.
