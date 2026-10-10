@@ -9,3 +9,47 @@
 @media(max-width:600px){.bg-live-matches{font-size:14px;padding:12px}.bg-live-matches>button{width:100%}.photo-guide .pg-card-caption{padding:20px 15px}.photo-guide .pg-main-controls button{font-size:17px;padding:10px 8px}.pg-review-choices li>span{flex-basis:100%}.pg-option-nav{gap:8px;grid-template-columns:44px minmax(0,1fr) 44px;padding-inline:4px}.pg-option-nav button{font-size:27px}.photo-guide .pg-results{margin:16px auto}.photo-guide .pg-result{padding:16px}.photo-guide .pg-bar{font-size:13px}}
 @media(max-width:359px){.photo-guide .pg-card-caption{padding:18px 12px}.photo-guide .pg-card-caption strong{font-size:23px}.photo-guide .pg-card-actions button{font-size:14px;padding:10px 8px}.pg-option-nav{gap:6px}.photo-guide .pg-model-grid{grid-template-columns:minmax(0,1fr)!important}}
 @media(prefers-reduced-motion:reduce){.photo-guide .pg-single-card{rotate:0deg;transition:none}}
+
+/* Alternatives are real cards in one overlapping deck, at every viewport size. */
+.photo-guide .pg-option-stack{box-sizing:border-box;width:100%;max-width:540px;margin:14px auto 0;padding:0 12px;isolation:isolate}
+.photo-guide .pg-stack-peeks{display:flex;flex-direction:column;align-items:center;padding:0 8px}
+.photo-guide .pg-stack-peek{box-sizing:border-box;display:flex;align-items:center;gap:10px;text-align:left;width:calc(100% - (2 - var(--peek))*10px);min-height:66px;margin:0 0 -12px;padding:8px 14px 20px;border:1px solid #8e806c;border-radius:18px 18px 10px 10px;background:linear-gradient(115deg,#263440,#13202b);color:#ecd2af;font:14px/1.35 system-ui,sans-serif;position:relative;z-index:calc(1 + var(--peek));box-shadow:0 -5px 18px #0003;cursor:pointer}
+.photo-guide .pg-stack-peek img{width:60px;height:40px;flex:none;object-fit:contain;border-radius:5px;background:#080e13}
+.photo-guide .pg-stack-peek span{flex:1;min-width:0;overflow-wrap:anywhere}
+.photo-guide .pg-stack-peek b{font-size:20px;font-weight:400;flex:none}
+.photo-guide .pg-stack-peek:hover,.photo-guide .pg-stack-peek:focus-visible{background:#31424e;color:#fff0db;z-index:5}
+.photo-guide .pg-stack-front{position:relative;z-index:4}
+.photo-guide .pg-stack-front .pg-card{rotate:-.6deg}
+.photo-guide .pg-stack-all{max-width:516px;margin:12px auto;font-size:14px}
+.photo-guide .pg-stack-all summary{padding:12px 4px;color:#ebc18b;text-decoration:underline;text-underline-offset:4px}
+.photo-guide .pg-stack-all button{display:block;box-sizing:border-box;width:100%;text-align:left;border:1px solid #625b50;border-radius:10px;background:#17222c;color:#eadac2;font:inherit;padding:12px;margin:8px 0;cursor:pointer}
+.photo-guide .pg-option-nav{align-items:center;margin-bottom:8px;text-align:center;color:#d6c3a5;font-size:14px}
+.photo-guide .pg-main-controls{display:flex;flex-wrap:wrap;gap:8px}
+.photo-guide .pg-main-controls [data-action=continue]{flex-basis:100%;border-color:#d7b37c;color:#f7dab2;background:#24302f}
+.photo-guide .pg-selection-summary{max-width:516px;margin:14px auto;color:#d7e6d5;text-align:center}
+.photo-guide .pg-selection-summary small{color:#b9c7cc}
+.photo-guide .pg-included{max-width:660px;margin:24px auto;border-block:1px solid #455447;padding:4px 0;color:#d3e2d1;font-size:14px}
+.photo-guide .pg-included summary{display:flex;align-items:center;min-height:48px;cursor:pointer;text-decoration:underline;text-underline-offset:4px}
+.photo-guide .pg-included ul{list-style:none;padding:0}
+.photo-guide .pg-included li{padding:12px 0;border-top:1px solid #283831}
+.photo-guide .pg-included li span{display:block;color:#bccbbf;margin:4px 0}
+.photo-guide .pg-included a{display:inline-flex;align-items:center;min-height:44px;color:#ecd2a9}
+.photo-guide .pg-excluded-recovery{max-width:488px;margin:14px auto;padding:14px;border:1px solid #aa8667;border-radius:12px;background:#292219;color:#f4dfbe}
+.photo-guide .pg-excluded-recovery button{border:1px solid #bba077;border-radius:10px;background:#18212a;color:#f4dfbe;padding:10px;font:inherit;cursor:pointer}
+.photo-guide .pg-jump-label{display:grid;gap:8px;padding:8px 0 18px}
+.photo-guide .pg-jump-label select{box-sizing:border-box;min-width:0;width:100%;min-height:48px;border:1px solid #63707a;border-radius:10px;padding:10px;background:#111b24;color:#f4e5d0;font:16px system-ui,sans-serif}
+@media(max-width:600px){.photo-guide .pg-option-stack{padding-inline:7px}.photo-guide .pg-stack-peek{font-size:13px;padding-inline:10px}.photo-guide .pg-stack-peek img{width:48px;height:34px}.photo-guide .pg-main-controls button{font-size:16px}.photo-guide .pg-question p{font-size:14px}}
+@media(prefers-reduced-motion:reduce){.photo-guide .pg-stack-front .pg-card{rotate:0deg;transition:none}}
+
+/* Keep the full route visible without taking space from the photograph. */
+.photo-guide .pg-category-map{max-width:660px;margin:12px auto 22px;border-block:1px solid #3c4b57;color:#d9c8ae;font-size:13px}
+.photo-guide .pg-category-map summary,.photo-guide .pg-additional-equipment summary{min-height:48px;padding:14px 4px;cursor:pointer}
+.photo-guide .pg-category-map nav{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,170px),1fr));gap:8px;padding:0 0 14px}
+.photo-guide .pg-category-map button{display:grid;gap:5px;text-align:left;border:1px solid #52616d;border-radius:12px;background:#12202a;color:#f0ddc1;padding:12px;font:inherit;cursor:pointer;min-width:0}
+.photo-guide .pg-category-map button strong{font-weight:500}.photo-guide .pg-category-map button span{color:#bbc9d2;font-size:12px}
+.photo-guide .pg-category-map [aria-current=step]{border-color:#e7be85;background:#23312e}
+.photo-guide .pg-additional-equipment{max-width:660px;margin:20px auto;font-size:13px;color:#c9d4dc;border-top:1px solid #3b4a56}
+.photo-guide .pg-additional-equipment button{display:block;max-width:100%;min-height:44px;text-align:left;border:1px solid #52616d;border-radius:10px;background:#13212b;color:#e9d4b4;padding:10px 12px;margin:8px 0;font:inherit;cursor:pointer}
+.photo-guide .pg-stack-peek{min-height:60px;margin-bottom:-8px;padding-bottom:16px;width:calc(100% - (3 - var(--peek))*7px)}
+.photo-guide .pg-stack-front{z-index:6}
+.photo-guide .pg-stack-peek:focus-visible{z-index:7}

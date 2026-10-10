@@ -96,3 +96,83 @@ test('current Ram engine and drive selections reduce the pool using installed VI
   assert.equal(rows.filter(r=>r.state==='unknown').length,0,choice.label);
  }
 });
+
+function wranglerContext(){
+ const model=buyerModels(read('./trim-standard-data.json'),read('./data/factory/index.json')).find(m=>m.id==='wrangler');
+ const lineup=registerBuyerLineup(buyerLineup(model,read('./data/factory/'+model.meta.file))),vehicles=read('./data/used-inventory.json').vehicles,records=read('./data/equipment-index.json').records;
+ const byStock=stock=>{const v=vehicles.find(v=>v.stock===stock);return {v,record:records[v.vin]};};
+ const check=(stock,id,wanted=true,override={})=>{const {v,record}=byStock(stock);return buyerPreferenceCheck(v,{...record,...override},null,{...lineup.choices.get(id),wanted});};
+ return {lineup,vehicles,records,byStock,check};
+}
+test('the four-door Wrangler pool excludes every current two-door before any answers',()=>{
+ const {lineup,vehicles,records,byStock}=wranglerContext(),two=vehicles.filter(v=>v.year===2026&&/Wrangler 2-Door/i.test(v.title));
+ assert.ok(two.length>=4);for(const v of two)assert.equal(buyerVehicleTrim(lineup,v,records[v.vin]),null,v.stock);
+ const {v,record}=byStock('J22412');assert.ok(buyerVehicleTrim(lineup,v,record));
+ assert.equal(buyerVehicleTrim(lineup,v,{...record,engine:'Engine: 2.0L I4 PHEV Engine'}),null);
+ assert.equal(buyerVehicleTrim(lineup,v,{...record,identityLines:['2026 MODEL YEAR','WRANGLER 2-DOOR RUBICON 4X4']}),null);
+ const edition=byStock('J22457');assert.ok(buyerVehicleTrim(lineup,edition.v,edition.record),'factory lineup still accepts separately sourced special editions');
+});
+test('current canonical black, body-color and Sky roof choices use the VIN installed lines',()=>{
+ const {check}=wranglerContext();
+ for(const [stock,id] of [['J22109','f1dj1wzb'],['J22457','f1dhm9e4'],['J22412','feeakr0']]){
+  const result=check(stock,id);assert.equal(result.state,'match',stock+' '+id);assert.equal(result.method,'sticker-roof-configuration');assert.ok(result.evidence.length);
+  assert.equal(check(stock,id,false).state,'conflict');
+ }
+ assert.equal(check('J22109','f1dhm9e4').state,'conflict');assert.equal(check('J22457','f1dj1wzb').state,'conflict');
+ assert.equal(check('J22412','f1dj1wzb').state,'conflict');assert.equal(check('J22412','f1dhm9e4').state,'conflict');
+ assert.equal(check('J22109','feeakr0').state,'conflict');
+});
+test('No Soft Top overrides a base soft-top line while a hardtop alone leaves separate soft-top supply unknown',()=>{
+ const {check}=wranglerContext();
+ assert.equal(check('J22109','f6l6ob7').state,'conflict');assert.equal(check('J22109','f6l6ob7',false).state,'match');
+ assert.equal(check('J22109','f10uw5fn').state,'conflict');
+ assert.equal(check('J22196','f6l6ob7').state,'unknown');
+ assert.equal(check('J22412','f6l6ob7').state,'conflict');
+
+});
+test('contradictory roof options and conditional mentions cannot become installed configurations',()=>{
+ const {check}=wranglerContext();
+ for(const options of [
+  ['Sky One-Touch Power-Top','Black 3-Piece Hard Top'],
+  ['Dual Top Group','No Soft Top'],
+  ['Black 3-Piece Hard Top','Body-Color 3-Piece Hard Top'],
+  ['Sky One-Touch Power-Top if equipped'],
+  ['No Soft Top if equipped']
+ ])for(const id of ['f6l6ob7','f1dj1wzb','f1dhm9e4','feeakr0','f10uw5fn']){
+  const lines=['STANDARD EQUIPMENT','Black Sunrider Soft Top','OPTIONAL EQUIPMENT','Customer Preferred Package 22R',...options];
+  assert.equal(check('J22412',id,true,{lines}).state,'unknown',options.join('/')+' '+id);
+ }
+});
+test('roof source guards reject wrong VIN, body, incomplete records, accessories and invented color equivalence',()=>{
+ const {check}=wranglerContext();
+ assert.equal(check('J22412','feeakr0',true,{vin:'WRONG'}).state,'conflict');
+ assert.equal(check('J22088','f6l6ob7').state,'conflict');
+ assert.equal(check('J22412','feeakr0',true,{equipmentSectionComplete:false}).state,'unknown');
+ assert.equal(check('J22412','feeakr0',true,{status:'pending'}).state,'unknown');
+ assert.equal(check('J22412','f1dj1wzb',true,{lines:['STANDARD EQUIPMENT','OPTIONAL EQUIPMENT','Hardtop Headliner by Mopar','Sunrider for hardtop by Mopar']}).state,'unknown');
+ assert.equal(check('J22493','f1dhm9e4').state,'unknown','White hardtop wording alone does not prove the body-color factory option');
+ assert.equal(check('J22493','f1dj1wzb').state,'conflict');
+});
+test('soft-top-only and reviewed dual-top records preserve the distinct included tops',()=>{
+ const {check}=wranglerContext(),base=['STANDARD EQUIPMENT','Black Sunrider Soft Top','OPTIONAL EQUIPMENT','Customer Preferred Package 22R'];
+ assert.equal(check('J22412','f6l6ob7',true,{lines:base}).state,'match');
+ const lines=[...base,'Dual Top Group $2,795','Black 3-Piece Hard Top','Premium Black Sunrider Soft Top'];
+ for(const id of ['f6l6ob7','f1dj1wzb','f10uw5fn'])assert.equal(check('J22412',id,true,{lines}).state,'match');
+ assert.equal(check('J22412','feeakr0',true,{lines}).state,'conflict');
+});
+
+test('the actual hyphenated Dual-Top wording and Jean Blue soft top are resolved without inventing edition scope',()=>{
+ const {check,byStock,lineup}=wranglerContext(),actual=byStock('J22612');
+ assert.equal(buyerVehicleTrim(lineup,actual.v,actual.record),null,'America250 has no catalog trim yet; do not guess a base trim');
+ // Reuse the actual source wording in an explicitly scoped test configuration.
+ const roofLines=actual.record.lines.filter(l=>/Dual.Top|Sunrider|3-Piece Hard Top/.test(l));
+ const lines=['STANDARD EQUIPMENT','OPTIONAL EQUIPMENT','Customer Preferred Package 22R',...roofLines];
+ for(const id of ['f6l6ob7','f1dj1wzb','f10uw5fn'])assert.equal(check('J22412',id,true,{lines}).state,'match',id);
+});
+
+test('canonical Wrangler engine/transmission selections use the installed configuration resolver',()=>{
+ const {check}=wranglerContext();
+ const automatic=check('J22412','fbixrjd');assert.equal(automatic.state,'match');assert.equal(automatic.method,'sticker-powertrain');
+ assert.equal(check('J19530','fbixrjd').state,'conflict','V6 cannot satisfy the turbo I4 configuration');
+ assert.equal(check('J19530','f1fd7xjl').state,'conflict','automatic V6 cannot satisfy the manual V6 configuration');
+});

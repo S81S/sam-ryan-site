@@ -70,6 +70,13 @@ test('trim review evaluates photo requirements instead of claiming every trim fi
  const limited=assessBuyerTrim({...ctx,answers,trim:'limited'});assert.equal(limited.status,'available');
  assert.equal(assessBuyerTrim({...ctx,answers,trim:'made-up'}).validTrim,false);
 });
+test('a canonical Wrangler roof uses exact special-trim evidence without guessing other trim availability',()=>{
+ const ctx=context('wrangler'),answers={f1dj1wzb:'f1dj1wzb'};
+ const willys=assessBuyerTrim({...ctx,answers,trim:'willys'});
+ assert.equal(willys.status,'available');assert.equal(willys.options[0].fact.sourceChoiceId,'f1ws9hvk');
+ assert.equal(assessBuyerTrim({...ctx,answers,trim:'sahara'}).status,'conflict');
+ assert.equal(assessBuyerTrim({...ctx,answers,trim:'85th-anniversary-edition'}).status,'unknown');
+});
 test('unknown photo trim availability and optional equipment omission remain unknown',()=>{
  const ctx=context('jeep-grand-cherokee'),answers={roof:'j22560-panoramic'};
  assert.equal(assessBuyerTrim({...ctx,answers,trim:'laredo'}).status,'unknown');

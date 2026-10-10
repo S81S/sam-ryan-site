@@ -85,3 +85,12 @@ https://:version.:project.pages.dev/*
 
 /vehicle-page-context.js
   Cache-Control: public, max-age=0, must-revalidate
+
+/perfect-match
+  Cache-Control: public, max-age=0, must-revalidate
+
+/perfect-match.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/buyer-guide.css
+  Cache-Control: public, max-age=0, must-revalidate

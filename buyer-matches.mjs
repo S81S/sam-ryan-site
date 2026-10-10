@@ -2,6 +2,7 @@ import {trimAssessment} from './buyer-catalog.mjs';
 import {preferenceChecks} from './preference-evidence.mjs';
 import {photoPreferences,readPreferences} from './shopping-preferences.mjs';
 import {registerReviewedPreferenceEvidence} from './reviewed-preference-evidence.mjs';
+import {sourcedGuideFact} from './buyer-option-groups.mjs';
 
 const selectedRequirements=(lineup,answers,unresolved=[])=>[
  ...(photoPreferences(lineup,answers)?.requirements||[]),
@@ -31,6 +32,12 @@ export function assessBuyerMatches({lineup,pool,records,answers={},unresolved=[]
 export function assessBuyerTrim({lineup,answers={},unresolved=[],trim,photoPath,photos}){
  if(!lineup.trims.some(t=>t.id===trim))return {validTrim:false,status:'unknown',checks:[],conflicts:[],unknown:[],options:[]};
  const factory=trimAssessment(lineup,answers,trim),photo=photoLineup(lineup,photos);
+ for(const check of factory.checks){
+  if(check.fact)continue;
+  const fact=sourcedGuideFact(lineup,check.choice.id,trim);
+  if(!fact)continue;
+  check.fact=fact;check.state=check.wanted?(fact.status==='unavailable'?'conflict':'available'):(fact.status==='standard'?'unknown':'available');
+ }
  const assessment=photoPath?.resolve(photo||lineup,reviewedAnswers(lineup,answers,photos)).assessments.find(a=>a.trim.id===trim);
  const photoChecks=(assessment?.checks||[]).map(c=>({choice:{...c.choice,fullLabel:c.choice.label},wanted:!c.rejected,fact:{status:c.availability,note:c.note,sourceUrl:c.sourceUrl},state:c.status==='supported'?'available':c.status}));
  const assessed=new Set([...factory.checks,...photoChecks].map(c=>c.choice.id));
