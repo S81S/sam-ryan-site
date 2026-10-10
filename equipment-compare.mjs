@@ -4,7 +4,7 @@ import {audioInventoryFeature} from './audio-evidence.mjs';
 import {equipmentReviewReason} from './equipment-review.mjs';
 import {featureInventoryLink} from './feature-inventory-link.mjs';
 import {appendStickerCredit} from './sticker-credit.mjs';
-import {appendEquipmentFact} from './comparison-layout.mjs';
+import {appendEquipmentFact,appendPackageOverview} from './comparison-layout.mjs';
 import {applyFactoryEquipment} from './factory-equipment.mjs';
 import {comparisonRows,visibleComparisonRows,usefulComparisonRow} from './comparison-rows.mjs';
 import {withComparisonSpecifications,specificationDefinitions} from './comparison-specs.mjs';
@@ -62,6 +62,8 @@ function render(){
   const names=[...new Set(found.map(m=>(oneModel?m.trim.name:guideColumnName(m))+extra(m)))];
   p.append(sameTrim?`Both are the ${guideColumnName(matches[0])}, so they start with the same standard equipment. The differences are the options on each one. `:matches.every(Boolean)?`Comparing ${names.length>2?names.slice(0,-1).join(', ')+' and '+names.at(-1):names.join(' and ')}. Window stickers leave off much of the standard equipment, so the factory trim guide fills that in. `:'The factory trim guide fills in standard equipment where a window sticker leaves it off. ');
   if(trimLink){const one=new Set(found.map(m=>m.trim.id)).size===1;const a=el('a',one?`See the ${found[0].trim.name} in Compare Trims ↗`:'See these trims side by side in Compare Trims ↗');a.href=trimLink;p.append(a);}out.append(p);}
+ appendPackageOverview(out,recs);
+ out.append(el('h3','Full vehicle equipment comparison'));
  out.append(el('p','Like a feature? Click an Included checkmark to find inventory with that equipment.'));
  const controls=el('div');controls.className='comparison-controls';
  const label=el('label','Find a feature');label.htmlFor='comparison-feature-filter';const search=el('input');search.id='comparison-feature-filter';search.type='search';search.setAttribute('enterkeyhint','search');search.placeholder='Seats, cameras, roof, towing…';search.value=viewState.search;
