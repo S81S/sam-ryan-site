@@ -1,14 +1,13 @@
 import {readPreferences} from './shopping-preferences.mjs';
 import {appendPreferenceComparison} from './preference-comparison.mjs';
 import {shoppingContext} from './shopping-context.mjs';
-import {appendVehicleTradeoffs} from './comparison-tradeoffs.mjs';
 import {createComparisonGuideLoader} from './comparison-guide-loader.mjs';
 import {optionInventoryLink} from './option-inventory.mjs';
 import {audioInventoryFeature} from './audio-evidence.mjs';
 import {equipmentReviewReason} from './equipment-review.mjs';
 import {featureInventoryLink} from './feature-inventory-link.mjs';
 import {appendStickerCredit} from './sticker-credit.mjs';
-import {appendEquipmentFact,appendPackageOverview} from './comparison-layout.mjs';
+import {appendEquipmentFact} from './comparison-layout.mjs';
 import {applyFactoryEquipment} from './factory-equipment.mjs';
 import {comparisonRows,visibleComparisonRows,usefulComparisonRow} from './comparison-rows.mjs';
 import {withComparisonSpecifications,specificationDefinitions} from './comparison-specs.mjs';
@@ -69,16 +68,13 @@ function render(){
   if(trimLink){const one=new Set(found.map(m=>m.trim.id)).size===1;const a=el('a',one?`See the ${found[0].trim.name} in Compare Trims ↗`:'See these trims side by side in Compare Trims ↗');a.href=trimLink;p.append(a);}out.append(p);}
  if(contextParams.has('preferences')&&!preferences)out.append(el('p','Your saved choices could not be read. Please reopen the photo guide to choose them again.'));
  if(preferences)appendPreferenceComparison(out,recs,preferences);
- appendVehicleTradeoffs(out,rows,recs);
- appendPackageOverview(out,recs);
- const fullHeading=el('h3','Full vehicle equipment comparison');fullHeading.id='vehicle-equipment';out.append(fullHeading);
  out.append(el('p','Like a feature? Click an Included checkmark to find inventory with that equipment.'));
  const controls=el('div');controls.className='comparison-controls';
  const label=el('label','Find a feature');label.htmlFor='comparison-feature-filter';const search=el('input');search.id='comparison-feature-filter';search.type='search';search.setAttribute('enterkeyhint','search');search.placeholder='Seats, cameras, roof, towing…';search.value=viewState.search;
  controls.append(label,search);const buttons=el('div');buttons.className='comparison-view-buttons';controls.append(buttons);
  const status=el('p');status.setAttribute('role','status');
  const scrollHint=el('p','Swipe or scroll across to see every vehicle. On a keyboard, focus the table and use the arrow keys.');scrollHint.id='comparison-scroll-hint';scrollHint.className='comparison-scroll-hint';
- const wrap=el('div');wrap.className='comparison-table-wrap';wrap.tabIndex=0;wrap.setAttribute('role','region');wrap.setAttribute('aria-label','Vehicle equipment comparison');wrap.setAttribute('aria-describedby',scrollHint.id);
+ const wrap=el('div');wrap.id='vehicle-equipment';wrap.className='comparison-table-wrap';wrap.tabIndex=0;wrap.setAttribute('role','region');wrap.setAttribute('aria-label','Vehicle equipment comparison');wrap.setAttribute('aria-describedby',scrollHint.id);
  let mode=viewState.mode==='requested'&&!requested.length?'important':viewState.mode;const buttonRefs=[];
  const legend=el('p','“Needs confirmation” means the available sources have not resolved this detail for that vehicle.');legend.className='comparison-legend';
  function draw(){
@@ -95,8 +91,8 @@ function render(){
    const fields=[['Data source',v=>v.external?(v.decodedAt?'External VIN identity confirmed; dealer listing unverified':'External VIN; identity and dealer listing unverified'):'Covert dealer listing snapshot'],['VIN',v=>v.vin],['Advertised price',v=>Number.isFinite(v.price)?new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(v.price):'Not supplied for this outside vehicle'],['Mileage',v=>Number.isFinite(v.miles)?v.miles.toLocaleString():'Not supplied for this outside vehicle'],['Body / cab',v=>v.decodedSpecs?.body||(/CREW CAB/i.test(v.title)?'Crew cab (listing)':v.decodePending?'Checking VIN…':'VIN decoder did not provide this field')],['Engine',v=>indexEngine(v)||v.decodedSpecs?.engine||(v.decodePending?'Checking VIN…':'VIN decoder did not provide this field')],['Fuel',v=>v.decodedSpecs?.fuel||(v.decodePending?'Checking VIN…':'VIN decoder did not provide this field')]];
    for(const [label,value] of fields){const row=el('tr'),th=el('th',label);th.scope='row';row.append(th);for(const {v} of recs)row.append(el('td',value(v)));body.append(row);}
   }
-  for(const row of visible){const tr=el('tr'),name=el('th');name.scope='row';name.append(el('strong',(row.requested?'★ ':'')+row.label),el('small',row.group==='difference'?'Different':row.group==='listed-on-some'?(recs.length===2?'Confirmed for one; needs confirmation for the other':'Needs confirmation for some vehicles'):row.group==='same'?(row.facts.some(f=>f?.packages)?'Same package name; contents shown below':'Same on all vehicles'):'Source details needed'));tr.dataset.comparisonGroup=row.group;tr.append(name);
-   row.facts.forEach((f,i)=>{const td=el('td');appendEquipmentFact(td,f,document,equipmentReviewReason(window.equipmentIndex.records[recs[i].v.vin],recs[i].v.vin,{guide:guides[i],feature:row.id}));
+  for(const row of visible){const tr=el('tr'),name=el('th');name.scope='row';name.append(el('strong',(row.requested?'★ ':'')+row.label),el('small',row.group==='difference'?'Different':row.group==='listed-on-some'?(recs.length===2?'Confirmed for one; needs confirmation for the other':'Needs confirmation for some vehicles'):row.group==='same'?(row.facts.some(f=>f?.packages)?'Same package name':'Same on all vehicles'):'Source details needed'));tr.dataset.comparisonGroup=row.group;tr.append(name);
+   row.facts.forEach((f,i)=>{const td=el('td');appendEquipmentFact(td,f,document,equipmentReviewReason(window.equipmentIndex.records[recs[i].v.vin],recs[i].v.vin,{guide:guides[i],feature:row.id}),{showPackageContents:row.group==='difference'||row.group==='listed-on-some'});
     const audioFeature=['audioSystem','premiumAudio'].includes(row.id)?audioInventoryFeature(recs[i].s?.features?.audioSystem):null;
     const inventoryFeature=audioFeature||(!row.specification&&definitions.some(([id])=>id===row.id)?row.id:null);
     const optionKey=row.specification?'comparison-'+row.id:null;

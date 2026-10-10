@@ -59,7 +59,7 @@ export function appendPackageOverview(container,records,document=globalThis.docu
 }
 
 // Both layouts use exactly the same answer and evidence renderer.
-export function appendEquipmentFact(container,fact,document=globalThis.document,missingReason) {
+export function appendEquipmentFact(container,fact,document=globalThis.document,missingReason,{showPackageContents=true}={}) {
  const badge=el(document,'strong',!fact?(missingReason?.title||'Sticker evidence needed'):fact.displayValue??(fact.value?'✓ Included':'— Not equipped'));
  badge.className='equipment-answer '+(!fact?'unknown':fact.value?'yes':'no');
  if(!fact)badge.setAttribute('aria-label',missingReason?.title||'Sticker evidence needed');
@@ -67,7 +67,7 @@ export function appendEquipmentFact(container,fact,document=globalThis.document,
  const reason=el(document,'p',missingReason?.detail||'This feature has no supporting sticker evidence yet. Check the original sticker and factory equipment guide before confirming it.');reason.className='equipment-review-reason';container.append(reason);
  if(missingReason?.sourceUrl){const link=el(document,'a',missingReason.sourceLabel||'Check original sticker ↗');link.href=missingReason.sourceUrl;link.target='_blank';link.rel='noopener';container.append(link);}return;
  }
- if(fact.packages?.length){
+ if(showPackageContents&&fact.packages?.length){
   const list=el(document,'div');list.className='comparison-package-list';
   for(const group of fact.packages){
    const section=el(document,'section');section.className='comparison-package';
