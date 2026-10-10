@@ -1,5 +1,6 @@
 // Some dealer listings leave the model out of the title ("New 2027 JEEP SAHARA", "New 2027 TRADESMAN").
-// The window sticker's own model line names it, so the title is completed from there — nothing else is changed.
+// The window sticker's own model line names it, so the title is completed from there. A make the dealer feed
+// repeats is written once. Nothing else is changed.
 const hasModel=/\b(?:WRANGLER|GLADIATOR|CHEROKEE|COMPASS|WAGONEER|RECON|RENEGADE|PROMASTER|DURANGO|CHARGER|HORNET|CHALLENGER|PACIFICA|VOYAGER|[1-5]500)\b/i;
 const models=[
  [/\bWRANGLER (4-DOOR|2-DOOR)\b/,'JEEP',m=>'WRANGLER '+m[1]],[/\bWRANGLER UNLIMITED\b/,'JEEP',()=>'WRANGLER UNLIMITED'],[/\bWRANGLER\b/,'JEEP',()=>'WRANGLER'],
@@ -8,8 +9,10 @@ const models=[
  [/\bRAM ([1-3]500) PROMASTER\b/,'RAM',m=>'PROMASTER '+m[1]],[/\bRAM ([1-5]500)\b/,'RAM',m=>m[1]],
  [/\bDURANGO\b/,'DODGE',()=>'DURANGO'],[/\bCHARGER\b/,'DODGE',()=>'CHARGER'],[/\bHORNET\b/,'DODGE',()=>'HORNET'],[/\bPACIFICA\b/,'CHRYSLER',()=>'PACIFICA'],[/\bVOYAGER\b/,'CHRYSLER',()=>'VOYAGER']
 ];
+// A dealer title that says the make twice ("New 2026 JEEP JEEP RECON MOAB") says it once.
+const makeOnce=title=>title.replace(/^((?:New|Used)\s+20\d\d\s+)([A-Za-z-]+)\s+\2(?=\s)/i,'$1$2');
 export function completeTitle(title,sticker,vin){
- const t=String(title||''),parts=t.match(/^(New|Used)\s+(20\d\d)\s+(.+)$/i);
+ const t=makeOnce(String(title||'')),parts=t.match(/^(New|Used)\s+(20\d\d)\s+(.+)$/i);
  if(!parts||hasModel.test(parts[3]))return t;
  if(sticker?.status!=='verified'||(vin&&sticker.vin&&sticker.vin!==vin))return t;
  const line=(sticker.identityLines||[]).map(l=>String(l).toUpperCase()).find(l=>models.some(([p])=>p.test(l)));

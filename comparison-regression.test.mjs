@@ -367,6 +367,9 @@ test('a dealer title with no model name is completed from the window sticker, an
  assert.equal(completeTitle('New 2027 JEEP SAHARA',{status:'unavailable'},'V'),'New 2027 JEEP SAHARA');
  assert.equal(completeTitle('New 2027 JEEP SAHARA',{...sticker('WRANGLER 4-DOOR SAHARA 4X4'),vin:'OTHER'},'V'),'New 2027 JEEP SAHARA');
  assert.equal(completeTitle('Used 2025 Ford F-150 XLT',null,'V'),'Used 2025 Ford F-150 XLT');
+ // The dealer feed repeats the make on some listings; other repeated-looking words are left alone.
+ assert.equal(completeTitle('New 2026 JEEP JEEP RECON MOAB',null,'V'),'New 2026 JEEP RECON MOAB');
+ assert.equal(completeTitle('Used 2022 Land Rover Range Rover Sport',null,'V'),'Used 2022 Land Rover Range Rover Sport');
  // Running it again changes nothing.
  assert.equal(completeTitle('New 2027 JEEP WRANGLER 4-DOOR SAHARA',sticker('WRANGLER 4-DOOR SAHARA 4X4'),'V'),'New 2027 JEEP WRANGLER 4-DOOR SAHARA');
 });

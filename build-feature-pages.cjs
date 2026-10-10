@@ -10,9 +10,11 @@
 //  - A feature that 19 in 20 of a model's readable stickers show is not a way to narrow that model, so it gets no
 //    page. Engines and powertrains are the exception (`always`): shoppers search for those by model regardless.
 //  - No availability or offer claims: prices are the listing's own, and every page says to confirm before visiting.
+//  - Touchscreen size is not a yes/no search feature. Those pages group vehicles by the installed size that Compare
+//    reads from each window sticker (comparison-specs.mjs), so they agree with Compare instead of with Find Your Car.
 // Output: <model>-with-<feature>-austin.html, shop-by-feature.html, sitemap-features.xml, data/feature-pages.json.
 const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto');
-const CREATE_AT=3,MAX_CARDS=36,SAME_LIST=0.85,NEARLY_ALL=0.95;
+const CREATE_AT=3,MAX_CARDS=36,MAX_CARDS_UNFILTERED=96,SAME_LIST=0.85,NEARLY_ALL=0.95;
 
 // Models with enough vehicles to be worth a page. `test` runs against the completed, upper-case listing title.
 const MODELS=[
@@ -73,6 +75,7 @@ const {completeTitle}=await import('./title-model.mjs');
 const {guideTrim}=await import('./trim-link.mjs');
 const {vehicleImage,vehicleImageSet}=await import('./vehicle-images.mjs');
 const {featureInventoryLink}=await import('./feature-inventory-link.mjs');
+const {withComparisonSpecifications}=await import('./comparison-specs.mjs');
 const siteShell=require('./site-shell.cjs');
 const root=path.resolve(process.argv[2]||__dirname),origin='https://carswithsam.com';
 const read=f=>JSON.parse(fs.readFileSync(path.join(root,f),'utf8'));
@@ -114,6 +117,22 @@ const cleanEvidence=line=>String(line||'').replace(/\s*\(VS [^)]*\)/gi,'').repla
 
 // ── Which vehicles each page lists ───────────────────────────────────────────────────────────────────────────
 const baseQuery=parseQuery('');
+// Touchscreen sizes found in a model's stock, largest first. The sizes are discovered from the stickers, so a new size
+// gets a page without a change here. Compare's reading is used as is: when it cannot settle on one size, the vehicle
+// is left out.
+const screenFeature=size=>{const n=size.replace(/ inches$/,''),label=n+'-inch touchscreen';return {id:'screen:'+n,screen:true,name:cap(label),slug:n.replace('.','-')+'-inch-touchscreen',with:'the '+label,what:'The center touchscreen comes in more than one size on this model, and a trim name alone does not tell you which one a vehicle has. The size here is read from the Uconnect line on each window sticker. The instrument cluster screen and a passenger display are separate items.'};};
+function screenGroups(stock){
+ const groups=new Map();
+ for(const v of stock){
+  const fact=withComparisonSpecifications(v,records[v.vin])?.features?.infotainmentScreen;
+  if(!fact||!/^\d+(?:\.\d+)? inches$/.test(fact.displayValue||''))continue;
+  if(!groups.has(fact.displayValue))groups.set(fact.displayValue,[]);
+  groups.get(fact.displayValue).push({v,check:{evidence:fact.evidence||[]},quoted:(fact.evidence||[]).map(cleanEvidence).filter(Boolean),notes:[]});
+ }
+ // Size is only worth a page when the lot offers a real choice: at least two sizes with enough vehicles each.
+ if([...groups.values()].filter(list=>list.length>=CREATE_AT).length<2)return [];
+ return [...groups].sort((a,b)=>parseFloat(b[0])-parseFloat(a[0])).map(([size,matches])=>({feature:screenFeature(size),matches}));
+}
 let previous={pages:[]};try{previous=read('data/feature-pages.json')}catch{}
 const kept=new Map((previous.pages||[]).map(p=>[p.file,p]));
 const built=[];
@@ -121,11 +140,15 @@ for(const model of MODELS){
  const stock=vehicles.filter(v=>{const t=v.title.toUpperCase();return model.test.test(t)&&!(model.not&&model.not.test(t));});
  if(!stock.length)continue;
  const accepted=[],readable=stock.filter(v=>records[v.vin]?.status==='verified').length;
- for(const feature of FEATURES){
-  const query={...baseQuery,requirements:[{id:feature.id,wanted:true}]},matches=[];
-  for(const v of stock){const r=matchVehicle(v,records[v.vin],query);if(r.kind!=='match')continue;const check=(r.checks||[]).find(c=>c.id===feature.id)||{},printed=new Set([...(records[v.vin]?.lines||[]),...(records[v.vin]?.identityLines||[])]),evidence=check.evidence||[];
-   // Only wording printed on the sticker is shown as the sticker's; the search's own explanations are kept apart.
-   matches.push({v,check,quoted:evidence.filter(l=>printed.has(l)).map(cleanEvidence).filter(Boolean),notes:evidence.filter(l=>!printed.has(l))});}
+ // Screen sizes come last, so an existing feature page is never displaced by a screen page that lists the same vehicles.
+ for(const candidate of [...FEATURES.map(feature=>({feature})),...screenGroups(stock)]){
+  const feature=candidate.feature,matches=candidate.matches||[];
+  if(!candidate.matches){
+   const query={...baseQuery,requirements:[{id:feature.id,wanted:true}]};
+   for(const v of stock){const r=matchVehicle(v,records[v.vin],query);if(r.kind!=='match')continue;const check=(r.checks||[]).find(c=>c.id===feature.id)||{},printed=new Set([...(records[v.vin]?.lines||[]),...(records[v.vin]?.identityLines||[])]),evidence=check.evidence||[];
+    // Only wording printed on the sticker is shown as the sticker's; the search's own explanations are kept apart.
+    matches.push({v,check,quoted:evidence.filter(l=>printed.has(l)).map(cleanEvidence).filter(Boolean),notes:evidence.filter(l=>!printed.has(l))});}
+  }
   const file=`${model.slug}-with-${feature.slug}-austin.html`;
   if(matches.length<(kept.has(file)?1:CREATE_AT))continue;
   if(!feature.always&&readable&&matches.length/readable>=NEARLY_ALL)continue;
@@ -177,14 +200,15 @@ function render(p,others){
  const phrases=[...wording].sort((a,b)=>b[1]-a[1]).slice(0,5);
  const manualSeen=new Map();if(feature.manual)for(const {notes,check} of matches)for(const t of notes)if(!manualSeen.has(t))manualSeen.set(t,safe(check.sourceUrl));
  const manualNotes=[...manualSeen].slice(0,6);
- const live=featureInventoryLink(feature.id,{modelTerms:[model.q]});
+ const live=feature.screen?'/inventory?'+new URLSearchParams({q:model.q,condition:'Both'}):featureInventoryLink(feature.id,{modelTerms:[model.q]});
+ const limit=feature.screen?MAX_CARDS_UNFILTERED:MAX_CARDS;
  const sms=`sms:+17372091320?body=${encodeURIComponent(`Hi Sam, I’m looking for a ${model.name} with ${feature.with}. What do you have?`)}`;
- const sameModel=others.filter(o=>o.model===model&&o!==p),sameFeature=others.filter(o=>o.feature===feature&&o!==p);
- const body=`<div class="wrap"><p class="fp-crumbs"><a href="/">Home</a> / <a href="/shop-by-feature">Shop by feature</a></p><div class="eyebrow">Cars With Sam · Austin, Texas</div><h1>${esc(h1)}</h1><p class="authority-byline">Published by Cars With Sam, the shopping site created and owned by <a href="/sam">Samuel “Sam” Sweitzer</a>. Inventory checked <time datetime="${isoDay(checked)}">${esc(day(checked))}</time>.</p><p class="fp-lead">${esc(lead)}</p><div class="hero-actions"><a class="btn" href="${esc(sms)}">TEXT SAM ABOUT THESE</a><a class="btn ghost" href="${esc(live)}">SEARCH WITH MORE FILTERS</a></div>
+ const sameModel=others.filter(o=>o.model===model&&o!==p),sameFeature=others.filter(o=>o.feature.id===feature.id&&o!==p);
+ const body=`<div class="wrap"><p class="fp-crumbs"><a href="/">Home</a> / <a href="/shop-by-feature">Shop by feature</a></p><div class="eyebrow">Cars With Sam · Austin, Texas</div><h1>${esc(h1)}</h1><p class="authority-byline">Published by Cars With Sam, the shopping site created and owned by <a href="/sam">Samuel “Sam” Sweitzer</a>. Inventory checked <time datetime="${isoDay(checked)}">${esc(day(checked))}</time>.</p><p class="fp-lead">${esc(lead)}</p><div class="hero-actions"><a class="btn" href="${esc(sms)}">TEXT SAM ABOUT THESE</a><a class="btn ghost" href="${esc(live)}">${feature.screen?'SEARCH ALL '+esc(model.name.toUpperCase())+' LISTINGS':'SEARCH WITH MORE FILTERS'}</a></div>
 <h2>${esc(feature.name)}: what to know</h2><p>${esc(feature.what)}${feature.more?` <a href="${feature.more[0]}">${esc(feature.more[1])}</a>.`:''}</p>${feature.caution?`<p class="fp-note">${esc(feature.caution)}</p>`:''}
 <h2>Which ${esc(model.name)} trims have it right now</h2>${trimTable}${trimNote}
 ${phrases.length?`<h2>How it reads on the window sticker</h2><p>These are the sticker’s own words on the vehicles below.</p><ul class="fp-phrases">${phrases.map(([l,c])=>`<li>“${esc(l)}” <span class="fp-muted">on ${c} of ${n}</span></li>`).join('')}</ul>`:''}
-<h2 id="vehicles">${esc(cap(plural(n,model.name,model.plural)))} with ${esc(feature.with)}</h2><p class="fp-muted">${n>MAX_CARDS?`Showing ${MAX_CARDS} of ${n}, new vehicles first and lowest listed price first. <a href="${esc(live)}">See all ${n} in Find Your Car</a>.`:'New vehicles first, lowest listed price first.'} Listed prices and incentives can have conditions. Confirm your price, taxes, fees and availability before visiting.</p><div class="fp-grid">${sorted.slice(0,MAX_CARDS).map(m=>card(m,feature)).join('')}</div>
+<h2 id="vehicles">${esc(cap(plural(n,model.name,model.plural)))} with ${esc(feature.with)}</h2><p class="fp-muted">${n>limit?`Showing ${limit} of ${n}, new vehicles first and lowest listed price first. ${feature.screen?'Text Sam for the rest.':`<a href="${esc(live)}">See all ${n} in Find Your Car</a>.`}`:'New vehicles first, lowest listed price first.'} Listed prices and incentives can have conditions. Confirm your price, taxes, fees and availability before visiting.</p><div class="fp-grid">${sorted.slice(0,limit).map(m=>card(m,feature)).join('')}</div>
 ${unread?`<p class="fp-note">${cap(plural(unread,'more '+model.name+' is','more '+model.plural+' are'))} listed without a readable window sticker on file, so ${unread===1?'it is':'they are'} not shown here. That does not mean ${unread===1?'it lacks':'they lack'} ${esc(feature.with)}. <a href="/contact?advisor=Sam">Ask us to check.</a></p>`:''}
 <h2>Don’t see the one you want?</h2><p>Listings change every day, and vehicles on order may not be listed yet. Text Sam at <a href="${esc(sms)}">737-209-1320</a> with the features you need and your budget, or <a href="/contact?advisor=Sam">ask Sam</a> or <a href="/contact?advisor=Ryan">ask Ryan</a> to look for one.</p>
 ${manualNotes.length?`<h2>What the owner’s manual says</h2><ul class="fp-phrases">${manualNotes.map(([text,src])=>`<li>${esc(text)}${src?` <a href="${esc(src)}" target="_blank" rel="noopener noreferrer">Owner’s manual ↗</a>`:''}</li>`).join('')}</ul>`:''}
@@ -195,7 +219,7 @@ ${sameFeature.length?`<h2>Other models with ${esc(feature.with)}</h2><p class="f
  const pageUrl=origin+url;
  const graph=[...identity,
   {'@type':'CollectionPage','@id':pageUrl+'#page',url:pageUrl,name:h1,description:desc,inLanguage:'en-US',isPartOf:{'@id':origin+'/#website'},author:{'@id':origin+'/#sam'},publisher:{'@id':origin+'/#publisher'},mainEntity:{'@id':pageUrl+'#list'}},
-  {'@type':'ItemList','@id':pageUrl+'#list',name:h1,numberOfItems:n,itemListElement:sorted.slice(0,MAX_CARDS).map((m,i)=>({'@type':'ListItem',position:i+1,url:origin+'/vehicle-'+m.v.vin,name:displayTitle(m.v.title)}))},
+  {'@type':'ItemList','@id':pageUrl+'#list',name:h1,numberOfItems:n,itemListElement:sorted.slice(0,limit).map((m,i)=>({'@type':'ListItem',position:i+1,url:origin+'/vehicle-'+m.v.vin,name:displayTitle(m.v.title)}))},
   {'@type':'BreadcrumbList',itemListElement:[{'@type':'ListItem',position:1,name:'Home',item:origin+'/'},{'@type':'ListItem',position:2,name:'Shop by feature',item:origin+'/shop-by-feature'},{'@type':'ListItem',position:3,name:h1,item:pageUrl}]}];
  return {html:shell(h1,desc,url,body,graph,safe(sorted[0]?.v.photoUrl)&&vehicleImage(sorted[0].v.photoUrl,960)),h1};
 }
