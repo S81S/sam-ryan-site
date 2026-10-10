@@ -4,6 +4,7 @@ import {factoryRowIds} from './factory-stickers.mjs';
 import {plainFact} from './plain-labels.mjs';
 import {packageDetails,listedPackageNames} from './package-equipment.mjs';
 import {engineProfile} from './engine-search.mjs';
+import {resolveReviewedPreference} from './reviewed-preference-evidence.mjs';
 
 const norm=s=>String(s||'').normalize('NFKC').toLowerCase().replace(/[®™]/g,'').replace(/[\u2010-\u2015]/g,'-').replace(/\s+\$[\d,.]+.*$/,'').replace(/\([^()]*\)/g,' ').replace(/[^a-z0-9.]+/g,' ').trim();
 const packageKey=s=>norm(s).replace(/\s+group$/,'');
@@ -49,6 +50,10 @@ export function buyerVehicleTrim(lineup,vehicle,record){
  const identity=(record?.identityLines||[]).join(' ')||vehicle.title||'',filter=lineup.meta?.stock;
  if(filter?.only&&!new RegExp(filter.only,'i').test(identity)||filter?.not&&new RegExp(filter.not,'i').test(identity))return null;
  return match;
+}
+export function reviewedBuyerPreferenceCheck(vehicle,record,resolved,requirement,base,requirements){
+ const lineup=loadedBuyerLineup(requirement.model),match=lineup&&buyerVehicleTrim(lineup,vehicle,record);
+ return resolveReviewedPreference({vehicle,record,resolved,requirement,base,requirements,lineup,match});
 }
 export function buyerPreferenceCheck(vehicle,record,resolved,r){
  let evidence=[],sourceUrl,known=false,has=false,method;

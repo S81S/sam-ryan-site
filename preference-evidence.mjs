@@ -2,7 +2,7 @@ import {withComparisonSpecifications} from './comparison-specs.mjs';
 import {applyFactoryEquipment} from './factory-equipment.mjs';
 import {wranglerConfiguration} from './photo-choice-scope.mjs';
 import {evidenceVersion} from './evidence-version.mjs';
-import {buyerPreferenceCheck} from './buyer-evidence.mjs';
+import {buyerPreferenceCheck,reviewedBuyerPreferenceCheck} from './buyer-evidence.mjs';
 const resolvedCache=new WeakMap();
 // The same three-state test serves photo choices, inventory and Compare.
 export function preferenceChecks(vehicle,record,requirements=[]){
@@ -15,7 +15,7 @@ export function preferenceChecks(vehicle,record,requirements=[]){
   else{resolved=withComparisonSpecifications(vehicle,applyFactoryEquipment(vehicle,record));resolvedCache.set(vehicle,{version,resolved});}
  }
  return requirements.map(r=>{
-  if(r.feature==='factoryChoice')return buyerPreferenceCheck(vehicle,record,resolved,r);
+  if(r.feature==='factoryChoice')return reviewedBuyerPreferenceCheck(vehicle,record,resolved,r,buyerPreferenceCheck(vehicle,record,resolved,r),requirements);
   let fact=resolved?.features?.[r.feature],exact,known=false;
   // Tow Pages is a dashboard feature, not evidence of installed hitch hardware.
   if(r.feature==='tow'&&fact?.value===true){
@@ -31,7 +31,8 @@ export function preferenceChecks(vehicle,record,requirements=[]){
   }
   if(typeof r.value==='boolean'){known=typeof fact?.value==='boolean';exact=fact?.value===r.value;}
   else{known=typeof fact?.comparisonValue==='string';exact=known&&fact.comparisonValue===r.value.trim().toLowerCase()&&(!configuration||!r.allowedTrimIds||r.allowedTrimIds.includes(configuration.trim));}
-  return {id:r.feature,label:r.label,wanted:r.wanted,value:r.value,state:known?(exact===r.wanted?'match':'conflict'):'unknown',
+  const check={id:r.feature,label:r.label,wanted:r.wanted,value:r.value,state:known?(exact===r.wanted?'match':'conflict'):'unknown',
    evidence:fact?.evidence||[],sourceUrl:fact?.sourceUrl||record?.sourceUrl,method:fact?.method};
+  return reviewedBuyerPreferenceCheck(vehicle,record,resolved,r,check,requirements);
  });
 }

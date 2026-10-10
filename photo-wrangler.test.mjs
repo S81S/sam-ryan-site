@@ -7,15 +7,17 @@ import {createPhotoTrimPath} from './photo-trim-path.mjs';
 const read=p=>JSON.parse(fs.readFileSync(new URL(p,import.meta.url)));
 const catalog=read('./data/feature-photo-guide.json'),inventory=read('./data/used-inventory.json'),{records}=read('./data/equipment-index.json');
 const engine=createPhotoGuide(catalog,inventory.vehicles,records),lineup=engine.lineups.find(l=>l.id==='wrangler');
+const photoQuestions=lineup.questions.filter(q=>q.choices.some(c=>engine.photos.has(c.id)));
+const photoChoices=photoQuestions.flatMap(q=>q.choices).filter(c=>engine.photos.has(c.id));
 const trimData=read('./data/photo-trim-path.json'),paths=createPhotoTrimPath(trimData,engine);
 const vehicle=stock=>inventory.vehicles.find(v=>v.stock===stock);
 const stocks=(answers={},condition='Both')=>engine.matches(lineup,answers,0,condition).map(v=>v.stock);
 
 test('Wrangler adds four original VIN-matched photos without displacing the four prior guides',()=>{
  assert.deepEqual(engine.lineups.map(l=>l.id),['ram-1500','ram-3500','chrysler-pacifica','jeep-grand-cherokee','wrangler']);
- assert.deepEqual(lineup.questions.map(q=>q.id),['seats','roof']);
- assert.equal(lineup.questions.flatMap(q=>q.choices).length,4);
- for(const photo of lineup.questions.flatMap(q=>q.choices)){
+ assert.deepEqual(photoQuestions.map(q=>q.id),['seats','roof']);
+ assert.equal(photoChoices.length,4);
+ for(const photo of photoChoices){
   const v=vehicle(photo.stock);assert.equal(v.photoUrls[photo.photoIndex-1],photo.imageSource);
   assert.ok(engine.choiceMatches(v,photo));
   const bytes=fs.readFileSync(new URL('.'+photo.image,import.meta.url));
@@ -108,7 +110,7 @@ test('The Wrangler route starts at Sport and distinguishes optional upgrades fro
  assert.equal(rubiconX.choices['j22412-nappa'].status,'standard');
  assert.equal(rubiconX.choices['j22109-hardtop'].status,'standard');
  assert.equal(rubiconX.choices['j22412-skyroof'].status,'optional');
- for(const trim of model.trims)for(const photo of lineup.questions.flatMap(q=>q.choices)){
+ for(const trim of model.trims)for(const photo of photoChoices){
   const rule=trim.choices[photo.id];assert.ok(rule.sourceUrl);assert.notEqual(rule.status,'unknown');
  }
 });
