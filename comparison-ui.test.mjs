@@ -28,12 +28,12 @@ const packageGroup=(name,equipment,exclusions=[])=>({name,equipment,exclusions,m
 function renderComparison(groups=[
  [packageGroup('Comfort Group',['Heated Front Seats','Heated Steering Wheel','Power Driver Seat','Dual-Zone Automatic Temperature Control','115-Volt Power Outlet','Remote Start System'],['Available separately: panoramic roof'])],
  [packageGroup('Comfort Group',['Heated Front Seats','Heated Steering Wheel'])]
-]){
+],{titles=['Used 2020 Test vehicle 1','Used 2020 Test vehicle 2'],search=''}={}){
  const root=node('section'),selectors=Object.fromEntries([1,2,3,4,5].map((i)=>['choose-'+i,{value:i<3?'VIN'+i:''}]));
  const records=Object.fromEntries(groups.map((packageGroups,i)=>{const vin='VIN'+(i+1);return [vin,{vin,status:'verified',sourceUrl:'https://example.test/sticker/'+vin,identityLines:['2020 MODEL YEAR','TEST VEHICLE'],lines:['Heated Front Seats',...(i===0?['Power Sunroof']:[]),'OPTIONAL EQUIPMENT',...packageGroups.map(g=>g.name)],packageGroups,features:{heatedSeats:{value:true,evidence:['Heated Front Seats']},...(i===0?{sunroof:{value:true,evidence:['Power Sunroof']}}:{})}}];}));
  const document={createElement:node,getElementById:id=>id==='automatic-equipment'?root:selectors[id]||null,addEventListener(k,fn){this[k]=fn;}};
- const window={usedInventoryData:{vehicles:[1,2].map(i=>({vin:'VIN'+i,stock:'TEST'+i,title:'Used 2020 Test vehicle '+i,condition:'Used'}))},equipmentIndex:{records}};
- const context={...imports,document,window,location:{search:''},URLSearchParams,Intl,console,
+ const window={usedInventoryData:{vehicles:[1,2].map(i=>({vin:'VIN'+i,stock:'TEST'+i,title:titles[i-1],condition:'Used'}))},equipmentIndex:{records}};
+ const context={...imports,document,window,location:{search},URLSearchParams,Intl,console,
   createComparisonGuideLoader:()=>()=>new Promise(()=>{}),ensurePackageContents:()=>{},shoppingContext:()=>({})};
  vm.runInNewContext(source.replace(/^import .*;\n/gm,''),context);
  return {root,records,change:()=>document['compare:changed'](),buttons:()=>root.querySelector('.comparison-view-buttons').querySelectorAll('button'),
@@ -90,4 +90,19 @@ test('Category and feature search survive an equipment refresh',()=>{
  assert.equal(s.buttons().find(b=>b.textContent.startsWith('Shared equipment')).getAttribute('aria-pressed'),'true');
  assert.equal(s.root.querySelector('input').value,'heated');
  assert.ok(s.rows().length);assert.ok(s.rows().every(r=>r.dataset.comparisonGroup==='same'));
+});
+
+test('Each Included link keeps the clicked vehicle model, even in a mixed-model comparison',()=>{
+ for(const search of ['', '?q=2026+Ram+1500&condition=Used&advisor=Ryan']){
+  const s=renderComparison(undefined,{titles:['Used 2026 Ram 1500 Laramie','Used 2026 Ram 3500 Laramie'],search});
+  const row=s.rows().find(r=>/^Heated front seats/i.test(r.children[0].textContent));assert.ok(row);
+  for(const [i,model] of ['1500','3500'].entries()){
+   const url=new URL(row.children[i+1].querySelector('.equipment-feature-link').href,'https://carswithsam.com');
+   assert.equal(url.searchParams.get('feature'),'heatedSeats');
+   assert.equal(url.searchParams.get('modelScope'),'Ram '+model);
+   assert.match(url.searchParams.get('q'),new RegExp('ram '+model));
+   assert.doesNotMatch(url.searchParams.get('q'),new RegExp(model==='1500'?'3500':'1500'));
+   if(search){assert.match(url.searchParams.get('q'),/2026/);assert.equal(url.searchParams.get('condition'),'Used');assert.equal(url.searchParams.get('advisor'),'Ryan');}
+  }
+ }
 });

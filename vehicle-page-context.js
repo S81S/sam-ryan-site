@@ -10,6 +10,7 @@
   const back = document.getElementById('back-results');
   const search = new URLSearchParams();
   if (request) search.set('q', request);
+  if (params.get('modelScope')) search.set('modelScope', params.get('modelScope').slice(0,300));
   if (condition) search.set('condition', condition);
   if (equipment) search.set('requestedEquipment', equipment);
   if (preferences) search.set('preferences', preferences);

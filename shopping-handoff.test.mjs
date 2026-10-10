@@ -41,6 +41,13 @@ test('Feature-only detail requests are retained even without a free-text query',
  assert.ok(new URL(s.contact.href).searchParams.get('request').includes(preferences));
 });
 
+test('The exact model constraint survives detail back links and Compare',()=>{
+ const s=detailSession('?q=Jeep+Wagoneer&modelScope=Jeep+Wagoneer&feature=heatedSeats');
+ assert.equal(new URL(s.back.href,origin).searchParams.get('modelScope'),'Jeep Wagoneer');
+ assert.equal(new URL(s.compare.href).searchParams.get('modelScope'),'Jeep Wagoneer');
+ assert.equal(shoppingContext({getElementById:()=>null},'?modelScope=Jeep+Wagoneer').modelScope,'Jeep Wagoneer');
+});
+
 test('Back to comparison restores the full valid shortlist and keeps the shopping request',()=>{
  const params=new URLSearchParams(search);params.set('from','compare');params.set('vehicles',[vin1,vin2,vin1,'not-a-vin'].join(','));
  const s=detailSession('?'+params),back=new URL(s.back.href,origin);
