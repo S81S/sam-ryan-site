@@ -17,7 +17,13 @@ export function installedEquipmentDisplay(vehicle,sticker){
  if(!resolved)return {evidence:[],replaced:[],needsReview:[],specifications:{}};
  const raw=[...new Set(Object.values(sticker.features||{}).filter(f=>f.value===true).flatMap(f=>f.evidence||[]))];
  const replaced=[],needsReview=[],evidence=[];
+ // Only suppress a printed base roof when the reviewed roof resolver explicitly
+ // proves it absent. A hard top alone does not prove a separate soft top absent.
+ const roofLines=[['softTop',/^(?:Black |Premium Black )?Sunrider Soft[ -]?Top\b/i],['hardTop',/^(?:Black|Body[ -]Color) 3[ -]Piece Hard[ -]?Top\b/i],['skyRoof',/^Sky One-Touch Power[ -]Top\b/i]];
  for(const line of raw){
+  const roof=roofLines.find(([,matches])=>matches.test(line.normalize('NFKC').replace(/[\u2010-\u2015]/g,'-')));
+  const roofFact=roof&&resolved.features[roof[0]];
+  if(roofFact?.method==='sticker-roof-replacement'&&roofFact.value===false){replaced.push(line);continue;}
   const family=families.find(([,matches])=>matches(line));
   if(family){
    const fact=resolved.features[family[0]];
