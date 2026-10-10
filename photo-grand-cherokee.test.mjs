@@ -6,14 +6,15 @@ import {createPhotoTrimPath} from './photo-trim-path.mjs';
 const read=p=>JSON.parse(fs.readFileSync(new URL(p,import.meta.url)));
 const catalog=read('./data/feature-photo-guide.json'),inventory=read('./data/used-inventory.json'),{records}=read('./data/equipment-index.json');
 const engine=createPhotoGuide(catalog,inventory.vehicles,records),lineup=engine.lineups.find(l=>l.id==='jeep-grand-cherokee');
+const photoChoices=lineup.questions.flatMap(q=>q.choices).filter(c=>engine.photos.has(c.id));
 const paths=createPhotoTrimPath(read('./data/photo-trim-path.json'),engine);
 
 test('The production Grand Cherokee guide uses six exact vehicle photos and only two-row gas inventory',()=>{
  assert.ok(lineup);
- assert.equal(lineup.questions.flatMap(q=>q.choices).length,6);
+ assert.equal(photoChoices.length,6);
  const found=engine.matches(lineup,{},0,'Both');assert.ok(found.length>0);
  assert.ok(found.every(v=>v.year===2026&&!/grand cherokee l\b|4xe/i.test(v.title)));
- for(const q of lineup.questions)for(const photo of q.choices){
+ for(const photo of photoChoices){
   const vehicle=inventory.vehicles.find(v=>v.vin===photo.vin);
   assert.ok(engine.choiceMatches(vehicle,photo));
   assert.equal(vehicle.photoUrls[photo.photoIndex-1],photo.imageSource);
