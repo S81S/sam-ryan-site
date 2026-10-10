@@ -12,7 +12,8 @@
 //  - No availability or offer claims: prices are the listing's own, and every page says to confirm before visiting.
 //  - Touchscreen size is not a yes/no search feature. Those pages group vehicles by the installed size that Compare
 //    reads from each window sticker (comparison-specs.mjs), so they agree with Compare instead of with Find Your Car.
-// Output: <model>-with-<feature>-austin.html, shop-by-feature.html, sitemap-features.xml, data/feature-pages.json.
+// Output: <model>-with-<feature>-austin.html, shop-by-feature.html, sitemap-features.xml, data/feature-pages.json,
+// and llms.txt (a plain summary of the site for AI assistants, with today's feature pages and counts).
 const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto');
 const CREATE_AT=3,MAX_CARDS=36,MAX_CARDS_UNFILTERED=96,SAME_LIST=0.85,NEARLY_ALL=0.95;
 
@@ -245,10 +246,53 @@ for(const file of kept.keys())if(!current.has(file)&&/^[a-z0-9-]+-with-[a-z0-9-]
  const pageUrl=origin+url,graph=[...identity,{'@type':'CollectionPage','@id':pageUrl+'#page',url:pageUrl,name:title,description:desc,inLanguage:'en-US',isPartOf:{'@id':origin+'/#website'},author:{'@id':origin+'/#sam'},publisher:{'@id':origin+'/#publisher'}},{'@type':'BreadcrumbList',itemListElement:[{'@type':'ListItem',position:1,name:'Home',item:origin+'/'},{'@type':'ListItem',position:2,name:'Shop by feature',item:pageUrl}]}];
  fs.writeFileSync(path.join(root,'shop-by-feature.html'),shell(title,desc,url,body,graph));}
 
+// ── llms.txt: who runs the site, what it covers and where things are, in plain Markdown for AI assistants ─────
+// Only facts the site already states. Guide titles are read from the pages themselves so they cannot drift.
+{const plain=h=>h.replace(/<[^>]+>/g,' ').replace(/&amp;/g,'&').replace(/&#39;/g,"'").replace(/&quot;/g,'"').replace(/\s+/g,' ').trim();
+ const guide=slug=>{try{const h=fs.readFileSync(path.join(root,slug+'.html'),'utf8').match(/<h1[^>]*>([\s\S]*?)<\/h1>/);return h?`- [${plain(h[1])}](${origin}/${slug})`:null}catch{return null}};
+ const guides=['2026-ram-1500-trims','2026-jeep-wrangler-trims','2026-chrysler-pacifica-trims','ram-1500-big-horn-vs-laramie','wrangler-sahara-vs-rubicon','pacifica-limited-vs-pinnacle','compare-window-stickers','ventilated-vs-massaging-seats','ram-1500-austin','jeep-wrangler-austin'].map(guide).filter(Boolean);
+ const byModel=MODELS.map(model=>({model,pages:built.filter(p=>p.model===model)})).filter(g=>g.pages.length);
+ const text=`# Cars With Sam
+
+> Cars With Sam (carswithsam.com) is the independent car-shopping site of Samuel "Sam" Sweitzer, a sales consultant at Covert Chrysler Dodge Jeep Ram of Austin, 8107 Research Blvd, Austin, TX 78758. It lists that store's new and used vehicles and matches each one by VIN to its original window sticker, so shoppers can search by the equipment a vehicle actually has instead of by its trim name. It is not the dealership's official website.
+
+- Who: Samuel "Sam" Sweitzer created and owns the site. Call or text him at 737-209-1320. His teammate Ryan Sugrue, also a sales consultant at the store, helps shoppers through the site.
+- Where: Covert CDJR Austin, 8107 Research Blvd, Austin, TX 78758. Listings are limited to this one store.
+- How current: inventory was last checked ${day(checked)} and is refreshed daily. A vehicle that leaves inventory loses its page.
+- Equipment: a feature is listed for a vehicle only when that vehicle's own window sticker shows it. A vehicle without a readable sticker is left out, not guessed.
+- Prices: shown as the dealer listing states them. They can depend on incentives with conditions, so price and availability should be confirmed with Sam before visiting.
+
+## Shopping tools
+
+- [Find Your Car](${origin}/inventory): search the store's new and used vehicles by model, budget and equipment.
+- [Perfect Car](${origin}/perfect-match): choose must-have features, compare trim upgrades and see matching vehicles.
+- [Compare vehicles](${origin}/compare): compare vehicles by stock number or VIN using their window stickers.
+- [Compare trims](${origin}/trim-guide): factory equipment by trim for Chrysler, Dodge, Jeep and Ram, with manufacturer sources.
+- [Shop by feature](${origin}/shop-by-feature): one page per model and feature, listing the vehicles that have it.
+
+## Vehicles in Austin by feature
+
+Counts are vehicles listed with the feature as of the last inventory check.
+${byModel.map(g=>`\n### ${g.model.name}\n\n${g.pages.map(p=>`- [${linkText(p)}](${origin+p.url}): ${p.matches.length} listed`).join('\n')}`).join('\n')}
+
+## Buying guides
+
+${guides.join('\n')}
+
+## About
+
+- [Meet Sam](${origin}/sam)
+- [Customer reviews](${origin}/reviews)
+- [How listings and factory equipment are verified](${origin}/sources)
+- [Contact Sam or Ryan](${origin}/contact)
+`;
+ let before='';try{before=fs.readFileSync(path.join(root,'llms.txt'),'utf8')}catch{}
+ if(before!==text)fs.writeFileSync(path.join(root,'llms.txt'),text);}
+
 const newest=manifest.map(m=>m.modified).sort().pop()||today;
 fs.writeFileSync(path.join(root,'sitemap-features.xml'),'<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+[{url:'/shop-by-feature',modified:newest},...manifest].map(m=>`<url><loc>${origin+m.url}</loc><lastmod>${m.modified}</lastmod></url>`).join('')+'</urlset>');
 const out=JSON.stringify({generatedAt:checked,pages:manifest});
 let old='';try{old=fs.readFileSync(path.join(root,'data/feature-pages.json'),'utf8')}catch{}
 if(old!==out)fs.writeFileSync(path.join(root,'data/feature-pages.json'),out);
-console.log(`Generated ${manifest.length} feature pages across ${new Set(manifest.map(m=>m.model)).size} models, plus the directory and feature sitemap.`);
+console.log(`Generated ${manifest.length} feature pages across ${new Set(manifest.map(m=>m.model)).size} models, plus the directory, feature sitemap and llms.txt.`);
 })().catch(error=>{console.error(error);process.exitCode=1;});
