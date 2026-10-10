@@ -70,3 +70,9 @@ https://:version.:project.pages.dev/*
 
 /inquiry.js
   Cache-Control: public, max-age=0, must-revalidate
+
+/compare
+  Cache-Control: public, max-age=0, must-revalidate
+
+/compare.html
+  Cache-Control: public, max-age=0, must-revalidate

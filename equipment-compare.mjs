@@ -7,7 +7,7 @@ import {audioInventoryFeature} from './audio-evidence.mjs';
 import {equipmentReviewReason} from './equipment-review.mjs';
 import {featureInventoryLink} from './feature-inventory-link.mjs';
 import {appendStickerCredit} from './sticker-credit.mjs';
-import {appendEquipmentFact} from './comparison-layout.mjs';
+import {appendEquipmentFact} from './comparison-layout.mjs?v=20261010-shared-differences';
 import {applyFactoryEquipment} from './factory-equipment.mjs';
 import {comparisonRows,visibleComparisonRows,usefulComparisonRow} from './comparison-rows.mjs';
 import {withComparisonSpecifications,specificationDefinitions} from './comparison-specs.mjs';
