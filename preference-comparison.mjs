@@ -3,7 +3,7 @@ import {encodePreferences} from './shopping-preferences.mjs';
 export function appendPreferenceComparison(out,recs,preferences){
  if(!preferences.requirements.length)return;
  const el=(tag,text)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;return n;};
- const section=el('section');section.className='search-summary';section.setAttribute('aria-label','How these vehicles fit your choices');
+ const section=el('section');section.className='vehicle-tradeoffs';section.setAttribute('aria-label','How these vehicles fit your choices');
  section.append(el('h3','How these fit your choices'),el('p','Your exact choices stay with you. A different size or an excluded feature does not count as a match.'));
  const wrap=el('div');wrap.className='comparison-table-wrap';wrap.tabIndex=0;
  const table=el('table');table.className='equipment-matrix';const head=el('thead'),row=el('tr');row.append(el('th','Your choice'));
