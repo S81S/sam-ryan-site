@@ -59,7 +59,7 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           # -A with quoted patterns also records pages the build removed (vehicles that left the inventory).
-          git add -A -- 'vehicle-*.html' 'vehicles*.html' '*-with-*-austin.html'
+          git add -A -- 'vehicle-*.html' 'vehicles*.html' '*-with-*-austin.html' '*-austin.html'
           git add shop-by-feature.html sitemap-features.xml data/feature-pages.json llms.txt
           git add sitemap-vehicles.xml vehicle-pages-version.json index.html inventory.html data/used-inventory.json data/used-inventory.js data/vehicle-photos.json data/equipment-index.js data/trim-stock.json
           if ! git diff --cached --quiet; then
