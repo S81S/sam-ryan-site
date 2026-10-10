@@ -112,15 +112,22 @@ export function vehicleFit(vehicle,trim,picks,entry){
   // The factory chart says the vehicle's trim is never built with it: no sticker reading can make it a match.
   const chartFact=trim?.comparison?.find(f=>f.factory&&f.key===(pick.base||pick.key));
   if(chartFact?.status==='unavailable'&&!pick.base)return {pick,on:'no',by:'trim'};
+  const oi=entry?.opts?.indexOf(pick.key)??-1;
+  // Engine rows describe the complete engine/transmission, not a broad feature
+  // such as "turbo". A match on this VIN proves the engine lines were readable;
+  // another engine row that did not match cannot fall back to the base engine.
+  if(vehicle.sticker&&oi>=0&&entry.eng?.includes(oi)){
+   if(vehicle.o?.includes(oi))return {pick,on:'yes',by:'sticker'};
+   if(vehicle.o?.some(n=>entry.eng.includes(n)))return {pick,on:'no',by:'sticker'};
+  }
   // Explicit mapped evidence resolves the same VIN facts used by Inventory.
   // Missing evidence still permits a named installed option or a factory-standard answer.
   const ids=entry?.rows?.[pick.key]||[],read=vehicle.sticker&&ids.length;
   if(read&&ids.some(n=>vehicle.y.includes(n)))return {pick,on:'yes',by:'sticker'};
   if(read&&ids.every(n=>vehicle.n.includes(n)))return {pick,on:'no',by:'sticker'};
   // A named installed option is positive evidence. Other vehicles cannot prove its absence here.
-  const oi=entry?.opts?.indexOf(pick.key)??-1;
   if(vehicle.sticker&&oi>=0&&vehicle.o?.includes(oi))return {pick,on:'yes',by:'sticker'};
-  // An unmatched engine description can be incomplete; only explicit mapped negatives establish absence.
+  // Unmatched names alone can be incomplete and never establish absence.
   const t=trim?satisfies(trim,pick):null;
   if(t==='standard')return {pick,on:'yes',by:'trim'};
   if(read)return {pick,on:'check',by:'sticker'};
