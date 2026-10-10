@@ -124,6 +124,8 @@ export function createPhotoGuide(catalog,vehicles,records) {
 }
 
 export function swipeDecision(dx,dy){
- if(!Number.isFinite(dx)||!Number.isFinite(dy)||Math.abs(dx)<65||Math.abs(dx)<=Math.abs(dy)*1.25)return null;
- return dx<0?'reject':'choose';
+ if(!Number.isFinite(dx)||!Number.isFinite(dy))return null;
+ if(dy>=65&&dy>Math.abs(dx)*1.25)return 'skip';
+ if(Math.abs(dx)>=65&&Math.abs(dx)>Math.abs(dy)*1.25)return dx<0?'reject':'choose';
+ return null;
 }

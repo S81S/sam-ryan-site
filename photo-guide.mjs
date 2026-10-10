@@ -7,6 +7,7 @@ const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&
 const money=n=>Number.isFinite(n)?new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(n):'Ask for price';
 const KEY='carswithsam-photo-guide-v1';
 let undoStack=[];
+let choosingModel=false;
 const failedPhotos=new Set();
 let engine,trimPath,inventory,state={model:'',answers:{},step:0,budget:0,condition:'New',started:false,done:false,showAll:false},live='';
 const lineup=()=>engine.lineups.find(l=>l.id===state.model)||engine.lineups[0];
@@ -30,11 +31,11 @@ function pathSummary(){
 }
 function baseView(){
  const p=pathState();
- return `<div class="pg-base"><span class="pg-badge">Your starting point · Base trim</span><h2 data-heading tabindex="-1">Start with the ${esc(p.base?.name||'base trim')}</h2><p>${esc(lineup().name)} starts here. See what is included, then choose the features you want to keep or upgrade.</p>${p.shopperScope?`<p class="pg-muted">${esc(p.shopperScope)}</p>`:''}<h3>Included features to start from</h3><ul class="pg-base-features">${p.baseFeatures.map(f=>`<li><span>${esc(f.label||f.text||f.name)}</span><strong>${esc(f.value||'')}</strong>${f.note&&!f.note.startsWith('Standard on ')?`<small>${esc(f.note)}</small>`:''}</li>`).join('')}</ul>${p.baseFeatures[0]?.sourceUrl?`<a class="pg-factory-link" href="${esc(p.baseFeatures[0].sourceUrl)}" target="_blank" rel="noopener noreferrer">Factory standard equipment ↗</a>`:''}<p class="pg-muted">The starting equipment is a reference. Only the features you choose become requirements. An upgrade can replace a starting feature or require a different trim.</p><div class="pg-controls"><button type="button" class="pg-positive" data-action="start">Explore applicable features →</button></div></div>`;
+ return `<div class="pg-base"><span class="pg-badge">Your starting point · Base trim</span><h3>Standard equipment on the ${esc(p.base?.name||'base trim')}</h3><p>${esc(lineup().name)} starts here. See what is included, then choose the features you want to keep or upgrade.</p>${p.shopperScope?`<p class="pg-muted">${esc(p.shopperScope)}</p>`:''}<h3>Included features to start from</h3><ul class="pg-base-features">${p.baseFeatures.map(f=>`<li><span>${esc(f.label||f.text||f.name)}</span><strong>${esc(f.value||'')}</strong>${f.note&&!f.note.startsWith('Standard on ')?`<small>${esc(f.note)}</small>`:''}</li>`).join('')}</ul>${p.baseFeatures[0]?.sourceUrl?`<a class="pg-factory-link" href="${esc(p.baseFeatures[0].sourceUrl)}" target="_blank" rel="noopener noreferrer">Factory standard equipment ↗</a>`:''}<p class="pg-muted">The starting equipment is a reference. Only the features you choose become requirements. An upgrade can replace a starting feature or require a different trim.</p></div>`;
 }
 function save(){try{sessionStorage.setItem(KEY,JSON.stringify({...state,undoStack}))}catch{}}
 function label(q,answer){
- if(!answer||answer==='skip')return q.title+': no preference';
+ if(!answer||answer==='skip')return q.title+': don’t care';
  const values=Array.isArray(answer)?answer:[answer];
  return values.map(value=>{const reject=value.startsWith('reject:'),id=reject?value.slice(7):value;return (reject?'Exclude: ':'Want: ')+(q.choices.find(c=>c.id===id)?.label||'');}).join('; ');
 }
@@ -50,18 +51,25 @@ function choose(choice,reject=false){
   state.answers[q.id]=[...new Set([...excluded(q),choice])].map(id=>'reject:'+id);
   live='Passed on '+q.choices.find(c=>c.id===choice).label+'.';
   const remaining=q.choices.some(c=>!excluded(q).includes(c.id)&&!failedPhotos.has(c.id)&&choiceRoute(q,c).selectable);
-  if(remaining){live+=' Choose another photo or No preference.';save();draw(true);return;}
+  if(remaining){live+=' Choose another photo or Don’t care.';save();draw(true);return;}
  }else{state.answers[q.id]=choice==='skip'?'skip':choice;live=label(q,state.answers[q.id]);}
  state.step++;state.showAll=false;
  if(state.step>=lineup().questions.length)state.done=true;
  save();draw(true);
 }
-function setup(){return `<div class="pg-setup"><label>Photo guide<select data-model${engine.lineups.length===1?' hidden':''}>${engine.lineups.map(l=>`<option value="${esc(l.id)}"${l.id===state.model?' selected':''}>${esc(l.name)}</option>`).join('')}</select>${engine.lineups.length===1?'<strong>'+esc(lineup().name)+'</strong>':''}</label><label>Maximum listed price<input data-budget type="number" min="0" max="1000000" step="1000" inputmode="numeric" placeholder="Optional" value="${state.budget||''}">${state.done?'<button type="button" data-action="apply-budget">Apply budget</button>':''}</label><label>Vehicle condition<select data-condition>${['New','Used','Both'].map(c=>`<option value="${c}"${state.condition===c?' selected':''}>${c==='Both'?'New and used':c}</option>`).join('')}</select></label></div><p class="pg-muted">Prices may include conditional incentives. Confirm your price and availability. Inventory checked ${esc(new Date(inventory.capturedAt).toLocaleString('en-US',{timeZone:'America/Chicago',dateStyle:'medium',timeStyle:'short'}))} CT.</p>`;}
+function modelView(){
+ return '<section class="pg-models" aria-label="Choose your model"><div class="pg-question"><h2 data-heading tabindex="-1">Which model interests you?</h2><p>Pick a model, then choose the features that matter to you.</p></div><div class="pg-model-grid">'+engine.lineups.map(l=>{
+  const example=l.questions.flatMap(q=>q.choices)[0],vehicle=inventory.vehicles.find(v=>v.vin===example?.vin);
+  const photo=vehicle?.photoUrl||vehicle?.photoUrls?.[0];
+  return '<button type="button" class="pg-model-card" data-model-choice="'+esc(l.id)+'" aria-label="Choose '+esc(l.name)+'">'+(photo?'<img src="'+esc(photo)+'" alt="" width="480" height="320" decoding="async">':'')+'<span><strong>'+esc(l.name)+'</strong><small>Choose features →</small></span></button>';
+ }).join('')+'</div></section>';
+}
+function setup(){return `<div class="pg-setup"><label>Maximum listed price<input data-budget type="number" min="0" max="1000000" step="1000" inputmode="numeric" placeholder="Optional" value="${state.budget||''}">${state.done?'<button type="button" data-action="apply-budget">Apply budget</button>':''}</label><label>Vehicle condition<select data-condition>${['New','Used','Both'].map(c=>`<option value="${c}"${state.condition===c?' selected':''}>${c==='Both'?'New and used':c}</option>`).join('')}</select></label></div><p class="pg-muted">Prices may include conditional incentives. Confirm your price and availability. Inventory checked ${esc(new Date(inventory.capturedAt).toLocaleString('en-US',{timeZone:'America/Chicago',dateStyle:'medium',timeStyle:'short'}))} CT.</p>`;}
 function card(c){
  const q=lineup().questions[state.step],passed=excluded(q).includes(c.id),failed=failedPhotos.has(c.id),route=choiceRoute(q,c);
  const count=engine.matches(lineup(),{...state.answers,[q.id]:c.id},state.budget,state.condition).length;
  const photoTitle=c.title.replace(/^(?:New|Used)\s+/i,'').replace(/\s+CREW CAB\b.*$/i,'').replace(/\s+4X[24]$/i,'');
- return `<article class="pg-option${passed?' pg-passed':''}"><button type="button" class="pg-card pg-focus" data-choice="${esc(c.id)}" ${passed||failed||!route.selectable?'disabled ':''}aria-label="Choose ${esc(c.label)}. Swipe right to choose or left to exclude; keyboard Right Arrow chooses and Left Arrow excludes."><span class="pg-photo-frame"><img src="${esc(c.image)}" alt="${esc(c.label+' installed in '+c.title+'; dealer listing photo '+c.photoIndex)}" width="1024" height="682" draggable="false" decoding="async"${route.selectable?'':' loading="lazy"'}></span><span class="pg-card-caption"><strong>${esc(c.label)}</strong><span class="pg-route">${esc(route.title)}</span><small class="pg-photo-identity">Photo: ${esc(photoTitle)}</small>${route.title.startsWith('Included with your selected ')?'<span class="pg-linked">'+esc(route.detail)+'</span>':''}${route.replaces?'<span class="pg-replaces">Replacement: '+esc(route.replaces)+'</span>':''}${route.requires?.length?'<span class="pg-linked">Includes '+esc(route.requires.map(id=>engine.photos.get(id)?.label||id).join(', '))+'</span>':''}<span class="pg-swipe-label">${!route.selectable?(route.status==='unknown'?'Not verified with these choices':'Doesn’t fit these choices'):failed?'Photo unavailable — use No preference':passed?'Passed — excluded from your matches':'<span aria-hidden="true">← &nbsp; →</span>Swipe or tap this photo to choose'}</span><span class="pg-choice-count" data-choice-count="${esc(c.id)}">${count?count+' '+(count===1?'match':'matches')+' with this choice':'No matches with your current choices, condition and budget'}</span></span></button>${route.selectable&&!passed?`<div class="pg-card-actions"><button type="button" class="pg-negative" data-reject="${esc(c.id)}" aria-label="Don’t want ${esc(c.label)}"${failed?' disabled':''}><span aria-hidden="true">×</span> Don’t want</button><button type="button" class="pg-positive" data-pick="${esc(c.id)}" aria-label="Want ${esc(c.label)}"${failed?' disabled':''}>Want <span aria-hidden="true">✓</span></button></div>`:''}<details class="pg-option-details"><summary>Details &amp; real photo</summary><p class="pg-availability">${esc(route.detail)}</p>${c.photoNote?`<p class="pg-photo-note">${esc(c.photoNote)}</p>`:''}<p class="pg-photo-credit">Photo: ${esc(c.title)}<br>Stock ${esc(c.stock)} · VIN …${esc(c.vin.slice(-6))}</p><div class="pg-detail"><a href="${esc(c.image)}" target="_blank" rel="noopener noreferrer">View full photo ↗</a>${route.sourceUrl?`<a href="${esc(route.sourceUrl)}" target="_blank" rel="noopener noreferrer">Trim &amp; option source ↗</a>`:''}<a href="${esc(c.stickerSource)}" target="_blank" rel="noopener noreferrer">Read this sticker ↗</a><a href="${esc(c.listingSource)}" target="_blank" rel="noopener noreferrer">Photo source ↗</a></div></details>${passed?`<div class="pg-detail"><button type="button" data-restore="${esc(c.id)}">Restore this choice</button></div>`:''}</article>`;
+ return `<article class="pg-option${passed?' pg-passed':''}"><button type="button" class="pg-card pg-focus" data-choice="${esc(c.id)}" ${passed||failed||!route.selectable?'disabled ':''}aria-label="Choose ${esc(c.label)}. Swipe right to choose, left to exclude, or down for Don’t care; keyboard Right Arrow chooses, Left Arrow excludes, and Down Arrow skips."><span class="pg-photo-frame"><img src="${esc(c.image)}" alt="${esc(c.label+' installed in '+c.title+'; dealer listing photo '+c.photoIndex)}" width="1024" height="682" draggable="false" decoding="async"${route.selectable?'':' loading="lazy"'}></span><span class="pg-card-caption"><strong>${esc(c.label)}</strong><span class="pg-route">${esc(route.title)}</span><small class="pg-photo-identity">Photo: ${esc(photoTitle)}</small>${route.title.startsWith('Included with your selected ')?'<span class="pg-linked">'+esc(route.detail)+'</span>':''}${route.replaces?'<span class="pg-replaces">Replacement: '+esc(route.replaces)+'</span>':''}${route.requires?.length?'<span class="pg-linked">Includes '+esc(route.requires.map(id=>engine.photos.get(id)?.label||id).join(', '))+'</span>':''}<span class="pg-swipe-label">${!route.selectable?(route.status==='unknown'?'Not verified with these choices':'Doesn’t fit these choices'):failed?'Photo unavailable — use Don’t care':passed?'Passed — excluded from your matches':'<span aria-hidden="true">← &nbsp; ↓ &nbsp; →</span>Swipe this photo or use the buttons'}</span><span class="pg-choice-count" data-choice-count="${esc(c.id)}">${count?count+' '+(count===1?'match':'matches')+' with this choice':'No matches with your current choices, condition and budget'}</span></span></button>${route.selectable&&!passed?`<div class="pg-card-actions"><button type="button" class="pg-negative" data-reject="${esc(c.id)}" aria-label="Don’t want ${esc(c.label)}"${failed?' disabled':''}><span aria-hidden="true">×</span> Don’t want</button><button type="button" class="pg-positive" data-pick="${esc(c.id)}" aria-label="Want ${esc(c.label)}"${failed?' disabled':''}>Want <span aria-hidden="true">✓</span></button></div>`:''}<details class="pg-option-details"><summary>Details &amp; real photo</summary><p class="pg-availability">${esc(route.detail)}</p>${c.photoNote?`<p class="pg-photo-note">${esc(c.photoNote)}</p>`:''}<p class="pg-photo-credit">Photo: ${esc(c.title)}<br>Stock ${esc(c.stock)} · VIN …${esc(c.vin.slice(-6))}</p><div class="pg-detail"><a href="${esc(c.image)}" target="_blank" rel="noopener noreferrer">View full photo ↗</a>${route.sourceUrl?`<a href="${esc(route.sourceUrl)}" target="_blank" rel="noopener noreferrer">Trim &amp; option source ↗</a>`:''}<a href="${esc(c.stickerSource)}" target="_blank" rel="noopener noreferrer">Read this sticker ↗</a><a href="${esc(c.listingSource)}" target="_blank" rel="noopener noreferrer">Photo source ↗</a></div></details>${passed?`<div class="pg-detail"><button type="button" data-restore="${esc(c.id)}">Restore this choice</button></div>`:''}</article>`;
 }
 function results(){
  const vs=activeMatches(),searchParts=[lineup().identity,state.condition==='Both'?'':state.condition.toLowerCase(),state.budget?'under '+state.budget:''].filter(Boolean);
@@ -75,12 +83,20 @@ function questionView(){
  const l=lineup(),q=l.questions[state.step],vs=activeMatches();
  const possible=q.choices.filter(c=>choiceRoute(q,c).selectable),blocked=q.choices.filter(c=>!choiceRoute(q,c).selectable);
  const baseline=trimPath.baseline(l,q.id),canKeep=baseline&&choiceRoute(q,baseline).selectable;
- return `<div class="pg-stage"><div class="pg-bar"><span class="pg-step">Feature ${state.step+1} of ${l.questions.length}</span><span data-match-count>${vs.length} possible ${vs.length===1?'match':'matches'} so far</span></div><div class="pg-progress" role="progressbar" aria-label="Feature choices completed" aria-valuenow="${state.step}" aria-valuemin="0" aria-valuemax="${l.questions.length}"><span style="width:${state.step/l.questions.length*100}%"></span></div><div class="pg-question"><p class="pg-badge">${esc(l.name)}</p><h2 data-heading tabindex="-1">${esc(q.title)}</h2><p class="pg-gesture-hint">Swipe right to want it. Left to pass. Or tap a photo.</p></div><div class="pg-cards ${possible.length===1?'pg-single':''}">${possible.map(card).join('')}</div>${!possible.length?'<p class="pg-empty">No further photo choice is verified with your current preferences. Leave this feature open or edit an earlier choice.</p>':''}<div class="pg-controls pg-main-controls"><button type="button" data-action="back" aria-label="Undo last swipe"${undoStack.length?'':' disabled'}><span aria-hidden="true">‹</span> Back</button><button type="button" class="pg-no-preference" data-action="skip">No preference</button></div><div class="pg-controls pg-secondary-controls">${canKeep?`<button type="button" data-pick="${esc(baseline.id)}"${failedPhotos.has(baseline.id)?' disabled':''}>Keep base ${esc(baseline.label)}</button>`:''}<button type="button" data-action="results">See my matches →</button></div><details class="pg-source"><summary>What’s included, optional or replaced?</summary><p>${esc(q.explanation)}</p>${baseline?`<p class="pg-starting-feature">Base trim includes: <strong>${esc(baseline.label)}</strong>. Choose it to keep that feature, or explore an applicable upgrade.</p>`:''}<p>${esc(q.availability)}</p><a href="${esc(q.factorySource)}" target="_blank" rel="noopener noreferrer">Factory equipment guide ↗</a>${pathSummary()}</details>${blocked.length?`<details class="pg-unavailable"><summary>Choices that don’t fit this path (${blocked.length})</summary><div class="pg-cards">${blocked.map(card).join('')}</div></details>`:''}${selections()}</div>`;
+ return `<div class="pg-stage"><div class="pg-bar"><span class="pg-step">Feature ${state.step+1} of ${l.questions.length}</span><span data-match-count>${vs.length} possible ${vs.length===1?'match':'matches'} so far</span></div><div class="pg-progress" role="progressbar" aria-label="Feature choices completed" aria-valuenow="${state.step}" aria-valuemin="0" aria-valuemax="${l.questions.length}"><span style="width:${state.step/l.questions.length*100}%"></span></div><div class="pg-question"><p class="pg-badge">${esc(l.name)}</p><h2 data-heading tabindex="-1">${esc(q.title)}</h2><p class="pg-gesture-hint">Right: Want · Left: Don’t want · Down: Don’t care.</p></div><div class="pg-cards ${possible.length===1?'pg-single':''}">${possible.map(card).join('')}</div>${!possible.length?'<p class="pg-empty">No further photo choice is verified with your current preferences. Leave this feature open or edit an earlier choice.</p>':''}<div class="pg-controls pg-main-controls"><button type="button" data-action="back" aria-label="Undo last swipe"${undoStack.length?'':' disabled'}><span aria-hidden="true">‹</span> Back</button><button type="button" class="pg-no-preference" data-action="skip">Don’t care</button></div><div class="pg-controls pg-secondary-controls">${canKeep?`<button type="button" data-pick="${esc(baseline.id)}"${failedPhotos.has(baseline.id)?' disabled':''}>Keep base ${esc(baseline.label)}</button>`:''}<button type="button" data-action="results">See my matches →</button></div><details class="pg-source"><summary>What’s included, optional or replaced?</summary><p>${esc(q.explanation)}</p>${baseline?`<p class="pg-starting-feature">Base trim includes: <strong>${esc(baseline.label)}</strong>. Choose it to keep that feature, or explore an applicable upgrade.</p>`:''}<p>${esc(q.availability)}</p><a href="${esc(q.factorySource)}" target="_blank" rel="noopener noreferrer">Factory equipment guide ↗</a>${pathSummary()}${baseView()}</details>${blocked.length?`<details class="pg-unavailable"><summary>Choices that don’t fit this path (${blocked.length})</summary><div class="pg-cards">${blocked.map(card).join('')}</div></details>`:''}${selections()}</div>`;
 }
 function draw(focus=false){
  const l=lineup();if(!l)return;
  const settingsOpen=root.querySelector('.pg-settings')?.open===true;
- root.innerHTML=`${state.started?`<details class="pg-settings"${settingsOpen?' open':''}><summary><span>${esc(l.name)}</span><span class="pg-settings-edit">${state.condition==='Both'?'New &amp; used':esc(state.condition)}${state.budget?' · '+money(state.budget):''} · Change</span></summary>${setup()}</details>`:`<div class="pg-intro"><span class="pg-badge">Your car. Your choices.</span><p>Start with the base trim. Choose the real features you love.</p></div>${setup()}`}${state.done?results():state.started?questionView():baseView()}<p class="pg-status" role="status" aria-live="polite">${esc(live)}</p><p class="pg-muted pg-guide-note">Original vehicle photos. Each choice selects only the labeled feature. More models and features are available in the complete trim guide below.</p>`;
+ const showModels=choosingModel||!state.started;
+ root.innerHTML=showModels?`${modelView()}<details class="pg-settings"><summary>Condition &amp; budget <span class="pg-settings-edit">${state.condition==='Both'?'New &amp; used':esc(state.condition)}</span></summary>${setup()}</details>`:
+ `<div class="pg-model-bar"><strong>${esc(l.name)}</strong><button type="button" data-action="models">Change model</button></div><details class="pg-settings"${settingsOpen?' open':''}><summary><span>Condition &amp; budget</span><span class="pg-settings-edit">${state.condition==='Both'?'New &amp; used':esc(state.condition)}${state.budget?' · '+money(state.budget):''}</span></summary>${setup()}</details>${state.done?results():questionView()}`;
+ root.innerHTML+=`<p class="pg-status" role="status" aria-live="polite">${esc(live)}</p><p class="pg-muted pg-guide-note">Photos illustrate the labeled feature. More models and features are available in the complete trim guide below.</p>`;
+ root.querySelectorAll('[data-model-choice]').forEach(button=>button.addEventListener('click',()=>{
+  const model=engine.lineups.find(item=>item.id===button.dataset.modelChoice);if(!model)return;
+  if(model.id!==state.model){undoStack=[];state.answers={};state.step=0;state.done=false;state.showAll=false;}
+  state.model=model.id;state.started=true;choosingModel=false;live='Choose the features that matter to you.';save();draw(true);
+ }));
  root.querySelectorAll('[data-choice]').forEach(button=>{
   let start=null,dragged=false;
   const reducedMotion=matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -90,29 +106,33 @@ function draw(focus=false){
   button.addEventListener('pointermove',e=>{
    if(!ownsPointer(e))return;const dx=e.clientX-start.x,dy=e.clientY-start.y;
    if(Math.hypot(dx,dy)>8)dragged=true;
-   if(!start.axis&&dragged)start.axis=Math.abs(dx)>Math.abs(dy)*1.25?'horizontal':'vertical';
+   if(!start.axis&&dragged){
+    if(Math.abs(dx)>Math.abs(dy)*1.25)start.axis='horizontal';
+    else if(Math.abs(dy)>Math.abs(dx)*1.25)start.axis=dy>0?'skip':'scroll';
+   }
    if(start.axis==='horizontal'&&!reducedMotion)button.style.transform=`translateX(${Math.max(-35,Math.min(35,dx/3))}px) rotate(${Math.max(-8,Math.min(8,dx/45))}deg)`;
+   if(start.axis==='skip'&&!reducedMotion)button.style.transform=`translateY(${Math.max(0,Math.min(40,dy/3))}px)`;
   });
   button.addEventListener('pointerup',e=>{
-   if(!ownsPointer(e))return;const dx=e.clientX-start.x,dy=e.clientY-start.y,decision=start.axis==='vertical'?null:swipeDecision(dx,dy);
+   if(!ownsPointer(e))return;const dx=e.clientX-start.x,dy=e.clientY-start.y,raw=swipeDecision(dx,dy);
+   const decision=(start.axis==='horizontal'&&raw!=='skip')||(start.axis==='skip'&&raw==='skip')?raw:null;
    dragged=dragged||Math.hypot(dx,dy)>8;start=null;button.style.transform='';
-   if(decision){dragged=true;choose(button.dataset.choice,decision==='reject')}
+   if(decision){dragged=true;choose(decision==='skip'?'skip':button.dataset.choice,decision==='reject')}
   });
   button.addEventListener('pointercancel',e=>{if(ownsPointer(e))cancelGesture();});
   button.addEventListener('lostpointercapture',e=>{if(ownsPointer(e))cancelGesture();});
   button.addEventListener('click',e=>{if((dragged&&e?.detail!==0)||button.disabled)return;choose(button.dataset.choice)});
-  button.addEventListener('keydown',e=>{if(button.disabled)return;if(e.key==='ArrowLeft'||e.key==='ArrowRight'){e.preventDefault();choose(button.dataset.choice,e.key==='ArrowLeft')}});
+  button.addEventListener('keydown',e=>{if(button.disabled)return;if(['ArrowLeft','ArrowRight','ArrowDown'].includes(e.key)){e.preventDefault();choose(e.key==='ArrowDown'?'skip':button.dataset.choice,e.key==='ArrowLeft')}});
   button.querySelector('img').addEventListener('error',()=>{
    failedPhotos.add(button.dataset.choice);button.disabled=true;button.classList.add('pg-photo-unavailable');
    root.querySelectorAll('[data-pick],[data-reject]').forEach(action=>{if((action.dataset.pick||action.dataset.reject)===button.dataset.choice)action.disabled=true;});
-   const warning=document.createElement('span');warning.className='pg-photo-error';warning.textContent='Photo unavailable. Choose No preference or use the complete trim guide below.';button.append(warning);
+   const warning=document.createElement('span');warning.className='pg-photo-error';warning.textContent='Photo unavailable. Choose Don’t care or use the complete trim guide below.';button.append(warning);
   });
  });
  root.querySelectorAll('[data-restore]').forEach(button=>button.addEventListener('click',()=>{
   remember();const q=l.questions[state.step],remaining=excluded(q).filter(id=>id!==button.dataset.restore).map(id=>'reject:'+id);
   if(remaining.length)state.answers[q.id]=remaining;else delete state.answers[q.id];live='Choice restored.';save();draw(true);
  }));
- root.querySelector('[data-model]').addEventListener('change',e=>{state.model=e.target.value;undoStack=[];state.answers={};state.step=0;state.started=false;state.done=false;live='';save();draw(true)});
  root.querySelector('[data-budget]').addEventListener('input',e=>{
   state.budget=Math.max(0,Math.min(1000000,Number(e.target.value)||0));save();
   const count=root.querySelector('[data-match-count]');if(count)count.textContent=activeMatches().length+' possible matches so far';
@@ -127,13 +147,13 @@ function draw(focus=false){
   if(button.disabled)return;
   if(button.dataset.pick){choose(button.dataset.pick);return}if(button.dataset.reject){choose(button.dataset.reject,true);return}
   switch(button.dataset.action){
-   case 'start':state.started=true;live='Choose a starting feature or its upgrade.';break;
+   case 'models':choosingModel=true;live='Choose a model. Your current preferences stay saved until you choose a different model.';break;
    case 'apply-budget':live='Budget applied.';break;
    case 'skip':choose('skip');return;
    case 'back':if(undoStack.length){Object.assign(state,undoStack.pop());live='Last swipe undone.';}break;
    case 'edit':state.started=true;state.done=false;state.step=0;live='Change any choice; your other preferences stay saved.';break;
    case 'results':state.done=true;live='';break;
-   case 'restart':undoStack=[];state.answers={};state.step=0;state.started=false;state.done=false;live='Preferences cleared.';break;
+   case 'restart':undoStack=[];state.answers={};state.step=0;state.started=false;state.done=false;choosingModel=false;live='Preferences cleared.';break;
    case 'more':state.showAll=true;draw();root.querySelectorAll('.pg-result')[8]?.querySelector('a')?.focus({preventScroll:true});return;
   }
   save();draw(true);
@@ -144,7 +164,7 @@ if(root){
  const classic=document.querySelector('.pg-classic'),photoShortcut=document.querySelector('[data-photo-selection]'),trimShortcut=document.querySelector('[data-selection]');
  const syncShortcut=()=>{if(photoShortcut)photoShortcut.hidden=!!classic?.open;if(trimShortcut)trimShortcut.hidden=!classic?.open;};
  classic?.addEventListener('toggle',syncShortcut);syncShortcut();
- photoShortcut?.addEventListener('click',()=>{if(!engine)return;state.done=true;live='';save();draw(true);});
+ photoShortcut?.addEventListener('click',()=>{if(!engine)return;if(!state.started||choosingModel){live='Choose a model to see its matches.';draw(true);return;}state.done=true;live='';save();draw(true);});
  try{
   const files=await Promise.all(['/data/feature-photo-guide.json','/data/used-inventory.json','/data/equipment-index.json','/data/photo-trim-path.json'].map(async path=>{const r=await fetch(path);if(!r.ok)throw Error(path);return r.json()}));
   const [catalog,data,index,pathData]=files;inventory=data;engine=createPhotoGuide(catalog,data.vehicles,index.records);trimPath=createPhotoTrimPath(pathData,engine);
