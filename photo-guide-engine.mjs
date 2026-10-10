@@ -2,6 +2,7 @@ import {preferenceChecks} from './preference-evidence.mjs';
 import {evidenceVersion} from './evidence-version.mjs';
 import {wranglerConfiguration} from './photo-choice-scope.mjs';
 import {parseQuery,matchVehicle} from './equipment-search.mjs';
+import {additionalQuestions} from './expanded-equipment.mjs';
 
 const list=value=>Array.isArray(value)?value:[];
 const text=value=>typeof value==='string'&&value.trim().length>0;
@@ -81,6 +82,15 @@ export function createPhotoGuide(catalog,vehicles,records) {
   const identity=scopes.get(scopeKey(l)).identity;
   return [l,vehicles.filter(v=>!v.external&&v.status!=='not-observed'&&v.year===l.year&&sameModel(v,l,records[v.vin])&&matchVehicle(v,null,identity).kind==='match')];
  }));
+ const choices=new Map(photos);
+ for(const lineup of lineups){
+  const extra=additionalQuestions(lineup,candidates.get(lineup),records);
+  for(const question of extra){
+   question.choices=question.choices.filter(choice=>choiceMatches(byVIN.get(choice.vin),choice));
+   if(!question.choices.length)continue;
+   lineup.questions.push(question);for(const choice of question.choices)choices.set(choice.id,choice);
+  }
+ }
  function answerChoices(q,answer){
   const values=Array.isArray(answer)?answer:[answer];
   if(!values.length)return null;
@@ -120,7 +130,7 @@ export function createPhotoGuide(catalog,vehicles,records) {
   }
   return out;
  }
- return {lineups,photos,matches,cleanAnswers,choiceMatches};
+ return {lineups,photos,choices,matches,cleanAnswers,choiceMatches};
 }
 
 export function swipeDecision(dx,dy){

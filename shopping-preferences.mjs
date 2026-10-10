@@ -7,7 +7,7 @@ export function readPreferences(value){
  if(typeof value==='string'&&value.length>18000)return null;
  try{
   const p=typeof value==='string'?JSON.parse(value):value;
-  if(p?.version!==1||!Array.isArray(p.requirements)||p.requirements.length>40)return null;
+  if(p?.version!==1||!Array.isArray(p.requirements)||p.requirements.length>100)return null;
   const requirements=[];
   for(const r of p.requirements){
    if(!r||!cleanText(r.feature,80)||!/^\w+$/.test(r.feature)||typeof r.wanted!=='boolean'||

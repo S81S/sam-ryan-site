@@ -1,13 +1,26 @@
 import {withComparisonSpecifications} from './comparison-specs.mjs';
 import {applyFactoryEquipment} from './factory-equipment.mjs';
 import {wranglerConfiguration} from './photo-choice-scope.mjs';
+import {evidenceVersion} from './evidence-version.mjs';
+const resolvedCache=new WeakMap();
 // The same three-state test serves photo choices, inventory and Compare.
 export function preferenceChecks(vehicle,record,requirements=[]){
  const valid=record?.status==='verified'&&record.vin===vehicle?.vin&&Array.isArray(record.lines)&&record.lines.every(l=>typeof l==='string')&&
   (record.identityLines===undefined||Array.isArray(record.identityLines)&&record.identityLines.every(l=>typeof l==='string'));
- const resolved=valid?withComparisonSpecifications(vehicle,applyFactoryEquipment(vehicle,record)):null;
+ let resolved=null;
+ if(valid){
+  const version=evidenceVersion(vehicle,record),cached=resolvedCache.get(vehicle);
+  if(cached?.version===version)resolved=cached.resolved;
+  else{resolved=withComparisonSpecifications(vehicle,applyFactoryEquipment(vehicle,record));resolvedCache.set(vehicle,{version,resolved});}
+ }
  return requirements.map(r=>{
   let fact=resolved?.features?.[r.feature],exact,known=false;
+  // Tow Pages is a dashboard feature, not evidence of installed hitch hardware.
+  if(r.feature==='tow'&&fact?.value===true){
+   const evidence=(valid?record.lines:[]).filter(l=>/receiver[ -]hitch|\b(?:class\s*(?:[ivx]+|[1-5])\s+)?(?:trailer[ -])?hitch\b|\btow(?:ing)? package\b/i.test(l)&&!/\b(?:delete|removed|without|not equipped|if equipped|available separately)\b/i.test(l));
+   fact=evidence.length?{...fact,evidence}:null;
+  }
+  if(r.feature==='rambox'&&fact?.value===true&&fact.evidence?.some(l=>/\b(?:removed|delete|without|if equipped)\b/i.test(l)))fact=null;
   const scoped=r.model==='wrangler'||r.reviewedScope!==undefined||r.allowedTrimIds!==undefined;
   let configuration;
   if(scoped){
