@@ -1,3 +1,6 @@
+import {readPreferences} from './shopping-preferences.mjs';
+import {appendPreferenceComparison} from './preference-comparison.mjs';
+import {shoppingContext} from './shopping-context.mjs';
 import {appendVehicleTradeoffs} from './comparison-tradeoffs.mjs';
 import {createComparisonGuideLoader} from './comparison-guide-loader.mjs';
 import {optionInventoryLink} from './option-inventory.mjs';
@@ -44,7 +47,8 @@ function render(){
  for(const {v} of recs)ensurePackageContents(v.vin,window.equipmentIndex);
  const pendingEquipment=recs.some(({s,side,v})=>s?.status!=='verified'&&(v.decodePending||$('lookup-status-'+side)?.getAttribute('aria-busy')==='true'));
  const contextParams=new URLSearchParams(location.search);
- const requested=[...new Set(parseQuery([$('group-query')?.value||contextParams.get('q')||'',contextParams.get('requestedEquipment')||''].join(' ')).requirements.map(r=>r.id))];
+ const preferences=readPreferences(contextParams);
+ const requested=[...new Set([...parseQuery($('group-query')?.value||contextParams.get('q')||'').requirements.map(r=>r.id),...(preferences?.requirements||[]).map(r=>r.feature),...(!preferences?parseQuery(contextParams.get('requestedEquipment')||'').requirements.map(r=>r.id):[])])];
  const matches=recs.map(r=>trimGuide?guideTrim(r.v,r.s,trimGuide):null);
  const guides=matches.map((m,i)=>reviewedComparisonGuide(m,recs[i].v,recs[i].s,factoryChart(comparisonFactoryChart(m,recs[i].v,recs[i].s,factoryIndex))));
  const allRows=comparisonRows([...specificationDefinitions,...definitions.filter(([id])=>!/^engine(?:Size|Cyl|Inline)|^engine20$|^engine36$|^(?:rwd|fwd)$/.test(id))],recs.map(r=>r.s),requested,guides);
@@ -63,6 +67,8 @@ function render(){
   const names=[...new Set(found.map(m=>(oneModel?m.trim.name:guideColumnName(m))+extra(m)))];
   p.append(sameTrim?`${recs.length===2?'Both':'All selected vehicles'} are the ${guideColumnName(matches[0])}, so they start with the same standard equipment. The differences are the options on each one. `:matches.every(Boolean)?`Comparing ${names.length>2?names.slice(0,-1).join(', ')+' and '+names.at(-1):names.join(' and ')}. Window stickers leave off much of the standard equipment, so the factory trim guide fills that in. `:'The factory trim guide fills in standard equipment where a window sticker leaves it off. ');
   if(trimLink){const one=new Set(found.map(m=>m.trim.id)).size===1;const a=el('a',one?`See the ${found[0].trim.name} in Compare Trims ↗`:'See these trims side by side in Compare Trims ↗');a.href=trimLink;p.append(a);}out.append(p);}
+ if(contextParams.has('preferences')&&!preferences)out.append(el('p','Your saved choices could not be read. Please reopen the photo guide to choose them again.'));
+ if(preferences)appendPreferenceComparison(out,recs,preferences);
  appendVehicleTradeoffs(out,rows,recs);
  appendPackageOverview(out,recs);
  const fullHeading=el('h3','Full vehicle equipment comparison');fullHeading.id='vehicle-equipment';out.append(fullHeading);
@@ -97,7 +103,7 @@ function render(){
     if(f?.value===true&&f.method!=='factory-specification'&&(inventoryFeature||optionKey)){
      const badge=td.querySelector('.equipment-answer');const a=el('a',badge.textContent);
      const context=parseQuery($('group-query')?.value||new URLSearchParams(location.search).get('q')||'');
-     const linkContext={condition:new URLSearchParams(location.search).get('condition')||'Both',advisor:new URLSearchParams(location.search).get('advisor'),modelTerms:context.terms};
+     const linkContext={...shoppingContext(),condition:new URLSearchParams(location.search).get('condition')||'Both',advisor:new URLSearchParams(location.search).get('advisor'),modelTerms:context.terms};
      a.href=optionKey?optionInventoryLink({key:optionKey,label:row.label,value:f.displayValue||''},linkContext):featureInventoryLink(inventoryFeature,linkContext);
      a.className=badge.className+' equipment-feature-link';a.style.cssText='display:inline-block;min-height:44px;padding:10px 12px;text-decoration:underline;text-underline-offset:3px;border:1px solid currentColor;border-radius:6px';
      const targetLabel=definitions.find(([id])=>id===inventoryFeature)?.[1]||row.label;a.title='Find vehicles with '+targetLabel;a.setAttribute('aria-label','Find vehicles with '+targetLabel);badge.replaceWith(a);

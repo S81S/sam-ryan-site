@@ -117,19 +117,16 @@ export function vehicleFit(vehicle,trim,picks,entry){
   const ids=entry?.rows?.[pick.key]||[],read=vehicle.sticker&&ids.length;
   if(read&&ids.some(n=>vehicle.y.includes(n)))return {pick,on:'yes',by:'sticker'};
   if(read&&ids.every(n=>vehicle.n.includes(n)))return {pick,on:'no',by:'sticker'};
-  // A chart option named on the vehicle's own window sticker (or, once that name is known from other stickers, missing
-  // from this one).
+  // A named installed option is positive evidence. Other vehicles cannot prove its absence here.
   const oi=entry?.opts?.indexOf(pick.key)??-1;
   if(vehicle.sticker&&oi>=0&&vehicle.o?.includes(oi))return {pick,on:'yes',by:'sticker'};
-  if(vehicle.sticker&&oi>=0&&entry.eng?.includes(oi))return {pick,on:'no',by:'sticker'};
+  // An unmatched engine description can be incomplete; only explicit mapped negatives establish absence.
   const t=trim?satisfies(trim,pick):null;
   if(t==='standard')return {pick,on:'yes',by:'trim'};
   if(read)return {pick,on:'check',by:'sticker'};
-  if(vehicle.sticker&&oi>=0){
-   if(entry.optSeen?.includes(oi))return {pick,on:'no',by:'sticker'};
-  }
+  // Missing optional names stay unresolved, regardless of optSeen on other VINs.
   if(t==='option')return {pick,on:'check',by:'trim'};
-  return {pick,on:t===false?'no':'check',by:'trim'};
+  return {pick,on:'check',by:'trim'};
  });
 }
 // Every in-stock vehicle of the model, scored against the picks: exact matches first, then the closest.

@@ -33,6 +33,7 @@ function updateDetailLink(side){
  const v=vehicle(side);if(!v)return;
  const context=shoppingContext(),detailParams=new URLSearchParams({q:context.q||'',condition:context.condition||'Both',from:'compare',vehicles:SIDES.map(id=>$('choose-'+id).value).filter(Boolean).join(',')});
  if(context.requestedEquipment)detailParams.set('requestedEquipment',context.requestedEquipment);
+ if(context.preferences)detailParams.set('preferences',context.preferences);
  if(context.advisor)detailParams.set('advisor',context.advisor);
  const budget=new URLSearchParams(location.search).get('maxPrice');if(budget)detailParams.set('maxPrice',budget);
  $('listing-'+side).hidden=!!v.external;$('listing-'+side).href='/vehicle-'+encodeURIComponent(v.vin)+'?'+detailParams;

@@ -1,3 +1,4 @@
+import {evidenceVersion,freshEquipmentInput,stampEquipment} from './evidence-version.mjs';
 import {repairInstalledAudioEvidence} from './audio-evidence.mjs';
 import {repairWheelSeatEvidence} from './wheel-seat-evidence.mjs';
 import {stickerAudits} from './factory-sticker-audits.mjs';
@@ -91,13 +92,20 @@ function packageOn(lines,name){const n=norm(name);return lines.find(l=>{const va
 const resolvedEquipment=new WeakMap();
 export function applyFactoryEquipment(vehicle,sticker){
  if(!vehicle||!sticker||typeof sticker!=='object')return sticker;
- const signature=[vehicle.vin,vehicle.title,vehicle.year].join('|'),cached=resolvedEquipment.get(sticker)?.get(vehicle);if(cached?.signature===signature)return cached.result;
- const result=applyGrandCherokeeAnswers(vehicle,repairWranglerRoofEvidence(vehicle,resolveFactoryEquipment(vehicle,sticker)));
+ const signature=evidenceVersion(vehicle,sticker),cached=resolvedEquipment.get(sticker)?.get(vehicle);if(cached?.signature===signature)return cached.result;
+ const input=freshEquipmentInput(vehicle,sticker);
+ const result=stampEquipment(vehicle,input,applyGrandCherokeeAnswers(vehicle,repairWranglerRoofEvidence(vehicle,resolveFactoryEquipment(vehicle,input))));
  let byVehicle=resolvedEquipment.get(sticker);if(!byVehicle){byVehicle=new WeakMap();resolvedEquipment.set(sticker,byVehicle);}
  byVehicle.set(vehicle,{signature,result});return result;
 }
 function resolveFactoryEquipment(vehicle,sticker){
  if(sticker?.status!=='verified'||!vehicle?.vin||sticker.vin&&sticker.vin!==vehicle.vin)return sticker;
+ const audit=stickerAudits[vehicle.vin];
+ // Recover audited identity before any dependent fact is derived.
+ if(sticker.vin===vehicle.vin&&sticker.sha256&&audit?.sha256===sticker.sha256&&audit.market==='US'&&
+  sticker.identityLines?.length===2&&sticker.identityLines[0]==='2'&&sticker.identityLines[1]==='0'&&audit.identityLines){
+  sticker={...sticker,identityLines:[...audit.identityLines]};
+ }
  // Read the saved sticker text by the current wording rules before anything else builds on its features.
  sticker=applyRulings(vehicle,sticker);
  sticker=repairInstalledAudioEvidence(vehicle,sticker);
@@ -105,7 +113,6 @@ function resolveFactoryEquipment(vehicle,sticker){
  if(mirrorFolding)sticker={...sticker,features:{...sticker.features,foldMirrors:mirrorFolding}};
  sticker=repairWheelSeatEvidence(repairTowEvidence(repairSeatEvidence(sticker)));
  if(sticker.vin===vehicle.vin){sticker=repairCameraTireEvidence(sticker);sticker=repairWheelFinishEvidence(sticker);}
- const audit=stickerAudits[vehicle.vin];
  if(!audit||!sticker.sha256||audit.sha256!==sticker.sha256||audit.market!=='US')return sticker;
  // Add newly recognized printed wording only after matching the audited original.
  if(sticker.vin===vehicle.vin)sticker=repairTrailerBrakeEvidence(sticker);

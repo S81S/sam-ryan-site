@@ -1,3 +1,4 @@
+import {photoPreferences,encodePreferences,readPreferences} from './shopping-preferences.mjs';
 import {createPhotoGuide,swipeDecision} from './photo-guide-engine.mjs';
 import {createPhotoTrimPath} from './photo-trim-path.mjs';
 const root=document.getElementById('photo-finder');
@@ -65,8 +66,9 @@ function results(){
  const vs=activeMatches(),searchParts=[lineup().identity,state.condition==='Both'?'':state.condition.toLowerCase(),state.budget?'under '+state.budget:''].filter(Boolean);
  const query=searchParts.join(' ');
  const summary=lineup().questions.map(q=>state.answers[q.id]?label(q,state.answers[q.id]):null).filter(Boolean).join('; ');
+ const preferences=encodePreferences(photoPreferences(lineup(),state.answers));
  const message=`Hi Sam, I tried the photo guide for ${lineup().name}. ${summary}. ${state.budget?'My maximum listed price is '+money(state.budget)+'. ':''}Can you help me confirm my matches?`;
- return `${pathSummary()}<h2 data-heading tabindex="-1">${vs.length?vs.length+' matching '+(vs.length===1?'vehicle':'vehicles'):'Let’s adjust your choices'}</h2>${selections()}<p class="pg-muted">Matches check installed equipment for each VIN, including upgrades that replace base equipment. Photos illustrate the labeled feature only; other equipment visible in a picture is not part of your selection.</p>${vs.length?'':`<div class="pg-empty"><p>No listed vehicle matches this exact combination and budget. Your choices are saved. Go back to change a preference, raise your budget, or ask Sam to help find one.</p></div>`}<div class="pg-result-controls"><button type="button" data-action="edit">Edit my choices</button><a class="btn" href="sms:+17372091320?body=${esc(encodeURIComponent(message))}">Text Sam my preferences</a></div><div class="pg-results">${vs.slice(0,state.showAll?vs.length:8).map(v=>`<article class="pg-result"><h3>${esc(v.title)}</h3><div class="pg-result-price">${money(v.price)}</div><p>${esc(v.condition)} · Stock ${esc(v.stock)} · VIN …${esc(v.vin.slice(-6))}</p><a href="/vehicle-${esc(v.vin)}?${esc(new URLSearchParams({q:query,condition:state.condition,requestedEquipment:summary,from:'photo-guide',maxPrice:String(state.budget||'')}).toString())}">View this vehicle →</a><br><a href="/compare?${esc(new URLSearchParams({vehicles:v.vin,q:query,condition:state.condition,requestedEquipment:summary,from:'photo-guide',maxPrice:String(state.budget||'')}).toString())}">Compare this vehicle →</a></article>`).join('')}</div>${vs.length>8&&!state.showAll?`<div class="pg-controls"><button data-action="more" type="button">Show all ${vs.length} matches</button></div>`:''}<div class="pg-tools"><button type="button" data-action="restart">Start over</button></div>`;
+ return `${pathSummary()}<h2 data-heading tabindex="-1">${vs.length?vs.length+' matching '+(vs.length===1?'vehicle':'vehicles'):'Let’s adjust your choices'}</h2>${selections()}<p class="pg-muted">Matches check installed equipment for each VIN, including upgrades that replace base equipment. Photos illustrate the labeled feature only; other equipment visible in a picture is not part of your selection.</p>${vs.length?'':`<div class="pg-empty"><p>No listed vehicle matches this exact combination and budget. Your choices are saved. Go back to change a preference, raise your budget, or ask Sam to help find one.</p></div>`}<div class="pg-result-controls"><button type="button" data-action="edit">Edit my choices</button><a class="btn" href="sms:+17372091320?body=${esc(encodeURIComponent(message))}">Text Sam my preferences</a></div><div class="pg-results">${vs.slice(0,state.showAll?vs.length:8).map(v=>`<article class="pg-result"><h3>${esc(v.title)}</h3><div class="pg-result-price">${money(v.price)}</div><p>${esc(v.condition)} · Stock ${esc(v.stock)} · VIN …${esc(v.vin.slice(-6))}</p><a href="/vehicle-${esc(v.vin)}?${esc(new URLSearchParams({q:query,condition:state.condition,requestedEquipment:summary,preferences,from:'photo-guide',maxPrice:String(state.budget||'')}).toString())}">View this vehicle →</a><br><a href="/compare?${esc(new URLSearchParams({vehicles:v.vin,q:query,condition:state.condition,requestedEquipment:summary,preferences,from:'photo-guide',maxPrice:String(state.budget||'')}).toString())}">Compare this vehicle →</a></article>`).join('')}</div>${vs.length>8&&!state.showAll?`<div class="pg-controls"><button data-action="more" type="button">Show all ${vs.length} matches</button></div>`:''}<div class="pg-tools"><button type="button" data-action="restart">Start over</button></div>`;
 }
 function questionView(){
  const l=lineup(),q=l.questions[state.step],vs=activeMatches();
@@ -159,6 +161,15 @@ if(root){
    const removed=Object.keys(remembered.answers||{}).some(id=>!state.answers[id]);
    if(removed){state.step=Math.max(0,lineup().questions.findIndex(q=>!state.answers[q.id]));state.done=false;}
    if(Array.isArray(remembered.undoStack))undoStack=remembered.undoStack.slice(-100).filter(x=>x&&typeof x==='object').map(x=>({answers:engine.cleanAnswers(lineup(),x.answers),step:step(x.step),started:x.started!==false,done:x.done===true}));
+  }
+  const shared=readPreferences(params);
+  if(shared&&engine.lineups.some(l=>l.id===shared.model)){
+   state.model=shared.model;const answers={};
+   for(const r of shared.requirements){const q=lineup().questions.find(q=>q.id===r.questionId),c=q?.choices.find(c=>c.id===r.choiceId);
+    if(!c||c.feature!==r.feature||c.value!==r.value)continue;
+    if(r.wanted)answers[q.id]=c.id;else if(!answers[q.id]||Array.isArray(answers[q.id]))answers[q.id]=[...(answers[q.id]||[]),'reject:'+c.id];
+   }
+   state.answers=engine.cleanAnswers(lineup(),answers);state.started=true;state.done=true;state.step=0;undoStack=[];
   }
   if(params.has('maxPrice'))state.budget=budget(params.get('maxPrice'));
   if(['New','Used','Both'].includes(params.get('condition')))state.condition=params.get('condition');

@@ -1,5 +1,7 @@
+import {preferenceChecks} from './preference-evidence.mjs';
+import {evidenceVersion} from './evidence-version.mjs';
+import {wranglerConfiguration} from './photo-choice-scope.mjs';
 import {parseQuery,matchVehicle} from './equipment-search.mjs';
-import {withComparisonSpecifications} from './comparison-specs.mjs';
 
 const list=value=>Array.isArray(value)?value:[];
 const text=value=>typeof value==='string'&&value.trim().length>0;
@@ -9,35 +11,6 @@ const identityText=value=>' '+String(value||'').toLowerCase().replace(/[^a-z0-9]
 const validExclusions=lineup=>lineup.excludeIdentityTokens===undefined||
  (Array.isArray(lineup.excludeIdentityTokens)&&lineup.excludeIdentityTokens.every(value=>text(value)&&/[a-z0-9]/i.test(value)));
 const wranglerScope='2026-wrangler-four-door-gas';
-const wranglerTrims={B:'sport',S:'sport-s',W:'willys',G:'sahara',R:'rubicon',Y:'rubicon-x'};
-const normalized=value=>String(value||'').normalize('NFKC').replace(/[\u2010-\u2015]/g,'-').replace(/\s+/g,' ').trim();
-// The manufacturer 2026 four-door order guide distinguishes E7 Sport/Sahara
-// cloth from K7 Rubicon cloth although their short sticker descriptions match.
-// Its CPP codes also keep special editions out when a listing just says Sport.
-function wranglerConfiguration(vehicle,record){
- if(vehicle?.year!==2026||record?.status!=='verified'||record.vin!==vehicle.vin||record.equipmentSectionComplete!==true||
-  !Array.isArray(record.lines)||!record.lines.every(line=>typeof line==='string')||
-  !Array.isArray(record.identityLines)||!record.identityLines.every(line=>typeof line==='string'))return null;
- const identity=record.identityLines.map(normalized),lines=record.lines.map(normalized),title=normalized(vehicle.title);
- if(!/\b2026\b.*\bjeep wrangler\b/i.test(title)||
-  !identity.some(line=>/^2026 MODEL YEAR\b/i.test(line))||
-  identity.some(line=>/\b20\d{2} MODEL YEAR\b/i.test(line)&&!/^2026 MODEL YEAR\b/i.test(line)))return null;
- const context=[title,...identity,record.engine||''].join(' ');
- if(/\b(?:2[ -]door|4xe|hybrid|phev|392|V8|RHD|right[ -]hand|Moab|anniversary|edition)\b/i.test(context))return null;
- // Explicit edition packages can survive a generic dealer/model title.
- if(lines.some(line=>/\b(?:anniversary|edition|America\s*250|Rockslide|Whitecap|Willys[ -]41)\b/i.test(line)))return null;
- const modelLines=identity.filter(line=>/\bwrangler\b/i.test(line)).map(line=>line.replace(/ THERE['’]S ONLY ONE\.?$/i,''));
- const models=modelLines.map(line=>line.match(/^(?:JEEP )?WRANGLER 4[ -]DOOR (SPORT(?: S)?|WILLYS|SAHARA|RUBICON(?: X)?) 4X4$/i));
- if(!models.length||models.some(match=>!match))return null;
- const packages=lines.filter(line=>/^Customer Preferred Package\b/i.test(line));
- const codes=[...new Set(packages.map(line=>line.match(/^Customer Preferred Package (2[234][BSWGRY])(?:\s+\$[\d,]+)?$/i)?.[1]?.toUpperCase()))];
- if(codes.length!==1||!codes[0]||codes[0]==='23G')return null;
- const code=codes[0],trim=wranglerTrims[code[2]],engine=normalized(record.engine);
- if(!(code.startsWith('22')?/\b2\.0L\s+I4\b/i:/\b3\.6L\s+V6\b/i).test(engine))return null;
- const compatible=trim==='sport-s'||trim==='willys'?['sport',trim]:trim==='rubicon-x'?['rubicon',trim]:[trim];
- if(models.some(match=>!compatible.includes(match[1].toLowerCase().replace(/ /g,'-'))))return null;
- return {trim,code};
-}
 const validReviewedScope=lineup=>lineup.id==='wrangler'
  ? lineup.year===2026&&lineup.reviewedScope===wranglerScope
  : lineup.reviewedScope===undefined;
@@ -69,41 +42,15 @@ export function createPhotoGuide(catalog,vehicles,records) {
  const byVIN=new Map(vehicles.map(v=>[v.vin,v]));
  // Catalog, inventory and sticker records are one immutable loaded snapshot.
  // Cache equipment resolution so budget typing does not reparse every sticker.
- const resolved=new WeakMap(),choiceResults=new WeakMap(),queries=new Map();
- const specs=v=>{if(!resolved.has(v))resolved.set(v,withComparisonSpecifications(v,records[v.vin]));return resolved.get(v)};
- const emptyQuery=parseQuery('');
+ const choiceResults=new WeakMap();
  function choiceMatches(v,choice,wanted=true){
   if(!v||!choiceValue(choice)||typeof wanted!=='boolean')return false;
-  const record=records[v.vin];
-  if(record?.status!=='verified'||record.vin!==v.vin||!Array.isArray(record.lines)||
-   !record.lines.every(line=>typeof line==='string')||
-   (record.identityLines!==undefined&&(!Array.isArray(record.identityLines)||!record.identityLines.every(line=>typeof line==='string'))))return false;
-  const scoped=choice.model==='wrangler'||choice.reviewedScope!==undefined||choice.allowedTrimIds!==undefined;
-  let configuration;
-  if(scoped){
-   if(choice.model!=='wrangler'||choice.year!==2026||choice.reviewedScope!==wranglerScope)return false;
-   configuration=wranglerConfiguration(v,record);if(!configuration)return false;
-   if(choice.feature==='seatUpholstery'&&(!Array.isArray(choice.allowedTrimIds)||!choice.allowedTrimIds.length||
-    !choice.allowedTrimIds.every(id=>Object.values(wranglerTrims).includes(id))))return false;
-   // A dealer/Mopar seat cover is not the pictured factory upholstery.
-   if(choice.feature==='seatUpholstery'&&record.lines.some(line=>/\bmopar\b.*\b(?:leather|seat cover|seat trim)/i.test(line)))return false;
-  }
-  const key=JSON.stringify([choice.feature,choice.value,wanted,choice.reviewedScope,choice.allowedTrimIds]);
-  let cached=choiceResults.get(v);if(!cached){cached=new Map();choiceResults.set(v,cached)}
-  if(cached.has(key))return cached.get(key);
-  let result;
-  if(typeof choice.value==='string'){
-   const fact=specs(v)?.features[choice.feature],value=choice.value.trim().toLowerCase();
-   const exact=typeof fact?.comparisonValue==='string'&&fact.comparisonValue===value&&
-    (!configuration||!choice.allowedTrimIds||choice.allowedTrimIds.includes(configuration.trim));
-   result=typeof fact?.comparisonValue==='string'&&(wanted?exact:!exact);
-  }else{
-   // A photo can represent either presence or verified absence of a feature.
-   const expected=wanted?choice.value:!choice.value;
-   if(!queries.has(key))queries.set(key,{...emptyQuery,requirements:[{id:choice.feature,wanted:expected}]});
-   result=matchVehicle(v,record,queries.get(key)).kind==='match';
-  }
-  cached.set(key,result);return result;
+  const record=records[v.vin],version=evidenceVersion(v,record);
+  let cached=choiceResults.get(v);
+  if(!cached||cached.version!==version){cached={version,choices:new Map()};choiceResults.set(v,cached);}
+  const key=JSON.stringify([choice,wanted]);
+  if(!cached.choices.has(key))cached.choices.set(key,preferenceChecks(v,record,[{...choice,wanted}])[0]?.state==='match');
+  return cached.choices.get(key);
  }
  const rawLineups=list(catalog?.lineups).filter(l=>l&&text(l.id)&&Number.isInteger(l.year)&&text(l.identity)&&Array.isArray(l.questions)&&validExclusions(l)&&validReviewedScope(l));
  const scopeCounts=new Map();for(const l of rawLineups)scopeCounts.set(scopeKey(l),(scopeCounts.get(scopeKey(l))||0)+1);
@@ -156,7 +103,7 @@ export function createPhotoGuide(catalog,vehicles,records) {
    const checks=answerChoices(q,answer);if(!checks)return [];
    requirements.push(...checks);
   }
-  return pool.filter(v=>(condition==='Both'||v.condition===condition)&&
+  return pool.filter(v=>sameModel(v,lineup,records[v.vin])&&(condition==='Both'||v.condition===condition)&&
    (!budget||(Number.isFinite(v.price)&&v.price>0&&v.price<=budget))&&
    requirements.every(({choice,wanted})=>choiceMatches(v,choice,wanted)))
    .sort((a,b)=>(a.price??Infinity)-(b.price??Infinity)||String(a.stock||'').localeCompare(String(b.stock||'')));

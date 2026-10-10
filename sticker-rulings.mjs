@@ -1,3 +1,4 @@
+import {evidenceVersion} from './evidence-version.mjs';
 // How window-sticker wording is read, as ruled by Sam on 7 Oct 2026. One place, used both when a new sticker is
 // read (the patterns below feed the search definitions) and every time a saved sticker is searched or compared
 // (applyRulings re-reads the saved sticker text, so older records follow the same rules without being re-fetched).
@@ -89,7 +90,8 @@ export function seatMaterialFacts(lines){
 const cache=new WeakMap();
 export function applyRulings(vehicle,sticker){
  if(sticker?.status!=='verified'||!vehicle?.vin||sticker.vin!==vehicle.vin)return sticker;
- if(cache.has(sticker))return cache.get(sticker);
+ const version=evidenceVersion(vehicle,sticker),cached=cache.get(sticker);
+ if(cached?.version===version)return cached.result;
  const lines=sticker.lines||[],features={...sticker.features},set=(id,fact)=>{features[id]={...fact,sourceUrl:fact.sourceUrl||sticker.sourceUrl};};
  for(const id of Object.keys(retired)){const fact=read(lines,id),saved=features[id];if(fact)set(id,fact);else if(saved?.value===true&&saved.evidence?.length&&saved.evidence.every(l=>retired[id].test(l)))delete features[id];}
  for(const id of added){if(features[id])continue;const fact=read(lines,id);if(fact)set(id,fact);}
@@ -120,5 +122,5 @@ export function applyRulings(vehicle,sticker){
  // Ram 4500 and 5500 chassis cabs are built only with dual rear wheels.
  const chassis=(sticker.identityLines||[]).find(l=>/\bRAM [45]500 CHASSIS\b/i.test(l));
  if(chassis&&!features.dualRearWheels)set('dualRearWheels',{value:true,evidence:[chassis]});
- const result={...sticker,features};cache.set(sticker,result);return result;
+ const result={...sticker,features};cache.set(sticker,{version,result});return result;
 }

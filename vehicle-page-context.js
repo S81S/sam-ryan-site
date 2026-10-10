@@ -1,6 +1,7 @@
 (() => {
   const params = new URLSearchParams(location.search);
   const request = (params.get('q') || '').slice(0, 1000);
+  const preferences = (params.get('preferences') || '').slice(0, 18000);
   const equipment = (params.get('requestedEquipment') || '').slice(0, 2000);
   const condition = ['New', 'Used', 'Both'].includes(params.get('condition')) ? params.get('condition') : '';
   const budget = Math.max(0, Math.min(1000000, Number(params.get('maxPrice')) || 0));
@@ -11,6 +12,7 @@
   if (request) search.set('q', request);
   if (condition) search.set('condition', condition);
   if (equipment) search.set('requestedEquipment', equipment);
+  if (preferences) search.set('preferences', preferences);
   if (budget) search.set('maxPrice', budget);
   if (source) search.set('from', source);
   if (params.get('advisor') === 'Ryan') search.set('advisor', 'Ryan');
@@ -25,7 +27,7 @@
     } else back.href = '/inventory?' + search;
   }
   const description = [request, condition ? 'Shopping: ' + condition : '', equipment ? 'My feature preferences: ' + equipment : '', budget ? 'Maximum listed price: $' + budget.toLocaleString('en-US') : ''].filter(Boolean).join('\n');
-  if (!description) return;
+  if (!description && !preferences) return;
   for (const link of document.querySelectorAll('a[href^="/contact?"], a[href^="/compare?"], a[href^="sms:"]')) {
     const url = new URL(link.href);
     if (url.protocol === 'sms:') {

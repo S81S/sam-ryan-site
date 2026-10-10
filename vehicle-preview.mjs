@@ -1,4 +1,4 @@
-import {shoppingContext,comparisonLink} from './shopping-context.mjs';
+import {shoppingContext,comparisonLink,vehicleLink} from './shopping-context.mjs';
 import {vehiclePhotos} from './vehicle-photos.mjs';
 // Keep the shopper's vehicle context on Cars With Sam.
 let dialog;
@@ -67,7 +67,7 @@ export function openVehiclePreview(vehicle, request = '') {
   const driveway=action('Try a driveway preview','#');
   const sync = () => {
     const who = advisor.value;
-    const context={...shoppingContext(),q:request || shoppingContext().q,advisor:who};
+    const context={...shoppingContext(),advisor:who};
     compare.href=comparisonLink([vehicle.vin],context);
     driveway.href='see-yourself.html?'+new URLSearchParams({vehicle:vehicle.vin,advisor:who});
     const query = new URLSearchParams({vehicle:vehicle.vin, advisor:who, request:request ? request+'\nCondition: '+context.condition : ''});
@@ -79,7 +79,7 @@ export function openVehiclePreview(vehicle, request = '') {
   };
   advisor.addEventListener('change', sync); sync();
   actions.append(text, ask, walkaround, drive, compare, driveway);
-  actions.append(action('Full vehicle details',`/vehicle-${vehicle.vin}?${new URLSearchParams({q:request,condition:shoppingContext().condition||'New'})}`));dialog.append(actions);
+  actions.append(action('Full vehicle details',vehicleLink(vehicle.vin,shoppingContext())));dialog.append(actions);
   const photos = action('More photos on dealer site ↗', vehicle.sourceUrl);
   photos.className = 'mini-btn'; photos.target = '_blank'; photos.rel = 'noopener';
   dialog.append(photos);
