@@ -62,7 +62,7 @@ function modelView(){
   const example=l.questions.flatMap(q=>q.choices)[0],vehicle=inventory.vehicles.find(v=>v.vin===example?.vin);
   const photo=vehicle?.photoUrl||vehicle?.photoUrls?.[0];
   return '<button type="button" class="pg-model-card" data-model-choice="'+esc(l.id)+'" aria-label="Choose '+esc(l.name)+'">'+(photo?'<img src="'+esc(photo)+'" alt="" width="480" height="320" decoding="async">':'')+'<span><strong>'+esc(l.name)+'</strong><small>Choose features →</small></span></button>';
- }).join('')+'</div></section>';
+ }).join('')+'</div>'+(state.started?'<div class="pg-controls"><button type="button" data-action="resume">Resume saved choices — '+esc(lineup().name)+'</button></div>':'')+'</section>';
 }
 function setup(){return `<div class="pg-setup"><label>Maximum listed price<input data-budget type="number" min="0" max="1000000" step="1000" inputmode="numeric" placeholder="Optional" value="${state.budget||''}">${state.done?'<button type="button" data-action="apply-budget">Apply budget</button>':''}</label><label>Vehicle condition<select data-condition>${['New','Used','Both'].map(c=>`<option value="${c}"${state.condition===c?' selected':''}>${c==='Both'?'New and used':c}</option>`).join('')}</select></label></div><p class="pg-muted">Prices may include conditional incentives. Confirm your price and availability. Inventory checked ${esc(new Date(inventory.capturedAt).toLocaleString('en-US',{timeZone:'America/Chicago',dateStyle:'medium',timeStyle:'short'}))} CT.</p>`;}
 function card(c){
@@ -77,7 +77,7 @@ function results(){
  const summary=lineup().questions.map(q=>state.answers[q.id]?label(q,state.answers[q.id]):null).filter(Boolean).join('; ');
  const preferences=encodePreferences(photoPreferences(lineup(),state.answers));
  const message=`Hi Sam, I tried the photo guide for ${lineup().name}. ${summary}. ${state.budget?'My maximum listed price is '+money(state.budget)+'. ':''}Can you help me confirm my matches?`;
- return `${pathSummary()}<h2 data-heading tabindex="-1">${vs.length?vs.length+' matching '+(vs.length===1?'vehicle':'vehicles'):'Let’s adjust your choices'}</h2>${selections()}<p class="pg-muted">Matches check installed equipment for each VIN, including upgrades that replace base equipment. Photos illustrate the labeled feature only; other equipment visible in a picture is not part of your selection.</p>${vs.length?'':`<div class="pg-empty"><p>No listed vehicle matches this exact combination and budget. Your choices are saved. Go back to change a preference, raise your budget, or ask Sam to help find one.</p></div>`}<div class="pg-result-controls"><button type="button" data-action="edit">Edit my choices</button><a class="btn" href="sms:+17372091320?body=${esc(encodeURIComponent(message))}">Text Sam my preferences</a></div><div class="pg-results">${vs.slice(0,state.showAll?vs.length:8).map(v=>`<article class="pg-result"><h3>${esc(v.title)}</h3><div class="pg-result-price">${money(v.price)}</div><p>${esc(v.condition)} · Stock ${esc(v.stock)} · VIN …${esc(v.vin.slice(-6))}</p><a href="/vehicle-${esc(v.vin)}?${esc(new URLSearchParams({q:query,condition:state.condition,requestedEquipment:summary,preferences,from:'photo-guide',maxPrice:String(state.budget||'')}).toString())}">View this vehicle →</a><br><a href="/compare?${esc(new URLSearchParams({vehicles:v.vin,q:query,condition:state.condition,requestedEquipment:summary,preferences,from:'photo-guide',maxPrice:String(state.budget||'')}).toString())}">Compare this vehicle →</a></article>`).join('')}</div>${vs.length>8&&!state.showAll?`<div class="pg-controls"><button data-action="more" type="button">Show all ${vs.length} matches</button></div>`:''}<div class="pg-tools"><button type="button" data-action="restart">Start over</button></div>`;
+ return `${pathSummary()}<h2 data-heading tabindex="-1">${vs.length?vs.length+' matching '+(vs.length===1?'vehicle':'vehicles'):'Let’s adjust your choices'}</h2>${selections()}<p class="pg-muted">Matches check installed equipment for each VIN, including upgrades that replace base equipment. Photos illustrate the labeled feature only; other equipment visible in a picture is not part of your selection.</p>${vs.length?'':`<div class="pg-empty"><p>No listed vehicle matches this exact combination and budget. Your choices are saved. Go back to change a preference, raise your budget, or ask Sam to help find one.</p></div>`}<div class="pg-result-controls"><button type="button" data-action="edit">Back to feature cards</button><a class="btn" href="sms:+17372091320?body=${esc(encodeURIComponent(message))}">Text Sam my preferences</a></div><div class="pg-results">${vs.slice(0,state.showAll?vs.length:8).map(v=>`<article class="pg-result"><h3>${esc(v.title)}</h3><div class="pg-result-price">${money(v.price)}</div><p>${esc(v.condition)} · Stock ${esc(v.stock)} · VIN …${esc(v.vin.slice(-6))}</p><a href="/vehicle-${esc(v.vin)}?${esc(new URLSearchParams({q:query,condition:state.condition,requestedEquipment:summary,preferences,from:'photo-guide',maxPrice:String(state.budget||'')}).toString())}">View this vehicle →</a><br><a href="/compare?${esc(new URLSearchParams({vehicles:v.vin,q:query,condition:state.condition,requestedEquipment:summary,preferences,from:'photo-guide',maxPrice:String(state.budget||'')}).toString())}">Compare this vehicle →</a></article>`).join('')}</div>${vs.length>8&&!state.showAll?`<div class="pg-controls"><button data-action="more" type="button">Show all ${vs.length} matches</button></div>`:''}<div class="pg-tools"><button type="button" data-action="restart">Start over</button></div>`;
 }
 function questionView(){
  const l=lineup(),q=l.questions[state.step],vs=activeMatches();
@@ -89,12 +89,13 @@ function draw(focus=false){
  const l=lineup();if(!l)return;
  const settingsOpen=root.querySelector('.pg-settings')?.open===true;
  const showModels=choosingModel||!state.started;
- root.innerHTML=showModels?`${modelView()}<details class="pg-settings"><summary>Condition &amp; budget <span class="pg-settings-edit">${state.condition==='Both'?'New &amp; used':esc(state.condition)}</span></summary>${setup()}</details>`:
+ const shortcut=document.querySelector('[data-photo-selection]');if(shortcut)shortcut.textContent=showModels?'Choose a model':state.done?'Back to feature cards':'See my matches';
+ root.innerHTML=showModels?`${modelView()}<details class="pg-settings"><summary>Condition &amp; budget <span class="pg-settings-edit">${state.condition==='Both'?'New &amp; used':esc(state.condition)}${state.budget?' · '+money(state.budget):''}</span></summary>${setup()}</details>`:
  `<div class="pg-model-bar"><strong>${esc(l.name)}</strong><button type="button" data-action="models">Change model</button></div><details class="pg-settings"${settingsOpen?' open':''}><summary><span>Condition &amp; budget</span><span class="pg-settings-edit">${state.condition==='Both'?'New &amp; used':esc(state.condition)}${state.budget?' · '+money(state.budget):''}</span></summary>${setup()}</details>${state.done?results():questionView()}`;
  root.innerHTML+=`<p class="pg-status" role="status" aria-live="polite">${esc(live)}</p><p class="pg-muted pg-guide-note">Photos illustrate the labeled feature. More models and features are available in the complete trim guide below.</p>`;
  root.querySelectorAll('[data-model-choice]').forEach(button=>button.addEventListener('click',()=>{
   const model=engine.lineups.find(item=>item.id===button.dataset.modelChoice);if(!model)return;
-  if(model.id!==state.model){undoStack=[];state.answers={};state.step=0;state.done=false;state.showAll=false;}
+  undoStack=[];state.answers={};state.step=0;state.done=false;state.showAll=false;
   state.model=model.id;state.started=true;choosingModel=false;live='Choose the features that matter to you.';save();draw(true);
  }));
  root.querySelectorAll('[data-choice]').forEach(button=>{
@@ -147,7 +148,8 @@ function draw(focus=false){
   if(button.disabled)return;
   if(button.dataset.pick){choose(button.dataset.pick);return}if(button.dataset.reject){choose(button.dataset.reject,true);return}
   switch(button.dataset.action){
-   case 'models':choosingModel=true;live='Choose a model. Your current preferences stay saved until you choose a different model.';break;
+   case 'models':choosingModel=true;live='Choose a model to start fresh, or resume your saved choices.';break;
+   case 'resume':choosingModel=false;state.done=false;state.step=Math.min(state.step,lineup().questions.length-1);live='Continuing your saved feature choices.';break;
    case 'apply-budget':live='Budget applied.';break;
    case 'skip':choose('skip');return;
    case 'back':if(undoStack.length){Object.assign(state,undoStack.pop());live='Last swipe undone.';}break;
@@ -164,7 +166,7 @@ if(root){
  const classic=document.querySelector('.pg-classic'),photoShortcut=document.querySelector('[data-photo-selection]'),trimShortcut=document.querySelector('[data-selection]');
  const syncShortcut=()=>{if(photoShortcut)photoShortcut.hidden=!!classic?.open;if(trimShortcut)trimShortcut.hidden=!classic?.open;};
  classic?.addEventListener('toggle',syncShortcut);syncShortcut();
- photoShortcut?.addEventListener('click',()=>{if(!engine)return;if(!state.started||choosingModel){live='Choose a model to see its matches.';draw(true);return;}state.done=true;live='';save();draw(true);});
+ photoShortcut?.addEventListener('click',()=>{if(!engine)return;if(!state.started||choosingModel){live='Choose a model to see its matches.';draw(true);return;}if(state.done){state.done=false;state.step=0;live='Change any choice; your other preferences stay saved.';}else{state.done=true;live='';}save();draw(true);});
  try{
   const files=await Promise.all(['/data/feature-photo-guide.json','/data/used-inventory.json','/data/equipment-index.json','/data/photo-trim-path.json'].map(async path=>{const r=await fetch(path);if(!r.ok)throw Error(path);return r.json()}));
   const [catalog,data,index,pathData]=files;inventory=data;engine=createPhotoGuide(catalog,data.vehicles,index.records);trimPath=createPhotoTrimPath(pathData,engine);
@@ -183,6 +185,8 @@ if(root){
    if(removed){state.step=Math.max(0,lineup().questions.findIndex(q=>!state.answers[q.id]));state.done=false;}
    if(Array.isArray(remembered.undoStack))undoStack=remembered.undoStack.slice(-100).filter(x=>x&&typeof x==='object').map(x=>({answers:engine.cleanAnswers(lineup(),x.answers),step:step(x.step),started:x.started!==false,done:x.done===true}));
   }
+  // Direct visits always offer model cards; explicit comparison links retain their context.
+  choosingModel=true;
   const shared=readPreferences(params);
   if(shared&&engine.lineups.some(l=>l.id===shared.model)){
    state.model=shared.model;const answers={};
@@ -190,7 +194,7 @@ if(root){
     if(!c||c.feature!==r.feature||c.value!==r.value)continue;
     if(r.wanted)answers[q.id]=c.id;else if(!answers[q.id]||Array.isArray(answers[q.id]))answers[q.id]=[...(answers[q.id]||[]),'reject:'+c.id];
    }
-   state.answers=engine.cleanAnswers(lineup(),answers);state.started=true;state.done=true;state.step=0;undoStack=[];
+   state.answers=engine.cleanAnswers(lineup(),answers);state.started=true;state.done=true;state.step=0;undoStack=[];choosingModel=false;
   }
   if(params.has('maxPrice'))state.budget=budget(params.get('maxPrice'));
   if(['New','Used','Both'].includes(params.get('condition')))state.condition=params.get('condition');
