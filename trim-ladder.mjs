@@ -120,7 +120,9 @@ export function vehicleFit(vehicle,trim,picks,entry){
   // A named installed option is positive evidence. Other vehicles cannot prove its absence here.
   const oi=entry?.opts?.indexOf(pick.key)??-1;
   if(vehicle.sticker&&oi>=0&&vehicle.o?.includes(oi))return {pick,on:'yes',by:'sticker'};
-  // An unmatched engine description can be incomplete; only explicit mapped negatives establish absence.
+  // Engines: a sticker that names a different engine of this model settles it. A sticker whose engine line matched
+  // no engine row is incomplete and settles nothing, so it falls through.
+  if(vehicle.sticker&&oi>=0&&entry.eng?.includes(oi)&&entry.eng.some(n=>vehicle.o?.includes(n)))return {pick,on:'no',by:'sticker'};
   const t=trim?satisfies(trim,pick):null;
   if(t==='standard')return {pick,on:'yes',by:'trim'};
   if(read)return {pick,on:'check',by:'sticker'};

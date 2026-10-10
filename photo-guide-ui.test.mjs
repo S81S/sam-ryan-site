@@ -4,6 +4,7 @@ import fs from 'node:fs';
 import vm from 'node:vm';
 import {createPhotoGuide,swipeDecision} from './photo-guide-engine.mjs';
 import {createPhotoTrimPath} from './photo-trim-path.mjs';
+import {photoPreferences,encodePreferences,readPreferences} from './shopping-preferences.mjs';
 
 async function session(saved=null,search='',{autoStart=true}={}){
  const storage=new Map(saved?[['carswithsam-photo-guide-v1',JSON.stringify(saved)]]:[]);
@@ -36,7 +37,7 @@ async function session(saved=null,search='',{autoStart=true}={}){
    if(!['img','input','br','hr','meta','link'].includes(tag))stack.push(n);
   }
  }});
- const context={createPhotoGuide,createPhotoTrimPath,swipeDecision,URLSearchParams,Intl,Date,console,structuredClone,matchMedia:()=>({matches:true}),location:{search},sessionStorage:{getItem:k=>storage.get(k),setItem:(k,v)=>storage.set(k,v)},document:{getElementById:()=>root,querySelector:()=>null,createElement:tag=>make(tag)},fetch:async path=>({ok:true,json:async()=>JSON.parse(fs.readFileSync(new URL('.'+path,import.meta.url)))})};
+ const context={createPhotoGuide,createPhotoTrimPath,swipeDecision,photoPreferences,encodePreferences,readPreferences,URLSearchParams,Intl,Date,console,structuredClone,matchMedia:()=>({matches:true}),location:{search},sessionStorage:{getItem:k=>storage.get(k),setItem:(k,v)=>storage.set(k,v)},document:{getElementById:()=>root,querySelector:()=>null,createElement:tag=>make(tag)},fetch:async path=>({ok:true,json:async()=>JSON.parse(fs.readFileSync(new URL('.'+path,import.meta.url)))})};
  const source=fs.readFileSync(new URL('./photo-guide.mjs',import.meta.url),'utf8').replace(/^import .*;\n/gm,'');
  await vm.runInNewContext('(async()=>{'+source+'})()',context);
  if(autoStart)root.querySelector('[data-action="start"]')?.listeners.click();
