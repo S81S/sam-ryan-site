@@ -15,6 +15,8 @@ import {attachBuyerCardGestures} from './buyer-card-gestures.mjs';
 import {buyerFeatureExplanation} from './buyer-feature-copy.mjs';
 import {buyerFeaturePhoto} from './buyer-feature-photo-map.mjs';
 import {buyerAudioPhoto} from './buyer-audio-photos.mjs';
+import {buyerRoofPhoto} from './buyer-roof-photos.mjs';
+import {screenDisplayChoices} from './buyer-screen-deck.mjs';
 import {renderBuyerFeatureVisual} from './buyer-feature-visuals.mjs';
 const read=path=>JSON.parse(fs.readFileSync(new URL(path,import.meta.url)));
 const guide=read('./trim-standard-data.json'),index=read('./data/factory/index.json');
@@ -51,7 +53,7 @@ async function session({saved=null,search='',fetchOverride}={}){
   }
  }});
  const errors=[],location={search};
- const context={loadBuyerCatalog:async()=>catalog,loadBuyerLineup:async id=>{const m=catalog.models.find(m=>m.id===id);return registerBuyerLineup(buyerLineup(m,m.meta?read('./data/factory/'+m.meta.file):null));},assessBuyerMatches,assessBuyerTrim,buyerVehicleTrim,photoPreferences,encodePreferences,readPreferences,createPhotoGuide,createPhotoTrimPath,swipeDecision,buildBuyerOptionGroups,findBuyerOptionGroup,classifyGuideGroups,attachBuyerCardGestures,buyerFeatureExplanation,buyerFeaturePhoto,buyerAudioPhoto,renderBuyerFeatureVisual,URLSearchParams,AbortSignal,Intl,Date,structuredClone,matchMedia:()=>({matches:true}),console:{error:e=>errors.push(e)},location,sessionStorage:{getItem:k=>storage.get(k),setItem:(k,v)=>storage.set(k,v)},document:{getElementById:()=>root,querySelector:()=>null,createElement:tag=>make(tag)},fetch:async path=>fetchOverride?fetchOverride(path):({ok:true,json:async()=>read('.'+path)})};
+ const context={loadBuyerCatalog:async()=>catalog,loadBuyerLineup:async id=>{const m=catalog.models.find(m=>m.id===id);return registerBuyerLineup(buyerLineup(m,m.meta?read('./data/factory/'+m.meta.file):null));},assessBuyerMatches,assessBuyerTrim,buyerVehicleTrim,photoPreferences,encodePreferences,readPreferences,createPhotoGuide,createPhotoTrimPath,swipeDecision,buildBuyerOptionGroups,findBuyerOptionGroup,classifyGuideGroups,attachBuyerCardGestures,buyerFeatureExplanation,buyerFeaturePhoto,buyerAudioPhoto,buyerRoofPhoto,screenDisplayChoices,renderBuyerFeatureVisual,URLSearchParams,AbortSignal,Intl,Date,structuredClone,matchMedia:()=>({matches:true}),console:{error:e=>errors.push(e)},location,sessionStorage:{getItem:k=>storage.get(k),setItem:(k,v)=>storage.set(k,v)},document:{getElementById:()=>root,querySelector:()=>null,createElement:tag=>make(tag)},fetch:async path=>fetchOverride?fetchOverride(path):({ok:true,json:async()=>read('.'+path)})};
  const source=fs.readFileSync(new URL('./buyer-guide.mjs',import.meta.url),'utf8').replace(/^import .*;\n/gm,'');
  await vm.runInNewContext('(async()=>{'+source+'})()',context);
  const find=selector=>root.querySelector(selector);
@@ -342,5 +344,64 @@ test('branded audio cards show the exact OEM speaker photo and retain the equipm
  for(const [id,filename,brand] of [['f1uh0zqe','klipsch','Klipsch'],['f19v1dzs','harman-kardon','Harman Kardon']]){
   const card=await show(s,id);assert.match(card.querySelector('img').getAttribute('src'),new RegExp('ram1500-2026-'+filename+'-oem'));assert.match(card.textContent,new RegExp(brand));assert.match(card.querySelector('.pg-photo-identity').textContent,/Ram OEM photo/);assert.doesNotMatch(card.querySelector('.pg-photo-identity').textContent,/Stock|undefined/);
  }
+ assert.deepEqual(s.errors,[]);
+});
+
+for(const {model,stock,choices} of [
+ {model:'wrangler',stock:'J22109',choices:['f1dj1wzb','j22109-cloth']},
+ {model:'ram-1500',stock:'R12315',choices:['r12315-dashboard','r12315-leather','r12315-panoramic']},
+ {model:'jeep-grand-cherokee',stock:'J22138',choices:['j22138-dashboard','j22138-capri']},
+ {model:'chrysler-pacifica',stock:'C02225',choices:['c02225-leatherette','c02225-panoramic']},
+ {model:'ram-3500',stock:'R12500',choices:['r12500-dashboard','r12500-vinyl-bench']}
+])test('positive multi-feature journey keeps the photographed vehicle through completion: '+model,async()=>{
+ const s=await start(model);
+ for(const id of choices){
+  await want(s,id);assert.ok(count(s)>0,model+' '+id+' preserves at least one confirmed vehicle');assert.deepEqual(s.errors,[]);
+ }
+ const chosen=s.state().answers,seen=new Set();
+ while(s.find('[data-card]')){
+  const group=s.state().groupId;assert.ok(!seen.has(group),'resolved decisions must not repeat: '+model+' '+group);seen.add(group);assert.ok(seen.size<=90,'bounded remaining guide');
+  await s.click('[data-answer="skip"]');
+ }
+ assert.equal(s.state().stage,'results');assert.match(s.root.innerHTML,/Your choices are complete/);
+ for(const [id,value] of Object.entries(chosen))assert.deepEqual(s.state().answers[id],value,'completing remaining decisions preserves '+id);
+ if(s.find('[data-action="more"]'))await s.click('[data-action="more"]');
+ assert.ok(s.find('.pg-results').querySelectorAll('p').some(p=>p.textContent.endsWith('Stock '+stock)),'the vehicle used for the selected photo features remains confirmed: '+stock);
+ assert.deepEqual(s.errors,[]);
+});
+
+for(const {model,stock,engine} of [
+ {model:'wrangler',stock:'J22109',engine:'fbixrjd'},
+ {model:'ram-1500',stock:'R12315',engine:'fpw7o6e'},
+ {model:'jeep-grand-cherokee',stock:'J22138',engine:'f10gvmt6'},
+ {model:'ram-3500',stock:'R12500',engine:'fffmage'}
+])test('the sourced engine and transmission choice retains a vehicle with that installed powertrain: '+model,async()=>{
+ const s=await start(model);await want(s,engine);await s.click('[data-action="results"]');
+ if(s.find('[data-action="more"]'))await s.click('[data-action="more"]');
+ assert.ok(s.find('.pg-results').querySelectorAll('p').some(p=>p.textContent.endsWith('Stock '+stock)),stock+' should stay confirmed for '+engine);
+ assert.deepEqual(s.errors,[]);
+});
+
+
+test('Ram screen stacks show each reviewed size once and preserve a saved factory selection',async()=>{
+ for(const [model,first,expected] of [['ram-1500','r12546-dashboard',['r12546-dashboard','r12527-dashboard','r12315-dashboard']],['ram-3500','r12500-dashboard',['r12500-dashboard','r12249a-dashboard','fldke8f']]]){
+  const s=await start(model);await show(s,first);const seen=[];
+  do {seen.push(s.find('[data-card]').dataset.card);await s.click('[data-action="next-option"]');}while(s.find('[data-card]').dataset.card!==first&&seen.length<12);
+  assert.deepEqual([...seen].sort(),[...expected].sort());
+  assert.ok(s.find('[data-card]').querySelector('img'));
+ }
+ const s=await start();await want(s,'r12527-dashboard');const saved=s.state();
+ delete saved.answers.screen;saved.answers.fh01t86='fh01t86';
+ saved.savedRequirements=photoPreferences(fixture('ram-1500').lineup,saved.answers).requirements;
+ const resumed=await session({saved});await resumed.click('[data-action="resume"]');await show(resumed,'fh01t86');
+ assert.equal(resumed.state().answers.fh01t86,'fh01t86');assert.ok(resumed.find('[data-card]').querySelector('img'));assert.ok(count(resumed)>0);
+ assert.equal(resumed.find('[data-show-choice="r12527-dashboard"]'),null);assert.deepEqual(resumed.errors,[]);
+});
+
+test('body-color Wrangler roof card uses the correctly labeled Jeep roof illustration',async()=>{
+ const s=await start('wrangler'),card=await show(s,'f1dhm9e4');
+ assert.equal(card.querySelector('img').getAttribute('src'),'/wrangler-2026-bodycolor-hardtop-oem.jpg');
+ assert.match(card.querySelector('.pg-photo-identity').textContent,/Jeep OEM illustration/);
+ assert.doesNotMatch(card.querySelector('.pg-photo-identity').textContent,/Stock|Ram OEM/);
  assert.deepEqual(s.errors,[]);
 });

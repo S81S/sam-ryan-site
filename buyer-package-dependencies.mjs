@@ -1,6 +1,7 @@
 // Reviewed links from the 2026 Wrangler factory equipment chart. These explain
 // a factory configuration; they do not change preferences or prove VIN equipment.
 // Keep the exact source rows and trim scope: package names are not universal.
+import {sourcedRamPackageDependency} from './buyer-ram-package-dependencies.mjs';
 const SOURCE='https://media.stellantisnorthamerica.com/view-spec.do?id=27222';
 const TRIMS=['sport','sport-s','sahara','rubicon','moab-392'];
 const PACKAGE_TRIMS=['sport-s','sahara','rubicon','moab-392'];
@@ -81,6 +82,7 @@ export function packageFeatureCondition({lineup,choice,trimId,selected=[],exclud
 /** Returns proof only for a reviewed parent/child pair, both offered on this
  * exact trim, with any feature condition independently satisfied. */
 export function sourcedPackageDependency({lineup,parent,child,trimId,selected=[],excludedChoiceIds=[]}={}){
+ if(lineup?.id==='ram-1500')return sourcedRamPackageDependency({lineup,parent,child,trimId,excludedChoiceIds});
  if(!LINKS.some(([p,c,trims])=>p===parent?.id&&c===child?.id&&trims.includes(trimId)))return null;
  const parentFact=row(lineup,parent,trimId),childFact=row(lineup,child,trimId);
  if(!offered(parentFact)||!offered(childFact)||!ordinaryNote(parentFact)||!ordinaryNote(childFact))return null;

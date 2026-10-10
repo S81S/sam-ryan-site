@@ -32,6 +32,7 @@ function hydrateInventorySpecs(v){
 function updateDetailLink(side){
  const v=vehicle(side);if(!v)return;
  const context=shoppingContext(),detailParams=new URLSearchParams({q:context.q||'',condition:context.condition||'Both',from:'compare',vehicles:SIDES.map(id=>$('choose-'+id).value).filter(Boolean).join(',')});
+ if(context.modelScope)detailParams.set('modelScope',context.modelScope);
  if(context.requestedEquipment)detailParams.set('requestedEquipment',context.requestedEquipment);
  if(context.preferences)detailParams.set('preferences',context.preferences);
  if(context.advisor)detailParams.set('advisor',context.advisor);
@@ -58,7 +59,7 @@ function reset(side){
  else {const evidence=document.createElement('small');evidence.textContent='Covert dealer listing snapshot • '+(v.observedAt||window.usedInventoryData.capturedAt)+' • Confirm current price and availability.';$('summary-'+side).append(document.createElement('br'),evidence);}
  updateDetailLink(side);$('listing-'+side).textContent='View photos & vehicle details';$('listing-'+side).removeAttribute('target');$('listing-'+side).onclick=null;
  const originalSource=v.stickerUrl||index.records[v.vin]?.sourceUrl;$('sticker-'+side).hidden=!v.carfaxUrl&&!originalSource;$('sticker-'+side).href=originalSource||v.carfaxUrl||v.sourceUrl;$('sticker-'+side).textContent=originalSource?(usesWindowStickerOrg(originalSource)?'Open window sticker via WindowSticker.org ↗':'Open original window sticker ↗'):'Open CARFAX → Original Window Sticker ↗';
- $('lookup-note-'+side).textContent=v.stickerUrl?'Open the original document to check its VIN and equipment.':v.carfaxUrl?'Open the Covert-provided CARFAX report, then choose Original Window Sticker. A direct sticker link has not yet been checked for this vehicle.':'No CARFAX/sticker link captured for this vehicle. Open its official listing to check,.';
+ $('lookup-note-'+side).textContent=originalSource?'Open the original document to check its VIN and equipment.':v.carfaxUrl?'Open the Covert-provided CARFAX report, then choose Original Window Sticker. A direct sticker link has not yet been checked for this vehicle.':'No CARFAX/sticker link captured for this vehicle. Open its official listing to check.';
  $('pdf-link-'+side).hidden=true;$('pdf-link-'+side).removeAttribute('href');
  document.dispatchEvent(new CustomEvent('compare:changed'));
 }

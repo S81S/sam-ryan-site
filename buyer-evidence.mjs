@@ -8,6 +8,7 @@ import {resolveReviewedPreference} from './reviewed-preference-evidence.mjs';
 import {repairWranglerRoofEvidence} from './wrangler-roof-evidence.mjs';
 import {sourcedGuideFact} from './buyer-option-groups.mjs';
 import {wranglerConfigurationEvidence} from './buyer-configuration-evidence.mjs';
+import {installedRadioEvidence,installedPowertrainEvidence} from './buyer-installed-configuration.mjs';
 
 const norm=s=>String(s||'').normalize('NFKC').toLowerCase().replace(/[®™]/g,'').replace(/[\u2010-\u2015]/g,'-').replace(/\s+\$[\d,.]+.*$/,'').replace(/\([^()]*\)/g,' ').replace(/[^a-z0-9.]+/g,' ').trim();
 const packageKey=s=>norm(s).replace(/\s+group$/,'');
@@ -21,6 +22,8 @@ function configurationEvidence(lineup,fact,record){
  }
  const wrangler=wranglerConfigurationEvidence(lineup,fact,record);
  if(wrangler)return wrangler;
+ const powertrain=installedPowertrainEvidence(lineup,fact,record);
+ if(powertrain)return powertrain;
  // Reviewed Ram engine rows bundle an engine and an 8-speed automatic. Match
  // every stated part against the VIN's engine/transmission lines; in particular,
  // a 3.0L SO must never satisfy a 3.0L HO choice just because displacement agrees.
@@ -141,6 +144,8 @@ export function buyerPreferenceCheck(vehicle,record,resolved,r){
    if(line){known=has=true;evidence=[line];method='sticker-exact';}
    const configuration=!known&&configurationEvidence(lineup,example,record);
    if(configuration){known=true;has=configuration.has;evidence=configuration.evidence;method=configuration.method;}
+   const radio=!known&&installedRadioEvidence(lineup,choice,example,record,resolved);
+   if(radio){known=true;has=radio.has;evidence=radio.evidence;method=radio.method;}
    // Generic yes/no rows only. Numeric sizes, bundled features and specific
    // materials/versions need their own literal evidence, not a broad boolean.
    const ids=example.factory?factoryRowIds(example):[];
