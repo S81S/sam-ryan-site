@@ -117,3 +117,33 @@ test('the actual installed engine overrides a different factory base engine',()=
  const fit=vehicleFit(v,{id:'sport',comparison},[{...fact,need:'standard'}],entry)[0];
  assert.equal(fit.on,'no');assert.equal(fit.by,'sticker');
 });
+
+test('exact installed engine output overrides a generic turbo feature',()=>{
+ const info=read('./data/factory/index.json').models['dodge-charger'];
+ const chart=read('./data/factory/'+info.file),entry=read('./data/trim-stock.json').models['dodge-charger'];
+ for(const stock of ['D06079','D06071']){
+  const v=entry.vehicles.find(v=>v.stock===stock),comparison=factoryFacts(chart,v.trim,{fleet:info.fleet});
+  const wrong=entry.eng.find(i=>!v.o.includes(i)&&entry.rows[entry.opts[i]]?.some(n=>v.y.includes(n)));
+  assert.notEqual(wrong,undefined,'the broad turbo fact matches both output versions');
+  // Permit the alternate engine in this controlled chart fixture so the VIN's
+  // exact engine evidence, rather than an unavailable chart cell, must decide.
+  const fact={...comparison.find(f=>f.key===entry.opts[wrong]),status:'optional'};
+  const available=comparison.map(f=>f.key===fact.key?fact:f);
+  const fit=vehicleFit(v,{id:v.trim,comparison:available},[{...fact,need:'option'}],entry)[0];
+  assert.equal(fit.on,'no',stock);assert.equal(fit.by,'sticker',stock);
+  const installed=entry.eng.find(i=>v.o.includes(i)),actual=comparison.find(f=>f.key===entry.opts[installed]);
+  const positive=vehicleFit(v,{id:v.trim,comparison},[{...actual,need:actual.status==='standard'?'standard':'option'}],entry)[0];
+  assert.equal(positive.on,'yes',stock);assert.equal(positive.by,'sticker',stock);
+ }
+});
+
+test('missing engine-name evidence does not establish an engine conflict',()=>{
+ const info=read('./data/factory/index.json').models.wrangler;
+ const comparison=factoryFacts(read('./data/factory/'+info.file),'sport',{fleet:info.fleet});
+ const fact=comparison.find(f=>f.key==='f:engines-transmissions||pentastar-3-6-liter-v-6-six-speed-manual');
+ const entry=read('./data/trim-stock.json').models.wrangler;
+ const original=entry.vehicles.find(v=>v.vin==='1C4PJXDN2TW232272');
+ const v={...original,o:original.o.filter(i=>!entry.eng.includes(i))};
+ const fit=vehicleFit(v,{id:'sport',comparison},[{...fact,need:'standard'}],entry)[0];
+ assert.equal(fit.on,'yes');assert.equal(fit.by,'trim');
+});
