@@ -1,13 +1,26 @@
 // Portable shopper intent. Labels are display text; never reparse them as evidence.
 export const preferenceParam='preferences';
 const cleanText=(v,n)=>typeof v==='string'&&v.length<=n&&!/[\u0000-\u001f]/.test(v);
+const factoryLabels=new Map();
+export const registerPreferenceLabels=lineup=>{for(const c of lineup.choices.values())factoryLabels.set(lineup.id+'/'+c.id,c.label);};
 export function readPreferences(value){
  if(value instanceof URLSearchParams)value=value.get(preferenceParam);
  if(!value)return null;
  if(typeof value==='string'&&value.length>18000)return null;
  try{
-  const p=typeof value==='string'?JSON.parse(value):value;
-  if(p?.version!==1||!Array.isArray(p.requirements)||p.requirements.length>100)return null;
+  let p=typeof value==='string'?JSON.parse(value):value;
+  if(p?.version===2){
+   if(!Array.isArray(p.f)||p.f.length>10||!Array.isArray(p.requirements))return null;
+   const requirements=[...p.requirements];
+   for(const group of p.f){
+    if(!Array.isArray(group)||group.length!==4)return null;
+    const [model,year,yes,no]=group;
+    if(!cleanText(model,100)||!Number.isInteger(year)||![yes,no].every(v=>typeof v==='string'&&v.length<8000&&/^[a-z0-9.]*$/.test(v)))return null;
+    for(const [raw,wanted] of [[yes,true],[no,false]])for(const id of raw.split('.').filter(Boolean))requirements.push({feature:'factoryChoice',value:id,wanted,label:factoryLabels.get(model+'/'+id)||'Selected factory equipment',choiceId:id,questionId:id,model,year});
+   }
+   p={version:1,model:p.model,requirements};
+  }
+  if(p?.version!==1||!Array.isArray(p.requirements)||p.requirements.length>512)return null;
   const requirements=[];
   for(const r of p.requirements){
    if(!r||!cleanText(r.feature,80)||!/^\w+$/.test(r.feature)||typeof r.wanted!=='boolean'||
@@ -21,7 +34,13 @@ export function readPreferences(value){
   return {version:1,requirements,...(cleanText(p.model,100)?{model:p.model}:{})};
  }catch{return null;}
 }
-export const encodePreferences=p=>{const valid=readPreferences(p);return valid?JSON.stringify(valid):'';};
+export const encodePreferences=p=>{
+ const valid=readPreferences(p);if(!valid)return '';
+ const factory=valid.requirements.filter(r=>r.feature==='factoryChoice');let output=valid;
+ if(factory.length){const groups=new Map();for(const r of factory){const k=r.model+':'+r.year;if(!groups.has(k))groups.set(k,[r.model,r.year,[],[]]);groups.get(k)[r.wanted?2:3].push(r.value);}
+  output={version:2,model:valid.model,f:[...groups.values()].map(([m,y,a,b])=>[m,y,a.join('.'),b.join('.')]),requirements:valid.requirements.filter(r=>r.feature!=='factoryChoice')};}
+ const text=JSON.stringify(output);return text.length<=18000?text:'';
+};
 export const preferenceSummary=p=>(readPreferences(p)?.requirements||[]).map(r=>(r.wanted?'Want: ':'Exclude: ')+r.label).join('; ');
 export function photoPreferences(lineup,answers){
  const requirements=[];

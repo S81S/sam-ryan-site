@@ -14,6 +14,6 @@ export function appendPreferenceComparison(out,recs,preferences){
    if(c.evidence.length){const details=el('details');details.append(el('summary','Why'),el('p',c.evidence.join(' / ')));td.append(details);}tr.append(td);
   }body.append(tr);
  });table.append(body);wrap.append(table);section.append(wrap);
- const edit=el('a','Edit my photo choices');const params=new URLSearchParams(location.search);params.delete('vehicles');params.set('preferences',encodePreferences(preferences));
+ const edit=el('a','Edit my shopping choices');const params=new URLSearchParams(location.search);params.delete('vehicles');params.set('preferences',encodePreferences(preferences));
  edit.href='/perfect-match?'+params+'#photo-finder';section.append(edit);out.append(section);
 }

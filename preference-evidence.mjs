@@ -2,6 +2,7 @@ import {withComparisonSpecifications} from './comparison-specs.mjs';
 import {applyFactoryEquipment} from './factory-equipment.mjs';
 import {wranglerConfiguration} from './photo-choice-scope.mjs';
 import {evidenceVersion} from './evidence-version.mjs';
+import {buyerPreferenceCheck} from './buyer-evidence.mjs';
 const resolvedCache=new WeakMap();
 // The same three-state test serves photo choices, inventory and Compare.
 export function preferenceChecks(vehicle,record,requirements=[]){
@@ -14,6 +15,7 @@ export function preferenceChecks(vehicle,record,requirements=[]){
   else{resolved=withComparisonSpecifications(vehicle,applyFactoryEquipment(vehicle,record));resolvedCache.set(vehicle,{version,resolved});}
  }
  return requirements.map(r=>{
+  if(r.feature==='factoryChoice')return buyerPreferenceCheck(vehicle,record,resolved,r);
   let fact=resolved?.features?.[r.feature],exact,known=false;
   // Tow Pages is a dashboard feature, not evidence of installed hitch hardware.
   if(r.feature==='tow'&&fact?.value===true){

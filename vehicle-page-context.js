@@ -5,7 +5,7 @@
   const equipment = (params.get('requestedEquipment') || '').slice(0, 2000);
   const condition = ['New', 'Used', 'Both'].includes(params.get('condition')) ? params.get('condition') : '';
   const budget = Math.max(0, Math.min(1000000, Number(params.get('maxPrice')) || 0));
-  const source = ['photo-guide', 'compare'].includes(params.get('from')) ? params.get('from') : '';
+  const source = ['photo-guide', 'buyers-guide', 'compare'].includes(params.get('from')) ? params.get('from') : '';
   const shortlist = [...new Set((params.get('vehicles') || '').split(',').filter(vin => /^[A-HJ-NPR-Z0-9]{17}$/.test(vin)))].slice(0, 5).join(',');
   const back = document.getElementById('back-results');
   const search = new URLSearchParams();
@@ -15,11 +15,12 @@
   if (preferences) search.set('preferences', preferences);
   if (budget) search.set('maxPrice', budget);
   if (source) search.set('from', source);
+  if (params.get('guideTrim')) search.set('guideTrim',params.get('guideTrim').slice(0,100));
   if (params.get('advisor') === 'Ryan') search.set('advisor', 'Ryan');
   if (back && (search.size || source)) {
-    if (source === 'photo-guide') {
+    if (source === 'photo-guide'||source === 'buyers-guide') {
       back.href = '/perfect-match?' + search + '#photo-finder';
-      back.textContent = '← Back to my photo guide';
+      back.textContent = source==='buyers-guide'?'← Back to my buying guide':'← Back to my photo guide';
     } else if (source === 'compare') {
       if (shortlist) search.set('vehicles', shortlist);
       back.href = '/compare?' + search;
@@ -37,7 +38,7 @@
       link.href = link.getAttribute('href').split('?')[0] + '?body=' + encodeURIComponent(body);
       continue;
     } else if (url.pathname === '/contact') {
-      url.searchParams.set('request', description);
+      url.searchParams.set('request', description+(source==='buyers-guide'&&preferences?'\nMy complete guide: https://carswithsam.com/perfect-match?'+search:''));
     } else if (url.pathname === '/compare') {
       for (const [key, value] of search) url.searchParams.set(key, value);
     }

@@ -10,7 +10,7 @@ export function shoppingContext(root=document, search=location.search) {
  const base=(query ? query.value : params.get('q') || '').trim();
  const preferences=readPreferences(params);
  const requestedEquipment=preferenceSummary(preferences)||params.get('requestedEquipment')||(selectedLabel?[selectedLabel,selectedValue].filter(Boolean).join(': '):feature||'');
- return {q:base,requestedEquipment,preferences:encodePreferences(preferences),maxPrice:Math.max(0,Math.min(1000000,Number(params.get('maxPrice'))||0)),from:params.get('from')||'', condition:condition?.value || params.get('condition') || 'New', advisor:advisorName(params.get('advisor'))};
+ return {q:base,requestedEquipment,preferences:encodePreferences(preferences),guideTrim:params.get('guideTrim')||'',maxPrice:Math.max(0,Math.min(1000000,Number(params.get('maxPrice'))||0)),from:params.get('from')||'', condition:condition?.value || params.get('condition') || 'New', advisor:advisorName(params.get('advisor'))};
 }
 export function comparisonLink(vins, context) {
   const params=new URLSearchParams({vehicles:[...new Set(vins)].join(','),condition:context.condition,advisor:context.advisor});
@@ -19,6 +19,7 @@ export function comparisonLink(vins, context) {
   if(context.preferences)params.set('preferences',context.preferences);
   if(context.maxPrice)params.set('maxPrice',context.maxPrice);
   if(context.from)params.set('from',context.from);
+  if(context.guideTrim)params.set('guideTrim',context.guideTrim);
   return 'compare.html?'+params;
 }
 export function comparisonRequest(vehicles,context) {
