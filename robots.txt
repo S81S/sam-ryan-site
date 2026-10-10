@@ -1,5 +1,11 @@
 User-agent: *
 Allow: /
+# Every vehicle page links to the contact form and the comparison tool with that vehicle filled in. Those are the
+# same two pages each time, so crawlers are asked to skip the filled-in versions and spend their visits on vehicles.
+Disallow: /contact?
+Disallow: /contact.html?
+Disallow: /compare?
+Disallow: /compare.html?
 
 Sitemap: https://carswithsam.com/sitemap.xml
 Sitemap: https://carswithsam.com/sitemap-vehicles.xml
