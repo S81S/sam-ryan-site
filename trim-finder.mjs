@@ -31,7 +31,8 @@ const fullName=trim=>{const m=current();return `${m.year} ${m.name.startsWith(m.
 const factOf=(trim,key)=>(trim?.comparison||[]).find(f=>f.key===key)||null;
 
 function save(replace){
- const url=new URL(location.href);url.search='';
+ // This page also hosts the photo shopper. Only replace this tool's parameters.
+ const url=new URL(location.href);url.searchParams.delete('model');url.searchParams.delete('maxPrice');
  if(state.model)url.searchParams.set('model',state.model);
  if(maxPrice)url.searchParams.set('maxPrice',String(maxPrice));
  history[replace?'replaceState':'pushState']({...state},'',url);

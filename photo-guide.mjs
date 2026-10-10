@@ -2,6 +2,7 @@ import {photoPreferences,encodePreferences,readPreferences} from './shopping-pre
 import {createPhotoGuide,swipeDecision} from './photo-guide-engine.mjs';
 import {createPhotoTrimPath} from './photo-trim-path.mjs';
 const root=document.getElementById('photo-finder');
+const entryParams=new URLSearchParams(location.search);
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const money=n=>Number.isFinite(n)?new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(n):'Ask for price';
 const KEY='carswithsam-photo-guide-v1';
@@ -150,7 +151,7 @@ if(root){
   if(!engine.lineups.length)throw Error('No verified photo choices');
   let remembered;try{remembered=JSON.parse(sessionStorage.getItem(KEY)||'null')}catch{}
   state.model=engine.lineups[0].id;
-  const params=new URLSearchParams(location.search);
+  const params=entryParams;
   const budget=value=>Math.max(0,Math.min(1000000,Number(value)||0));
   const step=value=>Math.max(0,Math.min(lineup().questions.length-1,Math.floor(Number(value)||0)));
   if(remembered&&engine.lineups.some(l=>l.id===remembered.model)){
