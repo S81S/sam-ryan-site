@@ -162,7 +162,7 @@ export function buyerPreferenceCheck(vehicle,record,resolved,r){
   }
   // A factory standard is a starting configuration, not proof that a replaceable
   // screen, wheel, engine or package is installed on an individual VIN.
-  if(!known&&f){evidence=[`${match.trim.name}: ${f.status==='standard'?'Factory standard starting equipment':f.status==='optional'?'Factory option / package':'Factory chart says not offered'}; installed equipment is not confirmed by this record.`,f.note].filter(Boolean);sourceUrl=f.sourceUrl;}
+  if(!known&&f){evidence=[`${match.trim.name}: ${f.status==='standard'?'Factory standard starting equipment':f.status==='optional'?'Factory option / package':f.status==='verify'?'Factory sources disagree':'Factory chart says not offered'}; installed equipment is not confirmed by this record.`,f.note].filter(Boolean);sourceUrl=f.sourceUrl;}
  }else if(!match){return {id:r.feature,label:choice.label,wanted:r.wanted,value:r.value,state:'conflict',evidence:['This vehicle is outside the selected model year, body or trim scope.']};}
  return {id:r.feature,label:choice.label,wanted:r.wanted,value:r.value,state:known?(has===r.wanted?'match':'conflict'):'unknown',evidence,sourceUrl,method};
 }

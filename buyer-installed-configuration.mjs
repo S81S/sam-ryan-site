@@ -4,6 +4,14 @@ const fleet=name=>'https://www.stellantisfleet.com/content/dam/fca-fleet/na/flee
 const clean=s=>String(s||'').normalize('NFKC').replace(/[®™]/g,'').replace(/[\u2010-\u2015]/g,'-').replace(/\s+/g,' ').trim();
 const uncertain=/\b(?:if equipped|available|optional|without|not equipped|not included|delete[ds]?|deletion|either|or)\b/i;
 const radios={
+ 'wrangler':{
+  f14j2jpq:['https://media.stellantisnorthamerica.com/view-spec.do?id=27222','','Radio with Uconnect 5 with 12.3-in. display',12.3,false],
+  f1oo6l8x:['https://media.stellantisnorthamerica.com/view-spec.do?id=27222','','Radio with Uconnect 5 NAV with 12.3-in. display',12.3,true]
+ },
+ 'chrysler-pacifica':{
+  f2m7a7w:['Pacifica','Uconnect 5 with 10.1-inch Display','Includes 10.1-inch touchscreen, AM/FM, USB host flip, hands-free phone and audio, Android Auto,TM(15) Apple CarPlayTM(16) and available SiriusXM with 360L(21) (UBG)',10.1,false],
+  f6k6gmv:['Pacifica','Uconnect 5 NAV with 10.1-inch Display','Includes 10.1-inch touchscreen, AM/FM, USB host flip, Integrated Voice Command, Android Auto,(15) Apple CarPlay,(16) HD radio, Navigation and available SiriusXM with 360L(21) (included with Uconnect Theater Family Group) (UBN)',10.1,true]
+ },
  'ram-1500':{
   f1e0k45y:['Ram1500','Radio Systems','Uconnect 5 with 8.4-inch touchscreen display (UBE)',8.4,false],
   fh01t86:['Ram1500','Radio Systems','Uconnect 5 NAV with 12-inch touchscreen display (included with H2 Group) (UBQ)',12,true]
@@ -15,11 +23,11 @@ const radios={
 };
 export function installedRadioEvidence(lineup,choice,fact,record,resolved){
  const rule=radios[lineup?.id]?.[choice?.id],screen=resolved?.features?.infotainmentScreen;
- if(lineup?.year!==2026||!rule||!fact?.factory||fact.sourceUrl!==fleet(rule[0])||fact.parent!==rule[1]||fact.text!==rule[2]||record?.status!=='verified'||record.equipmentSectionComplete!==true||!record.sourceUrl)return null;
+ if(lineup?.year!==2026||!rule||!fact?.factory||fact.sourceUrl!==(rule[0].startsWith('https:')?rule[0]:fleet(rule[0]))||fact.parent!==rule[1]||fact.text!==rule[2]||record?.status!=='verified'||record.equipmentSectionComplete!==true||!record.sourceUrl)return null;
  if(screen?.method!=='sticker-specification'||screen.value!==true||!screen.evidence?.length||!Array.isArray(record.lines))return null;
  const installed=screen.evidence.map(line=>{
   if(typeof line!=='string'||!record.lines.includes(line)||uncertain.test(line))return null;
-  const match=clean(line).match(/^Uconnect 5( Nav)? with (8\.4|12(?:\.0)?|14\.4)-Inch Touch ?Screen Display(?:\s+\$[\d,.]+)?$/i);
+  const match=clean(line).match(/^Uconnect 5( Nav)? with (8\.4|10\.1|12(?:\.0)?|12\.3|14\.4)-Inch Touch ?Screen Display(?:\s+\$[\d,.]+)?$/i);
   return match?{size:Number(match[2]),nav:!!match[1]}:null;
  });
  if(installed.some(x=>!x)||new Set(installed.map(x=>x.size+':'+x.nav)).size!==1)return null;

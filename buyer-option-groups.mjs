@@ -52,6 +52,7 @@ const featureGroups={
  dualClimate:'climate',triClimate:'climate',quadClimate:'climate',airConditioning:'climate',tailgateOperation:'tailgate-operation',powerLiftgate:'liftgate-operation'
 };
 const booleanFeatures={
+ familyCamera:['Rear-seat camera',/^(?:famcam(?:tm)?(?:\(\d+\))?: )?interior rear-facing camera$/],
  heatedSeats:['Heated front seats',/^(?:(?:seating|seats(?: \(front\))?): )?(?:heated front(?: seats)?|front(?: row)?(?: seats)?[,: -]+heated)$/],
  ventilated:['Ventilated front seats',/^(?:(?:seating|seats(?: \(front\))?): )?(?:ventilated front(?: seats)?|front(?: row)?(?: seats)?[,: -]+ventilated)$/],
  heatedWheel:['Heated steering wheel',/^(?:heated steering wheel|steering wheels?: heated)$/],
@@ -320,13 +321,13 @@ const guideTopics={
  details:{id:'details',label:'Equipment details',order:100}
 };
 const primaryCategories=new Set(['body','engine','transmission','drive','transfer','roof','upholstery','driver-seat','passenger-seat','front-seat-adjustment','screen','audio','climate','cluster','paint','interior-color','wheels','tires','axle-ratio','headlamps','roof-finish','floor-covering','tailgate-operation','liftgate-operation','rear-differential','front-differential','rock-rails','bumpers','tire-package','exterior-mirrors']);
-const importantFeatures=new Set(['heatedSeats','ventilated','heatedWheel','remoteStart','blindSpot','adaptiveCruise','wireless','hud','garageOpener','passiveEntry','rainWipers','parkingSensors','forwardWarning','rearCross','autoHighBeam','navigation','frontCamera','surroundCamera','runningBoards','winch','swayDisconnect','auxSwitches','tow','powerOutlet','offroadMode','skidPlates','rearLocker','flatTow','laneKeep','laneWarning','collisionBraking','rearEntertainment','thirdRow','seatingCapacity','massagingSeats','powerLiftgate','handsFreeLiftgate']);
+const importantFeatures=new Set(['familyCamera','heatedSeats','ventilated','heatedWheel','remoteStart','blindSpot','adaptiveCruise','wireless','hud','garageOpener','passiveEntry','rainWipers','parkingSensors','forwardWarning','rearCross','autoHighBeam','navigation','frontCamera','surroundCamera','runningBoards','winch','swayDisconnect','auxSwitches','tow','powerOutlet','offroadMode','skidPlates','rearLocker','flatTow','laneKeep','laneWarning','collisionBraking','rearEntertainment','thirdRow','seatingCapacity','massagingSeats','powerLiftgate','handsFreeLiftgate']);
 function groupTopic(group){
  const category=group.id.replace(/^options-/,''),features=group.choices.map(c=>c.feature),text=normalized(group.title+' '+group.section);
  if(['body','engine','transmission','drive','transfer'].includes(category))return guideTopics.powertrain;
  if(category==='roof')return guideTopics.roof;
  if(['upholstery','driver-seat','passenger-seat','front-seat-adjustment'].includes(category)||features.some(f=>['thirdRow','seatingCapacity','massagingSeats'].includes(f)))return guideTopics.seating;
- if(['screen','audio','cluster'].includes(category)||features.some(f=>['navigation','rearEntertainment'].includes(f))||/feature-navigation/.test(category))return guideTopics.technology;
+ if(['screen','audio','cluster','feature-familyCamera'].includes(category)||features.some(f=>['navigation','rearEntertainment','familyCamera'].includes(f))||/feature-navigation/.test(category))return guideTopics.technology;
  if(['paint','interior-color','wheels','roof-finish'].includes(category))return guideTopics.appearance;
  if(['tires','axle-ratio','rear-differential','front-differential','rock-rails','bumpers','tire-package','tailgate-operation'].includes(category)||features.some(f=>['tow','flatTow','rearLocker','skidPlates','winch','swayDisconnect','auxSwitches','offroadMode','runningBoards'].includes(f))||/feature-(?:tow|winch|swayDisconnect|auxSwitches|offroadMode|skidPlates|runningBoards)/.test(category))return guideTopics.capability;
  if(features.some(f=>['blindSpot','adaptiveCruise','parkingSensors','forwardWarning','rearCross','frontCamera','surroundCamera','laneKeep','laneWarning','collisionBraking'].includes(f))||/feature-(?:blindSpot|adaptiveCruise|parkingSensors|forwardWarning|rearCross|frontCamera|surroundCamera)/.test(category))return guideTopics.safety;

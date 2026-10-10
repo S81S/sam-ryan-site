@@ -20,6 +20,20 @@ function context(id){
 }
 const remaining=rows=>rows.filter(r=>!r.conflicts);
 const confirmed=rows=>rows.filter(r=>!r.conflicts&&!r.unknown);
+test('Select FamCAM source conflict stays possible until actual vehicle evidence resolves it',()=>{
+ const ctx=context('chrysler-pacifica'),id='fan5lv9',answers={[id]:id};
+ for(const value of [id,['reject:'+id]])assert.equal(assessBuyerTrim({...ctx,answers:{[id]:value},trim:'select'}).status,'unknown');
+ const row=ctx.pool.find(r=>r.v.stock==='C02225');assert.ok(row);
+ const assess=record=>assessBuyerMatches({...ctx,pool:[row],records:{[row.v.vin]:record},answers})[0];
+ const original=records[row.v.vin],unknown=assess(original);
+ assert.equal(unknown.conflicts,0);assert.equal(unknown.unknown,1);assert.match(unknown.checks[0].evidence.join(' '),/sources disagree/);
+ const packageOnly={...original,lines:[...original.lines,'Uconnect Theater Family Group II']};
+ assert.equal(assess(packageOnly).unknown,1,'conflicting package prose is not installed proof');
+ for(const value of [true,false]){
+  const record={...original,features:{...original.features,familyCamera:{value,evidence:['FamCAM Interior Camera '+(value?'installed':'deleted')]}}};
+  const result=assess(record);assert.equal(result.unknown,0);assert.equal(result.conflicts,value?0:1);
+ }
+});
 test('Ram photo choices narrow and exclude the known incompatible Tradesman panoramic roof',()=>{
  const ctx=context('ram-1500'),answers={screen:'r12546-dashboard',seats:'r12546-vinyl-bench'};
  const before=assessBuyerMatches({...ctx,answers});assert.ok(confirmed(before).length>0);

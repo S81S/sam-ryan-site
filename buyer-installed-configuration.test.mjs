@@ -26,6 +26,20 @@ test('canonical radio choices resolve actual replacements rather than the smalle
   assert.equal(check(false).state,expected==='match'?'conflict':'match');
  }
 });
+test('Wrangler and Pacifica distinguish navigation from the same-size base radio',()=>{
+ for(const [model,stock,base,nav] of [['wrangler','J22109','f14j2jpq','f1oo6l8x'],['chrysler-pacifica','C02225','f2m7a7w','f6k6gmv']]){
+  const c=context(model,base,stock);
+  assert.equal(preferenceChecks(c.v,c.record,[{...c.choice,wanted:true}])[0].state,'match');
+  const n=c.lineup.choices.get(nav);
+  assert.equal(preferenceChecks(c.v,c.record,[{...n,wanted:true}])[0].state,'conflict');
+  const upgraded={...c.record,lines:c.record.lines.map(l=>l.replace(/^Uconnect 5 with /,'Uconnect 5 Nav with '))};
+  assert.equal(preferenceChecks(c.v,upgraded,[{...n,wanted:true}])[0].state,'match');
+  assert.equal(preferenceChecks(c.v,upgraded,[{...c.choice,wanted:true}])[0].state,'conflict');
+  assert.equal(preferenceChecks(c.v,{...upgraded,equipmentSectionComplete:false},[{...c.choice,wanted:true}])[0].state,'unknown');
+ }
+ const c=context('chrysler-pacifica','f6k6gmv','P04984');
+ assert.equal(preferenceChecks(c.v,c.record,[{...c.choice,wanted:true}])[0].state,'match');
+});
 test('radio proof requires the complete version, active sticker evidence and exact reviewed source',()=>{
  const c=context('ram-3500','f123o6b','R12500');
  const resolve=(record,fact=c.fact,lineup=c.lineup)=>installedRadioEvidence(lineup,c.choice,fact,record,withComparisonSpecifications(c.v,record));

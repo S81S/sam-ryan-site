@@ -11,6 +11,7 @@ import {buyerFeatureExplanation} from './buyer-feature-copy.mjs';
 import {buyerFeaturePhoto} from './buyer-feature-photo-map.mjs';
 import {buyerAudioPhoto} from './buyer-audio-photos.mjs';
 import {buyerRoofPhoto} from './buyer-roof-photos.mjs';
+import {buyerTechnologyPhoto} from './buyer-technology-photos.mjs';
 import {screenDisplayChoices} from './buyer-screen-deck.mjs';
 import {renderBuyerFeatureVisual} from './buyer-feature-visuals.mjs';
 const root=document.getElementById('photo-finder'),key='carswithsam-complete-guide-v1';
@@ -109,7 +110,7 @@ function choiceInfo(q,c){
  let route=c.image&&c.kind!=='factory'?photoPath.offer(lineup,state.answers,c.originQuestionId||q.id,c.id):null;
  if(c.image&&c.kind!=='factory'&&state.trim){const selected=photoPath.resolve(lineup,answers).assessments.find(a=>a.trim.id===state.trim),check=selected?.checks.find(x=>x.choiceId===c.id&&!x.rejected),rule=selected?.trim.choices?.[c.id];route={trim:lineup.trims.find(t=>t.id===state.trim),availability:check?.availability||'unknown',note:check?.note||'This trim route needs more factory evidence.',replaces:check?.replaces||null,requires:rule?.requires||[],sourceUrl:check?.sourceUrl||null};}
  const fact=c.kind==='factory'&&state.trim?c.facts[state.trim]:null;
- let routeLabel=state.trim&&fact?(fact.status==='standard'?'Included on ':fact.status==='optional'?'Optional on ':'Unavailable on ')+trimName(state.trim):route?.trim&&['standard','optional'].includes(route.availability)?(route.availability==='standard'?'Included on ':'Optional on ')+route.trim.name:state.trim&&c.image?'Trim availability needs review':c.kind==='factory'?'Factory equipment':'Verified equipment';
+ let routeLabel=state.trim&&fact?(fact.status==='standard'?'Included on ':fact.status==='optional'?'Optional on ':fact.status==='verify'?'Factory sources disagree for ':'Unavailable on ')+trimName(state.trim):route?.trim&&['standard','optional'].includes(route.availability)?(route.availability==='standard'?'Included on ':'Optional on ')+route.trim.name:state.trim&&c.image?'Trim availability needs review':c.kind==='factory'?'Factory equipment':'Verified equipment';
  if(c.kind==='factory'&&!state.trim){
   const offered=trims.find((t,i)=>!assessments[i].conflicts.length&&['standard','optional'].includes(c.facts[t.id]?.status));
   if(offered){const f=c.facts[offered.id];routeLabel=(f.status==='standard'?'Included on ':'Optional on ')+offered.name+(f.note==='Part of a package'?' · package required':'');}
@@ -119,19 +120,19 @@ function choiceInfo(q,c){
 }
 function availability(c){
  if(c.kind!=='factory')return '';
- return ['standard','optional','unavailable'].map(status=>{
+ return ['standard','optional','unavailable','verify'].map(status=>{
   const trims=lineup.trims.filter(t=>(!state.trim||t.id===state.trim)&&c.facts[t.id]?.status===status);
   if(!trims.length)return '';
-  const sources=new Map();for(const t of trims){const u=c.facts[t.id].sourceUrl;if(u){if(!sources.has(u))sources.set(u,[]);sources.get(u).push(t.name);}}
-  return `<p><strong>${status==='standard'?'Included':status==='optional'?'Optional / package':'Unavailable'}:</strong> ${esc(trims.map(t=>t.name).join(', '))}</p><div class="pg-detail">${[...sources].map(([url,names])=>`<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(names.join(', '))} source ↗</a>`).join('')}</div>`;
+  const sources=new Map();for(const t of trims)for(const u of [c.facts[t.id].sourceUrl,c.facts[t.id].conflictingSourceUrl]){if(u){if(!sources.has(u))sources.set(u,[]);sources.get(u).push(t.name);}}
+  return `<p><strong>${status==='standard'?'Included':status==='optional'?'Optional / package':status==='verify'?'Factory sources disagree':'Unavailable'}:</strong> ${esc(trims.map(t=>t.name).join(', '))}</p><div class="pg-detail">${[...sources].map(([url,names])=>`<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(names.join(', '))} source ↗</a>`).join('')}</div>`;
  }).join('');
 }
-const featurePhoto=c=>buyerFeaturePhoto(lineup,c,photos,{trimId:state.trim})||buyerAudioPhoto(lineup,c,{trimId:state.trim})||buyerRoofPhoto(lineup,c,{trimId:state.trim});
+const featurePhoto=c=>buyerFeaturePhoto(lineup,c,photos,{trimId:state.trim})||buyerAudioPhoto(lineup,c,{trimId:state.trim})||buyerRoofPhoto(lineup,c,{trimId:state.trim})||buyerTechnologyPhoto(lineup,c,{trimId:state.trim});
 function featureMedia(c,q,{thumbnail=false,photo=featurePhoto(c)}={}){
  const visible=photo&&!failedPhotos.has(c.id),crop=visible&&photo.crop;
  const imageStyle=crop?` style="left:${-crop.x/crop.width*100}%;top:${-crop.y/crop.height*100}%;width:${crop.sourceWidth/crop.width*100}%;height:${crop.sourceHeight/crop.height*100}%"`:'';
  const frameStyle=crop?` style="aspect-ratio:${crop.width}/${crop.height}"`:'';
- return `<span class="pg-feature-media${thumbnail?' pg-feature-thumb':''}${crop?' pg-cropped-photo':''}"${frameStyle}${thumbnail?' aria-hidden="true"':''}>${visible?`<img src="${esc(photo.image)}" alt="${thumbnail?'':esc((photo.caption||photo.label)+' · '+photo.title)}" width="1024" height="682" draggable="false" decoding="async"${thumbnail?' loading="lazy"':''}${imageStyle}>`:renderBuyerFeatureVisual(c,{category:q.category||q.id,fact:state.trim?c.facts?.[state.trim]:null})}</span>`;
+ return `<span class="pg-feature-media${thumbnail?' pg-feature-thumb':''}${crop?' pg-cropped-photo':''}"${frameStyle}${thumbnail?' aria-hidden="true"':''}>${visible?`<img src="${esc(photo.image)}" alt="${thumbnail?'':esc((photo.caption||photo.label)+' · '+photo.title)}" width="${photo.crop?.sourceWidth||photo.width||1024}" height="${photo.crop?.sourceHeight||photo.height||682}" draggable="false" decoding="async"${thumbnail?' loading="lazy"':''}${imageStyle}>`:renderBuyerFeatureVisual(c,{category:q.category||q.id,fact:state.trim?c.facts?.[state.trim]:null})}</span>`;
 }
 function featureCard(c,q){
  const info=choiceInfo(q,c),passed=rejected(q,c),photo=featurePhoto(c),shownPhoto=photo&&!failedPhotos.has(c.id),explanation=buyerFeatureExplanation(c,q);

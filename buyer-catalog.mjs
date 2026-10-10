@@ -41,6 +41,18 @@ export function buyerLineup(model,chart){
   }
   trims.push({...trim,charted,choices:own});
  }
+ // Preserve the known Select source conflict in the guide as well as Compare.
+ // A contradictory package description cannot prove either availability or
+ // absence. Keep the original factory cell for audit, without editing the chart.
+ const camera=choices.get('fan5lv9'),cameraFact=camera?.facts.select,group=choices.get('f19mzen9')?.facts.select;
+ if(model.id==='chrysler-pacifica'&&model.year===2026&&cameraFact?.factory&&cameraFact.status==='unavailable'&&
+  cameraFact.parent==='FamCAMTM(41)'&&cameraFact.text==='Interior rear-facing camera (XPR)'&&
+  cameraFact.sourceUrl==='https://www.stellantisfleet.com/content/dam/fca-fleet/na/fleet/en_us/shopping-tools/brochures-literature/docs/buyers-guide/2026/26DOMMOP_FBG_Pacifica.pdf'&&
+  group?.sourceUrl===cameraFact.sourceUrl&&group.status==='optional'&&group.parent==='Uconnect Theater Family Group II'&&group.text.includes('interior rear-facing FamCAM(41) camera')){
+  camera.facts.select={...cameraFact,status:'verify',originalStatus:cameraFact.status,
+   note:'The 2026 fleet package description and retail brochure disagree about FamCAM in Select’s Theater Family Group II. The exact vehicle’s equipment must resolve this conflict.',
+   conflictingSourceUrl:'https://cdn.dealereprocess.org/cdn/brochures/chrysler/2026-pacifica.pdf#page=4'};
+ }
  // Expand only explicit included group names, on the same model/year/trim.
  // A reference in a requires/optional note is not included equipment.
  const packages=[...choices.values()].filter(c=>c.package),normalize=s=>String(s).toLowerCase().replace(/[®™]/g,'').replace(/\s+/g,' ').trim();
@@ -68,7 +80,7 @@ export function trimAssessment(lineup,answers,trimId){
    const wanted=!a.startsWith('reject:'),c=q.choices.find(c=>c.id===(wanted?a:a.slice(7)));if(!c||c.kind!=='factory')continue;
    const f=c.facts[trimId];
    // Rejecting optional equipment still permits that trim without the option.
-   const state=!f?'unknown':wanted?(f.status==='unavailable'?'conflict':'available'):(f.status==='standard'?'unknown':'available');
+   const state=!f||f.status==='verify'?'unknown':wanted?(f.status==='unavailable'?'conflict':'available'):(f.status==='standard'?'unknown':'available');
    checks.push({choice:c,wanted,fact:f,state});
   }
  }

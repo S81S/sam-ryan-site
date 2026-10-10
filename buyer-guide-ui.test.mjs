@@ -16,6 +16,7 @@ import {buyerFeatureExplanation} from './buyer-feature-copy.mjs';
 import {buyerFeaturePhoto} from './buyer-feature-photo-map.mjs';
 import {buyerAudioPhoto} from './buyer-audio-photos.mjs';
 import {buyerRoofPhoto} from './buyer-roof-photos.mjs';
+import {buyerTechnologyPhoto} from './buyer-technology-photos.mjs';
 import {screenDisplayChoices} from './buyer-screen-deck.mjs';
 import {renderBuyerFeatureVisual} from './buyer-feature-visuals.mjs';
 const read=path=>JSON.parse(fs.readFileSync(new URL(path,import.meta.url)));
@@ -53,7 +54,7 @@ async function session({saved=null,search='',fetchOverride}={}){
   }
  }});
  const errors=[],location={search};
- const context={loadBuyerCatalog:async()=>catalog,loadBuyerLineup:async id=>{const m=catalog.models.find(m=>m.id===id);return registerBuyerLineup(buyerLineup(m,m.meta?read('./data/factory/'+m.meta.file):null));},assessBuyerMatches,assessBuyerTrim,buyerVehicleTrim,photoPreferences,encodePreferences,readPreferences,createPhotoGuide,createPhotoTrimPath,swipeDecision,buildBuyerOptionGroups,findBuyerOptionGroup,classifyGuideGroups,attachBuyerCardGestures,buyerFeatureExplanation,buyerFeaturePhoto,buyerAudioPhoto,buyerRoofPhoto,screenDisplayChoices,renderBuyerFeatureVisual,URLSearchParams,AbortSignal,Intl,Date,structuredClone,matchMedia:()=>({matches:true}),console:{error:e=>errors.push(e)},location,sessionStorage:{getItem:k=>storage.get(k),setItem:(k,v)=>storage.set(k,v)},document:{getElementById:()=>root,querySelector:()=>null,createElement:tag=>make(tag)},fetch:async path=>fetchOverride?fetchOverride(path):({ok:true,json:async()=>read('.'+path)})};
+ const context={loadBuyerCatalog:async()=>catalog,loadBuyerLineup:async id=>{const m=catalog.models.find(m=>m.id===id);return registerBuyerLineup(buyerLineup(m,m.meta?read('./data/factory/'+m.meta.file):null));},assessBuyerMatches,assessBuyerTrim,buyerVehicleTrim,photoPreferences,encodePreferences,readPreferences,createPhotoGuide,createPhotoTrimPath,swipeDecision,buildBuyerOptionGroups,findBuyerOptionGroup,classifyGuideGroups,attachBuyerCardGestures,buyerFeatureExplanation,buyerFeaturePhoto,buyerAudioPhoto,buyerRoofPhoto,buyerTechnologyPhoto,screenDisplayChoices,renderBuyerFeatureVisual,URLSearchParams,AbortSignal,Intl,Date,structuredClone,matchMedia:()=>({matches:true}),console:{error:e=>errors.push(e)},location,sessionStorage:{getItem:k=>storage.get(k),setItem:(k,v)=>storage.set(k,v)},document:{getElementById:()=>root,querySelector:()=>null,createElement:tag=>make(tag)},fetch:async path=>fetchOverride?fetchOverride(path):({ok:true,json:async()=>read('.'+path)})};
  const source=fs.readFileSync(new URL('./buyer-guide.mjs',import.meta.url),'utf8').replace(/^import .*;\n/gm,'');
  await vm.runInNewContext('(async()=>{'+source+'})()',context);
  const find=selector=>root.querySelector(selector);
@@ -404,4 +405,32 @@ test('body-color Wrangler roof card uses the correctly labeled Jeep roof illustr
  assert.match(card.querySelector('.pg-photo-identity').textContent,/Jeep OEM illustration/);
  assert.doesNotMatch(card.querySelector('.pg-photo-identity').textContent,/Stock|Ram OEM/);
  assert.deepEqual(s.errors,[]);
+});
+
+test('new technology cards render exact feature photos and preserve their factory requirements',async()=>{
+ for(const [model,choices] of [
+  ['wrangler',[['f1oo6l8x','wrangler-2026-uconnect-nav-oem.jpg','12.3-inch']]],
+  ['chrysler-pacifica',[['f6k6gmv','pacifica-2026-uconnect-nav-oem.jpg','10.1-inch'],['fan5lv9','pacifica-2026-famcam-oem.jpg','FamCAM'],['f194qpwp','pacifica-2026-harman-kardon-oem.jpg','Harman Kardon'],['feszh61','pacifica-2026-rear-entertainment-oem.jpg','One included feature']]]
+ ]){
+  const s=await start(model);
+  for(const [id,file,caption] of choices){
+   const card=await show(s,id),img=card.querySelector('img');assert.ok(img,id);
+   assert.equal(img.getAttribute('src'),'/'+file);assert.ok(card.querySelector('.pg-cropped-photo'));
+   assert.ok(card.querySelector('.pg-photo-identity').textContent.includes(caption));
+   assert.doesNotMatch(card.querySelector('.pg-photo-identity').textContent,/Stock|undefined|Manager Special/i);
+   assert.equal(s.find('[data-answer="'+id+'"]').disabled,false);
+  }
+  assert.deepEqual(s.state().answers,{});assert.deepEqual(s.errors,[]);
+ }
+});
+test('Select FamCAM remains an explained decision while Limited AEZ skips the included question',async()=>{
+ const select=await start('chrysler-pacifica','select'),card=await show(select,'fan5lv9');
+ assert.match(card.querySelector('.pg-route').textContent,/sources disagree/);
+ assert.equal(select.find('[data-answer="fan5lv9"]').disabled,false);
+ assert.equal(card.querySelector('img').getAttribute('src'),'/pacifica-2026-famcam-oem.jpg');
+ await select.click('[data-answer="fan5lv9"]');assert.equal(select.state().answers.fan5lv9,'fan5lv9');
+ const limited=await start('chrysler-pacifica','limited');await want(limited,'feszh61');
+ assert.match(limited.find('.pg-included').textContent,/FamCAM|rear-facing camera/);
+ assert.doesNotMatch(limited.find('[data-jump]').textContent,/Rear-seat camera/);
+ assert.equal(limited.state().answers.fan5lv9,undefined);assert.deepEqual(limited.errors,[]);
 });
