@@ -33,7 +33,7 @@ export function comparisonRows(definitions,records,requested=[],guides=[]){
 export function visibleComparisonRows(rows, mode='important', search='') {
  const term=search.trim().toLowerCase();
  return rows.filter(row=>{
-  if(term&&!(row.label+' '+row.facts.map(f=>f?.displayValue||'').join(' ')).toLowerCase().includes(term))return false;
+  if(term&&!(row.label+' '+row.facts.map(f=>[f?.displayValue||'',...(f?.packages||[]).flatMap(p=>[p.name,...p.equipment,...(p.exclusions||[])])].join(' ')).join(' ')).toLowerCase().includes(term))return false;
   if(mode==='requested')return row.requested;
   if(mode==='all')return row.group==='same'&&row.facts.every(Boolean);
   if(mode==='check')return row.group==='check'||row.group==='listed-on-some'||(row.group==='unknown'&&(row.requested||Boolean(term)));

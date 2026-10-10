@@ -1,6 +1,7 @@
 import {installedAudioFact} from './audio-evidence.mjs';
 import {repairWranglerRoofEvidence} from './wrangler-roof-evidence.mjs';
 import {applyGrandCherokeeAnswers} from './gc-equipment-answers.mjs';
+import {listedPackageNames,packageDetails} from './package-equipment.mjs';
 // Compare installed specifications, not just yes/no feature flags. Only read
 // explicit wording from a verified sticker belonging to the selected VIN.
 const norm=s=>String(s||'').normalize('NFKC').replace(/[\u2010-\u2015]/g,'-').replace(/′′|[“”″]/g,'"').replace(/\s+/g,' ').trim();
@@ -60,8 +61,9 @@ export function withComparisonSpecifications(vehicle,sticker){
   handsFreeDriving:installedFact(sticker,l=>/\bhands[ -]?free\b.*\bdriving\b/i.test(l),()=> 'Hands-free driving assistance'),
   wheelSize:installedFact(sticker,l=>/\b(?:wheels?|whls)\b/i.test(l)&&!/\b(?:spare|steering|covers?|wheelbase|brakes?|drive|controls?|sensors?)\b/i.test(l),l=>{const m=l.match(inch),diameter=l.match(/\b(\d{2})(?:[ -]*inch)?\s*[x×]\s*\d/i);const value=Number(diameter?.[1]||m?.[1]);return value>=12&&value<=30?value+' inches':null;})
  };
- const packages=sticker.lines.map(norm).filter(l=>!blocked.test(l)&&!/^optional equipment/i.test(l)&&/\b(?:package|(?:equipment|utility|off-road|tow|technology|safety) group|night edition)\b/i.test(l)).map(l=>l.replace(/\s+\$[\d,.]+\s*$/,''));
- if(packages.length){const values=[...new Set(packages)].sort();specs.listedPackages={value:true,displayValue:values.join('; '),comparisonValue:values.map(v=>v.toLowerCase()).join('|'),method:'sticker-specification',evidence:values,sourceUrl:sticker.sourceUrl};}
+ const packages=listedPackageNames(sticker);
+ if(packages.length){const values=[...packages].sort();specs.listedPackages={value:true,displayValue:values.join('; '),comparisonValue:values.map(v=>v.toLowerCase()).join('|'),method:'sticker-specification',evidence:values,sourceUrl:sticker.sourceUrl,packages:packageDetails(sticker,values)};}
+ if(specs.equipmentGroup)specs.equipmentGroup.packages=packageDetails(sticker,[specs.equipmentGroup.displayValue]);
  for(const [id,fact] of Object.entries(specs))if(fact)features[id]=fact;
  return applyGrandCherokeeAnswers(vehicle,repairWranglerRoofEvidence(vehicle,{...sticker,features}));
 }

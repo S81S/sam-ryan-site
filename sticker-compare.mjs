@@ -2,6 +2,7 @@ import {vehicleImage,vehicleImageSet} from './vehicle-images.mjs';
 import {decodeVIN,normalizeVIN} from './vin-decoder.mjs';
 import {appendStickerCredit,usesWindowStickerOrg} from './sticker-credit.mjs';
 import {installVehiclePickers,findInventoryByIdentifier} from './compare-picker.mjs';
+import {mergePackageEvidence} from './package-equipment.mjs';
 const readSticker=async(...args)=>(await import('./sticker-reader.mjs')).readSticker(...args);
 import {shoppingContext} from './shopping-context.mjs';
 import {openVehiclePreview} from './vehicle-preview.mjs';
@@ -89,6 +90,7 @@ for(const side of SIDES){
     if(name){v.title=name;$('summary-'+side).textContent=name+' · VIN '+selectedVIN;}
    }
    if(parsed.analysis&&index.records[selectedVIN]?.status!=='verified'){index.records[selectedVIN]={...parsed.analysis,vin:selectedVIN,status:'verified',sourceType:'customer-upload',checkedAt:new Date().toISOString()};document.dispatchEvent(new CustomEvent('compare:changed'));}
+   else {const merged=mergePackageEvidence(index.records[selectedVIN],parsed.analysis);if(merged){index.records[selectedVIN]=merged;document.dispatchEvent(new CustomEvent('compare:changed'));}}
 
   }catch(err){if(vehicle(side)?.vin===selectedVIN&&e.target.files[0]===f)$('file-status-'+side).textContent=err.message}
  });
@@ -176,7 +178,7 @@ function addExternal(vin,side){
     if(parsed.analysis&&index.records[vin]?.status!=='verified'){
      index.records[vin]={...parsed.analysis,vin,status:'verified',sourceType:'original-service',sourceUrl:url,checkedAt:new Date().toISOString()};
      document.dispatchEvent(new CustomEvent('compare:changed'));
-    }
+    }else {const merged=mergePackageEvidence(index.records[vin],parsed.analysis,url);if(merged){index.records[vin]=merged;document.dispatchEvent(new CustomEvent('compare:changed'));}}
     $('summary-'+side).textContent=`✓ VIN found: ${v.title} · VIN ${vin} · Original sticker found${parsed.analysis?' and equipment read':''}.`;$('lookup-status-'+side).classList.add('is-ok');$('lookup-status-'+side).removeAttribute('aria-busy');
     $('lookup-status-'+side).textContent=parsed.analysis?'Original sticker VIN matched. Its readable equipment is now included in your comparison.':'Original sticker VIN matched and opened below. This layout still needs review before automatic feature comparison.';
   }catch(e){if(vehicle(side)?.vin===vin){$('lookup-status-'+side).removeAttribute('aria-busy');b.disabled=false;b.textContent='Try sticker lookup again';disclosure.textContent=e.message;}}

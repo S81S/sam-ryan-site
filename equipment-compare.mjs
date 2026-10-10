@@ -12,6 +12,7 @@ import {definitions,parseQuery} from './equipment-search.mjs';
 import {guideTrim,guideDifferences,guideLink,guideColumnName} from './trim-link.mjs';
 import {comparisonFactoryChart,reviewedComparisonGuide} from './trim-confirmation.mjs';
 import {featureMatches} from './trim-comparison.mjs';
+import {ensurePackageContents} from './package-loader.mjs';
 const $=id=>document.getElementById(id),el=(tag,text)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;return n};
 const short=v=>v.stock?`Stock ${v.stock}`:`VIN …${v.vin.slice(-6)}`;
 const indexEngine=v=>{const s=window.equipmentIndex.records[v.vin];return s?.status==='verified'?s.engine?.replace(/^Engine:\s*/i,''):null;};
@@ -39,6 +40,7 @@ function render(){
  const recs=['1','2','3','4','5'].map(side=>({side,v:window.usedInventoryData.vehicles.find(v=>v.vin===$('choose-'+side)?.value)})).filter(r=>r.v).map(r=>({...r,s:withComparisonSpecifications(r.v,applyFactoryEquipment(r.v,window.equipmentIndex.records[r.v.vin]))}));
  if(recs.length<2){out.append(el('p','Choose two vehicles above to compare.'));return;}
  ensureTrimGuide();
+ for(const {v} of recs)ensurePackageContents(v.vin,window.equipmentIndex);
  const pendingEquipment=recs.some(({s,side,v})=>s?.status!=='verified'&&(v.decodePending||$('lookup-status-'+side)?.getAttribute('aria-busy')==='true'));
  const contextParams=new URLSearchParams(location.search);
  const requested=[...new Set(parseQuery([$('group-query')?.value||contextParams.get('q')||'',contextParams.get('requestedEquipment')||''].join(' ')).requirements.map(r=>r.id))];
@@ -83,7 +85,7 @@ function render(){
    const fields=[['Data source',v=>v.external?(v.decodedAt?'External VIN identity confirmed; dealer listing unverified':'External VIN; identity and dealer listing unverified'):'Covert dealer listing snapshot'],['VIN',v=>v.vin],['Advertised price',v=>Number.isFinite(v.price)?new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(v.price):'Not supplied for this outside vehicle'],['Mileage',v=>Number.isFinite(v.miles)?v.miles.toLocaleString():'Not supplied for this outside vehicle'],['Body / cab',v=>v.decodedSpecs?.body||(/CREW CAB/i.test(v.title)?'Crew cab (listing)':v.decodePending?'Checking VIN…':'VIN decoder did not provide this field')],['Engine',v=>indexEngine(v)||v.decodedSpecs?.engine||(v.decodePending?'Checking VIN…':'VIN decoder did not provide this field')],['Fuel',v=>v.decodedSpecs?.fuel||(v.decodePending?'Checking VIN…':'VIN decoder did not provide this field')]];
    for(const [label,value] of fields){const row=el('tr'),th=el('th',label);th.scope='row';row.append(th);for(const {v} of recs)row.append(el('td',value(v)));body.append(row);}
   }
-  for(const row of visible){const tr=el('tr'),name=el('th');name.scope='row';name.append(el('strong',(row.requested?'★ ':'')+row.label),el('small',row.group==='difference'?'Different':row.group==='listed-on-some'?(recs.length===2?'Confirmed for one; needs confirmation for the other':'Needs confirmation for some vehicles'):row.group==='same'?'Same on all vehicles':'Source details needed'));tr.dataset.comparisonGroup=row.group;tr.append(name);
+  for(const row of visible){const tr=el('tr'),name=el('th');name.scope='row';name.append(el('strong',(row.requested?'★ ':'')+row.label),el('small',row.group==='difference'?'Different':row.group==='listed-on-some'?(recs.length===2?'Confirmed for one; needs confirmation for the other':'Needs confirmation for some vehicles'):row.group==='same'?(row.facts.some(f=>f?.packages)?'Same package name; contents shown below':'Same on all vehicles'):'Source details needed'));tr.dataset.comparisonGroup=row.group;tr.append(name);
    row.facts.forEach((f,i)=>{const td=el('td');appendEquipmentFact(td,f,document,equipmentReviewReason(window.equipmentIndex.records[recs[i].v.vin],recs[i].v.vin,{guide:guides[i],feature:row.id}));
     const audioFeature=['audioSystem','premiumAudio'].includes(row.id)?audioInventoryFeature(recs[i].s?.features?.audioSystem):null;
     const inventoryFeature=audioFeature||(!row.specification&&definitions.some(([id])=>id===row.id)?row.id:null);
