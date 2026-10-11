@@ -122,7 +122,8 @@ function factoryCategory(c,lineup){
  if(parent==='sunroof'||/^sunroof(?:\s|$)/.test(text))return 'roof';
  if(parent==='roof'&&/body-color|black-painted/.test(text))return 'roof-finish';
  if(parent==='body model')return 'body';
- if((/^(?:engines?(?: \/ transmissions?)?|engines? & transmissions?)$/.test(section)&&/^(?:engine: )?\d[.\d]*l\b/.test(text))||['engine','base-engine'].includes(key))return 'engine';
+ if((/^(?:(?:3500|4500\/5500) )?engines?(?:\s*(?:\/|&|and)\s*transmissions?)?$/.test(section)&&/^(?:engine: |supercharged |pentastar )?\d[.\d]*(?:l\b|-liter\b)/.test(text))||['engine','base-engine'].includes(key))return 'engine';
+ if(/^powertrains?$/.test(section)&&/^(?:400v|\d+-kw dual electric)/.test(text))return 'engine';
  if(['transmission','gearbox'].includes(key)||parent==='transmission')return 'transmission';
  if(['drive','drive system'].includes(parent)||/^(?:front|rear|all|four)-wheel drive(?: \([^)]*\))? system$/.test(label))return 'drive';
  if(parent.startsWith('transfer case')||parent.startsWith('four-wheel drive'))return 'transfer';
@@ -366,6 +367,14 @@ export function buildBuyerOptionGroups(lineup,photoLineup){
  }
  deduplicateRoof(groups,lineup);
  addWranglerRoofFamilies(groups,lineup);
+ if(isReviewedWrangler(lineup))for(const category of ['engine','transmission','drive']){
+  const group=groups.get('options-'+category),canonical=group?.choices.filter(c=>c.guidePowertrain);
+  if(canonical?.length)group.guideChoices=canonical;
+ }
+ // A wheel diameter or generic black-wheel preference is not another wheel
+ // design. Keep exact factory wheel designs together, retaining historic IDs.
+ const wheels=groups.get('options-wheels'),designs=wheels?.choices.filter(c=>c.kind==='factory');
+ if(designs?.length)wheels.guideChoices=designs;
  markWranglerSpecifications(groups,lineup);
  markGuidePriorities(groups);
  return [...groups.values()].sort((a,b)=>a.guideOrder-b.guideOrder);

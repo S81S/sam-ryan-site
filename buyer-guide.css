@@ -72,3 +72,8 @@
 .photo-guide [data-swipe-direction=reject] .pg-swipe-feedback,.photo-guide [data-swipe-state=blocked] .pg-swipe-feedback{background:#3b2022ed;border-color:#e3a59d;color:#fff1eb}
 @media(max-width:600px){.photo-guide .pg-stack-peek .pg-feature-thumb{flex-basis:48px;width:48px;height:auto}.photo-guide .pg-feature-explanation{font-size:15px}.photo-guide .pg-feedback:not(:empty){padding:12px;font-size:14px}}
 @media(prefers-reduced-motion:reduce){.photo-guide .pg-single-card{transition:none}}
+
+.photo-guide .pg-engine-output{display:block;color:#f2d7b2;font-size:18px;font-weight:700;margin:10px 0}
+.photo-guide .pg-included .pg-feature-media{max-width:330px;margin:12px 0}
+.photo-guide .pg-stack-all button{display:flex;align-items:center;gap:12px}
+.photo-guide .pg-stack-all .pg-feature-thumb{width:72px;height:48px;flex:0 0 72px}

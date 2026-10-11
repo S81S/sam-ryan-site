@@ -176,3 +176,12 @@ test('canonical Wrangler engine/transmission selections use the installed config
  assert.equal(check('J19530','fbixrjd').state,'conflict','V6 cannot satisfy the turbo I4 configuration');
  assert.equal(check('J19530','f1fd7xjl').state,'conflict','automatic V6 cannot satisfy the manual V6 configuration');
 });
+
+import {preferenceChecks} from './preference-evidence.mjs';
+test('Wrangler exact wheel designs require installed specification, not only diameter or trim',()=>{
+ const {lineup,byStock}=wranglerContext();
+ const check=(stock,id,wanted=true,override={})=>{const {v,record}=byStock(stock);return preferenceChecks(v,{...record,...override},[{...lineup.choices.get(id),wanted}])[0];};
+ for(const [stock,id] of [['J22196','fxewvuk'],['J22575','fzd4we4'],['J22412','f1becs80'],['J22542','f1yfjb1t']])assert.equal(check(stock,id).state,'match',stock+' '+id);
+ assert.notEqual(check('J22542','f1yfjb1t',true,{lines:['STANDARD EQUIPMENT','18-Inch x 7.5-Inch Machined/Painted Gray Wheels','OPTIONAL EQUIPMENT','18-Inch x 7.5-Inch Machined/Painted Gray Wheels']}).state,'match','Ambiguous optional Sahara design does not inherit the base wheel photo.');
+ assert.notEqual(check('J22575','fzd4we4',true,{lines:['STANDARD EQUIPMENT','17-Inch Aluminum Wheels']}).state,'match','Generic aluminum specification does not prove the reviewed gray design.');
+});

@@ -11,6 +11,11 @@ import {createPhotoGuide,swipeDecision} from './photo-guide-engine.mjs';
 import {createPhotoTrimPath} from './photo-trim-path.mjs';
 import {buildBuyerOptionGroups,findBuyerOptionGroup} from './buyer-option-groups.mjs';
 import {classifyGuideGroups} from './buyer-guide-routing.mjs';
+import {createInventoryGuide} from './buyer-inventory-guide.mjs';
+import {buyerPowertrainPhoto} from './buyer-powertrain-photos.mjs';
+import {buyerWheelPhoto} from './buyer-wrangler-wheels.mjs';
+import {buyerControlPhoto} from './buyer-control-photos.mjs';
+import {buyerEngineOutput} from './buyer-engine-output.mjs';
 import {attachBuyerCardGestures} from './buyer-card-gestures.mjs';
 import {buyerFeatureExplanation} from './buyer-feature-copy.mjs';
 import {buyerFeaturePhoto} from './buyer-feature-photo-map.mjs';
@@ -54,7 +59,7 @@ async function session({saved=null,search='',fetchOverride}={}){
   }
  }});
  const errors=[],location={search};
- const context={loadBuyerCatalog:async()=>catalog,loadBuyerLineup:async id=>{const m=catalog.models.find(m=>m.id===id);return registerBuyerLineup(buyerLineup(m,m.meta?read('./data/factory/'+m.meta.file):null));},assessBuyerMatches,assessBuyerTrim,buyerVehicleTrim,photoPreferences,encodePreferences,readPreferences,createPhotoGuide,createPhotoTrimPath,swipeDecision,buildBuyerOptionGroups,findBuyerOptionGroup,classifyGuideGroups,attachBuyerCardGestures,buyerFeatureExplanation,buyerFeaturePhoto,buyerAudioPhoto,buyerRoofPhoto,buyerTechnologyPhoto,screenDisplayChoices,renderBuyerFeatureVisual,URLSearchParams,AbortSignal,Intl,Date,structuredClone,matchMedia:()=>({matches:true}),console:{error:e=>errors.push(e)},location,sessionStorage:{getItem:k=>storage.get(k),setItem:(k,v)=>storage.set(k,v)},document:{getElementById:()=>root,querySelector:()=>null,createElement:tag=>make(tag)},fetch:async path=>fetchOverride?fetchOverride(path):({ok:true,json:async()=>read('.'+path)})};
+ const context={loadBuyerCatalog:async()=>catalog,loadBuyerLineup:async id=>{const m=catalog.models.find(m=>m.id===id);return registerBuyerLineup(buyerLineup(m,m.meta?read('./data/factory/'+m.meta.file):null));},assessBuyerMatches,assessBuyerTrim,buyerVehicleTrim,photoPreferences,encodePreferences,readPreferences,createPhotoGuide,createPhotoTrimPath,swipeDecision,buildBuyerOptionGroups,findBuyerOptionGroup,classifyGuideGroups,createInventoryGuide,buyerPowertrainPhoto,buyerWheelPhoto,buyerControlPhoto,buyerEngineOutput,attachBuyerCardGestures,buyerFeatureExplanation,buyerFeaturePhoto,buyerAudioPhoto,buyerRoofPhoto,buyerTechnologyPhoto,screenDisplayChoices,renderBuyerFeatureVisual,URLSearchParams,AbortSignal,Intl,Date,structuredClone,matchMedia:()=>({matches:true}),console:{error:e=>errors.push(e)},location,sessionStorage:{getItem:k=>storage.get(k),setItem:(k,v)=>storage.set(k,v)},document:{getElementById:()=>root,querySelector:()=>null,createElement:tag=>make(tag)},fetch:async path=>fetchOverride?fetchOverride(path):({ok:true,json:async()=>read('.'+path)})};
  const source=fs.readFileSync(new URL('./buyer-guide.mjs',import.meta.url),'utf8').replace(/^import .*;\n/gm,'');
  await vm.runInNewContext('(async()=>{'+source+'})()',context);
  const find=selector=>root.querySelector(selector);
@@ -171,11 +176,11 @@ test('all five reviewed models continue past their opening photo-topic count',as
  }
 });
 
-test('Wrangler roof stack offers five physical systems and narrows exact vehicles',async()=>{
+test('Wrangler roof stack offers inventory-backed physical systems and narrows exact vehicles',async()=>{
  const s=await start('wrangler'),initial=count(s);
  await show(s,'f1dj1wzb');
- assert.match(s.root.innerHTML,/Alternative \d of 5/);
- assert.equal(s.root.querySelectorAll('[data-show-choice]').length,4);
+ assert.ok(s.root.querySelectorAll('[data-show-choice]').length>=2,'multiple inventory-backed roof alternatives remain together');
+ assert.equal(s.find('[data-show-choice="f10uw5fn"]'),null,'unproven dual-top inventory does not become a selectable match');
  assert.match(s.find('[data-card]').textContent,/Stock J22109/);
  await s.click('[data-answer="f1dj1wzb"]');
  assert.ok(count(s)>0&&count(s)<initial,'exact black hardtop selection narrows the pool');
@@ -201,18 +206,14 @@ test('Wrangler reaches results only after every applicable important category is
  for(const id of ['powertrain','packages','roof','seating','technology','comfort','safety','capability','appearance'])assert.ok(topics.has(id),'covered '+id);
  assert.equal(s.state().stage,'results');assert.match(s.root.innerHTML,/Your choices are complete/);assert.deepEqual(s.errors,[]);
 });
-test('a selected Wrangler package explains included features and removes their redundant questions',async()=>{
- const s=await start('wrangler','sport-s');
- await want(s,'fbixrjd');
- await want(s,'f6em7wb');
- const included=s.find('.pg-included');assert.ok(included);
- assert.match(included.textContent,/Included with Convenience Group/);
- for(const id of ['frm6xp8','fzvznq6','fr0gab8','f1m582py']){
-  const group=fixture('wrangler').groups.find(g=>g.choices.some(c=>c.id===id));
-  assert.ok(!s.find('[data-jump]').querySelectorAll('option').some(o=>o.textContent.replace(/^\d+\. /,'').replace(/ ✓$/,'')===group.title.slice(0,100)),'included feature is no longer asked: '+id);
-  assert.equal(s.state().answers[id],undefined,'package inclusion does not invent another preference');
- }
- assert.ok(s.find('[data-card]'));assert.deepEqual(s.errors,[]);
+test('Sport S inventory resolves shared equipment without asking redundant questions',async()=>{
+ const s=await start('wrangler','sport-s'),included=s.find('.pg-included');assert.ok(included);
+ assert.match(included.textContent,/3.6L Pentastar V6/);assert.match(included.textContent,/8-speed automatic/);
+ assert.match(included.textContent,/Convenience Group/);
+ assert.equal(s.state().answers.f6em7wb,undefined,'inclusion does not invent a selected requirement');
+ assert.equal(s.state().answers.fwranglerengine36,undefined);
+ assert.ok(!s.find('[data-jump]').textContent.includes('Which engine'));
+ assert.deepEqual(s.errors,[]);
 });
 test('Back restores trim and position together after changing trim late in the full guide',async()=>{
  const s=await start();
@@ -319,7 +320,7 @@ test('rejecting every alternative keeps the stack open with explicit recovery',a
  test('choosing one engine resolves that category and moves to the next applicable feature',async()=>{
  for(const model of ['wrangler','ram-1500']){
   const s=await start(model),group=fixture(model).groups.find(g=>g.id==='options-engine');
-  const choice=group.choices.find(c=>Object.values(c.facts||{}).some(f=>['standard','optional'].includes(f.status)));
+  const choice=(group.guideChoices||group.choices).find(c=>Object.values(c.facts||{}).some(f=>['standard','optional'].includes(f.status)));
   await show(s,choice.id);await s.click('[data-answer="'+choice.id+'"]');
   assert.notEqual(s.state().groupId,'options-engine');assert.ok(s.find('[data-card]'));
   assert.equal(Object.values(s.state().answers).filter(v=>group.choices.some(c=>c.id===v)).length,1);
@@ -372,7 +373,7 @@ for(const {model,stock,choices} of [
 });
 
 for(const {model,stock,engine} of [
- {model:'wrangler',stock:'J22109',engine:'fbixrjd'},
+ {model:'wrangler',stock:'J22109',engine:'fwranglerengine20'},
  {model:'ram-1500',stock:'R12315',engine:'fpw7o6e'},
  {model:'jeep-grand-cherokee',stock:'J22138',engine:'f10gvmt6'},
  {model:'ram-3500',stock:'R12500',engine:'fffmage'}
@@ -433,4 +434,53 @@ test('Select FamCAM remains an explained decision while Limited AEZ skips the in
  assert.match(limited.find('.pg-included').textContent,/FamCAM|rear-facing camera/);
  assert.doesNotMatch(limited.find('[data-jump]').textContent,/Rear-seat camera/);
  assert.equal(limited.state().answers.fan5lv9,undefined);assert.deepEqual(limited.errors,[]);
+});
+
+test('Wrangler inventory guide keeps the turbo path moving with exact engine and shifter imagery',async()=>{
+ const s=await start('wrangler'),initial=count(s);
+ assert.equal(s.find('[data-card]').dataset.card,'fwranglerengine36','begin with the base engine');
+ assert.ok(s.find('[data-card]').querySelector('img').getAttribute('src').includes('pentastar-engine'));
+ await s.click('[data-show-choice="fwranglerengine20"]');
+ const card=s.find('[data-card]');assert.match(card.textContent,/270 hp.*295 lb-ft/);
+ assert.ok(card.querySelector('img').getAttribute('src').includes('turbo-engine'));
+ card.onpointerdown({button:0,isPrimary:true,clientX:80,clientY:100,pointerId:4});
+ card.onpointerup({clientX:200,clientY:103,pointerId:4});
+ assert.equal(count(s),24);assert.ok(count(s)<initial);
+ assert.notEqual(s.state().groupId,'options-engine');assert.notEqual(s.state().groupId,'options-transmission');
+ assert.match(s.find('.pg-included').textContent,/8-speed automatic/);
+ assert.ok(s.find('.pg-included').querySelector('img').getAttribute('src').includes('automatic-shifter'));
+ // Walk the actual default sequence rather than jumping only to known photos.
+ const seen=new Set();
+ for(let i=0;i<8&&s.find('[data-card]');i++){
+  const group=s.state().groupId;assert.ok(!seen.has(group));seen.add(group);
+  const id=s.find('[data-card]').dataset.card,button=s.find('[data-answer="'+id+'"]');
+  assert.equal(button.disabled,false,'default option has a proven VIN');
+  await s.click('[data-answer="'+id+'"]');assert.ok(s.state().stage==='results'?s.root.querySelectorAll('.pg-result').length>0:count(s)>0,'a positive choice cannot empty the verified matches');
+ }
+ assert.ok(seen.size>=2);assert.deepEqual(s.errors,[]);
+});
+
+test('Wrangler wheel stack has all proven designs, real feature images and one selection per category',async()=>{
+ const s=await start('wrangler');await show(s,'fxewvuk');
+ const ids=[s.find('[data-card]').dataset.card,...s.root.querySelectorAll('[data-show-choice]').map(b=>b.dataset.showChoice)];
+ assert.equal(new Set(ids).size,5,'more than two alternatives are supported');
+ for(const id of ids){await show(s,id);assert.ok(s.find('[data-card]').querySelector('img').getAttribute('src').includes('wrangler-wheel-'));}
+ await show(s,'f8ywabd');await s.click('[data-answer="f8ywabd"]');
+ assert.notEqual(s.state().groupId,'options-wheels');assert.ok(count(s)>0);
+ const group=fixture('wrangler').groups.find(g=>g.id==='options-wheels');
+ assert.equal(group.choices.filter(c=>s.state().answers[c.originQuestionId]===c.id).length,1);
+});
+
+test('Wrangler saved engine bundles survive and excluding the available engines has a recovery',async()=>{
+ const original=await start('wrangler'),saved=original.state();
+ saved.answers={fbixrjd:'fbixrjd'};saved.savedRequirements=photoPreferences(fixture('wrangler').lineup,saved.answers).requirements;
+ const resumed=await session({saved});await resumed.click('[data-action="resume"]');await show(resumed,'fbixrjd');
+ assert.equal(resumed.state().answers.fbixrjd,'fbixrjd');assert.equal(count(resumed),24);
+ assert.ok(resumed.find('[data-card]').querySelector('img').getAttribute('src').includes('turbo-engine'));
+ const s=await start('wrangler');await s.click('[data-answer="reject:fwranglerengine36"]');
+ assert.equal(s.find('[data-card]').dataset.card,'fwranglerengine20');
+ await s.click('[data-answer="reject:fwranglerengine20"]');
+ assert.match(s.root.innerHTML,/You excluded every alternative here/);
+ assert.equal(s.find('[data-show-choice="fwranglerengine64"]'),null);
+ await s.click('[data-action="restore-group"]');assert.equal(count(s),45);
 });

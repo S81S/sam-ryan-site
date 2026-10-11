@@ -9,6 +9,7 @@ import {repairWranglerRoofEvidence} from './wrangler-roof-evidence.mjs';
 import {sourcedGuideFact} from './buyer-option-groups.mjs';
 import {wranglerConfigurationEvidence} from './buyer-configuration-evidence.mjs';
 import {installedRadioEvidence,installedPowertrainEvidence} from './buyer-installed-configuration.mjs';
+import {wranglerWheelEvidence} from './buyer-wrangler-wheels.mjs';
 
 const norm=s=>String(s||'').normalize('NFKC').toLowerCase().replace(/[®™]/g,'').replace(/[\u2010-\u2015]/g,'-').replace(/\s+\$[\d,.]+.*$/,'').replace(/\([^()]*\)/g,' ').replace(/[^a-z0-9.]+/g,' ').trim();
 const packageKey=s=>norm(s).replace(/\s+group$/,'');
@@ -146,6 +147,8 @@ export function buyerPreferenceCheck(vehicle,record,resolved,r){
    if(configuration){known=true;has=configuration.has;evidence=configuration.evidence;method=configuration.method;}
    const radio=!known&&installedRadioEvidence(lineup,choice,example,record,resolved);
    if(radio){known=true;has=radio.has;evidence=radio.evidence;method=radio.method;}
+   const wheel=!known&&wranglerWheelEvidence(lineup,choice,f,record,resolved);
+   if(wheel){known=true;has=wheel.has;evidence=wheel.evidence;method=wheel.method;}
    // Generic yes/no rows only. Numeric sizes, bundled features and specific
    // materials/versions need their own literal evidence, not a broad boolean.
    const ids=example.factory?factoryRowIds(example):[];

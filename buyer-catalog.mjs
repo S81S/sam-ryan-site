@@ -1,5 +1,6 @@
 import {factoryFacts,FLEET} from './factory-facts.mjs';
 import {plainFact} from './plain-labels.mjs';
+import {addWranglerPowertrain} from './buyer-wrangler-powertrain.mjs';
 
 export const stableId=text=>{let h=2166136261;for(const c of text){h^=c.charCodeAt(0);h=Math.imul(h,16777619);}return (h>>>0).toString(36);};
 export function buyerModels(guide,index){
@@ -66,6 +67,7 @@ export function buyerLineup(model,chart){
    if(trimIds.length)c.includedPackages.push({id:other.id,label:other.fullLabel,includes:other.includes,trimIds,sourceUrl:other.sourceUrl});
   }
  }
+ addWranglerPowertrain(model,choices,trims);
  // No chart is treated as complete for a trim it doesn't actually document.
  const questions=[...choices.values()].filter(c=>Object.values(c.facts).some(f=>f.status!=='unavailable')).map(c=>({id:c.id,title:c.fullLabel,section:c.section,choices:[c]}));
  const rank=q=>q.choices[0].package?0:/safety|seating|comfort|interior/i.test(q.section)?1:/uconnect|technology/i.test(q.section)?2:3;
