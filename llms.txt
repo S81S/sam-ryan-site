@@ -4,7 +4,7 @@
 
 - Who: Samuel "Sam" Sweitzer created and owns the site. Call or text him at 737-209-1320. His teammate Ryan Sugrue, also a sales consultant at the store, helps shoppers through the site.
 - Where: Covert CDJR Austin, 8107 Research Blvd, Austin, TX 78758. Listings are limited to this one store.
-- How current: inventory was last checked October 9, 2026 and is refreshed daily. A vehicle that leaves inventory loses its page.
+- How current: inventory was last checked October 10, 2026 and is refreshed daily. A vehicle that leaves inventory loses its page.
 - Equipment: a feature is listed for a vehicle only when that vehicle's own window sticker shows it. A vehicle without a readable sticker is left out, not guessed.
 - Prices: shown as the dealer listing states them. They can depend on incentives with conditions, so price and availability should be confirmed with Sam before visiting.
 
@@ -20,20 +20,20 @@
 
 Counts are vehicles listed as of the last inventory check.
 
-- [Ram 1500](https://carswithsam.com/ram-1500-austin): 166 listed
+- [Ram 1500](https://carswithsam.com/ram-1500-austin): 164 listed
 - [Ram 2500](https://carswithsam.com/ram-2500-austin): 57 listed
 - [Ram 3500](https://carswithsam.com/ram-3500-austin): 27 listed
-- [Jeep Wrangler](https://carswithsam.com/jeep-wrangler-austin): 72 listed
+- [Jeep Wrangler](https://carswithsam.com/jeep-wrangler-austin): 71 listed
 - [Jeep Gladiator](https://carswithsam.com/jeep-gladiator-austin): 19 listed
-- [Jeep Grand Cherokee](https://carswithsam.com/jeep-grand-cherokee-austin): 113 listed
+- [Jeep Grand Cherokee](https://carswithsam.com/jeep-grand-cherokee-austin): 114 listed
 - [Jeep Cherokee](https://carswithsam.com/jeep-cherokee-austin): 15 listed
 - [Jeep Compass](https://carswithsam.com/jeep-compass-austin): 29 listed
 - [Jeep Grand Wagoneer](https://carswithsam.com/jeep-grand-wagoneer-austin): 44 listed
 - [Jeep Wagoneer](https://carswithsam.com/jeep-wagoneer-austin): 5 listed
 - [Chrysler Pacifica](https://carswithsam.com/chrysler-pacifica-austin): 13 listed
 - [Dodge Durango](https://carswithsam.com/dodge-durango-austin): 6 listed
-- [Dodge Charger](https://carswithsam.com/dodge-charger-austin): 7 listed
-- [Ram ProMaster](https://carswithsam.com/ram-promaster-austin): 23 listed
+- [Dodge Charger](https://carswithsam.com/dodge-charger-austin): 6 listed
+- [Ram ProMaster](https://carswithsam.com/ram-promaster-austin): 21 listed
 - [Jeep Recon](https://carswithsam.com/jeep-recon-austin): 5 listed
 
 ## Vehicles in Austin by feature
@@ -42,26 +42,26 @@ Counts are vehicles listed with the feature as of the last inventory check.
 
 ### Ram 1500
 
-- [Ram 1500 with massaging seats](https://carswithsam.com/ram-1500-with-massaging-seats-austin): 18 listed
-- [Ram 1500 with ventilated seats](https://carswithsam.com/ram-1500-with-ventilated-seats-austin): 59 listed
-- [Ram 1500 with a surround-view camera](https://carswithsam.com/ram-1500-with-surround-view-camera-austin): 42 listed
-- [Ram 1500 with a panoramic sunroof](https://carswithsam.com/ram-1500-with-panoramic-sunroof-austin): 59 listed
-- [Ram 1500 with the HEMI V8](https://carswithsam.com/ram-1500-with-hemi-v8-austin): 37 listed
-- [Ram 1500 with the Hurricane engine](https://carswithsam.com/ram-1500-with-hurricane-engine-austin): 111 listed
+- [Ram 1500 with massaging seats](https://carswithsam.com/ram-1500-with-massaging-seats-austin): 17 listed
+- [Ram 1500 with ventilated seats](https://carswithsam.com/ram-1500-with-ventilated-seats-austin): 58 listed
+- [Ram 1500 with a surround-view camera](https://carswithsam.com/ram-1500-with-surround-view-camera-austin): 41 listed
+- [Ram 1500 with a panoramic sunroof](https://carswithsam.com/ram-1500-with-panoramic-sunroof-austin): 58 listed
+- [Ram 1500 with the HEMI V8](https://carswithsam.com/ram-1500-with-hemi-v8-austin): 36 listed
+- [Ram 1500 with the Hurricane engine](https://carswithsam.com/ram-1500-with-hurricane-engine-austin): 110 listed
 - [Ram 1500 with flat-tow capability](https://carswithsam.com/ram-1500-with-flat-tow-capability-austin): 78 listed
-- [Ram 1500 with a locking rear differential](https://carswithsam.com/ram-1500-with-locking-rear-differential-austin): 57 listed
+- [Ram 1500 with a locking rear differential](https://carswithsam.com/ram-1500-with-locking-rear-differential-austin): 56 listed
 - [Ram 1500 with air suspension](https://carswithsam.com/ram-1500-with-air-suspension-austin): 15 listed
-- [Ram 1500 with a head-up display](https://carswithsam.com/ram-1500-with-head-up-display-austin): 17 listed
-- [Ram 1500 with Harman Kardon audio](https://carswithsam.com/ram-1500-with-harman-kardon-audio-austin): 38 listed
-- [Ram 1500 with ventilated rear seats](https://carswithsam.com/ram-1500-with-ventilated-rear-seats-austin): 16 listed
+- [Ram 1500 with a head-up display](https://carswithsam.com/ram-1500-with-head-up-display-austin): 16 listed
+- [Ram 1500 with Harman Kardon audio](https://carswithsam.com/ram-1500-with-harman-kardon-audio-austin): 37 listed
+- [Ram 1500 with ventilated rear seats](https://carswithsam.com/ram-1500-with-ventilated-rear-seats-austin): 15 listed
 - [Ram 1500 with RamBox storage](https://carswithsam.com/ram-1500-with-rambox-austin): 7 listed
 - [Ram 1500 with power running boards](https://carswithsam.com/ram-1500-with-power-running-boards-austin): 23 listed
 - [Ram 1500 with a trailer brake controller](https://carswithsam.com/ram-1500-with-trailer-brake-controller-austin): 54 listed
 - [Ram 1500 with a spray-in bedliner](https://carswithsam.com/ram-1500-with-spray-in-bedliner-austin): 34 listed
 - [Ram 1500 with a tonneau cover](https://carswithsam.com/ram-1500-with-tonneau-cover-austin): 8 listed
-- [Ram 1500 with the 14.4-inch touchscreen](https://carswithsam.com/ram-1500-with-14-4-inch-touchscreen-austin): 32 listed
+- [Ram 1500 with the 14.4-inch touchscreen](https://carswithsam.com/ram-1500-with-14-4-inch-touchscreen-austin): 31 listed
 - [Ram 1500 with the 12-inch touchscreen](https://carswithsam.com/ram-1500-with-12-inch-touchscreen-austin): 71 listed
-- [Ram 1500 with the 8.4-inch touchscreen](https://carswithsam.com/ram-1500-with-8-4-inch-touchscreen-austin): 58 listed
+- [Ram 1500 with the 8.4-inch touchscreen](https://carswithsam.com/ram-1500-with-8-4-inch-touchscreen-austin): 57 listed
 
 ### Ram 2500
 
@@ -93,12 +93,12 @@ Counts are vehicles listed with the feature as of the last inventory check.
 ### Jeep Wrangler
 
 - [Jeep Wrangler with the Sky One-Touch roof](https://carswithsam.com/jeep-wrangler-with-sky-one-touch-roof-austin): 10 listed
-- [Jeep Wrangler with factory 35-inch tires](https://carswithsam.com/jeep-wrangler-with-35-inch-tires-austin): 9 listed
+- [Jeep Wrangler with factory 35-inch tires](https://carswithsam.com/jeep-wrangler-with-35-inch-tires-austin): 8 listed
 - [Jeep Wrangler with factory 33-inch tires](https://carswithsam.com/jeep-wrangler-with-33-inch-tires-austin): 24 listed
-- [Jeep Wrangler with a factory hard top](https://carswithsam.com/jeep-wrangler-with-hard-top-austin): 55 listed
+- [Jeep Wrangler with a factory hard top](https://carswithsam.com/jeep-wrangler-with-hard-top-austin): 54 listed
 - [Jeep Wrangler with a factory soft top](https://carswithsam.com/jeep-wrangler-with-soft-top-austin): 13 listed
-- [Jeep Wrangler with flat-tow capability](https://carswithsam.com/jeep-wrangler-with-flat-tow-capability-austin): 53 listed
-- [Jeep Wrangler with a locking rear differential](https://carswithsam.com/jeep-wrangler-with-locking-rear-differential-austin): 36 listed
+- [Jeep Wrangler with flat-tow capability](https://carswithsam.com/jeep-wrangler-with-flat-tow-capability-austin): 52 listed
+- [Jeep Wrangler with a locking rear differential](https://carswithsam.com/jeep-wrangler-with-locking-rear-differential-austin): 35 listed
 
 ### Jeep Gladiator
 
@@ -109,17 +109,17 @@ Counts are vehicles listed with the feature as of the last inventory check.
 
 ### Jeep Grand Cherokee
 
-- [Jeep Grand Cherokee with massaging seats](https://carswithsam.com/jeep-grand-cherokee-with-massaging-seats-austin): 11 listed
-- [Jeep Grand Cherokee with ventilated seats](https://carswithsam.com/jeep-grand-cherokee-with-ventilated-seats-austin): 17 listed
-- [Jeep Grand Cherokee with a surround-view camera](https://carswithsam.com/jeep-grand-cherokee-with-surround-view-camera-austin): 36 listed
-- [Jeep Grand Cherokee with the Hurricane engine](https://carswithsam.com/jeep-grand-cherokee-with-hurricane-engine-austin): 91 listed
-- [Jeep Grand Cherokee with third-row seats](https://carswithsam.com/jeep-grand-cherokee-with-third-row-seats-austin): 33 listed
+- [Jeep Grand Cherokee with massaging seats](https://carswithsam.com/jeep-grand-cherokee-with-massaging-seats-austin): 12 listed
+- [Jeep Grand Cherokee with ventilated seats](https://carswithsam.com/jeep-grand-cherokee-with-ventilated-seats-austin): 18 listed
+- [Jeep Grand Cherokee with a surround-view camera](https://carswithsam.com/jeep-grand-cherokee-with-surround-view-camera-austin): 37 listed
+- [Jeep Grand Cherokee with the Hurricane engine](https://carswithsam.com/jeep-grand-cherokee-with-hurricane-engine-austin): 93 listed
+- [Jeep Grand Cherokee with third-row seats](https://carswithsam.com/jeep-grand-cherokee-with-third-row-seats-austin): 35 listed
 - [Jeep Grand Cherokee with second-row captain’s chairs](https://carswithsam.com/jeep-grand-cherokee-with-second-row-captains-chairs-austin): 16 listed
 - [Jeep Grand Cherokee with flat-tow capability](https://carswithsam.com/jeep-grand-cherokee-with-flat-tow-capability-austin): 2 listed
-- [Jeep Grand Cherokee with a head-up display](https://carswithsam.com/jeep-grand-cherokee-with-head-up-display-austin): 7 listed
-- [Jeep Grand Cherokee with a rear-seat camera](https://carswithsam.com/jeep-grand-cherokee-with-rear-seat-camera-austin): 9 listed
-- [Jeep Grand Cherokee with ventilated rear seats](https://carswithsam.com/jeep-grand-cherokee-with-ventilated-rear-seats-austin): 9 listed
-- [Jeep Grand Cherokee with heated rear seats](https://carswithsam.com/jeep-grand-cherokee-with-heated-rear-seats-austin): 55 listed
+- [Jeep Grand Cherokee with a head-up display](https://carswithsam.com/jeep-grand-cherokee-with-head-up-display-austin): 8 listed
+- [Jeep Grand Cherokee with a rear-seat camera](https://carswithsam.com/jeep-grand-cherokee-with-rear-seat-camera-austin): 10 listed
+- [Jeep Grand Cherokee with ventilated rear seats](https://carswithsam.com/jeep-grand-cherokee-with-ventilated-rear-seats-austin): 10 listed
+- [Jeep Grand Cherokee with heated rear seats](https://carswithsam.com/jeep-grand-cherokee-with-heated-rear-seats-austin): 56 listed
 - [Jeep Grand Cherokee with the 10.1-inch touchscreen](https://carswithsam.com/jeep-grand-cherokee-with-10-1-inch-touchscreen-austin): 5 listed
 - [Jeep Grand Cherokee with the 8.4-inch touchscreen](https://carswithsam.com/jeep-grand-cherokee-with-8-4-inch-touchscreen-austin): 15 listed
 
@@ -135,10 +135,10 @@ Counts are vehicles listed with the feature as of the last inventory check.
 ### Jeep Grand Wagoneer
 
 - [Jeep Grand Wagoneer with massaging seats](https://carswithsam.com/jeep-grand-wagoneer-with-massaging-seats-austin): 11 listed
-- [Jeep Grand Wagoneer with a surround-view camera](https://carswithsam.com/jeep-grand-wagoneer-with-surround-view-camera-austin): 35 listed
-- [Jeep Grand Wagoneer with second-row captain’s chairs](https://carswithsam.com/jeep-grand-wagoneer-with-second-row-captains-chairs-austin): 33 listed
+- [Jeep Grand Wagoneer with a surround-view camera](https://carswithsam.com/jeep-grand-wagoneer-with-surround-view-camera-austin): 36 listed
+- [Jeep Grand Wagoneer with second-row captain’s chairs](https://carswithsam.com/jeep-grand-wagoneer-with-second-row-captains-chairs-austin): 34 listed
 - [Jeep Grand Wagoneer with flat-tow capability](https://carswithsam.com/jeep-grand-wagoneer-with-flat-tow-capability-austin): 3 listed
-- [Jeep Grand Wagoneer with air suspension](https://carswithsam.com/jeep-grand-wagoneer-with-air-suspension-austin): 28 listed
+- [Jeep Grand Wagoneer with air suspension](https://carswithsam.com/jeep-grand-wagoneer-with-air-suspension-austin): 29 listed
 - [Jeep Grand Wagoneer with McIntosh audio](https://carswithsam.com/jeep-grand-wagoneer-with-mcintosh-audio-austin): 34 listed
 - [Jeep Grand Wagoneer with ventilated rear seats](https://carswithsam.com/jeep-grand-wagoneer-with-ventilated-rear-seats-austin): 9 listed
 - [Jeep Grand Wagoneer with heated rear seats](https://carswithsam.com/jeep-grand-wagoneer-with-heated-rear-seats-austin): 30 listed
